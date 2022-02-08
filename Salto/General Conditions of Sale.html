@@ -1,0 +1,970 @@
+<!DOCTYPE html><html lang="fr"><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><title data-react-helmet="true">SALTO : plateforme TV, séries &amp; streaming en illimité</title>  <script type='text/javascript' >window.NREUM||(NREUM={});NREUM.info = {"agent":"","beacon":"bam.eu01.nr-data.net","errorBeacon":"bam.eu01.nr-data.net","licenseKey":"NRJS-e04a5bb481c4761a958","applicationID":"199093071","applicationTime":221.098837,"transactionName":"MhBSZQoZXUNUURcNXAtac0QLDFxdGlUGClYXFFxuCA1BU11TEAFsBhpeVREMWl9bQQ==","queueTime":1,"ttGuid":"18c110cecc8b37a6","agentToken":null,"atts":"HldFE0IDEVNAQRcLXgAHEgtaC1JcQV1BSBETEEJCERddEg8QVkoBXFsCEwUF"}; (window.NREUM||(NREUM={})).init={privacy:{cookies_enabled:true},ajax:{deny_list:["*","bam.eu01.nr-data.net"]},distributed_tracing:{enabled:true}};(window.NREUM||(NREUM={})).loader_config={agentID:"199106860",accountID:"2673062",trustKey:"2657732",xpid:"VgAAUlZVChABXVhSDgIHUVU=",licenseKey:"NRJS-e04a5bb481c4761a958",applicationID:"199093071"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var o,i=t("ee"),a=t(32),s={};try{o=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,o.indexOf("dev")!==-1&&(s.dev=!0),o.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&i.on("internal-error",function(t){r(t.stack)}),s.dev&&i.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,s){try{l?l-=1:o(s||new UncaughtException(t,e,n),!0)}catch(f){try{i("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function o(t,e){var n=e?null:c.now();i("err",[t,n])}var i=t("handle"),a=t(33),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,p="nr@seenError";if(!c.disabled){var l=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(14),t(13),"addEventListener"in window&&t(7),c.xhrWrappable&&t(15),d=!0)}s.on("fn-start",function(t,e,n){d&&(l+=1)}),s.on("fn-err",function(t,e,n){d&&!n[p]&&(f(n,p,function(){return!0}),this.thrown=!0,o(n))}),s.on("fn-end",function(){d&&!this.thrown&&l>0&&(l-=1)}),s.on("internal-error",function(t){i("ierr",[t,c.now(),!0])})}},{}],3:[function(t,e,n){var r=t("loader");r.disabled||(r.features.ins=!0)},{}],4:[function(t,e,n){function r(){U++,L=g.hash,this[u]=y.now()}function o(){U--,g.hash!==L&&i(0,!0);var t=y.now();this[h]=~~this[h]+t-this[u],this[d]=t}function i(t,e){E.emit("newURL",[""+g,e])}function a(t,e){t.on(e,function(){this[e]=y.now()})}var s="-start",c="-end",f="-body",u="fn"+s,d="fn"+c,p="cb"+s,l="cb"+c,h="jsTime",m="fetch",v="addEventListener",w=window,g=w.location,y=t("loader");if(w[v]&&y.xhrWrappable&&!y.disabled){var x=t(11),b=t(12),E=t(9),R=t(7),O=t(14),T=t(8),S=t(15),P=t(10),M=t("ee"),C=M.get("tracer"),N=t(23);t(17),y.features.spa=!0;var L,U=0;M.on(u,r),b.on(p,r),P.on(p,r),M.on(d,o),b.on(l,o),P.on(l,o),M.buffer([u,d,"xhr-resolved"]),R.buffer([u]),O.buffer(["setTimeout"+c,"clearTimeout"+s,u]),S.buffer([u,"new-xhr","send-xhr"+s]),T.buffer([m+s,m+"-done",m+f+s,m+f+c]),E.buffer(["newURL"]),x.buffer([u]),b.buffer(["propagate",p,l,"executor-err","resolve"+s]),C.buffer([u,"no-"+u]),P.buffer(["new-jsonp","cb-start","jsonp-error","jsonp-end"]),a(T,m+s),a(T,m+"-done"),a(P,"new-jsonp"),a(P,"jsonp-end"),a(P,"cb-start"),E.on("pushState-end",i),E.on("replaceState-end",i),w[v]("hashchange",i,N(!0)),w[v]("load",i,N(!0)),w[v]("popstate",function(){i(0,U>1)},N(!0))}},{}],5:[function(t,e,n){function r(){var t=new PerformanceObserver(function(t,e){var n=t.getEntries();s(v,[n])});try{t.observe({entryTypes:["resource"]})}catch(e){}}function o(t){if(s(v,[window.performance.getEntriesByType(w)]),window.performance["c"+p])try{window.performance[h](m,o,!1)}catch(t){}else try{window.performance[h]("webkit"+m,o,!1)}catch(t){}}function i(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var a=t("ee"),s=t("handle"),c=t(14),f=t(13),u=t(6),d=t(23),p="learResourceTimings",l="addEventListener",h="removeEventListener",m="resourcetimingbufferfull",v="bstResource",w="resource",g="-start",y="-end",x="fn"+g,b="fn"+y,E="bstTimer",R="pushState",O=t("loader");if(!O.disabled){O.features.stn=!0,t(9),"addEventListener"in window&&t(7);var T=NREUM.o.EV;a.on(x,function(t,e){var n=t[0];n instanceof T&&(this.bstStart=O.now())}),a.on(b,function(t,e){var n=t[0];n instanceof T&&s("bst",[n,e,this.bstStart,O.now()])}),c.on(x,function(t,e,n){this.bstStart=O.now(),this.bstType=n}),c.on(b,function(t,e){s(E,[e,this.bstStart,O.now(),this.bstType])}),f.on(x,function(){this.bstStart=O.now()}),f.on(b,function(t,e){s(E,[e,this.bstStart,O.now(),"requestAnimationFrame"])}),a.on(R+g,function(t){this.time=O.now(),this.startPath=location.pathname+location.hash}),a.on(R+y,function(t){s("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),u()?(s(v,[window.performance.getEntriesByType("resource")]),r()):l in window.performance&&(window.performance["c"+p]?window.performance[l](m,o,d(!1)):window.performance[l]("webkit"+m,o,d(!1))),document[l]("scroll",i,d(!1)),document[l]("keypress",i,d(!1)),document[l]("click",i,d(!1))}}},{}],6:[function(t,e,n){e.exports=function(){return"PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver}},{}],7:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&o(e)}function o(t){s.inPlace(t,[u,d],"-",i)}function i(t,e){return t[1]}var a=t("ee").get("events"),s=t("wrap-function")(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(o(window),o(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1];if(null!==n&&("function"==typeof n||"object"==typeof n)){var r=c(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?s(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],8:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=i(arguments),e={};o.emit(n+"before-start",[t],e);var a;e[m]&&e[m].dt&&(a=e[m].dt);var s=r.apply(this,t);return o.emit(n+"start",[t,a],s),s.then(function(t){return o.emit(n+"end",[null,t],s),t},function(t){throw o.emit(n+"end",[t],s),t})})}var o=t("ee").get("fetch"),i=t(33),a=t(32);e.exports=o;var s=window,c="fetch-",f=c+"body-",u=["arrayBuffer","blob","json","text","formData"],d=s.Request,p=s.Response,l=s.fetch,h="prototype",m="nr@context";d&&p&&l&&(a(u,function(t,e){r(d[h],e,f),r(p[h],e,f)}),r(s,"fetch",c),o.on(c+"end",function(t,e){var n=this;if(e){var r=e.headers.get("content-length");null!==r&&(n.rxSize=r),o.emit(c+"done",[null,e],n)}else o.emit(c+"done",[t],n)}))},{}],9:[function(t,e,n){var r=t("ee").get("history"),o=t("wrap-function")(r);e.exports=r;var i=window.history&&window.history.constructor&&window.history.constructor.prototype,a=window.history;i&&i.pushState&&i.replaceState&&(a=i),o.inPlace(a,["pushState","replaceState"],"-")},{}],10:[function(t,e,n){function r(t){function e(){f.emit("jsonp-end",[],l),t.removeEventListener("load",e,c(!1)),t.removeEventListener("error",n,c(!1))}function n(){f.emit("jsonp-error",[],l),f.emit("jsonp-end",[],l),t.removeEventListener("load",e,c(!1)),t.removeEventListener("error",n,c(!1))}var r=t&&"string"==typeof t.nodeName&&"script"===t.nodeName.toLowerCase();if(r){var o="function"==typeof t.addEventListener;if(o){var a=i(t.src);if(a){var d=s(a),p="function"==typeof d.parent[d.key];if(p){var l={};u.inPlace(d.parent,[d.key],"cb-",l),t.addEventListener("load",e,c(!1)),t.addEventListener("error",n,c(!1)),f.emit("new-jsonp",[t.src],l)}}}}}function o(){return"addEventListener"in window}function i(t){var e=t.match(d);return e?e[1]:null}function a(t,e){var n=t.match(l),r=n[1],o=n[3];return o?a(o,e[r]):e[r]}function s(t){var e=t.match(p);return e&&e.length>=3?{key:e[2],parent:a(e[1],window)}:{key:t,parent:window}}var c=t(23),f=t("ee").get("jsonp"),u=t("wrap-function")(f);if(e.exports=f,o()){var d=/[?&](?:callback|cb)=([^&#]+)/,p=/(.*)\.([^.]+)/,l=/^(\w+)(\.|$)(.*)$/,h=["appendChild","insertBefore","replaceChild"];Node&&Node.prototype&&Node.prototype.appendChild?u.inPlace(Node.prototype,h,"dom-"):(u.inPlace(HTMLElement.prototype,h,"dom-"),u.inPlace(HTMLHeadElement.prototype,h,"dom-"),u.inPlace(HTMLBodyElement.prototype,h,"dom-")),f.on("dom-start",function(t){r(t[0])})}},{}],11:[function(t,e,n){var r=t("ee").get("mutation"),o=t("wrap-function")(r),i=NREUM.o.MO;e.exports=r,i&&(window.MutationObserver=function(t){return this instanceof i?new i(o(t,"fn-")):i.apply(this,arguments)},MutationObserver.prototype=i.prototype)},{}],12:[function(t,e,n){function r(t){var e=i.context(),n=s(t,"executor-",e,null,!1),r=new f(n);return i.context(r).getCtx=function(){return e},r}var o=t("wrap-function"),i=t("ee").get("promise"),a=t("ee").getOrSetContext,s=o(i),c=t(32),f=NREUM.o.PR;e.exports=i,f&&(window.Promise=r,["all","race"].forEach(function(t){var e=f[t];f[t]=function(n){function r(t){return function(){i.emit("propagate",[null,!o],a,!1,!1),o=o||!t}}var o=!1;c(n,function(e,n){Promise.resolve(n).then(r("all"===t),r(!1))});var a=e.apply(f,arguments),s=f.resolve(a);return s}}),["resolve","reject"].forEach(function(t){var e=f[t];f[t]=function(t){var n=e.apply(f,arguments);return t!==n&&i.emit("propagate",[t,!0],n,!1,!1),n}}),f.prototype["catch"]=function(t){return this.then(null,t)},f.prototype=Object.create(f.prototype,{constructor:{value:r}}),c(Object.getOwnPropertyNames(f),function(t,e){try{r[e]=f[e]}catch(n){}}),o.wrapInPlace(f.prototype,"then",function(t){return function(){var e=this,n=o.argsToArray.apply(this,arguments),r=a(e);r.promise=e,n[0]=s(n[0],"cb-",r,null,!1),n[1]=s(n[1],"cb-",r,null,!1);var c=t.apply(this,n);return r.nextPromise=c,i.emit("propagate",[e,!0],c,!1,!1),c}}),i.on("executor-start",function(t){t[0]=s(t[0],"resolve-",this,null,!1),t[1]=s(t[1],"resolve-",this,null,!1)}),i.on("executor-err",function(t,e,n){t[1](n)}),i.on("cb-end",function(t,e,n){i.emit("propagate",[n,!0],this.nextPromise,!1,!1)}),i.on("propagate",function(t,e,n){this.getCtx&&!e||(this.getCtx=function(){if(t instanceof Promise)var e=i.context(t);return e&&e.getCtx?e.getCtx():this})}),r.toString=function(){return""+f})},{}],13:[function(t,e,n){var r=t("ee").get("raf"),o=t("wrap-function")(r),i="equestAnimationFrame";e.exports=r,o.inPlace(window,["r"+i,"mozR"+i,"webkitR"+i,"msR"+i],"raf-"),r.on("raf-start",function(t){t[0]=o(t[0],"fn-")})},{}],14:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function o(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var i=t("ee").get("timer"),a=t("wrap-function")(i),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";e.exports=i,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),i.on(c+u,r),i.on(s+u,o)},{}],15:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",s)}function o(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function i(t){x.push(t),m&&(E?E.then(a):w?w(a):(R=-R,O.data=R))}function a(){for(var t=0;t<x.length;t++)r([],x[t]);x.length&&(x=[])}function s(t,e){return e}function c(t,e){for(var n in t)e[n]=t[n];return e}t(7);var f=t("ee"),u=f.get("xhr"),d=t("wrap-function")(u),p=t(23),l=NREUM.o,h=l.XHR,m=l.MO,v=l.PR,w=l.SI,g="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],x=[];e.exports=u;var b=window.XMLHttpRequest=function(t){var e=new h(t);try{u.emit("new-xhr",[e],e),e.addEventListener(g,o,p(!1))}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(c(h,b),b.prototype=h.prototype,d.inPlace(b.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,e){r(t,e),i(e)}),u.on("open-xhr-start",r),m){var E=v&&v.resolve();if(!w&&!v){var R=1,O=document.createTextNode(R);new m(a).observe(O,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===g||a()})},{}],16:[function(t,e,n){function r(t){if(!s(t))return null;var e=window.NREUM;if(!e.loader_config)return null;var n=(e.loader_config.accountID||"").toString()||null,r=(e.loader_config.agentID||"").toString()||null,f=(e.loader_config.trustKey||"").toString()||null;if(!n||!r)return null;var h=l.generateSpanId(),m=l.generateTraceId(),v=Date.now(),w={spanId:h,traceId:m,timestamp:v};return(t.sameOrigin||c(t)&&p())&&(w.traceContextParentHeader=o(h,m),w.traceContextStateHeader=i(h,v,n,r,f)),(t.sameOrigin&&!u()||!t.sameOrigin&&c(t)&&d())&&(w.newrelicHeader=a(h,m,v,n,r,f)),w}function o(t,e){return"00-"+e+"-"+t+"-01"}function i(t,e,n,r,o){var i=0,a="",s=1,c="",f="";return o+"@nr="+i+"-"+s+"-"+n+"-"+r+"-"+t+"-"+a+"-"+c+"-"+f+"-"+e}function a(t,e,n,r,o,i){var a="btoa"in window&&"function"==typeof window.btoa;if(!a)return null;var s={v:[0,1],d:{ty:"Browser",ac:r,ap:o,id:t,tr:e,ti:n}};return i&&r!==i&&(s.d.tk=i),btoa(JSON.stringify(s))}function s(t){return f()&&c(t)}function c(t){var e=!1,n={};if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(n=NREUM.init.distributed_tracing),t.sameOrigin)e=!0;else if(n.allowed_origins instanceof Array)for(var r=0;r<n.allowed_origins.length;r++){var o=h(n.allowed_origins[r]);if(t.hostname===o.hostname&&t.protocol===o.protocol&&t.port===o.port){e=!0;break}}return e}function f(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.enabled}function u(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.exclude_newrelic_header}function d(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&NREUM.init.distributed_tracing.cors_use_newrelic_header!==!1}function p(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.cors_use_tracecontext_headers}var l=t(29),h=t(18);e.exports={generateTracePayload:r,shouldGenerateTrace:s}},{}],17:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<p;r++)t.removeEventListener(d[r],this.listener,!1);return e.protocol&&"data"===e.protocol?void g("Ajax/DataUrl/Excluded"):void(e.aborted||(n.duration=a.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==e.status&&(e.status=0):i(this,t),n.cbTime=this.cbTime,s("xhr",[e,n,this.startTime,this.endTime,"xhr"],this)))}}function o(t,e){var n=c(e),r=t.params;r.hostname=n.hostname,r.port=n.port,r.protocol=n.protocol,r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.parsedOrigin=n,t.sameOrigin=n.sameOrigin}function i(t,e){t.params.status=e.status;var n=v(e,t.lastSize);if(n&&(t.metrics.rxSize=n),t.sameOrigin){var r=e.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var a=t("loader");if(a.xhrWrappable&&!a.disabled){var s=t("handle"),c=t(18),f=t(16).generateTracePayload,u=t("ee"),d=["load","error","abort","timeout"],p=d.length,l=t("id"),h=t(24),m=t(22),v=t(19),w=t(23),g=t(25).recordSupportability,y=NREUM.o.REQ,x=window.XMLHttpRequest;a.features.xhr=!0,t(15),t(8),u.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,e.loadCaptureCalled=!1,e.params=this.params||{},e.metrics=this.metrics||{},t.addEventListener("load",function(n){i(e,t)},w(!1)),h&&(h>34||h<10)||t.addEventListener("progress",function(t){e.lastSize=t.loaded},w(!1))}),u.on("open-xhr-start",function(t){this.params={method:t[0]},o(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var n=f(this.parsedOrigin);if(n){var r=!1;n.newrelicHeader&&(e.setRequestHeader("newrelic",n.newrelicHeader),r=!0),n.traceContextParentHeader&&(e.setRequestHeader("traceparent",n.traceContextParentHeader),n.traceContextStateHeader&&e.setRequestHeader("tracestate",n.traceContextStateHeader),r=!0),r&&(this.dt=n)}}),u.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],o=this;if(n&&r){var i=m(r);i&&(n.txSize=i)}this.startTime=a.now(),this.listener=function(t){try{"abort"!==t.type||o.loadCaptureCalled||(o.params.aborted=!0),("load"!==t.type||o.called===o.totalCbs&&(o.onloadCalled||"function"!=typeof e.onload))&&o.end(e)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}};for(var s=0;s<p;s++)e.addEventListener(d[s],this.listener,w(!1))}),u.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),u.on("xhr-load-added",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,e){var n=""+l(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),u.on("xhr-resolved",function(){this.endTime=a.now()}),u.on("addEventListener-end",function(t,e){e instanceof x&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],e)}),u.on("removeEventListener-end",function(t,e){e instanceof x&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],e)}),u.on("fn-start",function(t,e,n){e instanceof x&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),u.on("fn-end",function(t,e){this.xhrCbStart&&u.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)}),u.on("fetch-before-start",function(t){function e(t,e){var n=!1;return e.newrelicHeader&&(t.set("newrelic",e.newrelicHeader),n=!0),e.traceContextParentHeader&&(t.set("traceparent",e.traceContextParentHeader),e.traceContextStateHeader&&t.set("tracestate",e.traceContextStateHeader),n=!0),n}var n,r=t[1]||{};"string"==typeof t[0]?n=t[0]:t[0]&&t[0].url?n=t[0].url:window.URL&&t[0]&&t[0]instanceof URL&&(n=t[0].href),n&&(this.parsedOrigin=c(n),this.sameOrigin=this.parsedOrigin.sameOrigin);var o=f(this.parsedOrigin);if(o&&(o.newrelicHeader||o.traceContextParentHeader))if("string"==typeof t[0]||window.URL&&t[0]&&t[0]instanceof URL){var i={};for(var a in r)i[a]=r[a];i.headers=new Headers(r.headers||{}),e(i.headers,o)&&(this.dt=o),t.length>1?t[1]=i:t.push(i)}else t[0]&&t[0].headers&&e(t[0].headers,o)&&(this.dt=o)}),u.on("fetch-start",function(t,e){this.params={},this.metrics={},this.startTime=a.now(),this.dt=e,t.length>=1&&(this.target=t[0]),t.length>=2&&(this.opts=t[1]);var n,r=this.opts||{},i=this.target;if("string"==typeof i?n=i:"object"==typeof i&&i instanceof y?n=i.url:window.URL&&"object"==typeof i&&i instanceof URL&&(n=i.href),o(this,n),"data"!==this.params.protocol){var s=(""+(i&&i instanceof y&&i.method||r.method||"GET")).toUpperCase();this.params.method=s,this.txSize=m(r.body)||0}}),u.on("fetch-done",function(t,e){if(this.endTime=a.now(),this.params||(this.params={}),"data"===this.params.protocol)return void g("Ajax/DataUrl/Excluded");this.params.status=e?e.status:0;var n;"string"==typeof this.rxSize&&this.rxSize.length>0&&(n=+this.rxSize);var r={txSize:this.txSize,rxSize:n,duration:a.now()-this.startTime};s("xhr",[this.params,r,this.startTime,this.endTime,"fetch"],this)})}},{}],18:[function(t,e,n){var r={};e.exports=function(t){if(t in r)return r[t];if(0===(t||"").indexOf("data:"))return{protocol:"data"};var e=document.createElement("a"),n=window.location,o={};e.href=t,o.port=e.port;var i=e.href.split("://");!o.port&&i[1]&&(o.port=i[1].split("/")[0].split("@").pop().split(":")[1]),o.port&&"0"!==o.port||(o.port="https"===i[0]?"443":"80"),o.hostname=e.hostname||n.hostname,o.pathname=e.pathname,o.protocol=i[0],"/"!==o.pathname.charAt(0)&&(o.pathname="/"+o.pathname);var a=!e.protocol||":"===e.protocol||e.protocol===n.protocol,s=e.hostname===document.domain&&e.port===n.port;return o.sameOrigin=a&&(!e.hostname||s),"/"===o.pathname&&(r[t]=o),o}},{}],19:[function(t,e,n){function r(t,e){var n=t.responseType;return"json"===n&&null!==e?e:"arraybuffer"===n||"blob"===n||"json"===n?o(t.response):"text"===n||""===n||void 0===n?o(t.responseText):void 0}var o=t(22);e.exports=r},{}],20:[function(t,e,n){function r(){}function o(t,e,n,r){return function(){return u.recordSupportability("API/"+e+"/called"),i(t+e,[f.now()].concat(s(arguments)),n?null:this,r),n?void 0:this}}var i=t("handle"),a=t(32),s=t(33),c=t("ee").get("tracer"),f=t("loader"),u=t(25),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",h=l+"ixn-";a(p,function(t,e){d[e]=o(l,e,!0,"api")}),d.addPageAction=o(l,"addPageAction",!0),d.setCurrentRouteName=o(l,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(h+"tracer",[f.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[f.now(),r,o],n),o)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[f.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=o(h,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),u.recordSupportability("API/noticeError/called"),i("err",[t,f.now(),!1,e])}},{}],21:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],22:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],23:[function(t,e,n){var r=!1;try{var o=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,o),window.removeEventListener("testPassive",null,o)}catch(i){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],24:[function(t,e,n){var r=0,o=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);o&&(r=+o[1]),e.exports=r},{}],25:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return i("storeMetric",n,null,"api"),n}function o(t,e){var n=[s,t,{name:t},e];return i("storeEventMetrics",n,null,"api"),n}var i=t("handle"),a="sm",s="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:s},recordSupportability:r,recordCustom:o}},{}],26:[function(t,e,n){function r(){return s.exists&&performance.now?Math.round(performance.now()):(i=Math.max((new Date).getTime(),i))-a}function o(){return i}var i=(new Date).getTime(),a=i,s=t(34);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=o},{}],27:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],28:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?l("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&l("timing",["fcp",Math.floor(t.startTime)])})}function o(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(f&&f<r.startTime)return;var o=[r],i=a({});i&&o.push(i),l("lcp",o)}}function i(t){t.getEntries().forEach(function(t){t.hadRecentInput||l("cls",[t])})}function a(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t}function s(t){if(t instanceof w&&!y){var e=Math.round(t.timeStamp),n={type:t.type};a(n),e<=h.now()?n.fid=h.now()-e:e>h.offset&&e<=Date.now()?(e-=h.offset,n.fid=h.now()-e):e=h.now(),y=!0,l("timing",["fi",e,n])}}function c(t){"hidden"===t&&(f=h.now(),l("pageHide",[f]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,d,p,l=t("handle"),h=t("loader"),m=t(31),v=t(23),w=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){u=new PerformanceObserver(r);try{u.observe({entryTypes:["paint"]})}catch(g){}d=new PerformanceObserver(o);try{d.observe({entryTypes:["largest-contentful-paint"]})}catch(g){}p=new PerformanceObserver(i);try{p.observe({type:"layout-shift",buffered:!0})}catch(g){}}if("addEventListener"in document){var y=!1,x=["click","keydown","mousedown","pointerdown","touchstart"];x.forEach(function(t){document.addEventListener(t,s,v(!1))})}m(c)}},{}],29:[function(t,e,n){function r(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(e=r.getRandomValues(new Uint8Array(31)));for(var o,i="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",s=0;s<i.length;s++)o=i[s],"x"===o?a+=t().toString(16):"y"===o?(o=3&t()|8,a+=o.toString(16)):a+=o;return a}function o(){return a(16)}function i(){return a(32)}function a(t){function e(){return n?15&n[r++]:16*Math.random()|0}var n=null,r=0,o=window.crypto||window.msCrypto;o&&o.getRandomValues&&Uint8Array&&(n=o.getRandomValues(new Uint8Array(31)));for(var i=[],a=0;a<t;a++)i.push(e().toString(16));return i.join("")}e.exports={generateUuid:r,generateSpanId:o,generateTraceId:i}},{}],30:[function(t,e,n){function r(t,e){if(!o)return!1;if(t!==o)return!1;if(!e)return!0;if(!i)return!1;for(var n=i.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var s=navigator.userAgent,c=s.match(a);c&&s.indexOf("Chrome")===-1&&s.indexOf("Chromium")===-1&&(o="Safari",i=c[1])}e.exports={agent:o,version:i,match:r}},{}],31:[function(t,e,n){function r(t){function e(){t(s&&document[s]?document[s]:document[i]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,o(!1))}var o=t(23);e.exports=r;var i,a,s;"undefined"!=typeof document.hidden?(i="hidden",a="visibilitychange",s="visibilityState"):"undefined"!=typeof document.msHidden?(i="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(i="webkitHidden",a="webkitvisibilitychange",s="webkitVisibilityState")},{}],32:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],33:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],34:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?f(t,c,a):a()}function n(n,r,o,i,a){if(a!==!1&&(a=!0),!l.aborted||i){t&&a&&t(n,r,o);for(var s=e(o),c=m(n),f=c.length,u=0;u<f;u++)c[u].apply(s,r);var p=d[y[n]];return p&&p.push([x,n,r,s]),s}}function i(t,e){g[t]=m(t).concat(e)}function h(t,e){var n=g[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return g[t]||[]}function v(t){return p[t]=p[t]||o(n)}function w(t,e){l.aborted||u(t,function(t,n){e=e||"feature",y[n]=e,e in d||(d[e]=[])})}var g={},y={},x={on:i,addEventListener:i,removeEventListener:h,emit:n,get:v,listeners:m,context:e,buffer:w,abort:s,aborted:!1};return x}function i(t){return f(t,c,a)}function a(){return new r}function s(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var c="nr@context",f=t("gos"),u=t(32),d={},p={},l=e.exports=o();e.exports.getOrSetContext=i,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!S++){var t=T.info=NREUM.info,e=v.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();c(R,function(e,n){t[e]||(t[e]=n)});var n=a();s("mark",["onload",n+T.offset],null,"api"),s("timing",["load",n]);var r=v.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=h+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function o(){"complete"===v.readyState&&i()}function i(){s("mark",["domContent",a()+T.offset],null,"api")}var a=t(26),s=t("handle"),c=t(32),f=t("ee"),u=t(30),d=t(27),p=t(21),l=t(23),h=p.getConfiguration("ssl")===!1?"http":"https",m=window,v=m.document,w="addEventListener",g="attachEvent",y=m.XMLHttpRequest,x=y&&y.prototype,b=!d(m.location);NREUM.o={ST:setTimeout,SI:m.setImmediate,CT:clearTimeout,XHR:y,REQ:m.Request,EV:m.Event,PR:m.Promise,MO:m.MutationObserver};var E=""+location,R={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-spa-1215.min.js"},O=y&&x&&x[w]&&!/CriOS/.test(navigator.userAgent),T=e.exports={offset:a.getLastTimestamp(),now:a,origin:E,features:{},xhrWrappable:O,userAgent:u,disabled:b};if(!b){t(20),t(28),v[w]?(v[w]("DOMContentLoaded",i,l(!1)),m[w]("load",r,l(!1))):(v[g]("onreadystatechange",o),m[g]("onload",r)),s("mark",["firstbyte",a.getLastTimestamp()],null,"api");var S=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,c,f){function nrWrapper(){var i,a,u,p;try{a=this,i=d(arguments),u="function"==typeof r?r(i,a):r||{}}catch(l){o([l,"",[i,a,c],u],t)}s(n+"start",[i,a,c],u,f);try{return p=e.apply(a,i)}catch(h){throw s(n+"err",[i,a,h],u,f),h}finally{s(n+"end",[i,a,p],u,f)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,i(e,nrWrapper,t),nrWrapper)}function r(t,e,r,o,i){r||(r="");var s,c,f,u="-"===r.charAt(0);for(f=0;f<e.length;f++)c=e[f],s=t[c],a(s)||(t[c]=n(s,u?c+r:r,o,c,i))}function s(n,r,i,a){if(!h||e){var s=h;h=!0;try{t.emit(n,r,i,e,a)}catch(c){o([c,n,r,i],t)}h=s}}return t||(t=u),n.inPlace=r,n.flag=p,n}function o(t,e){e||(e=u);try{e.emit("internal-error",t)}catch(n){}}function i(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(i){o([i],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function s(t,e){var n=e(t);return n[p]=t,i(t,n,u),n}function c(t,e,n){var r=t[e];t[e]=s(r,n)}function f(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var u=t("ee"),d=t(33),p="nr@original",l=Object.prototype.hasOwnProperty,h=!1;e.exports=r,e.exports.wrapFunction=s,e.exports.wrapInPlace=c,e.exports.argsToArray=f},{}]},{},["loader",2,17,5,3,4]);</script>  <meta data-react-helmet="true" name="robots" content="nofollow, noindex"/><meta data-react-helmet="true" name="apple-itunes-app" content="app-id=8G322PBP8A"/><meta data-react-helmet="true" property="fb:app_id" content="576905273177192"/><meta data-react-helmet="true" property="og:image" content="https://images.salto.fr/v1/images/1994053/raw"/><meta data-react-helmet="true" property="og:image:height" content="630"/><meta data-react-helmet="true" property="og:image:width" content="1120"/><meta data-react-helmet="true" property="og:site_name" content="Salto"/><meta data-react-helmet="true" name="twitter:app:id:googleplay" content="fr.salto.app"/><meta data-react-helmet="true" name="twitter:app:id:ipad" content="1007261596706639874"/><meta data-react-helmet="true" name="twitter:app:id:iphone" content="1007261596706639874"/><meta data-react-helmet="true" name="twitter:app:name:googleplay" content="Salto"/><meta data-react-helmet="true" name="twitter:app:name:ipad" content="Salto"/><meta data-react-helmet="true" name="twitter:app:name:iphone" content="Salto"/><meta data-react-helmet="true" name="twitter:card" content="summary_large_image"/><meta data-react-helmet="true" name="twitter:creator" content="@Salto_fr"/><meta data-react-helmet="true" name="twitter:domain" content="salto.fr"/><meta data-react-helmet="true" name="twitter:image" content="https://images.salto.fr/v1/images/1994053/raw"/><meta data-react-helmet="true" name="twitter:site" content="@Salto_fr"/><meta data-react-helmet="true" name="description" content="1 mois offert sur SALTO : découvrez des séries inédites, replongez dans vos séries cultes &amp; films, regardez vos programmes TV en avant-première ou saisons intégrales"/><meta data-react-helmet="true" property="og:description" content="1 mois offert sur SALTO : découvrez des séries inédites, replongez dans vos séries cultes &amp; films, regardez vos programmes TV en avant-première ou saisons intégrales"/><meta data-react-helmet="true" property="og:title" content="SALTO : plateforme TV, séries &amp; streaming en illimité"/><meta data-react-helmet="true" name="title" content="SALTO : plateforme TV, séries &amp; streaming en illimité"/><meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,minimum-scale=1,maximum-scale=1"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes"><meta name="version" content="SALTO (5.29.2)"><meta name="theme-color" content="#17142d"><link rel="shortcut icon" href="/favicon-169163febe4498f8d755ccbd07cf84b2.ico"><link rel="apple-touch-icon" href="/assets/images/icons/touch/touch-icon-iphone-5ad4145503.png"><link rel="apple-touch-icon" sizes="76x76" href="/assets/images/icons/touch/touch-icon-ipad-64caef5c61.png"><link rel="apple-touch-icon" sizes="120x120" href="/assets/images/icons/touch/touch-icon-iphone-retina-12a49408d7.png"><link rel="apple-touch-icon" sizes="152x152" href="/assets/images/icons/touch/touch-icon-ipad-retina-70cc2fd6be.png"> <link rel="dns-prefetch" href="https://ad-configurator.salto.fr/graphql/undefined/customers/salto">  <link rel="dns-prefetch" href="http://adgateway.6play.fr/v5">  <link rel="dns-prefetch" href="https://d16w83149ahatb.6cloud.fr">  <link rel="dns-prefetch" href="https://front-auth.salto.fr/v2">  <link rel="dns-prefetch" href="https://api-consumer-auth.salto.fr/api/salto/token">  <link rel="dns-prefetch" href="https://coupons.salto.fr/v1">  <link rel="dns-prefetch" href="https://drm.salto.fr/v1">  <link rel="dns-prefetch" href="https://e.salto.fr">  <link rel="dns-prefetch" href="https://gelf.m6web.fr">  <link rel="dns-prefetch" href="https://geo.salto.fr/v1">  <link rel="dns-prefetch" href="https://heartbeat-v2.salto.fr/v2">  <link rel="dns-prefetch" href="https://images.salto.fr/v2">  <link rel="dns-prefetch" href="https://ad-interceptor.6cloud.fr/v1">  <link rel="dns-prefetch" href="https://layout.salto.fr/front/v1">  <link rel="dns-prefetch" href="https://pc.middleware.salto.fr/6play/v2">  <link rel="dns-prefetch" href="https://mon.m6web.fr">  <link rel="dns-prefetch" href="https://premium.m6web.fr">  <link rel="dns-prefetch" href="https://stores.salto.fr">  <link rel="dns-prefetch" href="https://time.salto.fr">  <link rel="dns-prefetch" href="https://urlhitter.m6web.fr/v2">  <link rel="dns-prefetch" href="https://users.salto.fr/v2">   <link rel="preload" href="/assets/fonts/pluto-bold-2679a23ad6.woff2" as="font" type="font/woff2" crossorigin>  <link rel="preload" href="/assets/fonts/pluto-heavy-136f32adcd.woff2" as="font" type="font/woff2" crossorigin>  <link rel="preload" href="/assets/fonts/pluto-medium-c162536dd3.woff2" as="font" type="font/woff2" crossorigin>  <link rel="preload" href="/assets/fonts/pluto-regular-1a797e6e05.woff2" as="font" type="font/woff2" crossorigin> <link rel="stylesheet" href="/client-9a87e05c20.bundle.css"> <link data-chunk="main" rel="stylesheet" href="/main-61c1d95f4f.bundle.css">
+<link data-chunk="static" rel="stylesheet" href="/static-d82595b24c.bundle.css"><link href="/zed-261339a042.bundle.css" rel="stylesheet"> <style data-styled="true" data-styled-version="5.1.1">.ekqwao p{margin:10px 0;}/*!sc*/
+.ekqwao p:first-child{margin-top:0;}/*!sc*/
+.ekqwao p:last-child{margin-bottom:0;}/*!sc*/
+.ekqwao li{margin:0 0 10px 30px;}/*!sc*/
+data-styled.g421[id="sc-1bhhnaw-0"]{content:"ekqwao,"}/*!sc*/
+.dDXcBs{position:fixed;bottom:0;left:0;right:0;width:100%;z-index:1000;max-height:100%;-webkit-transition:all 0.3s ease-in-out;transition:all 0.3s ease-in-out;}/*!sc*/
+.app--with-bottombar .dDXcBs{bottom:60px;}/*!sc*/
+@media (min-width:768px){.app--with-bottombar .dDXcBs{bottom:0;}}/*!sc*/
+data-styled.g529[id="n913wo-2"]{content:"dDXcBs,"}/*!sc*/
+.bmbTuQ.app--with-bottombar .has-navigation-control,.bmbTuQ.app--with-bottombar .account__content,.bmbTuQ.app--with-bottombar .faq-page,.bmbTuQ.app--with-bottombar .page .consent-page{min-height:calc(100vh - 60px);}/*!sc*/
+@media (min-width:768px){.bmbTuQ.app--with-bottombar .has-navigation-control,.bmbTuQ.app--with-bottombar .account__content,.bmbTuQ.app--with-bottombar .faq-page,.bmbTuQ.app--with-bottombar .page .consent-page{min-height:calc(100vh - 64px);}}/*!sc*/
+data-styled.g530[id="n913wo-3"]{content:"bmbTuQ,"}/*!sc*/
+.cuyMWW{display:-webkit-box;display:-webkit-flex;display:-ms-flexbox;display:flex;-webkit-flex-direction:column;-ms-flex-direction:column;flex-direction:column;height:100%;}/*!sc*/
+.cuyMWW > .n913wo-4{-webkit-flex:1 1 auto;-ms-flex:1 1 auto;flex:1 1 auto;}/*!sc*/
+.cuyMWW > .n913wo-0,.cuyMWW > .n913wo-1{-webkit-flex:0 0 auto;-ms-flex:0 0 auto;flex:0 0 auto;}/*!sc*/
+data-styled.g532[id="n913wo-5"]{content:"cuyMWW,"}/*!sc*/
+@font-face{font-family:Pluto;src:local("Pluto Heavy"),local("Pluto-Heavy"),url("/assets/fonts/pluto-heavy-136f32adcd.woff2") format("woff2"),url("/assets/fonts/pluto-heavy-31ff6d6a47.woff") format("woff");font-style:normal;font-weight:900;font-display:swap;}/*!sc*/
+@font-face{font-family:Pluto;src:local("Pluto Bold"),local("Pluto-Bold"),url("/assets/fonts/pluto-bold-2679a23ad6.woff2") format("woff2"),url("/assets/fonts/pluto-bold-f10f094512.woff") format("woff");font-style:normal;font-weight:800;font-display:swap;}/*!sc*/
+@font-face{font-family:Pluto;src:local("Pluto Medium"),local("Pluto-Medium"),url("/assets/fonts/pluto-medium-c162536dd3.woff2") format("woff2"),url("/assets/fonts/pluto-medium-49f5f95902.woff") format("woff");font-style:normal;font-weight:bold;font-display:swap;}/*!sc*/
+@font-face{font-family:Pluto;src:local("Pluto Regular"),local("Pluto-Regular"),url("/assets/fonts/pluto-regular-1a797e6e05.woff2") format("woff2"),url("/assets/fonts/pluto-regular-4d39d5fe7b.woff") format("woff");font-style:normal;font-weight:400;font-display:swap;}/*!sc*/
+:root{--color-ambient:#17142d;--color-rgb-ambient:23,20,45;}/*!sc*/
+html{background-color:#17142d;background-color:var(--color-ambient);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;}/*!sc*/
+body{line-height:1.2;-moz-osx-font-smoothing:grayscale;-ms-overflow-style:-ms-autohiding-scrollbar;font-family:Pluto,Arial,sans-serif;font-size:12px;}/*!sc*/
+@media (min-width:600px){body{font-size:14px;}}/*!sc*/
+@media (min-width:1024px){body{font-size:16px;}}/*!sc*/
+html.no-event,html.no-event body{overflow:hidden;}/*!sc*/
+h1,h2,h3,h4,h5,h6,p{font:inherit;font-size:100%;margin:0;}/*!sc*/
+@media (prefers-reduced-motion:reduce){*,*:hover,*:focus,*::before,*:hover::before,*:focus::before,*::after,*:hover::after,*:focus::after{-webkit-animation:none !important;animation:none !important;-webkit-transition:none !important;transition:none !important;-webkit-scroll-behavior:auto !important;-moz-scroll-behavior:auto !important;-ms-scroll-behavior:auto !important;scroll-behavior:auto !important;}}/*!sc*/
+data-styled.g606[id="sc-global-eIrJC1"]{content:"sc-global-eIrJC1,"}/*!sc*/
+.hQnPnX{max-width:100%;}/*!sc*/
+data-styled.g884[id="rfk6my-0"]{content:"hQnPnX,"}/*!sc*/
+</style><link rel="manifest" href="/manifest-pwa.json"><script>var urlOldBrowserWarning="avertissement-navigateur";var blackListedBrowsers=/((CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS)[ +]+(3[_.]2|4[_.](0|1|2|3)|5[_.](0|1)|6[_.](0|1)|7[_.](0|1)|8[_.](0|1)|8[_.]4|9[_.]0|9[_.](2|3)|10[_.]0|10[_.](2|3))(?:[_.]\d+)?)|(CFNetwork\/672\.1\.15)|(CFNetwork\/709\.1)|(CFNetwork\/711\.(\d))|(CFNetwork\/758\.(\d))|(CFNetwork\/808\.(\d))|(CFNetwork\/.* Darwin\/10\.\d+)|(CFNetwork\/.* Darwin\/11\.\d+)|(CFNetwork\/.* Darwin\/13\.\d+)|(CFNetwork\/6.* Darwin\/14\.\d+)|(CFNetwork\/7.* Darwin\/14\.\d+)|(CFNetwork\/7.* Darwin\/15\.\d+)|(CFNetwork\/8.* Darwin\/16\.5\.\d+)|(CFNetwork\/8.* Darwin\/16\.6\.\d+)|(CFNetwork\/8.* Darwin\/16\.7\.\d+)|(CFNetwork\/8.* Darwin\/16\.\d+)|(Fennec\/((2|3)\.0|3\.(5|6)|([4-9]|1\d|2\d|3\d)\.0)\.?([ab]?\d+[a-z]*))|(Fennec\/((2|3)\.0|3\.(5|6)|([4-9]|1\d|2\d|3\d)\.0)pre)|(Fennec\/((2|3)\.0|3\.(5|6)|([4-9]|1\d|2\d|3\d)\.0))|((Namoroka|Shiretoko|Minefield)\/((2|3)\.0|3\.(5|6)|([4-9]|1\d|2\d|3\d)\.0)\.(\d+(?:pre)?))|((Namoroka|Shiretoko|Minefield)\/((2|3)\.0|3\.(5|6)|([4-9]|1\d|2\d|3\d)\.0)([ab]\d+[a-z]*)?)|(Opera\/9.80.*Version\/(9\.0|9\.(5|6)|10\.(0|1)|10\.(5|6)|11\.(0|1)|11\.(5|6)|12\.(0|1)|(1[5-9]|[2-4]\d|5[0-8])\.0)(?:\.\d+)?)|(CrMo\/([4-9]|1\d|2\d|3\d)\.0\.\d+\.\d+([\d.]+$|.*Safari\/(?![\d.]+ Edge\/[\d.]+$)))|(Edge\/1[2-8](?:\.0)?)|((Chromium|Chrome)\/([4-9]|1\d|2\d|3\d)\.0(?:\.\d+)?([\d.]+$|.*Safari\/(?![\d.]+ Edge\/[\d.]+$)))|(IEMobile[ /](10|11)\.0)|(Version\/(3\.(1|2)|(4|5)\.0|5\.1|6\.(0|1)|7\.(0|1)|(8|9)\.0|9\.1|10\.(0|1)|11\.(0|1))(?:\.\d+)? Safari\/)|(Trident\/7\.0)|(Trident\/6\.0)|(Trident\/5\.0)|(Trident\/4\.0)|(Firefox\/((2|3)\.0|3\.(5|6)|([4-9]|1\d|2\d|3\d)\.0)\.\d+)|(Firefox\/((2|3)\.0|3\.(5|6)|([4-9]|1\d|2\d|3\d)\.0)(pre|[ab]\d+[a-z]*)?)|(([MS]?IE) (5\.5|([6-9]|1[0-1])\.0))/;
+if (
+  blackListedBrowsers.test(navigator.userAgent) &&
+  !/Headless/.test(navigator.userAgent) &&
+  !/FB/.test(navigator.userAgent)
+) {
+  window.location.href = window.location.origin + '/' + urlOldBrowserWarning;
+}</script> 
+
+  <script>var appVersion="5.29.2";</script></head><body><div id="__brk" class="static-page-no-react origin"><div class="n913wo-3 bmbTuQ app app--full-features app--salto app--salto app--ambient app--not-covered"><script type="application/ld+json">{"@context":"http://schema.org","@type":"Organization","legalName":"salto","logo":"https://www.salto.fr/assets/images/services/icon/salto-216eb0d324.png","name":"salto","sameAs":["https://www.facebook.com/saltofr","https://www.instagram.com/saltofr/","https://twitter.com/Salto_fr"],"url":"https://www.salto.fr"}</script><div class="n913wo-5 cuyMWW"><div class="route-loader" style="transform:scaleX(0)"></div><div class="n913wo-4 fCmDdf"><div class="app__content"><div class="static-page"><div class="static-page__header"><div class="logo"><a aria-current="page" class="active" href="/"><img src="/assets/sprites/sprite.88fba89722b4d6325a6ec5ee68033373.svg#salto_ghost-usage" alt="Salto" title="Salto" width="349" height="186" class="sc-1sebzd4-0 eTGBFE rfk6my-0 hQnPnX"/></a></div><h1>Conditions générales d&#x27;abonnement</h1></div><div class="static-page__content"><script type="application/ld+json">{"@context":"http://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"item":{"@id":"https://www.salto.fr/conditions-generales-d-abonnement","name":"Conditions générales d'abonnement"}}]}</script><div class="sc-1bhhnaw-0 ekqwao"><!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Conditions G&Eacute;N&Eacute;RALES D'UTILISATION SALTO</title>
+</head>
+<body>
+<table cellpadding="0" cellspacing="0" border="0">
+	<tr height="10px"><td>&nbsp;</td></tr>
+	<tr>
+		<td align="center" style="font-family:Arial,Helvetica,sans-serif;font-size:20px;line-height:30px;"><b>CONDITIONS G&Eacute;N&Eacute;RALES D'ABONNEMENT  SALTO</b></td>
+	</tr>
+	<tr>
+		<td align="center" style="font-family:Arial,Helvetica,sans-serif;font-size:10px;line-height:14px;">Mise &agrave; jour du 9 novembre 2021</td>
+	</tr>
+	<tr height="20px">
+		<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:5px;line-height:10px;">&nbsp;</td>
+	</tr>
+	<tr>
+		<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;"><b>VEUILLEZ LIRE ATTENTIVEMENT LES CONDITIONS G&Eacute;N&Eacute;RALES D'ABONNEMENT DE SALTO ET EN CONSERVER UNE COPIE.</b>
+		</td>
+	</tr>
+	<tr height="20px">
+		<td style="font-family:Arial,Helvetica,sans-serif;font-size:5px;line-height:10px;">&nbsp;</td>
+	</tr>
+	<!-- Article 1 -->
+	<tr>
+		<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;"><b>ARTICLE 1 : D&Eacute;FINITIONS</b></td>
+	</tr>
+	<tr height="10px">
+		<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:5px;">&nbsp;</td>
+	</tr>
+	<tr>
+		<td>
+			<table cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td width="20px">&nbsp;</td>
+					<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;">
+						<u><em>Abonnement</em></u> : souscription payante &agrave; l'Offre commercialis&eacute;e par SALTO permettant la mise &agrave; disposition de Contenus dans le cadre familial &agrave; un moment choisi par l'utilisateur pendant la dur&eacute;e de son Abonnement. La dur&eacute;e de l'Abonnement se renouvelle automatiquement par tacite reconduction pour une dur&eacute;e identique sauf r&eacute;siliation par l'Abonn&eacute; dans les conditions pr&eacute;cis&eacute;es &agrave; l'article 5.5. ci-apr&egrave;s.<br>
+						<u><em>Abonn&eacute;</em></u> : toute personne physique majeure domicili&eacute;e sur le Territoire disposant d'un Compte Utilisateur qui souscrit &agrave; un Abonnement.<br>
+						<u><em>Application</em></u> : logiciel applicatif gratuit &eacute;dit&eacute; par SALTO t&eacute;l&eacute;chargeable &agrave; partir des Plateformes de Distribution d&eacute;finies ci-apr&egrave;s, permettant &agrave; l'utilisateur de souscrire &agrave; l'Offre et d'acc&eacute;der aux Contenus dans un premier temps sur smartphones et tablettes iOS &agrave; partir de la version 11 et Android &agrave; partir de la version 5.0, les TV via la fonctionnalit&eacute; Chromecast&reg;, les terminaux connect&eacute;s compatibles Android TV&reg; et Apple TV&reg;. Les navigateurs compatibles sont Chrome&reg; &agrave; partir de la version 84, Edge Chromium &agrave; partir de la version 84, FireFox &agrave; partir de la version 79 et Safari &agrave; partir de la version 12.<br>
+						<u><em>CGA</em></u> : ensemble des stipulations pr&eacute;vues aux pr&eacute;sentes Conditions G&eacute;n&eacute;rales d'Abonnement ayant pour objet de d&eacute;finir les modalit&eacute;s d'Abonnement au Service SALTO sous r&eacute;serve du respect des CGU.<br>
+						<u><em>CGU</em></u> : Conditions G&eacute;n&eacute;rales d'Utilisation du Service SALTO .<br>
+						<u><em>Compte Utilisateur</em></u> : d&eacute;signe l'espace r&eacute;serv&eacute; &agrave; l'Abonné &#40;sous condition d'inscription&#41; sur le Service SALTO par le biais d'un identifiant et d'un mot de passe, et lui permettant l'acc&egrave;s &agrave; aux Contenus ainsi que des Services propos&eacute;s sur le Service SALTO.<br>
+						<u><em>Contenus</em></u> : d&eacute;signe sans que cette liste soit limitative les contenus &#40;audiovisuels, textes, rubriques, etc&#41; &agrave; destination de tout public accessibles aux Abonn&eacute;s au Service ainsi que tout autre contenu pr&eacute;sent et/ou tout autre &eacute;l&eacute;ment composant le Service.<br>
+						<u><em>Distributeur du Service</em></u> :  d&eacute;signe tout op&eacute;rateur ayant &eacute;t&eacute; autoris&eacute; par SALTO &agrave; distribuer le Service SALTO &agrave; ses abonn&eacute;s.<br>
+						<u><em>Plateforme</em></u> : d&eacute;signe le Site Internet fixe et/ou sa version mobile, ainsi que les applications mobiles, tablettes et TV connect&eacute;es, permettant d'acc&eacute;der au Service SALTO et &eacute;dit&eacute;es par SALTO SNC.<br>
+						<u><em>Plateformes de Distribution</em></u> : d&eacute;signe tout store d'application &#40;sans que cette liste soit limitative : App Store&reg;, Google Play Store&reg;, etc.&#41; ayant &eacute;t&eacute; autoris&eacute; par SALTO &agrave; distribuer le Service SALTO &agrave; ses Abonn&eacute;s.<br>
+						<u><em>Service&#40;s&#41;</em></u> : d&eacute;signe chacun des services fournis par SALTO et accessibles en ligne sur la Plateforme.<br>
+						<u><em>Service SALTO</em></u> : ensemble des Contenus disponibles sur le Service apr&egrave;s souscription.<br>
+						<u><em>Services Associ&eacute;s</em></u> : services de replay,  services non lin&eacute;aires de communication audiovisuelle  et services proposant des contenus exclusivement num&eacute;riques.<br>
+						<u><em>Site</em></u> : site Internet fixe et/ou sa version mobile accessible depuis l'URL <a href="https://www.salto.fr">https://www.salto.fr</a><br>
+						<u><em>Territoire</em></u> : le Service SALTO est exclusivement destin&eacute; aux r&eacute;sidents en France (DOM-TOM inclus), Monaco et Andorre - ce crit&egrave;re &eacute;tant d&eacute;termin&eacute; par la g&eacute;olocalisation de l'Abonn&eacute;. Toutefois, conform&eacute;ment au r&egrave;glement europ&eacute;en 2017/1128 du 14 juin 2017 relatif &agrave; la portabilit&eacute; transfrontali&egrave;re des services de contenus en ligne sur le march&eacute; int&eacute;rieur, l'Abonn&eacute; pourra acc&eacute;der au Service SALTO dans tout autre pays de l'UE dans lequel il sera pr&eacute;sent &agrave; titre temporaire pendant la dur&eacute;e de son Abonnement, sous r&eacute;serve d'&ecirc;tre r&eacute;sidents d'un des pays list&eacute;s ci-avant dans lequel le Service SALTO est distribu&eacute;. Compte tenu des restrictions impos&eacute;es par certains ayants droit ou certaines Plateformes de Distribution, il est pr&eacute;cis&eacute; que certains contenus ou le Service seront disponibles uniquement sur certains territoires.<br>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<!-- Interligne -->
+	<tr height="20px">
+		<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:5px;">&nbsp;</td>
+	</tr>
+	<!-- Article 2 -->
+	<tr>
+		<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;"><b>ARTICLE 2 - ACCEPTATION DES CONDITIONS G&Eacute;N&Eacute;RALES D'ABONNEMENT</b></td>
+	</tr>
+	<tr height="10px">
+		<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:5px;">&nbsp;</td>
+	</tr>
+	<tr>
+		<td>
+			<table cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td width="20px">&nbsp;</td>
+					<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;">
+						L'acc&egrave;s au Service SALTO est subordonn&eacute; &agrave; votre acceptation pleine et enti&egrave;re des pr&eacute;sentes Conditions G&eacute;n&eacute;rales d'abonnement &#40;ci-apr&egrave;s les "Conditions G&eacute;n&eacute;rales d'Abonnement"&#41;, dans lesquelles figurent les Conditions de vente des services payants propos&eacute;s par SALTO. En cas de contradiction, entre les pr&eacute;sentes CGA et les CGU applicables, les CGA pr&eacute;vaudront sur les CGU.<br>
+						Les CGA applicables sont celles en vigueur lors de votre connexion et utilisation du Service SALTO.<br>
+						SALTO se r&eacute;serve le droit de modifier les CGA &agrave; tout moment en raison notamment d'&eacute;volutions des fonctionnalit&eacute;s du Service ou pour des motifs juridiques ou techniques. Ces modifications sont port&eacute;es &agrave; votre connaissance par leur simple mise en ligne. Elles sont r&eacute;put&eacute;es accept&eacute;es sans r&eacute;serve lorsque vous acc&eacute;dez au Service apr&egrave;s leur mise en ligne. Nous vous invitons donc &agrave; consulter r&eacute;guli&egrave;rement les CGA.
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr height="20px">
+		<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:5px;">&nbsp;</td>
+	</tr>
+	<!-- Article 3 -->
+	<tr>
+		<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;"><b>ARTICLE 3 : PR&Eacute;SENTATION DU SERVICE</b></td>
+	</tr>
+	<tr height="10px">
+		<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:5px;">&nbsp;</td>
+	</tr>
+	<tr>
+		<td>
+			<!-- Article 3.1 -->
+			<table cellpadding="0" cellspacing="0" border="0">
+			  <tr>
+					<td width="20px">&nbsp;</td>
+					<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;"><b>3.1 FONCTIONNEMENT DU SERVICE</b></td>
+				</tr>
+				<tr height="5px">
+					<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+					<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="20px">&nbsp;</td>
+					<td>
+						<table cellpadding="0" cellspacing="0" border="0">
+						<tr>
+							<td width="20px">&nbsp;</td>
+							<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;">
+							SALTO met &agrave; la disposition des Abonn&eacute;s &#40;i&#41; un service de vid&eacute;o &agrave; la demande par abonnement des Contenus, r&eacute;guli&egrave;rement renouvel&eacute;s, &agrave; destination du public, et &#40;ii&#41; un service de visionnage de certaines cha&icirc;nes de t&eacute;l&eacute;vision en direct, et leurs Services Associ&eacute;s permettant aux Abonn&eacute;s, apr&egrave;s souscription d'un Abonnement, de visualiser lesdits Contenus pendant une dur&eacute;e illimit&eacute;e &#40;sous r&eacute;serve de la dur&eacute;e des droits consentis par les ayants droit des Contenus&#41;, dans le cercle de famille, &agrave; tout moment choisi par l'Abonn&eacute; pendant la dur&eacute;e de son Abonnement.<br>
+							Dans le cadre d'une utilisation du Service via un Compte Utilisateur, l'Abonn&eacute; pourra notamment b&eacute;n&eacute;ficier des fonctionnalit&eacute;s suivantes :
+								<li>Acc&egrave;s &agrave; l'ensemble des Contenus &#40;sauf restrictions &eacute;ventuelles d'ayants droit&#41;;</li>
+								<li>La reprise de lecture des Contenus au m&ecirc;me instant lors d'une connexion ult&eacute;rieur;</li>
+								<li>Multi-&eacute;crans, limit&eacute; à 5 appareils pour un m&ecirc;me Compte Utilisateur;</li>
+								<li>Cr&eacute;ation jusqu'&agrave; 5 profils individuels par Compte Utilisateur et 2 profils de kids &amp; foyer;</li>
+								<li>Lecture simultan&eacute;e jusqu'&agrave; 4 vid&eacute;os en fonction de l'Offre souscrite &#40;sauf restrictions &eacute;ventuelles d'ayants droit&#41;;</li>
+								<li>L'ajout de Contenus en favoris &#40;"Ma Liste"&#41;;</li>
+								<li>La suggestion de Contenus;</li>
+								<li>Un moteur de recherche des Contenus;</li>
+								<li>Acc&egrave;s &agrave; un espace jeunesse d&eacute;di&eacute;;</li>
+								<li>Un contr&ocirc;le parental permettant de bloquer l'acc&egrave;s &agrave; certains contenus;</li>
+								<li>La lecture de contenus diffus&eacute;s en direct &agrave; la TV avec la possibilit&eacute; de recommencer le programme au d&eacute;but;</li>
+							L'Abonn&eacute; pourra b&eacute;n&eacute;ficier de son Abonnement sur toutes les Plateformes compatibles.
+							</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr height="10px">
+					<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+					<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<!-- Article 3.2 -->
+			<table cellpadding="0" cellspacing="0" border="0">
+			  <tr>
+					<td width="20px">&nbsp;</td>
+					<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;"><b>3.2 &Eacute;QUIPEMENTS N&Eacute;CESSAIRES</b></td>
+			</tr>
+			<tr height="5px">
+				<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+				<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+			</tr>
+			<tr>
+				<td width="20px">&nbsp;</td>
+				<td>
+					<table cellpadding="0" cellspacing="0" border="0">
+						<tr>
+							<td width="20px">&nbsp;</td>
+							<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;">
+							Le Service SALTO est accessible depuis un ordinateur, un &eacute;quipement mobile et/ou une t&eacute;l&eacute;vision.<br>
+								<li>Ordinateur : Le Service SALTO est accessible, &#40;i&#41; depuis un micro-ordinateur PC, &eacute;quip&eacute; de Microsoft&reg; Windows&reg; 8,1 ou  d'une version ult&eacute;rieure, ou &#40;ii&#41; depuis un micro-ordinateur Mac&nbsp; &eacute;quip&eacute; de MacOS X 10.13 ou d'une version ult&eacute;rieure, depuis le site www.salto.fr, sous r&eacute;serve d'activer ses droits, conform&eacute;ment &agrave; la proc&eacute;dure d&eacute;crite sur ledit site.</li>
+								<li>Les navigateurs internet compatibles sont : Chrome&reg; &agrave; partir de la version 84, Edge Chromium &agrave; partir de la version 84, FireFox &agrave; partir de la version 79 et Safari &agrave; partir de la version 12.</li>
+								<li>&Eacute;quipement mobile : Le Service SALTO est accessible depuis tout r&eacute;seau Internet &#40;Wi-FI, 3G/3G+/4G/4G+/5G en France M&eacute;tropolitaine uniquement&#41; sur tous les &eacute;quipements mobiles &eacute;quip&eacute;s, &#40;i&#41; du syst&egrave;me d'exploitation iOS&reg; 11 et ult&eacute;rieurs ou &#40;ii&#41; du syst&egrave;me d'exploitation Android&reg; 5.0 ou ult&eacute;rieurs, sous r&eacute;serve de t&eacute;l&eacute;charger l'Application gratuite SALTO. Des limitations d'acc&egrave;s &agrave; des Contenus pourront s'appliquer sur les &eacute;quipements qui seraient d&eacute;brid&eacute;s/d&eacute;verrouill&eacute;s.&nbsp;La visualisation des Contenus via un navigateur internet n’est pas possible sur les &eacute;quipements mobiles.</li>
+								<li>Pour un meilleur confort de visionnage, il est conseill&eacute; de privil&eacute;gier le mode Wi-Fi. L'utilisation du Service SALTO par le EDGE/3G/4G/4G+/5G peut entra&icirc;ner des surco&ucirc;ts de communications li&eacute;s &agrave; la consommation de vid&eacute;os pour lesquels SALTO ne saurait &ecirc;tre tenue responsable.</li>
+								<li>T&eacute;l&eacute;vision : Dans le cadre d'un Abonnement sp&eacute;cifique ou non, le Service SALTO est accessible depuis toutes les t&eacute;l&eacute;visions compatibles Android TV &agrave; partir de la version 8, Apple TV &agrave; partir de tvOS 13 et smart TV Samsung TIZEN 2018, 2019 et 2020.</li>
+								<li>Plateforme de Distribution Bouygues Telecom: Bbox Miami, Box Miami 4k.</li>
+							L'Abonn&eacute; est seul responsable de l'installation, de l'exploitation et de la maintenance de ses &eacute;quipements techniques n&eacute;cessaires pour acc&eacute;der au Service SALTO. En aucun cas, SALTO ne saurait &ecirc;tre tenue responsable si le Service SALTO s'av&egrave;re incompatible ou pr&eacute;sente des dysfonctionnements avec certains logiciels, configurations, syst&egrave;mes d'exploitation ou &eacute;quipements de l'utilisateur.<br>
+							
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr height="10px">
+				<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+				<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+			</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<!-- Article 3.3 -->
+			<table cellpadding="0" cellspacing="0" border="0">
+			 <tr>
+					<td width="20px">&nbsp;</td>
+					<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;"><b>3.3 PROTECTION DES MINEURS</b></td>
+			</tr>
+			<tr height="5px">
+				<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+				<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+			</tr>
+			<tr>
+				<td width="20px">&nbsp;</td>
+				<td>
+					<table cellpadding="0" cellspacing="0" border="0">
+						<tr>
+							<td width="20px">&nbsp;</td>
+							<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;">
+								Pour utiliser et/ou acc&eacute;der au Service SALTO, les mineurs doivent obtenir l'autorisation de leurs parents ou des titulaires de l'autorit&eacute; parentale les concernant, y compris avant de cr&eacute;er un Compte Utilisateur.<br>
+								Le visionnage des Contenus reste sous la seule responsabilit&eacute; des parents &#40;ou titulaire de l'autorit&eacute; parentale&#41;. A cet effet un espace parental est accessible directement sur le Service SALTO et permet de param&eacute;trer l'utilisation du Service pour qu'il soit adapt&eacute; aux enfants, et notamment &agrave; leur &acirc;ge et au temps pass&eacute; &agrave; visualiser des Contenus. Il est de la responsabilit&eacute; des parents et/ou titulaire de l'autorit&eacute; parentale de d&eacute;terminer quel contenu est ou non appropri&eacute; pour leur&#40;s&#41; enfant&#40;s&#41; mineur&#40;s&#41;.<br>
+								L'utilisation du Service SALTO par un mineur reste sous la responsabilit&eacute; des parents &#40;ou titulaire de l'autorit&eacute; parentale&#41;.
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr height="10px">
+				<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+				<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+			</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<!-- Article 3.4 -->
+			<table cellpadding="0" cellspacing="0" border="0">
+			  <tr>
+					<td width="20px">&nbsp;</td>
+					<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;"><b>3.4 PORTABILIT&Eacute;</b></td>
+			</tr>
+			<tr height="5px">
+				<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+				<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+			</tr>
+			<tr>
+				<td width="20px">&nbsp;</td>
+				<td>
+					<table cellpadding="0" cellspacing="0" border="0">
+						<tr>
+							<td width="20px">&nbsp;</td>
+							<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;">
+								Conform&eacute;ment au R&egrave;glement europ&eacute;en 2017/1128 du 14/06/2017 sur la portabilit&eacute; transfrontali&egrave;re des services de contenus en ligne dans le march&eacute; int&eacute;rieur, l'Abonn&eacute; pourra acc&eacute;der et utiliser le Service lorsqu'il sera pr&eacute;sent temporairement dans un &Eacute;tat membre de l'Union Europ&eacute;enne autre que son &Eacute;tat membre de r&eacute;sidence qu'est la France.<br>
+								L'Abonn&eacute; pourra b&eacute;n&eacute;ficier de la portabilit&eacute; sous r&eacute;serve qu'il soit r&eacute;sident fran&ccedil;ais, ce que SALTO v&eacute;rifiera &agrave; la conclusion de chaque abonnement, sauf lorsque l'Abonn&eacute; est abonn&eacute; via Plateformes de Distribution. Dans ce cas, le respect de la portabilit&eacute; et le choix des moyens de v&eacute;rification incombe aux Plateformes de Distribution, nous recommandons &agrave; l'Abonn&eacute; de se reporter aux conditions desdites Plateformes de Distribution.<br>
+								Si l'Abonn&eacute; ne r&eacute;pond pas au crit&egrave;re de r&eacute;sidence, le Service ne lui sera pas accessible dans l'Etat membre dans lequel il se situe temporairement.<br>
+								Aucun frais suppl&eacute;mentaire ne sera exig&eacute; par SALTO du Service au titre de la portabilit&eacute;.<br>
+								Il est port&eacute; &agrave; l'attention de l'Abonn&eacute; que la qualit&eacute; d'acc&egrave;s au Service dans un &Eacute;tat membre autre que l'Etat de r&eacute;sidence peut diff&eacute;rer selon l'op&eacute;rateur utilis&eacute; pour acc&eacute;der au Service.<br>
+							</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr height="10px">
+					<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+					<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<!-- Article 3.5 -->
+			<table cellpadding="0" cellspacing="0" border="0">
+			  <tr>
+					<td width="20px">&nbsp;</td>
+					<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;"><b>3.5 R&Eacute;CLAMATION / SERVICES CLIENTS</b></td>
+			</tr>
+			<tr height="5px">
+				<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+				<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+			</tr>
+			<tr>
+				<td width="20px">&nbsp;</td>
+				<td>
+					<table cellpadding="0" cellspacing="0" border="0">
+						<tr>
+							<td width="20px">&nbsp;</td>
+							<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;">
+						    Pour obtenir plus d'information sur le Service SALTO et ses fonctionnalit&eacute;s ou si vous avez besoin d'assistance sur l'utilisation du Service SALTO ou de votre Compte Utilisateur, contactez SALTO &agrave; l'adresse suivante : <a href="mailto:service.client@support.salto.fr">service.client@support.salto.fr</a>.</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr height="10px">
+					<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+					<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+			</tr>
+			</table>
+		</td>
+	</tr>
+	<tr height="20px">
+		<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:5px;">&nbsp;</td>
+	</tr>
+	<!-- Article 4 -->
+	<tr>
+		<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;"><b>ARTICLE 4 : FORMATION DU CONTRAT D'ABONNEMENT</b></td>
+	</tr>
+	<tr height="10px">
+		<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:5px;">&nbsp;</td>
+	</tr>
+	<tr>
+		<td>
+			<!-- Article 4.1 -->
+			<table cellpadding="0" cellspacing="0" border="0">
+			  <tr>
+					<td width="20px">&nbsp;</td>
+					<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;"><b>4.1 CAPACIT&Eacute; REQUISE </b></td>
+			</tr>
+			<tr height="5px">
+				<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+				<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+			</tr>
+			<tr>
+				<td width="20px">&nbsp;</td>
+				<td>
+					<table cellpadding="0" cellspacing="0" border="0">
+						<tr>
+							<td width="20px">&nbsp;</td>
+							<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;">
+								L'Abonn&eacute; d&eacute;clare &ecirc;tre majeur et ne pas &ecirc;tre frapp&eacute; d'une incapacit&eacute;.<br>
+								
+							</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr height="20px">
+					<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+					<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<!-- Article 4.2 -->
+			<table cellpadding="0" cellspacing="0" border="0">
+			  <tr>
+					<td width="20px">&nbsp;</td>
+					<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;"><b>4.2 SOUSCRIPTION DE L'ABONNEMENT</b></td>
+			</tr>
+			<tr height="5px">
+				<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+				<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+			</tr>
+			<tr>
+				<td width="20px">&nbsp;</td>
+				<td>
+					<table cellpadding="0" cellspacing="0" border="0">
+						<tr>
+							<td width="20px">&nbsp;</td>
+							<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;">
+								<b>4.2.1 Compte Utilisateur </b><br>
+								L'acc&egrave;s au Service SALTO est conditionn&eacute; par la cr&eacute;ation pr&eacute;alable d'un Compte Utilisateur. Celui-ci est amen&eacute; &agrave; communiquer des informations personnelles &#40;adresse &eacute;lectronique et mot de passe&#41; qui permettront notamment ensuite de l'identifier et de faciliter son acc&egrave;s au Service SALTO.<br>
+								L'Abonn&eacute; reconnait avoir l'enti&egrave;re responsabilit&eacute; de la conservation du caract&egrave;re confidentiel de ses codes d'acc&egrave;s.<br>
+								L'Abonn&eacute; s'engage &agrave; remplir correctement lesdites informations, et notamment &agrave; ne communiquer que des informations exactes, &agrave; jour et compl&egrave;tes et &agrave; informer SALTO de tout changement le concernant.<br>
+								En cas d'utilisation frauduleuse du mot de passe, l'Abonn&eacute; s'engage &agrave; en informer imm&eacute;diatement SALTO.<br>
+								L'Abonn&eacute; est seul responsable de l'utilisation de son Compte Utilisateur, et ce jusqu'&agrave; la d&eacute;sactivation du compte, pour quelque cause que ce soit, &agrave; moins qu'il ne puisse d&eacute;montrer que l'utilisation de ses informations personnelles et/ou de son Compte Utilisateur r&eacute;sulte d'une fraude imputable &agrave; un tiers.<br>
+								SALTO se r&eacute;serve la facult&eacute; de d&eacute;sactiver de plein droit, sans pr&eacute;avis ni indemnit&eacute;, le Compte Utilisateur en cas de non-respect des pr&eacute;sentes Conditions G&eacute;n&eacute;rales d'Abonnement.
+							</td>
+						</tr>
+						<tr height="20px">
+							<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+							<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+						</tr>
+						<tr>
+							<td width="20px">&nbsp;</td>
+							<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;">
+								<b>4.2.2 Souscription</b><br>
+								Une fois son Compte Utilisateur cr&eacute;&eacute;, l'Abonn&eacute; recevra un email de confirmation de cr&eacute;ation de son Compte Utilisateur &agrave; l'adresse renseign&eacute;e.<br>
+								Une fois la cr&eacute;ation du Compte Utilisateur effective, l'Abonn&eacute; est invit&eacute; &agrave; activer son Abonnement en renseignant :<br> 
+								- s’il choisit le paiement par carte bancaire:&nbsp; son num&eacute;ro de carte bancaire, le titulaire du compte, la date d’expiration et le cryptogramme,<br>
+								- s’il choisit le paiement,via Paypal : les donn&eacute;es de son compte PayPal&reg; ,<br>
+						    - s’il choisit de souscrire via une Plateforme de Distribution (App Store&reg;, Google Play Store&reg;, etc.) :son mot de passe Plateforme de Distribution &#40;App Store&reg;, Google Play Store&reg;, etc.&#41; A noter que lorsque l'Abonn&eacute; souscrit via les Plateformes de Distribution, l'inscription d&eacute;finitive a lieu post&eacute;rieurement au renseignement de ses coordonn&eacute;es bancaires. </td>
+							</tr>
+						<tr height="20px">
+							<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+							<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+						</tr>
+						<tr>
+							<td width="20px">&nbsp;</td>
+							<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;">
+								<b>4.2.3</b> Une fois la cr&eacute;ation du Compte Utilisateur et l'activation de l'Abonnement effectives, l'Abonn&eacute; peut commencer &agrave; visionner les Contenus du Service SALTO et configurer le code parental s'il le souhaite.<br>
+							</td>
+						</tr>
+						<tr height="20px">
+							<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+							<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+						</tr>
+						<tr>
+							<td width="20px">&nbsp;</td>
+							<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;">
+								<b>4.2.4 Code Partenaire "Promo"</b>
+								<p>
+								L'utilisateur a &eacute;galement la possibilit&eacute; de b&eacute;n&eacute;ficier d'un code (Code Partenaire "Promo") - &agrave; ins&eacute;rer sur le Service SALTO qui lui permet d'acc&eacute;der au service SALTO pendant la dur&eacute;e mentionn&eacute;e sur le Code Promo (ou qui lui est communiqu&eacute;e par le Service) - selon la dur&eacute;e de validit&eacute; du Code Promo, et sans contrepartie financi&eacute;re due par l'utilisateur, sous r&eacute;serve de la cr&eacute;ation d'un Compte Utilisateur.</p>
+								<p>SALTO ne pourra &ecirc;tre tenue responsable si les donn&eacute;es relatives &agrave; l'inscription d'un l'Abonn&eacute; ne lui parvenaient pas pour une quelconque raison dont elle ne pourrait &ecirc;tre tenue responsable (par exemple, un probl&egrave;me de connexion &agrave; Internet d&ucirc; &agrave; une quelconque raison chez l'Abonn&eacute;, une d&eacute;faillance momentan&eacute;e de ses serveurs, etc) ou lui arrivaient illisibles ou impossibles &agrave; traiter (par exemple si l'Abonn&eacute; poss&egrave;de un mat&eacute;riel informatique ou un environnement logiciel inad&eacute;quat pour son inscription).</p>
+							</td>
+						</tr>
+						<tr height="20px">
+							<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+							<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+						</tr>
+						<tr>
+							<td width="20px">&nbsp;</td>
+							<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;">
+								<b>4.2.5 Carte Cadeau</b>
+								<p>L'utilisateur a &eacute;galement la possibilit&eacute; d'utiliser un Code Partenaire Promo disponible via une Carte Cadeau achet&eacute;e pr&eacute;alablement dans le commerce (selon les enseignes où les Cartes cadeau sont disponibles, selon les p&eacute;riodes de disponibilit&eacute;s, et selon les stocks disponibles - se renseigner auprès des enseignes directement).</p>
+								<p>Ces Cartes cadeau sont utilisables uniquement après activation en caisse, et dans les 12 mois suivants (la date d'achat indiqu&eacute;e sur le ticket de caisse faisant foi). Les Cartes cadeau sont valables en France m&eacute;tropolitaine uniquement, pour toute personne non encore titulaire d'un abonnement &eagrave; SALTO et sont non cumulables avec d'autres offres en cours.</p>
+								<p>Les Cartes cadeau permettent ainsi de s'abonner &agrave; SALTO et de b&eacute;n&eacute;ficier de l'offre indiqu&eacute;e sur lesdites Cartes cadeau. Au-del&agrave;, l'abonnement sera automatiquement r&eacute;sili&eacute;. Si l'utilisateur souhaite continuer &agrave; profiter du Service SALTO, il devra s'abonner, et ce dans le respect des pr&eacute;sentes CGA.</p>
+								<p>L'offre d'abonnement &agrave; SALTO est sans engagement et r&eacute;siliable &agrave; tout moment.<br>
+								Les Cartes cadeau  ne peuvent &ecirc;tre ni revendues, ni &eacute;chang&eacute;es, ni rembours&eacute;es m&ecirc;me partiellement (m&ecirc;me en cas de fin de validit&eacute;, perte ou vol), ni port&eacute;es au cr&eacute;dit d'une carte ou compte bancaire, et ne peuvent donner lieu &agrave; aucun rendu de monnaie par les enseignes ou par SALTO.</p>
+ 								<p>Pour toute autre d&eacute;tail li&eacute; aux Cartes cadeau ou sp&eacute;cificit&eacute; de l'offre accessible via la Carte cadeau, l'utilisateur et/ou l’abonn&eacute; sont invit&eacute;s &agrave; lire les mentions reproduites directement sur les Cartes cadeau.</p>
+							</td>
+						</tr>
+						<tr height="20px">
+							<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+							<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+						</tr>
+						<tr>
+							<td width="20px">&nbsp;</td>
+							<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;">
+								<b>4.2.6 SALTO via BOUYGUES TELECOM</b>
+								<p>Pour b&eacute;n&eacute;ficier du Service SALTO via le Distributeur BOUYGUES TELECOM, l'utilisateur devra @ecirc;tre abonn&eacute; BOUYGUES TELECOM et disposer d’une Bbox MIAMI ou d’une Box MIAMI 4k.</p>
+								<p>L'utilisateur pourra alors, s'il le souhaite, souscrire au Service SALTO via les canaux de distribution BOUYGUES TELECOM (box,via le site BOUYGUES TELECOM, etc.);</p>
+								<p>Les modalit&eacute;s d'&eacute;ligibilit&eacute; et les conditions tarifaires d'abonnement seront r&eacute;gies par les conditions d'utilisation de BOUYGUES TELECOM que l'utilisateur devra approuver et auquel nous l'invitons &agrave; se reporter.</p>
+								<p>Le tarif de l'abonnement &agrave; SALTO est sp&eacute;cifi&eacute; sur la page de l'offre du Distributeur BOUYGUES TELECOM l'utilisateur pourra alors choisir le tarif propos&eacute; et la facturation via son abonnement Distributeur.</p>
+								<p>Une fois la s&eacute;lection valid&eacute;e, l'utilisateur sera dirig&eacute; vers l'application SALTO via sa box BOUYGUES TELECOM pour finaliser son inscription au Service dans les conditions vis&eacute;es &agrave; l'article 4.1.1 ci-dessus hors renseignement du moyen de paiement (ce dernier &eacute;tant effectu&eacute; via la Plateforme de Distribution BOUYGUES TELECOM).</p>
+								<p>A noter que lorsque l'Abonn&eacute; souscrit via BOUYGUES TELECOM, l'inscription d&eacute;finitive a lieu post&eacute;rieurement &agrave; la s&eacute;lection de l'offre et la facturation via BOUYGUES TELECOM. L'utilisateur devra ainsi valider son abonnement en s'inscrivant sur l'application SALTO via sa box BOUYGUES TELECOM pour &ecirc;tre Abonn&eacute; au Service.</p>
+								<p>Une fois souscrit, l'Abonnement sera conclu pour une dur&eacute;e d'un mois &agrave; compter de la date de souscription, renouvelable pour des p&eacute;riodes successives d'un mois sauf d&eacute;nonciation dont les termes seront d&eacute;crits dans les conditions d'abonnement du Distributeur BOUYGUES TELECOM que l'utilisateur a valid&eacute;.</p>
+								<p>Toute demande de r&eacute;siliation devra &ecirc;tre effectu&eacute;e aupr&egrave;s de  BOUYGUES TELECOM et sera effective &agrave; la date d'&eacute;ch&eacute;ance du mois en cours. A d&eacute;faut de r&eacute;siliation avant la date d'&eacute;ch&eacute;ance mensuelle, l'Abonnement sera reconduit pour une p&eacute;riode d'un mois.</p>
+								<p>En cas de r&eacute;siliation, l'Abonn&eacute; continuera &agrave; avoir acc&egrave;s au Service jusqu'&agrave; l'&eacute;ch&eacute;ance du prochain mois.</p>
+								<p>Toute r&eacute;siliation par l'utilisateur de son abonnement BOUYGUES TELECOM entra&icirc;nera la r&eacute;siliation automatique de l'Abonnement au Service SALTO.</p>
+							</td>
+						</tr>
+				</table>
+			</td>
+		</tr>
+		<tr height="20px">
+			<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+			<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+		</tr>
+	</table>
+	</td>
+	</tr>
+	<tr>
+		<td>
+			<!-- Article 4.3 -->
+			<table cellpadding="0" cellspacing="0" border="0">
+			  <tr>
+					<td width="20px">&nbsp;</td>
+					<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;"><b>4.3 ABSENCE DU DROIT DE R&Eacute;TRACTATION</b></td>
+			</tr>
+			<tr height="5px">
+				<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+				<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+			</tr>
+			<tr>
+				<td width="20px">&nbsp;</td>
+				<td>
+					<table cellpadding="0" cellspacing="0" border="0">
+						<tr>
+							<td width="20px">&nbsp;</td>
+							<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;">
+								Dans le cadre d'un Abonnement, en cliquant sur "je m'abonne" et/ou "confirmez" et en rentrant mon moyen de paiement, l'Abonn&eacute; d&eacute;clare express&eacute;ment consentir au d&eacute;marrage imm&eacute;diat du Service SALTO et reconna&icirc;t qu'il renonce express&eacute;ment &agrave; exercer le droit de r&eacute;tractation dont il b&eacute;n&eacute;ficie dans un d&eacute;lai de 14 jours conform&eacute;ment &agrave; l'article L221-28, 13 du code de la consommation, sans que cela n'affecte son droit de r&eacute;silier &agrave; tout moment l'Abonnement au Service SALTO, conform&eacute;ment aux termes de l'article 5.5  ci-apr&egrave;s.<br>
+								Toutefois, il est pr&eacute;cis&eacute; que si l'Abonnement est pris via une Plateforme de Distribution, l'Abonn&eacute; est invit&eacute; &agrave; se reporter aux Conditions G&eacute;n&eacute;rales de la Plateforme de Distribution qui lui sont applicables pour conna&icirc;tre les modalit&eacute;s de r&eacute;tractation.
+							</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr height="5px">
+					<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+					<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr height="20px">
+		<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:5px;">&nbsp;</td>
+	</tr>
+	<!-- Article 5 -->
+	<tr>
+		<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;"><b>ARTICLE 5 :MODALIT&Eacute;S D'ABONNEMENT </b></td>
+	</tr>
+	<tr height="10px">
+		<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:5px;">&nbsp;</td>
+	</tr>
+	<tr>
+		<td>
+			<!-- Article 5.1 -->
+			<table cellpadding="0" cellspacing="0" border="0">
+			  <tr>
+					<td width="20px">&nbsp;</td>
+					<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;"><b>5.1. ESSAI GRATUIT</b></td>
+				</tr>
+				<tr height="5px">
+					<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+					<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="20px">&nbsp;</td>
+					<td>
+						<table cellpadding="0" cellspacing="0" border="0">
+						<tr>
+							<td width="20px">&nbsp;</td>
+							<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;">
+								<b>5.1.1.</b> L'Abonnement peut d&eacute;buter par un essai gratuit. La dur&eacute;e de la p&eacute;riode d'essai gratuit est sp&eacute;cifi&eacute;e lors de la souscription, et elle est destin&eacute;e &agrave; permettre aux nouveaux membres d'essayer le service.<br>
+								<b>5.1.2.</b> SALTO  se r&eacute;serve le droit, &agrave; son enti&egrave;re discr&eacute;tion, de d&eacute;terminer l'admissibilit&eacute; &agrave; un essai gratuit et de la limiter, ainsi que sa dur&eacute;e, pour emp&ecirc;cher tout abus d'essai gratuit. SALTO se r&eacute;serve le droit de r&eacute;voquer l'essai gratuit si SALTO consid&egrave;re que l'Abonn&eacute; n'&ecirc;tes pas admissible. SALTO  est susceptible d'utiliser des informations telles que le moyen de paiement ou une adresse e-mail de compte utilis&eacute;s avec un Abonnement existant ou r&eacute;cent pour d&eacute;terminer l'admissibilit&eacute;.<br> 
+								<b>5.1.3.</b> Au terme de l'essai gratuit, l'Abonn&eacute; sera automatiquement pr&eacute;lev&eacute; du montant de l'Abonnement via son moyen de paiement, sauf s'il a r&eacute;sili&eacute; son Abonnement avant la fin de la p&eacute;riode d'essai gratuit. Pour consulter les frais d'abonnement et la date de fin de sa p&eacute;riode d'essai gratuit, l'Abonn&eacute; peut y acc&eacute;der sur le Service  et cliquer sur la section "Abonnement et Facturation" dans l'espace "Mon Compte".
+							</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr height="5px">
+					<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+					<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<!-- Article 5.2 -->
+			<table cellpadding="0" cellspacing="0" border="0">
+			  <tr>
+					<td width="20px">&nbsp;</td>
+					<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;"><b>5.2. TARIFS</b></td>
+				</tr>
+				<tr height="5px">
+					<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+					<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="20px">&nbsp;</td>
+					<td>
+						<table cellpadding="0" cellspacing="0" border="0">
+						<tr>
+							<td width="20px">&nbsp;</td>
+							<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;">
+								L'Offre se d&eacute;cline en Abonnements selon les tarifs applicables au jour de la souscription, tels qu'affich&eacute;s sur le Service SALTO. Le prix est indiqu&eacute; en Euros et toutes taxes comprises.<br>
+								En cas d'&eacute;volution &agrave; la hausse ou &agrave; la baisse du tarif de l'Offre, l'Abonn&eacute; sera pr&eacute;venu par email un mois avant la date de l'&eacute;volution. Aucune augmentation de tarif n'aura lieu pour la p&eacute;riode mensuelle en cours.<br>
+								Des tarifs promotionnels pourront &ecirc;tre disponibles, &agrave; la discr&eacute;tion de SALTO, &agrave; titre temporaire, sur tout ou une partie des Plateformes pendant une dur&eacute;e limit&eacute;e.
+							</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr height="5px">
+					<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+					<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<!-- Article 5.3 -->
+			<table cellpadding="0" cellspacing="0" border="0">
+			  <tr>
+					<td width="20px">&nbsp;</td>
+					<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;"><b>5.3. CYCLES DE FACTURATION ET MOYENS DE PAIEMENT</b></td>
+				</tr>
+				<tr height="5px">
+					<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+					<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="20px">&nbsp;</td>
+					<td>
+						<table cellpadding="0" cellspacing="0" border="0">
+						<tr>
+							<td width="20px">&nbsp;</td>
+							<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;">
+							L'Abonn&eacute; doit disposer d'un compte bancaire approvisionn&eacute;, associ&eacute; &agrave; une carte bancaire, un compte PayPal&reg; ou tout autre moyen de paiement s&eacute;lectionn&eacute;, pour pouvoir souscrire au Service SALTO sur les Plateformes sur lesquelles l'Offre sera disponible.<br>
+							L'Abonnement est payable d'avance chaque mois, par paiement r&eacute;current  par carte bancaire ou Paypal&reg; via un acc&egrave;s s&eacute;curis&eacute; sur le Service SALTO ou via les service propos&eacute;s par les Plateformes de Distribution ou les Distributeurs. <br>
+							Les d&eacute;bits mensuels suivants sont r&eacute;alis&eacute;s au premier jour de chaque nouvelle p&eacute;riode mensuelle. Dans l'hypoth&egrave;se d'une offre o&ugrave; l'abonn&eacute; aurait b&eacute;n&eacute;fici&eacute; d'un mois d'essai gratuit, SALTO percevra la premi&egrave;re redevance &agrave; l'&eacute;ch&eacute;ance du premier mois offert.<br>
+							&nbsp;<br>
+							L'Abonn&eacute; reconna&icirc;t que la communication des informations relatives &agrave; sa carte bancaire ou son compte PayPal&reg; vaut autorisation de d&eacute;bit mensuel de son compte bancaire par l'interm&eacute;diaire de son num&eacute;ro de carte bancaire ou identifiant PayPal&reg; au profit de la soci&eacute;t&eacute; SALTO, &agrave; due concurrence du montant mensuel de l'Abonnement.<br>
+							Sur les Plateformes de Distribution tierces ou via les Distributeurs du Service, le paiement se fait directement aupr&egrave;s du Distributeur.<br>
+							L'Abonn&eacute; est tenu de mettre &agrave; jour et/ou modifier ses coordonn&eacute;es bancaires dans son Compte, dans la rubrique "Abonnement et Facturation" dans la page "Mon Compte", notamment dans le cas o&ugrave; la validit&eacute; des coordonn&eacute;es arrive &agrave; &eacute;ch&eacute;ance. La date d’&eacute;ch&eacute;ance de l'Abonnement sera indiqu&eacute;e dans la rubrique "Abonnement et Facturation" dans la page "Mon Compte".<br>
+							En cas de non-paiement de l'Abonnement dans les d&eacute;lais, l'acc&egrave;s au Service SALTO sera supprim&eacute; conform&eacute;ment aux termes vis&eacute;s &agrave; l'article 5.5.2 ci-apr&egrave;s. </td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr height="5px">
+					<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+					<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<!-- Article 5.4 -->
+			<table cellpadding="0" cellspacing="0" border="0">
+			  <tr>
+					<td width="20px">&nbsp;</td>
+					<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;"><b>5.4.CHANGEMENT D'OFFRE</b></td>
+				</tr>
+				<tr height="5px">
+					<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+					<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="20px">&nbsp;</td>
+					<td>
+						<table cellpadding="0" cellspacing="0" border="0">
+						<tr>
+							<td width="20px">&nbsp;</td>
+							<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;">
+								Sauf pour les utilisateurs b&eacute;n&eacute;ficiant d'un Code Promo, l'Abonn&eacute; peut d&eacute;cider de changer d'offre/Abonnements au moment o&ugrave; il le souhaite et peut acc&eacute;der aux offres qui lui seront pr&eacute;sent&eacute;es lorsqu'il modifie son offre dans son espace "Abonnement et Facturation" dans "Mon Compte".<br>
+								Si l'Abonn&eacute; d&eacute;cide de changer pour une offre plus &eacute;lev&eacute;e &#40;avec plus de droits et un tarif plus &eacute;lev&eacute;&#41;, le changement sera effectif imm&eacute;diatement et sera factur&eacute; &agrave; la date de changement d'offre. Il passera alors sur le nouveau forfait de cette offre imm&eacute;diatement. Ainsi un changement d'offre vers une offre plus &eacute;lev&eacute;e pendant le mois d'essai gratuit, met fin &agrave; la p&eacute;riode de gratuit&eacute; dont b&eacute;n&eacute;ficiait l'Abonn&eacute;.<br> 
+								Si l'Abonn&eacute; d&eacute;cide de changer pour une offre moins &eacute;lev&eacute;e &#40;avec moins de droits et un tarif moins &eacute;lev&eacute;&#41;, le changement aura lieu &agrave; l'&eacute;ch&eacute;ance du mois en cours. L'Abonn&eacute; conserve ainsi ses droits plus &eacute;lev&eacute;s jusqu'&agrave; la prochaine &eacute;ch&eacute;ance. Il changera d'offre et de tarif &agrave; la prochaine &eacute;ch&eacute;ance.
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				<tr height="5px">
+					<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+					<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<!-- Article 5.5 -->
+			<table cellpadding="0" cellspacing="0" border="0">
+			  <tr>
+					<td width="20px">&nbsp;</td>
+					<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;"><b>5.5. R&Eacute;SILIATION</b></td>
+				</tr>
+				<tr height="5px">
+					<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+					<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="20px">&nbsp;</td>
+					<td>
+						<table cellpadding="0" cellspacing="0" border="0">
+						<tr>
+							<td width="20px">&nbsp;</td>
+							<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;">
+								<b>5.5.1. R&eacute;siliation par l'Abonn&eacute;</b><br>
+								L'Abonnement est conclu pour une dur&eacute;e d'un mois &agrave; compter de la date de souscription, renouvelable pour des p&eacute;riodes successives d'un mois sauf d&eacute;nonciation vingt-quatre &#40;24&#41; heures avant la date d'&eacute;ch&eacute;ance mensuelle. Par cons&eacute;quent :
+									<li>A d&eacute;faut de r&eacute;siliation avant la date d'&eacute;ch&eacute;ance mensuelle, l'Abonnement est reconduit pour une p&eacute;riode d'un mois.</li>
+									<li>La r&eacute;siliation prendra effet &agrave; la date d'&eacute;ch&eacute;ance, sous r&eacute;serve que la demande de l'Abonn&eacute; intervienne au moins vingt-quatre &#40;24&#41; heures avant ladite date.</li>
+								&nbsp;<br>
+								En cas de r&eacute;siliation, l'Abonn&eacute; continuera &agrave; avoir acc&egrave;s &agrave; son Abonnement jusqu'&agrave; l'&eacute;ch&eacute;ance du prochain mois.<br>
+								&nbsp;<br>
+								L'Abonn&eacute; b&eacute;n&eacute;ficiant d’un Code Promo aura acc&egrave;s au Service Salto jusqu'&agrave; la fin de validit&eacute; de l’offre accessible via le Code Promo. Son abonnement sera automatiquement r&eacute;sili&eacute; &agrave; la fin de cette p&eacute;riode. A l'issue de cette p&eacute;riode, l'Abonn&eacute;, s'il souhaite continuer &agrave; profiter du Service SALTO devra s'abonner, et ce dans le respect des pr&eacute;sentes CGA.<br>
+								&nbsp;<br>
+								<b>5.5.2. R&eacute;siliation par SALTO</b><br>
+								L'Abonnement sera r&eacute;sili&eacute;/suspendu de plein droit par SALTO en cas :
+								<li>De non-paiement de l'Abonnement ;</li>
+								<li>D'absence de mise &agrave; jour, par l'Abonn&eacute;, des informations relatives &agrave; la carte bancaire &agrave; l'&eacute;ch&eacute;ance de sa dur&eacute;e de validit&eacute; ;</li>
+								<li>D'agissements contrevenant aux dispositions du Code de la propri&eacute;t&eacute; intellectuelle ;</li>
+								<li>De manquements de l'Abonn&eacute; &agrave; l'une quelconque des obligations qui lui incombent en vertu des pr&eacute;sentes CGA.</li>
+						    SALTO se r&eacute;serve &eacute;galement le droit de mettre unilat&eacute;ralement fin &agrave; la relation r&eacute;sultant des Conditions Générales d’Abonnement au cas o&ugrave; vous feriez preuve de manquements significatifs en particulier aux articles 6 et 8 des pr&eacute;sentes CGA. </td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr height="20px">
+		<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:5px;">&nbsp;</td>
+	</tr>
+	<!-- Article 6 -->
+	<tr>
+		<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;"><b>ARTICLE 6. GARANTIES et RESPONSABILIT&Eacute;</b></td>
+	</tr>
+	<tr height="10px">
+		<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:5px;">&nbsp;</td>
+	</tr>
+	<tr>
+		<td>
+			<table cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td width="20px">&nbsp;</td>
+					<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;">
+						L'utilisation du Service SALTO, et de tout &eacute;l&eacute;ment, Contenu ou information obtenu via celui-ci rel&egrave;ve de votre responsabilit&eacute; exclusive.<br>
+						- <b>Accessibilit&eacute; au Service SALTO</b>:<br>
+						Vous reconnaissez et acceptez express&eacute;ment que :<br>
+						C'est en toute connaissance de cause que vous utilisez le Service qui vous offre un contenu accessible selon la qualit&eacute; du r&eacute;seau Internet. Notamment, le Service n'assure aucune garantie expresse ou implicite concernant la qualit&eacute; et la compatibilit&eacute; du Service aux usages sp&eacute;cifiques que vous en faites. En aucune mani&egrave;re SALTO ne sera en mesure d'apporter &agrave; l'utilisateur la garantie que le Service r&eacute;pondra exactement &agrave; ses attentes et qu'elle fera ses meilleurs efforts pour qu'aucune erreur n'apparaisse au cours de l'utilisation du Service. SALTO ne garantit pas que les r&eacute;sultats, les informations et le Service sont exempts de toute erreur ou d&eacute;faut. SALTO d&eacute;gage toute responsabilit&eacute; quant aux &eacute;ventuelles contestations, actions ou recours de tiers qui viendraient &agrave; se pr&eacute;valoir de droits notamment privatifs, sur tout contenu non cr&eacute;&eacute; par le Service.<br>
+						&nbsp;<br>
+						- <b>Disponibilit&eacute;</b>:<br>
+						SALTO s'efforce de maintenir accessible le Service 7 jours sur 7 et 24 heures sur 24, mais n'est tenue &agrave; aucune obligation d'y parvenir. SALTO peut donc en interrompre l'acc&egrave;s, notamment pour des raisons de maintenance et de mise &agrave; niveau. L'acc&egrave;s peut &eacute;galement &ecirc;tre interrompu pour toutes autres raisons, notamment techniques, sans aucune obligation d'information pr&eacute;alable.<br>
+						SALTO ne pourra &ecirc;tre tenue responsable des interruptions ou de la non-r&eacute;ception du Service dues &agrave; une quelconque d&eacute;faillance des Equipements n&eacute;cessaires (vis&eacute;s &agrave; l'article 3.2 ci-avant) ainsi qu'en cas de mauvais fonctionnement, d&eacute;faillance ou prestation insuffisante des op&eacute;rateurs utilis&eacute;s par l'Abonn&eacute; pour acc&eacute;der au Service.<br>
+						SALTO n'offre aucune garantie quant au fonctionnement ininterrompu et/ou la continuit&eacute; du Service en cas de force majeure ou cas fortuits tels que d&eacute;finis par la r&eacute;glementation en vigueur. Sont consid&eacute;r&eacute;s notamment comme cas de force majeure les intemp&eacute;ries exceptionnelles, les catastrophes naturelles, les incendies et inondations, la foudre, les attentats, les cas de rupture et de blocage des r&eacute;seaux de t&eacute;l&eacute;communication, les dommages provoqu&eacute;s par des virus pour lesquels les moyens de s&eacute;curit&eacute; existant sur le march&eacute; ne permettent pas leur &eacute;radication, ainsi que toute obligation l&eacute;gale ou r&eacute;glementaire ou d'ordre public impos&eacute;e par les autorit&eacute;s comp&eacute;tentes et qui auraient pour effet de modifier substantiellement les pr&eacute;sentes CGA, ou tout autre &eacute;v&egrave;nement de force majeure ou cas fortuit au sens de la jurisprudence de la Cour de Cassation. Par ailleurs, SALTO ne pourra &ecirc;tre tenue responsable du manque de performance du Service; de la perte de donn&eacute;es ou de services r&eacute;sultant de la non tenue de d&eacute;lais, de la modification, de la suspension ou de l'interruption de ses services; ni des cons&eacute;quences d&eacute;coulant de la transmission de virus &agrave; l'occasion de l'utilisation du r&eacute;seau internet.<br>
+						&nbsp;<br>
+						- <b>LIMITATION DE RESPONSABILIT&Eacute;</b>:<br>
+						SALTO vous informe qu'elle ne prend pas d'engagement concernant les performances et les modifications du Service qui peuvent intervenir compte tenu notamment de la qualit&eacute; du r&eacute;seau Internet, des r&eacute;seaux mobiles et/ou des configurations techniques.<br>
+						Dans le cas o&ugrave; la responsabilit&eacute; de SALTO serait engag&eacute;e &agrave; la suite d'un manquement &agrave; l'une de ses obligations au titre des pr&eacute;sentes CGA, la r&eacute;paration ne s'appliquera qu'aux seuls dommages directs, personnels et certains, &agrave; l'exclusion expresse de la r&eacute;paration de tous dommages et/ou pr&eacute;judices indirects et immat&eacute;riels, tels que les pr&eacute;judices financiers, les pr&eacute;judices commerciaux, les pertes d'exploitation et de chiffres d'affaires, les pertes de donn&eacute;es.<br>
+						&nbsp;<br>
+						- <b>INDEMNISATION</b>:<br>
+						Vous vous engagez &agrave; garantir et indemniser SALTO ainsi que toute soci&eacute;t&eacute; contr&ocirc;l&eacute;e directement ou indirectement par SALTO, b&#41; contr&ocirc;lant directement ou indirectement SALTO et/ou c&#41; contr&ocirc;l&eacute;e directement ou indirectement par une soci&eacute;t&eacute; contr&ocirc;lant SALTO; la notion de contr&ocirc;le &eacute;tant d&eacute;finie comme celle vis&eacute;e par l'article L233-3 du Code de commerce&#41;, leurs repr&eacute;sentants, leurs salari&eacute;s, leurs partenaires, et/ou tous tiers, contre tout dommage, plainte ou demande &eacute;manant de tiers suite &agrave; votre utilisation du Service SALTO ne respectant pas les pr&eacute;sentes CGA. Cette garantie couvre les indemnit&eacute;s qui seraient &eacute;ventuellement dues ainsi que les honoraires d'avocats et frais de justice dans une limite raisonnable.<br>
+					</td>
+				</tr>
+			</table>
+			</td>
+	</tr>
+	<tr height="20px">
+		<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:5px;">&nbsp;</td>
+	</tr>
+	<!-- Article 7 -->
+	<tr>
+		<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;"><b>ARTICLE 7. DONN&Eacute;ES PERSONNELLES</b></td>
+	</tr>
+	<tr height="10px">
+		<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:5px;">&nbsp;</td>
+	</tr>
+	<tr>
+		<td>
+			<table cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td width="20px">&nbsp;</td>
+					<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;">
+						<b>Donn&eacute;es &agrave; caract&egrave;re personnel</b><br>
+						Pour plus d'informations sur le traitement des donn&eacute;es &agrave; caract&egrave;re personnel et pour exercer ses droits, l'Abonn&eacute; est invit&eacute; &agrave; consulter la Politique de Protection des Donn&eacute;es relative au Service accessible depuis la page d'accueil du service Salto.<br>
+						&nbsp;<br>
+						<b>Cookies</b><br>
+				    Pour plus d'informations sur l'utilisation des cookies, l'Abonn&eacute; est invit&eacute; &agrave; consulter la Politique Cookies relative au Service accessible depuis la page d'accueil du service Salto. </td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<!-- Interligne -->
+	<tr height="20px">
+		<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:5px;">&nbsp;</td>
+	</tr>
+	<!-- Article 8 -->
+	<tr>
+		<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;"><b>ARTICLE 8. PROPRI&Eacute;T&Eacute; INTELLECTUELLE</b></td>
+	</tr>
+	<tr height="10px">
+		<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:5px;">&nbsp;</td>
+	</tr>
+	<tr>
+		<td>
+			<table cellpadding="0" cellspacing="0" border="0">
+				<tr>
+					<td width="20px">&nbsp;</td>
+					<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;">
+						Les Contenus du Service sont prot&eacute;g&eacute;s au titre du Droit de la Propri&eacute;t&eacute; Intellectuelle pour la France et/ou pour le monde entier.<br>
+						Conform&eacute;ment aux dispositions du Code de la Propri&eacute;t&eacute; Intellectuelle, seule l'utilisation pour un usage strictement priv&eacute; et personnel, limit&eacute; au cercle de famille est autoris&eacute;e &agrave; l'exclusion de toute autre utilisation.<br>
+						Toute autre utilisation, sauf autorisation pr&eacute;alable de SALTO et/ou des autres ayants-droit, est constitutive de contrefaçon et sanctionn&eacute;e au titre de la Propri&eacute;t&eacute; Intellectuelle.<br>
+						Toute reproduction totale ou partielle de tout ou partie des &eacute;l&eacute;ments pr&eacute;sents sur les pages des Services non autoris&eacute;e est strictement interdite.<br>
+						SALTO est une marque d&eacute;pos&eacute;e en France et dans d'autres pays. En aucune mesure il ne vous est possible d'utiliser ou de diffuser de quelque mani&egrave;re que ce soit, le logo et/ou les marques pr&eacute;cit&eacute;es sans l'accord expr&egrave;s de SALTO. Les autres noms de produits ou d'entreprises mentionn&eacute;es sur les Services peuvent &ecirc;tre des marques commerciales ou marques d&eacute;pos&eacute;es appartenant &agrave; SALTO ou &agrave; des tiers et prot&eacute;g&eacute;es &agrave; ce titre par le droit de la Propri&eacute;t&eacute; industrielle. Toute reproduction non autoris&eacute;e est passible de contrefaçon.
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<!-- Interligne -->
+	<tr height="20px">
+		<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:5px;">&nbsp;</td>
+	</tr>
+	<!-- Article 9 -->
+	<tr>
+		<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;"><b>ARTICLE 9 : CLAUSES FINALES</b></td>
+	</tr>
+	<tr height="10px">
+		<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:5px;">&nbsp;</td>
+	</tr>
+	<tr>
+		<td>
+			<!-- Article 9.1 -->
+			<table cellpadding="0" cellspacing="0" border="0">
+			  <tr>
+					<td width="20px">&nbsp;</td>
+					<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;"><b>9.1. Non validit&eacute; partielle</b></td>
+				</tr>
+				<tr height="5px">
+					<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+					<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="20px">&nbsp;</td>
+					<td>
+						<table cellpadding="0" cellspacing="0" border="0">
+						<tr>
+							<td width="20px">&nbsp;</td>
+							<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;">
+								Si l'une quelconque des dispositions des CGA &eacute;tait d&eacute;clar&eacute;e nulle ou sans objet au regard d'une disposition l&eacute;gislative ou r&eacute;glementaire en vigueur, et/ou d'une d&eacute;cision de justice ayant autorit&eacute; de chose jug&eacute;e, elle serait r&eacute;put&eacute;e non &eacute;crite et n'entra&icirc;nerait pas la nullit&eacute; des autres dispositions.
+							</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr height="5px">
+					<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+					<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<!-- Article 9.2 -->
+			<table cellpadding="0" cellspacing="0" border="0">
+			  <tr>
+					<td width="20px">&nbsp;</td>
+					<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;"><b>9.2. Non-Renonciation</b></td>
+				</tr>
+				<tr height="5px">
+					<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+					<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="20px">&nbsp;</td>
+					<td>
+						<table cellpadding="0" cellspacing="0" border="0">
+						<tr>
+							<td width="20px">&nbsp;</td>
+							<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;">
+								Le fait de ne pas se pr&eacute;valoir d'une disposition quelconque des pr&eacute;sentes CGA, &agrave; quelque moment que ce soit, ne vaut pas renonciation &agrave; agir de la part de la soci&eacute;t&eacute; SALTO.
+							</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr height="5px">
+					<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+					<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<!-- Article 9.3 -->
+			<table cellpadding="0" cellspacing="0" border="0">
+			  <tr>
+					<td width="20px">&nbsp;</td>
+					<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;"><b>9.3. Force majeure</b></td>
+				</tr>
+				<tr height="5px">
+					<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+					<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="20px">&nbsp;</td>
+					<td>
+						<table cellpadding="0" cellspacing="0" border="0">
+						<tr>
+							<td width="20px">&nbsp;</td>
+							<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;">
+								SALTO et l'Abonn&eacute; sont lib&eacute;r&eacute;s de leurs obligations respectives en cas de force majeure telle que d&eacute;finie par l'article 1218 du Code civil. La force majeure se d&eacute;finit comme un &eacute;v&eacute;nement &eacute;chappant au contr&ocirc;le du d&eacute;biteur, qui ne pouvait &ecirc;tre raisonnablement pr&eacute;vu lors de la conclusion du contrat et dont les effets ne peuvent &ecirc;tre &eacute;vit&eacute;s par des mesures appropri&eacute;es, emp&ecirc;che l'ex&eacute;cution de son obligation par le d&eacute;biteur.
+							</td>
+							</tr>
+						</table>
+					</td>
+				</tr>
+				<tr height="5px">
+					<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+					<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<!-- Article 9.4 -->
+			<table cellpadding="0" cellspacing="0" border="0">
+			  <tr>
+					<td width="20px">&nbsp;</td>
+					<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;"><b>9.4. Cession du contrat</b></td>
+				</tr>
+				<tr height="5px">
+					<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+					<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="20px">&nbsp;</td>
+					<td>
+						<table cellpadding="0" cellspacing="0" border="0">
+						<tr>
+							<td width="20px">&nbsp;</td>
+							<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;">
+								L'Abonn&eacute; ne pourra c&eacute;der le b&eacute;n&eacute;fice de son Abonnement. SALTO pourra &agrave; tout moment c&eacute;der les droits et obligations n&eacute;es des pr&eacute;sentes CGA dans le cas d'une cession de la soci&eacute;t&eacute; &agrave; une autre entit&eacute; ou bien dans le cadre d'une cession de fonds de commerce ou d'actifs.
+							</td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				<tr height="5px">
+					<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+					<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<!-- Article 9.5 -->
+			<table cellpadding="0" cellspacing="0" border="0">
+			  <tr>
+					<td width="20px">&nbsp;</td>
+					<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;"><b>9.5. R&egrave;glement des litiges, m&eacute;diation et loi applicable</b></td>
+				</tr>
+				<tr height="5px">
+					<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+					<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+				</tr>
+				<tr>
+					<td width="20px">&nbsp;</td>
+					<td>
+						<table cellpadding="0" cellspacing="0" border="0">
+						<tr>
+							<td width="20px">&nbsp;</td>
+							<td align="left" style="font-family:Arial,Helvetica,sans-serif;font-size:12px;line-height:16px;">
+								<p>Les CGA sont soumises au droit français. Tout d&eacute;saccord ou litige qui ne se r&egrave;gle pas par la voie amiable sera soumis aux tribunaux comp&eacute;tents.<br>
+						    Il est n&eacute;anmoins rappel&eacute; que conform&eacute;ment &agrave; l'article L.211-3 du code de la consommation, en cas de contestation, l'Abonn&eacute; peut recourir &agrave; la proc&eacute;dure de m&eacute;diation de la consommation pr&eacute;vue aux articles L. 611-1 et suivants du code de la consommation</p>
+							<p>Conform&eacute;ment aux dispositions du Code de la consommation concernant le r&egrave;glement amiable des litiges, SALTO  adh&egrave;re au Service du M&eacute;diateur du e-commerce de la FEVAD (F&eacute;d&eacute;ration du e-commerce et de la vente &agrave; distance) dont les coordonn&eacute;es sont les suivantes : 60 Rue La Bo&eacute;tie – 75008 Paris – http://www.mediateurfevad.fr. Apr&egrave;s d&eacute;marche pr&eacute;alable &eacute;crite des consommateurs vis-&agrave;-vis de SALTO, le Service du M&eacute;diateur peut &ecirc;tre saisi pour tout litige de consommation dont le r&egrave;glement n'aurait pas abouti. Pour conna&icirc;tre les modalit&eacute;s de saisine du M&eacute;diateur, cliquer sur <a href="https://www.mediateurfevad.fr/index.php/espace-consommateur/">https://www.mediateurfevad.fr/index.php/espace-consommateur/</a></p></td>
+						</tr>
+						</table>
+					</td>
+				</tr>
+				<tr height="5px">
+					<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+					<td style="font-family:Arial,Helvetica,sans-serif;font-size:1px;line-height:1px;">&nbsp;</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+</table>
+</body>
+</html>
+</div></div></div></div></div></div><div class="n913wo-2 dDXcBs"></div></div></div><script>window.addEventListener('load', function() {
+          setTimeout(function() {
+              window.addEventListener('popstate', function() {
+                  window.location.reload();
+              });
+          }, 0);
+      });</script></body></html>
