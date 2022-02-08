@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="fr-FR"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="fr-FR"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="fr-FR"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="fr-FR"> <!--<![endif]-->
+    <head>
+        <style>.async-hide { opacity: 0 !important} </style>
+        <script>
+            dataLayer = [];
+            (function(a,s,y,n,c,h,i,d,e){s.className+=' '+y;
+                h.end=i=function(){s.className=s.className.replace(RegExp(' ?'+y),'')};
+                (a[n]=a[n]||[]).hide=h;setTimeout(function(){i();h.end=null},c);
+            })(window,document.documentElement,'async-hide','dataLayer',250,{'GTM-MTLV8X8':true});
+        </script>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"><script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam-cell.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={licenseKey:"ffa17d46f4",applicationID:"161557643"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(){}function i(t,e,n,r){return function(){return s.recordSupportability("API/"+e+"/called"),o(t+e,[u.now()].concat(c(arguments)),n?null:this,r),n?void 0:this}}var o=t("handle"),a=t(10),c=t(11),f=t("ee").get("tracer"),u=t("loader"),s=t(4),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],l="api-",v=l+"ixn-";a(p,function(t,e){d[e]=i(l,e,!0,"api")}),d.addPageAction=i(l,"addPageAction",!0),d.setCurrentRouteName=i(l,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(v+"tracer",[u.now(),t,n],r),function(){if(f.emit((i?"":"no-")+"fn-start",[u.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw f.emit("fn-err",[arguments,this,t],n),t}finally{f.emit("fn-end",[u.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(v,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),s.recordSupportability("API/noticeError/called"),o("err",[t,u.now(),!1,e])}},{}],2:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],3:[function(t,e,n){var r=!1;try{var i=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,i),window.removeEventListener("testPassive",null,i)}catch(o){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],4:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return o("storeMetric",n,null,"api"),n}function i(t,e){var n=[c,t,{name:t},e];return o("storeEventMetrics",n,null,"api"),n}var o=t("handle"),a="sm",c="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:c},recordSupportability:r,recordCustom:i}},{}],5:[function(t,e,n){function r(){return c.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,c=t(12);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],6:[function(t,e,n){function r(t){return!(!t||!t.protocol||"file:"===t.protocol)}e.exports=r},{}],7:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?l("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&l("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(u&&u<r.startTime)return;var i=[r],o=a({});o&&i.push(o),l("lcp",i)}}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||l("cls",[t])})}function a(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t}function c(t){if(t instanceof y&&!w){var e=Math.round(t.timeStamp),n={type:t.type};a(n),e<=v.now()?n.fid=v.now()-e:e>v.offset&&e<=Date.now()?(e-=v.offset,n.fid=v.now()-e):e=v.now(),w=!0,l("timing",["fi",e,n])}}function f(t){"hidden"===t&&(u=v.now(),l("pageHide",[u]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var u,s,d,p,l=t("handle"),v=t("loader"),m=t(9),g=t(3),y=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){s=new PerformanceObserver(r);try{s.observe({entryTypes:["paint"]})}catch(h){}d=new PerformanceObserver(i);try{d.observe({entryTypes:["largest-contentful-paint"]})}catch(h){}p=new PerformanceObserver(o);try{p.observe({type:"layout-shift",buffered:!0})}catch(h){}}if("addEventListener"in document){var w=!1,b=["click","keydown","mousedown","pointerdown","touchstart"];b.forEach(function(t){document.addEventListener(t,c,g(!1))})}m(f)}},{}],8:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var c=navigator.userAgent,f=c.match(a);f&&c.indexOf("Chrome")===-1&&c.indexOf("Chromium")===-1&&(i="Safari",o=f[1])}e.exports={agent:i,version:o,match:r}},{}],9:[function(t,e,n){function r(t){function e(){t(c&&document[c]?document[c]:document[o]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,i(!1))}var i=t(3);e.exports=r;var o,a,c;"undefined"!=typeof document.hidden?(o="hidden",a="visibilitychange",c="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",a="webkitvisibilitychange",c="webkitVisibilityState")},{}],10:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],11:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],12:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?u(t,f,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!l.aborted||o){t&&a&&t(n,r,i);for(var c=e(i),f=m(n),u=f.length,s=0;s<u;s++)f[s].apply(c,r);var p=d[w[n]];return p&&p.push([b,n,r,c]),c}}function o(t,e){h[t]=m(t).concat(e)}function v(t,e){var n=h[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return h[t]||[]}function g(t){return p[t]=p[t]||i(n)}function y(t,e){l.aborted||s(t,function(t,n){e=e||"feature",w[n]=e,e in d||(d[e]=[])})}var h={},w={},b={on:o,addEventListener:o,removeEventListener:v,emit:n,get:g,listeners:m,context:e,buffer:y,abort:c,aborted:!1};return b}function o(t){return u(t,f,a)}function a(){return new r}function c(){(d.api||d.feature)&&(l.aborted=!0,d=l.backlog={})}var f="nr@context",u=t("gos"),s=t(10),d={},p={},l=e.exports=i();e.exports.getOrSetContext=o,l.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!P++){var t=M.info=NREUM.info,e=g.getElementsByTagName("script")[0];if(setTimeout(u.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return u.abort();f(O,function(e,n){t[e]||(t[e]=n)});var n=a();c("mark",["onload",n+M.offset],null,"api"),c("timing",["load",n]);var r=g.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=v+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===g.readyState&&o()}function o(){c("mark",["domContent",a()+M.offset],null,"api")}var a=t(5),c=t("handle"),f=t(10),u=t("ee"),s=t(8),d=t(6),p=t(2),l=t(3),v=p.getConfiguration("ssl")===!1?"http":"https",m=window,g=m.document,y="addEventListener",h="attachEvent",w=m.XMLHttpRequest,b=w&&w.prototype,E=!d(m.location);NREUM.o={ST:setTimeout,SI:m.setImmediate,CT:clearTimeout,XHR:w,REQ:m.Request,EV:m.Event,PR:m.Promise,MO:m.MutationObserver};var x=""+location,O={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1215.min.js"},T=w&&b&&b[y]&&!/CriOS/.test(navigator.userAgent),M=e.exports={offset:a.getLastTimestamp(),now:a,origin:x,features:{},xhrWrappable:T,userAgent:s,disabled:E};if(!E){t(1),t(7),g[y]?(g[y]("DOMContentLoaded",o,l(!1)),m[y]("load",r,l(!1))):(g[h]("onreadystatechange",i),m[h]("onload",r)),c("mark",["firstbyte",a.getLastTimestamp()],null,"api");var P=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,f,u){function nrWrapper(){var o,a,s,p;try{a=this,o=d(arguments),s="function"==typeof r?r(o,a):r||{}}catch(l){i([l,"",[o,a,f],s],t)}c(n+"start",[o,a,f],s,u);try{return p=e.apply(a,o)}catch(v){throw c(n+"err",[o,a,v],s,u),v}finally{c(n+"end",[o,a,p],s,u)}}return a(e)?e:(n||(n=""),nrWrapper[p]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var c,f,u,s="-"===r.charAt(0);for(u=0;u<e.length;u++)f=e[u],c=t[f],a(c)||(t[f]=n(c,s?f+r:r,i,f,o))}function c(n,r,o,a){if(!v||e){var c=v;v=!0;try{t.emit(n,r,o,e,a)}catch(f){i([f,n,r,o],t)}v=c}}return t||(t=s),n.inPlace=r,n.flag=p,n}function i(t,e){e||(e=s);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)l.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[p])}function c(t,e){var n=e(t);return n[p]=t,o(t,n,s),n}function f(t,e,n){var r=t[e];t[e]=c(r,n)}function u(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var s=t("ee"),d=t(11),p="nr@original",l=Object.prototype.hasOwnProperty,v=!1;e.exports=r,e.exports.wrapFunction=c,e.exports.wrapInPlace=f,e.exports.argsToArray=u},{}]},{},["loader"]);</script>
+        <title>Qobuz - Protection des données personnelles</title>
+        <meta name="description" content="Tout savoir sur la protection des données personnelles des utilisateurs Qobuz">
+        <meta name="keywords" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+        <meta name="theme-color" content="#000000" />
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="#000000" />
+        <meta http-equiv="Content-Language" content="fr-FR" />
+        <meta property="og:type" content="article" />
+        <!-- Open Graph -->
+        <meta property="og:locale" content="fr-FR" />
+        <meta property="og:title" content="Profitez en illimité du streaming en HI-Res de votre musique sur Qobuz - 1 mois gratuit." />
+        <meta property="og:description" content="Découvrez Qobuz et écouté en en Hi-Res sans limite plus de %catalog_million_tracks_count% millions de pistes - 1 mois gratuit sans engagement. " />
+        <meta property="og:image" content="/assets-static/img/logo/qobuz_logo_og.png"/>
+        <meta property="og:site_name" content="Qobuz" />
+        <meta property="og:url" content="https://www.qobuz.com/fr-fr/discover/legals/privacy"/>
+        <meta property="fb:app_id" content="103352876679" />
+
+        <!-- Favicon -->
+        <link rel="apple-touch-icon" href="/assets-static/img/icons/favicon/apple-icon-180x180.png" sizes="180x180">
+        <link rel="apple-touch-icon" href="/assets-static/img/icons/favicon/apple-icon-152x152.png" sizes="152x152">
+        <link rel="apple-touch-icon" href="/assets-static/img/icons/favicon/apple-icon-144x144.png" sizes="144x144">
+        <link rel="apple-touch-icon" href="/assets-static/img/icons/favicon/apple-icon-120x120.png" sizes="120x120">
+        <link rel="apple-touch-icon" href="/assets-static/img/icons/favicon/apple-icon-114x114.png" sizes="114x114">
+        <link rel="apple-touch-icon" href="/assets-static/img/icons/favicon/apple-icon-76x76.png" sizes="76x76">
+        <link rel="apple-touch-icon" href="/assets-static/img/icons/favicon/apple-icon-72x72.png" sizes="72x72">
+        <link rel="apple-touch-icon" href="/assets-static/img/icons/favicon/apple-icon-60x60.png" sizes="60x60">
+        <link rel="apple-touch-icon" href="/assets-static/img/icons/favicon/apple-icon-57x57.png" sizes="57x57">
+        <link rel="icon" type="image/png" href="/assets-static/img/icons/favicon/android-icon-192x192.png" sizes="192x192">
+        <link rel="icon" type="image/png" href="/assets-static/img/icons/favicon/favicon-96x96.png" sizes="96x96">
+        <link rel="icon" type="image/png" href="/assets-static/img/icons/favicon/favicon-32x32.png" sizes="32x32">
+        <link rel="icon" type="image/png" href="/assets-static/img/icons/favicon/favicon-16x16.png" sizes="16x16">
+
+        <!-- Preload Fonts -->
+        <link rel="preload" href="/assets-static/fonts/HKGrotesk-Regular.woff" as="font" type="font/woff" crossorigin>
+        <link rel="preload" href="/assets-static/fonts/HKGrotesk-Medium.woff" as="font" type="font/woff" crossorigin>
+        <link rel="preload" href="/assets-static/fonts/HKGrotesk-Bold.woff" as="font" type="font/woff" crossorigin>
+        <link rel="preload" href="/assets-static/fonts/HKGrotesk-Italic.woff" as="font" type="font/woff" crossorigin>
+        <link rel="preload" href="/assets-static/fonts/PlayfairDisplay-Regular.woff" as="font" type="font/woff" crossorigin>
+        <link rel="preload" href="/assets-static/fonts/PlayfairDisplay-Bold.woff" as="font" type="font/woff" crossorigin>
+        <link rel="preload" href="/assets-static/fonts/PlayfairDisplay-Italic.woff" as="font" type="font/woff" crossorigin>
+        <link rel="preload" href="/assets-static/fonts/qobuz-web.woff2?dox3md" as="font" type="font/woff2" crossorigin>
+
+        <!-- CSS -->
+        <link rel="stylesheet" href="/assets-static/build/css/app.4b0cff2d.css">
+        <link rel="stylesheet" href="/assets-static/build/css/data_protection.c720a83d.css">
+
+        <!-- Structured Data -->
+        
+        <link rel="canonical" href="https://www.qobuz.com/fr-fr/discover/legals/privacy"/>
+
+    <link rel="alternate" href="https://www.qobuz.com/at-de/discover/legals/privacy" hreflang="de-AT" />
+    <link rel="alternate" href="https://www.qobuz.com/be-fr/discover/legals/privacy" hreflang="fr-BE" />
+    <link rel="alternate" href="https://www.qobuz.com/be-nl/discover/legals/privacy" hreflang="nl-BE" />
+    <link rel="alternate" href="https://www.qobuz.com/ch-de/discover/legals/privacy" hreflang="de-CH" />
+    <link rel="alternate" href="https://www.qobuz.com/ch-fr/discover/legals/privacy" hreflang="fr-CH" />
+    <link rel="alternate" href="https://www.qobuz.com/de-de/discover/legals/privacy" hreflang="de-DE" />
+    <link rel="alternate" href="https://www.qobuz.com/es-es/discover/legals/privacy" hreflang="es-ES" />
+    <link rel="alternate" href="https://www.qobuz.com/it-it/discover/legals/privacy" hreflang="it-IT" />
+    <link rel="alternate" href="https://www.qobuz.com/fr-fr/discover/legals/privacy" hreflang="fr-FR" />
+    <link rel="alternate" href="https://www.qobuz.com/gb-en/discover/legals/privacy" hreflang="en-GB" />
+    <link rel="alternate" href="https://www.qobuz.com/us-en/discover/legals/privacy" hreflang="en-US" />
+    <link rel="alternate" href="https://www.qobuz.com/ie-en/discover/legals/privacy" hreflang="en-IE" />
+    <link rel="alternate" href="https://www.qobuz.com/lu-de/discover/legals/privacy" hreflang="de-LU" />
+    <link rel="alternate" href="https://www.qobuz.com/lu-fr/discover/legals/privacy" hreflang="fr-LU" />
+    <link rel="alternate" href="https://www.qobuz.com/nl-nl/discover/legals/privacy" hreflang="nl-NL" />
+    <link rel="alternate" href="https://www.qobuz.com/dk-en/discover/legals/privacy" hreflang="en-DK" />
+    <link rel="alternate" href="https://www.qobuz.com/fi-en/discover/legals/privacy" hreflang="en-FI" />
+    <link rel="alternate" href="https://www.qobuz.com/no-en/discover/legals/privacy" hreflang="en-NO" />
+    <link rel="alternate" href="https://www.qobuz.com/se-en/discover/legals/privacy" hreflang="en-SE" />
+    <link rel="alternate" href="https://www.qobuz.com/au-en/discover/legals/privacy" hreflang="en-AU" />
+    <link rel="alternate" href="https://www.qobuz.com/nz-en/discover/legals/privacy" hreflang="en-NZ" />
+
+
+                <script>
+            (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});
+                var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;
+                j.src='//www.googletagmanager.com/gtm.js?id='+i+dl;
+                f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-MTLV8X8');
+        </script>
+            </head>
+
+    <body id="discover" class="  body-fr-fr" context="privacy_protection" data-gtm="">
+    <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+                <div class="spinner"></div>
+                    
+<header class="header01 isOpen">
+    <div class="content-mobile">
+        <span class="hamburger pct pct-menu"></span>
+        <div class="logo-container-mobile">
+            <a href="/fr-fr" class="logo-qobuz-dark"></a>
+            <a href="/fr-fr" class="logo-qobuz-light"></a>
+        </div>
+    </div>
+
+    <div class="content-desktop">
+        <div class="logo-container-desktop">
+            <a href="/fr-fr" class="logo-qobuz-dark"></a>
+            <a href="/fr-fr" class="logo-qobuz-light"></a>
+        </div>
+        <nav>
+            <a href="/fr-fr/music/streaming/offers">Offres de streaming</a>
+                        <a href="/fr-fr/shop">Boutique de téléchargement</a>
+                                    <a href="/fr-fr/info">Magazine</a>
+                    </nav>
+    </div>
+</header>
+    
+    <main class="main-privacy-protection">
+    <section class="intro-privacy-protection">
+        <div class="image-privacy-protection"></div>
+        <div class="intro-privacy-protection-content">
+            <h1>Protection des données personnelles</h1>
+        </div>
+    </section>
+    <section class="text-privacy-protection">
+        <div class="container-text-privacy-protection">
+            <!--Intro Text 00-->
+
+            <p>La protection des données à caractère personnel est chère à Xandrie, entreprise propriétaire de la marque Qobuz. Aussi, Xandrie souhaite vous informer (abonnés, prospects et internautes visitant ses sites) des droits dont vous disposez à ce titre, et des conditions dans lesquelles vos données personnelles sont collectées, utilisées, conservées et archivées par Xandrie. </p>
+            <p>Dans le cadre de ses activités, Xandrie procède à des traitements de données personnelles vous concernant (ci-après « les traitements »). Ainsi, Xandrie peut collecter vos données personnelles :</p>
+            <ul>
+                <li>directement auprès de vous, lorsque vous renseignez nos formulaires afin de souscrire un abonnement à un de nos produits ou services (abonnement à nos services de streaming musical par exemple) ;</li>
+                <li>auprès de partenaires, sous réserve que ce dernier ait obtenu votre accord afin de transmettre des informations vous concernant à Xandrie.</li>
+            </ul>
+
+            <div id="accordion">
+
+                <!--Question 01-->
+                <div class="privacy-protection-question">
+                    <div class="privacy-protection-collapse" id="headingOne">
+                        <div data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <span class="pct-carret-bottom"></span>
+                            <h2>1. Quelles sont les données personnelles traitées par Xandrie vous concernant ?</h2>
+                        </div>
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-target="#collapseOne">
+                            <div class="card-body">
+                                <p>Sont principalement collectées dans le cadre de votre relation contractuelle ou commerciale avec Xandrie les catégories de données personnelles suivantes : </p>
+                                <ul>
+                                    <li>les données personnelles déclaratives (les données communiquées par vous de manière active, par exemple en renseignant un formulaire d’abonnement à un de nos services) ; </li>
+                                    <li>les données personnelles liées à votre utilisation des produits et services proposés par Xandrie (notamment les données collectées par les cookies présents sur nos sites) ;</li>
+                                    <li>les données personnelles provenant de tiers (sous réserve que ce dernier ait obtenu au préalable votre accord afin de procéder à cette communication) ;</li>
+                                    <li>les données personnelles inférées ou calculées par Xandrie. </li>
+                                </ul>
+                                <p>Les dispositions relatives aux témoins ou traceurs de connexion figurent dans la  <a href="/fr-fr/page/charte_cookies"> <b>politique cookies.</b> </a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+
+                <!--Question 02-->
+                <div class="privacy-protection-question">
+                    <div class="privacy-protection-collapse" id="headingTwo">
+                        <div data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                            <span class="pct-carret-bottom"></span>
+                            <h2>2. Quelles raisons justifie les traitements effectués par Xandrie sur vos données personnelles ?</h2>
+                        </div>
+                        <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-target="#collapseTwo">
+                            <div class="card-body">
+                                <p>Conformément à la réglementation relative à la protection des données (Règlement général sur la protection des données n°2016/679 du 27 avril 2016 et loi n°78/17 du 6 janvier 1978 modifiée), Xandrie collecte vos données personnelles sur la base : </p>
+                                <ul>
+                                    <li>de votre consentement lorsqu’il est requis (notamment en matière de prospection commerciale) ; </li>
+                                    <li>d’un contrat que vous avez souscrit auprès de Xandrie (par exemple dans le cadre de vos abonnement à nos services de streaming musical) ; </li>
+                                    <li>ou quand cela est justifié par ses intérêts légitimes.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+
+                <!--Question 03-->
+                <div class="privacy-protection-question">
+                    <div class="privacy-protection-collapse" id="headingThree">
+                        <div data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                            <span class="pct-carret-bottom"></span>
+                            <h2>3. Combien de temps Xandrie conserve vos données personnelles ?</h2>
+                        </div>
+                        <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-target="#collapseThree">
+                            <div class="card-body">
+                                <p>Les données personnelles sont conservées conformément à la durée nécessaire aux finalités pour lesquelles elles sont collectées. 
+
+ Concernant les : </p>
+                                <ul>
+                                    <li>abonnés aux produits et services proposés par Xandrie, leurs données sont conservées, pendant la durée du contrat augmentée des durées de prescriptions légales applicables ; </li>
+                                    <li>prospects, leurs données sont conservées 3 ans à compter du dernier contact avec eux ; </li>
+                                    <li>internautes, leurs données collectées au travers des cookies sont conservées pour une durée maximale de 13 mois à compter de leur collecte.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+
+                <!--Question 04-->
+                <div class="privacy-protection-question">
+                    <div class="privacy-protection-collapse" id="headingFour">
+                        <div data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                            <span class="pct-carret-bottom"></span>
+                            <h2>4. Quelles sont les personnes susceptibles d’accéder à vos données personnelles ?</h2>
+                        </div>
+                        <div id="collapseFour" class="collapse show" aria-labelledby="headingFour" data-target="#collapseFour">
+                            <div class="card-body">
+                                <p>Les données personnelles collectées, ainsi que les données personnelles recueillies ultérieurement par Xandrie lui sont destinées, en tant que responsable du traitement. A ce titre, il s’assure que seules les personnes habilitées peuvent y accéder. </p>
+                                <p> Les destinataires de vos données en interne sont : </p>
+                                <ul>
+                                    <li>le service marketing de Xandrie ;</li>
+                                    <li>le data analyste de Xandrie ;</li>
+                                    <li>le service client de Xandrie. </li>
+                                </ul>
+                                <p> Les destinataires externes de vos données sont : </p>
+                                <ul>
+                                    <li>les sous-traitants de Xandrie (les prestataires techniques en charge de l’hébergement des données ou des développements informatiques, les prestataire de services de paiement…) ; </li>
+                                    <li>les partenaires et tiers que vous aurez autorisés.</li>
+                                </ul>
+                                <p>Xandrie n’est pas responsable des traitements de vos données personnelles que vous avez pu autoriser auprès de tiers et qui ne sont pas partagés avec lui tels que par exemple les réseaux sociaux. Il vous appartient de vous référer aux politiques de protection des données de ces tiers pour vérifier les conditions des traitements réalisés ou exercer vos droits au titre de ces traitements.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+
+                <!--Question 05-->
+                <div class="privacy-protection-question">
+                    <div class="privacy-protection-collapse" id="headingFive">
+                        <div data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                            <span class="pct-carret-bottom"></span>
+                            <h2>5. Quels buts poursuit Xandrie lorsqu’il collecte vos données personnelles ?</h2>
+                        </div>
+                        <div id="collapseFive" class="collapse show" aria-labelledby="headingFive" data-target="#collapseFive">
+                            <div class="card-body">
+                                <p>Les données personnelles collectées par Xandrie sont utilisées pour des finalités déterminées, explicites et légitimes. </p>
+                                <p>Sur la base d’un contrat conclu avec vous ou de mesures précontractuelles prises à votre demande, Xandrie réalise les traitements ci-dessous : </p>
+                                <ul>
+                                    <li>souscription des abonnements aux produits et services de Xandrie ;</li>
+                                    <li>Gestion de notre relation commerciale et contractuelle dans le cadre de vos abonnements souscrits ;</li>
+                                    <li>facturation et paiement.</li>
+                                </ul>
+                                <p>Sur la base d’un intérêt légitime poursuivi par Xandrie, les traitements suivants sont mis en œuvre : </p>
+                                <ul>
+                                    <li>améliorer nos produits et services en fonction des dysfonctionnements signalés par vous ;</li>
+                                    <li>personnalisation du service offert dans le cadre de vos abonnements en fonction de vos préférences ;</li>
+                                    <li>gestion des réclamations. </li>
+                                </ul>
+                                <p>Sur la base d’un intérêt légitime poursuivi par Xandrie ou votre consentement lorsqu’il est requis, Xandrie réalise les traitements ci-après :</p>
+                                <ul>
+                                    <li>prospection commerciale ; </li>
+                                    <li>information sur les produits et services offerts par Xandrie ;</li>
+                                    <li>mesures d’audience (statistiques et analyses d’audience).</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+
+                <!--Question 06-->
+                <div class="privacy-protection-question">
+                    <div class="privacy-protection-collapse" id="headingSix">
+                        <div data-toggle="collapse" data-target="#collapseSix" aria-expanded="true" aria-controls="collapseSix">
+                            <span class="pct-carret-bottom"></span>
+                            <h2>6. Quelles sont les mesures de sécurité mises en œuvre par Xandrie</h2>
+                        </div>
+                        <div id="collapseSix" class="collapse show" aria-labelledby="headingSix" data-target="#collapseSix">
+                            <div class="card-body">
+
+                                <p>Xandrie prend, au regard des risques que présentent les traitements, les mesures appropriées pour préserver la sécurité et la confidentialité de vos données personnelles et notamment afin d’empêcher qu’elles ne soient détruites, déformées ou que des tiers non autorisés y aient accès. </p>
+                                <p>Xandrie choisit des sous-traitants ou des prestataires qui présentent des garanties suffisantes en termes de sécurité. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+
+                <!--Question 07-->
+                <div class="privacy-protection-question">
+                    <div class="privacy-protection-collapse" id="headingSeven">
+                        <div data-toggle="collapse" data-target="#collapseSeven" aria-expanded="true" aria-controls="collapseSeven">
+                            <span class="pct-carret-bottom"></span>
+                            <h2>7. Quels sont les droits dont vous disposez sur vos données personnelles ?</h2>
+                        </div>
+                        <div id="collapseSeven" class="collapse show" aria-labelledby="headingSeven" data-target="#collapseSeven">
+                            <div class="card-body">
+                                <p>Vous disposez sur vos données des droits ci-après : un droit d'accès, un droit de rectification, un droit à l’effacement, un droit à la portabilité des données, un droit d'opposition pour des raisons tenant à votre situation particulière, un droit d’opposition à la prospection à tout moment, un droit au retrait de votre consentement, un droit à la limitation, un droit d’adresser une réclamation à la Cnil si la réponse apportée par Xandrie à votre demande d’exercice de droit ne vous a pas apporté satisfaction, un droit de définir des directives concernant la conservation, l’effacement et la communication de vos données après votre décès auprès d’un tiers de confiance désigné par décret.</p>
+                                <p>Xandrie tient à vous informer que le non-renseignement ou la modification de vos données sont susceptibles d’avoir des conséquences dans le traitement de certaines demandes dans le cadre de l’exécution des relations contractuelles, et que votre demande au titre de l’exercice de vos droits sera conservée à des fins de suivi. Toute demande, doit comprendre obligatoirement votre nom, prénom et adresse et devra être adressée à support@qobuz.com, ou XANDRIE SA service juridique, 45 rue de Delizy, 93692 Pantin CEDEX.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+
+                <!--Question 08-->
+                <div class="privacy-protection-question">
+                    <div class="privacy-protection-collapse" id="headingEight">
+                        <div data-toggle="collapse" data-target="#collapseEight" aria-expanded="true" aria-controls="collapseEight">
+                            <span class="pct-carret-bottom"></span>
+                            <h2>8. Comment Xandrie analyse vos données ?</h2>
+                        </div>
+                        <div id="collapseEight" class="collapse show" aria-labelledby="headingEight" data-target="#collapseEight ">
+                            <div class="card-body">
+                                <p>Xandrie analyse les données liées à l’utilisation qui est faite du service par l’abonné afin de personnaliser le service en fonction de l’abonné (modification de l’agencement ou de l’habillage des pages sur lesquelles il navigue). </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+
+                <!--Question 09-->
+                <div class="privacy-protection-question">
+                    <div class="privacy-protection-collapse" id="headingNine">
+                        <div data-toggle="collapse" data-target="#collapseNine" aria-expanded="true" aria-controls="collapseNine">
+                            <span class="pct-carret-bottom"></span>
+                            <h2>9. Quelles sont les personnes susceptibles d’accéder à vos données personnelles ?</h2>
+                        </div>
+                        <div id="collapseNine" class="collapse show" aria-labelledby="headingNine" data-target="#collapseNine">
+                            <div class="card-body">
+                                <p>Les données, collectées auprès de vous par Xandrie sont susceptibles de faire l’objet de transferts hors de l’Union Européenne. Par exemple, pour l’hébergement de vos données personnelles, Xandrie a recours à un prestataire qui se situe hors de l’Union Européenne.</p>
+                                <p>Pour sécuriser ces transferts, Xandrie peut par exemple mettre en place des clauses types définies par la Commission européenne afin d’encadrer ces flux. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+            <footer class="footer01">
+    <div class="content">
+        <div class="col-01 display-for-desktop">
+            <div class="logo-qobuz-light"></div>
+        </div>
+        <div class="col-02">
+            <p>Besoin d&#039;aide ?</p>
+            <nav>
+                <a href="/fr-fr/help">Aide</a>
+                <a href="#" onclick="return Optanon.ToggleInfoDisplay()">Préférences cookies</a>
+            </nav>
+            <a href="//play.qobuz.com/" target="_blank" class="display-for-desktop webplayer btn btn-primary">Lecteur web </a>
+        </div>
+
+        <div class="col-03">
+    <p>Corporate</p>
+    <nav>
+        <a href="/fr-fr/about">Qui sommes-nous ?</a>
+        <a href="//www.welcometothejungle.co/companies/qobuz">Qobuz recrute</a>
+                            <a href="http://blogsv2.qobuz.com/qobuz-blog-fr/" target="_blank">Le blog Qobuz</a>
+                            <a href="http://blogsv2.qobuz.com/espace-presse/" target="_blank">Espace presse</a>
+                <a href="/fr-fr/page/annonceurs-partenariats">Business et partenaires</a>
+        <a href="/fr-fr/society">Qobuz Society</a>
+    </nav>
+</div>
+        <div class="col-04">
+    <p>Nos Produits</p>
+    <nav>
+        <a href="/fr-fr/music/streaming/offers">Offres de streaming</a>
+        <a href="/fr-fr/discover/apps-partners">Nos applications</a>
+                <a href="/fr-fr/offer-qobuz">Offrez Qobuz</a>
+                <a href="/fr-fr/audio-quality">Découvrir la haute qualité sonore</a>
+                <a href="/fr-fr/shop">Boutique de téléchargement</a>
+            </nav>
+</div>
+        <div class="col-05">
+    <p>Suivez-nous</p>
+    <nav>
+        <a href="//www.facebook.com/qobuz" target="_blank">
+            <span class="pct pct-facebook-2"></span>
+        </a>
+                    <a href="//www.twitter.com/qobuzFR" target="_blank">
+                <span class="pct pct-twitter"></span>
+            </a>
+                        <a href="//www.youtube.com/qobuz" target="_blank">
+            <span class="pct pct-youtube"></span>
+        </a>
+                <a href="//www.instagram.com/qobuz" target="_blank">
+            <span class="pct pct-instagram"></span>
+        </a>
+    </nav>
+</div>
+        <div class="col-06">
+            <div class="payment-methods">
+    <div class="credit-cards payment-methods-container">
+        <img class="credit-cards-logo external-logo logo-visa"
+             src="/assets-static/img/external-logos/logo_visa_small.png"
+             alt="logo visa"/>
+        <img class="credit-cards-logo external-logo logo-mastercard"
+             src="/assets-static/img/external-logos/logo_mastercard_small.png"
+             alt="logo mastercard"/>
+        <img class="credit-cards-logo external-logo logo-CB" src="/assets-static/img/external-logos/logo_CB.png"
+             alt="logo carte bleue"/>
+        <img class="credit-cards-logo external-logo logo-paypal"
+             src="/assets-static/img/external-logos/logo_paypal_small.png"
+             alt="logo paypal"/>
+    </div>
+</div>        </div>
+        <div class="copyright">
+    &copy; 2022 XANDRIE SA - 45 rue de Delizy, 93692 Pantin CEDEX, France
+    <nav>
+        <a href="/fr-fr/legal/mentions">Mentions légales</a>
+        <a href="/fr-fr/legal/terms">Conditions générales d&#039;utilisation et de vente</a>
+        <a href="/fr-fr/discover/legals/privacy">Protection des données personnelles</a>
+        <a href="/fr-fr/page/charte_cookies">Cookies</a>
+    </nav>
+
+    <div class="btn-group dropup btn-country">
+    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="modal" data-target="#modalCountries"
+            aria-haspopup="true"
+            aria-expanded="false" data-flip="false">
+        <svg aria-hidden="true" class="button-flag-icon">
+            <use xlink:href="/assets-static/img/sprites/flags.svg#fr"></use>
+        </svg>
+        France
+    </button>
+
+    <div class="modal" id="modalCountries" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal__wrapper">
+            <span class="modal__close pct-close" data-dismiss="modal"></span>
+            <ul class="modal__content countries countries__list">
+                                    <li class="countries__items">
+                                                     <svg aria-hidden="true" class="flag-icon">
+                                <use xlink:href="/assets-static/img/sprites/flags.svg#au"></use>
+                            </svg>
+                            <a class="modal__text"
+                               href="/au-en/discover">Australia
+                            </a>
+                                            </li>
+                                    <li class="countries__items">
+                                                     <svg aria-hidden="true" class="flag-icon">
+                                <use xlink:href="/assets-static/img/sprites/flags.svg#at"></use>
+                            </svg>
+                            <a class="modal__text"
+                               href="/at-de/discover">Austria
+                            </a>
+                                            </li>
+                                    <li class="countries__items">
+                                                    <svg aria-hidden="true" class="flag-icon">
+                                <use xlink:href="/assets-static/img/sprites/flags.svg#be"></use>
+                            </svg>
+                            <div class="modal__text countries__language">
+                                <span>Belgium</span>
+                                <span class="countries__language--wrapper">
+                                                                            <a class="modal__text countries__language--choice"
+                                           href="/be-fr/discover">Français</a>
+                                                                            <a class="modal__text countries__language--choice"
+                                           href="/be-nl/discover">Nederlands</a>
+                                                                    </span>
+                            </div>
+                                            </li>
+                                    <li class="countries__items">
+                                                     <svg aria-hidden="true" class="flag-icon">
+                                <use xlink:href="/assets-static/img/sprites/flags.svg#dk"></use>
+                            </svg>
+                            <a class="modal__text"
+                               href="/dk-en/discover">Denmark
+                            </a>
+                                            </li>
+                                    <li class="countries__items">
+                                                     <svg aria-hidden="true" class="flag-icon">
+                                <use xlink:href="/assets-static/img/sprites/flags.svg#fi"></use>
+                            </svg>
+                            <a class="modal__text"
+                               href="/fi-en/discover">Finland
+                            </a>
+                                            </li>
+                                    <li class="countries__items">
+                                                     <svg aria-hidden="true" class="flag-icon">
+                                <use xlink:href="/assets-static/img/sprites/flags.svg#fr"></use>
+                            </svg>
+                            <a class="modal__text"
+                               href="/fr-fr/discover">France
+                            </a>
+                                            </li>
+                                    <li class="countries__items">
+                                                     <svg aria-hidden="true" class="flag-icon">
+                                <use xlink:href="/assets-static/img/sprites/flags.svg#de"></use>
+                            </svg>
+                            <a class="modal__text"
+                               href="/de-de/discover">Germany
+                            </a>
+                                            </li>
+                                    <li class="countries__items">
+                                                     <svg aria-hidden="true" class="flag-icon">
+                                <use xlink:href="/assets-static/img/sprites/flags.svg#ie"></use>
+                            </svg>
+                            <a class="modal__text"
+                               href="/ie-en/discover">Ireland
+                            </a>
+                                            </li>
+                                    <li class="countries__items">
+                                                     <svg aria-hidden="true" class="flag-icon">
+                                <use xlink:href="/assets-static/img/sprites/flags.svg#it"></use>
+                            </svg>
+                            <a class="modal__text"
+                               href="/it-it/discover">Italy
+                            </a>
+                                            </li>
+                                    <li class="countries__items">
+                                                    <svg aria-hidden="true" class="flag-icon">
+                                <use xlink:href="/assets-static/img/sprites/flags.svg#lu"></use>
+                            </svg>
+                            <div class="modal__text countries__language">
+                                <span>Luxembourg</span>
+                                <span class="countries__language--wrapper">
+                                                                            <a class="modal__text countries__language--choice"
+                                           href="/lu-de/discover">Deutsch</a>
+                                                                            <a class="modal__text countries__language--choice"
+                                           href="/lu-fr/discover">Français</a>
+                                                                    </span>
+                            </div>
+                                            </li>
+                                    <li class="countries__items">
+                                                     <svg aria-hidden="true" class="flag-icon">
+                                <use xlink:href="/assets-static/img/sprites/flags.svg#nl"></use>
+                            </svg>
+                            <a class="modal__text"
+                               href="/nl-nl/discover">Netherlands
+                            </a>
+                                            </li>
+                                    <li class="countries__items">
+                                                     <svg aria-hidden="true" class="flag-icon">
+                                <use xlink:href="/assets-static/img/sprites/flags.svg#nz"></use>
+                            </svg>
+                            <a class="modal__text"
+                               href="/nz-en/discover">New Zealand
+                            </a>
+                                            </li>
+                                    <li class="countries__items">
+                                                     <svg aria-hidden="true" class="flag-icon">
+                                <use xlink:href="/assets-static/img/sprites/flags.svg#no"></use>
+                            </svg>
+                            <a class="modal__text"
+                               href="/no-en/discover">Norway
+                            </a>
+                                            </li>
+                                    <li class="countries__items">
+                                                     <svg aria-hidden="true" class="flag-icon">
+                                <use xlink:href="/assets-static/img/sprites/flags.svg#es"></use>
+                            </svg>
+                            <a class="modal__text"
+                               href="/es-es/discover">Spain
+                            </a>
+                                            </li>
+                                    <li class="countries__items">
+                                                     <svg aria-hidden="true" class="flag-icon">
+                                <use xlink:href="/assets-static/img/sprites/flags.svg#se"></use>
+                            </svg>
+                            <a class="modal__text"
+                               href="/se-en/discover">Sweden
+                            </a>
+                                            </li>
+                                    <li class="countries__items">
+                                                    <svg aria-hidden="true" class="flag-icon">
+                                <use xlink:href="/assets-static/img/sprites/flags.svg#ch"></use>
+                            </svg>
+                            <div class="modal__text countries__language">
+                                <span>Switzerland</span>
+                                <span class="countries__language--wrapper">
+                                                                            <a class="modal__text countries__language--choice"
+                                           href="/ch-de/discover">Deutsch</a>
+                                                                            <a class="modal__text countries__language--choice"
+                                           href="/ch-fr/discover">Français</a>
+                                                                    </span>
+                            </div>
+                                            </li>
+                                    <li class="countries__items">
+                                                     <svg aria-hidden="true" class="flag-icon">
+                                <use xlink:href="/assets-static/img/sprites/flags.svg#gb"></use>
+                            </svg>
+                            <a class="modal__text"
+                               href="/gb-en/discover">United Kingdom
+                            </a>
+                                            </li>
+                                    <li class="countries__items">
+                                                     <svg aria-hidden="true" class="flag-icon">
+                                <use xlink:href="/assets-static/img/sprites/flags.svg#us"></use>
+                            </svg>
+                            <a class="modal__text"
+                               href="/us-en/discover">United States
+                            </a>
+                                            </li>
+                            </ul>
+        </div>
+    </div>
+</div>
+<div class="modal__overlay"></div>
+
+</div>    </div>
+</footer>
+    
+        <!-- SCRIPT -->
+            <script src="/assets-static/build/runtime.c8304bfb.js"></script><script src="/assets-static/build/0.a38c3be0.js"></script><script src="/assets-static/build/3.060bcb12.js"></script><script src="/assets-static/build/js/app.9cd2ca44.js"></script>
+            <script>
+        $(document).ready(function() {
+            var browserSize = function() {
+                var ww = document.body.clientWidth;
+                if (ww < 1024) {
+                  $('.collapse').removeClass('show');
+                  $('.pct-carret-bottom').css('visibility','visible');
+                } else if (ww >= 1025) {
+                  $('.collapse').addClass('show');
+                  $('.pct-carret-bottom').css('visibility','hidden');
+                };
+              };
+              $(window).resize(function(){
+                browserSize();
+              });
+              browserSize();
+        });
+</script>
+<script>
+        $(document).ready(function() {
+            
+            $(".privacy-protection-collapse").click(function(e) {
+                $(this).find('span').toggleClass('pct-carret-top pct-carret-bottom');
+            });
+        });
+</script>
+                    <!-- /SCRIPT -->
+
+            <script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam-cell.nr-data.net","licenseKey":"ffa17d46f4","applicationID":"161557643","transactionName":"bwcDZUdUCEZRV0MIW1ZNIkRGQQlYH0RFCEJZARhuRUcJQVVXQwhbVg==","queueTime":0,"applicationTime":22,"atts":"Q0AAEw9OG0g=","errorBeacon":"bam-cell.nr-data.net","agent":""}</script></body>
+</html>
