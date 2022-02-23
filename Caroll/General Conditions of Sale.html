@@ -1,0 +1,4017 @@
+
+
+
+
+
+
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie" lang="fr-FR"> <![endif]-->
+<!--[if IE 7]> <html class="ie7 oldie" lang="fr-FR"> <![endif]-->
+<!--[if IE 8]> <html class="ie8 oldie" lang="fr-FR"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="fr-FR"> <!--<![endif]-->
+<head>
+
+
+
+
+
+<script>
+window.countryCode = "FR";
+window.country = "France";
+window.localeLang = "fr";
+window.ipCountry = "FR";
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<meta charset=UTF-8 />
+
+<meta http-equiv="x-ua-compatible" content="ie=edge"/>
+
+<meta id="myviewport" name="viewport"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/on/demandware.static/Sites-caroll-fr-Site/-/fr_FR/v1645589423575/lib/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
+
+<script src="/on/demandware.static/Sites-caroll-fr-Site/-/fr_FR/v1645589423575/js/gtmEventsHandler.js"></script>
+
+<script>pageContext = {"title":"Content Search Results","type":"search","ns":"search"};</script>
+
+<script type="text/javascript">
+  /**
+   *	Handle GTM Datalayer
+  */
+  var onLoadTag = Controller.convertToDataLayer(
+    "{&quot;pageType&quot;:&quot;conditions-generales-de-vente&quot;,&quot;language&quot;:&quot;fr_FR&quot;,&quot;country&quot;:&quot;France&quot;,&quot;currency&quot;:&quot;EUR&quot;,&quot;envWork&quot;:&quot;production&quot;,&quot;page_URL&quot;:&quot;https://www.caroll.com/fr_fr/general/conditions-generales-de-vente.html&quot;,&quot;pageFr_URL&quot;:&quot;https://www.caroll.com/fr_fr/general/conditions-generales-de-vente.html&quot;,&quot;productCategoryId&quot;:null,&quot;catLevel1&quot;:&quot;recherche interne&quot;}"
+  )
+  window.dataLayerParams = window.dataLayerParams || {}
+  onLoadTag = Object.assign({}, window.dataLayerParams, onLoadTag, { event: 'generic' })
+
+  /**
+  * Function which define which page is available for GTM
+  */
+  function getScopeGtm(pageContextNs) {
+    var generalScopeGTM = ['storefront', 'cms', 'page', 'category', 'search', 'product',
+      'cart', 'shipping', 'payment', 'checkout', 'checkoutLogin', 'orderconfirmation', 'account', 'wishlist', 'storelocator', 'error'];
+
+    return generalScopeGTM.indexOf(pageContextNs) >= 0;
+  }
+
+  if (getScopeGtm(pageContext.ns)) {
+    dataLayer = window.dataLayer || [];
+    dataLayer.push(onLoadTag)
+  }
+
+  /**
+   *	Handle GTM Events
+  */
+  var ModelEvents = [
+    {
+      eventName: "clickHPBlock",
+      condition: " .Edito, .Hero",
+      eventType: "click",
+      elementToTarget: ".Edito a, .Hero a"
+    }, {
+      eventName: "clickFooterSocial",
+      condition: "footer .Footer-primary .Footer-group--social",
+      eventType: "click",
+      elementToTarget: "footer .Footer-primary .Footer-group--social li a"
+    }, {
+      eventName: "clickSearchSuggest",
+      condition: ".js-Search .js-Search-suggestions .Search-results .Search-resultsProduct",
+      eventType: "click",
+      elementToTarget: ".js-Search .js-Search-suggestions .Search-results .Search-resultsProduct a",
+      isAjax: true
+    }, {
+      eventName: "clickPopinLookSeeMore",
+      condition: ".Layer--popinCross .Layer-contentWrapper",
+      eventType: "click",
+      elementToTarget: ".LayerContentPopinCrossItem .product-set-buttons-seeMore a.Link--primary",
+      isAjax: true
+    }, {
+      eventName: "clickShopDetails",
+      condition: ".pt_store-locator .Storeloc-Container",
+      eventType: "click",
+      elementToTarget: ".pt_store-locator .Storeloc-Container .Storeloc-Items a.Button--alt"
+    }, {
+      eventName: "clickShopPhone",
+      condition: ".pt_store-locator .Storedetail-Container",
+      eventType: "click",
+      elementToTarget: ".pt_store-locator .Storedetail-Container .Storedetail-SplitInfo a.Storedetail-ItemPhone"
+    }, {
+      eventName: "clickPopinBookAdd",
+      condition: ".pt_product-details",
+      eventType: "click",
+      elementToTarget: ".pt_product-details .LayerContentPopinCrossItem-buttons-addAllLook",
+      isAjax: true
+    }, {
+      eventName: "clickPopinLookAdd",
+      condition: ".pt_lookbook",
+      eventType: "click",
+      elementToTarget: ".pt_lookbook .LayerContentPopinCrossItem-buttons-addAllLook",
+      isAjax: true
+    }, {
+      eventName: "clickNavPersoLink",
+      condition: "nav.NavUtility ul.NavUtility-list",
+      eventType: "click",
+      elementToTarget: "nav.NavUtility ul.NavUtility-list li a.NavUtility-link"
+    }, {
+      eventName: "clickPPFindSize",
+      condition: ".pt_product-details #pdpMain .Product-details-content",
+      eventType: "click",
+      elementToTarget: ".pt_product-details #pdpMain .Product-details-content .Product-content span.fz_button_text"
+    }, {
+      eventName: "clickPPAddLook",
+      condition: ".pt_product-details #pdpMain .PushProducts",
+      eventType: "click",
+      condition: ".pt_product-details #pdpMain .PushProducts a.PushProducts-button"
+    }, {
+      eventName: "clickPPEReservation",
+      condition: ".pt_product-details #pdpMain .Product-details-content",
+      eventType: "click",
+      elementToTarget: ".pt_product-details #pdpMain .Product-details-content .Product-content a.Product-button-inStoreBooking"
+    }, {
+      eventName: "clickLPEReservation",
+      condition: ".Layer-wrapper #pdpMain .Product-details-content",
+      eventType: "click",
+      elementToTarget: ".Layer-wrapper #pdpMain .Product-details-content .Product-content a.Product-button-inStoreBooking",
+      isAjax: true
+    }, {
+      eventName: "clickLPSeeProduct",
+      condition: ".Layer--expressCheckout #pdpMain .Product-details-content",
+      eventType: "click",
+      elementToTarget: ".Layer--expressCheckout #pdpMain .Product-details-content .Product-content a.LinkIcon--primary",
+      isAjax: true
+    }, {
+      eventName: "clickSLFindShop",
+      condition: "header nav.NavUtility .NavUtility-item--stores",
+      eventType: "click",
+      elementToTarget: "header nav.NavUtility div.NavUtility-layer .LayerContentStore-buttonStorelocator",
+      isAjax: true
+    }, {
+      eventName: "clickShopAddFav",
+      condition: ".pt_store-locator .primary-content .Storedetail-Container",
+      eventType: "click",
+      elementToTarget: ".pt_store-locator .primary-content .Storedetail-Container .Storedetail-TopInfo .Storedetail-Main .Storedetail-AddAsFav"
+    }, {
+      eventName: "clickShopChange",
+      condition: "header nav.NavUtility .NavUtility-item--stores",
+      eventType: "click",
+      elementToTarget: "header nav.NavUtility div.NavUtility-layer .LayerContentStore-linkChangeStore",
+      isAjax: true
+    }, {
+      eventName: "clickAddToCart",
+      eventType: "click",
+      elementToTarget: "#add-to-cart",
+      isAjax: true
+    }, {
+      eventName: "clickThumbnail",
+      condition: "#search-result-items",
+      eventType: "click",
+      elementToTarget: ".ProductTile-link .ProductTile-swiperWrapper",
+    }, {
+      eventName: "clickPPCrossSellLook",
+      condition: ".PushProducts--crosslook",
+      eventType: "click",
+      elementToTarget: ".PushProducts--crosslook .ProductTile-swiperWrapper",
+    }, {
+      eventName: "clickPPCrossSellSuggest",
+      condition: ".PushProducts--carousel",
+      eventType: "click",
+      elementToTarget: ".PushProducts--carousel .ProductTile-swiperWrapper",
+    }, {
+      eventName: "clickAccountLogIn",
+      condition: ".AccountLogin",
+      eventType: "click",
+      elementToTarget: "#main .AccountLogin .AccountLogin-box:nth-child(1) [name='dwfrm_login_login']",
+      data: {
+          buttonClicked: 'connectez vous',
+      },
+    }, {
+      eventName: "clickAccountLogIn",
+      condition: ".AccountLogin",
+      eventType: "click",
+      elementToTarget: "#main .AccountLogin .AccountLogin-box:nth-child(1) .oAuthIcon",
+      data: {
+          buttonClicked: 'connectez vous avec facebook',
+      },
+    }, {
+      eventName: "clickAccountLogIn",
+      condition: ".AccountLogin",
+      eventType: "click",
+      elementToTarget: "#main .AccountLogin .AccountLogin-box:nth-child(2) .oAuthIcon",
+      data: {
+          buttonClicked: 'inscrivez vous avec facebook',
+      },
+    }, {
+      eventName: "clickAccountLogIn",
+      condition: ".AccountLogin",
+      eventType: "click",
+      elementToTarget: "#main .AccountLogin .AccountLogin-box:nth-child(2) [name='dwfrm_login_register']",
+      data: {
+          buttonClicked: 'créer votre compte',
+      },
+    }, {
+      eventName: "clickPPWishlist",
+      condition: ".pt_product-details",
+      eventType: "click",
+      elementToTarget: ".Product-button-addToWishlist",
+    },
+  ];
+
+  document.addEventListener("DOMContentLoaded", function (event) {
+    ModelEvents.forEach(Controller.init);
+  });
+</script>
+
+
+<script>
+$(function () {
+var env = 'desktop';
+if (navigator.userAgent.match(/(android|iphone|ipad|blackberry|symbian|symbianos|symbos|netfront|model-orange|javaplatform|iemobile|windows phone|samsung|htc|opera mobile|opera mobi|opera mini|presto|huawei|blazer|bolt|doris|fennec|gobrowser|iris|maemo browser|mib|cldc|minimo|semc-browser|skyfire|teashark|teleca|uzard|uzardweb|meego|nokia|bb10|playbook)/gi)) {
+if (((screen.width >= 480) && (screen.height >= 800)) || ((screen.width >= 800) && (screen.height >= 480)) || navigator.userAgent.match(/ipad/gi)) {
+env = 'tablet';
+} else {
+env = 'mobile';
+}
+}
+window.dataLayerParams = window.dataLayerParams || {};
+window.dataLayerParams['env_channel'] = env;
+});
+</script>
+
+
+
+
+    
+
+    <script>pageContext = {"title":"Content Search Results","type":"search","ns":"search"};</script>
+
+    <script type="text/javascript">
+        var dataLayerUserParams = {};
+        dataLayerParams = dataLayerParams || {}
+        dataLayer = window.dataLayer || [];
+
+        if (getScopeGtm(pageContext.ns)) {
+            dataLayerUserParams = "{&quot;userLogged&quot;:&quot;No&quot;,&quot;userSegment&quot;:&quot;1erecommande_remise|Everyone|Unregistered&quot;}";
+            dataLayerUserParams = Controller.convertToDataLayer(window.dataLayerUserParams);
+
+            if (dataLayerUserParams) {
+                dataLayerParams = Object.assign(dataLayerParams, dataLayerUserParams);
+                dataLayer.push(dataLayerParams)
+            }
+        }
+    </script>
+
+
+
+
+<script type="text/javascript">
+function bindQuickViewListeners() {
+$('body').on('click', '[data-gtm]', function(event) {
+var gtm = JSON.parse(this.dataset.gtm);
+var CrossLookSlider = $('.js-CrossLook-slider');
+var data = {};
+if (gtm.eventName === 'clickThumbnail') {
+data['productId'] = gtm.data.id;
+data['productName'] = gtm.data.name;
+data['productPrice'] = gtm.data.price;
+if (CrossLookSlider.length) {
+tagmanager_event('clickPPCrossSellLook', data);
+}
+if (gtm.data.shoppingType === 'express-purchase') {
+tagmanager_event('popinQuickBuyDisplay', data);
+}
+}
+if (gtm.eventName === 'clickAddToCart') {
+gtm.data.size = $('.Swatch-sizeErp').find('option:selected')
+.text().replace(/\s+/g, '');
+gtm.data.product_content_id = $(event.target).parent().parent()
+.find("#uvc").val();
+}
+tagmanager_event(gtm.eventName, gtm.data);
+});
+}
+if (document.readyState === 'loading') {
+document.addEventListener('DOMContentLoaded', bindQuickViewListeners);
+} else {
+bindQuickViewListeners();
+}
+</script>
+
+
+<script>
+window.tagmanager_event = function (event_name, parameters) {
+try {
+window.dataLayer = window.dataLayer || [];
+dataLayer.push({
+'event': event_name,
+[event_name]: parameters
+});
+} catch (e) {
+console.log(e);
+}
+};
+</script>
+<!-- Google Tag Manager -->
+<script>
+(function (w, d, s, l, i) {
+w[l] = w[l] || []; w[l].push({
+'gtm.start':
+new Date().getTime(), event: 'gtm.js'
+}); var f = d.getElementsByTagName(s)[0],
+j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-MCKF437');
+</script>
+<!-- End Google Tag Manager -->
+
+<script>
+//if (document.offsetWidth < 801) {
+if ((window.innerWidth < 801) || (screen.width < 801)) {
+document.getElementById('myviewport').setAttribute('content', 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0')
+}
+</script>
+
+
+
+
+
+
+
+<meta name="description" content="CGV">
+
+
+
+<meta name="robots" content="NOODP, index, follow">
+
+
+
+<title>CGV</title>
+
+
+
+
+
+<meta name="keywords" content="">
+
+
+
+
+<link rel="shortcut icon" href="/on/demandware.static/Sites-caroll-fr-Site/-/default/dw4bf37b0c/images/favicon/favicon.ico" />
+<link rel="apple-touch-icon" sizes="60x60" href="/on/demandware.static/Sites-caroll-fr-Site/-/default/dwa8f332d1/images/favicon/apple-icon-60x60.png" />
+<link rel="apple-touch-icon" sizes="57x57" href="/on/demandware.static/Sites-caroll-fr-Site/-/default/dw514165d1/images/favicon/apple-icon-57x57.png" />
+<link rel="apple-touch-icon" sizes="72x72" href="/on/demandware.static/Sites-caroll-fr-Site/-/default/dwf7d2ac1d/images/favicon/apple-icon-72x72.png" />
+<link rel="apple-touch-icon" sizes="76x76" href="/on/demandware.static/Sites-caroll-fr-Site/-/default/dw2f6eb67d/images/favicon/apple-icon-76x76.png" />
+<link rel="apple-touch-icon" sizes="114x114" href="/on/demandware.static/Sites-caroll-fr-Site/-/default/dw95786df9/images/favicon/apple-icon-114x114.png" />
+<link rel="apple-touch-icon" sizes="120x120" href="/on/demandware.static/Sites-caroll-fr-Site/-/default/dw6535811b/images/favicon/apple-icon-120x120.png" />
+<link rel="apple-touch-icon" sizes="144x144" href="/on/demandware.static/Sites-caroll-fr-Site/-/default/dw347a3163/images/favicon/apple-icon-144x144.png" />
+<link rel="apple-touch-icon" sizes="152x152" href="/on/demandware.static/Sites-caroll-fr-Site/-/default/dwd52512f3/images/favicon/apple-icon-152x152.png" />
+<link rel="apple-touch-icon" sizes="180x180" href="/on/demandware.static/Sites-caroll-fr-Site/-/default/dwa19a84e3/images/favicon/apple-icon-180x180.png" />
+<link rel="icon" type="image/png" sizes="192x192" href="/on/demandware.static/Sites-caroll-fr-Site/-/default/dw691a3ca9/images/favicon/android-icon-192x192.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/on/demandware.static/Sites-caroll-fr-Site/-/default/dwea206440/images/favicon/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="96x96" href="/on/demandware.static/Sites-caroll-fr-Site/-/default/dw27eb2087/images/favicon/favicon-96x96.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/on/demandware.static/Sites-caroll-fr-Site/-/default/dwe4c15ac9/images/favicon/favicon-16x16.png" />
+<link rel="manifest" href="/on/demandware.static/Sites-caroll-fr-Site/-/default/dw2a46d875/images/favicon/manifest.json" />
+<meta name="msapplication-TileColor" content="#ffffff" />
+<meta name="msapplication-TileImage" content="/on/demandware.static/Sites-caroll-fr-Site/-/default/dw988b4b48/images/favicon/ms-icon-144x144.png" />
+<meta name="theme-color" content="#ffffff" />
+<link rel="preconnect" href="https://serv-api.target2sell.com" crossorigin/>
+<link rel="preconnect" href="https://reco.target2sell.com" crossorigin/>
+<link rel="preconnect" href="https://www.google-analytics.com" crossorigin/>
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin/>
+<link rel="preconnect" href="https://cdn.tagcommander.com" crossorigin/>
+<link rel="preconnect" href="https://api.cquotient.com" crossorigin/>
+<link rel="preconnect" href="https://b.ftz.io" crossorigin/>
+
+
+
+<meta property="fb:pages" content="102180703178714">
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="og:title" content="CGV" />
+<meta name="twitter:title" content="CGV" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:url" content="https://www.caroll.com/fr_fr/general/conditions-generales-de-vente.html" />
+<meta property="og:description" content="" />
+<meta property="og:url" content="https://www.caroll.com/fr_fr/general/conditions-generales-de-vente.html" />
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="fr_FR" />
+<meta property="og:site_name" content="Caroll" />
+
+
+<meta property="og:image" content="/on/demandware.static/Sites-caroll-fr-Site/-/default/dwc70255ca/images/hp-slider.png" />
+<meta name="twitter:image:src" content="/on/demandware.static/Sites-caroll-fr-Site/-/default/dwc70255ca/images/hp-slider.png" />
+
+
+
+
+
+
+<link href="/on/demandware.static/Sites-caroll-fr-Site/-/fr_FR/v1645589423575/lib/jquery/ui/jquery-ui.min.css" type="text/css" rel="stylesheet" />
+<link href="/on/demandware.static/Sites-caroll-fr-Site/-/fr_FR/v1645589423575/lib/capadresse/ui.css" type="text/css" rel="stylesheet" />
+<link href="/on/demandware.static/Sites-caroll-fr-Site/-/fr_FR/v1645589423575/lib/font-awesome/font-awesome.min.css" type="text/css" rel="stylesheet" />
+<!--[if lt IE 9]>
+<script src="/on/demandware.static/Sites-caroll-fr-Site/-/fr_FR/v1645589423575/js/lib/html5.js"></script>
+<![endif]-->
+
+<script type="text/javascript">//<!--
+/* <![CDATA[ (head-active_data.js) */
+var dw = (window.dw || {});
+dw.ac = {
+    _analytics: null,
+    _events: [],
+    _category: "",
+    _searchData: "",
+    _anact: "",
+    _anact_nohit_tag: "",
+    _analytics_enabled: "true",
+    _timeZone: "Europe/Paris",
+    _capture: function(configs) {
+        if (Object.prototype.toString.call(configs) === "[object Array]") {
+            configs.forEach(captureObject);
+            return;
+        }
+        dw.ac._events.push(configs);
+    },
+	capture: function() { 
+		dw.ac._capture(arguments);
+		// send to CQ as well:
+		if (window.CQuotient) {
+			window.CQuotient.trackEventsFromAC(arguments);
+		}
+	},
+    EV_PRD_SEARCHHIT: "searchhit",
+    EV_PRD_DETAIL: "detail",
+    EV_PRD_RECOMMENDATION: "recommendation",
+    EV_PRD_SETPRODUCT: "setproduct",
+    applyContext: function(context) {
+        if (typeof context === "object" && context.hasOwnProperty("category")) {
+        	dw.ac._category = context.category;
+        }
+        if (typeof context === "object" && context.hasOwnProperty("searchData")) {
+        	dw.ac._searchData = context.searchData;
+        }
+    },
+    setDWAnalytics: function(analytics) {
+        dw.ac._analytics = analytics;
+    },
+    eventsIsEmpty: function() {
+        return 0 == dw.ac._events.length;
+    }
+};
+/* ]]> */
+// -->
+</script>
+
+
+<!-- Preload tags -->
+<link rel="preload" as="style" href="/on/demandware.static/Sites-caroll-fr-Site/-/fr_FR/v1645589423575/css/style.css"/>
+<link rel="preload" as="style" href="/on/demandware.static/Sites-caroll-fr-Site/-/fr_FR/v1645589423575/lib/jquery/ui/jquery-ui.min.css"/>
+<link rel="preload" as="style" href="/on/demandware.static/Sites-caroll-fr-Site/-/fr_FR/v1645589423575/lib/capadresse/ui.css" />
+<link rel="preload" as="style" href="/on/demandware.static/Sites-caroll-fr-Site/-/fr_FR/v1645589423575/lib/font-awesome/font-awesome.min.css"/>
+<link rel="preload" as="script" href="/on/demandware.static/Sites-caroll-fr-Site/-/fr_FR/v1645589423575/lib/jquery/jquery-2.1.1.min.js"/>
+<link rel="preload" as="script" href="/on/demandware.static/Sites-caroll-fr-Site/-/fr_FR/v1645589423575/lib/jquery/ui/jquery-ui.min.js"/>
+<link rel="preload" as="script" href="/on/demandware.static/Sites-caroll-fr-Site/-/fr_FR/v1645589423575/lib/jquery/jquery.jcarousel.min.js"/>
+<link rel="preload" as="script" href="/on/demandware.static/Sites-caroll-fr-Site/-/fr_FR/v1645589423575/lib/jquery/jquery.validate.min.js"/>
+<link rel="preload" as="script" href="/on/demandware.static/Sites-caroll-fr-Site/-/fr_FR/v1645589423575/lib/jquery/jquery.zoom.min.js" />
+<link rel="preload" as="script" href="/on/demandware.static/Sites-caroll-fr-Site/-/fr_FR/v1645589423575/lib/jquery/jquery.selectBoxIt.min.js"/>
+<link rel="preload" as="script" href="/on/demandware.static/Sites-caroll-fr-Site/-/fr_FR/v1645589423575/js/app.js"/>
+<link rel="preload" as="script" href="/on/demandware.static/Sites-caroll-fr-Site/-/fr_FR/v1645589423575/js/gtmEventsHandler.js"/>
+<link rel="preload" as="script" href="/on/demandware.static/Sites-caroll-fr-Site/-/fr_FR/v1645589423575/js/searchrank.js"/>
+<!-- UI -->
+<link rel="stylesheet" href="/on/demandware.static/Sites-caroll-fr-Site/-/fr_FR/v1645589423575/css/style.css" />
+<!--[if lte IE 8]>
+<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js" type="text/javascript"></script>
+<script src="https://cdn.rawgit.com/chuckcarpenter/REM-unit-polyfill/master/js/rem.min.js" type="text/javascript"></script>
+<![endif]-->
+
+
+
+<meta name="google-site-verification" content="zMllVo3hbGgGIiT5xWtfCf3Yu2VwcX3B_ycGq9aZ4Xg" />
+
+
+
+
+
+
+
+
+<script type="text/javascript">
+if (window.jQuery) {
+jQuery(document).ready(function(){
+if(screen.width < 768){
+jQuery('#footer').append('<a href="/fr_fr/" class="full-site-link">View Full Site</a>');
+jQuery('.full-site-link')
+.attr('href', '/on/demandware.store/Sites-caroll-fr-Site/fr_FR/Home-FullSite')
+.click(function(e) {
+e.preventDefault();
+jQuery.ajax({
+url: '/on/demandware.store/Sites-caroll-fr-Site/fr_FR/Home-FullSite',
+success: function(){
+window.location.reload();
+}
+});
+}
+);
+}
+});
+}
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="alternate" href="https://www.caroll.com/fr_lu/general/conditions-generales-de-vente.html" hreflang="fr-LU"/>
+
+
+<link rel="alternate" href="https://www.caroll.com/pt_pt/general/conditions-generales-de-vente.html" hreflang="pt-PT"/>
+
+
+<link rel="alternate" href="https://www.caroll.com/it_it/general/conditions-generales-de-vente.html" hreflang="it-IT"/>
+
+
+<link rel="alternate" href="https://www.caroll.com/fr_be/general/conditions-generales-de-vente.html" hreflang="fr-BE"/>
+
+
+<link rel="alternate" href="https://www.caroll.com/nl_be/general/conditions-generales-de-vente.html" hreflang="nl-BE"/>
+
+
+<link rel="alternate" href="https://www.caroll.com/fr_fr/general/conditions-generales-de-vente.html" hreflang="fr-FR"/>
+
+
+<link rel="alternate" href="https://www.caroll.com/es_es/general/conditions-generales-de-vente.html" hreflang="es-ES"/>
+
+
+<link rel="alternate" href="https://www.caroll.com/fr_ch/general/conditions-generales-de-vente.html" hreflang="fr-CH"/>
+
+
+<link rel="alternate" href="https://www.caroll.com/de_ch/general/conditions-generales-de-vente.html" hreflang="de-CH"/>
+
+
+
+
+
+
+
+<link rel="canonical" href="https://www.caroll.com/fr_fr/general/conditions-generales-de-vente.html"/>
+
+
+</head>
+<body>
+
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src='https://www.googletagmanager.com/ns.html?id=GTM-MCKF437'
+height='0' width='0' style='display:none;visibility:hidden'></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="Header-topWrapper">
+<div class="Header-top">
+
+	 
+
+
+	
+
+
+
+<span class="Header-top-msg">Livraison gratuite en boutique</span>
+
+ 
+	
+
+
+
+
+
+
+
+
+
+
+<!-- dwMarker="content" dwContentID="4d6af4b66142609fb3027a6e9d" -->
+<a 	href="https://www.caroll.com/fr_fr/customer-service-contact-us/faqs.html"
+	title=""
+	class="Header-top-link">
+	<i class="Header-top-linkIcon Icon Icon--help"></i>
+	<span class="Header-top-linkText">Aide</span>
+</a>
+
+
+
+
+
+</div>
+</div>
+
+<div id="wrapper" class="pt_content Wrapper Wrapper--stickyNav js-StickyNav">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="Header-topMobile">
+    
+	 
+
+
+	
+
+
+
+<span class="Header-top-msg">Livraison gratuite en boutique</span>
+
+ 
+	
+</div>
+
+
+<!-- logos SVG -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display: none;">
+<defs>
+<g id="logo-desktop">
+<polyline points="63.3,164.6 62.2,164.6 62.2,171.8 63.3,171.8 63.3,164.6 "/>
+<path d="M83,164.5L83,164.5c-1.6,0-2.3,1-2.3,2c0,1,0.7,1.7,2,2.1c0.9,0.3,1.2,0.7,1.2,1.3
+c0,0.7-0.5,1.1-1.3,1.1c-0.8,0-1.5-0.2-2.2-0.7l0.2,1.2c0.4,0.2,1.1,0.5,1.8,0.5h0.1c1.6,0,2.4-0.9,2.4-2.1v-0.1
+c0-1.2-0.9-1.9-2.1-2.3c-0.8-0.3-1.2-0.6-1.2-1.1c0-0.5,0.4-1,1.2-1c0.6,0,1.1,0.2,1.4,0.4l0.2-0.9C84.3,164.7,83.7,164.5,83,164.5
+"/>
+<path d="M22.3,0h-0.2C12,0,0.1,7.2,0.1,21.3v0.1c0,14,11.8,21.3,22.1,21.3c5.3,0,8.2-0.6,10.7-2l1.3-6
+c-2.6,1.5-6.4,2.6-11.3,2.6c-8.2,0-16.5-5.3-16.5-15.9c0-10.7,8.5-16,16.5-16c4.2,0,8.3,1.4,10.3,2.7l1.1-5.4v0
+C31.9,1.3,28,0,22.3,0"/>
+<polyline points="6.7,106.1 0,106.1 0,148.7 30.5,148.7 30.5,143.2 6.7,143.2 6.7,106.1 "/>
+<polyline points="60.6,106.1 53.9,106.1 53.9,148.7 84.4,148.7 84.4,143.2 60.6,143.2 60.6,106.1 "/>
+<path d="M66.7,0h-2.3L46.9,42.7H53l4.4-10.9h16l4.4,10.9h6.3L66.7,0z M59.6,26.7l4.1-10.3
+c0.6-1.4,1.3-3.4,1.7-5.1h0.1c0.5,1.8,1.2,3.8,1.7,5.1l4.1,10.3H59.6z"/>
+<path d="M63,53c-11.7,0-21.3,9.6-21.3,21.3c0,11.8,9.5,21.3,21.3,21.3s21.3-9.6,21.3-21.3
+C84.3,62.6,74.7,53,63,53z M63,89.6c-8.4,0-15.2-6.8-15.2-15.2S54.6,59.1,63,59.1c8.4,0,15.2,6.8,15.2,15.2S71.4,89.6,63,89.6z"/>
+<path d="M18.1,76c4-1.7,7.2-5.3,7.2-11c0-8.1-6.6-12-12.4-12H0v42.7h6.2V77H12l12.9,18.7h7.3L18.1,76z
+M11.9,71.5H6.2v-13h5.7c3.7,0,7.1,2.1,7.1,6.5C19,69.5,15.6,71.5,11.9,71.5z"/>
+<path d="M2.8,164.6H0.6v7.2h1.1v-3.2h1.1c1,0,2.2-0.7,2.2-2C4.9,165.3,3.8,164.6,2.8,164.6z M2.6,167.7H1.7
+v-2.2h0.9c0.6,0,1.2,0.3,1.2,1.1C3.8,167.4,3.2,167.7,2.6,167.7z"/>
+<path d="M21.7,164.5h-0.4l-3.1,7.3h1.1l0.8-1.9h2.8l0.8,1.9h1.1L21.7,164.5z M20.5,169.1l0.7-1.8
+c0.1-0.2,0.2-0.6,0.3-0.9h0c0.1,0.3,0.2,0.6,0.3,0.9l0.7,1.8H20.5z"/>
+<path d="M43.1,168.5c0.7-0.3,1.3-0.9,1.3-1.8c0-1.4-1.1-2-2.2-2h-2.3v7.2H41v-3.2h1l2.3,3.2h1.3L43.1,168.5z
+M42,167.7h-1v-2.2h1c0.6,0,1.2,0.3,1.2,1.1C43.2,167.4,42.6,167.7,42,167.7z"/>
+</g>
+<g id="logo-mobile">
+<path d="M13,3.6C12.3,3.1,10.7,2.6,9,2.6C5.8,2.6,2.5,4.7,2.5,9c0,4.3,3.3,6.4,6.5,6.4c1.9,0,3.4-0.4,4.5-1
+l-0.5,2.4c-1,0.5-2.2,0.8-4.2,0.8C4.6,17.6,0,14.6,0,9c0-5.7,4.7-8.6,8.7-8.6c2.2,0,3.8,0.5,4.8,1.1L13,3.6z"/>
+<polygon points="77.3,16.5 77.3,0.8 79.6,0.8 79.6,14.4 86.3,14.4 86.3,16.5 "/>
+<polygon points="93,16.5 93,0.8 95.3,0.8 95.3,14.4 102,14.4 102,16.5 "/>
+<rect x="61.1" y="19.8" width="0.6" height="3.9"/>
+<path d="M70.5,23.8c-0.4,0-0.7-0.1-0.9-0.3l-0.1-0.6c0.3,0.3,0.7,0.4,1.1,0.4c0.4,0,0.6-0.2,0.6-0.6
+c0-0.3-0.2-0.5-0.6-0.7c-0.6-0.2-1-0.6-1-1.1c0-0.5,0.4-1,1.1-1c0.3,0,0.6,0.1,0.8,0.2l-0.1,0.5c-0.1-0.1-0.4-0.2-0.7-0.2
+c-0.4,0-0.6,0.2-0.6,0.5c0,0.2,0.2,0.4,0.6,0.6c0.6,0.2,1,0.6,1,1.2C71.7,23.3,71.3,23.8,70.5,23.8"/>
+<path d="M30.8,19.8h-1.1v3.9h0.6V22h0.6c0.5,0,1.1-0.4,1.1-1.1S31.3,19.8,30.8,19.8z M30.7,21.5h-0.5v-1.2
+h0.5c0.3,0,0.6,0.2,0.6,0.6C31.4,21.4,31.1,21.5,30.7,21.5z"/>
+<path d="M41.3,19.8h-0.2l-1.8,3.9h0.6l0.5-1H42l0.5,1h0.7L41.3,19.8z M40.6,22.3l0.4-0.9
+c0.1-0.1,0.1-0.3,0.2-0.5h0c0.1,0.2,0.1,0.3,0.2,0.5l0.4,0.9H40.6z"/>
+<path d="M51.5,22c0.3-0.2,0.6-0.5,0.6-1c0-0.7-0.6-1.1-1.1-1.1h-1.1v3.9h0.5V22h0.5l1.1,1.7h0.6L51.5,22z
+M50.9,21.5h-0.5v-1.2h0.5c0.3,0,0.6,0.2,0.6,0.6C51.5,21.4,51.2,21.5,50.9,21.5z"/>
+<path d="M62.5,0.2c-4.5,0-8.1,3.8-8.1,8.4c0,4.6,3.6,8.4,8.1,8.4s8.1-3.8,8.1-8.4C70.6,4,67,0.2,62.5,0.2z
+M62.5,14.6c-3.2,0-5.8-2.7-5.8-6c0-3.3,2.6-6,5.8-6s5.8,2.7,5.8,6C68.3,11.9,65.7,14.6,62.5,14.6z"/>
+<path d="M45.6,9.2c1.5-0.6,2.8-1.9,2.8-4c0-3-2.5-4.4-4.7-4.4h-5v15.7H41V9.6h2.2l5,6.9H51L45.6,9.2z
+M43.2,7.6H41V2.8h2.2c1.4,0,2.7,0.8,2.7,2.4C45.9,6.8,44.6,7.6,43.2,7.6z"/>
+<path d="M25.1,0.8h-0.9l-6.8,16.8h2.4l1.7-4.3h6.2l1.7,4.3h2.5L25.1,0.8z M22.3,11.3l1.6-4.1
+c0.2-0.5,0.5-1.3,0.7-2h0.1c0.2,0.7,0.5,1.5,0.7,2l1.6,4.1H22.3z"/>
+</g>
+</defs>
+</svg>
+<header class="Header">
+<div class="Header-container Container">
+<!-- primary menu -->
+<nav role="navigation" aria-label="Primary navigation" id="navigation" class="NavPrimary">
+<!-- logo -->
+
+
+<a href="https://www.caroll.com/fr_fr/"
+title="Accueil Caroll"
+class="NavPrimary-logo">
+<svg viewBox="0 0 85 172" width="85px" height="172px">
+<use xlink:href="#logo-desktop"></use>
+</svg>
+<span class="visually-hidden">Caroll</span>
+</a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<ul class="NavPrimary-list NavPrimary-list--level-1">
+
+	 
+
+	
+
+
+
+
+
+<li class="NavPrimary-item TopCat">
+
+
+
+
+
+<a class="NavPrimary-itemLink  "
+href="https://www.caroll.com/fr_fr/nouveautes/"
+style="
+font-weight: bold;
+"
+>
+Nouveaut&eacute;s
+
+
+</a>
+
+
+
+
+
+
+</li>
+
+
+
+
+
+<li class="NavPrimary-item">
+
+
+
+
+
+
+
+<a class="NavPrimary-itemLink NavPrimary-itemLink--hasSubMenu has-sub-menu "
+href="https://www.caroll.com/fr_fr/pret-a-porter/"
+style="
+
+"
+>
+PR&Ecirc;T A PORTER
+
+<i class="NavPrimary-itemIcon Icon Icon--caret-right menu-item-toggle"></i>
+
+
+</a>
+
+
+
+
+
+<ul class="NavPrimary-list NavPrimary-list--subNav NavPrimary-list--level-2 js-customScroll">
+<li class="NavPrimary-item NavPrimary-item--back js-NavBack">
+<a class="NavPrimary-itemLink NavPrimary-itemLink--back" href="#" encoding="off"/>
+<i class="NavPrimary-itemIcon Icon Icon--caret-left"></i>
+PR&Ecirc;T A PORTER
+</a>
+</li>
+
+<li class="NavPrimary-item">
+
+
+
+
+
+<a class="NavPrimary-itemLink  "
+href="https://www.caroll.com/fr_fr/pret-a-porter/voir-tout/"
+style="
+
+"
+>
+Voir tout
+
+
+</a>
+
+</li>
+
+<li class="NavPrimary-item">
+
+
+
+
+
+<a class="NavPrimary-itemLink  "
+href="https://www.caroll.com/fr_fr/pret-a-porter/pulls-gilets/"
+style="
+
+"
+>
+Pulls &amp; Gilets
+
+
+</a>
+
+</li>
+
+<li class="NavPrimary-item">
+
+
+
+
+
+<a class="NavPrimary-itemLink  "
+href="https://www.caroll.com/fr_fr/pret-a-porter/blouses-chemises/"
+style="
+
+"
+>
+Blouses &amp; Chemises
+
+
+</a>
+
+</li>
+
+<li class="NavPrimary-item">
+
+
+
+
+
+<a class="NavPrimary-itemLink  "
+href="https://www.caroll.com/fr_fr/pret-a-porter/robes/"
+style="
+
+"
+>
+Robes
+
+
+</a>
+
+</li>
+
+<li class="NavPrimary-item">
+
+
+
+
+
+<a class="NavPrimary-itemLink  "
+href="https://www.caroll.com/fr_fr/pret-a-porter/pantalons/"
+style="
+
+"
+>
+Pantalons
+
+
+</a>
+
+</li>
+
+<li class="NavPrimary-item">
+
+
+
+
+
+<a class="NavPrimary-itemLink  "
+href="https://www.caroll.com/fr_fr/pret-a-porter/jeans/"
+style="
+
+"
+>
+Jeans
+
+
+</a>
+
+</li>
+
+<li class="NavPrimary-item">
+
+
+
+
+
+<a class="NavPrimary-itemLink  "
+href="https://www.caroll.com/fr_fr/pret-a-porter/manteaux-trenchs/"
+style="
+
+"
+>
+Manteaux &amp; Trenchs
+
+
+</a>
+
+</li>
+
+<li class="NavPrimary-item">
+
+
+
+
+
+<a class="NavPrimary-itemLink  "
+href="https://www.caroll.com/fr_fr/pret-a-porter/vestes-blousons/"
+style="
+
+"
+>
+Vestes &amp; Blousons
+
+
+</a>
+
+</li>
+
+<li class="NavPrimary-item">
+
+
+
+
+
+<a class="NavPrimary-itemLink  "
+href="https://www.caroll.com/fr_fr/pret-a-porter/cachemire/"
+style="
+
+"
+>
+Cachemire
+
+
+</a>
+
+</li>
+
+<li class="NavPrimary-item">
+
+
+
+
+
+<a class="NavPrimary-itemLink  "
+href="https://www.caroll.com/fr_fr/pret-a-porter/tops-t-shirts/"
+style="
+
+"
+>
+Tops &amp; T-shirts
+
+
+</a>
+
+</li>
+
+<li class="NavPrimary-item">
+
+
+
+
+
+<a class="NavPrimary-itemLink  "
+href="https://www.caroll.com/fr_fr/pret-a-porter/jupes/"
+style="
+
+"
+>
+Jupes
+
+
+</a>
+
+</li>
+
+<li class="NavPrimary-item">
+
+
+
+
+
+<a class="NavPrimary-itemLink  "
+href="https://www.caroll.com/fr_fr/pret-a-porter/tailleurs/"
+style="
+
+"
+>
+Tailleurs
+
+
+</a>
+
+</li>
+
+<li class="NavPrimary-item">
+
+
+
+
+
+<a class="NavPrimary-itemLink  "
+href="https://www.caroll.com/fr_fr/pret-a-porter/selection-denim/"
+style="
+
+"
+>
+S&eacute;lection Denim
+
+
+</a>
+
+</li>
+
+<li class="NavPrimary-item">
+
+
+
+
+
+<a class="NavPrimary-itemLink  "
+href="https://www.caroll.com/fr_fr/pret-a-porter/collection-engagee/"
+style="color: #0B1537;
+
+"
+>
+Collection Engag&eacute;e
+
+
+</a>
+
+</li>
+
+<li class="NavPrimary-item">
+
+
+
+
+
+<a class="NavPrimary-itemLink  "
+href="https://www.caroll.com/fr_fr/pret-a-porter/les-coups-de-c%C5%93ur-de-sandrine-quetier/"
+style="
+
+"
+>
+Les coups de c&oelig;ur de Sandrine Qu&eacute;tier
+
+
+</a>
+
+</li>
+
+
+</ul>
+
+
+</li>
+
+
+
+
+
+<li class="NavPrimary-item">
+
+
+
+
+
+
+
+<a class="NavPrimary-itemLink NavPrimary-itemLink--hasSubMenu has-sub-menu "
+href="https://www.caroll.com/fr_fr/sacs-accessoires-11/"
+style="
+
+"
+>
+SACS &amp; ACCESSOIRES
+
+<i class="NavPrimary-itemIcon Icon Icon--caret-right menu-item-toggle"></i>
+
+
+</a>
+
+
+
+
+
+<ul class="NavPrimary-list NavPrimary-list--subNav NavPrimary-list--level-2 js-customScroll">
+<li class="NavPrimary-item NavPrimary-item--back js-NavBack">
+<a class="NavPrimary-itemLink NavPrimary-itemLink--back" href="#" encoding="off"/>
+<i class="NavPrimary-itemIcon Icon Icon--caret-left"></i>
+SACS &amp; ACCESSOIRES
+</a>
+</li>
+
+<li class="NavPrimary-item">
+
+
+
+
+
+<a class="NavPrimary-itemLink  "
+href="https://www.caroll.com/fr_fr/sacs-accessoires/voir-tout/"
+style="
+
+"
+>
+Voir Tout
+
+
+</a>
+
+</li>
+
+<li class="NavPrimary-item">
+
+
+
+
+
+<a class="NavPrimary-itemLink  "
+href="https://www.caroll.com/fr_fr/sacs-accessoires/foulards-echarpes/"
+style="
+
+"
+>
+Foulards &amp; Echarpes
+
+
+</a>
+
+</li>
+
+<li class="NavPrimary-item">
+
+
+
+
+
+<a class="NavPrimary-itemLink  "
+href="https://www.caroll.com/fr_fr/sacs-accessoires/sacs/"
+style="
+
+"
+>
+Sacs
+
+
+</a>
+
+</li>
+
+<li class="NavPrimary-item">
+
+
+
+
+
+<a class="NavPrimary-itemLink  "
+href="https://www.caroll.com/fr_fr/sacs-accessoires/chaussures/"
+style="
+
+"
+>
+Chaussures
+
+
+</a>
+
+</li>
+
+<li class="NavPrimary-item">
+
+
+
+
+
+<a class="NavPrimary-itemLink  "
+href="https://www.caroll.com/fr_fr/sacs-accessoires/ceintures/"
+style="
+
+"
+>
+Ceintures
+
+
+</a>
+
+</li>
+
+<li class="NavPrimary-item">
+
+
+
+
+
+<a class="NavPrimary-itemLink  "
+href="https://www.caroll.com/fr_fr/sacs-accessoires/bijoux/"
+style="
+
+"
+>
+Bijoux
+
+
+</a>
+
+</li>
+
+<li class="NavPrimary-item">
+
+
+
+
+
+<a class="NavPrimary-itemLink  "
+href="https://www.caroll.com/fr_fr/sacs-accessoires/plus-d-accessoires/"
+style="
+
+"
+>
+Plus d&#39;accessoires
+
+
+</a>
+
+</li>
+
+
+</ul>
+
+
+</li>
+
+
+
+
+
+<li class="NavPrimary-item">
+
+
+
+
+
+
+
+<a class="NavPrimary-itemLink NavPrimary-itemLink--hasSubMenu has-sub-menu "
+href="https://www.caroll.com/fr_fr/last-chance-3/"
+style="
+font-weight: bold;
+"
+>
+Last Chance
+
+<i class="NavPrimary-itemIcon Icon Icon--caret-right menu-item-toggle"></i>
+
+
+</a>
+
+
+
+
+
+<ul class="NavPrimary-list NavPrimary-list--subNav NavPrimary-list--level-2 js-customScroll">
+<li class="NavPrimary-item NavPrimary-item--back js-NavBack">
+<a class="NavPrimary-itemLink NavPrimary-itemLink--back" href="#" encoding="off"/>
+<i class="NavPrimary-itemIcon Icon Icon--caret-left"></i>
+Last Chance
+</a>
+</li>
+
+<li class="NavPrimary-item">
+
+
+
+
+
+<a class="NavPrimary-itemLink  "
+href="https://www.caroll.com/fr_fr/last-chance/voir-tout-2/"
+style="
+
+"
+>
+Voir Tout
+
+
+</a>
+
+</li>
+
+<li class="NavPrimary-item">
+
+
+
+
+
+<a class="NavPrimary-itemLink  "
+href="https://www.caroll.com/fr_fr/last-chance/pulls-gilets-2/"
+style="
+
+"
+>
+Pulls &amp; Gilets
+
+
+</a>
+
+</li>
+
+<li class="NavPrimary-item">
+
+
+
+
+
+<a class="NavPrimary-itemLink  "
+href="https://www.caroll.com/fr_fr/last-chance/blouses-chemises-3/"
+style="
+
+"
+>
+Blouses &amp; Chemises
+
+
+</a>
+
+</li>
+
+<li class="NavPrimary-item">
+
+
+
+
+
+<a class="NavPrimary-itemLink  "
+href="https://www.caroll.com/fr_fr/last-chance/robes-2/"
+style="
+
+"
+>
+Robes
+
+
+</a>
+
+</li>
+
+<li class="NavPrimary-item">
+
+
+
+
+
+<a class="NavPrimary-itemLink  "
+href="https://www.caroll.com/fr_fr/last-chance/pantalons-2/"
+style="
+
+"
+>
+Pantalons
+
+
+</a>
+
+</li>
+
+<li class="NavPrimary-item">
+
+
+
+
+
+<a class="NavPrimary-itemLink  "
+href="https://www.caroll.com/fr_fr/last-chance/manteaux-doudounes-2/"
+style="
+
+"
+>
+Manteaux &amp; Doudounes
+
+
+</a>
+
+</li>
+
+<li class="NavPrimary-item">
+
+
+
+
+
+<a class="NavPrimary-itemLink  "
+href="https://www.caroll.com/fr_fr/last-chance/vestes-blousons-2/"
+style="
+
+"
+>
+Vestes &amp; Blousons
+
+
+</a>
+
+</li>
+
+<li class="NavPrimary-item">
+
+
+
+
+
+<a class="NavPrimary-itemLink  "
+href="https://www.caroll.com/fr_fr/last-chance/tops-t-shirts-2/"
+style="
+
+"
+>
+Tops &amp; T-shirts
+
+
+</a>
+
+</li>
+
+<li class="NavPrimary-item">
+
+
+
+
+
+<a class="NavPrimary-itemLink  "
+href="https://www.caroll.com/fr_fr/last-chance/jupes-2/"
+style="
+
+"
+>
+Jupes
+
+
+</a>
+
+</li>
+
+<li class="NavPrimary-item">
+
+
+
+
+
+<a class="NavPrimary-itemLink  "
+href="https://www.caroll.com/fr_fr/last-chance/sacs-accessoires-2/"
+style="
+
+"
+>
+Sacs &amp; Accessoires
+
+
+</a>
+
+</li>
+
+
+</ul>
+
+
+</li>
+
+
+
+	 
+
+	
+
+
+
+
+    
+        
+        <div class="NavPrimary-separator"></div>
+        
+            <li class="NavPrimary-item">
+                
+                <span class="NavPrimary-itemLink NavPrimary-itemLink--hasSubMenu has-sub-menu"  data-url="https://www.caroll.com/fr_fr/la-marque/brand-story/">
+                    La marque
+                    <i class="NavPrimary-itemIcon Icon Icon--caret-right menu-item-toggle"></i>
+                </span>
+
+                <ul class="NavPrimary-list NavPrimary-list--subNav NavPrimary-list--level-2 js-customScroll">
+                    <li class="NavPrimary-item NavPrimary-item--back js-NavBack">
+                        <a class="NavPrimary-itemLink NavPrimary-itemLink--back" href="#" encoding="off">
+                            <i class="NavPrimary-itemIcon Icon Icon--caret-left"></i>
+                            La marque
+                        </a>
+                    </li>
+                    
+                        
+                            <li class="NavPrimary-item">
+                                <a href="https://www.caroll.com/fr_fr/la-marque/brand-story/" class="NavPrimary-itemLink ">
+                                    Une histoire de style
+                                </a>
+                            </li>
+                        
+                    
+                        
+                            <li class="NavPrimary-item">
+                                <a href="https://www.caroll.com/fr_fr/la-marque/brand-iconic-new/" class="NavPrimary-itemLink ">
+                                    Nos mati&egrave;res et pi&egrave;ces f&eacute;tiches
+                                </a>
+                            </li>
+                        
+                    
+                        
+                            <li class="NavPrimary-item">
+                                <a href="https://www.caroll.com/fr_fr/la-marque/brand-identity-new/" class="NavPrimary-itemLink ">
+                                    Qui se cache derri&egrave;re Caroll ?
+                                </a>
+                            </li>
+                        
+                    
+                </ul>
+            </li>
+        
+            <li class="NavPrimary-item">
+                
+                <span class="NavPrimary-itemLink NavPrimary-itemLink--hasSubMenu has-sub-menu"  data-url="https://www.caroll.com/fr_fr/nos-engagements/engagements-soutient/">
+                    Caroll Engag&eacute;e
+                    <i class="NavPrimary-itemIcon Icon Icon--caret-right menu-item-toggle"></i>
+                </span>
+
+                <ul class="NavPrimary-list NavPrimary-list--subNav NavPrimary-list--level-2 js-customScroll">
+                    <li class="NavPrimary-item NavPrimary-item--back js-NavBack">
+                        <a class="NavPrimary-itemLink NavPrimary-itemLink--back" href="#" encoding="off">
+                            <i class="NavPrimary-itemIcon Icon Icon--caret-left"></i>
+                            Caroll Engag&eacute;e
+                        </a>
+                    </li>
+                    
+                        
+                            <li class="NavPrimary-item">
+                                <a href="https://www.caroll.com/fr_fr/nos-engagements/engagements-soutient/" class="NavPrimary-itemLink ">
+                                    Caroll soutient
+                                </a>
+                            </li>
+                        
+                    
+                        
+                            <li class="NavPrimary-item">
+                                <a href="https://www.caroll.com/fr_fr/nos-engagements/engagements-exigence/" class="NavPrimary-itemLink ">
+                                    Nos exigences qualit&eacute;
+                                </a>
+                            </li>
+                        
+                    
+                        
+                            <li class="NavPrimary-item">
+                                <a href="https://www.caroll.com/fr_fr/nos-engagements/engagements-durable/" class="NavPrimary-itemLink ">
+                                    Caroll respecte et s&rsquo;engage
+                                </a>
+                            </li>
+                        
+                    
+                </ul>
+            </li>
+        
+    
+
+
+</ul>
+
+
+<!-- actions mobile -->
+<div class="NavPrimary-actions">
+<div class="NavPrimary-actions-item NavPrimary-actions-item--full NavPrimary-actions-item--account">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="https://www.caroll.com/fr_fr/Account/"
+rel="nofollow"
+title="Utilisateur: Compte"
+class="NavUtility-link user-account" >
+<i class="NavUtility-linkIcon Icon Icon--user"></i>
+<span class="NavUtility-linkText">Compte</span>
+</a>
+<div class="NavUtility-layerContent">
+
+<div class="Layer-content LayerContentAccount">
+<div class="AccountLogin">
+<div class="AccountLogin-box">
+
+
+<form class="Form AccountLogin-form Form--validator" action="https://www.caroll.com/on/demandware.store/Sites-caroll-fr-Site/fr_FR/Login-LoginForm" method="post"
+data-id="dwfrm_login">
+
+<div class="AccountLogin-title">vous nous connaissez d&eacute;j&agrave; ?</div>
+
+
+<div class="Form-fieldset-input Form-fieldset-input--normalcase">
+
+
+
+<div class="Form-row username required">
+
+
+
+<label for="dwfrm_login_username_d0jhqjafjxqn" class="Form-label">Adresse e-mail</label>
+
+
+<input class="Form-input  required" type="email"  id="dwfrm_login_username_d0jhqjafjxqn" name="dwfrm_login_username_d0jhqjafjxqn" value="" maxlength="255"  />
+
+
+
+<div class="Form-caption"></div>
+
+</div>
+
+</div>
+
+<div class="Form-fieldset-input Form-fieldset-input--normalcase">
+
+
+
+<div class="Form-row password required">
+
+
+
+<label for="dwfrm_login_password_d0bihotvqhpi" class="Form-label">Mot de passe</label>
+
+
+<input class="Form-input loginPassword required" type="password"  id="dwfrm_login_password_d0bihotvqhpi" name="dwfrm_login_password_d0bihotvqhpi" value="" autocomplete="off"  />
+
+
+
+<div class="Form-caption"></div>
+
+</div>
+
+</div>
+<div>
+<a class="AccountLogin-resetPwd Link Link--primary" id="password-reset"
+href="https://www.caroll.com/fr_fr/Reset-Password/"
+title="Demander la r&eacute;initialisation de votre mot de passe" rel="nofollow">
+Mot de passe oubli&eacute; ?
+</a>
+</div>
+<div class="AccountLogin-actions">
+<button class="AccountLogin-button Button" type="submit"
+value="Connectez-vous"
+name="dwfrm_login_login">
+Connectez-vous
+</button>
+</div>
+<input type="hidden" name="csrf_token"
+value="pL3_nClmhFZlT20yIlGMPLZFW8AAeTI0dbQFjeBWNtuKCQmkDZO7Jyf1RVvtTGhlPqOm5rzqN5deXRYzBb5U2aCinHfpkJoXXA6ghznzz3P4YZpMBpZtBkOS1skwm1uYN6zi_jKdjNpMoy-1fTb84n6UfF3qWB7x1Y3Pc83ymXeUwRPwcQQ="/>
+</fieldset>
+</form>
+<div class="login-oauth">
+
+
+
+
+
+
+<form action="https://www.caroll.com/on/demandware.store/Sites-caroll-fr-Site/fr_FR/Login-LoginForm" method="post" class="clearfix"
+data-id="dwfrm_oauthlogin">
+<fieldset>
+
+<div class="AccountLogin-facebook">
+<div class="AccountLogin-facebook-text">
+
+Connectez-vous avec
+
+</div>
+
+<button type="input" alt="Facebook login" class="oAuthIcon Button Button--alt" data-id='Facebook' data-oauth-provider="Facebook" name="dwfrm_oauthlogin_login">
+<i class="Icon Icon--facebook-light"></i>&nbsp;Facebook
+</button>
+
+</div>
+
+
+<input type="hidden" name="rememberme" data-id="rememberme" value="">
+<input type="hidden" name="continueURL" value="/fr_fr/Account/"/>
+<input type="hidden" name="csrf_token" value="YUA0mRzcLDi70svH6avqLN66WSVW44cbvVsGuKsrZYqyB8cT2JOhkRmq6ti2slvlBiOzeyaQoxN2bLFVv7BIHcdxcd2DsOVRHbQavTvbcHL7oeHpbZ-mvcOnhuB5f4oAjG9SkowSqagGpRCOKzedDn7Ep9c6s3hE7-wVd2IB8yGvaNf66CU="/>
+<input type="hidden" class="OAuthProvider js-OAuthProvider" name="OAuthProvider" value=""/>
+</fieldset>
+</form>
+
+
+</div>
+
+
+</div>
+<div class="AccountLogin-box">
+
+<form class="Form AccountLogin-form" action="https://www.caroll.com/on/demandware.store/Sites-caroll-fr-Site/fr_FR/Login-LoginForm" method="post"
+data-id="dwfrm_login_register">
+<div class="AccountLogin-title">rejoignez-nous en quelques clics</div>
+<div class="d-none d-md-block AccountLogin-slotBanner--desktop">
+
+	 
+
+
+	
+
+
+
+<div class="AccountLogin-banner-wrapper"> 
+  <div class="AccountLogin-banner"> 
+    <p> Rejoignez la communauté Caroll & Vous !</b><br><p> <b>-15% sur votre article coup de coeur* </b><br>en créant un compte </br><p> <I><font size="2">*sur votre article préféré, hors promotion, point or et produits Lener Cordier</font></I></p>
+  </div> 
+</div>
+
+
+ 
+	
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- dwMarker="content" dwContentID="32861bce628a4bbfaedb9e9808" -->
+<p class="AccountLogin-msg">Et créez-vous un compte pour bénéficier d’avantages toute l’année :</p>
+	    <ul class="AccountLogin-list">
+	        <li class="AccountLogin-listItem">Suivez vos commandes et retours</li>
+	        <li class="AccountLogin-listItem">Bénéficiez d’offres rien que pour vous</li>
+             <li class="AccountLogin-listItem">Vos retouches simples vous sont offertes (hors périodes de soldes)</li>
+             <li class="AccountLogin-listItem">Recevez une attention pour votre anniversaire</li>
+	        <!-- li class="AccountLogin-listItem">Retrouvez votre liste d’envies</li -->
+	    </ul>
+
+
+
+
+
+<div class="AccountLogin-actions">
+<a class="AccountLogin-button AccountLogin-button--page Button" href="https://www.caroll.com/fr_fr/Register/"
+value="Cr&eacute;er un compte"
+name="dwfrm_login_register">
+Cr&eacute;er votre compte
+</a>
+<a class="AccountLogin-button AccountLogin-button--layer Button" href="https://www.caroll.com/fr_fr/Register/"
+value="Cr&eacute;er un compte"
+name="dwfrm_login_register">
+Cr&eacute;er votre compte
+</a>
+</div>
+<input type="hidden" name="csrf_token" value="iXFrAc-aRAfFH4FnUt-HSm73rcamFJ1728ImT_yPd-uT-mRDqL1-aI9Whyu8v9ecjNOWJTxRauW5GKK9s2mgKWRp1tfjNeapxmc1nuTx1CICP1rLrs0cGT8o8VWtIQuvKWKJNINoLS1gaSVioO3RSok5cAsnw_nNjzT8WAHfkcWgXml67lM="/>
+</form>
+<div class="login-oauth">
+
+
+
+
+
+
+<form action="https://www.caroll.com/on/demandware.store/Sites-caroll-fr-Site/fr_FR/Login-LoginForm" method="post" class="clearfix"
+data-id="dwfrm_oauthlogin">
+<fieldset>
+
+<div class="AccountLogin-facebook">
+<div class="AccountLogin-facebook-text">
+
+Inscrivez-vous avec
+
+</div>
+
+<button type="input" alt="Facebook login" class="oAuthIcon Button Button--alt" data-id='Facebook' data-oauth-provider="Facebook" name="dwfrm_oauthlogin_login">
+<i class="Icon Icon--facebook-light"></i>&nbsp;Facebook
+</button>
+
+</div>
+
+
+<input type="hidden" name="rememberme" data-id="rememberme" value="">
+<input type="hidden" name="continueURL" value="/fr_fr/Profile/"/>
+<input type="hidden" name="csrf_token" value="bK1MB4U0519-O1TOS54fqXPMkWxfynAi-W7G5pyMuig9h3eYp_qjiImZvY585iii_vUa4491ZXYDw7Ac000AytkWJ84oOIWs3mNltp_MgqJ-1CYTb1MAov-lIzbaWF5EX6uPbtv2otnBrPbVkDq9CmRYEjLuqA13jdlQ8Ak95dbRARcl25k="/>
+<input type="hidden" class="OAuthProvider js-OAuthProvider" name="OAuthProvider" value=""/>
+</fieldset>
+</form>
+
+
+</div>
+
+</div>
+</div>
+</div>
+
+</div>
+
+<!--a href="https://www.caroll.com/fr_fr/Stores/"
+title="Trouver votre boutique"
+class="NavPrimary-actions-itemLink">
+<i class="NavPrimary-actions-itemIcon Icon Icon--map-marker"></i>
+<span class="NavPrimary-actions-itemText">nos belles adresses</span>
+</a-->
+</div>
+<div class="NavPrimary-actions-item NavPrimary-actions-item--full">
+<a href="https://www.caroll.com/fr_fr/customer-service-contact-us/faqscoronavirus.html"
+title="FAQ"
+class="NavPrimary-actions-itemLink">
+<i class="NavPrimary-actions-itemIcon Icon Icon--help"></i>
+<span class="NavPrimary-actions-itemText">Aide</span>
+</a>
+</div>
+</div>
+</nav>
+<!-- utility -->
+<div class="Header-utility">
+<div class="Header-utility-container">
+<!-- mobile nav toggle -->
+<nav role="navigation" aria-label="Mobile navigation" class="NavMobile">
+<ul class="NavMobile-list">
+<li class="NavMobile-item">
+<!-- toggle menu mobile -->
+<button class="NavMobile-btnToggle NavMobile-btnToggle--burger js-MenuToggle menu-toggle">
+<span class="NavMobile-btnToggle-box">
+<span class="NavMobile-btnToggle-inner"></span>
+</span>
+</button>
+</li>
+<li class="NavMobile-item">
+<!-- toggle search mobile -->
+<button class="NavMobile-btnToggle js-SearchToggle">
+<i class="Icon Icon--search"></i>
+<span class="visually-hidden">Search</span>
+</button>
+</li>
+</ul>
+</nav>
+<!-- logo -->
+<a href="https://www.caroll.com/fr_fr/"
+title="Accueil Caroll"
+class="Header-logo">
+<svg viewBox="0 0 102 24" width="102px" height="24px">
+<use xlink:href="#logo-mobile"></use>
+</svg>
+<span class="visually-hidden">Caroll</span>
+</a>
+<!-- search -->
+
+<div class="Search js-Search">
+<form role="search" action="/fr_fr/Search/" method="get" name="simpleSearch" class="Search-form">
+<div class="Search-fieldset">
+<label class="visually-hidden" for="q">Rechercher dans le catalogue</label>
+<input type="text" id="q" name="q" value="" placeholder="Recherche" class="Search-input" maxlength="200" />
+<input type="hidden" name="categorie" value="avec_resultat"/>
+<button type="submit" class="Search-submit">
+<span class="desktop-hidden">OK</span>
+<i class="Icon Icon--search mobile-hidden"></i>
+</button>
+</div>
+</form>
+</div>
+
+<!-- utility menu -->
+<nav role="navigation" aria-label="Utility navigation" class="NavUtility">
+<ul class="NavUtility-list">
+
+
+
+
+
+
+<li class="NavUtility-item NavUtility-item--stores stores">
+
+
+<a href="https://www.caroll.com/fr_fr/Stores/"
+title="Trouver votre boutique"
+class="NavUtility-link">
+<i class="NavUtility-linkIcon Icon Icon--map-marker"></i>
+<span class="NavUtility-linkText">Boutiques</span>
+</a>
+<div class="NavUtility-layerContent">
+
+
+<div class="Layer-header">
+<div class="Layer-headerTitle">nos belles adresses</div>
+</div>
+<div class="Layer-content LayerContentStore">
+<p class="LayerContentStore-description">
+Trouvez la boutique la plus proche de chez vous parmi <b>444 adresses</b> dans le monde et profitez de la livraison et du retour gratuit en boutique.
+</p>
+<a href="https://www.caroll.com/fr_fr/Stores/" class="Button LayerContentStore-button LayerContentStore-buttonStorelocator">
+<span>Trouver votre boutique</span>
+</a>
+</div>
+
+</div>
+
+</li>
+
+<li class="NavUtility-item NavUtility-item--user user-info">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<a href="https://www.caroll.com/fr_fr/Account/"
+rel="nofollow"
+title="Utilisateur: Compte"
+class="NavUtility-link user-account" >
+<i class="NavUtility-linkIcon Icon Icon--user"></i>
+<span class="NavUtility-linkText">Compte</span>
+</a>
+<div class="NavUtility-layerContent">
+
+<div class="Layer-content LayerContentAccount">
+<div class="AccountLogin">
+<div class="AccountLogin-box">
+
+
+<form class="Form AccountLogin-form Form--validator" action="https://www.caroll.com/on/demandware.store/Sites-caroll-fr-Site/fr_FR/Login-LoginForm" method="post"
+data-id="dwfrm_login">
+
+<div class="AccountLogin-title">vous nous connaissez d&eacute;j&agrave; ?</div>
+
+
+<div class="Form-fieldset-input Form-fieldset-input--normalcase">
+
+
+
+<div class="Form-row username required">
+
+
+
+<label for="dwfrm_login_username_d0usxdnhfirb" class="Form-label">Adresse e-mail</label>
+
+
+<input class="Form-input  required" type="email"  id="dwfrm_login_username_d0usxdnhfirb" name="dwfrm_login_username_d0usxdnhfirb" value="" maxlength="255"  />
+
+
+
+<div class="Form-caption"></div>
+
+</div>
+
+</div>
+
+<div class="Form-fieldset-input Form-fieldset-input--normalcase">
+
+
+
+<div class="Form-row password required">
+
+
+
+<label for="dwfrm_login_password_d0hfhxgrpzvh" class="Form-label">Mot de passe</label>
+
+
+<input class="Form-input loginPassword required" type="password"  id="dwfrm_login_password_d0hfhxgrpzvh" name="dwfrm_login_password_d0hfhxgrpzvh" value="" autocomplete="off"  />
+
+
+
+<div class="Form-caption"></div>
+
+</div>
+
+</div>
+<div>
+<a class="AccountLogin-resetPwd Link Link--primary" id="password-reset"
+href="https://www.caroll.com/fr_fr/Reset-Password/"
+title="Demander la r&eacute;initialisation de votre mot de passe" rel="nofollow">
+Mot de passe oubli&eacute; ?
+</a>
+</div>
+<div class="AccountLogin-actions">
+<button class="AccountLogin-button Button" type="submit"
+value="Connectez-vous"
+name="dwfrm_login_login">
+Connectez-vous
+</button>
+</div>
+<input type="hidden" name="csrf_token"
+value="hCOYswKqa87D9s1Yz_pc2PndTtvERtF6kuOtLvyodt2wbFkiDnbVnzz3-qOf9mB53i8p5kfcjqKlnPMoli8eWQE8XZy7zWYEWjMR8AiOOpgTJ-Chp4NFHO8_d51QWLIahI_lxc7Op4964ooIR05jyi7D2ZIV0B-nhPAss6JfCSA8uCZUsJc="/>
+</fieldset>
+</form>
+<div class="login-oauth">
+
+
+
+
+
+
+<form action="https://www.caroll.com/on/demandware.store/Sites-caroll-fr-Site/fr_FR/Login-LoginForm" method="post" class="clearfix"
+data-id="dwfrm_oauthlogin">
+<fieldset>
+
+<div class="AccountLogin-facebook">
+<div class="AccountLogin-facebook-text">
+
+Connectez-vous avec
+
+</div>
+
+<button type="input" alt="Facebook login" class="oAuthIcon Button Button--alt" data-id='Facebook' data-oauth-provider="Facebook" name="dwfrm_oauthlogin_login">
+<i class="Icon Icon--facebook-light"></i>&nbsp;Facebook
+</button>
+
+</div>
+
+
+<input type="hidden" name="rememberme" data-id="rememberme" value="">
+<input type="hidden" name="continueURL" value="/fr_fr/Account/"/>
+<input type="hidden" name="csrf_token" value="fQ_ZhGBYee9Sr9O7KYhuAleSysgh_MCThzNOhgfbHNcD2X4_b5x3_Wj9yxOOqw5znRzACRw2zPEXeKzDR7A4YUrdpWUlDGExu8IPrnWqIysUk2vA7uLlra46FsPvY_JdV2t_D31NMJ5vzzpYKCLqdJ5hUG8FOPC-e-_e0xwCLX2CUxguDmU="/>
+<input type="hidden" class="OAuthProvider js-OAuthProvider" name="OAuthProvider" value=""/>
+</fieldset>
+</form>
+
+
+</div>
+
+
+</div>
+<div class="AccountLogin-box">
+
+<form class="Form AccountLogin-form" action="https://www.caroll.com/on/demandware.store/Sites-caroll-fr-Site/fr_FR/Login-LoginForm" method="post"
+data-id="dwfrm_login_register">
+<div class="AccountLogin-title">rejoignez-nous en quelques clics</div>
+<div class="d-none d-md-block AccountLogin-slotBanner--desktop">
+
+	 
+
+
+	
+
+
+
+<div class="AccountLogin-banner-wrapper"> 
+  <div class="AccountLogin-banner"> 
+    <p> Rejoignez la communauté Caroll & Vous !</b><br><p> <b>-15% sur votre article coup de coeur* </b><br>en créant un compte </br><p> <I><font size="2">*sur votre article préféré, hors promotion, point or et produits Lener Cordier</font></I></p>
+  </div> 
+</div>
+
+
+ 
+	
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- dwMarker="content" dwContentID="32861bce628a4bbfaedb9e9808" -->
+<p class="AccountLogin-msg">Et créez-vous un compte pour bénéficier d’avantages toute l’année :</p>
+	    <ul class="AccountLogin-list">
+	        <li class="AccountLogin-listItem">Suivez vos commandes et retours</li>
+	        <li class="AccountLogin-listItem">Bénéficiez d’offres rien que pour vous</li>
+             <li class="AccountLogin-listItem">Vos retouches simples vous sont offertes (hors périodes de soldes)</li>
+             <li class="AccountLogin-listItem">Recevez une attention pour votre anniversaire</li>
+	        <!-- li class="AccountLogin-listItem">Retrouvez votre liste d’envies</li -->
+	    </ul>
+
+
+
+
+
+<div class="AccountLogin-actions">
+<a class="AccountLogin-button AccountLogin-button--page Button" href="https://www.caroll.com/fr_fr/Register/"
+value="Cr&eacute;er un compte"
+name="dwfrm_login_register">
+Cr&eacute;er votre compte
+</a>
+<a class="AccountLogin-button AccountLogin-button--layer Button" href="https://www.caroll.com/fr_fr/Register/"
+value="Cr&eacute;er un compte"
+name="dwfrm_login_register">
+Cr&eacute;er votre compte
+</a>
+</div>
+<input type="hidden" name="csrf_token" value="U2FJIpDYNcvhVcYP3Yra7eD8KYzH1ygQkSHU7Cn8KEL3H-uNR3JlbhfmypH9i85iP20SjrBX-0w2zzXCDWuJ3r5ce9O3Cf1dFkA71lFlHb6qvZPsMcs5LfoKENLKHfNwgbUrHUqw7CcY1zasoYjcgBhFm5Xk1Eu4uLYQ0ovT4yYv_Jeog_M="/>
+</form>
+<div class="login-oauth">
+
+
+
+
+
+
+<form action="https://www.caroll.com/on/demandware.store/Sites-caroll-fr-Site/fr_FR/Login-LoginForm" method="post" class="clearfix"
+data-id="dwfrm_oauthlogin">
+<fieldset>
+
+<div class="AccountLogin-facebook">
+<div class="AccountLogin-facebook-text">
+
+Inscrivez-vous avec
+
+</div>
+
+<button type="input" alt="Facebook login" class="oAuthIcon Button Button--alt" data-id='Facebook' data-oauth-provider="Facebook" name="dwfrm_oauthlogin_login">
+<i class="Icon Icon--facebook-light"></i>&nbsp;Facebook
+</button>
+
+</div>
+
+
+<input type="hidden" name="rememberme" data-id="rememberme" value="">
+<input type="hidden" name="continueURL" value="/fr_fr/Profile/"/>
+<input type="hidden" name="csrf_token" value="rrK0s8V9HkeDl4zJlQgdbxmXnBCcd4DpbZCHU6fbgWe3E4VcrfW_0ZVI5jhzC8_UYAEnJ3vsSCusmTIYHTvx9pFZOcXP7MT6Y_scY0gqHjpZFsZrWBonGOy_rx_srAhGZDbWkGqqjueLNnTAs1SLkDyU43Jj1bPXd5-onKHVml1-rGx_dOc="/>
+<input type="hidden" class="OAuthProvider js-OAuthProvider" name="OAuthProvider" value=""/>
+</fieldset>
+</form>
+
+
+</div>
+
+</div>
+</div>
+</div>
+
+</div>
+
+</li>
+
+<li class="NavUtility-item NavUtility-item--cart js-MiniCart" id="mini-cart">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Report any requested source code -->
+
+<!-- Report the active source code -->
+
+
+
+
+
+<div class="MiniCart">
+
+<div class="MiniCart-total">
+
+<a class="MiniCart-link NavUtility-link" href="https://www.caroll.com/fr_fr/Cart/" rel="nofollow"
+title="voir votre panier">
+<i class="MiniCart-linkIcon NavUtility-linkIcon Icon Icon--basket"></i>
+<span class="MiniCart-linkText">Panier</span>
+</a>
+
+</div>
+
+
+
+
+</div>
+<div class="NavUtility-layerContent">
+<div class="Layer-content LayerContentCart">
+<div class="Layer-header">
+<div class="Layer-headerTitle">Votre panier</div>
+</div>
+
+
+<span class="MiniCart-nbArticle">0 article</span>
+<p class="MiniCart-isEmpty">votre panier est vide</p>
+<a href="https://www.caroll.com/fr_fr/" class="MiniCart-button Button continueShopping"
+title="Continuer votre shopping">Continuer votre shopping</a>
+<p class="MiniCart-ou">ou</p>
+<span data-href="aHR0cHM6Ly93d3cuY2Fyb2xsLmNvbS9mcl9mci9XaXNobGlzdC8=" class="MiniCart-button Button Button--alt obf-encode"
+title="Voir votre liste d'envies">Voir votre liste d'envies</span>
+</iselse>
+
+</div>
+</div>
+
+
+</li>
+</ul>
+<div class="NavUtility-layer Layer">
+<div class="NavUtility-layerEscapeJs"></div>
+<div class="Layer-wrapper">
+<div class="Layer-contentWrapper">
+</div>
+</div>
+</div>
+</nav>
+</div>
+</div>
+<!-- Header guide to limit height of navigation -->
+<div class="Header-guide"></div>
+<!-- overlay -->
+<div class="Overlay js-Overlay"></div>
+</div>
+
+</header>
+
+<div id="main" role="main" class="MainContent ContentWrapper js-StickyLimit">
+
+
+
+<div id="browser-check">
+<noscript>
+<div class="browser-compatibility-alert">
+<i class="fa fa-exclamation-triangle fa-2x pull-left"></i>
+<p class="browser-error">La fonction JavaScript de votre navigateur est d&eacute;sactiv&eacute;e. Veuillez l'activer pour b&eacute;n&eacute;ficier de toutes les fonctionnalit&eacute;s de ce site.</p>
+</div>
+</noscript>
+</div>
+
+<div id="primary" class="primary-content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- dwMarker="content" dwContentID="39ecb59d8e427602bbf26cc175" -->
+<h1 class="TermsTitle">CONDITIONS GÉNÉRALES DE VENTE</h1>
+
+<div class="TermsList">
+<div class="TermsList-group">
+<h2 class="TermsList-title js-TermsListToggle">Préambule</h2>
+
+<div class="TermsList-contentWrapper">
+<div class="TermsList-content">Les dispositions qui suivent établissent les conditions générales de vente des produits offerts à la vente sur le site <span style="font-size:11.0pt"><span style="line-height:115%"><span style="font-family:&quot;Calibri&quot;,&quot;sans-serif&quot;"><a href="https://www.caroll.com/fr_fr/" style="color:blue; text-decoration:underline">https://www.caroll.com/fr_fr/</a></span></span></span> (ci-après « le Site») par :<br />
+<br />
+La société CAROLL INTERNATIONAL,<br />
+Société Anonyme, au capital de 21 966 966, 85 euros<br />
+dont le siège social est situé 10 Impasse du Grand Jardin Zac de la Moinerie - 35400 Saint-Malo<br />    
+Immatriculée au registre du commerce et des Sociétés de Saint Malo, sous le numéro 582 001 707<br />
+Adresse bureau parisien : 28 Avenue de Flandre - 75949 Paris Cedex 19</div>
+
+<div class="TermsList-content">N°TVA : FR 89582001707<br />
+Tél.: 01.44.89.73.33 - Fax:01.44.89.74.04<br />
+E-mail : <a href="mailto:serviceclient@caroll.com"><font style="font-weight:normal">serviceclient@caroll.com</font></a><br />
+<br />
+(Ci-après dénommée « CAROLL »)<br />
+<br />
+Le Site est hébergé par la société Atos Worldline (http://www.atosworldline.com), Société anonyme, dont le siège social est situé à River Ouest, 80 Quai Voltaire - 95870 BEZONS - France, immatriculée au registre du commerce et des Sociétés de Pontoise sous le numéro 378 901 946.</div>
+
+<div class="TermsList-content">CAROLL adhère à la Fédération des Entreprise de Vente à Distance (FEVAD - 60 rue de la Boétie, 75008 Paris) et s'est formellement engagée à respecter les principes de défense du consommateur contenus dans la charte profesionnelle.<br />
+<br />
+Il est précisé que les Produits sont réservés à des particuliers et destinés à une utilisation personnelle du Client, sans rapport avec une utilisation professionnelle de celui-ci. Au titre de son activité, CAROLL bénéficie d'une assurance de responsabilité professionnelle souscrite auprès de l'Assureur RCG : CHUBB, LE COLISSEE, 8 Avenue de l'Arche 92400 COURBEVOIE couvrant le monde entier sauf Iran, Corée du Nord, Syrie, Crimée, Cuba et Soudan du Nord.</div>
+</div>
+</div>
+
+<div class="TermsList-group">
+<h2 class="TermsList-title js-TermsListToggle">Article 1 - Objet</h2>
+
+<div class="TermsList-contentWrapper">
+<div class="TermsList-content">Les présentes conditions générales de vente ont pour objet de définir les modalités de vente à distance entre CAROLL et toute personne physique non commerçante et majeure âgée de plus de 18 ans (ci-après « le Client») effectuant un achat sur le Site. CAROLL se réserve le droit de procéder à (i) tout contr&ocirc;le concernant l’âge des Clients et (ii) de supprimer toute commande qui ne satisferait pas aux conditions énoncées au sein des présentes conditions générales de vente, sans que cela ne puisse engager la responsabilité de CAROLL.<br />
+<br />
+Les présentes sont rédigées en langue française. Elles précisent notamment les différentes étapes nécessaires à la passation de la commande par le Client, les modalités de paiement et de livraison, et précisent le suivi de la commande du Client.<br />
+<br />
+Toute commande de Produit(s) proposé(s) sur le Site implique l'adhésion du Client aux présentes conditions générales de vente. Les présentes conditions générales de vente constituent l’ensemble des dispositions contractuelles conclues entre CAROLL et le Client, à l’exclusion de toute autre clause ou document échangé entre parties, sauf accord express de CAROLL.</div>
+</div>
+</div>
+
+<div class="TermsList-group">
+<h2 class="TermsList-title js-TermsListToggle">Article 2 - Produits</h2>
+
+<div class="TermsList-contentWrapper">
+<div class="TermsList-content">
+<div class="TermsList-subtitle">2.1 Présentation des Produits</div>
+Les produits proposés à la vente par CAROLL (ci-après « les Produits») sont ceux figurant sur le Site au jour de sa consultation par le Client et dans la limite des stocks disponibles.<br />
+<br />
+Les Produits sont présentés par le moyen d’une fiche de renseignements (libellé du Produit, composition, photo et prix) élaborée avec le maximum d’exactitude et de précision afin de permettre une description des plus fidèles et complètes. Toutefois, eu égard au mode de présentation numérique des Produits sur le réseau Internet, il est possible que la perception par le Client de la représentation photographique des Produits ne corresponde pas exactement au Produit en lui-même.<br />
+&nbsp;
+<div class="TermsList-subtitle">2.2 Composition et conseils d'utilisation des Produits</div>
+Les informations relatives à la composition et/ou les conseils d’utilisation des Produits sont accessibles sur la fiche de chaque Produit.<br />
+ <p>Conformément aux dispositions du Code de l'environnement et à la loi AGEC luttant contre le gaspillage et en faveur de l'économie circulaire, CAROLL s'est affiliée à des éco-organismes pour la gestion et le tri de ses déchets. A cet effet, CAROLL dispose des numéros d'identification unique nécessaires (IDU). Le Client peut consulter les règles de gestion et de tri auprès de chaque acteur.</p>
+<lu>
+<li> Refrashion pour trier et gérer les déchets textiles (IDU FR218605_11FAHA), de manière simple et innovante : <a href="https://refashion.fr/citoyen/fr " style="color:blue; text-decoration:underline">https://refashion.fr/citoyen/fr</a></li>
+<li> Citeo pour trier et gérer les emballages (IDU FR209676_01AHDI) et les papiers (IDU FR209676_03HSGG) afin de participer à préserver notre environnement : <a href="https://www.citeo.com/ " style="color:blue; text-decoration:underline">https://www.citeo.com/</a></li> 
+</lu>
+CAROLL s’engage à livrer des Produits répondant aux prescriptions en vigueur relatives à la sécurité et à la santé des personnes conformément aux dispositions européennes, et notamment à la législation sur les substances chimiques à teneur réglementée.<br />
+<br />
+Le Client est seul responsable du choix des Produits, de leur conservation et de leur utilisation.</div>
+</div>
+</div>
+
+<div class="TermsList-group">
+<h2 class="TermsList-title js-TermsListToggle">Article 3 - Prix</h2>
+
+<div class="TermsList-contentWrapper">
+<div class="TermsList-content">Les prix des Produits sont ceux figurant sur le Site au jour de sa consultation par le Client et dans la limite des stocks disponibles.<br />
+<br />
+Les prix des Produits sont indiqués en euros et s’entendent TTC, hors frais de livraison qui restent à la charge du Client sauf mentions ou conditions particulières.<br />
+<br />
+Le montant des frais de livraison en sus est indiqué au Client dans l’onglet « Livraison» accessible sur la page produit.<br />
+<br />
+<br />
+Les Produits demeurent la propriété de CAROLL jusqu'au complet encaissement du prix par CAROLL.</div>
+</div>
+</div>
+
+<div class="TermsList-group">
+<h2 class="TermsList-title js-TermsListToggle">Article 4 - Commande</h2>
+
+<div class="TermsList-contentWrapper">
+<div class="TermsList-content">Toute commande vaut acceptation des prix et description des Produits disponibles à la vente.<br />
+CAROLL s'engage à honorer les commandes reçues sur le Site uniquement dans la limite des stocks disponibles des Produits. A défaut de disponibilité d'un ou plusieurs produit(s) commandé(s), CAROLL s'engage à en informer le Client par e-mail dans les meilleurs délais. La commande du Client portant sur un produit indisponible sera alors automatiquement annulée.<br />
+<br />
+CAROLL se réserve le droit d'annuler ou de refuser toute commande d'un Client avec lequel il existerait un litige relatif au paiement d'une commande antérieure ou qui présenterait une quelconque forme de risque.<br />
+<br />
+La passation de commande par le Client implique son adhésion entière et sans réserve aux présentes conditions générales de vente, à l'exclusion de toutes autres conditions générales de vente et notamment celles en vigueur dans les magasins à enseigne CAROLL.<br />
+&nbsp;
+<div class="TermsList-subtitle">4.1 Passation de commande</div>
+Le Client matérialise sa commande en remplissant les six étapes suivantes :<br />
+<br />
+<font>Etape 1</font> le Client se connecte à son compte Client ou le crée ou utilise le mode de passation de commande sans création de compte étant précisé que le Client pourra créer un compte après la passation de commande s’il le souhaite ;<br />
+<font>Etape 2</font> le Client ajoute les Produits choisis dans son panier. L’accès au panier est possible à tout moment pour le modifier ou le valider ;<br />
+<font>Etape 3</font> le Client vérifie le détail de son panier, il peut, s’il en dispose, appliquer un code promo, puis valide son panier après avoir choisi son mode de livraison ;<br />
+<font>Etape 4</font> le Client saisit ses coordonnées complètes;<br />
+<font>Etape 5</font> au moment de valider le récapitulatif de commande, le Client accepte expressément les conditions générales de vente en vigueur sur le Site ;<br />
+<font>Etape 6</font> le Client choisit son mode de paiement puis est redirigé vers le site sécurisé de paiement où il saisit ses coordonnées bancaires.<br />
+<br />
+L’acceptation définitive du Client est donc matérialisée par la validation de ses coordonnées bancaires (numéro de carte bancaire, date d’expiration et cryptogramme).<br />
+Ces informations bancaires sont connues uniquement du prestataire de paiement retenu par CAROLL.<br />
+&nbsp;
+<div class="TermsList-subtitle">4.2 Confirmation de commande</div>
+Dans l'heure qui suit la passation de sa commande, le Client recevra un e-mail lui confirmant :<br />
+- l’enregistrement de sa commande,<br />
+- le détail des Produits commandés,<br />
+- ses données personnelles incluant l’adresse de livraison,<br />
+- que sa carte sera débitée à l’expédition de la commande.
+<div class="TermsList-subtitle">4.3 Archivage de la commande</div>
+Le panier du Client est archivé et conservé pour une commande ultérieure pendant une durée de 15 jours, et ce même en cas d’interruption de la connexion internet. Toutefois, afin d’accéder à son panier archivé, le Client devra se reconnecter au Site à l’aide du même ordinateur présentant la même adresse IP de connexion au service.<br />
+<br />
+Les détails de la commande sont archivés conformément à l’article L 213-1 du Code de la consommation, pendant une durée de dix ans sur un serveur sécurisé. Cependant, aucun numéro de carte de crédit n’est conservé.<br />
+<br />
+Le Client accepte que la confirmation de commande soit considérée comme preuve des relations contractuelles intervenues entre les Parties.</div>
+
+<div class="TermsList-subtitle">4.4 Modification ou annulation de commande</div>
+Tant que la commande n'est pas finalisée par la validation du paiement par le Client, ce dernier peut procéder à des modifications et faire évoluer son panier. Il peut ainsi modifier une quantité ; supprimer un article ou tout simplement poursuivre ses achats. Pour cela, il lui suffit de cliquer sur la rubrique « Panier» et effectuer les modifications souhaitées.<br />
+<br />
+En revanche, une fois le paiement validé, la transaction est enregistrée et aucun recours ou modification en ligne sur le Site n’est possible. Le Client devra se conformer à l’article 7 ci-après.</div>
+</div>
+</div>
+
+<div class="TermsList-group">
+<h2 class="TermsList-title js-TermsListToggle">Article 5 - Conditions de paiement</h2>
+
+<div class="TermsList-contentWrapper">
+<div class="TermsList-content">
+<div class="TermsList-subtitle">5.1 Paiement par carte bancaire ou par compte Paypal</div>
+Le paiement s'effectue en ligne, au choix du Client :<br />
+<br />
+- par carte bancaire au moment de la passation de la commande par le Client. Les cartes acceptées sont les suivantes : Carte Bleue, Visa, Mastercard, Carte Bleue, Visa, Mastercard, émises dans les pays membres de l’Union Européenne, intégrant obligatoirement le système de vérification 3D Secure. (En cas de problèmes rencontrés avec 3D Secure, le Client doit contacter sa banque);<br />
+- par Paypal, ce sont les conditions générales d'utilisation de Paypal qui s'appliquent. Cette solution permet de protéger les informations que les clients communiquent à CAROLL et garantit la conformité et la sécurisation de chaque transaction.<br />
+Le compte bancaire correspondant à la carte bancaire utilisée pour le paiement sera débité le jour de l'expédition de la commande, sauf en cas de livraison de la commande en magasin où le compte bancaire est débité au cours de la préparation de la commande.<br />
+<br />
+CAROLL se réserve le droit de procéder à l'annulation d'une commande qui présenterait, lors des vérifications de coordonnées bancaires par le prestataire du paiement, un risque d'utilisation frauduleuse de carte bancaire, ou en cas de refus d’autorisation de paiement des organismes bancaires. En outre, CAROLL se réserve le droit de refuser d'honorer une commande émanant d'un consommateur qui n'aurait pas réglé totalement ou partiellement une commande précédente ou avec lequel un litige de paiement serait en cours.<br />
+<p>Tous les frais liés aux moyens de paiement précités sont à la charge définitive du Client, étant précisé que CAROLL n’est pas responsable de tout coût de quelque nature que cela soit, engendré par le mode de paiement sélectionné par le Client.</p>
+&nbsp;
+<div class="TermsList-subtitle" id="paymentsecure">5.2 Sécurisation des paiements</div>
+Tous les achats effectués sur le Site sont protégés et sécurisés 7 jours sur 7 et 24 heures sur 24.<br />
+<br />
+En cliquant sur la carte bancaire de son choix, le Client est dirigé vers le site de paiement sécurisé SIPS-ATOS WORLDLINE qui intègre la norme de sécurité PCI DSS. Lors du paiement, le Client indique son numéro de carte, sa date de validité et le cryptogramme figurant au dos de sa carte bancaire. Votre banque vérifie votre identité par le système 3D Secure.<br />
+<br />
+Ces données sont automatiquement transmises en mode crypté (protocole PCI DSS) pour être vérifiées afin d’éviter les abus et les fraudes.<br />
+<br />
+3D Secure, c'est quoi ?<br />
+Dans le cadre de la lutte anti-fraude, CAROLL met en place le paiement 3D Secure sur toutes ses transactions. 3D Secure est un système de paiement par authentification permettant de renforcer la sécurité lors de vos achats en ligne. Au moment du paiement, votre banque vérifie l'identité du porteur de la carte avant de valider la transaction. Ce service vous est proposé gratuitement par votre banque pour vos paiements par Carte Bleue, Visa et Mastercard.<br />
+<br />
+La procédure d'authentification<br />
+Etape 1 : validez votre panier et renseignez vos coordonnées bancaires.<br />
+<br />
+Etape 2 : votre banque vérifie l'identité de l'utilisateur / du porteur de la carte<br />
+Après avoir validé vos coordonnées bancaires, vous êtes transféré sur le site de votre banque. Dans la fenêtre 3D Secure qui s'affiche, le procédé d'authentification à suivre est propre à chaque banque. Il peut vous être demandé :<br />
+- de saisir votre date de naissance,<br />
+- de renseigner un code reçu par sms,<br />
+- répondre à une question personnelle,...<br />
+Vérifiez au moment de votre commande que vous pouvez recevoir le sms d'authentification 3D Secure (restriction opérateur, commande depuis l'étranger, couverture du réseau...)<br />
+<br />
+Etape 3 : finalisez et validez votre commande<br />
+Après confirmation de la banque, votre paiement est validé et votre transaction finalisée. Vous recevez votre confirmation de commande par email. Votre transaction est annulée après 3 échecs d'authentification. 3 transactions annulées entrainent le blocage de votre carte de paiement. Dans ce cas, contactez votre banque. Pour toute question sur le code 3D Secure (obtention, perte, modification …) et sur la procédure d'authentification, contactez directement votre banque. CAROLL ne vous demandera jamais vos coordonnées bancaires par email. En cliquant sur Paypal, les informations financières du Client ne sont jamais communiquées à CAROLL. PayPal crypte et protège votre numéro de carte une fois pour toutes. Payez en ligne en indiquant simplement votre adresse email et votre mot de passe.</div>
+</div>
+</div>
+
+<div class="TermsList-group">
+<h2 class="TermsList-title js-TermsListToggle">Article 6 - Condition de livraison</h2>
+
+<div class="TermsList-contentWrapper">
+<div class="TermsList-content">
+<div class="TermsList-subtitle">6.1 Zones de livraison</div>
+CAROLL livre toute commande à destination de la France Métropolitaine.<br />
+<br />
+Le Client, à la réception de sa commande, doit vérifier l’aspect extérieur du colis et, le cas échéant, émettre toute réserve auprès du transporteur.<br />
+<br />
+Pour la livraison, CAROLL vous propose :<br />
+<br />
+<font style="text-transform:uppercase">Colissimo domicile</font><br />
+<font>Livraison chez vous</font> - Livraison chez vous - votre colis vous est remis ou livré dans votre bo&icirc;te aux lettres. En cas d’absence, ou si sa taille ne permet pas une remise en bo&icirc;te aux lettres, il peut être remis en main propre à un voisin ou à votre disposition dans le bureau de poste auquel vous êtes rattaché. Vous disposez ainsi de 10 jours ouvrables depuis l'arrivée de votre colis en bureau de poste, pour venir le retirer. Passé ce délai, il sera retourné à CAROLL.<br />
+Dans tous les cas, vous êtes informé, <font>par e-mail</font>, 24h avant la livraison de votre colis.<br />
+<br />
+<font>Livraison dans l'un des 10 000 bureaux de poste</font> de votre choix en France (sans passage préalable de votre facteur à domicile).<br />
+Vous serez informé de la disponibilité de votre colis par e-mail et SMS, avec un bon de retrait vous permettant de venir le retirer en bureau dans les 10 jours ouvrables suivant la réception de l’email et SMS susvisés.<br />
+Passé ce délai, votre colis sera retourné à CAROLL.<br />
+<br />
+<font>Livraison dans l'un des 5 500 commerces </font> de notre réseau partenaire, à proximité de votre domicile, de votre lieu de travail ou de vacances. Vous serez informé de la disponibilité de votre colis par e-mail et SMS, avec un bon de retrait vous permettant de venir le retirer dans les 10 jours ouvrables suivant la réception de l’email et SMS susvisés.<br />
+Passé ce délai, votre colis sera retourné à CAROLL.<br />
+<br />
+<font style="text-transform:uppercase">La livraison en boutique CAROLL</font><br />
+Le Client a la possibilité de se faire livrer gratuitement dans toutes les boutiques CAROLL sauf les boutiques de Bastia, Evreux, grands magasins et boutiques stocks.<br />
+Le délai moyen de réception des colis est de 3 à 10 jours ouvrés. A réception de la commande dans la boutique sélectionnée, le Client reçoit un e-mail le prévenant de la mise à disposition de son colis. Le Client doit présenter son e-mail de confirmation d’expédition ou le numéro de commande ainsi qu’une pièce d’identité pour pouvoir retirer son colis.<br />
+Le Client dispose d’un délai de 30 jours pour retirer son colis. Au-delà du délai de 30 jours, le colis sera retourné à CAROLL.<br />
+CAROLL se réserve le droit de suspendre ce service à tout moment et sans préavis, notamment en période de soldes et autres opérations commerciales ou en cas de fermeture temporaire ou définitive de boutiques.<br />
+<br />
+<font style="text-transform:uppercase">La livraison Click & Collect Express</font><br />
+Le Client a la possibilité de se faire livrer gratuitement dans les boutiques CAROLL identifiées lors de la passation de sa commande, et ce dans un délai de deux heures à compter de la réception de la confirmation de commande sur la boite mail du Client. Le Client doit présenter son e-mail de confirmation ou le numéro de sa commande ainsi qu’une pièce d’identité afin de retirer son colis. Le Client dispose d’un délai de 30 jours pour retirer son colis. Passé ce délai, le colis sera retourné à CAROLL.<br />
+CAROLL se réserve le droit de suspendre ce service à tout moment et sans préavis, notamment en période de soldes et opérations commerciales, ou en cas de fermeture temporaire ou définitive de boutiques. <br />
+L’option boite cadeau n’est pas disponible pour les livraisons « click and collect express ». 
+<br />    
+        
+<div class="TermsList-subtitle">6.2 Délais de livraison</div>
+Le délai moyen de livraison comprend :<br />
+- Le traitement des commandes du lundi au vendredi (sauf jour férié), dans un délai moyen de 48 heures. A certaines périodes (notamment en période de soldes et autres opérations commerciales), le délai de traitement pourra être plus long en raison du plus grand nombre de commandes à traiter. - Les délais de transport pratiqués par la Poste en So Colissimo ou par les transporteurs CAROLL pour les livraisons en boutique.br /&gt;<br />
+En conséquence, le délai de livraison, transport compris, s'entend d'un délai de 3 à 7 jours ouvrés, y compris en période de soldes ou promotions.<br />
+<br />
+Le Client reçoit automatiquement un e-mail l’informant de l’expédition et du suivi de sa commande.<br />
+Pour suivre votre commande :<br />
+- Connectez-vous à votre compte,<br />
+- Accédez à la rubrique « Mes commandes»,<br />
+- Vérifiez le statut de votre commande : en attente/validée/expédiée/annulée,<br />
+- Une fois la commande expédiée, vous pouvez la suivre facilement en cliquant sur le lien « suivi de livraison»<br />
+En cas de dépassement de la date limite de livraison du fait de CAROLL, et non justifié par un cas de force majeure (voir article 11 des présentes conditions générales de vente), le Client pourra selon l’article L.216-2 du Code de la consommation procéder à la résolution de la vente par lettre recommandée avec demande d'avis de réception ou par un écrit sur un autre support durable, si, après avoir enjoint CAROLL, selon les mêmes modalités, d'effectuer la livraison dans un délai supplémentaire raisonnable, CAROLL ne s’est pas exécutée dans ce délai. Les sommes versées par le Client lui seront alors intégralement remboursées.<br />
+&nbsp;
+    
+<div class="TermsList-subtitle">6.3 Frais de livraison forfaitaires</div>
+Des frais de livraison sont facturés en sus du prix des Produits.<br />
+Le montant de ces frais de livraison est fonction du mode de livraison choisi.<br />
+<br />
+En tout état de cause, le Client sera informé du montant des frais de livraison avant la validation et le paiement de sa commande.</div>
+</div>
+</div>
+
+<div class="TermsList-group">
+<h2 class="TermsList-title js-TermsListToggle">Article 7 - Cas de retour des Produits commandés</h2>
+
+<div class="TermsList-contentWrapper">
+<div class="TermsList-content">
+<div class="TermsList-subtitle">7.1 Le droit de rétractation</div>
+1/ Délai :<br />
+Conformément à l’article L 221-18 du Code de la Consommation, le Client a le droit de se rétracter du présent contrat sans donner de motif dans un délai de quatorze jours, étant précisé que les frais de retour sont à la charge du Client :<br />
+<br />
+- En cas de livraison unique, le délai de rétractation expire quatorze jours après le jour où le Client ou un tiers autre que le transporteur et désigné par le Client, prend physiquement possession du bien ;<br />
+- En cas de livraison multiples pour une même commande, le délai de rétractation expire quatorze jours après le jour où le Client, ou un tiers autre que le transporteur et désigné par le Client, prend physiquement possession du dernier bien.<br />
+Hormis les articles achetés durant les soldes ou une opération promotionnelle ainsi que les articles de la rubrique « OUTLET» pour lesquels seul le délai de rétractation légal s'applique, CAROLL offre la possibilité au Client de disposer d'un délai de retour des articles plus long.<br />
+Passé ces délais, les articles livrés seront réputés acceptés par le Client.<br />
+<br />
+2/ Comment exercer son droit<br />
+<br />
+Pour exercer son droit de rétractation, le Client doit notifier à CAROLL sa décision de rétractation de la Commande au moyen d’une déclaration dénuée d’ambiguïté (par exemple lettre envoyée par la poste, courrier électronique).<br />
+Le Client peut utiliser le modèle de formulaire de rétractation disponible ci-dessous ou toute autre déclaration dénuée d’ambiguïté.<br />
+Conformément aux dispositions légales (articles L.221-21 et suivants du code de la consommation), si vous souhaitez user de votre droit de rétraction, vous pouvez utiliser ce formulaire, selon les conditions ci-après :<br />
+o Complétez et signez ce formulaire de rétraction,<br />
+o Envoyez-le par courrier postal ou par e-mail, dans un délai de 14 jours selon les points de départ susmentionnés ou, le cas échéant, de 30 jours à compter de la réception de la commande.<br />
+Afin de faciliter le traitement de votre rétractation, nous recommandons vivement à tout Client d’indiquer le numéro de sa commande, ainsi que son adresse email (pour ceux exerçant leur retour par formulaire papier).<br />
+<br />
+Modèle du Formulaire :<br />
+A l’attention de CAROLL INTERNATIONAL – CI 6e – 28 Avenue de Flandre – 75949 Paris Cedex 19<br />
+E-mail : serviceclient@caroll.com <br />
+Je notifie par la présente ma rétractation du contrat portant sur la vente de bien ci-dessous : [indiquer le ou les produits pour lequel vous exercez votre droit de rétractation]<br />
+Commandé le [_____] (*)/reçu le [______] (*) [compléter par les dates correspondantes, et (*) rayer la mention inutile]<br />
+Nom du consommateur :<br />
+Adresse du consommateur :<br />
+Signature du consommateur (uniquement en cas de notification du présent formulaire sur papier) :<br />
+Date :<br />
+   
+<br />
+3/ Remboursement<br />
+<br />
+Si le Client a déjà reçu sa commande : en cas de rétractation par le Client, CAROLL lui remboursera tous les paiements reçus pour la Commande, y compris les frais de livraison (à l’exception des frais supplémentaires si le Client a choisi un mode de livraison autre que le mode de livraison standard proposé par CAROLL) sans retard excessif et en tout état de cause, au plus tard 14 (quatorze) jours à compter du jour où CAROLL est informée de la décision du Client de se rétracter de sa commande.<br />
+<strong>Article 1641 du Code Civil :</strong>« Le vendeur est tenu de la garantie à raison des défauts cachés de la chose vendue qui la rendent impropre à l'usage auquel on la destine, ou qui diminuent tellement cet usage, que l'acheteur ne l'aurait pas acquise, ou n'en aurait donné qu'un moindre prix, s'il les avait connus.»<br />
+CAROLL se laisse cependant le droit de différer le remboursement jusqu’à ce qu’il ait réceptionné les produits retournés ou lorsque le Client aura apporté la preuve que le Produit a bien été réexpédié, la date retenue étant alors celle du premier de ces faits.<br />
+Si la commande n’a pas encore été expédiée, en cas de rétractation par le Client, CAROLL lui remboursera tous les paiements reçus du Client pour la Commande sans retard excessif et en tout état de cause, au plus tard 14 (quatorze) jours à compter du jour où CAROLL est informée de sa décision par le Client.<br />
+En cas de retour partiel des Produits commandés ou d'erreur sur l'adresse de livraison par le Client, les frais de livraison initiaux ne seront pas remboursés.<br />
+Le remboursement s'effectuera par crédit sur le compte bancaire du Client correspondant à la carte bancaire ayant servi au paiement de la commande ou par le compte PAYPAL si la commande a été payée via PAYPAL.<br />
+Le Client pourra, s'il le souhaite et sur proposition de CAROLL, opter pour un remboursement sous forme d'avoirs ou de bons d'achat.<br />
+En tout état de cause, ce remboursement n’occasionnera pas de frais pour le Client.<br />
+<br />
+4/ Comment retourner son Produit<br />
+<br />
+Le Client peut retourner son colis au plus tard 14 (quatorze) jours après qu’il ait communiqué à CAROLL sa décision de rétractation de la Commande. Ce délai est réputé respecté si le Client renvoie le Produit avant l’expiration du délai de 14 jours :<br />
+- soit dans toutes les boutiques CAROLL (sauf les boutiques de Bastia, Evreux, grands magasins et boutiques stocks);<br />
+- soit par voie postale, à l’adresse suivante :<br />
+<br />
+Dép&ocirc;t Caroll<br />
+Service Retour Web<br />
+ZAC de la Crosne - RD 30<br />
+45300 Ascoux<br />
+A cet égard, il appartient au Client de se ménager la preuve de ce retour.<br />
+Afin de faciliter le traitement de la demande de retour, le Client devra joindre à son envoi l'étiquette de retour qui aura été jointe dans le colis, dûment complétée.
+<div class="TermsList-subtitle">7.2 L’échange</div>
+Le Client dispose d’un délai de 30 jours à compter de la réception de sa commande pour échanger un Produit dans une boutique CAROLL.<br />
+L’échange d’un Produit ne pourra être effectué que dans une boutique CAROLL (sauf les boutiques de Bastia, Evreux, grands magasins et boutiques stocks).<br />
+Par ailleurs, il ne sera procédé qu’aux seuls échanges de Produits pour lesquels la valeur TTC du Produit « de remplacement» choisi par le Client est supérieure ou égale à la valeur TTC du Produit initialement acquis par le Client.<br />
+Dans le cas où un Client choisirait un Produit d’une valeur TTC supérieure à la valeur TTC du Produit à échanger, le Client complètera la différence.
+<div class="TermsList-subtitle">7.3 Etat des Produits retournés ou échangés</div>
+Le(s) Produits(s) retourné(s) (y compris dans le cadre d’un échange) doivent être neufs, non utilisés et, le cas échéant, dans leur boite d’origine (chaussures ou accessoires spécifiques). Tout article retourné sali et/ou endommagé ne pourra être repris.<br />
+A réception du colis, CAROLL jugera du parfait état du ou des Produits retournés. Aucun retour ne sera accepté si les Produits retournés ont été visiblement utilisés ou endommagés du fait du Client, cette utilisation ou ces dommages rendant les Produits impropres à la vente.<br />
+Si le retour est refusé par CAROLL, les Produits seront alors retournés au Client le cas échéant aux frais de ce dernier sans que celui-ci puisse exiger une quelconque compensation ou droit à remboursement, à l’exception de l’exercice ultérieur de ses droits à garantie sur les Produits vendus.
+<div class="TermsList-subtitle">7.4 Garantie légale de conformité des Produits et garantie des vices cachés</div>
+Tous les Produits bénéficient de la garantie légale de conformité (articles L.217-4 et suivants du Code de la Consommation) et de la garantie contre les vices cachés (articles 1641 et suivants du Code Civil), permettant notamment au Client de renvoyer à CAROLL les Produits livrés défectueux ou non conformes.<br />
+<br />
+- <strong>Article L.217-4 du Code de la Consommation : </strong><br />
+Le vendeur livre un bien conforme au contrat et répond des défauts de conformité existant lors de la délivrance.<br />
+Il répond également des défauts de conformité résultant de l'emballage, des instructions de montage ou de l'installation lorsque celle-ci a été mise à sa charge par le contrat ou a été réalisée sous sa responsabilité.»<br />
+- <strong>Article L.217-5 du Code de la Consommation : </strong> « Le bien est conforme au contrat :<br />
+1° S'il est propre à l'usage habituellement attendu d'un bien semblable et, le cas échéant : - s'il correspond à la description donnée par le vendeur et possède les qualités que celui-ci a présentées à l'acheteur sous forme d'échantillon ou de modèle ;<br />
+- s'il présente les qualités qu'un acheteur peut légitimement attendre eu égard aux déclarations publiques faites par le vendeur, par le producteur ou par son représentant, notamment dans la publicité ou l'étiquetage ;<br />
+2° Ou s'il présente les caractéristiques définies d'un commun accord par les parties ou est propre à tout usage spécial recherché par l'acheteur, porté à la connaissance du vendeur et que ce dernier a accepté.»<br />
+<strong>Article L.217-12 du Code de la Consommation : </strong> « L'action résultant du défaut de conformité se prescrit par deux ans à compter de la délivrance du bien.»<br />
+<strong>Article 1641 du Code Civil : </strong> « Le vendeur est tenu de la garantie à raison des défauts cachés de la chose vendue qui la rendent impropre à l'usage auquel on la destine, ou qui diminuent tellement cet usage, que l'acheteur ne l'aurait pas acquise, ou n'en aurait donné qu'un moindre prix, s'il les avait connus.»<br />
+<strong>Article 1648 al 1er du Code Civil : </strong> « L'action résultant des vices rédhibitoires doit être intentée par l'acquéreur dans un délai de deux ans à compter de la découverte du vice.»<br />
+Il est rappelé que dans le cadre de la garantie légale de conformité, le Client :<br />
+- bénéficie d’un délai de deux ans à compter de la délivrance du bien pour agir vis-à-vis de son vendeur ;<br />
+- peut choisir entre la réparation ou le remplacement du bien, sous réserve des conditions de coût prévues par l’article L. 217-9 du code de la consommation ;<br />
+- est dispensé de rapporter la preuve de l’existence du défaut de conformité du bien durant les six mois suivant la délivrance du bien. Ce délai est porté à 24 mois à compter du 18 mars 2016, sauf pour les biens d’occasion.<br />
+La garantie légale de conformité s’applique indépendamment de la garantie commerciale pouvant éventuellement couvrir votre bien.<br />
+Il est rappelé que le Client peut décider de mettre en œuvre la garantie contre les défauts cachés de la chose vendue au sens de l’article 1641 du code civil et que dans cette hypothèse, il peut choisir entre la résolution de la vente ou une réduction du prix de vente conformément à l’article 1644 du Code Civil.<br />
+En cas de livraison au Client d’un Produit non-conforme à la commande ou révélant un vice caché, le Client devra retourner le Produit à CAROLL, selon l’une des 2 modalités ci-après :<br />
+<br />
+1) retour du Produit dans toutes les boutiques CAROLL sauf les boutiques de Bastia, grands magasins et boutiques stocks ; Le retour des produits Outlet n’est pas accepté en boutique CAROLL. CAROLL se réserve le droit de suspendre ce service à tout moment et sans préavis, notamment en période d’opérations commerciales ou en cas de fermeture temporaire ou définitive de boutiques.<br />
+<br />
+2) retour du Produit par voie postale. Tout d’abord, contacter le service client de CAROLL, par email à l’adresse électronique <a href="mailto:serviceclient@caroll.com"><font style="font-weight:normal">serviceclient@caroll.com</font></a>, retour du Produit par voie postale. Tout d’abord, contacter le service client de CAROLL, par email à l’adresse électronique<br />
+<br />
+Dép&ocirc;t Caroll<br />
+Service Retour Web<br />
+ZAC de la Crosne - RD 30<br />
+45300 Ascoux<br />
+<br />
+A cet égard, il appartient au Client de se ménager la preuve de ce retour.<br />
+<br />
+Afin de faciliter le traitement de la demande de retour, le Client devra remettre au personnel de vente (pour un retour en boutique CAROLL) ou joindre à son envoi (pour un retour par voie postale) le bon de retour figurant au dos du bordereau de livraison (joint à la commande) dûment complété. Le Client pourra demander à CAROLL :<br />
+<br />
+&bull; - soit d’être livré d’un Produit identique à celui commandé, dans la limite des stocks disponibles ;<br />
+&bull; - soit d’être livré d’un Produit de qualité et de prix équivalent, dans la limite des stocks disponibles ;<br />
+&bull; - soit d’être remboursé du prix du Produit commandé et des éventuels frais de livraison initiaux et de retour. Ce remboursement s’effectuera dans un délai de quinze (15) jours à compter de la réception par CAROLL du Produit retourné, par crédit sur le compte bancaire du Client ayant servi au paiement de la commande ou par le compte PayPal si la commande a été payée via PayPal. CAROLL rembourse le Produit retourné au prix facturé, les frais de livraison, dans le cas d'un retour de l'intégralité de la commande, et les frais de retour. En cas de retour partiel des Produits, les frais de livraison initiaux ne seront pas remboursés.<br />
+En tout état de cause, ces dispositions ne privent pas le Client de la possibilité d’exercer son droit de rétractation, tel qu’indiqué à l’article 7.1 ci-dessus.</div>
+</div>
+</div>
+
+<div class="TermsList-group">
+<h2 class="TermsList-title js-TermsListToggle">Article 8 - Réclamations  - Informations</h2>
+
+<div class="TermsList-contentWrapper">
+<div class="TermsList-content"> Pour toute information, question ou conseil, le service Client de CAROLL est à la disposition du Client par mail à l’adresse suivante <font>: </font><u><a href="mailto:serviceclient@caroll.com"><font style="font-weight:normal">serviceclient@caroll.com</font></a></u>, du lundi au vendredi de 9h30 à 13h et de 14h à 17h.<br />
+<br />
+De manière générale, il est prévu de convention expresse que les courriers électroniques feront foi entre les parties de même que les systèmes d’enregistrement automatique utilisés sur le Site, notamment quant à la nature et la date de la commande.</div>
+</div>
+</div>
+
+<div class="TermsList-group">
+<h2 class="TermsList-title js-TermsListToggle">Article 9 - Informatique et liberté</h2>
+
+<div class="TermsList-contentWrapper">
+<div class="TermsList-content"> CAROLL respecte le règlement (UE) 2016/679 du Parlement européen et du Conseil du 27 avril 2016 relatif à la protection des personnes physiques à l'égard du traitement des données à caractère personnel et à la libre circulation de ces données abrogeant la directive 95/46/CE (le « RGPD »). </div>
+Vous pouvez consulter notre politique de protection des données personnelles en cliquant sur le lien ci-après : <u><a href="https://www.caroll.com/fr_fr/politique-de-confidentialite.html#confidentialite-site" target="_blank" title="https://www.caroll.com/fr_fr/politique-de-confidentialite.html#confidentialite-site">https://www.caroll.com/fr_fr/politique-de-confidentialite.html#confidentialite-site</a></u><br />
+<br />
+De plus, conformément à l’article L223-2 du Code de la consommation CAROLL vous informe de votre droit à vous inscrire sur une liste d’opposition au démarchage téléphonique <u><a href="http://www.bloctel.gouv.fr/" target="_blank" title="http://www.bloctel.gouv.fr/">http://www.bloctel.gouv.fr/</a></u><br />
+</div>
+</div>
+
+<div class="TermsList-group">
+<h2 class="TermsList-title js-TermsListToggle">Article 10 - Droits de Propriété Intellectuelle</h2>
+
+<div class="TermsList-contentWrapper">
+<div class="TermsList-content"> Tous les éléments du Site, qu’ils soient visuels ou sonores, y compris la technologie sous-jacente, sont la propriété exclusive de CAROLL et bénéficient tant de la protection du droit d’auteur que de la protection conférée par les dispositions relatives au droit des marques.<br />
+<br />
+La reproduction totale ou partielle de l’un quelconque de ces éléments, sur quelque support que ce soit et pour quelque motif que ce soit, sans l’accord préalable et exprès de CAROLL est strictement interdite. </div>
+</div>
+</div>
+
+<div class="TermsList-group">
+<h2 class="TermsList-title js-TermsListToggle">Article 11 - Force Majeure</h2>
+
+<div class="TermsList-contentWrapper">
+<div class="TermsList-content"> En cas de force majeure, telle que définie par la jurisprudence des Cours et tribunaux français, l’exécution des prestations de CAROLL sera suspendue pour tout ou partie. <br />
+<br />
+La force majeure s’entend de tout événement extérieur, imprévisible et insurmontable empêchant CAROLL d’exécuter ses obligations contractuelles.
+En cas de survenance d’un événement qualifié de force majeure selon l’alinéa précédent, CAROLL s’engage à le notifier au Client dans les plus brefs délais.</div>
+</div>
+</div>
+
+<div class="TermsList-group">
+<h2 class="TermsList-title js-TermsListToggle">Article 12 - Limitation de responsabilité</h2>
+
+<div class="TermsList-contentWrapper">
+<div class="TermsList-content"> La passation de la commande sur le Site implique la connaissance et l'acceptation des procédures en vigueur sur le réseau Internet, notamment en ce qui concerne les performances techniques, les temps de réponse, de connexion, les interrogations ou transferts d'informations, les risques de coupure, les risques de contamination par virus circulant sur le réseau et de manière générale tous les risques liés à l'utilisation du réseau Internet.<br />
+<br />
+CAROLL ne saurait donc en aucun cas être tenue responsable de tout dommage direct ou indirect issu d’une mauvaise utilisation ou d'incident lié à l'utilisation de l'ordinateur, de l'accès à Internet, de la maintenance ou du dysfonctionnement des serveurs, de la ligne téléphonique ou de toute autre connexion technique, la connexion du Client au Site se faisant sous son entière responsabilité. </div>
+</div>
+</div>
+
+
+<div class="TermsList-group">
+<h2 class="TermsList-title js-TermsListToggle">Article 13 - Modification et validité des Conditions Générales de Vente</h2>
+
+<div class="TermsList-contentWrapper">
+<div class="TermsList-content"> Les présentes conditions générales de vente sont applicables tant qu’elles figurent sur le Site.<br />
+CAROLL se réserve la faculté de les modifier à tout moment. Le cas échéant, les nouvelles conditions générales de vente seront applicables aux seules commandes passées postérieurement à cette modification.<br />
+<br />
+Le fait que CAROLL s’abstienne, à un moment donné, d’exiger l’exécution de l’une quelconque des dispositions des présentes conditions générales de vente, ne peut être interprété comme valant renonciation à invoquer ultérieurement ladite inexécution totale ou partielle.<br />
+<br />
+Si l’une quelconque des dispositions des présentes conditions générales de vente est déclarée nulle en tout ou partie, les autres dispositions et les autres droits et obligations nés de ces conditions générales de vente demeureront inchangés et resteront applicables.</div>
+</div>
+</div>
+
+<div class="TermsList-group">
+<h2 class="TermsList-title js-TermsListToggle">Article 14 - Litige et droit applicable</h2>
+
+<div class="TermsList-contentWrapper">
+<div class="TermsList-content"> Les présentes conditions générales de vente sont soumises au droit français.<br />
+<br />
+Tout différend qui pourrait naître entre les Parties en raison de la formation, de l’interprétation, de l’exécution et/ou de la terminaison des présentes et, plus généralement tout différend résultant des présentes relèvera, à défaut de règlement amiable, de la juridiction compétente en la matière.</div>
+Le Client est informé qu’en cas d'échec de règlement amiable auprès du service consommateurs de CAROLL, il peut, conformément aux articles L612-1 et suivants et R612-1 et suivants du Code de la consommation, soumettre gratuitement par voie électronique ou postale, son différend l'opposant à CAROLL, à un médiateur qui tentera, en toute indépendance et impartialité, de rapprocher les Parties en vue d'aboutir à une solution amiable. <br />
+<br />
+CAROLL adhère à la Fédération du e-commerce et de la vente à distance (FEVAD - 60 rue la Boétie –75008 Paris) et, à ce titre, bénéficie de son service de médiation du e-commerce dont les modalités de saisine sont disponibles à l’adresse suivante : <a href="https://www.mediateurfevad.fr/ ">www.mediateurfevad.fr</a> ,étant précisé que ce service de médiation est également valable pour tout achat en magasin. <br />
+<br />
+Conformément à l’article 14 du Règlement (UE) n°524/2013 relatif au règlement en ligne des litiges de consommation, le Client est informé que la Commission Européenne a mis en place la plateforme de règlement en ligne des litiges de consommation accessible par le lien suivant : https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&lng=FR
+<br />
+<br />
+<br />
+Dernière date de mise à jour des CGV : 21 janvier 2022
+</div>
+</div>
+</div>
+
+
+
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- dwMarker="content" dwContentID="01a8e77857adbfe54871d5fd28" -->
+<div class="Reinsurance">
+<ul class="Reinsurance-list">
+	<li class="Reinsurance-item"><span class="obf" data-href="https://www.caroll.com/fr_fr/customer-service-contact-us/faqs.html#eresa"> <span class="Reinsurance-item-title">e-reservation</span> </span>
+	<p class="Reinsurance-item-txt"><span class="obf" data-href="https://www.caroll.com/fr_fr/customer-service-contact-us/faqs.html#eresa">R&eacute;servez vos articles sur le site et essayez les en boutique</span></p>
+	</li>
+	<li class="Reinsurance-item"><a href="https://www.caroll.com/fr_fr/Stores/" title="Nos Boutiques"><span class="Reinsurance-item-title">nos belles adresses</span> </a>
+	<p class="Reinsurance-item-txt"><a href="https://www.caroll.com/fr_fr/Stores/" title="Nos Boutiques">Trouvez la boutique la plus proche de chez vous</a></p>
+	<a href="https://www.caroll.com/fr_fr/Stores/" title="Nos Boutiques"> </a></li>
+	<li class="Reinsurance-item"><span class="obf" data-href="https://www.caroll.com/fr_fr/customer-service-contact-us/faqs.html#retours" rel="nofollow"> <span class="Reinsurance-item-title">30 jours</span> </span>
+	<p class="Reinsurance-item-txt"><span class="obf" data-href="https://www.caroll.com/fr_fr/customer-service-contact-us/faqs.html#retours" rel="nofollow">Vous &ecirc;tes satisfaite ou rembours&eacute;e sous 30 jours</span></p><span class="obf" data-href="https://www.caroll.com/fr_fr/servicescaroll.html" rel="nofollow"> </span></li>
+	<li class="Reinsurance-item"><span class="obf" data-href="https://www.caroll.com/fr_fr/servicescaroll.html#"> <span class="Reinsurance-item-title">livraisons</span> </span>
+	<p class="Reinsurance-item-txt"><span class="obf" data-href="https://www.caroll.com/fr_fr/servicescaroll.html">Livraison gratuite en boutique et Retours offerts</span></p>
+	</li>
+</ul>
+</div>
+
+
+
+
+
+
+<footer class="Footer">
+<div class="Footer-primary Container">
+<div class="Footer-group Footer-group--social">
+<div class="Newsletter">
+<p class="Newsletter-title">
+bénéficiez de <b>-15% sur votre coup de cœur</b> <br> en vous inscrivant à notre newsletter
+</p>
+
+<form action="/on/demandware.store/Sites-caroll-fr-Site/fr_FR/Newsletter-SubscribeEmail" method="post" class="Newsletter-form js-Newsletter-form Form--validator">
+<input type="hidden" name="dwfrm_newsletter_subscribe" value="subscribe"/>
+
+
+
+<div class="Form-row  required">
+
+
+
+<label for="dwfrm_newsletter_email" class="Form-label">votre E-mail</label>
+
+
+<input class="Form-input  required" type="text"  id="dwfrm_newsletter_email" name="dwfrm_newsletter_email" value="" placeholder="Votre email" maxlength="255"  />
+
+
+
+<div class="Form-caption">Veuillez saisir un email valide</div>
+
+</div>
+
+<button value="submit" class="Button Newsletter-submit js-Newsletter-submit">
+<span>envoyer</span>
+<div class="SpinnerCircle"><div></div><div></div><div></div><div></div></div>
+</button>
+<span class="Newsletter-success">Merci !</span>
+</form>
+
+
+
+
+
+
+
+
+
+
+<!-- dwMarker="content" dwContentID="3b002ec9b9295e62b4f186e469" -->
+<div class="Rgpd js-customScroll">
+ « La société CAROLL INTERNATIONAL dont le siège social est situé 10 Impasse du Grand Jardin Zac de la Moinerie - 35400 Saint-Malo (RCS de Paris : n°582 001 707), responsable de traitement, collecte vos données personnelles à des fins de gestion de la relation commerciale, de gestion de la satisfaction client et recueil d’avis sur la base de notre relation contractuelle, d’envoi d’offres commerciales ciblées sur la base de votre consentement. 
+Vos informations pourront également faire l’objet d’analyse dans le but de vous proposer des offres adaptées à vos attentes et à vos préférences vestimentaires sur la base de notre intérêt légitime.
+ L’absence de fourniture des champs obligatoires pourra rendre inaccessible certains services du site, notamment la finalisation de la commande, la participation aux jeux concours ou la création du compte client.
+
+Vous pouvez exercer vos droits d’accès, de rectification, de limitation, de portabilité, d’opposition, d’effacement au traitement de vos données, de retrait de votre consentement, à tout moment, et définir vos directives post-mortem. Ces droits peuvent être exercés à l’adresse suivante : CAROLL INTERNATIONAL, Service Clients,28 Avenue de Flandre - 75949 Paris Cedex 19 ou par mail via serviceclient@caroll.com.Le cas échéant, une copie de votre carte d’identité pourra vous être demandée. La société CAROLL dispose d’un délégué à la protection des données pouvant être contacté par mail via dpo@groupe-beaumanoir.fr </br>À tout moment vous pouvez introduire une réclamation auprès de la CNIL.
+Vous pouvez consulter notre politique de protection des données personnelles en cliquant <a href="https://www.caroll.com/fr_fr/general/politique-de-confidentialite.html#confidentialite-site">ce lien</a>.
+</div>
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- dwMarker="content" dwContentID="1027e1ece8a52c70935c9451e6" -->
+<ul class="Footer-social-list">
+	<li class="Footer-social-item">
+		<a class="Footer-social-itemLink" title="Go to Facebook" href="https://www.facebook.com/carollparis" target="_blank">
+			<i class="Footer-social-itemIcon Icon Icon--facebook"></i> Facebook
+		</a>
+	</li>
+
+	<li class="Footer-social-item">
+		<a class="Footer-social-itemLink" title="Go to Instagram" href="https://www.instagram.com/carollparis/" target="_blank">
+			<i class="Footer-social-itemIcon Icon Icon--instagram"></i> Instagram
+		</a>
+	</li>
+</ul>
+
+
+
+
+
+<div class="Footer-logo">
+<svg viewBox="0 0 102 24" width="102px" height="24px">
+<use xlink:href="#logo-mobile"></use>
+</svg>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+<!-- dwMarker="content" dwContentID="9653a0b8416622be0936352463" -->
+<div class="Footer-group">
+	<button class="Footer-title js-FooterListToggle">
+		Nos services <br/> tout simplement
+		<i class="Footer-titleIcon Icon Icon--caret-down"></i>
+	</button>
+
+	<ul class="Footer-list">
+        
+        		<li class="Footer-item">
+			<a  class="Footer-itemLink" title="Click & Collect express" href="https://www.caroll.com/fr_fr/servicescaroll.html#express">
+				Click & Collect express
+			</a>
+		</li>
+    
+        	<li class="Footer-item">
+			<a  class="Footer-itemLink" title="Call & Collect" href="https://www.caroll.com/fr_fr/servicescaroll.html#ereservation">
+				E-réservation
+			</a>
+		</li>
+        
+       		<li class="Footer-item">
+			<a  class="Footer-itemLink" title="Carte cadeau" href="https://www.caroll.com/fr_fr/general/cartes-cadeaux.html">
+				Carte cadeau
+			</a>
+		</li>
+<li class="Footer-item">
+      			<span data-href="https://www.caroll.com/fr_fr/Stores/" rel="nofollow" title="Nos Boutiques" class="Footer-itemLink obf">
+      				Nos Boutiques
+	      		</span>
+	    	</li> 
+
+		<li class="Footer-item">
+			<span  class="Footer-itemLink obf" title="Paiement sécurisé" rel="nofollow" data-href="https://www.caroll.com/fr_fr/general/conditions-generales-de-vente.html#paymentsecure">
+				Paiement sécurisé
+			</span>
+    <li> <img alt="Visa" class="ReinsuranceCheckout-paymentList-img" src="https://www.caroll.com/on/demandware.static/-/Library-Sites-CarollSharedLibrary/fr_FR/dw8ec844a7/images/Cart/visa-grey.svg" style="width:50px;height:50px;"  /> <img alt="Mastercard" class="ReinsuranceCheckout-paymentList-img" src="https://www.caroll.com/on/demandware.static/-/Library-Sites-CarollSharedLibrary/fr_FR/dwaa2c92a7/images/Cart/mastercard-grey.svg" style="width:50px;height:50px;" /> <img alt="American Express" class="ReinsuranceCheckout-paymentList-img" src="https://www.caroll.com/on/demandware.static/-/Library-Sites-CarollSharedLibrary/fr_FR/dw1ec4a487/images/Cart/amex-grey.svg" style="width:50px;height:50px;" /> <img alt="Paypal" class="ReinsuranceCheckout-paymentList-img" src="https://www.caroll.com/on/demandware.static/-/Library-Sites-CarollSharedLibrary/fr_FR/dw80c75b20/images/Cart/paypal-grey.svg" style="width:50px;height:50px;" />
+		</li>
+                	</ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- dwMarker="content" dwContentID="01af72a363965f37147febeec8" -->
+<div class="Footer-group">
+	<button class="Footer-title js-FooterListToggle">
+		Nous pouvons<br/> vous aider ?
+		<i class="Footer-titleIcon Icon Icon--caret-down"></i>
+	</button>
+
+	<ul class="Footer-list">
+		
+		<li class="Footer-item">
+      			<span data-href="https://www.caroll.com/fr_fr/customer-service-contact-us/faqs.html#livraison" title="Livraisons & retours" class="Footer-itemLink obf">
+      				Livraisons & retours
+	      		</span>
+	    	</li>
+
+		<li class="Footer-item">
+      			<span data-href="https://www.caroll.com/fr_fr/History/" title="Suivi de commande" class="Footer-itemLink obf">
+      				Suivi de commande
+	      		</span>
+	    	</li>
+
+		<li class="Footer-item">
+      			<span data-href="https://www.caroll.com/fr_fr/customer-service-contact-us/faqs.html#satisfaction" title="Satisfaite ou remboursée" class="Footer-itemLink obf">
+      				Satisfaite ou remboursée
+	      		</span>
+    		</li>
+
+		<li class="Footer-item">
+      			<a href="https://www.caroll.com/fr_fr/customer-service-contact-us/faqs.html" title="Vos questions" class="Footer-itemLink">
+      				Vos questions
+	      		</a>
+	    	</li>
+
+		<li class="Footer-item">
+      			<a href="https://www.caroll.com/fr_fr/Contact-Us/" title="Nous contacter" class="Footer-itemLink">
+      				Nous contacter
+	      		</a>
+	    	</li>
+               <li class="Footer-item">
+			<a  class="Footer-itemLink" title="Politique de confidentialité" href="https://www.caroll.com/fr_fr/general/politique-de-confidentialite.html">
+				Politique de confidentialité
+			</a>
+		</li>
+                       <li class="Footer-item">
+			<a  class="Footer-itemLink" title="Réglement jeu concours" href="https://www.caroll.com/fr_fr/general/rules-contest.html">
+				Règlement jeux concours
+			</a>
+		</li>
+         <li class="Footer-item">
+			<a  class="ot-sdk-show-settings Footer-itemLink" title="Paramètre des cookies" href="#">
+			</a>
+		</li>
+	</ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- dwMarker="content" dwContentID="49523a33df9fbda241af31630b" -->
+<div class="Footer-group">
+	<button class="Footer-title js-FooterListToggle">
+		La marque <br/> Caroll de A à Z
+		<i class="Footer-titleIcon Icon Icon--caret-down"></i>
+	</button>
+
+	<ul class="Footer-list">
+		<li class="Footer-item">
+      			<a href="https://www.caroll.com/fr_fr/la-marque/brand-story/" title="Notre savoir-faire" class="Footer-itemLink">
+      				La marque
+	      		</a>
+	    	</li>
+
+		<li class="Footer-item">
+      			<a href="https://www.caroll.com/fr_fr/la-marque/brand-iconic-new/" title="Nos inspirations" class="Footer-itemLink">
+      				Nos iconiques
+	      		</a>
+	    	</li>
+
+		<li class="Footer-item">
+      			<a href="https://www.caroll.com/fr_fr/la-marque/brand-identity-new/" title="Nos équipes" class="Footer-itemLink">
+      				La belle histoire
+	      		</a>
+	    	</li>
+
+		<li class="Footer-item">
+      			<a href="https://www.linkedin.com/company/caroll/jobs/" title="Nous rejoindre" class="Footer-itemLink" target="_blank">
+      				Nous rejoindre
+	      		</a>
+	    	</li>
+	</ul>
+</div>
+
+
+
+
+
+</div>
+<div class="Footer-secondary">
+<div class="Footer-container Container">
+<div class="Footer-actions">
+
+
+
+<div class="CountrySelector-wrapper" data-locales="fr_LU,pt_PT,it_IT,fr_BE,nl_BE,fr_FR,es_ES,fr_CH,de_CH">
+<span class="selectboxit-container" id="footer-country-selector" role="navigation" aria-haspopup="true" aria-expanded="false">
+<span class="selectboxit selectboxit-enabled selectboxit-btn" tabindex="0" unselectable="on">
+<span class="selectboxit-option-icon-container">
+<svg class="selectboxit-option-icon selectboxit-option-icon-url">
+<use xlink:href="/on/demandware.static/Sites-caroll-fr-Site/-/fr_FR/v1645589423575/images/flags-sprite.svg#fr"></use>
+</svg>
+</span>
+<span class="selectboxit-text" unselectable="on" aria-live="polite">
+France (fran&ccedil;ais)
+</span>
+<span class="selectboxit-arrow-container" unselectable="on">
+<i class="selectboxit-arrow Icon Icon--caret-down" unselectable="on"></i>
+</span>
+</span>
+
+<ul class="selectboxit-options selectboxit-list" tabindex="-1" role="listbox" aria-hidden="true">
+
+
+
+
+
+<li class="selectboxit-option selectboxit-option" role="option">
+<a class="selectboxit-option-anchor countrySelectorLink" href="https://www.caroll.com/fr_lu/general/conditions-generales-de-vente.html" data-locale="fr_LU">
+<span class="selectboxit-option-icon-container">
+<svg class="selectboxit-option-icon selectboxit-option-icon-url">
+<use xlink:href="/on/demandware.static/Sites-caroll-fr-Site/-/fr_FR/v1645589423575/images/flags-sprite.svg#lu"></use>
+</svg>
+</span>
+Luxembourg (fran&ccedil;ais)
+</a>
+</li>
+
+
+
+
+
+
+
+<li class="selectboxit-option selectboxit-option" role="option">
+<a class="selectboxit-option-anchor countrySelectorLink" href="https://www.caroll.com/pt_pt/general/conditions-generales-de-vente.html" data-locale="pt_PT">
+<span class="selectboxit-option-icon-container">
+<svg class="selectboxit-option-icon selectboxit-option-icon-url">
+<use xlink:href="/on/demandware.static/Sites-caroll-fr-Site/-/fr_FR/v1645589423575/images/flags-sprite.svg#pt"></use>
+</svg>
+</span>
+Portugal (portugu&ecirc;s)
+</a>
+</li>
+
+
+
+
+
+
+
+<li class="selectboxit-option selectboxit-option" role="option">
+<a class="selectboxit-option-anchor countrySelectorLink" href="https://www.caroll.com/it_it/general/conditions-generales-de-vente.html" data-locale="it_IT">
+<span class="selectboxit-option-icon-container">
+<svg class="selectboxit-option-icon selectboxit-option-icon-url">
+<use xlink:href="/on/demandware.static/Sites-caroll-fr-Site/-/fr_FR/v1645589423575/images/flags-sprite.svg#it"></use>
+</svg>
+</span>
+Italia (italiano)
+</a>
+</li>
+
+
+
+
+
+
+
+<li class="selectboxit-option selectboxit-option" role="option">
+<a class="selectboxit-option-anchor countrySelectorLink" href="https://www.caroll.com/fr_be/general/conditions-generales-de-vente.html" data-locale="fr_BE">
+<span class="selectboxit-option-icon-container">
+<svg class="selectboxit-option-icon selectboxit-option-icon-url">
+<use xlink:href="/on/demandware.static/Sites-caroll-fr-Site/-/fr_FR/v1645589423575/images/flags-sprite.svg#be"></use>
+</svg>
+</span>
+Belgique (fran&ccedil;ais)
+</a>
+</li>
+
+
+
+
+<li class="selectboxit-option selectboxit-option" role="option">
+<a class="selectboxit-option-anchor countrySelectorLink" href="https://www.caroll.com/nl_be/general/conditions-generales-de-vente.html" data-locale="nl_BE">
+<span class="selectboxit-option-icon-container">
+<svg class="selectboxit-option-icon selectboxit-option-icon-url">
+<use xlink:href="/on/demandware.static/Sites-caroll-fr-Site/-/fr_FR/v1645589423575/images/flags-sprite.svg#be"></use>
+</svg>
+</span>
+Belgi&euml; (Nederlands)
+</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+<li class="selectboxit-option selectboxit-option" role="option">
+<a class="selectboxit-option-anchor countrySelectorLink" href="https://www.caroll.com/es_es/general/conditions-generales-de-vente.html" data-locale="es_ES">
+<span class="selectboxit-option-icon-container">
+<svg class="selectboxit-option-icon selectboxit-option-icon-url">
+<use xlink:href="/on/demandware.static/Sites-caroll-fr-Site/-/fr_FR/v1645589423575/images/flags-sprite.svg#es"></use>
+</svg>
+</span>
+Espa&ntilde;a (espa&ntilde;ol)
+</a>
+</li>
+
+
+
+
+
+
+
+<li class="selectboxit-option selectboxit-option" role="option">
+<a class="selectboxit-option-anchor countrySelectorLink" href="https://www.caroll.com/fr_ch/general/conditions-generales-de-vente.html" data-locale="fr_CH">
+<span class="selectboxit-option-icon-container">
+<svg class="selectboxit-option-icon selectboxit-option-icon-url">
+<use xlink:href="/on/demandware.static/Sites-caroll-fr-Site/-/fr_FR/v1645589423575/images/flags-sprite.svg#ch"></use>
+</svg>
+</span>
+Suisse (fran&ccedil;ais)
+</a>
+</li>
+
+
+
+
+<li class="selectboxit-option selectboxit-option" role="option">
+<a class="selectboxit-option-anchor countrySelectorLink" href="https://www.caroll.com/de_ch/general/conditions-generales-de-vente.html" data-locale="de_CH">
+<span class="selectboxit-option-icon-container">
+<svg class="selectboxit-option-icon selectboxit-option-icon-url">
+<use xlink:href="/on/demandware.static/Sites-caroll-fr-Site/-/fr_FR/v1645589423575/images/flags-sprite.svg#ch"></use>
+</svg>
+</span>
+Schweiz (Deutsch)
+</a>
+</li>
+
+
+
+</ul>
+
+</span>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- dwMarker="content" dwContentID="82a83a6c730acac924896258d9" -->
+<ul class="Footer-actions-list">
+	<li class="Footer-actions-item">
+		<a href="https://www.caroll.com/fr_fr/Sitemap/" class="Footer-actions-itemLink">
+			Plan du Site
+		</a>
+	</li>
+
+	<li class="Footer-actions-item">
+		<a href="https://www.caroll.com/fr_fr/general/mentions-legales.html" class="Footer-actions-itemLink">
+			Mentions légales
+		</a>
+	</li>
+
+	<li class="Footer-actions-item">
+		<a href="https://www.caroll.com/fr_fr/general/conditions-generales-de-vente.html" class="Footer-actions-itemLink">
+			CGV
+		</a>
+	</li>
+        <li class="Footer-actions-item">
+		<a href="https://www.caroll.com/fr_fr/general/conditions-generales-utilisation-ereservation.html" class="Footer-actions-itemLink">
+			CGU de la e-réservation
+		</a>
+	</li>
+
+</ul>
+
+
+
+
+
+</div>
+<div class="Footer-seo">
+
+
+
+
+</div>
+</div>
+</div>
+<a class="Footer-ToTop js-ToTop" href="#totop">
+<i class="Icon Icon--prev"></i>
+</a>
+
+</footer>
+
+
+
+
+
+
+<!--[if gte IE 9 | !IE]><!-->
+<script src="/on/demandware.static/Sites-caroll-fr-Site/-/fr_FR/v1645589423575/lib/jquery/jquery-2.1.1.min.js" type="text/javascript"></script>
+<!--<![endif]-->
+<!--[if lte IE 8]>
+<script src="/on/demandware.static/Sites-caroll-fr-Site/-/fr_FR/v1645589423575/lib/jquery/jquery-1.11.1.min.js" type="text/javascript"></script>
+<script src="//cdn.rawgit.com/weblinc/media-match/master/media.match.min.js" type="text/javascript"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/es5-shim/3.4.0/es5-shim.min.js"></script>
+<![endif]-->
+<!--[if IE 9]>
+<script src="//cdn.rawgit.com/paulirish/matchMedia.js/master/matchMedia.js" type="text/javascript"></script>
+<script src="//cdn.rawgit.com/paulirish/matchMedia.js/master/matchMedia.addListener.js" type="text/javascript"></script>
+<![endif]-->
+<script src="/on/demandware.static/Sites-caroll-fr-Site/-/fr_FR/v1645589423575/lib/jquery/ui/jquery-ui.min.js"></script>
+
+<script async src="/on/demandware.static/Sites-caroll-fr-Site/-/fr_FR/v1645589423575/lib/jquery/jquery.jcarousel.min.js"></script>
+<script src="/on/demandware.static/Sites-caroll-fr-Site/-/fr_FR/v1645589423575/lib/jquery/jquery.validate.min.js"></script>
+<script async src="/on/demandware.static/Sites-caroll-fr-Site/-/fr_FR/v1645589423575/lib/jquery/jquery.zoom.min.js" ></script>
+<script src="/on/demandware.static/Sites-caroll-fr-Site/-/fr_FR/v1645589423575/lib/jquery/jquery.selectBoxIt.min.js"></script>
+<script type="text/javascript">
+
+(function(){
+window.Constants = {"AVAIL_STATUS_IN_STOCK":"IN_STOCK","AVAIL_STATUS_PREORDER":"PREORDER","AVAIL_STATUS_BACKORDER":"BACKORDER","AVAIL_STATUS_NOT_AVAILABLE":"NOT_AVAILABLE"};
+window.Resources = {"I_AGREE":"Je suis d'accord","CLOSE":"Fermer","NO_THANKS":"Non merci","OK":"OK","ARE_YOU_HUMAN":"&#202;tes-vous un &#234;tre humain ?","SHIP_QualifiesFor":"La livraison peut bénéficier de ","CC_LOAD_ERROR":"Impossible de charger la carte de crédit !","COULD_NOT_SAVE_ADDRESS":"multishippingaddresses.couldnotsaveaddress","REG_ADDR_ERROR":"Impossible de charger l'adresse","BONUS_PRODUCT":"Produit bonus","BONUS_PRODUCTS":"Produits offerts","SELECT_BONUS_PRODUCTS":"Sélectionner les produits bonus","SELECT_BONUS_PRODUCT":"product.selectbonusproduct","BONUS_PRODUCT_MAX":"Le nombre maximal de produits bonus a été sélectionné. Retirez-en un pour pouvoir ajouter d'autres produits bonus.","BONUS_PRODUCT_TOOMANY":"Vous avez sélectionné trop de produits bonus. Modifiez la quantité.","SIMPLE_SEARCH":"Recherche","SUBSCRIBE_EMAIL_DEFAULT":"Adresse e-mail","CURRENCY_SYMBOL":"€","MISSINGVAL":"Saisissez {0}","SERVER_ERROR":"Echec de la connexion au serveur","MISSING_LIB":"jQuery n'est pas défini.","BAD_RESPONSE":"Réponse incorrecte, erreur d'analyse","INVALID_PHONE":"Le format du numéro n'est pas valide","INVALID_PASSWORD":"Mot de passe invalide : veuillez utiliser au moins 8 caractères dont une majuscule, une minuscule, un chiffre et un caractère spécial.","INVALID_LOGINPASSWORD":"Votre mot de passe est invalide. Veuillez réessayer !","INVALID_POSTAL":"Veuillez saisir un code postal valide","INVALID_ORDERNUMBER":"Veuillez saisir un numéro de commande valide","INVALID_NAMES":"Veuillez saisir un nom valide","REMOVE":"Supprimer","QTY":"Quantité","EMPTY_IMG_ALT":"Supprimer","COMPARE_BUTTON_LABEL":"Comparer les articles","COMPARE_CONFIRMATION":"Cette action supprimera le premier produit ajouté en vue de la comparaison. Voulez-vous confirmerÂ ?","COMPARE_REMOVE_FAIL":"Impossible de supprimer l'article de la liste","COMPARE_ADD_FAIL":"Impossible d'ajouter l'article Ã  la liste","ADD_TO_CART_FAIL":"Impossible d'ajouter l'article '{0}' au panier","REGISTRY_SEARCH_ADVANCED_CLOSE":"Arrêter la recherche avancée","GIFT_CERT_INVALID":"Code de chèque-cadeau invalide.","GIFT_CERT_BALANCE":"Le solde actuel de votre chèque-cadeau est de","GIFT_CERT_AMOUNT_INVALID":"Le chèque-cadeau peut être acheté uniquement pour un montant compris entre 5 et 5000.","GIFT_CERT_MISSING":"Saisissez un code de chèque-cadeau.","INVALID_OWNER":"Ceci est un numéro de carte de crédit. Saisissez le nom du titulaire de la carte de crédit.","COUPON_CODE_MISSING":"Veuillez saisir un code promo.","COOKIES_DISABLED":"Votre navigateur n'est actuellement pas configuré pour accepter les cookies. Veuillez configurer votre navigateur pour qu'il accepte les cookies ou vérifier si un autre programme ne bloque pas les cookies.","BML_AGREE_TO_TERMS":"Vous devez accepter les conditions générales","CHAR_LIMIT_MSG":"Il vous reste {0} caractères sur un maximum de {1}","CONFIRM_DELETE":"Voulez-vous supprimer cette {0} ?","TITLE_GIFTREGISTRY":"liste de cadeaux","TITLE_ADDRESS":"adresse","TITLE_CREDITCARD":"carte de crédit","SERVER_CONNECTION_ERROR":"Echec de la connexion au serveur","IN_STOCK_DATE":"La date prévue de disponibilité en stock est {0}.","ITEM_STATUS_NOTAVAILABLE":"Cet article n'est pas disponible actuellement.","INIFINITESCROLL":"Tout afficher","STORE_NEAR_YOU":"Produits disponibles en magasin près de vous","SELECT_STORE":"Sélectionner le magasin","SELECTED_STORE":"Magasin sélectionné","PREFERRED_STORE":"Magasin préféré","SET_PREFERRED_STORE":"Définir le magasin préféré","ENTER_ZIP":"Saisir le code postal","INVALID_ZIP":"Saisissez un code postal valide","SEARCH":"Rechercher","CHANGE_LOCATION":"Changer de magasin","CONTINUE_WITH_STORE":"Continuer avec le magasin préféré","CONTINUE":"Continuer","SEE_MORE":"Voir plus de magasins","SEE_LESS":"Voir moins de magasins","QUICK_VIEW":"Achat express","QUICK_VIEW_POPUP":"Aperçu rapide du produit","NEW_WEB":"global.newweb","GOLD":"or","TLS_WARNING":"Votre s&#233;curit&#233; est pour nous essentielle !<br/>Nous avons d&#233;tect&#233; que vous utilisez un navigateur obsol&#232;te.<br/>Veuillez mettre &#224; jour votre navigateur pour poursuivre vos achats en toute s&#233;curit&#233;.","CSRF_TOKEN_MISMATCH":"global.csrf.failed.error","PRODUCT_ERROR_SELECTSIZE":"Merci de sélectionner une taille","VALIDATE_REQUIRED":"Ce champ est obligatoire.","VALIDATE_REMOTE":"Veuillez corriger ce champ.","VALIDATE_EMAIL":"Veuillez saisir un email valide","VALIDATE_URL":"Saisissez une URL valide.","VALIDATE_DATE":"Saisissez une date valide.","VALIDATE_DATEISO":"Saisissez une date valide (ISO).","VALIDATE_NUMBER":"Saisissez un numéro valide.","VALIDATE_DIGITS":"Saisissez uniquement des chiffres.","VALIDATE_CREDITCARD":"Saisissez un numéro de carte de crédit valide.","VALIDATE_EQUALTO":"Saisissez à nouveau la même valeur.","VALIDATE_MAXLENGTH":"Saisissez {0} caractères au maximum.","VALIDATE_MINLENGTH":"Saisissez au moins {0} caractères.","VALIDATE_RANGELENGTH":"Saisissez une valeur comprenant de {0} à {1} caractères.","VALIDATE_RANGE":"Saisissez une valeur comprise entre {0} et {1}.","VALIDATE_MAX":"Saisissez une valeur inférieure ou égale à {0}.","VALIDATE_MIN":"Saisissez une valeur supérieure ou égale à {0}.","VALIDATE_CGV_REQUIRED":"Veuillez accepter les Conditions Générales de Vente pour continuer","VALIDATE_PRIVACY_REQUIRED":"Veuillez accepter la Charte de Confidentialité pour continuer","CONTACTUS_ORDERSTATUS":"Statut de la commande","IN_STOCK":"En stock","QTY_IN_STOCK":"{0} Article(s) en stock","PREORDER":"Précommande","QTY_PREORDER":"{0} Article(s) sont disponibles en précommande.","REMAIN_PREORDER":"Les autres articles sont disponibles en précommande.","BACKORDER":"Commander","QTY_BACKORDER":"Commander {0} article(s)","REMAIN_BACKORDER":"Les autres articles sont disponibles en commande.","NOT_AVAILABLE":"Cet article n'est pas disponible actuellement.","REMAIN_NOT_AVAILABLE":"Les autres articles ne sont pas disponibles actuellement. Modifiez la quantité."};
+window.Urls = {"appResources":"/on/demandware.store/Sites-caroll-fr-Site/fr_FR/Resources-Load","pageInclude":"/on/demandware.store/Sites-caroll-fr-Site/fr_FR/Page-Include","continueUrl":"https://www.caroll.com/on/demandware.store/Sites-caroll-fr-Site/fr_FR/Page-Show","staticPath":"/on/demandware.static/Sites-caroll-fr-Site/-/fr_FR/v1645589423575/","addGiftCert":"/on/demandware.store/Sites-caroll-fr-Site/fr_FR/GiftCert-Purchase","minicartGC":"/on/demandware.store/Sites-caroll-fr-Site/fr_FR/GiftCert-ShowMiniCart","addProduct":"/on/demandware.store/Sites-caroll-fr-Site/fr_FR/Cart-AddProduct","minicart":"/on/demandware.store/Sites-caroll-fr-Site/fr_FR/Cart-MiniAddProduct","cartShow":"/fr_fr/Cart/","giftRegAdd":"https://www.caroll.com/on/demandware.store/Sites-caroll-fr-Site/fr_FR/Address-GetAddressDetails?addressID=","paymentsList":"https://www.caroll.com/fr_fr/PaymentInstruments/","addressesList":"https://www.caroll.com/on/demandware.store/Sites-caroll-fr-Site/fr_FR/Address-List","wishlistAddress":"https://www.caroll.com/on/demandware.store/Sites-caroll-fr-Site/fr_FR/Wishlist-SetShippingAddress","deleteAddress":"/on/demandware.store/Sites-caroll-fr-Site/fr_FR/Address-Delete","getProductUrl":"/on/demandware.store/Sites-caroll-fr-Site/fr_FR/Product-Show","getBonusProducts":"/on/demandware.store/Sites-caroll-fr-Site/fr_FR/Product-GetBonusProducts","addBonusProduct":"/on/demandware.store/Sites-caroll-fr-Site/fr_FR/Cart-AddBonusProduct","getSetItem":"/on/demandware.store/Sites-caroll-fr-Site/fr_FR/Product-GetSetItem","productDetail":"/on/demandware.store/Sites-caroll-fr-Site/fr_FR/Product-Detail","getAvailability":"/on/demandware.store/Sites-caroll-fr-Site/fr_FR/Product-GetAvailability","removeImg":"/on/demandware.static/Sites-caroll-fr-Site/-/default/dw8e9545cf/images/icon_remove.gif","searchsuggest":"/on/demandware.store/Sites-caroll-fr-Site/fr_FR/Search-GetSuggestions","productNav":"/on/demandware.store/Sites-caroll-fr-Site/fr_FR/Product-Productnav","summaryRefreshURL":"/on/demandware.store/Sites-caroll-fr-Site/fr_FR/COBilling-UpdateSummary","billingSelectCC":"https://www.caroll.com/on/demandware.store/Sites-caroll-fr-Site/fr_FR/COBilling-SelectCreditCard","updateAddressDetails":"https://www.caroll.com/on/demandware.store/Sites-caroll-fr-Site/fr_FR/COShipping-UpdateAddressDetails","updateAddressDetailsBilling":"https://www.caroll.com/on/demandware.store/Sites-caroll-fr-Site/fr_FR/COBilling-UpdateAddressDetails","shippingMethodsJSON":"https://www.caroll.com/on/demandware.store/Sites-caroll-fr-Site/fr_FR/COShipping-GetApplicableShippingMethodsJSON","shippingMethodsList":"https://www.caroll.com/on/demandware.store/Sites-caroll-fr-Site/fr_FR/COShipping-UpdateShippingMethodList","selectShippingMethodsList":"https://www.caroll.com/on/demandware.store/Sites-caroll-fr-Site/fr_FR/COShipping-SelectShippingMethod","resetPaymentForms":"/on/demandware.store/Sites-caroll-fr-Site/fr_FR/COBilling-ResetPaymentForms","compareShow":"/fr_fr/Compare/","compareAdd":"/on/demandware.store/Sites-caroll-fr-Site/fr_FR/Compare-AddProduct","compareRemove":"/on/demandware.store/Sites-caroll-fr-Site/fr_FR/Compare-RemoveProduct","compareEmptyImage":"/on/demandware.static/Sites-caroll-fr-Site/-/default/dwdbe20a72/images/comparewidgetempty.png","giftCardCheckBalance":"https://www.caroll.com/on/demandware.store/Sites-caroll-fr-Site/fr_FR/COBilling-GetGiftCertificateBalance","redeemGiftCert":"https://www.caroll.com/on/demandware.store/Sites-caroll-fr-Site/fr_FR/COBilling-RedeemGiftCertificateJson","addCoupon":"https://www.caroll.com/on/demandware.store/Sites-caroll-fr-Site/fr_FR/Cart-AddCouponJson","storesInventory":"/on/demandware.store/Sites-caroll-fr-Site/fr_FR/StoreInventory-Inventory","setPreferredStore":"/on/demandware.store/Sites-caroll-fr-Site/fr_FR/StoreInventory-SetPreferredStore","getPreferredStore":"/on/demandware.store/Sites-caroll-fr-Site/fr_FR/StoreInventory-GetPreferredStore","setStorePickup":"/on/demandware.store/Sites-caroll-fr-Site/fr_FR/StoreInventory-SetStore","setZipCode":"/on/demandware.store/Sites-caroll-fr-Site/fr_FR/StoreInventory-SetZipCode","getZipCode":"/on/demandware.store/Sites-caroll-fr-Site/fr_FR/StoreInventory-GetZipCode","billing":"/on/demandware.store/Sites-caroll-fr-Site/fr_FR/COBilling-Start","setSessionCurrency":"/on/demandware.store/Sites-caroll-fr-Site/fr_FR/Currency-SetSessionCurrency","addEditAddress":"/on/demandware.store/Sites-caroll-fr-Site/fr_FR/COShippingMultiple-AddEditAddressJSON","cookieHint":"/fr_fr/general/cookie_hint.html","rateLimiterReset":"/on/demandware.store/Sites-caroll-fr-Site/fr_FR/RateLimiter-HideCaptcha","csrffailed":"/on/demandware.store/Sites-caroll-fr-Site/fr_FR/CSRF-Failed","popinshow":"/on/demandware.store/Sites-caroll-fr-Site/fr_FR/Popin-Show","getProductDetailsForGtm":"/on/demandware.store/Sites-caroll-fr-Site/fr_FR/Product-Show"};
+window.SitePreferences = {"LISTING_INFINITE_SCROLL":true,"LISTING_REFINE_SORT":true,"STORE_PICKUP":true,"COOKIE_HINT":false,"CHECK_TLS":false,"NEWSLETTER_HINT":true,"STORELOC_COUNTRY":"Paris","T2S_ENABLED":true,"RANKING_OPTION_ENABLE":true,"ENABLE_SENTRY":false,"BLOCK_CART_ACCESS":false};
+}());
+</script>
+<script type="text/javascript">
+
+(function(){
+window.SessionAttributes = {"SHOW_CAPTCHA":null};
+window.User = {"zip":null,"storeId":null};
+}());
+</script>
+<script src="/on/demandware.static/Sites-caroll-fr-Site/-/fr_FR/v1645589423575/js/app.js"></script>
+
+<script>pageContext = {"title":"Content Search Results","type":"search","ns":"search"};</script>
+<script>
+var meta = "";
+var keywords = "";
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="/on/demandware.static/Sites-caroll-fr-Site/-/fr_FR/v1645589423575/js/searchrank.js"></script>
+
+<script src="/on/demandware.static/Sites-caroll-fr-Site/-/fr_FR/v1645589423575/js/reco.js"></script>
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+<!-- Demandware Analytics code 1.0 (body_end-analytics-tracking-asynch.js) -->
+<script type="text/javascript">//<!--
+/* <![CDATA[ */
+function trackPage() {
+    try{
+        var trackingUrl = "https://www.caroll.com/on/demandware.store/Sites-caroll-fr-Site/fr_FR/__Analytics-Start";
+        var dwAnalytics = dw.__dwAnalytics.getTracker(trackingUrl);
+        if (typeof dw.ac == "undefined") {
+            dwAnalytics.trackPageView();
+        } else {
+            dw.ac.setDWAnalytics(dwAnalytics);
+        }
+    }catch(err) {};
+}
+/* ]]> */
+// -->
+</script>
+<script type="text/javascript" src="/on/demandware.static/Sites-caroll-fr-Site/-/fr_FR/v1645589423575/internal/jscript/dwanalytics-22.2.js" async="async" onload="trackPage()"></script>
+<!-- Demandware Active Data (body_end-active_data.js) -->
+<script src="/on/demandware.static/Sites-caroll-fr-Site/-/fr_FR/v1645589423575/internal/jscript/dwac-21.7.js" type="text/javascript" async="async"></script></body>
+</html>
