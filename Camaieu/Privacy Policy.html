@@ -1,0 +1,1344 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="cache-origin" content="cam-appliprod-08">
+
+    <title>Camaieu - Donn&eacute;es Personnelles</title>
+
+<meta name="robots" content="index, follow" />
+            <meta name="p:domain_verify" content="50697d6bd3b2fcf2357eb7025e6c6dc9" />
+            <meta name="HandheldFriendly" content="True" />
+            <meta name="MobileOptimized" content="970" />
+            <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+            <link rel="shortcut icon" type="image/x-icon" media="all" href="https://www.camaieu.fr/_ui/desktop/common/images/favicon.jpg" />
+
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@300;400;500;600&family=Barlow:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <script src="/_ui/dist/jquery.msbf.js"></script>
+<script type="text/javascript" src="https://camaieu.twic.pics/v1/script" async></script>
+            
+<link rel="stylesheet" type="text/css" media="all" href="/_ui/dist/vendor.style.ef33.css">
+
+<link rel="prefetch" href="/_ui/dist/base.stylepdp.ef33.css" as="style">
+
+<link rel="stylesheet" type="text/css" media="all" href="/_ui/dist/base.refonte.style.ef33.css">
+<link rel="stylesheet" type="text/css" media="all" href="/_ui/dist/base.style.ef33.css">
+<!-- Test smartedit -->
+<script type="text/javascript" src="/_ui/shared/js/analyticsmediator.js" async></script>
+
+	<script type="text/javascript">
+	/*** Calculate type of screen ***/
+	function getSizeResolution() {
+		var message = "";
+		if (window.innerWidth >= 1024) {
+			message = "desktop";
+		} else if (window.innerWidth >= 640 && window.innerWidth < 1024) {
+			message = "tablet responsive";
+		} else if (window.innerWidth < 640) {
+			message = "mobile responsive";
+		}
+		return message;
+	}
+	/*** Create cookie of env_channel ***/
+	function setCookie() {
+		var d = new Date();
+		var cvalue = getSizeResolution();
+		var exdays = 1;
+		var cname = "env_channel";
+		d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+		var expires = "expires=" + d.toUTCString();
+		document.cookie = cname + "=" + cvalue + "; " + expires;
+	}
+
+	/*** Convert arr to object ***/
+	function toObject(arr) {
+		var arrR = [];
+		var rv = {};
+		for (var i = 0; i < arr.length; ++i) {
+			var arrR = arr[i].split('=');
+			rv[arrR[0]] = arrR[1];
+		}
+		return rv;
+	}
+	/*** Merge two object ***/
+	function merge_options(obj1, obj2) {
+		var obj3 = {};
+		for ( var attrname in obj1) {
+			obj3[attrname] = obj1[attrname];
+		}
+		for ( var attrname in obj2) {
+			obj3[attrname] = obj2[attrname];
+		}
+		return obj3;
+	}
+
+	/*** get cookiee Key => Value ***/
+	function getCookie(c_name) {
+		if (document.cookie.length > 0) {
+			c_start = document.cookie.indexOf(c_name + "=");
+			if (c_start != -1) {
+				c_start = c_start + c_name.length + 1;
+				c_end = document.cookie.indexOf(";", c_start);
+				if (c_end == -1) {
+					c_end = document.cookie.length;
+				}
+				c_value = document.cookie.substring(c_start, c_end);
+				if(c_value == '""') {
+				    c_value = '';
+				}
+				return unescape(c_value);
+			}
+		}
+		return "";
+	}
+
+	/*** ***/
+	var cookiesArray = [];
+	/***Get tc_vars ***/
+	var tc_vars = {"isTwicPicsEnabled":true,"env_country":"FR,LU,BE","env_currency":"eur ","env_work":"prod","test_version":"","env_language":"fr","env_template":"statique","page_content_type":"contenu","page_cat1":"contenu","page_cat2":"donnees-personnelles","page_name":"/donneespersonnelles","page_virtual_name":"/donneespersonnelles","search_page_number":0}
+
+	/*** create array and push all cookies ***/
+	setCookie();
+	cookiesArray.push('env_channel=' + getCookie("env_channel"));
+	cookiesArray.push('user_email=' + getCookie("user_email"));
+	cookiesArray.push('user_id=' + getCookie("user_id"));
+	cookiesArray.push('user_code_personne=' + getCookie("user_code_personne"));
+	cookiesArray.push('user_num_personne=' + getCookie("user_num_personne"));
+	cookiesArray.push('user_gender=' + getCookie("user_gender"));
+	cookiesArray.push('user_email_optin=' + getCookie("user_email_optin"));
+	cookiesArray.push('user_sms_optin=' + getCookie("user_sms_optin"));
+	cookiesArray.push('user_frequency=' + getCookie("user_frequency"));
+	cookiesArray.push('user_cf=' + getCookie("user_cf"));
+	cookiesArray.push('user_cf_number=' + getCookie("user_cf_number"));
+	cookiesArray.push('user_cf_point=' + getCookie("user_cf_point"));
+	cookiesArray.push('user_store_name=' + getCookie("user_store_name"));
+	cookiesArray.push('user_store_country=' + getCookie("user_store_country"));
+	cookiesArray.push('user_store_zipcode=' + getCookie("user_store_zipcode"));
+	cookiesArray.push('user_store_city=' + getCookie("user_store_city"));
+	cookiesArray.push('user_recency=' + getCookie("user_recency"));
+	cookiesArray.push('user_age=' + getCookie("user_age"));
+	cookiesArray.push('user_store_id=' + getCookie("user_store_id"));
+	cookiesArray.push('user_segment=' + getCookie("user_segment"));
+	cookiesArray.push('user_segment_loyalty=' + getCookie("user_segment_loyalty"));
+	cookiesArray.push('user_firstname=' + getCookie("user_firstname"));
+
+	if (cookiesArray.length > 0) {
+		/**** convert table to object ****/
+		var AllCookiesR = toObject(cookiesArray);
+		/**** Merge two object ****/
+		tc_vars = merge_options(tc_vars, AllCookiesR);
+	}
+
+</script>
+
+
+
+    <script type="text/javascript" src="https://www.camaieu.fr/static/tagcommander/tc_header.js"></script>
+
+
+
+
+    <script type="text/javascript" src="https://www.camaieu.fr/static/tagcommander/tc_wa.js" async></script>
+
+<link rel="stylesheet" type="text/css" media="all" href="https://media.camaieu.fr/medias/sys_master/root/static/integration/css/giftCard_page_.css">
+<link rel="stylesheet" type="text/css" href="https://media.camaieu.fr/medias/sys_master/root/static/integration/css/slick.css"/>
+<link rel="stylesheet" type="text/css" href="https://media.camaieu.fr/medias/sys_master/root/static/integration/css/slick-theme.css"/>
+<style type="text/css">
+    /*--FIX AJOUT PANIER--*/
+    #deliveryCheckboxPRB span.bar-mo:after, #deliveryCheckboxPRE span.bar-mo:after, #deliveryCheckboxCOA span.bar-mo:after {font-size:14px;position:relative;left:-5px;text-transform:initial;font-weight:400}
+    /*LIVRAISON BELGIQUE*/
+    #deliveryCheckboxPRB span.bar-mo:after {content: " - OFFERT dès 60€ d'achat"; color:#e7273a;}
+    /*COLISSIMO*/
+    #deliveryCheckboxCOA span.bar-mo:after {content: " - OFFERT dès 60€ d'achat";}/*color:#e7273a;*/
+/*    #deliveryCheckboxCOA p label .def-sts + span {font-weight: 900;}*/
+    /*Livraison Web Mag*/
+    /*#deliveryCheckboxLWM span.bar-mo:after {content: " - #seretrouver : vos points fidélité x 2 ... et encore + vite chez vous !"; color:#e7273a; font-size: 14px; position: relative; left: -5px; text-transform: initial; font-weight: 900;}*/
+    #deliveryCheckboxPRL span.bar-mo:after {content: " - OFFERT dès 60€ d'achat"; color:#e7273a;}
+    @media screen and (max-width: 420px) {
+        #deliveryCheckboxLWM span.bar-mo:after {font-size: 3.3vw;}
+    }
+
+$('#addToCartForm > div.ProductAddToCart-Panel.js-productAddToCartPanel > div.ProductAddToCart-PanelContent > div.ProductAddToCart-deliveryInfo:first'){
+  display:none;
+}
+    @media (min-width: 1025px){
+        .display_mob{display: none;}
+    }
+</style></head>
+
+<body class="page-page-00001BUJ pageType-ContentPage template-pages-layout-contentBLayout1Page pageLabel--donneespersonnelles smartedit-page-uid-page_00001BUJ smartedit-page-uuid-eyJpdGVtSWQiOiJwYWdlXzAwMDAxQlVKIiwiY2F0YWxvZ0lkIjoiY2FtYWlldS1mckNvbnRlbnRDYXRhbG9nIiwiY2F0YWxvZ1ZlcnNpb24iOiJPbmxpbmUifQ== smartedit-catalog-version-uuid-camaieu-frContentCatalog/Online  language-fr">
+ 	<div id="page" class="Wrapper js-pageWrapper" data-currency-iso-code="EUR">
+            <div id="loadPopin"></div>
+		 	<header class="Header js-Header">
+    <div class="Header-wrapper">
+        <div class="Header-logo">
+                    <div class="content "><div class="simple_disp-img simple-banner"><a href="/" itemprop="url"><svg fill="none" height="14" viewbox="0 0 151 14" width="151" xmlns="http://www.w3.org/2000/svg"> <path d="M117.46 0.417647H114.801V13.5829H117.46V0.417647Z" fill="black"></path> <path d="M40.7705 6.98079C40.7705 9.9916 42.7432 11.606 44.9718 11.606C47.5458 11.606 48.4887 9.93646 48.8034 8.89652L51.1753 9.88132C50.5177 11.7701 48.5463 13.9872 44.9718 13.9872C40.97 13.9872 38.025 10.9764 38.025 6.98079C38.025 2.87491 41.0276 2.41377e-05 44.9437 2.41377e-05C48.6039 2.41377e-05 50.4896 2.18889 51.0614 4.18669L48.632 5.17277C48.2891 3.88663 47.2887 2.37995 44.9437 2.37995C42.7714 2.38123 40.7705 3.91484 40.7705 6.98079Z" fill="black"></path> <path d="M61.2567 11.6595C63.7156 11.6595 65.2303 9.6066 65.2303 6.89713C65.2303 4.18766 63.7451 2.32578 61.2862 2.32578C58.8273 2.32578 57.2268 4.18766 57.2268 6.89713C57.2268 9.6066 58.684 11.6595 61.2567 11.6595ZM65.2598 11.5788C64.6022 12.838 63.1437 13.933 60.9996 13.933C56.9684 13.933 54.4813 10.812 54.4813 6.89841C54.4813 3.17594 57.1117 0.0548527 60.9996 0.0548527C63.4303 0.0548527 64.7455 1.20378 65.2022 2.27193V0.410046H67.8606V11.1402C67.8606 12.3161 67.9758 13.3291 68.0039 13.5753H65.4017C65.3441 13.2739 65.2584 12.5905 65.2584 11.7955V11.5788H65.2598Z" fill="black"></path> <path d="M72.5175 13.5774V0.410842H75.0889V2.16244C75.9474 0.712179 77.6617 0.0274384 79.2634 0.0274384C80.9777 0.0274384 82.637 0.821174 83.379 2.51764C84.4665 0.628831 86.2383 0.0274384 87.9821 0.0274384C90.3834 0.0274384 92.7271 1.58798 92.7271 5.03605V13.5761H90.0686V5.31174C90.0686 3.58706 89.182 2.30093 87.1531 2.30093C85.2647 2.30093 83.979 3.72299 83.979 5.61308V13.5774H81.2911V5.31174C81.2911 3.61399 80.434 2.30093 78.3755 2.30093C76.459 2.30093 75.1733 3.66913 75.1733 5.64V13.5774H72.5175Z" fill="black"></path> <path d="M103.283 11.6595C105.742 11.6595 107.256 9.6066 107.256 6.89713C107.256 4.18766 105.771 2.32578 103.312 2.32578C100.853 2.32578 99.2529 4.18766 99.2529 6.89713C99.2529 9.6066 100.71 11.6595 103.283 11.6595ZM107.284 11.5788C106.627 12.838 105.168 13.933 103.024 13.933C98.993 13.933 96.506 10.812 96.506 6.89841C96.506 3.17594 99.1363 0.0548527 103.024 0.0548527C105.455 0.0548527 106.77 1.20378 107.227 2.27193V0.410046H109.885V11.1402C109.885 12.3161 110 13.3291 110.029 13.5753H107.426C107.369 13.2739 107.283 12.5905 107.283 11.7955V11.5788H107.284Z" fill="black"></path> <path d="M131.907 5.63824C131.849 3.74943 130.563 2.27095 128.132 2.27095C125.874 2.27095 124.502 3.94049 124.387 5.63824H131.907ZM134.621 9.82746C133.85 12.1548 131.648 13.9872 128.446 13.9872C124.759 13.9872 121.529 11.4137 121.529 6.95258C121.529 2.82105 124.644 2.41377e-05 128.104 2.41377e-05C132.335 2.41377e-05 134.707 2.79284 134.707 6.89744C134.707 7.22699 134.679 7.55397 134.649 7.71939H124.301C124.358 10.0737 126.13 11.715 128.445 11.715C130.674 11.715 131.79 10.5378 132.304 9.06066L134.621 9.82746Z" fill="black"></path> <path d="M143.567 13.987C140.365 13.987 138.422 11.6879 138.422 8.70402V0.410192H141.11V8.3219C141.11 10.1286 141.968 11.7161 144.226 11.7161C146.398 11.7161 147.486 10.3479 147.486 8.34883V0.410192H150.172V11.1404C150.172 12.1803 150.258 13.11 150.316 13.5754H147.743C147.687 13.2741 147.628 12.5355 147.628 11.988C146.883 13.3574 145.169 13.987 143.567 13.987Z" fill="black"></path> <path d="M7.31107 0C11.353 0 14.6248 3.13134 14.6248 7C14.6248 10.961 11.3543 14 7.31107 14C3.17541 14.0013 0 10.961 0 7C0 3.13263 3.17541 0 7.31107 0Z" fill="black"></path> <path d="M25.7889 2.41377e-05C29.8308 2.41377e-05 33.1013 3.13137 33.1013 7.00002C33.1013 10.961 29.8308 14 25.7889 14C21.6519 14 18.4779 10.9597 18.4779 7.00002C18.4765 3.13265 21.6519 2.41377e-05 25.7889 2.41377e-05Z" fill="black"></path> </svg></a></div></div></div>
+            <div class="Header-back Icon Icon--arrow_left js-BackBtn"></div>
+
+        <nav class="Header-nav">
+            <div class="content "><style type="text/css">#MarqueItem .NavBar-pushItem{position:relative}#MarqueItem .NavBar-pushItem .NavBar-PushItem--Paragraph{position:absolute;bottom:12%;left:8%;width:85%;background-color:#000;color:#fff;font-family:YoungSerif;font-size:1.7rem;padding:2rem}@media (min-width:1441px){#MarqueItem .NavBar-pushItem .NavBar-PushItem--Paragraph{bottom:17%}}.NavBar--left .NavBar-itemLink .Icon.Icon--camaieu{right:-1.9rem}@media (max-width:1023px){.NavBar--left .NavBar-itemLink .Icon.Icon--camaieu{height:2.3rem;position:relative;right:-2.5rem}.NavBar--left .NavBar-itemLink.Item-collection{font-weight:900}}@media (min-width:375px){.NavBar--left .NavBar-itemLink .Icon.Icon--camaieu{right:-2.2rem}}@media (min-width:425px){.NavBar--left .NavBar-itemLink .Icon.Icon--camaieu{right:-2.5rem}}.NavBar-soldes .NavBar-pushContainer{-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start}
+</style>
+<ul class="NavBar NavBar--left js-TopNav"><!-- Item Accueil Tab Bar -->
+	<li class="NavBar-item u-Hidden--desktopMenu"><a class="NavBar-itemLink" href="/"><i class="Icon Icon--home"></i> Accueil </a></li>
+	<!-- Item Les petits prix desktop -->
+	<li class="NavBar-item  u-Hidden--mobileMenu"><a class="NavBar-itemLink" href="/c/64728/outlet" style="color:#991b1b;">Les petits prix</a></li>
+	<!-- Item Collection desktop -->
+	<li class="NavBar-item js-Nav-TopLevel"><a class="NavBar-itemLink js-Nav-Level Item-collection" href="/c/64722/collection"><i class="Icon Icon--burger u-Hidden--desktopMenu"></i> Collection </a>
+	<div class="NavBar-subLevelContainer js-Nav-subLevelContainer">
+	<div class="NavBar-pushContainer"><a class="NavBar-pushItem" href="/c/64728/outlet"><picture> <img alt="Les petits prix" class="NavBar-pushItem-img" src="https://camaieu.twic.pics/medias/sys_master/root/static/integration/merch/FR/2022/content/home/S06/nav_layer_lespetitsprix.jpg" /> </picture> </a> <a class="NavBar-pushItem u-Hidden--smallDeskMenu" href="/c/125896/new-collection"> <picture> <img alt="Nouvelle Collection" class="NavBar-pushItem-img" src="https://camaieu.twic.pics/cms/medias/sys_master/images/images/h26/hf8/9829670715422.jpg" /> </picture> </a> <a class="NavBar-pushItem u-Hidden--largeDeskMenu" href="/content/lookbook-denim"> <picture> <img alt="Denim factory" class="NavBar-pushItem-img" src="https://camaieu.twic.pics/cms/medias/sys_master/images/images/h0f/h9b/9831120437278.jpg" /> </picture> </a></div>
+
+	<ul class="NavBar-subLevel NavBar-subLevel--level1"><!--<li><a class="NavBar-itemLink" href="#">Nom de collection X</a></li>-->
+		<li><a class="NavBar-itemLink NavBar-itemLink--subLevel" href="/c/125896/new-collection">Nouvelle Collection</a></li>
+		<li><a class="NavBar-itemLink NavBar-itemLink--subLevel js-Nav-subLevel" href="/c/64722/collection">V&ecirc;tements</a>
+		<ul class="NavBar-subLevel NavBar-subLevel--level2">
+			<li><a class="NavBar-itemLink" href="/c/64732/robes">Robes, Combinaisons</a></li>
+			<li><a class="NavBar-itemLink" href="/c/64761/pulls-gilets">Pulls, Gilets</a></li>
+			<li><a class="NavBar-itemLink" href="/c/64759/tops-t-shirts">T-Shirts, D&eacute;bardeurs</a></li>
+			<li><a class="NavBar-itemLink" href="/c/64764/jeans">Jeans</a></li>
+			<li><a class="NavBar-itemLink" href="/c/64765/pantalons">Pantalons</a></li>
+			<li><a class="NavBar-itemLink" href="/c/64760/blouses-chemisiers">Blouses, Chemisiers</a></li>
+			<li><a class="NavBar-itemLink" href="/c/64772/vestes">Vestes, Blazers</a></li>
+			<li><a class="NavBar-itemLink" href="/c/64776/manteaux-trenchs">Manteaux, Doudounes</a></li>
+			<li><a class="NavBar-itemLink" href="/c/140654/jupes">Jupes</a></li>
+			<li><a class="NavBar-itemLink" href="/c/20191011/collection-homewear">Homewear</a></li>
+			<li><a class="NavBar-itemLink" href="/c/142811/shorts">Shorts, Pantacourts</a></li>
+			<li><a class="NavBar-itemLink" href="/c/64722/collection">Tous les v&ecirc;tements</a></li>
+		</ul>
+		</li>
+		<li><a class="NavBar-itemLink NavBar-itemLink--subLevel  js-Nav-subLevel" href="/c/64734/accessoires">Accessoires</a>
+		<ul class="NavBar-subLevel NavBar-subLevel--level2">
+			<li><a class="NavBar-itemLink" href="/c/64791/chaussures">Chaussures</a></li>
+			<li><a class="NavBar-itemLink" href="/c/64792/sacs-pochettes">Sacs, Pochettes</a></li>
+			<li><a class="NavBar-itemLink" href="/c/77881/echarpes-gants-bonnets">&Eacute;charpes, Gants, Bonnets</a></li>
+			<li><a class="NavBar-itemLink" href="/c/64781/ceintures">Ceintures</a></li>
+			<li><a class="NavBar-itemLink" href="/c/64783/collants-chaussettes">Chaussettes, Collants</a></li>
+			<li><a class="NavBar-itemLink" href="/c/64734/accessoires">Tous les accessoires</a></li>
+		</ul>
+		</li>
+		<li><a class="NavBar-itemLink NavBar-itemLink--subLevel  js-Nav-subLevel" href="/c/01102019/collection-eco-responsable">Ecoresponsable</a>
+		<ul class="NavBar-subLevel NavBar-subLevel--level2">
+			<li><a class="NavBar-itemLink" href="/c/140819/jean-waterless">Denim Waterless process</a></li>
+			<li><a class="NavBar-itemLink" href="/c/171019/vetements-recycles">Mati&egrave;res recycl&eacute;es</a></li>
+			<li><a class="NavBar-itemLink" href="/c/202102156/vetements-responsables">Mati&egrave;res responsables</a></li>
+			<li><a class="NavBar-itemLink" href="/content/rse">Nos engagements</a></li>
+		</ul>
+		</li>
+		<li><a class="NavBar-itemLink NavBar-itemLink--subLevel  js-Nav-subLevel" href="/c/64728/outlet">Outlet</a>
+		<ul class="NavBar-subLevel NavBar-subLevel--level2">
+			<li><a class="NavBar-itemLink" href="/c/151019/outlet-vetements">Tous les v&ecirc;tements</a></li>
+			<li><a class="NavBar-itemLink" href="/c/175405/outlet-pulls-gilets">Pulls, Gilets</a></li>
+			<li><a class="NavBar-itemLink" href="/c/175404/outlet-tops-chemisiers">T-shirts, Chemisiers</a></li>
+			<li><a class="NavBar-itemLink" href="/c/175406/outlet-pantalons-jeans">Pantalons, Jeans</a></li>
+			<li><a class="NavBar-itemLink" href="/c/64750/outlet-vestes-manteaux">Vestes, Manteaux</a></li>
+			<li><a class="NavBar-itemLink" href="/c/64749/outlet-robes">Robes, Combinaisons</a></li>
+			<li><a class="NavBar-itemLink" href="/c/175407/outlet-jupes-shorts">Jupes, Shorts</a></li>
+			<li><a class="NavBar-itemLink" href="/c/20170306/outlet-maillots-de-bain">Maillots de bain</a></li>
+			<li><a class="NavBar-itemLink" href="/c/90709/outlet-vetements-de-nuit">V&ecirc;tements de nuit</a></li>
+			<li><a class="NavBar-itemLink" href="/c/20170428/outlet-lingerie">Lingerie</a></li>
+			<li><a class="NavBar-itemLink" href="/c/64751/outlet-accessoires">Accessoires</a></li>
+		</ul>
+		</li>
+		<li><a class="NavBar-itemLink NavBar-itemLink--subLevel" href="/giftcard">Carte cadeau</a></li>
+		<li><a class="NavBar-itemLink NavBar-itemLink--subLevel" href="/content/affichage-environnemental">L’&eacute;co-note</a></li>
+	</ul>
+	</div>
+	</li>
+	<!-- Item Inspiration desktop -->
+	<li class="NavBar-item  u-Hidden--mobileMenu"><a class="NavBar-itemLink" href="/content/shop-the-look">Inspiration</a></li>
+	<!-- Item Inspiration Tab Bar -->
+	<li class="NavBar-item u-Hidden--desktopMenu"><a class="NavBar-itemLink" href="/content/shop-the-look"><i class="Icon Icon--inspiration u-Hidden--desktopMenu"></i> Inspiration </a></li>
+	<!-- Item service desktop -->
+	<li class="NavBar-item u-Hidden--mobileMenu js-Nav-TopLevel" id="MarqueItem"><a class="NavBar-itemLink js-Nav-Level" href="/content/services">Services </a>
+	<div class="NavBar-subLevelContainer js-Nav-subLevelContainer">
+	<div class="NavBar-pushContainer"><a class="NavBar-pushItem u-Hidden--smallDeskMenu" href="/content/camaieu-coaching"><picture> <img alt="chaussures" class="NavBar-pushItem-img" src="https://camaieu.twic.pics/medias/sys_master/root/static/integration/projet/FR/2021/navbar-services-layer/nav_services_layer.png" /> </picture>
+	<p class="NavBar-PushItem--Paragraph">Camaieu coaching</p>
+	</a> <a class="NavBar-pushItem" href="/content/live-shopping"> <picture> <img alt="op les deals" class="NavBar-pushItem-img" src="https://camaieu.twic.pics/medias/sys_master/root/static/integration/projet/FR/2021/navbar-services-layer/nav_services_layer_2.png" /> </picture>
+
+	<p class="NavBar-PushItem--Paragraph">Live shopping</p>
+	</a> <a class="NavBar-pushItem u-Hidden--largeDeskMenu" href="/content/garantie-yoyo"> <picture> <img alt="manteaux" class="NavBar-pushItem-img" src="https://camaieu.twic.pics/medias/sys_master/root/static/integration/projet/FR/2021/navbar-services-layer/nav_services_layer_3.png" /> </picture>
+
+	<p class="NavBar-PushItem--Paragraph">Garantie Yoyo</p>
+	</a></div>
+
+	<ul class="NavBar-subLevel NavBar-subLevel--level1">
+		<li><a class="NavBar-itemLink" href="/content/camaieu-coaching">Camaieu coaching</a></li>
+		<li><a class="NavBar-itemLink" href="/content/live-shopping">Live shopping</a></li>
+		<li><a class="NavBar-itemLink" href="/content/garantie-yoyo">Garantie Yoyo</a></li>
+		<li><a class="NavBar-itemLink" href="/content/ecommande">E-commande</a></li>
+		<li><a class="NavBar-itemLink" href="/content/comeback">Comeback</a></li>
+	</ul>
+	</div>
+	</li>
+	<!-- Item Marque desktop -->
+	<li class="NavBar-item u-Hidden--mobileMenu js-Nav-TopLevel" id="MarqueItem"><a class="NavBar-itemLink js-Nav-Level" href="#">Marque </a>
+	<div class="NavBar-subLevelContainer js-Nav-subLevelContainer">
+	<div class="NavBar-pushContainer"><a class="NavBar-pushItem u-Hidden--smallDeskMenu" href="/content/nos-actus"><picture> <img alt="Actualités" class="NavBar-pushItem-img" src="https://camaieu.twic.pics/medias/sys_master/root/static/integration/projet/FR/2021/navbar-marque-layer/nav_marque_layer_2.png" /> </picture>
+	<p class="NavBar-PushItem--Paragraph">Actualit&eacute;s</p>
+	</a> <a class="NavBar-pushItem" href="/content/affichage-environnemental"> <picture> <img alt="Eco-note" class="NavBar-pushItem-img" src="https://camaieu.twic.pics/medias/sys_master/root/static/integration/projet/FR/2022/navbar-marque-layer/nav_marque_layer_1.jpg" /> </picture>
+
+	<p class="NavBar-PushItem--Paragraph">Eco-note</p>
+	</a> <a class="NavBar-pushItem u-Hidden--largeDeskMenu" href="/content/la-marque"> <picture> <img alt="manifeste" class="NavBar-pushItem-img" src="https://camaieu.twic.pics/medias/sys_master/root/static/integration/projet/FR/2021/navbar-marque-layer/nav_marque_layer_3.png" /> </picture>
+
+	<p class="NavBar-PushItem--Paragraph">Le manifeste</p>
+	</a></div>
+
+	<ul class="NavBar-subLevel NavBar-subLevel--level1">
+		<li><a class="NavBar-itemLink" href="/content/nos-actus">Actualit&eacute;s</a></li>
+		<li><a class="NavBar-itemLink" href="/content/rse">Camaieu En Mieux</a></li>
+		<li><a class="NavBar-itemLink" href="/content/la-marque">Le Manifeste</a></li>
+		<li><a class="NavBar-itemLink" href="/content/campagne-video">La Campagne</a></li>
+	</ul>
+	</div>
+	</li>
+	<!-- Item Compte Tab Bar -->
+	<li class="NavBar-item u-Hidden--desktopMenu"><a class="NavBar-itemLink js-MobileChStatusConnection" href="/my-account"><i class="Icon Icon--user"></i> Compte </a></li>
+	<!-- Item Camaieu Tab Bar -->
+	<li class="NavBar-item js-Nav-TopLevel u-Hidden--desktopMenu"><a class="NavBar-itemLink js-Nav-Level" href="#"><i class="Icon Icon--camaieu"> <svg style="fill:#6B7280" viewbox="0 0 750 109.19" xmlns="http://www.w3.org/2000/svg"> <g data-name="Calque 2" id="Calque_2"> <g data-name="Calque 1" id="Calque_1-2"> <path d="M54.59,0a54.6,54.6,0,1,1,0,109.19C23.71,109.19,0,85.48,0,54.59A54.12,54.12,0,0,1,54.59,0"> </path> <path d="M192.56,0a54.6,54.6,0,1,1,0,109.19c-30.89,0-54.6-23.71-54.6-54.6A54.12,54.12,0,0,1,192.56,0"> </path> </g> </g> </svg> </i> Camaieu </a>
+	<ul class="NavBar-subLevel NavBar-subLevel--level1">
+		<li><a class="NavBar-itemLink" href="https://magasins.camaieu.fr/">Trouver votre magasin</a></li>
+		<!-- Item Camaieu Tab Bar > Item service -->
+		<li><a class="NavBar-itemLink js-Nav-subLevel" href="/content/services">Services</a>
+		<ul class="NavBar-subLevel NavBar-subLevel--level2">
+			<li><a class="NavBar-itemLink" href="/content/live-shopping">Live Shopping</a></li>
+			<li><a class="NavBar-itemLink" href="/content/camaieu-coaching">Camaieu coaching</a></li>
+			<li><a class="NavBar-itemLink" href="/content/garantie-yoyo">Garantie Yoyo</a></li>
+			<li><a class="NavBar-itemLink" href="/content/comeback">Comeback</a></li>
+			<li><a class="NavBar-itemLink" href="/content/services">Tous nos services</a></li>
+			<li><a class="NavBar-itemLink" href="/giftcard">Carte cadeau</a></li>
+		</ul>
+		</li>
+		<!-- Item Camaieu Tab Bar > Item marque -->
+		<li><a class="NavBar-itemLink js-Nav-subLevel" href="#">La marque</a>
+		<ul class="NavBar-subLevel NavBar-subLevel--level2">
+			<li><a class="NavBar-itemLink" href="/content/nos-actus">Actualit&eacute;s</a></li>
+			<li><a class="NavBar-itemLink" href="/content/rse">Camaieu En Mieux</a></li>
+			<li><a class="NavBar-itemLink" href="/content/la-marque">Le Manifeste</a></li>
+			<li><a class="NavBar-itemLink" href="/content/campagne-video?mm">La Campagne</a></li>
+		</ul>
+		</li>
+		<!-- Item Camaieu Tab Bar > Item actualités -->
+		<li><a class="NavBar-itemLink" href="/content/nos-actus">Actualit&eacute;s</a></li>
+		<!-- Item Camaieu Tab Bar > Item aide -->
+		<li><a class="NavBar-itemLink" href="https://camaieu.zendesk.com/hc/fr">Aide et contact</a></li>
+	</ul>
+	</li>
+	<!-- Item Camaieu Tab Bar fin -->
+</ul>
+</div><ul class="NavBar NavBar--right">
+                <li class="NavBar-item NavBar-item--search">
+                    <form
+                        class="NavBar-searchForm"
+                        data-toggle="Rechercher"
+                        data-placement="right"
+                        name="search_form"
+                        action="/search/"
+                        title="Rechercher">
+                        <div class="NavSearch">
+                            <input
+                                class="NavSearch-input"
+                                type="search"
+                                name="text"
+                                placeholder="Chercher"
+                                data-beaver-id="BtnrechercherViaMoteurDeRecherche" />
+                            <button class="NavSearch-submit"
+                                    placeholder="Rechercher"
+                                    id="search"
+                                    data-beaver-id="BtnRechercher">
+                                <i class="Icon Icon--search"></i>
+                            </button>
+                        </div>
+                    </form>
+                </li>
+
+                <li class="NavBar-item u-Hidden--mobileMenu">
+                    <a
+                        class="NavBar-title"
+                        href="//magasins.camaieu.fr/"
+                        data-placement="right"
+                        title="Boutiques"
+                    >
+                        <i
+                            class="Icon Icon--location NavBar-icon"
+                            data-beaver-id="BtnaccederALaPageMagasinsViaHeader">
+                        </i>
+                        <span>Boutiques</span>
+                    </a>
+                </li>
+
+                <li
+                    id="accountHeaderDesk"
+                    class="NavBar-item u-Hidden--mobileMenu js-NavBar-myAccount"
+                    data-beaver-id="accederALaGestionDeCompte">
+                    <a
+    href="/my-account"
+    data-modal-subtitle="Connectez-vous ou créez votre compte et bénéficiez de tous ses avantages !"
+    class="NavBar-title js-CheckStatusConnection "
+    title="Compte">
+    <i class="Icon Icon--user NavBar-icon" data-beaver-id="accederGestionCompteDepuisHeader"></i>
+    <span>Compte</span>
+</a>
+</li>
+
+                <script type="text/javascript">
+    /*<![CDATA[*/
+    
+    var ESI_WISHLIST = { config: {} };
+    ESI_WISHLIST.config.entriesWishlist = [];
+
+</script>
+
+<li class="NavBar-item">
+    <a href="/login" class="NavBar-title js-CheckStatusConnection" title="Wishlist">
+        <i class="Icon Icon--whish NavBar-icon"></i>
+        <span><span class="u-Hidden--mobileMenu">Wishlist</span>
+            <span id="wishlistTextCounter-Id"> </span>
+        </span>
+    </a>
+</li>
+<li class="NavBar-item js-NavBar-itemMiniCart">
+                    <a
+    href="/cart"
+    data-toggle="Panier"
+    data-placement="right"
+    title="Panier"
+    id="mincartcount_link"
+    class="NavBar-title NavBar-miniCart js-NavBar-miniCart"
+    data-beaver-id="consulterPanierLiens"
+>
+    <i class="Icon Icon--cart NavBar-icon"></i>
+    <span><span class="u-Hidden--mobileMenu">Panier</span> <span class="js-NavBar-productNumber">
+            </span></span>
+    </a>
+
+<div class="MiniCart Layer Layer--right js-MiniCart">
+    <div class="Layer-container js-MiniCartContainer">
+        <div class="Layer-title">Panier</div>
+        <div
+        
+            class="MiniCart-wrapper js-MiniCart-wrapper"
+            data-refreshMiniCartUrl="/cart/miniCart/SUBTOTAL/?"
+            data-rolloverPopupUrl="/cart/rollover/MiniCart">
+        </div>
+        <button class="Layer-arrow js-MiniCart-Close u-Hidden--desktopMenu">
+            <i class="Icon Icon--arrow_left"></i>
+        </button>
+    </div>
+</div>
+
+</li>
+
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+
+
+<div class="Booster js-Booster">
+                <div class="yCmsComponent">
+<div class="Toastr">
+        <div class="Toastr-icon Icon Icon--user"></div>
+        <span class="Toastr-message Toastr-message--left js-toastAuthenticate">
+            <span class="Toastr-message--link">Authentifiez-vous</span>
+            pour accéder à vos offres exclusives</span>
+        <span class="Toastr-cta js-toastAuthenticateLater Toastr-message--cta">Plus Tard</span>
+    </div>
+</div></div>
+
+			<div id="content">
+			    <a id="skip-to-content"></a>
+				<html class="no-js">
+<body class="cgv">
+
+	<section id="cgv" data-beaver-id="BtnverifierAffichageCGV">
+	 	<div class="content "><div class="Container">
+    <div class="Paragraph">
+        <h1 class="Title">Vos données personnelles : les engagements de camaïeu</h1>
+        <p class="Paragraph--Text">Pour Camaïeu, la protection des données personnelles de nos clientes est une
+            priorité au quotidien.</p>
+        <p class="Paragraph--Text">Lorsque vous passez commande sur notre site <a
+                href="https://www.camaieu.fr">www.camaieu.fr</a> ou que vous
+            souscrivez à notre programme
+            de fidélité, vous nous confiez vos coordonnées en toute confiance. Et vous avez raison de le faire !
+        </p>
+        <p class="Paragraph--Text">Comme vous le savez, dans le cadre de la vente à distance, la collecte des
+            informations nominatives
+            est obligatoire pour le traitement, la livraison et la facturation des commandes.</p>
+        <p class="Paragraph--Text">Alors nous tenons à vous rassurer, les informations que vous partagez avec
+            nous dans ce cadre, sont
+            strictement confidentielles. Vos coordonnées sont utilisées conformément au règlement (UE)
+            n°2016/679 du 27 avril 2016 à partir de son application le 25 mai 2018.</p>
+        </p>
+    </div>
+    <div class="Paragraph">
+        <h2 class="SubTitle">Qui est le responsable de traitement ?</h2>
+        <p class="Paragraph--Text">Le responsable du traitement mis en œuvre sur le site <a
+                href="https://www.camaieu.fr">www.camaieu.fr</a> et les
+            applications mobiles est :</p>
+        <p class="Paragraph--Text">FIB NC7 Société par actions simplifiée (société à associé unique), au capital
+            de 1 000 €, dont le siège social est situé au 211 avenue BRAME à Roubaix (59100), immatriculée au
+            Registre du Commerce et des Sociétés de LILLE METROPOLE sous le n°881 209 647.
+        </p>
+    </div>
+    <div class="Paragraph">
+        <h2 class="SubTitle">Qu’est-ce que le délégué à la protection des données ?</h2>
+        <p class="Paragraph--Text">Le délégué à la protection des données (DPO) est rattaché au Responsable de
+            Traitement et ne reçoit aucune instruction pour l’exercice de ses missions de DPO. Il bénéficie
+            d’une totale indépendance. Il a pour mission de veiller au respect de la réglementation relative à
+            la protection des données personnelles et de la présente politique.</p>
+        <p class="Paragraph--Text">Le DPO est Monsieur André Cordonnier, directeur juridique.<br>
+            Vous pouvez le contacter à l’adresse <a
+                href="mailto:DPO_Camaieu@camaieu.com">DPO_Camaieu@camaieu.com</a>.
+        </p>
+    </div>
+    <div class="Paragraph">
+        <h2 class="SubTitle">Pourquoi collectons-nous vos données personnelles ?</h2>
+        <p class="Paragraph--Text">Nous effectuons les traitements suivants :</p>
+        <ul>
+            <li>Gérer votre compte client, votre panier et vos commandes</li>
+            <li>Gérer les livraisons et votre suivi de commande</li>
+            <li>Personnaliser votre expérience et répondre à vos besoins individuels</li>
+            <li>Fournir un contenu publicitaire personnalisé</li>
+            <li>Améliorer notre site Web</li>
+            <li>Améliorer le service client et vos besoins de prise en charge</li>
+            <li>Vous contacter par e-mail</li>
+            <li>Recueillir votre avis</li>
+            <li>Administrer des concours, des promotions, ou des enquêtes</li>
+            <li>Partager des informations avec des partenaires commerciau</li>
+        </ul>
+    </div>
+    <div class="Paragraph">
+        <h2 class="SubTitle">À qui vos données sont-elles communiquées ?</h2>
+        <p class="Paragraph--Text">Vos données sont transmises à des tiers qui peuvent traiter les données pour
+            leur compte ou à des sous-traitants.</p>
+        <p class="Paragraph--Text">Les destinataires des données peuvent être les Marketplaces, des
+            établissements bancaires, les autorités dans le cadre de la la lutte contre la fraude et des
+            partenaires commerciaux, agences marketing et publicitaires.</p>
+        <p class="Paragraph--Text">Nous avons également recours à des sous-traitants pour :</p>
+        <ul>
+            <li>Le paiement sécurisé sur les sites et les applications mobile</li>
+            <li>La lutte contre la fraude</li>
+            <li>L’expédition de vos commandes</li>
+            <li>La gestion des appels téléphoniques, leurs enregistrements éventuels et l’envoi de courriers
+                postaux</li>
+            <li>La personnalisation des contenus des sites et applications mobile</li>
+            <li>La réalisation d’opérations de maintenance et de développement techniques du site internet</li>
+            <li>Le recueil des avis clients</li>
+            <li>L’hébergement</li>
+        </ul>
+        <p class="Paragraph--Text">Nous pouvons également être amenés à transférer vos données personnelles hors
+            de l’Union Européenne. Chaque transfert de données personnelles est encadré et présente des
+            garanties de sécurité adéquates et suffisantes.</p>
+    </div>
+    <div class="Paragraph">
+        <h2 class="SubTitle">Comment exercer vos droits ?</h2>
+        <p class="Paragraph--Text">Vous avez le droit de demander l'accès aux données à caractère personnel, la
+            rectification ou l'effacement de celles-ci, ou une limitation du traitement ou de vous opposer au
+            traitement et le droit à la portabilité des données. Les droits de rectifications, d’effacement de
+            limitation ou d’opposition ne s’appliquent pas pour les données nécessaires à la constatation,
+            l'exercice ou la défense de droits en justice.</p>
+        <p class="Paragraph--Text">Transmettez-nous votre demande écrite, accompagnée d’un justificatif
+            d’identité à l’adresse suivante :<br>
+            FIB NC7<br>
+            Service Relation Client<br>
+            211 Avenue Brame<br>
+            BP 229<br>
+            59054 ROUBAIX Cedex 1<br>
+            France</p>
+        <p class="Paragraph--Text">Votre demande sera prise en compte dans le mois suivant sa réception.</p>
+        <p class="Paragraph--Text">Vous avez le droit d'introduire une réclamation auprès d'une autorité de
+            contrôle</p>
+    </div>
+    <div class="Paragraph">
+        <h2 class="SubTitle">Quel est le délai de conservation de vos données ?</h2>
+        <p class="Paragraph--Text">Vos données sont conservées le temps nécessaire à la finalité de leur
+            traitement.</p>
+        <p class="Paragraph--Text">Les données des clients sont conservées 5 ans après le dernier achat.</p>
+        <p class="Paragraph--Text">Les coordonnées d’un prospect qui ne répond à aucune sollicitation pendant 3
+            ans sont supprimées.</p>
+    </div>
+    <div class="Paragraph">
+        <h2 class="SubTitle">Quelle est notre politique cookies ?</h2>
+        <p class="Paragraph--Text">Le site www.camaieu.fr que vous visitez utilise des cookies. Ainsi le Site
+            est susceptible d’accéder à des informations déjà stockées dans votre équipement terminal de
+            communications électroniques et d’y inscrire des informations.</p>
+        <p class="Paragraph--Text">Pour plus d'infos sur les cookies Camaieu et cookies partenaires, <a
+                href="https://www.camaieu.fr/cookies">cliquez ici</a></p>
+        <p class="Paragraph--Text-Strong">Qu’est-ce qu’un « cookie » ?</p>
+        <p class="Paragraph--Text">Un cookie est une information que les serveurs déposent sur le disque de
+            votre
+            ordinateur, smartphone ou tout autre appareil lorsque vous visitez un site. Un cookie contient
+            plusieurs données : le nom du serveur qui l’a déposé, un identifiant sous forme de numéro unique,
+            éventuellement une date d’expiration. Ces informations sont parfois stockées sur l’ordinateur dans
+            un simple fichier texte auquel un serveur accède pour lire et enregistrer des informations.</p>
+        <p class="Paragraph--Text-Strong">A quoi servent les cookies ?</p>
+        <p class="Paragraph--Text">Les cookies ont différentes fonctions. Un cookie peut permettre à celui qui
+            l’a déposé de reconnaître un internaute, d’une visite à une autre, grâce à un identifiant unique.
+            Certains cookies peuvent aussi être utilisés pour stocker le contenu d’un panier d’achat, d’autres
+            pour enregistrer les paramètres de langue d’un site, d’autres encore pour faire de la publicité
+            ciblée.</p>
+        <p class="Paragraph--Text-Strong">Quels cookies sont utilisés ?</p>
+        <p class="Paragraph--Text">Les cookies utilisés par le Site relèvent de deux catégories :</p>
+        <ul>
+            <li>Cookies dits strictement nécessaires, qui ne nécessitent pas votre consentement préalable;</li>
+            <li>Autres cookies soumis à votre consentement préalable.</li>
+        </ul>
+        <h3 class="SubSection">1- Cookies exemptés de consentement préalable</h3>
+        <p class="Paragraph--Text">Certains cookies peuvent être déposés ou lus sans recueillir le consentement
+            préalable des personnes. Ces traceurs sont utilisés pour permettre et faciliter la navigation sur le
+            site notamment en mémorisant vos préférences de navigation définies au cours de votre session,
+            fournir les services que vous demandez expressément.</p>
+        <p class="Paragraph--Text">Sont concernés par exemple :</p>
+        <ul>
+            <li>les cookies de "panier d'achat" pour un site marchand ;</li>
+            <li>les cookies "identifiants de session", pour la durée d'une session, ou les traceurs
+                persistants limités à quelques heures dans certains cas ;</li>
+            <li>les cookies d'authentification de l'internaute ;</li>
+            <li>les cookies de session créés par un lecteur multimédia ;</li>
+            <li>les cookies de session d'équilibrage de charge ("load balancing") ;</li>
+            <li>les cookies persistants de personnalisation de l'interface utilisateur.</li>
+        </ul>
+        <p class="Paragraph--Text">Ces cookies ne peuvent pas, techniquement, être désactivés depuis le site.
+            Vous pouvez néanmoins vous opposer à l'utilisation de ces traceurs, exclusivement en paramétrant
+            votre navigateur. Ce paramétrage dépend du navigateur que vous utilisez, mais il est en général
+            simple à réaliser : en principe, vous pouvez soit activer une fonction de navigation privée soit
+            uniquement interdire ou restreindre les traceurs (cookies). Attention, il se peut que des traceurs
+            aient été enregistrés sur votre périphérique avant le paramétrage de votre navigateur : dans ce cas,
+            effacez votre historique de navigation, toujours en utilisant le paramétrage de votre navigateur.
+        </p>
+        <h3 class="SubSection">2 - Cookies soumis à votre consentement préalable</h3>
+        <p class="Paragraph--Text">Le site utilise des cookies statistiques, publicitaires et de partage de
+            contenus sur les réseaux sociaux qui sont soumis à votre consentement préalable.
+            Vous pouvez à tout moment modifier votre choix en cliquant <a href="#"
+                onclick="tC.privacyCenter.showPrivacyCenter()">ici</a></p>
+        <h4 class="SubCategory">2.1 – Cookies statistiques</h4>
+        <p class="Paragraph--Text">Ces cookies permettent de connaître l’utilisation et les performances du site
+            Camaïeu afin d’en améliorer le fonctionnement. Par exemple, nous pouvons être amenés à suivre les
+            pages consultées, les mots clés du moteur de recherche, le nombre de visites et visiteurs sur le
+            site internet de Camaïeu. Ces cookies sont principalement sous notre contrôle.</p>
+        <p class="Paragraph--Text">Vous pouvez vous opposer à l'utilisation de ces traceurs en utilisant les
+            fonctions proposées par le site.</p>
+        <p class="Paragraph--Text">Camaïeu utilise les services d'analyse et d'audience web de Google Analytics.
+        </p>
+        <p class="Paragraph--Text">Ce dernier utilise des « Cookies », enregistrés sur votre ordinateur,
+            smartphone ou tout autre appareil, et recueillant des informations anonymes sur la navigation de
+            l'internaute à des fins statistiques ou d'optimisation de la navigation.</p>
+        <p class="Paragraph--Text">Pour plus d'informations concernant la collecte des données par Google,
+            veuillez consulter ce <a href="https://policies.google.com/technologies/partner-sites?gl=fr "
+                target="_blank">ce lien</a></p>
+        <h4 class="SubCategory">2.2 – Cookies publicitaires</h4>
+        <p class="Paragraph--Text">Ces cookies permettent de vous présenter des publicités ou de vous adresser
+            des informations correspondantes à votre profil ou votre navigation, sur le site ou lors de votre
+            navigation sur Internet. Ils nous permettent également de limiter le nombre de fois où vous voyez
+            notre publicité, d’éventuellement de ne plus vous la présenter et ainsi améliorer l’efficacité de
+            nos campagnes publicitaires. Nous sommes également susceptibles de faire du ciblage publicitaire en
+            fonction de votre profil ou de votre historique de navigation. Dans ce cadre, nous travaillons avec
+            des sociétés tierces. Vous pouvez à tout moment mettre fin à ce ciblage en refusant les cookies
+            publicitaires sur votre navigateur, en utilisant le gestionnaire de préférence d’annonces proposés
+            par les partenaires ou en cliquant sur les liens de désinscription des mails que vous avez reçus.
+            Refuser ces cookies publicitaires n’a pas d’impact sur notre site mais ne va pas stopper les
+            publicités de Camaïeu que vous serez susceptibles de voir sur internet. Ces cookies sont
+            principalement sous le contrôle de tiers.<br>
+            Vous pouvez vous opposer à l'utilisation de ces traceurs en utilisant les fonctions proposées par le
+            site et/ou en vous rapprochant du tiers concerné.</p>
+        <p class="Paragraph--Text">Camaïeu utilise les fonctionnalités de publicité Google Analytics :</p>
+        <ul>
+            <li>Google Remarketing</li>
+            <li>Rapports relatifs aux impressions sur le Réseau Display de Google</li>
+            <li>Rapports sur les données démographiques et les centres d'intérêt de Google Analytics</li>
+        </ul>
+        <p class="Paragraph--Text">Vous pouvez désactiver ces fonctionnalités :</p>
+        <ul>
+            <li>En refusant le dépôt des cookies sur votre ordinateur/smartphone</li>
+            <li>Via les paramètres des annonces, les paramètres des annonces pour applications mobiles ou tout
+                autre moyen disponible (par exemple, via la page de désactivation de la NAI [Network Advertising
+                Initiative])</li>
+            <li>En installant le module suivant : <a href="https://tools.google.com/dlpage/gaoptout/"
+                    target="_blank"> cliquez ici</a></li>
+            <li>Via « Google Mon activité » : <a href="https://myactivity.google.com/myactivity"
+                    target="_blank"> cliquez ici</a></li>
+        </ul>
+        <h4 class="SubCategory">2.3 Cookies Réseaux sociaux</h4>
+        <p class="Paragraph--Text">Les plug-ins des réseaux sociaux nous permettent d’ajouter facilement des
+            fonctionnalités permettant de faciliter le partage du contenu sur les différentes plateformes
+            sociales. Lors de votre navigation, le réseau social est susceptible de vous identifier grâce à ce
+            bouton, même si vous ne l'avez pas utilisé. Ce type de bouton permet au réseau social concerné de
+            suivre votre navigation sur le site de Camaïeu, du seul fait que votre compte au réseau social
+            concerné était activé sur votre terminal (session ouverte) durant votre navigation sur le site de
+            Camaïeu. Camaïeu n'a aucun contrôle sur le processus employé par les réseaux sociaux. Si vous ne
+            souhaitez pas qu'un réseau social relie ces informations à votre compte utilisateur de ce réseau
+            social, vous devez vous déconnecter du réseau social considéré avant de poursuivre votre navigation
+            sur notre site.</p>
+        <p class="Paragraph--Text">Ces cookies sont gérés par les réseaux sociaux et sont exclusivement régis
+            par les conditions vous liant au réseau social dont vous êtes membre. Camaïeu vous invite à
+            consulter les politiques de protection de la vie privée de ces réseaux sociaux.</p>
+        <p class="Paragraph--Text-Strong">Comment paramétrer les cookies sur son ordinateur ?</p>
+        <p class="Paragraph--Text">Vous pouvez paramétrer votre navigateur internet pour désactiver les cookies.
+            Dans ce cas, l'ensemble des sites visités sera concerné.</p>
+        <p class="Paragraph--Text">Ce paramétrage peut être fait à tout moment et depuis n'importe quel
+            navigateur internet, voir le menu aide du navigateur.</p>
+        <p class="Paragraph--Text">Quelques exemples ci-dessous :</p>
+        <ul>
+            <li>Pour Internet Explorer™ : ouvrez le menu Outils, puis sélectionnez Options internet ; cliquez
+                sur l'onglet Confidentialité puis choisissez le niveau souhaité</li>
+            <li>Pour Firefox™: ouvrez le menu Outils, puis sélectionnez Options ; cliquez sur l'onglet Vie
+                privée puis choisissez les options souhaitées</li>
+            <li>Pour Chrome™ : ouvrez le menu de configuration, puis sélectionnez Paramètres ; cliquez sur
+                Paramètres avancés puis sur Paramètres de contenu, puis choisissez les options souhaitées</li>
+            <li>Pour Safari™ : choisissez Safari > Préférences puis cliquez sur Sécurité ; cliquez sur Afficher
+                les cookies puis choisissez les options souhaitées.</li>
+        </ul>
+        <p class="Paragraph--Text">Vous avez également l’occasion de piloter l’activation au cas par cas des
+            cookies tiers en vous rendant
+            sur le site <a href="YourOnlineChoices.com">YourOnlineChoices.com</a></p>
+        <p class="Paragraph--Text">Pour en savoir plus sur les cookies, nous vous invitons à consulter le site
+            de la CNIL : <a href="www.cnil.fr">www.cnil.fr</a>.</p>
+    </div>
+    <div class="Paragraph">
+        <h2 class="SubTitle">Comment sont sécurisées vos données ?</h2>
+        <p class="Paragraph--Text">Camaïeu protège vos données à caractère personnel en mettant en place des
+            moyens de sécurisation physique et logique afin de protéger vos données personnelles des accès non
+            autorisés, de l’usage impropre, de la divulgation, de la perte et de la destruction.</p>
+    </div>
+    <div class="Paragraph">
+        <h2 class="SubTitle">Modification de cette politique de confidentialité</h2>
+        <p class="Paragraph--Text">Camaïeu se réserve le droit d’apporter des modifications à cette politique de
+            confidentialité, en mettant sur le site internet une nouvelle version à votre disposition. Cette
+            nouvelle version entre de plein droit immédiatement en vigueur.
+            À chaque nouvelle utilisation du site internet, vous vous soumettez à cette nouvelle politique de
+            confidentialité telle qu’elle aura été éventuellement modifiée. Camaïeu vous encourage donc à
+            consulter régulièrement cette page afin de vous tenir au courant de tout changement.</p>
+        <p class="Paragraph--Text--legal">Mise à jour le 25/05/2018</p>
+    </div>
+    <div class="Paragraph">
+        <h2 class="SubTitle">Quelle est la procédure à suivre pour ne plus recevoir de notifications sur le web
+            ?</h2>
+        <p class="Paragraph--Text">Sur Google Chrome :</p>
+        <ul>
+            <li>Cliquez sur l’icône menu représentant trois points verticaux (située en haut à droite de la
+                barre d’adresse en dessous de la croix pour fermer la fenêtre de navigation).</li>
+            <li>Cliquez sur <span class="Paragraph--Text-Strong">Paramètres</span></li>
+            <li>En bas de page, cliquez sur <span class="Paragraph--Text-Strong">Afficher les paramètres
+                    avancés</span></li>
+            <li>Dans la section <span class="Paragraph--Text-Strong">Confidentialité et sécurité</span>, cliquez
+                sur le bouton <span class="Paragraph--Text-Strong"></span>Effacer les données de
+                navigation</span></li>
+            <li>Choisir au minimum la période « dernière 24h » et cochez <span
+                    class="Paragraph--Text-Strong">Cookies et autres données de site et
+                    Images</span>
+                et fichiers en cache puis appuyer sur le bouton <span class="Paragraph--Text-Strong">Effacer les
+                    données</span>.</li>
+        </ul>
+        <p class="Paragraph--Text">Sur Safari :</p>
+        <ul>
+            <li>Accédez aux p <span class="Paragraph--Text-Strong">références</span> de Safari</li>
+            <li>Par défaut, le panneau des préférences s'ouvre sur l'onglet Général</li>
+            <li>Sélectionnez l'onglet  <span class="Paragraph--Text-Strong">Confidentialité</span></li>
+            <li>Cliquez sur le bouton <span class="Paragraph--Text-Strong">Supprimer toutes les données de sites web</span></li>
+            <li>Cliquez sur <span class="Paragraph--Text-Strong">Supprimer</span> dans la fenêtre de confirmation</li>
+        </ul>
+        <p class="Parahraph--Text">Si vous souhaitez que vos informations soient supprimées de cette base de
+            donnée, vous pouvez <a href="https://www.camaieu.fr/contactez-nous"></a>contacter directement le
+            service client</a>.</p>
+    </div>
+    <!-- FIN METTRE LE CONTENU HTML ICI -->
+</div></div></section>
+</body>
+	</html>
+</div>
+			<footer class="container commun-margin pb60">
+    <nav class="nav-footer">
+            <ul class="accordion-footer">
+        <div class="content "><div class="Container" id="Bloc_FooterRS">
+<hr />
+<p class="SubTitle CenterText">On ne se quitte plus !</p>
+
+<p class="Paragraph--Text-StrongSmall CenterText">Prolongez l’exp&eacute;rience Camaieu</p>
+
+<div class="Footer--PictoRS">
+<div class="Footer--PictoRS-Item"><a href="https://www.facebook.com/camaieu" target="_blank"><img alt="Logo Facebook" src="https://camaieu.twic.pics/medias/sys_master/root/static/integration/merch/home/img/2021/S37/logo_RS_facebook.png" /></a></div>
+
+<div class="Footer--PictoRS-Item"><a href="https://twitter.com/camaieu_france" target="_blank"><img alt="Logo Twitter" src="https://camaieu.twic.pics/medias/sys_master/root/static/integration/merch/home/img/2021/S37/logo_RS_twitter.png" /></a></div>
+
+<div class="Footer--PictoRS-Item"><a href="https://www.instagram.com/camaieu/" target="_blank"><img alt="Logo Instagram" src="https://camaieu.twic.pics/medias/sys_master/root/static/integration/merch/home/img/2021/S37/logo_RS_instagram.png" /></a></div>
+
+<div class="Footer--PictoRS-Item"><a href="https://www.youtube.com/c/camaieu" target="_blank"><img alt="Logo YouTube" src="https://camaieu.twic.pics/medias/sys_master/root/static/integration/merch/home/img/2021/S37/logo_RS_youtube.png" /></a></div>
+
+<div class="Footer--PictoRS-Item"><a href="https://www.tiktok.com/@camaieufr" target="_blank"><img alt="Logo TikTok" src="https://camaieu.twic.pics/medias/sys_master/root/static/integration/merch/home/img/2021/S37/logo_RS_tiktok.png" /></a></div>
+
+<div class="Footer--PictoRS-Item"><a href="https://www.pinterest.fr/camaieu/" target="_blank"><img alt="Logo Pinterest" src="https://camaieu.twic.pics/medias/sys_master/root/static/integration/merch/home/img/2021/S37/logo_RS_pinterest.png" /></a></div>
+</div>
+
+<p class="Paragraph--Text-Small CenterText">@camaieu</p>
+
+<p class="Paragraph--Text-Small CenterText">#EnModeCamaieu</p>
+
+<hr /><!-- FIN METTRE LE CONTENU HTML ICI --></div>
+</div><div class="content "><div class="Container" id="Bloc_FooterNL">
+<p class="SubTitle CenterText">Restons en contact !</p>
+
+<p class="Paragraph--Text CenterText">En un clic, les nouveaut&eacute;s, les offres et les surprises !</p>
+
+<div class="BlocNewsletter">
+<form action="/newsletter/inscription" class="ModalLogin-form" data-toggle="validator" id="InscriptionNL" method="post" role="form"><input id="camaieuNewRefererId" name="camaieuNewReferer" type="hidden" />
+<div class="BlocNewsletter--Items">
+<div class="Input Input--text control-group">
+<div class="controls"><input aria-invalid="false" data-beaver-id="RenseignerLogin" data-validation-emailregex-message="Email invalide" data-validation-emailregex-regex="^[a-zA-Z0-9]([a-zA-Z0-9_\-\.]{0,})@[a-zA-Z0-9]([a-zA-Z0-9_\-\.]{0,})[a-zA-Z0-9]\.([a-zA-Z]{2,5})$" data-validation-required-message="Email invalide" id="emailLoginInput" name="email" required="true" type="email" value="" /> <label for="emailLoginInput">Email *</label> <i class="Icon Icon--check"></i> <i class="Icon Icon--warning"></i>
+
+<div class="help-block"></div>
+</div>
+</div>
+<button class="BlocNewsletter-Submit" data-beaver-id="BtnValiderIdentification" disabled="disabled" type="submit"><span>M&#39;inscrire</span></button>
+
+<div><input name="CSRFToken" type="hidden" value="7a8259ca-3f6b-4781-9507-1f284f0564a7" /></div>
+</div>
+</form>
+</div>
+</div>
+</div><div class="content "><div class="Container" id="Bloc_FooterInfos">
+<div class="Paragraph--OneColumn DivBorder" id="FooterReassurance">
+<div class="Paragraph Paragraph--OneColumn BlocBorder">
+<div class="Paragraph--OneRow"><i class="Icon Icon--truck"></i>
+<p class="Paragraph Paragraph--Text-Strong">Modes de livraison & retrait</p>
+</div>
+
+<div class="Paragraph--OneRow FooterInfo">
+<div class="Paragraph--OneColumn"><img src="https://camaieu.twic.pics/medias/sys_master/root/static/integration/merch/home/img/2021/S37/Logo_LR_Mondialrelay.png" /></div>
+
+<div class="Paragraph--OneColumn"><img src="https://camaieu.twic.pics/medias/sys_master/root/static/integration/merch/home/img/2021/S37/Logo_LR_Laposte.png" /></div>
+
+<div class="Paragraph--OneColumn"><img src="https://camaieu.twic.pics/medias/sys_master/root/static/integration/merch/home/img/2021/S37/Logo_LR_Chronopost.png" /></div>
+
+<div class="Paragraph--OneColumn"><img src="https://camaieu.twic.pics/medias/sys_master/root/static/integration/merch/FR/2021/content/home/S40/hp_modeLivraison_magasin.png" /></div>
+</div>
+</div>
+
+<div class="Paragraph Paragraph--OneColumn BlocBorder">
+<div class="Paragraph--OneRow"><i class="Icon Icon--card"></i>
+
+<p class="Paragraph Paragraph--Text-Strong">Paiement 100% s&eacute;curis&eacute;</p>
+</div>
+
+<div class="Paragraph--OneRow FooterInfo">
+<div class="Paragraph--OneColumn"><img src="https://camaieu.twic.pics/medias/sys_master/root/static/integration/merch/home/img/2021/S37/Logo_MP_Global.png" /></div>
+</div>
+</div>
+
+<div class="Paragraph Paragraph--OneColumn">
+<div class="Paragraph--OneRow"><i class="Icon Icon--arrow_back_down"></i>
+
+<p class="Paragraph Paragraph--Text-Strong">Retours et Remboursements</p>
+</div>
+
+<div class="Paragraph--OneRow FooterInfo">
+<p class="Paragraph--Text">Gratuit sous 30 jours</p>
+</div>
+</div>
+</div>
+</div>
+</div><div class="content "><div class="Container" id="FooterV2">
+<div class="FooterRea">
+<div class="FooterRea--Block1">
+<div class="Paragraph--OneColumn"><span class="Icon Icon--dots"> </span></div>
+</div>
+
+<div class="FooterRea--Block2">
+<div class="Paragraph--OneColumn">
+<ul class="FooterRea--Block2-List">
+	<li>
+	<p class="SubCategory">Besoin d&#39;aide</p>
+	</li>
+	<li class="FooterList"><a href="https://camaieu.zendesk.com/hc/fr">FAQ</a><i class="Icon Icon--arrow"> </i></li>
+	<li class="FooterList"><a href="https://camaieu.zendesk.com/hc/fr/requests/new">Contactez-nous</a><i class="Icon Icon--arrow"> </i></li>
+	<li class="FooterList"><a href="/Content/mentions_opeco.html">Op&eacute;rations en cours</a><i class="Icon Icon--arrow"> </i></li>
+	<li class="FooterList"><a href="/Content/codes_reductions.html">Code promo</a><i class="Icon Icon--arrow"> </i></li>
+	<!--<li class="FooterList"><a
+                       href="/conditions-generales-utilisation-du-service-avis-camaieu">Authenticit&eacute;
+                       des
+                       avis</a><i class="Icon Icon--arrow">&nbsp;</i></li>-->
+</ul>
+</div>
+
+<div class="Paragraph--OneColumn">
+<ul class="FooterRea--Block2-List">
+	<li>
+	<p class="SubCategory">&Agrave; propos de nous</p>
+	</li>
+	<!--<li class="FooterList"><a href="/content/En-bref.html">L&#39;entreprise</a><i
+                       class="Icon Icon--arrow">&nbsp;</i></li>
+                       <li class="FooterList"><a href="/content/actions-rse">RSE</a><i
+                       class="Icon Icon--arrow">&nbsp;</i></li>-->
+	<li class="FooterList"><a href="https://camaieu.jobs.net/" target="_blank">Recrutement</a><i class="Icon Icon--arrow"> </i></li>
+	<li class="FooterList"><a href="/donneespersonnelles">Donn&eacute;es personnelles</a><i class="Icon Icon--arrow"> </i></li>
+	<li class="FooterList"><a href="/content/presse">Presse</a><i class="Icon Icon--arrow"> </i></li>
+</ul>
+</div>
+
+<div class="Paragraph--OneColumn">
+<ul class="FooterRea--Block2-List">
+	<li>
+	<p class="SubCategory">Mes services</p>
+	</li>
+	<li class="FooterList"><a href="/content/camaieu-coaching">Cama&iuml;eu coaching</a><i class="Icon Icon--arrow"> </i></li>
+	<li class="FooterList"><a href="/content/live-shopping">Live Shopping</a><i class="Icon Icon--arrow"> </i></li>
+	<li class="FooterList"><a href="https://www.camaieu.fr/garantie-yoyo">Garantie Yoyo</a><i class="Icon Icon--arrow"> </i></li>
+	<li class="FooterList"><a href="https://www.camaieu.fr/content/services">Tous nos services</a><i class="Icon Icon--arrow"> </i></li>
+</ul>
+</div>
+</div>
+</div>
+
+<hr />
+<div class="Paragraph--OneColumn">
+<p class="Paragraph Paragraph--TextSmall">© Camaieu 2021</p>
+
+<div class="Paragraph--OneRow" id="LegalHome">
+<p class="Paragraph Paragraph--TextSmall"><a href="#" onclick="tC.privacyCenter.showPrivacyCenter()">Gestion des cookies</a></p>
+
+<p class="Paragraph Paragraph--TextSmall"><a href="/Content/conditions-generales-de-vente">CGV</a></p>
+
+<p class="Paragraph Paragraph--TextSmall"><a href="/Content/Legal">Mentions l&eacute;gales</a></p>
+
+<p class="Paragraph Paragraph--TextSmall"><a href="/Content/CGV-carte-fidelite.html">CGV carte Camaieu</a></p>
+
+<p class="Paragraph Paragraph--TextSmall"><a href="/discoverProgram">Programme de fid&eacute;lit&eacute;</a></p>
+</div>
+</div>
+</div>
+</div></ul>
+            </nav>
+        <section class="util-link accordion-footer">
+			<span class="title">
+				Informations légales</span>
+			<ul>
+				</ul>
+		</section>
+    
+<section class="footer-description">
+        </section>
+</footer>
+
+<script type="text/javascript">
+
+    $(function() {
+
+        $("li .android a").attr('onclick', "tcEventCommand('global',this, clic, clic-sur-telecharger-app, android, , )");
+        $("li .appStore a").attr('onclick', "tcEventCommand('global',this, clic, clic-sur-telecharger-app, ios, , )");
+
+        if ((navigator.userAgent.indexOf('iPhone') != -1) || (navigator.userAgent.indexOf('iPod') != -1) || (navigator.userAgent.indexOf('iPad') != -1)) {
+            $('.downloadApp.androd').hide();
+        } else {
+            $('.downloadApp.ios').hide();
+        }
+    });
+</script>
+</div>
+		<form name="accessiblityForm">
+		<input type="hidden" id="accesibility_refreshScreenReaderBufferField" name="accesibility_refreshScreenReaderBufferField"
+			value="" />
+	</form>
+	<div id="ariaStatusMsg" class="skip" role="status" aria-relevant="text" aria-live="polite"></div>
+
+	
+
+
+
+
+
+    <script type="text/javascript" src="https://www.camaieu.fr/static/tagcommander/tc_catalogue.js" async></script>
+
+<script type="text/javascript">
+if(tc_vars.env_template === "accueil"){
+	//<![CDATA[
+	var _t2sparams = _t2sparams || {};
+	_t2sparams.cID = 'MAEOY3PMFW4KIU';
+	_t2sparams.pID = tC.internalvars.target2sell_pagetype;
+	_t2sparams.eN = 'view';
+	_t2sparams.uEM=tc_vars["user_id"];
+	_t2sparams.uID=tc_vars["user_id"];
+	_t2sparams.hasRankOption = true ;
+	(function () {
+	  var t2sScript = document.createElement('script');
+	  t2sScript.type = 'text/javascript';
+	  t2sScript.async = true;
+	  t2sScript.src = ('https:' == document.location.protocol ?
+	  'https://static.target2sell.com/t2s.min.js' :
+	  'http://s3.target2sell.com/t2s.min.js');
+	  var s = document.getElementsByTagName('script') [0];
+	  s.parentNode.insertBefore(t2sScript, s);
+	  /* t2sScript.onload */ 
+	  t2sScript.onload = function () {
+		  if (jQuery.isReady) {
+			T2S.reco(null, function () {
+					slider = $('.slickCarrousel').slick({infinite: true,dots:true,slidesToShow: 4,slidesToScroll: 1,
+					responsive: 
+					[
+						{breakpoint: 1024,
+						settings: {slidesToShow: 3,slidesToScroll: 3,infinite: true,dots: true}
+						},
+						{breakpoint: 600,
+						settings: {slidesToShow: 2,slidesToScroll: 2}
+						},
+						{breakpoint: 480,
+						settings: {slidesToShow: 1,slidesToScroll: 1}
+						}
+					]
+				}); /* end slider = $('.slickCarrousel').slick  */
+			}); /* end T2S.reco(null, function ()  */
+		  } /* end if (jQuery.isReady) */
+		  else {
+			jQuery(document).ready(function () {
+				T2S.reco(null, function () {
+					slider = $('.slickCarrousel').slick({infinite: true,dots:true,slidesToShow: 4,slidesToScroll: 1,
+						responsive: 
+						[
+							{breakpoint: 1024,
+							settings: {slidesToShow: 3,slidesToScroll: 3,infinite: true,dots: true}
+							},
+							{breakpoint: 600,
+							settings: {slidesToShow: 2,slidesToScroll: 2}
+							},
+							{breakpoint: 480,
+							settings: {slidesToShow: 1,slidesToScroll: 1}
+							}
+						]
+					}); /* end slider = $('.slickCarrousel').slick  */
+				}); /* end jQuery(document).ready(function ()  */
+			}) /* end jQuery(document).ready(function ()  */
+		  } /* end else */
+	  }; /* end t2sScript.onload */ 
+	})/* end function */ ();}
+</script>
+
+
+<script type="text/javascript">
+    $( document ).ready(function() {
+        if(!jQuery().fancybox) {
+            $.getScript( "https://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.pack.min.js" );
+        }
+    })
+
+$(document).ready(function(){
+	if ($( "body" ).hasClass( "page-cartPage" ) ) { // On cible uniquement le cart
+		var checkExist = setInterval(function() {
+		   if ($('.search-count-lvr .rowElem div.jqTransformSelectWrapper ').length) {
+				$(".search-count-lvr .rowElem div.jqTransformSelectWrapper ul li a").click(function(){
+					deliveryCountryIso = $("#sel-country option:selected" ).val();
+					$(".options-view-lvr").load("/cart/deliveryModes/"+deliveryCountryIso);
+					return false; //prevent default browser action
+				});
+			  clearInterval(checkExist);
+		   }
+		}, 500); // on verifie toutes les 500ms
+	}
+});
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	/*if ($('body').hasClass('page-productDetails')) {
+		if( $('#product-gallery .swiper-slide-active img').attr('src').match(/\/rc\/\//g) ) {
+
+			var currentRc = $('ul#colors-list li.active a.colorVariant').data('color');
+
+			$('.pictures-pager div.swiper-slide img').each(
+				function(){
+					$(this).attr('src', $(this).attr('src').replace('/rc//', '/rc/' + currentRc + '/'));
+					$(this).attr('data-src', $(this).attr('data-src').replace('/rc//', '/rc/' + currentRc + '/'));
+				}
+			);
+
+			$('#product-gallery div.swiper-slide img').each(
+				function(){
+					$(this).attr('src', $(this).attr('src').replace('/rc//', '/rc/' + currentRc + '/'));
+					$(this).attr('data-src', $(this).attr('data-src').replace('/rc//', '/rc/' + currentRc + '/'));
+				}
+			);
+		};
+	};*/
+});
+</script>
+
+<div class="cmu__back--top">
+    <span class="back--btn--icon cmu__dsp-b">
+
+        <span class="btn--icon"></span>
+
+    </span>
+    <span>Haut de page</span>
+</div>
+
+
+
+
+<link rel="stylesheet" type="text/css" media="all" href="/_ui/dist/footer.style.ef33.css">
+
+
+
+
+
+
+
+
+    <div id="login-Modal" class="Layer Layer--right js-ModalLogin">
+        <div class="ModalLogin Layer-container js-ModalLogin-Container">
+            <div class="Toastr Toastr--info Toastr--confirmForgottenPwd js-ConfirmForgottenPwd">
+                <div class="Toastr-icon Icon Icon--mail"></div>
+                <span class="Toastr-message js-ConfirmForgottenPwd-message">
+                    Si un compte est rattaché à cette adresse mail, alors un mail vous a été envoyé pour réinitialiser votre mot de passe.
+                </span>
+            </div>
+
+            <div class="ModalLogin-Title">
+                Connexion
+            </div>
+
+            <form id="loginPopin" data-toggle="validator" role="form" class="ModalLogin-form " action="/j_spring_security_check" method="post">
+                <input type="hidden" name="camaieuNewReferer" id="camaieuNewRefererId">
+
+                    
+                    
+
+                    <div class="Input Input--text control-group ">
+                        <div class="controls">
+                            
+                            <input id="emailLoginInput" name="j_username" data-validation-emailRegex-regex="^[a-zA-Z0-9]([a-zA-Z0-9_\-\.]{0,})@[a-zA-Z0-9]([a-zA-Z0-9_\-\.]{0,})[a-zA-Z0-9]\.([a-zA-Z]{2,5})$" data-validation-emailRegex-message="Email invalide" type="email" data-validation-required-message="Email invalide" data-beaver-id="RenseignerLogin" required="true" value=""/>
+                            <label for="emailLoginInput">Email *</label>
+                            <i class="Icon Icon--check"></i>
+                            <i class="Icon Icon--warning showInfoLoginModal js-showInfoLoginModal"></i>
+                        </div>
+                    </div>
+                    <div class="Input Input--text control-group ">
+                        <div class="controls">
+                            
+                            
+                                <input id="emailLoginPassword" name="j_password" aria-invalid="true" type="password" data-validation-required-message="Combinaison email / mot de passe invalide" data-beaver-id="RenseignerMotDePasse" required="true" value=""/>
+                            <label for="emailLoginPassword">Mot de passe *</label>
+                            <i class="js-PassWord-type Icon Icon--eye_show"></i>
+                        </div>
+                    </div>
+
+                    <div class="ModalLogin-ForgotPassword">
+                        <span data-url="/login/pw/request" class="ModalLogin-ForgotPassword-link js-ForgotPasswordLink" id="forget-mdp" data-toggle="modal" data-target="#ml-forgot-mp" data-request-contextpath="">
+                            Mot de passe oublié
+                        </span>
+                    </div>
+
+                    <div class="Input Input--checkbox">
+                        <input id="rememberme" type="checkbox" class="chekboxrememberme" name="_spring_security_remember_me"/>
+                        <label for="rememberme">Se souvenir de moi</label>
+                    </div>
+
+                
+
+                    <button type="submit" disabled class="ModalLogin-Submit" data-beaver-id="BtnValiderIdentification"><span>Valider</span></button>
+
+                    <div class="ModalLogin-Create">
+                        <div class="ModalLogin-Title">Pas encore de compte ?</div>
+                        
+                            
+                                
+                            
+                            
+                        
+                        <a href="https://www.camaieu.fr:443/login/popin/register" title="Je cr&eacute;e mon compte" id="popinCreateCompteId" class="ModalLogin-Submit">Me créer un compte</a>
+                    </div>
+            <div>
+<input type="hidden" name="CSRFToken" value="1d94aa11-086f-4bb1-87ec-e4fe595cee1b" />
+</div></form>
+            <div id="js-login-email-info" class="CreateAccount-fidInfo-container js-hideInfoLoginModal" style="display: none;">
+                <div class="ModalLogin-loginInfo">
+                    <div class="ModalLogin-icons">
+                        <i class="Icon Icon--info ModalLogin-iconInfo"></i>
+                        <i class="Icon Icon--close ModalLogin-iconClose"></i>
+                    </div>
+                    <p>Un email valide doit être composé d’un identifiant, d’une arobase (@) et d’un nom de domaine.</p>
+                    <p>Ex: identifiant@nomdedomaine.fr (ou .com).</p>
+                </div>
+            </div>
+
+            <button class="Layer-close js-ModalLogin-Close">
+                <i class="Icon Icon--close"></i>
+            </button>
+
+            <button class="Layer-arrow js-ModalLogin-Close">
+                <i class="Icon Icon--arrow_left"></i>
+            </button>
+        </div>
+    </div>
+
+<script type="text/javascript">
+
+$( document ).ready(function() {
+    $(".js-showInfoLoginModal").click(function(){
+        ACC.infoModal.showModal('#js-login-email-info');
+    });
+    $(".js-hideInfoLoginModal").click(function(){
+        ACC.infoModal.hideModal('#js-login-email-info');
+    });
+});
+
+</script>
+
+
+
+
+
+
+
+    <div class="Layer Layer--right Layer--over js-ModalForgottenPwd">
+        <div class="ModalForgottenPwd Layer-container js-ModalForgottenPwd-Container">
+            <div class="ModalForgottenPwd-Title">
+                Connexion
+            </div>
+            <p class="ModalForgottenPwd-SubTitle">
+                Mot de passe oublié
+            </p>
+            <p class="ModalForgottenPwd-Text">
+                Saisissez votre email associé à votre compte Camaïeu.<br /> Vous recevrez dans quelques minutes votre nouveau mot de passe dans votre boîte email.
+            </p>
+
+            <form id="forgottenPwdPopin" data-toggle="validator" role="form" action="/donneespersonnelles" method="post">
+                <div class="Input Input--text control-group">
+                    <div class="controls">
+                        
+                        
+                        
+                        <input id="email" name="email" data-validation-emailRegex-regex="^[a-zA-Z0-9]([a-zA-Z0-9_\-\.]{0,})@[a-zA-Z0-9]([a-zA-Z0-9_\-\.]{0,})[a-zA-Z0-9]\.([a-zA-Z]{2,5})$" data-validation-emailRegex-message="Email invalide" type="email" data-validation-required-message="Email invalide" value=""/>
+                        <label for="email">Email *</label>
+                        <i class="Icon Icon--check"></i>
+                        <i class="Icon Icon--warning"></i>
+                    </div>
+                </div>
+
+                <div class="help-block"></div>
+
+                <button type="submit" id="submitForgottenPwdPopin" class="ModalForgottenPwd-Submit js-ForgottenPwd-Submit" data-request-contextpath="" disabled>
+                    <span>Valider</span>
+                </button>
+            <div>
+<input type="hidden" name="CSRFToken" value="1d94aa11-086f-4bb1-87ec-e4fe595cee1b" />
+</div></form>
+
+            <button class="Layer-close js-ModalForgottenPwd-Close">
+                <i class="Icon Icon--close"></i>
+            </button>
+
+            <button class="Layer-arrow js-ModalForgottenPwd-Close">
+                <i class="Icon Icon--arrow_left"></i>
+            </button>
+        </div>
+    </div>
+<script src="/_ui/addons/camaieucheckoutaddon/desktop/common/js/camaieucheckoutaddon.js"></script>
+<script src="/_ui/addons/camaieutagcommanderaddon/desktop/common/js/camaieutagcommanderaddon.js"></script>
+<script src="/_ui/addons/camaieucomponentaddon/desktop/common/js/camaieucomponentaddon.js"></script>
+<script src="/_ui/addons/smarteditaddon/shared/common/js/webApplicationInjector.js"></script>
+<script src="/_ui/addons/smarteditaddon/shared/common/js/reprocessPage.js"></script>
+<script src="/_ui/addons/smarteditaddon/shared/common/js/adjustComponentRenderingToSE.js"></script>
+<script src="/_ui/addons/smarteditaddon/responsive/common/js/smarteditaddon.js"></script>
+<script type="text/javascript">
+		/*<![CDATA[*/
+		
+		var ACC = { config: {}, checkoutv2: {} };
+			ACC.config.contextPath = "";
+			ACC.config.encodedContextPath = "";
+			ACC.config.commonResourcePath = "/_ui/dist";
+			ACC.config.siteResourcePath = "/_ui/desktop/site-camaieu-fr";
+			ACC.config.rootPath = "/_ui/desktop";
+			ACC.config.CSRFToken = "1d94aa11-086f-4bb1-87ec-e4fe595cee1b";
+			ACC.config.urlEvoke = "";
+			ACC.config.api_key = "";
+			ACC.config.productAlreadyInWishList = "";
+            
+            ACC.config.popinNumberProductMin = 1;
+            ACC.config.popinTime = 4000;
+			ACC.pwdStrengthVeryWeak = 'Très faible';
+			ACC.pwdStrengthWeak = 'Faible';
+			ACC.pwdStrengthMedium = 'Medium';
+			ACC.pwdStrengthStrong = 'Fort';
+			ACC.pwdStrengthVeryStrong = 'Très fort';
+			ACC.pwdStrengthUnsafePwd = 'password.strength.unsafepwd';
+			ACC.pwdStrengthTooShortPwd = 'Trop court';
+			ACC.pwdStrengthMinCharText = '{0} caractères minimum (dont un chiffre et une lettre)';
+			ACC.accessibilityLoading = 'aria.pickupinstore.loading';
+			ACC.accessibilityStoresLoaded = 'aria.pickupinstore.storesloaded';
+            ACC.noProductOnWishlist = 'Aucun produit dans votre wishlist';
+            ACC.emptyMyWishlist = 'Vider ma wishlist';
+            ACC.Offer = 'Offert';
+            ACC.wantYouEmptyYourWishlist = 'Voulez-vous vider votre wishlist ?';
+			
+			ACC.autocompleteUrl = '/search/autocompleteSecure';
+
+		var master = {
+			layer: {},
+            error: {},
+            success: {},
+            empty: {}
+		};
+			master.layer.loaderText = 'En cours d&#39;ajout au panier...';
+            master.layer.loaderWallet = 'Enregistrement de la carte en cours...';
+            master.error.addCard = 'Erreur lors de l&#39;ajout de la carte';
+            master.success.addCard = 'Carte ajout&eacute;e avec succ&egrave;s';
+            master.error.addTelNumber = 'Veuillez saisir un numéro de téléphone valide';
+            master.empty.addTelNumber = 'Vous devez saisir un num&eacute;ro de t&eacute;l&eacute;phone';
+
+
+			
+		/*]]>*/
+
+
+		
+        ACC.checkoutv2 = { freeDelivery : '', deliveriesTitle : [], close:'', days: [] };
+        ACC.checkoutv2.freeDelivery = 'Offert';
+        ACC.checkoutv2.deliveriesTitle.push({key:'chb',value:'domicile'});
+        ACC.checkoutv2.deliveriesTitle.push({key:'chf',value:'domicile'});
+        ACC.checkoutv2.deliveriesTitle.push({key:'coa',value:'domicile'});
+        ACC.checkoutv2.deliveriesTitle.push({key:'dhi',value:'cartSummary.delivery.mode.title.DHI'});
+        ACC.checkoutv2.deliveriesTitle.push({key:'dhl',value:'cartSummary.delivery.mode.title.DHL'});
+        ACC.checkoutv2.deliveriesTitle.push({key:'inp',value:'cartSummary.delivery.mode.title.INP'});
+        ACC.checkoutv2.deliveriesTitle.push({key:'lwm',value:'magasin'});
+        ACC.checkoutv2.deliveriesTitle.push({key:'prb',value:'cartSummary.delivery.mode.title.PRB'});
+        ACC.checkoutv2.deliveriesTitle.push({key:'pre',value:'point relais express'});
+        ACC.checkoutv2.deliveriesTitle.push({key:'prl',value:'point relais'});
+        ACC.checkoutv2.deliveriesTitle.push({key:'rel',value:'point relais'});
+
+        ACC.checkoutv2.close = 'Fermé';
+        ACC.checkoutv2.days.push({key:"lundi", value:'Lundi'});
+        ACC.checkoutv2.days.push({key:"mardi", value:'Mardi'});
+        ACC.checkoutv2.days.push({key:"mercredi", value:'Mercredi'});
+        ACC.checkoutv2.days.push({key:"jeudi", value:'Jeudi'});
+        ACC.checkoutv2.days.push({key:"vendredi", value:'Vendredi'});
+        ACC.checkoutv2.days.push({key:"samedi", value:'Samedi'});
+        ACC.checkoutv2.days.push({key:"dimanche", value:'Dimanche'});
+
+        var BVConfig = {};
+        BVConfig.callTagBvPixel = '';
+        BVConfig.clientName = 'camaieu';
+        BVConfig.zone = 'Main Site';
+        BVConfig.environment = 'production';
+        
+            BVConfig.environment = 'staging';
+        
+        BVConfig.locale = 'fr_FR';
+        BVConfig.callBvNotation = '';
+
+	</script>
+	<script type="text/javascript">
+	/*<![CDATA[*/
+	ACC.addons = {};	//JS holder for addons properties
+			
+	
+	/*]]>*/
+</script>
+
+<link rel="prefetch" href="/_ui/dist/base.pdp.ef33.js" as="script">
+<script src="/_ui/dist/vendor.7a6b.js" defer></script>
+
+<script src="/_ui/dist/base.app.ef33.js" defer="defer"></script>
+<div id="quick-buy"></div>
+
+</body>
+
+</html>
