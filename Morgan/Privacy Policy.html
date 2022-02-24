@@ -1,0 +1,2510 @@
+
+<!doctype html>
+<!--[if lt IE 7]> <html class="ie6 oldie" lang="fr"> <![endif]-->
+<!--[if IE 7]> <html class="ie7 oldie" lang="fr"> <![endif]-->
+<!--[if IE 8]> <html class="ie8 oldie" lang="fr"> <![endif]-->
+<!--[if gt IE 8]><!--> <html lang="fr" class="desktop"> <!--<![endif]-->
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+<link href="/on/demandware.static/Sites-M2T_FR-Site/-/default/dwc35e58ad/images/favicon.ico" rel="shortcut icon" />
+<title>Charte de confidentialité des données à caractère personnel | Morgan</title>
+<meta name="description" content="Parcourez et découvrez l'ensemble des informations de la page charte de confidentialité des données à caractère personnel. Morgandetoi, vêtements femme tendance chic et mode !" />
+<!--[if lt IE 9]>
+<script src="/on/demandware.static/Sites-M2T_FR-Site/-/fr/v1645675756438/js/lib/html5.js"></script>
+<![endif]-->
+<script type="text/javascript">//<!--
+/* <![CDATA[ (head-active_data.js) */
+var dw = (window.dw || {});
+dw.ac = {
+    _analytics: null,
+    _events: [],
+    _category: "",
+    _searchData: "",
+    _anact: "",
+    _anact_nohit_tag: "",
+    _analytics_enabled: "true",
+    _timeZone: "Europe/Paris",
+    _capture: function(configs) {
+        if (Object.prototype.toString.call(configs) === "[object Array]") {
+            configs.forEach(captureObject);
+            return;
+        }
+        dw.ac._events.push(configs);
+    },
+	capture: function() { 
+		dw.ac._capture(arguments);
+		// send to CQ as well:
+		if (window.CQuotient) {
+			window.CQuotient.trackEventsFromAC(arguments);
+		}
+	},
+    EV_PRD_SEARCHHIT: "searchhit",
+    EV_PRD_DETAIL: "detail",
+    EV_PRD_RECOMMENDATION: "recommendation",
+    EV_PRD_SETPRODUCT: "setproduct",
+    applyContext: function(context) {
+        if (typeof context === "object" && context.hasOwnProperty("category")) {
+        	dw.ac._category = context.category;
+        }
+        if (typeof context === "object" && context.hasOwnProperty("searchData")) {
+        	dw.ac._searchData = context.searchData;
+        }
+    },
+    setDWAnalytics: function(analytics) {
+        dw.ac._analytics = analytics;
+    },
+    eventsIsEmpty: function() {
+        return 0 == dw.ac._events.length;
+    }
+};
+/* ]]> */
+// -->
+</script>
+<script type="text/javascript">//<!--
+/* <![CDATA[ (head-cquotient.js) */
+var CQuotient = window.CQuotient = {};
+CQuotient.clientId = 'bchm-M2T_FR';
+CQuotient.realm = 'BCHM';
+CQuotient.siteId = 'M2T_FR';
+CQuotient.instanceType = 'prd';
+CQuotient.locale = 'fr';
+CQuotient.fbPixelId = '__UNKNOWN__';
+CQuotient.activities = [];
+CQuotient.cqcid='';
+CQuotient.cquid='';
+CQuotient.cqeid='';
+CQuotient.cqlid='';
+/* Turn this on to test against Staging Einstein */
+/* CQuotient.useTest= true; */
+CQuotient.initFromCookies = function () {
+	var ca = document.cookie.split(';');
+	for(var i=0;i < ca.length;i++) {
+	  var c = ca[i];
+	  while (c.charAt(0)==' ') c = c.substring(1,c.length);
+	  if (c.indexOf('cqcid=') == 0) {
+		CQuotient.cqcid=c.substring('cqcid='.length,c.length);
+	  } else if (c.indexOf('cquid=') == 0) {
+		  var value = c.substring('cquid='.length,c.length);
+		  if (value) {
+		  	var split_value = value.split("|", 3);
+		  	if (split_value.length > 0) {
+			  CQuotient.cquid=split_value[0];
+		  	}
+		  	if (split_value.length > 1) {
+			  CQuotient.cqeid=split_value[1];
+		  	}
+		  	if (split_value.length > 2) {
+			  CQuotient.cqlid=split_value[2];
+		  	}
+		  }
+	  }
+	}
+}
+CQuotient.getCQCookieId = function () {
+	if(window.CQuotient.cqcid == '')
+		window.CQuotient.initFromCookies();
+	return window.CQuotient.cqcid;
+};
+CQuotient.getCQUserId = function () {
+	if(window.CQuotient.cquid == '')
+		window.CQuotient.initFromCookies();
+	return window.CQuotient.cquid;
+};
+CQuotient.getCQHashedEmail = function () {
+	if(window.CQuotient.cqeid == '')
+		window.CQuotient.initFromCookies();
+	return window.CQuotient.cqeid;
+};
+CQuotient.getCQHashedLogin = function () {
+	if(window.CQuotient.cqlid == '')
+		window.CQuotient.initFromCookies();
+	return window.CQuotient.cqlid;
+};
+CQuotient.trackEventsFromAC = function (/* Object or Array */ events) {
+try {
+	if (Object.prototype.toString.call(events) === "[object Array]") {
+		events.forEach(_trackASingleCQEvent);
+	} else {
+		CQuotient._trackASingleCQEvent(events);
+	}
+} catch(err) {}
+};
+CQuotient._trackASingleCQEvent = function ( /* Object */ event) {
+	if (event && event.id) {
+		if (event.type === dw.ac.EV_PRD_DETAIL) {
+			CQuotient.trackViewProduct( {id:'', alt_id: event.id, type: 'raw_sku'} );
+		} // not handling the other dw.ac.* events currently
+	}
+};
+CQuotient.trackViewProduct = function(/* Object */ cqParamData){
+	var cq_params = {};
+	cq_params.cookieId = CQuotient.getCQCookieId();
+	cq_params.userId = CQuotient.getCQUserId();
+	cq_params.emailId = CQuotient.getCQHashedEmail();
+	cq_params.loginId = CQuotient.getCQHashedLogin();
+	cq_params.product = cqParamData.product;
+	cq_params.realm = cqParamData.realm;
+	cq_params.siteId = cqParamData.siteId;
+	cq_params.instanceType = cqParamData.instanceType;
+	cq_params.locale = CQuotient.locale;
+	
+	if(CQuotient.sendActivity) {
+		CQuotient.sendActivity(CQuotient.clientId, 'viewProduct', cq_params);
+	} else {
+		CQuotient.activities.push({activityType: 'viewProduct', parameters: cq_params});
+	}
+};
+/* ]]> */
+// -->
+</script>
+<link href="/on/demandware.static/Sites-M2T_FR-Site/-/fr/v1645675756438/css/app.css" type="text/css" rel="stylesheet" />
+<!--[if lte IE 8]>
+<script src="//cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js" type="text/javascript"></script>
+<script src="https://cdn.rawgit.com/chuckcarpenter/REM-unit-polyfill/master/js/rem.min.js" type="text/javascript"></script>
+<![endif]-->
+<meta name="p:domain_verify" content="d716ff1fb1f6a4d3699d08a82f30019c" />
+<meta name="facebook-domain-verification" content="qlsvox0w4k9k6kqo1bad2l9thcendw" />
+<meta name="facebook-domain-verification" content="4ot511jjp1mq8f63xo1etoe7plthct" />
+<meta name="google-site-verification" content="oz0B2cghJ8cNaCTFTKeCioEEkpiepXfvOfghs662Dm4" />
+<meta name="google-site-verification" content="Iyq7-Zj0AdsDF5gJdSdca4OHNQ4FRQltzZz3OApvNK4" />
+<script type="text/javascript">
+if (window.jQuery) {
+jQuery(document).ready(function(){
+if(screen.width < 768){
+jQuery('#footer').append('<a href="/" class="full-site-link">View Full Site</a>');
+jQuery('.full-site-link')
+.attr('href', '/on/demandware.store/Sites-M2T_FR-Site/fr/Home-FullSite')
+.click(function(e) {
+e.preventDefault();
+jQuery.ajax({
+url: '/on/demandware.store/Sites-M2T_FR-Site/fr/Home-FullSite',
+success: function(){
+window.location.reload();
+}
+});
+}
+);
+}
+});
+}
+</script>
+<link rel="stylesheet" href="/on/demandware.static/Sites-M2T_FR-Site/-/fr/v1645675756438/css/globale/flags.css" />
+<link rel="stylesheet" href="/on/demandware.static/Sites-M2T_FR-Site/-/fr/v1645675756438/css/globale/styles.css" />
+<script type="text/javascript" id="globale-script-loader-data" src="/on/demandware.static/Sites-M2T_FR-Site/-/fr/v1645675756438/js/globaleScriptLoader.js">
+{"clientJsUrl":"https://web.global-e.com/merchant/clientsdk/830","apiVersion":"2.1.4","clientJsMerchantId":830,"clientSettings":"{\"AdScaleConfiguration\":{\"Value\":\"{\\\"EnableAdScaleIntegration\\\":true,\\\"AllowAdScaleScripts\\\":true}\"},\"AllowClientTracking\":{\"Value\":\"true\"},\"CDNEnabled\":{\"Value\":\"true\"},\"CheckoutContainerSuffix\":{\"Value\":\"Global-e_International_Checkout\"},\"FullClientTracking\":{\"Value\":\"true\"},\"IsMonitoringMerchant\":{\"Value\":\"true\"},\"IsV2Checkout\":{\"Value\":\"true\"},\"SetGEInCheckoutContainer\":{\"Value\":\"true\"},\"ShowFreeShippingBanner\":{\"Value\":\"true\"},\"TabletAsMobile\":{\"Value\":\"false\"},\"AdScaleClientSDKURL\":{\"Value\":\"https://web.global-e.com/merchant/GetAdScaleClientScript?merchantId=830\"},\"AmazonUICulture\":{\"Value\":\"en-GB\"},\"AnalyticsUrl\":{\"Value\":\"https://services.global-e.com/\"},\"CDNUrl\":{\"Value\":\"https://webservices.global-e.com/\"},\"ChargeMerchantForPrepaidRMAOfReplacement\":{\"Value\":\"false\"},\"CheckoutCDNURL\":{\"Value\":\"https://webservices.global-e.com/\"},\"EnableReplaceUnsupportedCharactersInCheckout\":{\"Value\":\"false\"},\"GTM_ID\":{\"Value\":\"GTM-PWW94X2\"},\"InternalTrackingEnabled\":{\"Value\":\"false\"},\"PixelAddress\":{\"Value\":\"https://utils.global-e.com\"},\"RefundRMAReplacementShippingTypes\":{\"Value\":\"[2,3,4]\"},\"RefundRMAReplacementStatuses\":{\"Value\":\"[9,11,12]\"},\"TrackingV2\":{\"Value\":\"true\"},\"MerchantIdHashed\":{\"Value\":\"mZMB\"}}","clientJsDomain":"https://web.global-e.com","cookieDomain":"www.morgandetoi.fr","globaleOperatedCountry":false,"performFrontendSiteUrlRedirect":true,"getSiteRedirectUrl":"https://www.morgandetoi.fr/on/demandware.store/Sites-M2T_FR-Site/fr/Globale-GetSiteRedirectUrl","country":"FR","currency":"EUR","culture":"fr","locale":"fr","allowedSite":true,"languageSwitcher":{"enabled":true,"countriesConfig":{"BE":["fr_BE","nl_BE"]},"languagesConfig":{"fr_BE":"French","nl_BE":"Dutch"},"isLanguageDropDwonShown":false,"selectedLanguage":"fr"}}
+</script>
+<style>
+.container, .page-container {
+max-width: 910px;
+padding-left: 2em;
+}
+</style>
+<link rel="canonical" href="https://www.morgandetoi.fr/charte-confidentialite" />
+<script type="text/javascript">
+//<![CDATA[
+var tc_vars = JSON.parse( "{\"env_template\":\"content\",\"env_work\":\"prod\",\"env_brand\":\"morgan\",\"page_name\":\"Charte de confidentialité des données à caractère personnel | Morgan\",\"page_cat1\":\"Charte de confidentialité des données à caractère personnel\",\"page_cat2\":\"\",\"page_cat3\":\"\",\"page_cat4\":\"\"}" );
+//]]>
+var extendTc_vars = function () {
+var extended = {};
+var deep = false;
+var i = 0;
+var length = arguments.length;
+if ( Object.prototype.toString.call( arguments[0] ) === '[object Boolean]' ) {
+deep = arguments[0];
+i++;
+}
+var merge = function (obj) {
+for ( var prop in obj ) {
+if ( Object.prototype.hasOwnProperty.call( obj, prop ) ) {
+if ( deep && Object.prototype.toString.call(obj[prop]) === '[object Object]' ) {
+extended[prop] = extend( true, extended[prop], obj[prop] );
+} else {
+extended[prop] = obj[prop];
+}
+}
+}
+};
+for ( ; i < length; i++ ) {
+var obj = arguments[i];
+merge(obj);
+}
+return extended;
+};
+</script>
+<script type="text/javascript">
+		tc_vars = extendTc_vars(tc_vars, JSON.parse('{}') );
+	</script>
+<script type="text/javascript">
+		tc_vars = extendTc_vars(tc_vars, JSON.parse('{"env_language":"fr","env_country":"FR","env_channel":"desktop","env_currency":"EUR"}') );
+	</script>
+<script type="text/javascript">
+		tc_vars = extendTc_vars(tc_vars, JSON.parse('{"user_logged":"no"}') );
+	</script>
+<script type="text/javascript">
+		var waitForDatalayer = function(){
+      	    if(typeof tc_vars !== "undefined"){
+      	    	var script = document.createElement( 'script' );
+      	    	script.type = 'text/javascript';
+      	    	script.async = true;
+				script.id = 'tc_container';
+      	    	script.src = '/on/demandware.static/-/Library-Sites-SharedLibraryMorgan/fr/v1645675756438/tagcommander/20220131/tc_Morgan_1.js'
+				var existingScript = document.getElementById(script.id);
+				if(existingScript) {
+					existingScript.parentNode.removeChild(existingScript);
+				}
+      	        document.head.appendChild(script);
+      	    }
+      	    else{
+      	        setTimeout(waitForDatalayer, 250);
+      	    }
+      	}
+   		waitForDatalayer();
+    </script>
+</head>
+<body>
+<div id="wrapper" class="pt_content">
+<header id="header" class="header">
+<div class="header-banner">
+<div class="surheader_defil">
+<a href="https://www.morgandetoi.fr/vetements-femme-c_010000/">
+<p class="texte_defil">ALERTE SHOPPING : <SPAN>-30% </SPAN> SUR LE 2E ARTICLE ACHETÉ *&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ALERTE SHOPPING : <SPAN>-30% </SPAN> SUR LE 2E ARTICLE ACHETÉ * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ALERTE SHOPPING : <SPAN>-30% </SPAN> SUR LE 2E ARTICLE ACHETÉ * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbspALERTE SHOPPING : <SPAN>-30% </SPAN> SUR LE 2E ARTICLE ACHETÉ * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ALERTE SHOPPING : <SPAN>-30% </SPAN> SUR LE 2E ARTICLE ACHETÉ * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ALERTE SHOPPING : <SPAN>-30% </SPAN> SUR LE 2E ARTICLE ACHETÉ * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ALERTE SHOPPING : <SPAN>-30% </SPAN> SUR LE 2E ARTICLE ACHETÉ * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ALERTE SHOPPING : <SPAN>-30% </SPAN> SUR LE 2E ARTICLE ACHETÉ * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ALERTE SHOPPING : <SPAN>-30% </SPAN> SUR LE 2E ARTICLE ACHETÉ * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ALERTE SHOPPING : <SPAN>-30% </SPAN> SUR LE 2E ARTICLE ACHETÉ * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ALERTE SHOPPING : <SPAN>-30% </SPAN> SUR LE 2E ARTICLE ACHETÉ * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ALERTE SHOPPING : <SPAN>-30% </SPAN> SUR LE 2E ARTICLE ACHETÉ * &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+</a>
+</div>
+<style>
+   
+.surheader_defil{
+    font-family: Gotham,Arial,sans-serif;
+    display: block;
+    width: 100%;
+    background-color: #FDF4ED;
+    padding: 8px 0;
+    overflow: hidden;
+}    
+    
+.surheader_defil .texte_defil {
+    position: relative;
+    width: 11000px;
+    display: inline-block;
+    animation: friz 70s linear infinite;
+    color: #000000;
+    margin: 0 auto;
+    /*font-size: 0.882vw;*/
+    font-size: 14px;
+    font-weight: 400;
+}
+.surheader_defil .texte_defil span {
+    font-weight: 650;
+    color: #E40B39;
+ background-color: #FDF4ED;
+}    
+
+@keyframes friz {
+    0% { left: 0;}
+    100% {left: -2000px;}
+}
+    
+    
+@media screen and (max-width:991px){    
+    
+.surheader_defil{
+    background-color: #FDF4ED;
+    padding: 8px 0
+}    
+.surheader_defil .texte_defil {
+    position: relative;
+    width: 8000px;
+    display: inline-block;
+    animation: friz 60s linear infinite;
+    color: #000000;
+    margin: 0 auto;
+    font-size: 11px;
+    font-weight: 550;
+}    
+       
+@keyframes friz {
+    0% { left: 0;}
+    100% {left: -1000px;}
+}
+    
+}
+</style>
+</div>
+<div class="header-container">
+<button class="menu-toggle">
+<span class="menu-wording">Menu</span>
+<span class="wrapper-bar">
+<span class="bar"></span>
+<span class="bar"></span>
+<span class="bar"></span>
+</span>
+</button>
+<a href="/" class="primary-logo">
+<img loading="lazy" src="/on/demandware.static/Sites-M2T_FR-Site/-/default/dw85ef9a4e/images/logo.png" srcset="/on/demandware.static/Sites-M2T_FR-Site/-/default/dwf953ab3c/images/logo@2x.png 2x" alt="Accueil Morgan" />
+</a>
+<nav id="navigation" class="main-nav" role="navigation">
+<div class="wrapper-header-menu">
+<div class="menu-utility-user">
+<div class="country-selector globale-selector">
+<div class="current-country">
+<i class="fa fa-angle-right fa-fw selector-icon"></i>
+<i class="flag-icon flag-icon-fr"></i>
+</div>
+</div>
+<script type="text/javascript" src="/on/demandware.static/Sites-M2T_FR-Site/-/fr/v1645675756438/js/globaleCountrySwitcher.js"></script>
+<div class="header-stores ">
+<a href="https://www.morgandetoi.fr/magasins/" title="Boutiques">
+<span class="icon marker"></span>
+<span class="label-store">Boutiques</span>
+</a>
+</div>
+<div class="user-info user-info-no-authenticated">
+<div class="user-account" title="">
+<a href="https://www.morgandetoi.fr/mon-espace-personnel/">
+<span class="icon profile"></span>
+<span class="user-account-label-1">Mon Compte</span>
+<span class="user-account-label-2">Se connecter</span>
+</a>
+</div>
+</div>
+<div class="utility-user-overlay"></div>
+
+
+<div id="block-mini-cart" class="block-mini-cart block-mini-cart-empty">
+<div id="mini-cart" class="mini-cart layer_minicart">
+<div class="mini-cart-total mini-cart-total-empty">
+<a class="mini-cart-link mini-cart-empty" href="https://www.morgandetoi.fr/panier/" title="Commander" rel="nofollow">
+<span class="block-icon-bag">
+<span class="icon bag basket-no-authenticated"></span>
+<span class="minicart-quantity minicart-quantity-empty">0</span>
+</span>
+<span class="label">Votre panier</span>
+</a>
+</div>
+</div>
+</div>
+<div class="utility-user-overlay"></div>
+<div class="header-search js-btn-open-search">
+<span class="icon search"></span>
+<span>Rechercher</span>
+</div>
+</div>
+</div>
+<div class="nav-toggle">
+<button class="menu-toggle close">
+<span class="menu-wording">Fermer</span>
+<span class="wrapper-bar">
+<span class="bar"></span>
+<span class="bar"></span>
+<span class="bar"></span>
+</span>
+</button>
+<div class="nav-toggle-scroll">
+<div class="header-nav-toggle-burger">
+<span class="block-icon-bag">
+<a href="https://www.morgandetoi.fr/panier/">
+<span class="mini-cart icon-bag basket-no-authenticated">
+</span>
+</a>
+<div class="js-mini-cart-quantity">
+</div>
+</span>
+<div class="mobile-menu-multilang hide-desktop">
+<div class="country-selector globale-selector">
+<div class="current-country">
+<i class="fa fa-angle-right fa-fw selector-icon"></i>
+<i class="flag-icon flag-icon-fr"></i>
+</div>
+</div>
+<script type="text/javascript" src="/on/demandware.static/Sites-M2T_FR-Site/-/fr/v1645675756438/js/globaleCountrySwitcher.js"></script>
+</div>
+<div class="user-info user-info-no-authenticated">
+<div class="user-account" title="">
+<a href="https://www.morgandetoi.fr/mon-espace-personnel/">
+<span class="icon profile"></span>
+<span class="connect">Se connecter</span>
+</a>
+</div>
+</div>
+<span class="btn-open-search-responsive js-btn-open-search">
+<span>Saisissez votre recherche ici</span>
+</span>
+</div>
+<div class="nav-toggle-scroll-content">
+<div class="header-nav-toggle">
+<span class="block-icon-bag">
+<span class="mini-cart icon bag2"></span>
+<div class="js-mini-cart-quantity">
+</div>
+</span>
+<span class="block-icon-bag">
+<span class="mini-cart icon bag2"></span>
+<div class="js-mini-cart-quantity">
+</div>
+</span>
+<span class="mobile-container-logo">
+<img loading="lazy" src="/on/demandware.static/Sites-M2T_FR-Site/-/default/dw85ef9a4e/images/logo.png" alt="Accueil Morgan">
+</span>
+</div>
+<ul class="menu-category level-1 hover-zoom ">
+<li class=level-2-style-2 tc-data-cat-name="Nouvelle collection" data-thumbnail="/on/demandware.static/-/Sites-Morgan_storefront/default/dwdb83e862/2021burger-menu/operations-commerciales/BURGER_OP_NEW_CO.jpg">
+<a class="has-sub-menu" href="https://www.morgandetoi.fr/nouveautes-s/">
+Nouvelle collection
+</a>
+<div class="level-2">
+<div>
+<div class="level-2-left">
+<span class="level-2-title">Nouvelle collection</span>
+<div class="level-2-col">
+<span class="level-2-subtitle">
+<a href="https://www.morgandetoi.fr/nouvelle-collection-robes-combinaisons-s/">
+Robes et Combinaisons
+</a>
+</span>
+<span class="level-2-subtitle">
+<a href="https://www.morgandetoi.fr/nouvelle-collection-jupes-shorts-s/">
+Jupes et shorts
+</a>
+</span>
+<span class="level-2-subtitle">
+<a href="https://www.morgandetoi.fr/nouvelle-collection-tops-t-shirt-s/">
+Tops et T-shirts
+</a>
+</span>
+<span class="level-2-subtitle">
+<a href="https://www.morgandetoi.fr/nouvelle-collection-blouses-chemises-s/">
+Blouses et chemises
+</a>
+</span>
+<span class="level-2-subtitle">
+<a href="https://www.morgandetoi.fr/nouvelle-collection-pulls-gilets-s/">
+Pulls et Gilets
+</a>
+</span>
+</div>
+<div class="level-2-col">
+<span class="level-2-subtitle">
+<a href="https://www.morgandetoi.fr/nouvelle-collection-vestes-manteaux-s/">
+Vestes et Manteaux
+</a>
+</span>
+<span class="level-2-subtitle">
+<a href="https://www.morgandetoi.fr/nouvelle-collection-pantalons-jeans/">
+Pantalons et Jeans
+</a>
+</span>
+<span class="level-2-subtitle">
+<a href="https://www.morgandetoi.fr/nouvelle-collection-sacs-accessoires-s/">
+Sacs et Accessoires
+</a>
+</span>
+<span class="level-2-subtitle">
+<a href="https://www.morgandetoi.fr/nouvelle-collection-chaussures-s/">
+Chaussures
+</a>
+</span>
+<span class="level-2-subtitle">
+<a href="https://www.morgandetoi.fr/nouvelle-collection-lingerie-s/">
+Lingerie
+</a>
+</span>
+</div>
+</div>
+<div class="level-2-col level-2-col-push level-2-right">
+<div class="content-asset">
+<p><a href="https://www.morgandetoi.fr/vetements-femme-c_010000/"><img alt="" src="https://www.morgandetoi.fr/on/demandware.static/-/Library-Sites-SharedLibraryMorgan/default/dw4178a67b/PUSH_ALERTE_SHOPPING_520%20.jpg" title="" /></a></p>
+</div>
+</div>
+<span class="btn-close-level-2"></span>
+</div>
+</div>
+<div class="level-2-menu2 burger">
+<div>
+<div class="backlist">
+<span class="return">
+Nouvelle collection
+</span>
+<span class="seeall">
+<a href="https://www.morgandetoi.fr/nouveautes-s/">
+Voir tout
+</a>
+</span>
+</div>
+<div class="level-2-col level-2-left">
+<ul>
+<li>
+<a href="https://www.morgandetoi.fr/nouvelle-collection-robes-combinaisons-s/">
+Robes et Combinaisons
+</a>
+</li>
+<li>
+<a href="https://www.morgandetoi.fr/nouvelle-collection-jupes-shorts-s/">
+Jupes et shorts
+</a>
+</li>
+<li>
+<a href="https://www.morgandetoi.fr/nouvelle-collection-tops-t-shirt-s/">
+Tops et T-shirts
+</a>
+</li>
+<li>
+<a href="https://www.morgandetoi.fr/nouvelle-collection-blouses-chemises-s/">
+Blouses et chemises
+</a>
+</li>
+<li>
+<a href="https://www.morgandetoi.fr/nouvelle-collection-pulls-gilets-s/">
+Pulls et Gilets
+</a>
+</li>
+<li>
+<a href="https://www.morgandetoi.fr/nouvelle-collection-vestes-manteaux-s/">
+Vestes et Manteaux
+</a>
+</li>
+<li>
+<a href="https://www.morgandetoi.fr/nouvelle-collection-pantalons-jeans/">
+Pantalons et Jeans
+</a>
+</li>
+<li>
+<a href="https://www.morgandetoi.fr/nouvelle-collection-sacs-accessoires-s/">
+Sacs et Accessoires
+</a>
+</li>
+<li>
+<a href="https://www.morgandetoi.fr/nouvelle-collection-chaussures-s/">
+Chaussures
+</a>
+</li>
+<li>
+<a href="https://www.morgandetoi.fr/nouvelle-collection-lingerie-s/">
+Lingerie
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="header-promo">
+</div>
+</div>
+</li>
+<li class=level-2-style-1 tc-data-cat-name="V&ecirc;tements" data-thumbnail="/on/demandware.static/-/Sites-Morgan_storefront/default/dw96fc51e6/burger-menu-h21/vetements_h21/BURGER_ALERTE_SHOPPING.jpg">
+<a class="has-sub-menu" href="https://www.morgandetoi.fr/vetements-femme-c_010000/">
+V&ecirc;tements
+</a>
+
+<div class="level-2">
+<div>
+<div class="level-2-left">
+<span class="level-2-title">V&ecirc;tements</span>
+<div class="level-2-col">
+<span class="level-2-subtitle">
+<a href="https://www.morgandetoi.fr/robes-femme-sc_010100/">
+Robes
+</a>
+</span>
+<ul>
+<li>
+<a href="https://www.morgandetoi.fr/robes-pull-femme-tp_010102/">
+Robes pull
+</a>
+</li>
+<li>
+<a href="https://www.morgandetoi.fr/robes-de-soiree-femme-tp_010107/">
+Robes de soir&eacute;e
+</a>
+</li>
+</ul>
+<span class="level-2-subtitle">
+<a href="https://www.morgandetoi.fr/tops-et-t-shirts-femme-sc_010200/">
+Tops et T-shirts
+</a>
+</span>
+<span class="level-2-subtitle">
+<a href="https://www.morgandetoi.fr/vestes-femme-sc_011000/">
+Vestes et blousons
+</a>
+</span>
+<span class="level-2-subtitle">
+<a href="https://www.morgandetoi.fr/chemises-et-blouses-femme-sc_011200/">
+Chemises et Blouses
+</a>
+</span>
+<span class="level-2-subtitle">
+<a href="https://www.morgandetoi.fr/combinaisons-femme-sc_010600/">
+Combinaisons
+</a>
+</span>
+<span class="level-2-subtitle">
+<a href="https://www.morgandetoi.fr/jeans-femme-sc_010900/">
+Jeans
+</a>
+</span>
+</div>
+<div class="level-2-col">
+<span class="level-2-subtitle">
+<a href="https://www.morgandetoi.fr/pulls-femme-sc_010300/">
+Pulls
+</a>
+</span>
+<ul>
+<li>
+<a href="https://www.morgandetoi.fr/pulls-cols-v-femme-tp_010302/">
+Pulls cols V
+</a>
+</li>
+<li>
+<a href="https://www.morgandetoi.fr/pulls-cols-roules-femme-tp_010303/">
+Pulls cols roul&eacute;s
+</a>
+</li>
+</ul>
+<span class="level-2-subtitle">
+<a href="https://www.morgandetoi.fr/manteaux-femme-sc_011100/">
+Manteaux
+</a>
+</span>
+<ul>
+<li>
+<a href="https://www.morgandetoi.fr/doudounes-femme-tp_011103/">
+Doudounes
+</a>
+</li>
+<li>
+<a href="https://www.morgandetoi.fr/autres-manteaux-femme-tp_011101/">
+Autres manteaux
+</a>
+</li>
+</ul>
+<span class="level-2-subtitle">
+<a href="https://www.morgandetoi.fr/pantalons-femme-sc_010700/">
+Pantalons
+</a>
+</span>
+<span class="level-2-subtitle">
+<a href="https://www.morgandetoi.fr/jupes-femme-sc_010500/">
+Jupes
+</a>
+</span>
+<span class="level-2-subtitle">
+<a href="https://www.morgandetoi.fr/shorts-femme-sc_010800/">
+Shorts
+</a>
+</span>
+</div>
+<div class="level-2-col">
+<span class="level-2-subtitle">
+<a href="https://www.morgandetoi.fr/gilets-femme-sc_010400/">
+Gilets
+</a>
+</span>
+<span class="level-2-subtitle">
+<a href="https://www.morgandetoi.fr/lingerie-femme-sc_011300/">
+Lingerie
+</a>
+</span>
+<span class="level-2-subtitle">
+<a href="https://www.morgandetoi.fr/iris-mittenaere-s/">
+<p><span style="color:null;">Iris x Morgan</span></p>
+</a>
+</span>
+<span class="level-2-subtitle">
+<a href="https://www.morgandetoi.fr/eco-responsable-s/">
+<p><span style="color:null;">Mode éco-responsable</span><span style="color:#c0392b;">&nbsp;<span style="font-size:12px;"></span></span></p>
+</a>
+</span>
+<span class="level-2-subtitle">
+<a href="https://www.morgandetoi.fr/top-ventes-s/">
+<p><span style="color:#E00019;">Top Ventes</span></p>
+</a>
+</span>
+<span class="level-2-subtitle">
+<a href="https://www.morgandetoi.fr/a-ne-pas-manquer-t/">
+<p><u>A ne pas manquer</u></p>
+</a>
+</span>
+</div>
+</div>
+<div class="level-2-col level-2-col-push level-2-right">
+<div class="content-asset">
+<p><a href="https://www.morgandetoi.fr/vetements-femme-c_010000/"><img alt="" src="https://www.morgandetoi.fr/on/demandware.static/-/Library-Sites-SharedLibraryMorgan/default/dw4178a67b/PUSH_ALERTE_SHOPPING_520%20.jpg" title="" /></a></p>
+&nbsp;
+<p><a href="https://www.morgandetoi.fr/look-mode-t/"><img alt="" src="https://www.morgandetoi.fr/on/demandware.static/-/Library-Sites-SharedLibraryMorgan/default/dw99264ec2/menu-nav/tendance/PUSH_CHIC_520%20.jpg" title="" /></a></p>
+</div>
+</div>
+<span class="btn-close-level-2"></span>
+</div>
+</div>
+<div class="level-2-menu2 burger">
+<div>
+<div class="backlist">
+<span class="return">
+Vêtements
+</span>
+<span class="seeall">
+<a href="https://www.morgandetoi.fr/vetements-femme-c_010000/">
+Voir tout
+</a>
+</span>
+</div>
+<div class="level-2-col level-2-left">
+<ul>
+<li>
+<div class="miniature">
+<picture>
+<source srcset="/on/demandware.static/-/Sites-Morgan_storefront/default/dw5a5527c6/burger-menu-h21/vetements_h21/M2T_ES_pastilles_cat_robes.jpg" media="(max-width: 991px)" />
+<img src="" />
+</picture>
+</div>
+<a href="https://www.morgandetoi.fr/robes-femme-sc_010100/">
+Robes
+</a>
+<div class="level-3-menu-2">
+<div class="backlist">
+<span class="return-3">
+Robes
+</span>
+<span class="seeall-3">
+<a href="https://www.morgandetoi.fr/robes-femme-sc_010100/">
+Voir tout
+</a>
+</span>
+</div>
+<div class="content">
+<ul>
+<li>
+<a href="https://www.morgandetoi.fr/robes-pull-femme-tp_010102/">
+Robes pull
+</a>
+</li>
+<li>
+<a href="https://www.morgandetoi.fr/robes-de-soiree-femme-tp_010107/">
+Robes de soir&eacute;e
+</a>
+</li>
+</ul>
+<div class="header-promo">
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="miniature">
+<picture>
+<source srcset="/on/demandware.static/-/Sites-Morgan_storefront/default/dw71bc9c5e/burger-menu-h21/vetements_h21/M2T_ES_pastilles_cat_tops.jpg" media="(max-width: 991px)" />
+<img src="" />
+</picture>
+</div>
+<a href="https://www.morgandetoi.fr/tops-et-t-shirts-femme-sc_010200/">
+Tops et T-shirts
+</a>
+</li>
+<li>
+<div class="miniature">
+<picture>
+<source srcset="/on/demandware.static/-/Sites-Morgan_storefront/default/dwc1f92fad/burger-menu-h21/vetements_h21/M2T_ES_pastilles_cat_vestes.jpg" media="(max-width: 991px)" />
+<img src="" />
+</picture>
+</div>
+<a href="https://www.morgandetoi.fr/vestes-femme-sc_011000/">
+Vestes et blousons
+</a>
+</li>
+<li>
+<div class="miniature">
+<picture>
+<source srcset="/on/demandware.static/-/Sites-Morgan_storefront/default/dwd42841ce/burger-menu-h21/vetements_h21/M2T_ES_pastilles_cat_blouses.jpg" media="(max-width: 991px)" />
+<img src="" />
+</picture>
+</div>
+<a href="https://www.morgandetoi.fr/chemises-et-blouses-femme-sc_011200/">
+Chemises et Blouses
+</a>
+</li>
+<li>
+<div class="miniature">
+<picture>
+<source srcset="/on/demandware.static/-/Sites-Morgan_storefront/default/dwfeab3ade/burger-menu-h21/vetements_h21/M2T_ES_pastilles_cat_pulls.jpg" media="(max-width: 991px)" />
+<img src="" />
+</picture>
+</div>
+<a href="https://www.morgandetoi.fr/pulls-femme-sc_010300/">
+Pulls
+</a>
+<div class="level-3-menu-2">
+<div class="backlist">
+<span class="return-3">
+Pulls
+</span>
+<span class="seeall-3">
+<a href="https://www.morgandetoi.fr/pulls-femme-sc_010300/">
+Voir tout
+</a>
+</span>
+</div>
+<div class="content">
+<ul>
+<li>
+ <a href="https://www.morgandetoi.fr/pulls-cols-v-femme-tp_010302/">
+Pulls cols V
+</a>
+</li>
+<li>
+<a href="https://www.morgandetoi.fr/pulls-cols-roules-femme-tp_010303/">
+Pulls cols roul&eacute;s
+</a>
+</li>
+</ul>
+<div class="header-promo">
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="miniature">
+<picture>
+<source srcset="/on/demandware.static/-/Sites-Morgan_storefront/default/dw3480978f/burger-menu-h21/vetements_h21/M2T_ES_pastilles_cat_combi.jpg" media="(max-width: 991px)" />
+<img src="" />
+</picture>
+</div>
+<a href="https://www.morgandetoi.fr/combinaisons-femme-sc_010600/">
+Combinaisons
+</a>
+</li>
+<li>
+<div class="miniature">
+<picture>
+<source srcset="/on/demandware.static/-/Sites-Morgan_storefront/default/dw2c808619/burger-menu-h21/vetements_h21/M2T_ES_pastilles_cat_manteaux.jpg" media="(max-width: 991px)" />
+<img src="" />
+</picture>
+</div>
+<a href="https://www.morgandetoi.fr/manteaux-femme-sc_011100/">
+Manteaux
+</a>
+<div class="level-3-menu-2">
+<div class="backlist">
+<span class="return-3">
+Manteaux
+</span>
+<span class="seeall-3">
+<a href="https://www.morgandetoi.fr/manteaux-femme-sc_011100/">
+Voir tout
+</a>
+</span>
+</div>
+<div class="content">
+<ul>
+<li>
+<a href="https://www.morgandetoi.fr/doudounes-femme-tp_011103/">
+Doudounes
+</a>
+</li>
+<li>
+<a href="https://www.morgandetoi.fr/autres-manteaux-femme-tp_011101/">
+Autres manteaux
+</a>
+</li>
+</ul>
+<div class="header-promo">
+</div>
+</div>
+</div>
+</li>
+<li>
+<div class="miniature">
+<picture>
+<source srcset="/on/demandware.static/-/Sites-Morgan_storefront/default/dw6b6a09e9/burger-menu-h21/vetements_h21/M2T_ES_pastilles_cat_pantalons.jpg" media="(max-width: 991px)" />
+<img src="" />
+</picture>
+</div>
+<a href="https://www.morgandetoi.fr/pantalons-femme-sc_010700/">
+Pantalons
+</a>
+</li>
+<li>
+<div class="miniature">
+<picture>
+<source srcset="/on/demandware.static/-/Sites-Morgan_storefront/default/dw387bc3de/burger-menu-h21/M2T_ES_pastilles_cat_jupes.jpg" media="(max-width: 991px)" />
+<img src="" />
+</picture>
+</div>
+<a href="https://www.morgandetoi.fr/jupes-femme-sc_010500/">
+Jupes
+</a>
+</li>
+<li>
+<div class="miniature">
+<picture>
+<source srcset="/on/demandware.static/-/Sites-Morgan_storefront/default/dwdb01a21f/burger-menu-h21/vetements_h21/M2T_ES_pastilles_cat_shorts.jpg" media="(max-width: 991px)" />
+<img src="" />
+</picture>
+</div>
+<a href="https://www.morgandetoi.fr/shorts-femme-sc_010800/">
+Shorts
+</a>
+</li>
+<li>
+<div class="miniature">
+<picture>
+<source srcset="/on/demandware.static/-/Sites-Morgan_storefront/default/dwbe1c27b2/burger-menu-h21/vetements_h21/M2T_ES_pastilles_cat_gilets.jpg" media="(max-width: 991px)" />
+<img src="" />
+</picture>
+</div>
+<a href="https://www.morgandetoi.fr/gilets-femme-sc_010400/">
+Gilets
+</a>
+</li>
+<li>
+<div class="miniature">
+<picture>
+<source srcset="/on/demandware.static/-/Sites-Morgan_storefront/default/dwe9a4de79/burger-menu-h21/vetements_h21/M2T_ES_pastilles_cat_lingerie.jpg" media="(max-width: 991px)" />
+<img src="" />
+</picture>
+</div>
+<a href="https://www.morgandetoi.fr/lingerie-femme-sc_011300/">
+Lingerie
+</a>
+</li>
+<li>
+<div class="miniature">
+<picture>
+<source srcset="/on/demandware.static/-/Sites-Morgan_storefront/default/dwdd0f3501/burger-menu-h21/vetements_h21/M2T_ES_pastilles_cat_jeans.jpg" media="(max-width: 991px)" />
+<img src="" />
+</picture>
+</div>
+<a href="https://www.morgandetoi.fr/jeans-femme-sc_010900/">
+Jeans
+</a>
+</li>
+<li>
+<div class="miniature">
+<picture>
+<source srcset="/on/demandware.static/-/Sites-Morgan_storefront/default/dw36472588/2021burger-menu/iris/iris_pastille.png" media="(max-width: 991px)" />
+<img src="" />
+</picture>
+</div>
+<a href="https://www.morgandetoi.fr/iris-mittenaere-s/">
+<p><span style="color:null;">Iris x Morgan</span></p>
+</a>
+</li>
+<li>
+<div class="miniature">
+<picture>
+<source srcset="/on/demandware.static/-/Sites-Morgan_storefront/default/dw97a8a5be/2021burger-menu/vetements/PASTILLE_ECO.jpg" media="(max-width: 991px)" />
+<img src="" />
+</picture>
+</div>
+<a href="https://www.morgandetoi.fr/eco-responsable-s/">
+<p><span style="color:null;">Mode éco-responsable</span><span style="color:#c0392b;">&nbsp;<span style="font-size:12px;"></span></span></p>
+</a>
+</li>
+<li>
+<div class="miniature">
+<picture>
+<source srcset="/on/demandware.static/-/Sites-Morgan_storefront/default/dw56c1a625/2021burger-menu/vetements/M2T_Pastilles_burger_bestseller.jpg" media="(max-width: 991px)" />
+<img src="" />
+</picture>
+</div>
+<a href="https://www.morgandetoi.fr/top-ventes-s/">
+<p><span style="color:#E00019;">Top Ventes</span></p>
+</a>
+</li>
+<li>
+<a href="https://www.morgandetoi.fr/a-ne-pas-manquer-t/">
+<p><u>A ne pas manquer</u></p>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="header-promo">
+</div>
+</div>
+</li>
+<li class=level-2-style-2 tc-data-cat-name="Accessoires" data-thumbnail="/on/demandware.static/-/Sites-Morgan_storefront/default/dw48fde141/burger-menu-h21/accessoires_h21/BURGER_SV.jpg">
+<a class="has-sub-menu" href="https://www.morgandetoi.fr/accessoires-femme-c_020000/">
+Accessoires
+</a>
+<div class="level-2">
+<div>
+<div class="level-2-left">
+<div class="level-2-col">
+<span class="level-2-subtitle">
+<a href="https://www.morgandetoi.fr/chaussures-femme-sc_020200/">
+Chaussures
+</a>
+</span>
+<span class="level-2-subtitle">
+<a href="https://www.morgandetoi.fr/maroquinerie-femme-sc_020100/">
+Maroquinerie
+</a>
+</span>
+<span class="level-2-subtitle">
+<a href="https://www.morgandetoi.fr/ceintures-femme-sc_020300/">
+ Ceintures
+</a>
+</span>
+<span class="level-2-subtitle">
+<a href="https://www.morgandetoi.fr/parfums-femme-sc_020800/">
+Parfums
+</a>
+</span>
+</div>
+<div class="level-2-col">
+<span class="level-2-subtitle">
+<a href="https://www.morgandetoi.fr/foulards-femme-sc_020600/">
+Foulards
+</a>
+</span>
+<span class="level-2-subtitle">
+<a href="https://www.morgandetoi.fr/autres-accessoires-femme-sc_021400/">
+Autres accessoires
+</a>
+</span>
+</div>
+</div>
+<div class="level-2-col level-2-col-push level-2-right">
+<div class="content-asset">
+<p><a href="https://www.morgandetoi.fr/accessoires-femme-c_020000/"><img alt="" src="https://www.morgandetoi.fr/on/demandware.static/-/Library-Sites-SharedLibraryMorgan/default/dwfaea8ec0/menu-nav/tendance/PUSH_SV_520.jpg" title="" /></a></p>
+</div>
+</div>
+<span class="btn-close-level-2"></span>
+</div>
+</div>
+<div class="level-2-menu2 burger">
+<div>
+<div class="backlist">
+<span class="return">
+Accessoires
+</span>
+<span class="seeall">
+<a href="https://www.morgandetoi.fr/accessoires-femme-c_020000/">
+Voir tout
+</a>
+</span>
+</div>
+<div class="level-2-col level-2-left">
+<ul>
+<li>
+<div class="miniature">
+<picture>
+<source srcset="/on/demandware.static/-/Sites-Morgan_storefront/default/dwa78705cf/burger-menu-h21/accessoires_h21/M2T_ES_pastilles_cat_chaussures.jpg" media="(max-width: 991px)" />
+<img src="" />
+</picture>
+</div>
+<a href="https://www.morgandetoi.fr/chaussures-femme-sc_020200/">
+Chaussures
+</a>
+</li>
+<li>
+<div class="miniature">
+<picture>
+<source srcset="/on/demandware.static/-/Sites-Morgan_storefront/default/dwd3800bb7/burger-menu-h21/accessoires_h21/M2T_ES_pastilles_cat_maro.jpg" media="(max-width: 991px)" />
+<img src="" />
+</picture>
+</div>
+<a href="https://www.morgandetoi.fr/maroquinerie-femme-sc_020100/">
+Maroquinerie
+</a>
+</li>
+<li>
+<div class="miniature">
+<picture>
+<source srcset="/on/demandware.static/-/Sites-Morgan_storefront/default/dw917b26e1/burger-menu-h21/accessoires_h21/M2T_ES_pastilles_cat_ceintures.jpg" media="(max-width: 991px)" />
+<img src="" />
+</picture>
+</div>
+<a href="https://www.morgandetoi.fr/ceintures-femme-sc_020300/">
+Ceintures
+</a>
+</li>
+<li>
+<div class="miniature">
+<picture>
+<source srcset="/on/demandware.static/-/Sites-Morgan_storefront/default/dw62c50947/burger-menu-h21/accessoires_h21/M2T_ES_pastilles_cat_parfums.jpg" media="(max-width: 991px)" />
+<img src="" />
+</picture>
+</div>
+<a href="https://www.morgandetoi.fr/parfums-femme-sc_020800/">
+Parfums
+</a>
+</li>
+<li>
+<div class="miniature">
+<picture>
+<source srcset="/on/demandware.static/-/Sites-Morgan_storefront/default/dw9d0b71d3/burger-menu-h21/accessoires_h21/M2T_ES_pastilles_cat_foulards.jpg" media="(max-width: 991px)" />
+<img src="" />
+</picture>
+</div>
+<a href="https://www.morgandetoi.fr/foulards-femme-sc_020600/">
+Foulards
+</a>
+</li>
+<li>
+<div class="miniature">
+<picture>
+<source srcset="/on/demandware.static/-/Sites-Morgan_storefront/default/dwc496b737/burger-menu-h21/accessoires_h21/M2T_ES_pastilles_cat_autres_acces.jpg" media="(max-width: 991px)" />
+<img src="" />
+</picture>
+</div>
+<a href="https://www.morgandetoi.fr/autres-accessoires-femme-sc_021400/">
+Autres accessoires
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="header-promo">
+</div>
+</div>
+</li>
+<li class=level-2-style-2 tc-data-cat-name="La Marque" data-thumbnail="/on/demandware.static/-/Sites-Morgan_storefront/default/dwab155858/2021burger-menu/selections/BURGER_BRAND.jpg">
+<a class="has-sub-menu" href="https://www.morgandetoi.fr/la-marque">
+La Marque
+</a>
+<div class="level-2">
+<div>
+<div class="level-2-left">
+<span class="level-2-title">Tendances</span>
+<div class="level-2-col">
+<span class="level-2-subtitle">
+<a href="https://www.morgandetoi.fr/la-marque">
+La marque
+</a>
+</span>
+<span class="level-2-subtitle">
+<a href="https://www.morgandetoi.fr/lookbook-ah-21">
+Lookbook
+</a>
+</span>
+<span class="level-2-subtitle">
+<a href="https://www.morgandetoi.fr/iris-mittenaere-s/">
+Iris X Morgan
+</a>
+</span>
+<span class="level-2-subtitle">
+<a href="https://www.morgandetoi.fr/programme-fidelite">
+Programme Fidelit&eacute;
+</a>
+</span>
+<span class="level-2-subtitle">
+<a href="https://www.morgandetoi.fr/nos-services-en-boutique">
+Nos services en boutique
+</a>
+</span>
+<span class="level-2-subtitle">
+<a href="https://www.morgandetoi.fr/eco-responsable">
+Engagement &eacute;co-responsable
+</a>
+</span>
+<span class="level-2-subtitle">
+<a href="https://morgan.studentbeans.com/fr">
+Offre Etudiante
+</a>
+</span>
+</div>
+<div class="level-2-col">
+<span class="level-2-subtitle">
+<a href="https://www.morgandetoi.fr/la-marque">
+Tendances
+</a>
+</span>
+<ul class="level-3">
+<li>
+<a href="https://www.morgandetoi.fr/look-mode-t/">
+<p>Chic en toutes circonstances<span style="color:#D44068;"><sup> NEW</sup></span></p>
+</a>
+</li>
+<li>
+<a href="https://www.morgandetoi.fr/tendance-denim-t/">
+All in denim
+</a>
+</li>
+<li>
+<a href="https://www.morgandetoi.fr/tailleurs-t/">
+<p>Ensembles tailleurs<span style="color:#D44068;"><sup> NEW</sup></span></p>
+</a>
+</li>
+<li>
+<a href="https://www.morgandetoi.fr/les-iconiques-cuir-t/">
+<p>Les iconiques simili-cuir</p>
+</a>
+</li>
+<li>
+<a href="https://www.morgandetoi.fr/la-maille-s/">
+Mailles d&#39;amour
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="level-2-col level-2-col-push level-2-right">
+<div class="content-asset">
+<p><a href="https://www.morgandetoi.fr/lookbook-ah-21"><img alt="" src="https://www.morgandetoi.fr/on/demandware.static/-/Library-Sites-SharedLibraryMorgan/default/dw6a6c2e79/menu-nav/PUSHNAV_LOOKBOOK_520.jpg" title="" /></a></p>
+</div>
+</div>
+<span class="btn-close-level-2"></span>
+</div>
+</div>
+<div class="level-2-menu2 burger">
+<div>
+<div class="backlist">
+<span class="return">
+La Marque
+</span>
+<span class="seeall">
+<a href="https://www.morgandetoi.fr/la-marque">
+Voir tout
+</a>
+</span>
+</div>
+<div class="level-2-col level-2-left">
+<ul>
+<li>
+<a href="https://www.morgandetoi.fr/la-marque">
+La marque
+</a>
+</li>
+<li>
+<a href="https://www.morgandetoi.fr/lookbook-ah-21">
+Lookbook
+</a>
+</li>
+<li>
+<a href="https://www.morgandetoi.fr/iris-mittenaere-s/">
+Iris X Morgan
+</a>
+</li>
+<li>
+<a href="https://www.morgandetoi.fr/programme-fidelite">
+Programme Fidelit&eacute;
+</a>
+</li>
+<li>
+<a href="https://www.morgandetoi.fr/nos-services-en-boutique">
+Nos services en boutique
+</a>
+</li>
+<li>
+<a href="https://www.morgandetoi.fr/eco-responsable">
+Engagement &eacute;co-responsable
+</a>
+</li>
+<li>
+<a href="https://morgan.studentbeans.com/fr">
+Offre Etudiante
+</a>
+</li>
+<li>
+<a href="https://www.morgandetoi.fr/la-marque">
+Tendances
+</a>
+<div class="level-3-menu-2">
+<div class="backlist">
+<span class="return-3">
+Tendances
+</span>
+<span class="seeall-3">
+<a href="https://www.morgandetoi.fr/la-marque">
+Voir tout
+</a>
+</span>
+</div>
+<div class="content">
+<ul>
+<li>
+<a href="https://www.morgandetoi.fr/look-mode-t/">
+<p>Chic en toutes circonstances<span style="color:#D44068;"><sup> NEW</sup></span></p>
+</a>
+</li>
+<li>
+<a href="https://www.morgandetoi.fr/tendance-denim-t/">
+All in denim
+</a>
+</li>
+<li>
+<a href="https://www.morgandetoi.fr/tailleurs-t/">
+<p>Ensembles tailleurs<span style="color:#D44068;"><sup> NEW</sup></span></p>
+</a>
+</li>
+<li>
+<a href="https://www.morgandetoi.fr/les-iconiques-cuir-t/">
+<p>Les iconiques simili-cuir</p>
+</a>
+</li>
+<li>
+<a href="https://www.morgandetoi.fr/la-maille-s/">
+Mailles d&#39;amour
+</a>
+</li>
+</ul>
+<div class="header-promo">
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="header-promo">
+</div>
+</div>
+</li>
+<li tc-data-cat-name="Prix irr&eacute;sistibles" data-thumbnail="/on/demandware.static/-/Sites-Morgan_storefront/default/dwdde4ea20/2021burger-menu/operations-commerciales/BURGER_PRIX_IRRESISTIBLES.jpg">
+<a class="has-sub-menu" href="https://www.morgandetoi.fr/petits-prix-s/">
+<p><span style="color:#fb004d;">Prix Irrésistibles</span></p>
+</a>
+<div class="level-2-menu2 burger">
+<div>
+<div class="backlist">
+<span class="return">
+Prix irrésistibles
+</span>
+<span class="seeall">
+<a href="https://www.morgandetoi.fr/petits-prix-s/">
+Voir tout
+</a>
+</span>
+</div>
+<div class="level-2-col level-2-left">
+<ul>
+<li>
+<a href="https://www.morgandetoi.fr/petits-prix-robes-combinaisons-s/">
+Robes &amp; Combinaisons
+</a>
+</li>
+<li>
+<a href="https://www.morgandetoi.fr/petits-prix-jupes-shorts-s/">
+Jupes &amp; shorts
+</a>
+</li>
+<li>
+<a href="https://www.morgandetoi.fr/petits-prix-tops-t-shirts-s/">
+Tops &amp; T-shirts
+</a>
+</li>
+<li>
+<a href="https://www.morgandetoi.fr/petits-prix-blouses-chemises-s/">
+Blouses et Chemises
+</a>
+</li>
+<li>
+<a href="https://www.morgandetoi.fr/petits-prix-pantalons-jeans-s/">
+Pantalons et Jeans
+</a>
+</li>
+<li>
+<a href="https://www.morgandetoi.fr/petits-prix-pulls-gilets-s/">
+Pulls et Gilets
+</a>
+</li>
+<li>
+<a href="https://www.morgandetoi.fr/petits-prix-vestes-manteaux-s/">
+Vestes &amp; Manteaux
+</a>
+</li>
+<li>
+<a href="https://www.morgandetoi.fr/petits-prix-accessoires-s/">
+Accessoires
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="header-promo">
+</div>
+</div>
+</li>
+</ul>
+<div class="mobile-menu-link hide-desktop">
+<ul>
+<li>
+<a href="https://www.morgandetoi.fr/magasins/"><span class="icon icon-marker"></span> Boutiques</a>
+</li>
+<li>
+<p><a href="https://www.morgandetoi.fr/programme-fidelite">Fidélité</a></p>
+</li>
+<li>
+<li class="footer-links-no-auth"><a href=""><span class="icon icon-profile"></span> Compte</a>
+</li>
+<li>
+<a href="https://www.morgandetoi.fr/panier/"><span class="icon icon-bag"></span> Panier</a>
+</li>
+</ul>
+</div>
+<div class="header-promo">
+</div>
+<ul class="menu-utility-user-info">
+<div class="user-info user-info-no-authenticated">
+<div class="user-account" title="">
+<a href="https://www.morgandetoi.fr/mon-espace-personnel/">
+<span class="icon profile"></span>
+<span class="user-account-label-1">Mon Compte</span>
+<span class="user-account-label-2">Se connecter</span>
+</a>
+</div>
+</div>
+<div class="utility-user-overlay"></div>
+</ul>
+<script>
+	window.SessionInformations = window.SessionInformations || {};
+	
+	window.SessionInformations.user = {
+		isLogged: false,
+		wishlistItems: [],
+		preferedStore: '',
+	};
+	
+	window.SessionInformations.device = 'desktop' ;
+</script>
+</div>
+</div>
+</div>
+<div class="layer-nav-toggle"></div>
+</nav>
+</div>
+</header>
+<span class="btn-open-search-responsive js-btn-open-search">
+<span>Saisissez votre recherche ici</span>
+</span>
+<div class="search-form-container">
+<button class="btn-close-search js-btn-close-search"></button>
+<div class="search-form-wrapper" suggest="true">
+<span class="search-callout-message">
+Bonjour, que recherchez-vous ?
+</span>
+<form role="search" action="/recherche/" method="get" name="simpleSearch" class="search-form">
+<fieldset>
+<label class="visually-hidden" for="q">global.searchcatalog</label>
+<span class="icon-search"></span>
+<input type="text" id="q" name="q" value="" placeholder="Rechercher" />
+<input type="hidden" name="lang" value="fr" />
+<button type="submit" class="simple-search-btn">OK</button>
+</fieldset>
+</form>
+<div class="last-search-terms">
+<ul class="last-search-terms-list">
+<li class="list-item label-item">
+<span>Vos derni&egrave;res recherches</span>
+<div class="delete-history">
+<span>Effacer</span>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="slot-global-nohits">
+<div class="home-bloc-html">
+<div class="nohits-keyword-tendance"><span>Nous vous recommandons</span>
+<div class="nohits-keyword-container">
+<a class="keyword-item" href="https://www.morgandetoi.fr/vetements-femme-c_010000/"><span style="color:#E50F3C;">-30% dès 2 articles achetés*</span></a>
+<a class="keyword-item" href="https://www.morgandetoi.fr/tailleurs-t/">Les ensembles</a>
+<a class="keyword-item" href="https://www.morgandetoi.fr/manteaux-femme-sc_011100/">Manteaux</a>
+<a class="keyword-item" href="https://www.morgandetoi.fr/pulls-femme-sc_010300/">Pulls</a>
+<a class="keyword-item" href="https://www.morgandetoi.fr/gilets-femme-sc_010400/">Gilets</a>
+<a class="keyword-item" href="https://www.morgandetoi.fr/lingerie-femme-sc_011300/">Lingerie</a>
+<a class="keyword-item" href="https://www.morgandetoi.fr/pantalons-femme-sc_010700/">Pantalons</a></div>
+</div>
+<div class="nohits-slider-category  init-swiper" data-loop="false" data-slidedesk="4" data-slidemob="2.5" data-spacedesk="30" data-spacemob="15"><span>Si vous ne trouvez pas ce que vous cherchez, laissez-nous vous aider !</span>
+<div class="nohits-slider-container swiper-container">
+<div class="swiper-wrapper">
+<a class="swiper-slide nohits-slide" href="https://www.morgandetoi.fr/vetements-femme-c_010000/" title="title"><img alt="" src="https://www.morgandetoi.fr/on/demandware.static/-/Library-Sites-SharedLibraryMorgan/default/dw58fb5b38/PUSH_ALERTE_SHOPPING_260.jpg" title="" /></a
+>
+<a class="swiper-slide nohits-slide" href="https://www.morgandetoi.fr/nouveautes-s/" title="title"><img alt="" src="https://www.morgandetoi.fr/on/demandware.static/-/Library-Sites-SharedLibraryMorgan/default/dw713b76c1/menu-nav/FR_NOUVEAUTES.jpg" title="" /></a
+>
+<a class="swiper-slide nohits-slide" href="https://www.morgandetoi.fr/robes-femme-sc_010100/" title="title"><img alt="" src="https://www.morgandetoi.fr/on/demandware.static/-/Library-Sites-SharedLibraryMorgan/default/dw4986a4a0/menu-nav/FR_ROBES.jpg" title="" /></a>
+<a class="swiper-slide nohits-slide" href="https://www.morgandetoi.fr/jupes-femme-sc_010500/" title="title"><img alt="" src="https://www.morgandetoi.fr/on/demandware.static/-/Library-Sites-SharedLibraryMorgan/default/dw7d597faf/menu-nav/FR_JUPES.jpg" title="" /></a>
+<a class="swiper-slide nohits-slide" href="https://www.morgandetoi.fr/shorts-femme-sc_010800/" title="title"><img alt="" src="https://www.morgandetoi.fr/on/demandware.static/-/Library-Sites-SharedLibraryMorgan/default/dw28201763/menu-nav/FR_SHORTS.jpg" title="" /></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="main" role="main" class="full-width clearfix">
+<div id="browser-check">
+<noscript>
+<div class="browser-compatibility-alert">
+<i class="fa fa-exclamation-triangle fa-2x pull-left"></i>
+<span class="browser-error">global.browsertoolscheck.javascript</span>
+</div>
+</noscript>
+</div>
+<div id="primary" class="primary-content">
+
+<div class="breadcrumb-container breadcrumb-top ">
+<div class="breadcrumb">
+<a class="btn-back">
+<span>RETOUR</span>
+</a>
+<ul>
+<li>
+<a href="https://www.morgandetoi.fr/">
+Morgan
+</a>
+</li>
+<li>
+<a href="https://www.morgandetoi.fr/charte-confidentialite">
+Charte de confidentialité des données à caractère personnel
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="page-structure-container">
+<div class="wrapper-page-structure">
+<h1 class="page-title">
+Charte de confidentialit&eacute; des donn&eacute;es &agrave; caract&egrave;re personnel
+</h1>
+
+<div class="menu-container">
+<div class="wrapper-menu">
+<div class="js-accordion-scope">
+
+<div class="js-accordion-container ">
+
+<h3 class="js-accordion-header">
+<a href="/conditions-generales-vente">
+Conditions g&eacute;n&eacute;rales des ventes
+</a>
+</h3>
+<div class="js-accordion-panel">
+
+<a href="/conditions-generales-vente">
+</a>
+
+<a href="/conditions-generales-vente">
+1. Objet
+</a>
+
+<a href="/conditions-generales-vente">
+2. Produits
+</a>
+
+<a href="/conditions-generales-vente">
+3. Consultation du stock disponible en magasin
+</a>
+
+<a href="/conditions-generales-vente">
+4. Prix
+</a>
+
+<a href="/conditions-generales-vente">
+5. Passation de commande
+</a>
+
+<a href="/conditions-generales-vente">
+6. Identification lors d&rsquo;une passation de commande sur le Site
+</a>
+
+<a href="/conditions-generales-vente">
+7. Newsletters
+</a>
+
+<a href="/conditions-generales-vente">
+8. Acc&egrave;s au programme de fid&eacute;lit&eacute; Morgan
+</a>
+
+<a href="/conditions-generales-vente">
+9. Livraison
+</a>
+
+<a href="/conditions-generales-vente">
+10. Modalit&eacute;s de paiement
+</a>
+
+<a href="/conditions-generales-vente">
+11. Clause de r&eacute;serve de propri&eacute;t&eacute; et transfert de risques
+</a>
+
+<a href="/conditions-generales-vente">
+12. R&eacute;tractation et retour des produits
+</a>
+
+<a href="/conditions-generales-vente">
+13. Garanties
+</a>
+
+<a href="/conditions-generales-vente">
+14. Responsabilit&eacute;
+</a>
+
+<a href="/conditions-generales-vente">
+15. Environnement &ndash; Eco-organismes
+</a>
+
+<a href="/conditions-generales-vente">
+16. Charte de confidentialit&eacute; des donn&eacute;es &agrave; caract&egrave;re personnel et politique relative aux cookies
+</a>
+
+<a href="/conditions-generales-vente">
+17. Propri&eacute;t&eacute; intellectuelle
+</a>
+
+<a href="/conditions-generales-vente">
+18. Int&eacute;gralit&eacute; du contrat
+</a>
+
+<a href="/conditions-generales-vente">
+19. Droit applicable
+</a>
+
+<a href="/conditions-generales-vente">
+20. Litiges
+</a>
+</div>
+</div>
+<div class="js-accordion-container ">
+
+<h3 class="js-accordion-header">
+<a href="/conditions-generales-espace-client">
+Conditions G&eacute;n&eacute;rales d&#39;Utilisation de l&#39;Espace Client
+</a>
+</h3>
+<div class="js-accordion-panel">
+
+<a href="/conditions-generales-espace-client">
+1. Objet
+</a>
+
+<a href="/conditions-generales-espace-client">
+2. D&eacute;finitions
+</a>
+
+<a href="/conditions-generales-espace-client">
+3. Dur&eacute;e
+</a>
+
+<a href="/conditions-generales-espace-client">
+4. Opposabilit&eacute;
+</a>
+
+<a href="/conditions-generales-espace-client">
+5. Inscription &agrave; l&#39;Espace Client
+</a>
+
+<a href="/conditions-generales-espace-client">
+6. Acc&egrave;s et Usage
+</a>
+
+<a href="/conditions-generales-espace-client">
+7. Programme de Fid&eacute;lit&eacute;
+</a>
+
+<a href="/conditions-generales-espace-client">
+8. Identifiants
+</a>
+
+<a href="/conditions-generales-espace-client">
+9. Cl&ocirc;ture de l&#39;Espace Client
+</a>
+
+<a href="/conditions-generales-espace-client">
+10. Convention de Preuve
+</a>
+
+<a href="/conditions-generales-espace-client">
+11. Donn&eacute;es &agrave; Caract&egrave;re personnel et Cookies
+</a>
+
+<a href="/conditions-generales-espace-client">
+12. Loi applicable et Juridiction comp&eacute;tente
+</a>
+</div>
+</div>
+<div class="js-accordion-container ">
+
+<h3 class="js-accordion-header">
+<a href="/conditions-generales-utilisation">
+Conditions g&eacute;n&eacute;rales d&#39;utilisation du programme de fid&eacute;lit&eacute; Morgan
+</a>
+</h3>
+<div class="js-accordion-panel">
+
+<a href="/conditions-generales-utilisation">
+</a>
+
+<a href="/conditions-generales-utilisation">
+1. Conditions d&#39;acc&egrave;s au programme de fid&eacute;lit&eacute; MORGAN
+</a>
+
+<a href="/conditions-generales-utilisation">
+2. Avantages li&eacute;s au Programme
+</a>
+
+<a href="/conditions-generales-utilisation">
+3. Modalit&eacute;s d&#39;&eacute;mission des Ch&egrave;ques fid&eacute;lit&eacute;
+</a>
+
+<a href="/conditions-generales-utilisation">
+4. Perte, vol et utilisation frauduleuse
+</a>
+
+<a href="/conditions-generales-utilisation">
+5. Responsabilit&eacute;
+</a>
+
+<a href="/conditions-generales-utilisation">
+6. Charte de confidentialit&eacute; des donn&eacute;es &agrave; caract&egrave;re personnel et politique relative aux cookies
+</a>
+</div>
+</div>
+<div class="js-accordion-container js-accordion-active">
+
+<h3 class="js-accordion-header">
+<span>Charte de confidentialit&eacute; des donn&eacute;es &agrave; caract&egrave;re personnel</span>
+</h3>
+<div class="js-accordion-panel">
+
+<a href="#charte-intro">
+CHARTE DE CONFIDENTIALITE DES DONNEES A CARACTERE PERSONNEL
+</a>
+
+<a href="#charte-application">
+1. Champ d&#39;application de la charte
+</a>
+
+<a href="#charte-donnees">
+2. Donn&eacute;es trait&eacute;es
+</a>
+
+<a href="#charte-source-collecte">
+3. Sources de collecte des donn&eacute;es
+</a>
+
+<a href="#charte-finalite-fondements">
+4. Finalit&eacute;s et fondements l&eacute;gaux des traitements des Donn&eacute;es
+</a>
+
+<a href="#charte-duree-conservation">
+5. Dur&eacute;e de conservation
+</a>
+
+<a href="#charte-destinataire">
+6. Destinataires des donn&eacute;es
+</a>
+
+<a href="#charte-transfert-horsUE">
+7. Transferts de Donn&eacute;es hors de l&rsquo;Union europ&eacute;enne
+</a>
+
+<a href="#charte-droits-donnes-clients">
+8. Droit des Clients/Prospects
+</a>
+
+<a href="#charte-securite-donnees">
+9. S&eacute;curit&eacute; et confidentialit&eacute; des Donn&eacute;es
+</a>
+
+<a href="#charte-violation-donnees">
+10. Violation de Donn&eacute;es
+</a>
+
+<a href="#charte-delegue">
+11. D&eacute;l&eacute;gu&eacute; &agrave; la protection des donn&eacute;es
+</a>
+
+<a href="#chartes-cookies-maj2021">
+12. Cookies et autres traceurs
+</a>
+
+<a href="#charte-modification">
+13. Modification et mise &agrave; jour de la Charte
+</a>
+</div>
+</div>
+<div class="js-accordion-container ">
+
+<h3 class="js-accordion-header">
+<a href="/politique-cookies">
+Politique cookies et autres traceurs
+</a>
+</h3>
+<div class="js-accordion-panel">
+
+<a href="/politique-cookies">
+1.OBJET ET PORTEE
+</a>
+
+<a href="/politique-cookies">
+2.QU&rsquo;EST-CE QU&rsquo;UN COOKIE ?
+</a>
+
+<a href="/politique-cookies">
+3.DONNEES A CARACTERE PERSONNEL RECUEILLIES
+</a>
+
+<a href="/politique-cookies">
+4.DESTINATAIRES DES DONNEES
+</a>
+
+<a href="/politique-cookies">
+5.DUREE DE CONSERVATION
+</a>
+
+<a href="/politique-cookies">
+6.CONSENTEMENT
+</a>
+
+<a href="/politique-cookies">
+7.COOKIES TIERS
+</a>
+
+<a href="/politique-cookies">
+8.NOUS CONTACTER
+</a>
+
+<a href="/politique-cookies">
+9.REVISION
+</a>
+</div>
+</div>
+<div class="js-accordion-container ">
+
+<h3 class="js-accordion-header">
+<a href="/mentions-legales">
+Mentions l&eacute;gales
+</a>
+</h3>
+<div class="js-accordion-panel">
+
+<a href="/mentions-legales">
+Editeur et responsable de publication
+</a>
+
+<a href="/mentions-legales">
+D&eacute;finition
+</a>
+
+<a href="/mentions-legales">
+Droit de propri&eacute;t&eacute; intellectuelle
+</a>
+
+<a href="/mentions-legales">
+Charte de confidentialit&eacute; des donn&eacute;es &agrave; caract&egrave;re personnel et politique relative aux cookies
+</a>
+
+<a href="/mentions-legales">
+Paiement s&eacute;curis&eacute;
+</a>
+
+<a href="/mentions-legales">
+H&eacute;bergeur
+</a>
+
+<a href="/mentions-legales">
+Cr&eacute;dits photographies
+</a>
+</div>
+</div>
+<div class="js-accordion-container ">
+
+<h3 class="js-accordion-header">
+<a href="/credits">
+Cr&eacute;dits
+</a>
+</h3>
+<div class="js-accordion-panel">
+
+<a href="/credits">
+R&eacute;alisation
+</a>
+
+<a href="/credits">
+Cr&eacute;dits photographies
+</a>
+
+<a href="/credits">
+H&eacute;bergeur
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="content-container">
+<div class="wrapper-content">
+
+<h5 id="charte-intro">CHARTE DE CONFIDENTIALITE DES DONNEES A CARACTERE PERSONNEL</h5>
+<div class="content-asset">
+<p style="text-align: justify;">La soci&eacute;t&eacute; CAFAN apporte une grande importance &agrave; la protection et la confidentialit&eacute; des donn&eacute;es personnelles de ses Client/Prospects (ci-apr&egrave;s les &laquo; Donn&eacute;es &raquo;) et veille au respect de la r&egrave;glementation applicable.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">A ce titre, la pr&eacute;sente charte mat&eacute;rialise les engagements de la soci&eacute;t&eacute; CAFAN (ci-apr&egrave;s d&eacute;nomm&eacute; la &laquo; Soci&eacute;t&eacute; &raquo;) en mati&egrave;re d&rsquo;utilisation et de protection des Donn&eacute;es (ci-apr&egrave;s d&eacute;nomm&eacute; la &laquo; Charte &raquo;).</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">Le Client/Prospect est donc invit&eacute; &agrave; consulter la pr&eacute;sente Charte qui vise &agrave; pr&eacute;senter la mani&egrave;re dont la Soci&eacute;t&eacute; traite les Donn&eacute;es dans le cadre de la fourniture des services propos&eacute;s par la marque Morgan et la fa&ccedil;on dont les Client/Prospects peuvent exercer leur droit.</p>
+</div> 
+<h5 id="charte-application">1. Champ d&#39;application de la charte</h5>
+<div class="content-asset">
+<p style="text-align: justify;">La pr&eacute;sente Charte s&rsquo;applique &agrave; toute collecte et &agrave; tout traitement de Donn&eacute;es concernant les Client/Prospects de la marque Morgan appartenant &agrave; la Soci&eacute;t&eacute; (ci-apr&egrave;s la &laquo; Marque &raquo;) que ces traitements soient effectu&eacute;s virtuellement via l&rsquo;un des sites web ou l&rsquo;une des applications mobiles de la Marque ou physiquement via l&rsquo;achat et la visite des magasins de la Marque.</p>
+</div> 
+<h5 id="charte-donnees">2. Donn&eacute;es trait&eacute;es</h5>
+<div class="content-asset">
+<p>Afin de fournir &agrave; leurs Client/Prospects l&rsquo;ensemble des services propos&eacute;s, la Marque est amen&eacute;e &agrave; collecter les Donn&eacute;es suivantes :</p>
+<p>&nbsp;</p>
+<p>- coordonn&eacute;es (ex : n&deg; de t&eacute;l&eacute;phone, email, adresse postale, &hellip;),</p>
+<p>- identifications (ex : nom, pr&eacute;nom, le n&deg; de membre du programme de fid&eacute;lit&eacute;, &hellip;),</p>
+<p>- donn&eacute;es de g&eacute;olocalisation,</p>
+<p>- donn&eacute;es d&rsquo;utilisation des sites web et des applications mobiles (ex : adresse IP, logs et token, clic&hellip;),</p>
+<p>- images de vid&eacute;o protection.</p>
+<p>&nbsp;</p>
+<p>La Marque respecte le principe de minimisation des donn&eacute;es qui consiste &agrave; ne collecter que les Donn&eacute;es strictement n&eacute;cessaire aux traitements.</p>
+</div> 
+<h5 id="charte-source-collecte">3. Sources de collecte des donn&eacute;es</h5>
+<div class="content-asset">
+<p style="text-align: justify;">Les Donn&eacute;es des Clients/Prospects sont g&eacute;n&eacute;ralement collect&eacute;es directement aupr&egrave;s de ces derniers de la mani&egrave;re suivante :</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">- via leurs achats et/ou actions effectu&eacute;s sur les sites web et applications mobiles respectifs de la Marque (ex : cr&eacute;ation d&rsquo;un &laquo; compte Client/Prospect &raquo;, abonnement &agrave; une newsletter, commande d&rsquo;un produit, acceptation des CGV&hellip;),</p>
+<p style="text-align: justify;">- via les actions effectu&eacute;es dans les magasins de la Marque (ex : souscription &agrave; un programme de fid&eacute;lit&eacute;, inscription &agrave; des newsletters, vid&eacute;o protection),</p>
+<p style="text-align: justify;">- via les formulaires papiers de commandes envoy&eacute;s &agrave; la Marque ;</p>
+<p style="text-align: justify;">- via les communications effectu&eacute;es avec le service consommation de la Marque</p>
+<p style="text-align: justify;">- via de la vid&eacute;o-protection dans les magasins de la Marque. Plus rarement, la Marque peut &eacute;galement collecter les Donn&eacute;es des Clients/Prospect qui sont automatiquement transmises via les comptes tiers tels que Facebook ou Amazon Pay.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">Dans ce cas, le Client/Prospect est inform&eacute; que la pr&eacute;sente Charte n&rsquo;est pas applicable et que la Soci&eacute;t&eacute; ne saurait &ecirc;tre responsable des pratiques des tiers en mati&egrave;re d&rsquo;utilisation des Donn&eacute;es des Clients/Prospect.</p>
+</div> 
+<h5 id="charte-finalite-fondements">4. Finalit&eacute;s et fondements l&eacute;gaux des traitements des Donn&eacute;es</h5>
+<div class="content-asset">
+<p style="text-align: justify;">La Soci&eacute;t&eacute; traite les Donn&eacute;es des Clients/Prospects uniquement afin de leur offrir les services demand&eacute;s et de proposer une exp&eacute;rience Client/Prospect de qualit&eacute;.<br />
+<br />
+a) Les traitements dont le fondement l&eacute;gal repose sur l'ex&eacute;cution d'un contrat avec les Clients/Prospects sont :<br />
+- la cr&eacute;ation et la gestion des &laquo; comptes Clients/Prospects &raquo;, le traitement des commandes et des livraisons, la gestion de la comptabilit&eacute; et des paiements, la gestion des r&eacute;clamations et du service apr&egrave;s-vente,<br />
+- l&rsquo;organisation de jeux concours, de loteries ou de toute op&eacute;ration promotionnelle effectu&eacute;e par le Groupe,<br />
+- la gestion des programmes de fid&eacute;lisation,<br />
+- la gestion de l&rsquo;offre &laquo; Alerte stock &raquo;.<br />
+<br />
+b) Les traitements dont le fondement l&eacute;gal repose sur l&rsquo;int&eacute;r&ecirc;t l&eacute;gitime du Groupe sont :<br />
+- la gestion de la prospection commerciale, de sondages, et de tests produits,<br />
+- l&rsquo;&eacute;laboration de statistiques commerciales ;<br />
+- la gestion de la vid&eacute;o protection.<br />
+<br />
+c) Les traitements dont le fondement l&eacute;gal repose sur le consentement du Client/Prospect sont :<br />
+- la g&eacute;olocalisation utilisable pour identifier le magasin le plus proche du Client/Prospect. Cette fonctionnalit&eacute; ne s&rsquo;applique que lorsque le Client/Prospect l&rsquo;active via son terminal de la mani&egrave;re suivante : (1) Pour Firefox : cliquez ici ; (2) Pour Internet Exploreur : aller dans &laquo; option internet &raquo;, onglet &laquo; Confidentialit&eacute; &raquo;, cocher la mention &laquo; Ne jamais autoriser les sites Web &agrave; demander votre emplacement physique &raquo; ; (3) Pour Chrome : aller dans la barre de navigation cliquer sur le logo, dans le menu d&eacute;roulant de &laquo; Localisation &raquo;, choisir entre les 3 options possibles. - la gestion des newsletters<br />
+<br />
+d) Le traitement dont le fondement l&eacute;gal repose sur une obligation l&eacute;gale est celle relative &agrave; la collecte et &agrave; la sauvegarde de actions des Clients/Prospect lors de l&rsquo;utilisation des sites web et des applications mobiles de la Marque.</p>
+</div> 
+<h5 id="charte-duree-conservation">5. Dur&eacute;e de conservation</h5>
+<div class="content-asset">
+<p style="text-align: justify;">Le tableau ci-dessous pr&eacute;sente les dur&eacute;es de conservation mises en &oelig;uvre par le Groupe des Donn&eacute;es associ&eacute;es aux finalit&eacute;s des traitements.</p>
+<p>&nbsp;</p>
+<table class="MsoTableGrid" style="width:453.35pt; border-collapse:collapse; border:solid windowtext 1.0pt" width="604">
+<tbody>
+<tr style="height:35.25pt">
+<td style="border:solid windowtext 1.0pt; background:#d9d9d9; width:226.55pt; padding:0cm 5.4pt 0cm 5.4pt; height:35.25pt" width="302">
+<p align="center" style="text-align:center; margin:0cm 0cm 0.0001pt"><span style="font-size:10pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><b><span style="font-size:9.0pt"><span style="font-family:&quot;Century Gothic&quot;,sans-serif">Finalit&eacute;s des traitements</span></span></b><b><span lang="EN-US" style="font-size:9.0pt"><span style="font-family:&quot;Century Gothic&quot;,sans-serif"></span></span></b></span></span></p>
+</td>
+<td style="border:solid windowtext 1.0pt; background:#d9d9d9; width:8.0cm; border-left:none; padding:0cm 5.4pt 0cm 5.4pt; height:35.25pt" width="302">
+<p align="center" style="text-align:center; margin:0cm 0cm 0.0001pt"><span style="font-size:10pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><b><span style="font-size:9.0pt"><span style="font-family:&quot;Century Gothic&quot;,sans-serif">Dur&eacute;es de conservation</span></span></b></span></span></p>
+</td>
+</tr>
+<tr style="height:45.85pt">
+<td style="border:solid windowtext 1.0pt; background:white; width:226.55pt; border-top:none; padding:0cm 5.4pt 0cm 5.4pt; height:45.85pt" width="302">
+<p align="center" style="text-align:center; margin:0cm 0cm 0.0001pt"><span style="font-size:10pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-size:9.0pt"><span style="font-family:&quot;Century Gothic&quot;,sans-serif">Donn&eacute;es relatives &agrave; l&rsquo;historique des achats et des prestations de services, recouvrements, gestion des r&eacute;clamations et du service consommation&hellip;</span></span></span></span></p>
+</td>
+<td style="border-bottom:solid windowtext 1.0pt; background:white; width:8.0cm; border-top:none; border-left:none; border-right:solid windowtext 1.0pt; padding:0cm 5.4pt 0cm 5.4pt; height:45.85pt" width="302">
+<p align="center" class="BodyTextIndent1" style="margin-left:0cm; text-align:center; margin:0cm 0cm 12pt 1cm"><span style="font-size:10pt"><span style="font-family:&quot;Arial&quot;,sans-serif"><span style="font-size:9.0pt"><span style="font-family:&quot;Century Gothic&quot;,sans-serif">10 ans</span></span><span style="font-size:9.0pt"><span style="font-family:&quot;Century Gothic&quot;,sans-serif"></span></span></span></span></p>
+</td>
+</tr>
+<tr style="height:47.75pt">
+<td style="border:solid windowtext 1.0pt; background:white; width:226.55pt; border-top:none; padding:0cm 5.4pt 0cm 5.4pt; height:47.75pt" width="302">
+<p align="center" style="text-align:center; margin:0cm 0cm 0.0001pt"><span style="font-size:10pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-size:9.0pt"><span style="font-family:&quot;Century Gothic&quot;,sans-serif">Donn&eacute;es relatives &agrave; l&rsquo;utilisation du &laquo;&nbsp;Compte Client/Prospect&nbsp;&raquo;, &agrave; l&rsquo;organisation des jeux concours, &agrave; la gestion des newsletters</span></span></span></span></p>
+</td>
+<td style="border-bottom:solid windowtext 1.0pt; background:white; width:8.0cm; border-top:none; border-left:none; border-right:solid windowtext 1.0pt; padding:0cm 5.4pt 0cm 5.4pt; height:47.75pt" width="302">
+<p align="center" style="text-align:center; margin:0cm 0cm 0.0001pt"><span style="font-size:10pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-size:9.0pt"><span style="font-family:&quot;Century Gothic&quot;,sans-serif">Dur&eacute;e d&rsquo;exercice du contrat et dur&eacute;e l&eacute;gale de prescription si applicable</span></span></span></span></p>
+</td>
+</tr>
+<tr>
+<td style="border:solid windowtext 1.0pt; background:white; width:226.55pt; border-top:none; padding:0cm 5.4pt 0cm 5.4pt" width="302">
+<p align="center" style="text-align:center; margin:0cm 0cm 0.0001pt"><span style="font-size:10pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-size:9.0pt"><span style="font-family:&quot;Century Gothic&quot;,sans-serif">Donn&eacute;es relatives &agrave; la prospection commerciale</span></span></span></span></p>
+</td>
+<td style="border-bottom:solid windowtext 1.0pt; background:white; width:8.0cm; border-top:none; border-left:none; border-right:solid windowtext 1.0pt; padding:0cm 5.4pt 0cm 5.4pt" width="302">
+<p align="center" style="text-align:center; margin:0cm 0cm 0.0001pt"><span style="font-size:10pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-size:9.0pt"><span style="font-family:&quot;Century Gothic&quot;,sans-serif">3 ans &agrave; compter de la fin de la relation commerciale</span></span></span></span></p>
+</td>
+</tr>
+<tr style="height:20.2pt">
+<td style="border:solid windowtext 1.0pt; background:white; width:226.55pt; border-top:none; padding:0cm 5.4pt 0cm 5.4pt; height:20.2pt" width="302">
+<p align="center" style="text-align:center; margin:0cm 0cm 0.0001pt"><span style="font-size:10pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-size:9.0pt"><span style="font-family:&quot;Century Gothic&quot;,sans-serif">Donn&eacute;es de g&eacute;olocalisation</span></span></span></span></p>
+</td>
+<td style="border-bottom:solid windowtext 1.0pt; background:white; width:8.0cm; border-top:none; border-left:none; border-right:solid windowtext 1.0pt; padding:0cm 5.4pt 0cm 5.4pt; height:20.2pt" width="302">
+<p align="center" style="text-align:center; margin:0cm 0cm 0.0001pt"><span style="font-size:10pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-size:9.0pt"><span style="font-family:&quot;Century Gothic&quot;,sans-serif">1 an</span></span></span></span></p>
+</td>
+</tr>
+<tr>
+<td style="border:solid windowtext 1.0pt; background:white; width:226.55pt; border-top:none; padding:0cm 5.4pt 0cm 5.4pt" width="302">
+<p align="center" style="text-align:center; margin:0cm 0cm 0.0001pt"><span style="font-size:10pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-size:9.0pt"><span style="font-family:&quot;Century Gothic&quot;,sans-serif">&laquo;&nbsp;Cookies&nbsp;&raquo;</span></span></span></span></p>
+</td>
+<td style="border-bottom:solid windowtext 1.0pt; background:white; width:8.0cm; border-top:none; border-left:none; border-right:solid windowtext 1.0pt; padding:0cm 5.4pt 0cm 5.4pt" width="302">
+<p align="center" style="text-align:center; margin:0cm 0cm 0.0001pt"><span style="font-size:10pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-size:9.0pt"><span style="font-family:&quot;Century Gothic&quot;,sans-serif">13 mois &agrave; compter de leur d&eacute;p&ocirc;t sur le terminal du Client/Prospect &agrave; compter de la derni&egrave;re utilisation du site web ou de l&rsquo;application mobile</span></span></span></span></p>
+</td>
+</tr>
+<tr style="height:30.55pt">
+<td style="border:solid windowtext 1.0pt; background:white; width:226.55pt; border-top:none; padding:0cm 5.4pt 0cm 5.4pt; height:30.55pt" width="302">
+<p align="center" style="text-align:center; margin:0cm 0cm 0.0001pt"><span style="font-size:10pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-size:9.0pt"><span style="font-family:&quot;Century Gothic&quot;,sans-serif">Donn&eacute;es de connexion et d&rsquo;utilisation des sites web et applications mobiles</span></span></span></span></p>
+</td>
+<td style="border-bottom:solid windowtext 1.0pt; background:white; width:8.0cm; border-top:none; border-left:none; border-right:solid windowtext 1.0pt; padding:0cm 5.4pt 0cm 5.4pt; height:30.55pt" width="302">
+<p align="center" style="text-align:center; margin:0cm 0cm 0.0001pt"><span style="font-size:10pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-size:9.0pt"><span style="font-family:&quot;Century Gothic&quot;,sans-serif">1 an</span></span></span></span></p>
+</td>
+</tr>
+<tr style="height:27.5pt">
+<td style="border:solid windowtext 1.0pt; background:white; width:226.55pt; border-top:none; padding:0cm 5.4pt 0cm 5.4pt; height:27.5pt" width="302">
+<p align="center" style="text-align:center; margin:0cm 0cm 0.0001pt"><span style="font-size:10pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-size:9.0pt"><span style="font-family:&quot;Century Gothic&quot;,sans-serif">Donn&eacute;es relatives &agrave; la gestion de l&rsquo;offre &laquo;&nbsp;Alerte stock&nbsp;&raquo;</span></span></span></span></p>
+</td>
+<td style="border-bottom:solid windowtext 1.0pt; background:white; width:8.0cm; border-top:none; border-left:none; border-right:solid windowtext 1.0pt; padding:0cm 5.4pt 0cm 5.4pt; height:27.5pt" width="302">
+<p align="center" style="text-align:center; margin:0cm 0cm 0.0001pt"><span style="font-size:10pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-size:9.0pt"><span style="font-family:&quot;Century Gothic&quot;,sans-serif">Adresse email conserv&eacute;e pendant 60 jours</span></span></span></span></p>
+</td>
+</tr>
+<tr style="height:20.8pt">
+<td style="border:solid windowtext 1.0pt; background:white; width:226.55pt; border-top:none; padding:0cm 5.4pt 0cm 5.4pt; height:20.8pt" width="302">
+<p align="center" style="text-align:center; margin:0cm 0cm 0.0001pt"><span style="font-size:10pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-size:9.0pt"><span style="font-family:&quot;Century Gothic&quot;,sans-serif">Images de vid&eacute;o protection</span></span></span></span></p>
+</td>
+<td style="border-bottom:solid windowtext 1.0pt; background:white; width:8.0cm; border-top:none; border-left:none; border-right:solid windowtext 1.0pt; padding:0cm 5.4pt 0cm 5.4pt; height:20.8pt" width="302">
+<p align="center" style="text-align:center; margin:0cm 0cm 0.0001pt"><span style="font-size:10pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-size:9.0pt"><span style="font-family:&quot;Century Gothic&quot;,sans-serif">1 mois</span></span></span></span></p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="margin:0cm 0cm 0.0001pt"><span style="font-size:10pt"><span style="font-family:&quot;Times New Roman&quot;,serif"><span style="font-size:9.0pt"><span style="font-family:&quot;Century Gothic&quot;,sans-serif"></span></span></span></span></p>
+<p class="BodyTextIndent1" style="margin-left:0cm; margin:0cm 0cm 12pt 1cm; text-align:justify">&nbsp;</p>
+<p style="text-align: justify;">&Agrave; l&rsquo;issue de ces d&eacute;lais, les Donn&eacute;es seront soit supprim&eacute;es soit anonymis&eacute;es pour des &eacute;tudes et/ou des statistiques.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">Les Donn&eacute;es sont &eacute;galement conserv&eacute;es en cas de pr&eacute;contentieux et contentieux pour toute la dur&eacute;e du traitement du litige.</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">Il est &eacute;galement pr&eacute;cis&eacute; que la suppression ou l&rsquo;anonymisation des Donn&eacute;es sont des op&eacute;rations irr&eacute;versibles et que la Soci&eacute;t&eacute; n&rsquo;est plus, par la suite, en mesure de les restaurer.</p>
+</div> 
+<h5 id="charte-destinataire">6. Destinataires des donn&eacute;es</h5>
+<div class="content-asset">
+<p style="text-align: justify;">La Soci&eacute;t&eacute; peut &ecirc;tre amen&eacute; &agrave; transf&eacute;rer des Donn&eacute;es :<br />
+<br />
+- aux services habilit&eacute;s de la Marque ;<br />
+- aux prestataires, fournisseurs et aux sous-traitants de la Soci&eacute;t&eacute;, ces derniers n&rsquo;utilisant les Donn&eacute;es qu&rsquo;au nom et selon les instructions de la Soci&eacute;t&eacute; et dans le strict cadre de l&rsquo;ex&eacute;cution des services demand&eacute;s par le Client/Prospect ;<br />
+- &agrave; des tiers dans le cadre de la lutte contre la fraude et plus g&eacute;n&eacute;ralement dans le cadre de toute activit&eacute; p&eacute;nalement r&eacute;pr&eacute;hensible ou encore &agrave; la demande d&rsquo;une injonction des autorit&eacute;s judiciaires ou administratives ;</p>
+</div> 
+<h5 id="charte-transfert-horsUE">7. Transferts de Donn&eacute;es hors de l&rsquo;Union europ&eacute;enne</h5>
+<div class="content-asset">
+<p style="text-align: justify;">Les Donn&eacute;es sont stock&eacute;es en France mais peuvent &eacute;galement &ecirc;tre transf&eacute;r&eacute;es &agrave; des prestataires, sous-traitants ou filiales de la Soci&eacute;t&eacute; dans un pays non membre de l&rsquo;Union europ&eacute;enne.<br />
+<br />
+Ce type de transfert s&rsquo;effectuera en vertu et dans le respect des lois applicables et dans un cadre contractuel d&eacute;terminant les conditions d&rsquo;intervention et de s&eacute;curit&eacute; des prestataires.<br />
+<br />
+Le cadre contractuel est notamment conforme &agrave; la d&eacute;cision de la Commission europ&eacute;enne du 5 f&eacute;vrier 2010 (2010/87/UE) relative aux clauses contractuelles types pour le transfert de donn&eacute;es &agrave; caract&egrave;re personnel vers des sous-traitants &eacute;tablis dans des pays tiers en vertu de la directive 95/46/CE ou est soumis &agrave; des clauses contractuelles contraignantes (&laquo; Binding Corporate Rules &raquo;).</p>
+</div> 
+<h5 id="charte-droits-donnes-clients">8. Droit des Clients/Prospects</h5>
+<div class="content-asset">
+<p style="text-align: justify;">8.1. Droit d&rsquo;acc&egrave;s et de copie<br />
+Les Clients/Prospects disposent d&rsquo;un droit de demander &agrave; la Marque la confirmation que des Donn&eacute;es les concernant sont ou non trait&eacute;es.<br />
+Les Clients/Prospects ont le droit de demander une copie de leurs Donn&eacute;es faisant l&rsquo;objet du traitement aupr&egrave;s de la Marque. Toutefois, en cas de demande de copie suppl&eacute;mentaire, la Marque peut exiger la prise en charge financi&egrave;re de ce co&ucirc;t par les Clients/Prospects.<br />
+Si les Clients/Prospects pr&eacute;sentent leur demande de copie des Donn&eacute;es par voie &eacute;lectronique, les informations demand&eacute;es leur seront fournies sous une forme &eacute;lectronique d&rsquo;usage courant, sauf demande contraire.<br />
+Les Clients/Prospects sont inform&eacute;s que ce droit d&rsquo;acc&egrave;s ne peut porter sur des informations ou donn&eacute;es confidentielles ou encore pour lesquelles la loi n&rsquo;autorise pas la communication.<br />
+Le droit d&rsquo;acc&egrave;s ne doit pas &ecirc;tre exerc&eacute; de mani&egrave;re abusive c&rsquo;est-&agrave;-dire r&eacute;alis&eacute; de mani&egrave;re r&eacute;guli&egrave;re dans le seul but de d&eacute;stabiliser la Marque.<br />
+<br />
+8.2. Droit de rectification et de mise &agrave; jour<br />
+La Soci&eacute;t&eacute; satisfait aux demandes de mise &agrave; jour automatiquement pour les modifications en ligne sur des champs qui techniquement ou l&eacute;galement peuvent &ecirc;tre mis &agrave; jour sur demande &eacute;crite &eacute;manant de la personne elle-m&ecirc;me.<br />
+<br />
+8.3. Droit &agrave; l&rsquo;effacement<br />
+Le droit &agrave; l&rsquo;effacement des Clients/Prospects ne sera pas applicable dans les cas o&ugrave; le traitement est mis en &oelig;uvre pour r&eacute;pondre &agrave; une obligation l&eacute;gale.<br />
+En dehors de cette situation, les Clients/Prospects pourront demander l&rsquo;effacement de leurs Donn&eacute;es dans les cas limitatifs suivants :<br />
+- les Donn&eacute;es ne sont plus n&eacute;cessaires au regard des finalit&eacute;s pour lesquelles elles ont &eacute;t&eacute; collect&eacute;es ou trait&eacute;es d&rsquo;une autre mani&egrave;re ;<br />
+- lorsque la personne concern&eacute;e retire le consentement sur lequel est fond&eacute; le traitement et qu&rsquo;il n&rsquo;existe pas d&rsquo;autre fondement juridique au traitement ;<br />
+- la personne concern&eacute;e s&rsquo;oppose &agrave; un traitement n&eacute;cessaire aux fins des int&eacute;r&ecirc;ts l&eacute;gitimes poursuivis par la Marque et qu&rsquo;il n&rsquo;existe pas de motif l&eacute;gitime imp&eacute;rieux pour le traitement ;<br />
+- la personne concern&eacute;e s&rsquo;oppose &agrave; un traitement de ses Donn&eacute;es &agrave; des fins de prospection, y compris au profilage ;<br />
+- les Donn&eacute;es ont fait l&rsquo;objet d&rsquo;un traitement illicite.<br />
+<br />
+8.4. Droit &agrave; la limitation<br />
+Les Clients/Prospects sont inform&eacute;s que ce droit n&rsquo;a pas vocation &agrave; s&rsquo;appliquer dans la mesure o&ugrave; le traitement op&eacute;r&eacute; par la Marque est licite et que toutes les Donn&eacute;es collect&eacute;es sont n&eacute;cessaires &agrave; l&rsquo;ex&eacute;cution de contrats de vente notamment.<br />
+<br />
+8.5. Droit &agrave; la portabilit&eacute;<br />
+La Soci&eacute;t&eacute; fait droit &agrave; la portabilit&eacute; des Donn&eacute;es dans le cas particulier des Donn&eacute;es communiqu&eacute;es par les Clients/Prospects eux-m&ecirc;mes, sur des services en ligne propos&eacute;s par la Marque et pour les finalit&eacute;s reposant sur les seuls consentements des personnes et ex&eacute;cution d&rsquo;un contrat. Dans ce cas les Donn&eacute;es seront communiqu&eacute;es dans un format structur&eacute;, couramment utilis&eacute; et lisible par une machine.<br />
+<br />
+8.6. Droit d&rsquo;opposition<br />
+Conform&eacute;ment &agrave; la r&egrave;glementation en vigueur, les Clients/Prospects disposent du droit de s&rsquo;opposer aux traitements de leurs Donn&eacute;es &agrave; tout moment pour des raisons tenant &agrave; leur situation particuli&egrave;re, &agrave; un traitement de leurs Donn&eacute;es dont la base juridique est l&rsquo;int&eacute;r&ecirc;t l&eacute;gitime poursuivi par la Marque.<br />
+En cas d&rsquo;exercice d&rsquo;un tel droit d&rsquo;opposition, la Soci&eacute;t&eacute; ne traitera plus les Donn&eacute;es concern&eacute;es, sauf &agrave; d&eacute;montrer qu&rsquo;il existe des motifs l&eacute;gitimes et imp&eacute;rieux pr&eacute;valant sur les int&eacute;r&ecirc;ts et les droits et libert&eacute;s des Clients/Prospects, pour poursuivre ce traitement. Les Clients/Prospects disposent &eacute;galement du droit de s&rsquo;opposer &agrave; toute prospection commerciale par voie postale ou par t&eacute;l&eacute;phone, y compris au profilage dans la mesure o&ugrave; il est li&eacute; &agrave; une telle prospection. Au cas particulier de la prospection par voie de courrier &eacute;lectronique (e-mail, SMS), la Marque pourra y recourir si les Prospects ont donn&eacute; leur consentement au moment de la collecte ou les Clients/Prospects font parties de la &laquo; base clients &raquo;. Il sera &agrave; tout moment possible pour les Clients/Prospects de s&rsquo;opposer &agrave; une telle prospection soit en cliquant sur le lien se trouvant dans l&rsquo;e-mail d&rsquo;envoi, soit en modifiant les pr&eacute;f&eacute;rences dans le &laquo; compte client &raquo; sur les sites et applications mobiles de la Marque. Par SMS, il est possible de s&rsquo;opposer &agrave; toute prospection en envoyant &laquo; stop &raquo; au num&eacute;ro figurant dans le message re&ccedil;u.<br />
+Enfin, en application de l&rsquo;article L. 223-2 du Code de la consommation, les Clients/Prospects peuvent s&rsquo;opposer &agrave; tout moment &agrave; &ecirc;tre d&eacute;march&eacute; par t&eacute;l&eacute;phone, en s&rsquo;inscrivant gratuitement sur https://conso.bloctel.fr/.<br />
+<br />
+8.7. D&eacute;cision individuelle automatis&eacute;e<br />
+La Soci&eacute;t&eacute; ne proc&egrave;de pas &agrave; des d&eacute;cisions individuelles automatis&eacute;es.<br />
+<br />
+8.8. Droit post-mortem<br />
+Les Clients/Prospects sont inform&eacute;s qu&rsquo;ils disposent du droit de formuler des directives concernant la conservation, l&rsquo;effacement et la communication de leurs donn&eacute;es post-mortem.<br />
+<br />
+8.9. Mise en &oelig;uvre des droits<br />
+Pour exercer leurs droits, les Clients/Prospects doivent contacter les services de la Marque aupr&egrave;s desquelles leurs donn&eacute;es sont collect&eacute;es et ce, de l'une des mani&egrave;res suivantes :<br />
+(i) en adressant sa demande via le formulaire de contact figurant sur le site web ou l&rsquo;application mobile de la Marque,<br />
+(ii) en &eacute;crivant &agrave; l&rsquo;adresse email suivante : dpo@groupe-beaumanoir.fr en pr&eacute;cisant la Marque,<br />
+(iii) en &eacute;crivant &agrave; l'adresse suivante : - Service Client/Prospects ; ZAC de La Moinerie, 10, impasse du Grand Jardin 35400 SAINT-MALO &raquo; en pr&eacute;cisant la Marque.<br />
+Conform&eacute;ment &agrave; la l&eacute;gislation sur la protection des donn&eacute;es &agrave; caract&egrave;re personnel, les Clients/Prospects sont inform&eacute;s qu&rsquo;il s'agit d'un droit individuel qui ne peut &ecirc;tre exerc&eacute; que par la personne concern&eacute;e relativement &agrave; ses propres informations. Aussi, pour des raisons de s&eacute;curit&eacute;, les services concern&eacute;s de la Marque se r&eacute;servent donc, en cas de doute sur l&rsquo;identit&eacute; du demandeur &agrave; demander la carte d&rsquo;identit&eacute; &agrave; jour de ce dernier, afin d'&eacute;viter toute communication d'informations confidentielles concernant &agrave; une autre personne que le Client/Prospect.<br />
+<br />
+8.10. Droit d&rsquo;introduire une r&eacute;clamation aupr&egrave;s de la Cnil<br />
+Les Clients/Prospects concern&eacute;s par le traitement de leurs Donn&eacute;es sont inform&eacute;s de leur droit d&rsquo;introduire une plainte aupr&egrave;s de la Cnil si ceux-ci estiment que le traitement de Donn&eacute;es les concernant n'est pas conforme &agrave; la r&egrave;glementation europ&eacute;enne de protection des donn&eacute;es, &agrave; l&rsquo;adresse suivante : CNIL &ndash; Service des plaintes 3 Place de Fontenoy &ndash; TSA 80715 &ndash; 75334 PARIS CEDEX 07 T&eacute;l : 01 53 73 22 22</p>
+</div> 
+<h5 id="charte-securite-donnees">9. S&eacute;curit&eacute; et confidentialit&eacute; des Donn&eacute;es</h5>
+<div class="content-asset">
+<p style="text-align: justify;">Il appartient &agrave; la Soci&eacute;t&eacute; de d&eacute;finir et de mettre en &oelig;uvre les mesures techniques de s&eacute;curit&eacute;, physique ou logique, qu&rsquo;il estime appropri&eacute;es pour lutter contre la destruction, la perte, l&rsquo;alt&eacute;ration ou la divulgation non autoris&eacute;e des donn&eacute;es de mani&egrave;re accidentelle ou illicite.<br />
+<br />
+Parmi ces mesures figurent principalement :<br />
+- la gestion des habilitations pour l&rsquo;acc&egrave;s aux donn&eacute;es ;<br />
+- les mesures de sauvegarde interne ;<br />
+- le processus d&rsquo;identification ;<br />
+- la conduite d&rsquo;audits de s&eacute;curit&eacute; et de tests de p&eacute;n&eacute;tration ;<br />
+- l&rsquo;adoption d&rsquo;une politique de s&eacute;curit&eacute; des syst&egrave;mes d&rsquo;information ;<br />
+- l&rsquo;adoption de plans de continuit&eacute; / de reprise d&rsquo;activit&eacute; ;<br />
+- l&rsquo;utilisation d&rsquo;un protocole ou de solutions de s&eacute;curit&eacute;.<br />
+<br />
+Pour ce faire, la Soci&eacute;t&eacute; peut se faire assister de tout tiers de son choix pour proc&eacute;der, aux fr&eacute;quences qu&rsquo;il estimera n&eacute;cessaires, &agrave; des audits de vuln&eacute;rabilit&eacute; ou des tests d&rsquo;intrusion. En tout &eacute;tat de cause, la Soci&eacute;t&eacute; s&rsquo;engage, en cas de changement des moyens visant &agrave; assurer la s&eacute;curit&eacute; et la confidentialit&eacute; des Donn&eacute;es, &agrave; les remplacer par des moyens d&rsquo;une performance sup&eacute;rieure. Aucune &eacute;volution ne pourra conduire &agrave; une r&eacute;gression du niveau de s&eacute;curit&eacute;. En cas de sous-traitance d&rsquo;une partie ou de la totalit&eacute; d&rsquo;un traitement de Donn&eacute;es, la Soci&eacute;t&eacute; s&rsquo;engage &agrave; imposer contractuellement &agrave; ses sous-traitants des garanties de s&eacute;curit&eacute; par le biais de mesures techniques de protection de ces donn&eacute;es et les moyens humains appropri&eacute;s.</p>
+</div> 
+<h5 id="charte-violation-donnees">10. Violation de Donn&eacute;es</h5>
+<div class="content-asset">
+<p style="text-align: justify;">La Soci&eacute;t&eacute; s&rsquo;engage &agrave; notifier &agrave; la Cnil toute violation des Donn&eacute;es que pourraient subir la Marque dans les conditions prescrites par la r&egrave;glementation en la mati&egrave;re.<br />
+Le Client/Prospect est &eacute;videmment inform&eacute; de toute violation de Donn&eacute;es qui pourrait porter atteinte &agrave; ses droits et comporterait un risque pour lui.</p>
+</div> 
+<h5 id="charte-delegue">11. D&eacute;l&eacute;gu&eacute; &agrave; la protection des donn&eacute;es</h5>
+<div class="content-asset">
+<p style="text-align: justify;">Le Groupe a d&eacute;sign&eacute; un d&eacute;l&eacute;gu&eacute; &agrave; la protection des donn&eacute;es (&laquo; DPO &raquo;) dont les coordonn&eacute;es sont les suivantes :</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">- Nom : Brice Lougnon</p>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">- Adresse e-mail : dpo@groupe-beaumanoir.fr</p>
+</div> 
+<h5 id="chartes-cookies-maj2021">12. Cookies et autres traceurs</h5>
+<div class="content-asset">
+<p style="text-align: justify;">Pour consulter notre Politique li&eacute;e aux Cookies et autres traceurs,&nbsp;<a href="https://www.morgandetoi.fr/politique-cookies">cliquez-ici</a></p>
+</div> 
+<h5 id="charte-modification">13. Modification et mise &agrave; jour de la Charte</h5>
+<div class="content-asset">
+<p style="text-align: justify;">La pr&eacute;sente Charte peut &ecirc;tre modifi&eacute;e ou am&eacute;nag&eacute;e &agrave; tout moment en cas d&rsquo;&eacute;volution l&eacute;gale, jurisprudentielle ou en fonction des d&eacute;cisions et recommandations de la CNIL et des usages. Toute nouvelle version de la pr&eacute;sente Charte sera port&eacute;e &agrave; votre connaissance par tout moyen, en ce compris la voie &eacute;lectronique</p>
+</div> 
+</div>
+</div>
+</div>
+</div>
+<div class="breadcrumb-container breadcrumb-bottom ">
+<div class="breadcrumb">
+<a class="btn-back">
+<span>RETOUR</span>
+</a>
+<ul>
+<li>
+<a href="https://www.morgandetoi.fr/">
+Morgan
+</a>
+</li>
+<li>
+<a href="https://www.morgandetoi.fr/charte-confidentialite">
+Charte de confidentialité des données à caractère personnel
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<button class="btn-scroll-top js-btn-scroll-top">
+<span></span>
+</button>
+<footer id="footer" class="footer">
+<div class="wrapper-newsletter-social-links">
+<div class="newsletter-social-links-container">
+<div class="footer-item newsletter-container">
+<span class="footer-item-title">
+Inscrivez-vous &agrave; notre newsletter
+<span>et recevez nos offres privil&egrave;ges</span>
+</span>
+<form method="POST" class="footerFormNewsletter" action="/on/demandware.store/Sites-M2T_FR-Site/fr/Newsletter-ShowForm">
+<fieldset class="fieldset_nws">
+<div class="form-row form-row-half required" data-requiredtext="Merci de renseigner votre email">
+<div class="field-wrapper">
+<input class="input-text check-domain required" type="email" id="dwfrm_newsletter_email" name="dwfrm_newsletter_email" value="" maxlength="255" placeholder="Saisissez votre email ici *" />
+</div>
+</div>
+<input type="submit" value="Ok" class="submit" />
+</fieldset>
+</form>
+</div>
+<div class="footer-item social-links-container">
+<span class="footer-item-title">
+Suivez-nous
+<span>Nous vous inspirons au quotidien</span>
+</span>
+<div class="content-asset">
+<ul>
+<li><a rel="nofollow" href="https://www.facebook.com/morgandetoi" class="icon-facebook" title="Facebook Morgan" target="_blank"></a></li>
+<li><a rel="nofollow" href="https://www.instagram.com/morgandetoiofficiel/" class="icon-instagram" title="Instagram Morgan" target="_blank"></a></li>
+<li><a rel="nofollow" href="https://www.pinterest.fr/Morgandetoi/" class="icon-pinterest" title="Pinterest Morgan" target="_blank"></a></li>
+<li><a rel="nofollow" href="https://www.youtube.com/user/MorganDeToiOfficiel" class="icon-youtube" title="Youtube Morgan" target="_blank"></a></li>
+</ul>
+</div> 
+</div>
+</div>
+</div>
+<div class="wrapper-reinssurance-banner">
+<div class="footer-item reinssurance-banner-container">
+<div class="content-asset">
+<ul>
+<li><a href="https://www.morgandetoi.fr/mesures-exceptionnelles" rel="nofollow"><span class="icon-item icon-free-return"></span> <span class="reinssurance-item"> Livraison offerte<br />
+d&egrave;s 49&euro; </span> </a></li>
+<li><a href="https://www.morgandetoi.fr/mode-de-paiement" rel="nofollow"><span class="icon-item icon-padlock"></span> <span class="reinssurance-item"> Paiement<br />
+s&eacute;curis&eacute; </span> </a></li>
+<li><a href="https://www.morgandetoi.fr/e-reservation" rel="nofollow"><span class="icon-item icon-e-reservation"></span> <span class="reinssurance-item"> E-r&eacute;server: essayer<br />
+et payer en boutique </span> </a></li>
+<li><a href="https://www.morgandetoi.fr/aide/#ContactForm" rel="nofollow"><span class="icon-item icon-help-full"></span> <span class="reinssurance-item"> Besoin d'aide</span><br />
+<span class="reinssurance-item">09 69 32 00 31</span></a></li>
+<li><a href="https://www.morgandetoi.fr/magasins/" rel="nofollow"><span class="icon-item icon-marker"></span> <span class="reinssurance-item"> Trouver<br />
+ma boutique </span> </a></li>
+</ul>
+</div> 
+</div>
+</div>
+<div class="wrapper-footer-links">
+<div class="footer-links-container">
+<div class="content-asset">
+<div class="footer-item">
+<div class="js-accordion-container js-accordion-container-phone-tablet"><span class="footer-item-title js-accordion-header">SERVICES</span>
+<div class="js-accordion-panel">
+<ul>
+<li><a href="https://www.morgandetoi.fr/guide-des-tailles" rel="nofollow">Guide des tailles</a></li>
+<li><a href="https://www.morgandetoi.fr/livraison-retours" rel="nofollow">Livraison et retours gratuits</a></li>
+<li><a href="https://www.morgandetoi.fr/e-reservation" rel="nofollow">E-r&eacute;servation</a></li>
+<li><a href="https://www.morgandetoi.fr/programme-fidelite" rel="nofollow">Fid&eacute;lit&eacute; Morgan</a></li>
+<li><a href="https://www.morgandetoi.fr/offre-etudiante-student-beans" rel="nofollow">Remise &eacute;tudiante : -10%</a></li>
+<li><a href="https://www.morgandetoi.fr/carte-cadeau" rel="nofollow">Carte cadeau</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="footer-item">
+<div class="js-accordion-container js-accordion-container-phone-tablet"><span class="footer-item-title js-accordion-header">AIDE</span>
+<div class="js-accordion-panel">
+<ul>
+<li><a href="https://www.morgandetoi.fr/mesures-exceptionnelles" rel="nofollow">Informations Covid-19</a></li>
+<li><a href="https://www.morgandetoi.fr/jeux-et-offres-en-cours" rel="nofollow">Offres en cours</a></li>
+<li><a href="https://www.morgandetoi.fr/aide/" rel="nofollow">Foire aux questions</a></li>
+<li><a href="https://www.morgandetoi.fr/mode-de-paiement" rel="nofollow">Paiement 100% s&eacute;curis&eacute;</a></li>
+<li><a href="https://www.morgandetoi.fr/mentions-legales" rel="nofollow">Mentions L&eacute;gales</a></li>
+<li><a href="https://www.morgandetoi.fr/conditions-generales-vente" rel="nofollow">Conditions g&eacute;n&eacute;rales de vente</a></li>
+<li><a href="https://www.morgandetoi.fr/charte-confidentialite" rel="nofollow">Confidentialit&eacute; des donn&eacute;es personnelles</a></li>
+<li><a href="https://www.morgandetoi.fr/politique-cookies" rel="nofollow">Politique cookies et autres traceurs</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="footer-item">
+<div class="js-accordion-container js-accordion-container-phone-tablet"><span class="footer-item-title js-accordion-header">A PROPOS</span>
+<div class="js-accordion-panel">
+<ul>
+<li><a href="https://www.morgandetoi.fr/la-marque" rel="nofollow">Morgan</a></li>
+<li><a href="https://www.groupe-beaumanoir.com" rel="nofollow" target="_beaumanoir">Groupe Beaumanoir</a></li>
+<li><a href="https://www.groupe-beaumanoir.com/rejoignez-nous/" rel="nofollow" target="_recrutement" title="Recrutement">Recrutement</a></li>
+<li><a href="https://www.morgandetoi.fr/magasins/" rel="nofollow">Boutiques Morgan</a></li>
+<li><a href="https://www.morgandetoi.fr/boutiques-ouvertures-exceptionnelles">Ouvertures exceptionnelles</a></li>
+<li><a href="https://www.morgandetoi.fr/hub-operations-commerciales">Nos événements</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="footer-item">
+<div class="js-accordion-container js-accordion-container-phone-tablet"><span class="footer-item-title js-accordion-header">SUIVEZ NOUS</span>
+<div class="js-accordion-panel">
+<ul>
+<li><a href="https://www.facebook.com/morgandetoi" rel="nofollow" target="_facebook">Facebook</a></li>
+<li><a href="https://www.instagram.com/morgandetoiofficiel/" rel="nofollow" target="_instagram">Instagram</a></li>
+<li><a href="https://www.pinterest.fr/Morgandetoi/" rel="nofollow" target="_pinterest">Pinterest</a></li>
+<li><a href="https://www.youtube.com/user/MorganDeToiOfficiel" rel="nofollow" target="_youtube">Youtube</a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="footer-item">
+<div class="js-accordion-container js-accordion-container-phone-tablet"><span class="footer-item-title js-accordion-header">GROUPE BEAUMANOIR</span>
+<div class="js-accordion-panel">
+<ul>
+<li><a href="https://www.breal.net" target="_blank" window.open="">Br&eacute;al</a></li>
+<li><a href="https://www.bonoboplanet.com" target="_blank">Bonobo</a></li>
+<li><a href="https://www.cache-cache.fr" target="_blank">Cache Cache</a></li>
+<li><a href="https://www.vibs.com" target="_blank">Vib's</a></li>
+<li><a href="https://www.lahalle.com/" target="_blank">La Halle </a></li>
+</ul>
+</div>
+</div>
+</div>
+<div class="footer-item">
+<div class="js-accordion-container js-accordion-container-phone-tablet"><span class="footer-item-title js-accordion-header">PAYS</span>
+<div class="js-accordion-panel">
+<ul>
+<li><a href="https://www.morgandetoi.be/" rel="nofollow">Belgique</a></li>
+<li><a href="http://www.morgandetoi.es/" rel="nofollow">Espagne</a></li>
+<li><a href="https://www.morgandetoi.com/" rel="nofollow">International</a></li>
+</ul>
+</div>
+</div>
+</div>
+</div> 
+</div>
+</div>
+<div class="wrapper-copyright">
+<div class="copyright-container">
+<div class="content-asset">
+<div class="copyright">&copy; 2021 Morgan</div>
+</div> 
+</div>
+</div>
+</footer>
+<!--[if lte IE 8]>
+<script src="/on/demandware.static/Sites-M2T_FR-Site/-/fr/v1645675756438/lib/jquery/jquery-1.11.1.min.js" type="text/javascript"></script>
+<script src="//cdn.rawgit.com/weblinc/media-match/master/media.match.min.js" type="text/javascript"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/es5-shim/3.4.0/es5-shim.min.js"></script>
+<![endif]-->
+<!--[if IE 9]>
+<script src="//cdn.rawgit.com/paulirish/matchMedia.js/master/matchMedia.js" type="text/javascript"></script>
+<script src="//cdn.rawgit.com/paulirish/matchMedia.js/master/matchMedia.addListener.js" type="text/javascript"></script>
+<![endif]-->
+<script src="/on/demandware.static/Sites-M2T_FR-Site/-/fr/v1645675756438/vendors.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+(function(){
+window.Constants = {"AVAIL_STATUS_IN_STOCK":"IN_STOCK","AVAIL_STATUS_PREORDER":"PREORDER","AVAIL_STATUS_BACKORDER":"BACKORDER","AVAIL_STATUS_NOT_AVAILABLE":"NOT_AVAILABLE","PRODUCT_GRID_DISPLAY_COOKIE":"grid-column-display","SHIPPING_METHODS":{"COLISSIMO":"colissimo","STORE":"store","RELAY":"relay","MONDIALRELAY":"mondialrelay","UPSACCESSPOINT":"upsaccesspoint","EMAIL":"email","PICKUP_PROVIDER_CODE":{"MONDIALRELAY":"MR","UPSACCESSPOINT":"UPS"},"DELIVERY_POINT_ID_NEEDED":["store","relay","mondialrelay","upsaccesspoint"]}};
+window.Resources = {"I_AGREE":"global.i_agree","TRACKING_CONSENT":"global.tracking_consent","TRACKING_NO_CONSENT":"global.tracking_no_consent","CLOSE":"global.close","NO_THANKS":"global.nothanks","OK":"OK","ARE_YOU_HUMAN":"global.captcha.areyouhuman","CANCEL":"Annuler","SHIP_QualifiesFor":"shipment.qualifiesfor","CC_LOAD_ERROR":"billing.creditcardloaderror","COULD_NOT_SAVE_ADDRESS":"multishippingaddresses.couldnotsaveaddress","REMISES_DETAILS_OPEN":"(Afficher le détail)","REMISES_DETAILS_CLOSE":"(Masquer le détail)","REG_ADDR_ERROR":"global.couldntloadaddress","BONUS_PRODUCT":"product.bonusproduct","BONUS_PRODUCTS":"product.bonusproducts","SELECT_BONUS_PRODUCTS":"product.selectbonusproducts","SELECT_BONUS_PRODUCT":"product.selectbonusproduct","BONUS_PRODUCT_MAX":"product.bonusproductsmax","BONUS_PRODUCT_TOOMANY":"product.bonusproductstoomany","SIMPLE_SEARCH":"Rechercher","SUBSCRIBE_EMAIL_DEFAULT":"Email Address","CURRENCY_SYMBOL":"€","MISSINGVAL":"global.missingval","SERVER_ERROR":"global.servererror","MISSING_LIB":"global.missinglib","BAD_RESPONSE":"global.badresponse","INVALID_PHONE":"Le format du numéro de téléphone est incorrect","REMOVE":"Supprimer","QTY":"Qté","EMPTY_IMG_ALT":"Supprimer","COMPARE_BUTTON_LABEL":"productcomparewidget.compareitemsbutton","COMPARE_CONFIRMATION":"productcomparewidget.maxproducts","COMPARE_REMOVE_FAIL":"productcomparewidget.removefail","COMPARE_ADD_FAIL":"productcomparewidget.addfail","ADD_TO_CART_FAIL":"cart.unableToAdd","REGISTRY_SEARCH_ADVANCED_CLOSE":"account.giftregistry.closeadvanced","GIFT_CERT_INVALID":"billing.giftcertinvalid","GIFT_CERT_BALANCE":"billing.giftcertbalance","GIFT_CERT_AMOUNT_INVALID":"giftcert.amountvalueerror","GIFT_CERT_MISSING":"billing.giftcertidmissing","INVALID_OWNER":"billing.ownerparseerror","COUPON_CODE_MISSING":"Veuillez renseigner un code","COOKIES_DISABLED":"global.browsertoolscheck.cookies","BML_AGREE_TO_TERMS":"bml.termserror","CHAR_LIMIT_MSG":"character.limit","CONFIRM_DELETE":"confirm.delete","TITLE_GIFTREGISTRY":"title.giftregistry","TITLE_ADDRESS":"title.address","TITLE_CREDITCARD":"title.creditcard","SERVER_CONNECTION_ERROR":"Server connection failed!","IN_STOCK_DATE":"global.inStockDate","ITEM_STATUS_NOTAVAILABLE":"Recevoir une alerte stock","INIFINITESCROLL":"paginginformation.infinite-scroll","STORE_NEAR_YOU":"What's available at a store near you","SELECT_STORE":"storelist.lightbox.selectstore","SELECTED_STORE":"storelist.lightbox.selectedstore","PREFERRED_STORE":"storelist.lightbox.preferredstore","SET_PREFERRED_STORE":"storelist.lightbox.setpreferredstore","ENTER_ZIP":"storelist.lightbox.enterzip","INVALID_ZIP":"storelist.lightbox.invalidpostalcode","SEARCH":"OK","CHANGE_LOCATION":"storelist.lightbox.changelocation","CONTINUE_WITH_STORE":"storelist.lightbox.continuewithstore","CONTINUE":"global.continue","SEE_MORE":"storelist.lightbox.seemore","SEE_LESS":"storelist.lightbox.seeless","QUICK_VIEW":"product.quickview","QUICK_VIEW_POPUP":"product.quickview.popup","TLS_WARNING":"global.browsertoolscheck.tls","GIFT_CARD_INVALID_TEXT":"Votre message contient des caractères interdits, veuillez svp les corriger","GIFT_CARD_MIN_AMOUNT":5,"GIFT_CARD_MAX_AMOUNT":150,"E_GIFT_CARD_MIN_AMOUNT":5,"E_GIFT_CARD_MAX_AMOUNT":150,"GIFT_CARD_AMOUNT_INVALID":"Le montant saisi n'est pas valide","STORE_PREFERED":"Ma boutique préférée","SELECT_STORE_PREFERED":"En faire ma boutique préférée","CSRF_TOKEN_MISMATCH":"global.csrf.failed.error","VALIDATE_REQUIRED":"Ce champ est requis","VALIDATE_REMOTE":"Please fix this field.","VALIDATE_EMAIL":"L'e-mail renseigné est incorrect","VALIDATE_FIRSTNAME":"Le prénom renseigné est incorrect","VALIDATE_LASTNAME":"Le nom renseigné est incorrect","VALIDATE_ADDRESS":"L'adresse renseignée est incorrecte","VALIDATE_ADDRESSINFORMATION":"Les informations complémentaires renseignées sont incorrectes","VALIDATE_COMPLEMENTADDRESS":"L'adresse complémentaire renseignée est incorrecte","VALIDATE_CITY":"La ville renseignée est incorrecte","VALIDATE_POSTALCODE":"Le code postal renseigné est incorrect","VALIDATE_EXCLUDED_DEPARTMENTS":"La livraison vers ce code postal est impossible. Veuillez modifier votre adresse.","VALIDATE_URL":"Please enter a valid URL.","VALIDATE_DATE":"Date invalide","VALIDATE_DATEISO":"Please enter a valid date ( ISO ).","VALIDATE_NUMBER":"Merci de renseigner un nombre valide.","VALIDATE_DIGITS":"Please enter only digits.","VALIDATE_CREDITCARD":"Please enter a valid credit card number.","VALIDATE_EQUALTO":"Vous avez saisi deux e-mails différents","VALIDATE_MAXLENGTH":"Please enter no more than {0} characters.","VALIDATE_MINLENGTH":"Please enter at least {0} characters.","VALIDATE_RANGELENGTH":"Please enter a value between {0} and {1} characters long.","VALIDATE_RANGE":"Please enter a value between {0} and {1}.","VALIDATE_MAX":"Please enter a value less than or equal to {0}.","VALIDATE_MIN":"Please enter a value greater than or equal to {0}.","VALIDATE_PASSWORD":"8 caractères minimum dont au moins une lettre en majuscule, une lettre en minuscule, un chiffre et un caractère spécial","VALIDATE_EPTICAORDERNUMBER":"Le numéro de la commande est obligatoire pour le sujet de la demande choisi.","VALIDATE_DOMAIN":"Cette adresse mail n'est pas valide.","GIFT_CARD_TEXT_REGEX":"^[ -ÿ\n]+$","STORE_OR_RELAY_EMPTYRESULT":"aucun résultat pour votre recherche","EMPTY_SEARCH":"Veuillez renseigner au moins 1 champ","UNAVAILABLE_ZIPCODE":"Code postal non disponible","GEOLOCATION_ENABLED":"La géolocalisation a bien été autorisée.","GEOLOCATION_DISABLED":"Vous n'avez pas autorisé l'accès à votre position.","COUNTRY_FR":"France","COUNTRY_ES":"Spain – España","COUNTRY_BE":"Belgium - Belgique – België","LANG_fr":"Français","LANG_es":"Español","LANG_fr_BE":"Français – Frans","LANG_nl_BE":"Néerlandais - Nederlans","BANCONTACT_BUTTON_NAME":"Payer par Bancontact","CB_REMEMBER_CONTAINER":"","PAYPAL_COMMENT":"","PAYPAL_REMEMBER_CONTAINER":"","CB_LABEL":"Carte bancaire","PAYMENTS_SAVE":"Moyens de paiement enregistrés","PAYMENTS_AVAILABLE":"Autres moyens de paiement disponibles","PAYMENTS_CRYPTO_HELP":"Le cryptogramme c'est le code à 3 chiffres qui figure dans le petit panneau au dos de votre carte bancaire, à droite de votre signature.","TC_EVENTS":"tc_events_1","CART_PROMOTION_APPLIED":"La remise est applicable à votre panier","CART_PROMOTION_COUPON_ALREADY_IN_BASKET":"La promotion est déjà appliquée","CART_PROMOTION_COUPON_CODE_ALREADY_IN_BASKET":"Votre promotion est déjà appliquée","CART_PROMOTION_COUPON_CODE_ALREADY_REDEEMED":"Votre promotion a déjà été utilisée","CART_PROMOTION_COUPON_CODE_UNKNOWN":"La promotion est inconnue","CART_PROMOTION_COUPON_DISABLED":"La promotion utilisée n'est pas valable","CART_PROMOTION_CUSTOMER_REDEMPTION_LIMIT_EXCEEDED":"Votre promotion a déjà été utilisée","CART_PROMOTION_NO_ACTIVE_PROMOTION":"La promotion n'est pas valable","CART_PROMOTION_NO_APPLICABLE_PROMOTION":"Promotion non applicable, vérifiez les conditions d'utilisation","CART_PROMOTION_OUTDATED_COUPON":"Promotion expirée","CART_PROMOTION_REDEMPTION_LIMIT_EXCEEDED":"Votre promotion a déjà été utilisée","CART_PROMOTION_TIMEFRAME_REDEMPTION_LIMIT_EXCEEDED":"Votre promotion a déjà été utilisée","CART_PROMOTION_COUPON_CODE_MISSING":"Veuillez renseigner un code","CART_PROMOTION_COUPONINVALIDE":"Promotion invalide","CART_PROMOTION_COUPON_IMPOSSIBLE_REMOVE":"Erreur, votre promotion n'a pas été annulée","CART_PROMOTION_COUPON_REMOVE":"Votre promotion a bien été annulée","IN_STOCK":"global.instock","QTY_IN_STOCK":"global.quantityinstock","PREORDER":"global.allpreorder","QTY_PREORDER":"global.quantitypreorder","REMAIN_PREORDER":"global.remainingpreorder","BACKORDER":"global.allbackorder","QTY_BACKORDER":"global.quantitybackorder","REMAIN_BACKORDER":"global.remainingbackorder","NOT_AVAILABLE":"Recevoir une alerte stock","REMAIN_NOT_AVAILABLE":"global.remainingnotavailable"};
+window.Urls = {"appResources":"/on/demandware.store/Sites-M2T_FR-Site/fr/Resources-LoadTransient","pageInclude":"/on/demandware.store/Sites-M2T_FR-Site/fr/Page-Include","staticPath":"/on/demandware.static/Sites-M2T_FR-Site/-/fr/v1645675756438/","addGiftCert":"/on/demandware.store/Sites-M2T_FR-Site/fr/GiftCert-Purchase","minicartGC":"/on/demandware.store/Sites-M2T_FR-Site/fr/GiftCert-ShowMiniCart","addProduct":"/on/demandware.store/Sites-M2T_FR-Site/fr/Cart-AddProduct","minicart":"/on/demandware.store/Sites-M2T_FR-Site/fr/Cart-MiniAddProduct","minicartQty":"/on/demandware.store/Sites-M2T_FR-Site/fr/Cart-MiniCartQuantity","headerCheckoutQuantity":"/on/demandware.store/Sites-M2T_FR-Site/fr/Cart-HeaderCheckoutQuantity","minicartRefresh":"/on/demandware.store/Sites-M2T_FR-Site/fr/Cart-MiniCart","cartShow":"/panier/","giftRegAdd":"https://www.morgandetoi.fr/on/demandware.store/Sites-M2T_FR-Site/fr/Address-GetAddressDetails?addressID=","paymentsList":"https://www.morgandetoi.fr/mon-espace-personnel/mes-moyens-de-paiement/","addressesList":"https://www.morgandetoi.fr/mon-espace-personnel/vos-adresses/","wishlistAddress":"https://www.morgandetoi.fr/on/demandware.store/Sites-M2T_FR-Site/fr/Wishlist-SetShippingAddress","deleteAddress":"/on/demandware.store/Sites-M2T_FR-Site/fr/Address-Delete","getProductUrl":"/on/demandware.store/Sites-M2T_FR-Site/fr/Product-Show","getProductPartOfSetUrl":"/on/demandware.store/Sites-M2T_FR-Site/fr/Product-VariationPS","getBonusProducts":"/on/demandware.store/Sites-M2T_FR-Site/fr/Product-GetBonusProducts","addBonusProduct":"/on/demandware.store/Sites-M2T_FR-Site/fr/Cart-AddBonusProduct","getSuccesAddProductDialog":"https://www.morgandetoi.fr/on/demandware.store/Sites-M2T_FR-Site/fr/Cart-GetSuccesAddProductDialog","getEstimateShippingsDialog":"/on/demandware.store/Sites-M2T_FR-Site/fr/Cart-GetEstimateShippingsDialog","refreshHeader":"https://www.morgandetoi.fr/on/demandware.store/Sites-M2T_FR-Site/fr/SocialConnect-GetUpdatedHeader","getSetItem":"/on/demandware.store/Sites-M2T_FR-Site/fr/Product-GetSetItem","delivery":"https://www.morgandetoi.fr/identification/?keeplogininfo=true","productDetail":"/on/demandware.store/Sites-M2T_FR-Site/fr/Product-Detail","getAvailability":"/on/demandware.store/Sites-M2T_FR-Site/fr/Product-GetAvailability","removeImg":"/on/demandware.static/Sites-M2T_FR-Site/-/default/dw1a6a1cd8/images/icon_remove.gif","searchsuggest":"/on/demandware.store/Sites-M2T_FR-Site/fr/Search-GetSuggestions","productNav":"/on/demandware.store/Sites-M2T_FR-Site/fr/Product-Productnav","summaryRefreshURL":"/on/demandware.store/Sites-M2T_FR-Site/fr/COBilling-UpdateSummary","billingSelectCC":"https://www.morgandetoi.fr/on/demandware.store/Sites-M2T_FR-Site/fr/COBilling-SelectCreditCard","updateBillingAddressDetails":"https://www.morgandetoi.fr/on/demandware.store/Sites-M2T_FR-Site/fr/COBilling-UpdateBillingAddressDetails","updateAddressDetailsBilling":"https://www.morgandetoi.fr/on/demandware.store/Sites-M2T_FR-Site/fr/COBilling-UpdateAddressDetails","shippingMethodsJSON":"https://www.morgandetoi.fr/on/demandware.store/Sites-M2T_FR-Site/fr/COShipping-GetApplicableShippingMethodsJSON","shippingMethodsList":"https://www.morgandetoi.fr/on/demandware.store/Sites-M2T_FR-Site/fr/COShipping-RenderShippingMethodList","selectShippingMethodsList":"https://www.morgandetoi.fr/on/demandware.store/Sites-M2T_FR-Site/fr/COShipping-SelectShippingMethod","resetPaymentForms":"/on/demandware.store/Sites-M2T_FR-Site/fr/COBilling-ResetPaymentForms","compareShow":"/on/demandware.store/Sites-M2T_FR-Site/fr/Compare-Show","compareAdd":"/on/demandware.store/Sites-M2T_FR-Site/fr/Compare-AddProduct","compareRemove":"/on/demandware.store/Sites-M2T_FR-Site/fr/Compare-RemoveProduct","compareEmptyImage":"/on/demandware.static/Sites-M2T_FR-Site/-/default/dw4422e9e9/images/comparewidgetempty.png","giftCardCheckBalance":"https://www.morgandetoi.fr/on/demandware.store/Sites-M2T_FR-Site/fr/COBilling-GetGiftCertificateBalance","redeemGiftCert":"https://www.morgandetoi.fr/on/demandware.store/Sites-M2T_FR-Site/fr/COBilling-RedeemGiftCertificateJson","addCoupon":"https://www.morgandetoi.fr/on/demandware.store/Sites-M2T_FR-Site/fr/Cart-AddCouponJson","deleteCoupon":"https://www.morgandetoi.fr/on/demandware.store/Sites-M2T_FR-Site/fr/Cart-DeleteCouponJson","storesInventory":"/on/demandware.store/Sites-M2T_FR-Site/fr/StoreInventory-Inventory","setPreferredStore":"/on/demandware.store/Sites-M2T_FR-Site/fr/StoreInventory-SetPreferredStore","getPreferredStore":"/on/demandware.store/Sites-M2T_FR-Site/fr/StoreInventory-GetPreferredStore","setStorePickup":"/on/demandware.store/Sites-M2T_FR-Site/fr/StoreInventory-SetStore","setZipCode":"/on/demandware.store/Sites-M2T_FR-Site/fr/StoreInventory-SetZipCode","getZipCode":"/on/demandware.store/Sites-M2T_FR-Site/fr/StoreInventory-GetZipCode","billing":"/paiement/","setSessionCurrency":"/on/demandware.store/Sites-M2T_FR-Site/fr/Currency-SetSessionCurrency","addEditAddress":"/on/demandware.store/Sites-M2T_FR-Site/fr/COShippingMultiple-AddEditAddressJSON","cookieHint":"/on/demandware.store/Sites-M2T_FR-Site/fr/Page-Show?cid=cookie_hint","rateLimiterReset":"/on/demandware.store/Sites-M2T_FR-Site/fr/RateLimiter-HideCaptcha","csrffailed":"/on/demandware.store/Sites-M2T_FR-Site/fr/CSRF-Failed","setAsBillingAddress":"https://www.morgandetoi.fr/on/demandware.store/Sites-M2T_FR-Site/fr/COShipping-SetAsBillingAddress","updateShippingDetails":"https://www.morgandetoi.fr/on/demandware.store/Sites-M2T_FR-Site/fr/COShipping-UpdateShippingDetails","updateBillingAddress":"https://www.morgandetoi.fr/on/demandware.store/Sites-M2T_FR-Site/fr/COBilling-UpdateBillingAddress","chooseAddress":"https://www.morgandetoi.fr/on/demandware.store/Sites-M2T_FR-Site/fr/COShipping-ChooseAddress","modifyAddress":"https://www.morgandetoi.fr/on/demandware.store/Sites-M2T_FR-Site/fr/COShipping-ModifyAddress","loadAddressForm":"https://www.morgandetoi.fr/on/demandware.store/Sites-M2T_FR-Site/fr/COShipping-LoadAddressForm","allStores":"https://www.morgandetoi.fr/on/demandware.store/Sites-M2T_FR-Site/fr/Stores-AllStoresJSON","searchNearest":"https://www.morgandetoi.fr/on/demandware.store/Sites-M2T_FR-Site/fr/Stores-NearestStoresJSON","getStoresBycoordinates":"https://www.morgandetoi.fr/on/demandware.store/Sites-M2T_FR-Site/fr/Stores-GetStoresBycoordinates","searchNearestRelays":"https://www.morgandetoi.fr/on/demandware.store/Sites-M2T_FR-Site/fr/COShipping-GetRelaysJSON","chooseStore":"https://www.morgandetoi.fr/on/demandware.store/Sites-M2T_FR-Site/fr/COShipping-ChooseStore","chooseRelay":"https://www.morgandetoi.fr/on/demandware.store/Sites-M2T_FR-Site/fr/COShipping-ChooseRelay","displayDeliverypointSearch":"https://www.morgandetoi.fr/on/demandware.store/Sites-M2T_FR-Site/fr/COShipping-DisplayDeliverypointSearch","rendershippingCostDetails":"https://www.morgandetoi.fr/on/demandware.store/Sites-M2T_FR-Site/fr/COShipping-RenderShippingCostDetails","updateCartSummary":"/on/demandware.store/Sites-M2T_FR-Site/fr/COBilling-UpdateSummary","updatePreferredStore":"https://www.morgandetoi.fr/on/demandware.store/Sites-M2T_FR-Site/fr/Home-IncludeHeaderCustomerStoreLocator","handleOrder":"https://www.morgandetoi.fr/on/demandware.store/Sites-M2T_FR-Site/fr/COPlaceOrder-handleOrder","backInStockAddCustomerToList":"https://www.morgandetoi.fr/inscription-retour-en-stock/","addToWishlist":"https://www.morgandetoi.fr/AddProductToWishlist/","removeFromWishlist":"https://www.morgandetoi.fr/RemoveProductToWishlist/","searchShow":"https://www.morgandetoi.fr/recherche/","instancePathUrl":"https://www.morgandetoi.fr/","crossSiteSignUpForm":"https://www.morgandetoi.fr/on/demandware.store/Sites-M2T_FR-Site/fr/Login-GetCrossSiteForm","getLastOrder":"https://www.morgandetoi.fr/on/demandware.store/Sites-M2T_FR-Site/fr/Order-LastOrder","OrderHistory":"https://www.morgandetoi.fr/mon-espace-personnel/mes-commandes/","UpdateProductTile":"https://www.morgandetoi.fr/on/demandware.store/Sites-M2T_FR-Site/fr/Product-UpdateProductTile","GetProductsRecommended":"https://www.morgandetoi.fr/on/demandware.store/Sites-M2T_FR-Site/fr/Target2Sell-GetProductsRecommended","SearchLocality":"https://www.morgandetoi.fr/on/demandware.store/Sites-M2T_FR-Site/fr/CapAddress-SearchLocality","SearchStreet":"https://www.morgandetoi.fr/on/demandware.store/Sites-M2T_FR-Site/fr/CapAddress-SearchStreet","customerSelectionStore":"https://www.morgandetoi.fr/on/demandware.store/Sites-M2T_FR-Site/fr/Product-IncludeCustomerFindInStore","SetValuesButtonSocloz":"https://www.morgandetoi.fr/on/demandware.store/Sites-M2T_FR-Site/fr/Product-SetValuesButtonReservationSocloz","InitOmniConnect":"https://www.morgandetoi.fr/on/demandware.store/Sites-M2T_FR-Site/fr/OmniConnect-Show","ResetOmniRegisterForm":"https://www.morgandetoi.fr/on/demandware.store/Sites-M2T_FR-Site/fr/OmniConnect-ResetOmniRegisterForm","showCartQuickView":"https://www.morgandetoi.fr/on/demandware.store/Sites-M2T_FR-Site/fr/Product-ShowCartQuickView","consentTracking":"/on/demandware.store/Sites-M2T_FR-Site/fr/Page-Show?cid=consent_tracking_hint","consentTrackingSetSession":"/on/demandware.store/Sites-M2T_FR-Site/fr/Account-ConsentTracking","includeSocialOptinsForm":"https://www.morgandetoi.fr/on/demandware.store/Sites-M2T_FR-Site/fr/Account-IncludeSocialOptinsForm","RenderHandleConfirmLogin":"https://www.morgandetoi.fr/on/demandware.store/Sites-M2T_FR-Site/fr/SocialConnect-RenderHandleConfirmLogin","listPromotionsUR":"https://www.morgandetoi.fr/on/demandware.store/Sites-M2T_FR-Site/fr/MarketingAction-GetList","hitProductTile":"https://www.morgandetoi.fr/on/demandware.store/Sites-M2T_FR-Site/fr/Product-HitTile","wishlistShow":"https://www.morgandetoi.fr/on/demandware.store/Sites-M2T_FR-Site/fr/Whishlist-Show"};
+window.SitePreferences = {"LISTING_INFINITE_SCROLL":false,"STICKY_HEADER":true,"MENU2":false,"BURGER_MENU2":true,"STORE_COUNTRIES":true,"EnableLayerMinicart":true,"LISTING_REFINE_SORT":true,"STORE_PICKUP":null,"COOKIE_HINT":false,"CHECK_TLS":null,"ENABLE_GEOAPI":true,"TC_ENABLED":true,"TC_File":"tagcommander/20220131/tc_Morgan_1.js","T2S_ENABLED":false,"OPTINS_ENABLED":true,"PRODUCT_NB_PER_LINE":2,"STICKY_EFFECT":false,"MULTILANG":true,"SHIPPING_DEPARTEMENTS_EXCLUDED":{"colissimo":{"FR":["97","98"]},"pli_postal":{"FR":["97","98"]}},"WOOSMAP_LOCALITIES_ACTIVATE":true,"WOOSMAP_LOCALITIES_KEY":"woos-c1b53376-ac3e-31a6-8181-85d71466df18","WOOSMAP_LOCALITIES_URL":"https://api.woosmap.com/localities/autocomplete/?","CAPADDRESS_ENABLED":false,"ENABLE_BOOK_SOCLOZ":true,"ENABLE_CART_QUICKVIEW":true,"CONSENT_TRACKING_HINT":false,"EMAILS_BLACKLIST":"@inboxen.co;@inboxen.or;@inboxen.co.uk"};
+}());
+</script>
+<script type="text/javascript">
+
+(function(){
+window.SessionAttributes = {"SHOW_CAPTCHA":null};
+window.User = {"zip":null,"storeId":null};
+}());
+</script>
+<script src="/on/demandware.static/Sites-M2T_FR-Site/-/fr/v1645675756438/js/app.js"></script>
+<script>pageContext = {"title":"Content","type":"content","ns":"content"};</script>
+<script>
+var meta = "Parcourez et découvrez l'ensemble des informations de la page charte de confidentialité des données à caractère personnel. Morgandetoi, vêtements femme tendance chic et mode !";
+var keywords = "";
+</script>
+<div class="omniconnect-layer">
+<div>
+<div class="layer-close"></div>
+</div>
+<div class="layer-content">
+<script src='https://www.google.com/recaptcha/api.js'></script>
+<div class="omniconnect">
+<div class="omniconnect-title">
+<div class="content-asset">
+veuillez compléter votre adresse mail ou n° de fidélité et votre code postal pour vous identifier ou créer votre compte.
+</div> 
+</div>
+<form action="https://www.morgandetoi.fr/on/demandware.store/Sites-M2T_FR-Site/fr/OmniConnect-FindCustomer" method="post" class="omniconnect-form" id="omniconnect-form">
+<div class="info-content">
+<div class="content-asset">
+Retrouvez votre numéro de carte de fidélité sur votre ticket de caisse ou vos e-mailings
+</div> 
+</div>
+<div class="form-row  required">
+<div class="field-wrapper">
+<input class="input-text check-domain required" type="text" id="dwfrm_omniconnect_emailloyalty" name="dwfrm_omniconnect_emailloyalty" value="" emailcheck="true" maxlength="64" placeholder="E-mail ou n° de fidélité *" /><span class="js-email-check"></span>
+</div>
+</div>
+<span class="error-omnicanal error-domain">
+Cette adresse mail n'est pas valide.
+</span>
+<div class="form-row omniconnect-postal required">
+<div class="field-wrapper">
+<input class="input-text postal required" type="tel" id="dwfrm_omniconnect_postal" name="dwfrm_omniconnect_postal" value="" maxlength="32" placeholder="code postal *" />
+</div>
+</div>
+<div class="g-recaptcha" data-sitekey="6LfvIGUUAAAAAEtnMjgTYa8-N1o0K94FkQBoILc8" data-error-message="Veuillez cocher la case ci-dessus" data-callback="recaptchaCallback"></div>
+</form>
+<div class="error-omnicanal error-omniconnect">
+Une erreur est survenue lors de la connexion
+</div>
+<div class="omniconnect-arguments-bloc hidden">
+</div>
+<div class="social-connect-wrapper">
+<div class="create-account-social">
+<span>
+<div class="content-asset">
+<p>Ou connectez-vous rapidement avec : **</p>
+</div> 
+</span>
+<div class="social-connect">
+<form action="https://www.morgandetoi.fr/on/demandware.store/Sites-M2T_FR-Site/fr/SocialConnect-SocialLogin" method="post" class="clearfix" id="Facebook-MGN">
+<div class="facebook-connect-wrapper">
+<button class="btn-facebook-co-dashboard oAuthIcon" value="Facebook-MGN" name="dwfrm_socialconnect_login">
+<span class="social-network-picto"></span>
+</button>
+</div>
+<input type="hidden" name="csrf_token" value="HoJE28uAVcF-39hF_uIuoaFQYux8P-aaV5gRshXzwDQqmktNP1kTtsaAG94_1h5Ae2m5Aa1hnOwFozD0BSMbDO61cxucPDgvgmUdv4zsiI2I0EqR7tVSZIyeCg4a7lqNNsXCU8WFe_1BqqpXnSCFbTZkOv1Ji0wINY0D1s0hN2zk83YGogA=" />
+<input type="hidden" name="dwfrm_socialconnect_oauthproviderid" id="OAuthProviderID-facebook" value="Facebook-MGN" />
+<input type="hidden" name="isCheckoutLogin" value="null" />
+</form>
+<form action="https://www.morgandetoi.fr/on/demandware.store/Sites-M2T_FR-Site/fr/SocialConnect-SocialLogin" method="post" class="clearfix" id="Google-M2T">
+<div class="google-connect-wrapper">
+<button class="btn-google-co-dashboard oAuthIcon" value="Google-M2T" name="dwfrm_socialconnect_login">
+<i class=google-icon></i>
+<span class="social-network-picto"></span>
+</button>
+</div>
+<input type="hidden" name="csrf_token" value="nxRKqohfI-JyjaTfl9nlStLgurz-OfaqgrLExHNRUsFSqSX6K17KlG5eAI4Gl_Ituod-R2m0burtP7SkiMJQuRSoNuxslYxYFEu418j_MtPHJUDHvjI6z2ccB2YXg36zvuv3g4o25ZdSUYF3Qg2nxwkK4Is1UIDjRbFQRlSDEAvLPURGzic=" />
+<input type="hidden" name="dwfrm_socialconnect_oauthproviderid" id="OAuthProviderID-google" value="Google-M2T" />
+<input type="hidden" name="isCheckoutLogin" value="null" />
+</form>
+</div>
+<p class="required-info">
+Aucune de vos informations personnelles ne sera r&eacute;cup&eacute;r&eacute;e
+</p>
+</div>
+</div>
+<form action="https://www.morgandetoi.fr/on/demandware.store/Sites-M2T_FR-Site/fr/COCustomer-LoginForm?scope=checkout" method="post" class="omni-guestcheckout">
+<div class="form-row form-row-button">
+<button class="btn-secondary guest-checkout" type="submit" value="Continuer sans compte" name="dwfrm_login_unregistered">
+<span>Continuer sans compte</span>
+</button>
+</div>
+<input type="hidden" name="csrf_token" value="_yrwTqhowF1-CSpt3ZoYIlxLXiaaRQyB8jXRego9xRgrIvQTrJtNcZxnRbI-gF3BsQOeT_m_JdH4OXrUgOjz6p0n-BTaPXtF8Y2O79GXiDX5K6EsTAl8rfSS08t_UGlYfbmgW9q_ki4e9HOp2xEV4SBBcVyL_LULYr2sCu3Yq_YXthnoAmI=" />
+</form>
+<div class="footer">
+<div class="content-asset">
+<p style="text-align: justify;">* Les champs marqu&eacute;s d'un ast&eacute;risque * sont obligatoires.<br />
+<br />
+</div> 
+</div>
+</div>
+<div class="omniconnect-mobilecheckout">
+<div class="button-fancy-large omniconnect-mobile">
+Se connecter
+</div>
+<form action="https://www.morgandetoi.fr/on/demandware.store/Sites-M2T_FR-Site/fr/COCustomer-LoginForm?scope=checkout" method="post" class="omni-guestcheckout">
+<div class="form-row form-row-button">
+<button class="btn-secondary guest-checkout" type="submit" value="Continuer sans compte" name="dwfrm_login_unregistered">
+<span>Continuer sans compte</span>
+</button>
+</div>
+<input type="hidden" name="csrf_token" value="4NbU9TDdlvWvcCWNgFc45dTyJ0UTCREa9Ra0YM1b6yK6TaxmmqZxLuW7pjbPmK4WrfR1k3BuLDt4D_a4SGeJNPaf4JFfGuYfTcJrqAxc2HttBewdo4jnCR7isqypfcINR1GYNG3axyeh8c0Yz-ZgP7AgT6Es95INoNVQYfosq2AP_dKKJ5k=" />
+</form>
+</div>
+</div>
+<div class="loader"></div>
+</div>
+<div class="overlay"></div>
+<div data-querystring="fdid=charte-confidentialite" data-action="Search-ShowContent"></div>
+</div>
+
+<script type="text/javascript">//<!--
+/* <![CDATA[ */
+function trackPage() {
+    try{
+        var trackingUrl = "https://www.morgandetoi.fr/on/demandware.store/Sites-M2T_FR-Site/fr/__Analytics-Start";
+        var dwAnalytics = dw.__dwAnalytics.getTracker(trackingUrl);
+        if (typeof dw.ac == "undefined") {
+            dwAnalytics.trackPageView();
+        } else {
+            dw.ac.setDWAnalytics(dwAnalytics);
+        }
+    }catch(err) {};
+}
+/* ]]> */
+// -->
+</script>
+<script type="text/javascript" src="/on/demandware.static/Sites-M2T_FR-Site/-/fr/v1645675756438/internal/jscript/dwanalytics-22.2.js" async="async" onload="trackPage()"></script>
+
+<script src="/on/demandware.static/Sites-M2T_FR-Site/-/fr/v1645675756438/internal/jscript/dwac-21.7.js" type="text/javascript" async="async"></script>
+<script src="https://cdn.cquotient.com/js/v2/gretel.min.js" type="text/javascript" async="async"></script>
+</body>
+</html>
