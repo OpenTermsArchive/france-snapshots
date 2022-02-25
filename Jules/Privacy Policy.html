@@ -9,12 +9,47 @@
 <link rel="alternate" href="https://www.jules.com/nl-be/static/politique-de-confidentialite.html" hreflang="nl-be" />
 <link rel="alternate" href="https://www.jules.com/fr-fr/static/politique-de-confidentialite.html" hreflang="x-default" />
 <!--[if gt IE 9]><!-->
-<script>//common/scripts.isml</script>
-<script type="text/javascript" src="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1645693151202/js/Jquery.js"></script>
-<script defer type="text/javascript" src="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1645693151202/js/main.js"></script>
-<script defer type="text/javascript" src="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1645693151202/js/uiShow.js">
+<script defer type="text/javascript" src="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1645716448554/js/main.js"></script>
+<script type="text/javascript">
+    // Duration in milliseconds to wait while the Kameleoon application file is loaded
+        var kameleoonLoadingTimeout = 1000;
+
+        window.kameleoonQueue = window.kameleoonQueue || [];
+        window.kameleoonStartLoadTime = new Date().getTime();
+        if (! document.getElementById("kameleoonLoadingStyleSheet") && ! window.kameleoonDisplayPageTimeOut)
+        {
+            var kameleoonS = document.getElementsByTagName("script")[0];
+            var kameleoonCc = "* { visibility: hidden !important; background-image: none !important; }";
+            var kameleoonStn = document.createElement("style");
+            kameleoonStn.type = "text/css";
+            kameleoonStn.id = "kameleoonLoadingStyleSheet";
+            if (kameleoonStn.styleSheet)
+            {
+                kameleoonStn.styleSheet.cssText = kameleoonCc;
+            }
+            else
+            {
+                kameleoonStn.appendChild(document.createTextNode(kameleoonCc));
+            }
+            kameleoonS.parentNode.insertBefore(kameleoonStn, kameleoonS);
+            window.kameleoonDisplayPage = function(fromEngine)
+            {
+                if (!fromEngine)
+                {
+                    window.kameleoonTimeout = true;
+                }
+                if (kameleoonStn.parentNode)
+                {
+                    kameleoonStn.parentNode.removeChild(kameleoonStn);
+                }
+            };
+            window.kameleoonDisplayPageTimeOut = window.setTimeout(window.kameleoonDisplayPage, kameleoonLoadingTimeout);
+        }
     </script>
-<script defer type="text/javascript" src="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1645693151202/js/targetToSell.js">
+<script type="text/javascript" src="//n9jm8v6ad7.kameleoon.eu/kameleoon.js" async="true"></script>
+<script defer type="text/javascript" src="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1645716448554/js/uiShow.js">
+    </script>
+<script defer type="text/javascript" src="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1645716448554/js/targetToSell.js">
     </script>
 <!--<![endif]-->
 <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -31,10 +66,10 @@
 <link rel="icon" type="image/png" href="https://www.jules.com/on/demandware.static/-/Sites/default/dw32346939/images/Favicon/faviconJules_android-chrome-96x96.png" sizes="96x96" />
 <link rel="icon" type="image/png" href="https://www.jules.com/on/demandware.static/-/Sites/default/dw57028633/images/Favicon/faviconJules_android-chrome-144x144.png" sizes="128x128" />
 <link rel="icon" type="image/png" href="https://www.jules.com/on/demandware.static/-/Sites/default/dwda509f6c/images/Favicon/faviconJules_android-chrome-192x192.png" sizes="196x196" />
-<link rel="preload" href="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1645693151202/fonts/fontawesome-webfont.woff2?v=4.7.0" as="font" type="font/woff2" crossorigin />
-<link rel="preload" href="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1645693151202/fonts/icomoon.ttf?mt5112" as="font" type="font/ttf" crossorigin />
-<link rel="stylesheet" href="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1645693151202/css/global.css" />
-<link rel="stylesheet" href="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1645693151202/css/radiusCTA.css" />
+<link rel="preload" href="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1645716448554/fonts/fontawesome-webfont.woff2?v=4.7.0" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1645716448554/fonts/icomoon.ttf?mt5112" as="font" type="font/ttf" crossorigin />
+<link rel="stylesheet" href="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1645716448554/css/global.css" />
+<link rel="stylesheet" href="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1645716448554/css/radiusCTA.css" />
 <script type="text/javascript">window.gdprAppliesGlobally=true;(function(){function a(e){if(!window.frames[e]){if(document.body&&document.body.firstChild){var t=document.body;var n=document.createElement("iframe");n.style.display="none";n.name=e;n.title=e;t.insertBefore(n,t.firstChild)}
 else{setTimeout(function(){a(e)},5)}}}function e(n,r,o,c,s){function e(e,t,n,a){if(typeof n!=="function"){return}if(!window[r]){window[r]=[]}var i=false;if(s){i=s(e,t,n)}if(!i){window[r].push({command:e,parameter:t,callback:n,version:a})}}e.stub=true;function t(a){if(!window[n]||window[n].stub!==true){return}if(!a.data){return}
 var i=typeof a.data==="string";var e;try{e=i?JSON.parse(a.data):a.data}catch(t){return}if(e[o]){var r=e[o];window[n](r.command,r.parameter,function(e,t){var n={};n[c]={returnValue:e,success:t,callId:r.callId};a.source.postMessage(i?JSON.stringify(n):n,"*")},r.version)}}
@@ -241,43 +276,6 @@ CQuotient.trackViewProduct = function(/* Object */ cqParamData){
 <script type="application/ld+json">
             {"@context":"http://schema.org/","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"politique-de-confidentialite","item":"https://www.jules.com/fr-fr/static/politique-de-confidentialite.html"}]}
         </script>
-<script type="text/javascript">
-    // Duration in milliseconds to wait while the Kameleoon application file is loaded
-        var kameleoonLoadingTimeout = 1000;
-
-        window.kameleoonQueue = window.kameleoonQueue || [];
-        window.kameleoonStartLoadTime = new Date().getTime();
-        if (! document.getElementById("kameleoonLoadingStyleSheet") && ! window.kameleoonDisplayPageTimeOut)
-        {
-            var kameleoonS = document.getElementsByTagName("script")[0];
-            var kameleoonCc = "* { visibility: hidden !important; background-image: none !important; }";
-            var kameleoonStn = document.createElement("style");
-            kameleoonStn.type = "text/css";
-            kameleoonStn.id = "kameleoonLoadingStyleSheet";
-            if (kameleoonStn.styleSheet)
-            {
-                kameleoonStn.styleSheet.cssText = kameleoonCc;
-            }
-            else
-            {
-                kameleoonStn.appendChild(document.createTextNode(kameleoonCc));
-            }
-            kameleoonS.parentNode.insertBefore(kameleoonStn, kameleoonS);
-            window.kameleoonDisplayPage = function(fromEngine)
-            {
-                if (!fromEngine)
-                {
-                    window.kameleoonTimeout = true;
-                }
-                if (kameleoonStn.parentNode)
-                {
-                    kameleoonStn.parentNode.removeChild(kameleoonStn);
-                }
-            };
-            window.kameleoonDisplayPageTimeOut = window.setTimeout(window.kameleoonDisplayPage, kameleoonLoadingTimeout);
-        }
-    </script>
-<script type="text/javascript" src="//n9jm8v6ad7.kameleoon.eu/kameleoon.js" async="true"></script>
 </head>
 <body class="Page-Show">
 
@@ -474,12 +472,12 @@ Rayures &amp; marini&egrave;res
 Tendance color&eacute;e
 </a>
 </li>
-
 <li class="dropdown-item d-none" role="menuitem">
 <a href="https://www.jules.com/fr-fr/l/denim/" id="link-haut-denim-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatlink-haut-denim">
 Looks denim
 </a>
 </li>
+
 <li class="dropdown-item d-none" role="menuitem">
 <a href="https://www.jules.com/fr-fr/licences/" id="link-haut-collab-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatlink-haut-collab">
 Collab&reg;
@@ -560,20 +558,21 @@ li.dropdown-item, div.mega-menu div.container-md ul.dropdown-menu li.dropdown-it
 <a href="https://www.jules.com/fr-fr/l/manteau-blouson/" onclick="opeco('opeco', 'layer-haut-push', 'plp-manteau-blousons')">
 <picture>
 <source media="(min-width:1280px)" srcset="https://www.jules.com/on/demandware.static/-/Sites/default/dwefbe040f/jules-sfcc/PE22/Push2-Selec-BlousonsMenteaux-FR.jpg 1x, https://www.jules.com/on/demandware.static/-/Sites/default/dw2d0f7157/jules-sfcc/PE22/Push2-Selec-BlousonsMenteaux-FR@2x.jpg 2x">
-<source srcset="https://www.jules.com/on/demandware.static/-/Sites/fr_FR/v1645693151202/PE20/px.gif">
+<source srcset="https://www.jules.com/on/demandware.static/-/Sites/fr_FR/v1645716448554/PE20/px.gif">
 <img alt="Manteaux & Blousons" src="https://www.jules.com/on/demandware.static/-/Sites/default/dwefbe040f/jules-sfcc/PE22/Push2-Selec-BlousonsMenteaux-FR.jpg" class="img-fluid pushNav mt-3" loading="lazy" width="350" height="154">
 </picture>
 </a>
 <a href="https://www.jules.com/fr-fr/p/100044618005.html" onclick="opeco('opeco', 'layer-haut-push', 'pid-100044618005')">
 <picture>
 <source media="(min-width:1280px)" srcset="https://www.jules.com/on/demandware.static/-/Sites/default/dwa6f7682c/jules-sfcc/PE22/PUSH2-WAHOO-chemise-stadium-FR.jpg 1x, https://www.jules.com/on/demandware.static/-/Sites/default/dwbe7e7b4a/jules-sfcc/PE22/PUSH2-WAHOO-chemise-stadium-FR@2x.jpg 2x">
-<source srcset="https://www.jules.com/on/demandware.static/-/Sites/fr_FR/v1645693151202/PE20/px.gif">
+<source srcset="https://www.jules.com/on/demandware.static/-/Sites/fr_FR/v1645716448554/PE20/px.gif">
 <img alt="Chemise" src="https://www.jules.com/on/demandware.static/-/Sites/default/dwa6f7682c/jules-sfcc/PE22/PUSH2-WAHOO-chemise-stadium-FR.jpg" class="img-fluid pushNav mt-3" loading="lazy" width="350" height="154">
 </picture>
 </a>
 </div>
 </div>
 </div>
+
 </div>
 </li>
 <li class="nav-item dropdown" role="menuitem">
@@ -714,14 +713,14 @@ li.dropdown-item, div.mega-menu div.container-md ul.dropdown-menu li.dropdown-it
 <a href="https://www.jules.com/fr-fr/l/pantalon-chino/" onclick="opeco('opeco', 'layer-bas-push', 'plp-chinos')">
 <picture>
 <source media="(min-width:1280px)" srcset="https://www.jules.com/on/demandware.static/-/Sites/default/dw060668dd/jules-sfcc/PE22/Push2-ID-pantalons-chinos-FR.jpg 1x, https://www.jules.com/on/demandware.static/-/Sites/default/dw4aab7955/jules-sfcc/PE22/Push2-ID-pantalons-chinos-FR@2x.jpg 2x">
-<source srcset="https://www.jules.com/on/demandware.static/-/Sites/fr_FR/v1645693151202/PE20/px.gif">
+<source srcset="https://www.jules.com/on/demandware.static/-/Sites/fr_FR/v1645716448554/PE20/px.gif">
 <img alt="Pantalon chinos" src="https://www.jules.com/on/demandware.static/-/Sites/default/dw060668dd/jules-sfcc/PE22/Push2-ID-pantalons-chinos-FR.jpg" class="img-fluid pushNav" loading="lazy" width="350" height="154">
 </picture>
 </a>
 <a href="https://www.jules.com/fr-fr/p/1001122.html" onclick="opeco('opeco', 'layer-bas-push', 'pid-1001122')">
 <picture>
 <source media="(min-width:1280px)" srcset="https://www.jules.com/on/demandware.static/-/Sites/default/dw02e2cab7/jules-sfcc/PE22/PUSH2-WAHOO-jeans-FR.jpg 1x, https://www.jules.com/on/demandware.static/-/Sites/default/dw6a2c8dea/jules-sfcc/PE22/PUSH2-WAHOO-jeans-FR@2x.jpg 2x">
-<source srcset="https://www.jules.com/on/demandware.static/-/Sites/fr_FR/v1645693151202/PE20/px.gif">
+<source srcset="https://www.jules.com/on/demandware.static/-/Sites/fr_FR/v1645716448554/PE20/px.gif">
 <img alt="Jeans eco-wash" src="https://www.jules.com/on/demandware.static/-/Sites/default/dw02e2cab7/jules-sfcc/PE22/PUSH2-WAHOO-jeans-FR.jpg" class="img-fluid pushNav mt-3" loading="lazy" width="350" height="154">
 </picture>
 </a>
@@ -759,7 +758,7 @@ Gilet de Costume
 <li class="dropdown-item d-none" role="menuitem">
 <a href="/fr-fr/l/pantalon-de-costume/" id="HCC14-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatHCC14">
 Pantalon de Costume
-</a>
+ </a>
 </li>
 <li class="dropdown-item d-none" role="menuitem">
 <a href="/fr-fr/l/ceremonie/" id="ceremonie-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatceremonie">
@@ -843,15 +842,15 @@ li.dropdown-item, div.mega-menu div.container-md ul.dropdown-menu li.dropdown-it
 <a href="https://www.jules.com/fr-fr/l/chemise/blanc/" onclick="opeco('opeco', 'layer-costume-push', 'plp-chemise-blanche')">
 <picture>
 <source media="(min-width:1280px)" srcset="https://www.jules.com/on/demandware.static/-/Sites/default/dwe80baae7/jules-sfcc/PE22/Push2-ID-chemise-blanche-FR.jpg 1x, https://www.jules.com/on/demandware.static/-/Sites/default/dwee961c49/jules-sfcc/PE22/Push2-ID-chemise-blanche-FR@2x.jpg 2x">
-<source srcset="https://www.jules.com/on/demandware.static/-/Sites/fr_FR/v1645693151202/PE20/px.gif">
+<source srcset="https://www.jules.com/on/demandware.static/-/Sites/fr_FR/v1645716448554/PE20/px.gif">
 <img alt="Chemise Blanche" src="https://www.jules.com/on/demandware.static/-/Sites/default/dwe80baae7/jules-sfcc/PE22/Push2-ID-chemise-blanche-FR.jpg" class="img-fluid pushNav" loading="lazy" width="350" height="154">
 </picture>
 </a>
 <a href="https://www.jules.com/fr-fr/l/ensemble-de-costume/" onclick="opeco('opeco', 'layer-costume-push', 'plp-ensembles-costumes')">
 <picture>
 <source media="(min-width:1280px)" srcset="https://www.jules.com/on/demandware.static/-/Sites/default/dwd10e3e37/jules-sfcc/AH21/Push2-Ensemble-costume-FR.jpg 1x, https://www.jules.com/on/demandware.static/-/Sites/default/dw02225468/jules-sfcc/AH21/Push2-Ensemble-costume-FR@2x.jpg 2x">
-<source srcset="https://www.jules.com/on/demandware.static/-/Sites/fr_FR/v1645693151202/PE20/px.gif">
-<img alt="Ensemble costume" src="https://www.jules.com/on/demandware.static/-/Sites/default/dwd10e3e37/jules-sfcc/AH21/Push2-Ensemble-costume-FR.jpg" class="img-fluid pushNav mt-3" loading="lazy" width="350" height="154">
+<source srcset="https://www.jules.com/on/demandware.static/-/Sites/fr_FR/v1645716448554/PE20/px.gif">
+ <img alt="Ensemble costume" src="https://www.jules.com/on/demandware.static/-/Sites/default/dwd10e3e37/jules-sfcc/AH21/Push2-Ensemble-costume-FR.jpg" class="img-fluid pushNav mt-3" loading="lazy" width="350" height="154">
 </picture>
 </a>
 </div>
@@ -939,7 +938,7 @@ Tendances
 <ul class="dropdown-menu col-xl-7" role="menu" aria-hidden="true">
 <li class="dropdown-item d-none" role="menuitem">
 <a href="https://www.jules.com/fr-fr/l/looks-de-saison/" id="link-accessoires-looks-de-saison-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatlink-accessoires-looks-de-saison">
- ❄️ Looks grand froid
+❄️ Looks grand froid
 </a>
 </li>
 <li class="dropdown-item d-none" role="menuitem">
@@ -981,7 +980,7 @@ Carte cadeau
 </li>
 <li class="dropdown-item d-none" role="menuitem">
 <a href="https://www.jules.com/fr-fr/l/mode-ecoresponsable/" id="link-accessoires-men-in-progress-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatlink-accessoires-men-in-progress">
- Mode &eacute;coresponsable
+Mode &eacute;coresponsable
 </a>
 </li>
 <li class="dropdown-item d-none" role="menuitem">
@@ -1012,14 +1011,14 @@ li.dropdown-item, div.mega-menu div.container-md ul.dropdown-menu li.dropdown-it
 <a href="https://www.jules.com/fr-fr/l/pyjama/" onclick="opeco('opeco', 'layer-accessoire-push', 'plp-pyjama')">
 <picture>
 <source media="(min-width:1280px)" srcset="https://www.jules.com/on/demandware.static/-/Sites/default/dwe658dcdb/jules-sfcc/PE22/Push2-ID-pyjamas-FR.jpg 1x, https://www.jules.com/on/demandware.static/-/Sites/default/dweaccb94e/jules-sfcc/PE22/Push2-ID-pyjamas-FR@2x.jpg 2x">
-<source srcset="https://www.jules.com/on/demandware.static/-/Sites/fr_FR/v1645693151202/PE20/px.gif">
+<source srcset="https://www.jules.com/on/demandware.static/-/Sites/fr_FR/v1645716448554/PE20/px.gif">
 <img alt="Pyjama" src="https://www.jules.com/on/demandware.static/-/Sites/default/dwe658dcdb/jules-sfcc/PE22/Push2-ID-pyjamas-FR.jpg" class="img-fluid pushNav" loading="lazy" width="350" height="154">
 </picture>
 </a>
 <a href="https://www.jules.com/fr-fr/l/echarpe-bonnet-gants/" onclick="opeco('opeco', 'layer-bas-push', 'plp-echarpe-bonnet-gant')">
 <picture>
 <source media="(min-width:1280px)" srcset="https://www.jules.com/on/demandware.static/-/Sites/default/dwdd6b8dac/jules-sfcc/PE22/Push2-ID-accessoires-froids-FR.jpg 1x, https://www.jules.com/on/demandware.static/-/Sites/default/dw69b5ca24/jules-sfcc/PE22/Push2-ID-accessoires-froids-FR@2x.jpg 2x">
-<source srcset="https://www.jules.com/on/demandware.static/-/Sites/fr_FR/v1645693151202/PE20/px.gif">
+<source srcset="https://www.jules.com/on/demandware.static/-/Sites/fr_FR/v1645716448554/PE20/px.gif">
 <img alt="Accessoires grand froid" src="https://www.jules.com/on/demandware.static/-/Sites/default/dwdd6b8dac/jules-sfcc/PE22/Push2-ID-accessoires-froids-FR.jpg" class="img-fluid pushNav mt-3" loading="lazy" width="350" height="154">
 </picture>
 </a>
@@ -1046,6 +1045,7 @@ Outlet
 </a>
 </li>
 </ul>
+
 </li>
 <li class="nav-item d-xl-none bg-grey" role="menuitem">
 <a href="https://www.jules.com/fr-fr/client/identification/" class="nav-link mobile-account user-message" data-bs-toggle="modal" data-bs-target="#connexionModal">
@@ -1127,7 +1127,7 @@ Outlet
 </div>
 <button type="submit" class="btn btn-block btn-primary" data-beaver-id="connexion">
 Suivant</button>
-<input type="hidden" name="csrf_token" value="-xXRHsfIV_6rKslUb_QONAWHZyO1HujS_8CprfmousRsM1NwgI2SZO_LYGrbStVwld-erCGFXnKnxvpCif1aa3A9INU_xlpBfg22A_aGrd6v36z78x1rlD9CqDUNRri-HT5P37RysRpNBlRoXj42-7ki_0ys8fbS9bjUIxfbhgZN4SaFHPU=" />
+<input type="hidden" name="csrf_token" value="L8_siyi5ABaX0VJPtZaqJI5bXC9puzHFpthXnipUl46CDZAbYsN0zAEWipYzfUTQVdsIRmyw7z6AH8defrngxXI-tXdzTMJYztZ4aHcLrUenKKx6dKTaKznmXHj9U_GPRwKrs2V1_ySSrca3lmZ7GhfXVNkGq_hQpoJhVNJo5wsAyLbPBW8=" />
 </form>
 </div>
 </div>
@@ -1169,7 +1169,6 @@ Suivant</button>
 <div class="modal-body row">
 <div class="col-12">
 <div class="modal-part">
-
 <p><a href="https://www.jules.com/fr-fr/client/mon-compte/">MON COMPTE</a></p>
 <p><a href="https://www.jules.com/fr-fr/client/mes-commandes/">SUIVRE UNE COMMANDE</a></p>
 <p><a href="https://www.jules.com/fr-fr/client/mes-favoris/">MES FAVORIS</a></p>
@@ -1206,7 +1205,7 @@ Suivant</button>
 </div>
 <div class="login-form-nav mb-3">
 <span class="account-subtitle link link-icon-before returnLayerC">
-<img class="inverse" src="/on/demandware.static/Sites-Jules-SFRA-Site/-/default/dw6596190c/images/arrow-2.svg" alt="<" />
+<img class="inverse" src="/on/demandware.static/Sites-Jules-SFRA-Site/-/default/dw52bb4626/images/arrow-2.svg" alt="<" />
 <span id="label-returnC"></span>
 </span>
 <form action="/on/demandware.store/Sites-Jules-SFRA-Site/fr_FR/Account-Login?rurl=1" class="loginlayer" method="POST" name="login-form">
@@ -1235,7 +1234,7 @@ mot de passe oubli&eacute;&nbsp;?
 </a>
 </div>
 </div>
-<input type="hidden" name="csrf_token" value="G1RXpwR-GgLWa1tC8rCr40puS3oqQIA8arrmKALgxuzAdXvzdndiMi-OfpnrjwtTP3pHRf6JHcnzUfcw8W_jPrYw8n322va1chZMjNYpAXTqJiKkCpNzJ3TguEb4RxwgNgRiAAMRjceKd1ZCeiWdPDUXBHQ2otJaqSgIvWUsSxGidW5Khf4=" />
+<input type="hidden" name="csrf_token" value="0nZfClMhthCGn1lU7Joge1fSizvIEOODFXClVjMbzpX9zmLdbLTKLA2HAMrnwEayUATloftnxDudj84K9m7OFgTnyMHnVkskkzTn9uGxnVh46ZzYTl_Gd3J6wI8MsKIECmA4Tp1am9EsqU45hLWtO_MG_WlYvT1OFtao0BmsueskPCwmBOo=" />
 </form>
 </div>
 </div>
@@ -1256,7 +1255,7 @@ mot de passe oubli&eacute;&nbsp;?
 </div>
 <div class="login-form-nav mb-3">
 <span class="account-subtitle link link-icon-before returnPasswordReset">
-<img class="inverse" src="/on/demandware.static/Sites-Jules-SFRA-Site/-/default/dw6596190c/images/arrow-2.svg" alt="<" />
+<img class="inverse" src="/on/demandware.static/Sites-Jules-SFRA-Site/-/default/dw52bb4626/images/arrow-2.svg" alt="<" />
 <span id="emailPasswordNotReceived"></span>
 </span>
 <div class="modal-body col-12 text-center fs14">
@@ -1281,7 +1280,7 @@ Cr&eacute;er un compte
 <div class="modal-content">
 <button type="button" class="btn-close close" data-bs-dismiss="modal" aria-label="Close"></button>
 <div class="modal-body m-auto pt-0">
-<div class="col-12 text-center"><img src="/on/demandware.static/Sites-Jules-SFRA-Site/-/default/dw125e9716/images/check-green.svg" title="Merci" alt="Merci" class="mb-3" /></div>
+<div class="col-12 text-center"><img src="/on/demandware.static/Sites-Jules-SFRA-Site/-/default/dwfa9f08ff/images/check-green.svg" title="Merci" alt="Merci" class="mb-3" /></div>
 <div class="modal-header">
 <span class="h6 m-0 mx-auto subtitle1">Merci</span>
 </div>
@@ -1324,7 +1323,6 @@ Supprimer cet article&nbsp;?</span>
 </div>
 </div>
 <div class="modal-body delete-confirmation-body row">
-
 <div class="col-12">
 <p class="product-to-remove">
 </p>
@@ -1517,7 +1515,7 @@ La présente politique de confidentialité peut être modifiée par Jules. Dans 
 </div>
 
 <script type="text/javascript">
-	    dataLayer.push({"event":"pageview","env":{"work":"prod","platform":"web","language":"fr","country":"FR","responsive":"desktop","abversion_2":"Control","abversion_3":"Control","abversion_4":"Control","abversion_5":"Control","abversion_7":"Control","abversion_8":"Control","abversion_kameleon1":0,"currency":"eur"},"user":{"accountCreationLoyalty":"no","logged":"no"},"page":{"template":"politique-de-confidentialite","name":"page-include"},"search":{"redirect":"no"},"cart":[]});
+	    dataLayer.push({"event":"pageview","env":{"work":"prod","platform":"web","language":"fr","country":"FR","responsive":"desktop","abversion_2":"WithoutGooglePay","abversion_3":"Control","abversion_4":"Control","abversion_5":"Control","abversion_7":"Control","abversion_8":"Control","abversion_kameleon1":0,"currency":"eur"},"user":{"accountCreationLoyalty":"no","logged":"no"},"page":{"template":"politique-de-confidentialite","name":"page-include"},"search":{"redirect":"no"},"cart":[]});
 	</script>
 <meta value="{&quot;@context&quot;:&quot;http://schema.org/&quot;,&quot;@type&quot;:&quot;BreadcrumbList&quot;,&quot;itemListElement&quot;:[{&quot;@type&quot;:&quot;ListItem&quot;,&quot;position&quot;:1,&quot;name&quot;:&quot;politique-de-confidentialite&quot;,&quot;item&quot;:&quot;https://www.jules.com/fr-fr/static/politique-de-confidentialite.html&quot;}]}" />
 <footer>
@@ -1575,7 +1573,7 @@ Promis, on ne vous envoie que des emails que vous allez adorer.</p>
 <source srcset="https://www.jules.com/on/demandware.static/-/Sites-Jules-SFRA-Library/fr_FR/dw24ecdc0f/images/cardFootMob.png 1x, https://www.jules.com/on/demandware.static/-/Sites-Jules-SFRA-Library/fr_FR/dwdd0d0da3/images/cardFootMob@2x.png 2x">
 <img src="https://www.jules.com/on/demandware.static/-/Sites-Jules-SFRA-Library/fr_FR/dw5707d13a/images/cardFoot.png" alt="Club Jules" class="img-fluid center-block myFloatB" width="148" height="146" loading="lazy"> </picture>
 <p class="cera text-white likeH1 centerY center-block myFloatA TheFloat"><b class="cerA">JULES</b> club</p>
- </div>
+</div>
 <p class="text-white centerYbis center-block myFloatA myMarginLeft text-lg-center text-start text-lowercase"><b class="text-uppercase">Programme de fidélité</b><br>
 Plus de points cumulés<br>
 pour plus d’avantages !</p>
@@ -1864,11 +1862,11 @@ window.didomiOnReady = window.didomiOnReady || [];
 
 /* Finalize the Batch SDK setup */
 batchSDK('setup', {
-    apiKey: '4950B2EF8D004153B75E4A291EAC0D73',
-    subdomain: 'rougegorge',
-    authKey: '2.BXNJD4nv4iJA0tXbKEwXNBGa4rU6UCTGstxUPAvSnj4=',
-    dev: true, // remove this for prod
-    vapidPublicKey: 'BD6zQJ6Tha0z6e4gmF3RFGrjio1H8pYxfOeF/WHMOPd0UjnbTKni5/yVOmMwefeUJ8QClRdYJxNcOi/MmRMcGAU=',
+    apiKey: 'BB9E139A5DCE420C85635E2A9FA34544',
+    subdomain: 'jules',
+    authKey: '2./Z93kp7IidU0vhI6Q1vKbzlnlPIr7KV5bx+PjtIudtM=',
+    useExistingServiceWorker: true,
+    vapidPublicKey: batchVapidPublicKey,
     ui: batchSDKUIConfig
     
 });
@@ -1921,16 +1919,57 @@ reregisterBatchPushIfNeeded(batchVapidPublicKey);
 <div class="sort-background"></div>
 <div class="share-background"></div>
 <!--[if lt IE 10]>
-<script>//common/scripts.isml</script>
-<script type="text/javascript" src="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1645693151202/js/Jquery.js"></script>
-<script defer type="text/javascript" src="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1645693151202/js/main.js"></script>
 
-    <script defer type="text/javascript" src="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1645693151202/js/uiShow.js"
+<script defer type="text/javascript" src="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1645716448554/js/main.js"></script>
+
+
+
+    <script type="text/javascript">
+    // Duration in milliseconds to wait while the Kameleoon application file is loaded
+        var kameleoonLoadingTimeout = 1000;
+
+        window.kameleoonQueue = window.kameleoonQueue || [];
+        window.kameleoonStartLoadTime = new Date().getTime();
+        if (! document.getElementById("kameleoonLoadingStyleSheet") && ! window.kameleoonDisplayPageTimeOut)
+        {
+            var kameleoonS = document.getElementsByTagName("script")[0];
+            var kameleoonCc = "* { visibility: hidden !important; background-image: none !important; }";
+            var kameleoonStn = document.createElement("style");
+            kameleoonStn.type = "text/css";
+            kameleoonStn.id = "kameleoonLoadingStyleSheet";
+            if (kameleoonStn.styleSheet)
+            {
+                kameleoonStn.styleSheet.cssText = kameleoonCc;
+            }
+            else
+            {
+                kameleoonStn.appendChild(document.createTextNode(kameleoonCc));
+            }
+            kameleoonS.parentNode.insertBefore(kameleoonStn, kameleoonS);
+            window.kameleoonDisplayPage = function(fromEngine)
+            {
+                if (!fromEngine)
+                {
+                    window.kameleoonTimeout = true;
+                }
+                if (kameleoonStn.parentNode)
+                {
+                    kameleoonStn.parentNode.removeChild(kameleoonStn);
+                }
+            };
+            window.kameleoonDisplayPageTimeOut = window.setTimeout(window.kameleoonDisplayPage, kameleoonLoadingTimeout);
+        }
+    </script>
+    
+    <script type="text/javascript" src="//n9jm8v6ad7.kameleoon.eu/kameleoon.js" async="true"></script>
+
+
+    <script defer type="text/javascript" src="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1645716448554/js/uiShow.js"
         
         >
     </script>
 
-    <script defer type="text/javascript" src="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1645693151202/js/targetToSell.js"
+    <script defer type="text/javascript" src="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1645716448554/js/targetToSell.js"
         
         >
     </script>
@@ -1938,7 +1977,7 @@ reregisterBatchPushIfNeeded(batchVapidPublicKey);
 
 <![endif]-->
 <script>const pwaApplicationServerPublicKey = "BEbOxNuES60bKLdbM7S1KSTHBWp4SowS8VannQFhV8oK6_0e0lUJbUIYdjlgzrlCZmfM11vIvzIFMHK2UTbN3SQ";</script>
-<script src="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1645693151202/js/pwa.js" async></script>
+<script src="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1645716448554/js/pwa.js" async></script>
 <script async>
 
         (function (d, s) {
@@ -1967,9 +2006,9 @@ function trackPage() {
 /* ]]> */
 // -->
 </script>
-<script type="text/javascript" src="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1645693151202/internal/jscript/dwanalytics-22.2.js" async="async" onload="trackPage()"></script>
+<script type="text/javascript" src="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1645716448554/internal/jscript/dwanalytics-22.2.js" async="async" onload="trackPage()"></script>
 
-<script src="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1645693151202/internal/jscript/dwac-21.7.js" type="text/javascript" async="async"></script>
+<script src="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1645716448554/internal/jscript/dwac-21.7.js" type="text/javascript" async="async"></script>
 <script src="https://cdn.cquotient.com/js/v2/gretel.min.js" type="text/javascript" async="async"></script>
 </body>
 </html>
