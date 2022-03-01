@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="cache-origin" content="cam-appliprod-14">
+<meta name="cache-origin" content="cam-appliprod-16">
 
     <title>Camaieu - Donn&eacute;es Personnelles</title>
 
@@ -177,18 +177,104 @@ $('#addToCartForm > div.ProductAddToCart-Panel.js-productAddToCartPanel > div.Pr
             <div class="Header-back Icon Icon--arrow_left js-BackBtn"></div>
 
         <nav class="Header-nav">
-            <div class="content "><style type="text/css">#MarqueItem .NavBar-pushItem{position:relative}#MarqueItem .NavBar-pushItem .NavBar-PushItem--Paragraph{position:absolute;bottom:12%;left:8%;width:85%;background-color:#000;color:#fff;font-family:YoungSerif;font-size:1.7rem;padding:2rem}@media (min-width:1441px){#MarqueItem .NavBar-pushItem .NavBar-PushItem--Paragraph{bottom:17%}}.NavBar--left .NavBar-itemLink .Icon.Icon--camaieu{right:-1.9rem}@media (max-width:1023px){.NavBar--left .NavBar-itemLink .Icon.Icon--camaieu{height:2.3rem;position:relative;right:-2.5rem}.NavBar--left .NavBar-itemLink.Item-collection{font-weight:900}}@media (min-width:375px){.NavBar--left .NavBar-itemLink .Icon.Icon--camaieu{right:-2.2rem}}@media (min-width:425px){.NavBar--left .NavBar-itemLink .Icon.Icon--camaieu{right:-2.5rem}}.NavBar-soldes .NavBar-pushContainer{-webkit-box-pack:start;-webkit-justify-content:flex-start;-ms-flex-pack:start;justify-content:flex-start}
+            <div class="content "><style type="text/css">.NavBar-pushItem {
+      position: relative
+    }
+  
+    .NavBar-pushItem .NavBar-PushItem--Wrapper {
+      position: absolute;
+      bottom: 4%;
+      left: 8%;
+      width: 85%;
+      background-color: #000;
+      padding: 2rem;
+    }
+
+    .NavBar-pushItem .NavBar-PushItem--Paragraph {
+      color: #fff;
+      font-family: YoungSerif;
+      font-size: 1.7rem;
+    }
+
+    .NavBar-pushItem .NavBar-PushItem--CTA.Button--Services {
+      font-size:1.1rem;
+      margin:3% auto 0;
+      border-color:#ffffff;
+      color:#ffffff;
+    }
+    @media (min-width:768px) {
+        .NavBar-pushItem .NavBar-PushItem--Wrapper {
+        bottom: 12%;
+      }
+    }
+    @media (min-width:1441px) {
+        .NavBar-pushItem .NavBar-PushItem--Wrapper {
+        bottom: 17%;
+      }
+    }
+  
+    .NavBar--left .NavBar-itemLink .Icon.Icon--camaieu {
+      right: -1.9rem;
+    }
+  
+    @media (max-width:1023px) {
+      .NavBar--left .NavBar-itemLink .Icon.Icon--camaieu {
+        height: 2.3rem;
+        position: relative;
+        right: -2.5rem;
+      }
+  
+      .NavBar--left .NavBar-itemLink.Item-collection {
+        font-weight: 900;
+      }
+    }
+  
+    @media (min-width:375px) {
+      .NavBar--left .NavBar-itemLink .Icon.Icon--camaieu {
+        right: -2.2rem;
+      }
+    }
+  
+    @media (min-width:425px) {
+      .NavBar--left .NavBar-itemLink .Icon.Icon--camaieu {
+        right: -2.5rem;
+      }
+    }
+    /* NavBar Soldes */
+    .NavBar-soldes .NavBar-pushContainer {
+      -webkit-box-pack: start;
+      -webkit-justify-content: flex-start;
+      -ms-flex-pack: start;
+      justify-content: flex-start;
+    }
 </style>
-<ul class="NavBar NavBar--left js-TopNav"><!-- Item Accueil Tab Bar -->
+<ul class="NavBar NavBar--left js-TopNav">
 	<li class="NavBar-item u-Hidden--desktopMenu"><a class="NavBar-itemLink" href="/"><i class="Icon Icon--home"></i> Accueil </a></li>
-	<!-- Item Les petits prix desktop -->
-	<li class="NavBar-item  u-Hidden--mobileMenu"><a class="NavBar-itemLink" href="/c/64728/outlet" style="color:#991b1b;">Les petits prix</a></li>
-	<!-- Item Collection desktop -->
+	<!-- <li class="NavBar-item u-Hidden--mobileMenu">
+      <a class="NavBar-itemLink" href="/c/64728/outlet" style="color:#991b1b;">Les petits prix</a>
+    </li> -->
 	<li class="NavBar-item js-Nav-TopLevel"><a class="NavBar-itemLink js-Nav-Level Item-collection" href="/c/64722/collection"><i class="Icon Icon--burger u-Hidden--desktopMenu"></i> Collection </a>
 	<div class="NavBar-subLevelContainer js-Nav-subLevelContainer">
-	<div class="NavBar-pushContainer"><a class="NavBar-pushItem" href="/c/64728/outlet"><picture> <img alt="Les petits prix" class="NavBar-pushItem-img" src="https://camaieu.twic.pics/medias/sys_master/root/static/integration/merch/FR/2022/content/home/S06/nav_layer_lespetitsprix.jpg" /> </picture> </a> <a class="NavBar-pushItem u-Hidden--smallDeskMenu" href="/c/125896/new-collection"> <picture> <img alt="Nouvelle Collection" class="NavBar-pushItem-img" src="https://camaieu.twic.pics/cms/medias/sys_master/images/images/h26/hf8/9829670715422.jpg" /> </picture> </a> <a class="NavBar-pushItem u-Hidden--largeDeskMenu" href="/content/lookbook-denim"> <picture> <img alt="Denim factory" class="NavBar-pushItem-img" src="https://camaieu.twic.pics/cms/medias/sys_master/images/images/h0f/h9b/9831120437278.jpg" /> </picture> </a></div>
+	<div class="NavBar-pushContainer"><!-- <a class="NavBar-pushItem" href="/content/nos-actus/0103022-article-tshirt-solidaire-mars">
+            <picture>
+              <img alt="Les petits prix" class="NavBar-pushItem-img" src="https://camaieu.twic.pics/medias/sys_master/root/static/integration/merch/FR/2022/content/layer-nav/S09/nav_layer_ts_mars.jpg" />
+            </picture>
+            <div class="NavBar-PushItem--Wrapper">
+                <p class="NavBar-PushItem--Paragraph">Le T-shirt solidaire</p>
+                <p class="NavBar-PushItem--CTA Button--Services">Je shoppe</p> 
+            </div>
+          </a> --><a class="NavBar-pushItem u-Hidden--smallDeskMenu" href="/c/125896/new-collection"><picture> <img alt="Nouvelle Collection" class="NavBar-pushItem-img" src="https://camaieu.twic.pics/medias/sys_master/root/static/integration/merch/FR/2022/content/layer-nav/S09/nav_layer_nouvelleCo.jpg" /> </picture>
+	<div class="NavBar-PushItem--Wrapper">
+	<p class="NavBar-PushItem--Paragraph">Nouvelle collection</p>
 
-	<ul class="NavBar-subLevel NavBar-subLevel--level1"><!--<li><a class="NavBar-itemLink" href="#">Nom de collection X</a></li>-->
+	<p class="NavBar-PushItem--CTA Button--Services">Je fonce</p>
+	</div>
+	</a> <a class="NavBar-pushItem u-Hidden--largeDeskMenu" href="/content/lookbook-denim"> <picture> <img alt="Denim factory" class="NavBar-pushItem-img" src="https://camaieu.twic.pics/cms/medias/sys_master/images/images/h0f/h9b/9831120437278.jpg" /> </picture> <!-- <div class="NavBar-PushItem--Wrapper">
+                <p class="NavBar-PushItem--Paragraph">Denim Factory</p>
+                <p class="NavBar-PushItem--CTA Button--Services">Je découvre</p> 
+            </div> --> </a></div>
+
+	<ul class="NavBar-subLevel NavBar-subLevel--level1">
 		<li><a class="NavBar-itemLink NavBar-itemLink--subLevel" href="/c/125896/new-collection">Nouvelle Collection</a></li>
 		<li><a class="NavBar-itemLink NavBar-itemLink--subLevel js-Nav-subLevel" href="/c/64722/collection">V&ecirc;tements</a>
 		<ul class="NavBar-subLevel NavBar-subLevel--level2">
@@ -206,7 +292,7 @@ $('#addToCartForm > div.ProductAddToCart-Panel.js-productAddToCartPanel > div.Pr
 			<li><a class="NavBar-itemLink" href="/c/64722/collection">Tous les v&ecirc;tements</a></li>
 		</ul>
 		</li>
-		<li><a class="NavBar-itemLink NavBar-itemLink--subLevel  js-Nav-subLevel" href="/c/64734/accessoires">Accessoires</a>
+		<li><a class="NavBar-itemLink NavBar-itemLink--subLevel js-Nav-subLevel" href="/c/64734/accessoires">Accessoires</a>
 		<ul class="NavBar-subLevel NavBar-subLevel--level2">
 			<li><a class="NavBar-itemLink" href="/c/64791/chaussures">Chaussures</a></li>
 			<li><a class="NavBar-itemLink" href="/c/64792/sacs-pochettes">Sacs, Pochettes</a></li>
@@ -216,7 +302,7 @@ $('#addToCartForm > div.ProductAddToCart-Panel.js-productAddToCartPanel > div.Pr
 			<li><a class="NavBar-itemLink" href="/c/64734/accessoires">Tous les accessoires</a></li>
 		</ul>
 		</li>
-		<li><a class="NavBar-itemLink NavBar-itemLink--subLevel  js-Nav-subLevel" href="/c/01102019/collection-eco-responsable">Ecoresponsable</a>
+		<li><a class="NavBar-itemLink NavBar-itemLink--subLevel js-Nav-subLevel" href="/c/01102019/collection-eco-responsable">Ecoresponsable</a>
 		<ul class="NavBar-subLevel NavBar-subLevel--level2">
 			<li><a class="NavBar-itemLink" href="/c/140819/jean-waterless">Denim Waterless process</a></li>
 			<li><a class="NavBar-itemLink" href="/c/171019/vetements-recycles">Mati&egrave;res recycl&eacute;es</a></li>
@@ -224,7 +310,7 @@ $('#addToCartForm > div.ProductAddToCart-Panel.js-productAddToCartPanel > div.Pr
 			<li><a class="NavBar-itemLink" href="/content/rse">Nos engagements</a></li>
 		</ul>
 		</li>
-		<li><a class="NavBar-itemLink NavBar-itemLink--subLevel  js-Nav-subLevel" href="/c/64728/outlet">Outlet</a>
+		<li><a class="NavBar-itemLink NavBar-itemLink--subLevel js-Nav-subLevel" href="/c/64728/outlet">Outlet</a>
 		<ul class="NavBar-subLevel NavBar-subLevel--level2">
 			<li><a class="NavBar-itemLink" href="/c/151019/outlet-vetements">Tous les v&ecirc;tements</a></li>
 			<li><a class="NavBar-itemLink" href="/c/175405/outlet-pulls-gilets">Pulls, Gilets</a></li>
@@ -244,21 +330,30 @@ $('#addToCartForm > div.ProductAddToCart-Panel.js-productAddToCartPanel > div.Pr
 	</ul>
 	</div>
 	</li>
-	<!-- Item Inspiration desktop -->
-	<li class="NavBar-item  u-Hidden--mobileMenu"><a class="NavBar-itemLink" href="/content/shop-the-look">Inspiration</a></li>
-	<!-- Item Inspiration Tab Bar -->
+	<li class="NavBar-item u-Hidden--mobileMenu"><a class="NavBar-itemLink" href="/content/shop-the-look">Inspiration</a></li>
 	<li class="NavBar-item u-Hidden--desktopMenu"><a class="NavBar-itemLink" href="/content/shop-the-look"><i class="Icon Icon--inspiration u-Hidden--desktopMenu"></i> Inspiration </a></li>
-	<!-- Item service desktop -->
 	<li class="NavBar-item u-Hidden--mobileMenu js-Nav-TopLevel" id="MarqueItem"><a class="NavBar-itemLink js-Nav-Level" href="/content/services">Services </a>
 	<div class="NavBar-subLevelContainer js-Nav-subLevelContainer">
 	<div class="NavBar-pushContainer"><a class="NavBar-pushItem u-Hidden--smallDeskMenu" href="/content/camaieu-coaching"><picture> <img alt="chaussures" class="NavBar-pushItem-img" src="https://camaieu.twic.pics/medias/sys_master/root/static/integration/projet/FR/2021/navbar-services-layer/nav_services_layer.png" /> </picture>
+	<div class="NavBar-PushItem--Wrapper">
 	<p class="NavBar-PushItem--Paragraph">Camaieu coaching</p>
+
+	<p class="NavBar-PushItem--CTA Button-Services">Je d&eacute;couvre</p>
+	</div>
 	</a> <a class="NavBar-pushItem" href="/content/live-shopping"> <picture> <img alt="op les deals" class="NavBar-pushItem-img" src="https://camaieu.twic.pics/medias/sys_master/root/static/integration/projet/FR/2021/navbar-services-layer/nav_services_layer_2.png" /> </picture>
 
+	<div class="NavBar-PushItem--Wrapper">
 	<p class="NavBar-PushItem--Paragraph">Live shopping</p>
+
+	<p class="NavBar-PushItem--CTA Button--Services">Je d&eacute;couvre</p>
+	</div>
 	</a> <a class="NavBar-pushItem u-Hidden--largeDeskMenu" href="/content/garantie-yoyo"> <picture> <img alt="manteaux" class="NavBar-pushItem-img" src="https://camaieu.twic.pics/medias/sys_master/root/static/integration/projet/FR/2021/navbar-services-layer/nav_services_layer_3.png" /> </picture>
 
+	<div class="NavBar-PushItem--Wrapper">
 	<p class="NavBar-PushItem--Paragraph">Garantie Yoyo</p>
+
+	<p class="NavBar-PushItem--CTA Button--Services">Je d&eacute;couvre</p>
+	</div>
 	</a></div>
 
 	<ul class="NavBar-subLevel NavBar-subLevel--level1">
@@ -270,17 +365,22 @@ $('#addToCartForm > div.ProductAddToCart-Panel.js-productAddToCartPanel > div.Pr
 	</ul>
 	</div>
 	</li>
-	<!-- Item Marque desktop -->
 	<li class="NavBar-item u-Hidden--mobileMenu js-Nav-TopLevel" id="MarqueItem"><a class="NavBar-itemLink js-Nav-Level" href="#">Marque </a>
 	<div class="NavBar-subLevelContainer js-Nav-subLevelContainer">
 	<div class="NavBar-pushContainer"><a class="NavBar-pushItem u-Hidden--smallDeskMenu" href="/content/nos-actus"><picture> <img alt="Actualités" class="NavBar-pushItem-img" src="https://camaieu.twic.pics/medias/sys_master/root/static/integration/projet/FR/2021/navbar-marque-layer/nav_marque_layer_2.png" /> </picture>
+	<div class="NavBar-PushItem--Wrapper">
 	<p class="NavBar-PushItem--Paragraph">Actualit&eacute;s</p>
+	</div>
 	</a> <a class="NavBar-pushItem" href="/content/affichage-environnemental"> <picture> <img alt="Eco-note" class="NavBar-pushItem-img" src="https://camaieu.twic.pics/medias/sys_master/root/static/integration/projet/FR/2022/navbar-marque-layer/nav_marque_layer_1.jpg" /> </picture>
 
+	<div class="NavBar-PushItem--Wrapper">
 	<p class="NavBar-PushItem--Paragraph">Eco-note</p>
+	</div>
 	</a> <a class="NavBar-pushItem u-Hidden--largeDeskMenu" href="/content/la-marque"> <picture> <img alt="manifeste" class="NavBar-pushItem-img" src="https://camaieu.twic.pics/medias/sys_master/root/static/integration/projet/FR/2021/navbar-marque-layer/nav_marque_layer_3.png" /> </picture>
 
+	<div class="NavBar-PushItem--Wrapper">
 	<p class="NavBar-PushItem--Paragraph">Le manifeste</p>
+	</div>
 	</a></div>
 
 	<ul class="NavBar-subLevel NavBar-subLevel--level1">
@@ -291,13 +391,10 @@ $('#addToCartForm > div.ProductAddToCart-Panel.js-productAddToCartPanel > div.Pr
 	</ul>
 	</div>
 	</li>
-	<!-- Item Compte Tab Bar -->
 	<li class="NavBar-item u-Hidden--desktopMenu"><a class="NavBar-itemLink js-MobileChStatusConnection" href="/my-account"><i class="Icon Icon--user"></i> Compte </a></li>
-	<!-- Item Camaieu Tab Bar -->
-	<li class="NavBar-item js-Nav-TopLevel u-Hidden--desktopMenu"><a class="NavBar-itemLink js-Nav-Level" href="#"><i class="Icon Icon--camaieu"> <svg style="fill:#6B7280" viewbox="0 0 750 109.19" xmlns="http://www.w3.org/2000/svg"> <g data-name="Calque 2" id="Calque_2"> <g data-name="Calque 1" id="Calque_1-2"> <path d="M54.59,0a54.6,54.6,0,1,1,0,109.19C23.71,109.19,0,85.48,0,54.59A54.12,54.12,0,0,1,54.59,0"> </path> <path d="M192.56,0a54.6,54.6,0,1,1,0,109.19c-30.89,0-54.6-23.71-54.6-54.6A54.12,54.12,0,0,1,192.56,0"> </path> </g> </g> </svg> </i> Camaieu </a>
+	<li class="NavBar-item js-Nav-TopLevel u-Hidden--desktopMenu"><a class="NavBar-itemLink js-Nav-Level" href="#"><i class="Icon Icon--camaieu"> <svg style="fill:#6B7280" viewbox="0 0 750 109.19" xmlns="http://www.w3.org/2000/svg"> <g data-name="Calque 2" id="Calque_2"> <g data-name="Calque 1" id="Calque_1-2"> <path d="M54.59,0a54.6,54.6,0,1,1,0,109.19C23.71,109.19,0,85.48,0,54.59A54.12,54.12,0,0,1,54.59,0"></path> <path d="M192.56,0a54.6,54.6,0,1,1,0,109.19c-30.89,0-54.6-23.71-54.6-54.6A54.12,54.12,0,0,1,192.56,0"></path> </g> </g> </svg> </i> Camaieu </a>
 	<ul class="NavBar-subLevel NavBar-subLevel--level1">
 		<li><a class="NavBar-itemLink" href="https://magasins.camaieu.fr/">Trouver votre magasin</a></li>
-		<!-- Item Camaieu Tab Bar > Item service -->
 		<li><a class="NavBar-itemLink js-Nav-subLevel" href="/content/services">Services</a>
 		<ul class="NavBar-subLevel NavBar-subLevel--level2">
 			<li><a class="NavBar-itemLink" href="/content/live-shopping">Live Shopping</a></li>
@@ -308,7 +405,6 @@ $('#addToCartForm > div.ProductAddToCart-Panel.js-productAddToCartPanel > div.Pr
 			<li><a class="NavBar-itemLink" href="/giftcard">Carte cadeau</a></li>
 		</ul>
 		</li>
-		<!-- Item Camaieu Tab Bar > Item marque -->
 		<li><a class="NavBar-itemLink js-Nav-subLevel" href="#">La marque</a>
 		<ul class="NavBar-subLevel NavBar-subLevel--level2">
 			<li><a class="NavBar-itemLink" href="/content/nos-actus">Actualit&eacute;s</a></li>
@@ -317,13 +413,10 @@ $('#addToCartForm > div.ProductAddToCart-Panel.js-productAddToCartPanel > div.Pr
 			<li><a class="NavBar-itemLink" href="/content/campagne-video?mm">La Campagne</a></li>
 		</ul>
 		</li>
-		<!-- Item Camaieu Tab Bar > Item actualités -->
 		<li><a class="NavBar-itemLink" href="/content/nos-actus">Actualit&eacute;s</a></li>
-		<!-- Item Camaieu Tab Bar > Item aide -->
 		<li><a class="NavBar-itemLink" href="https://camaieu.zendesk.com/hc/fr">Aide et contact</a></li>
 	</ul>
 	</li>
-	<!-- Item Camaieu Tab Bar fin -->
 </ul>
 </div><ul class="NavBar NavBar--right">
                 <li class="NavBar-item NavBar-item--search">
@@ -1146,7 +1239,7 @@ $(document).ready(function(){
                         <a href="https://www.camaieu.fr:443/login/popin/register" title="Je cr&eacute;e mon compte" id="popinCreateCompteId" class="ModalLogin-Submit">Me créer un compte</a>
                     </div>
             <div>
-<input type="hidden" name="CSRFToken" value="7bac9552-1d2c-41fa-a420-40234b129c03" />
+<input type="hidden" name="CSRFToken" value="2e4cc083-6802-4334-b0c3-3300e1dd31d5" />
 </div></form>
             <div id="js-login-email-info" class="CreateAccount-fidInfo-container js-hideInfoLoginModal" style="display: none;">
                 <div class="ModalLogin-loginInfo">
@@ -1219,7 +1312,7 @@ $( document ).ready(function() {
                     <span>Valider</span>
                 </button>
             <div>
-<input type="hidden" name="CSRFToken" value="7bac9552-1d2c-41fa-a420-40234b129c03" />
+<input type="hidden" name="CSRFToken" value="2e4cc083-6802-4334-b0c3-3300e1dd31d5" />
 </div></form>
 
             <button class="Layer-close js-ModalForgottenPwd-Close">
@@ -1247,7 +1340,7 @@ $( document ).ready(function() {
 			ACC.config.commonResourcePath = "/_ui/dist";
 			ACC.config.siteResourcePath = "/_ui/desktop/site-camaieu-fr";
 			ACC.config.rootPath = "/_ui/desktop";
-			ACC.config.CSRFToken = "7bac9552-1d2c-41fa-a420-40234b129c03";
+			ACC.config.CSRFToken = "2e4cc083-6802-4334-b0c3-3300e1dd31d5";
 			ACC.config.urlEvoke = "";
 			ACC.config.api_key = "";
 			ACC.config.productAlreadyInWishList = "";
