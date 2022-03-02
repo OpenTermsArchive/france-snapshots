@@ -34,20 +34,20 @@
 
 
         <!-- og:url -->
-        <meta property="og:url" content="https://www.nafnaf.com/donnees-personnelles.php" />
+        <meta property="og:url" content="https://en.nafnaf.com/donnees-personnelles.php" />
         <!-- og:site_name -->
         <meta property="og:site_name" content="NAFNAF" />
                 <!-- og:image conditioned above -->
-        <meta property="og:image" content="https://www.nafnaf.com/img/logo_site.jpg" />
-        <meta property="og:image:secure_url" content="https://www.nafnaf.com/img/logo_site.jpg" />
+        <meta property="og:image" content="https://en.nafnaf.com/img/logo_site.jpg" />
+        <meta property="og:image:secure_url" content="https://en.nafnaf.com/img/logo_site.jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
     
     <!-- Canonical -->
-    <link rel="canonical" href="https://www.nafnaf.com/donnees-personnelles.php" />
+    <link rel="canonical" href="https://en.nafnaf.com/donnees-personnelles.php" />
     
 <!-- Alternate -->
-        <link rel="alternate" hreflang="fr-fr" href="https://www.nafnaf.com/donnees-personnelles.php" />
+        <link rel="alternate" hreflang="fr-fr" href="https://en.nafnaf.com/donnees-personnelles.php" />
         
 <!-- Tags specific for particular page -->
 
@@ -60,10 +60,10 @@
     var query_stock_in_cache = false;
 </script>
 
-        <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.1645555381.ico" />
+        <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.1646081465.ico" />
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="preload" as="style">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" media="screen" type="text/css" href="/css/style.1645555381.css" />
+        <link rel="stylesheet" media="screen" type="text/css" href="/css/style.1646081465.css" />
 
                     <script type ='application/javascript'> 
         window.dataLayer = [{"context":{"site":1,"lang":"fr","cmpid":false,"navigation":{"device":"desktop","browser":null,"os":null,"userAgent":"node-fetch"},"page":{"id":"personal_datas","category":"other"}}}]; 
@@ -792,11 +792,10 @@ Pour Op&eacute;ra :&nbsp;http://help.opera.com/Windows/10.20/fr/cookies.html    
                     <div class="dynasearchwrapper" v-else v-cloak>
 <div>
     <div id="search_page" v-if="products.length">
-        
+
         <div class="page_rayon searchResults">
             <div class="filtersWrapper">
 
-                
                 <div class="wrapper_bandeau">
                     <div class="wrap_bg">
                         <label>Votre recherche : </label>
@@ -916,7 +915,7 @@ Pour Op&eacute;ra :&nbsp;http://help.opera.com/Windows/10.20/fr/cookies.html    
                         </label>
                     </div>
 
-                                    </div>
+                </div>
             </div>
 
             <div id="content_obj">
@@ -932,31 +931,17 @@ Pour Op&eacute;ra :&nbsp;http://help.opera.com/Windows/10.20/fr/cookies.html    
                                                                     <div class="eclat_rond" :title="itm.promo_tags[0].title" v-if="itm.promo_tags.length && itm.promo_tags[0].is_okay_eclat">
                                         <img :src="itm.promo_tags[0].path" :alt="itm.promo_tags[0].title" />
                                     </div>
-                                                                                                    <div :class="[{productSwiper:itm.picture_path.length>0}, 'swiper-container', 'productVisualMulti', 'noSwiper']" :style="{backgroundImage: 'url(' +  itm.picture_path[0].path + ')'}">
-                                    <div :class="['swiper-wrapper', 'productBigPictures'+itm.picture_path.length]">
-                                        <div class="swiper-slide-off">
-                                            <div>
-                                                <a class="block_lnk" :href="itm.link + '.html'" :data-id="idx" @click="passId(itm.produit_id);clicked($event)">
-
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="swiper-slide-on cache">
-                                            <div v-for="picture in itm.picture_path" class="swiper-slide">
-                                                <a class="block_lnk" :href="itm.link + '.html'" :data-id="idx" @click="passId(itm.produit_id);clicked($event)">
-                                                    <img :data-src="picture.path" class="swiper-lazy imgProd" :alt="[itm.produit_titreobjet + ' NAF NAF']" />
-                                                </a>
-                                                <div class="swiper-lazy-preloader" :style="{backgroundImage: 'url(' +  itm.picture_path[0].path + ')'}"></div>
-                                            </div>
-                                        </div>
-
-                                        <div v-if="itm.picture_path.length>0" class="rollover_rayonsNext bgSprite bfr whitearrow"></div>
-                                        <div v-if="itm.picture_path.length>0" class="rollover_rayonsPrev bgSprite bfr whitearrow"></div>
-                                    </div>
+                                                                    <!-- On change le path de certaines images pour afficher la large pour ne pas avoir une image floue -->
+                                <!-- Cas 1 : A l'index 6, ou alors à toutes les 18 occurences à partir de l'index 6 -->
+                                <!-- Cas 2 : A l'index 13, ou alors à toutes les 18 occurences à partir de l'index 13 -->
+                                <div v-if="(idx === 6 || (idx - 6) % 18 == 0) || (idx === 13 || (idx - 13) % 18 == 0)" :class="'search_product'" :style="{backgroundImage: 'url(' +  itm.picture_path[0].path.replace('medium','large') + ')'}">
+                                    <a class="block_lnk" :href="itm.link + '.html'" :data-id="idx" @click="passId(itm.produit_id);clicked($event)"></a>
                                 </div>
 
+                                <div v-else :class="'search_product'" :style="{backgroundImage: 'url(' +  itm.picture_path[0].path + ')'}">
+                                    <a class="block_lnk" :href="itm.link + '.html'" :data-id="idx" @click="passId(itm.produit_id);clicked($event)"></a>
+                                </div>
 
-                                
                                 <!--Bloc couleurs-->
                                 <div class="wrap_rolloverproduit">
                                 <form :id="'prod_info_' + (products.length? itm.produit_id + (itm.rr_id != '' ? '_' + itm.rr_id : ''):TGproduct.id + (TGproduct.rr_id != '' ? '_' + TGproduct.rr_id : ''))" onsubmit="return false" v-if="itm.produit_type != 'batch_kit'">
@@ -1476,7 +1461,7 @@ Pour Op&eacute;ra :&nbsp;http://help.opera.com/Windows/10.20/fr/cookies.html    
                     </div>
                 </div>
         <div class="wShop">
-            &copy; 2022 Naf Naf via <a href="https://www.wshop-cloudcommerce.fr"><img src="/svg/wshop.1645555381.svg" alt="WSHOP&reg;"></a>        </div>
+            &copy; 2022 Naf Naf via <a href="https://www.wshop-cloudcommerce.fr"><img src="/svg/wshop.1646081465.svg" alt="WSHOP&reg;"></a>        </div>
     </footer>
 </div>
 
@@ -1578,7 +1563,7 @@ Vous &ecirc;tes bien inscrite &agrave; notre newsletter.                        
             <div id="shad_header" class="shad"></div>
         </div>
 
-                <script src="/js/lazyload.1646042875.js"></script>
+                <script src="/js/lazyload.1646081448.js"></script>
 
         <script>
             var path_relative_root = '/';
@@ -1587,7 +1572,7 @@ Vous &ecirc;tes bien inscrite &agrave; notre newsletter.                        
         <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
 
         <script id="jqInject">
-            window.jQuery || document.write("<script src=\"/js/jquery.1646042875.js\"><\/script>");
+            window.jQuery || document.write("<script src=\"/js/jquery.1646081448.js\"><\/script>");
         </script>
 
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
@@ -1597,10 +1582,10 @@ Vous &ecirc;tes bien inscrite &agrave; notre newsletter.                        
         <script src="https://www.google.com/recaptcha/api.js?hl=fr"></script>
         <script src="https://apis.google.com/js/platform.js?onload=init"></script>
         <meta name="google-signin-client_id" content="">
-        <script src="/js/lang/fr.1646042966.js"></script>
+        <script src="/js/lang/fr.1646122616.js"></script>
 
                     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
-                    <script src="/js/wShopForms.1646042875.js"></script>
+                    <script src="/js/wShopForms.1646081448.js"></script>
 
         <script>
     (function() {
@@ -1646,10 +1631,10 @@ Vous &ecirc;tes bien inscrite &agrave; notre newsletter.                        
             });
         </script>
 
-        <script type="application/javascript" src="/js/partials.1646042875.js"></script>
-        <script src="/js/wshop.1646042875.js"></script>
-        <script src="/js/script.1645555381.js"></script>
-        <script src="/js/intlTelInput.1646042875.js"></script>
+        <script type="application/javascript" src="/js/partials.1646081448.js"></script>
+        <script src="/js/wshop.1646081448.js"></script>
+        <script src="/js/script.1646081465.js"></script>
+        <script src="/js/intlTelInput.1646081448.js"></script>
 
                 <script type="text/javascript">
             var overlayRules = {
@@ -1681,7 +1666,7 @@ Vous &ecirc;tes bien inscrite &agrave; notre newsletter.                        
                 overlay.showOverlay();
             });
         </script>
-        <script type="text/javascript">var lang_iso = 'fr';</script><script type="text/javascript">var siteCurrency = {};siteCurrency.code = 'EUR';siteCurrency.symbol_left = '';siteCurrency.symbol_right = '&euro;';siteCurrency.decimal_place = '2';var PRICE_FORMAT_PLAIN_JS = '[<unit>],[<decimal>] [<symbol_right>]';var PRICE_FORMAT_PLAIN_JS_NO_CENTS = '[<unit>]<span class="no_cents cents">[<decimal>]</span> [<symbol_right>]';</script><script type="text/javascript">var nb_try_auth = 0;var max_try_auth = 3;var token_security = '9e6f0f6164e69edb610edd9d703f02239df2a9a1';var captcha_google = '6LeaTnAaAAAAADndJD7fcAsJJKcUDF5KoxWZYvT-';</script>    <script type="application/javascript">
+        <script type="text/javascript">var lang_iso = 'fr';</script><script type="text/javascript">var siteCurrency = {};siteCurrency.code = 'EUR';siteCurrency.symbol_left = '';siteCurrency.symbol_right = '&euro;';siteCurrency.decimal_place = '2';var PRICE_FORMAT_PLAIN_JS = '[<unit>],[<decimal>] [<symbol_right>]';var PRICE_FORMAT_PLAIN_JS_NO_CENTS = '[<unit>]<span class="no_cents cents">[<decimal>]</span> [<symbol_right>]';</script><script type="text/javascript">var nb_try_auth = 0;var max_try_auth = 3;var token_security = 'c4cea98d5ff0f474264139e782150dcadebb6e09';var captcha_google = '6LeaTnAaAAAAADndJD7fcAsJJKcUDF5KoxWZYvT-';</script>    <script type="application/javascript">
         set_3ds2_datas();
     </script>
                 <script script="text/javascript">
