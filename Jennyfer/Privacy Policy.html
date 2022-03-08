@@ -73,9 +73,9 @@
 <meta name="theme-color" content="#790fff">
 
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
-<link rel="stylesheet" href="/on/demandware.static/Sites-Jennyfer-EU-Site/-/fr_FR/v1646658606611/css/styles.css"/>
+<link rel="stylesheet" href="/on/demandware.static/Sites-Jennyfer-EU-Site/-/fr_FR/v1646749514675/css/styles.css"/>
 
-    <link rel="stylesheet" href="/on/demandware.static/Sites-Jennyfer-EU-Site/-/fr_FR/v1646658606611/css/content.css"/>
+    <link rel="stylesheet" href="/on/demandware.static/Sites-Jennyfer-EU-Site/-/fr_FR/v1646749514675/css/content.css"/>
 
 
 
@@ -143,7 +143,7 @@ tc_vars["user_origin"] = "";
 var tc_vars = tc_vars || [];
 
 
-tc_vars["user_id"] = "cd8StykrtbakRDkfSQKSKZD38X";
+tc_vars["user_id"] = "ab2HBYqA720ytlSJDZsJS0uzlC";
 
 tc_vars["user_status"] = "prospect";
 
@@ -489,82 +489,70 @@ CQuotient.trackViewProduct = function(/* Object */ cqParamData){
 	
     
         <style type="text/css">
-	.Layout__header {
-	    margin-bottom: 0rem;
-	}
-	.content-defile-header {
-	    overflow: hidden;
-	    white-space: nowrap;
-	    background: #9863d6 !important;     <!-- #000000-->
-	    color: yellow;
-	    text-transform: uppercase;
-	    font-weight: 700;
-	    font-size: 15px;
-	}
-	
-	
-	.content-defile-header span{
-	    color: white;
-            font-size: 14px;
-	}
-	
-	.scrolling-header {
-	 -webkit-animation: marquee2 12s linear infinite;
-	 animation: marquee2 12s linear infinite;
-	 display: inline-block;
-	 color : black;
-     font-size: 14px;
-	}
+    .header-banner {
+        background-color: #91C9A4;
+        color: #000000;
+    }
 
-	@keyframes marquee2 {
-	  from {
-	    -webkit-transform: translateX(0);
-	    transform: translateX(0);
-	  }
-	  to {
-	    transform: translateX(-100%);
-	   -webkit-transform: translateX(-100%);
-	  }
-	}
-	@keyframes yoyo {
-	  from {
-	    -webkit-transform: translateX(-100%);
-	    transform: translateX(-100%);
-	  }
-	  to {    
-	    -webkit-transform: translateX(0%);
-	    transform: translateX(0%);
-	  }
-	}
-	}
+    .header-banner a  {
+      text-decoration: none !important;
+    }
 
+    .header-banner__content {
+        padding: 4px !important;
+        font-size: 15px;
+        text-decoration: none !important;
+        color: white;
+    }
+
+    .header-banner__mobile {
+        padding: 3px !important;
+        font-size: 13px;
+        text-decoration: none !important;
+        color: white;
+    }
+   
+    span#demo {
+        font-size: 18px;
+        font-weight: 800;
+    }
+
+    span#demo2 {
+        font-size: 18px;
+        font-weight: 800;
+    }
 
 </style>
 
-
-
-
-    <div id="def1" class="header-banner header-banner__content header-banner__desktop content-defile-header" >
-        <div class="scrolling-header" ></div>
-    </div>
-    <div id="def2"  class="header-banner header-banner__content header-banner__mobile content-defile-header" >
-        <div  class="scrolling-header" ></div>
-    </div>
-
-
-
-<script >
-
-var txt = "&nbsp;&nbsp;&nbsp;<span>ENCORE + D'ARTICLES ! LE 3ème à 1€ sur tous les pulls, sweats & manteaux  > GO ! &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ENCORE + D'ARTICLES ! LE 3ème à 1€ sur tous les pulls, sweats & manteaux  > GO ! </span>&nbsp;&nbsp;&nbsp; "
-var link='/fr-fr/3eme-a-1/'
-
-		var allhtmltextheader = '<a href="'+ link +'"><div class="scrolling-header" aria-hidden="true">'+ txt +'</div><div class="scrolling-header" aria-hidden="true">'+ txt +'</div><div class="scrolling-header" aria-hidden="true">'+ txt +'</div><div class="scrolling-header" aria-hidden="true">'+ txt +'</div><div class="scrolling-header" aria-hidden="true">'+ txt +'</div><div class="scrolling-header" aria-hidden="true">'+ txt +'</div><div class="scrolling-header" aria-hidden="true">'+ txt +'</div><div class="scrolling-header" aria-hidden="true">'+ txt +'</div><div class="scrolling-header" aria-hidden="true">'+ txt +'</div><div class="scrolling-header" aria-hidden="true">'+ txt +'</div><div class="scrolling-header" aria-hidden="true">'+ txt +'</div><div class="scrolling-header" aria-hidden="true">'+ txt +'</div><div class="scrolling-header" aria-hidden="true">'+ txt +'</div></div></a>';
-
-
-		document.getElementById("def1").innerHTML = allhtmltextheader ;
-		document.getElementById("def2").innerHTML = allhtmltextheader ;        
-
+<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Mars 9, 2022 09:59:00").getTime();
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+        // Get today's date and time
+        var now = new Date().getTime();
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        // Output the result in an element with id="demo"
+        document.getElementById("demo").innerHTML = hours + "H " + minutes + "M " + seconds + "S ";
+        document.getElementById("demo2").innerHTML = hours + "H " + minutes + "M " + seconds + "S ";
+        // If the count down is over, write some text
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "";
+        }
+    }, 1000);
 </script>
+
+<div class="header-banner">
+    <a href="/fr-fr/3eme-a-1/"><div class="header-banner__content header-banner__mobile">⏱ LAST CALL : 3ème art. à 1€ sur la collection Hiver !<br> Plus que <span id="demo"></span> pour shopper tes fav' 🛍️</div></a>
+    <a href="/fr-fr/3eme-a-1/"><div class="header-banner__content header-banner__desktop">⏱ LAST CALL : 3ème art. à 1€ sur toute la collection Hiver ! Plus que <span id="demo2"></span>pour shopper tes fav'</div></a>
+</div>
     
 
  
@@ -584,7 +572,7 @@ var link='/fr-fr/3eme-a-1/'
     <button type="button"
         class="header-interactions__btn mobile-menu js-header-btn-mobile-menu"
         title="Menu principal"
-        data-action="/on/demandware.store/Sites-Jennyfer-EU-Site/fr_FR/Page-IncludeHeaderMobileMenuAjax?%5bList%20id%3d1785581715%5d="
+        data-action="/on/demandware.store/Sites-Jennyfer-EU-Site/fr_FR/Page-IncludeHeaderMobileMenuAjax?%5bList%20id%3d1841376226%5d="
     >
         <span class="icon icon-menu"></span>
     </button>
@@ -726,7 +714,7 @@ var link='/fr-fr/3eme-a-1/'
     <button type="button"
         class="header-interactions__btn mobile-menu js-header-btn-mobile-menu"
         title="Menu principal"
-        data-action="/on/demandware.store/Sites-Jennyfer-EU-Site/fr_FR/Page-IncludeHeaderMobileMenuAjax?%5bList%20id%3d2026435274%5d="
+        data-action="/on/demandware.store/Sites-Jennyfer-EU-Site/fr_FR/Page-IncludeHeaderMobileMenuAjax?%5bList%20id%3d641175937%5d="
     >
         <span class="icon icon-menu"></span>
     </button>
@@ -749,10 +737,10 @@ var link='/fr-fr/3eme-a-1/'
                             <li class="desktop-menu__menu__item align-items-center d-flex h-100" data-categoryid="3e1euro">
                                 <a href="/fr-fr/3eme-a-1/"
                                     
-                                        style="color:#9863d6;font-weight:900"
+                                        style="color:#91C9A4;font-weight:900"
                                     
                                     
-                                        style="color:#9863d6;"
+                                        style="color:#91C9A4;"
                                     
                                     
                                         style="font-weight:900"
@@ -773,6 +761,19 @@ var link='/fr-fr/3eme-a-1/'
                                     class="desktop-menu__menu__link "
                                     onclick="TagCommander.events.tc_menu(this, 'One Piece', '')">
                                     One Piece
+                                </a>
+
+                                
+                            </li>
+                        
+                            <li class="desktop-menu__menu__item align-items-center d-flex h-100" data-categoryid="University">
+                                <a href="/fr-fr/university/"
+                                    
+                                    
+                                    
+                                    class="desktop-menu__menu__link "
+                                    onclick="TagCommander.events.tc_menu(this, 'University', '')">
+                                    University
                                 </a>
 
                                 
@@ -1102,6 +1103,20 @@ var link='/fr-fr/3eme-a-1/'
                                                 </li>
                                             
                                                 <li class="desktop-menu__submenu__item w-100 d-inline-block">
+                                                    <a href="/fr-fr/licences/university/"
+                                                       class="desktop-menu__submenu__link align-items-center d-flex w-100 "
+                                                       onclick="TagCommander.events.tc_menu(this, 'Licences', 'University')">
+                                                       
+                                                        <span class="desktop-menu__submenu__name"
+                                                            
+                                                            
+                                                            >
+                                                            University
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                            
+                                                <li class="desktop-menu__submenu__item w-100 d-inline-block">
                                                     <a href="/fr-fr/emoji/"
                                                        class="desktop-menu__submenu__link align-items-center d-flex w-100 "
                                                        onclick="TagCommander.events.tc_menu(this, 'Licences', 'emoji&trade;')">
@@ -1297,25 +1312,11 @@ var link='/fr-fr/3eme-a-1/'
                                                     </a>
                                                 </li>
                                             
-                                                <li class="desktop-menu__submenu__item w-100 d-inline-block">
-                                                    <a href="/fr-fr/licences/university/"
-                                                       class="desktop-menu__submenu__link align-items-center d-flex w-100 "
-                                                       onclick="TagCommander.events.tc_menu(this, 'Licences', 'University')">
-                                                       
-                                                        <span class="desktop-menu__submenu__name"
-                                                            
-                                                            
-                                                            >
-                                                            University
-                                                        </span>
-                                                    </a>
-                                                </li>
-                                            
                                         </ul>
 
                                         <div class="desktop-menu__picture w-100">
                                             
-                                                <img class="h-100 w-100" src="/on/demandware.static/-/Sites-SF-Jennyfer-Europe-Fr/default/dwf0c08c44/Burger menu v3/EncartMenu_Desk_OnePiece.jpeg" alt="Licences">
+                                                <img class="h-100 w-100" src="/on/demandware.static/-/Sites-SF-Jennyfer-Europe-Fr/default/dw291d884f/Burger menu v3/EncartMenu_Desk_HelloNaruto.jpg" alt="Licences">
                                             
                                         </div>
                                     </div>
@@ -2288,7 +2289,7 @@ novalidate
 <button type="submit" class="btn btn-block btn-tertiary">
 Je m'abonne
 </button>
-<input type="hidden" name="csrf_token" value="Z4BYqACnDAPzaEZ6x-Is0HJgd44cfCTI83uCthVV1rqpPVzR6FUO8za8Z28cfyjPKXJu_IlixdmhhSGuUesNY9mQkb7klpSmMQr7aF2SVYyUUttKdZehlBhnDM5HqRXb_EuhYFZ7pF_dv_6ZprPIW4caLnkF3b5U9HOn1CqHoKHxXGZT_XA="/>
+<input type="hidden" name="csrf_token" value="pKu_eFyljQC-RGs34hXPArszRtIvx0NOAEyDL8Zadzt5afmriANfWAVERG4063rsYpDK2pPgwhWJSekHMw-F_q3ooXvH34VCiZ5WHa7IHXRTALpoamXtTjaSKFTzXGdUscg9nyefnbEBVMgOc-Fhr-m2p4zrYstS6LqrL4ieXpvE3ocUzwc="/>
 </form>
 </div>
 
@@ -2576,9 +2577,9 @@ Livraison offerte <br> dès 45€ d’achat
      data-user="{&quot;isLogged&quot;:false}">
 </div>
 
-<script defer type="text/javascript" src="/on/demandware.static/Sites-Jennyfer-EU-Site/-/fr_FR/v1646658606611/js/commons.js"></script>
+<script defer type="text/javascript" src="/on/demandware.static/Sites-Jennyfer-EU-Site/-/fr_FR/v1646749514675/js/commons.js"></script>
 
-<script defer type="text/javascript" src="/on/demandware.static/Sites-Jennyfer-EU-Site/-/fr_FR/v1646658606611/js/content.js"></script>
+<script defer type="text/javascript" src="/on/demandware.static/Sites-Jennyfer-EU-Site/-/fr_FR/v1646749514675/js/content.js"></script>
 
 
 
@@ -2848,9 +2849,9 @@ function trackPage() {
 /* ]]> */
 // -->
 </script>
-<script type="text/javascript" src="/on/demandware.static/Sites-Jennyfer-EU-Site/-/fr_FR/v1646658606611/internal/jscript/dwanalytics-22.2.js" async="async" onload="trackPage()"></script>
+<script type="text/javascript" src="/on/demandware.static/Sites-Jennyfer-EU-Site/-/fr_FR/v1646749514675/internal/jscript/dwanalytics-22.2.js" async="async" onload="trackPage()"></script>
 <!-- Demandware Active Data (body_end-active_data.js) -->
-<script src="/on/demandware.static/Sites-Jennyfer-EU-Site/-/fr_FR/v1646658606611/internal/jscript/dwac-21.7.js" type="text/javascript" async="async"></script><!-- CQuotient Activity Tracking (body_end-cquotient.js) -->
+<script src="/on/demandware.static/Sites-Jennyfer-EU-Site/-/fr_FR/v1646749514675/internal/jscript/dwac-21.7.js" type="text/javascript" async="async"></script><!-- CQuotient Activity Tracking (body_end-cquotient.js) -->
 <script src="https://cdn.cquotient.com/js/v2/gretel.min.js" type="text/javascript" async="async"></script>
 </body>
 </html>
