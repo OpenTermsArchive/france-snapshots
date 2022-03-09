@@ -11,26 +11,61 @@
 
 
 <!--[if gt IE 9]><!-->
-
-<script defer type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1646751175158/js/main.js"></script>
-
-
+<link rel="preload" href="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1646832778661/js/loadJquery.js" as="script" />
+<script type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1646832778661/js/loadJquery.js"></script>
 
 
 
-    <script type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1646751175158/js/kameleoonScript.js"></script>
+
+    <script type="text/javascript">
+        // Duration in milliseconds to wait while the Kameleoon application file is loaded
+        var kameleoonLoadingTimeout = 1000;
+
+        window.kameleoonQueue = window.kameleoonQueue || [];
+        window.kameleoonStartLoadTime = new Date().getTime();
+        if (! document.getElementById("kameleoonLoadingStyleSheet") && ! window.kameleoonDisplayPageTimeOut)
+        {
+            var kameleoonS = document.getElementsByTagName("script")[0];
+            var kameleoonCc = "* { visibility: hidden !important; background-image: none !important; }";
+            var kameleoonStn = document.createElement("style");
+            kameleoonStn.type = "text/css";
+            kameleoonStn.id = "kameleoonLoadingStyleSheet";
+            if (kameleoonStn.styleSheet)
+            {
+                kameleoonStn.styleSheet.cssText = kameleoonCc;
+            }
+            else
+            {
+                kameleoonStn.appendChild(document.createTextNode(kameleoonCc));
+            }
+            kameleoonS.parentNode.insertBefore(kameleoonStn, kameleoonS);
+            window.kameleoonDisplayPage = function(fromEngine)
+            {
+                if (!fromEngine)
+                {
+                    window.kameleoonTimeout = true;
+                }
+                if (kameleoonStn.parentNode)
+                {
+                    kameleoonStn.parentNode.removeChild(kameleoonStn);
+                }
+            };
+            window.kameleoonDisplayPageTimeOut = window.setTimeout(window.kameleoonDisplayPage, kameleoonLoadingTimeout);
+        }
+    </script>
     
     <script type="text/javascript" src="//usgqb5loji.kameleoon.eu/kameleoon.js" async="true"></script>
 
 
+<script defer type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1646832778661/js/main.js"></script>
 
 
-    <script defer type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1646751175158/js/uiShow.js"
+    <script defer type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1646832778661/js/uiShow.js"
         
         >
     </script>
 
-    <script defer type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1646751175158/js/targetToSell.js"
+    <script defer type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1646832778661/js/targetToSell.js"
         
         >
     </script>
@@ -87,14 +122,14 @@
     <link rel="icon" type="image/png" href="https://www.b-z-b.com/on/demandware.static/-/Sites/default/dw27462841/images/Favicon/196.png" sizes="196x196" />
 
 
-<link rel="preload" href="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1646751175158/fonts/fontawesome-webfont.woff2?v=4.7.0" as="font" type="font/woff2" crossorigin />
-<link rel="preload" href="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1646751175158/fonts/icomoon.ttf?mt5112" as="font" type="font/ttf" crossorigin />
+<link rel="preload" href="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1646832778661/fonts/fontawesome-webfont.woff2?v=4.7.0" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1646832778661/fonts/icomoon.ttf?mt5112" as="font" type="font/ttf" crossorigin />
 
 
 
-<link rel="stylesheet" href="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1646751175158/css/global.css" />
+<link rel="stylesheet" href="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1646832778661/css/global.css" />
 
-    <link rel="stylesheet" href="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1646751175158/css/radiusCTA.css"  />
+    <link rel="stylesheet" href="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1646832778661/css/radiusCTA.css"  />
 
 
 
@@ -381,7 +416,7 @@ CQuotient.trackViewProduct = function(/* Object */ cqParamData){
                                         class="" 
                                         src="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dw057d5078/Bizzbee-SFRA/BZB-logo.svg" 
                                         data-imagesmall="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dw057128fe/Bizzbee-SFRA/BZB-logo-small.svg" 
-                                        alt="Bizzbee v&ecirc;tements homme et femme" 
+                                        alt="BZB v&ecirc;tements homme et femme" 
                                         width="auto"
                                         height="40" 
                                         data-imagesmallwidth="40" 
@@ -479,7 +514,7 @@ CQuotient.trackViewProduct = function(/* Object */ cqParamData){
     <a class="navbar-brand" href="/">
         <img 
             src="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dw057d5078/Bizzbee-SFRA/BZB-logo.svg" 
-            alt="Bizzbee v&ecirc;tements homme et femme" 
+            alt="BZB v&ecirc;tements homme et femme" 
             data-imagesmall="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dw057128fe/Bizzbee-SFRA/BZB-logo-small.svg" 
             width="auto" 
             height="40" 
@@ -506,7 +541,7 @@ CQuotient.trackViewProduct = function(/* Object */ cqParamData){
             class="" 
             src="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dw057d5078/Bizzbee-SFRA/BZB-logo.svg" 
             data-imagesmall="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dw057128fe/Bizzbee-SFRA/BZB-logo-small.svg" 
-            alt="Bizzbee v&ecirc;tements homme et femme" 
+            alt="BZB v&ecirc;tements homme et femme" 
             width="auto" 
             height="40" 
             data-imagesmallwidth="40" 
@@ -1988,7 +2023,7 @@ CQuotient.trackViewProduct = function(/* Object */ cqParamData){
     <button type="submit" class="btn btn-block btn-primary" data-beaver-id="connexion">
         Suivant</button>
 
-    <input type="hidden" name="csrf_token" value="JtTLlSCStDH5v25P8w0593St0F2qmUQjFLfomouqmTOzHcD-CXIfgOiEDkV9mF4Sop8rhhNe8o4RCUApi8uFXzmieKiMzx2I9hEGTpySuCWGBwKvjYYFMIE8cs8Y1eR3sEcUuq38MnjWKW863nUmC4SMiHOT2oOCXkRe2a3Dfda3u03B9SM=" />
+    <input type="hidden" name="csrf_token" value="HDIhI7PAy0ydge18wayUmhalY8PNaVQE6K6G9ToaYV4qWRHyEoWIoftCyE7PQabX25kOQIK4sPhmsgyB47OKcwCs_7OqLuyy_9umSeDdhF8z2cr5GjMaUdjtQH4jEraAbyoncYpAGPCeNsYoyTnRgqMYhLfRW_tY9gRl8Mkpdc4kDNiXNx0=" />
 
 
 
@@ -2110,7 +2145,7 @@ CQuotient.trackViewProduct = function(/* Object */ cqParamData){
                     </div>
                     <div class="login-form-nav mb-3">
                         <span class="account-subtitle link link-icon-before returnLayerC">
-                            <img class="inverse" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/default/dw6b059a7d/images/arrow-2.svg" alt="<" />
+                            <img class="inverse" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/default/dw1e938b08/images/arrow-2.svg" alt="<" />
                             <span id="label-returnC"></span>
                         </span>
                         <form action="/on/demandware.store/Sites-Bizzbee-SFRA-Site/fr_FR/Account-Login?rurl=1" class="loginlayer" method="POST" name="login-form">
@@ -2150,7 +2185,7 @@ CQuotient.trackViewProduct = function(/* Object */ cqParamData){
                                 </div>
                             </div>
 
-                            <input type="hidden" name="csrf_token" value="5WKtfv2svZ-QgfFzAjJnFpTg5rmaDWyWqmPXf4kHpx0E9fhDQvHP79xGivxl-4wGz8Bb1Q9mUNwiEh3ASAHQiQeTNcDdDvg8bh8Emy0Ic0f_SQDSKnLG4vtGw7slj_YtrPXFyaQOMfPtoDkAsU_uPAm-8DKkiGfkb7tKAt7ww9i_afl1TEk=" />
+                            <input type="hidden" name="csrf_token" value="CxENvCYPPH2S4BLTtjbtzUqiWjIiDSklnSSj8esMhGYgs3t-VPYSMj742WGzdo3W7PspI96BEajFSHWwVv1hrWaGb0bOzVyV3-LJwIh8XunPqOqRdKUN8Lzfz8eGG3ryY0zB0Gh2QldXBxoAq-cuJ2yKoSYPnfek9KSoitughF6qeThAPVY=" />
 
 
 
@@ -2176,7 +2211,7 @@ CQuotient.trackViewProduct = function(/* Object */ cqParamData){
                     </div>
                     <div class="login-form-nav mb-3">
                         <span class="account-subtitle link link-icon-before returnPasswordReset">
-                            <img class="inverse" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/default/dw6b059a7d/images/arrow-2.svg" alt="<" />
+                            <img class="inverse" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/default/dw1e938b08/images/arrow-2.svg" alt="<" />
                             <span id="emailPasswordNotReceived"></span>
                         </span>
                         <div class="modal-body col-12 text-center fs14">
@@ -2203,7 +2238,7 @@ CQuotient.trackViewProduct = function(/* Object */ cqParamData){
             <button type="button" class="btn-close close" data-bs-dismiss="modal" aria-label="Close"></button>
 
             <div class="modal-body m-auto pt-0">
-                    <div class="col-12 text-center"><img src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/default/dwc6c82ddc/images/check-green.svg" title="Merci" alt="Merci" class="mb-3" /></div>
+                    <div class="col-12 text-center"><img src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/default/dw1c5273a3/images/check-green.svg" title="Merci" alt="Merci" class="mb-3" /></div>
                     <div class="modal-header">
                         <span class="h6 m-0 mx-auto subtitle1">Merci</span>
                     </div>
@@ -3439,10 +3474,10 @@ CQuotient.trackViewProduct = function(/* Object */ cqParamData){
             <div class="col-sm-2 m-auto">
                 <h3>#BZBXME</h3>
                 <p>
-                    Ton style est unique, <br> partage le &#9786;
+                    Rejoins le crew BZB en partageant ton look ! &#9786;
                 </p>
                 <p>
-                    Et tente de gagner une carte cadeau de 100€ ! 
+                    Inspire la communauté en postant ton look avec le #BZBxME ou trouve tes prochaines idées de looks sur notre galerie ! 
                 </p>
                 <a href="https://www.b-z-b.com/crew.html#bzbxme">
                     <button class="btn ms-2 me-2 mb-3">Voir la galerie</button>
@@ -3840,26 +3875,61 @@ CQuotient.trackViewProduct = function(/* Object */ cqParamData){
 
 
 <!--[if lt IE 10]>
-
-<script defer type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1646751175158/js/main.js"></script>
-
-
+<link rel="preload" href="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1646832778661/js/loadJquery.js" as="script" />
+<script type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1646832778661/js/loadJquery.js"></script>
 
 
 
-    <script type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1646751175158/js/kameleoonScript.js"></script>
+
+    <script type="text/javascript">
+        // Duration in milliseconds to wait while the Kameleoon application file is loaded
+        var kameleoonLoadingTimeout = 1000;
+
+        window.kameleoonQueue = window.kameleoonQueue || [];
+        window.kameleoonStartLoadTime = new Date().getTime();
+        if (! document.getElementById("kameleoonLoadingStyleSheet") && ! window.kameleoonDisplayPageTimeOut)
+        {
+            var kameleoonS = document.getElementsByTagName("script")[0];
+            var kameleoonCc = "* { visibility: hidden !important; background-image: none !important; }";
+            var kameleoonStn = document.createElement("style");
+            kameleoonStn.type = "text/css";
+            kameleoonStn.id = "kameleoonLoadingStyleSheet";
+            if (kameleoonStn.styleSheet)
+            {
+                kameleoonStn.styleSheet.cssText = kameleoonCc;
+            }
+            else
+            {
+                kameleoonStn.appendChild(document.createTextNode(kameleoonCc));
+            }
+            kameleoonS.parentNode.insertBefore(kameleoonStn, kameleoonS);
+            window.kameleoonDisplayPage = function(fromEngine)
+            {
+                if (!fromEngine)
+                {
+                    window.kameleoonTimeout = true;
+                }
+                if (kameleoonStn.parentNode)
+                {
+                    kameleoonStn.parentNode.removeChild(kameleoonStn);
+                }
+            };
+            window.kameleoonDisplayPageTimeOut = window.setTimeout(window.kameleoonDisplayPage, kameleoonLoadingTimeout);
+        }
+    </script>
     
     <script type="text/javascript" src="//usgqb5loji.kameleoon.eu/kameleoon.js" async="true"></script>
 
 
+<script defer type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1646832778661/js/main.js"></script>
 
 
-    <script defer type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1646751175158/js/uiShow.js"
+    <script defer type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1646832778661/js/uiShow.js"
         
         >
     </script>
 
-    <script defer type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1646751175158/js/targetToSell.js"
+    <script defer type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1646832778661/js/targetToSell.js"
         
         >
     </script>
@@ -3870,7 +3940,7 @@ CQuotient.trackViewProduct = function(/* Object */ cqParamData){
 
 
 <script>const pwaApplicationServerPublicKey = "BEbOxNuES60bKLdbM7S1KSTHBWp4SowS8VannQFhV8oK6_0e0lUJbUIYdjlgzrlCZmfM11vIvzIFMHK2UTbN3SQ";</script>
-<script src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1646751175158/js/pwa.js" async></script>
+<script src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1646832778661/js/pwa.js" async></script>
 
     <script async>
 
@@ -3901,9 +3971,9 @@ function trackPage() {
 /* ]]> */
 // -->
 </script>
-<script type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1646751175158/internal/jscript/dwanalytics-22.2.js" async="async" onload="trackPage()"></script>
+<script type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1646832778661/internal/jscript/dwanalytics-22.2.js" async="async" onload="trackPage()"></script>
 <!-- Demandware Active Data (body_end-active_data.js) -->
-<script src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1646751175158/internal/jscript/dwac-21.7.js" type="text/javascript" async="async"></script><!-- CQuotient Activity Tracking (body_end-cquotient.js) -->
+<script src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1646832778661/internal/jscript/dwac-21.7.js" type="text/javascript" async="async"></script><!-- CQuotient Activity Tracking (body_end-cquotient.js) -->
 <script src="https://cdn.cquotient.com/js/v2/gretel.min.js" type="text/javascript" async="async"></script>
 </body>
 </html>
