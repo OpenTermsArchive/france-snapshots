@@ -32,15 +32,15 @@
 <meta property="og:locale" content="" />
 <meta property="og:type" content="website" />
 
-                    <link media="all" type="text/css" rel="stylesheet" href="https://www.rueducommerce.fr/build/css/rdc/cms.css?id=4f8025892a4ce9283b60">
+                    <link media="all" type="text/css" rel="stylesheet" href="https://www.rueducommerce.fr/build/css/rdc/cms.css?id=c0236e8323870d535240">
         
         <link rel="icon" href="/favicon/rdc/favicon.png">
 
-        <script defer src="https://www.rueducommerce.fr/build/js/rdc/new-all.js?id=25b682d4d185243cdd53"></script>
+        <script defer src="https://www.rueducommerce.fr/build/js/rdc/new-all.js?id=cd56de908d3c11eb5697"></script>
 
 
     
-            <script defer src="https://www.rueducommerce.fr/build/js/new-cms.js?id=f8db523a4cdfd603dbd9"></script>
+            <script defer src="https://www.rueducommerce.fr/build/js/new-cms.js?id=2bb6e46251cd205788bd"></script>
     
 
         <script>
@@ -101,7 +101,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.defer=true;j.src=
                class="apply-full-text-search"
                name="search_term_string" placeholder="RECHERCHE"
                type="text" value="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"
-               data-url="https://www.rueducommerce.fr/search/tracking"
+               data-url="https://www.rueducommerce.fr/search"
+               data-url-tracking="https://www.rueducommerce.fr/search/tracking"
         >
         <button id="search_submit" type="submit" aria-label="Valider">
             <svg aria-hidden="true" width="23" height="23"><use xlink:href="#icon--search">
@@ -112,122 +113,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.defer=true;j.src=
         </button>
     </form>
 
-<!-- Main -->
-<div id="header__search-result">
-    <a id="search-result-back">&#8592;</a>
-    <div class="container">
-            <div class="row">
-                <div id="header__search-result-col-2" class="col-4 header__search-result-categories">
-                    <p class="h3">
-	Suggestions
-	<!--<span id="stats2"></span>-->
-</p>
-
-<div id="hits5" class="search-list"></div>
-                </div>
-                <div id="header__search-result-col-1" class="col-8">
-                    <p class="h3">
-	Produits
-</p>
-
-<div id="hits" class="search-list"></div>
-
-<div id="search-product-btn-container">
-	<a id="search-product-btn" href="" class="btn btn--prin" onClick="if(typeof ga != 'undefined'){ga('send', 'event', 'Recherche', 'click', 'All Produit');}">
-		Voir tous les produits
-	</a>
-</div>
-
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- Btn template -->
-<script type="text/template" id="btn-template">
-	Voir tous les produits</script>
-
-<!-- Stats template -->
-<script type="text/template" id="stats-template">
-	({{ nbHits }} résultat{{#nbHits_plural}}s{{/nbHits_plural}})
-</script>
-
-<!-- Hit template PRODUITS -->
-<script type="text/template" id="hit-template">
-	{{#hits}}
-		<div class="clr">
-			<a href="{{ reelurl }}" class="search-text-tracking" onClick="if(typeof ga != 'undefined'){ga('send', 'event', 'Recherche', 'click', 'Produit');}">
-				{{#reelimage}}
-					<p class="search-list__img"><img alt="{{{ _highlightResult.nomcourt.fr.value }}}" src="{{ reelimage }}"></p>
-				{{/reelimage}}
-
-				{{^reelimage}}
-						<p class="search-list__img"><img alt="" src="/images/shopinvest/image-alt.png"></p>
-				{{/reelimage}}
-
-				<div class="search-list__col">
-					{{#refurbished_label}}
-						<p class="search-refurbished__label">{{ refurbished_label }}</p>
-					{{/refurbished_label}}
-						<h4 class="search-list__brand">{{ fournisseur.nom_court.fr }}</h4>
-						<p class="search-list__desc">&nbsp;{{{ _highlightResult.nomhighlight.fr.value }}}</p>
-				</div>
-
-				<p class="search-list__price">
-					{{#totalvente}}
-						<span class="search-list__price--old">{{ totalvente }} €</span>
-						<span class="search-list__price--new">{{ reelvente }} €</span><br>
-					{{/totalvente}}
-
-					{{^totalvente}}
-						<span class="search-list__price--normal">{{ reelvente }} €</span>
-					{{/totalvente}}
-				</p>
-			</a>
-		</div>
-	{{/hits}}
-</script>
-
-<script type="text/template" id="hit-template5">
-	{{#hits}}
-		<div class="clr">
-			<p class="search-list__txt">
-				<a href="{{ reelurl }}" class="search-text-tracking" onClick="if(typeof ga != 'undefined'){ga('send', 'event', 'Recherche', 'click', 'Keyword');}" class="search-menu-cat">{{ name }}</a>
-			</p>
-		</div>
-	{{/hits}}
-</script>
-
-<!-- Hit template CONSEILS -->
-<script type="text/template" id="hit-template4">
-	{{#hits}}
-		{{#imagereel}}
-			<div class="conseils">
-				<a href="{{ reelurl }}" onClick="if(typeof ga != 'undefined'){ga('send', 'event', 'Recherche', 'click', 'Conseil');}">
-					<img src="{{ imagereel }}">
-					<span>{{{ fr.nom }}}</span>
-				</a>
-			</div>
-		{{/imagereel}}
-
-		{{^imagereel}}
-			<div class="clr">
-				<p class="search-list__txt">
-					<a href="{{ reelurl }}" onClick="if(typeof ga != 'undefined'){ga('send', 'event', 'Recherche', 'click', 'Conseil');}">{{{ fr.nom }}}</a>
-				</p>
-			</div>
-		{{/imagereel}}
-	{{/hits}}
-</script>
-
-<!-- No-Results template -->
-<script type="text/template" id="no-results-template">
-<div id="no-results-message">
-Il n'y a aucun résultat.
-</div>
-</script>
-						
+    <!-- Main -->
+    <div id="header__search-result"></div>
+</div>						
 					</div>
 				</div> 
 			</div>
@@ -1756,8 +1644,14 @@ Il n'y a aucun résultat.
         </li>
     
         <li id="nav-list-link-706">
-            <a href="/rayon/telephonie-92/vivo-y20s-y11s" class="main-menu-link  ">
-                Vivo Y20s | Y11s 
+            <a href="/rayon/telephonie-92/vivo-y20s" class="main-menu-link  ">
+                Vivo Y20s 
+            </a>
+        </li>
+    
+        <li id="nav-list-link-707">
+            <a href="/rayon/telephonie-92/vivo-y11s" class="main-menu-link  ">
+                Vivo Y11s 
             </a>
         </li>
     
@@ -1768,25 +1662,25 @@ Il n'y a aucun résultat.
         </li>
     </ul>
     
-        <div id="nav-list-366" class="nav-new-list-title">
-            <a href="/boutique/oppo" class="main-menu-link">OPPO</a>
+        <div id="nav-list-743" class="nav-new-list-title">
+            <a href="/marque/motorola" class="main-menu-link">Smartphone Motorola</a>
         </div>
         <ul class="nav-new-list-link">
-        <li id="nav-list-link-367">
-            <a href="/rayon/telephonie-92/oppo-find-x-122378" class="main-menu-link  ">
-                Série Find X 
+        <li id="nav-list-link-744">
+            <a href="/rayon/telephonie-92/motorola-edge-20" class="main-menu-link  ">
+                Edge 20 I 20 Lite I 20 Pro 
             </a>
         </li>
     
-        <li id="nav-list-link-368">
-            <a href="/rayon/telephonie-92/oppo-reno-122371" class="main-menu-link  ">
-                Série Reno 
+        <li id="nav-list-link-745">
+            <a href="/rayon/telephonie-92/smartphone-android-6774/motorola-e7-e7i-e20-e40" class="main-menu-link  ">
+                E7 I E7i I E20 I E40 
             </a>
         </li>
     
-        <li id="nav-list-link-704">
-            <a href="/rayon/telephonie-92/oppo-a-122385" class="main-menu-link  ">
-                Série A 
+        <li id="nav-list-link-746">
+            <a href="/rayon/telephonie-92/smartphone-android-6774/motorola-g31-g51-g100-g200" class="main-menu-link  ">
+                G31 I G51 I G100 I G200 
             </a>
         </li>
     </ul>
@@ -1882,12 +1776,6 @@ Il n'y a aucun résultat.
             </a>
         </li>
     
-        <li id="nav-list-link-802">
-            <a href="/rayon/telephonie-92/realme-c25" class="main-menu-link  ">
-                Realme C25 
-            </a>
-        </li>
-    
         <li id="nav-list-link-790">
             <a href="/rayon/telephonie-92/realme-gt-master" class="main-menu-link  ">
                 Realme GT Master | Neo 2 
@@ -1897,25 +1785,25 @@ Il n'y a aucun résultat.
     </div>
     
         <div id="nav-column-399" class="nav-new-column-20  ">
-        <div id="nav-list-743" class="nav-new-list-title">
-            <a href="/marque/motorola" class="main-menu-link">Smartphone Motorola</a>
+        <div id="nav-list-366" class="nav-new-list-title">
+            <a href="/boutique/oppo" class="main-menu-link">OPPO</a>
         </div>
         <ul class="nav-new-list-link">
-        <li id="nav-list-link-744">
-            <a href="/rayon/telephonie-92/motorola-edge-20" class="main-menu-link  ">
-                Edge 20 I 20 Lite I 20 Pro 
+        <li id="nav-list-link-367">
+            <a href="/rayon/telephonie-92/oppo-find-x-122378" class="main-menu-link  ">
+                Série Find X 
             </a>
         </li>
     
-        <li id="nav-list-link-745">
-            <a href="/rayon/telephonie-92/smartphone-android-6774/motorola-e7-e7i-e20-e40" class="main-menu-link  ">
-                E7 I E7i I E20 I E40 
+        <li id="nav-list-link-368">
+            <a href="/rayon/telephonie-92/oppo-reno-122371" class="main-menu-link  ">
+                Série Reno 
             </a>
         </li>
     
-        <li id="nav-list-link-746">
-            <a href="/rayon/telephonie-92/smartphone-android-6774/motorola-g31-g51-g100-g200" class="main-menu-link  ">
-                G31 I G51 I G100 I G200 
+        <li id="nav-list-link-704">
+            <a href="/rayon/telephonie-92/oppo-a-122385" class="main-menu-link  ">
+                Série A 
             </a>
         </li>
     </ul>
@@ -3418,293 +3306,222 @@ Il n'y a aucun résultat.
         <div id="nav-line-553" class="nav-new-row">
             
         <div id="nav-column-554" class="nav-new-column-25  ">
-        <div id="nav-list-555" class="nav-new-list-title">
-            <a href="https://www.rueducommerce.fr/rayon/destockage-22/produits-comme-neuf" class="main-menu-link">COMME NEUF</a>
+        <div id="nav-list-804" class="nav-new-list-title">
+            <a href="/rayon/destockage-22/smartphone-reconditionne-65370" class="main-menu-link">Seconde vie - Téléphonie</a>
         </div>
         <ul class="nav-new-list-link">
-        <li id="nav-list-link-556">
-            <a href="/rayon/telephonie-92/smartphone-821/comme-neuf" class="main-menu-link  ">
-                Smartphone comme neuf 
+        <li id="nav-list-link-805">
+            <a href="/rayon/telephonie-92/iphone-reconditionnes-116505" class="main-menu-link  ">
+                iPhone 
             </a>
         </li>
     
-        <li id="nav-list-link-557">
-            <a href="/rayon/ordinateurs-64/tablette-tactile-659/comme-neuf" class="main-menu-link  ">
-                Tablette, ipad comme neuf 
+        <li id="nav-list-link-806">
+            <a href="/rayon/telephonie-92/samsung-galaxy-7546/occasions" class="main-menu-link  ">
+                Samsung Galaxy 
             </a>
         </li>
     
-        <li id="nav-list-link-558">
-            <a href="/rayon/ordinateurs-64/ordinateur-portable-657/comme-neuf" class="main-menu-link  ">
-                PC portable comme neuf 
+        <li id="nav-list-link-807">
+            <a href="/rayon/destockage-22/smartphone-reconditionne-65370?fournisseur=xiaomi" class="main-menu-link  ">
+                Xiaomi Mi | Redmi 
             </a>
         </li>
     
-        <li id="nav-list-link-559">
-            <a href="/rayon/ordinateurs-64/ordinateur-de-bureau-658/comme-neuf" class="main-menu-link  ">
-                PC fixe comme neuf 
+        <li id="nav-list-link-808">
+            <a href="/rayon/telephonie-92/huawei-mate-20-27594/occasions" class="main-menu-link  ">
+                Huawei 
+            </a>
+        </li>
+    </ul>
+    
+        <div id="nav-list-809" class="nav-new-list-title">
+            <a href="/rayon/destockage-22/ordinateurs-319" class="main-menu-link">Seconde vie - Ordinateur</a>
+        </div>
+        <ul class="nav-new-list-link">
+        <li id="nav-list-link-837">
+            <a href="/rayon/destockage-22/macbook-occasion-91053" class="main-menu-link  ">
+                Macbook 
             </a>
         </li>
     
-        <li id="nav-list-link-560">
-            <a href="/rayon/composants-16/comme-neuf" class="main-menu-link  ">
-                Composant comme neuf 
+        <li id="nav-list-link-810">
+            <a href="/rayon/ordinateurs-64/pc-portable-5875?gamme=occasions-full" class="main-menu-link  ">
+                PC Portable 
             </a>
         </li>
     
-        <li id="nav-list-link-561">
-            <a href="/rayon/peripheriques-reseaux-et-wifi-73/ecran-717/comme-neuf" class="main-menu-link  ">
-                Ecran PC comme neuf 
+        <li id="nav-list-link-811">
+            <a href="/rayon/ordinateurs-64/pc-portable-gamer-8032/occasions" class="main-menu-link  ">
+                PC Portable Gamer 
             </a>
         </li>
     
-        <li id="nav-list-link-562">
-            <a href="/rayon/peripheriques-reseaux-et-wifi-73/comme-neuf" class="main-menu-link  ">
-                Périphérique comme neuf 
+        <li id="nav-list-link-812">
+            <a href="/rayon/ordinateurs-64/pc-fixe-5878?gamme=occasions-full" class="main-menu-link  ">
+                PC Fixe 
             </a>
         </li>
     
-        <li id="nav-list-link-563">
-            <a href="/rayon/peripheriques-reseaux-et-wifi-73/reseaux-723/comme-neuf" class="main-menu-link  ">
-                Réseau comme neuf 
+        <li id="nav-list-link-813">
+            <a href="/rayon/destockage-22/mac-reconditionne-63508" class="main-menu-link  ">
+                iMac - Mac mini - Mac pro 
             </a>
         </li>
     
-        <li id="nav-list-link-564">
-            <a href="/rayon/objets-connectes-62/comme-neuf" class="main-menu-link  ">
-                Objet connecté comme neuf 
-            </a>
-        </li>
-    
-        <li id="nav-list-link-565">
-            <a href="/rayon/electromenager-26/comme-neuf" class="main-menu-link  ">
-                Electroménager comme neuf 
-            </a>
-        </li>
-    
-        <li id="nav-list-link-566">
-            <a href="/rayon/mp3-mp4-et-son-numerique-51/casque-audio-542/comme-neuf" class="main-menu-link  ">
-                Casque audio comme neuf 
-            </a>
-        </li>
-    
-        <li id="nav-list-link-567">
-            <a href="/rayon/tv-et-lecteurs-dvd-86/comme-neuf" class="main-menu-link  ">
-                TV, Home-cinéma comme neuf 
-            </a>
-        </li>
-    
-        <li id="nav-list-link-568">
-            <a href="/rayon/photo-video-numerique-66/comme-neuf" class="main-menu-link  ">
-                Photo, Vidéo comme neuf 
-            </a>
-        </li>
-    
-        <li id="nav-list-link-569">
-            <a href="/rayon/objets-connectes-62/mobilite-electrique-115490/comme-neuf" class="main-menu-link  ">
-                Mobilité électrique comme neuf 
-            </a>
-        </li>
-    
-        <li id="nav-list-link-570">
-            <a href="/rayon/jeux-et-consoles-43/comme-neuf" class="main-menu-link  ">
-                Jeux et console comme neuf 
+        <li id="nav-list-link-814">
+            <a href="/rayon/destockage-22/tablette-tactile-7038" class="main-menu-link  ">
+                Tablette tactile, iPad 
             </a>
         </li>
     </ul>
     </div>
     
         <div id="nav-column-572" class="nav-new-column-25  ">
-        <div id="nav-list-573" class="nav-new-list-title">
-            <a href="/rayon/destockage-22/produits-reconditionnes" class="main-menu-link">RECONDITIONNE</a>
+        <div id="nav-list-815" class="nav-new-list-title">
+            <a href="/rayon/destockage-22/composants-301" class="main-menu-link">Seconde vie - Composants</a>
         </div>
         <ul class="nav-new-list-link">
-        <li id="nav-list-link-574">
-            <a href="/rayon/telephonie-92/smartphone-821/reconditionne" class="main-menu-link  ">
-                Smartphone reconditionné 
-            </a>
-        </li>
-    
-        <li id="nav-list-link-575">
-            <a href="/rayon/telephonie-92/iphone-6776/reconditionne" class="main-menu-link  ">
-                iPhone reconditionné 
-            </a>
-        </li>
-    
-        <li id="nav-list-link-576">
-            <a href="/marque/samsung/reconditionne" class="main-menu-link  ">
-                Samsung reconditionné 
-            </a>
-        </li>
-    
-        <li id="nav-list-link-577">
-            <a href="/marque/xiaomi/reconditionne" class="main-menu-link  ">
-                Xiaomi reconditionné 
-            </a>
-        </li>
-    
-        <li id="nav-list-link-578">
-            <a href="/rayon/ordinateurs-64/tablette-tactile-659/reconditionne" class="main-menu-link  ">
-                Tablette, ipad reconditionné 
-            </a>
-        </li>
-    
-        <li id="nav-list-link-579">
-            <a href="/rayon/ordinateurs-64/ordinateur-portable-657/reconditionne" class="main-menu-link  ">
-                PC portable reconditionné 
-            </a>
-        </li>
-    
-        <li id="nav-list-link-580">
-            <a href="/rayon/ordinateurs-64/ordinateur-de-bureau-658/reconditionne" class="main-menu-link  ">
-                PC fixe reconditionné 
-            </a>
-        </li>
-    
-        <li id="nav-list-link-581">
-            <a href="/rayon/composants-16/reconditionne" class="main-menu-link  ">
-                Composant reconditionné 
-            </a>
-        </li>
-    
-        <li id="nav-list-link-582">
+        <li id="nav-list-link-816">
             <a href="/rayon/destockage-22/carte-graphique-reconditionne-65664" class="main-menu-link  ">
-                Carte graphique reconditionnée 
+                Carte graphique 
             </a>
         </li>
     
-        <li id="nav-list-link-583">
-            <a href="/rayon/peripheriques-reseaux-et-wifi-73/ecran-717/reconditionne" class="main-menu-link  ">
-                Ecran PC reconditionné 
+        <li id="nav-list-link-817">
+            <a href="/rayon/destockage-22/carte-mere-113467" class="main-menu-link  ">
+                Carte mère 
             </a>
         </li>
     
-        <li id="nav-list-link-584">
-            <a href="/rayon/peripheriques-reseaux-et-wifi-73/clavier-souris-714/reconditionne" class="main-menu-link  ">
-                Clavier et souris reconditionnés 
+        <li id="nav-list-link-818">
+            <a href="/rayon/destockage-22/processeur-113460" class="main-menu-link  ">
+                Processeur 
             </a>
         </li>
     
-        <li id="nav-list-link-585">
-            <a href="/rayon/objets-connectes-62/reconditionne" class="main-menu-link  ">
-                Objet connecté reconditionné 
+        <li id="nav-list-link-819">
+            <a href="/rayon/destockage-22/memoire-pc-122252" class="main-menu-link  ">
+                RAM PC 
             </a>
         </li>
     
-        <li id="nav-list-link-586">
-            <a href="/rayon/mp3-mp4-et-son-numerique-51/casque-audio-542/reconditionne" class="main-menu-link  ">
-                Casque audio reconditionné 
-            </a>
-        </li>
-    
-        <li id="nav-list-link-587">
-            <a href="/rayon/electromenager-26/reconditionne" class="main-menu-link  ">
-                Electroménager reconditionné 
+        <li id="nav-list-link-820">
+            <a href="/rayon/destockage-22/alimentation-pc-113747" class="main-menu-link  ">
+                Alimentation PC 
             </a>
         </li>
     </ul>
+    
+        <div id="nav-list-822" class="nav-new-list-title">
+            <a href="/rayon/destockage-22/peripheriques-reseaux-et-wifi-324" class="main-menu-link">Seconde vie - Périphériques</a>
+        </div>
+        <ul class="nav-new-list-link">
+        <li id="nav-list-link-823">
+            <a href="/rayon/destockage-22/ecran-113453" class="main-menu-link  ">
+                Ecran PC 
+            </a>
+        </li>
+    
+        <li id="nav-list-link-838">
+            <a href="/rayon/destockage-22/claviers-souris-webcams-2771" class="main-menu-link  ">
+                Clavier, Souris 
+            </a>
+        </li>
+    
+        <li id="nav-list-link-824">
+            <a href="/rayon/peripheriques-reseaux-et-wifi-73/siege-gamer-7000/occasions" class="main-menu-link  ">
+                Chaise Gamer 
+            </a>
+        </li>
+    
+        <li id="nav-list-link-839">
+            <a href="/rayon/destockage-22/claviers-souris-webcams-2771?utilisation=gamer" class="main-menu-link  ">
+                Clavier, Souris Gamer 
+            </a>
+        </li>
+    </ul>
+    
+        <div id="nav-list-826" class="nav-new-list-title">
+            <a href="" class="main-menu-link">Seconde vie - Jeux, Consoles</a>
+        </div>
+        <ul class="nav-new-list-link"></ul>
     </div>
     
         <div id="nav-column-588" class="nav-new-column-25  ">
-        <div id="nav-list-589" class="nav-new-list-title">
-            <a href="/rayon/destockage-22/produits-occasion" class="main-menu-link">OCCASION</a>
+        <div id="nav-list-827" class="nav-new-list-title">
+            <a href="/rayon/destockage-22/electromenager-303" class="main-menu-link">Seconde vie - Electroménager</a>
         </div>
         <ul class="nav-new-list-link">
-        <li id="nav-list-link-590">
-            <a href="/rayon/telephonie-92/smartphone-821/occasions" class="main-menu-link  ">
-                Smartphone occasion 
+        <li id="nav-list-link-828">
+            <a href="/rayon/destockage-22/entretien-des-sols-2537" class="main-menu-link  ">
+                Aspirateur 
             </a>
         </li>
     
-        <li id="nav-list-link-591">
-            <a href="/rayon/telephonie-92/iphone-6776/occasions" class="main-menu-link  ">
-                iPhone occasion 
+        <li id="nav-list-link-829">
+            <a href="/rayon/destockage-22/cuisson-2536" class="main-menu-link  ">
+                Cuisson 
+            </a>
+        </li>
+    </ul>
+    
+        <div id="nav-list-830" class="nav-new-list-title">
+            <a href="/rayon/destockage-22/objets-connectes-318" class="main-menu-link">Seconde vie - Objets connectés</a>
+        </div>
+        <ul class="nav-new-list-link">
+        <li id="nav-list-link-831">
+            <a href="/rayon/objets-connectes-62/montre-connectee-5674/occasions" class="main-menu-link  ">
+                Montre connectée 
             </a>
         </li>
     
-        <li id="nav-list-link-592">
-            <a href="/marque/samsung/occasions" class="main-menu-link  ">
-                Samsung occasion 
+        <li id="nav-list-link-840">
+            <a href="/rayon/objets-connectes-62/apple-watch-16098/occasions" class="main-menu-link  ">
+                Apple Watch 
             </a>
         </li>
     
-        <li id="nav-list-link-593">
-            <a href="/rayon/ordinateurs-64/tablette-tactile-659/occasions" class="main-menu-link  ">
-                Tablette, ipad occasion 
+        <li id="nav-list-link-841">
+            <a href="/rayon/objets-connectes-62/montre-connectee-5674/occasions?fournisseur=garmin" class="main-menu-link  ">
+                Montre Garmin 
             </a>
         </li>
     
-        <li id="nav-list-link-594">
-            <a href="/rayon/ordinateurs-64/pc-portable-5875/occasions" class="main-menu-link  ">
-                PC portable occasion 
+        <li id="nav-list-link-832">
+            <a href="/rayon/destockage-22/mobilite-electrique-123008" class="main-menu-link  ">
+                Mobilité électrique 
+            </a>
+        </li>
+    </ul>
+    
+        <div id="nav-list-833" class="nav-new-list-title">
+            <a href="/rayon/destockage-22/tv-son-photo" class="main-menu-link">Seconde vie - TV, Son, Photo</a>
+        </div>
+        <ul class="nav-new-list-link">
+        <li id="nav-list-link-834">
+            <a href="/rayon/destockage-22/tv-led-113768" class="main-menu-link  ">
+                Téléviseur 
             </a>
         </li>
     
-        <li id="nav-list-link-595">
-            <a href="/rayon/ordinateurs-64/pc-fixe-5878/occasions" class="main-menu-link  ">
-                PC fixe occasion 
+        <li id="nav-list-link-835">
+            <a href="/rayon/mp3-mp4-et-son-numerique-51/occasions" class="main-menu-link  ">
+                Son audio 
             </a>
         </li>
     
-        <li id="nav-list-link-596">
-            <a href="/rayon/composants-16/occasions" class="main-menu-link  ">
-                Composant occasion 
-            </a>
-        </li>
-    
-        <li id="nav-list-link-597">
-            <a href="/rayon/composants-16/carte-mere-232/occasions" class="main-menu-link  ">
-                Carte mère occasion 
-            </a>
-        </li>
-    
-        <li id="nav-list-link-598">
-            <a href="/rayon/composants-16/carte-graphique-231/occasions" class="main-menu-link  ">
-                Carte graphique occasion 
-            </a>
-        </li>
-    
-        <li id="nav-list-link-599">
-            <a href="/rayon/peripheriques-reseaux-et-wifi-73/ecran-717/occasions" class="main-menu-link  ">
-                Ecran PC occasion 
-            </a>
-        </li>
-    
-        <li id="nav-list-link-600">
-            <a href="/rayon/peripheriques-reseaux-et-wifi-73/occasions" class="main-menu-link  ">
-                Périphérique occasion 
-            </a>
-        </li>
-    
-        <li id="nav-list-link-601">
-            <a href="/rayon/peripheriques-reseaux-et-wifi-73/reseaux-723/occasions" class="main-menu-link  ">
-                Réseau occasion 
-            </a>
-        </li>
-    
-        <li id="nav-list-link-602">
-            <a href="/rayon/objets-connectes-62/occasions" class="main-menu-link  ">
-                Objet connecté occasion 
-            </a>
-        </li>
-    
-        <li id="nav-list-link-603">
-            <a href="/rayon/jeux-et-consoles-43/occasions" class="main-menu-link  ">
-                Jeux et console occasion 
-            </a>
-        </li>
-    
-        <li id="nav-list-link-604">
-            <a href="/rayon/electromenager-26/occasions" class="main-menu-link  ">
-                Electroménager occasion 
+        <li id="nav-list-link-836">
+            <a href="/rayon/destockage-22/appareil-photo-2744" class="main-menu-link  ">
+                Photo et Vidéo 
             </a>
         </li>
     </ul>
     </div>
     
-        <div id="nav-column-605" class="nav-new-column-25  ">
+        <div id="nav-column-803" class="nav-new-column-25  ">
         <a href="/rayon/destockage-22" class="main-menu-link nav-new-image-link">
-            <img id="nav-image-606" src="/images/all/pixel.png" class="nav-new-image lazyload " data-src="/media/new-menu/rue-du-commerce/793/reconditionne_menu_4colonnes.jpg" title="Seconde vie" alt="Seconde vie">
+            <img id="nav-image-606" src="/images/all/pixel.png" class="nav-new-image lazyload " data-src="/media/new-menu/rue-du-commerce/1270/reconditionne_menu_4colonnes.webp" title="Seconde vie" alt="Seconde vie">
         </a>
     </div>
     
@@ -5147,7 +4964,7 @@ L16.2,0z"></path>
 
 <div id="popup-other" class="popup popup--800 mfp-hide"></div>	
 	<script src="https://www.rueducommerce.fr/esi/start.php"></script>
-<script src="https://www.rueducommerce.fr/build/js/all.js?id=d404f06121480b64ef73"></script>
+<script src="https://www.rueducommerce.fr/build/js/all.js?id=38c5ed632f2a7c53967b"></script>
 
 <script type="text/javascript">langUse = 1;</script>
 
@@ -5159,7 +4976,7 @@ L16.2,0z"></path>
         
 <!-- endbuild -->
 
-<script src="https://www.rueducommerce.fr/build/js/rdc.js?id=874f0a5db84f7eb16c2f"></script>
+<script src="https://www.rueducommerce.fr/build/js/rdc.js?id=bfbdd1e20448ebef4de8"></script>
 	
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KV4GH4N"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
