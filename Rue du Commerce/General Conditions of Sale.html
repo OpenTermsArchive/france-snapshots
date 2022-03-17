@@ -32,26 +32,44 @@
 <meta property="og:locale" content="" />
 <meta property="og:type" content="website" />
 
-                    <link media="all" type="text/css" rel="stylesheet" href="https://www.rueducommerce.fr/build/css/rdc/cms.css?id=c0236e8323870d535240">
+                    <link media="all" type="text/css" rel="stylesheet" href="https://www.rueducommerce.fr/build/css/rdc/cms.css?id=5190689d903dd10ff8d1">
         
         <link rel="icon" href="/favicon/rdc/favicon.png">
 
-        <script defer src="https://www.rueducommerce.fr/build/js/rdc/new-all.js?id=0f545aab12f89c46fe9f"></script>
-
-
-    
-            <script defer src="https://www.rueducommerce.fr/build/js/new-cms.js?id=2bb6e46251cd205788bd"></script>
-    
-
         <script>
 window.dataLayer = window.dataLayer || [];
-dataLayer = [{"env_template":"cms","env_language":"fr"}];
+
+function gtag(){dataLayer.push(arguments);}
+
+gtag('consent', 'default', {
+    'ad_storage': 'denied',
+    'analytics_storage': 'denied',
+    'functionality_storage': 'granted',
+    'personalization_storage': 'denied',
+    'security_storage': 'granted',
+});
+
+gtag("set", "ads_data_redaction", true);
+
+dataLayer.push({
+    'event': 'consent_default',
+    'consent_default': true,
+});
+
+dataLayer.push({"event":"datalayer_init","env_template":"cms","env_language":"fr"})
 </script>
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.defer=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-KV4GH4N');</script>
+
+        <script defer src="https://www.rueducommerce.fr/build/js/rdc/new-all.js?id=7d75142560f2e2c351d1"></script>
+
+
+    
+            <script defer src="https://www.rueducommerce.fr/build/js/new-cms.js?id=2bb6e46251cd205788bd"></script>
+    
 
         
     </head>
@@ -3455,7 +3473,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.defer=true;j.src=
         <ul class="nav-new-list-link">
         <li id="nav-list-link-828">
             <a href="/rayon/destockage-22/entretien-des-sols-2537" class="main-menu-link  ">
-                Aspirateur 
+                Aspirateur, Nettoyeur 
             </a>
         </li>
     
@@ -4858,9 +4876,14 @@ L16.2,0z"></path>
 
 <div id="template-rgpd-index" class="popup modal_content" data-url-rgpd="https://www.rueducommerce.fr/rgpd">
 	<div class="rgpd">
-		<p>
-			<a id="rgpd-btn-index-continue">Continuer sans accepter</a>
-		</p>
+		<div id="rgpd-head-links" class="row">
+			<div class="col-6">
+				<a id="rgpd-btn-index-continue">Continuer sans accepter</a>
+			</div>
+			<div id="rgpd-head-links-right" class="col-6">
+				<a id="rgpd-btn-index-accept-link">Fermer et accepter</a>
+			</div>
+		</div>
 
 		<div>
 			<div class="rgpd-logo">
