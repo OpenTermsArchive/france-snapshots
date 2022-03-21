@@ -62,10 +62,10 @@
     var query_stock_in_cache = false;
 </script>
 
-        <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.1647471368.ico" />
+        <link rel="shortcut icon" type="image/x-icon" href="/img/favicon.1647847977.ico" />
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
-        <link rel="stylesheet" media="screen" type="text/css" href="/css/style.1647471368.css" />
+        <link rel="stylesheet" media="screen" type="text/css" href="/css/style.1647847977.css" />
 
                     <script type ='application/javascript'> 
         window.dataLayer = [{"context":{"site":1,"lang":"fr","cmpid":false,"navigation":{"device":"desktop","browser":null,"os":null,"userAgent":"node-fetch"},"page":{"id":"footer_legalmentions","category":"other"}}}]; 
@@ -228,7 +228,7 @@
                                             </li>
 
                                             
-                                                                                <li  id="menu_par-categorie_voir-tout">
+                                                                                <li class="current" id="menu_par-categorie_voir-tout">
                                                 <a href="/outlet/par-categorie/voir-tout.html">
                                                     <span style="color :#000000">Voir tout</span>
                                                 </a>
@@ -434,7 +434,7 @@
                 </div>
                 <div class="wrap_img">
                     <div class="menu_img">
-                        <img src="/img/cop-copine-over-menu-2.1647471368.jpg" alt="menu_univers"/>
+                        <img src="/img/cop-copine-over-menu-2.1647847977.jpg" alt="menu_univers"/>
                     </div>
                 </div>
             </div>
@@ -859,7 +859,7 @@ Tout litige se rapportant &agrave; l&rsquo;interpr&eacute;tation ou &agrave; l&r
             </a>
             
         <!-- COULEURS -->
-        <div :id="'ligne_couleur_' + (products.length? itm.produit_id + (itm.rr_id != '' ? '_' + itm.rr_id : ''):TGproduct.id + (TGproduct.rr_id != '' ? '_' + TGproduct.rr_id : ''))" class="ligne_form productColorFieldset" v-if="(products.length? itm.colors.length:TGproduct.colors.length)">
+        <div :id="'ligne_couleur_' + (products.length? itm.produit_id + (itm.rr_id != '' ? '_' + itm.rr_id : ''):TGproduct.id + (TGproduct.rr_id != '' ? '_' + TGproduct.rr_id : ''))" class="ligne_form productColorFieldset" v-if="((products.length? itm.colors.length:TGproduct.colors.length) && itm.colors.length >= itm.displayMinColor)">
             <div class="prod_listes right_element_prod">
                 <div class="titre_choices_list">choose_color</div>
                 <div class="choices_list">
@@ -872,6 +872,10 @@ Tout litige se rapportant &agrave; l&rsquo;interpr&eacute;tation ou &agrave; l&r
                     <input :id="'couleurProd_' + (products.length? itm.produit_id + (itm.rr_id != '' ? '_' + itm.rr_id : ''):TGproduct.id + (TGproduct.rr_id != '' ? '_' + TGproduct.rr_id : ''))" type="hidden" name="couleurProd" :value="(products.length? itm.first_color_id:TGproduct.first_color_id)" :data-produitid="(products.length? (itm.is_regroupement_reference ? itm.fk_produit_id : ''):(TGproduct.is_regroupement_reference ? TGproduct.id : ''))" />
                 </div>
             </div>
+        </div>
+
+        <div v-else-if="itm.colors.length == 1">
+            <input :id="'couleurProd_' + (products.length? itm.produit_id + (itm.rr_id != '' ? '_' + itm.rr_id : ''):TGproduct.id + (TGproduct.rr_id != '' ? '_' + TGproduct.rr_id : ''))" class="testt" type="hidden" name="couleurProd" :value="(products.length? itm.first_color_id:TGproduct.first_color_id)" />
         </div>
 
         <div v-else>
@@ -928,7 +932,7 @@ Tout litige se rapportant &agrave; l&rsquo;interpr&eacute;tation ou &agrave; l&r
             </div>
 
             <div class="bloc_add_alert_confirmation" style="display:none">
-                <p style="margin-bottom:7px">Votre demande a bien été prise en compte. <span>Nous vous enverrons un e-mail d&egrave;s que votre article sera de nouveau en stock</span></p>
+                <p style="margin-bottom:7px">Votre demande a bien été prise en compte. <span>Nous vous enverrons un e-mail d&egrave;s que votre article sera de nouveau en stock.</span></p>
             </div>
 
             <div class="bloc_add_alert_erreur" style="display:none">
@@ -1250,7 +1254,7 @@ Tout litige se rapportant &agrave; l&rsquo;interpr&eacute;tation ou &agrave; l&r
             <div id="shad_menu" class="shad"></div>
         </div>
 
-                <script src="/js/lazyload.1647474007.js"></script>
+                <script src="/js/lazyload.1647851248.js"></script>
 
         <script>
             var path_relative_root = '/';
@@ -1261,7 +1265,7 @@ Tout litige se rapportant &agrave; l&rsquo;interpr&eacute;tation ou &agrave; l&r
         <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
 
         <script id="jqInject">
-            window.jQuery || document.write("<script src=\"/js/jquery.1647474007.js\"><\/script>");
+            window.jQuery || document.write("<script src=\"/js/jquery.1647851248.js\"><\/script>");
         </script>
         <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
 
@@ -1270,11 +1274,11 @@ Tout litige se rapportant &agrave; l&rsquo;interpr&eacute;tation ou &agrave; l&r
         <script src="https://www.google.com/recaptcha/api.js?hl=fr"></script>
         <script src="https://apis.google.com/js/platform.js?onload=init"></script>
         <meta name="google-signin-client_id" content="">
-        <script src="/js/lang/fr.1647507305.js"></script>
+        <script src="/js/lang/fr.1647852205.js"></script>
 
                     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
-                    <script id="wShopRangeSlider" src="/js/wShopRangeSlider.1647474007.js"></script>
-        <script src="/js/wShopForms.1647474007.js"></script>
+                    <script id="wShopRangeSlider" src="/js/wShopRangeSlider.1647851248.js"></script>
+        <script src="/js/wShopForms.1647851248.js"></script>
 
         
         <script>
@@ -1307,10 +1311,10 @@ Tout litige se rapportant &agrave; l&rsquo;interpr&eacute;tation ou &agrave; l&r
             });
         </script>
 
-        <script type="application/javascript" src="/js/partials.1647474007.js"></script>
-        <script src="/js/wshop.1647474007.js"></script>
-        <script src="/js/script.1647471368.js"></script>
-        <script src="/js/intlTelInput.1647474007.js"></script>
+        <script type="application/javascript" src="/js/partials.1647851248.js"></script>
+        <script src="/js/wshop.1647851248.js"></script>
+        <script src="/js/script.1647847977.js"></script>
+        <script src="/js/intlTelInput.1647851248.js"></script>
 
         		<script type="text/javascript">
 
@@ -1322,7 +1326,7 @@ Tout litige se rapportant &agrave; l&rsquo;interpr&eacute;tation ou &agrave; l&r
 
 			
 		</script>
-    <script type="application/javascript" src="/js/ill.1647471368.js">
+    <script type="application/javascript" src="/js/ill.1647847977.js">
     </script>
     <script type="text/javascript">
         var overlayRules = {
@@ -1354,7 +1358,7 @@ Tout litige se rapportant &agrave; l&rsquo;interpr&eacute;tation ou &agrave; l&r
             overlay.showOverlay();
         });
     </script>
-    <script type="text/javascript">var lang_iso = 'fr';</script><script type="text/javascript">var siteCurrency = {};siteCurrency.code = 'EUR';siteCurrency.symbol_left = '';siteCurrency.symbol_right = '&euro;';siteCurrency.decimal_place = '2';var PRICE_FORMAT_PLAIN_JS = '[<unit>],[<decimal>] [<symbol_right>]';var PRICE_FORMAT_PLAIN_JS_NO_CENTS = '[<unit>]<span class="separate">,</span><span class="no_cents cents">[<decimal>]</span> [<symbol_right>]';</script><script type="text/javascript">var nb_try_auth = 0;var max_try_auth = 3;var token_security = 'cf47dc29ebcec4c36b71791f6c4299a820304f43';var captcha_google = '6Lc2K8oaAAAAAHOk4ouZ_SDB7NKKcwa67C2etRA7';</script>    <script type="application/javascript">
+    <script type="text/javascript">var lang_iso = 'fr';</script><script type="text/javascript">var siteCurrency = {};siteCurrency.code = 'EUR';siteCurrency.symbol_left = '';siteCurrency.symbol_right = '&euro;';siteCurrency.decimal_place = '2';var PRICE_FORMAT_PLAIN_JS = '[<unit>],[<decimal>] [<symbol_right>]';var PRICE_FORMAT_PLAIN_JS_NO_CENTS = '[<unit>]<span class="separate">,</span><span class="no_cents cents">[<decimal>]</span> [<symbol_right>]';</script><script type="text/javascript">var nb_try_auth = 0;var max_try_auth = 3;var token_security = '4f4d395dd2a30d8da04ca10e594dd2e5ae1dc768';var captcha_google = '6Lc2K8oaAAAAAHOk4ouZ_SDB7NKKcwa67C2etRA7';</script>    <script type="application/javascript">
         set_3ds2_datas();
     </script>
                 <script script="text/javascript">
