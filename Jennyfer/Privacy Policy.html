@@ -65,9 +65,9 @@ charte de confidentialité
 
 <link rel="manifest" href="/on/demandware.static/Sites-Jennyfer-EU-Site/-/default/dw30f8ed2a/site.webmanifest"/>
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet"/>
-<link rel="stylesheet" href="/on/demandware.static/Sites-Jennyfer-EU-Site/-/fr_FR/v1648469094538/css/styles.css"/>
+<link rel="stylesheet" href="/on/demandware.static/Sites-Jennyfer-EU-Site/-/fr_FR/v1648483454499/css/styles.css"/>
 
-<link rel="stylesheet" href="/on/demandware.static/Sites-Jennyfer-EU-Site/-/fr_FR/v1648469094538/css/content.css"/>
+<link rel="stylesheet" href="/on/demandware.static/Sites-Jennyfer-EU-Site/-/fr_FR/v1648483454499/css/content.css"/>
 
 
 <meta name="msvalidate.01" content="3E7BEAEC6B27C41E7B037CB8AF57DB92"/>
@@ -128,7 +128,7 @@ tc_vars["user_origin"] = "";
 var tc_vars = tc_vars || [];
 
 
-tc_vars["user_id"] = "ab0mcDcOqln0aes7nNuHfL2ELM";
+tc_vars["user_id"] = "abNOuOCS6ES8X7qgIxgLxYE9ij";
 
 tc_vars["user_status"] = "prospect";
 
@@ -472,82 +472,76 @@ class="d-none invisible"
 	
     
         <style type="text/css">
-	.Layout__header {
-	    margin-bottom: 0rem;
-	}
-	.content-defile-header {
-	    overflow: hidden;
-	    white-space: nowrap;
-	    background: #2E846B !important;     <!-- #000000-->
-	    color: yellow;
-	    text-transform: uppercase;
-	    font-weight: 700;
-	    font-size: 15px;
-	}
-	
-	
-	.content-defile-header span{
-	    color: white;
-            font-size: 13px;
-	}
-	
-	.scrolling-header {
-	 -webkit-animation: marquee2 12s linear infinite;
-	 animation: marquee2 12s linear infinite;
-	 display: inline-block;
-	 color : black;
-     font-size: 14px;
-	}
+    .header-banner {
+        background-color: #2E846B;
+        color: #fff;
+    }
 
-	@keyframes marquee2 {
-	  from {
-	    -webkit-transform: translateX(0);
-	    transform: translateX(0);
-	  }
-	  to {
-	    transform: translateX(-100%);
-	   -webkit-transform: translateX(-100%);
-	  }
-	}
-	@keyframes yoyo {
-	  from {
-	    -webkit-transform: translateX(-100%);
-	    transform: translateX(-100%);
-	  }
-	  to {    
-	    -webkit-transform: translateX(0%);
-	    transform: translateX(0%);
-	  }
-	}
-	}
+    .header-banner a  {
+      text-decoration: none !important;
+    }
 
+    .header-banner__content {
+        font-size: 18px;
+        text-decoration: none !important;
+        color: white;
+    }
+
+    .header-banner__mobile {
+        font-size: 13px;
+        font-weight: 700;
+        text-decoration: none !important;
+        color: white;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    
+    span#demo {
+        font-size: 16px;
+        color: white;
+    }
+
+    span#demo2 {
+        font-size: 20px;
+        color: white;
+    }
 
 </style>
 
+<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("March 29, 2022 09:59:00").getTime();
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+        // Get today's date and time
+        var now = new Date().getTime();
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+        // Time calculations for days, hours, minutes and seconds
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        // Output the result in an element with id="demo"
+        document.getElementById("demo").innerHTML =hours + "h " + minutes + "m " + seconds + "s ";
+        document.getElementById("demo2").innerHTML = hours + "h " + minutes + "m " + seconds + "s ";
+        // If the count down is over, write some text
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "";
+        }
+        if (days < 1) {
+        clearInterval(x);
+        document.getElementById("demo").innerHTML = hours + "h " + minutes + "m " + seconds + "s ";
+        document.getElementById("demo2").innerHTML = hours + "h " + minutes + "m " + seconds + "s ";
 
-
-
-    <div id="def1" class="header-banner header-banner__content header-banner__desktop content-defile-header" >
-        <div class="scrolling-header" ></div>
-    </div>
-    <div id="def2"  class="header-banner header-banner__content header-banner__mobile content-defile-header" >
-        <div  class="scrolling-header" ></div>
-    </div>
-
-
-
-<script >
-
-var txt = "&nbsp;&nbsp;&nbsp;<span> 3x sans frais : shoppe maintenant, paye plus tard !&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3x sans frais : shoppe maintenant, paye plus tard ! </span>&nbsp;&nbsp;&nbsp; "
-var link='/fr-fr/vetements/nouveautes/'
-
-		var allhtmltextheader = '<a href="'+ link +'"><div class="scrolling-header" aria-hidden="true">'+ txt +'</div><div class="scrolling-header" aria-hidden="true">'+ txt +'</div><div class="scrolling-header" aria-hidden="true">'+ txt +'</div><div class="scrolling-header" aria-hidden="true">'+ txt +'</div><div class="scrolling-header" aria-hidden="true">'+ txt +'</div><div class="scrolling-header" aria-hidden="true">'+ txt +'</div><div class="scrolling-header" aria-hidden="true">'+ txt +'</div><div class="scrolling-header" aria-hidden="true">'+ txt +'</div><div class="scrolling-header" aria-hidden="true">'+ txt +'</div><div class="scrolling-header" aria-hidden="true">'+ txt +'</div><div class="scrolling-header" aria-hidden="true">'+ txt +'</div><div class="scrolling-header" aria-hidden="true">'+ txt +'</div><div class="scrolling-header" aria-hidden="true">'+ txt +'</div></div></a>';
-
-
-		document.getElementById("def1").innerHTML = allhtmltextheader ;
-		document.getElementById("def2").innerHTML = allhtmltextheader ;        
-
+        }
+    }, 1000);
 </script>
+
+<div class="header-banner">
+    <a href="/fr-fr/vetements/tout-voir/"><div class="header-banner__content header-banner__mobile">LIVRAISON OFFERTE SUR TOUTES LES COMMANDES <br>FIN DANS : <span id="demo"></span> ⏱️</div></a>
+    <a href="/fr-fr/vetements/tout-voir/"><div class="header-banner__content header-banner__desktop">LIVRAISON OFFERTE SUR TOUTES LES COMMANDES ! FIN DANS : <span id="demo2"></span> ⏱️</div></a>
+</div>
     
 
  
@@ -566,7 +560,7 @@ var link='/fr-fr/vetements/nouveautes/'
     <button type="button"
         class="header-interactions__btn mobile-menu js-header-btn-mobile-menu"
         title="Menu principal"
-        data-action="/on/demandware.store/Sites-Jennyfer-EU-Site/fr_FR/Page-IncludeHeaderMobileMenuAjax?%5bList%20id%3d96385016%5d="
+        data-action="/on/demandware.store/Sites-Jennyfer-EU-Site/fr_FR/Page-IncludeHeaderMobileMenuAjax?%5bList%20id%3d1568029337%5d="
     >
         <span class="icon icon-menu"></span>
     </button>
@@ -598,7 +592,7 @@ var link='/fr-fr/vetements/nouveautes/'
 
 	
     
-        <img class="header-interactions__logo__img" src="https://www.jennyfer.com/on/demandware.static/-/Library-Sites-SharedLibrary-Jennyfer/default/dw921b06c3/logos/LOGO_DCM_Vert.png" alt="Jennyfer : Mode Fille, Ado & Femme" style="max-height: 60px; max-width: 100%;"/>
+        <img class="header-interactions__logo__img" src="https://www.jennyfer.com/on/demandware.static/-/Library-Sites-SharedLibrary-Jennyfer/default/dw7a2d5277/logos/LOGO_DCM_Rose.png" alt="Jennyfer : Mode Fille, Ado & Femme" style="max-height: 60px; max-width: 100%;"/>
     
 
  
@@ -691,7 +685,7 @@ var link='/fr-fr/vetements/nouveautes/'
 
 	
     
-        <img class="header-interactions__logo__img" src="https://www.jennyfer.com/on/demandware.static/-/Library-Sites-SharedLibrary-Jennyfer/default/dw921b06c3/logos/LOGO_DCM_Vert.png" alt="Jennyfer : Mode Fille, Ado & Femme" style="max-height: 60px; max-width: 100%;"/>
+        <img class="header-interactions__logo__img" src="https://www.jennyfer.com/on/demandware.static/-/Library-Sites-SharedLibrary-Jennyfer/default/dw7a2d5277/logos/LOGO_DCM_Rose.png" alt="Jennyfer : Mode Fille, Ado & Femme" style="max-height: 60px; max-width: 100%;"/>
     
 
  
@@ -707,7 +701,7 @@ var link='/fr-fr/vetements/nouveautes/'
     <button type="button"
         class="header-interactions__btn mobile-menu js-header-btn-mobile-menu"
         title="Menu principal"
-        data-action="/on/demandware.store/Sites-Jennyfer-EU-Site/fr_FR/Page-IncludeHeaderMobileMenuAjax?%5bList%20id%3d1492602995%5d="
+        data-action="/on/demandware.store/Sites-Jennyfer-EU-Site/fr_FR/Page-IncludeHeaderMobileMenuAjax?%5bList%20id%3d57190305%5d="
     >
         <span class="icon icon-menu"></span>
     </button>
@@ -1104,6 +1098,20 @@ var link='/fr-fr/vetements/nouveautes/'
                                                             
                                                             >
                                                             Eva x D.C.M.J
+                                                        </span>
+                                                    </a>
+                                                </li>
+                                            
+                                                <li class="desktop-menu__submenu__item w-100 d-inline-block">
+                                                    <a href="/fr-fr/collabs/pink-panther/"
+                                                       class="desktop-menu__submenu__link align-items-center d-flex w-100 "
+                                                       onclick="TagCommander.events.tc_menu(this, 'Collabs', 'Pink Panther')">
+                                                       
+                                                        <span class="desktop-menu__submenu__name"
+                                                            
+                                                            
+                                                            >
+                                                            Pink Panther
                                                         </span>
                                                     </a>
                                                 </li>
@@ -2152,7 +2160,7 @@ novalidate
 <button type="submit" class="btn btn-block btn-tertiary">
 Je m'abonne
 </button>
-<input type="hidden" name="csrf_token" value="zGWajdzVYbGSgRrTWViZ89Sb_k0gFWTPr2CNumSKAT5WgB9jJB27FwZWxNnmFyLiL8JLwcIZIySztTMETxIP-oa94a2FWjmwL1JWTYieeEIMboraNlEpba7g0hdyPscDr6IwMKoScQf4PRYEnU2aTyYxCqPCI7BIlXXxuWdeJF_qHWTAdGo="/>
+<input type="hidden" name="csrf_token" value="a2-ugv6vE_ulQjf-DGSbGNjmvcym-sZ2E7bbK2XS7PXpCbxx4OrY0SoZFXtRRBQBeqhXgVGWv7AgqbL1KigSVIJOtHvPNLZp3p3L-nV9VsaguCndFjo85uU12_4qtMeBVF4oJJm1VdankTrAO9x0m5pJbPa5_R3ajDAfIRFWRXGZxQfG_64="/>
 </form>
 </div>
 
@@ -2443,9 +2451,9 @@ data-resources="{&quot;genericErrorTitle&quot;:&quot;D&eacute;sol&eacute;&nbsp;!
      data-user="{&quot;isLogged&quot;:false}">
 </div>
 
-<script defer type="text/javascript" src="/on/demandware.static/Sites-Jennyfer-EU-Site/-/fr_FR/v1648469094538/js/commons.js"></script>
+<script defer type="text/javascript" src="/on/demandware.static/Sites-Jennyfer-EU-Site/-/fr_FR/v1648483454499/js/commons.js"></script>
 
-<script defer type="text/javascript" src="/on/demandware.static/Sites-Jennyfer-EU-Site/-/fr_FR/v1648469094538/js/content.js"></script>
+<script defer type="text/javascript" src="/on/demandware.static/Sites-Jennyfer-EU-Site/-/fr_FR/v1648483454499/js/content.js"></script>
 
 
 
@@ -2715,9 +2723,9 @@ function trackPage() {
 /* ]]> */
 // -->
 </script>
-<script type="text/javascript" src="/on/demandware.static/Sites-Jennyfer-EU-Site/-/fr_FR/v1648469094538/internal/jscript/dwanalytics-22.2.js" async="async" onload="trackPage()"></script>
+<script type="text/javascript" src="/on/demandware.static/Sites-Jennyfer-EU-Site/-/fr_FR/v1648483454499/internal/jscript/dwanalytics-22.2.js" async="async" onload="trackPage()"></script>
 <!-- Demandware Active Data (body_end-active_data.js) -->
-<script src="/on/demandware.static/Sites-Jennyfer-EU-Site/-/fr_FR/v1648469094538/internal/jscript/dwac-21.7.js" type="text/javascript" async="async"></script><!-- CQuotient Activity Tracking (body_end-cquotient.js) -->
+<script src="/on/demandware.static/Sites-Jennyfer-EU-Site/-/fr_FR/v1648483454499/internal/jscript/dwac-21.7.js" type="text/javascript" async="async"></script><!-- CQuotient Activity Tracking (body_end-cquotient.js) -->
 <script src="https://cdn.cquotient.com/js/v2/gretel.min.js" type="text/javascript" async="async"></script>
 </body>
 </html>
