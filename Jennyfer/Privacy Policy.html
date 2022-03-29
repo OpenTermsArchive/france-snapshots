@@ -65,9 +65,9 @@ charte de confidentialité
 
 <link rel="manifest" href="/on/demandware.static/Sites-Jennyfer-EU-Site/-/default/dw30f8ed2a/site.webmanifest"/>
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet"/>
-<link rel="stylesheet" href="/on/demandware.static/Sites-Jennyfer-EU-Site/-/fr_FR/v1648483454499/css/styles.css"/>
+<link rel="stylesheet" href="/on/demandware.static/Sites-Jennyfer-EU-Site/-/fr_FR/v1648541045515/css/styles.css"/>
 
-<link rel="stylesheet" href="/on/demandware.static/Sites-Jennyfer-EU-Site/-/fr_FR/v1648483454499/css/content.css"/>
+<link rel="stylesheet" href="/on/demandware.static/Sites-Jennyfer-EU-Site/-/fr_FR/v1648541045515/css/content.css"/>
 
 
 <meta name="msvalidate.01" content="3E7BEAEC6B27C41E7B037CB8AF57DB92"/>
@@ -128,7 +128,7 @@ tc_vars["user_origin"] = "";
 var tc_vars = tc_vars || [];
 
 
-tc_vars["user_id"] = "abNHR9pfoFpcrSeXNm1nQVodTf";
+tc_vars["user_id"] = "bdBz1ddUaT4l2ibGwVlSfGpkhq";
 
 tc_vars["user_status"] = "prospect";
 
@@ -472,76 +472,67 @@ class="d-none invisible"
 	
     
         <style type="text/css">
-    .header-banner {
-        background-color: #2E846B;
-        color: #fff;
-    }
-
-    .header-banner a  {
-      text-decoration: none !important;
-    }
-
-    .header-banner__content {
-        font-size: 18px;
-        text-decoration: none !important;
-        color: white;
-    }
-
-    .header-banner__mobile {
-        font-size: 13px;
-        font-weight: 700;
-        text-decoration: none !important;
-        color: white;
-        padding-top: 5px;
-        padding-bottom: 5px;
-    }
-    
-    span#demo {
-        font-size: 16px;
-        color: white;
-    }
-
-    span#demo2 {
-        font-size: 20px;
-        color: white;
-    }
-
+	.Layout__header {
+	    margin-bottom: 0rem;
+	}
+	.content-defile-header {
+	    overflow: hidden;
+	    white-space: nowrap;
+	    background: #2E846B !important;     <!-- #000000-->
+	    color: yellow;
+	    text-transform: uppercase;
+	    font-weight: 700;
+	    font-size: 15px;
+	}
+	
+	
+	.content-defile-header span{
+	    color: white;
+            font-size: 13px;
+	}
+	
+	.scrolling-header {
+	 -webkit-animation: marquee2 12s linear infinite;
+	 animation: marquee2 12s linear infinite;
+	 display: inline-block;
+	 color : black;
+     font-size: 14px;
+	}
+	@keyframes marquee2 {
+	  from {
+	    -webkit-transform: translateX(0);
+	    transform: translateX(0);
+	  }
+	  to {
+	    transform: translateX(-100%);
+	   -webkit-transform: translateX(-100%);
+	  }
+	}
+	@keyframes yoyo {
+	  from {
+	    -webkit-transform: translateX(-100%);
+	    transform: translateX(-100%);
+	  }
+	  to {
+	    -webkit-transform: translateX(0%);
+	    transform: translateX(0%);
+	  }
+	}
+	}
 </style>
-
-<script>
-    // Set the date we're counting down to
-    var countDownDate = new Date("March 29, 2022 09:59:00").getTime();
-    // Update the count down every 1 second
-    var x = setInterval(function() {
-        // Get today's date and time
-        var now = new Date().getTime();
-        // Find the distance between now and the count down date
-        var distance = countDownDate - now;
-        // Time calculations for days, hours, minutes and seconds
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-        // Output the result in an element with id="demo"
-        document.getElementById("demo").innerHTML =hours + "h " + minutes + "m " + seconds + "s ";
-        document.getElementById("demo2").innerHTML = hours + "h " + minutes + "m " + seconds + "s ";
-        // If the count down is over, write some text
-        if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("demo").innerHTML = "";
-        }
-        if (days < 1) {
-        clearInterval(x);
-        document.getElementById("demo").innerHTML = hours + "h " + minutes + "m " + seconds + "s ";
-        document.getElementById("demo2").innerHTML = hours + "h " + minutes + "m " + seconds + "s ";
-
-        }
-    }, 1000);
+    <div id="def1" class="header-banner header-banner__content header-banner__desktop content-defile-header" >
+        <div class="scrolling-header" ></div>
+    </div>
+    <div id="def2"  class="header-banner header-banner__content header-banner__mobile content-defile-header" >
+        <div  class="scrolling-header" ></div>
+    </div>
+<script >
+var txt = "&nbsp;&nbsp;&nbsp;<span> 3x sans frais : shoppe maintenant, paye plus tard !&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3x sans frais : shoppe maintenant, paye plus tard ! </span>&nbsp;&nbsp;&nbsp; "
+var link='/fr-fr/vetements/nouveautes/'
+		var allhtmltextheader = '<a href="'+ link +'"><div class="scrolling-header" aria-hidden="true">'+ txt +'</div><div class="scrolling-header" aria-hidden="true">'+ txt +'</div><div class="scrolling-header" aria-hidden="true">'+ txt +'</div><div class="scrolling-header" aria-hidden="true">'+ txt +'</div><div class="scrolling-header" aria-hidden="true">'+ txt +'</div><div class="scrolling-header" aria-hidden="true">'+ txt +'</div><div class="scrolling-header" aria-hidden="true">'+ txt +'</div><div class="scrolling-header" aria-hidden="true">'+ txt +'</div><div class="scrolling-header" aria-hidden="true">'+ txt +'</div><div class="scrolling-header" aria-hidden="true">'+ txt +'</div><div class="scrolling-header" aria-hidden="true">'+ txt +'</div><div class="scrolling-header" aria-hidden="true">'+ txt +'</div><div class="scrolling-header" aria-hidden="true">'+ txt +'</div></div></a>';
+		document.getElementById("def1").innerHTML = allhtmltextheader ;
+		document.getElementById("def2").innerHTML = allhtmltextheader ;
 </script>
-
-<div class="header-banner">
-    <a href="/fr-fr/vetements/tout-voir/"><div class="header-banner__content header-banner__mobile">LIVRAISON OFFERTE SUR TOUTES LES COMMANDES <br>FIN DANS : <span id="demo"></span> ⏱️</div></a>
-    <a href="/fr-fr/vetements/tout-voir/"><div class="header-banner__content header-banner__desktop">LIVRAISON OFFERTE SUR TOUTES LES COMMANDES ! FIN DANS : <span id="demo2"></span> ⏱️</div></a>
-</div>
     
 
  
@@ -560,7 +551,7 @@ class="d-none invisible"
     <button type="button"
         class="header-interactions__btn mobile-menu js-header-btn-mobile-menu"
         title="Menu principal"
-        data-action="/on/demandware.store/Sites-Jennyfer-EU-Site/fr_FR/Page-IncludeHeaderMobileMenuAjax?%5bList%20id%3d285907582%5d="
+        data-action="/on/demandware.store/Sites-Jennyfer-EU-Site/fr_FR/Page-IncludeHeaderMobileMenuAjax?%5bList%20id%3d866161707%5d="
     >
         <span class="icon icon-menu"></span>
     </button>
@@ -701,7 +692,7 @@ class="d-none invisible"
     <button type="button"
         class="header-interactions__btn mobile-menu js-header-btn-mobile-menu"
         title="Menu principal"
-        data-action="/on/demandware.store/Sites-Jennyfer-EU-Site/fr_FR/Page-IncludeHeaderMobileMenuAjax?%5bList%20id%3d266733054%5d="
+        data-action="/on/demandware.store/Sites-Jennyfer-EU-Site/fr_FR/Page-IncludeHeaderMobileMenuAjax?%5bList%20id%3d533709423%5d="
     >
         <span class="icon icon-menu"></span>
     </button>
@@ -2160,7 +2151,7 @@ novalidate
 <button type="submit" class="btn btn-block btn-tertiary">
 Je m'abonne
 </button>
-<input type="hidden" name="csrf_token" value="cD9eTZ6JbeyPTmnsdhXQ_b3UIkLIX2Y-DY0tuvNcJ13HSWhOHkwZMW3yeEaNdZzV9F8XoWZ-c6tifok0qXxfJXBvgQwr4W1nOZ1p25fIrX7q3cTQWVE0ykcXB4MOH8ABaWn-ags3VVX0yl5YxXrHqGSId5YxmGiLQ3loE8Fm5NWuctQ_XuM="/>
+<input type="hidden" name="csrf_token" value="BjuhDvVmrEoYaLGL2wKs0_V31TiPdKt7uwV4TFpIcnG-sO0J678EOwwJQoWncI0lNvvwbY6_wOih3ly8TRgBFV_x_PN1NyHYxQ4BIPfgY5XvQFTnPgtuUR0XP1oPE_aYN_rEnSt1h4_AGIvq3XisHB67lGiONDk8pqitpy7wL27dkkThdAg="/>
 </form>
 </div>
 
@@ -2451,9 +2442,9 @@ data-resources="{&quot;genericErrorTitle&quot;:&quot;D&eacute;sol&eacute;&nbsp;!
      data-user="{&quot;isLogged&quot;:false}">
 </div>
 
-<script defer type="text/javascript" src="/on/demandware.static/Sites-Jennyfer-EU-Site/-/fr_FR/v1648483454499/js/commons.js"></script>
+<script defer type="text/javascript" src="/on/demandware.static/Sites-Jennyfer-EU-Site/-/fr_FR/v1648541045515/js/commons.js"></script>
 
-<script defer type="text/javascript" src="/on/demandware.static/Sites-Jennyfer-EU-Site/-/fr_FR/v1648483454499/js/content.js"></script>
+<script defer type="text/javascript" src="/on/demandware.static/Sites-Jennyfer-EU-Site/-/fr_FR/v1648541045515/js/content.js"></script>
 
 
 
@@ -2723,9 +2714,9 @@ function trackPage() {
 /* ]]> */
 // -->
 </script>
-<script type="text/javascript" src="/on/demandware.static/Sites-Jennyfer-EU-Site/-/fr_FR/v1648483454499/internal/jscript/dwanalytics-22.2.js" async="async" onload="trackPage()"></script>
+<script type="text/javascript" src="/on/demandware.static/Sites-Jennyfer-EU-Site/-/fr_FR/v1648541045515/internal/jscript/dwanalytics-22.2.js" async="async" onload="trackPage()"></script>
 <!-- Demandware Active Data (body_end-active_data.js) -->
-<script src="/on/demandware.static/Sites-Jennyfer-EU-Site/-/fr_FR/v1648483454499/internal/jscript/dwac-21.7.js" type="text/javascript" async="async"></script><!-- CQuotient Activity Tracking (body_end-cquotient.js) -->
+<script src="/on/demandware.static/Sites-Jennyfer-EU-Site/-/fr_FR/v1648541045515/internal/jscript/dwac-21.7.js" type="text/javascript" async="async"></script><!-- CQuotient Activity Tracking (body_end-cquotient.js) -->
 <script src="https://cdn.cquotient.com/js/v2/gretel.min.js" type="text/javascript" async="async"></script>
 </body>
 </html>
