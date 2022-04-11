@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="cache-origin" content="cam-appliprod-20">
+<meta name="cache-origin" content="cam-appliprod-17">
 
     <title>Camaieu - Donn&eacute;es Personnelles</title>
 
@@ -1063,116 +1063,14 @@ $('#addToCartForm > div.ProductAddToCart-Panel.js-productAddToCartPanel > div.Pr
     <script type="text/javascript" src="https://www.camaieu.fr/static/tagcommander/tc_catalogue.js" async></script>
 
 <script type="text/javascript">
-if(tc_vars.env_template === "accueil"){
-	//<![CDATA[
-	var _t2sparams = _t2sparams || {};
-	_t2sparams.cID = 'MAEOY3PMFW4KIU';
-	_t2sparams.pID = tC.internalvars.target2sell_pagetype;
-	_t2sparams.eN = 'view';
-	_t2sparams.uEM=tc_vars["user_id"];
-	_t2sparams.uID=tc_vars["user_id"];
-	_t2sparams.hasRankOption = true ;
-	(function () {
-	  var t2sScript = document.createElement('script');
-	  t2sScript.type = 'text/javascript';
-	  t2sScript.async = true;
-	  t2sScript.src = ('https:' == document.location.protocol ?
-	  'https://static.target2sell.com/t2s.min.js' :
-	  'http://s3.target2sell.com/t2s.min.js');
-	  var s = document.getElementsByTagName('script') [0];
-	  s.parentNode.insertBefore(t2sScript, s);
-	  /* t2sScript.onload */ 
-	  t2sScript.onload = function () {
-		  if (jQuery.isReady) {
-			T2S.reco(null, function () {
-					slider = $('.slickCarrousel').slick({infinite: true,dots:true,slidesToShow: 4,slidesToScroll: 1,
-					responsive: 
-					[
-						{breakpoint: 1024,
-						settings: {slidesToShow: 3,slidesToScroll: 3,infinite: true,dots: true}
-						},
-						{breakpoint: 600,
-						settings: {slidesToShow: 2,slidesToScroll: 2}
-						},
-						{breakpoint: 480,
-						settings: {slidesToShow: 1,slidesToScroll: 1}
-						}
-					]
-				}); /* end slider = $('.slickCarrousel').slick  */
-			}); /* end T2S.reco(null, function ()  */
-		  } /* end if (jQuery.isReady) */
-		  else {
-			jQuery(document).ready(function () {
-				T2S.reco(null, function () {
-					slider = $('.slickCarrousel').slick({infinite: true,dots:true,slidesToShow: 4,slidesToScroll: 1,
-						responsive: 
-						[
-							{breakpoint: 1024,
-							settings: {slidesToShow: 3,slidesToScroll: 3,infinite: true,dots: true}
-							},
-							{breakpoint: 600,
-							settings: {slidesToShow: 2,slidesToScroll: 2}
-							},
-							{breakpoint: 480,
-							settings: {slidesToShow: 1,slidesToScroll: 1}
-							}
-						]
-					}); /* end slider = $('.slickCarrousel').slick  */
-				}); /* end jQuery(document).ready(function ()  */
-			}) /* end jQuery(document).ready(function ()  */
-		  } /* end else */
-	  }; /* end t2sScript.onload */ 
-	})/* end function */ ();}
-</script>
-
-
-<script type="text/javascript">
-    $( document ).ready(function() {
-        if(!jQuery().fancybox) {
-            $.getScript( "https://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.pack.min.js" );
-        }
-    })
-
-$(document).ready(function(){
-	if ($( "body" ).hasClass( "page-cartPage" ) ) { // On cible uniquement le cart
-		var checkExist = setInterval(function() {
-		   if ($('.search-count-lvr .rowElem div.jqTransformSelectWrapper ').length) {
-				$(".search-count-lvr .rowElem div.jqTransformSelectWrapper ul li a").click(function(){
-					deliveryCountryIso = $("#sel-country option:selected" ).val();
-					$(".options-view-lvr").load("/cart/deliveryModes/"+deliveryCountryIso);
-					return false; //prevent default browser action
-				});
-			  clearInterval(checkExist);
-		   }
-		}, 500); // on verifie toutes les 500ms
-	}
-});
-</script>
-
-<script type="text/javascript">
-$(document).ready(function(){
-	/*if ($('body').hasClass('page-productDetails')) {
-		if( $('#product-gallery .swiper-slide-active img').attr('src').match(/\/rc\/\//g) ) {
-
-			var currentRc = $('ul#colors-list li.active a.colorVariant').data('color');
-
-			$('.pictures-pager div.swiper-slide img').each(
-				function(){
-					$(this).attr('src', $(this).attr('src').replace('/rc//', '/rc/' + currentRc + '/'));
-					$(this).attr('data-src', $(this).attr('data-src').replace('/rc//', '/rc/' + currentRc + '/'));
-				}
-			);
-
-			$('#product-gallery div.swiper-slide img').each(
-				function(){
-					$(this).attr('src', $(this).attr('src').replace('/rc//', '/rc/' + currentRc + '/'));
-					$(this).attr('data-src', $(this).attr('data-src').replace('/rc//', '/rc/' + currentRc + '/'));
-				}
-			);
-		};
-	};*/
-});
-</script>
+  if("accueil"===tc_vars.env_template){var _t2sparams=_t2sparams||{};_t2sparams.cID="MAEOY3PMFW4KIU",_t2sparams.pID=tC.internalvars.target2sell_pagetype,_t2sparams.eN="view",_t2sparams.uEM=tc_vars.user_id,_t2sparams.uID=tc_vars.user_id,_t2sparams.hasRankOption=!0,function(){var s=document.createElement("script");s.type="text/javascript",s.async=!0,s.src="https:"==document.location.protocol?"https://static.target2sell.com/t2s.min.js":"http://s3.target2sell.com/t2s.min.js";var e=document.getElementsByTagName("script")[0];e.parentNode.insertBefore(s,e),s.onload=function(){jQuery.isReady?T2S.reco(null,function(){slider=$(".slickCarrousel").slick({infinite:!0,dots:!0,arrows:!1,slidesToShow:4,slidesToScroll:1,responsive:[{breakpoint:1024,settings:{slidesToShow:3,slidesToScroll:3,infinite:!0,dots:!0}},{breakpoint:600,settings:{slidesToShow:2,slidesToScroll:2}},{breakpoint:480,settings:{slidesToShow:1,slidesToScroll:1}}]})}):jQuery(document).ready(function(){T2S.reco(null,function(){slider=$(".slickCarrousel").slick({infinite:!0,dots:!0,arrows:!1,slidesToShow:4,slidesToScroll:1,responsive:[{breakpoint:1024,settings:{slidesToShow:3,slidesToScroll:3,infinite:!0,dots:!0}},{breakpoint:600,settings:{slidesToShow:2,slidesToScroll:2}},{breakpoint:480,settings:{slidesToShow:1,slidesToScroll:1}}]})})})}}()}
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function(){jQuery().fancybox||$.getScript("https://cdnjs.cloudflare.com/ajax/libs/fancybox/1.3.4/jquery.fancybox-1.3.4.pack.min.js")}),$(document).ready(function(){if($("body").hasClass("page-cartPage"))var e=setInterval(function(){$(".search-count-lvr .rowElem div.jqTransformSelectWrapper ").length&&($(".search-count-lvr .rowElem div.jqTransformSelectWrapper ul li a").click(function(){return deliveryCountryIso=$("#sel-country option:selected").val(),$(".options-view-lvr").load("/cart/deliveryModes/"+deliveryCountryIso),!1}),clearInterval(e))},500)});
+    </script>
+    <!-- <script type="text/javascript">
+    $(document).ready(function(){if($("body").hasClass("page-productDetails")&&$("#product-gallery .swiper-slide-active img").attr("src").match(/\/rc\/\//g)){var r=$("ul#colors-list li.active a.colorVariant").data("color");$(".pictures-pager div.swiper-slide img").each(function(){$(this).attr("src",$(this).attr("src").replace("/rc//","/rc/"+r+"/")),$(this).attr("data-src",$(this).attr("data-src").replace("/rc//","/rc/"+r+"/"))}),$("#product-gallery div.swiper-slide img").each(function(){$(this).attr("src",$(this).attr("src").replace("/rc//","/rc/"+r+"/")),$(this).attr("data-src",$(this).attr("data-src").replace("/rc//","/rc/"+r+"/"))})}});
+    </script> -->
 
 <div class="cmu__back--top">
     <span class="back--btn--icon cmu__dsp-b">
@@ -1259,7 +1157,7 @@ $(document).ready(function(){
                         <a href="https://www.camaieu.fr:443/login/popin/register" title="Je cr&eacute;e mon compte" id="popinCreateCompteId" class="ModalLogin-Submit">Me créer un compte</a>
                     </div>
             <div>
-<input type="hidden" name="CSRFToken" value="493ddcd4-be57-4e90-a297-4354fa002d06" />
+<input type="hidden" name="CSRFToken" value="199bc8a9-c5cd-45e9-95f2-68d3f36d7269" />
 </div></form>
             <div id="js-login-email-info" class="CreateAccount-fidInfo-container js-hideInfoLoginModal" style="display: none;">
                 <div class="ModalLogin-loginInfo">
@@ -1332,7 +1230,7 @@ $( document ).ready(function() {
                     <span>Valider</span>
                 </button>
             <div>
-<input type="hidden" name="CSRFToken" value="493ddcd4-be57-4e90-a297-4354fa002d06" />
+<input type="hidden" name="CSRFToken" value="199bc8a9-c5cd-45e9-95f2-68d3f36d7269" />
 </div></form>
 
             <button class="Layer-close js-ModalForgottenPwd-Close">
@@ -1360,7 +1258,7 @@ $( document ).ready(function() {
 			ACC.config.commonResourcePath = "/_ui/dist";
 			ACC.config.siteResourcePath = "/_ui/desktop/site-camaieu-fr";
 			ACC.config.rootPath = "/_ui/desktop";
-			ACC.config.CSRFToken = "493ddcd4-be57-4e90-a297-4354fa002d06";
+			ACC.config.CSRFToken = "199bc8a9-c5cd-45e9-95f2-68d3f36d7269";
 			ACC.config.urlEvoke = "";
 			ACC.config.api_key = "";
 			ACC.config.productAlreadyInWishList = "";
