@@ -471,6 +471,26 @@ $('#addToCartForm > div.ProductAddToCart-Panel.js-productAddToCartPanel > div.Pr
 
 <div class="Booster js-Booster">
                 <div class="yCmsComponent">
+<div class="content "><link href="https://media.camaieu.fr/medias/sys_master/root/static/integration/css/111021/StickyOpBooster_liveshopping.css" media="all" rel="stylesheet" type="text/css" />
+<style type="text/css">#StickyBooster {padding: 1rem 2.8rem;background-color:#B45309;}
+.page-productDetails #StickyBooster.StickyBooster--StickyTop,
+.page-productDetails #StickyBooster.StickyBooster--StickyBottom {display:none!important;}
+  @media (min-width: 768px) {
+    #StickyBooster.StickyBooster--StickyTop {position:relative!important; position: -webkit-relative!important;top:0!important; display:flex!important;} 
+    #StickyBooster {z-index:0;}
+}
+</style>
+<div class="StickyBooster--StickyBottom" id="StickyBooster"><a href="https://www.camaieu.fr/c/64722/collection"><span class="Paragraph CenterText"><span class="Paragraph--Text-Strong">Shopping instantan&eacute;</span> : <span class="Paragraph--Text-Strong">20€ offerts</span> d&egrave;s 70€ ou <span class="Paragraph--Text-Strong">10€ offerts</span> d&egrave;s 40€ d&#39;achat sur la nouvelle collection !*</span></a> <a class="close-button" href="#"> <i class="Icon Icon--close_round"></i> </a></div>
+<script>
+	$("header").before('<div id="StickyBooster" class="StickyBooster--StickyTop">' +
+	        '<a href="https://www.camaieu.fr/c/64722/collection"><span class="Paragraph CenterText"><span class="Paragraph--Text-Strong">Shopping instantané</span>&nbsp;:&nbsp;<span class="Paragraph--Text-Strong">20€ offerts</span> dès 70€ ou <span class="Paragraph--Text-Strong">10€ offerts</span> dès 40€ d\'achat sur la nouvelle collection !*</a> <a class="close-button" href="#"><i class="Icon Icon--close_round"> </i></a>'+
+	        '</div>');
+	        // close bouton
+	        $(document).ready(function() {
+	            $(".StickyBooster--StickyTop .close-button").click(function(){document.cookie="close-booster-1er-offre=1",$(".StickyBooster--StickyTop").hide()}),$.cookie("close-booster-1er-offre")&&$(".StickyBooster--StickyTop").hide();
+	            $(".StickyBooster--StickyBottom .close-button").click(function(){document.cookie="close-booster-1er-offre=1",$(".StickyBooster--StickyBottom").hide()}),$.cookie("close-booster-1er-offre")&&$(".StickyBooster--StickyBottom").hide();
+	        });
+</script></div></div><div class="yCmsComponent">
 <div class="Toastr">
         <div class="Toastr-icon Icon Icon--user"></div>
         <span class="Toastr-message Toastr-message--left js-toastAuthenticate">
@@ -1259,7 +1279,7 @@ $('#addToCartForm > div.ProductAddToCart-Panel.js-productAddToCartPanel > div.Pr
                         <a href="https://www.camaieu.fr:443/login/popin/register" title="Je cr&eacute;e mon compte" id="popinCreateCompteId" class="ModalLogin-Submit">Me créer un compte</a>
                     </div>
             <div>
-<input type="hidden" name="CSRFToken" value="494a807f-c4fc-45f6-ba53-affb8b3d220b" />
+<input type="hidden" name="CSRFToken" value="b0a1c879-e4c3-4a14-996a-7abb246ea1be" />
 </div></form>
             <div id="js-login-email-info" class="CreateAccount-fidInfo-container js-hideInfoLoginModal" style="display: none;">
                 <div class="ModalLogin-loginInfo">
@@ -1332,7 +1352,7 @@ $( document ).ready(function() {
                     <span>Valider</span>
                 </button>
             <div>
-<input type="hidden" name="CSRFToken" value="494a807f-c4fc-45f6-ba53-affb8b3d220b" />
+<input type="hidden" name="CSRFToken" value="b0a1c879-e4c3-4a14-996a-7abb246ea1be" />
 </div></form>
 
             <button class="Layer-close js-ModalForgottenPwd-Close">
@@ -1360,7 +1380,7 @@ $( document ).ready(function() {
 			ACC.config.commonResourcePath = "/_ui/dist";
 			ACC.config.siteResourcePath = "/_ui/desktop/site-camaieu-fr";
 			ACC.config.rootPath = "/_ui/desktop";
-			ACC.config.CSRFToken = "494a807f-c4fc-45f6-ba53-affb8b3d220b";
+			ACC.config.CSRFToken = "b0a1c879-e4c3-4a14-996a-7abb246ea1be";
 			ACC.config.urlEvoke = "";
 			ACC.config.api_key = "";
 			ACC.config.productAlreadyInWishList = "";
