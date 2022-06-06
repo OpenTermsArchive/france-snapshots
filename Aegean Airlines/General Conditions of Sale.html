@@ -78,7 +78,7 @@
 
 
     
-<meta name="VIcurrentDateTime" content="637901154006276286" />
+<meta name="VIcurrentDateTime" content="637901370008441825" />
 <script type="text/javascript" src="/layouts/system/VisitorIdentification.js"></script>
 
     <meta name="yandex-verification" content="eac8cabdcc798799" />
@@ -677,7 +677,7 @@
 
 
 <form action="/sys/Member/Login" class="validatableForm" data-ajax="true" data-ajax-begin="window.AegeanAir.Modules.showLoader(&#39;.login-form-contnent-loader :submit&#39;)" data-ajax-failure="window.AegeanAir.Modules.onAjaxFailure(&#39;Désolés, en ce moment nous ne pouvons pas répondre à votre demande. S&#39;il vous plaît réessayez plus tard.&#39;);window.AegeanAir.Modules.hideLoader(&#39;.login-form-contnent-loader :submit&#39;)" data-ajax-method="POST" data-ajax-mode="replace" data-ajax-success="window.AegeanAir.Modules.hideLoader(&#39;.login-form-contnent-loader :submit&#39;)" data-ajax-update="#login-form-content" id="loginPopupFormId" method="post">        <div id="login-form-content" class="login-form-contnent-loader">
-            <input name="__RequestVerificationToken" type="hidden" value="1wRug3jgy7AHCGJ01BtwQGGaDV4JLtF2zerrO8AdxGNyGnippO-DxDU4GbPSqxmLKiR-Es4j72QjaRW_VzoQKQBXdqg1" />
+            <input name="__RequestVerificationToken" type="hidden" value="HgLpn-41N33isDQxQYE0V9md0HC9y0UJHUa8wW0zJpWYywTIjNwA1mXZFXe_zwxySz_GyJsHOcw7GqOoBEyrq0CVcMc1" />
 
 <input name="_ispopup" type="hidden" value="true" /><input name="_isloyaltylogin" type="hidden" value="true" />        <div class="row loginRow">
             <a style="cursor: pointer;" class="btn btn-lg btn-primary facebook-login" data-facebook-login="944684648924599" tabindex="0">Connectez-vous via Facebook</a>
@@ -685,19 +685,27 @@
         <div class="row loginRow">
             <script type="text/javascript" src="https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/fr_FR/appleid.auth.js">
             </script>
-            <div id="appleid-signin" data-color="black" data-border="true" data-type="sign in"></div>
+            <div id="appleid-signin" data-color="black" data-border="true" data-type="sign in" class="apple-sign-in-container"></div>
             <script type="text/javascript">
-                try {
                 AppleID.auth.init({
                 clientId: 'com.aegean.siwa.prod',
                 scope: 'name email',
                 redirectURI: 'https://fr.aegeanair.com/member/login/',
                 state: '__',
                 usePopup: false //or false defaults to false
+                })
+
+                var appleButton = $('#appleid-signin');
+
+                $('.apple-sign-in-container').each(function(key,element){
+                if($(element).html().trim() == "")
+                {
+                $('#appleid-signin').children().clone(true,true).appendTo($(element));
+                $(element).click(function(){
+                $('#appleid-signin').trigger('click')
                 });
                 }
-                catch (e) {
-                }
+                });
             </script>
         </div>
             <script src="https://apis.google.com/js/api:platform.js">
@@ -733,37 +741,37 @@
                 //});
 
                 function signInCallback(authResult) {
-                    //console.log(authResult);
-                    //console.log(authResult['code']);
-                    //console.log(JSON.stringify(authResult));
+                //console.log(authResult);
+                //console.log(authResult['code']);
+                //console.log(JSON.stringify(authResult));
 
-                    var authCode = authResult['code'];
-                    if (authCode) {
-                        authResult["isGoogle"] = true;
-                        // Hide the sign-in button now that the user is authorized, for example:
-                        $('#signinButton').attr('style', 'display: none');
-                        // Send the code to the server
-                        $.ajax({
-                            type: 'POST',
-                            url: '/sys/Member/Login',
-                            // Always include an `X-Requested-With` header in every AJAX request,
-                            // to protect against CSRF attacks.
-                            headers: {
-                                'X-Requested-With': 'XMLHttpRequest'
-                            },
-                            contentType: 'application/json; charset=utf-8',
-                            success: function (result) {
-                                $('.login-form-contnent-loader :submit').html(result);
-                                //$('#login-form-content').html(result);
-                                // Handle or verify the server response.
-                            },
-                            processData: false,
-                            data: JSON.stringify(authResult)
-                        });
-                    } else {
-                        window.AegeanAir.Modules.hideLoader('.login-form-contnent-loader :submit');
-                        // There was an error.
-                    }
+                var authCode = authResult['code'];
+                if (authCode) {
+                authResult["isGoogle"] = true;
+                // Hide the sign-in button now that the user is authorized, for example:
+                $('#signinButton').attr('style', 'display: none');
+                // Send the code to the server
+                $.ajax({
+                type: 'POST',
+                url: '/sys/Member/Login',
+                // Always include an `X-Requested-With` header in every AJAX request,
+                // to protect against CSRF attacks.
+                headers: {
+                'X-Requested-With': 'XMLHttpRequest'
+                },
+                contentType: 'application/json; charset=utf-8',
+                success: function (result) {
+                $('.login-form-contnent-loader :submit').html(result);
+                //$('#login-form-content').html(result);
+                // Handle or verify the server response.
+                },
+                processData: false,
+                data: JSON.stringify(authResult)
+                });
+                } else {
+                window.AegeanAir.Modules.hideLoader('.login-form-contnent-loader :submit');
+                // There was an error.
+                }
                 }
             </script>
             <!-- In the callback, you would hide the gSignInWrapper element on a
@@ -824,11 +832,11 @@
             <a href="https://fr.aegeanair.com/member/forgot-password/" class="forgot">J’ai oubli&#233; mon mot de passe</a>
         </div>
     </div>
-<input id="RedirectUrlloginPopupFormId" name="RedirectUrl" type="hidden" value="8BA4888C237D48A99E9C9F36E3C91949" /><input id="SuccessScript" name="SuccessScript" type="hidden" value="" /><div class="row login-bt-wrapper">
-        <button type="submit" class="btn btn-lg btn-progress ">
-            Entrer
-        </button>
-</div>
+<input id="RedirectUrlloginPopupFormId" name="RedirectUrl" type="hidden" value="8BA4888C237D48A99E9C9F36E3C91949" /><input id="SuccessScript" name="SuccessScript" type="hidden" value="" />    <div class="row login-bt-wrapper">
+            <button type="submit" class="btn btn-lg btn-progress ">
+                Entrer
+            </button>
+    </div>
 
         </div>
 </form>
@@ -2032,6 +2040,6 @@ Le Passager qui a une réclamation à formuler doit, en premier lieu, contacter 
 
     <iframe role="presentation" src="https://e-ticket.aegeanair.com/iframe.html" style=" position: absolute; left: -9999em; width: 0; height: 0; border: 0 none;"></iframe>
     </div>
-<script async type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1419584775"></script>
+<script async type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=1&cb=1502374539"></script>
 </body>
 </html>
