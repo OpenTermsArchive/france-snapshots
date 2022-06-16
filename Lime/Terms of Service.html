@@ -572,7 +572,7 @@ Collaborer avec Lime</a>
 <h4 class="text-3xl lg:headline-04">
 <button type="button" @click="open = open == '6' ? null : '6'" class="relative w-full text-left lg:pointer-events-none" :aria-expanded="open == '6' ? 'true' : 'false'" aria-label="footer_nav_toggle_a_propos_de_lime" aria-expanded="false">
 A propos de Lime
-<span class="block absolute right-0 top-1/2 w-3.5 h-3 transition transform -translate-y-1/2 lg:hidden" :class="{
+ <span class="block absolute right-0 top-1/2 w-3.5 h-3 transition transform -translate-y-1/2 lg:hidden" :class="{
                             '-rotate-180' : open == '6'
                         }">
 <svg class="h-full w-full stroke-current" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -599,7 +599,7 @@ La trottinette électrique</a>
 <li>
 <a class="text-gray-300 transition lg:text-sm hover:text-white focus:text-white headline-04" href="https://www.li.me/fr-fr/pourquoi/durabilite">
 La durabilité</a>
- </li>
+</li>
 <li>
 <a class="text-gray-300 transition lg:text-sm hover:text-white focus:text-white headline-04" href="https://www.li.me/fr-fr/pourquoi/innovation">
 Nos innovations</a>
@@ -640,7 +640,6 @@ Lime Hero</a>
 Lime Able</a>
 </li>
 <li>
-
 <a class="text-gray-300 transition lg:text-sm hover:text-white focus:text-white headline-04" href="https://www.li.me/fr-fr/insurance">
 Assurance</a>
 </li>
@@ -656,6 +655,7 @@ Nos villes</a>
 <div class="inline-block text-left">
 <ul class="space-y-6 text-3xl lg:space-y-8 lg:text-gray-300 lg:headline-04">
 <li>
+
 <a class="transition hover:text-white focus:text-white" href="https://www.li.me/fr-fr/locations">
 Trouver sa ville</a>
 </li>
@@ -682,7 +682,7 @@ Sitemap</a>
 <li>
 <a class="block h-8 w-8" href="https://www.linkedin.com/company/limebike/" rel="noopener noreferrer" target="_blank" aria-label="LinkedIn">
 <img src="/static/img/social/linkedin.png" alt="LinkedIn" class="block w-full h-full">
- </a>
+</a>
 </li>
 <li>
 <a class="block h-8 w-8" href="https://www.youtube.com/channel/UCQ0MzWRGkmr_K-_QFVcvgsw" rel="noopener noreferrer" target="_blank" aria-label="YouTube">
@@ -703,7 +703,7 @@ Sitemap</a>
 2022 Lime
 </div>
 <div class="lg:col-span-9">
-<ul class="flex flex-wrap lg:space-x-10"><li class="mt-4 mr-6 lg:m-0"><a class="link-underline-on active" href="https://www.li.me/fr-fr/user-agreement">Accord de l'utilisateur</a></li><li class="mt-4 mr-6 lg:m-0"><a class="link-underline-on" href="https://www.li.me/fr-fr/legal/privacy-policy">Politique de confidentialité</a></li><li class="mt-4 mr-6 lg:m-0"><a class="link-underline-on" href="https://www.li.me/fr-fr/legal/guidelines-third-party-data-requests">Demande de données</a></li><li class="mt-4 mr-6 lg:m-0"><a class="link-underline-on" href="https://www.li.me/fr-fr/candidate-privacy-notice">Candidate Privacy Notice</a></li><li class="mt-4 mr-6 lg:m-0"><a class="link-underline-on" href="https://www.li.me/fr-fr/legal/research">Recherche</a></li><li class="mt-4 mr-6 lg:m-0"><a class="link-underline-on" href="https://www.li.me/fr-fr/legal/legal-bases">Bases juridiques</a></li><li class="mt-4 mr-6 lg:m-0"><a class="link-underline-on" href="https://www.li.me/fr-fr/my-information">Mes informations</a></li></ul>
+<ul class="flex flex-wrap lg:space-x-10"><li class="mt-4 mr-6 lg:m-0"><a class="link-underline-on active" href="https://www.li.me/fr-fr/user-agreement">Accord de l'utilisateur</a></li><li class="mt-4 mr-6 lg:m-0"><a class="link-underline-on" href="https://www.li.me/fr-fr/legal/privacy-policy">Politique de confidentialité</a></li><li class="mt-4 mr-6 lg:m-0"><a class="link-underline-on" href="https://www.li.me/fr-fr/legal/guidelines-third-party-data-requests">Demande de données</a></li><li class="mt-4 mr-6 lg:m-0"><a class="link-underline-on" href="https://www.li.me/fr-fr/candidate-privacy-notice">Candidate Privacy Notice</a></li><li class="mt-4 mr-6 lg:m-0"><a class="link-underline-on" href="https://www.li.me/fr-fr/legal/research">Recherche</a></li><li class="mt-4 mr-6 lg:m-0"><a class="link-underline-on" href="https://www.li.me/fr-fr/legal/legal-bases">Bases juridiques</a></li><li class="mt-4 mr-6 lg:m-0"><a class="link-underline-on" href="https://www.li.me/fr-fr/my-information">Mes informations</a></li><li class="mt-4 mr-6 lg:m-0"><a class="link-underline-on" href="https://www.li.me/fr-fr/imprint">Imprint</a></li></ul>
 </div>
 </div>
 </div>
@@ -853,7 +853,7 @@ Sitemap</a>
                                     'text-green-100 font-medium': 'Czech Republic' == activeGroup,
                                     'text-gray-150 hover:text-green-100 focus:text-green-100': 'Czech Republic' != activeGroup
                                 }">
-<svg class="w-[21px] h-[21px] rounded-full" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m0 0h512v256h-512z" fill="#fff"></path><path d="m0 256h512v256h-512z" fill="#d7141a"></path><path d="m300 256-300-200v400z" fill="#11457e"></path></svg>
+ <svg class="w-[21px] h-[21px] rounded-full" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m0 0h512v256h-512z" fill="#fff"></path><path d="m0 256h512v256h-512z" fill="#d7141a"></path><path d="m300 256-300-200v400z" fill="#11457e"></path></svg>
 <span>Czech Republic</span>
 </button>
 </div>
@@ -876,7 +876,7 @@ Sitemap</a>
 </button>
 </div>
 <div>
- <button type="button" @click="activeGroup = 'France'" class="flex items-center space-x-2 w-full h-12 text-sm text-green-100 font-medium" :class="{
+<button type="button" @click="activeGroup = 'France'" class="flex items-center space-x-2 w-full h-12 text-sm text-green-100 font-medium" :class="{
                                     'text-green-100 font-medium': 'France' == activeGroup,
                                     'text-gray-150 hover:text-green-100 focus:text-green-100': 'France' != activeGroup
                                 }">
@@ -1042,7 +1042,7 @@ Sitemap</a>
                                     'text-green-100 font-medium': 'UAE' == activeGroup,
                                     'text-gray-150 hover:text-green-100 focus:text-green-100': 'UAE' != activeGroup
                                 }">
- <svg class="w-[21px] h-[21px] rounded-full" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m0 0h512v170.7h-512z" fill="#00732f"></path><path d="m0 170.7h512v170.6h-512z" fill="#fff"></path><path d="m0 341.3h512v170.7h-512z"></path><path d="m0 0h180v512h-180z" fill="#f00"></path></svg>
+<svg class="w-[21px] h-[21px] rounded-full" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m0 0h512v170.7h-512z" fill="#00732f"></path><path d="m0 170.7h512v170.6h-512z" fill="#fff"></path><path d="m0 341.3h512v170.7h-512z"></path><path d="m0 0h180v512h-180z" fill="#f00"></path></svg>
 <span>UAE</span>
 </button>
 </div>
@@ -1112,6 +1112,7 @@ Sitemap</a>
 <div class="absolute top-0 bottom-0 -left-5 w-5 bg-gradient-to-r from-white"></div>
 <div class="flex overflow-auto px-5 pb-3 -mx-5 space-x-8 text-sm whitespace-nowrap text-gray-150">
 <a href="https://www.li.me/bg-bg/redirector" class="block py-2 hover:text-green-100 focus:text-green-100 align-center" :class="{'text-green-100 font-medium': 23 == 41}">Български</a>
+
 <a href="https://www.li.me/en-bg/redirector" class="block py-2 hover:text-green-100 focus:text-green-100 align-center" :class="{'text-green-100 font-medium': 9 == 41}">English</a>
 </div>
 </div>
@@ -1136,6 +1137,7 @@ Sitemap</a>
 <div class="absolute top-0 bottom-0 -left-5 w-5 bg-gradient-to-r from-white"></div>
 <div class="flex overflow-auto px-5 pb-3 -mx-5 space-x-8 text-sm whitespace-nowrap text-gray-150">
 <a href="https://www.li.me/es-co/redirector" class="block py-2 hover:text-green-100 focus:text-green-100 align-center" :class="{'text-green-100 font-medium': 70 == 41}">Español</a>
+
 <a href="https://www.li.me/en-co/redirector" class="block py-2 hover:text-green-100 focus:text-green-100 align-center" :class="{'text-green-100 font-medium': 71 == 41}">English</a>
 </div>
 </div>
@@ -1160,6 +1162,7 @@ Sitemap</a>
 <div class="absolute top-0 bottom-0 -left-5 w-5 bg-gradient-to-r from-white"></div>
 <div class="flex overflow-auto px-5 pb-3 -mx-5 space-x-8 text-sm whitespace-nowrap text-gray-150">
 <a href="https://www.li.me/da-dk/redirector" class="block py-2 hover:text-green-100 focus:text-green-100 align-center" :class="{'text-green-100 font-medium': 20 == 41}">Dansk</a>
+
 <a href="https://www.li.me/en-dk/redirector" class="block py-2 hover:text-green-100 focus:text-green-100 align-center" :class="{'text-green-100 font-medium': 63 == 41}">English</a>
 </div>
 </div>
@@ -1230,7 +1233,7 @@ Sitemap</a>
 </div>
 <div x-show="activeGroup == 'Netherlands'" class="relative" style="display: none;">
 <div class="absolute top-0 bottom-0 -right-5 w-5 bg-gradient-to-l from-white"></div>
- <div class="absolute top-0 bottom-0 -left-5 w-5 bg-gradient-to-r from-white"></div>
+<div class="absolute top-0 bottom-0 -left-5 w-5 bg-gradient-to-r from-white"></div>
 <div class="flex overflow-auto px-5 pb-3 -mx-5 space-x-8 text-sm whitespace-nowrap text-gray-150">
 <a href="https://www.li.me/nl-nl/redirector" class="block py-2 hover:text-green-100 focus:text-green-100 align-center" :class="{'text-green-100 font-medium': 35 == 41}">Nederlands</a>
 <a href="https://www.li.me/en-nl/redirector" class="block py-2 hover:text-green-100 focus:text-green-100 align-center" :class="{'text-green-100 font-medium': 26 == 41}">English</a>
@@ -1346,7 +1349,7 @@ Sitemap</a>
 <div class="absolute top-0 bottom-0 -right-5 w-5 bg-gradient-to-l from-white"></div>
 <div class="absolute top-0 bottom-0 -left-5 w-5 bg-gradient-to-r from-white"></div>
 <div class="flex overflow-auto px-5 pb-3 -mx-5 space-x-8 text-sm whitespace-nowrap text-gray-150">
- <a href="https://www.li.me/es-uy/redirector" class="block py-2 hover:text-green-100 focus:text-green-100 align-center" :class="{'text-green-100 font-medium': 68 == 41}">Español</a>
+<a href="https://www.li.me/es-uy/redirector" class="block py-2 hover:text-green-100 focus:text-green-100 align-center" :class="{'text-green-100 font-medium': 68 == 41}">Español</a>
 <a href="https://www.li.me/en-uy/redirector" class="block py-2 hover:text-green-100 focus:text-green-100 align-center" :class="{'text-green-100 font-medium': 33 == 41}">English</a>
 </div>
 </div>
@@ -1480,7 +1483,7 @@ function replaceUrls(url, injectElements) {
             }
         });
     });
-};</script><script type="text/javascript">(function(){window['__CF$cv$params']={r:'71c3e99789577190',m:'l9Kyfkttus5pyOcWQUQsapLQXHzElv73IE5D4.B0Kpg-1655386356-0-ASQEP/61/+L1a3eec6IAifJdzdVHxfxpA1R94othvGGWdwwkCGjkOK6LaU72XtOT5vXBTujOxFt8Nm7MPheklr2Vj4yYFvltU23cDrr6yetVavocAYmqFQdEVcm1gGO3bElAz6JttZAk/xBT1yYIgA0=',s:[0x22aac7c8bf,0x88b1d195aa],}})();</script>
+};</script><script type="text/javascript">(function(){window['__CF$cv$params']={r:'71c5a4c1dc0671b1',m:'nNkuu.q2k8FMpO2O5EDm.mgPzEhcJT28o.KhDTiIVyE-1655404508-0-Ac3VHssIcp3bfUjfu7xdncWV9MqejLDJ2Gj0YCgESob7f+vV/ET7elM1lnHjrrzuGZs9iS6c1x0/nS6gPlh0QJQ2nC4GFdBbsBNFzYTNLPd+jnpJC7rLjFMXiLkng0a6AO41nEblB4xO+1ha7uuDPW0=',s:[0x6d2fbd7d76,0x8cb93f2e46],}})();</script>
 
 <script type="text/javascript" id="">(function(){var a=document.createElement("script");a.setAttribute("src","https://cdn.cookielaw.org/scripttemplates/otSDKStub.js");a.setAttribute("charset","UTF-8");a.setAttribute("data-domain-script","4332dc8e-c40c-4622-bbdc-6872e9b5bbfc");document.body.appendChild(a)})();</script><script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" charset="UTF-8" data-domain-script="4332dc8e-c40c-4622-bbdc-6872e9b5bbfc"></script>
 <script type="text/javascript" id="">function OptanonWrapper(){};</script><div id="onetrust-consent-sdk"><div class="onetrust-pc-dark-filter ot-hide ot-fade-in"></div><div id="onetrust-pc-sdk" class="otPcTab ot-hide ot-fade-in" role="dialog" aria-modal="true" aria-labelledby="ot-pc-title" lang="en"><!-- pc header --><div class="ot-pc-header" role="presentation"><!-- Header logo --><div class="ot-pc-logo" role="img" aria-label="Company Logo" style="background-image: url(&quot;https://cdn.cookielaw.org/logos/39be4dcd-d964-49dc-be91-fda9442ea2fa/7ae55708-0caa-4b73-97a5-ce76ff683ffb/2594d4ca-9448-4d1c-9b2d-1c07b9b8aa27/ezgif.com-gif-maker-p-500.png&quot;);
