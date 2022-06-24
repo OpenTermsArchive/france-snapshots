@@ -65,9 +65,9 @@ charte de confidentialité
 
 <link rel="manifest" href="/on/demandware.static/Sites-Jennyfer-EU-Site/-/default/dwe6fe380f/site.webmanifest"/>
 <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet"/>
-<link rel="stylesheet" href="/on/demandware.static/Sites-Jennyfer-EU-Site/-/fr_FR/v1655975235239/css/styles.css"/>
+<link rel="stylesheet" href="/on/demandware.static/Sites-Jennyfer-EU-Site/-/fr_FR/v1656010299834/css/styles.css"/>
 
-<link rel="stylesheet" href="/on/demandware.static/Sites-Jennyfer-EU-Site/-/fr_FR/v1655975235239/css/content.css"/>
+<link rel="stylesheet" href="/on/demandware.static/Sites-Jennyfer-EU-Site/-/fr_FR/v1656010299834/css/content.css"/>
 
 
 <meta name="msvalidate.01" content="3E7BEAEC6B27C41E7B037CB8AF57DB92"/>
@@ -128,7 +128,7 @@ tc_vars["user_origin"] = "";
 var tc_vars = tc_vars || [];
 
 
-tc_vars["user_id"] = "bcaruEL76AGSvoq3N7WORq5ncS";
+tc_vars["user_id"] = "acPvVmJiskKXaT3MtZKwm36asc";
 
 tc_vars["user_status"] = "new";
 
@@ -289,8 +289,8 @@ f.parentNode.insertBefore(j, f)
 
 
 
-<link rel="stylesheet" href="/on/demandware.static/Sites-Jennyfer-EU-Site/-/fr_FR/v1655975235239/css/bis.css" />
-<script defer src="/on/demandware.static/Sites-Jennyfer-EU-Site/-/fr_FR/v1655975235239/js/bis.js"></script>
+<link rel="stylesheet" href="/on/demandware.static/Sites-Jennyfer-EU-Site/-/fr_FR/v1656010299834/css/bis.css" />
+<script defer src="/on/demandware.static/Sites-Jennyfer-EU-Site/-/fr_FR/v1656010299834/js/bis.js"></script>
 <input type="hidden" id="bis-button-data" data-url="/on/demandware.store/Sites-Jennyfer-EU-Site/fr_FR/BackInStock-ProdInfo" data-is-sfra="true"/>
 
 
@@ -525,21 +525,45 @@ class="d-none invisible"
     span#demo {
         text-align: center;
         font-size: 20px;
-        color: #E71964;
+        color: #3FB581;
     }
 
     span#demo2 {
     text-align: center;
     font-size: 22px;
-    color: #E71964;
+    color: #3FB581;
     }
 
 </style>
 
+<script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Jun 24, 2022 10:00:00").getTime();
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+        // Get today's date and time
+        var now = new Date().getTime();
+        // Find the distance between now and the count down date
+        var distance = countDownDate - now;
+        // Time calculations for days, hours, minutes and seconds
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        // Output the result in an element with id="demo"
+        document.getElementById("demo").innerHTML = days + "<font size=3px>J</font> " + hours + "<font size=3px>H</font> " + minutes + "<font size=3px>M</font> " + seconds + "<font size=3px>S</font> ";
+        document.getElementById("demo2").innerHTML = days + "<font size=3px>J</font> " + hours + "<font size=3px>H</font> " + minutes + "<font size=3px>M</font> " + seconds + "<font size=3px>S</font> ";
+        // If the count down is over, write some text
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("demo").innerHTML = "";
+        }
+    }, 1000);
+</script>
 
 <div class="header-banner">
-    <a href="/fr-fr/soldes--50/tout-voir/"><div class="header-banner header-banner__content header-banner__mobile">Livraison et retours gratuits* <br> Paiement en 3X sans frais </div></a>
-    <a href="/fr-fr/soldes--50/tout-voir/"><div class="header-banner header-banner__content header-banner__desktop">Livraison et retours gratuits en mag' &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;  &nbsp;  &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Paiement en 3X sans frais avec Scalapay</div></a>
+    <a href="/fr-fr/soldes/tout-voir/"><div class="header-banner header-banner__content header-banner__mobile">FIN HAPPY HOUR <span id="demo"></span></div></a>
+    <a href="/fr-fr/soldes/tout-voir/"><div class="header-banner header-banner__content header-banner__desktop">FIN HAPPY HOUR <span id="demo2"></span></div></a>
 </div>
 
 
@@ -581,7 +605,7 @@ class="d-none invisible"
     <button type="button"
         class="header-interactions__btn mobile-menu js-header-btn-mobile-menu js-search-icon"
         title="Menu principal"
-        data-action="/on/demandware.store/Sites-Jennyfer-EU-Site/fr_FR/Page-IncludeHeaderMobileMenuAjax?%5bList%20id%3d1088457649%5d="
+        data-action="/on/demandware.store/Sites-Jennyfer-EU-Site/fr_FR/Page-IncludeHeaderMobileMenuAjax?%5bList%20id%3d851439860%5d="
     >
         <span class="icon icon-menu"></span>
     </button>
@@ -1333,6 +1357,20 @@ class="d-none invisible"
                                                     </li>
                                                 
                                                     <li class="desktop-menu__submenu__item w-100 d-inline-block">
+                                                        <a href="/fr-fr/collabs/stitch/"
+                                                        class="desktop-menu__submenu__link align-items-center d-flex w-100 "
+                                                        onclick="TagCommander.events.tc_menu(this, 'Collabs', 'Stitch')">
+                                                        
+                                                            <span class="desktop-menu__submenu__name"
+                                                                
+                                                                
+                                                                >
+                                                                Stitch
+                                                            </span>
+                                                        </a>
+                                                    </li>
+                                                
+                                                    <li class="desktop-menu__submenu__item w-100 d-inline-block">
                                                         <a href="/fr-fr/collabs/minions/"
                                                         class="desktop-menu__submenu__link align-items-center d-flex w-100 "
                                                         onclick="TagCommander.events.tc_menu(this, 'Collabs', 'Minions')">
@@ -1650,20 +1688,6 @@ class="d-none invisible"
                                                                 
                                                                 >
                                                                 Looney Tunes
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                
-                                                    <li class="desktop-menu__submenu__item w-100 d-inline-block">
-                                                        <a href="/fr-fr/collabs/stitch/"
-                                                        class="desktop-menu__submenu__link align-items-center d-flex w-100 "
-                                                        onclick="TagCommander.events.tc_menu(this, 'Collabs', 'Stitch')">
-                                                        
-                                                            <span class="desktop-menu__submenu__name"
-                                                                
-                                                                
-                                                                >
-                                                                Stitch
                                                             </span>
                                                         </a>
                                                     </li>
@@ -2018,7 +2042,7 @@ charte de confidentialit&eacute;
     <button type="button"
         class="header-interactions__btn mobile-menu js-header-btn-mobile-menu js-search-icon"
         title="Menu principal"
-        data-action="/on/demandware.store/Sites-Jennyfer-EU-Site/fr_FR/Page-IncludeHeaderMobileMenuAjax?%5bList%20id%3d50510646%5d="
+        data-action="/on/demandware.store/Sites-Jennyfer-EU-Site/fr_FR/Page-IncludeHeaderMobileMenuAjax?%5bList%20id%3d1207768043%5d="
     >
         <span class="icon icon-menu"></span>
     </button>
@@ -2520,7 +2544,7 @@ novalidate
 <button type="submit" class="btn btn-block btn-tertiary">
 Je m'abonne
 </button>
-<input type="hidden" name="csrf_token" value="a5dwI-Ea8y5N1pu_938nRmPciBex0BCA0tBfKeieQLGk4gBwquh5_f7xbtPjdfJz4F4VNmwA27KRLQ-836UEsJyEo_9pufFxdgO71GBLDc0nJFgWK3PUV9gfr16BNEM77Ygec2I20itVnlqkltgA16M-C3Jfhgx2iJ7zjmqZVvOjuehoBh8="/>
+<input type="hidden" name="csrf_token" value="sVP6IKH0XisVn803sqS0StknKss9D6mENWxBVPtSR-6mYFVv4mBv1kDZ8UtCyhoxTn3k8F53s57Mk86M-Ux-9atzhMyGLA-2gG57bG_XVbe7sq7S_i4XHBC10EOoWFfJgTEWberllHIp12a7eU92-dQu8S6mQ7sQCazK5UYShcTMOJF_qm4="/>
 </form>
 </div>
 
@@ -2807,9 +2831,9 @@ data-resources="{&quot;genericErrorTitle&quot;:&quot;D&eacute;sol&eacute;&nbsp;!
      data-user="{&quot;isLogged&quot;:false}">
 </div>
 
-<script defer type="text/javascript" src="/on/demandware.static/Sites-Jennyfer-EU-Site/-/fr_FR/v1655975235239/js/commons.js"></script>
+<script defer type="text/javascript" src="/on/demandware.static/Sites-Jennyfer-EU-Site/-/fr_FR/v1656010299834/js/commons.js"></script>
 
-<script defer type="text/javascript" src="/on/demandware.static/Sites-Jennyfer-EU-Site/-/fr_FR/v1655975235239/js/content.js"></script>
+<script defer type="text/javascript" src="/on/demandware.static/Sites-Jennyfer-EU-Site/-/fr_FR/v1656010299834/js/content.js"></script>
 
 
 
@@ -2977,7 +3001,7 @@ tc_events_global(source, 1, obj)
 <input type="hidden" id="js-logo-url" value="/on/demandware.static/Sites-Jennyfer-EU-Site/-/default/dw38b8194c/images/logos/JennyferLogo_Small.png" />
 <input type="hidden" id="js-avatar-url" value="/on/demandware.static/Sites-Jennyfer-EU-Site/-/default/dw5b222dd2/images/logos/Avatar.png" />
 <script type='text/javascript' src='https://service.force.com/embeddedservice/5.0/esw.min.js'></script>
-<script src="/on/demandware.static/Sites-Jennyfer-EU-Site/-/fr_FR/v1655975235239/thirdparty/embeddedService.js"></script>
+<script src="/on/demandware.static/Sites-Jennyfer-EU-Site/-/fr_FR/v1656010299834/thirdparty/embeddedService.js"></script>
 <!-- Demandware Analytics code 1.0 (body_end-analytics-tracking-asynch.js) -->
 <script type="text/javascript">//<!--
 /* <![CDATA[ */
@@ -2995,9 +3019,9 @@ function trackPage() {
 /* ]]> */
 // -->
 </script>
-<script type="text/javascript" src="/on/demandware.static/Sites-Jennyfer-EU-Site/-/fr_FR/v1655975235239/internal/jscript/dwanalytics-22.2.js" async="async" onload="trackPage()"></script>
+<script type="text/javascript" src="/on/demandware.static/Sites-Jennyfer-EU-Site/-/fr_FR/v1656010299834/internal/jscript/dwanalytics-22.2.js" async="async" onload="trackPage()"></script>
 <!-- Demandware Active Data (body_end-active_data.js) -->
-<script src="/on/demandware.static/Sites-Jennyfer-EU-Site/-/fr_FR/v1655975235239/internal/jscript/dwac-21.7.js" type="text/javascript" async="async"></script><!-- CQuotient Activity Tracking (body_end-cquotient.js) -->
+<script src="/on/demandware.static/Sites-Jennyfer-EU-Site/-/fr_FR/v1656010299834/internal/jscript/dwac-21.7.js" type="text/javascript" async="async"></script><!-- CQuotient Activity Tracking (body_end-cquotient.js) -->
 <script src="https://cdn.cquotient.com/js/v2/gretel.min.js" type="text/javascript" async="async"></script>
 </body>
 </html>
