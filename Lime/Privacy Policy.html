@@ -386,7 +386,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     '-translate-y-full': !menuActive
                 }">
 <ul class="space-y-5 lg:flex lg:items-center lg:mt-0 lg:ml-auto lg:space-y-0 mt-[128px] lg:space-x-[38px]">
-<li class="relative pr-6 lg:pr-0">
+ <li class="relative pr-6 lg:pr-0">
 <a class="text-3xl leading-normal lg:text-header-text lg:transition-colors lg:hover:text-header-text-active-important lg:focus:text-header-text-active-important lg:body-01" href="https://www.li.me/fr-fr/a-propos" :class="{'lg:text-header-text-accent-important': scrolled }">
 A propos de Lime</a>
 <button class="absolute top-0.5 -right-2 p-3 lg:hidden" id="submenu_toggle1" aria-controls="submenu1" @click="open = open == '1' ? null : '1'" :aria-expanded="open == '1' ? 'true' : 'false'" aria-expanded="false">
@@ -457,7 +457,7 @@ Nos véhicules</a>
 <span class="block w-3.5 h-3 text-black transition transform" :class="{
                         '-rotate-180' : open == '10'
                     }">
- <svg class="h-full w-full stroke-current" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+<svg class="h-full w-full stroke-current" viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path transform="matrix(.69858 -.71553 .69858 .71553 7 9.585)" stroke-width="2" d="M0-1h10.02"></path>
 <path transform="matrix(-.69858 -.71553 -.69858 .71553 7 9.585)" stroke-width="2" d="M0-1h10.02"></path>
 </svg>
@@ -465,7 +465,7 @@ Nos véhicules</a>
 </button>
 <div class="overflow-hidden lg:hidden" id="submenu10" aria-labelledby="submenu_toggle10" role="region" x-show="open == '10'" x-collapse="" style="display: none; height: 0px; overflow: hidden;" hidden="">
 <ul class="pt-7 pb-10 space-y-4">
-<li>
+ <li>
 <a class="text-xl leading-normal" href="https://www.li.me/fr-fr/vehicles/trottinette-electrique" :tabindex="open == '10' ? false : '-1'" tabindex="-1">
 La trottinette électrique</a>
 </li>
@@ -599,7 +599,6 @@ La Communauté Lime</a>
 Le vélo électrique</a>
 </li>
 <li>
-
 <a class="text-gray-300 transition lg:text-sm hover:text-white focus:text-white headline-04" href="https://www.li.me/fr-fr/vehicles/trottinette-electrique">
 La trottinette électrique</a>
 </li>
@@ -608,6 +607,7 @@ La trottinette électrique</a>
 La durabilité</a>
 </li>
 <li>
+
 <a class="text-gray-300 transition lg:text-sm hover:text-white focus:text-white headline-04" href="https://www.li.me/fr-fr/pourquoi/innovation">
 Nos innovations</a>
 </li>
@@ -690,7 +690,7 @@ Sitemap</a>
 <img src="/static/img/social/linkedin.png" alt="LinkedIn" class="block w-full h-full">
 </a>
 </li>
-<li>
+ <li>
 <a class="block h-8 w-8" href="https://www.youtube.com/channel/UCQ0MzWRGkmr_K-_QFVcvgsw" rel="noopener noreferrer" target="_blank" aria-label="YouTube">
 <img src="/static/img/social/youtube.png" alt="YouTube" class="block w-full h-full">
 </a>
@@ -898,7 +898,7 @@ Sitemap</a>
 <svg class="w-[21px] h-[21px] rounded-full" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m0 341.3h512v170.7h-512z" fill="#ffce00"></path><path d="m0 0h512v170.7h-512z"></path><path d="m0 170.7h512v170.6h-512z" fill="#d00"></path></svg>
 <span>Germany</span>
 </button>
-</div>
+ </div>
 <div>
 <button type="button" @click="activeGroup = 'Greece'" class="flex items-center space-x-2 w-full h-12 text-sm text-gray-150 hover:text-green-100 focus:text-green-100" :class="{
                                     'text-green-100 font-medium': 'Greece' == activeGroup,
@@ -1092,10 +1092,9 @@ Sitemap</a>
 <div class="absolute top-0 bottom-0 -right-5 w-5 bg-gradient-to-l from-white"></div>
 <div class="absolute top-0 bottom-0 -left-5 w-5 bg-gradient-to-r from-white"></div>
 <div class="flex overflow-auto px-5 pb-3 -mx-5 space-x-8 text-sm whitespace-nowrap text-gray-150">
-
 <a href="https://www.li.me/de-at/redirector" class="block py-2 hover:text-green-100 focus:text-green-100 align-center" :class="{'text-green-100 font-medium': 11 == 41}">Deutsch</a>
 <a href="https://www.li.me/en-at/redirector" class="block py-2 hover:text-green-100 focus:text-green-100 align-center" :class="{'text-green-100 font-medium': 12 == 41}">English</a>
-</div>
+ </div>
 </div>
 <div x-show="activeGroup == 'Belgium'" class="relative" style="display: none;">
 <div class="absolute top-0 bottom-0 -right-5 w-5 bg-gradient-to-l from-white"></div>
@@ -1114,11 +1113,12 @@ Sitemap</a>
 <a href="https://www.li.me/en-br/redirector" class="block py-2 hover:text-green-100 focus:text-green-100 align-center" :class="{'text-green-100 font-medium': 50 == 41}">English</a>
 </div>
 </div>
- <div x-show="activeGroup == 'Bulgaria'" class="relative" style="display: none;">
+<div x-show="activeGroup == 'Bulgaria'" class="relative" style="display: none;">
 <div class="absolute top-0 bottom-0 -right-5 w-5 bg-gradient-to-l from-white"></div>
 <div class="absolute top-0 bottom-0 -left-5 w-5 bg-gradient-to-r from-white"></div>
 <div class="flex overflow-auto px-5 pb-3 -mx-5 space-x-8 text-sm whitespace-nowrap text-gray-150">
 <a href="https://www.li.me/bg-bg/redirector" class="block py-2 hover:text-green-100 focus:text-green-100 align-center" :class="{'text-green-100 font-medium': 23 == 41}">Български</a>
+
 <a href="https://www.li.me/en-bg/redirector" class="block py-2 hover:text-green-100 focus:text-green-100 align-center" :class="{'text-green-100 font-medium': 9 == 41}">English</a>
 </div>
 </div>
@@ -1160,7 +1160,7 @@ Sitemap</a>
 <div class="flex overflow-auto px-5 pb-3 -mx-5 space-x-8 text-sm whitespace-nowrap text-gray-150">
 <a href="https://www.li.me/cs-cz/redirector" class="block py-2 hover:text-green-100 focus:text-green-100 align-center" :class="{'text-green-100 font-medium': 47 == 41}">Čeština</a>
 <a href="https://www.li.me/en-cz/redirector" class="block py-2 hover:text-green-100 focus:text-green-100 align-center" :class="{'text-green-100 font-medium': 29 == 41}">English</a>
- </div>
+</div>
 </div>
 <div x-show="activeGroup == 'Denmark'" class="relative" style="display: none;">
 <div class="absolute top-0 bottom-0 -right-5 w-5 bg-gradient-to-l from-white"></div>
@@ -1214,7 +1214,7 @@ Sitemap</a>
 <div x-show="activeGroup == 'Israel'" class="relative" style="display: none;">
 <div class="absolute top-0 bottom-0 -right-5 w-5 bg-gradient-to-l from-white"></div>
 <div class="absolute top-0 bottom-0 -left-5 w-5 bg-gradient-to-r from-white"></div>
-<div class="flex overflow-auto px-5 pb-3 -mx-5 space-x-8 text-sm whitespace-nowrap text-gray-150">
+ <div class="flex overflow-auto px-5 pb-3 -mx-5 space-x-8 text-sm whitespace-nowrap text-gray-150">
 <a href="https://www.li.me/he-il/redirector" class="block py-2 hover:text-green-100 focus:text-green-100 align-center" :class="{'text-green-100 font-medium': 42 == 41}">עברית</a>
 <a href="https://www.li.me/en-il/redirector" class="block py-2 hover:text-green-100 focus:text-green-100 align-center" :class="{'text-green-100 font-medium': 19 == 41}">English</a>
 </div>
