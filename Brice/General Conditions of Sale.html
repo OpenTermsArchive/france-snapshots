@@ -9,8 +9,8 @@
 <link rel="alternate" href="https://www.jules.com/nl-be/static/cgv.html" hreflang="nl-be" />
 <link rel="alternate" href="https://www.jules.com/fr-fr/static/cgv.html" hreflang="x-default" />
 <!--[if gt IE 9]><!-->
-<link rel="preload" href="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1657273775901/js/loadJquery.js" as="script" />
-<script type="text/javascript" src="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1657273775901/js/loadJquery.js"></script>
+<link rel="preload" href="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1657283978545/js/loadJquery.js" as="script" />
+<script type="text/javascript" src="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1657283978545/js/loadJquery.js"></script>
 <script type="text/javascript">
         // Duration in milliseconds to wait while the Kameleoon application file is loaded
         var kameleoonLoadingTimeout = 200;
@@ -48,13 +48,54 @@
         }
     </script>
 <script type="text/javascript" src="//n9jm8v6ad7.kameleoon.eu/kameleoon.js" async="true"></script>
-<script defer type="text/javascript" src="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1657273775901/js/main.js"></script>
-<script defer type="text/javascript" src="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1657273775901/js/common.js"></script>
-<script defer type="text/javascript" src="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1657273775901/js/uiShow.js">
+<script defer type="text/javascript" src="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1657283978545/js/main.js"></script>
+<script defer type="text/javascript" src="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1657283978545/js/common.js"></script>
+<script defer type="text/javascript" src="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1657283978545/js/uiShow.js">
     </script>
-<script defer type="text/javascript" src="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1657273775901/js/targetToSell.js">
+<script defer type="text/javascript" src="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1657283978545/js/targetToSell.js">
     </script>
 <!--<![endif]-->
+<script>
+        function zendeskLoad() {
+            $("#js-zendesk-btn .icon_chat").spinner().start();
+            (function(){
+                var a=window.log||function(){};
+                var b=window.client_path||location.pathname;
+                var c=window.client_hostname||location.hostname;
+                var d=b.slice(1).split('/');
+                var g="85b62496-291c-4daf-8f0d-813bba27da5d";if(!g)return;
+                var h='Service Client France';
+                var i='fr';
+                if(d.indexOf('nl-be')>-1){h='Service Client Belgique NL';i='nl';}
+                else if(d.indexOf('fr-be')>-1)h='Service Client Belgique FR';
+                window.zESettings={
+                    webWidget:{chat:{departments:{enabled:[],select:h}},offset:{mobile:{vertical:'95px'}}}
+                };
+                var j=function(a,b){
+                        var c=document.createElement('script');
+                        c.src='https://static.zdassets.com/ekr/snippet.js?key='+a;
+                        c.type='text/javascript';
+                        c.async=true;
+                        c.id='ze-snippet';
+                        if(b)c.onload=function(){b();};
+                        c.onerror=function(){throw new Error('loadWidget failed');};
+                        document.getElementsByTagName('head')[0].appendChild(c);
+                    };
+                var k=function(){
+                    if(!window.zE)return;zE('webWidget','setLocale',i);
+                    zE('webWidget:on', 'chat:connected', function() {
+                    var elem = document.getElementById('js-zendesk-btn');
+                    if(elem){
+                    elem.remove();
+                        $.spinner().stop();
+                    }
+                    });
+                    zE('webWidget', 'open');
+                };
+                j(g,k);
+            })();
+        }
+    </script>
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=5, user-scalable=yes">
 <title>Conditions générales de ventes | Jules</title>
@@ -64,22 +105,21 @@
 <meta name="p:domain_verify" content="6f5a5380be8baaca0713872c4bc379a6" />
 <meta name="facebook-domain-verification" content="7w4wa4hacpz8pledf8a2mbkak92yut" />
 <meta name="robots" content="index,follow">
-
 <link rel="icon" type="image/png" href="https://www.jules.com/on/demandware.static/-/Sites/default/dwc4ea9b20/images/Favicon/faviconJules-16x16.png" sizes="16x16" />
 <link rel="icon" type="image/png" href="https://www.jules.com/on/demandware.static/-/Sites/default/dwc2bbd2bc/images/Favicon/faviconJules-32x32.png" sizes="32x32" />
 <link rel="icon" type="image/png" href="https://www.jules.com/on/demandware.static/-/Sites/default/dw32346939/images/Favicon/faviconJules_android-chrome-96x96.png" sizes="96x96" />
 <link rel="icon" type="image/png" href="https://www.jules.com/on/demandware.static/-/Sites/default/dw57028633/images/Favicon/faviconJules_android-chrome-144x144.png" sizes="128x128" />
 <link rel="icon" type="image/png" href="https://www.jules.com/on/demandware.static/-/Sites/default/dwda509f6c/images/Favicon/faviconJules_android-chrome-192x192.png" sizes="196x196" />
-<link rel="preload" href="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1657273775901/fonts/fontawesome-webfont.woff2?v=4.7.0" as="font" type="font/woff2" crossorigin />
-<link rel="preload" href="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1657273775901/fonts/icomoon.ttf?mt5112" as="font" type="font/ttf" crossorigin />
+<link rel="preload" href="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1657283978545/fonts/fontawesome-webfont.woff2?v=4.7.0" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1657283978545/fonts/icomoon.ttf?mt5112" as="font" type="font/ttf" crossorigin />
 <link rel="dns-prefetch" href="//fonts.googleapis.com" />
 <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
 <link rel="preconnect" href="https://sdk.privacy-center.org" crossorigin />
 <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" />
-<link rel="stylesheet" href="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1657273775901/css/global.css" />
-<link rel="stylesheet" href="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1657273775901/css/radiusCTA.css" />
-<link rel="stylesheet" href="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1657273775901/css/alignProductTile.css" />
+<link rel="stylesheet" href="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1657283978545/css/global.css" />
+<link rel="stylesheet" href="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1657283978545/css/radiusCTA.css" />
+<link rel="stylesheet" href="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1657283978545/css/alignProductTile.css" />
 <script type="text/javascript">window.gdprAppliesGlobally=true;(function(){function a(e){if(!window.frames[e]){if(document.body&&document.body.firstChild){var t=document.body;var n=document.createElement("iframe");n.style.display="none";n.name=e;n.title=e;t.insertBefore(n,t.firstChild)}
 else{setTimeout(function(){a(e)},5)}}}function e(n,r,o,c,s){function e(e,t,n,a){if(typeof n!=="function"){return}if(!window[r]){window[r]=[]}var i=false;if(s){i=s(e,t,n)}if(!i){window[r].push({command:e,parameter:t,callback:n,version:a})}}e.stub=true;function t(a){if(!window[n]||window[n].stub!==true){return}if(!a.data){return}
 var i=typeof a.data==="string";var e;try{e=i?JSON.parse(a.data):a.data}catch(t){return}if(e[o]){var r=e[o];window[n](r.command,r.parameter,function(e,t){var n={};n[c]={returnValue:e,success:t,callId:r.callId};a.source.postMessage(i?JSON.stringify(n):n,"*")},r.version)}}
@@ -310,7 +350,7 @@ CQuotient.trackViewProduct = function(/* Object */ cqParamData){
 <a class="navbar-brand my-auto d-xl-block " href="https://www.jules.com/">
 <img class="" src="https://www.jules.com/on/demandware.static/-/Sites/fr_FR/dw42087894/logo-jules/logo-Jules-L.svg" data-imagesmall="https://www.jules.com/on/demandware.static/-/Sites/fr_FR/dwf0ea7dd4/logo-jules/logo-Jules-S.svg" alt="Jules v&ecirc;tements homme" width="auto" height="40" data-imagesmallwidth="40" data-imagesmallheight="40" data-imagewidth="140" data-imageheight="40" />
 </a>
- </div>
+</div>
 <div class="bloc-header-link pull-right d-flex">
 <div class="header-link shop hidden-xl-down">
 <a href="/fr-fr/recherche-magasins/">
@@ -487,7 +527,7 @@ Soldes -20%
 <a href="https://www.jules.com/fr-fr/l/soldes/" onclick="opeco('opeco', 'layer-accessoire-push', 'plp-soldes')">
 <picture>
 <source media="(min-width:1280px)" srcset="https://www.jules.com/on/demandware.static/-/Sites/default/dw492fd7aa/jules-sfcc/soldes/Push-JULES-SOLDES-D1-FR.jpg 1x, https://www.jules.com/on/demandware.static/-/Sites/default/dw1e638833/jules-sfcc/soldes/Push-JULES-SOLDES-D1-FR@2x.jpg 2x">
-<source srcset="https://www.jules.com/on/demandware.static/-/Sites/fr_FR/v1657273775901/PE20/px.gif">
+<source srcset="https://www.jules.com/on/demandware.static/-/Sites/fr_FR/v1657283978545/PE20/px.gif">
 <img alt="SOLDES" src="https://www.jules.com/on/demandware.static/-/Sites/default/dw492fd7aa/jules-sfcc/soldes/Push-JULES-SOLDES-D1-FR.jpg" class="img-fluid pushNav mt-3" loading="lazy" width="350" height="154">
 </picture>
 </a>
@@ -510,7 +550,7 @@ Hauts
 <li class="dropdown-item dropdown d-none" role="menuitem" data-levels="true">
 <a href="https://www.jules.com/fr-fr/l/hauts/" id="tous-les-hauts-responsive" class="dropdown-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-beaver-id="sousCattous-les-hauts">
 Tous les hauts
- </a>
+</a>
 <ul class="dropdown-menu col-xl-7" role="menu" aria-hidden="true">
 <li class="dropdown-item d-none" role="menuitem">
 <a href="/fr-fr/l/chemise/" id="GROUPE-CHEMISE-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatGROUPE-CHEMISE">
@@ -551,13 +591,12 @@ Gilet
 <a href="/fr-fr/l/sweat/" id="HCC23-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatHCC23">
 Sweat
 </a>
-</li>
+ </li>
 <li class="dropdown-item d-none" role="menuitem">
 <a href="/fr-fr/l/veste/" id="GROUPE-VESTES-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatGROUPE-VESTES">
 Veste costume &amp; Blazer
 </a>
 </li>
-
 </ul>
 </li>
 <li class="dropdown-item dropdown d-none" role="menuitem" data-levels="false">
@@ -656,14 +695,14 @@ Exclu web
 <a href="https://www.jules.com/fr-fr/l/soldes/" onclick="opeco('opeco', 'layer-haut-push', 'plp-soldes')">
 <picture>
 <source media="(min-width:1280px)" srcset="https://www.jules.com/on/demandware.static/-/Sites/default/dw492fd7aa/jules-sfcc/soldes/Push-JULES-SOLDES-D1-FR.jpg 1x, https://www.jules.com/on/demandware.static/-/Sites/default/dw1e638833/jules-sfcc/soldes/Push-JULES-SOLDES-D1-FR@2x.jpg 2x">
-<source srcset="https://www.jules.com/on/demandware.static/-/Sites/fr_FR/v1657273775901/PE20/px.gif">
+<source srcset="https://www.jules.com/on/demandware.static/-/Sites/fr_FR/v1657283978545/PE20/px.gif">
 <img alt="SOLDES" src="https://www.jules.com/on/demandware.static/-/Sites/default/dw492fd7aa/jules-sfcc/soldes/Push-JULES-SOLDES-D1-FR.jpg" class="img-fluid pushNav mt-3" loading="lazy" width="350" height="154">
 </picture>
 </a>
 <a href="https://www.jules.com/fr-fr/l/tour-de-france/" onclick="opeco('opeco', 'layer-haut-push', 'plp-tour-de-france')">
 <picture>
 <source media="(min-width:1280px)" srcset="https://www.jules.com/on/demandware.static/-/Sites/default/dwf4550ea2/jules-sfcc/PE22/Push2-collection-TDF-FR.jpg 1x, https://www.jules.com/on/demandware.static/-/Sites/default/dw2c4e2522/jules-sfcc/PE22/Push2-collection-TDF-FR@2x.jpg 2x">
-<source srcset="https://www.jules.com/on/demandware.static/-/Sites/fr_FR/v1657273775901/PE20/px.gif">
+<source srcset="https://www.jules.com/on/demandware.static/-/Sites/fr_FR/v1657283978545/PE20/px.gif">
 <img alt="Tour de France" src="https://www.jules.com/on/demandware.static/-/Sites/default/dwf4550ea2/jules-sfcc/PE22/Push2-collection-TDF-FR.jpg" class="img-fluid pushNav mt-3" loading="lazy" width="350" height="154">
 </picture>
 </a>
@@ -811,14 +850,14 @@ Jean Urbanflex
 <a href="https://www.jules.com/fr-fr/l/soldes/" onclick="opeco('opeco', 'layer-bas-push', 'plp-soldes')">
 <picture>
 <source media="(min-width:1280px)" srcset="https://www.jules.com/on/demandware.static/-/Sites/default/dw492fd7aa/jules-sfcc/soldes/Push-JULES-SOLDES-D1-FR.jpg 1x, https://www.jules.com/on/demandware.static/-/Sites/default/dw1e638833/jules-sfcc/soldes/Push-JULES-SOLDES-D1-FR@2x.jpg 2x">
-<source srcset="https://www.jules.com/on/demandware.static/-/Sites/fr_FR/v1657273775901/PE20/px.gif">
+<source srcset="https://www.jules.com/on/demandware.static/-/Sites/fr_FR/v1657283978545/PE20/px.gif">
 <img alt="SOLDES" src="https://www.jules.com/on/demandware.static/-/Sites/default/dw492fd7aa/jules-sfcc/soldes/Push-JULES-SOLDES-D1-FR.jpg" class="img-fluid pushNav mt-3" loading="lazy" width="350" height="154">
 </picture>
 </a>
 <a href="https://www.jules.com/fr-fr/l/tour-de-france/" onclick="opeco('opeco', 'layer-bas-push', 'plp-tour-de-france')">
 <picture>
 <source media="(min-width:1280px)" srcset="https://www.jules.com/on/demandware.static/-/Sites/default/dwf4550ea2/jules-sfcc/PE22/Push2-collection-TDF-FR.jpg 1x, https://www.jules.com/on/demandware.static/-/Sites/default/dw2c4e2522/jules-sfcc/PE22/Push2-collection-TDF-FR@2x.jpg 2x">
-<source srcset="https://www.jules.com/on/demandware.static/-/Sites/fr_FR/v1657273775901/PE20/px.gif">
+<source srcset="https://www.jules.com/on/demandware.static/-/Sites/fr_FR/v1657283978545/PE20/px.gif">
 <img alt="Tour de France" src="https://www.jules.com/on/demandware.static/-/Sites/default/dwf4550ea2/jules-sfcc/PE22/Push2-collection-TDF-FR.jpg" class="img-fluid pushNav mt-3" loading="lazy" width="350" height="154">
 </picture>
 </a>
@@ -827,6 +866,7 @@ Jean Urbanflex
 </div>
 </div>
 </li>
+
 <li class="nav-item dropdown" role="menuitem">
 <a href="/fr-fr/l/costumes/" id="COSTUMES-responsive" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-beaver-id="MenuCOSTUMES" data-beaver-class="UniversTNR">
 Costumes
@@ -946,14 +986,14 @@ Exclu web
 <a href="https://www.jules.com/fr-fr/l/soldes/" onclick="opeco('opeco', 'layer-costume-push', 'plp-soldes')">
 <picture>
 <source media="(min-width:1280px)" srcset="https://www.jules.com/on/demandware.static/-/Sites/default/dw492fd7aa/jules-sfcc/soldes/Push-JULES-SOLDES-D1-FR.jpg 1x, https://www.jules.com/on/demandware.static/-/Sites/default/dw1e638833/jules-sfcc/soldes/Push-JULES-SOLDES-D1-FR@2x.jpg 2x">
-<source srcset="https://www.jules.com/on/demandware.static/-/Sites/fr_FR/v1657273775901/PE20/px.gif">
+<source srcset="https://www.jules.com/on/demandware.static/-/Sites/fr_FR/v1657283978545/PE20/px.gif">
 <img alt="SOLDES" src="https://www.jules.com/on/demandware.static/-/Sites/default/dw492fd7aa/jules-sfcc/soldes/Push-JULES-SOLDES-D1-FR.jpg" class="img-fluid pushNav mt-3" loading="lazy" width="350" height="154">
 </picture>
 </a>
 <a href="https://www.jules.com/fr-fr/l/collection-mariage/" onclick="opeco('opeco', 'layer-costume-push', 'plp-collection-mariage')">
 <picture>
 <source media="(min-width:1280px)" srcset="https://www.jules.com/on/demandware.static/-/Sites/default/dwc989d0c1/jules-sfcc/PE22/Push2-ceremonie-mariage-FR.jpg 1x, https://www.jules.com/on/demandware.static/-/Sites/default/dw184ecd34/jules-sfcc/PE22/Push2-ceremonie-mariage-FR@2x.jpg 2x">
-<source srcset="https://www.jules.com/on/demandware.static/-/Sites/fr_FR/v1657273775901/PE20/px.gif">
+<source srcset="https://www.jules.com/on/demandware.static/-/Sites/fr_FR/v1657283978545/PE20/px.gif">
 <img alt="Cérémonie & mariage" src="https://www.jules.com/on/demandware.static/-/Sites/default/dwc989d0c1/jules-sfcc/PE22/Push2-ceremonie-mariage-FR.jpg" class="img-fluid pushNav mt-3" loading="lazy" width="350" height="154">
 </picture>
 </a>
@@ -980,7 +1020,7 @@ Chaussures
 </li>
 <li class="dropdown-item d-none" role="menuitem">
 <a href="/fr-fr/l/sous-vetements/" id="HCA27-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatHCA27">
- Sous-v&ecirc;tements
+Sous-v&ecirc;tements
 </a>
 </li>
 <li class="dropdown-item d-none" role="menuitem">
@@ -1077,7 +1117,7 @@ Le lin
 </li>
 <li class="dropdown-item d-none" role="menuitem">
 <a href="https://www.jules.com/fr-fr/l/looks-de-saison/" id="link-accessoires-looks-de-saison-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatlink-accessoires-looks-de-saison">
-☀️ Looks d'&eacute;t&eacute;
+ ☀️ Looks d'&eacute;t&eacute;
 </a>
 </li>
 <li class="dropdown-item d-none" role="menuitem">
@@ -1136,14 +1176,14 @@ Exclu web
 <a href="https://www.jules.com/fr-fr/l/soldes/" onclick="opeco('opeco', 'layer-accessoire-push', 'plp-soldes')">
 <picture>
 <source media="(min-width:1280px)" srcset="https://www.jules.com/on/demandware.static/-/Sites/default/dw492fd7aa/jules-sfcc/soldes/Push-JULES-SOLDES-D1-FR.jpg 1x, https://www.jules.com/on/demandware.static/-/Sites/default/dw1e638833/jules-sfcc/soldes/Push-JULES-SOLDES-D1-FR@2x.jpg 2x">
-<source srcset="https://www.jules.com/on/demandware.static/-/Sites/fr_FR/v1657273775901/PE20/px.gif">
+<source srcset="https://www.jules.com/on/demandware.static/-/Sites/fr_FR/v1657283978545/PE20/px.gif">
 <img alt="SOLDES" src="https://www.jules.com/on/demandware.static/-/Sites/default/dw492fd7aa/jules-sfcc/soldes/Push-JULES-SOLDES-D1-FR.jpg" class="img-fluid pushNav mt-3" loading="lazy" width="350" height="154">
 </picture>
 </a>
 <a href="https://www.jules.com/fr-fr/l/tour-de-france/" onclick="opeco('opeco', 'layer-accessoire-push', 'plp-tour-de-france')">
 <picture>
 <source media="(min-width:1280px)" srcset="https://www.jules.com/on/demandware.static/-/Sites/default/dwf4550ea2/jules-sfcc/PE22/Push2-collection-TDF-FR.jpg 1x, https://www.jules.com/on/demandware.static/-/Sites/default/dw2c4e2522/jules-sfcc/PE22/Push2-collection-TDF-FR@2x.jpg 2x">
-<source srcset="https://www.jules.com/on/demandware.static/-/Sites/fr_FR/v1657273775901/PE20/px.gif">
+<source srcset="https://www.jules.com/on/demandware.static/-/Sites/fr_FR/v1657283978545/PE20/px.gif">
 <img alt="Tour de France" src="https://www.jules.com/on/demandware.static/-/Sites/default/dwf4550ea2/jules-sfcc/PE22/Push2-collection-TDF-FR.jpg" class="img-fluid pushNav mt-3" loading="lazy" width="350" height="154">
 </picture>
 </a>
@@ -1190,7 +1230,7 @@ Jeans &amp; pantalon
 </a>
 </li>
 <li class="dropdown-item d-none" role="menuitem">
- <a href="https://www.jules.com/fr-fr/l/mode-ecoresponsable/?prefn1=F3_internalCategory&amp;prefv1=Short &amp; Bermuda" id="link-short-bermuda-inprogress-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatlink-short-bermuda-inprogress">
+<a href="https://www.jules.com/fr-fr/l/mode-ecoresponsable/?prefn1=F3_internalCategory&amp;prefv1=Short &amp; Bermuda" id="link-short-bermuda-inprogress-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatlink-short-bermuda-inprogress">
 Short &amp; bermuda
 </a>
 </li>
@@ -1264,7 +1304,6 @@ Actions solidaires
 <li class="dropdown-item d-none" role="menuitem">
 <a href="https://www.jules.com/fr-fr/static/ensemble.html" id="link-lhumain-inprogress-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatlink-lhumain-inprogress">
 L'humain
-
 </a>
 </li>
 <li class="dropdown-item d-none" role="menuitem">
@@ -1290,14 +1329,14 @@ li.dropdown-item, div.mega-menu div.container-md ul.dropdown-menu li.dropdown-it
 <a href="https://www.jules.com/fr-fr/static/mode-ecoresponsable.html" onclick="opeco('opeco', 'layer-inprogress-push', 'lp-mode-ecoresponsable')">
 <picture>
 <source media="(min-width:1280px)" srcset="https://www.jules.com/on/demandware.static/-/Sites/default/dwbb69ff14/jules-sfcc/PE22/Push2-ID-nos-engagements-FR.jpg 1x, https://www.jules.com/on/demandware.static/-/Sites/default/dw164a170a/jules-sfcc/PE22/Push2-ID-nos-engagements-FR@2x.jpg 2x">
-<source srcset="https://www.jules.com/on/demandware.static/-/Sites/fr_FR/v1657273775901/PE20/px.gif">
+<source srcset="https://www.jules.com/on/demandware.static/-/Sites/fr_FR/v1657283978545/PE20/px.gif">
 <img alt="Nos engagements" src="https://www.jules.com/on/demandware.static/-/Sites/default/dwbb69ff14/jules-sfcc/PE22/Push2-ID-nos-engagements-FR.jpg" class="img-fluid pushNav mt-3" loading="lazy" width="350" height="154">
 </picture>
 </a>
 <a href="https://www.jules.com/fr-fr/l/denim-in-progress/" onclick="opeco('opeco', 'layer-inprogres-push', 'plp-denim-in-progress')">
 <picture>
 <source media="(min-width:1280px)" srcset="https://www.jules.com/on/demandware.static/-/Sites/default/dw617cccba/jules-sfcc/PE22/Push2-Toile-jean-recycle-FR.jpg 1x, https://www.jules.com/on/demandware.static/-/Sites/default/dw9720adab/jules-sfcc/PE22/Push2-Toile-jean-recycle-FR@2x.jpg 2x">
-<source srcset="https://www.jules.com/on/demandware.static/-/Sites/fr_FR/v1657273775901/PE20/px.gif">
+<source srcset="https://www.jules.com/on/demandware.static/-/Sites/fr_FR/v1657283978545/PE20/px.gif">
 <img alt="Denim in progress" src="https://www.jules.com/on/demandware.static/-/Sites/default/dw617cccba/jules-sfcc/PE22/Push2-Toile-jean-recycle-FR.jpg" class="img-fluid pushNav mt-3" loading="lazy" width="350" height="154">
 </picture>
 </a>
@@ -1455,7 +1494,7 @@ Actus
 <input required type="password" id="login-form-password" class="form-control" name="loginPassword" placeholder=" " data-missing-error="Ce champ n&eacute;cessite d'&ecirc;tre renseign&eacute;." data-beaver-id="password">
 <span class="input-label">Mot de passe *</span>
 <div class="input-group-addon">
-<a><i class="fa fa-eye show_hide_password" aria-hidden="true"></i></a>
+ <a><i class="fa fa-eye show_hide_password" aria-hidden="true"></i></a>
 </div>
 <div class="invalid-feedback"></div>
 </label>
@@ -1469,7 +1508,7 @@ mot de passe oubli&eacute;&nbsp;?
 </a>
 </div>
 </div>
-<input type="hidden" name="csrf_token" value="KGnai8lTQsmecNtRVeDUON0ScjXnFvM0dmIiz7RV41yhaXSuXyEjaINcCv_Pb3kafGxHuaG8D9z7J6eKfS0r9scM22EEAjJPSp55VIdWvt5l8sqXBsAGo_w1ccI6dBrwfesLLAJflm3LlDtowiZ_ieG0DdaTsMhLrNpYtnbABnqIs1CCYJQ=" />
+<input type="hidden" name="csrf_token" value="gEiRt-zDuHVa3-ttyEzUoNQX4YIjNVCScfEsFSG4yFXTS8dubwNCcrgD5t9PNUbB1wp0VaUPSZrxqiJqCsUSqC1GPlh5dIMe0Ryk4qnDZ1G2_ZVe3D0JAEHMRk_gOvsPwOGKGbT_ZKDb0yrUFXLcOb-G-tdGnf_be8_jqb3wDy-A5034TX4=" />
 </form>
 </div>
 </div>
@@ -1573,7 +1612,7 @@ Supprimer
 </div>
 </div>
 </div>
- </div>
+</div>
 </div>
 </div>
 
@@ -1597,7 +1636,7 @@ Supprimer
 <br />
 <a class="mail-account">null</a>
 <br /></p>
-</div>
+ </div>
 </div>
 <div class="modal-body row">
 <div class="col-12">
@@ -1647,7 +1686,7 @@ Supprimer
 /*QuickFiltresInstalike*/
 .containerQFinstalike ::-webkit-scrollbar {display:none }.containerQFinstalike ::-webkit-scrollbar:horizontal {display:none }.containerQFinstalike ::-webkit-scrollbar-thumb:horizontal {display:none }.containerQFinstalike {width: 100%;height: auto;position: relative;display: block }.swipeQFinstalike {list-style-type: none;max-width: 100%;width: auto;height: auto;display: flex;overflow-x: auto;overflow-scrolling: touch;-webkit-overflow-scrolling: touch;-moz-overflow-scrolling: touch;-ms-overflow-scrolling: touch;padding: 0;margin: 0 auto }.swipeQFinstalike>li {width: 100px;max-width: 100px;flex-shrink: 0;margin: 0 .8em;float: left;line-height: normal;font-size: .7em;letter-spacing: 0;position: relative }.swipeQFinstalike li p {text-overflow: ellipsis;white-space: nowrap;overflow: hidden;height: 20px;}.swipeQFinstalike li img {width: 68px;height: 68px }.overlayQF {background-color: transparent;position: absolute;top: 37%;left: 50%;transform: translateX(-50%) translateY(-50%);z-index: 1;display: block;width: 68px;height: 68px }.overlayQF:hover {background-color: rgba(0,0,0,.4);background: rgba(0,0,0,.4);color: rgba(0,0,0,.4);border-radius: 50% }.overlayQF:hover::after {content: "+";width: auto;height: 20px;display: block;top: 35%;left: 50%;position: absolute;transform: translateX(-50%) translateY(-50%);color: #fff;font-size: 2em }@media (min-width:361px) {.swipeQFinstalike>li {margin: 0 .4em }}@media screen and (max-width:320px) and (min-width:1px) {.swipeQFinstalike>li {width: 130px;max-width: 130px;margin: 0 .3em }}@media screen and (max-width:360px) and (min-width:321px) {.swipeQFinstalike>li {width: 130px;max-width: 130px;margin: 0 .4em }}@media screen and (max-width:414px) and (min-width:361px) {.swipeQFinstalike>li {width: 120px;max-width: 120px;margin: 0 .4em }}@media screen and (max-width:425px) and (min-width:415px) {.swipeQFinstalike>li {width: 120px;max-width: 120px;margin: 0 .5em }}@media screen and (max-width:767px) and (min-width:426px) {.swipeQFinstalike>li {width: 120px;max-width: 120px;margin: 0 1em }}@media screen and (max-width:960px) and (min-width:768px) {.swipeQFinstalike>li {width: 110px;max-width: 110px;margin: 0 1em }}@media (min-width:961px) {.swipeQFinstalike {max-width: 100%;width: auto;height: auto;display: block;overflow-x: inherit;list-style-type: none;float: right;position: relative;left: -50%;transform: translateX(50%);padding: 0;margin: 0 }.swipeQFinstalike>li {width: 110px;max-width: 110px;margin: 0 -.09em;}}@media (min-width:1025px) {.swipeQFinstalike>li {width: 120px;max-width: 120px;margin: 0 .3em }}@media (min-width:1280px) {.swipeQFinstalike>li {width: 150px;max-width: 150px;margin: 0 .3em }}@media (min-width:1440px) {.swipeQFinstalike>li {margin: 0 1.2em }}.testA {display: block!important;}.testB {display: none!important;}
 /*QuickFiltresGelules*/
-:root {--border-gelule: #8d8d8d;--color-gelule: #8d8d8d;--bkg-gelule: #fff;--arrow-gelule: url("https://www.jules.com/on/demandware.static/-/Sites/fr_FR/v1657273775901/PE20/navArrowOrangeVP.svg");--scrollbar-thumb-bkg: #dad8d8;--scrollbar-thumb-border: #fff;--scrollbar-thumb-horizontal-bkg: #dad8d8;--scrollbar-thumb-horizontal-border: #fff;--scrollbar-thumb-hover: #919191;--scrollbar-thumb-active-bkg: #7d7979;--scrollbar-track-bkg: #fff;--scrollbar-track-border: #fff;--scrollbar-track-hover-bkg: #dbdbdb;--scrollbar-track-active-bkg: #c7c7c7 }.conentQFgelules ::-webkit-scrollbar {height: 0;widows: 0;background: 0;border-radius: 0;display: none }.conentQFgelules ::-webkit-scrollbar:horizontal {height: 0;widows: 0;background: 0;border-radius: 0;display: none }.conentQFgelules ::-webkit-scrollbar-thumb:horizontal {height: 0;widows: 0;background: 0;border-radius: 0;display: none }.center-block {margin: 0 auto;display: block;position: relative }.conentQFgelules {width: 100%;position: relative;display: block;background: #fff;padding: 1em 0 0 0;margin: inherit }.swipeGelules {list-style-type: none;max-width: 100%;width: auto;height: auto;display: flex;overflow-x: auto;overflow-scrolling: touch;-webkit-overflow-scrolling: touch;-moz-overflow-scrolling: touch;-ms-overflow-scrolling: touch;padding: 0;margin: 0 auto }.swipeGelules li {width: auto;flex-shrink: 0;margin: 0 .4em;float: left;line-height: normal;font-size: .85em;border: .02em solid;border-radius: 30px;padding: 3px 10px;transition: ease .5s }.swipeGelules li:hover {color: #FFF;background-color: #006451;border-color: #006451 }.swipeGelules li > a:hover {color: #FFF }.swipeGelules li:hover > a {color: #FFF }.swipeGelules li::before {display: none }.swipeGelules li:first-child {margin-left: .5em }@media(min-width:961px) {.conentQFgelules {width: 100%;max-width: 1440px;padding: .5em 0 0 0;margin: 0 auto }.swipeGelules {list-style-type: none;max-width: 100%;width: auto;height: auto;display: block;overflow-x: none;overflow-scrolling: touch;-webkit-overflow-scrolling: touch;-moz-overflow-scrolling: touch;-ms-overflow-scrolling: touch;padding: 0;margin: 0 auto }.swipeGelules li {margin: .5em }.conentQFgelules ::-webkit-scrollbar {width: 12px;height: 6px;margin-top: 10px;display: block }.conentQFgelules ::-webkit-scrollbar:horizontal {width: 12px;height: 6px;margin-top: 10px;display: block }.conentQFgelules ::-webkit-scrollbar-button {width: 12px;height: 12px }.conentQFgelules ::-webkit-scrollbar-thumb {border: 0 none;border-radius: 50px }.conentQFgelules ::-webkit-scrollbar-thumb:horizontal {border: 0 none;border-radius: 50px;display: block }.conentQFgelules ::-webkit-scrollbar-track {border: 0 none;border-radius: 50px }.conentQFgelules ::-webkit-scrollbar-corner {background: 0 }}.swipeGelules li {color: var(--color-gelule);border-color: var(--border-gelule);background-color: var(--bkg-gelule) }.swipeGelules li a {color: var(--color-gelule) }@media(min-width:961px) {.conentQFgelules::-webkit-scrollbar-thumb {background: var(--scrollbar-thumb-bkg);border-color: var(--scrollbar-thumb-border) }.conentQFgelules ::-webkit-scrollbar-thumb:horizontal {background: var(--scrollbar-thumb-horizontal-bkg);border-color: var(--scrollbar-thumb-horizontal-border) }.conentQFgelules ::-webkit-scrollbar-thumb:hover {background: var(--scrollbar-thumb-hover) }.conentQFgelules ::-webkit-scrollbar-thumb:active {background: var(--scrollbar-thumb-active-bkg) }.conentQFgelules ::-webkit-scrollbar-track {background: var(--scrollbar-track-bkg);border-color: var(--scrollbar-track-border) }.conentQFgelules ::-webkit-scrollbar-track:hover {background: var(--scrollbar-track-hover-bkg) }.conentQFgelules ::-webkit-scrollbar-track:active {background: var(--scrollbar-track-active-bkg) }}
+:root {--border-gelule: #8d8d8d;--color-gelule: #8d8d8d;--bkg-gelule: #fff;--arrow-gelule: url("https://www.jules.com/on/demandware.static/-/Sites/fr_FR/v1657283978545/PE20/navArrowOrangeVP.svg");--scrollbar-thumb-bkg: #dad8d8;--scrollbar-thumb-border: #fff;--scrollbar-thumb-horizontal-bkg: #dad8d8;--scrollbar-thumb-horizontal-border: #fff;--scrollbar-thumb-hover: #919191;--scrollbar-thumb-active-bkg: #7d7979;--scrollbar-track-bkg: #fff;--scrollbar-track-border: #fff;--scrollbar-track-hover-bkg: #dbdbdb;--scrollbar-track-active-bkg: #c7c7c7 }.conentQFgelules ::-webkit-scrollbar {height: 0;widows: 0;background: 0;border-radius: 0;display: none }.conentQFgelules ::-webkit-scrollbar:horizontal {height: 0;widows: 0;background: 0;border-radius: 0;display: none }.conentQFgelules ::-webkit-scrollbar-thumb:horizontal {height: 0;widows: 0;background: 0;border-radius: 0;display: none }.center-block {margin: 0 auto;display: block;position: relative }.conentQFgelules {width: 100%;position: relative;display: block;background: #fff;padding: 1em 0 0 0;margin: inherit }.swipeGelules {list-style-type: none;max-width: 100%;width: auto;height: auto;display: flex;overflow-x: auto;overflow-scrolling: touch;-webkit-overflow-scrolling: touch;-moz-overflow-scrolling: touch;-ms-overflow-scrolling: touch;padding: 0;margin: 0 auto }.swipeGelules li {width: auto;flex-shrink: 0;margin: 0 .4em;float: left;line-height: normal;font-size: .85em;border: .02em solid;border-radius: 30px;padding: 3px 10px;transition: ease .5s }.swipeGelules li:hover {color: #FFF;background-color: #006451;border-color: #006451 }.swipeGelules li > a:hover {color: #FFF }.swipeGelules li:hover > a {color: #FFF }.swipeGelules li::before {display: none }.swipeGelules li:first-child {margin-left: .5em }@media(min-width:961px) {.conentQFgelules {width: 100%;max-width: 1440px;padding: .5em 0 0 0;margin: 0 auto }.swipeGelules {list-style-type: none;max-width: 100%;width: auto;height: auto;display: block;overflow-x: none;overflow-scrolling: touch;-webkit-overflow-scrolling: touch;-moz-overflow-scrolling: touch;-ms-overflow-scrolling: touch;padding: 0;margin: 0 auto }.swipeGelules li {margin: .5em }.conentQFgelules ::-webkit-scrollbar {width: 12px;height: 6px;margin-top: 10px;display: block }.conentQFgelules ::-webkit-scrollbar:horizontal {width: 12px;height: 6px;margin-top: 10px;display: block }.conentQFgelules ::-webkit-scrollbar-button {width: 12px;height: 12px }.conentQFgelules ::-webkit-scrollbar-thumb {border: 0 none;border-radius: 50px }.conentQFgelules ::-webkit-scrollbar-thumb:horizontal {border: 0 none;border-radius: 50px;display: block }.conentQFgelules ::-webkit-scrollbar-track {border: 0 none;border-radius: 50px }.conentQFgelules ::-webkit-scrollbar-corner {background: 0 }}.swipeGelules li {color: var(--color-gelule);border-color: var(--border-gelule);background-color: var(--bkg-gelule) }.swipeGelules li a {color: var(--color-gelule) }@media(min-width:961px) {.conentQFgelules::-webkit-scrollbar-thumb {background: var(--scrollbar-thumb-bkg);border-color: var(--scrollbar-thumb-border) }.conentQFgelules ::-webkit-scrollbar-thumb:horizontal {background: var(--scrollbar-thumb-horizontal-bkg);border-color: var(--scrollbar-thumb-horizontal-border) }.conentQFgelules ::-webkit-scrollbar-thumb:hover {background: var(--scrollbar-thumb-hover) }.conentQFgelules ::-webkit-scrollbar-thumb:active {background: var(--scrollbar-thumb-active-bkg) }.conentQFgelules ::-webkit-scrollbar-track {background: var(--scrollbar-track-bkg);border-color: var(--scrollbar-track-border) }.conentQFgelules ::-webkit-scrollbar-track:hover {background: var(--scrollbar-track-hover-bkg) }.conentQFgelules ::-webkit-scrollbar-track:active {background: var(--scrollbar-track-active-bkg) }}
 /*SNM*/
 .content-SNM-GIF3img {width: 100%;height: auto;max-width: 345px;position: relative;display: block;}.center-good {margin: 0 auto;display: block;}.GIF3img-animImg2 {opacity: 0;transition: .5s;position: absolute;width: 100%;height: auto;max-width: 345px;top: 0;left: 50%;transform: translateX(-50%);}.GIF3img-animImg3 {opacity: 0;transition: .5s;position: absolute;width: 100%;height: auto;max-width: 345px;top: 0;left: 50%;transform: translateX(-50%);}img.GIF3img-animImg2 {animation-name: GIF3img-likeGIF2;animation-duration: 5s;animation-iteration-count: infinite;}@keyframes GIF3img-likeGIF2 {0% {opacity: 0;display: none !important;transform: translateZ(2) }29% {opacity: 0;display: none !important;transform: translateZ(2) }30% {opacity: .5;display: none !important;transform: translateZ(2) }33% {opacity: 1;display: block !important;transform: translateZ(2) }99% {opacity: 1;display: block !important;transform: translateZ(2) }100% {opacity: 0;display: none !important;transform: translateZ(2) }}img.GIF3img-animImg3 {animation-name: GIF3img-likeGIF3;animation-duration: 5s;animation-iteration-count: infinite;}@keyframes GIF3img-likeGIF3 {0% {opacity: 0;display: none !important;transform: translateZ(3) }62% {opacity: 0;display: none !important;transform: translateZ(3) }63% {opacity: .5;display: none !important;transform: translateZ(3) }66% {opacity: 1;display: block !important;transform: translateZ(3) }100% {opacity: 1;display: none !important;transform: translateZ(3) }}.content-SNM-GIF2img {width: 100%;height: auto;max-width: 345px;position: relative;display: block;}.SNM-GIF2img-animImg2 {opacity: 0;transition: .5s;position: absolute;width: 100%;height: auto;max-width: 345px;top: 0;left: 50%;transform: translateX(-50%);}img.SNM-GIF2img-animImg2 {animation-name: SNM-GIF2img-likeGIF2;animation-duration: 5s;animation-iteration-count: infinite;}@keyframes SNM-GIF2img-likeGIF2 {0% {opacity: 0;display: none !important;transform: translateZ(2) }29% {opacity: 0;display: none !important;transform: translateZ(2) }30% {opacity: .5;display: none !important;transform: translateZ(2) }33% {opacity: 1;display: block !important;transform: translateZ(2) }99% {opacity: 1;display: block !important;transform: translateZ(2) }100% {opacity: 0;display: none !important;z-index: 2 }}
 /*PUSH*/
@@ -1780,7 +1819,7 @@ Besoin d’un coup de pouce pour trouver LE cadeau idéal ? <br>
 <div class="col-9 p-0">
 <p class="body1 text-start d-block ps-3">Hey ! 👋<br>
 En panne d'idées pour la fête des darons ?<br>
- <span class="link body2 text-blue text-start">Pensez à la carte cadeau</span> </p>
+<span class="link body2 text-blue text-start">Pensez à la carte cadeau</span> </p>
 </div>
 </div>
 </a></div>
@@ -1846,7 +1885,7 @@ En panne d'idées pour la fête des darons ?<br>
 <div class="card">
 <div class="card-header" id="headingOne">
 <h2 class="mb-0">
-<button class="btn btn-link btn-sucouche collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> ARTICLE 1 –
+ <button class="btn btn-link btn-sucouche collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne"> ARTICLE 1 –
 PREAMBULE </button>
 </h2>
 </div>
@@ -1869,7 +1908,7 @@ masculin principalement sous ses marques Jules et Brice en France (les «
 Téléphone : <a href="tel:03 59 55 41 29">03 59 55 41 29 </a> / E-mail : <a href="mailto:support@support-jules.zendesk.com">support@support-jules.zendesk.com</a>
 <br>
 <br>
- Le Site Internet est hébergé par la société EMEA Private Limited Company (Ltd),
+Le Site Internet est hébergé par la société EMEA Private Limited Company (Ltd),
 située Village 9, Floor 26 Salesforce Tower; 110 Bishopsgate, Londres, UK EC2N
 4AY. Téléphone: +44(0)203 1477600.
 </p>
@@ -2035,7 +2074,7 @@ confirmation enregistrée de cette commande valent preuve de la transaction.
 </div>
 </div>
 </div>
- </div>
+</div>
 </div>
 
 <div class="card">
@@ -2114,7 +2153,7 @@ son adresse e-mail liée à son compte Google Pay ainsi que son mot de passe. La
 commande sera enregistrée lorsque le Client aura validé son paiement Google Pay.
 <br>
 En cas de paiement par Google Pay, nous vous invitons à prendre connaissance au
-préalable des conditions d'utilisation de Google Payments.
+ préalable des conditions d'utilisation de Google Payments.
 <br>
 <h5>7.4 Par carte cadeau Jules et carte cadeau Illicado</h5> <i>(délivrées en France
 uniquement)</i>
@@ -2140,7 +2179,7 @@ carte cadeau Jules du montant exact à rembourser sera alors envoyée au Client
 conformément à l’article 9.5.
 <br>
 <h5>7.5 Sécurité des paiements</h5>
- Les transactions effectuées sur le Site Internet sont sécurisées par la plateforme
+Les transactions effectuées sur le Site Internet sont sécurisées par la plateforme
 de paiement en ligne PayZen. Cette solution est une marque du groupe Lyra Network,
 opérateur monétique reconnu dans le milieu bancaire. PayZen assure aux Clients la
 sécurité optimale de leurs données grâce à sa certification PCI DSS et l’utilisation
@@ -2205,7 +2244,7 @@ La commande est livrée par La Poste en Colissimo Access à l’adresse de livra
 saisie par le Client dans un délai de 4 à 5 jours ouvrés à compter de la
 confirmation de la commande (étant précisé que ce délai peut être rallongé pour les
 zones géographiques éloignées comme la Corse).
-<br>
+<br> 
 Le Client est informé de l’expédition de son colis par courrier électronique.
 <br>
 <h5>8.2 En points relais La Poste</h5>
@@ -2234,7 +2273,7 @@ commande.
 Le Client est informé de l’expédition de son colis par courrier électronique.
 <br>
 <h5>8.4 En magasins Jules et Brice</h5> <i>(en France continentale ainsi qu’en Corse
- et à Monaco)</i>
+et à Monaco)</i>
 Les frais de préparation et de livraison sont offerts.
 <br>
 La commande du Client est disponible en magasin dans un délai de 2 à 3 jours ouvrés
@@ -2330,7 +2369,7 @@ métropolitaine afin de retourner sa commande. <br>
 Pour se faire, le Client devra déposer son Produit et le bon de retour imprimé en
 renseignant la quantité et le motif de son retour pour chaque Produit à retourner
 dans le magasin Jules ou Brice de son choix. <br>
- <h6>9.4.2 En points relais Colissimo ou bureau de poste</h6>
+<h6>9.4.2 En points relais Colissimo ou bureau de poste</h6>
 Le Client peut retourner un Produit en le déposant dans un bureau de poste ou chez
 un commerçant partenaire appartenant au réseau La Poste Colissimo. <br>
 Pour se faire, le Client devra remplir entièrement le bon de retour, l’insérer à
@@ -2441,7 +2480,7 @@ ARTICLE 11 – GARANTIES </button>
 <div class="card-body">
 <div class="container">
 <div class="row">
-<div class="col-12">
+ <div class="col-12">
 <p> Indépendamment de toute garantie commerciale pouvant être accordée au Client,
 Jules est garant des défauts de conformité ainsi que des défauts cachés du
 Produit dans le cadre des garanties légales de conformité (article L217-4 à
@@ -2484,7 +2523,7 @@ le cas échéant :<br>
 - s’il correspond à la description donnée par le vendeur et possède les
 qualités que celui-ci a présentées à l'acheteur sous forme d'échantillon ou
 de modèle ;<br>
-- s’il présente les qualités qu'un acheteur peut légitimement attendre eu
+ - s’il présente les qualités qu'un acheteur peut légitimement attendre eu
 égard aux déclarations publiques faites par le vendeur, par le producteur ou
 par son représentant, notamment dans la publicité ou l'étiquetage ;<br>
 2. Ou s’il présente les caractéristiques définies d'un commun accord par les
@@ -2616,7 +2655,7 @@ Filière textile (REFASHION) : FR210130_11APRJ<br>
 </div>
 </div>
 </div>
- 
+
 <div class="card">
 <div class="card-header" id="headingFourteen">
 <h2 class="mb-0">
@@ -2632,7 +2671,7 @@ ARTICLE 14 – ARCHIVAGE </button>
 <p> Conformément aux dispositions de l’article 1379 du Code civil, Jules procède à
 l’archivage des bons de commandes et des factures sur un support fiable et
 durable constituant une copie fidèle. <br>
-<br>
+ <br>
 Les registres informatisés, conservés dans les systèmes informatiques de Jules
 et/ou ses partenaires seront considérés comme preuve des communications,
 commandes, paiements et transactions intervenues entre Jules et le Client.
@@ -2670,7 +2709,7 @@ maintenance ;</li>
 <li>Pour tous dommages ou inconvénients résultant de l’utilisation du réseau
 internet tel que perte de données, intrusion extérieure, virus
 informatiques, rupture de service ; </li>
- <li>Pour tout contenu de sites Internet sur lesquels des liens hypertextes
+<li>Pour tout contenu de sites Internet sur lesquels des liens hypertextes
 peuvent renvoyer à partir du Site Internet.</li>
 </ul>
 <p> Il est précisé que le Site Internet est conforme à la législation française, et
@@ -2722,7 +2761,7 @@ défaut d’autorisation est sanctionné par le délit de contrefaçon. <br>
 <br>
 <h5>16.3 Marques</h5>
 Les marques et logos figurant sur le Site Internet sont des marques protégées et
- déposées. <br>
+déposées. <br>
 <br>
 Toute reproduction totale ou partielle de ces marques et/ou logos, effectuée à
 partir des éléments du site Internet sans l’autorisation expresse de Jules est
@@ -2782,7 +2821,7 @@ DU PROGRAMME DE FIDELITE JULES CLUB </button>
 <button class="btn btn-link btn-sucouche collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNineteen" aria-expanded="true" aria-controls="collapseNineteen"> ARTICLE 1 – PREAMBULE
 </button>
 </h2>
- </div>
+</div>
 <div id="collapseNineteen" class="collapse" aria-labelledby="headingNineteen" data-bs-parent="#headingEightteen">
 <div class="card-body">
 <div class="container">
@@ -2829,7 +2868,7 @@ Bishopsgate, Londres, UK EC2N 4AY. Téléphone: +44(0)203 1477600.
 <div id="collapseTwenty" class="collapse" aria-labelledby="headingTwenty" data-bs-parent="#headingEightteen">
 <div class="card-body">
 <div class="container">
- <div class="row">
+<div class="row">
 <div class="col-12">
 <p> Les présentes conditions générales d’utilisation <b>(les «
 Conditions
@@ -2843,7 +2882,7 @@ Elles visent notamment à régir :
 </li>
 </ul>
 Tout Adhérent déclare avoir pris connaissance des Conditions Générales,
-disponibles en magasin sur demande ou sur les sites Internet de Jules.
+ disponibles en magasin sur demande ou sur les sites Internet de Jules.
 Le
 fait d’adhérer au Programme implique l’adhésion entière et sans réserve
 de
@@ -3017,7 +3056,7 @@ Ils ne peuvent être ni repris, ni échangés contre de l’argent ou
 leur
 valeur en espèces. <br>
 En tout état de cause, l’Adhérent peut utiliser uniquement les
- points
+points
 fidélité cumulés disponibles sur son solde. <br>
 <br>
 L’Adhérent peut consulter librement et gratuitement le solde de ses
@@ -3032,7 +3071,7 @@ Google Play.
 </div>
 </div>
 </div>
-</div>
+ </div>
 </div>
 
 <div class="card">
@@ -3080,7 +3119,7 @@ peut
 <br>
 L’offre de bienvenue est automatiquement émise par Jules dans les
 quarante-cinq (45) jours suivant l’adhésion au Programme, par email ou
-courrier ainsi que dans le compte client de l’Adhérent. <br>
+ courrier ainsi que dans le compte client de l’Adhérent. <br>
 <br>
 <strong> Echange et remboursement sans ticket de caisse </strong> <br>
 Tout Produit peut être échangé ou remboursé dans l’un des Magasins (hors
@@ -3112,7 +3151,7 @@ par email, sms ou courrier. Le changement de statut fidélité est
 également
 indiqué dans le compte client de l’Adhérent. <br>
 L’accès au statut Jules Club Gold est valable pour une durée de douze
- (12)
+(12)
 mois, à compter du jour du changement de statut fidélité. Pendant cette
 durée, l’Adhérent bénéficie des Avantages spécifiques du statut Jules
 Club
@@ -3157,7 +3196,7 @@ Magasin (hors magasins d’usine) et sur le Site Internet, quel que soit
 le
 mode de livraison sélectionné, le montant d’achats facturés et le nombre
 de
- Produits commandés. <br>
+Produits commandés. <br>
 <br>
 <strong>Retouches offertes</strong> <br>
 <br>
@@ -3171,7 +3210,7 @@ Cet Avantage est uniquement valable dans les Magasins situés en France
 métropolitaine (hors magasins d’usine) <br>
 <br>
 <strong> Réparation offerte </strong><br>
-<br>
+ <br>
 L’Adhérent Jules Club Gold bénéficie d’une (1) réparation offerte en
 Magasin
 sur le Produit Jules ou Brice de son choix ou sur un produit d’une
@@ -3207,7 +3246,7 @@ Toutefois, l’Adhérent perd le bénéfice des points fidélité acquis et
 Avantages associés dans un délai de dix-huit (18) mois glissants à
 compter de la date de l’action ayant permis l’obtention desdits
 points
- fidélité. Tout nouvel achat au-delà des dix-huit (18) mois,
+fidélité. Tout nouvel achat au-delà des dix-huit (18) mois,
 réactivera
 automatiquement le cumul des points fidélité et le droit au bénéfice
 des
@@ -3220,7 +3259,7 @@ que
 pour une durée de trente-six (36) mois à compter du dernier acte
 volontaire et positif de sa part. Par la suite, les données seront
 anonymisées.
-</p>
+ </p>
 </div>
 </div>
 </div>
@@ -3319,11 +3358,11 @@ CARACTERE PERSONNEL </button>
 <div class="col-12">
 <p> Pour adhérer au Programme, l’Adhérent doit transmettre à Jules les
 coordonnées suivantes : civilité, nom, prénom, date de naissance et
-adresse e-mail. <br>
+ adresse e-mail. <br>
 Ces informations sont nécessaires à la prise en compte de l’adhésion
 de
 l’Adhérent au Programme et lui permettent de bénéficier des
- Avantages.
+Avantages.
 <br>
 <br>
 En cas de changement dans ses coordonnées, l’Adhérent devra en
@@ -3371,7 +3410,7 @@ RESPONSABILITE </button>
 <div class="container">
 <div class="row">
 <div class="col-12">
- <p> Jules s’engage à mettre en œuvre tous les moyens nécessaires afin
+<p> Jules s’engage à mettre en œuvre tous les moyens nécessaires afin
 d'assurer au mieux le bon fonctionnement du Programme. Cependant, sa
 responsabilité ne pourra être engagée : <br>
 <br>
@@ -3617,7 +3656,7 @@ service client ; </li>
 française.</li>
 </ul>
 <p>En outre, le contenu de l’Avis ne doit pas :</p>
- <ul>
+<ul>
 <li>Comporter des informations fausses, mensongères ou de nature à
 induire en erreur les utilisateurs du Site Internet ;</li>
 <li>Comporter des informations étrangères et sans rapport avec le
@@ -3657,12 +3696,12 @@ sites Internet exploités par des sociétés tierces à Jules ;</li>
 ARTICLE 5 – MODERATION DES AVIS
 </button>
 </h2>
-</div>
+ </div>
 <div id="collapseThirty-six" class="collapse" aria-labelledby="headingThirty-six" data-bs-parent="#headingThirty-one">
 <div class="card-body">
 <div class="container">
 <div class="row">
- <div class="col-12">
+<div class="col-12">
 <p>
 Le dépôt de l’Avis ne donne pas lieu à la publication immédiate de
 celui-ci sur le Site Internet. Il devra d’abord être évalué et
@@ -3702,12 +3741,12 @@ décrites aux présentes.
 <div class="card-header" id="headingThirty-seven">
 <h2 class="mb-0">
 <button class="btn btn-link btn-sucouche collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirty-seven" aria-expanded="false" aria-controls="collapseThirty-seven">
-ARTICLE 6 – PUBLICATION DES AVIS
+ ARTICLE 6 – PUBLICATION DES AVIS
 </button>
 </h2>
 </div>
 <div id="collapseThirty-seven" class="collapse" aria-labelledby="headingThirty-seven" data-bs-parent="#headingThirty-one">
- <div class="card-body">
+<div class="card-body">
 <div class="container">
 <div class="row">
 <div class="col-12">
@@ -3751,12 +3790,13 @@ ARTICLE 7 – PROPRIETE INTELLECTUELLE
 </div>
 <div id="collapseThirty-eight" class="collapse" aria-labelledby="headingThirty-eight" data-bs-parent="#headingThirty-one">
 <div class="card-body">
+
 <div class="container">
 <div class="row">
 <div class="col-12">
 <p>
 En soumettant un Avis, le Client reconnait et accepte que ce dernier
- (i) soit diffusé publiquement sur le Site Internet et librement
+(i) soit diffusé publiquement sur le Site Internet et librement
 accessible à tout utilisateur et plus généralement aux internautes y
 compris extérieurs au Site Internet via un référencement sur les
 moteurs de recherche et (ii) soit utilisé par Jules à des fins
@@ -3797,11 +3837,10 @@ ARTICLE 8 – MODIFICATION DES AVIS
 <p>
 Une fois l’Avis publié, le Client n’a plus la possibilité de
 modifier ce dernier. Néanmoins, il peut demander la suppression de
-son Avis à tout moment après publication sur le Site Internet, via
+ son Avis à tout moment après publication sur le Site Internet, via
 le <a href="https://www.jules.com/fr-fr/nous-contacter/">formulaire de contact</a>
 (rubrique « Protection des données personnelles »).
 </p>
-
 </div>
 </div>
 </div>
@@ -3899,7 +3938,7 @@ du défendeur ou du ressort du siège social de Jules.
 </div>
 
 <script type="text/javascript">
-	    dataLayer.push({"event":"pageview","env":{"work":"prod","platform":"web","language":"fr","country":"FR","responsive":"desktop","abversion_2":"Control","abversion_3":"Control","abversion_4":"Control","currency":"eur"},"user":{"accountCreationLoyalty":"no","logged":"no"},"page":{"template":"cgv","name":"page-include"},"search":{"redirect":"no"},"cart":[]});
+	    dataLayer.push({"event":"pageview","env":{"work":"prod","platform":"web","language":"fr","country":"FR","responsive":"desktop","abversion_2":"Control","abversion_3":"Control","abversion_4":"Control","currency":"eur"},"user":{"accountCreationLoyalty":"no","logged":"no"},"page":{"template":"cgv","name":"page-include"},"search":{"redirect":"no"},"cart":{"id":"a68c4cd0dbe72b7958ac8cde94"}});
 	</script>
 <meta value="{&quot;@context&quot;:&quot;http://schema.org/&quot;,&quot;@type&quot;:&quot;BreadcrumbList&quot;,&quot;itemListElement&quot;:[{&quot;@type&quot;:&quot;ListItem&quot;,&quot;position&quot;:1,&quot;name&quot;:&quot;cgv&quot;,&quot;item&quot;:&quot;https://www.jules.com/fr-fr/static/cgv.html&quot;}]}" />
 <footer>
@@ -4101,7 +4140,7 @@ OK
 </li>
 </ul>
 <ul>
-<li class="h5 text-uppercase">LA COMMUNAUTé</li>
+<li class="h5 text-uppercase">LA COMMUNAUTé</li> 
 <li class="p-0"><b class="h4 cera green">re</b><b class="h4 cera redRelove">love</b></li>
 <li class="pt-0"><p>Co-créez, répondez à des sondages, partagez vos idées, testez nos produits…</p></li>
 <li class="pt-1"><a href="https://relove.jules.com/" rel="noreferrer" target="_blank" class="link"><b>Découvrir</b></a></li>
@@ -4267,8 +4306,19 @@ reregisterBatchPushIfNeeded(batchVapidPublicKey);
      
 </script>
 </div> 
-
 </footer>
+<div id="js-zendesk-btn" onclick="zendeskLoad()">
+<button class="zendesk-btn">
+<span class="icon_chat">
+<svg id="Layer_1" x="0" y="0" viewBox="0 0 15 16" xml:space="preserve" aria-hidden="true">
+<path d="M1.3,16c-0.7,0-1.1-0.3-1.2-0.8c-0.3-0.8,0.5-1.3,0.8-1.5c0.6-0.4,0.9-0.7,1-1c0-0.2-0.1-0.4-0.3-0.7c0,0,0-0.1-0.1-0.1 C0.5,10.6,0,9,0,7.4C0,3.3,3.4,0,7.5,0C11.6,0,15,3.3,15,7.4s-3.4,7.4-7.5,7.4c-0.5,0-1-0.1-1.5-0.2C3.4,15.9,1.5,16,1.5,16 C1.4,16,1.4,16,1.3,16z M3.3,10.9c0.5,0.7,0.7,1.5,0.6,2.2c0,0.1-0.1,0.3-0.1,0.4c0.5-0.2,1-0.4,1.6-0.7c0.2-0.1,0.4-0.2,0.6-0.1 c0,0,0.1,0,0.1,0c0.4,0.1,0.9,0.2,1.4,0.2c3,0,5.5-2.4,5.5-5.4S10.5,2,7.5,2C4.5,2,2,4.4,2,7.4c0,1.2,0.4,2.4,1.2,3.3 C3.2,10.8,3.3,10.8,3.3,10.9z"></path>
+</svg>
+</span>
+<span class="zendesk-btn--label">
+Assistance
+</span>
+</button>
+</div>
 </div>
 <div class="error-messaging"></div>
 <div class="modal-background "></div>
@@ -4276,8 +4326,8 @@ reregisterBatchPushIfNeeded(batchVapidPublicKey);
 <div class="sort-background"></div>
 <div class="share-background"></div>
 <!--[if lt IE 10]>
-<link rel="preload" href="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1657273775901/js/loadJquery.js" as="script" />
-<script type="text/javascript" src="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1657273775901/js/loadJquery.js"></script>
+<link rel="preload" href="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1657283978545/js/loadJquery.js" as="script" />
+<script type="text/javascript" src="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1657283978545/js/loadJquery.js"></script>
 
 
 
@@ -4323,18 +4373,18 @@ reregisterBatchPushIfNeeded(batchVapidPublicKey);
 
 
 
-    <script defer type="text/javascript" src="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1657273775901/js/main.js"></script>
+    <script defer type="text/javascript" src="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1657283978545/js/main.js"></script>
 
 
-<script defer type="text/javascript" src="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1657273775901/js/common.js"></script>
+<script defer type="text/javascript" src="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1657283978545/js/common.js"></script>
 
 
-    <script defer type="text/javascript" src="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1657273775901/js/uiShow.js"
+    <script defer type="text/javascript" src="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1657283978545/js/uiShow.js"
         
         >
     </script>
 
-    <script defer type="text/javascript" src="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1657273775901/js/targetToSell.js"
+    <script defer type="text/javascript" src="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1657283978545/js/targetToSell.js"
         
         >
     </script>
@@ -4342,7 +4392,7 @@ reregisterBatchPushIfNeeded(batchVapidPublicKey);
 
 <![endif]-->
 <script>const pwaApplicationServerPublicKey = "BEbOxNuES60bKLdbM7S1KSTHBWp4SowS8VannQFhV8oK6_0e0lUJbUIYdjlgzrlCZmfM11vIvzIFMHK2UTbN3SQ";</script>
-<script src="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1657273775901/js/pwa.js" async></script>
+<script src="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1657283978545/js/pwa.js" async></script>
 <script async>
 
         (function (d, s) {
@@ -4371,9 +4421,9 @@ function trackPage() {
 /* ]]> */
 // -->
 </script>
-<script type="text/javascript" src="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1657273775901/internal/jscript/dwanalytics-22.2.js" async="async" onload="trackPage()"></script>
+<script type="text/javascript" src="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1657283978545/internal/jscript/dwanalytics-22.2.js" async="async" onload="trackPage()"></script>
 
-<script src="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1657273775901/internal/jscript/dwac-21.7.js" type="text/javascript" async="async"></script>
+<script src="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1657283978545/internal/jscript/dwac-21.7.js" type="text/javascript" async="async"></script>
 <script src="https://cdn.cquotient.com/js/v2/gretel.min.js" type="text/javascript" async="async"></script>
 </body>
 </html>
