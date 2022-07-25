@@ -1919,7 +1919,6 @@ Téléphone : +49 (0)30 300 137 300</p>
 <p>Ses coordonnées sont :</p>
 
 <p>Flix SE<br />
-Dr Theresia Gondro<br />
 Friedenheimer Brücke 16<br />
 80639 Munich</p>
 
@@ -2011,7 +2010,6 @@ Friedenheimer Brücke 16<br />
 <p>Ses coordonnées sont les suivantes :</p>
 
 <p>Flix SE<br />
-Tobias Hadem<br />
 Friedenheimer Brücke 16<br />
 80639 Munich</p>
 
@@ -2901,14 +2899,16 @@ Vous pouvez à tout moment retirer votre consentement au traitement de vos donn�
 
 <script defer>
     const dataDogScript = document.createElement('script');
-    dataDogScript.src = "https://www.datadoghq-browser-agent.com/datadog-rum-eu.js";
+    dataDogScript.src = "https://www.datadoghq-browser-agent.com/datadog-rum-v4.js";
     dataDogScript.type = "text/javascript";
     dataDogScript.onload = function dataDogOnLoad() {
         try {
             window.DD_RUM &&
             window.DD_RUM.init({
+                site: 'datadoghq.eu',
                 applicationId: '84fb019f-2f20-44ce-9844-494bc450d801',
                 clientToken: 'pub6531283cd2c237efbf40cd43966ca370',
+                service: 'webc-cms-flixbus_fe',
                 sampleRate: 10,
                 premiumSampleRate: 0,
                 env: 'prod',
