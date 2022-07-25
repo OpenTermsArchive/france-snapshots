@@ -2481,14 +2481,16 @@ Il est précisé qu’un aller-retour correspond à deux trajets mais qu’un tr
 
 <script defer>
     const dataDogScript = document.createElement('script');
-    dataDogScript.src = "https://www.datadoghq-browser-agent.com/datadog-rum-eu.js";
+    dataDogScript.src = "https://www.datadoghq-browser-agent.com/datadog-rum-v4.js";
     dataDogScript.type = "text/javascript";
     dataDogScript.onload = function dataDogOnLoad() {
         try {
             window.DD_RUM &&
             window.DD_RUM.init({
+                site: 'datadoghq.eu',
                 applicationId: '84fb019f-2f20-44ce-9844-494bc450d801',
                 clientToken: 'pub6531283cd2c237efbf40cd43966ca370',
+                service: 'webc-cms-flixbus_fe',
                 sampleRate: 10,
                 premiumSampleRate: 0,
                 env: 'prod',
