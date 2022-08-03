@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-<meta name="cache-origin" content="cam-appliprod-09">
+<meta name="cache-origin" content="cam-appliprod-15">
 
     <title>Camaieu - Donn&eacute;es Personnelles</title>
 
@@ -659,6 +659,134 @@ $(document).ready(function () {
 });
 
 </script></div></div><div class="yCmsComponent">
+<div class="content "><style type="text/css">.StickyInfo .Flexbox {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.StickyInfo .Paragraph,
+	.StickyInfo a{
+		color: #fff !important;
+		line-height: 1.3;
+	}
+
+	.StickyInfo {
+		background-color: #000000;
+		color: #fff !important;
+		padding: .75rem;
+		width: 100%;
+		text-align: center;
+		z-index: 11;
+		opacity: 0.9;
+	}
+
+	.StickyInfo i {
+		margin-left: 5px;
+	}
+
+	.StickyInfo p,
+	.StickyInfo .Paragraph {
+		margin: 0;
+	}
+
+	.StickyInfo .close-button {
+		top: 15%;
+		position: absolute;
+		right: 2%;
+		font-size: 0;
+		width: 18px;
+		height: 18px;
+		color: #E9DCBE;
+	}
+
+	.StickyInfo .close-button i {
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+		font-family: FontAwesome;
+		font-style: inherit;
+		text-align: center;
+		position: absolute;
+		right: 0;
+		top: 0;
+		color: #fff !important;
+		font-size: 2rem;
+	}
+
+	.StickyInfo .Paragraph--Underline {
+		text-decoration: underline;
+		display: initial;
+		text-transform: uppercase;
+		font-weight: 600;
+		margin-left: 0.2%;
+		font-size: 1.1rem;
+	}
+
+	.Stickyinfo-all-pages-haut {
+		display: block;
+		position: sticky;
+		position: -webkit-sticky;
+		top: 0;
+	}
+
+	.Stickyinfo-all-pages-bas {
+		display: none;
+	}
+
+	/* devices tab & mob */
+	@media screen and (min-width: 768px) {
+		.StickyInfo .Flexbox {
+			flex-direction: row !important;
+			margin: 0% !important;
+		}
+	}
+
+	@media screen and (min-width: 1024px) {
+		.display_mob {
+			display: none
+		}
+	}
+
+	@media screen and (max-width: 805px) {
+		.StickyInfo .close-button {
+			right: 2%;
+			top: 8%;
+		}
+
+		.Stickyinfo-all-pages-haut {
+			display: none;
+		}
+
+		.Stickyinfo-all-pages-bas {
+			position: fixed;
+			bottom: 165px;
+			width: 100%;
+			display: block;
+		}
+	}
+</style>
+<div class="StickyInfo Stickyinfo-all-pages-bas">
+<div class="Background_Booster"></div>
+
+<div class="Paragraph_Content"><span class="Paragraph CenterText">Ch&egrave;re cliente, </span><br /><span class="Paragraph CenterText">Soucieux de garantir une qualit&eacute; de service suffisante sur nos livraisons, nous sommes contraints de stopper momentan&eacute;ment les commandes, veuillez-nous en excuser.<br class="display_mob" />Pas de panique, vous pouvez d&egrave;s &agrave; pr&eacute;sent continuer &agrave; vous inspirer et &agrave; d&eacute;couvrir notre collection online.<br class="display_mob" />Pour r&eacute;aliser votre achat, nous vous donnons rendez-vous dans votre boutique pr&eacute;f&eacute;r&eacute;e, o&ugrave; nos &eacute;quipes se feront un plaisir de vous accompagner.<br />Vous cherchez le magasin le plus proche de chez vous ? <a class="Paragraph--Underline" href="https://magasins.camaieu.fr/">PAR ICI</a></span></div>
+</div>
+<script>
+	// bandeau haut de page
+	$("header").before('<div class="StickyInfo Stickyinfo-all-pages-haut">' +
+		'<div class="Background_Booster">&nbsp;&nbsp;</div><div class="Paragraph_Content"> <span class="Paragraph CenterText">Chère cliente, </span><br/><span class="Paragraph CenterText"> Soucieux de garantir une qualité de service suffisante sur nos livraisons, nous sommes contraints de stopper momentanément les commandes, veuillez-nous en excuser.<br class="display_mob" />Pas de panique, vous pouvez dès à présent continuer à vous inspirer et à découvrir notre collection online. <br class="display_mob" /> Pour réaliser votre achat, nous vous donnons rendez-vous dans votre boutique préférée, où nos équipes se feront un plaisir de vous accompagner. <br /> Vous cherchez le magasin le plus proche de chez vous ? <a href="https://magasins.camaieu.fr/" class="Paragraph--Underline">PAR ICI</a></span>' +
+		'</div>'
+	);
+	// script close button
+	// document.cookie pour enregistrer l'information de la fermeture du bouton 
+	// hide() pour l'action de cacher le button
+
+	$(document).ready(function () {
+		//$(".Stickybooster-all-pages-haut .close-button").click(function () { document.cookie = "close-bonus-offre=1", $(".Stickybooster-all-pages-haut").hide() }), $.cookie("bonus-offre") && $(".Stickybooster-all-pages-haut").hide();
+		//$(".Stickyinfo-all-pages-bas .close-button").click(function () { document.cookie = "close-bonus-offre=1", $(".Stickyinfo-all-pages-bas").hide() }), $.cookie("bonus-offre") && $(".Stickyinfo-all-pages-bas").hide();
+	});
+
+</script></div></div><div class="yCmsComponent">
 <div class="Toastr">
         <div class="Toastr-icon Icon Icon--user"></div>
         <span class="Toastr-message Toastr-message--left js-toastAuthenticate">
@@ -1255,7 +1383,7 @@ $(document).ready(function () {
                         <a href="https://www.camaieu.fr:443/my-account/register" title="Je cr&eacute;e mon compte" id="popinCreateCompteId" class="ModalLogin-Submit">Me créer un compte</a>
                     </div>
             <div>
-<input type="hidden" name="CSRFToken" value="2c400e4b-59d5-4291-a1e3-544b9660a1b0" />
+<input type="hidden" name="CSRFToken" value="6e4809b7-7467-44c6-9226-2fa3b8e0ea26" />
 </div></form>
             <div id="js-login-email-info" class="CreateAccount-fidInfo-container js-hideInfoLoginModal" style="display: none;">
                 <div class="ModalLogin-loginInfo">
@@ -1328,7 +1456,7 @@ $( document ).ready(function() {
                     <span>Valider</span>
                 </button>
             <div>
-<input type="hidden" name="CSRFToken" value="2c400e4b-59d5-4291-a1e3-544b9660a1b0" />
+<input type="hidden" name="CSRFToken" value="6e4809b7-7467-44c6-9226-2fa3b8e0ea26" />
 </div></form>
 
             <button class="Layer-close js-ModalForgottenPwd-Close">
@@ -1356,7 +1484,7 @@ $( document ).ready(function() {
 			ACC.config.commonResourcePath = "/_ui/dist";
 			ACC.config.siteResourcePath = "/_ui/desktop/site-camaieu-fr";
 			ACC.config.rootPath = "/_ui/desktop";
-			ACC.config.CSRFToken = "2c400e4b-59d5-4291-a1e3-544b9660a1b0";
+			ACC.config.CSRFToken = "6e4809b7-7467-44c6-9226-2fa3b8e0ea26";
 			ACC.config.urlEvoke = "";
 			ACC.config.api_key = "";
 			ACC.config.productAlreadyInWishList = "";
