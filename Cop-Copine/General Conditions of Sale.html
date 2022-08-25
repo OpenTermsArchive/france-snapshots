@@ -1081,12 +1081,13 @@ Signature du/des consommateur(s) (uniquement en cas de notification du pr&eacute
             <div class="prod_listes right_element_prod">
                 <div class="titre_choices_list">choose_color</div>
                 <div class="choices_list">
-                    <div :class="{lonely: (products.length? itm.colors.length:TGproduct.colors.length), firstElem: (index === 0)}" class="form_itm check color" :data-color="color.label" v-for="(color, index) in (products.length? itm.colors:TGproduct.colors)">
+                    <div :class="{lonely: (products.length? itm.colors.length:TGproduct.colors.length), firstElem: (index === 0)}" class="form_itm check color" :data-color="color.label" v-for="(color, index) in (products.length? itm.colors:TGproduct.colors)" >
                         <input type="hidden" :name="'itm_id_' + color.id + (products.length? (itm.rr_id != '' ? '_' + itm.rr_id : ''):(TGproduct.rr_id != '' ? '_' + TGproduct.rr_id : ''))" :value="(products.length? (itm.is_regroupement_reference ? color.fk_produit_id : itm.produit_id):(TGproduct.is_regroupement_reference ? color.fk_produit_id : TGproduct.produit_id))" />
                         <input :id="'color_' + (products.length? itm.produit_id:TGproduct.id) + '_' + color.id + (products.length? (itm.rr_id != '' ? '_' + itm.rr_id : ''):(TGproduct.rr_id != '' ? '_' + TGproduct.rr_id : ''))" :class="'input_check radio prodColor color_' + (products.length? itm.produit_id + (itm.rr_id != '' ? '_' + itm.rr_id : ''):TGproduct.id + (TGproduct.rr_id != '' ? '_' + TGproduct.rr_id : ''))" type="radio" name="itm_color" :checked="(color.id == (products.length? itm.first_color_id:TGproduct.first_color_id) ? 'ckecked' : '')" :value="color.id" :data-pic="color.src" :data-nom="color.label" :onchange="'onItemColorChange.call(this, this.form, \'' + (products.length? itm.is_regroupement_reference:TGproduct.is_regroupement_reference) + '\', \'' + (products.length? (itm.rr_id != '' ? '_' + itm.rr_id : ''):(TGproduct.rr_id != '' ? '_' + TGproduct.rr_id : '')) + '\');'" />
                                                     <label :class="(color.is_primaire != '1') ? 1 :'primary_color_'+ color.is_primaire" :data-hex="color.hexa"  :for="'color_' + (products.length? itm.produit_id:TGproduct.id) + '_' + color.id + (products.length? (itm.rr_id != '' ? '_' + itm.rr_id : ''):(TGproduct.rr_id != '' ? '_' + TGproduct.rr_id : ''))" :title="color.label" :style="(color.hexa != '' ? 'background-color: ' + color.hexa : 'background-image: url(/img/couleur/' + color.id + '.jpg)')">&nbsp;</label>
                                             </div>
 
+                    
                     <input :id="'couleurProd_' + (products.length? itm.produit_id + (itm.rr_id != '' ? '_' + itm.rr_id : ''):TGproduct.id + (TGproduct.rr_id != '' ? '_' + TGproduct.rr_id : ''))" type="hidden" name="couleurProd" :value="(products.length? itm.first_color_id:TGproduct.first_color_id)" :data-produitid="(products.length? (itm.is_regroupement_reference ? itm.fk_produit_id : ''):(TGproduct.is_regroupement_reference ? TGproduct.id : ''))" />
                 </div>
             </div>
@@ -1128,7 +1129,7 @@ Signature du/des consommateur(s) (uniquement en cas de notification du pr&eacute
     </div>
 
     <!--Alerte stock -->
-            <div :id="'bloc_add_alert_' + (products.length? itm.produit_id + (itm.rr_id != '' ? '_' + itm.rr_id : ''):TGproduct.id + (TGproduct.rr_id != '' ? '_' + TGproduct.rr_id : ''))" class="full btnAddBasketWrapper" :class="'bloc_add_alert_' + (products.length? itm.produit_id + (itm.rr_id != '' ? '_' + itm.rr_id : ''):TGproduct.id + (TGproduct.rr_id != '' ? '_' + TGproduct.rr_id : '')) " style="display:none">
+            <div :id="'bloc_add_alert_' + (products.length? itm.produit_id + (itm.rr_id != '' ? '_' + itm.rr_id : ''):TGproduct.id + (TGproduct.rr_id != '' ? '_' + TGproduct.rr_id : ''))" class="full btnAddBasketWrapper expressAlertStock" :class="'bloc_add_alert_' + (products.length? itm.produit_id + (itm.rr_id != '' ? '_' + itm.rr_id : ''):TGproduct.id + (TGproduct.rr_id != '' ? '_' + TGproduct.rr_id : '')) " style="display:none">
 
             <div class="alert_stock">
                 <span>M'avertir de sa disponibilité</span>
@@ -1477,7 +1478,7 @@ Signature du/des consommateur(s) (uniquement en cas de notification du pr&eacute
             <div id="shad_menu" class="shad"></div>
         </div>
 
-                <script src="/js/lazyload.1661274175.js"></script>
+                <script src="/js/lazyload.1661381019.js"></script>
 
         <script>
             var path_relative_root = '/';
@@ -1497,11 +1498,11 @@ Signature du/des consommateur(s) (uniquement en cas de notification du pr&eacute
         <script src="https://www.google.com/recaptcha/api.js?hl=fr"></script>
         <script src="https://apis.google.com/js/platform.js?onload=init"></script>
         <meta name="google-signin-client_id" content="">
-        <script src="/js/lang/fr.1661325695.js"></script>
+        <script src="/js/lang/fr.1661410408.js"></script>
 
                     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
-                    <script id="wShopRangeSlider" src="/js/wShopRangeSlider.1661274175.js"></script>
-        <script src="/js/wShopForms.1661274175.js"></script>
+                    <script id="wShopRangeSlider" src="/js/wShopRangeSlider.1661381019.js"></script>
+        <script src="/js/wShopForms.1661381019.js"></script>
 
         
         <script>
@@ -1534,10 +1535,10 @@ Signature du/des consommateur(s) (uniquement en cas de notification du pr&eacute
             });
         </script>
 
-        <script type="application/javascript" src="/js/partials.1661274175.js"></script>
-        <script src="/js/wshop.1661274175.js"></script>
+        <script type="application/javascript" src="/js/partials.1661381019.js"></script>
+        <script src="/js/wshop.1661381019.js"></script>
         <script src="/js/script.1661324807.js"></script>
-        <script src="/js/intlTelInput.1661274175.js"></script>
+        <script src="/js/intlTelInput.1661381019.js"></script>
 
         		<script type="text/javascript">
 
@@ -1579,7 +1580,7 @@ Signature du/des consommateur(s) (uniquement en cas de notification du pr&eacute
             overlay.showOverlay();
         });
     </script>
-    <script type="text/javascript">var lang_iso = 'fr';</script><script type="text/javascript">var siteCurrency = {};siteCurrency.code = 'EUR';siteCurrency.symbol_left = '';siteCurrency.symbol_right = '&euro;';siteCurrency.decimal_place = '2';var PRICE_FORMAT_PLAIN_JS = '[<unit>],[<decimal>] [<symbol_right>]';var PRICE_FORMAT_PLAIN_JS_NO_CENTS = '[<unit>]<span class="separate">,</span><span class="no_cents cents">[<decimal>]</span> [<symbol_right>]';</script><script type="text/javascript">var nb_try_auth = 0;var max_try_auth = 3;var token_security = '84cedbe8097d8feab6502c49f81d37d5cdc224d8';var captcha_google = '6Lc2K8oaAAAAAHOk4ouZ_SDB7NKKcwa67C2etRA7';</script>    <script type="application/javascript">
+    <script type="text/javascript">var lang_iso = 'fr';</script><script type="text/javascript">var siteCurrency = {};siteCurrency.code = 'EUR';siteCurrency.symbol_left = '';siteCurrency.symbol_right = '&euro;';siteCurrency.decimal_place = '2';var PRICE_FORMAT_PLAIN_JS = '[<unit>],[<decimal>] [<symbol_right>]';var PRICE_FORMAT_PLAIN_JS_NO_CENTS = '[<unit>]<span class="separate">,</span><span class="no_cents cents">[<decimal>]</span> [<symbol_right>]';</script><script type="text/javascript">var nb_try_auth = 0;var max_try_auth = 3;var token_security = 'ef6fc6d721080f331c7360cd4eeb39c4ea12774a';var captcha_google = '6Lc2K8oaAAAAAHOk4ouZ_SDB7NKKcwa67C2etRA7';</script>    <script type="application/javascript">
         set_3ds2_datas();
     </script>
                 <script script="text/javascript">
