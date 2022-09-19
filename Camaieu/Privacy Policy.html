@@ -505,140 +505,6 @@ $('#addToCartForm > div.ProductAddToCart-Panel.js-productAddToCartPanel > div.Pr
 
 <div class="Booster js-Booster">
                 <div class="yCmsComponent">
-<div class="content "><style type="text/css">.StickyInfo .Flexbox {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .StickyInfo .Paragraph,
-    .StickyInfo a {
-        color: #FFF !important;
-        line-height: 1.3;
-    }
-
-    .StickyInfo span .WhiteText {
-        color: #FFF !important;
-        line-height: 1.3;
-        font-weight: 800;
-    }
-
-    .StickyInfo {
-        background-color: #A29686;
-        color: #fff !important;
-        padding: .75rem;
-        width: 100%;
-        text-align: center;
-        z-index: 11;
-        opacity: 0.9;
-    }
-
-    .StickyInfo i {
-        margin-left: 5px;
-    }
-
-    .StickyInfo p,
-    .StickyInfo .Paragraph {
-        margin: 0;
-    }
-
-    .StickyInfo .close-button {
-        top: 15%;
-        position: absolute;
-        right: 2%;
-        font-size: 0;
-        width: 18px;
-        height: 18px;
-        color: #E9DCBE;
-    }
-
-    .StickyInfo .close-button i {
-        display: inline-block;
-        width: 20px;
-        height: 20px;
-        font-family: FontAwesome;
-        font-style: inherit;
-        text-align: center;
-        position: absolute;
-        right: 0;
-        top: 0;
-        color: #fff !important;
-        font-size: 2rem;
-    }
-
-    .StickyInfo .Paragraph--Underline {
-        text-decoration: underline;
-        display: initial;
-        font-weight: 800;
-        margin-left: 0.2%;
-        font-size: 1.2rem;
-    }
-
-
-    .Stickyinfo-all-pages-haut {
-        display: block;
-        position: sticky;
-        position: -webkit-sticky;
-        top: 0;
-    }
-
-    .Stickyinfo-all-pages-bas {
-        display: none;
-    }
-
-    /* devices tab & mob */
-    @media screen and (min-width: 768px) {
-        .StickyInfo .Flexbox {
-            flex-direction: row !important;
-            margin: 0% !important;
-        }
-    }
-
-    @media screen and (min-width: 1024px) {
-        .display_mob {
-            display: none
-        }
-    }
-
-    @media screen and (max-width: 805px) {
-        .StickyInfo .close-button {
-            right: 2%;
-            top: 8%;
-        }
-
-        .Stickyinfo-all-pages-haut {
-            display: none;
-        }
-
-        .Stickyinfo-all-pages-bas {
-            position: fixed;
-            bottom: 80px;
-            width: 100%;
-            display: block;
-        }
-    }
-</style>
-<div class="StickyInfo Stickyinfo-all-pages-bas">
-<div class="Background_Booster"></div>
-
-<div class="Paragraph_Content"><a href="/c/07122017/fashion-ticket#cmtype=content#cmname=fashion-ticket#cmcible=all#cmpos=bdo"><span class="Paragraph CenterText">Fashion Ticket: <strong>2O€ offerts d&egrave;s 70€</strong> ou<br /><strong>10€ offerts d&egrave;s 40€</strong> d’achat sur une s&eacute;lection de produits avec le code <strong>SP28</strong> <span class="Paragraph--Underline">JE FONCE</span> </span> </a> <a class="close-button" href="#"> <i class="Icon Icon--close_round"></i> </a></div>
-<script>
-        // bandeau haut de page
-        $("header").before('<div class="StickyInfo Stickyinfo-all-pages-haut">' +
-            '<div class="Background_Booster">&nbsp;&nbsp;</div><div class="Paragraph_Content"><a href="/c/07122017/fashion-ticket#cmtype=content#cmname=fashion-ticket#cmcible=all#cmpos=bdo"><span class="Paragraph CenterText">Fashion Ticket: <strong>2O€ offerts dès 70€</strong> ou <strong>10€ offerts dès 40€</strong> d’achat sur une s&eacute;lection de produits avec le code <strong>SP28</strong> <span class="Paragraph--Underline">JE FONCE</span><br /><a class="close-button" href="#"><i class="Icon Icon--close_round"></i></a></span></a>' +
-            '</div>'
-        );
-        // script close button
-        // document.cookie pour enregistrer l'information de la fermeture du bouton 
-        // hide() pour l'action de cacher le button
-
-        $(document).ready(function () {
-            //$(".Stickybooster-all-pages-haut .close-button").click(function () { document.cookie = "close-bonus-offre=1", $(".Stickybooster-all-pages-haut").hide() }), $.cookie("bonus-offre") && $(".Stickybooster-all-pages-haut").hide();
-            $(".Stickyinfo-all-pages-bas .close-button").click(function () { document.cookie = "close-bonus-offre=1", $(".Stickyinfo-all-pages-bas").hide() }), $.cookie("bonus-offre") && $(".Stickyinfo-all-pages-bas").hide();
-        });
-
-    </script></div>
-</div></div><div class="yCmsComponent">
 <div class="Toastr">
         <div class="Toastr-icon Icon Icon--user"></div>
         <span class="Toastr-message Toastr-message--left js-toastAuthenticate">
@@ -1104,7 +970,8 @@ $('#addToCartForm > div.ProductAddToCart-Panel.js-productAddToCartPanel > div.Pr
 </div>
 </div></ul>
             </nav>
-        <section class="Container FooterSeoContainer">
+        
+<section class="Container FooterSeoContainer">
         <div class="FooterSeoContainer-wrapper">
             </div>
     </section>
@@ -1234,7 +1101,7 @@ $('#addToCartForm > div.ProductAddToCart-Panel.js-productAddToCartPanel > div.Pr
                         <a href="https://www.camaieu.fr:443/my-account/register" title="Je cr&eacute;e mon compte" id="popinCreateCompteId" class="ModalLogin-Submit">Me créer un compte</a>
                     </div>
             <div>
-<input type="hidden" name="CSRFToken" value="0ae1a070-cdc1-4d93-b0f7-9ab7707a6a74" />
+<input type="hidden" name="CSRFToken" value="d039d5da-95e5-46d5-8e31-5aea89e63b87" />
 </div></form>
             <div id="js-login-email-info" class="CreateAccount-fidInfo-container js-hideInfoLoginModal" style="display: none;">
                 <div class="ModalLogin-loginInfo">
@@ -1307,7 +1174,7 @@ $( document ).ready(function() {
                     <span>Valider</span>
                 </button>
             <div>
-<input type="hidden" name="CSRFToken" value="0ae1a070-cdc1-4d93-b0f7-9ab7707a6a74" />
+<input type="hidden" name="CSRFToken" value="d039d5da-95e5-46d5-8e31-5aea89e63b87" />
 </div></form>
 
             <button class="Layer-close js-ModalForgottenPwd-Close">
@@ -1335,7 +1202,7 @@ $( document ).ready(function() {
 			ACC.config.commonResourcePath = "/_ui/dist";
 			ACC.config.siteResourcePath = "/_ui/desktop/site-camaieu-fr";
 			ACC.config.rootPath = "/_ui/desktop";
-			ACC.config.CSRFToken = "0ae1a070-cdc1-4d93-b0f7-9ab7707a6a74";
+			ACC.config.CSRFToken = "d039d5da-95e5-46d5-8e31-5aea89e63b87";
 			ACC.config.urlEvoke = "";
 			ACC.config.api_key = "";
 			ACC.config.productAlreadyInWishList = "";
