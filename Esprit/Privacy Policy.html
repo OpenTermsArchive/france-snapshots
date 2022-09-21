@@ -51,6 +51,7 @@
 
 
 
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -65,7 +66,7 @@
     if (/Trident\/|MSIE/.test(window.navigator.userAgent)) {
         var script = document.createElement('script');
         script.type = 'text/javascript';
-        script.src = "/on/demandware.static/Sites-EspritMainHub-Site/-/fr_FR/v1663643835211/js/ie11Polyfills.js";
+        script.src = "/on/demandware.static/Sites-EspritMainHub-Site/-/fr_FR/v1663739231330/js/ie11Polyfills.js";
         document.head.appendChild(script);
     }
 </script>
@@ -76,8 +77,8 @@
     };
 </script>
 
-<script defer type="text/javascript" id="utils-js" src="/on/demandware.static/Sites-EspritMainHub-Site/-/fr_FR/v1663643835211/js/thirdParty/utils.js"></script>
-<script defer type="text/javascript" id="main-js" src="/on/demandware.static/Sites-EspritMainHub-Site/-/fr_FR/v1663643835211/js/main.js"></script>
+<script defer type="text/javascript" id="utils-js" src="/on/demandware.static/Sites-EspritMainHub-Site/-/fr_FR/v1663739231330/js/thirdParty/utils.js"></script>
+<script defer type="text/javascript" id="main-js" src="/on/demandware.static/Sites-EspritMainHub-Site/-/fr_FR/v1663739231330/js/main.js"></script>
 
 
 <!--<![endif]-->
@@ -86,7 +87,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="msapplication-TileColor" content="#ffffff" />
 <meta name="theme-color" content="#ffffff" />
-<meta property="og:image" content="https://www.esprit.fr/on/demandware.static/Sites-EspritMainHub-Site/-/default/dw9bfe616f/images/favicons/android-chrome-192x192.png" />
+<meta property="og:image" content="https://www.esprit.fr/on/demandware.static/Sites-EspritMainHub-Site/-/default/dwd1b3d642/images/favicons/android-chrome-192x192.png" />
 
 
 
@@ -145,12 +146,20 @@
 
 
 <script>
-    function handleErrorImages(element) {
+    function handleErrorImages(element, type) {
+        const fallbackImages = {
+            'no-image': '/on/demandware.static/Sites-EspritMainHub-Site/-/default/dwee56f943/images/no-image-found.jpg',
+            'no-swatch': '/on/demandware.static/Sites-EspritMainHub-Site/-/default/dw0b9d833d/images/no-swatch-found.png'
+        };
+        let src = fallbackImages['no-image'];
+        if (type && type in fallbackImages) {
+            src = fallbackImages[type]
+        }
         let sources = element.parentNode.querySelectorAll('source');
         sources.forEach(function (value, index) {
             value.remove();
         });
-        element.src = '/on/demandware.static/Sites-EspritMainHub-Site/-/default/dwc02bc3a4/images/no-image-found.jpg';
+        element.src = src;
     }
 
     function handleErrorImageAndReplaceItWithAltTag(element) {
@@ -164,26 +173,26 @@
 
 
 
-<link rel="preload" href="/on/demandware.static/Sites-EspritMainHub-Site/-/fr_FR/v1663643835211/fonts/stencil/Esprit_Stencil-Regular.woff2" as="font" type="font/woff2" crossorigin />
-<link rel="preload" href="/on/demandware.static/Sites-EspritMainHub-Site/-/fr_FR/v1663643835211/fonts/suisse/regular/SuisseIntl-Regular-WebXL-stripped.woff2" as="font" type="font/woff2" crossorigin />
-<link rel="preload" href="/on/demandware.static/Sites-EspritMainHub-Site/-/fr_FR/v1663643835211/fonts/suisse/semibold/SuisseIntl-SemiBold-WebXL-stripped.woff2" as="font" type="font/woff2" crossorigin />
-<link rel="preload" href="/on/demandware.static/Sites-EspritMainHub-Site/-/fr_FR/v1663643835211/fonts/suisse/thin/SuisseIntl-Thin-WebXL-stripped.woff2" as="font" type="font/woff2" crossorigin />
-<link rel="preload" href="/on/demandware.static/Sites-EspritMainHub-Site/-/fr_FR/v1663643835211/fonts/suisse/light/SuisseIntl-Light-WebXL-stripped.woff2" as="font" type="font/woff2" crossorigin />
-<link rel="preload" href="/on/demandware.static/Sites-EspritMainHub-Site/-/fr_FR/v1663643835211/fonts/suisse/medium/SuisseIntl-Medium-WebXL-stripped.woff2" as="font" type="font/woff2" crossorigin />
-<link rel="preload" href="/on/demandware.static/Sites-EspritMainHub-Site/-/fr_FR/v1663643835211/fonts/esprit-icons.ttf?l28ixr" as="font" crossorigin />
+<link rel="preload" href="/on/demandware.static/Sites-EspritMainHub-Site/-/fr_FR/v1663739231330/fonts/stencil/Esprit_Stencil-Regular.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/on/demandware.static/Sites-EspritMainHub-Site/-/fr_FR/v1663739231330/fonts/suisse/regular/SuisseIntl-Regular-WebXL-stripped.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/on/demandware.static/Sites-EspritMainHub-Site/-/fr_FR/v1663739231330/fonts/suisse/semibold/SuisseIntl-SemiBold-WebXL-stripped.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/on/demandware.static/Sites-EspritMainHub-Site/-/fr_FR/v1663739231330/fonts/suisse/thin/SuisseIntl-Thin-WebXL-stripped.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/on/demandware.static/Sites-EspritMainHub-Site/-/fr_FR/v1663739231330/fonts/suisse/light/SuisseIntl-Light-WebXL-stripped.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/on/demandware.static/Sites-EspritMainHub-Site/-/fr_FR/v1663739231330/fonts/suisse/medium/SuisseIntl-Medium-WebXL-stripped.woff2" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/on/demandware.static/Sites-EspritMainHub-Site/-/fr_FR/v1663739231330/fonts/esprit-icons.ttf?l28ixr" as="font" crossorigin />
 
-<link rel="preload stylesheet" id="bootstrap-css" href="/on/demandware.static/Sites-EspritMainHub-Site/-/fr_FR/v1663643835211/css/bootstrap.css" as="style"/>
-<link rel="preload stylesheet" id="fabric-css" href="/on/demandware.static/Sites-EspritMainHub-Site/-/fr_FR/v1663643835211/css/fabric.css" as="style"/>
-
-
-    <link rel="preload stylesheet" href="/on/demandware.static/Sites-EspritMainHub-Site/-/fr_FR/v1663643835211/css/experience/components/commerceAssets/photoTile.css" as="style" />
+<link rel="preload stylesheet" id="bootstrap-css" href="/on/demandware.static/Sites-EspritMainHub-Site/-/fr_FR/v1663739231330/css/bootstrap.css" as="style"/>
+<link rel="preload stylesheet" id="fabric-css" href="/on/demandware.static/Sites-EspritMainHub-Site/-/fr_FR/v1663739231330/css/fabric.css" as="style"/>
 
 
-<link rel="apple-touch-icon" sizes="180x180" href="/on/demandware.static/Sites-EspritMainHub-Site/-/default/dw5cc88f18/images/favicons/apple-touch-icon.png" />
-<link rel="icon" type="image/png" sizes="32x32" href="/on/demandware.static/Sites-EspritMainHub-Site/-/default/dw367cb64c/images/favicons/favicon-32x32.png" />
-<link rel="icon" type="image/png" sizes="16x16" href="/on/demandware.static/Sites-EspritMainHub-Site/-/default/dw139d9acc/images/favicons/favicon-16x16.png" />
+    <link rel="preload stylesheet" href="/on/demandware.static/Sites-EspritMainHub-Site/-/fr_FR/v1663739231330/css/experience/components/commerceAssets/photoTile.css" as="style" />
+
+
+<link rel="apple-touch-icon" sizes="180x180" href="/on/demandware.static/Sites-EspritMainHub-Site/-/default/dwf2135668/images/favicons/apple-touch-icon.png" />
+<link rel="icon" type="image/png" sizes="32x32" href="/on/demandware.static/Sites-EspritMainHub-Site/-/default/dwd7d3379c/images/favicons/favicon-32x32.png" />
+<link rel="icon" type="image/png" sizes="16x16" href="/on/demandware.static/Sites-EspritMainHub-Site/-/default/dwe991f689/images/favicons/favicon-16x16.png" />
 <link rel="manifest" href="/on/demandware.store/Sites-EspritMainHub-Site/fr_FR/Content-Manifest" crossorigin="use-credentials" />
-<link rel="mask-icon" href="/on/demandware.static/Sites-EspritMainHub-Site/-/default/dwea2608ef/images/favicons/safari-pinned-tab.svg" color="#717171" />
+<link rel="mask-icon" href="/on/demandware.static/Sites-EspritMainHub-Site/-/default/dw1f9212ff/images/favicons/safari-pinned-tab.svg" color="#717171" />
 
 
   
@@ -689,7 +698,7 @@ data-querystring="cid=data-privacy-statement-online-shop"
                         aria-controls="sg-navbar-collapse"
                         aria-expanded="false"
                         aria-label="Toggle navigation">
-                        
+
                         <i class="icon-003-menu"></i>
                     </button>
                     <a
@@ -697,9 +706,9 @@ data-querystring="cid=data-privacy-statement-online-shop"
                         href="https://www.esprit.fr"
                         title="Logo Esprit">
 
-                        <img 
-                            class="logo-home-img" 
-                            src="/on/demandware.static/Sites-EspritMainHub-Site/-/default/dw0dbbfeb6/images/logo.svg" 
+                        <img
+                            class="logo-home-img"
+                            src="/on/demandware.static/Sites-EspritMainHub-Site/-/default/dw6116e985/images/logo.svg"
                             alt="Commerce Cloud Storefront Reference Architecture" />
                     </a>
 
@@ -791,7 +800,7 @@ data-querystring="cid=data-privacy-statement-online-shop"
                                 <span>Nouveaut&eacute;s</span>
                                 
                                     <span class="top-menu-count-bubble">
-                                        245
+                                        286
                                     </span>
                                 
                             </a>
@@ -9188,14 +9197,12 @@ data-querystring="cid=data-privacy-statement-online-shop"
 
                 <div class="header-content-right">
                     <div class="header-icons">
-                        
-
                         <div class="d-xxl-none">
                             <button type="button" class="search-icon js-search-open icon icon-009-search"></button>
                         </div>
                         
 <span class="d-none"
-      data-utag-view="[{&quot;page_login_status&quot;:&quot;logged-out&quot;,&quot;sf_sid&quot;:&quot;8Wpx675iratld2P4BIad8_EFM2amg-DBmyY=&quot;,&quot;ab_segment&quot;:[]}]"
+      data-utag-view="[{&quot;page_login_status&quot;:&quot;logged-out&quot;,&quot;sf_sid&quot;:&quot;Kqb3D-1esxQJHD5mMI206I8QrPVZhd2BkfY=&quot;,&quot;ab_segment&quot;:[]}]"
       data-utag-link="[]"
       data-utag-link-search="[]"
       data-utag-link-subscribe="[]">
@@ -9207,10 +9214,10 @@ data-querystring="cid=data-privacy-statement-online-shop"
     if (dl === undefined) {
         var dl = {};
     }
-    dl.session_id = '8Wpx675iratld2P4BIad8_EFM2amg-DBmyY=';
+    dl.session_id = 'Kqb3D-1esxQJHD5mMI206I8QrPVZhd2BkfY=';
 </script>
 
-<input type="hidden" name="data-csrf" class="data-csrf" value="lnDNmLtMDiajNyF7cBeBg3HdSNOE0f4CgKOKgcPa_zGxeHwCE7lWasedGFnpWKWb3b3pV28n9PjEoBP84MAFDeNNRAI1ySTJQeYQG1PNWCphfWlfA0rlIyuGVK4lz9lz_3oJiJuvYqDlrnY4cfECIApIxOOpACuLp-FtQRXjSNlYkE9xlto=" />
+<input type="hidden" name="data-csrf" class="data-csrf" value="uJcwosFAaXrHr-smYSkELbrsY0BCZh1E5BjsneZd1AdzUkUmI1Rck0sdgob-7faRqHxd-3SBJ4k_nsf3NBqpp3zeEkHbvOxHpYQ4HW0TjqMbGsMTKiq8cAisftFCrgHLBB-CRpA3wDjYvBrZsS62qgPXkFE85xsGnLN1vpGho579ryrAPWc=" />
 
 
 
@@ -9626,7 +9633,7 @@ b.parentNode.insertBefore(a, b);
     </div>
 </div>
 
-<footer id="footercontent" class="footer-content">
+<footer id="footercontent" class="footer-content mt-4 pt-lg-4">
     
 
 
@@ -9657,165 +9664,230 @@ b.parentNode.insertBefore(a, b);
     <div class="container">
         <div class="footer-container row">
             
-                <div class="footer-item col-sm-3 ">
-                    <dl>
-                        <dt>
-                            <a class="accordion-header collapsed" data-toggle="collapse" href="#collapseService">Service client&egrave;le</a>
-                        </dt>
-                        <div id="collapseService" class="accordion collapse">
-                            
-                                <dd>
-                                    <a  href="/service-aide/service-help.html" >Service &amp; aide</a>
-                                </dd>
-                            
-                                <dd>
-                                    <a  href="/contact/contact.html" >Contact</a>
-                                </dd>
-                            
-                                <dd>
-                                    <a  href="/telephone--01-7654-7338-/telephone.html" >T&eacute;l&eacute;phone (01 7654 7338)</a>
-                                </dd>
-                            
-                                <dd>
-                                    <a  href="/post-fax/postfax.html" >Post/Fax</a>
-                                </dd>
-                            
-                                <dd>
-                                    <a target="_blank" rel="noopener noreferrer" href="/chat/chat.html" >Chat</a>
-                                </dd>
-                            
-                                <dd>
-                                    <a  href="/votre-opinion-suggestions/ideas.html" onclick="KAMPYLE_ONSITE_SDK.showForm&#40;1793&#41;; return false;">Votre opinion / suggestions</a>
-                                </dd>
-                            
-                        </div>
-                    </dl>
+                <div class="col-12 col-lg-3">
+                    <div class="footer-item">
+                        <dl>
+                            <dt>
+                                <a class="accordion-header collapsed" data-toggle="collapse" href="#collapseService">Service client&egrave;le</a>
+                            </dt>
+                            <div id="collapseService" class="accordion collapse">
+                                
+                                    
+
+                                    <dd>
+                                        <a href="/service-aide/service-help.html"
+                                            
+                                            
+                                            
+                                        >
+                                            Service &amp; aide
+                                        </a>
+                                    </dd>
+                                
+                                    
+
+                                    <dd>
+                                        <a href="/contact/contact.html"
+                                            
+                                            
+                                            
+                                        >
+                                            Contact
+                                        </a>
+                                    </dd>
+                                
+                                    
+
+                                    <dd>
+                                        <a href="/telephone--01-7654-7338-/telephone.html"
+                                            
+                                            
+                                            
+                                        >
+                                            T&eacute;l&eacute;phone (01 7654 7338)
+                                        </a>
+                                    </dd>
+                                
+                                    
+
+                                    <dd>
+                                        <a href="/post-fax/postfax.html"
+                                            
+                                            
+                                            
+                                        >
+                                            Post/Fax
+                                        </a>
+                                    </dd>
+                                
+                                    
+
+                                    <dd>
+                                        <a href="/chat/chat.html"
+                                            target="_blank" rel="noopener noreferrer"
+                                            
+                                            
+                                        >
+                                            Chat
+                                        </a>
+                                    </dd>
+                                
+                                    
+
+                                    <dd>
+                                        <a href="/votre-opinion-suggestions/ideas.html"
+                                            
+                                            onclick="KAMPYLE_ONSITE_SDK.showForm&#40;1793&#41;; return false;"
+                                            
+                                        >
+                                            Votre opinion / suggestions
+                                        </a>
+                                    </dd>
+                                
+                            </div>
+                        </dl>
+                    </div>
+
+                    
                 </div>
             
 
             
-                <div class="footer-item col-sm-3 ">
-                    <dl>
-                        <dt>
-                            <a class="accordion-header collapsed" data-toggle="collapse" href="#collapseShopping">Shopping facile</a>
-                        </dt>
-                        <div id="collapseShopping" class="accordion collapse">
-                            
-                                <dd>
-                                    <a  href="/passer-commande/placeYourOrder.html" >Passer commande</a>
-                                </dd>
-                            
-                                <dd>
-                                    <a  href="/livraison-0-99-%E2%82%AC-seulement/deliveryPrice.html" >Livraison 0,99 &euro; seulement</a>
-                                </dd>
-                            
-                                <dd>
-                                    <a  href="/envoi-sous-1-a-3-jours/shippingDays.html" >Envoi sous 1 &agrave; 3 jours</a>
-                                </dd>
-                            
-                                <dd>
-                                    <a  href="/paiement-securise/paymentCC.html" >Paiement s&eacute;curis&eacute;</a>
-                                </dd>
-                            
-                                <dd>
-                                    <a  href="/retours-gratuits/freeReturns.html" >Retours gratuits</a>
-                                </dd>
-                            
-                                <dd>
-                                    <a  href="/esprit-friends--3-bonus-/espritFriends.html" >ESPRIT FRIENDS (3 % bonus)</a>
-                                </dd>
-                            
-                                <dd>
-                                    <a  href="/click-collect/clickCollect.html" >Click &amp; Collect</a>
-                                </dd>
-                            
-                        </div>
-                    </dl>
+                <div class="col-12 col-lg-3">
+                    <div class="footer-item">
+                        <dl>
+                            <dt>
+                                <a class="accordion-header collapsed" data-toggle="collapse" href="#collapseShopping">Shopping facile</a>
+                            </dt>
+                            <div id="collapseShopping" class="accordion collapse">
+                                
+                                    <dd>
+                                        <a  href="/passer-commande/placeYourOrder.html" >Passer commande</a>
+                                    </dd>
+                                
+                                    <dd>
+                                        <a  href="/livraison-0-99-%E2%82%AC-seulement/deliveryPrice.html" >Livraison 0,99 &euro; seulement</a>
+                                    </dd>
+                                
+                                    <dd>
+                                        <a  href="/envoi-sous-1-a-3-jours/shippingDays.html" >Envoi sous 1 &agrave; 3 jours</a>
+                                    </dd>
+                                
+                                    <dd>
+                                        <a  href="/paiement-securise/paymentCC.html" >Paiement s&eacute;curis&eacute;</a>
+                                    </dd>
+                                
+                                    <dd>
+                                        <a  href="/retours-gratuits/freeReturns.html" >Retours gratuits</a>
+                                    </dd>
+                                
+                                    <dd>
+                                        <a  href="/esprit-friends--3-bonus-/espritFriends.html" >ESPRIT FRIENDS (3 % bonus)</a>
+                                    </dd>
+                                
+                                    <dd>
+                                        <a  href="/click-collect/clickCollect.html" >Click &amp; Collect</a>
+                                    </dd>
+                                
+                            </div>
+                        </dl>
+                    </div>
+
+                    
                 </div>
             
 
             
-                <div class="footer-item col-sm-3 ">
-                    <dl>
-                        <dt>
-                            <a class="accordion-header collapsed" data-toggle="collapse" href="#collapseAdvice">Conseils en ligne</a>
-                        </dt>
-                        <div id="collapseAdvice" class="accordion collapse">
-                            
-                                <dd>
-                                    <a  href="/tableaux-des-tailles/sizeTable.html" >Tableaux des tailles</a>
-                                </dd>
-                            
-                                <dd>
-                                    <a  href="/conseils-d-entretien/careInstructions.html" >Conseils d'entretien</a>
-                                </dd>
-                            
-                                <dd>
-                                    <a  href="/informations-matieres/materialInformation.html" >Informations mati&egrave;res</a>
-                                </dd>
-                            
-                                <dd>
-                                    <a  href="/disponibilite/availability.html" >Disponibilit&eacute;</a>
-                                </dd>
-                            
-                        </div>
-                    </dl>
+                <div class="col-12 col-lg-3">
+                    <div class="footer-item">
+                        <dl>
+                            <dt>
+                                <a class="accordion-header collapsed" data-toggle="collapse" href="#collapseAdvice">Conseils en ligne</a>
+                            </dt>
+                            <div id="collapseAdvice" class="accordion collapse">
+                                
+                                    <dd>
+                                        <a  href="/tableaux-des-tailles/sizeTable.html" >Tableaux des tailles</a>
+                                    </dd>
+                                
+                                    <dd>
+                                        <a  href="/conseils-d-entretien/careInstructions.html" >Conseils d'entretien</a>
+                                    </dd>
+                                
+                                    <dd>
+                                        <a  href="/informations-matieres/materialInformation.html" >Informations mati&egrave;res</a>
+                                    </dd>
+                                
+                                    <dd>
+                                        <a  href="/disponibilite/availability.html" >Disponibilit&eacute;</a>
+                                    </dd>
+                                
+                            </div>
+                        </dl>
+                    </div>
+
+                    
                 </div>
             
 
             
-                <div class="footer-item col-sm-3 ">
-                    <dl>
-                        <dt>
-                            <a class="accordion-header" data-toggle="collapse" href="#collapseEsprit">Esprit</a>
-                        </dt>
-                        <div id="collapseEsprit" class="accordion collapse show">
-                            
-                                <dd>
-                                    <a  href="/presse/press.html" >Presse</a>
-                                </dd>
-                            
-                                <dd>
-                                    <a  href="/relations-avec-les-investisseurs/investorRelations.html" >Relations avec les investisseurs</a>
-                                </dd>
-                            
-                                <dd>
-                                    <a  href="/carriere/careers.html" >Carri&egrave;re</a>
-                                </dd>
-                            
-                                <dd>
-                                    <a  href="/cgv/terms-conditions.html" >CGV</a>
-                                </dd>
-                            
-                                <dd>
-                                    <a  href="/mentions-legales/imprint-redirect.html" >Mentions l&eacute;gales</a>
-                                </dd>
-                            
-                                <dd>
-                                    <a  href="/retractation/withdrawal.html" >R&eacute;tractation</a>
-                                </dd>
-                            
-                                <dd>
-                                    <a  href="/programme-reserve-aux-partenaires-affilies/affiliate-program.html" >Programme r&eacute;serv&eacute; aux partenaires affili&eacute;s</a>
-                                </dd>
-                            
-                                <dd>
-                                    <a  href="/protection-des-donnees/dataProtection.html" >Protection des donn&eacute;es</a>
-                                </dd>
-                            
+                <div class="col-12 col-lg-3">
+                    <div class="footer-item">
+                        <dl>
+                            <dt>
+                                <a class="accordion-header collapsed" data-toggle="collapse" href="#collapseEsprit">Esprit</a>
+                            </dt>
+                            <div id="collapseEsprit" class="collapse" aria-labelledby="headingEsprit">
+                                
+                                    <dd>
+                                        <a  href="/presse/press.html" >Presse</a>
+                                    </dd>
+                                
+                                    <dd>
+                                        <a  href="/relations-avec-les-investisseurs/investorRelations.html" >Relations avec les investisseurs</a>
+                                    </dd>
+                                
+                                    <dd>
+                                        <a  href="/carriere/careers.html" >Carri&egrave;re</a>
+                                    </dd>
+                                
+                                    <dd>
+                                        <a  href="/cgv/terms-conditions.html" >CGV</a>
+                                    </dd>
+                                
+                                    <dd>
+                                        <a  href="/mentions-legales/imprint-redirect.html" >Mentions l&eacute;gales</a>
+                                    </dd>
+                                
+                                    <dd>
+                                        <a  href="/retractation/withdrawal.html" >R&eacute;tractation</a>
+                                    </dd>
+                                
+                                    <dd>
+                                        <a  href="/programme-reserve-aux-partenaires-affilies/affiliate-program.html" >Programme r&eacute;serv&eacute; aux partenaires affili&eacute;s</a>
+                                    </dd>
+                                
+                                    <dd>
+                                        <a  href="/protection-des-donnees/dataProtection.html" >Protection des donn&eacute;es</a>
+                                    </dd>
+                                
+                            </div>
+                        </dl>
+                    </div>
 
-                            
-    
+                    
+                        
 
-
-
-                        </div>
-                    </dl>
+                    
                 </div>
             
         </div>
-        
-        
+
+        <div class="row">
+            
+
+            <div class="col-12 footer-social-wrapper order-lg-1">
+                
     
 	
 	<div class="content-asset"><!-- dwMarker="content" dwContentID="18cf3dd1793d111ad8aeaa2c1f" -->
@@ -9863,11 +9935,9 @@ b.parentNode.insertBefore(a, b);
 
 
 
-    </div>
-    <hr class="hidden-xs-down" />
-    <div class="container">
-        <div class="row">
-            <div class="col-12 copyright-notice">
+            </div>
+
+            <div class="col py-3 order-lg-3 small text-white text-center text-lg-right">
                 
     
 	
@@ -10041,7 +10111,7 @@ b.parentNode.insertBefore(a, b);
     if (/Trident\/|MSIE/.test(window.navigator.userAgent)) {
         var script = document.createElement('script');
         script.type = 'text/javascript';
-        script.src = "/on/demandware.static/Sites-EspritMainHub-Site/-/fr_FR/v1663643835211/js/ie11Polyfills.js";
+        script.src = "/on/demandware.static/Sites-EspritMainHub-Site/-/fr_FR/v1663739231330/js/ie11Polyfills.js";
         document.head.appendChild(script);
     }
 </script>
@@ -10052,8 +10122,8 @@ b.parentNode.insertBefore(a, b);
     };
 </script>
 
-<script defer type="text/javascript" id="utils-js" src="/on/demandware.static/Sites-EspritMainHub-Site/-/fr_FR/v1663643835211/js/thirdParty/utils.js"></script>
-<script defer type="text/javascript" id="main-js" src="/on/demandware.static/Sites-EspritMainHub-Site/-/fr_FR/v1663643835211/js/main.js"></script>
+<script defer type="text/javascript" id="utils-js" src="/on/demandware.static/Sites-EspritMainHub-Site/-/fr_FR/v1663739231330/js/thirdParty/utils.js"></script>
+<script defer type="text/javascript" id="main-js" src="/on/demandware.static/Sites-EspritMainHub-Site/-/fr_FR/v1663739231330/js/main.js"></script>
 
 
 <![endif]-->
@@ -10076,9 +10146,9 @@ function trackPage() {
 /* ]]> */
 // -->
 </script>
-<script type="text/javascript" src="/on/demandware.static/Sites-EspritMainHub-Site/-/fr_FR/v1663643835211/internal/jscript/dwanalytics-22.2.js" async="async" onload="trackPage()"></script>
+<script type="text/javascript" src="/on/demandware.static/Sites-EspritMainHub-Site/-/fr_FR/v1663739231330/internal/jscript/dwanalytics-22.2.js" async="async" onload="trackPage()"></script>
 <!-- Demandware Active Data (body_end-active_data.js) -->
-<script src="/on/demandware.static/Sites-EspritMainHub-Site/-/fr_FR/v1663643835211/internal/jscript/dwac-21.7.js" type="text/javascript" async="async"></script><!-- CQuotient Activity Tracking (body_end-cquotient.js) -->
+<script src="/on/demandware.static/Sites-EspritMainHub-Site/-/fr_FR/v1663739231330/internal/jscript/dwac-21.7.js" type="text/javascript" async="async"></script><!-- CQuotient Activity Tracking (body_end-cquotient.js) -->
 <script src="https://cdn.cquotient.com/js/v2/gretel.min.js" type="text/javascript" async="async"></script>
 </body>
 </html>
