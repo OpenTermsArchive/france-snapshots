@@ -501,8 +501,8 @@ Télécharger l'app</a>
 <ul class="inline-flex overflow-hidden rounded-full border divide-s">
 <li><a href="https://www.li.me/fr-fr/legal/privacy-policy-2" class="block py-4 px-8 transition-all duration-250 hover:bg-brand-green focus:bg-brand-green">FR</a></li>
 <li><a href="https://www.li.me/en-fr/legal/privacy-policy-2" class="block py-4 px-8 transition-all duration-250 hover:bg-brand-green focus:bg-brand-green">EN</a></li>
-<li><a href="https://www.li.me/fr-fr/legal/privacy-policy" class="block py-4 px-8 hover:bg-brand-green focus:bg-brand-green transition-all duration-250">FR</a></li>
- <li><a href="https://www.li.me/en-fr/legal/privacy-policy" class="block py-4 px-8 hover:bg-brand-green focus:bg-brand-green transition-all duration-250">EN</a></li>
+<li><a href="https://www.li.me/fr-fr/legal/privacy-policy" class="block py-4 px-8 hover:bg-brand-green focus:bg-brand-green transition-all duration-250 bg-brand-green text-white">FR</a></li>
+<li><a href="https://www.li.me/en-fr/legal/privacy-policy" class="block py-4 px-8 hover:bg-brand-green focus:bg-brand-green transition-all duration-250">EN</a></li>
 </ul>
 </div>
 </div>
@@ -900,8 +900,8 @@ Sitemap</a>
 <svg class="w-[21px] h-[21px] rounded-full" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="m0 341.3h512v170.7h-512z" fill="#ffce00"></path><path d="m0 0h512v170.7h-512z"></path><path d="m0 170.7h512v170.6h-512z" fill="#d00"></path></svg>
 <span>Germany</span>
 </button>
-</div>
- <div>
+ </div>
+<div>
 <button type="button" @click="activeGroup = 'Greece'" class="flex items-center space-s-2 w-full h-12 text-sm text-gray-150 hover:text-green-100 focus:text-green-100" :class="{
                                     'text-green-100 font-medium': 'Greece' == activeGroup,
                                     'text-gray-150 hover:text-green-100 focus:text-green-100': 'Greece' != activeGroup
@@ -964,8 +964,8 @@ Sitemap</a>
 <span>New Zealand</span>
 </button>
 </div>
-<div>
- <button type="button" @click="activeGroup = 'Norway'" class="flex items-center space-s-2 w-full h-12 text-sm text-gray-150 hover:text-green-100 focus:text-green-100" :class="{
+ <div>
+<button type="button" @click="activeGroup = 'Norway'" class="flex items-center space-s-2 w-full h-12 text-sm text-gray-150 hover:text-green-100 focus:text-green-100" :class="{
                                     'text-green-100 font-medium': 'Norway' == activeGroup,
                                     'text-gray-150 hover:text-green-100 focus:text-green-100': 'Norway' != activeGroup
                                 }">
@@ -1151,7 +1151,7 @@ Sitemap</a>
 <div class="absolute top-0 bottom-0 -right-5 w-5 bg-gradient-to-l from-white"></div>
 <div class="absolute top-0 bottom-0 -left-5 w-5 bg-gradient-to-r from-white"></div>
 <div class="flex overflow-auto px-5 pb-3 -mx-5 space-s-8 text-sm whitespace-nowrap text-gray-150">
-<a href="https://www.li.me/en-cy/redirector" class="block py-2 hover:text-green-100 focus:text-green-100 align-center" :class="{'text-green-100 font-medium': 69 == 41}">English</a>
+ <a href="https://www.li.me/en-cy/redirector" class="block py-2 hover:text-green-100 focus:text-green-100 align-center" :class="{'text-green-100 font-medium': 69 == 41}">English</a>
 <a href="https://www.li.me/el-cy/redirector" class="block py-2 hover:text-green-100 focus:text-green-100 align-center" :class="{'text-green-100 font-medium': 72 == 41}">Ελληνικά</a>
 </div>
 </div>
@@ -1220,7 +1220,7 @@ Sitemap</a>
 <a href="https://www.li.me/en-il/redirector" class="block py-2 hover:text-green-100 focus:text-green-100 align-center" :class="{'text-green-100 font-medium': 19 == 41}">English</a>
 </div>
 </div>
-<div x-show="activeGroup == 'Italy'" class="relative" style="display: none;">
+ <div x-show="activeGroup == 'Italy'" class="relative" style="display: none;">
 <div class="absolute top-0 bottom-0 -right-5 w-5 bg-gradient-to-l from-white"></div>
 <div class="absolute top-0 bottom-0 -left-5 w-5 bg-gradient-to-r from-white"></div>
 <div class="flex overflow-auto px-5 pb-3 -mx-5 space-s-8 text-sm whitespace-nowrap text-gray-150">
@@ -1243,8 +1243,8 @@ Sitemap</a>
 <a href="https://www.li.me/nl-nl/redirector" class="block py-2 hover:text-green-100 focus:text-green-100 align-center" :class="{'text-green-100 font-medium': 35 == 41}">Nederlands</a>
 <a href="https://www.li.me/en-nl/redirector" class="block py-2 hover:text-green-100 focus:text-green-100 align-center" :class="{'text-green-100 font-medium': 26 == 41}">English</a>
 </div>
-</div>
- <div x-show="activeGroup == 'New Zealand'" class="relative" style="display: none;">
+ </div>
+<div x-show="activeGroup == 'New Zealand'" class="relative" style="display: none;">
 <div class="absolute top-0 bottom-0 -right-5 w-5 bg-gradient-to-l from-white"></div>
 <div class="absolute top-0 bottom-0 -left-5 w-5 bg-gradient-to-r from-white"></div>
 <div class="flex overflow-auto px-5 pb-3 -mx-5 space-s-8 text-sm whitespace-nowrap text-gray-150">
@@ -1271,7 +1271,6 @@ Sitemap</a>
 <div class="absolute top-0 bottom-0 -right-5 w-5 bg-gradient-to-l from-white"></div>
 <div class="absolute top-0 bottom-0 -left-5 w-5 bg-gradient-to-r from-white"></div>
 <div class="flex overflow-auto px-5 pb-3 -mx-5 space-s-8 text-sm whitespace-nowrap text-gray-150">
-
 <a href="https://www.li.me/pl-pl/redirector" class="block py-2 hover:text-green-100 focus:text-green-100 align-center" :class="{'text-green-100 font-medium': 4 == 41}">Polski</a>
 <a href="https://www.li.me/en-po/redirector" class="block py-2 hover:text-green-100 focus:text-green-100 align-center" :class="{'text-green-100 font-medium': 27 == 41}">English</a>
 </div>
