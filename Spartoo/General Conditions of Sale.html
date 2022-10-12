@@ -109,7 +109,7 @@
 					}
 
 					// #1208822 - Activation des tags
-					if(allow_cookies == 1) {
+					if(allow_cookies == 1 && typeof load_tag === "function") {
 						load_tag();
 						setTimeout(unload_tag, SP.tags.timeout);
 					}
@@ -1488,7 +1488,7 @@ Dans le cas où elles seraient traduites en une ou plusieurs langues étrangère
 		SP.tags.timeout = 15000;
 	</script>
 
-	<input type="hidden" value="https://www.spartoo.com/footer_tag_iframe.php?lang_id=1&lang=fr&lang2=fr&part_id=0&part=&cid=0&tab_get=lVVLb9swDP4rg4Ee2_oRXCeOdxhapAN62YCtOwuypCRCbNGTlKbFsP8-SpZdpTEK7GSZ_EiRHx-idZnXf0yd53VimCZG6GeBH6Zlb4minUg-m7qqk1u2e77p9737zVYI1ozsre1Jr8ECg9YpyjpxMuPO3iOC2NFY6NCn6KhsScdLp03rxIPKWZDZ07xcXEa4rBpwITwtfh-FsU5T5OHO-vb2dDrdmJ5qC3DDoBtD_uI9FIMHKzu0pB0mXCLrbLksy6LM8sohlmMsWgtlCafWXCefYQxZfp2l13ma53E0GIqRoEgHjWyFc5g6bXmupT3e1QyqdFBx8SyZd45MboQ5WDgjdtATLIIV4BV1wt03hAhmDOyXOig4qU_ff3pJ4HxPNT9RPYX__cfm8dvd08OvH16SDahGwwkJTULMo6v7SBzi1VRx6HzBUEKXixXLVhXjGWWrpqgywUadp1hTdiCSY7WMYyAEzqUWzCYRQzthXfvwoxMP5OWB2iA2eHBMWItcIpDKmy_qJL1JU39lIEQa0lF9ELZvKcJcJ6eeuTSmdqgueyXiqCF4ewjHEePjokoKTTkfazdmZ6yWavcV9JNPM-7SfBFD3nJo5dCrAVaU73J0emewBT2Q536W_21RzYTSUjNxTGBLGE7HDEw1b76lXCKguWtcMByQiJWt1MbG1F7MJgPF51wwwYHdS80_cLCFo7b7GcDE69kNQ2vEsGLmnkvUYu62S1gYpZcDoR0ccR8wXFwKbnlMc76-QEDX0bhsFz4sWNr6bn7vbWyvaRMqcVwi0PKzHi6mavkKTcZFyGkHsGtxWjQ6ETh_FrTAZSr7s2Xm1phbZ9nCB1l9YMtFK3GPvc7br-IVHjJ0Y4VEaDfrAqPnA1erMxAqactG5Uj1mTLM54AogrnPGr0rS7FLZ1wnPhCyjg321BBQ7euchXm_tltgrkT8KPlcXG_xXDDQogdtH9UW4k5eX6CepTj5NYMq95xeFZurfOmfuXB86TeB5Q2SjMKJ33W8VfHhdKPOBYdj0w772TVYUzVrtlpQVubL7XbbiCbnxZo2aVHxjPFVvMctPn1391PGWSzNB_Hffw,," id="tag_src">
+	<input type="hidden" value="https://www.spartoo.com/footer_tag_iframe.php?lang_id=1&lang=fr&lang2=fr&part_id=0&part=&cid=0&tab_get=lVVLj9MwEP4rqBJHdhOnSdtwQKy6SFxcQOJxthzbaa0mnmC7W1aI_87YcYK7jZA4xZn5ZjzzzcOsLkn9y9aE1CvLDbXSPEn8cKMGRzXr5eqtrbf16p4fnu6G4-B_8w2CDadH5wY6GHDAofOKsl55mfXn4BFB_Gwd9OhT9kx1tBel12b1KoDKRZA9MlJWCS7fjrgYnpE_ztI6rylIvLO-v79cXC53dmDGAdxx6KeQ3wUPxejBqR4tWY-JqDqvqrIsq81m6xHVFIsxUjsqmAvJ5xhDTt7k2RuSEZJGg6FYBZr20KhOeoeZ15bXWjbgXc2oykaVkE-KB-fI5F7ak4MrYkc9xVwiOAlBUa-E_8YQwU6BfddcJw0X_erz1yCJnB-ZERdm5vA_f9l__PT-2-P3L0GSj6jGwAUJXcWYXCdXD4k4xmuYFtCHgqEkW1ekKNh6l_OGtbIkpJKTLlBsGD9RJbBa1jMQAxfKSO5WCUMH6Xz7iLMXj-SRSG0UWzx4JpxDESgdzNcYwl2WhSsjIcrSnpmTdEPHED47DcxlKbVjdfkzlWcD0dtjPE6YEBfTShomxFS7KTvrjNKHD2C-hTTTLiXrFPI3h06NvRphRflcIkev9wYtmJE8_1P9t8V2IZSO2ZljCi3lOB0LMN389a00BSN8A-CAJKy0yliXUnszmxy0WAJEB-6ojPiHgxbOxh0XXDAzr1c3jK2RwoqFe25R66XbbmFxlH6eKOvhjPuA41Lwy2Oe890NAvqepWW78eHAsS5080tvU3vNm1DLC4VOXFz1cDFXK1RoNi5iTgeAQ4fTYtCJxPlzYCQuUzVcXC0zv8b8OsvXIcjtP2yF7BTusedl-026wmOGfqyQCONnXWL0YuRqcwVCJev4pJyovlLG-RwRRTQPWaN37Rh26eLER0J2qcGRWQq6e16ysC_Xdgfcl0iclVjqLREBRg5g3EfdQtrJuxvUk5KXsGZQ5Z_T18X-Ne5L_8zF489hH1neI8konPndpVsVH04_6kIKODfduJ99gzXbZsc3a8ZLUrVt28iGiGLHmqzYipyLTbrHHT597x_mjPNUSkbx7z8," id="tag_src">
 	<input type="hidden" value="1" id="tag_heightWidth">
 	<input type="hidden" value="0" id="tag_border">
 	<div id="tag_iframe_position"></div>
