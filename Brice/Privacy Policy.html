@@ -203,8 +203,10 @@ CQuotient.cqcid='';
 CQuotient.cquid='';
 CQuotient.cqeid='';
 CQuotient.cqlid='';
+CQuotient.apiHost='api.cquotient.com';
 /* Turn this on to test against Staging Einstein */
 /* CQuotient.useTest= true; */
+CQuotient.useTest = ('true' === 'false');
 CQuotient.initFromCookies = function () {
 	var ca = document.cookie.split(';');
 	for(var i=0;i < ca.length;i++) {
@@ -475,7 +477,7 @@ Tous les hauts
 <ul class="dropdown-menu col-xl-7" role="menu" aria-hidden="true">
 <li class="dropdown-item d-none" role="menuitem">
 <a href="/fr-fr/l/chemise/" id="GROUPE-CHEMISE-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatGROUPE-CHEMISE">
- Chemise
+Chemise
 </a>
 </li>
 <li class="dropdown-item d-none" role="menuitem">
@@ -496,7 +498,7 @@ T-Shirt
 <li class="dropdown-item d-none" role="menuitem">
 <a href="/fr-fr/l/polo/" id="HCC19-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatHCC19">
 Polo
-</a>
+ </a>
 </li>
 <li class="dropdown-item d-none" role="menuitem">
 <a href="/fr-fr/l/sweat/" id="HCC23-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatHCC23">
@@ -540,7 +542,7 @@ S&eacute;lection velours &amp; flanelle
 🌧️ Collection pluie
 </a>
 </li>
-<li class="dropdown-item d-none" role="menuitem">
+ <li class="dropdown-item d-none" role="menuitem">
 <a href="https://www.jules.com/fr-fr/l/smart-casual/" id="link-haut-smart-casual-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatlink-haut-smart-casual">
 Smart casual
 <sup style="color: #FF0000;">
@@ -563,7 +565,6 @@ Homewear
 Collab&reg;
 </a>
 </li>
-
 <li class="dropdown-item d-none" role="menuitem">
 <a href="https://www.jules.com/fr-fr/l/sport-rego/" id="link-haut-sport-rego-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatlink-haut-sport-rego">
 🏃&zwj;♂️ Sport REGO
@@ -750,7 +751,7 @@ Jean Straight #Ben
 <li class="dropdown-item d-none" role="menuitem">
 <a href="https://www.jules.com/fr-fr/l/regular-alex/" id="link-jean-regular-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatlink-jean-regular">
 Jean Regular #Alex
-</a>
+ </a>
 </li>
 <li class="dropdown-item d-none" role="menuitem">
 <a href="https://www.jules.com/fr-fr/l/skinny-max/" id="link-jean-skinny-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatlink-jean-skinny">
@@ -920,7 +921,7 @@ Nos basiques
 Exclu web
 </a>
 </li>
-<li class="dropdown-item d-none" role="menuitem">
+ <li class="dropdown-item d-none" role="menuitem">
 <a href="https://www.jules.com/fr-fr/static/guide-costume-homme.html" id="link-guide-costume-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatlink-guide-costume">
 👔 Guide du costume
 </a>
@@ -965,7 +966,7 @@ Tous les accessoires
 <a href="/fr-fr/l/chaussures/" id="HCA07-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatHCA07">
 Chaussures
 </a>
-</li>
+ </li>
 <li class="dropdown-item d-none" role="menuitem">
 <a href="/fr-fr/l/sous-vetements/" id="HCA27-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatHCA27">
 Sous-v&ecirc;tements
@@ -1011,6 +1012,7 @@ Cravate
 Lunettes
 </a>
 </li>
+
 <li class="dropdown-item d-none" role="menuitem">
 <a href="/fr-fr/l/foulard-cheche/" id="HCA16-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatHCA16">
 Foulard Ch&egrave;che
@@ -1064,7 +1066,7 @@ Collab&reg;
 </a>
 </li>
 <li class="dropdown-item d-none" role="menuitem">
- <a href="https://www.jules.com/fr-fr/l/homewear/" id="link-accessoires-homewear-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatlink-accessoires-homewear">
+<a href="https://www.jules.com/fr-fr/l/homewear/" id="link-accessoires-homewear-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatlink-accessoires-homewear">
 Homewear
 </a>
 </li>
@@ -1094,7 +1096,7 @@ S&eacute;lection
 <a href="https://www.jules.com/fr-fr/l/outlet/" id="link-accessoires-outlet-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatlink-accessoires-outlet">
 Outlet
 </a>
-</li>
+ </li>
 <li class="dropdown-item d-none" role="menuitem">
 <a href="https://www.jules.com/fr-fr/l/vetements-adaptes/" id="link-accessoires-capsule-inclusion-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatlink-accessoires-capsule-inclusion">
 V&ecirc;tements adapt&eacute;s
@@ -1102,7 +1104,7 @@ V&ecirc;tements adapt&eacute;s
 </li>
 <li class="dropdown-item d-none" role="menuitem">
 <a href="https://www.jules.com/fr-fr/l/mode-ecoresponsable/" id="link-accessoires-men-in-progress-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatlink-accessoires-men-in-progress">
- Mode &eacute;coresponsable
+Mode &eacute;coresponsable
 </a>
 </li>
 <li class="dropdown-item d-none" role="menuitem">
@@ -1177,6 +1179,7 @@ Manteau &amp; veste
 Jeans &amp; pantalon
 </a>
 </li>
+
 <li class="dropdown-item d-none" role="menuitem">
 <a href="https://www.jules.com/fr-fr/l/mode-ecoresponsable/?prefn1=F3_internalCategory&amp;prefv1=Short &amp; Bermuda" id="link-short-bermuda-inprogress-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatlink-short-bermuda-inprogress">
 Short &amp; bermuda
@@ -1214,6 +1217,7 @@ Nos objectifs
 Bilan carbone
 </a>
 </li>
+
 <li class="dropdown-item d-none" role="menuitem">
 <a href="https://www.jules.com/fr-fr/static/en-progres.html" id="link-notre-label-inprogress-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatlink-notre-label-inprogress">
 Gamme in progress
@@ -1455,7 +1459,7 @@ mot de passe oubli&eacute;&nbsp;?
 </a>
 </div>
 </div>
-<input type="hidden" name="csrf_token" value="8VqpEGiizcG6T2XCBXl2UFM8DHBlWvboNDmvpt8yhWHQ2Ar_-1ZMb5UJwAuXCJ2PUzlHUv9lzgJGrQ8D6HOIHufv8codUtxZOQfHbezWyCxQxGCS3uKEX6161WPFhht9eYpWgN3lVQ40DfPB5c5837KuSobstq9proNZZGjqW54Pb4j9erg=" />
+<input type="hidden" name="csrf_token" value="5todKbL-bA5Y9VfcTbqMRylCcMp1H4g3hSP_6cUt1bVPV8Wtlso707z7H7iuJFnsVQdiVtllbdUgLogSKNotTtKHUgV_uS72BWjOENYENcfUABpYhHHGGBrFSLMOP5bY1XSkKoccj1L21TobqLw_ex_ndxOQdwvMIKB8GJES_p2jsMSKE6s=" />
 </form>
 </div>
 </div>
@@ -1573,7 +1577,7 @@ Supprimer
 <div class="modal-body row collapsible-xs">
 <div class="col-12">
 <div class="modal-header">
- <span class="h6">COMPTE</span>
+<span class="h6">COMPTE</span>
 </div>
 </div>
 </div>
@@ -1795,7 +1799,7 @@ La présente politique de confidentialité peut être modifiée par Jules. Dans 
 <p class="body1 text-start d-block mt-2 mb-0 pb-3 font-weight-normal txt-normal">Rejoignez la team sur les
 réseaux sociaux et ne ratez plus jamais les infos, les nouveautés, les bons plans !</p>
 <div class="d-block">
-<ul class="list-inline-item mx-0 mt-2 mb-0 p-0 float-start">
+ <ul class="list-inline-item mx-0 mt-2 mb-0 p-0 float-start">
 <li class="float-start d-block me-3 p-0"><a href="https://www.instagram.com/jules/" rel="noreferrer" target="_blank"><img src="https://www.jules.com/on/demandware.static/-/Sites-Jules-SFRA-Library/fr_FR/dw6657baf5/images/picto-RS-instagram.svg" class="img-fluid m-0 pictoRS" alt="Instagram" width="50" height="50" loading="lazy"></a></li>
 <li class="float-start d-block me-3 p-0"><a href="https://www.facebook.com/Julescom/" rel="noreferrer" target="_blank"><img src="https://www.jules.com/on/demandware.static/-/Sites-Jules-SFRA-Library/fr_FR/dwb72ba26b/images/picto-RS-facebook.svg" class="img-fluid m-0 pictoRS" alt="Facebook" width="50" height="50" loading="lazy"></a></li>
 <li class="float-start d-block me-3 p-0"><a href="https://www.youtube.com/channel/UCX9yAsGvVOBjwRxopg2nZBg" rel="noreferrer" target="_blank"><img src="https://www.jules.com/on/demandware.static/-/Sites-Jules-SFRA-Library/fr_FR/dwc89ea990/images/picto-RS-youtube.svg" class="img-fluid m-0 pictoRS" alt="Youtube" width="50" height="50" loading="lazy"></a></li>
@@ -2019,7 +2023,7 @@ OK
 </div>
 </div>
 <div class="modal-part country-selector" data-url="/on/demandware.store/Sites-Jules-SFRA-Site/fr_FR/Page-SetLocale">
- <span class="dropdown-item" data-locale="it_IT" data-currencyCode="EUR" data-siteid="Jules-IT-SFRA">
+<span class="dropdown-item" data-locale="it_IT" data-currencyCode="EUR" data-siteid="Jules-IT-SFRA">
 <i class="flag-icon flag-icon-it"></i>
 Italia (italiano)
 </span>
