@@ -203,8 +203,10 @@ CQuotient.cqcid='';
 CQuotient.cquid='';
 CQuotient.cqeid='';
 CQuotient.cqlid='';
+CQuotient.apiHost='api.cquotient.com';
 /* Turn this on to test against Staging Einstein */
 /* CQuotient.useTest= true; */
+CQuotient.useTest = ('true' === 'false');
 CQuotient.initFromCookies = function () {
 	var ca = document.cookie.split(';');
 	for(var i=0;i < ca.length;i++) {
@@ -366,7 +368,7 @@ CQuotient.trackViewProduct = function(/* Object */ cqParamData){
 </div>
 </div>
 </div>
-</div>
+ </div>
 </div>
 </div>
 <div class="main-menu navbar-toggleable-lg menu-toggleable-left multilevel-dropdown d-xl-block" id="sg-navbar-collapse">
@@ -467,7 +469,6 @@ Nouveaut&eacute;s
 Hauts
 </a>
 <div class="isMobileMenu">
-
 <ul class="dropdown-menu col-xl-7" role="menu" aria-hidden="true">
 <li class="dropdown-item dropdown d-none" role="menuitem" data-levels="true">
 <a href="https://www.jules.com/fr-fr/l/hauts/" id="tous-les-hauts-responsive" class="dropdown-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-beaver-id="sousCattous-les-hauts">
@@ -678,9 +679,9 @@ Pantalon jogging &amp; cargo
 <sup style="color: #0092DD;">
 trend
 </sup>
+
 </a>
 </li>
-
 <li class="dropdown-item d-none" role="menuitem">
 <a href="/fr-fr/l/short-bermuda/" id="HCC01-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatHCC01">
 Short &amp; Bermuda
@@ -722,7 +723,7 @@ new
 </a>
 </li>
 <li class="dropdown-item d-none" role="menuitem">
-<a href="https://www.jules.com/fr-fr/l/idees-cadeaux-noel/" id="link-bas-idees-cadeaux-noel-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatlink-bas-idees-cadeaux-noel">
+ <a href="https://www.jules.com/fr-fr/l/idees-cadeaux-noel/" id="link-bas-idees-cadeaux-noel-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatlink-bas-idees-cadeaux-noel">
 🎁 Id&eacute;es cadeaux No&euml;l
 </a>
 </li>
@@ -763,8 +764,9 @@ Jean Skinny #Max
 Jean Relax #Sami
 </a>
 </li>
+
 <li class="dropdown-item d-none" role="menuitem">
- <a href="https://www.jules.com/fr-fr/l/loose-liam/" id="link-jean-loose-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatlink-jean-loose">
+<a href="https://www.jules.com/fr-fr/l/loose-liam/" id="link-jean-loose-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatlink-jean-loose">
 Jean Loose #Liam
 </a>
 </li>
@@ -891,8 +893,9 @@ Home Office
 S&eacute;lection
 </a>
 <ul class="dropdown-menu col-xl-7" role="menu" aria-hidden="true">
+
 <li class="dropdown-item d-none" role="menuitem">
- <a href="https://www.jules.com/fr-fr/gestion-carte-cadeau/" id="link-costume-carte-cadeau-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatlink-costume-carte-cadeau">
+<a href="https://www.jules.com/fr-fr/gestion-carte-cadeau/" id="link-costume-carte-cadeau-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatlink-costume-carte-cadeau">
 🎁 Carte cadeau
 </a>
 </li>
@@ -1062,7 +1065,7 @@ S&eacute;lection velours &amp; flanelle
 <li class="dropdown-item d-none" role="menuitem">
 <a href="https://www.jules.com/fr-fr/licences/" id="link-accessoires-collab-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatlink-accessoires-collab">
 Collab&reg;
- </a>
+</a>
 </li>
 <li class="dropdown-item d-none" role="menuitem">
 <a href="https://www.jules.com/fr-fr/l/homewear/" id="link-accessoires-homewear-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatlink-accessoires-homewear">
@@ -1456,7 +1459,7 @@ mot de passe oubli&eacute;&nbsp;?
 </a>
 </div>
 </div>
-<input type="hidden" name="csrf_token" value="e78jMuCbabcbesiQpakST8nwsLfR8CnBQbe1-hHvsOSxmSd3AWgseLpvRJFhc0bJ3rlMzhB-iqp09JrWKf0h4dGQJEDicq8F0-hH8_9oDXhHlT2j8ZJeiATbjNRSFMLoFODd9GIWU2Po3MhnibFFd75tH9OiA0VBN3ZZX9iSapEiT5Iknis=" />
+<input type="hidden" name="csrf_token" value="UfX_h-APURvibpTVhS-gZDo1N2mB3GnIBDIyVI0x1L_4_DksqeV-Ww2beZFxfAPLvTeJvsvFLBWUVKV0TBH69-gr95fs3l0MdWVegsp3_CR4uSMahSXRwS_uLrLl-s719whLbHofED9usVhdiJsfVf68xcSp1bsLYOMAA14Aym9SwJK6Gz8=" />
 </form>
 </div>
 </div>
@@ -1494,7 +1497,7 @@ Cr&eacute;er un compte
 </div>
 </div>
 </div>
-</div>
+ </div>
 </div>
 </div>
 <div class="modal right fade" id="layerModalPasswordReceived" tabindex="-1" role="dialog" aria-labelledby="layerCModal">
@@ -1801,7 +1804,7 @@ réseaux sociaux et ne ratez plus jamais les infos, les nouveautés, les bons pl
 <li class="float-start d-block me-3 p-0"><a href="https://www.facebook.com/Julescom/" rel="noreferrer" target="_blank"><img src="https://www.jules.com/on/demandware.static/-/Sites-Jules-SFRA-Library/fr_FR/dwb72ba26b/images/picto-RS-facebook.svg" class="img-fluid m-0 pictoRS" alt="Facebook" width="50" height="50" loading="lazy"></a></li>
 <li class="float-start d-block me-3 p-0"><a href="https://www.youtube.com/channel/UCX9yAsGvVOBjwRxopg2nZBg" rel="noreferrer" target="_blank"><img src="https://www.jules.com/on/demandware.static/-/Sites-Jules-SFRA-Library/fr_FR/dwc89ea990/images/picto-RS-youtube.svg" class="img-fluid m-0 pictoRS" alt="Youtube" width="50" height="50" loading="lazy"></a></li>
 <li class="float-start d-block me-3 p-0"><a href="https://www.tiktok.com/@jules" rel="noreferrer" target="_blank"><img src="https://www.jules.com/on/demandware.static/-/Sites-Jules-SFRA-Library/fr_FR/dwb8b574e0/images/picto-RS-tiktok.svg" class="img-fluid m-0 pictoRS" alt="TikTok" width="50" height="50" loading="lazy"></a></li>
- </ul>
+</ul>
 </div>
 </div>
 </div>
