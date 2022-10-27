@@ -49,7 +49,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 		function riskifiedBeaconLoad() {
 			
 			var store_domain = 'UCB_fr.com';
-			var session_id = 't8AkXC7aQrdo9QIHHR_mtq6ZcbVE3zZEYnk=';
+			var session_id = 'Oy-KaqgKu7WKdCthTo5BWZHjPuCVe2vFenk=';
 			var url = ('https:' == document.location.protocol ? 'https://'
 					: 'http://')
 					+ "beacon.riskified.com?shop="
@@ -205,8 +205,10 @@ CQuotient.cqcid='';
 CQuotient.cquid='';
 CQuotient.cqeid='';
 CQuotient.cqlid='';
+CQuotient.apiHost='api.cquotient.com';
 /* Turn this on to test against Staging Einstein */
 /* CQuotient.useTest= true; */
+CQuotient.useTest = ('true' === 'false');
 CQuotient.initFromCookies = function () {
 	var ca = document.cookie.split(';');
 	for(var i=0;i < ca.length;i++) {
@@ -643,7 +645,7 @@ Jeans &amp; Denim
 <div class="section-text">
 <div class="content-text background-green">
 <div class="content-cta">
-<span class="cta color-white primary">
+ <span class="cta color-white primary">
 JE DÉCOUVRE LES ARTICLES <br>GREEN B
 </span>
 </div>
@@ -810,6 +812,7 @@ Montrer tout
 </div>
 <div class="col-12 col-lg ">
 <div class="content-col-items"><div class="col-items">
+
 <div class="content-item-link content-item-title">
 <span class="menu-item menu-item-3-liv ">&Agrave; LA UNE</span>
 </div>
@@ -2564,7 +2567,7 @@ Montrer tout
 </li>
 <li class="nav-item nav-item--login">
 <a class="nav-link" href="https://fr.benetton.com/my-account">
- <i class="icon-account" role="presentation"></i>
+<i class="icon-account" role="presentation"></i>
 <span class="sr-only">Mon compte</span>
 </a>
 </li>
@@ -2906,7 +2909,7 @@ Europe&nbsp;
 </button>
 </div>
 <ul class="accordion__content content-europe country-selector-list" aria-labelledby="content-europe-header">
-<li class="text-list">
+ <li class="text-list">
 <a href="https://be.benetton.com" data-currency="EUR" data-locale="en_BE">
 Belgium
 </a>
@@ -2926,7 +2929,7 @@ Croatia
 Denmark
 </a>
 </li>
- <li class="text-list">
+<li class="text-list">
 <a href="https://de.benetton.com" data-currency="EUR" data-locale="de_DE">
 Deutschland
 </a>
@@ -2988,7 +2991,7 @@ Netherlands
 </li>
 <li class="text-list">
 <a href="https://at.benetton.com" data-currency="EUR" data-locale="de_AT">
-&Ouml;sterreich
+ &Ouml;sterreich
 </a>
 </li>
 <li class="text-list">
@@ -3149,7 +3152,7 @@ Guatemala
 </a>
 </li>
 <li class="text-list">
-<a href="https://world.benetton.com/es" data-currency="EUR" data-locale="es">
+ <a href="https://world.benetton.com/es" data-currency="EUR" data-locale="es">
 Honduras
 </a>
 </li>
@@ -3304,7 +3307,7 @@ Bulgaria
 </li>
 <li class="text-list">
 <a href="https://hr.benetton.com" data-currency="HRK" data-locale="en_HR">
-Croatia
+ Croatia
 </a>
 </li>
 <li class="text-list">
@@ -3471,7 +3474,7 @@ Aruba
 <a href="https://world.benetton.com/es" data-currency="EUR" data-locale="es">
 Belize
 </a>
-</li>
+ </li>
 <li class="text-list">
 <a href="https://world.benetton.com/es" data-currency="EUR" data-locale="es">
 Bermuda
@@ -3490,7 +3493,7 @@ Chile
 <li class="text-list">
 <a href="https://world.benetton.com/es" data-currency="EUR" data-locale="es">
 Colombia
- </a>
+</a>
 </li>
 <li class="text-list">
 <a href="https://world.benetton.com/es" data-currency="EUR" data-locale="es">
@@ -3574,7 +3577,6 @@ Venezuela
 </li>
 </ul>
 </div>
-
 <div class="country-selector-continent othercountries">
 <span class="text-xxs">Autres Pays&nbsp;</span>
 <ul>
