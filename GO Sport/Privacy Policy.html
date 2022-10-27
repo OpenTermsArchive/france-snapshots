@@ -93,8 +93,10 @@ CQuotient.cqcid='';
 CQuotient.cquid='';
 CQuotient.cqeid='';
 CQuotient.cqlid='';
+CQuotient.apiHost='api.cquotient.com';
 /* Turn this on to test against Staging Einstein */
 /* CQuotient.useTest= true; */
+CQuotient.useTest = ('true' === 'false');
 CQuotient.initFromCookies = function () {
 	var ca = document.cookie.split(';');
 	for(var i=0;i < ca.length;i++) {
@@ -288,13 +290,13 @@ Retour
 <ul class="c-nav-bar-child d-flex flex-column" role="menu" aria-hidden="true" aria-label="2307">
 <li class="c-nav-item" role="presentation">
 <a href="https://www.go-sport.com/velo-vitrine.html" id="2307" role="menuitem" class="c-nav-link c-link c-link--arrow-icon" tabindex="-1">Tout voir</a>
-
 </li>
 <li class="c-nav-item " role="presentation">
 <span id="2553" role="menuitem" class="c-nav-link c-link c-link--arrow-icon gsp-mm-o-l" tabindex="-1" data-o-l-src="L3Nwb3J0cy9jeWNsZS92ZWxvcy8=">V&eacute;los</span>
 </li>
 <li class="c-nav-item " role="presentation">
 <span id="2554" role="menuitem" class="c-nav-link c-link c-link--arrow-icon gsp-mm-o-l" tabindex="-1" data-o-l-src="L3Nwb3J0cy9jeWNsZS92ZWxvcy1hLWFzc2lzdGFuY2UtZWxlY3RyaXF1ZS8=">V&eacute;los &agrave; Assistance &Eacute;lectrique</span>
+
 </li>
 <li class="c-nav-item " role="presentation">
 <span id="2548" role="menuitem" class="c-nav-link c-link c-link--arrow-icon gsp-mm-o-l" tabindex="-1" data-o-l-src="L3Nwb3J0cy9jeWNsZS9hY2Nlc3NvaXJlcy12ZWxvLw==">Accessoires V&eacute;lo</span>
@@ -325,12 +327,12 @@ Retour
 <li class="c-nav-item " role="presentation">
 <span id="ac1073" role="menuitem" class="c-nav-link c-link c-link--arrow-icon gsp-mm-o-l" tabindex="-1" data-o-l-src="aHR0cHM6Ly93d3cuZ28tc3BvcnQuY29tL2ZpdG5lc3MtbXVzY3VsYXRpb24vYWNjZXNzb2lyZXMtbXVzY3VsYXRpb24v">Accessoires</span>
 </li>
-
 <li class="c-nav-item " role="presentation">
 <span id="ac1074" role="menuitem" class="c-nav-link c-link c-link--arrow-icon gsp-mm-o-l" tabindex="-1" data-o-l-src="aHR0cHM6Ly93d3cuZ28tc3BvcnQuY29tL2ZpdG5lc3MtbXVzY3VsYXRpb24vdGVudWVzLw==">V&ecirc;tements</span>
 </li>
 <li class="c-nav-item " role="presentation">
 <span id="ac1075" role="menuitem" class="c-nav-link c-link c-link--arrow-icon gsp-mm-o-l" tabindex="-1" data-o-l-src="aHR0cHM6Ly93d3cuZ28tc3BvcnQuY29tL2ZpdG5lc3MtbXVzY3VsYXRpb24vY2hhdXNzdXJlcy8=">Chaussures</span>
+
 </li>
 <li class="c-nav-item " role="presentation">
 <span id="ac1076" role="menuitem" class="c-nav-link c-link c-link--arrow-icon gsp-mm-o-l" tabindex="-1" data-o-l-src="aHR0cHM6Ly93d3cuZ28tc3BvcnQuY29tL2hpZ2gtdGVjaC9iaWVuLXRyZS1zYW50ZS1jb25uZWN0ZWUvZWxlY3Ryb3N0aW11bGF0aW9uLw==">Electro-stimulation</span>
@@ -395,7 +397,7 @@ Retour
 <li class="c-nav-item " role="presentation">
 <span id="ac1089" role="menuitem" class="c-nav-link c-link c-link--arrow-icon gsp-mm-o-l" tabindex="-1" data-o-l-src="aHR0cHM6Ly93d3cuZ28tc3BvcnQuY29tL3Nwb3J0cy9hdXRyZXMtc3BvcnRzL3Nwb3J0LWRlLWNvbWJhdC9ib3hlL3RleHRpbGUtYm94ZS8=">V&ecirc;tements</span>
 </li>
- <li class="c-nav-item " role="presentation">
+<li class="c-nav-item " role="presentation">
 <span id="ac1090" role="menuitem" class="c-nav-link c-link c-link--arrow-icon gsp-mm-o-l" tabindex="-1" data-o-l-src="aHR0cHM6Ly93d3cuZ28tc3BvcnQuY29tL3Nwb3J0cy9hdXRyZXMtc3BvcnRzL3Nwb3J0LWRlLWNvbWJhdC9ib3hlL2NoYXVzc3VyZXMtYm94ZS8=">Chaussures</span>
 </li>
 <li class="c-nav-item " role="presentation">
@@ -476,7 +478,7 @@ Retour
 </ul>
 </li>
 <li class="c-nav-item " role="presentation">
-<span id="3215" class="c-nav-link c-link c-link--arrow-icon gsp-mm-o-l" data-toggle="dropdown-nav" aria-haspopup="true" aria-expanded="false" tabindex="0" data-o-l-src="L3Nwb3J0cy9yYW5kb25uZWUvY291Y2hhZ2Uv">Couchages</span>
+ <span id="3215" class="c-nav-link c-link c-link--arrow-icon gsp-mm-o-l" data-toggle="dropdown-nav" aria-haspopup="true" aria-expanded="false" tabindex="0" data-o-l-src="L3Nwb3J0cy9yYW5kb25uZWUvY291Y2hhZ2Uv">Couchages</span>
 <ul class="c-nav-bar-child d-flex flex-column" role="menu" aria-hidden="true" aria-label="3215">
 <li class="c-nav-item" role="presentation">
 <a href="/sports/randonnee/couchage/" id="3215" role="menuitem" class="c-nav-link c-link c-link--arrow-icon" tabindex="-1">Tout voir</a>
@@ -626,7 +628,7 @@ Retour
 </li>
 </ul>
 </li>
-<li class="c-nav-item " role="presentation">
+ <li class="c-nav-item " role="presentation">
 <span id="2310" class="c-nav-link c-link c-link--arrow-icon gsp-mm-o-l" data-toggle="dropdown-nav" aria-haspopup="true" aria-expanded="false" tabindex="0" data-o-l-src="L3Nwb3J0cy9uYXRhdGlvbi1waXNjaW5lLw==">Natation-Piscine</span>
 <ul class="c-nav-bar-child d-flex flex-column" role="menu" aria-hidden="true" aria-label="2310">
 <li class="c-nav-item" role="presentation">
@@ -662,7 +664,7 @@ Retour
 <span id="ac1100" role="menuitem" class="c-nav-link c-link c-link--arrow-icon gsp-mm-o-l" tabindex="-1" data-o-l-src="aHR0cHM6Ly93d3cuZ28tc3BvcnQuY29tL3Nwb3J0cy9vdXRkb29yL2VzY2FsYWRlLw==">Escalade</span>
 </li>
 <li class="c-nav-item " role="presentation">
-<span id="ac1101" role="menuitem" class="c-nav-link c-link c-link--arrow-icon gsp-mm-o-l" tabindex="-1" data-o-l-src="aHR0cHM6Ly93d3cuZ28tc3BvcnQuY29tL3Nwb3J0cy9hdXRyZXMtc3BvcnRzL2dvbGYv">Golf</span>
+ <span id="ac1101" role="menuitem" class="c-nav-link c-link c-link--arrow-icon gsp-mm-o-l" tabindex="-1" data-o-l-src="aHR0cHM6Ly93d3cuZ28tc3BvcnQuY29tL3Nwb3J0cy9hdXRyZXMtc3BvcnRzL2dvbGYv">Golf</span>
 </li>
 <li class="c-nav-item " role="presentation">
 <span id="ac1098" role="menuitem" class="c-nav-link c-link c-link--arrow-icon gsp-mm-o-l" tabindex="-1" data-o-l-src="aHR0cHM6Ly93d3cuZ28tc3BvcnQuY29tL3JhbmRvbm5lZS12aXRyaW5lLmh0bWw=">Randonn&eacute;e</span>
@@ -844,7 +846,6 @@ Retour
 </li>
 </ul>
 </li>
-
 <li class="c-nav-item c-nav-item--main" role="presentation">
 <span id="12339" class="c-nav-link c-link c-link--arrow-icon" data-toggle="dropdown-nav" aria-haspopup="true" aria-expanded="false" tabindex="0" data-o-l-src="aHR0cHM6Ly93d3cuZ28tc3BvcnQuY29tL2ZlbW1lLXZpdHJpbmUuaHRtbA==">Femme</span>
 <ul class="c-nav-bar-child d-flex flex-column" role="menu" aria-hidden="true" aria-label="12339">
@@ -920,6 +921,7 @@ Retour
 </li>
 <li class="c-nav-item " role="presentation">
 <span id="ac1058" class="c-nav-link c-link c-link--arrow-icon gsp-mm-o-l" data-toggle="dropdown-nav" aria-haspopup="true" aria-expanded="false" tabindex="0" data-o-l-src="aHR0cHM6Ly93d3cuZ28tc3BvcnQuY29tL2FjY2Vzc29pcmVzL2FjY2Vzc29pcmVzLXRleHRpbGUtYWR1bHRlLw==">Accessoires</span>
+
 <ul class="c-nav-bar-child d-flex flex-column" role="menu" aria-hidden="true" aria-label="ac1058">
 <li class="c-nav-item" role="presentation">
 <a href="https://www.go-sport.com/accessoires/accessoires-textile-adulte/" id="ac1058" role="menuitem" class="c-nav-link c-link c-link--arrow-icon" tabindex="-1">Tout voir</a>
@@ -955,7 +957,7 @@ Retour
 <li class="c-nav-item" role="presentation">
 <a href="https://www.go-sport.com/enfant-vitrine.html" id="1837" role="menuitem" class="c-nav-link c-link c-link--arrow-icon" tabindex="-1">Tout voir</a>
 </li>
-<li class="c-nav-item " role="presentation">
+ <li class="c-nav-item " role="presentation">
 <span id="4668" class="c-nav-link c-link c-link--arrow-icon gsp-mm-o-l" data-toggle="dropdown-nav" aria-haspopup="true" aria-expanded="false" tabindex="0" data-o-l-src="L2VuZmFudC92ZXRlbWVudHMtZ2FyY29uLw==">V&ecirc;tements gar&ccedil;on</span>
 <ul class="c-nav-bar-child d-flex flex-column" role="menu" aria-hidden="true" aria-label="4668">
 <li class="c-nav-item" role="presentation">
@@ -990,7 +992,6 @@ Retour
 </li>
 </ul>
 </li>
-
 <li class="c-nav-item " role="presentation">
 <span id="4667" class="c-nav-link c-link c-link--arrow-icon gsp-mm-o-l" data-toggle="dropdown-nav" aria-haspopup="true" aria-expanded="false" tabindex="0" data-o-l-src="L2VuZmFudC92ZXRlbWVudHMtZmlsbGUv">V&ecirc;tements fille</span>
 <ul class="c-nav-bar-child d-flex flex-column" role="menu" aria-hidden="true" aria-label="4667">
@@ -1068,6 +1069,7 @@ Retour
 <span id="355" role="menuitem" class="c-nav-link c-link c-link--arrow-icon gsp-mm-o-l" tabindex="-1" data-o-l-src="L2VuZmFudC9jaGF1c3N1cmVzL3NhbmRhbGVzLw==">Sandales</span>
 </li>
 <li class="c-nav-item " role="presentation">
+
 <span id="356" role="menuitem" class="c-nav-link c-link c-link--arrow-icon gsp-mm-o-l" tabindex="-1" data-o-l-src="L2VuZmFudC9jaGF1c3N1cmVzL3RvbmdzLWNsYXF1ZXR0ZXMv">Tongs et Claquettes</span>
 </li>
 <li class="c-nav-item " role="presentation">
@@ -1103,7 +1105,7 @@ Retour
 <span id="ac1070" role="menuitem" class="c-nav-link c-link c-link--arrow-icon gsp-mm-o-l" tabindex="-1" data-o-l-src="aHR0cHM6Ly93d3cuZ28tc3BvcnQuY29tL2FjY2Vzc29pcmVzL2FjY2Vzc29pcmVzLXRleHRpbGUtZW5mYW50L2dhbnRzLw==">Gants</span>
 </li>
 <li class="c-nav-item " role="presentation">
-<span id="ac1071" role="menuitem" class="c-nav-link c-link c-link--arrow-icon gsp-mm-o-l" tabindex="-1" data-o-l-src="aHR0cHM6Ly93d3cuZ28tc3BvcnQuY29tL2FjY2Vzc29pcmVzL3NhY3MtYmVzYWNlcy9zYWNzLWEtZG9zLw==">Sac &agrave; dos</span>
+ <span id="ac1071" role="menuitem" class="c-nav-link c-link c-link--arrow-icon gsp-mm-o-l" tabindex="-1" data-o-l-src="aHR0cHM6Ly93d3cuZ28tc3BvcnQuY29tL2FjY2Vzc29pcmVzL3NhY3MtYmVzYWNlcy9zYWNzLWEtZG9zLw==">Sac &agrave; dos</span>
 </li>
 </ul>
 </li>
@@ -1140,7 +1142,7 @@ Retour
 <span id="champion" role="menuitem" class="c-nav-link c-link c-link--arrow-icon gsp-mm-o-l" tabindex="-1" data-o-l-src="L25vcy1tYXJxdWVzL2NoYW1waW9uLw==">Champion</span>
 </li>
 <li class="c-nav-item " role="presentation">
-<span id="columbia" role="menuitem" class="c-nav-link c-link c-link--arrow-icon gsp-mm-o-l" tabindex="-1" data-o-l-src="L25vcy1tYXJxdWVzL2NvbHVtYmlhLw==">Columbia</span>
+ <span id="columbia" role="menuitem" class="c-nav-link c-link c-link--arrow-icon gsp-mm-o-l" tabindex="-1" data-o-l-src="L25vcy1tYXJxdWVzL2NvbHVtYmlhLw==">Columbia</span>
 </li>
 <li class="c-nav-item " role="presentation">
 <span id="converse" role="menuitem" class="c-nav-link c-link c-link--arrow-icon gsp-mm-o-l" tabindex="-1" data-o-l-src="L21hcnF1ZXMvY29udmVyc2Uv">Converse</span>
@@ -1176,7 +1178,6 @@ Retour
 <span id="mizuno" role="menuitem" class="c-nav-link c-link c-link--arrow-icon gsp-mm-o-l" tabindex="-1" data-o-l-src="L21hcnF1ZXMvbWl6dW5vLw==">Mizuno</span>
 </li>
 <li class="c-nav-item " role="presentation">
-
 <span id="momabikes" role="menuitem" class="c-nav-link c-link c-link--arrow-icon gsp-mm-o-l" tabindex="-1" data-o-l-src="aHR0cHM6Ly93d3cuZ28tc3BvcnQuY29tL25vcy1tYXJxdWVzL2xpc3Rlcy9tb21hLWJpa2VzLw==">Moma Bikes</span>
 </li>
 <li class="c-nav-item " role="presentation">
@@ -1214,6 +1215,7 @@ Retour
 </li>
 <li class="c-nav-item " role="presentation">
 <span id="timberland" role="menuitem" class="c-nav-link c-link c-link--arrow-icon gsp-mm-o-l" tabindex="-1" data-o-l-src="L25vcy1tYXJxdWVzL3RpbWJlcmxhbmQv">Timberland</span>
+
 </li>
 <li class="c-nav-item " role="presentation">
 <span id="under armour" role="menuitem" class="c-nav-link c-link c-link--arrow-icon gsp-mm-o-l" tabindex="-1" data-o-l-src="aHR0cHM6Ly93d3cuZ28tc3BvcnQuY29tL21hcnF1ZXMtdW5kZXItYXJtb3VyLmh0bWw=">Under Armour</span>
@@ -1401,7 +1403,7 @@ Rejoindre le programme
 <div class="col-12 mt-md-5">
 <div class="c-banner__icon-wrapper float-right text-center">
 <img class="lazyload c-banner__icon " data-src="/on/demandware.static/-/Sites-GoSport_FR-Library/default/dwc6eeaeb7/images/mercure/Logo-MERCURE-(noir).png" title="Mercure Icon" alt="Mercure Icon" />
-</div>
+ </div>
 </div>
 </div>
 <span class="c-banner__text position-relative"><span>Découvrir le programme</span>
