@@ -203,8 +203,10 @@ CQuotient.cqcid='';
 CQuotient.cquid='';
 CQuotient.cqeid='';
 CQuotient.cqlid='';
+CQuotient.apiHost='api.cquotient.com';
 /* Turn this on to test against Staging Einstein */
 /* CQuotient.useTest= true; */
+CQuotient.useTest = ('true' === 'false');
 CQuotient.initFromCookies = function () {
 	var ca = document.cookie.split(';');
 	for(var i=0;i < ca.length;i++) {
@@ -423,7 +425,7 @@ Pull &amp; sweat
 <a href="/fr-fr/l/t-shirt-polo-jours-j/" id="jj-t-shirt-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatjj-t-shirt">
 T-shirt &amp; polo
 </a>
- </li>
+</li>
 <li class="dropdown-item d-none" role="menuitem">
 <a href="/fr-fr/l/chemise-jours-j/" id="jj-chemise-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatjj-chemise">
 Chemise
@@ -455,7 +457,7 @@ Accessoires
 </div>
 </div>
 </div>
-</div>
+ </div>
 </li>
 <li class="nav-item" role="menuitem">
 <a href="/fr-fr/l/nouveautes/" id="NOUVEAUTES-responsive" role="button" class="nav-link" data-beaver-id="sousCatNOUVEAUTES">
@@ -582,7 +584,7 @@ S&eacute;lection
 </li>
 <li class="dropdown-item d-none" role="menuitem">
 <a href="https://www.jules.com/fr-fr/l/nos-meilleures-ventes/" id="link-haut-meilleures-ventes-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatlink-haut-meilleures-ventes">
-⚡ Nos meilleures ventes
+ ⚡ Nos meilleures ventes
 </a>
 </li>
 <li class="dropdown-item d-none" role="menuitem">
@@ -600,7 +602,7 @@ V&ecirc;tements adapt&eacute;s
 T-shirts r&eacute;gionaux
 </a>
 </li>
- <li class="dropdown-item d-none" role="menuitem">
+<li class="dropdown-item d-none" role="menuitem">
 <a href="https://www.jules.com/fr-fr/l/chemise-repassage-facile/" id="link-chemise-repassage-facile-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatlink-chemise-repassage-facile">
 Chemise repassage facile
 </a>
@@ -671,7 +673,7 @@ Pantalon chino
 Jeans
 </a>
 </li>
-<li class="dropdown-item d-none" role="menuitem">
+ <li class="dropdown-item d-none" role="menuitem">
 <a href="https://www.jules.com/fr-fr/l/pantalon-jogging-cargo/" id="link-bas-pantalon-jogging-cargo-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatlink-bas-pantalon-jogging-cargo">
 Pantalon jogging &amp; cargo
 <sup style="color: #0092DD;">
@@ -802,7 +804,7 @@ Jean Urbanflex
 </div>
 </li>
 <li class="nav-item dropdown" role="menuitem">
-<a href="/fr-fr/l/costumes/" id="COSTUMES-responsive" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-beaver-id="MenuCOSTUMES" data-beaver-class="UniversTNR">
+ <a href="/fr-fr/l/costumes/" id="COSTUMES-responsive" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-beaver-id="MenuCOSTUMES" data-beaver-class="UniversTNR">
 Costumes
 </a>
 <div class="isMobileMenu">
@@ -841,7 +843,7 @@ C&eacute;r&eacute;monie &amp; mariage
 </li>
 <li class="dropdown-item dropdown d-none" role="menuitem" data-levels="true">
 <a href="#" id="tendance-costumes-responsive" class="dropdown-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-beaver-id="sousCattendance-costumes">
-Tendances
+ Tendances
 </a>
 <ul class="dropdown-menu col-xl-7" role="menu" aria-hidden="true">
 <li class="dropdown-item d-none" role="menuitem">
@@ -881,7 +883,7 @@ Chemise repassage facile
 <a href="https://www.jules.com/fr-fr/l/home-office/" id="link-home-office-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatlink-home-office">
 Home Office
 </a>
-</li>
+ </li>
 </ul>
 </li>
 <li class="dropdown-item dropdown d-none" role="menuitem" data-levels="true">
@@ -1092,7 +1094,7 @@ S&eacute;lection
 <li class="dropdown-item d-none" role="menuitem">
 <a href="https://www.jules.com/fr-fr/l/outlet/" id="link-accessoires-outlet-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatlink-accessoires-outlet">
 Outlet
-</a>
+ </a>
 </li>
 <li class="dropdown-item d-none" role="menuitem">
 <a href="https://www.jules.com/fr-fr/l/vetements-adaptes/" id="link-accessoires-capsule-inclusion-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatlink-accessoires-capsule-inclusion">
@@ -1212,7 +1214,7 @@ Nos objectifs
 <a href="https://www.jules.com/fr-fr/static/bilan-carbone.html" id="link-bilan-carbone-inprogress-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatlink-bilan-carbone-inprogress">
 Bilan carbone
 </a>
-</li>
+ </li>
 <li class="dropdown-item d-none" role="menuitem">
 <a href="https://www.jules.com/fr-fr/static/en-progres.html" id="link-notre-label-inprogress-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatlink-notre-label-inprogress">
 Gamme in progress
@@ -1304,7 +1306,7 @@ Actus
 </li>
 <li class="nav-item d-xl-none bg-grey" data-bs-toggle="modal" data-bs-target="#localeSelectModal" role="menuitem">
 <span class="nav-link">
-<i class="flag-icon circle-flag flag-icon-fr fa"></i>
+ <i class="flag-icon circle-flag flag-icon-fr fa"></i>
 <span>FR/fr</span>
 </span>
 </li>
@@ -1454,7 +1456,7 @@ mot de passe oubli&eacute;&nbsp;?
 </a>
 </div>
 </div>
-<input type="hidden" name="csrf_token" value="toRDq8qF9WIr9UfwLGkY-ssCzGKrpVNHArSmma2836GaMuriAqO6s8Ah0WWRQd9grAMm0CdMPiXAJY860vuBPDYxXHFQD7ARSpRTvw6j_AsjyLVlAN4sT1r12_kqC0tO23pcAkc3t8mrgcM-pGiuk7wP3mxojr-wNB51JsrTem-wdE37pH8=" />
+<input type="hidden" name="csrf_token" value="hQM-lioQ-eRWHlGFUiZ4MPdGJ7rc9K4sA8kN2ppmI88q8oSv9FMJ2pPQVNnXB2opkMSZBY7MritebL8YP7xZfmAKUCiSDczRCmSWjNRTg7NaGYXEQCXLGnmOn8Umg82XL6jkvvrcPk6JOvm2pDmMps66JQ9aRvT8cqGyHS_ev2Y5rQszD8Q=" />
 </form>
 </div>
 </div>
@@ -1551,7 +1553,7 @@ Supprimer cet article&nbsp;?</span>
 <div class="btn-footer">
 <button type="button" class="btn btn-primary inverse" data-bs-dismiss="modal">
 Annuler</button>
-<button type="button" class="btn btn-primary cart-delete-confirmation-btn" data-bs-dismiss="modal">
+ <button type="button" class="btn btn-primary cart-delete-confirmation-btn" data-bs-dismiss="modal">
 Supprimer
 </button>
 </div>
@@ -1788,7 +1790,7 @@ leur mise en ligne. Chaque commande effectuée sur le Site Internet est régie p
 les Conditions Générales applicables à la date de la commande. <br>
 <br>
 Le Client déclare avoir pris connaissance des Conditions Générales. Le fait de
- passer commande sur le Site Internet implique l’adhésion entière et sans réserve
+passer commande sur le Site Internet implique l’adhésion entière et sans réserve
 du Client aux Conditions Générales, qui régissent exclusivement les relations
 contractuelles entre Jules et le Client.
 </p>
@@ -1845,7 +1847,7 @@ d’une activité commerciale, industrielle, artisanale ou libérale.</li>
 <div class="container">
 <div class="row">
 <div class="col-12">
-<p>
+ <p>
 <h5>4.1 Description</h5>
 Les Produits sont décrits et reproduits par Jules avec la plus grande exactitude
 possible. <br>
@@ -1900,7 +1902,7 @@ contrat de vente avec Jules. <br>
 <br>
 Toutes les étapes de la vente sont clairement identifiées sur le Site Internet
 conformément aux dispositions de l’article 1127-1 du Code civil. En application de
- ces dispositions, le Client a la possibilité de vérifier le détail de sa commande et
+ces dispositions, le Client a la possibilité de vérifier le détail de sa commande et
 son prix total et de corriger d’éventuelles erreurs avant de valider définitivement
 sa commande. <br>
 <br>
@@ -1955,7 +1957,7 @@ sur le Site Internet au moment de la validation de la commande par le Client.
 </div>
 </div>
 </div>
- </div>
+</div>
 </div>
 </div>
 
@@ -2039,7 +2041,7 @@ Jules se réserve le droit de refuser toute commande d’un Client avec lequel i
 existerait un litige relatif au paiement d’une commande antérieure tant que ce
 litige n’est pas résolu.
 <br>
-Jules se réserve la possibilité de vérifier les données personnelles fournies par le
+ Jules se réserve la possibilité de vérifier les données personnelles fournies par le
 Client et d’adopter les mesures qu’il juge nécessaires (demande de justificatifs,
 et/ou annulation de la commande) pour vérifier que la personne dont le compte
 bancaire est débité est bien celle qui a passé la commande et ainsi éviter toute
@@ -2088,13 +2090,13 @@ Coût de 3,95 € TTC.
 La commande est livrée par La Poste en Colissimo Access à l’adresse de livraison
 saisie par le Client dans un délai de 4 à 5 jours ouvrés à compter de la
 confirmation de la commande (étant précisé que ce délai peut être rallongé pour les
-zones géographiques éloignées comme la Corse).
+ zones géographiques éloignées comme la Corse).
 <br>
 Le Client est informé de l’expédition de son colis par courrier électronique.
 <br>
 <h5>8.2 En points relais La Poste</h5>
 Coût de 3,45 € TTC.
- <br>
+<br>
 Le délai de livraison en points relais La Poste est de 4 à 5 jours ouvrés à compter
 de la confirmation de la commande.
 <br>
@@ -2273,7 +2275,7 @@ Les commandes qui ont fait l’objet d’un paiement par carte cadeau illicado s
 remboursées par l’envoi d’un nouvelle carte cadeau Jules d’un montant équivalent. Si
 le Client a complété son achat par un paiement en carte bancaire, celle-ci sera re
 créditée à hauteur du montant payé par carte bancaire.
- <br>
+<br>
 Les commandes contenant un emballage cadeau seront remboursées dans les mêmes
 conditions sur le compte du client titulaire de la carte bancaire ayant servi à la
 commande.
@@ -2373,7 +2375,7 @@ de modèle ;<br>
 par son représentant, notamment dans la publicité ou l'étiquetage ;<br>
 2. Ou s’il présente les caractéristiques définies d'un commun accord par les
 parties ou est propre à tout usage spécial recherché par l'acheteur, porté à
- la connaissance du vendeur et que ce dernier a accepté. » </i> <br>
+la connaissance du vendeur et que ce dernier a accepté. » </i> <br>
 <br>
 Article L217-12 du Code de la consommation<br>
 <i> « L'action résultant du défaut de conformité se prescrit par deux ans à
@@ -2392,7 +2394,7 @@ la demande d'intervention. » </i> <br>
 Extraits du Code civil relatifs à la garantie des vices cachés : <br>
 <br>
 Article 1641 du Code civil<br>
-<i> « Le vendeur est tenu de la garantie à raison des défauts cachés de la chose
+ <i> « Le vendeur est tenu de la garantie à raison des défauts cachés de la chose
 vendue qui la rendent impropre à l'usage auquel on la destine, ou qui
 diminuent tellement cet usage, que l'acheteur ne l'aurait pas acquise, ou
 n'en aurait donné qu'un moindre prix, s'il les avait connus. » </i> <br>
@@ -2475,7 +2477,7 @@ ARTICLE 13 –TRI ET GESTION DES DECHETS</button>
 <div class="col-12">
 <h5>13.1 Signalétique Triman</h5>
 <p> Le logo Triman reproduit ci-après signifie que le produit est soumis à une règle
- de tri et qu’il doit être jeté dans un container de recyclage ou déposé en point
+de tri et qu’il doit être jeté dans un container de recyclage ou déposé en point
 d’apport volontaire (selon le pictogramme associé) : </p>
 <img src="https://www.jules.com/on/demandware.static/-/Sites-Jules-SFRA-Library/default/dwe52ec53f/cgv/Logo-Triman.png" class="img-fluid mt-3 mb-3" alt="Triman">
 <p> Il est apposé sur l’ensemble des produits de consommation qui sont collectés par
@@ -2492,7 +2494,7 @@ en charge notamment de la gestion de la fin de vie des produits soumis à une
 consigne de tri.
 <br>
 Conformément à la loi anti-gaspillage pour une économie circulaire (AGEC), Jules
-dispose des identifiants uniques (IDU) suivants :
+ dispose des identifiants uniques (IDU) suivants :
 <br>
 Filière des emballages ménagers (CITEO) : FR210130_01MFAQ<br>
 Filière des papiers graphiques (CITEO) : FR210130_03DRAZ<br>
@@ -2590,7 +2592,7 @@ L’ensemble des éléments visuels, graphiques, d’ergonomie et plus général
 communication du Site Internet sont et restent la propriété intellectuelle et
 exclusive de Jules. <br>
 <br>
- Les internautes ne sont pas autorisés à représenter, reproduire, exploiter, diffuser
+Les internautes ne sont pas autorisés à représenter, reproduire, exploiter, diffuser
 ou utiliser à quelque titre que ce soit, en tout ou partie, des éléments du site
 Internet quel que soit leur représentation et à ce titre qu’ils soient logiciels,
 visuels et/ ou sonores. <br>
@@ -2693,7 +2695,7 @@ réservé à ses clients et prospects particuliers (les « Adhérents
 »)
 dénommé « Jules Club » (le « Programme »). . <br>
 <br>
- Téléphone : <a href="tel:0800301527">0800301527</a> / E-mail :
+Téléphone : <a href="tel:0800301527">0800301527</a> / E-mail :
 <a href="mailto:support@support-jules.zendesk.com " class="link">support@support-jules.zendesk.com
 </a> <br>
 <br>
@@ -2760,7 +2762,7 @@ l’Adhérent aux Conditions Générales.
 physique majeure ou titulaire d'une autorisation parentale et avoir
 la
 capacité de conclure le présent contrat (ii) agir à des fins
-strictement
+ strictement
 personnelles et qui n’entrent pas dans le cadre d’une activité
 commerciale, industrielle, artisanale ou libérale, (iii) ne pas être
 membre du personnel des sociétés du Groupe Happychic auquel
@@ -2786,7 +2788,7 @@ ou
 </a><br>
 <br>
 (ensemble et indifféremment le « Site Internet ») lors de la
- première commande.
+première commande.
 </li>
 </ul>
 <p> Sans préjudice de ce qui précède, tout Adhérent peut, à tout moment,
@@ -2851,7 +2853,7 @@ tous
 les sept (7) jours glissants.<br>
 <br>
 <li><strong> 1 dépôt de vêtements usagés = 10 points</strong></li>
-<br>
+ <br>
 Valable quel que soit le nombre, le type et la marque des produits
 usagés déposés en Magasin, dans la limite d’un dépôt tous les sept
 (7)
@@ -2977,7 +2979,7 @@ mois à
 compter de l’achat ou de la commande, même pendant les soldes, sans
 ticket
 de caisse, à la condition que lors de son achat, l’Adhérent se soit
- identifié en caisse ou connecté à son compte client, permettant ainsi
+identifié en caisse ou connecté à son compte client, permettant ainsi
 l’enregistrement du Produit.
 Sont exclus de l’échange et du remboursement les Produits portés, lavés,
 retouchés, sans étiquette ainsi que les chaussettes et sous-vêtements,
@@ -2991,7 +2993,7 @@ Lorsque l’Adhérent a cumulé deux cents (200) points, ceux-ci sont
 décomptés
 sous sept (7) jours (sous réserve que l’Adhérent ne repasse pas en-deçà
 du
-seuil pendant ce délai) et l’Adhérent accède au statut Jules Club Gold.
+ seuil pendant ce délai) et l’Adhérent accède au statut Jules Club Gold.
 <br>
 <br>
 L’Adhérent en est informé soit immédiatement par le vendeur en Magasin
@@ -3036,7 +3038,7 @@ La réduction de 20% est automatiquement émise par Jules dès l’accès au
 statut Jules Club Gold, par email ou courrier ainsi que dans le compte
 client de l’Adhérent. <br>
 <br>
-<strong> Livraison à domicile offerte</strong> <br>
+ <strong> Livraison à domicile offerte</strong> <br>
 <br>
 L’Adhérent Jules Club Gold bénéficie des frais de préparation et de
 livraison offerts jusqu’à trois (3) fois par an, pour les Produits
@@ -3069,7 +3071,7 @@ concerné.
 Cet Avantage est valable uniquement dans les Magasins suivants : Tours
 les
 Atlantes, La Roche-sur-Yon, Bordeaux St Catherine, Gand et Bruges
- </p>
+</p>
 </div>
 </div>
 </div>
@@ -3121,7 +3123,7 @@ anonymisées.
 <h2 class="mb-0">
 <button class="btn btn-link btn-sucouche collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwentyfive" aria-expanded="false" aria-controls="collapseTwentyfive"> ARTICLE 7 –
 RESILIATION - RADIATION </button>
- </h2>
+</h2>
 </div>
 <div id="collapseTwentyfive" class="collapse" aria-labelledby="headingTwentyfive" data-bs-parent="#headingEightteen">
 <div class="card-body">
@@ -3134,7 +3136,7 @@ d’en faire la demande par e-mail à l’adresse suivante :<a href="https://www
 cas,
 l’adhésion sera désactivée dans les meilleurs délais et l’Adhérent
 ne
-pourra plus bénéficier des Avantages. Il perdra notamment tous les
+ pourra plus bénéficier des Avantages. Il perdra notamment tous les
 points fidélité accumulés sans possibilité de récupération
 ultérieure.
 En outre, tout manquement aux Conditions Générales, toute
@@ -3217,7 +3219,7 @@ Avantages.
 En cas de changement dans ses coordonnées, l’Adhérent devra en
 informer
 Jules directement dans l’un des Magasins ou sur le Site Internet
- dans
+dans
 son compte client. <br>
 <br>
 La collecte et l’utilisation des dites informations par Jules se
@@ -3264,7 +3266,7 @@ d'assurer au mieux le bon fonctionnement du Programme. Cependant, sa
 responsabilité ne pourra être engagée : <br>
 <br>
 <ul>
- <li> En cas d’indisponibilité du Programme du fait d’un cas de force
+<li> En cas d’indisponibilité du Programme du fait d’un cas de force
 majeure telle que définie à l’article 1218 du Code civil ou
 imputable au fait imprévisible et insurmontable d’un tiers ;
 </li>
@@ -3297,7 +3299,7 @@ virus informatiques, rupture de service.</li>
 <div class="row">
 <div class="col-12">
 <p> Pour toute question relative au Programme, l’Adhérent est invité à
-s’adresser au service client : <br>
+ s’adresser au service client : <br>
 <br>
 <ul>
 <li>Par courrier à l’adresse suivante : Jules - Service Relation
@@ -3315,7 +3317,7 @@ Client,
 </div>
 </div>
 </div>
- </div>
+</div>
 
 <div class="card">
 <div class="card-header" id="headingThirty">
@@ -3352,7 +3354,7 @@ domicile de l’Adhérent ou du ressort du siège social de Jules.
 </div>
 
 <div class="card">
-<div class="card-header" id="headingThirty-one">
+ <div class="card-header" id="headingThirty-one">
 <h2 class="mb-0">
 <button class="btn btn-link btn-sucouche collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirty-one" aria-expanded="false" aria-controls="collapseThirty-one"> ANNEXE 2 – CONDITIONS GENERALES D'EVALUATION DES
 PRODUITS JULES</button>
@@ -3446,7 +3448,7 @@ ARTICLE 3 – DEPÔT DES AVIS
 <p>
 Le Client qui souhaite déposer un Avis déclare :
 </p>
-<ul>
+ <ul>
 <li>Être une personne physique majeure et avoir la capacité de
 conclure le présent contrat ;</li>
 <li>Avoir eu personnellement une expérience de consommation du
@@ -3494,7 +3496,7 @@ Produit correspondant à la moyenne arithmétique de l’intégralité des
 Avis relatifs au Produit.
 <br><br>
 Le Client s’engage à déposer un Avis :
-</p>
+ </p>
 <ul>
 <li>Portant exclusivement sur le Produit en lui-même (taille,
 coloris, matière, caractéristiques essentielles, etc.) et non
@@ -3509,7 +3511,7 @@ française.</li>
 <li>Comporter des informations fausses, mensongères ou de nature à
 induire en erreur les utilisateurs du Site Internet ;</li>
 <li>Comporter des informations étrangères et sans rapport avec le
- Produit auquel l’Avis fait référence ; </li>
+Produit auquel l’Avis fait référence ; </li>
 <li>Faire référence au prix payé pour le Produit évalué ou faire
 état d’une promotion en cours avec divulgation d’un code ou bon
 de réduction ;</li>
@@ -3538,7 +3540,7 @@ sites Internet exploités par des sociétés tierces à Jules ;</li>
 </div>
 </div>
 
-<div class="card">
+ <div class="card">
 <div class="card-header" id="headingThirty-six">
 <h2 class="mb-0">
 <button class="btn btn-link btn-sucouche collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirty-six" aria-expanded="false" aria-controls="collapseThirty-six">
@@ -3582,7 +3584,7 @@ décrites aux présentes.
 </div>
 </div>
 </div>
-</div>
+ </div>
 </div>
 </div>
 
@@ -3601,7 +3603,7 @@ ARTICLE 6 – PUBLICATION DES AVIS
 <div class="col-12">
 <p>
 Les Avis sont publiés sur le Site Internet au plus tard sept (7)
- jours ouvrés suivant le dépôt de l’Avis via le formulaire, sous
+jours ouvrés suivant le dépôt de l’Avis via le formulaire, sous
 réserve de la modération effectuée dans les conditions de l’article
 5.
 <br><br>
@@ -3698,7 +3700,7 @@ le <a href="https://www.jules.com/fr-fr/nous-contacter/" class="link">formulaire
 
 <div class="card">
 <div class="card-header" id="headingForty">
- <h2 class="mb-0">
+<h2 class="mb-0">
 <button class="btn btn-link btn-sucouche collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseForty" aria-expanded="false" aria-controls="collapseForty">
 ARTICLE 9 – SIGNALEMENT D’ABUS
 </button>
