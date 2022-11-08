@@ -11,43 +11,6 @@
 <!--[if gt IE 9]><!-->
 <link rel="preload" href="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1667899742397/js/loadJquery.js" as="script" />
 <script type="text/javascript" src="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1667899742397/js/loadJquery.js"></script>
-<script type="text/javascript">
-        // Duration in milliseconds to wait while the Kameleoon application file is loaded
-        var kameleoonLoadingTimeout = 1000;
-
-        window.kameleoonQueue = window.kameleoonQueue || [];
-        window.kameleoonStartLoadTime = new Date().getTime();
-        if (! document.getElementById("kameleoonLoadingStyleSheet") && ! window.kameleoonDisplayPageTimeOut)
-        {
-            var kameleoonS = document.getElementsByTagName("script")[0];
-            var kameleoonCc = "* { visibility: hidden !important; background-image: none !important; }";
-            var kameleoonStn = document.createElement("style");
-            kameleoonStn.type = "text/css";
-            kameleoonStn.id = "kameleoonLoadingStyleSheet";
-            if (kameleoonStn.styleSheet)
-            {
-                kameleoonStn.styleSheet.cssText = kameleoonCc;
-            }
-            else
-            {
-                kameleoonStn.appendChild(document.createTextNode(kameleoonCc));
-            }
-            kameleoonS.parentNode.insertBefore(kameleoonStn, kameleoonS);
-            window.kameleoonDisplayPage = function(fromEngine)
-            {
-                if (!fromEngine)
-                {
-                    window.kameleoonTimeout = true;
-                }
-                if (kameleoonStn.parentNode)
-                {
-                    kameleoonStn.parentNode.removeChild(kameleoonStn);
-                }
-            };
-            window.kameleoonDisplayPageTimeOut = window.setTimeout(window.kameleoonDisplayPage, kameleoonLoadingTimeout);
-        }
-    </script>
-<script type="text/javascript" src="//n9jm8v6ad7.kameleoon.eu/kameleoon.js" async="true"></script>
 <script defer type="text/javascript" src="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1667899742397/js/loadAlertNotification.js"></script>
 <script defer type="text/javascript" src="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1667899742397/js/loadGtm.js"></script>
 <script defer type="text/javascript" src="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1667899742397/js/main.js"></script>
@@ -404,7 +367,7 @@ CQuotient.trackViewProduct = function(/* Object */ cqParamData){
 </div>
 </div>
 </div>
-</div>
+ </div>
 </div>
 </div>
 </div>
@@ -672,7 +635,7 @@ Tendances
 </a>
 </li>
 <li class="dropdown-item d-none" role="menuitem">
-<a href="https://www.jules.com/fr-fr/l/looks-de-saison/" id="link-bas-looks-de-saison-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatlink-bas-looks-de-saison">
+ <a href="https://www.jules.com/fr-fr/l/looks-de-saison/" id="link-bas-looks-de-saison-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatlink-bas-looks-de-saison">
 ❄️ Looks grand froid
 </a>
 </li>
@@ -711,6 +674,7 @@ Jean Straight #Ben
 <li class="dropdown-item d-none" role="menuitem">
 <a href="https://www.jules.com/fr-fr/l/regular-alex/" id="link-jean-regular-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatlink-jean-regular">
 Jean Regular #Alex
+
 </a>
 </li>
 <li class="dropdown-item d-none" role="menuitem">
@@ -954,7 +918,7 @@ Bracelet &amp; bijou
 </li>
 <li class="dropdown-item d-none" role="menuitem">
 <a href="https://www.jules.com/fr-fr/l/pyjama/" id="HCA19-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatHCA19">
- Pyjama
+Pyjama
 </a>
 </li>
 <li class="dropdown-item d-none" role="menuitem">
@@ -1000,7 +964,7 @@ Tendances
 </a>
 <ul class="dropdown-menu col-xl-7" role="menu" aria-hidden="true">
 <li class="dropdown-item d-none" role="menuitem">
- <a href="https://www.jules.com/fr-fr/l/idees-cadeaux-noel/" id="link-accessoires-idees-cadeaux-noel-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatlink-accessoires-idees-cadeaux-noel">
+<a href="https://www.jules.com/fr-fr/l/idees-cadeaux-noel/" id="link-accessoires-idees-cadeaux-noel-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatlink-accessoires-idees-cadeaux-noel">
 🎁 Id&eacute;es cadeaux No&euml;l
 </a>
 </li>
@@ -1017,6 +981,7 @@ S&eacute;lection velours &amp; flanelle
 <li class="dropdown-item d-none" role="menuitem">
 <a href="https://www.jules.com/fr-fr/l/collection-pluie/" id="link-accessoires-collection-pluie-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatlink-accessoires-collection-pluie">
 🌧️ Collection pluie
+
 </a>
 </li>
 <li class="dropdown-item d-none" role="menuitem">
@@ -1219,6 +1184,7 @@ L'humain
 Tous nos engagements
 </a>
 </li>
+
 </ul>
 </li>
 </ul>
@@ -1400,7 +1366,7 @@ Actus
 <div class="invalid-feedback"></div>
 </label>
 </div>
-<div class="form-group required show_hide_password" title="required">
+ <div class="form-group required show_hide_password" title="required">
 <label class="form-label" for="login-form-password">
 <input required type="password" id="login-form-password" class="form-control" name="loginPassword" placeholder=" " data-missing-error="Ce champ n&eacute;cessite d'&ecirc;tre renseign&eacute;." data-beaver-id="password">
 <span class="input-label">Mot de passe *</span>
@@ -1419,7 +1385,7 @@ mot de passe oubli&eacute;&nbsp;?
 </a>
 </div>
 </div>
-<input type="hidden" name="csrf_token" value="h-PBTNWYRawrrrslOS2CVYMPQ3GT9KkdI21K3W1mrNw5Sakb_bb6W45-jFWBH8fn7UG3bsWs3939WJwv9MJNlRpOH0trHdfebccm61bieh9sczvpNoVULtykJsEBawMIcbeOe0DiSnZ9aLo4U1lI3NVR-BXwVSeatSQxeIzR386TEKNmw8c=" />
+<input type="hidden" name="csrf_token" value="97lxMRWOsgXxRL-FT5cSdhGaqEXbabnsZ7Az-L6hsIZaZvPKjLRnSIGzj0zbt8-4gyuntQsH-gvaYhygIM-QnkLaw7kazCctZ3Ni_8dzxGJyHCvEzZjuI1_LzKAIIctczB_2hptchXb7H6OUeMoLN55YbLTcFRoa3J-RbZbYGbj0ITsuBuQ=" />
 </form>
 </div>
 </div>
@@ -1453,7 +1419,7 @@ Cr&eacute;er un compte
 </div>
 <div class="modal-body col-12 text-center">
 <span class="returnPasswordReset return">Essayer un autre e-mail</span>
-</div>
+ </div>
 </div>
 </div>
 </div>
@@ -2202,45 +2168,6 @@ Assistance
 
 
 
-
-    <script type="text/javascript">
-        // Duration in milliseconds to wait while the Kameleoon application file is loaded
-        var kameleoonLoadingTimeout = 1000;
-
-        window.kameleoonQueue = window.kameleoonQueue || [];
-        window.kameleoonStartLoadTime = new Date().getTime();
-        if (! document.getElementById("kameleoonLoadingStyleSheet") && ! window.kameleoonDisplayPageTimeOut)
-        {
-            var kameleoonS = document.getElementsByTagName("script")[0];
-            var kameleoonCc = "* { visibility: hidden !important; background-image: none !important; }";
-            var kameleoonStn = document.createElement("style");
-            kameleoonStn.type = "text/css";
-            kameleoonStn.id = "kameleoonLoadingStyleSheet";
-            if (kameleoonStn.styleSheet)
-            {
-                kameleoonStn.styleSheet.cssText = kameleoonCc;
-            }
-            else
-            {
-                kameleoonStn.appendChild(document.createTextNode(kameleoonCc));
-            }
-            kameleoonS.parentNode.insertBefore(kameleoonStn, kameleoonS);
-            window.kameleoonDisplayPage = function(fromEngine)
-            {
-                if (!fromEngine)
-                {
-                    window.kameleoonTimeout = true;
-                }
-                if (kameleoonStn.parentNode)
-                {
-                    kameleoonStn.parentNode.removeChild(kameleoonStn);
-                }
-            };
-            window.kameleoonDisplayPageTimeOut = window.setTimeout(window.kameleoonDisplayPage, kameleoonLoadingTimeout);
-        }
-    </script>
-    
-    <script type="text/javascript" src="//n9jm8v6ad7.kameleoon.eu/kameleoon.js" async="true"></script>
 
 
 <script defer type="text/javascript" src="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1667899742397/js/loadAlertNotification.js"></script>
