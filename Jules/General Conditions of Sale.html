@@ -11,6 +11,43 @@
 <!--[if gt IE 9]><!-->
 <link rel="preload" href="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1667899742397/js/loadJquery.js" as="script" />
 <script type="text/javascript" src="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1667899742397/js/loadJquery.js"></script>
+<script type="text/javascript">
+        // Duration in milliseconds to wait while the Kameleoon application file is loaded
+        var kameleoonLoadingTimeout = 1000;
+
+        window.kameleoonQueue = window.kameleoonQueue || [];
+        window.kameleoonStartLoadTime = new Date().getTime();
+        if (! document.getElementById("kameleoonLoadingStyleSheet") && ! window.kameleoonDisplayPageTimeOut)
+        {
+            var kameleoonS = document.getElementsByTagName("script")[0];
+            var kameleoonCc = "* { visibility: hidden !important; background-image: none !important; }";
+            var kameleoonStn = document.createElement("style");
+            kameleoonStn.type = "text/css";
+            kameleoonStn.id = "kameleoonLoadingStyleSheet";
+            if (kameleoonStn.styleSheet)
+            {
+                kameleoonStn.styleSheet.cssText = kameleoonCc;
+            }
+            else
+            {
+                kameleoonStn.appendChild(document.createTextNode(kameleoonCc));
+            }
+            kameleoonS.parentNode.insertBefore(kameleoonStn, kameleoonS);
+            window.kameleoonDisplayPage = function(fromEngine)
+            {
+                if (!fromEngine)
+                {
+                    window.kameleoonTimeout = true;
+                }
+                if (kameleoonStn.parentNode)
+                {
+                    kameleoonStn.parentNode.removeChild(kameleoonStn);
+                }
+            };
+            window.kameleoonDisplayPageTimeOut = window.setTimeout(window.kameleoonDisplayPage, kameleoonLoadingTimeout);
+        }
+    </script>
+<script type="text/javascript" src="//n9jm8v6ad7.kameleoon.eu/kameleoon.js" async="true"></script>
 <script defer type="text/javascript" src="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1667899742397/js/loadAlertNotification.js"></script>
 <script defer type="text/javascript" src="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1667899742397/js/loadGtm.js"></script>
 <script defer type="text/javascript" src="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1667899742397/js/main.js"></script>
@@ -294,6 +331,7 @@ CQuotient.trackViewProduct = function(/* Object */ cqParamData){
 </head>
 <body class="Page-Show">
 
+
 <noscript>
         <iframe
             src="https://www.googletagmanager.com/ns.html?id=GTM-TXPSVXJ&gtm_auth=VfLWeQB7hrt9dIF24tzkcA&gtm_preview=env-2&gtm_cookies_win=x"
@@ -446,7 +484,7 @@ Sweat
 </a>
 </li>
 <li class="dropdown-item d-none" role="menuitem">
-<a href="/fr-fr/l/pull/" id="HCC20-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatHCC20">
+ <a href="/fr-fr/l/pull/" id="HCC20-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatHCC20">
 Pull
 </a>
 </li>
@@ -526,7 +564,7 @@ V&ecirc;tements adapt&eacute;s
 </li>
 <li class="dropdown-item d-none" role="menuitem">
 <a href="https://www.jules.com/fr-fr/l/t-shirts-regionaux/" id="link-boutique-t-shirt-regionaux-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatlink-boutique-t-shirt-regionaux">
-T-shirts r&eacute;gionaux
+ T-shirts r&eacute;gionaux
 </a>
 </li>
 <li class="dropdown-item d-none" role="menuitem">
@@ -656,6 +694,7 @@ S&eacute;lection velours &amp; flanelle
 </li>
 </ul>
 </li>
+
 <li class="dropdown-item dropdown d-none" role="menuitem" data-levels="true">
 <a href="#" id="coupes-bas-responsive" class="dropdown-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-beaver-id="sousCatcoupes-bas">
 👖 Les coupes
@@ -696,7 +735,7 @@ Jean Loose #Liam
 Jean Urbanflex
 </a>
 </li>
-<li class="dropdown-item d-none" role="menuitem">
+ <li class="dropdown-item d-none" role="menuitem">
 <a href="https://www.jules.com/fr-fr/static/guide-denim.html" id="link-guide-denim-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatlink-guide-denim">
 📏 Guide du denim
 </a>
@@ -743,7 +782,7 @@ Tous les costumes
 <ul class="dropdown-menu col-xl-7" role="menu" aria-hidden="true">
 <li class="dropdown-item d-none" role="menuitem">
 <a href="/fr-fr/l/ensemble-de-costume/" id="ensembles-costumes-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatensembles-costumes">
-Ensemble de Costume
+ Ensemble de Costume
 </a>
 </li>
 <li class="dropdown-item d-none" role="menuitem">
@@ -851,7 +890,7 @@ Exclu web
 <picture>
 <source media="(min-width:1280px)" srcset="https://www.jules.com/on/demandware.static/-/Sites/default/dw9e5a2c22/jules-sfcc/PUSH/Push2-ensemble-costume-FR.jpg 1x, https://www.jules.com/on/demandware.static/-/Sites/default/dw116df8af/jules-sfcc/PUSH/Push2-ensemble-costume-FR@2x.jpg 2x">
 <source srcset="https://www.jules.com/on/demandware.static/-/Sites/fr_FR/v1667899742397/PE20/px.gif">
- <img alt="Ensemble de costume" src="https://www.jules.com/on/demandware.static/-/Sites/default/dw9e5a2c22/jules-sfcc/PUSH/Push2-ensemble-costume-FR.jpg" class="img-fluid pushNav" loading="lazy">
+<img alt="Ensemble de costume" src="https://www.jules.com/on/demandware.static/-/Sites/default/dw9e5a2c22/jules-sfcc/PUSH/Push2-ensemble-costume-FR.jpg" class="img-fluid pushNav" loading="lazy">
 </picture>
 </a>
 </div>
@@ -1021,7 +1060,7 @@ V&ecirc;tements adapt&eacute;s
 </li>
 <li class="dropdown-item d-none" role="menuitem">
 <a href="https://www.jules.com/fr-fr/l/mode-ecoresponsable/" id="link-accessoires-men-in-progress-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatlink-accessoires-men-in-progress">
- Mode &eacute;coresponsable
+Mode &eacute;coresponsable
 </a>
 </li>
 <li class="dropdown-item d-none" role="menuitem">
@@ -1092,7 +1131,7 @@ Pull &amp; sweat
 </li>
 <li class="dropdown-item d-none" role="menuitem">
 <a href="https://www.jules.com/fr-fr/l/mode-ecoresponsable/?prefn1=F3_internalCategory&amp;prefv1=Manteau%20%26%20Parka|Blouson%20%26%20Doudoune" id="link-manteau-veste-inprogress-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatlink-manteau-veste-inprogress">
- Manteau &amp; veste
+Manteau &amp; veste
 </a>
 </li>
 <li class="dropdown-item d-none" role="menuitem">
@@ -1222,7 +1261,7 @@ Actus
 <a href="https://www.jules.com/fr-fr/client/identification/" class="nav-link mobile-account user-message">
 <i class="account-icon" aria-hidden="true"></i>
 <span>Compte</span>
- </a>
+</a>
 </li>
 <li class="nav-item d-xl-none bg-grey" role="menuitem">
 <a href="/fr-fr/recherche-magasins/" id="menu_stores_link" class="nav-link">
@@ -1352,7 +1391,7 @@ Actus
 <hr class="title-separator" />
 </div>
 <div class="login-form-nav mb-3">
- <span class="account-subtitle link link-icon-before returnLayerC">
+<span class="account-subtitle link link-icon-before returnLayerC">
 <img class="inverse" src="/on/demandware.static/Sites-Jules-SFRA-Site/-/default/dw5abec671/images/arrow-2.svg" alt="<" />
 <span id="label-returnC"></span>
 </span>
@@ -1382,10 +1421,10 @@ mot de passe oubli&eacute;&nbsp;?
 </a>
 </div>
 </div>
-<input type="hidden" name="csrf_token" value="vET9Vd6fLTyHnZsSTfRxk9k7mz5S9KoTN85WH0Jhs4W_71vZWCS1e8B8z6IDBgrNvIC6kWHF5MVI_SS8R3lg2YLha4o9TeevEYf7MeHilOwNcUIpL7iiTT55Ah1_c2jeDwWVkFYTOcEkBtugor9Lsmk7aRIW5MT2V1Zf5LkO36D1kRl6X60=" />
+<input type="hidden" name="csrf_token" value="0cQkgpX1okazK8RpWLTklaXTjvZ_GW7F9NokMl4GHeI5WKIwHtkJDvd5BE2-bVvVIeEsRXvVCVy46MKiECJ3XHC6317zBKNU1dHYl69IzB2oqShnhVvTQ2YHRYmhPmY0Ive8sqO91P5k6L6vgPNxRMvxkC-Z1kN8B6unVOUs8DKb3se5bxQ=" />
 </form>
 </div>
-</div>
+ </div>
 </div>
 </div>
 </div>
@@ -1668,7 +1707,7 @@ PREAMBULE </button>
 <div class="row">
 <div class="col-12">
 <p> JULES, Société par Actions Simplifiée au capital de 32 960 825 € dont le siège
- social est situé 152 Avenue Alfred Motte, 59100 Roubaix, immatriculée au
+social est situé 152 Avenue Alfred Motte, 59100 Roubaix, immatriculée au
 Registre du Commerce et des Sociétés de Lille Métropole sous le numéro 305 154
 262, dont le numéro de TVA intracommunautaire est FR 78 305 154 262, représentée
 par Franck Poillon, Directeur Général et en cette qualité Directeur de la
@@ -1776,7 +1815,7 @@ d’une activité commerciale, industrielle, artisanale ou libérale.</li>
 <p>
 <h5>4.1 Description</h5>
 Les Produits sont décrits et reproduits par Jules avec la plus grande exactitude
- possible. <br>
+possible. <br>
 Toutefois, Jules attire l’attention du Client sur le fait que les photographies ne
 peuvent assurer une similitude parfaite avec le Produit proposé à la vente,
 notamment en ce qui concerne les couleurs. Les différences peuvent résulter de la
@@ -1880,7 +1919,7 @@ modification du taux de TVA. <br>
 Les Produits commandés sont facturés au Client sur la base du tarif en vigueur
 sur le Site Internet au moment de la validation de la commande par le Client.
 </p>
- </div>
+</div>
 </div>
 </div>
 </div>
@@ -1918,7 +1957,7 @@ Lors de la validation de sa commande, le Client doit entrer son adresse e-mail l
 <br>
 <h5>7.3 Avec son compte Google Pay</h5>
 Pour bénéficier de ce mode de paiement, le Client doit disposer d’un compte Google
-Pay.
+ Pay.
 <br>
 En choisissant ce mode de paiement, le Client est redirigé vers le serveur sécurisé
 de Google Pay (par le biais de notre prestataire de paiement Payzen) et doit entrer
@@ -2009,7 +2048,7 @@ date limite à laquelle sa commande sera livrée.
 <br>
 Sauf mention contraire spécifique à chaque mode de livraison, les produits sont
 livrés exclusivement en France continentale, selon les modalités suivantes :
-<br>
+ <br>
 <h5>8.1 A domicile</h5> <i>(en France continentale ainsi qu’en Corse)</i>
 Coût de 3,95 € TTC.
 <br>
@@ -2058,7 +2097,7 @@ magasin.
 Il dispose d’un délai de 10 jours ouvrés à compter de la date d’envoi du courrier
 électronique pour venir retirer sa commande, sur présentation d’une pièce d’identité
 en vigueur. A l’expiration de ce délai, le colis sera considéré comme abandonné et
-ne pourra plus faire l’objet d’aucune réclamation par le Client. Jules remboursera
+ ne pourra plus faire l’objet d’aucune réclamation par le Client. Jules remboursera
 le Client du montant des Produits commandés sur la base du prix facturé.
 <br>
 <h5>8.5 A l’international via notre partenaire ColisExpat</h5>
@@ -2251,7 +2290,7 @@ ARTICLE 11 – GARANTIES </button>
 </div>
 <div id="collapseEleven" class="collapse" aria-labelledby="headingEleven" data-bs-parent="#accordionExample">
 <div class="card-body">
- <div class="container">
+<div class="container">
 <div class="row">
 <div class="col-12">
 <p> Indépendamment de toute garantie commerciale pouvant être accordée au Client,
@@ -2273,7 +2312,7 @@ Produit. <br>
 <br>
 Il est rappelé que la garantie légale de conformité s’applique indépendamment de
 l’éventuelle garantie commerciale qui pourrait être consentie au Client. <br>
-<br>
+ <br>
 Par ailleurs, le Client peut décider de mettre en œuvre la garantie contre les
 défauts cachés de la chose vendue au sens de l’article 1641 du Code civil. Dans
 cette hypothèse, le Client peut choisir entre la résolution de la vente ou une
@@ -2474,7 +2513,7 @@ ARTICLE 15 – RESPONSABILITÉ </button>
 <div class="col-12">
 <p> Jules s’engage à mettre en œuvre tous les moyens nécessaires afin d'assurer au
 mieux le bon fonctionnement du Site Internet. Cependant, sa responsabilité ne
-pourra être engagée : </p>
+ pourra être engagée : </p>
 <ul>
 <li>En cas d’inexécution de ses obligations (e.g. rupture de stock,
 indisponibilité du Produit) ou d’indisponibilité du Site Internet du fait
@@ -2544,7 +2583,7 @@ Toute reproduction totale ou partielle de ces marques et/ou logos, effectuée à
 partir des éléments du site Internet sans l’autorisation expresse de Jules est
 constitutif de contrefaçon sanctionnée par les articles L335-2 et suivants et par
 l’article L716-1 du Code de la propriété intellectuelle. <br>
- <br>
+<br>
 <h5>16.4 Liens hypertextes</h5>
 Tout lien simple ou par hypertexte est strictement interdit sauf accord exprès et
 écrit de Jules.
@@ -2651,7 +2690,7 @@ Bishopsgate, Londres, UK EC2N 4AY. Téléphone: +44(0)203 1477600.
 Conditions
 Générales »)</b> ont pour objet de décrire les conditions de
 participation au Programme.<br>
- <br>
+<br>
 Elles visent notamment à régir :
 <ul>
 <li> L’adhésion au Programme ;</li>
@@ -2701,7 +2740,7 @@ informations utiles requises telles que précisées à l’article 9 :
 <ul>
 <li>Sur simple demande au sein du réseau Jules/Jules comprenant les
 magasins Jules, Jules et multimarques Jules/Jules/Bizzbee de
- France
+France
 Métropolitaine, Belgique, Italie et Espagne (les « Magasins ») ;
 ou
 </li>
@@ -2745,7 +2784,7 @@ d'autres fins que celles définies aux Conditions Générales.
 <h2 class="mb-0">
 <button class="btn btn-link btn-sucouche collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwentyTwo" aria-expanded="false" aria-controls="collapseTwentyTwo"> ARTICLE 4 – CUMUL DE
 POINTS FIDELITE </button>
- </h2>
+</h2>
 </div>
 <div id="collapseTwentyTwo" class="collapse" aria-labelledby="headingTwentyTwo" data-bs-parent="#headingEightteen">
 <div class="card-body">
@@ -2793,7 +2832,7 @@ Rewear
 »), sans minimum d’achat ou de vente, dans la limite d’un achat ou
 d’une
 vente tous les sept (7) jours glissants et jusqu’à cent (100) points
- fidélité cumulables.<br>
+fidélité cumulables.<br>
 <br>
 </ul>
 <p> L’Adhérent cumule des points fidélité à condition de s’être
@@ -2819,7 +2858,7 @@ fidélité associés au passage en caisse ou à la commande Internet
 seront
 décomptés en cas de retour de l’intégralité des Produits de la
 commande.
-En cas d’annulation ou de résiliation d’un achat / vente sur Rewear,
+ En cas d’annulation ou de résiliation d’un achat / vente sur Rewear,
 les
 points fidélité afférents seront décomptés du total des points
 fidélité
@@ -2838,7 +2877,7 @@ fidélité cumulés disponibles sur son solde. <br>
 <br>
 L’Adhérent peut consulter librement et gratuitement le solde de ses
 points fidélité ainsi que le statut fidélité associé sur demande en
- Magasin, sur son ticket de caisse après chaque achat en Magasin,
+Magasin, sur son ticket de caisse après chaque achat en Magasin,
 depuis
 son compte client sur le Site Internet ainsi que dans son wallet
 (portefeuille électronique) téléchargeable dans l’App Store ou sur
@@ -2914,7 +2953,7 @@ mesure d’hygiène. <br>
 <br>
 <br>
 <h5>5.2 Statut Jules Club Gold</h5>
-<br>
+ <br>
 Lorsque l’Adhérent a cumulé deux cents (200) points, ceux-ci sont
 décomptés
 sous sept (7) jours (sous réserve que l’Adhérent ne repasse pas en-deçà
@@ -2933,7 +2972,7 @@ mois, à compter du jour du changement de statut fidélité. Pendant cette
 durée, l’Adhérent bénéficie des Avantages spécifiques du statut Jules
 Club
 Gold tels que décrits ci-après, en plus des Avantages associés au statut
- Jules Club. <br>
+Jules Club. <br>
 Pour conserver le statut Jules Club Gold, l’Adhérent doit cumuler, au
 minimum chaque année, deux cents (200) points fidélité. Dans le cas où
 ce
@@ -2959,7 +2998,7 @@ Club
 Jules, les soldes, les Jours Jules et toute autre offre promotionnelle
 en
 cours. <br>
-<br>
+ <br>
 La réduction de 20% est automatiquement émise par Jules dès l’accès au
 statut Jules Club Gold, par email ou courrier ainsi que dans le compte
 client de l’Adhérent. <br>
@@ -3028,7 +3067,7 @@ réactivera
 automatiquement le cumul des points fidélité et le droit au bénéfice
 des
 Avantages. <br>
- <br>
+<br>
 Dans tous les cas, les données personnelles collectées seront
 conservées
 durant toute la relation commerciale entre l’Adhérent et Jules ainsi
@@ -3075,7 +3114,7 @@ volés,
 détournées ou sans provision ou encore tout comportement
 préjudiciable
 aux intérêts de Jules entraînera de plein droit la radiation de
- l’Adhérent, l'annulation de ses points fidélité et des Avantages
+l’Adhérent, l'annulation de ses points fidélité et des Avantages
 obtenus, sans compensation ni indemnisation d'aucune sorte et sans
 information préalable. </p>
 </div>
@@ -3126,7 +3165,7 @@ une quelconque indemnité au bénéfice de l’Adhérent.
 <h2 class="mb-0">
 <button class="btn btn-link btn-sucouche collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwentySeven" aria-expanded="false" aria-controls="collapseTwentySeven"> ARTICLE 9 – DONNEES A
 CARACTERE PERSONNEL </button>
- </h2>
+</h2>
 </div>
 <div id="collapseTwentySeven" class="collapse" aria-labelledby="headingTwentySeven" data-bs-parent="#headingEightteen">
 <div class="card-body">
@@ -3153,7 +3192,7 @@ fait
 dans le respect de la politique de confidentialité de Jules,
 disponible
 sur <a href="https://www.jules.com/fr-fr/static/politique-de-confidentialite.html" class="link">politique
-de confidentialité</a> . <br>
+ de confidentialité</a> . <br>
 <br>
 Conformément aux lois et règlementations françaises et européennes
 en
@@ -3173,7 +3212,7 @@ peuvent s’exercer sur simple demande à l’adresse suivante :<a href="https:/
 </div>
 </div>
 </div>
- </div>
+</div>
 
 <div class="card">
 <div class="card-header" id="headingTwentyEight">
@@ -3223,7 +3262,7 @@ virus informatiques, rupture de service.</li>
 <div class="card-body">
 <div class="container">
 <div class="row">
- <div class="col-12">
+<div class="col-12">
 <p> Pour toute question relative au Programme, l’Adhérent est invité à
 s’adresser au service client : <br>
 <br>
@@ -3274,7 +3313,7 @@ domicile de l’Adhérent ou du ressort du siège social de Jules.
 </div>
 </div>
 </div>
- </div>
+</div>
 </div>
 </div>
 </div>
@@ -3323,7 +3362,7 @@ avis de ses clients (les « Avis ») sur ses sites Internet <a href="https://www
 <h2 class="mb-0">
 <button class="btn btn-link btn-sucouche collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirty-three" aria-expanded="false" aria-controls="collapseThirty-three">
 ARTICLE 2 – OBJET
- </button>
+</button>
 </h2>
 </div>
 <div id="collapseThirty-three" class="collapse" aria-labelledby="headingThirty-three" data-bs-parent="#headingThirty-one">
@@ -3372,7 +3411,7 @@ ARTICLE 3 – DEPÔT DES AVIS
 <div class="row">
 <div class="col-12">
 <p>
- Le Client qui souhaite déposer un Avis déclare :
+Le Client qui souhaite déposer un Avis déclare :
 </p>
 <ul>
 <li>Être une personne physique majeure et avoir la capacité de
@@ -3399,7 +3438,7 @@ prix, style, matière, etc.).
 </div>
 </div>
 </div>
-</div>
+ </div>
 </div>
 
 <div class="card">
@@ -3490,7 +3529,7 @@ qui contreviendrait spécifiquement aux dispositions de l’article 4
 et plus généralement aux Conditions Générales et/ou au droit
 français et européen.
 <br><br>
-La modération est effectuée indistinctement sur tous les Avis, quel
+ La modération est effectuée indistinctement sur tous les Avis, quel
 que soit leur contenu, et au plus tard sept (7) jours ouvrés suivant
 le dépôt de l’Avis.
 <br><br>
@@ -3603,7 +3642,7 @@ affiches, etc.), dans le monde entier.
 <button class="btn btn-link btn-sucouche collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThirty-nine" aria-expanded="false" aria-controls="collapseThirty-nine">
 ARTICLE 8 – MODIFICATION DES AVIS
 </button>
- </h2>
+</h2>
 </div>
 <div id="collapseThirty-nine" class="collapse" aria-labelledby="headingThirty-nine" data-bs-parent="#headingThirty-one">
 <div class="card-body">
@@ -3657,7 +3696,7 @@ sous l’Avis concerné.
 ARTICLE 10 – RESPONSABILITE
 </button>
 </h2>
- </div>
+</div>
 <div id="collapseForty-one" class="collapse" aria-labelledby="headingForty-one" data-bs-parent="#headingThirty-one">
 <div class="card-body">
 <div class="container">
@@ -3961,7 +4000,7 @@ Italia (italiano)
 </span>
 <span class="dropdown-item" data-locale="fr_BE" data-currencyCode="EUR" data-siteid="Jules-BE-SFRA">
 <i class="flag-icon flag-icon-be"></i>
-Belgique (fran&ccedil;ais)
+ Belgique (fran&ccedil;ais)
 </span>
 <span class="dropdown-item" data-locale="nl_BE" data-currencyCode="EUR" data-siteid="Jules-BE-SFRA">
 <i class="flag-icon flag-icon-be"></i>
@@ -4179,6 +4218,45 @@ Assistance
 
 
 
+
+    <script type="text/javascript">
+        // Duration in milliseconds to wait while the Kameleoon application file is loaded
+        var kameleoonLoadingTimeout = 1000;
+
+        window.kameleoonQueue = window.kameleoonQueue || [];
+        window.kameleoonStartLoadTime = new Date().getTime();
+        if (! document.getElementById("kameleoonLoadingStyleSheet") && ! window.kameleoonDisplayPageTimeOut)
+        {
+            var kameleoonS = document.getElementsByTagName("script")[0];
+            var kameleoonCc = "* { visibility: hidden !important; background-image: none !important; }";
+            var kameleoonStn = document.createElement("style");
+            kameleoonStn.type = "text/css";
+            kameleoonStn.id = "kameleoonLoadingStyleSheet";
+            if (kameleoonStn.styleSheet)
+            {
+                kameleoonStn.styleSheet.cssText = kameleoonCc;
+            }
+            else
+            {
+                kameleoonStn.appendChild(document.createTextNode(kameleoonCc));
+            }
+            kameleoonS.parentNode.insertBefore(kameleoonStn, kameleoonS);
+            window.kameleoonDisplayPage = function(fromEngine)
+            {
+                if (!fromEngine)
+                {
+                    window.kameleoonTimeout = true;
+                }
+                if (kameleoonStn.parentNode)
+                {
+                    kameleoonStn.parentNode.removeChild(kameleoonStn);
+                }
+            };
+            window.kameleoonDisplayPageTimeOut = window.setTimeout(window.kameleoonDisplayPage, kameleoonLoadingTimeout);
+        }
+    </script>
+    
+    <script type="text/javascript" src="//n9jm8v6ad7.kameleoon.eu/kameleoon.js" async="true"></script>
 
 
 <script defer type="text/javascript" src="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1667899742397/js/loadAlertNotification.js"></script>
