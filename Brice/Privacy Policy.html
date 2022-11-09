@@ -11,6 +11,43 @@
 <!--[if gt IE 9]><!-->
 <link rel="preload" href="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1667899742397/js/loadJquery.js" as="script" />
 <script type="text/javascript" src="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1667899742397/js/loadJquery.js"></script>
+<script type="text/javascript">
+        // Duration in milliseconds to wait while the Kameleoon application file is loaded
+        var kameleoonLoadingTimeout = 1000;
+
+        window.kameleoonQueue = window.kameleoonQueue || [];
+        window.kameleoonStartLoadTime = new Date().getTime();
+        if (! document.getElementById("kameleoonLoadingStyleSheet") && ! window.kameleoonDisplayPageTimeOut)
+        {
+            var kameleoonS = document.getElementsByTagName("script")[0];
+            var kameleoonCc = "* { visibility: hidden !important; background-image: none !important; }";
+            var kameleoonStn = document.createElement("style");
+            kameleoonStn.type = "text/css";
+            kameleoonStn.id = "kameleoonLoadingStyleSheet";
+            if (kameleoonStn.styleSheet)
+            {
+                kameleoonStn.styleSheet.cssText = kameleoonCc;
+            }
+            else
+            {
+                kameleoonStn.appendChild(document.createTextNode(kameleoonCc));
+            }
+            kameleoonS.parentNode.insertBefore(kameleoonStn, kameleoonS);
+            window.kameleoonDisplayPage = function(fromEngine)
+            {
+                if (!fromEngine)
+                {
+                    window.kameleoonTimeout = true;
+                }
+                if (kameleoonStn.parentNode)
+                {
+                    kameleoonStn.parentNode.removeChild(kameleoonStn);
+                }
+            };
+            window.kameleoonDisplayPageTimeOut = window.setTimeout(window.kameleoonDisplayPage, kameleoonLoadingTimeout);
+        }
+    </script>
+<script type="text/javascript" src="//n9jm8v6ad7.kameleoon.eu/kameleoon.js" async="true"></script>
 <script defer type="text/javascript" src="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1667899742397/js/loadAlertNotification.js"></script>
 <script defer type="text/javascript" src="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1667899742397/js/loadGtm.js"></script>
 <script defer type="text/javascript" src="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1667899742397/js/main.js"></script>
@@ -667,7 +704,7 @@ Jean Slim #Tom
 </a>
 </li>
 <li class="dropdown-item d-none" role="menuitem">
- <a href="https://www.jules.com/fr-fr/l/straight-ben/" id="link-jean-straight-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatlink-jean-straight">
+<a href="https://www.jules.com/fr-fr/l/straight-ben/" id="link-jean-straight-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatlink-jean-straight">
 Jean Straight #Ben
 </a>
 </li>
@@ -759,7 +796,7 @@ Gilet de Costume
 <li class="dropdown-item d-none" role="menuitem">
 <a href="/fr-fr/l/pantalon-de-costume/" id="HCC14-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatHCC14">
 Pantalon de Costume
-</a>
+ </a>
 </li>
 <li class="dropdown-item d-none" role="menuitem">
 <a href="/fr-fr/l/collection-mariage/" id="collection-mariage-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatcollection-mariage">
@@ -796,7 +833,6 @@ S&eacute;lection velours &amp; flanelle
 <li class="dropdown-item d-none" role="menuitem">
 <a href="https://www.jules.com/fr-fr/l/chemise-repassage-facile/" id="link-costumes-chemise-repassage-facile-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatlink-costumes-chemise-repassage-facile">
 Chemise repassage facile
-
 </a>
 </li>
 <li class="dropdown-item d-none" role="menuitem">
@@ -889,7 +925,7 @@ Chaussures
 <li class="dropdown-item d-none" role="menuitem">
 <a href="/fr-fr/l/sous-vetements/" id="HCA27-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatHCA27">
 Sous-v&ecirc;tements
-</a>
+ </a>
 </li>
 <li class="dropdown-item d-none" role="menuitem">
 <a href="/fr-fr/l/maroquinerie/" id="HCA25-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatHCA25">
@@ -934,7 +970,7 @@ Casquette &amp; chapeau
 <li class="dropdown-item d-none" role="menuitem">
 <a href="/fr-fr/l/lunettes/" id="Lunettes-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatLunettes">
 Lunettes
-</a>
+ </a>
 </li>
 <li class="dropdown-item d-none" role="menuitem">
 <a href="/fr-fr/l/foulard-cheche/" id="HCA16-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatHCA16">
@@ -1013,7 +1049,6 @@ S&eacute;lection
 <li class="dropdown-item d-none" role="menuitem">
 <a href="https://www.jules.com/fr-fr/l/outlet/" id="link-accessoires-outlet-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatlink-accessoires-outlet">
 Outlet
-
 </a>
 </li>
 <li class="dropdown-item d-none" role="menuitem">
@@ -1065,7 +1100,6 @@ Exclu web
 </div>
 </div>
 </li>
-
 <li class="nav-item dropdown" role="menuitem">
 <a href="https://www.jules.com/fr-fr/static/mode-ecoresponsable.html" id="Link-inprogress-responsive" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-beaver-id="MenuLink-inprogress" data-beaver-class="UniversTNR" style="color:
             #006451">
@@ -1295,7 +1329,7 @@ Actus
 <button type="button" class="back" data-bs-dismiss="modal" aria-label="Close">
 </button>
 <div class="modal-body row collapsible-xs">
- <div class="col-12">
+<div class="col-12">
 <div class="modal-header">
 <span class="h6">COMPTE</span>
 </div>
@@ -1385,7 +1419,7 @@ mot de passe oubli&eacute;&nbsp;?
 </a>
 </div>
 </div>
-<input type="hidden" name="csrf_token" value="UbkYovPu25X7gD3b6YOFyymZxhU2drSMIXG-aHLq5b9lBxnOZ_3bOxsW-LZbY6egE6dmzDyaPXyvqzN8DCI9pkdFaZHn_RArkVIoP9C_42fz5IXvrVyDYucYPdF_xaA2RI_QCAmuN6GDON4WNvuu6ySv-NNwj-kNlYybM8trWItQxevce0c=" />
+<input type="hidden" name="csrf_token" value="Exo47KWmBc8aHgikqdiDJdGqahTAz76gg7uxZBh4J7MHuwNK_z3SlareIIbiC5fFsWQcUqxcOOAcnOkV4RnTCAEUSLXdaQj8eQFhhBCBpYG_OyY03EjCKGauzCPeG1dTyvq7WsLhxsVmn5ODt39E_C-4VyGTRVi50xt50q4-33PE6fitsIA=" />
 </form>
 </div>
 </div>
@@ -1597,7 +1631,7 @@ Supprimer
 </div>
 
 </div>
- </div>
+</div>
 </div>
 
 
@@ -1944,7 +1978,7 @@ OK
 </div>
 </div>
 <div class="modal-part country-selector" data-url="/on/demandware.store/Sites-Jules-SFRA-Site/fr_FR/Page-SetLocale">
- <span class="dropdown-item" data-locale="it_IT" data-currencyCode="EUR" data-siteid="Jules-IT-SFRA">
+<span class="dropdown-item" data-locale="it_IT" data-currencyCode="EUR" data-siteid="Jules-IT-SFRA">
 <i class="flag-icon flag-icon-it"></i>
 Italia (italiano)
 </span>
@@ -2168,6 +2202,45 @@ Assistance
 
 
 
+
+    <script type="text/javascript">
+        // Duration in milliseconds to wait while the Kameleoon application file is loaded
+        var kameleoonLoadingTimeout = 1000;
+
+        window.kameleoonQueue = window.kameleoonQueue || [];
+        window.kameleoonStartLoadTime = new Date().getTime();
+        if (! document.getElementById("kameleoonLoadingStyleSheet") && ! window.kameleoonDisplayPageTimeOut)
+        {
+            var kameleoonS = document.getElementsByTagName("script")[0];
+            var kameleoonCc = "* { visibility: hidden !important; background-image: none !important; }";
+            var kameleoonStn = document.createElement("style");
+            kameleoonStn.type = "text/css";
+            kameleoonStn.id = "kameleoonLoadingStyleSheet";
+            if (kameleoonStn.styleSheet)
+            {
+                kameleoonStn.styleSheet.cssText = kameleoonCc;
+            }
+            else
+            {
+                kameleoonStn.appendChild(document.createTextNode(kameleoonCc));
+            }
+            kameleoonS.parentNode.insertBefore(kameleoonStn, kameleoonS);
+            window.kameleoonDisplayPage = function(fromEngine)
+            {
+                if (!fromEngine)
+                {
+                    window.kameleoonTimeout = true;
+                }
+                if (kameleoonStn.parentNode)
+                {
+                    kameleoonStn.parentNode.removeChild(kameleoonStn);
+                }
+            };
+            window.kameleoonDisplayPageTimeOut = window.setTimeout(window.kameleoonDisplayPage, kameleoonLoadingTimeout);
+        }
+    </script>
+    
+    <script type="text/javascript" src="//n9jm8v6ad7.kameleoon.eu/kameleoon.js" async="true"></script>
 
 
 <script defer type="text/javascript" src="/on/demandware.static/Sites-Jules-SFRA-Site/-/fr_FR/v1667899742397/js/loadAlertNotification.js"></script>
