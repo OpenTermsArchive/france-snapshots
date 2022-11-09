@@ -1417,59 +1417,81 @@ Signature du/des consommateur(s) (uniquement en cas de notification du pr&eacute
 <div id="shad_abox" class="shad"></div>
 
 
-    <div id="exit_overlay_OVI" class="lightbox" style="display:none">
-                    <div class="top">
-    <a class="close" href="#">
-        Fermer    </a>
-</div>
+    <div id="exit_overlay_OVI" class="lightbox lightbox-image" style="display:none">
+                    <div class="close_pop close js-closeLightboxNewsletter"></div>
 
-<div class="wrapper_overlay">
-    <div class="pop_contents" data-step="1">
 
-        <p class="pop_title">
-            overlay_subscribe_news        </p>
+                    
+    <div class="pop_contents lightbox-image">
+        <div class="wrapper_img">
+            <img id="img_lightbox" src="/img/uploads/lightbox/19/3fa3af79d73555718456469f544b1535.png"
+                 alt="NEWLETTER PE22 - 418x521"/>
+        </div>
+
+        <div class="wrapper_newspopup_home">
+            <div class="content_newspopup">
+                <div class="pop_contents blockpop" data-step="1" id="formu_inscription_news">
+                    <p class="title_popup_inscription_home" style="color: #000;">
+                        inscrivez-vous à                        <br>
+                        <small style="color: #000;">notre newsletter !</small>
+                    </p>
+
+                    <p class="subtitle_popup_inscription_home" style="color: #000;">
+                        Et profitez de -10% sur votre prochain achat.                    </p>
+
+                    <div class="pop_txt_listing">
+                        <div class="detail" style="color: ;">
+                            Nous vous tiendrons inform&eacute;e (sans exag&eacute;rer) de toutes les actus, ventes priv&eacute;es, astuces mode et autres surprises.                        </div>
+                    </div>
+                    
+                    <w-adwords-form
+                        v-bind:unfollowinfo='{"href":"#","color":"#acabab","size":12,"title":"En vous inscrivant &agrave; notre newsletter,&nbsp;<br \/>\nvous acceptez notre Politique de confidentialit&eacute;"}'
+                        v-bind:buttonstyle='{"value":"S\u0027INSCRIRE","color":"#ffffff","backgroundColor":"#000000","borderColor":"#000000","borderRadius":"0","padding":"25","font-size":"1.25"}'
+                        v-bind:email='{"placeholder":"Votre adresse email","width":"80","value":"Inscription"}'
+                    ></w-adwords-form>
+
+                </div>
+
+
+                <div id="conf_inscription_news" data-step="2" style="display:none">
+                    <div class="title_popup_inscription_home" style="color: #000000;">
+                        Félicitations !                    </div>
+
+                    <div class="pop_txt_listing">
+                        <div class="detail">
+                            Merci pour votre inscription.<br />Vous recevrez en avant-premi&egrave;re nos meilleures offres.                        </div>
+                    </div>
+
+                    <div class="form_submit">
+                        <button type="button" class="button dark" style="background-color: #000000; color: #ffffff; border-radius: px; border-color: #000000;">
+                            Fermer                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="application/javascript">
+        window.onload = function() {
+            //We check if we go directly to the confirmation page
+            if($("#conf_inscription_news").is(":visible")){
+                document.getElementById("img_lightbox").src = "/img/uploads/lightbox/19/b45627186082c1d45196a8e732d7c817.jpeg";
+            }
+            //It is observed if the div is visible
+            $(function() {
+                var observer = new MutationObserver(function(mutations) {
+                    document.getElementById("img_lightbox").src = "/img/uploads/lightbox/19/b45627186082c1d45196a8e732d7c817.jpeg";
+                });
+                var target = document.querySelector('#conf_inscription_news');
+                observer.observe(target, {
+                    attributes: true
+                });
+
+            });
+        };
+
+    </script>
         
-        <ul class="detail">
-            <li>overlay_info1</li>
-            <li>overlay_info2</li>
-        </ul>
-        
-        <w-adwords-form desabo-link="/cgv.php"></w-adwords-form>
-
-    </div>
-
-    <div class="pop_contents" data-step="2" style="display:none">
-
-        <p class="main_msg">
-        	<span>Bienvenue chez </span>
-        </p>
-
-        <p class="overlay_msg_attention">
-            overlay_msg_attention        </p>
-    </div>
-
-    <div class="social">
-        <p class="footer_lbl">follow_us_on_social_networks</p>
-
-        <ul class="social_links">
-            <li>
-                <a class="social_lnk fb" href="https://www.facebook.com/.Paris?fref=ts" title="Facebook" target="_blank" data-network="fb">&nbsp;</a>
-            </li>
-
-            <li>
-                <a class="social_lnk tw" href="https://twitter.com/paris" title="Twitter" target="_blank" data-network="tw">&nbsp;</a>
-            </li>
-
-            <li>
-                <a class="social_lnk insta" href="https://www.instagram.com/" title="Instagram" target="_blank" data-network="ig">&nbsp;</a>
-            </li>
-
-            <li>
-                <a class="social_lnk pin" href="https://fr.pinterest.com/paris" title="Pinterest" target="_blank" data-network="pt">&nbsp;</a>
-            </li>
-        </ul>
-    </div>
-</div>        
     </footer>
 
             <div id="shad" class="shad"></div>
@@ -1477,7 +1499,7 @@ Signature du/des consommateur(s) (uniquement en cas de notification du pr&eacute
             <div id="shad_menu" class="shad"></div>
         </div>
 
-                <script src="/js/lazyload.1667919628.js"></script>
+                <script src="/js/lazyload.1667983809.js"></script>
 
         <script>
             var path_relative_root = '/';
@@ -1497,11 +1519,11 @@ Signature du/des consommateur(s) (uniquement en cas de notification du pr&eacute
         <script src="https://www.google.com/recaptcha/api.js?hl=fr"></script>
         <script src="https://apis.google.com/js/platform.js?onload=init"></script>
         <meta name="google-signin-client_id" content="">
-        <script src="/js/lang/fr.1667919835.js"></script>
+        <script src="/js/lang/fr.1667984294.js"></script>
 
                     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.0"></script>
-                    <script id="wShopRangeSlider" src="/js/wShopRangeSlider.1667919628.js"></script>
-        <script src="/js/wShopForms.1667919628.js"></script>
+                    <script id="wShopRangeSlider" src="/js/wShopRangeSlider.1667983809.js"></script>
+        <script src="/js/wShopForms.1667983809.js"></script>
 
         
         <script>
@@ -1534,10 +1556,10 @@ Signature du/des consommateur(s) (uniquement en cas de notification du pr&eacute
             });
         </script>
 
-        <script type="application/javascript" src="/js/partials.1667919628.js"></script>
-        <script src="/js/wshop.1667919628.js"></script>
+        <script type="application/javascript" src="/js/partials.1667983809.js"></script>
+        <script src="/js/wshop.1667983809.js"></script>
         <script src="/js/script.1667811116.js"></script>
-        <script src="/js/intlTelInput.1667919628.js"></script>
+        <script src="/js/intlTelInput.1667983809.js"></script>
 
         <script type="application/javascript">
     // Patch to cancel scrolltop on browser return button
@@ -1586,7 +1608,7 @@ Signature du/des consommateur(s) (uniquement en cas de notification du pr&eacute
             overlay.showOverlay();
         });
     </script>
-    <script type="text/javascript">var lang_iso = 'fr';</script><script type="text/javascript">var siteCurrency = {};siteCurrency.code = 'EUR';siteCurrency.symbol_left = '';siteCurrency.symbol_right = '&euro;';siteCurrency.decimal_place = '2';var PRICE_FORMAT_PLAIN_JS = '[<unit>],[<decimal>] [<symbol_right>]';var PRICE_FORMAT_PLAIN_JS_NO_CENTS = '[<unit>]<span class="separate">,</span><span class="no_cents cents">[<decimal>]</span> [<symbol_right>]';</script><script type="text/javascript">var nb_try_auth = 0;var max_try_auth = 3;var token_security = 'e458acdaf23445552adf3b707c69ac30b519aefc';var captcha_google = '6Lc2K8oaAAAAAHOk4ouZ_SDB7NKKcwa67C2etRA7';</script>    <script type="application/javascript">
+    <script type="text/javascript">var lang_iso = 'fr';</script><script type="text/javascript">var siteCurrency = {};siteCurrency.code = 'EUR';siteCurrency.symbol_left = '';siteCurrency.symbol_right = '&euro;';siteCurrency.decimal_place = '2';var PRICE_FORMAT_PLAIN_JS = '[<unit>],[<decimal>] [<symbol_right>]';var PRICE_FORMAT_PLAIN_JS_NO_CENTS = '[<unit>]<span class="separate">,</span><span class="no_cents cents">[<decimal>]</span> [<symbol_right>]';</script><script type="text/javascript">var nb_try_auth = 0;var max_try_auth = 3;var token_security = '4c329a300b3efae321b079c25681f2a09fce2af8';var captcha_google = '6Lc2K8oaAAAAAHOk4ouZ_SDB7NKKcwa67C2etRA7';</script>    <script type="application/javascript">
         set_3ds2_datas();
     </script>
                 <script script="text/javascript">
