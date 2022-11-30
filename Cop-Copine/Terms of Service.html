@@ -67,7 +67,119 @@
         <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600&display=swap" rel="stylesheet">
         <link rel="stylesheet" media="screen" type="text/css" href="/css/style.1669657140.css" />
 
+        <link id="GEPIStyles" rel="stylesheet" href="//gepi.global-e.com/includes/css/20000036">
+<script>
+    var GlobalECartId = "icd5m21h5th2oefmvp12qldvhh";
+    var PreferedCulture = 'fr-fr';
+    (function () {
+        var s = document.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = '//gepi.global-e.com/includes/js/20000036';
+        document.getElementsByTagName('head')[0].appendChild(s);
+    })();
+</script>
+
+
+<script>
+    // initiate globale object
+    var glegem = window["glegem"] || function(){(window["glegem"].q = window["glegem"].q || []).push(arguments)};
+
+    if (glegem !== undefined && glegem !== false ) {
+        glegem("OnCheckoutStepLoaded",function(data){
+            switch(data.StepId){
+                case data.Steps.LOADED:    // case is only for test purposes i.e  to be removed
+                case data.Steps.CONFIRMATION:
+                    if (data.IsSuccess) {
+                        // let's build dataLayer event OnCheckoutStepLoaded
+                        // get list of coupons
+                        var coupons = [];
+                        var datas = data.details.Discounts;
+
+                        if (datas) {
+                            for (var i = 0; i < datas.length; i++) {
+                                coupons.push(datas[i].couponCode)
+                            }
+                        }
+                        var actionField = {};
+                        actionField['id'] = data.OrderId;
+                        actionField['affiliation'] = 'Online Store';
+                        actionField['revenue'] = data.details.OrderPrices.MerchantTransaction.TotalDiscountedProductsPrice;
+                        actionField['tax'] = data.details.OrderPrices.CustomerTransactionInMerchantCurrency.CustomerVATInMerchantCurrency;
+                        actionField['shipping'] = data.details.OrderPrices.CustomerTransactionInMerchantCurrency.CustomerShippingPriceInMerchantCurrency;
+                        actionField['coupon'] = coupons ? coupons.join(", ") : '';
+                        var products = data.details.ProductInformation;
+                        var ECOrderItemsData = [];
+
+                        if (products.length > 0) {
+
+                            for (var i = 0; i < products.length; i++) {
+                                var prod = {};
+
+                                prod['id'] = products[i].SKU;
+                                prod['name'] = products[i].ProductName;
+                                prod['category'] = (products[i].Categories && products[i].Categories.name) ? products[i].Categories.name : '';
+                                prod['quantity'] = parseFloat(products[i].Quantity);
+                                prod['price'] = products[i].ProductPrices.MerchantTransaction.DiscountedPrice;
+                                prod['variant'] = products[i].ProductAttributes[1].AttributeName;
+                                prod['brand'] = products[i].Brand;
+                                prod['coupon'] = products[i].ProductCouponCodes;
+                                ECOrderItemsData.push(prod);
+                            }
+                        }
+
+                        if (ECOrderItemsData.length > 0  && Object.keys(actionField).length > 0) {
+
+                            // To push globale order purchase info to google analytics
+                            //  with wshop GA/GA4 EVO info will be sent via GTM/dataLayer => block try-catch will be removed !!
+
+                            try {
+                                GoogleEC.sendTransaction(actionField, ECOrderItemsData, 'send', 'event', 'Fiche Produit', 'Page de remerciement');
+                            } catch (e) {
+                                var message = e;
+                                if (typeof actionField != "undefined" && typeof actionField.id != "undefined") {
+                                    message += " Transaction ID : " +  actionField.id;
+                                }
+                            }
+
+                            if (window.dataLayer !== undefined && window.dataLayer !== false) {
+                                window.dataLayer.push({
+                                    'event': 'purchase',
+                                    'ecommerce': {
+                                        'currencyCode': data.details.MerchantCurrencyCode,
+                                        'purchase': {
+                                            'actionField': actionField,
+                                            'products': ECOrderItemsData
+                                        }
+                                    }
+                                });
+                            }
+                        }
+
+                    }
+                    break;
+            };
+        });
+    }
+
+    window.onload = function (){ 
+
+        // Specific case GE to add to session
+        if ( typeof GEM_Services != "undefined" ) {
+            var isOperatedByGlobalE = GEM_Services.ConfigurationsService.Instance.UserLocalizeSettings.IsOperatedByGlobalE;
+        } else if ( typeof GEP  != 'undefined' && GEP.isOperatedByGlobale !== undefined &&  GEP.isOperatedByGlobale !== false ) {
+            var isOperatedByGlobalE = GEP.isOperatedByGlobale;
+        }
         
+        if (isOperatedByGlobalE) {
+            $("#formPanier").append('<input type="hidden" name="isOperatedByGlobalE" value="true" />');
+        }
+
+    };
+
+</script>
+
+
             <script type ='application/javascript'> 
         window.dataLayer = [{"context":{"site":1,"lang":"fr","cmpid":false,"navigation":{"device":"desktop","browser":null,"os":null,"userAgent":"node-fetch"},"page":{"id":"footer_legalmentions","category":"other"}}}]; 
         dataLayer = window.dataLayer || [];          
@@ -138,6 +250,7 @@
 
 <header id="site_head_wrap" class="bandeau_on">
 
+            <div id="GlobaleFreeShippingBannerContainer"></div>
     
     
 <div id="header_mention_id" class="header_mention" style="display: none;">
@@ -1348,7 +1461,7 @@ Tout litige se rapportant &agrave; l&rsquo;interpr&eacute;tation ou &agrave; l&r
             overlay.showOverlay();
         });
     </script>
-    <script type="text/javascript">var lang_iso = 'fr';</script><script type="text/javascript">var siteCurrency = {};siteCurrency.code = 'EUR';siteCurrency.symbol_left = '';siteCurrency.symbol_right = '&euro;';siteCurrency.decimal_place = '2';var PRICE_FORMAT_PLAIN_JS = '[<unit>],[<decimal>] [<symbol_right>]';var PRICE_FORMAT_PLAIN_JS_NO_CENTS = '[<unit>]<span class="separate">,</span><span class="no_cents cents">[<decimal>]</span> [<symbol_right>]';</script><script type="text/javascript">var nb_try_auth = 0;var max_try_auth = 3;var token_security = '4c2735885e7589fcb7c68718b6b61e61613e8168';var captcha_google = '6Lc2K8oaAAAAAHOk4ouZ_SDB7NKKcwa67C2etRA7';</script>    <script type="application/javascript">
+    <script type="text/javascript">var lang_iso = 'fr';</script><script type="text/javascript">var siteCurrency = {};siteCurrency.code = 'EUR';siteCurrency.symbol_left = '';siteCurrency.symbol_right = '&euro;';siteCurrency.decimal_place = '2';var PRICE_FORMAT_PLAIN_JS = '[<unit>],[<decimal>] [<symbol_right>]';var PRICE_FORMAT_PLAIN_JS_NO_CENTS = '[<unit>]<span class="separate">,</span><span class="no_cents cents">[<decimal>]</span> [<symbol_right>]';</script><script type="text/javascript">var nb_try_auth = 0;var max_try_auth = 3;var token_security = 'c4d1599625ff825b3585ac887c8230320b6f05a4';var captcha_google = '6Lc2K8oaAAAAAHOk4ouZ_SDB7NKKcwa67C2etRA7';</script>    <script type="application/javascript">
         set_3ds2_datas();
     </script>
                 <script script="text/javascript">
