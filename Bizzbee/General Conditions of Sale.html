@@ -4,15 +4,52 @@
 <head>
 <meta charset=UTF-8>
 <!--[if gt IE 9]><!-->
-<link rel="preload" href="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1669849471812/js/loadJquery.js" as="script" />
-<script type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1669849471812/js/loadJquery.js"></script>
-<script defer type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1669849471812/js/loadAlertNotification.js"></script>
-<script defer type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1669849471812/js/loadGtm.js"></script>
-<script defer type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1669849471812/js/main.js"></script>
-<script defer type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1669849471812/js/common.js"></script>
-<script defer type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1669849471812/js/uiShow.js">
+<link rel="preload" href="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1669892476810/js/loadJquery.js" as="script" />
+<script type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1669892476810/js/loadJquery.js"></script>
+<script type="text/javascript">
+        // Duration in milliseconds to wait while the Kameleoon application file is loaded
+        var kameleoonLoadingTimeout = 1000;
+
+        window.kameleoonQueue = window.kameleoonQueue || [];
+        window.kameleoonStartLoadTime = new Date().getTime();
+        if (! document.getElementById("kameleoonLoadingStyleSheet") && ! window.kameleoonDisplayPageTimeOut)
+        {
+            var kameleoonS = document.getElementsByTagName("script")[0];
+            var kameleoonCc = "* { visibility: hidden !important; background-image: none !important; }";
+            var kameleoonStn = document.createElement("style");
+            kameleoonStn.type = "text/css";
+            kameleoonStn.id = "kameleoonLoadingStyleSheet";
+            if (kameleoonStn.styleSheet)
+            {
+                kameleoonStn.styleSheet.cssText = kameleoonCc;
+            }
+            else
+            {
+                kameleoonStn.appendChild(document.createTextNode(kameleoonCc));
+            }
+            kameleoonS.parentNode.insertBefore(kameleoonStn, kameleoonS);
+            window.kameleoonDisplayPage = function(fromEngine)
+            {
+                if (!fromEngine)
+                {
+                    window.kameleoonTimeout = true;
+                }
+                if (kameleoonStn.parentNode)
+                {
+                    kameleoonStn.parentNode.removeChild(kameleoonStn);
+                }
+            };
+            window.kameleoonDisplayPageTimeOut = window.setTimeout(window.kameleoonDisplayPage, kameleoonLoadingTimeout);
+        }
     </script>
- <script defer type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1669849471812/js/targetToSell.js">
+<script type="text/javascript" src="//usgqb5loji.kameleoon.eu/kameleoon.js" async="true"></script>
+<script defer type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1669892476810/js/loadAlertNotification.js"></script>
+<script defer type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1669892476810/js/loadGtm.js"></script>
+<script defer type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1669892476810/js/main.js"></script>
+<script defer type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1669892476810/js/common.js"></script>
+<script defer type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1669892476810/js/uiShow.js">
+    </script>
+<script defer type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1669892476810/js/targetToSell.js">
     </script>
 <!--<![endif]-->
 <script>
@@ -66,15 +103,15 @@
 <link rel="icon" type="image/png" href="https://www.b-z-b.com/on/demandware.static/-/Sites/default/dw6eca2aff/96.png" sizes="96x96" />
 <link rel="icon" type="image/png" href="https://www.b-z-b.com/on/demandware.static/-/Sites/default/dw54a97c91/128.png" sizes="128x128" />
 <link rel="icon" type="image/png" href="https://www.b-z-b.com/on/demandware.static/-/Sites/default/dw1534fff3/196.png" sizes="196x196" />
-<link rel="preload" href="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1669849471812/fonts/fontawesome-webfont.woff2?v=4.7.0" as="font" type="font/woff2" crossorigin />
-<link rel="preload" href="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1669849471812/fonts/icomoon.ttf?mt5112" as="font" type="font/ttf" crossorigin />
+<link rel="preload" href="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1669892476810/fonts/fontawesome-webfont.woff2?v=4.7.0" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1669892476810/fonts/icomoon.ttf?mt5112" as="font" type="font/ttf" crossorigin />
 <link rel="dns-prefetch" href="//fonts.googleapis.com" />
 <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
 <link rel="preconnect" href="https://sdk.privacy-center.org" crossorigin />
 <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" />
-<link rel="stylesheet" href="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1669849471812/css/global.css" />
-<link rel="stylesheet" href="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1669849471812/css/radiusCTA.css" />
+<link rel="stylesheet" href="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1669892476810/css/global.css" />
+<link rel="stylesheet" href="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1669892476810/css/radiusCTA.css" />
 <script type="text/javascript">window.gdprAppliesGlobally=true;(function(){function a(e){if(!window.frames[e]){if(document.body&&document.body.firstChild){var t=document.body;var n=document.createElement("iframe");n.style.display="none";n.name=e;n.title=e;t.insertBefore(n,t.firstChild)}
 else{setTimeout(function(){a(e)},5)}}}function e(n,r,o,c,s){function e(e,t,n,a){if(typeof n!=="function"){return}if(!window[r]){window[r]=[]}var i=false;if(s){i=s(e,t,n)}if(!i){window[r].push({command:e,parameter:t,callback:n,version:a})}}e.stub=true;function t(a){if(!window[n]||window[n].stub!==true){return}if(!a.data){return}
 var i=typeof a.data==="string";var e;try{e=i?JSON.parse(a.data):a.data}catch(t){return}if(e[o]){var r=e[o];window[n](r.command,r.parameter,function(e,t){var n={};n[c]={returnValue:e,success:t,callId:r.callId};a.source.postMessage(i?JSON.stringify(n):n,"*")},r.version)}}
@@ -305,7 +342,7 @@ CQuotient.trackViewProduct = function(/* Object */ cqParamData){
 </div>
 <div class="logobox">
 <a class="navbar-brand my-auto d-xl-block " href="https://www.b-z-b.com/">
-<img class="" src="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dw2208c0db/Bizzbee-SFRA/Logos-BZB/logo-bzb-new.svg" data-imagesmall="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dw057128fe/Bizzbee-SFRA/BZB-logo-small.svg" alt="BZB v&ecirc;tements homme et femme" width="auto" height="20" data-imagesmallwidth="60" data-imagesmallheight="40" data-imagewidth="auto" data-imageheight="30" />
+<img class="" src="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dwfbf636bb/Bizzbee-SFRA/Logos-BZB/logo-bzb-noel-202211.svg" data-imagesmall="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dw057128fe/Bizzbee-SFRA/BZB-logo-small.svg" alt="BZB v&ecirc;tements homme et femme" width="auto" height="20" data-imagesmallwidth="60" data-imagesmallheight="40" data-imagewidth="auto" data-imageheight="30" />
 </a>
 </div>
 <div class="bloc-header-link pull-right d-flex">
@@ -367,7 +404,7 @@ CQuotient.trackViewProduct = function(/* Object */ cqParamData){
 </div>
 <div class="logo-brand">
 <a class="navbar-brand" href="/">
-<img src="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dw2208c0db/Bizzbee-SFRA/Logos-BZB/logo-bzb-new.svg" alt="BZB v&ecirc;tements homme et femme" data-imagesmall="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dw057128fe/Bizzbee-SFRA/BZB-logo-small.svg" width="auto" height="20" data-imagesmallwidth="60" data-imagesmallheight="40" data-imagewidth="auto" data-imageheight="30" />
+<img src="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dwfbf636bb/Bizzbee-SFRA/Logos-BZB/logo-bzb-noel-202211.svg" alt="BZB v&ecirc;tements homme et femme" data-imagesmall="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dw057128fe/Bizzbee-SFRA/BZB-logo-small.svg" width="auto" height="20" data-imagesmallwidth="60" data-imagesmallheight="40" data-imagewidth="auto" data-imageheight="30" />
 </a>
 </div>
 <div class="close-button ms-auto d-flex">
@@ -379,7 +416,7 @@ CQuotient.trackViewProduct = function(/* Object */ cqParamData){
 <div class="container p-0">
 <div class="menu-group d-flex logoInMenu" aria-label="Main menu" role="navigation">
 <a class="navbar-brand my-auto d-xl-block " href="https://www.b-z-b.com/">
-<img class="" src="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dw2208c0db/Bizzbee-SFRA/Logos-BZB/logo-bzb-new.svg" data-imagesmall="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dw057128fe/Bizzbee-SFRA/BZB-logo-small.svg" alt="BZB v&ecirc;tements homme et femme" width="auto" height="30" data-imagesmallwidth="60" data-imagesmallheight="40" data-imagewidth="auto" data-imageheight="30" />
+<img class="" src="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dwfbf636bb/Bizzbee-SFRA/Logos-BZB/logo-bzb-noel-202211.svg" data-imagesmall="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dw057128fe/Bizzbee-SFRA/BZB-logo-small.svg" alt="BZB v&ecirc;tements homme et femme" width="auto" height="30" data-imagesmallwidth="60" data-imagesmallheight="40" data-imagewidth="auto" data-imageheight="30" />
 </a>
 <div class="container container-menu">
 <ul class="nav navbar-nav d-flex" role="menu">
@@ -574,7 +611,6 @@ Underwear &amp; Pyjama
 <a href="https://www.b-z-b.com/vetement-tendances/?prefn1=F3_sexe&amp;prefv1=Femme" id="actu-femme-responsive" class="dropdown-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-beaver-id="sousCatactu-femme">
 Actu
 </a>
-
 <ul class="dropdown-menu col-xl-9" role="menu" aria-hidden="true">
 <li class="dropdown-item d-none" role="menuitem">
 <a href="https://www.b-z-b.com/vetement-nouveautes/?prefn1=F3_sexe&amp;prefv1=Femme" id="new-femme-actu-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatnew-femme-actu">
@@ -730,7 +766,7 @@ Jean
 </li>
 <li class="dropdown-item d-none" role="menuitem">
 <a href="/vetement-homme/bermuda-short/" id="HCC01B-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatHCC01B">
-Short &amp; Bermuda
+ Short &amp; Bermuda
 </a>
 </li>
 </ul>
@@ -775,6 +811,7 @@ Ceinture
 Sac et portefeuille
 </a>
 </li>
+
 <li class="dropdown-item d-none" role="menuitem">
 <a href="/vetement-homme/accessoires/lunettes-de-soleil/" id="HCA18B-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatHCA18B">
 Lunettes de soleil
@@ -823,7 +860,7 @@ Exclu web
 </a>
 </li>
 <li class="dropdown-item d-none" role="menuitem">
- <a href="https://www.b-z-b.com/vetement-tendances/skechers/" id="skechers-actu-homme-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatskechers-actu-homme">
+<a href="https://www.b-z-b.com/vetement-tendances/skechers/" id="skechers-actu-homme-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatskechers-actu-homme">
 Skechers 👟
 </a>
 </li>
@@ -883,7 +920,7 @@ Cadeaux pour lui
 <a href="/vetement-noel/pour-lui/pour-chiller/" id="Pour-chiller-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatPour-chiller">
 Pour chiller
 </a>
-</li>
+ </li>
 <li class="dropdown-item d-none" role="menuitem">
 <a href="/vetement-noel/pour-lui/assorti-a-son-sapin/" id="Assorti-a-son-sapin-boy-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatAssorti-a-son-sapin-boy">
 Assorti &agrave; son sapin
@@ -891,7 +928,7 @@ Assorti &agrave; son sapin
 </li>
 <li class="dropdown-item d-none" role="menuitem">
 <a href="/vetement-noel/pour-lui/collabs/" id="Collabs-boy-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatCollabs-boy">
- Collabs
+Collabs
 </a>
 </li>
 <li class="dropdown-item d-none" role="menuitem">
@@ -1080,7 +1117,7 @@ We are bzb
 </div>
 <div class="picto-scroll ">
 <div class="minicart d-flex js-minicart" data-action-url="/on/demandware.store/Sites-Bizzbee-SFRA-Site/fr_FR/Cart-MiniCartShow">
-<div class="minicart-total hide-link-med">
+ <div class="minicart-total hide-link-med">
 <a class="minicart-link" href="https://www.b-z-b.com/panier/" title="Afficher le panier" data-beaver-id="Panier">
 <i class="minicart-icon fa fa-shopping-bag"></i><span class="minicart-quantity">0</span>
 </a>
@@ -1189,7 +1226,7 @@ We are bzb
 </div>
 <div class="form-group required show_hide_password" title="required">
 <label class="form-label" for="login-form-password">
- <input required type="password" id="login-form-password" class="form-control" name="loginPassword" placeholder=" " data-missing-error="Ce champ n&eacute;cessite d'&ecirc;tre renseign&eacute;." data-beaver-id="password">
+<input required type="password" id="login-form-password" class="form-control" name="loginPassword" placeholder=" " data-missing-error="Ce champ n&eacute;cessite d'&ecirc;tre renseign&eacute;." data-beaver-id="password">
 <span class="input-label">Mot de passe *</span>
 <div class="input-group-addon">
 <a><i class="fa fa-eye show_hide_password" aria-hidden="true"></i></a>
@@ -1206,7 +1243,7 @@ mot de passe oubli&eacute;&nbsp;?
 </a>
 </div>
 </div>
-<input type="hidden" name="csrf_token" value="fD4FVWShiuOc2R_9f7BdTvA92CYk1rfBmlvVXtLhm0CfPjJHJDunlgt9ZqaOq5LUwChQuJi1HIA3HQQ1O9oYxEnM7GbMyuqH5CiJdQA3mcOJHqFSRGLKHnW4yXuwhPFGKyljRfqT1i6UwZdDZRglMYBqJSlZ3wIQcGe7ttlkU6J6KqlcRKE=" />
+<input type="hidden" name="csrf_token" value="af00_9idw8x33bDNPsTocNMxe7tuLUfs8_dao1livr_Dm3eZ3eblNb3VxhfNSvLkpup20Ht7somOeBSb7gBOGj_wuoKyK5MhSYlZd_XlVNaCZW6GzMG93kU0azkqbfmrFe7nYxH6HYuaObqaK4ao9AUCERuT4uM6OxPAkugKn-hFkbPoygg=" />
 </form>
 </div>
 </div>
@@ -1262,7 +1299,7 @@ Cr&eacute;er un compte
 <hr class="title-separator" />
 <div class="modal-body col-12 text-center p-4"><span id="emailPasswordReceived"></span></div>
 <div class="modal-body col-12 text-center fs14 p-0 px-4">Vous allez recevoir un e-mail dans quelques instant avec toutes les informations n&eacute;cessaires pour r&eacute;initialiser votre mot de passe.</div>
-</div>
+ </div>
 </div>
 </div>
 </div>
@@ -1320,7 +1357,7 @@ Supprimer
 <button type="button" class="btn-close close" data-bs-dismiss="modal" aria-label="Close">
 </button>
 <button type="button" class="back" data-bs-dismiss="modal" aria-label="Close">
- </button>
+</button>
 <div class="modal-body row collapsible-xs">
 <div class="col-12">
 <div class="modal-header">
@@ -1823,7 +1860,7 @@ Supprimer
 <div class="cgv" id="cms-page-content"><a name="haut"></a>
 <div class="container">
 <div class="cgv-top">
-<h1>CONDITIONS G&eacute;n&eacute;rales de vente</h1>
+ <h1>CONDITIONS G&eacute;n&eacute;rales de vente</h1>
 <ul>
 <li><a href="#editeur">Editeur du site</a></li>
 <li><a href="#objet">Objet</a></li>
@@ -1895,7 +1932,7 @@ applicables &agrave; la date de la commande.
 <p>Le client d&eacute;clare &ecirc;tre juridiquement capable de conclure un contrat et &ecirc;tre
 &acirc;g&eacute; de plus de 18 ans.<br />
 La passation de commande par des personnes mineures implique qu&rsquo;elles aient pr&eacute;alablement
- obtenu l&rsquo;accord de leurs repr&eacute;sentants l&eacute;gaux.<br />
+obtenu l&rsquo;accord de leurs repr&eacute;sentants l&eacute;gaux.<br />
 <br />
 Le client s&rsquo;interdit de proc&eacute;der &agrave; l&rsquo;achat de produits sur le site dans le but
 de
@@ -1946,7 +1983,7 @@ commande.
 </p>
 (<a href="#haut">haut de page</a>)
 </div>
-<div class="bloc-paragraphe"><a name="prix"></a>
+ <div class="bloc-paragraphe"><a name="prix"></a>
 <h2>4. Prix</h2>
 <p>Les prix des produits propos&eacute;s &agrave; la vente sur le site www.b-z-b.com sont exprim&eacute;s
 en
@@ -2016,7 +2053,7 @@ Paypal
 ainsi que son mot de passe Paypal.<br />
 6.3 Par carte cadeau BZB et carte cadeau Illicado<br />
 <br />
- Pour plus d'information sur la carte Illicado,&nbsp;(<a target="_blank" href="http://www.illicado.com/">cliquez-ici</a>) <br />
+Pour plus d'information sur la carte Illicado,&nbsp;(<a target="_blank" href="http://www.illicado.com/">cliquez-ici</a>) <br />
 Il est possible de r&eacute;gler tout ou partie de la commande par carte cadeau (jusqu'&agrave; 3 cartes
 cadeau diff&eacute;rentes par commande). <br />
 1. Indiquer le num&eacute;ro de la carte cadeau figurant au verso de la carte (19 chiffres) dans le
@@ -2052,7 +2089,7 @@ client et acceptation de la transaction par l&rsquo;organisme bancaire.
 <div class="bloc-paragraphe"><a name="securite"></a>
 <h2>7. S&eacute;curit&eacute; du paiement</h2>
 <p>7.1 Plateforme de paiement Payzen<br />
-Les transactions effectu&eacute;es sur ce site sont&nbsp;s&eacute;curis&eacute;es&nbsp;par la plateforme
+ Les transactions effectu&eacute;es sur ce site sont&nbsp;s&eacute;curis&eacute;es&nbsp;par la plateforme
 de
 paiement en ligne PayZen. Cette solution est une marque du groupe&nbsp;Lyra Network, op&eacute;rateur
 mon&eacute;tique reconnu dans le milieu bancaire.<br />
@@ -2107,7 +2144,7 @@ frauduleuse de num&eacute;ros de cartes sur son site.<br />
 Par ailleurs, le site BZB se r&eacute;serve la possibilit&eacute; d&rsquo;utiliser la technologie 3D
 secure. <br />
 Il s&rsquo;agit d&rsquo;un syst&egrave;me &eacute;labor&eacute; par les deux r&eacute;seaux de cartes
-bancaires Visa et MasterCard pour authentifier les porteurs de cartes bancaires et &eacute;viter ainsi
+ bancaires Visa et MasterCard pour authentifier les porteurs de cartes bancaires et &eacute;viter ainsi
 toute
 utilisation frauduleuse de ces derni&egrave;res. <br />
 En plus du num&eacute;ro, de la date de validit&eacute; et du cryptogramme, avec le syst&egrave;me 3D
@@ -2175,7 +2212,7 @@ livraison.<br />
 <h2>9. Droit de rétractation légal</h2>
 <p>Conformément à l’article L121-21 du code de la consommation, le client bénéficie d’un délai légal de
 rétractation de 14 jours à compter de la réception de sa commande.<br />
- Le client peut notifier, par courrier à BZB, son intention d’exercer ce droit, en précisant ses nom,
+Le client peut notifier, par courrier à BZB, son intention d’exercer ce droit, en précisant ses nom,
 prénom, adresse, numéro de commande, date de passation de la commande, date de réception de la commande
 et
 référence de l’article concerné par la rétractation. A l’adresse suivante :<br />
@@ -2411,7 +2448,7 @@ donn&eacute;es, intrusion, virus, rupture de service, ou autres probl&egrave;mes
 involontaires&nbsp;;<br />
 Du contenu des sites sur lesquels des liens hypertextes peuvent renvoyer &agrave; partir de son propre
 site.
- </p>
+</p>
 (<a href="#haut">haut de page</a>)
 </div>
 <div class="bloc-paragraphe"><a name="propriete"></a>
@@ -3111,7 +3148,7 @@ OK
 <hr class="hidden-sm-down" />
 <div class="container">
 <div class="row footer-link">
- <div class="col-xl-1 social col-lg-12">
+<div class="col-xl-1 social col-lg-12">
 <span></span>
 </div>
 <div class="footer-item col-xl-11 col-lg-12 collapsible-xs">
@@ -3283,29 +3320,68 @@ Assistance
 <div class="sort-background"></div>
 <div class="share-background"></div>
 <!--[if lt IE 10]>
-<link rel="preload" href="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1669849471812/js/loadJquery.js" as="script" />
-<script type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1669849471812/js/loadJquery.js"></script>
+<link rel="preload" href="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1669892476810/js/loadJquery.js" as="script" />
+<script type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1669892476810/js/loadJquery.js"></script>
 
 
 
 
+    <script type="text/javascript">
+        // Duration in milliseconds to wait while the Kameleoon application file is loaded
+        var kameleoonLoadingTimeout = 1000;
 
-<script defer type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1669849471812/js/loadAlertNotification.js"></script>
-<script defer type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1669849471812/js/loadGtm.js"></script>
+        window.kameleoonQueue = window.kameleoonQueue || [];
+        window.kameleoonStartLoadTime = new Date().getTime();
+        if (! document.getElementById("kameleoonLoadingStyleSheet") && ! window.kameleoonDisplayPageTimeOut)
+        {
+            var kameleoonS = document.getElementsByTagName("script")[0];
+            var kameleoonCc = "* { visibility: hidden !important; background-image: none !important; }";
+            var kameleoonStn = document.createElement("style");
+            kameleoonStn.type = "text/css";
+            kameleoonStn.id = "kameleoonLoadingStyleSheet";
+            if (kameleoonStn.styleSheet)
+            {
+                kameleoonStn.styleSheet.cssText = kameleoonCc;
+            }
+            else
+            {
+                kameleoonStn.appendChild(document.createTextNode(kameleoonCc));
+            }
+            kameleoonS.parentNode.insertBefore(kameleoonStn, kameleoonS);
+            window.kameleoonDisplayPage = function(fromEngine)
+            {
+                if (!fromEngine)
+                {
+                    window.kameleoonTimeout = true;
+                }
+                if (kameleoonStn.parentNode)
+                {
+                    kameleoonStn.parentNode.removeChild(kameleoonStn);
+                }
+            };
+            window.kameleoonDisplayPageTimeOut = window.setTimeout(window.kameleoonDisplayPage, kameleoonLoadingTimeout);
+        }
+    </script>
+    
+    <script type="text/javascript" src="//usgqb5loji.kameleoon.eu/kameleoon.js" async="true"></script>
 
 
-    <script defer type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1669849471812/js/main.js"></script>
+<script defer type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1669892476810/js/loadAlertNotification.js"></script>
+<script defer type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1669892476810/js/loadGtm.js"></script>
 
 
-<script defer type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1669849471812/js/common.js"></script>
+    <script defer type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1669892476810/js/main.js"></script>
 
 
-    <script defer type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1669849471812/js/uiShow.js"
+<script defer type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1669892476810/js/common.js"></script>
+
+
+    <script defer type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1669892476810/js/uiShow.js"
         
         >
     </script>
 
-    <script defer type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1669849471812/js/targetToSell.js"
+    <script defer type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1669892476810/js/targetToSell.js"
         
         >
     </script>
@@ -3313,7 +3389,7 @@ Assistance
 
 <![endif]-->
 <script>const pwaApplicationServerPublicKey = "BEbOxNuES60bKLdbM7S1KSTHBWp4SowS8VannQFhV8oK6_0e0lUJbUIYdjlgzrlCZmfM11vIvzIFMHK2UTbN3SQ";</script>
-<script src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1669849471812/js/pwa.js" async></script>
+<script src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1669892476810/js/pwa.js" async></script>
 <script async>
 
         (function (d, s) {
@@ -3342,9 +3418,9 @@ function trackPage() {
 /* ]]> */
 // -->
 </script>
-<script type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1669849471812/internal/jscript/dwanalytics-22.2.js" async="async" onload="trackPage()"></script>
+<script type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1669892476810/internal/jscript/dwanalytics-22.2.js" async="async" onload="trackPage()"></script>
 
-<script src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1669849471812/internal/jscript/dwac-21.7.js" type="text/javascript" async="async"></script>
+<script src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1669892476810/internal/jscript/dwac-21.7.js" type="text/javascript" async="async"></script>
 <script src="https://cdn.cquotient.com/js/v2/gretel.min.js" type="text/javascript" async="async"></script>
 </body>
 </html>
