@@ -1,4 +1,4 @@
-<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="fr" class=" js no-flexbox flexbox-legacy canvas canvastext webgl no-touch geolocation indexeddb hashchange history draganddrop rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio no-applicationcache svg inlinesvg smil svgclippaths" data-component="common/CustomReebok"><head><script type="text/javascript" async="async" src="https://adidas.d3.sc.omtrdc.net/id?d_visid_ver=1.5.4&amp;callback=s_c_il%5B1%5D._setAnalyticsFields&amp;mcorgid=7ADA401053CCF9130A490D4C%40AdobeOrg&amp;mid=49414592365974273231521310581954195991"></script><script type="text/javascript" async="async" src="https://dpm.demdex.net/id?d_visid_ver=1.5.4&amp;d_rtbd=json&amp;d_ver=2&amp;d_orgid=7ADA401053CCF9130A490D4C%40AdobeOrg&amp;d_nsid=0&amp;d_cb=s_c_il%5B1%5D._setMarketingCloudFields"></script>
+<!DOCTYPE html><html xmlns="http://www.w3.org/1999/xhtml" lang="fr" class=" js no-flexbox flexbox-legacy canvas canvastext webgl no-touch geolocation indexeddb hashchange history draganddrop rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio no-applicationcache svg inlinesvg smil svgclippaths" data-component="common/CustomReebok"><head><script type="text/javascript" async="async" src="https://adidas.d3.sc.omtrdc.net/id?d_visid_ver=1.5.4&amp;callback=s_c_il%5B1%5D._setAnalyticsFields&amp;mcorgid=7ADA401053CCF9130A490D4C%40AdobeOrg&amp;mid=69714903331976925303795407044194681218"></script><script type="text/javascript" async="async" src="https://dpm.demdex.net/id?d_visid_ver=1.5.4&amp;d_rtbd=json&amp;d_ver=2&amp;d_orgid=7ADA401053CCF9130A490D4C%40AdobeOrg&amp;d_nsid=0&amp;d_cb=s_c_il%5B1%5D._setMarketingCloudFields"></script>
 
 <meta http-equiv="Content-Language" content="fr-FR">
 
@@ -218,8 +218,7 @@ window.app=jQuery.extend(window.app || {}, {isBuilded:true,bundlesRequired:
 
 
 
-
-(function (app) {
+(function () {
 'use strict';
 app.constants = {};
 app.resources = {};
@@ -227,17 +226,20 @@ app.minicart = {};
 app.URLs = {};
 app.minicart.oldLayerToNew = (function (map) {
 return function (layer, defaultValue) {
-return layer && map[layer] ? map[layer] : defaultValue;
+return map[layer] || defaultValue;
 };
 }({
 "minicart": "Mini cart",
 "overlay": "Add To Bag overlay",
 "straightcart": "Straight to Cart"
 }));
-app.isMobile = true;
+app.isMobile = false;
 app.isAdidas = false;
 app.isReebok = true;
+app.isCrossfit = false;
+app.isBrooklynNets = false;
 app.minicart.url = "/on/demandware.store/Sites-Reebok-FR-Site/fr_FR/Cart-MiniAddProduct";
+app.minicart.show = "/on/demandware.store/Sites-Reebok-FR-Site/fr_FR/Cart-MiniCart";
 app.minicart.productCountUrl = "/on/demandware.store/Sites-Reebok-FR-Site/fr_FR/Cart-ProductCount";
 app.URLs.personalizedBasketCheck = "/on/demandware.store/Sites-Reebok-FR-Site/fr_FR/Cart-ValidatePersonalizationBasket";
 app.URLs.deliveryStart = "/on/demandware.store/Sites-Reebok-FR-Site/fr_FR/CODelivery-Start";
@@ -253,30 +255,38 @@ app.URLs.getProductTileList = "/on/demandware.store/Sites-Reebok-FR-Site/fr_FR/P
 app.URLs.getAssetContent = "/on/demandware.store/Sites-Reebok-FR-Site/fr_FR/Page-Include";
 app.URLs.jsonConfiguratorLink = "https://www.reebok.fr/on/demandware.store/Sites-Reebok-FR-Site/fr_FR/Configurator-GetJsonURL";
 app.URLs.sendToFriend = "https://www.reebok.fr/on/demandware.store/Sites-Reebok-FR-Site/fr_FR/SendToFriend-Start";
-app.URLs.deliverySubmits = "https://www.reebok.fr/on/demandware.store/Sites-Reebok-FR-Site/fr_FR/CODelivery-Submits";
 app.URLs.blankImg = "/on/demandware.static/Sites-Reebok-FR-Site/-/default/dw64c95a18/images/blank.gif";
 app.URLs.showImage = "https://www.reebok.fr/on/demandware.store/Sites-Reebok-FR-Site/fr_FR/Product-ShowImage";
 app.URLs.searchSuggestURL = "/on/demandware.store/Sites-Reebok-FR-Site/fr_FR/SearchAuxiliar-GetSuggestions";
 app.URLs.viewAllSuggestURL = "/search";
+app.URLs.cartSummaryBlock = "https://www.reebok.fr/on/demandware.store/Sites-Reebok-FR-Site/fr_FR/Cart-GetCartSummaryBlock";
+app.URLs.updateCartSummaryBlock = "https://www.reebok.fr/on/demandware.store/Sites-Reebok-FR-Site/fr_FR/Cart-UpdateCartSummarySectionWithPayment";
+app.URLs.validateCCBIN = "https://www.reebok.fr/on/demandware.store/Sites-Reebok-FR-Site/fr_FR/COPayment-ValidateCCBIN";
+app.URLs.pageHeaderInfo = "https://www.reebok.fr/on/demandware.store/Sites-Reebok-FR-Site/fr_FR/Page-HeaderInfo";
+app.URLs.accountShow = "https://www.reebok.fr/on/demandware.store/Sites-Reebok-FR-Site/fr_FR/Account-Show";
+app.URLs.loginLogout = "https://www.reebok.fr/on/demandware.store/Sites-Reebok-FR-Site/fr_FR/Login-Logout";
+app.URLs.deliverySubmits = "https://www.reebok.fr/on/demandware.store/Sites-Reebok-FR-Site/fr_FR/CODelivery-Submits";
+app.URLs.deliveryCnC = "https://www.reebok.fr/on/demandware.store/Sites-Reebok-FR-Site/fr_FR/OmniChannel-ShowOnDelivery";
 app.URLs.showCartURL = "https://www.reebok.fr/on/demandware.store/Sites-Reebok-FR-Site/fr_FR/Cart-Show";
 app.URLs.lookupEmail = "https://www.reebok.fr/on/demandware.store/Sites-Reebok-FR-Site/fr_FR/CODelivery-LookupEmail";
 app.URLs.paymentPage = "https://www.reebok.fr/on/demandware.store/Sites-Reebok-FR-Site/fr_FR/COSummary-Start";
+app.URLs.SLPBazaarVoice = "https://www.reebok.fr/on/demandware.store/Sites-Reebok-FR-Site/fr_FR/SearchAuxiliar-SLPBazaarVoice";
 app.URLs.loginValidationURL = "/on/demandware.store/Sites-Reebok-FR-Site/fr_FR/ShopRunner-ValidateToken";
 app.URLs.getShipmentMethods = "https://www.reebok.fr/on/demandware.store/Sites-Reebok-FR-Site/fr_FR/CODelivery-GetShippingOptions";
 app.URLs.storeSelectedPostamat = "https://www.reebok.fr/on/demandware.store/Sites-Reebok-FR-Site/fr_FR/COShipping-StorePostamat";
 app.URLs.savePostNumberID = "/on/demandware.store/Sites-Reebok-FR-Site/fr_FR/OmniChannel-setPostNumberId";
-app.URLs.fillInScheduledDelivery = "https://www.reebok.fr/on/demandware.store/Sites-Reebok-FR-Site/fr_FR/CODelivery-FillInScheduledDelivery";
-app.URLs.getAddressTemplate = "https://www.reebok.fr/on/demandware.store/Sites-Reebok-FR-Site/fr_FR/CODelivery-GetAddressTemplate";
+app.URLs.fillInScheduledDelivery = "/on/demandware.store/Sites-Reebok-FR-Site/fr_FR/CODelivery-FillInScheduledDelivery";
+app.URLs.getAddressTemplate = "/on/demandware.store/Sites-Reebok-FR-Site/fr_FR/CODelivery-GetAddressTemplate";
 app.URLs.getEPOCHAvailability = "/on/demandware.store/Sites-Reebok-FR-Site/fr_FR/OmniChannel-GetEPOCHAvailability";
 app.URLs.getUspBar = "/on/demandware.store/Sites-Reebok-FR-Site/fr_FR/Page-GetUSPBar";
-app.URLs.productComparisonPage = "/on/demandware.store/Sites-Reebok-FR-Site/fr_FR/ProductAuxiliar-Comparison";
 app.URLs.setSubscriptionFlagUrl = "https://www.reebok.fr/on/demandware.store/Sites-Reebok-FR-Site/fr_FR/COPayment-SetNewsletterFlag";
-app.URLs.getAllocationTimer = "/on/demandware.store/Sites-Reebok-FR-Site/fr_FR/Cart-ShowAllocationTimer";
+app.URLs.productComparisonPage = "/on/demandware.store/Sites-Reebok-FR-Site/fr_FR/ProductAuxiliar-Comparison";
+app.URLs.getAvailableSizes = "/on/demandware.store/Sites-Reebok-FR-Site/fr_FR/Product-GetAvailableSizes";
 app.URLs.createComingSoonSignup = "/on/demandware.store/Sites-Reebok-FR-Site/fr_FR/SCV-CreateCommingSoonSignup";
-app.URLs.PERSONALIZATION_BASE_URL = "https://cfg.adidas.fr";
+app.URLs.cartUpdateItems = "/on/demandware.store/Sites-Reebok-FR-Site/fr_FR/Cart-UpdateItems";
 app.URLs.deleteUnavailableProducts = "/on/demandware.store/Sites-Reebok-FR-Site/fr_FR/OmniChannel-DeleteUnavailableProducts";
 app.URLs.getSalesContracts = "/on/demandware.store/Sites-Reebok-FR-Site/fr_FR/COPayment-GetSalesContract";
-app.URLs.getAvailableSizes = "/on/demandware.store/Sites-Reebok-FR-Site/fr_FR/Product-GetAvailableSizes";
+app.URLs.PERSONALIZATION_BASE_URL = "https://cfg.adidas.fr";
 app.URLs.PERSONALIZATION = {
 ppr: "/configurator/services/miadidas-configurator/ppdo/article/{article}/region/{region}/channel/{channel}/partner/{partner}",
 rr: "/configurator/services/miadidas-configurator/pRecipeService/recipeIdent/{recipeIdent}/region/{region}/channel/{channel}/partner/{partner}",
@@ -303,15 +313,17 @@ app.shoprunnerEnvironmentID = "1";
 app.minimumInstallmentAmount = "null";
 app.guestWishlistLifeAgeDays = "30 day";
 app.wishlistCookieName = "wishlist";
-app.stickyBag = "true";
-app.epochShipFromStoreEnabled = "false";
-app.applyLazyLoadFix = "true";
 app.enableProductPriceTracking = "true";
 app.iccdSourceID = "null";
-app.enableSalesContract = false;
 app.enableBINCheckForInstallments = false;
-app.rbkStyleRefreshEnabled = "true";
+app.enableSalesContract = false;
 app.contentURL = undefined;
+app.rbkStyleRefreshEnabled = "true";
+/* GDPR */
+app.enableHeaderSignupOverlayGDPR = true;
+app.enableGiftOverlayGDPR = false;
+app.enableCheckoutNewsletterGDPR = true;
+
 /*constants*/
 app.constants.AVAIL_STATUS_IN_STOCK="IN_STOCK";
 app.constants.AVAIL_STATUS_PREORDER="PREORDER";
@@ -326,15 +338,10 @@ app.constants.PRODUCT_MAX_QTY_THRESHOLD="3";
 app.constants.GENERIC_MAX_QTY_THRESHOLD="10";
 app.constants.CURRENCY_CODE = "EUR";
 app.constants.HIDE_SHIPPING_METHODS_ON_CART = true;
-app.constants.GLOBAL_TEMPLATE = "true";
 app.constants.ADDRESS_VALIDATION_PROVIDER = "No validation";
 app.constants.ADDRESS_DOCTOR_IMPROVEMENT = "false";
 app.constants.ADDRESS_DOCTOR_POPUP_TITLE = "Vérifiez votre adresse";
-app.constants.DYNAMIC_TERMS_CONDITIONS = false;
-app.constants.DEFAULT_RADIUS = 100;
 app.constants.USE_SPLITTED_DELIVERY = false;
-app.constants.BV_COLLAPSE_REVIEWS = false;
-app.constants.UPS_INTERVAL_MESSAGING = 3;
 app.constants.PERSONALIZATION_CHANNEL = "1";
 app.constants.PERSONALIZATION_PARTNER = "null";
 app.constants.GOOGLE_MAP_API = "AIzaSyDOJnRiwKZ6hGnmPwq7WJe2fX7648Wumgc";
@@ -355,7 +362,11 @@ app.resources["SHIPPINGCOSTFREE"] = "Gratuit";
 app.resources["NO_REVIEWS"]="Il n'y a pas de commentaires sur ce produit";
 app.resources["MOBILE_COOKIE_EXPIRATION_DATE"] = "null";
 app.resources["DEV_INSTANCE_WARNING"] = "This is NOT A LIVE SITE. This is test environment. Do NOT place orders.";
+app.resources["LOGIN_LOGOUT_TEXT"] = "Se déconnecter";
 app.resources["SIZE_LABEL"] = "Taille";
+app.resources["ZOOM_TYPE"] = "default";
+app.resources["ZOOM_MESSAGE"] = "chargement en cours";
+app.resources["CURSOR_URL_IMAGE"] = "/on/demandware.static/Sites-Reebok-FR-Site/-/default/dwaa8e6847/images/cursor-zoomed-circle.cur";
 app.resources["GLOBAL_UPDATE"] = "Mise à jour";
 app.resources["GLOBAL_LOADING"] = "Loading";
 app.resources["GLOBAL_CONFIRM_UPDATE"] = "Confirm your update";
@@ -375,6 +386,7 @@ app.resources["MINICART_TIMEINTERVAL"] = "With this update, your delivery times 
 app.resources["MINICART_CLICKCOLLECT_SCHEDULED_DELIVERY_UNAVAILABLE"] = "With this update to your bag, click & collect and scheduled delivery will no longer be available and your delivery times will change . You will taken back to the delivery page.";
 app.resources["MINICART_CLICKCOLLECT_SCHEDULED_DELIVERY_AVAILABLE"] = "With this update to your bag, click & collect and scheduled delivery are now available and your delivery times will change. You will be  taken back to the delivery page.";
 app.resources["PROCESSING_PAYMENT"] = "Paiement en cours";
+app.resources["IMAGE_LOADING"] = "Chargement de l'image";
 app.resources.PERSONALIZATION_TEXTS = {
 'nameAndNumber': "PERSONNALISATION EXPRESS",
 'pName-pNumber.nameAndNumber.textwithDropDown': "Inspire-toi",
@@ -406,6 +418,7 @@ app.resources["SELECT_YOUR_ADDRESS"] = "Select your address";
 app.resources["EDIT_YOUR_ADDRESS"] = "Modifier l'adresse";
 app.resources["POSTAL_LOADING_ERROR_SELECT_ADDRESS"] = "Please choose your address";
 app.resources["ADDRESS_SUGGESTION_FAIL_SERVICE"] = "We are sorry, validation service is unavailable right now";
+app.resources["ERROR_STREET"] = "Veuillez saisir la rue de l'adresse";
 app.resources["PRELIMINARYCONTRACT_ERROR_MESSAGE"]="forms.salescontract.prelimerror.message";
 app.resources["SALESCONTRACT_ERROR_MESSAGE"]="forms.salescontract.saleserror.message";
 /*product availability messages*/
@@ -428,13 +441,16 @@ app.resources["CHANGE_EMAIL_ADDRESS"]="Modifier l’adresse e-mail";
 app.resources["CHANGE_PHONE_NUMBER"]="Modifier le numéro de téléphone";
 app.resources["QTY_LIMIT_MESSAGE"]="Plus que {0} en stock";
 app.resources["LOW_LIMIT_MESSAGE"]="Dernières tailles";
-app.resources["REORDER"]="REPASSER UNE COMMANDE";
 /*add resources for preview*/
 app.resources["PREVIEW"]="<span class=\"callout-bar-headline\">BIENTÔT !</span><span class=\"callout-bar-short\"><span class=\"callout-bar-text\">Disponible dans </span><span class=\"callout-bar-day-count\">{0} jours</span></span>";
 app.resources["COMING_SOON_IN_HOURS_AND_MINUTES"]="<span class=\"callout-bar-headline\">BIENTÔT !</span><span class=\"callout-bar-short\"><span class=\"callout-bar-text\">Disponible dans </span><span class=\"callout-bar-day-count\">{0} heures et {1} minutes</span></span>";
 app.resources["COMING_SOON_IN_MINUTES"]="<span class=\"callout-bar-headline\">BIENTÔT !</span><span class=\"callout-bar-short\"><span class=\"callout-bar-text\">Disponible dans </span><span class=\"callout-bar-day-count\">{0} minutes</span></span>";
 app.resources["ADD_TO_CART_COMING_SOON"]="BIENTÔT !";
 app.resources["ADD_TO_CART_PREORDER"]="Précommander";
+/*Comparison*/
+app.resources["COMPARE_SINGLE"] ="{0} sur {1} sélectionné";
+app.resources["COMPARE_PLURAL"] ="{0} sur {1} sélectionnés";
+app.resources["COMPARE_INFORM"] ="0 sur {0} sélectionné";
 /* bonus products messages*/
 app.resources["BONUS_PRODUCTS"]="Produit(s) Bonus";
 app.resources["SELECT_BONUS_PRODUCT"]="Sélectionner";
@@ -444,11 +460,6 @@ app.resources['ADD_TO_CART_BUTTON_TITLE']="Ajouter au panier";
 app.resources['PRE_ORDER_BUTTON_TITLE']="Précommander";
 app.resources['BACK_ORDER_BUTTON_TITLE']="Ajouter réservation au panier";
 app.resources['UPDATE_BUTTON_TITLE']="Mise à jour";
-/*Comparison*/
-app.resources["COMPARE_SINGLE"] ="{0} sur {1} sélectionné";
-app.resources["COMPARE_PLURAL"] ="{0} sur {1} sélectionnés";
-app.resources["COMPARE_INFORM"] ="0 sur {0} sélectionné";
-app.resources["QUICKVIEW_TITLE_WISHLIST"]="Détails du produit";
 /* miproduct page*/
 app.resources["BLOCKER_MESSAGE_title"]="Vous êtes sur le point de quitter le site.";
 app.resources["BLOCKER_MESSAGE_message"]="Tous les changement non sauvegardés seront perdus.";
@@ -483,7 +494,6 @@ app.resources["PERSONALIZATION_PREVIEW"] = "Aperçu";
 app.resources["MIADIDAS_BASE_URL"] = "null";
 app.resources["CLEAR_ALL"] = "Effacer";
 app.resources["FOOTWEAR_HEADER"] = "Ajoutez une touche personnelle";
-app.resources["MORE_INFORMATION"] = "en savoir plus";
 /* search suggestions*/
 app.resources["ENABLE_DEMANDWARE_SUGGESTIONS"] = true;
 app.resources["ENABLE_CATEGORY_SUGGESTIONS"] = false;
@@ -494,6 +504,8 @@ app.resources["CATEGORY_SUGGESTIONS"] = "Catégories";
 app.resources["PRODUCT_SUGGESTIONS"] = "Produits";
 app.resources["PRODUCT_SUGGESTIONS_PRICE"] = "Price:";
 app.resources["VIEW_ALL_RESULTS_SUGGESTIONS"] = "Voir Tous les Résultats";
+app.resources["VIEW_ALL"] = "Tout afficher";
+app.resources["RESULTS"] = "résultats";
 // redirects
 app.resources["REDIRECT_TITLE"] = "Tu seras automatiquement redirigé(e)";
 app.resources["REDIRECT_CTA"] = "CONTINUER";
@@ -526,28 +538,15 @@ app.resources["ADYENERRORS_CARD_EXPIRED"] = "errorforms.adyenencrypted.expiryDat
 app.resources['VALID_EMAIL_ERROR'] = "Veuillez saisir une adresse e-mail valide";
 app.resources['NEWSLETTER_SUBSCRIBE_URL'] = "https://www.reebok.fr/on/demandware.store/Sites-Reebok-FR-Site/fr_FR/Newsletter-Subscribe";
 app.resources['NEWSLETTER_SUBSCRIBE_FOOTER_LABEL'] = "REJOIGNEZ-NOUS ET PROFITEZ DE <span>-20%*</span> ";
-app.resources['LEGAL_NEWSLETTER_AGE_CONSENTTYPE'] = "checkbox";
 app.resources['SIGNUPANDSAVE_GENERAL_ERROR'] = "Oups, désolé ! En raison de la maintenance du site, ce service n'est pas disponible.";
-app.resources["PRODUCT_ADDED_TO_CART"] ="Produit ajouté au panier";
-app.resources["PRODUCT_SELECT_SIZE"] = "CHOISIR UNE TAILLE";
-app.resources["PRODUCT_PLEASE_SELECT_SIZE"] = "Veuillez sélectionner votre taille";
-app.resources["VIDEO_PLAYLIST_ID"] = "lSGf2BXW2nRS";
+app.resources['LEGAL_NEWSLETTER_AGE_CONSENTTYPE'] = "checkbox";
+/*Feature toggles*/
+app.resources['NAVSRCH_175_feature_toggle'] = true;
+app.resources["SHIPPING_METHOD_DEPENDENCIES"] = "null";
+app.resources['SHIPPING_OPTIONS'] = 'Mode de livraison <div class="floated-popup"><a class="showdialog" href="/on/demandware.store/Sites-Reebok-FR-Site/fr_FR/Page-Include?cid=basket-shippinginfo-content" data-component="common/ShowDialog">&nbsp;</a></div>';
 app.resources["FORM_REGEXP_EMAIL"] = "^[^\\s@.,А-Яа-яёЁ]+(\\.[^\\s@.]+)*@[A-Za-z\\d]([\\w\\-]*([A-Za-z\\d]\\.[A-Za-z\\d])*)*([A-Za-z\\d]\\.[A-Za-z]{2,9})$";
 app.resources["FORM_REGEXP_ZIPCODE"] = "^\\s{0,}[0-9]{5}\\s{0,}$";
 app.resources["FORM_REGEXP_PHONE"] = "^(\\+){0,1}\\d{8,15}$";
-app.URLs.getProductUrl = "/on/demandware.store/Sites-Reebok-FR-Site/fr_FR/Product-Show";
-app.URLs.getVariants = "/on/demandware.store/Sites-Reebok-FR-Site/fr_FR/Product-GetVariants";
-app.URLs.getAvailability = "/on/demandware.store/Sites-Reebok-FR-Site/fr_FR/Product-GetAvailability";
-app.URLs.loadingSmallImg = "/on/demandware.static/Sites-Reebok-FR-Site/-/default/dw3cd87ff0/images/loading-small-mobile.gif";
-app.URLs.formatMoney = "/on/demandware.store/Sites-Reebok-FR-Site/fr_FR/Product-FormatPrices";
-app.URLs.getAssetContent = "/on/demandware.store/Sites-Reebok-FR-Site/fr_FR/Page-Include";
-app.URLs.lookupEmail = "https://www.reebok.fr/on/demandware.store/Sites-Reebok-FR-Site/fr_FR/CODelivery-LookupEmail";
-app.URLs.updateShippingMethodAjax = "https://www.reebok.fr/on/demandware.store/Sites-Reebok-FR-Site/fr_FR/Cart-UpdateShippingMethodAjax";
-app.URLs.cartSummaryBlock = "https://www.reebok.fr/on/demandware.store/Sites-Reebok-FR-Site/fr_FR/Cart-GetCartSummaryBlock";
-app.URLs.updateCartSummaryBlock = "https://www.reebok.fr/on/demandware.store/Sites-Reebok-FR-Site/fr_FR/Cart-UpdateCartSummarySectionWithPayment";
-app.URLs.validateCCBIN = "https://www.reebok.fr/on/demandware.store/Sites-Reebok-FR-Site/fr_FR/COPayment-ValidateCCBIN";
-// shipping
-app.resources["SHIPPING_METHOD_DEPENDENCIES"] = "null";
 
 app.URLs.yourReebokConfigurator = "null";
 app.URLs.yrIFrameConfigurator = "/on/demandware.store/Sites-Reebok-FR-Site/fr_FR/RedirectURL-YRConfigurator";
@@ -567,20 +566,25 @@ app.resources["PROFILE_TERMSCONDITIONS"] = "Conditions générales";
 app.resources["PROFILE_PRIVACYPOLICY"] = "Politique de protection des données personnelles";
 app.resources["PROFILE_WHATDOESTHATMEAN"] = "What does that mean?";
 app.resources["PROMO_CODE_VALIDATION_URL"] = "/on/demandware.store/Sites-Reebok-FR-Site/fr_FR/Cart-Submits";
-/*coming soon*/
-app.resources["COMING_SOON_GENERAL_ERROR"] = "Désolé, l'inscription est impossible pour le moment, réessaye plus tard.";
-/*OMX*/
-app.resources["OMX_IS_USED"] = false;
-/*storelocator*/
-app.resources["STORELOCATOR_PICKUPINDAYS_PARTONE"] = "Disponible pour un retrait dans";
-app.resources["STORELOCATOR_PICKUPINDAYS_PARTTWO"] = "jours ouvrables";
-app.resources["SEARCH_HAS_NO_RESULTS"] = "Nous ne trouvons aucun produit correspondant à vos critères de recherche.";
-app.resources["ENABLE_WISHLIST_ON_CART"] = false;
-app.resources["ENABLE_WISHLIST_GLOBALLY"] = true;
-app.URLs.wishlistAjax = "/on/demandware.store/Sites-Reebok-FR-Site/fr_FR/Wishlist-ShowAjax";
 app.isPostamatEnabled = false;
 app.isCollectPointEnabled = true;
 app.isClickCollectEnabled= false;
+app.resources["MOBILE_PHONE_INVALID"] = "";
+app.resources["MOBILE_PHONE_PATTERN"] = "";
+app.resources["MI_SHOW_MIADIDAS_USP"] = true;
+app.resources["ENABLE_WISHLIST_ON_CART"] = false;
+app.resources["ENABLE_WISHLIST_GLOBALLY"] = true;
+app.URLs.wishlistAjax = "/on/demandware.store/Sites-Reebok-FR-Site/fr_FR/Wishlist-ShowAjax";
+/*coming soon*/
+app.resources["COMING_SOON_GENERAL_ERROR"] = "Désolé, l'inscription est impossible pour le moment, réessaye plus tard.";
+/*storelocator*/
+app.resources["STORELOCATOR_PICKUPINDAYS_PARTONE"] = "Disponible pour un retrait dans";
+app.resources["STORELOCATOR_PICKUPINDAYS_PARTTWO"] = "jours ouvrables";
+/*omx*/
+app.resources["OMX_IS_USED"] = false;
+/*OrderHistory - re-order*/
+app.resources["REORDER"] = "REPASSER UNE COMMANDE";
+app.resources["REORDER_ERROR"] = "Nous ne pouvons pas repasser commander de vos articles.";
 
 
 
@@ -621,13 +625,10 @@ app.resources["EMAIL_SUGGESTION_TOPLEVELDOMAINS"] = ["com", "com.au", "com.tw", 
 app.resources["EMAIL_SUGGESTION_SECONDARYDOMAINS"] = ["yahoo", "hotmail", "mail", "live", "outlook", "gmx"];
 app.resources["EMAIL_SUGGESTION_SUGGESTIONTEXT"] = "Vouliez-vous écrire";
 app.resources["EMAIL_SUGGESTION_CORRECTEDTEXT"] = "Nous avons corrigé l'adresse e-mail.";
-/* GDPR */
-app.enableHeaderSignupOverlayGDPR = true;
-app.enableCheckoutNewsletterGDPR = true;
 /* Exchanges */
 
 return app;
-}(app));app.define&&app.define('app.resources',function(){return app;});
+}());app.define&&app.define('app.resources',function (){return app;});
 
 
 app.URLs.currentMobileUrl = "https://www.reebok.fr/s/Sites-Reebok-FR-Site/dw/shared_session_redirect?url=https%3A%2F%2Fm.reebok.fr%2Fhelp-topics-privacy_policy.html";
@@ -681,7 +682,6 @@ init();
 
 
 
-
 app.require.config({
 baseUrl: "https://www.reebok.fr/on/demandware.static/Sites-Reebok-FR-Site/-/fr_FR/v1670025779198/js",
 catchError: true,
@@ -703,6 +703,7 @@ map: {
 }
 },
 shim: {
+
 },
 deps: [
 null,
@@ -716,44 +717,32 @@ null,
 "component/analytics/CertonaRecommendations",
 "vendor/modernizr.custom",
 "utils/social-sharing",
-"vendor/fancyfields",
 "utils/jquery-ext",
-"utils/sticky",
-"utils/notification-broker"
+"vendor/jquery.custom-scrollbar"
 ],
 callback: function (dependencies, jQuery, res, ComponentMgr, PageContext, Analytics, forms, Application, CertonaRecommendations, Modernizr, socialSharing) {
 app.firstDomReady.then(function () {
-jQuery(".fancyform[name!='sortingForm'][name!='addProductForm']").fancyfields();
-jQuery('input[type="checkbox"]')
-.fancyfields("bind", "onCheckboxChange", function(input, isChecked) {
-jQuery(input).change();
-});
-jQuery('input[type="radio"]')
-.fancyfields("bind", "onRadioChange", function(input) {
-jQuery(input).find("radio").prop('checked', false);
-jQuery(input).find("radio[value='"+input.val()+"']").prop('checked', true);
-jQuery(input).click();
-});
-jQuery('select')
-.fancyfields("bind", "onSelectChange", function(input,text,val) {
-jQuery(input).find("option").removeAttr("selected");
-jQuery(input).find("option[value='"+val+"']").attr("selected","selected");
-});
 ComponentMgr.selectorToComponent({
-'.showdialog': 'mobile/common/ShowDialog',
+'.showdialog': 'common/ShowDialog',
 '.showpopup': 'common/Popup',
-'.showtooltip': 'common/Popover',
 '.collapsible': 'common/Collapsible',
 '.dataswitch': 'common/Dataswitch',
-'.tooltip': 'common/Tooltip'
-
-, 'html:first': 'common/CustomReebok'
+'.expandable-content': 'common/ExpandableBlocks',
+'.tooltip': 'common/Tooltip',
+'html:first': 'common/CustomReebok'
 
 });
 ComponentMgr.setRequiredComponents([
+"component/common/header/Navigation",
+"component/common/header/SearchSuggestion",
+"component/common/header/PrivacyLaw",
+"component/common/header/SignUpAndSave",
+"component/common/header/SlidePanel",
+"component/checkout/MiniCart"
 ]);
 ComponentMgr.setDependencies(dependencies, "null");
 ComponentMgr.initComponents();
+
 });
 // this is a hack
 Application.onLoad(function () {
@@ -974,7 +963,7 @@ CQuotient.trackViewProduct = function(/* Object */ cqParamData){
 
 
 
-<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="utils/sticky" src="https://www.reebok.fr/on/demandware.static/Sites-Reebok-FR-Site/-/fr_FR/v1670025779198/js/utils/sticky.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="vendor/jquery.waypoints" src="https://www.reebok.fr/on/demandware.static/Sites-Reebok-FR-Site/-/fr_FR/v1670025779198/js/vendor/jquery.waypoints.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="utils/ui-blocker" src="https://www.reebok.fr/on/demandware.static/Sites-Reebok-FR-Site/-/fr_FR/v1670025779198/js/utils/ui-blocker.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="utils/WishlistHelper" src="https://www.reebok.fr/on/demandware.static/Sites-Reebok-FR-Site/-/fr_FR/v1670025779198/js/utils/WishlistHelper.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="component/search/SearchField" src="https://www.reebok.fr/on/demandware.static/Sites-Reebok-FR-Site/-/fr_FR/v1670025779198/js/component/search/SearchField.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="vendor/mailcheck" src="https://www.reebok.fr/on/demandware.static/Sites-Reebok-FR-Site/-/fr_FR/v1670025779198/js/vendor/mailcheck.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="component/mobile/common/ShowDialog" src="https://www.reebok.fr/on/demandware.static/Sites-Reebok-FR-Site/-/fr_FR/v1670025779198/js/component/mobile/common/ShowDialog.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="component/common/SignUpAndSaveOverlay" src="https://www.reebok.fr/on/demandware.static/Sites-Reebok-FR-Site/-/fr_FR/v1670025779198/js/component/common/SignUpAndSaveOverlay.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="component/common/Collapsible" src="https://www.reebok.fr/on/demandware.static/Sites-Reebok-FR-Site/-/fr_FR/v1670025779198/js/component/common/Collapsible.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="component/analytics/Trigger" src="https://www.reebok.fr/on/demandware.static/Sites-Reebok-FR-Site/-/fr_FR/v1670025779198/js/component/analytics/Trigger.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="component/common/footer/FooterPlaceholder" src="https://www.reebok.fr/on/demandware.static/Sites-Reebok-FR-Site/-/fr_FR/v1670025779198/js/component/common/footer/FooterPlaceholder.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="utils/truste" src="https://www.reebok.fr/on/demandware.static/Sites-Reebok-FR-Site/-/fr_FR/v1670025779198/js/utils/truste.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="https://tags.tiqcdn.com/utag/adidas/reebokglobal/prod/utag.js" src="https://tags.tiqcdn.com/utag/adidas/reebokglobal/prod/utag.js"></script><script type="text/javascript" async="" charset="utf-8" id="utag_adidas.reebokglobal_110" src="//tags.tiqcdn.com/utag/tiqapp/utag.currency.js?utv=ut4.48.202211091333"></script><script type="text/javascript" async="" charset="utf-8" id="utag_adidas.reebokglobal_78" src="//tags.tiqcdn.com/utag/adidas/reebokglobal/prod/utag.78.js?utv=ut4.48.202207201241"></script><script type="text/javascript" async="" charset="utf-8" id="tiqapp" src="//tags.tiqcdn.com/utag/tiqapp/utag.v.js?a=adidas/reebokglobal/202211081443&amp;cb=1670092663003"></script></head>
+<script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="component/checkout/CartExpiryTimer" src="https://www.reebok.fr/on/demandware.static/Sites-Reebok-FR-Site/-/fr_FR/v1670025779198/js/component/checkout/CartExpiryTimer.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="utils/ui-blocker" src="https://www.reebok.fr/on/demandware.static/Sites-Reebok-FR-Site/-/fr_FR/v1670025779198/js/utils/ui-blocker.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="utils/WishlistHelper" src="https://www.reebok.fr/on/demandware.static/Sites-Reebok-FR-Site/-/fr_FR/v1670025779198/js/utils/WishlistHelper.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="component/search/SearchField" src="https://www.reebok.fr/on/demandware.static/Sites-Reebok-FR-Site/-/fr_FR/v1670025779198/js/component/search/SearchField.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="vendor/mailcheck" src="https://www.reebok.fr/on/demandware.static/Sites-Reebok-FR-Site/-/fr_FR/v1670025779198/js/vendor/mailcheck.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="component/common/SignUpAndSaveOverlay" src="https://www.reebok.fr/on/demandware.static/Sites-Reebok-FR-Site/-/fr_FR/v1670025779198/js/component/common/SignUpAndSaveOverlay.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="component/common/Collapsible" src="https://www.reebok.fr/on/demandware.static/Sites-Reebok-FR-Site/-/fr_FR/v1670025779198/js/component/common/Collapsible.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="component/analytics/Trigger" src="https://www.reebok.fr/on/demandware.static/Sites-Reebok-FR-Site/-/fr_FR/v1670025779198/js/component/analytics/Trigger.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="component/common/footer/FooterPlaceholder" src="https://www.reebok.fr/on/demandware.static/Sites-Reebok-FR-Site/-/fr_FR/v1670025779198/js/component/common/footer/FooterPlaceholder.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="utils/truste" src="https://www.reebok.fr/on/demandware.static/Sites-Reebok-FR-Site/-/fr_FR/v1670025779198/js/utils/truste.js"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="https://tags.tiqcdn.com/utag/adidas/reebokglobal/prod/utag.js" src="https://tags.tiqcdn.com/utag/adidas/reebokglobal/prod/utag.js"></script><script type="text/javascript" async="" charset="utf-8" id="utag_adidas.reebokglobal_110" src="//tags.tiqcdn.com/utag/tiqapp/utag.currency.js?utv=ut4.48.202211091333"></script><script type="text/javascript" async="" charset="utf-8" id="utag_adidas.reebokglobal_78" src="//tags.tiqcdn.com/utag/adidas/reebokglobal/prod/utag.78.js?utv=ut4.48.202207201241"></script><script type="text/javascript" async="" charset="utf-8" id="tiqapp" src="//tags.tiqcdn.com/utag/tiqapp/utag.v.js?a=adidas/reebokglobal/202211081443&amp;cb=1670114275402"></script></head>
 <body class="visibleDialog" data-is-inited="true">
 <div id="container" class="pt_customerservice">
 
@@ -2788,7 +2777,7 @@ Livraison gratuite de votre commande Reebok
 
 <div class="floated-popup" tabindex="0">
 
-<a class="showdialog" title="" tabindex="-1" data-component="mobile/common/ShowDialog"></a>
+<a class="showdialog" title="" tabindex="-1" data-component="common/ShowDialog"></a>
 
 </div>
 
@@ -7105,7 +7094,7 @@ jQuery("." + selectedID).addClass("selected");
 
 
 <!--googleoff: all--><noindex>
-	<div class="hidden" data-component="pagecontext/Context">%7B%22ajaxCall%22%3Afalse%2C%22environment%22%3A%22production%22%2C%22production%22%3Atrue%2C%22is_mobile%22%3A%22%22%2C%22date%22%3A%22031222%22%2C%22localeCountry%22%3A%22fr%22%2C%22session_id%22%3A%22oGCTQ8udkn9h7ej_QDQFswR1mMZdF4M1S6s%3D%22%2C%22innerCall%22%3Afalse%2C%22page_name%22%3A%22help%20topics%20privacy_policy%22%2C%22analytics%22%3A%7B%22tags%22%3A%5B%7B%22event%22%3A%22ready%22%2C%22type%22%3A%22pageview%22%2C%22scheme%22%3A%22help%22%2C%22attributes%22%3A%7B%22page_name%22%3Anull%2C%22page_type%22%3A%22HELP%22%2C%22cart_id%22%3Anull%2C%22dw_version%22%3A%22%24dw_version%22%2C%22geo_country%22%3A%22%24cookies.geo_country%22%2C%22environment%22%3Anull%2C%22site_name%22%3Anull%2C%22country%22%3Anull%2C%22language%22%3Anull%2C%22is_mobile%22%3Anull%2C%22is_customizable%22%3Anull%2C%22breadcrumb*%22%3A%22%24breadcrumbs%22%2C%22date%22%3Anull%2C%22logged_in%22%3Anull%2C%22customer_id%22%3A%22%24cookies.customer_id%22%2C%22euci%22%3A%22%24cookies.euci%22%2C%22form_name*%22%3Anull%2C%22form_error*%22%3Anull%2C%22form_field_value*%22%3Anull%2C%22dw_test_id%22%3Anull%2C%22dw_segment_id%22%3Anull%2C%22certona_recs_scheme%22%3Anull%2C%22certona_recs_count%22%3Anull%2C%22certona_recs_query%22%3Anull%2C%22session_id%22%3Anull%7D%7D%2C%7B%22event%22%3A%22wishlistadd%22%2C%22type%22%3A%22element%22%2C%22scheme%22%3A%22wishlistadd%22%2C%22attributes%22%3A%7B%22event_name%22%3A%22ADD%20TO%20WISHLIST%22%2C%22event_category%22%3A%22%24page_type%22%2C%22product_id*%22%3A%22%22%2C%22product_model_id*%22%3A%22%22%2C%22product_name*%22%3A%22%22%2C%22product_price*%22%3A%22%22%2C%22product_price_vat*%22%3A%22%22%2C%22product_gender*%22%3A%22%22%2C%22product_category*%22%3A%22%22%2C%22event%22%3A%22ELEMENT%22%7D%7D%2C%7B%22event%22%3A%22wishlistremove%22%2C%22type%22%3A%22element%22%2C%22scheme%22%3A%22wishlistremove%22%2C%22attributes%22%3A%7B%22event_name%22%3A%22REMOVE%20FROM%20WISHLIST%22%2C%22event_category%22%3A%22%24page_type%22%2C%22product_id*%22%3A%22%22%2C%22product_model_id*%22%3A%22%22%2C%22product_name*%22%3A%22%22%2C%22product_price*%22%3A%22%22%2C%22product_price_vat*%22%3A%22%22%2C%22product_gender*%22%3A%22%22%2C%22product_category*%22%3A%22%22%2C%22product_quantity*%22%3A1%2C%22event%22%3A%22ELEMENT%22%7D%7D%2C%7B%22event%22%3A%22header-signup%22%2C%22type%22%3A%22element%22%2C%22scheme%22%3A%22header-signup%22%2C%22attributes%22%3A%7B%22event_category%22%3A%22EMAIL%20SIGNUP%22%2C%22customer_email%22%3A%22%24cookies.customer_email%22%2C%22customer_encrypted_email%22%3A%22%24cookies.customer_encrypted_email%22%2C%22signup_location%22%3A%22HEADER%22%2C%22signup_step%22%3A%22%7B0%7D%22%2C%22event%22%3A%22ELEMENT%22%2C%22event_name%22%3Anull%7D%7D%2C%7B%22event%22%3A%22video-action%22%2C%22type%22%3A%22element%22%2C%22scheme%22%3A%22video-action%22%2C%22attributes%22%3A%7B%22video_category%22%3Anull%2C%22video_event%22%3Anull%2C%22video_length%22%3Anull%2C%22video_name%22%3Anull%2C%22video_player%22%3Anull%2C%22video_position%22%3Anull%2C%22event%22%3A%22ELEMENT%22%2C%22event_name%22%3Anull%2C%22event_category%22%3Anull%7D%7D%2C%7B%22event%22%3A%22email-optout%22%2C%22type%22%3A%22element%22%2C%22scheme%22%3A%22email-optout%22%2C%22attributes%22%3A%7B%22event_category%22%3A%22EMAIL%20OPT-OUT%22%2C%22signup_location%22%3A%22OVERLAY%22%2C%22signup_step%22%3A%22%7B0%7D%22%2C%22event%22%3A%22ELEMENT%22%2C%22event_name%22%3Anull%7D%7D%2C%7B%22event%22%3A%22social-share%22%2C%22type%22%3A%22element%22%2C%22scheme%22%3A%22social-share%22%2C%22attributes%22%3A%7B%22event%22%3A%22ELEMENT%22%2C%22event_name%22%3Anull%2C%22event_category%22%3Anull%7D%7D%2C%7B%22event%22%3A%22form-error%22%2C%22type%22%3A%22element%22%2C%22scheme%22%3A%22form-error%22%2C%22attributes%22%3A%7B%22event_category%22%3A%22FORM%20ERRORS%22%2C%22form_name%22%3A%22%7B0%7D%22%2C%22form_error%22%3A%22%7B1%7D%22%2C%22form_field_value%22%3A%22%7B2%7D%22%2C%22event%22%3A%22ELEMENT%22%2C%22event_name%22%3Anull%7D%7D%2C%7B%22event%22%3A%22navigation-click%22%2C%22type%22%3A%22link%22%2C%22scheme%22%3A%22navigation-click%22%2C%22attributes%22%3A%7B%22event_category%22%3A%22NAVIGATION%20CLICK%22%2C%22link_name%22%3A%22%7B0%7D%22%2C%22link_href%22%3A%22%7B1%7D%22%2C%22event%22%3A%22LINK%22%7D%7D%2C%7B%22event%22%3A%22search-suggestion%22%2C%22type%22%3A%22element%22%2C%22scheme%22%3A%22search-suggestion%22%2C%22attributes%22%3A%7B%22event_name%22%3A%22SEARCH%20SUGGESTION%22%2C%22event_category%22%3A%22SEARCH%22%2C%22form_field_value%22%3Anull%2C%22event%22%3A%22ELEMENT%22%7D%7D%2C%7B%22event%22%3A%22generic%22%2C%22type%22%3A%22pageview%22%2C%22scheme%22%3A%22generic%22%2C%22attributes%22%3A%7B%22page_name%22%3Anull%2C%22page_type%22%3A%22CUSTOMER%20SERVICE%22%2C%22cart_id%22%3Anull%7D%7D%5D%2C%22tealium_library%22%3A%22https%3A%2F%2Ftags.tiqcdn.com%2Futag%2Fadidas%2Freebokglobal%2Fprod%2Futag.js%22%2C%22tealium_sync_library%22%3A%22https%3A%2F%2Ftags.tiqcdn.com%2Futag%2Fadidas%2Freebokglobal%2Fprod%2Futag.sync.js%22%7D%2C%22config%22%3A%7B%22replace%22%3A%5B%22filters_applied*%22%2C%22product_id%22%2C%22product_sku%22%2C%22product_name%22%2C%22**%22%5D%7D%2C%22site_name%22%3A%22Reebok%22%2C%22country%22%3A%22FR%22%2C%22language%22%3A%22fr%22%2C%22profile%22%3A%22reebokglobal%22%2C%22is_customizable%22%3A%22%22%2C%22logged_in%22%3A%22%22%2C%22dw_version%22%3A%22SFCC_STG_2022w45_494%22%2C%22session%22%3A%7B%7D%2C%22_MAX_DEPTH_LEVEL%22%3A3%2C%22_MAX_OBJECT_PROPS%22%3A10%2C%22events%22%3A%5B%5D%7D</div>
+	<div class="hidden" data-component="pagecontext/Context">%7B%22ajaxCall%22%3Afalse%2C%22environment%22%3A%22production%22%2C%22production%22%3Atrue%2C%22is_mobile%22%3A%22%22%2C%22date%22%3A%22041222%22%2C%22localeCountry%22%3A%22fr%22%2C%22session_id%22%3A%22tG338Jto4ngySffv9qZPDTvcBqvaE-5uCS8%3D%22%2C%22innerCall%22%3Afalse%2C%22page_name%22%3A%22help%20topics%20privacy_policy%22%2C%22analytics%22%3A%7B%22tags%22%3A%5B%7B%22event%22%3A%22ready%22%2C%22type%22%3A%22pageview%22%2C%22scheme%22%3A%22help%22%2C%22attributes%22%3A%7B%22page_name%22%3Anull%2C%22page_type%22%3A%22HELP%22%2C%22cart_id%22%3Anull%2C%22dw_version%22%3A%22%24dw_version%22%2C%22geo_country%22%3A%22%24cookies.geo_country%22%2C%22environment%22%3Anull%2C%22site_name%22%3Anull%2C%22country%22%3Anull%2C%22language%22%3Anull%2C%22is_mobile%22%3Anull%2C%22is_customizable%22%3Anull%2C%22breadcrumb*%22%3A%22%24breadcrumbs%22%2C%22date%22%3Anull%2C%22logged_in%22%3Anull%2C%22customer_id%22%3A%22%24cookies.customer_id%22%2C%22euci%22%3A%22%24cookies.euci%22%2C%22form_name*%22%3Anull%2C%22form_error*%22%3Anull%2C%22form_field_value*%22%3Anull%2C%22dw_test_id%22%3Anull%2C%22dw_segment_id%22%3Anull%2C%22certona_recs_scheme%22%3Anull%2C%22certona_recs_count%22%3Anull%2C%22certona_recs_query%22%3Anull%2C%22session_id%22%3Anull%7D%7D%2C%7B%22event%22%3A%22wishlistadd%22%2C%22type%22%3A%22element%22%2C%22scheme%22%3A%22wishlistadd%22%2C%22attributes%22%3A%7B%22event_name%22%3A%22ADD%20TO%20WISHLIST%22%2C%22event_category%22%3A%22%24page_type%22%2C%22product_id*%22%3A%22%22%2C%22product_model_id*%22%3A%22%22%2C%22product_name*%22%3A%22%22%2C%22product_price*%22%3A%22%22%2C%22product_price_vat*%22%3A%22%22%2C%22product_gender*%22%3A%22%22%2C%22product_category*%22%3A%22%22%2C%22event%22%3A%22ELEMENT%22%7D%7D%2C%7B%22event%22%3A%22wishlistremove%22%2C%22type%22%3A%22element%22%2C%22scheme%22%3A%22wishlistremove%22%2C%22attributes%22%3A%7B%22event_name%22%3A%22REMOVE%20FROM%20WISHLIST%22%2C%22event_category%22%3A%22%24page_type%22%2C%22product_id*%22%3A%22%22%2C%22product_model_id*%22%3A%22%22%2C%22product_name*%22%3A%22%22%2C%22product_price*%22%3A%22%22%2C%22product_price_vat*%22%3A%22%22%2C%22product_gender*%22%3A%22%22%2C%22product_category*%22%3A%22%22%2C%22product_quantity*%22%3A1%2C%22event%22%3A%22ELEMENT%22%7D%7D%2C%7B%22event%22%3A%22header-signup%22%2C%22type%22%3A%22element%22%2C%22scheme%22%3A%22header-signup%22%2C%22attributes%22%3A%7B%22event_category%22%3A%22EMAIL%20SIGNUP%22%2C%22customer_email%22%3A%22%24cookies.customer_email%22%2C%22customer_encrypted_email%22%3A%22%24cookies.customer_encrypted_email%22%2C%22signup_location%22%3A%22HEADER%22%2C%22signup_step%22%3A%22%7B0%7D%22%2C%22event%22%3A%22ELEMENT%22%2C%22event_name%22%3Anull%7D%7D%2C%7B%22event%22%3A%22video-action%22%2C%22type%22%3A%22element%22%2C%22scheme%22%3A%22video-action%22%2C%22attributes%22%3A%7B%22video_category%22%3Anull%2C%22video_event%22%3Anull%2C%22video_length%22%3Anull%2C%22video_name%22%3Anull%2C%22video_player%22%3Anull%2C%22video_position%22%3Anull%2C%22event%22%3A%22ELEMENT%22%2C%22event_name%22%3Anull%2C%22event_category%22%3Anull%7D%7D%2C%7B%22event%22%3A%22email-optout%22%2C%22type%22%3A%22element%22%2C%22scheme%22%3A%22email-optout%22%2C%22attributes%22%3A%7B%22event_category%22%3A%22EMAIL%20OPT-OUT%22%2C%22signup_location%22%3A%22OVERLAY%22%2C%22signup_step%22%3A%22%7B0%7D%22%2C%22event%22%3A%22ELEMENT%22%2C%22event_name%22%3Anull%7D%7D%2C%7B%22event%22%3A%22social-share%22%2C%22type%22%3A%22element%22%2C%22scheme%22%3A%22social-share%22%2C%22attributes%22%3A%7B%22event%22%3A%22ELEMENT%22%2C%22event_name%22%3Anull%2C%22event_category%22%3Anull%7D%7D%2C%7B%22event%22%3A%22form-error%22%2C%22type%22%3A%22element%22%2C%22scheme%22%3A%22form-error%22%2C%22attributes%22%3A%7B%22event_category%22%3A%22FORM%20ERRORS%22%2C%22form_name%22%3A%22%7B0%7D%22%2C%22form_error%22%3A%22%7B1%7D%22%2C%22form_field_value%22%3A%22%7B2%7D%22%2C%22event%22%3A%22ELEMENT%22%2C%22event_name%22%3Anull%7D%7D%2C%7B%22event%22%3A%22navigation-click%22%2C%22type%22%3A%22link%22%2C%22scheme%22%3A%22navigation-click%22%2C%22attributes%22%3A%7B%22event_category%22%3A%22NAVIGATION%20CLICK%22%2C%22link_name%22%3A%22%7B0%7D%22%2C%22link_href%22%3A%22%7B1%7D%22%2C%22event%22%3A%22LINK%22%7D%7D%2C%7B%22event%22%3A%22search-suggestion%22%2C%22type%22%3A%22element%22%2C%22scheme%22%3A%22search-suggestion%22%2C%22attributes%22%3A%7B%22event_name%22%3A%22SEARCH%20SUGGESTION%22%2C%22event_category%22%3A%22SEARCH%22%2C%22form_field_value%22%3Anull%2C%22event%22%3A%22ELEMENT%22%7D%7D%2C%7B%22event%22%3A%22generic%22%2C%22type%22%3A%22pageview%22%2C%22scheme%22%3A%22generic%22%2C%22attributes%22%3A%7B%22page_name%22%3Anull%2C%22page_type%22%3A%22CUSTOMER%20SERVICE%22%2C%22cart_id%22%3Anull%7D%7D%5D%2C%22tealium_library%22%3A%22https%3A%2F%2Ftags.tiqcdn.com%2Futag%2Fadidas%2Freebokglobal%2Fprod%2Futag.js%22%2C%22tealium_sync_library%22%3A%22https%3A%2F%2Ftags.tiqcdn.com%2Futag%2Fadidas%2Freebokglobal%2Fprod%2Futag.sync.js%22%7D%2C%22config%22%3A%7B%22replace%22%3A%5B%22filters_applied*%22%2C%22product_id%22%2C%22product_sku%22%2C%22product_name%22%2C%22**%22%5D%7D%2C%22site_name%22%3A%22Reebok%22%2C%22country%22%3A%22FR%22%2C%22language%22%3A%22fr%22%2C%22profile%22%3A%22reebokglobal%22%2C%22is_customizable%22%3A%22%22%2C%22logged_in%22%3A%22%22%2C%22dw_version%22%3A%22SFCC_STG_2022w45_494%22%2C%22session%22%3A%7B%7D%2C%22_MAX_DEPTH_LEVEL%22%3A3%2C%22_MAX_OBJECT_PROPS%22%3A10%2C%22events%22%3A%5B%5D%7D</div>
 </noindex><!--googleon: all-->
 
 
@@ -7415,7 +7404,7 @@ function trackPage() {
 <!-- Demandware Active Data (body_end-active_data.js) -->
 <script src="/on/demandware.static/Sites-Reebok-FR-Site/-/fr_FR/v1670025779198/internal/jscript/dwac-21.7.js" type="text/javascript" async="async"></script><!-- CQuotient Activity Tracking (body_end-cquotient.js) -->
 <script src="https://cdn.cquotient.com/js/v2/gretel.min.js" type="text/javascript" async="async"></script>
-<script type="text/javascript" src="/e0Ou3sTs_o8dZ/pEPn2/Cjcx5CoNg/c71uzLLJ7p/cXBWXmQD/YC/0cdD8bRzEB"></script><link rel="stylesheet" type="text/css" href="/_sec/cp_challenge/sec-3-8.css">
+<script type="text/javascript" src="/_if02e-QLxbwWlqQm47c/aNa1wtfktu/eTNDTgUaIQ4/YT4LDR/hTA2wB"></script><link rel="stylesheet" type="text/css" href="/_sec/cp_challenge/sec-3-8.css">
           <script src="/_sec/cp_challenge/sec-cpt-3-8.js" async="" defer=""></script>
           <div id="sec-overlay" style="display:none;">
           <div id="sec-container">
