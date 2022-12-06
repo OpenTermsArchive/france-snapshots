@@ -5309,6 +5309,59 @@ Veuillez également noter que tout document justificatif ou d’identité sont c
 	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KV4GH4N"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
+	<div id="habillage_src" class="container">
+		<style type="text/css">
+			@media (min-width: 1330px) {
+				body.lang--fr {
+					background-image: url(/media/documents/homepage/Habillage_NOEL.jpg);
+					background-color: transparent;
+					background-attachment: fixed;
+					background-repeat: no-repeat;
+					background-position: top center;
+				}
+								#home__bandeau-box {
+					max-width: 1330px;
+					margin: auto;
+				}
+				#menu {
+					position: relative;
+					z-index: 4 !important;
+				}
+				#home__bandeau-box {
+					position: relative;
+					z-index: 3 !important;
+				}
+				#body-content-with-habillage {
+					z-index: 2;
+					position:relative;
+					max-width: 1366px;
+					margin: 0 auto;
+				}
+				#footer {
+					z-index: 1 !important;
+					position: relative !important;
+				}
+				#habillage_clic {
+					position:fixed;
+					bottom: 0;
+					top: 0;
+					right: 0;
+					left: 0;
+					z-index: 0;
+					cursor: pointer;
+				}
+							}
+		</style>
+	</div>
+			<div id="habillage_clic"></div>
+		<script>
+			$(document).ready(function () {
+				$('#body-content-without-habillage').attr('id', 'body-content-with-habillage');
+				$('#habillage_clic').click(function (e) {
+										window.location = 'https://www.rueducommerce.fr/boutique/noel';
+									});
+			});
+		</script>
 	
 	
 	<div id="modalTpl" class="modal micromodal-slide" aria-hidden="true">
