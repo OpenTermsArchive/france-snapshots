@@ -10,9 +10,9 @@
 <link rel="preconnect" href="https://s.go-mpulse.net">
 <link rel="preconnect" href="https://fast.fonts.net">
 <!-- CMS Branch: release/rel-22.21 -->
-<!-- CMS Commit Id: 7182aab -->
-<!-- CMS Build Version: 22.21.23.7182aab -->
-<!-- Page Generation Time: 2022/12/06 11:45:09 -->
+<!-- CMS Commit Id: b0d5c1e -->
+<!-- CMS Build Version: 22.21.1.b0d5c1e -->
+<!-- Page Generation Time: 2022/12/07 00:39:15 -->
 <title>Privacy Policy</title>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -31,15 +31,15 @@
 		</script>
 <!-- Path: css/global-cms.css StaticAssetMapValue: -->
 <link href="https://static.vans.eu/ui/www/css/fonts.hash-b5e29d7da4d1a2d9a131100cbf4a9f38.css" rel="stylesheet" type="text/css"/>
-<link href="https://static.vans.eu/ui/www/css/global-cms.hash-cfe7896d92ea39fb2d2f429cea628e2c.css" rel="stylesheet" type="text/css"/>
-<link href="https://static.vans.eu/ui/www/css/topnav.hash-eff00e1941ba61b3ebed3eab4af14c09.css" rel="stylesheet" type="text/css"/>
-<link href="https://static.vans.eu/ui/www/css/footer.hash-cd54dd65842f56576b2163ccb6057e5f.css" rel="stylesheet" type="text/css"/>
+<link href="https://static.vans.eu/ui/www/css/global-cms.hash-64cbb6b994093317c0e5a8b3bdfae8b6.css" rel="stylesheet" type="text/css"/>
+<link href="https://static.vans.eu/ui/www/css/topnav.hash-1a5a71a23133c2647af495b7a80fcd47.css" rel="stylesheet" type="text/css"/>
+<link href="https://static.vans.eu/ui/www/css/footer.hash-a9da5c255e7046fcffdcc4aad885d918.css" rel="stylesheet" type="text/css"/>
 <link href="https://static.vans.eu/ui/www/css/fs/core.hash-af714df367b055ba5d0a6b112ab4c500.css" rel="stylesheet" type="text/css"/>
 <link href="https://static.vans.eu/ui/www/css/fs/grid.hash-ff15c8d0ff0256d4d72e157c7e63cb17.css" rel="stylesheet" type="text/css"/>
 <link href="https://static.vans.eu/ui/www/css/fs/typography.hash-ae3d0da819ff0883913ef9cd45318b2e.css" rel="stylesheet" type="text/css"/>
-<link href="https://static.vans.eu/ui/www/css/fs/forms.hash-6dc3f7b8ff95db90e588c2a2137c1530.css" rel="stylesheet" type="text/css"/>
+<link href="https://static.vans.eu/ui/www/css/fs/forms.hash-26a8dd7aa892717713b46d16d1c80902.css" rel="stylesheet" type="text/css"/>
 <link href="https://static.vans.eu/ui/www/css/fs/reveal.hash-d2a39ffc6dc642de643365b3610c23d5.css" rel="stylesheet" type="text/css"/>
-<link href="https://static.vans.eu/ui/www/css/fs/components.hash-a3aba835481904633078c9f33c595ddc.css" rel="stylesheet" type="text/css"/>
+<link href="https://static.vans.eu/ui/www/css/fs/components.hash-5792905567fe2e3a7d7235be5cc1bf5d.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript">
     dataLayer = [ {
         
@@ -62,7 +62,7 @@
 <!-- ESI/SSI Start Head Remote-->
 <!-- IncludeURL: https://www.vans.fr/webapp/wcs/stores/servlet/VFPageHeaderRegistryView?storeId=10159&langId=-2&aem=true&pageCategory=help -->
 <!-- ESI include -->
-<!-- generated: Tue Dec 06 03:32:13 EST 2022 -->
+<!-- generated: Tue Dec 06 12:57:38 EST 2022 -->
 
 
 <meta name="storeId" content="10159" />
@@ -598,13 +598,49 @@ var STORE_MESSAGES={
 
 <!-- ESI/SSI End Head Remote-->
 <!-- Path: js/manifest.static.js StaticAssetMapValue: -->
-<script src="https://static.vans.eu/ui/www/js/manifest.hash-b6ed8ce4b80ed5cc959c0a8d0cd97da5.js"></script>
+<script src="https://static.vans.eu/ui/www/js/manifest.hash-e736ccc72deaa0b9c6dfe5f95c5b167c.js"></script>
 <!-- Path: js/lib/require.js StaticAssetMapValue: -->
 <script data-main="cms.main" src="https://static.vans.eu/ui/www/js/lib/require.hash-c1f5c95c715a790af37bb34977d74e13.js"></script>
+<script>
+    window.addEventListener('load', function () {
+        var requestPath = '/content/vfcorp/vans/europe/fr_fr/help/privacy-full';
+        var heroImagePattern = '';
+        var isMatchFound = false;
+        var images = document.getElementsByTagName('img');
+        var imgSrc = '';
+        if(heroImagePattern != '') {
+            for(var index=0; index<images.length; index++) {
+                var image = images[index];
+                if(image) {
+                    var imgSrcPath  = image.getAttribute('src');
+                    if(imgSrcPath) {
+                        if(imgSrcPath.indexOf(heroImagePattern) > -1)
+                            isMatchFound = true;
+
+                        if(isMatchFound){
+                            imgSrc = imgSrcPath;
+                            break;
+                        }
+                    }
+                }
+            }
+        }
+
+        if(isMatchFound) {
+            var linkEle = document.createElement('link');
+            linkEle.setAttribute('rel', 'preload');
+            linkEle.setAttribute('href', imgSrc);
+            linkEle.setAttribute('as', 'image');
+            linkEle.setAttribute('media', '(max-width: 768px)');
+            linkEle.setAttribute('fetchpriority', 'high');
+            document.getElementsByTagName('head')[0].appendChild(linkEle);
+        }
+    }, false);
+</script>
 <!-- ESI/SSI Start Head Remote-->
 <!-- IncludeURL: https://www.vans.fr/webapp/wcs/stores/servlet/VFPageHeaderScriptsView?storeId=10159&langId=-2&aem=true&pageCategory= -->
 <!-- ESI include -->
-<!-- generated: Tue Dec 06 03:01:00 EST 2022 -->
+<!-- generated: Tue Dec 06 03:07:25 EST 2022 -->
 
 <!-- ESI/SSI Start AAM Include-->
 	
@@ -664,7 +700,7 @@ try {
 <link rel="alternate" hreflang="en-gb" href="https://www.vans.co.uk/help/privacy-full.html"/>
 
 <script>(window.BOOMR_mq=window.BOOMR_mq||[]).push(["addVar",{"rua.upush":"false","rua.cpush":"false","rua.upre":"false","rua.cpre":"false","rua.uprl":"false","rua.cprl":"false","rua.cprf":"false","rua.trans":"","rua.cook":"false","rua.ims":"false","rua.ufprl":"false","rua.cfprl":"false","rua.isuxp":"false","rua.texp":"norulematch"}]);</script>
-                              <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="K85KR-RUKM7-HKW9T-2CQAU-UST2B",function(){function e(){if(!o){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,i.parentNode.appendChild(e),o=!0}}function t(e){o=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(i.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",i.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"K85KR-RUKM7-HKW9T-2CQAU-UST2B";var i=document.currentScript||document.getElementsByTagName("script")[0],o=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!o)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),i.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="y32i4clikrlvay4prria-f-493546ad1-clientnsv4-s.akamaihd.net",i="false"=="true"?2:1,o={"ak.v":"33","ak.cp":"504993","ak.ai":parseInt("173823",10),"ak.ol":"0","ak.cr":1,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"45ef4110","ak.r":43868,"ak.a2":n,"ak.m":"x","ak.n":"essl","ak.bpcip":"198.244.142.0","ak.cport":54712,"ak.gh":"88.221.135.190","ak.quicv":"","ak.tlsv":"tls1.2","ak.0rtt":"","ak.csrc":"-","ak.acc":"reno","ak.t":"1670351952","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==TL25Ae0Q1BhBZkO8+hg9ckmODse+rAPMfm56tR+l+a/k4G/xaEKMhDykqMH9lwwdAzR0d7EO1dtpAcMjp9FmbXt9u/fba7J7Vsgyq5noq6dHJD2mCxVKf+HN22nnjXY8uRtdK4E4PkSdwVPhvpmIR46Nz4fRaQ6PPvE7tgQMFynvkdCKL/+DxGfPAMqzFgrC0AU9uwLCTjfE3mHeSGpgh8HhIbJOOY5Sjnn4nbWiSoZTQoK40Risyz4BSgCTS7buMiOH5OZofHtlIyPOX/odvZ8EHn7xJPH4SDcGMosgsI/c4BPKssZ8T1MUqtffWQ3EBlGg/Lzj9QVF32BsjAnXcHhqrrQtXIA9wdmxxGpvkOkJiCLmve36BAimdNoKMLgTV4hJsgOwsM5VJWcwMmhFvCUeGtJiM9BPs7QwlN0aVdA=","ak.pv":"1343","ak.dpoabenc":"","ak.tf":i};if(""!==t)o["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))o["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(o)},rv:function(){var e=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:o,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+                              <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="K85KR-RUKM7-HKW9T-2CQAU-UST2B",function(){function e(){if(!o){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,i.parentNode.appendChild(e),o=!0}}function t(e){o=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(i.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",i.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"K85KR-RUKM7-HKW9T-2CQAU-UST2B";var i=document.currentScript||document.getElementsByTagName("script")[0],o=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!o)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),i.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="y32i4clik2duey4p4czq-f-b099e8db8-clientnsv4-s.akamaihd.net",i="false"=="true"?2:1,o={"ak.v":"33","ak.cp":"504993","ak.ai":parseInt("173823",10),"ak.ol":"0","ak.cr":1,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"1211141a","ak.r":34619,"ak.a2":n,"ak.m":"x","ak.n":"essl","ak.bpcip":"198.244.142.0","ak.cport":41548,"ak.gh":"2.16.76.92","ak.quicv":"","ak.tlsv":"tls1.2","ak.0rtt":"","ak.csrc":"-","ak.acc":"reno","ak.t":"1670373555","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==7pISGNmaY/Qt6qS74iONHE4mA+kxLF5m2DiUrM8bJlMzg/fANjsjJWPKBCfaCQoj9seAVtBHhoaPxsv8NLY2RTEUhMJUcCsRm7ifHvUKUQdce6xEln5sgZsJpHNGvXz9Du5lwmGCDSQLlKKhdbo8iuRcVVfuvo7PQC27pn8yBQ6g75ybiaU1AcRERt1u2zzEPeoVv/BDOO4BGGBynp76TBC6+HRGus0kINYzfhK8b4z3xIgSIcqt3cx2HMTTO9W/MbG6NGm108ajhBfNvjgWv/JY6gbMR28vXpSmWkmKrDaL2G4lSSm3Z4c93K7YPQ525hmsYHSXE7Lt1jpIZrMC71ykF63W9vejPSg4TXe1ixnP9ohNVArxXI7sTJq/HIy9iXUlfLRpPkVu2b3BdvzBWokA+tB8B/yMdOSPshMrMrE=","ak.pv":"1343","ak.dpoabenc":"","ak.tf":i};if(""!==t)o["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))o["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(o)},rv:function(){var e=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:o,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
 <body id="" class="">
 <!--[if lte IE 9]>
 	    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -674,7 +710,7 @@ try {
 <!-- ESI/SSI Start Top Nav-->
 <!-- IncludeURL: https://www.vans.fr/webapp/wcs/stores/servlet/VFHeaderDisplayView?storeId=10159&langId=-2&aem=true -->
 <!-- ESI include -->
-<!-- generated: Tue Dec 06 12:57:10 EST 2022 -->
+<!-- generated: Tue Dec 06 03:02:29 EST 2022 -->
 
 
 	
@@ -858,7 +894,7 @@ try {
 									</li>
 			        		
 												
-							<!-- generated: Tue Dec 06 12:57:10 EST 2022 -->
+							<!-- generated: Tue Dec 06 03:02:29 EST 2022 -->
 
 
 <div class="espot-container">
@@ -1120,7 +1156,7 @@ margin-bottom: 5px;
 									</li>
 			        		
 												
-							<!-- generated: Tue Dec 06 12:57:10 EST 2022 -->
+							<!-- generated: Tue Dec 06 03:02:29 EST 2022 -->
 
 
 <div class="espot-container">
@@ -1366,7 +1402,7 @@ margin-bottom: 5px;
 									</li>
 			        		
 												
-							<!-- generated: Tue Dec 06 12:57:10 EST 2022 -->
+							<!-- generated: Tue Dec 06 03:02:29 EST 2022 -->
 
 
 <div class="espot-container">
@@ -1630,7 +1666,7 @@ margin-bottom: 5px;
 									</li>
 			        		
 												
-							<!-- generated: Tue Dec 06 12:57:11 EST 2022 -->
+							<!-- generated: Tue Dec 06 03:02:29 EST 2022 -->
 
 
 <div class="espot-container">
@@ -1725,9 +1761,7 @@ margin-bottom: 5px;
 							</ul>
 						</nav>
 					</div>
-					
-					<nav class="utility-nav" role="navigation">
-						<!-- generated: Tue Dec 06 12:57:11 EST 2022 -->
+					<!-- generated: Tue Dec 06 03:02:29 EST 2022 -->
 
 
 
@@ -1771,7 +1805,7 @@ margin-bottom: 5px;
 			</li>
 		
 			<div style="display: none;" id="dd-myaccount" class="dd-menu-globalNav">
-				<!-- generated: Tue Dec 06 12:57:11 EST 2022 -->
+				<!-- generated: Tue Dec 06 03:02:29 EST 2022 -->
 
 
 		<div class="dd_container_body">
@@ -1827,13 +1861,11 @@ margin-bottom: 5px;
 
 	<div class="reveal reveal small loyalty-program-enrollment-modal" id="utilitynav-signin" data-reveal></div>
 
-					</nav>
-					
 				</section>
 			</div>
 			
 			<div id="topnav-search-container" class="search-form-container" role="search" aria-labelledby="topnav-search-button" aria-hidden="true">
-				<!-- generated: Tue Dec 06 12:57:11 EST 2022 -->
+				<!-- generated: Tue Dec 06 03:02:29 EST 2022 -->
 
 
 
@@ -1899,7 +1931,7 @@ margin-bottom: 5px;
 	<div class="page-util-container">
 		
 			<div id="espot-header" class="espot-header-js">
-				<!-- generated: Tue Dec 06 12:57:11 EST 2022 -->
+				<!-- generated: Tue Dec 06 03:02:29 EST 2022 -->
 
 
 <div class="espot-container">
@@ -1928,9 +1960,9 @@ margin-bottom: 5px;
 	</div>
 </article>
 
-<!-- generated: Tue Dec 06 12:57:11 EST 2022 -->
+<!-- generated: Tue Dec 06 18:09:06 EST 2022 -->
 
-<!-- generated: Tue Dec 06 12:57:11 EST 2022 -->
+<!-- generated: Tue Dec 06 18:09:06 EST 2022 -->
 
 
 <!-- ESI/SSI End Top Nav-->
@@ -4053,10 +4085,10 @@ require(['jquery'], function ($) {
 </div>
 <script>
 		var version = {
-			build : "22.21.23.7182aab",
+			build : "22.21.1.b0d5c1e",
 			branch : "release/rel-22.21",
-			commit : "7182aab"
+			commit : "b0d5c1e"
 		};
 		console.info('CMS Version:', version);
 	</script>
-<script type="text/javascript"  src="/ijei/eMT7/c0-L3/bEMkQ/p7kiDJNQQi/fUEcPjI/LDtsemQR/cyMB"></script></body></html>
+<script type="text/javascript"  src="/hxy_ijd2_MC_D17O7fYT3gAzRpY/VEp1XrbwOOm7/QTcvXmg7/FC/JUenQbGl4B"></script></body></html>
