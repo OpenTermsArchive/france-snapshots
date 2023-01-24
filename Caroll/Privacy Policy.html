@@ -6,24 +6,32 @@
 <head>
 <!--[if gt IE 9]><!-->
 <script>//common/scripts.isml</script>
-<script defer type="text/javascript" src="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/fr_FR/v1674446550504/js/main.js"></script>
-<script defer type="text/javascript" src="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/fr_FR/v1674446550504/js/campaignBanner.js">
+<script defer type="text/javascript" src="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/fr_FR/v1674507648395/js/main.js"></script>
+<script defer type="text/javascript" src="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/fr_FR/v1674507648395/js/campaignBanner.js">
         </script>
-<script defer type="text/javascript" src="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/fr_FR/v1674446550504/js/T2Srecommend.js">
+<script defer type="text/javascript" src="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/fr_FR/v1674507648395/js/T2Srecommend.js">
         </script>
 <script type="text/javascript">undefined</script>
+<script type="text/javascript">undefined</script>
 <script type="text/javascript">window.addEventListener("DOMContentLoaded", function(){    
-    const swiperhomes43ope = new Swiper('.s02-home-swiper-container', {
+const soldesSwiper = new Swiper('.swiper_soldes', {
+        direction: 'horizontal',
+        loop: false,
         slidesPerView: 1,
-        spaceBetween: 0,
-        loop: true,
-        loopAdditionalSlides: 2,
-        grabCursor: true,
-        roundLengths : true,
+        spaceBetween: 10,
+
+        breakpoints: {
+            991: {
+                slidesPerView: 2,
+                spaceBetween: 15,
+                grabCursor: false,
+            },
+        },
+
         navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },	
+          nextEl: '.swiper_soldes_next',
+          prevEl: '.swiper_soldes_prev',
+        },
     });
 })</script>
 <script type="text/javascript">window.addEventListener("DOMContentLoaded", function(){    
@@ -67,42 +75,42 @@
 <link rel="icon" type="image/png" sizes="32x32" href="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/default/dw505eca12/images/favicons/favicon-32x32.png" />
 <link rel="icon" type="image/png" sizes="96x96" href="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/default/dwfdf3ff03/images/favicons/favicon-96x96.png" />
 <link rel="icon" type="image/png" sizes="16x16" href="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/default/dwc4943acd/images/favicons/favicon-16x16.png" />
-<link rel="stylesheet" href="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/fr_FR/v1674446550504/css/global.css" />
-<link rel="stylesheet" href="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/fr_FR/v1674446550504/css/experience/components/commerceAssets/campaignBanner.css" />
-<style>/* <(*o*)> */
-.s02_bloc1_soldes2 .absolute {
+<link rel="stylesheet" href="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/fr_FR/v1674507648395/css/global.css" />
+<link rel="stylesheet" href="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/fr_FR/v1674507648395/css/experience/components/commerceAssets/campaignBanner.css" />
+<style> /* <(*o*)> */
+.s01_bloc1_soldes .absolute {
     position: absolute;
     }   
-.s02_bloc1_soldes2 img {
+.s01_bloc1_soldes img {
     display: block;
     width: 100%;
     }   
-.s02_bloc1_soldes2 .desktop {
+.s01_bloc1_soldes .desktop {
     display: block;
 }    
-.s02_bloc1_soldes2 .mobile {
+.s01_bloc1_soldes .mobile {
     display: none;
 }    
 /* <(*o*)> */
-.s02_bloc1_soldes2 {
+.s01_bloc1_soldes {
     width: calc(100% + 60px);
     margin: 0 -30px 40px;
 	font-family:'Montserrat', Helvetica, Arial, sans-serif;
     overflow: hidden;
     position: relative;
 }
-.s02_bloc1_soldes2 .mainlink {
+.s01_bloc1_soldes .mainlink {
     position: relative;
    overflow: hidden;
    display: block;
 }    
 
   
-.s02_bloc1_soldes2 .mainlink img {
+.s01_bloc1_soldes .mainlink img {
     transition: transform .25s ease-in-out 0s;
 } 
 
-.s02_bloc1_soldes2_picto {
+.s01_bloc1_soldes_picto {
     position: absolute;
     z-index: 1;
     top: 5%;
@@ -111,7 +119,7 @@
     max-width: 130px;
 }
 
-.s02_bloc1_soldes2 .mainlink p {
+.s01_bloc1_soldes .mainlink p {
     width: 100%;
     margin: 0 auto;
     font-size: 2.033vw;
@@ -122,7 +130,7 @@
     z-index: 1;
     user-select: none;
 }    
-.s02_bloc1_soldes2 .mainlink p.txt {
+.s01_bloc1_soldes .mainlink p.txt {
     font-family: 'Montserrat', Helvetica, Arial, sans-serif;
     bottom: 27%;
     left: 7.673%;
@@ -133,26 +141,21 @@
     font-weight: 400;
 /*    filter: drop-shadow(0px 0px 10px rgba(241,241,241,.7));*/
 }    
-.s02_bloc1_soldes2 .mainlink p.txt span {
+.s01_bloc1_soldes .mainlink p.txt span {
     text-transform: none;
     font-size: 2.452vw;
     letter-spacing: normal;
     line-height: 0vw;
     font-weight: 400;
 }    
-.s02_bloc1_soldes2 .mainlink p.txt span sup {
+.s01_bloc1_soldes .mainlink p.txt span sup {
     font-size: 50%;
     line-height: 0;
     position: relative;
     vertical-align: baseline;
     top: -0.75em;
 }
-    
-.s02_bloc1_soldes2 .mainlink p.txt span:first-of-type {
-    display: inline-block;
-    padding-top: 3vw;
-}
-.s02_bloc1_soldes2 .mainlink .cta {
+.s01_bloc1_soldes .mainlink .cta {
     z-index: 1;
     top: 83%;
     left: 7.673%;
@@ -177,7 +180,7 @@
 
 @media screen and (min-width: 992px) {    
 
-    .s02_bloc1_soldes2 .mainlink .cta:after {
+    .s01_bloc1_soldes .mainlink .cta:after {
         content: '';
         width: 100%;
         height: 2px;
@@ -187,7 +190,7 @@
         left: 0;
         
     }    
-    .s02_bloc1_soldes2 .mainlink .cta:hover:after {
+    .s01_bloc1_soldes .mainlink .cta:hover:after {
         animation-name: anim_underline_survol;
         animation-duration: 1.5s;
         animation-iteration-count: 1;
@@ -223,22 +226,22 @@
 }
 /* <(*o*)> */   
 @media screen and (max-width: 991px) {  
-    .s02_bloc1_soldes2 .desktop {
+    .s01_bloc1_soldes .desktop {
         display: none;
     }    
-    .s02_bloc1_soldes2 .mobile {
+    .s01_bloc1_soldes .mobile {
         display: block;
     }    
-    .s02_bloc1_soldes2 {
+    .s01_bloc1_soldes {
         margin:20px auto;
         width: 100%;
     }
-    .s02_bloc1_soldes2 .mainlink p {
+    .s01_bloc1_soldes .mainlink p {
         font-size: 2.310vw;
         text-align: left;
         filter: drop-shadow(0px 0px 10px rgba(0 0 0 / .7));
     }
-    .s02_bloc1_soldes2 .mainlink p.txt {
+    .s01_bloc1_soldes .mainlink p.txt {
         bottom: unset;
         top: 5%;
         left: 6%;
@@ -247,15 +250,12 @@
         line-height: 4.45vw;
 /*        letter-spacing: .08vw;*/
     }
-    .s02_bloc1_soldes2 .mainlink p.txt span {
+    .s01_bloc1_soldes .mainlink p.txt span {
         font-size: 4.138vw;
 /*        font-size: 3.889vw;*/
     }
-    .s02_bloc1_soldes2 .mainlink p.txt span:first-of-type {
-        padding-top: 6vw;
-    }
-    .s02_bloc1_soldes2 .mainlink .cta {
-        top: 23%;
+    .s01_bloc1_soldes .mainlink .cta {
+        top: 25%;
         left: 6%;
         right: unset;
         cursor: pointer;
@@ -266,177 +266,251 @@
         letter-spacing: .25vw;
     }
 
-    .s02_bloc1_soldes2_picto {
+    .s01_bloc1_soldes_picto {
         width: 15%;
     }
 
-    .s02_bloc1_soldes2_noel {
+    .s01_bloc1_soldes_noel {
         left: 76%;
         width: 23%;
     }
 }
 /* <(*o*)> */</style>
-<style>.s02_bloc2_soldes2_entrees .absolute {
+<style>/* <(*o*)> */
+.s01_bloc1_video .absolute {
     position: absolute;
     }   
-.s02_bloc2_soldes2_entrees img {
+.s01_bloc1_video img {
     display: block;
     width: 100%;
     }   
-.s02_bloc2_soldes2_entrees .desktop {
+.s01_bloc1_video .desktop {
     display: block;
 }    
-.s02_bloc2_soldes2_entrees .mobile {
+.s01_bloc1_video .mobile {
     display: none;
 }    
 /* <(*o*)> */
-.s02_bloc2_soldes2_entrees {
-/*    width: 91.666666666666667%;*/
-    width: 100%;
-    margin:0 auto 40px;
+.s01_bloc1_video {
+      width: 95%;
+    margin:0 auto 40px auto;
+   /*width: calc(100% + 60px); 
+    margin: 0 -30px 40px;*/
 	font-family:'Montserrat', Helvetica, Arial, sans-serif;
     overflow: hidden;
     position: relative;
-}    
-.s02_bloc2_soldes2_entrees .desktop {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-/*    gap: 18px;*/
 }
-.s02_bloc2_soldes2_entrees .desktop .entree {
-    width: 48.850574712643678%;
-}
-.s02_bloc2_soldes2_entrees .desktop .entree:last-of-type {
-    width: 100%;
-    margin-top: 1.792vw;
-}
-.s02_bloc2_soldes2_entrees .entree {
-    position:relative;
-   overflow: hidden;
-    display: block;
-    background-color: #000;
-    text-decoration: none;
-}    
-.s02_bloc2_soldes2_entrees .entree p {
-    width: 100%;
-    margin: .2em auto .35em;
-    font-size: 2.917vw;
-    font-weight:400;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-    color: #fff;
-    bottom: 0;
-    left: 0;
-    z-index: 1;
-    background-color: #000;
-}
-.s02_bloc2_soldes2_entrees .entree p span {
-    font-size: 70%;
-}
-
-.s02_bloc2_soldes2_entrees .entree p span sup {
-    font-size: 50%;
-    line-height: 0;
-    position: relative;
-    vertical-align: baseline;
-    top: -0.75em;
-}       
-.s02_bloc2_soldes2_entrees .desktop .entree:last-of-type p {
-    text-align: left;
-    padding-left: 3.831417624521073%;
-}  
-@media screen and (min-width: 992px) {        
-    .s02_bloc2_soldes2_entrees .desktop .entree img {
-        transition: transform .25s ease-in-out 0s;
-        transform-origin: bottom center;
-    }
-    .s02_bloc2_soldes2_entrees .desktop .entree:hover img {
-        transform: scale(1.008);
-    }
-}
-/* <(*o*)> */  
-.s02-home-swiper-container {
+.s01_bloc1_video .lien_global {
     width: 100%;
     height: 100%;
+    left: 0;
+    top:0;
+    z-index: 10;
+    position: absolute;
+}    
+.s01_bloc1_video .containervideo {
     overflow: hidden;
-    margin: 0 auto;
+    padding-top: 41.25%;
     position: relative;
 }
-.s02-home-swiper-container .swiper-wrapper {
-    height: auto;
-}
-.s02-home-swiper-container .swiper-slide {
-    /* Center slide text vertically */
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: flex-start;
-    justify-content: flex-start;
-    -webkit-box-align: flex-start;
-    -ms-flex-align: flex-start;
-    -webkit-align-items: flex-start;
-    align-items: flex-start;
-}
-.s02-home-swiper-container .swiper-pagination-bullets{
-    bottom: 5px;
-}
-.s02-home-swiper-container .swiper-pagination-bullet-active {
-    opacity: 1;
-    background: #000000;
-}    
-.s02-home-swiper-container .swiper-button-prev:before, .s02-home-swiper-container .swiper-button-next:before,  .s02-home-swiper-container .icon-arrow-left:before, .s02-home-swiper-container .swiper-button-prev:before {
-    content: none;
-    display: none;
-}	
-.swiper-button-prev:after, .swiper-button-next:after {
-    content: none;
-    display: none;
-}	   
-.s02-home-swiper-container .swiper-button-next, .s02-home-swiper-container .swiper-button-prev, .s02-home-swiper-container .swiper-button-next:hover, .s02-home-swiper-container .swiper-button-prev:hover {
-    width: calc(35px / 2);
-    height: calc(66px / 2);
-/*    margin-top: -11px;*/
-    background: rgba(255,255,255,0);
-    background-size: 100%;
-} 
-.s02-home-swiper-container .swiper-button-prev, .s02-home-swiper-container .swiper-button-prev:hover {
-    background-image: url("/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push/2022_S43_cover_bloc2_mob_arrow_left.png");
-	background-repeat: no-repeat;
-    left: 2%;
-	position: absolute;
-	z-index: 10;
-} 
-.s02-home-swiper-container .swiper-button-next, .s02-home-swiper-container .swiper-button-next:hover {
-    background-image: url("/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push/2022_S43_cover_bloc2_mob_arrow_right.png");
-	background-repeat: no-repeat;
-    right: 2%;
-	position: absolute;
-	z-index: 10;
-}    
-/* <(*o*)> */   
     
+/* <(*o*)> */   
 @media screen and (max-width: 991px) {
-    .s02_bloc2_soldes2_entrees {
-        margin:0 auto 20px;
+    .s01_bloc1_video {
+        margin:20px auto;
+        width: 100%;
     }
-    .s02_bloc2_soldes2_entrees .desktop {
+    .s01_bloc1_video .desktop {
         display: none;
     }    
-    .s02_bloc2_soldes2_entrees .mobile {
+    .s01_bloc1_video .mobile {
         display: block;
+    }   
+    .s01_bloc1_video .containervideo {
+        padding-top: 114.75%;
     }
-    .s02_bloc2_soldes2_entrees .entree p {
-        margin: .45em auto .4em;
-        font-size: 6.810vw;
-        line-height: 6vw;
+    .s01_bloc1_video .containervideo iframe {
+        transform: scale(1.01);
     }
-}   </style>
-<style>/* <(*o*)> */
+    
+}
+/* <(*o*)> */</style>
+<style>   .home_soldes_s3_b2_mob{display: none;}
+
+/* <(*o*)> */
+.home_soldes_s3_b2 img {
+   display: block;
+   width: 100%;
+   /* transform: translateY(-16.5%); */
+   }     
+/* <(*o*)> */
+.home_soldes_s3_b2 {
+   width: 95%;
+   margin:0 auto 40px auto;
+   font-family:'Montserrat', Helvetica, Arial, sans-serif;
+   overflow: hidden;
+   position: relative;
+   display: flex;
+   flex-flow: row wrap;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.home_soldes_s3_b2_1, .home_soldes_s3_b2_2, .home_soldes_s3_b2_3 {
+   position: relative;
+   width: 100%;
+   display: block;
+}
+.home_soldes_s3_b2_glob{display: flex;
+flex-flow: nowrap;
+justify-content:space-between;}
+
+.bloc2_left{
+   position:relative;
+   width: 64.22%;}
+.bloc2_right{
+   position:relative;
+   width: 31.73%;}
+
+.home_soldes_s3_b2_bg{
+   position: relative;
+   width: 100%;
+   z-index: 1;
+}
+
+.home_soldes_s3_b2_txt {
+   position: absolute;
+   z-index: 1;
+   top: 10%;
+    left: 18%;
+   transform: translateX(-50%);
+   display: flex;
+   flex-flow: column nowrap;
+   align-items: center;
+   justify-content: center;
+}
+
+.home_soldes_s3_b2_txt2 {
+   position: absolute;
+   z-index: 1;
+   bottom: 16%;
+   left: 50%;
+   transform: translateX(-50%);
+   display: flex;
+   flex-flow: column nowrap;
+   align-items: center;
+   justify-content: center;
+}
+
+/* .home_soldes_s3_b2 .mainlink {
+   position: relative;
+  overflow: hidden;
+  display: block;
+   background-color: #000;
+} */
+.home_soldes_s3_b2 .mainlink p {
+   font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+   width: 100%;
+   margin: 0 auto;
+   text-align: center;
+   letter-spacing: 1.5px;
+   color: #000;
+   z-index: 1;
+   user-select: none;
+   filter: drop-shadow(0px 0px 10px rgba(255,255,255,.7));
+}
+
+.home_soldes_s3_b2 .mainlink p {
+   font-size: 3.033vw;
+line-height: 2.8vw;
+   font-weight: 500;
+   text-transform: uppercase;
+}
+/*
+.home_soldes_s3_b2_txt {
+   bottom: 1.74%;
+}
+*/
+.home_soldes_s3_b2_txt span {
+font-size: 70%;
+}
+.home_soldes_s3_b2_txt span sup {
+   font-size: 50%;
+   line-height: 0;
+   position: relative;
+   vertical-align: baseline;
+   top: -0.75em;
+}    
+
+.swiper_soldes_prev, .swiper_soldes_next {
+   display: none;
+}
+
+/* <(*o*)> */   
+@media screen and (max-width: 991px) {   
+
+   .home_soldes_s3_b2_desk{display: none;}
+   .home_soldes_s3_b2_mob{display: initial;}
+
+   .home_soldes_s3_b2 {
+       margin:20px auto;
+       width: 100%;
+       row-gap: 20px;
+   }
+
+   .home_soldes_s3_b2 .mainlink p:first-of-type {
+       font-size: 6.033vw;
+   }
+
+   .home_soldes_s3_b2 .mainlink p:last-of-type {
+       font-size: 10.033vw;
+       line-height: 11vw;
+   }
+
+   .home_soldes_s3_b2_txt {
+   position: absolute;
+   z-index: 1;
+   top: 85%;
+   left: 50%;
+   transform: translateX(-50%);
+}
+
+   .home_soldes_s3_b2_txt2 {
+   position: absolute;
+   z-index: 1;
+   bottom: 5%;
+   left: 50%;
+   transform: translateX(-50%);
+}
+
+.home_soldes_s3_b2 .mainlink p {
+   color: #fff;
+   filter: drop-shadow(0px 0px 10px rgba(0,0,0,.7));
+}
+
+   .swiper_soldes_prev {
+       display: block;
+       position: absolute;
+       z-index: 5;
+       top: 50%;
+       left: 3%;
+       transform: translateY(-50%);
+       width: 15px;
+   }
+
+   .swiper_soldes_next {
+       display: block;
+       position: absolute;
+       z-index: 5;
+       top: 50%;
+       right: 3%;
+       transform: translateY(-50%);
+       width: 15px;
+   }
+}
+/* <(*o*)> */</style>
+<style>   
+/* <(*o*)> */
 .s49_bloc_insta .absolute {
     position: absolute;
     }   
@@ -564,7 +638,7 @@
 <link rel="alternate" href="https://www.caroll.com/it_it/" hreflang="it-IT" />
 <link rel="alternate" href="https://www.caroll.com/fr_lu/" hreflang="fr-LU" />
 <link rel="alternate" href="https://www.caroll.com/pt_pt/" hreflang="pt-PT" />
-<link rel="stylesheet" href="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/fr_FR/v1674446550504/css/skin/skin.css" />
+<link rel="stylesheet" href="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/fr_FR/v1674507648395/css/skin/skin.css" />
 <script type="text/javascript">
     var pageContext = {"title":"Home page","type":"storefront","ns":"homepage"};
 //<![CDATA[
@@ -610,7 +684,7 @@
                 script.type = 'text/javascript';
                 script.async = true;
                 script.id = 'tc_container';
-                script.src = '/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/fr_FR/v1674446550504/tagcommander/20221214/tc_Caroll_1.js'
+                script.src = '/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/fr_FR/v1674507648395/tagcommander/20221214/tc_Caroll_1.js'
 
                 var existingScript = document.getElementById(script.id);
                 if (existingScript) {
@@ -790,7 +864,7 @@ CQuotient.trackViewProduct = function(/* Object */ cqParamData){
 <div class="experience-region experience-headerbanner"></div>
 <div class="header-banner slide-up d-none">
 <div id="content-banner" style="background-color:#00112e; padding: 10px 40px;">
-<span><a href="https://www.caroll.com/fr_fr/femme/soldes" style="color:#fff;display:block; text-align:center; font-size:14px;"><strong>Deuxième démarque : encore plus de produits démarqués*</strong></a>
+<span><a href="https://www.caroll.com/fr_fr/femme/soldes" style="color:#fff;display:block; text-align:center; font-size:14px;"><strong>Nouvelle démarque : jusqu'à -60%* sur une sélection ET -10%** supp. dès 2 sur tout</strong></a>
 </span>
 <div class="button-close" style="display:block">
 <span class="bar" style="background-color:#fff;"></span>
@@ -926,6 +1000,7 @@ CQuotient.trackViewProduct = function(/* Object */ cqParamData){
 <a href="/fr_fr/femme/soldes" id="soldes" role="menuitem" class="item-link">
 <span>
 <span style="color:#e74c3c;"><b>Soldes</b></span></span>
+
 </a>
 <div class="menu-level menu-level-last ">
 <div class="mobile-level-nav d-md-none">
@@ -1146,7 +1221,6 @@ Voir tout
 </div>
 <ul class="menu-level-list" role="menu" aria-hidden="true" aria-label="SCF_010900">
 <li class="list-item" role="presentation">
-
 <a href="/fr_fr/femme/pret-a-porter/manteaux-et-trenchs/manteaux" id="TPF_010901" role="menuitem" class="item-link">
 <span>
 Manteaux</span>
@@ -1209,7 +1283,6 @@ Blouses</span>
 <a href="/fr_fr/femme/pret-a-porter/blouses-et-chemises/chemises" id="TPF_010202" role="menuitem" class="item-link">
 <span>
 Chemises</span>
-
 </a>
 </li>
 </ul>
@@ -1312,6 +1385,7 @@ Nos indispensables</span>
 Nos cachemires</span>
 </a>
 </li>
+
 <li class="list-item" role="presentation">
 <a href="/fr_fr/femme/pret-a-porter/nos-selections/collection-engagee" id="collection_engagee" role="menuitem" class="item-link">
 <span>
@@ -1400,18 +1474,17 @@ Autres accessoires</span>
 La Marque</span>
 </a>
 </li>
-
 </ul>
 <div class="mobile-menu-link d-md-none">
 <ul>
-<li>
-<li class="footer-links-no-auth"><a href=""><span class="icon icon-user-no-auth"></span> Compte</a>
-</li>
 <li>
 <a href="https://www.caroll.com/fr_fr/Cart/"><span class="icon icon-basket"></span> Panier</a>
 </li>
 <li>
 <a href="https://www.caroll.com/fr_fr/nos-boutiques/"><span class="icon icon-location"></span> Trouver ma boutique</a>
+</li>
+<li>
+<li class="footer-links-no-auth"><a href=""><span class="icon icon-user-no-auth"></span> Compte</a>
 </li>
 </ul>
 </div>
@@ -1503,79 +1576,112 @@ Effacer
 <div class="container">
 <div class="row">
 <div class=" col-12"><div class="experience-component experience-commerce_assets-html">
-<div class="s02_bloc1_soldes2">
+<div class="s01_bloc1_soldes">
 <a href="/fr_fr/femme/soldes" class="mainlink">
-<p class="txt absolute">soldes<br><span>Deuxi&egrave;me d&eacute;marque</span><br><br><span>Jusqu&rsquo;&agrave; -50%<sup>*</sup><br class="desktop">sur une s&eacute;lection</span></p>
+<p class="txt absolute">soldes<br><span>Nouvelle d&eacute;marque</span><br><br><span>Jusqu&rsquo;&agrave; -60%<sup>*</sup><br>sur une s&eacute;lection</span><br><span style="background-color: #fff; color:#000; padding: 0.4vw 0.4vw; font-size: 1.8vw;">Et -10%<sup>**</sup>supp. dès 2 articles sur tout le site</span></p>
 <div class="cta absolute">
 Craquez &nbsp;&gt;
 </div>
 <picture>
-<source media="(max-width: 991px)" srcset="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/cover/2023_S02_bloc01_soldes2_mob.jpg">
-<source media="(min-width: 992px)" srcset="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/cover/2023_S02_bloc01_soldes2_dtp.jpg">
-<img src="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/cover/2023_S02_bloc01_soldes2_dtp.jpg" alt="" loading="lazy">
+<source media="(max-width: 991px)" srcset="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/cover/S3_soldes_b1_MOB_FR.jpg">
+<source media="(min-width: 992px)" srcset="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/cover/S3_soldes_b1_FR.jpg">
+<img src="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/cover/S3_soldes_b1_FR.jpg" alt="" loading="lazy">
 </picture>
 </a>
 </div></div><div class="experience-component experience-commerce_assets-html">
-<div class="s02_bloc2_soldes2_entrees">
-<div class="desktop">
-<a href="/fr_fr/femme/soldes/pulls-et-gilets" class="entree">
+<div class="s01_bloc1_video">
+<a href="/fr_fr/femme/nouveautes" class="lien_global absolute"></a>
+<div class="containervideo desktop">
+<iframe src="https://player.vimeo.com/video/789619381?h=d5cca54e54&background=1" allowfullscreen allow="autoplay" style='border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%'>
+    </iframe>
+</div>
+<div class="containervideo mobile">
+<iframe src="https://player.vimeo.com/video/789619438?h=f0227bc33f&background=1" allowfullscreen allow="autoplay" style='border: 0; height: 100%; left: 0; position: absolute; top: 0; width: 100%'>
+    </iframe>
+</div>
+</div></div><div class="experience-component experience-commerce_assets-html">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.1/swiper-bundle.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.1/swiper-bundle.min.js"></script>
+<div class="home_soldes_s3_b2_desk">
+<div class="home_soldes_s3_b2">
+<div class="home_soldes_s3_b2_glob">
+<div class="bloc2_left">
+<a href="/fr_fr/femme/pret-a-porter/vestes-et-blousons" class="mainlink home_soldes_s3_b2_1">
+<div class="home_soldes_s3_b2_bg">
 <picture>
-<source media="(min-width: 992px)" srcset="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push/2023_S02_bloc02_soldes2_entree1_dtp.jpg">
-<img src="" alt="" loading="lazy">
+<source media="(max-width: 991px)" srcset="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push/S3_soldes_b2_1.jpg">
+<source media="(min-width: 992px)" srcset="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push/S3_soldes_b2_1.jpg">
+<img src="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push/S3_soldes_b2_1.jpg" alt="" loading="lazy">
 </picture>
-<p>Pulls<br><span>Jusqu&rsquo;&agrave; -50%<sup>*</sup></span></p>
-</a>
-<a href="/fr_fr/femme/soldes/vestes-et-blousons" class="entree">
-<picture>
-<source media="(min-width: 992px)" srcset="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push/2023_S02_bloc02_soldes2_entree2_dtp_v2.jpg">
-<img src="" alt="" loading="lazy">
-</picture>
-<p>Blazers<br><span>Jusqu&rsquo;&agrave; -50%<sup>*</sup></span></p>
-</a>
-<a href="/fr_fr/femme/soldes/pantalons" class="entree">
-<picture>
-<source media="(min-width: 992px)" srcset="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push/2023_S02_bloc02_soldes2_entree3_dtp.jpg">
-<img src="" alt="" loading="lazy">
-</picture>
-<p>Pantalons<br><span>Jusqu&rsquo;&agrave; -50%<sup>*</sup></span></p>
+</div>
+<div class="home_soldes_s3_b2_txt">
+<p>VESTES</p>
+</div>
 </a>
 </div>
-<div class="mobile">
-
-<div class="s02-home-swiper-container">
+<div class="bloc2_right">
+<a href="/fr_fr/femme/pret-a-porter/pantalons-et-jeans" class="mainlink home_soldes_s3_b2_2">
+<div class="home_soldes_s3_b2_bg">
+<picture>
+<source media="(max-width: 991px)" srcset="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push/S3_soldes_b2_3.jpg">
+<source media="(min-width: 992px)" srcset="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push/S3_soldes_b2_3.jpg">
+<img src="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push/S3_soldes_b2_3.jpg" alt="" loading="lazy">
+</picture>
+</div>
+<div class="home_soldes_s3_b2_txt2">
+<p>PANTALONS</p>
+</div>
+</a>
+</div>
+<div class="swiper_soldes_prev">
+<img src="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push/s3_soldes_b2_prevarrow.png" alt="">
+</div>
+<div class="swiper_soldes_next">
+<img src="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push/s3_soldes_b2_nextarrow.png" alt="">
+</div>
+</div>
+</div>
+</div>
+<div class="home_soldes_s3_b2_mob">
+<div class="home_soldes_s3_b2">
+<div class="swiper swiper_soldes">
 <div class="swiper-wrapper">
 <div class="swiper-slide">
-<a href="/fr_fr/femme/soldes/pulls-et-gilets" class="entree">
+<a href="/fr_fr/femme/pret-a-porter/vestes-et-blousons" class="mainlink home_soldes_s3_b2_1">
+<div class="home_soldes_s3_b2_bg">
 <picture>
-<source media="(max-width: 991px)" srcset="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push/2023_S02_bloc02_soldes2_entree1_mob.jpg">
-<img src="" alt="">
+<source media="(max-width: 991px)" srcset="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push/S3_soldes_b2_1_MOB.jpg">
+<source media="(min-width: 992px)" srcset="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push/S3_soldes_b2_1_MOB.jpg">
+<img src="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push/S3_soldes_b2_1_MOB.jpg" alt="" loading="lazy">
 </picture>
-<p>Pulls<br><span>Jusqu&rsquo;&agrave; -50%<sup>*</sup></span></p>
- </a>
 </div>
-<div class="swiper-slide">
-<a href="/fr_fr/femme/soldes/vestes-et-blousons" class="entree">
-<picture>
-<source media="(max-width: 991px)" srcset="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push/2023_S02_bloc02_soldes2_entree2_mob_v2.jpg">
-<img src="" alt="">
-</picture>
-<p>Blazers<br><span>Jusqu&rsquo;&agrave; -50%<sup>*</sup></span></p>
+<div class="home_soldes_s3_b2_txt">
+<p>VESTES</p>
+</div>
 </a>
 </div>
 <div class="swiper-slide">
-<a href="/fr_fr/femme/soldes/pantalons" class="entree">
+<a href="/fr_fr/femme/pret-a-porter/pantalons-et-jeans" class="mainlink home_soldes_s3_b2_2">
+<div class="home_soldes_s3_b2_bg">
 <picture>
-<source media="(max-width: 991px)" srcset="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push/2023_S02_bloc02_soldes2_entree3_mob.jpg">
-<img src="" alt="">
+<source media="(max-width: 991px)" srcset="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push/S3_soldes_b2_2_MOB.jpg">
+<source media="(min-width: 992px)" srcset="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push/S3_soldes_b2_2_MOB.jpg">
+<img src="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push/S3_soldes_b2_2_MOB.jpg" alt="" loading="lazy">
 </picture>
-<p>Pantalons<br><span>Jusqu&rsquo;&agrave; -50%<sup>*</sup></span></p>
+</div>
+<div class="home_soldes_s3_b2_txt">
+<p>PANTALONS</p>
+</div>
 </a>
 </div>
 </div>
-<div class="swiper-button-next"></div>
-<div class="swiper-button-prev"></div>
+<div class="swiper_soldes_prev">
+<img src="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push/s3_soldes_b2_prevarrow.png" alt="">
 </div>
-
+<div class="swiper_soldes_next">
+<img src="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push/s3_soldes_b2_nextarrow.png" alt="">
+</div>
+</div>
 </div>
 </div></div><div class="experience-component experience-commerce_assets-html">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/7.0.1/swiper-bundle.min.css">
@@ -1592,25 +1698,25 @@ Craquez &nbsp;&gt;
 <div class="desktop">
 <a href="https://www.instagram.com/carollparis/" class="entree" target="_blank">
 <picture>
-<source media="(min-width: 992px)" srcset="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push_instagram/2022_S50_pushinsta_img1.jpg">
+<source media="(min-width: 992px)" srcset="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push_instagram/2023_S03_pushinsta_img1.jpg">
 <img src="" alt="" loading="lazy">
 </picture>
 </a>
 <a href="https://www.instagram.com/carollparis/" class="entree" target="_blank">
 <picture>
-<source media="(min-width: 992px)" srcset="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push_instagram/2022_S50_pushinsta_img2.jpg">
+<source media="(min-width: 992px)" srcset="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push_instagram/2023_S03_pushinsta_img2.jpg">
 <img src="" alt="" loading="lazy">
 </picture>
 </a>
 <a href="https://www.instagram.com/carollparis/" class="entree" target="_blank">
 <picture>
-<source media="(min-width: 992px)" srcset="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push_instagram/2022_S50_pushinsta_img3.jpg">
+<source media="(min-width: 992px)" srcset="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push_instagram/2023_S03_pushinsta_img3.jpg">
 <img src="" alt="" loading="lazy">
 </picture>
 </a>
 <a href="https://www.instagram.com/carollparis/" class="entree" target="_blank">
 <picture>
-<source media="(min-width: 992px)" srcset="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push_instagram/2022_S50_pushinsta_img4.jpg">
+<source media="(min-width: 992px)" srcset="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push_instagram/2023_S03_pushinsta_img4.jpg">
 <img src="" alt="" loading="lazy">
 </picture>
 </a>
@@ -1621,8 +1727,8 @@ Craquez &nbsp;&gt;
 <div class="swiper-wrapper">
 <div class="swiper-slide">
 <a href="https://www.instagram.com/carollparis/" class="entree entree1" target="_blank">
- <picture>
-<source media="(max-width: 991px)" srcset="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push_instagram/2022_S50_pushinsta_img1.jpg">
+<picture>
+<source media="(max-width: 991px)" srcset="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push_instagram/2023_S03_pushinsta_img1.jpg">
 <img src="" alt="">
 </picture>
 </a>
@@ -1630,7 +1736,7 @@ Craquez &nbsp;&gt;
 <div class="swiper-slide">
 <a href="https://www.instagram.com/carollparis/" class="entree entree2" target="_blank">
 <picture>
-<source media="(max-width: 991px)" srcset="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push_instagram/2022_S50_pushinsta_img2.jpg">
+<source media="(max-width: 991px)" srcset="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push_instagram/2023_S03_pushinsta_img2.jpg">
 <img src="" alt="">
 </picture>
 </a>
@@ -1638,7 +1744,7 @@ Craquez &nbsp;&gt;
 <div class="swiper-slide">
 <a href="https://www.instagram.com/carollparis/" class="entree entree3" target="_blank">
 <picture>
-<source media="(max-width: 991px)" srcset="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push_instagram/2022_S50_pushinsta_img3.jpg">
+<source media="(max-width: 991px)" srcset="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push_instagram/2023_S03_pushinsta_img3.jpg">
 <img src="" alt="">
 </picture>
 </a>
@@ -1646,7 +1752,7 @@ Craquez &nbsp;&gt;
 <div class="swiper-slide">
 <a href="https://www.instagram.com/carollparis/" class="entree entree4" target="_blank">
 <picture>
-<source media="(max-width: 991px)" srcset="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push_instagram/2022_S50_pushinsta_img4.jpg">
+<source media="(max-width: 991px)" srcset="/on/demandware.static/-/Library-Sites-SharedLibraryCarollSFRA/default/page_designer/push_instagram/2023_S03_pushinsta_img4.jpg">
 <img src="" alt="">
 </picture>
 </a>
@@ -1667,7 +1773,7 @@ Craquez &nbsp;&gt;
 <div class="custom-carousel-swiper-wrapper">
 <div class="swiper init-swiper" swiper-slides-per-view--lg="5" centered-slides="true" swiper-space-between="0" swiper-navigation-outside="true">
 <div class="swiper-wrapper">
-<div class="custom-carousel-item swiper-slide recommend-swiper-slide" data-trackingid="HFYzQk5RSDk3UUZCT1hBAg5VTktOT1dOAgAAAgpjbGljawIOMTAwMC00NQIIMTAwMAACIjM1OTY3NzIyMTAwMDMxMDUyAgACkAE0OGYzZTIyMS01NjExLTQ5MzAtYjY1NS1iNDZiOGJjMGRiNmQtJTdCcHJvZmlsZSUzQSUyMk1BSU5fQ0FURUdPUlklMjIlN0QAAAJIN2JmMGVkMGQtOWI0Yy0xMWVkLTgzNWMtMTg2NmRhYWQzZDI2" data-url="https://www.caroll.com/fr_fr/blazer-aurora-bleu-petrole-femme-35967722100031052.html">
+<div class="custom-carousel-item swiper-slide recommend-swiper-slide" data-trackingid="HFYzQk5RSDk3UUZCT1hBAg5VTktOT1dOAgAAAgpjbGljawIOMTAwMC00NQIIMTAwMAACIjM1OTY3NzIyMTAwMDMxMDUyAgACkAEwZmRhZjE1OC0xYzVkLTRkMTMtYTI4Ny03NGVlYjA4MTYxN2MtJTdCcHJvZmlsZSUzQSUyMk1BSU5fQ0FURUdPUlklMjIlN0QAAAJIYzBlYTc5YTMtOWI3ZS0xMWVkLWIwZWEtMTg2NmRhYTkwMTUw" data-url="https://www.caroll.com/fr_fr/blazer-aurora-bleu-petrole-femme-35967722100031052.html">
 <div class="product-tile" data-pid="35967722100031052">
 <a class="link" href="/fr_fr/blazer-aurora-bleu-petrole-femme-35967722100031052.html">
 <div class="image-container">
@@ -1684,26 +1790,8 @@ blazer aurora bleu petrole femme
 <div class="price">
 <span>
 <span class="sales">
-<span class="value" content="140.00">
-140,00 &euro;
-</span>
-</span>
-<del>
-<span class="strike-through list">
 <span class="value" content="175.00">
-<span class="sr-only">
-Price reduced from
-</span>
 175,00 &euro;
-<span class="sr-only">
-to
-</span>
-</span>
-</span>
-</del>
-<span class="percent" title="Percent Price">
-<span class="value" content="-20%">
--20%
 </span>
 </span>
 </span>
@@ -1714,55 +1802,7 @@ to
 </a>
 </div>
 </div>
-<div class="custom-carousel-item swiper-slide recommend-swiper-slide" data-trackingid="HFYzQk5RSDk3UUZCT1hBAg5VTktOT1dOAgAAAgpjbGljawIOMTAwMC00NQIIMTAwMAACIjM1OTY3NzE5MTAwMjAxMDI2AgICkAE0OGYzZTIyMS01NjExLTQ5MzAtYjY1NS1iNDZiOGJjMGRiNmQtJTdCcHJvZmlsZSUzQSUyMk1BSU5fQ0FURUdPUlklMjIlN0QAAAJIN2JmMGVkMGQtOWI0Yy0xMWVkLTgzNWMtMTg2NmRhYWQzZDI2" data-url="https://www.caroll.com/fr_fr/chemisier-jessica-pop-bleu-femme-35967719100201026.html">
-<div class="product-tile" data-pid="35967719100201026">
-<a class="link" href="/fr_fr/chemisier-jessica-pop-bleu-femme-35967719100201026.html">
-<div class="image-container">
-<picture>
-<source media="(min-width:576px)" srcset="https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dw61fcbbab/chemisier-jessica-pop-bleu-femme-vue1-35967719100201026.jpg?sw=800&amp;sh=1196&amp;sm=fit 1x, https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dw61fcbbab/chemisier-jessica-pop-bleu-femme-vue1-35967719100201026.jpg?sw=800&amp;sh=1196&amp;sm=fit 2x" />
-<source media="(max-width:576px)" srcset="https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dw61fcbbab/chemisier-jessica-pop-bleu-femme-vue1-35967719100201026.jpg?sw=615&amp;sh=920&amp;sm=fit 1x, https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dw61fcbbab/chemisier-jessica-pop-bleu-femme-vue1-35967719100201026.jpg?sw=615&amp;sh=920&amp;sm=fit 2x" />
-<img loading="lazy" data-index="0" class="tile-image " src="https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dw61fcbbab/chemisier-jessica-pop-bleu-femme-vue1-35967719100201026.jpg?sw=400&amp;sh=598" alt="chemisier jessica pop bleu femme" title="chemisier jessica pop bleu femme" href="/fr_fr/chemisier-jessica-pop-bleu-femme-35967719100201026.html" />
-</picture>
-</div>
-<div class="tile-body">
-<div class="pdp-link">
-chemisier jessica pop bleu femme
-</div>
-
-<div class="price">
-<span>
-<span class="sales">
-<span class="value" content="37.50">
-37,50 &euro;
-</span>
-</span>
-<del>
-<span class="strike-through list">
-<span class="value" content="75.00">
-<span class="sr-only">
-Price reduced from
-</span>
-75,00 &euro;
-<span class="sr-only">
-to
-</span>
-</span>
-</span>
-</del>
-<span class="percent" title="Percent Price">
-<span class="value" content="-50%">
--50%
-</span>
-</span>
-</span>
-</div>
-<div class="picto-wrapper">
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="custom-carousel-item swiper-slide recommend-swiper-slide" data-trackingid="HFYzQk5RSDk3UUZCT1hBAg5VTktOT1dOAgAAAgpjbGljawIOMTAwMC00NQIIMTAwMAACIjM1OTY3NzIxMTAwMDcxMDM1AgQCkAE0OGYzZTIyMS01NjExLTQ5MzAtYjY1NS1iNDZiOGJjMGRiNmQtJTdCcHJvZmlsZSUzQSUyMk1BSU5fQ0FURUdPUlklMjIlN0QAAAJIN2JmMGVkMGQtOWI0Yy0xMWVkLTgzNWMtMTg2NmRhYWQzZDI2" data-url="https://www.caroll.com/fr_fr/pull-zofia-100--cachemire-bleu-canard-femme-35967721100071035.html">
+<div class="custom-carousel-item swiper-slide recommend-swiper-slide" data-trackingid="HFYzQk5RSDk3UUZCT1hBAg5VTktOT1dOAgAAAgpjbGljawIOMTAwMC00NQIIMTAwMAACIjM1OTY3NzIxMTAwMDcxMDM1AgICkAEwZmRhZjE1OC0xYzVkLTRkMTMtYTI4Ny03NGVlYjA4MTYxN2MtJTdCcHJvZmlsZSUzQSUyMk1BSU5fQ0FURUdPUlklMjIlN0QAAAJIYzBlYTc5YTMtOWI3ZS0xMWVkLWIwZWEtMTg2NmRhYTkwMTUw" data-url="https://www.caroll.com/fr_fr/pull-zofia-100--cachemire-bleu-canard-femme-35967721100071035.html">
 <div class="product-tile" data-pid="35967721100071035">
 <a class="link" href="/fr_fr/pull-zofia-100--cachemire-bleu-canard-femme-35967721100071035.html">
 <div class="image-container">
@@ -1779,26 +1819,8 @@ pull zofia 100% cachemire bleu canard femme
 <div class="price">
 <span>
 <span class="sales">
-<span class="value" content="69.30">
-69,30 &euro;
-</span>
-</span>
-<del>
-<span class="strike-through list">
 <span class="value" content="99.00">
-<span class="sr-only">
-Price reduced from
-</span>
 99,00 &euro;
-<span class="sr-only">
-to
-</span>
-</span>
- </span>
-</del>
-<span class="percent" title="Percent Price">
-<span class="value" content="-30%">
--30%
 </span>
 </span>
 </span>
@@ -1809,7 +1831,65 @@ to
 </a>
 </div>
 </div>
-<div class="custom-carousel-item swiper-slide recommend-swiper-slide" data-trackingid="HFYzQk5RSDk3UUZCT1hBAg5VTktOT1dOAgAAAgpjbGljawIOMTAwMC00NQIIMTAwMAACIjM1OTY3NzE2MTAwMTMxMDIyAgYCkAE0OGYzZTIyMS01NjExLTQ5MzAtYjY1NS1iNDZiOGJjMGRiNmQtJTdCcHJvZmlsZSUzQSUyMk1BSU5fQ0FURUdPUlklMjIlN0QAAAJIN2JmMGVkMGQtOWI0Yy0xMWVkLTgzNWMtMTg2NmRhYWQzZDI2" data-url="https://www.caroll.com/fr_fr/pantalon-chicago-noir-femme-35967716100131022.html">
+<div class="custom-carousel-item swiper-slide recommend-swiper-slide" data-trackingid="HFYzQk5RSDk3UUZCT1hBAg5VTktOT1dOAgAAAgpjbGljawIOMTAwMC00NQIIMTAwMAACIjM1OTY3NzIxMTAwMTkxMTI0AgQCkAEwZmRhZjE1OC0xYzVkLTRkMTMtYTI4Ny03NGVlYjA4MTYxN2MtJTdCcHJvZmlsZSUzQSUyMk1BSU5fQ0FURUdPUlklMjIlN0QAAAJIYzBlYTc5YTMtOWI3ZS0xMWVkLWIwZWEtMTg2NmRhYTkwMTUw" data-url="https://www.caroll.com/fr_fr/pull-marie-100--cachemire-gris-clair-femme-35967721100191124.html">
+<div class="product-tile" data-pid="35967721100191124">
+<a class="link" href="/fr_fr/pull-marie-100--cachemire-gris-clair-femme-35967721100191124.html">
+<div class="image-container">
+<picture>
+<source media="(min-width:576px)" srcset="https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dw6ae84451/pull-marie-100-cachemire-gris-clair-femme-vue1-35967721100191124.jpg?sw=800&amp;sh=1196&amp;sm=fit 1x, https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dw6ae84451/pull-marie-100-cachemire-gris-clair-femme-vue1-35967721100191124.jpg?sw=800&amp;sh=1196&amp;sm=fit 2x" />
+<source media="(max-width:576px)" srcset="https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dw6ae84451/pull-marie-100-cachemire-gris-clair-femme-vue1-35967721100191124.jpg?sw=615&amp;sh=920&amp;sm=fit 1x, https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dw6ae84451/pull-marie-100-cachemire-gris-clair-femme-vue1-35967721100191124.jpg?sw=615&amp;sh=920&amp;sm=fit 2x" />
+<img loading="lazy" data-index="0" class="tile-image " src="https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dw6ae84451/pull-marie-100-cachemire-gris-clair-femme-vue1-35967721100191124.jpg?sw=400&amp;sh=598" alt="pull marie 100% cachemire gris clair femme" title="pull marie 100 cachemire gris clair femme" href="/fr_fr/pull-marie-100--cachemire-gris-clair-femme-35967721100191124.html" />
+</picture>
+</div>
+<div class="tile-body">
+<div class="pdp-link">
+pull marie 100% cachemire gris clair femme
+ </div>
+<div class="price">
+<span>
+<span class="sales">
+<span class="value" content="130.00">
+130,00 &euro;
+</span>
+</span>
+</span>
+</div>
+<div class="picto-wrapper">
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="custom-carousel-item swiper-slide recommend-swiper-slide" data-trackingid="HFYzQk5RSDk3UUZCT1hBAg5VTktOT1dOAgAAAgpjbGljawIOMTAwMC00NQIIMTAwMAACIjM1OTY3NzEzMTAwMjkxMDY4AgYCkAEwZmRhZjE1OC0xYzVkLTRkMTMtYTI4Ny03NGVlYjA4MTYxN2MtJTdCcHJvZmlsZSUzQSUyMk1BSU5fQ0FURUdPUlklMjIlN0QAAAJIYzBlYTc5YTMtOWI3ZS0xMWVkLWIwZWEtMTg2NmRhYTkwMTUw" data-url="https://www.caroll.com/fr_fr/manteau-norton-camel-femme-35967713100291068.html">
+<div class="product-tile" data-pid="35967713100291068">
+<a class="link" href="/fr_fr/manteau-norton-camel-femme-35967713100291068.html">
+<div class="image-container">
+<picture>
+<source media="(min-width:576px)" srcset="https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dw0dd62318/manteau-norton-camel-femme-vue1-35967713100291068.jpg?sw=800&amp;sh=1196&amp;sm=fit 1x, https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dw0dd62318/manteau-norton-camel-femme-vue1-35967713100291068.jpg?sw=800&amp;sh=1196&amp;sm=fit 2x" />
+<source media="(max-width:576px)" srcset="https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dw0dd62318/manteau-norton-camel-femme-vue1-35967713100291068.jpg?sw=615&amp;sh=920&amp;sm=fit 1x, https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dw0dd62318/manteau-norton-camel-femme-vue1-35967713100291068.jpg?sw=615&amp;sh=920&amp;sm=fit 2x" />
+<img loading="lazy" data-index="0" class="tile-image " src="https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dw0dd62318/manteau-norton-camel-femme-vue1-35967713100291068.jpg?sw=400&amp;sh=598" alt="manteau norton camel femme" title="manteau norton camel femme" href="/fr_fr/manteau-norton-camel-femme-35967713100291068.html" />
+</picture>
+</div>
+<div class="tile-body">
+<div class="pdp-link">
+manteau norton camel femme
+</div>
+<div class="price">
+<span>
+<span class="sales">
+<span class="value" content="260.00">
+260,00 &euro;
+</span>
+</span>
+</span>
+</div>
+<div class="picto-wrapper">
+</div>
+</div>
+</a>
+</div>
+</div>
+<div class="custom-carousel-item swiper-slide recommend-swiper-slide" data-trackingid="HFYzQk5RSDk3UUZCT1hBAg5VTktOT1dOAgAAAgpjbGljawIOMTAwMC00NQIIMTAwMAACIjM1OTY3NzE2MTAwMTMxMDIyAggCkAEwZmRhZjE1OC0xYzVkLTRkMTMtYTI4Ny03NGVlYjA4MTYxN2MtJTdCcHJvZmlsZSUzQSUyMk1BSU5fQ0FURUdPUlklMjIlN0QAAAJIYzBlYTc5YTMtOWI3ZS0xMWVkLWIwZWEtMTg2NmRhYTkwMTUw" data-url="https://www.caroll.com/fr_fr/pantalon-chicago-noir-femme-35967716100131022.html">
 <div class="product-tile" data-pid="35967716100131022">
 <a class="link" href="/fr_fr/pantalon-chicago-noir-femme-35967716100131022.html">
 <div class="image-container">
@@ -1826,26 +1906,8 @@ pantalon chicago noir femme
 <div class="price">
 <span>
 <span class="sales">
-<span class="value" content="59.50">
-59,50 &euro;
-</span>
-</span>
-<del>
-<span class="strike-through list">
 <span class="value" content="85.00">
-<span class="sr-only">
-Price reduced from
-</span>
 85,00 &euro;
-<span class="sr-only">
-to
-</span>
-</span>
-</span>
-</del>
-<span class="percent" title="Percent Price">
-<span class="value" content="-30%">
--30%
 </span>
 </span>
 </span>
@@ -1856,90 +1918,25 @@ to
 </a>
 </div>
 </div>
-<div class="custom-carousel-item swiper-slide recommend-swiper-slide" data-trackingid="HFYzQk5RSDk3UUZCT1hBAg5VTktOT1dOAgAAAgpjbGljawIOMTAwMC00NQIIMTAwMAACIjM1OTY3NzIxMTAwMTkxMTI0AggCkAE0OGYzZTIyMS01NjExLTQ5MzAtYjY1NS1iNDZiOGJjMGRiNmQtJTdCcHJvZmlsZSUzQSUyMk1BSU5fQ0FURUdPUlklMjIlN0QAAAJIN2JmMGVkMGQtOWI0Yy0xMWVkLTgzNWMtMTg2NmRhYWQzZDI2" data-url="https://www.caroll.com/fr_fr/pull-marie-100--cachemire-gris-clair-femme-35967721100191124.html">
-<div class="product-tile" data-pid="35967721100191124">
-<a class="link" href="/fr_fr/pull-marie-100--cachemire-gris-clair-femme-35967721100191124.html">
+<div class="custom-carousel-item swiper-slide recommend-swiper-slide" data-trackingid="HFYzQk5RSDk3UUZCT1hBAg5VTktOT1dOAgAAAgpjbGljawIOMTAwMC00NQIIMTAwMAACIjM1OTY3NzEzMTAwNDkxMDIyAgoCkAEwZmRhZjE1OC0xYzVkLTRkMTMtYTI4Ny03NGVlYjA4MTYxN2MtJTdCcHJvZmlsZSUzQSUyMk1BSU5fQ0FURUdPUlklMjIlN0QAAAJIYzBlYTc5YTMtOWI3ZS0xMWVkLWIwZWEtMTg2NmRhYTkwMTUw" data-url="https://www.caroll.com/fr_fr/manteau-quentin-noir-femme-35967713100491022.html">
+<div class="product-tile" data-pid="35967713100491022">
+<a class="link" href="/fr_fr/manteau-quentin-noir-femme-35967713100491022.html">
 <div class="image-container">
 <picture>
-<source media="(min-width:576px)" srcset="https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dw6ae84451/pull-marie-100-cachemire-gris-clair-femme-vue1-35967721100191124.jpg?sw=800&amp;sh=1196&amp;sm=fit 1x, https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dw6ae84451/pull-marie-100-cachemire-gris-clair-femme-vue1-35967721100191124.jpg?sw=800&amp;sh=1196&amp;sm=fit 2x" />
-<source media="(max-width:576px)" srcset="https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dw6ae84451/pull-marie-100-cachemire-gris-clair-femme-vue1-35967721100191124.jpg?sw=615&amp;sh=920&amp;sm=fit 1x, https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dw6ae84451/pull-marie-100-cachemire-gris-clair-femme-vue1-35967721100191124.jpg?sw=615&amp;sh=920&amp;sm=fit 2x" />
-<img loading="lazy" data-index="0" class="tile-image " src="https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dw6ae84451/pull-marie-100-cachemire-gris-clair-femme-vue1-35967721100191124.jpg?sw=400&amp;sh=598" alt="pull marie 100% cachemire gris clair femme" title="pull marie 100 cachemire gris clair femme" href="/fr_fr/pull-marie-100--cachemire-gris-clair-femme-35967721100191124.html" />
+<source media="(min-width:576px)" srcset="https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dwe11e3289/manteau-quentin-noir-femme-vue1-35967713100491022.jpg?sw=800&amp;sh=1196&amp;sm=fit 1x, https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dwe11e3289/manteau-quentin-noir-femme-vue1-35967713100491022.jpg?sw=800&amp;sh=1196&amp;sm=fit 2x" />
+<source media="(max-width:576px)" srcset="https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dwe11e3289/manteau-quentin-noir-femme-vue1-35967713100491022.jpg?sw=615&amp;sh=920&amp;sm=fit 1x, https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dwe11e3289/manteau-quentin-noir-femme-vue1-35967713100491022.jpg?sw=615&amp;sh=920&amp;sm=fit 2x" />
+<img loading="lazy" data-index="0" class="tile-image " src="https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dwe11e3289/manteau-quentin-noir-femme-vue1-35967713100491022.jpg?sw=400&amp;sh=598" alt="manteau quentin noir femme" title="manteau quentin noir femme" href="/fr_fr/manteau-quentin-noir-femme-35967713100491022.html" />
 </picture>
 </div>
 <div class="tile-body">
 <div class="pdp-link">
-pull marie 100% cachemire gris clair femme
+manteau quentin noir femme
 </div>
 <div class="price">
 <span>
 <span class="sales">
-<span class="value" content="78.00">
-78,00 &euro;
-</span>
-</span>
-<del>
-<span class="strike-through list">
-<span class="value" content="130.00">
-<span class="sr-only">
-Price reduced from
-</span>
-130,00 &euro;
-<span class="sr-only">
-to
-</span>
-</span>
-</span>
-</del>
-<span class="percent" title="Percent Price">
-<span class="value" content="-40%">
--40%
-</span>
-</span>
-</span>
-</div>
-<div class="picto-wrapper">
-</div>
-</div>
-</a>
-</div>
-</div>
-<div class="custom-carousel-item swiper-slide recommend-swiper-slide" data-trackingid="HFYzQk5RSDk3UUZCT1hBAg5VTktOT1dOAgAAAgpjbGljawIOMTAwMC00NQIIMTAwMAACIjM1OTY3NzE2MTAwMzkxMDY2AgoCkAE0OGYzZTIyMS01NjExLTQ5MzAtYjY1NS1iNDZiOGJjMGRiNmQtJTdCcHJvZmlsZSUzQSUyMk1BSU5fQ0FURUdPUlklMjIlN0QAAAJIN2JmMGVkMGQtOWI0Yy0xMWVkLTgzNWMtMTg2NmRhYWQzZDI2" data-url="https://www.caroll.com/fr_fr/pantalon-melville-denim-double-stone-femme-35967716100391066.html">
-<div class="product-tile" data-pid="35967716100391066">
-<a class="link" href="/fr_fr/pantalon-melville-denim-double-stone-femme-35967716100391066.html">
-<div class="image-container">
-<picture>
-<source media="(min-width:576px)" srcset="https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dw239288b5/pantalon-melville-denim-double-stone-femme-vue1-35967716100391066.jpg?sw=800&amp;sh=1196&amp;sm=fit 1x, https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dw239288b5/pantalon-melville-denim-double-stone-femme-vue1-35967716100391066.jpg?sw=800&amp;sh=1196&amp;sm=fit 2x" />
-<source media="(max-width:576px)" srcset="https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dw239288b5/pantalon-melville-denim-double-stone-femme-vue1-35967716100391066.jpg?sw=615&amp;sh=920&amp;sm=fit 1x, https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dw239288b5/pantalon-melville-denim-double-stone-femme-vue1-35967716100391066.jpg?sw=615&amp;sh=920&amp;sm=fit 2x" />
-<img loading="lazy" data-index="0" class="tile-image " src="https://www.caroll.com/dw/image/v2/BCMJ_PRD/on/demandware.static/-/Sites-Caroll_master/default/dw239288b5/pantalon-melville-denim-double-stone-femme-vue1-35967716100391066.jpg?sw=400&amp;sh=598" alt="pantalon melville denim double stone femme" title="pantalon melville denim double stone femme" href="/fr_fr/pantalon-melville-denim-double-stone-femme-35967716100391066.html" />
-</picture>
-</div>
-<div class="tile-body">
-<div class="pdp-link">
-pantalon melville denim double stone femme
-</div>
-<div class="price">
-<span>
-<span class="sales">
-<span class="value" content="54.00">
-54,00 &euro;
-</span>
-</span>
-<del>
-<span class="strike-through list">
-<span class="value" content="90.00">
-<span class="sr-only">
-Price reduced from
-</span>
-90,00 &euro;
-<span class="sr-only">
-to
-</span>
-</span>
-</span>
-</del>
-<span class="percent" title="Percent Price">
-<span class="value" content="-40%">
--40%
+<span class="value" content="290.00">
+290,00 &euro;
 </span>
 </span>
 </span>
@@ -2376,17 +2373,17 @@ Suivez-nous
     </script>
 <!--[if lt IE 10]>
 <script>//common/scripts.isml</script>
-<script defer type="text/javascript" src="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/fr_FR/v1674446550504/js/main.js"></script>
+<script defer type="text/javascript" src="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/fr_FR/v1674507648395/js/main.js"></script>
 
     
-        <script defer type="text/javascript" src="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/fr_FR/v1674446550504/js/campaignBanner.js"
+        <script defer type="text/javascript" src="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/fr_FR/v1674507648395/js/campaignBanner.js"
             
             >
         </script>
     
 
     
-        <script defer type="text/javascript" src="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/fr_FR/v1674446550504/js/T2Srecommend.js"
+        <script defer type="text/javascript" src="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/fr_FR/v1674507648395/js/T2Srecommend.js"
             
             >
         </script>
@@ -2396,18 +2393,28 @@ Suivez-nous
         <script type="text/javascript">undefined</script>
 
 
+        <script type="text/javascript">undefined</script>
+
+
         <script type="text/javascript">window.addEventListener("DOMContentLoaded", function(){    
-    const swiperhomes43ope = new Swiper('.s02-home-swiper-container', {
+const soldesSwiper = new Swiper('.swiper_soldes', {
+        direction: 'horizontal',
+        loop: false,
         slidesPerView: 1,
-        spaceBetween: 0,
-        loop: true,
-        loopAdditionalSlides: 2,
-        grabCursor: true,
-        roundLengths : true,
+        spaceBetween: 10,
+
+        breakpoints: {
+            991: {
+                slidesPerView: 2,
+                spaceBetween: 15,
+                grabCursor: false,
+            },
+        },
+
         navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },	
+          nextEl: '.swiper_soldes_next',
+          prevEl: '.swiper_soldes_prev',
+        },
     });
 })</script>
 
@@ -2448,9 +2455,9 @@ function trackPage() {
 /* ]]> */
 // -->
 </script>
-<script type="text/javascript" src="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/fr_FR/v1674446550504/internal/jscript/dwanalytics-22.2.js" async="async" onload="trackPage()"></script>
+<script type="text/javascript" src="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/fr_FR/v1674507648395/internal/jscript/dwanalytics-22.2.js" async="async" onload="trackPage()"></script>
 
-<script src="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/fr_FR/v1674446550504/internal/jscript/dwac-21.7.js" type="text/javascript" async="async"></script>
+<script src="/on/demandware.static/Sites-CRL_FR_SFRA-Site/-/fr_FR/v1674507648395/internal/jscript/dwac-21.7.js" type="text/javascript" async="async"></script>
 <script src="https://cdn.cquotient.com/js/v2/gretel.min.js" type="text/javascript" async="async"></script>
 </body>
 </html>
