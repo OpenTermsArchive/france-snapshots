@@ -160,6 +160,43 @@ KiwiSizing.shop = "kappafrance.myshopify.com";
 <meta id="shopify-digital-wallet" name="shopify-digital-wallet" content="/56681136327/digital_wallets/dialog">
 <meta name="shopify-checkout-api-token" content="a797ac408483e238c010e3cf8d06f09b">
 <meta id="in-context-paypal-metadata" data-shop-id="56681136327" data-venmo-supported="false" data-environment="production" data-locale="fr_FR" data-paypal-v4="true" data-currency="EUR">
+<script>
+  (function() {
+    var scripts = ["https://cdn.shopify.com/shopifycloud/checkout-web/assets/runtime.baseline.fr.f2ea6c5e2291bc21ff7f.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/checkout-web-packages~Information~NoAddressLocation~Payment~PostPurchase~Review~Shipping~ShopPay~Sho~cf13f96e.baseline.fr.8d3a709bcf8c04f77ed7.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/Information~Payment~ShopPay.baseline.fr.dc5317dfebae7fc61df8.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/Information~Payment.baseline.fr.23a20cd88bcf104605f2.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/Information.baseline.fr.4a2aa6242d0c2b13f941.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/checkout-web-ui~app.baseline.fr.26a0342d355a675e2801.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/vendors~app.baseline.fr.0f364a520df076f1f98b.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/checkout-web-packages~app.baseline.fr.a3963092dc9378b95800.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/app.baseline.fr.8c6e4df01e6e5018cb47.js"];
+    var styles = ["https://cdn.shopify.com/shopifycloud/checkout-web/assets/checkout-web-ui~app.baseline.fr.ba7746e3965877991bae.css", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/vendors~app.baseline.fr.954db6995929b6f1f646.css", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/app.baseline.fr.dd733f21b66b59afc26d.css", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/Information~Payment~ShopPay.baseline.fr.9f248e42bf2a8151ea27.css", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/Information.baseline.fr.6d08f77e3a864d9cf367.css"];
+
+    function prefetch(url, as, callback) {
+      var link = document.createElement('link');
+      if (link.relList.supports('prefetch')) {
+        link.rel = 'prefetch';
+        link.fetchPriority = 'low';
+        link.as = as;
+        link.href = url;
+        link.onload = link.onerror = callback;
+        document.head.appendChild(link);
+      } else {
+        var xhr = new XMLHttpRequest();
+        xhr.open('GET', url, true);
+        xhr.onloadend = callback;
+        xhr.send();
+      }
+    }
+
+    function prefetchAssets() {
+      var resources = [].concat(
+        scripts.map(function(url) { return [url, 'script']; }),
+        styles.map(function(url) { return [url, 'style']; })
+      );
+      var index = 0;
+      (function next() {
+        var res = resources[index++];
+        if (res) prefetch(res[0], res[1], next);
+      })();
+    }
+
+    addEventListener('load', prefetchAssets);
+   })();
+</script>
 <script id="apple-pay-shop-capabilities" type="application/json">{"shopId":56681136327,"countryCode":"IT","currencyCode":"EUR","merchantCapabilities":["supports3DS"],"merchantId":"gid:\/\/shopify\/Shop\/56681136327","merchantName":"Kappa France","requiredBillingContactFields":["postalAddress","email","phone"],"requiredShippingContactFields":["postalAddress","email","phone"],"shippingType":"shipping","supportedNetworks":["visa","masterCard","amex"],"total":{"type":"pending","label":"Kappa France","amount":"1.00"},"shopifyPaymentsEnabled":false,"supportsSubscriptions":false}</script>
 <script id="shopify-features" type="application/json">{"accessToken":"a797ac408483e238c010e3cf8d06f09b","betas":["rich-media-storefront-analytics"],"domain":"www.kappa.fr","predictiveSearch":true,"shopId":56681136327,"smart_payment_buttons_url":"https:\/\/cdn.shopify.com\/shopifycloud\/payment-sheet\/assets\/latest\/spb.fr.js?v=2","dynamic_checkout_cart_url":"https:\/\/cdn.shopify.com\/shopifycloud\/payment-sheet\/assets\/latest\/dynamic-checkout-cart.fr.js?v=2","locale":"fr","optimusEnabled":false}</script>
 <script>var Shopify = Shopify || {};
@@ -193,7 +230,7 @@ Shopify.routes.root = "/";</script>
     window.addEventListener('load', asyncLoad, false);
   }
 })();</script>
-<script id="__st">var __st={"a":56681136327,"offset":3600,"reqid":"2f95e2ef-018f-40ac-a58b-39118bb9edf2","pageurl":"www.kappa.fr\/pages\/privacy-policy","s":"pages-82250399943","u":"26f6323d5367","p":"page","rtyp":"page","rid":82250399943};</script>
+<script id="__st">var __st={"a":56681136327,"offset":3600,"reqid":"9ec7e2e1-b42f-4890-97de-0de6e5c05d5f","pageurl":"www.kappa.fr\/pages\/privacy-policy","s":"pages-82250399943","u":"4d5f8310cd25","p":"page","rtyp":"page","rid":82250399943};</script>
 <script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
 <script integrity="sha256-4VRZk5nmuLKdyxECzHbrGZ+jOgmvT6eNFej4VE7mT80=" data-source-attribution="shopify.loadfeatures" defer="defer" src="//cdn.shopify.com/shopifycloud/shopify/assets/storefront/load_feature-e154599399e6b8b29dcb1102cc76eb199fa33a09af4fa78d15e8f8544ee64fcd.js" crossorigin="anonymous"></script>
 <script integrity="sha256-h+g5mYiIAULyxidxudjy/2wpCz/3Rd1CbrDf4NudHa4=" data-source-attribution="shopify.dynamic-checkout" defer="defer" src="//cdn.shopify.com/shopifycloud/shopify/assets/storefront/features-87e8399988880142f2c62771b9d8f2ff6c290b3ff745dd426eb0dfe0db9d1dae.js" crossorigin="anonymous"></script>
@@ -212,8 +249,8 @@ Shopify.routes.root = "/";</script>
 }
 </style><script>window.performance && window.performance.mark && window.performance.mark('shopify.content_for_header.end');</script>
 
-  <script src="//cdn.shopify.com/s/files/1/0566/8113/6327/t/12/assets/vendor-scripts-v10.js" defer="defer"></script><script src="//cdn.shopify.com/s/files/1/0566/8113/6327/t/12/assets/theme.js?v=46382720201043531111674645784" defer="defer"></script><script src="//cdn.shopify.com/s/files/1/0566/8113/6327/t/12/assets/custom.js?v=18035308959900755021674492995" async></script>
-<script> mydata ={"preorderSetting":{"pre_badges":"No","force_preorder":null,"badge_text":"Pre-Order","badge_bk":"FF1919","badge_color":"ffffff","badgeShape":"Rectangle","badgePosition":"top_right","badge_text_size":"11","animateclass":"hvr-no","global_preorderlimit":"","button_text":"Pr\u00e9-commandez","button_message":"Available soon","nopreordermessage":"No Pre-Order for this product","mode":"hover","position":"","button_color":"#000000","button_text_color":"#FFFFFF","button_text_size":"15px","button_font_weight":"normal","button_width":"100%","button_top_margin":"5px","button_radius":"0px","tooltip_bkcolor":"#000000","tooltip_opt":"No","tooltip_textcolor":"#FFFFFF","custom_note":": R\u00e9ception pr\u00e9vue le 02\/03\/2022","custom_note_label":"Produit en pr\u00e9-commande ","qty_limit":"","qty_check":"No","error_customer_msg":"Sorry..!! This much quantity is not available. You can avail maximum","enable_country":"","location_enable":"No","error_message_geo":"Sorry !!! No Pre-Order available at this location.","mandatory_for_customers":"No","customer_delivery_date_feature":"No","customer_delivery_time_feature":"No","customer_delivery_label":"Schedule Delivery"},"developerSetting":{"formselector":"form[action^=\"\/cart\/add\"], form[action=\"\/cart\/add\"]:first, form[action=\"\/zh-TW\/cart\/add\"]:first, form[action=\"\/ko\/cart\/add\"]:first, form[action=\"\/es\/cart\/add\"]:first,form[action=\"\/en\/cart\/add\"]:first, form[action=\"\/de\/cart\/add\"]:first, form[action=\"\/cy\/cart\/add\"]:first, form[action=\"\/cart\/add.js\"]:first, form[action=\"\/fr\/cart\/add\"]:first, form[action=\"\/ar\/cart\/add\"], form[action=\"\/zh-cn\/cart\/add\"]","buttonselector":"button[name=\"add\"]:first, input[name=\"add\"]:first, input[data-action=\"add-to-cart\"], #button-add-to-cart, button.product-form--add-to-cart, button.product-form--atc-button, button.addtocart-button-active, button.product-submit, button.ProductForm__AddToCart, [type=submit]:visible:first, .product-form__add-button","variantselector1":".product__variant, select:not(.selectoption_id,.product-form__quantity, .delivery_time), .single-option-selector, input[name=\"Size\"], .ProductForm__Variants .ProductForm__Option input[type=\"radio\"], .variant-group input[type=\"radio\"], .swatch input[type=\"radio\"]","variantselector2":"input[name=\"quantity\"]","variantselector3":"","tags_badges":"","badges_allpages":"","badges_allpages_hide_attr":"","checkoutattr":"input[name=\"checkout\"], button[name=\"checkout\"]","subtotalclass":"","partialtext":"Partial Deposit:","remainingtext":"Remaining Balance:","drawerbuttonattr":"#drawer input[name=\"checkout\"], #drawer button[name=\"checkout\"], .Drawer button[name=\"checkout\"]","drawersubtotal":"","drawerevents":"header a[href=\"\/cart\"]","remainingenable":"Yes"},"generalSetting":{"counter_theme":"sd_counter1","comingsoontext":"Pr\u00e9-commandez","notify_autosent":"no_disable","coupon_option":"No","account_coupon":"No","auto_coupon":"No","shipping1":"No","shipping2":"No","tax_1":"No","tax_2":"No","com_badges":null,"com_badge_text":"Coming-Soon","com_badge_bk":"FF1919","com_badge_color":"ffff","com_badge_text_size":"11px","comBadgeShape":"Rectangle","comBadgePosition":"top_right","enable_favicon":"No","favbgcolor":"FF0000","favtxtcolor":"FFf","preorder_mode":"mode1","global_preorderlimit":"","mixed_cart":"No","mixed_cart_mode":"inline","mixed_cart_heading":"Warning: you have pre-order and in-stock products in the same cart","mixed_cart_content":"Shipment of your in-stock items may be delayed until your pre-order item is ready for shipping."},"notifySetting":{"enablenotify":"No","notify_type":"slide","notifylinktext":"Notify me","sd_notifybuttontext":"Notify me","notifylinktextcolor":"000","notifylink_bkcolor":"fff","notify_textalign":"left","notify_link_txtsize":"14","notify_link_deco":"underline","notify_link_weight":"normal","en_inject":"No","selectinject":"Inject after","injectevent":"CLASS","injectvalue":"sd-advanced-preorder"},"partialSettings":{"payment_type_text":"Payment Type","full_partial":"No","fullpay_text":"Full Payment","partialpay_text":"Partial Payment","cart_total":"No","total_text":"Partial Cart","checkout_text":"Partial Checkout","note_checkout1":"Initial Partial Payment (Check \"My Account\" page in store for balance payment)","note_checkout2":"Final Partial Payment","full_note_checkout":"Pay initial payment -","partial_cart":"No","partial_msg_txt":"","account_login":"disabled","fullpay_message_text":"Pay full payment - ","partialpay_message_text":"Pay initial payment - ","fullpaybtntext":"Pay Full","partialpaybtntext":"Pay Partial","par_badges":"No","par_badge_text":"Partial-Order","par_badge_bk":"FF1919","par_badge_color":"ffff","par_badge_text_size":"11px","enabletimer":"No","timermsg":"Hurry Up..!! Your cart will be lost in ","timertextcolor":"000","timerbkg":"ddd","timeralign":"left","timertextweight":"normal","timer":"20","timer_border":"none","timerborderpx":"1","timerbordercolor":"000","custom_priceonoff":"No","custom_paytext":"Custom Price"},"AccountPageSetting":{"float_button":"No"},"app":{"appenable":"Yes","memberplan":"free","status_activation":null,"p_status_activation":null,"advanced_premium":null,"today_date_time":"2023-01-30","today_time":"13:36"}}
+  <script src="//cdn.shopify.com/s/files/1/0566/8113/6327/t/12/assets/vendor-scripts-v10.js" defer="defer"></script><script src="//cdn.shopify.com/s/files/1/0566/8113/6327/t/12/assets/theme.js?v=184417364288276592131675089745" defer="defer"></script><script src="//cdn.shopify.com/s/files/1/0566/8113/6327/t/12/assets/custom.js?v=18035308959900755021674492995" async></script>
+<script> mydata ={"preorderSetting":{"pre_badges":"No","force_preorder":null,"badge_text":"Pre-Order","badge_bk":"FF1919","badge_color":"ffffff","badgeShape":"Rectangle","badgePosition":"top_right","badge_text_size":"11","animateclass":"hvr-no","global_preorderlimit":"","button_text":"Pr\u00e9-commandez","button_message":"Available soon","nopreordermessage":"No Pre-Order for this product","mode":"hover","position":"","button_color":"#000000","button_text_color":"#FFFFFF","button_text_size":"15px","button_font_weight":"normal","button_width":"100%","button_top_margin":"5px","button_radius":"0px","tooltip_bkcolor":"#000000","tooltip_opt":"No","tooltip_textcolor":"#FFFFFF","custom_note":": R\u00e9ception pr\u00e9vue le 02\/03\/2022","custom_note_label":"Produit en pr\u00e9-commande ","qty_limit":"","qty_check":"No","error_customer_msg":"Sorry..!! This much quantity is not available. You can avail maximum","enable_country":"","location_enable":"No","error_message_geo":"Sorry !!! No Pre-Order available at this location.","mandatory_for_customers":"No","customer_delivery_date_feature":"No","customer_delivery_time_feature":"No","customer_delivery_label":"Schedule Delivery"},"developerSetting":{"formselector":"form[action^=\"\/cart\/add\"], form[action=\"\/cart\/add\"]:first, form[action=\"\/zh-TW\/cart\/add\"]:first, form[action=\"\/ko\/cart\/add\"]:first, form[action=\"\/es\/cart\/add\"]:first,form[action=\"\/en\/cart\/add\"]:first, form[action=\"\/de\/cart\/add\"]:first, form[action=\"\/cy\/cart\/add\"]:first, form[action=\"\/cart\/add.js\"]:first, form[action=\"\/fr\/cart\/add\"]:first, form[action=\"\/ar\/cart\/add\"], form[action=\"\/zh-cn\/cart\/add\"]","buttonselector":"button[name=\"add\"]:first, input[name=\"add\"]:first, input[data-action=\"add-to-cart\"], #button-add-to-cart, button.product-form--add-to-cart, button.product-form--atc-button, button.addtocart-button-active, button.product-submit, button.ProductForm__AddToCart, [type=submit]:visible:first, .product-form__add-button","variantselector1":".product__variant, select:not(.selectoption_id,.product-form__quantity, .delivery_time), .single-option-selector, input[name=\"Size\"], .ProductForm__Variants .ProductForm__Option input[type=\"radio\"], .variant-group input[type=\"radio\"], .swatch input[type=\"radio\"]","variantselector2":"input[name=\"quantity\"]","variantselector3":"","tags_badges":"","badges_allpages":"","badges_allpages_hide_attr":"","checkoutattr":"input[name=\"checkout\"], button[name=\"checkout\"]","subtotalclass":"","partialtext":"Partial Deposit:","remainingtext":"Remaining Balance:","drawerbuttonattr":"#drawer input[name=\"checkout\"], #drawer button[name=\"checkout\"], .Drawer button[name=\"checkout\"]","drawersubtotal":"","drawerevents":"header a[href=\"\/cart\"]","remainingenable":"Yes"},"generalSetting":{"counter_theme":"sd_counter1","comingsoontext":"Pr\u00e9-commandez","notify_autosent":"no_disable","coupon_option":"No","account_coupon":"No","auto_coupon":"No","shipping1":"No","shipping2":"No","tax_1":"No","tax_2":"No","com_badges":null,"com_badge_text":"Coming-Soon","com_badge_bk":"FF1919","com_badge_color":"ffff","com_badge_text_size":"11px","comBadgeShape":"Rectangle","comBadgePosition":"top_right","enable_favicon":"No","favbgcolor":"FF0000","favtxtcolor":"FFf","preorder_mode":"mode1","global_preorderlimit":"","mixed_cart":"No","mixed_cart_mode":"inline","mixed_cart_heading":"Warning: you have pre-order and in-stock products in the same cart","mixed_cart_content":"Shipment of your in-stock items may be delayed until your pre-order item is ready for shipping."},"notifySetting":{"enablenotify":"No","notify_type":"slide","notifylinktext":"Notify me","sd_notifybuttontext":"Notify me","notifylinktextcolor":"000","notifylink_bkcolor":"fff","notify_textalign":"left","notify_link_txtsize":"14","notify_link_deco":"underline","notify_link_weight":"normal","en_inject":"No","selectinject":"Inject after","injectevent":"CLASS","injectvalue":"sd-advanced-preorder"},"partialSettings":{"payment_type_text":"Payment Type","full_partial":"No","fullpay_text":"Full Payment","partialpay_text":"Partial Payment","cart_total":"No","total_text":"Partial Cart","checkout_text":"Partial Checkout","note_checkout1":"Initial Partial Payment (Check \"My Account\" page in store for balance payment)","note_checkout2":"Final Partial Payment","full_note_checkout":"Pay initial payment -","partial_cart":"No","partial_msg_txt":"","account_login":"disabled","fullpay_message_text":"Pay full payment - ","partialpay_message_text":"Pay initial payment - ","fullpaybtntext":"Pay Full","partialpaybtntext":"Pay Partial","par_badges":"No","par_badge_text":"Partial-Order","par_badge_bk":"FF1919","par_badge_color":"ffff","par_badge_text_size":"11px","enabletimer":"No","timermsg":"Hurry Up..!! Your cart will be lost in ","timertextcolor":"000","timerbkg":"ddd","timeralign":"left","timertextweight":"normal","timer":"20","timer_border":"none","timerborderpx":"1","timerbordercolor":"000","custom_priceonoff":"No","custom_paytext":"Custom Price"},"AccountPageSetting":{"float_button":"No"},"app":{"appenable":"Yes","memberplan":"free","status_activation":null,"p_status_activation":null,"advanced_premium":null,"today_date_time":"2023-01-30","today_time":"19:36"}}
 		var sd_productJson = null 
 		</script>
 
@@ -440,7 +477,7 @@ for (var attr in meta) {
     first.parentNode.insertBefore(script, first);
   };
   trekkie.load(
-    {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":56681136327,"isMerchantRequest":null,"themeId":132811686087,"themeCityHash":"9199943982323008549","contentLanguage":"fr","currency":"EUR"},"isServerSideCookieWritingEnabled":true,"monorailRegion":"shop_domain"},"Google Gtag Pixel":{"conversionId":"AW-609782267","eventLabels":[{"type":"page_view","action_label":"AW-609782267\/C4tzCI-ck9UCEPuT4qIC"},{"type":"purchase","action_label":"AW-609782267\/TFtpCJKck9UCEPuT4qIC"},{"type":"view_item","action_label":"AW-609782267\/oP6cCJWck9UCEPuT4qIC"},{"type":"add_to_cart","action_label":"AW-609782267\/1CM5CJick9UCEPuT4qIC"},{"type":"begin_checkout","action_label":"AW-609782267\/iz6eCJuck9UCEPuT4qIC"},{"type":"search","action_label":"AW-609782267\/JgdCCJ6ck9UCEPuT4qIC"},{"type":"add_payment_info","action_label":"AW-609782267\/DoOdCN2ck9UCEPuT4qIC"}],"targetCountry":"FR"},"Session Attribution":{},"S2S":{"facebookCapiEnabled":false,"source":"trekkie-storefront-renderer"}}
+    {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":56681136327,"isMerchantRequest":null,"themeId":132811686087,"themeCityHash":"5813897024721255332","contentLanguage":"fr","currency":"EUR"},"isServerSideCookieWritingEnabled":true,"monorailRegion":"shop_domain"},"Google Gtag Pixel":{"conversionId":"AW-609782267","eventLabels":[{"type":"page_view","action_label":"AW-609782267\/C4tzCI-ck9UCEPuT4qIC"},{"type":"purchase","action_label":"AW-609782267\/TFtpCJKck9UCEPuT4qIC"},{"type":"view_item","action_label":"AW-609782267\/oP6cCJWck9UCEPuT4qIC"},{"type":"add_to_cart","action_label":"AW-609782267\/1CM5CJick9UCEPuT4qIC"},{"type":"begin_checkout","action_label":"AW-609782267\/iz6eCJuck9UCEPuT4qIC"},{"type":"search","action_label":"AW-609782267\/JgdCCJ6ck9UCEPuT4qIC"},{"type":"add_payment_info","action_label":"AW-609782267\/DoOdCN2ck9UCEPuT4qIC"}],"targetCountry":"FR"},"Session Attribution":{},"S2S":{"facebookCapiEnabled":false,"source":"trekkie-storefront-renderer"}}
   );
 
   var loaded = false;
@@ -716,7 +753,7 @@ for (var attr in meta) {
               wishlistSelector: [],
               removeWishlist: [],
               wishlistPage: [],
-              productClick: ['.product_link']
+              productClick: ['.product_link', '.grid-product__link']
           };
 
           // stitch bindings
@@ -853,15 +890,21 @@ for (var attr in meta) {
                 for(let x in p.variants) {
                     for(let z in availableSizeGroups) {
                         var sizeEnd = p.variants[x].option1.split('')[p.variants[x].option1.length - 1];
+                        var priceToFormat = p.variants[x].price?.toString().split('');
+                        priceToFormat?.splice(priceToFormat.length - 2, 0, ',');
+                        var price = priceToFormat?.join('') || `${p.variants[x].price}`;
+                        var comparedPriceToFormat = p.variants[x].compare_at_price?.toString().split('');
+                        comparedPriceToFormat?.splice(comparedPriceToFormat.length - 2, 0, ',');
+                        var compare_at_price = comparedPriceToFormat?.join('') || `${p.variants[x].price}`;
                         if( sizeEnd === 'Y' && availableSizeGroups[z] === 'kid' && !prices[availableSizeGroups[z]]) {
                             prices[availableSizeGroups[z]] = {
-                                price: p.variants[x].price ? p.variants[x].price/100 : p.variants[x].price,
-                                compare_at_price: p.variants[x].compare_at_price ? p.variants[x].compare_at_price/100 : p.variants[x].compare_at_price
+                                price,
+                                compare_at_price
                             };
                         } else if (availableSizeGroups[z] == 'adult' && !prices[availableSizeGroups[z]]) {
                             prices[availableSizeGroups[z]] = {
-                                price: p.variants[x].price ? p.variants[x].price/100 : p.variants[x].price,
-                                compare_at_price: p.variants[x].compare_at_price ? p.variants[x].compare_at_price/100 : p.variants[x].compare_at_price
+                                price,
+                                compare_at_price
                             };
                         }
                     }
@@ -869,21 +912,30 @@ for (var attr in meta) {
             } else {
                 for(let z in availableSizeGroups) {
                     var sizeEnd = p.variant_options ? p.variant_options[0].split('')[p.variant_options.length - 1] : '';
+                    var priceToFormat = p.price?.toString().split('');
+                    priceToFormat?.splice(priceToFormat.length - 2, 0, ',');
+                    var price = priceToFormat?.join('') || `${p.price}`;
+                    var comparedPriceToFormat = p.compare_at_price?.toString().split('');
+                    comparedPriceToFormat?.splice(comparedPriceToFormat.length - 2, 0, ',');
+                    var compare_at_price = comparedPriceToFormat?.join('') || `${p.price}`;
                     if( sizeEnd === 'Y' && availableSizeGroups[z] === 'kid' && !prices[availableSizeGroups[z]]) {
                         prices[availableSizeGroups[z]] = {
-                            price: p.price ? p.price/100 : p.price,
-                            compare_at_price: p.compare_at_price ? p.compare_at_price/100 : p.compare_at_price
+                            price,
+                            compare_at_price
                         };
                     } else if (availableSizeGroups[z] == 'adult' && !prices[availableSizeGroups[z]]) {
                         prices[availableSizeGroups[z]] = {
-                            price: p.price ? p.price/100 : p.price,
-                            compare_at_price: p.compare_at_price ? p.compare_at_price/100 : p.compare_at_price
+                            price,
+                            compare_at_price
                         };
                     }
                 }
             }
             var sku = p.sku || p.variants[0].sku;
             var collection = null ||  "page" ;
+            var priceToFormat = p.price?.toString().split('');
+            priceToFormat?.splice(priceToFormat.length - 2, 0, ',');
+            var price = priceToFormat.join('') || `${p.price}`;
             return {
                 
                 'id': `${p.id}`,
@@ -901,12 +953,11 @@ for (var attr in meta) {
                 'label': p.label,
                 'season': p.season,
                 'gender': p.gender,
-                'price': `${p.price ? p.price/100 : p.price}`,
+                'price': `${price}`,
                 'name': `${p.title}`,
                 'brand': "Kappa France",
                 'category': `${collection}`,
-                'list': `${collection}`
-
+                'variant': `${p.variant_id || p.variants[0].id}`
             }
         }
         
@@ -914,7 +965,8 @@ for (var attr in meta) {
             let impressions = data.slice(0,limit).map((p, index) => {
                 var product = {
                     ...getProductData(p),
-                    position: index
+                    list: 'featured',
+                    position: index + 1
                 };
                 
                 return product
@@ -951,12 +1003,38 @@ for (var attr in meta) {
               }
           }
 
+        /** DATALAYER: Product List Page (Collections, Category)
+            * Fire on all product listing pages. */
+
+            
+
+        
+        window.pushRelatedProductsImpressions = function(products) {
+            var relatedProducts = products.map((p, i) => {
+                var product = getProductData(p);
+                
+                return {
+                    ...product,
+                    'list': 'related',
+                    'position': i + 1
+                }
+            })
+            if (/iPhone|iPad|iPod/i.test(window.navigator.userAgent)) {
+                relatedProducts = relatedProducts.slice(0, 2)
+            }
+            dataLayer.push({
+                'event': 'impressions',
+                'ecommerce': {
+                    'impressions': relatedProducts
+                }
+            })
+        }
+
            /** DATALAYER:
         * Add to Cart / Dynamic Cart View
         * Fire all pages trigger after all additional dataLayers have loaded. */
 
         $(document).ready(function() {
-
             /**
             * DATALAYER: Log State
             * 1. Determine if user is logged in or not.
@@ -1056,11 +1134,6 @@ for (var attr in meta) {
 
             
 
-            /** DATALAYER: Product List Page (Collections, Category)
-            * Fire on all product listing pages. */
-
-            
-
             /** DATALAYER: Product Click
             * Fire on all Product Click. */
             $(document).on('click', __DL__.productClick, function (event) {
@@ -1085,6 +1158,7 @@ for (var attr in meta) {
                                 document.location = event.currentTarget.getAttribute('href');
                             }
                         });
+
                     }
                 }).catch((error) => {
                     console.log(error)
@@ -1107,7 +1181,7 @@ for (var attr in meta) {
 
                 
 
-                var price = null;
+                var price = "";
 
                 var mainProduct = {
                     
@@ -1126,7 +1200,7 @@ for (var attr in meta) {
                     'label': null,
                     'season': null,
                     'gender': null,
-                    'price': `${price ? price/100 : price}`,
+                    'price': `${price}`,
                     'name': null,
                     'brand': "Kappa France",
                     'category': null,
@@ -1135,6 +1209,9 @@ for (var attr in meta) {
                 }
 
                 var productVariants = [...null].map((variant) => {
+                    var priceToFormat = variant.price?.toString().split('');
+                    priceToFormat?.splice(priceToFormat.length - 2, 0, ',');
+                    var price = priceToFormat?.join('') || `${variant.price}`;
                     return {
                         'id': `${variant.id}`,
                         'EAN': `${variant.barcode}`,
@@ -1146,13 +1223,11 @@ for (var attr in meta) {
                         'styleName': `${variant.title}`,
                         'sizeGroup': variant.option1.split('')[variant.option1.length] === 'Y' ? 'kid' : 'adult',
                         'colorFamily': `${variant.option2}`,
-                        'price': `${variant.price ?variant.price/100 : variant.price }`,
+                        'price': `${price}`,
                         'compare_at_price': `${variant.compare_at_price}`,
                         'availability': `${variant.available}`
                     }
                 })
-
-                var relatedProducts;
 
                 var product = {
                     'products': [{
@@ -1174,26 +1249,6 @@ for (var attr in meta) {
                         }
                     }]
                 };
-
-                window.pushRelatedProductsImpressions = function(products) {
-                    relatedProducts = products.map((p, i) => {
-                        var product = getProductData(p);
-                        
-                        return {
-                            ...product,
-                            'position': i
-                        }
-                    })
-                    if (/iPhone|iPad|iPod/i.test(window.navigator.userAgent)) {
-                        relatedProducts = relatedProducts.slice(0, 2)
-                    }
-                    dataLayer.push({
-                        'event': 'impressions',
-                        'ecommerce': {
-                            'impressions': relatedProducts
-                        }
-                    })
-                }
 
                 function productView(){
                     var sku = null;
@@ -1275,7 +1330,6 @@ for (var attr in meta) {
                                 'pageType' :'Customer Information'}
                             );
                         }else if (Shopify.Checkout.step === 'shipping_method'){
-                            console.log('QUO', products)
                             dataLayer.push(transactionData,{
                                 'event'    :'Shipping Information',
                                 'pageType' :'Shipping Information'}
@@ -1398,7 +1452,6 @@ for (var attr in meta) {
             function mapJSONcartData(){
                 jQuery.getJSON('/cart.js', function (response) {
                     // get Json response
-                    console.log('WTF')
                     __DL__.cart = response;
                     var cart = {
                         'products': __DL__.cart.items.map(function (line_item) {
@@ -1420,85 +1473,76 @@ for (var attr in meta) {
                 });
             }
 
-            function __DL__addtocart(){
-                
-                    dataLayer.push(mainProduct, {
-                        'pageType' : 'Add to Cart',
-                        'event'    : 'Add to Cart'
-                    });
-
-                    dataLayer.push({
-                        'event': 'addToCart',
-                        'ecommerce': {
-                            'currencyCode': 'EUR',
-                            'add': {
-                            'products': [{...mainProduct, quantity: 1}]
-                            }
+            function cartUpdated() {
+                jQuery.getJSON("/cart", function (response) {
+                    // get Json response
+                    
+                    var newCart = response.items.map(function (line_item) {
+                        return {
+                            ...getProductData(line_item),
+                            'variant'  : `${line_item.variant_id}`,
+                            'quantity' : line_item.quantity
                         }
-                    })
-
-                    if (__DL__.debug) {
-                        console.log("Add to Cart"+" :"+JSON.stringify(mainProduct, null, " "));
+                    });
+                    var oldCart = [...__DL__.cart.products];
+                    var itemToUpdate;
+                    var action;
+                    for(var i = 0; i < oldCart.length; i++) {
+                        var cartItem = newCart.find(x => x.variant === oldCart[i].variant);
+                        if(cartItem && oldCart[i].quantity > cartItem.quantity) {
+                            itemToUpdate = {...cartItem};
+                            itemToUpdate.quantity = oldCart[i].quantity - cartItem.quantity ;
+                            action = 'remove';
+                        } else if(cartItem && oldCart[i].quantity < cartItem.quantity || !cartItem) {
+                            itemToUpdate = {...cartItem};
+                            itemToUpdate.quantity = cartItem.quantity - oldCart[i].quantity;
+                            action = 'add';
+                        }
                     }
 
-                
-
-                // if dynamic cart is TRUE
-                
-            }
-
-            function __DL__removefromcart(){
-                setTimeout(function(){
-                    jQuery.getJSON("/cart", function (response) {
-                        // get Json response
-                        var newCart = response.items.map(function (line_item) {
-                            return {
-                                ...getProductData(line_item),
-                                'variant'  : `${line_item.variant_id}`,
-                                'quantity' : line_item.quantity
+                    if(itemToUpdate) {
+                        if(action === 'remove') {
+                            dataLayer.push({
+                                'event': 'removeFromCart',
+                                'ecommerce': {
+                                    'remove': {
+                                        'products': [itemToUpdate]
+                                    }
+                                }
+                            });
+                            
+                            if (__DL__.debug) {
+                                console.log("Remove from cart"+" :"+JSON.stringify(itemToUpdate, null, " "));
                             }
-                        });
-                        var oldCart = [...__DL__.cart.products];
-                        var itemToRemove;
-                        for(var i = 0; i < oldCart.length; i++) {
-                            var cartItem = newCart.find(x => x.variant === oldCart[i].variant);
-                            if(cartItem && oldCart[i].quantity !== cartItem.quantity) {
-                                itemToRemove = {...cartItem};
-                                itemToRemove.quantity = oldCart[i].quantity - cartItem.quantity ;
+                        } else if (action === 'add') {
+                            dataLayer.push({
+                                'event': 'addToCart',
+                                'ecommerce': {
+                                    'currencyCode': "EUR",
+                                    'add': {
+                                        'products': [mainProduct?.sku == itemToUpdate.sku ? {...mainProduct, quantity: itemToUpdate.quantity} : {...itemToUpdate}]
+                                    }
+                                }
+                            })
+
+                            if (__DL__.debug) {
+                                console.log("Add to Cart"+" :"+JSON.stringify(itemToAdd, null, " "));
                             }
                         }
 
-                        dataLayer.push({
-                            'event': 'removeFromCart',
-                            'ecommerce': {
-                                'remove': {
-                                    'products': [itemToRemove]
-                                }
-                            }
-                        });
                         __DL__.cart = {
                             'products': newCart
                         }
-                        if (__DL__.debug) {
-                            console.log("Remove from cart"+" :"+JSON.stringify(itemToRemove, null, " "));
-                        }
-                    });
-                }, 2000)
+                    }
+                });
             }
 
-            $(document).on('click', __DL__.cartTriggers, function() {
-                __DL__addtocart();
-            });
-
-            //Add quantity in cart
-            $(document).on('click', __DL__.addQuantityTriggers, function() {
-                __DL__addtocart();
-            });
-
-            //Remove from cart
-            $(document).on('click', __DL__.removeCartTrigger, function(event) {
-                __DL__removefromcart();
-            });
+            document.addEventListener('cart:updated', (e) => {
+                cartUpdated();
+            }, false);
+            document.addEventListener('ajaxProduct:added', (e) => {
+                cartUpdated();
+            }, false);
 
             /**
             * DATALAYER: Newsletter Subscription */
@@ -1610,8 +1654,7 @@ for (var attr in meta) {
         }); // document ready
     }
 }, 500);
-</script>
- 
+</script> 
   <a class="in-page-link visually-hidden skip-link" href="#MainContent">Passer au contenu</a>
 
   <div id="PageContainer" class="page-container">
@@ -2590,6 +2633,10 @@ for (var attr in meta) {
                                       Banda 10
                                     </a>
                                   </li><li class="mobile-nav__item">
+                                    <a href="/collections/love-kappa" class="mobile-nav__link">
+                                      Capsule Love
+                                    </a>
+                                  </li><li class="mobile-nav__item">
                                     <a href="/collections/authentic-kontemporarty" class="mobile-nav__link">
                                       Kontemporary
                                     </a>
@@ -3505,6 +3552,10 @@ for (var attr in meta) {
                     </div><div>
                       <a href="/collections/authentic-banda-10" class="site-nav__dropdown-link">
                         Banda 10
+                      </a>
+                    </div><div>
+                      <a href="/collections/love-kappa" class="site-nav__dropdown-link">
+                        Capsule Love
                       </a>
                     </div><div>
                       <a href="/collections/authentic-kontemporarty" class="site-nav__dropdown-link">
@@ -4641,8 +4692,8 @@ pn.settings.tagSettings=[{"id":20084349,"a":"Pré-commandez","b":true,"c":null,"
       money_format_with_currency: "{{amount_with_comma_separator}} € EUR"
     },
     general: {
-      file_url: "//cdn.shopify.com/s/files/1/0566/8113/6327/files/?9015",
-      asset_url: "//cdn.shopify.com/s/files/1/0566/8113/6327/t/12/assets/boost-pfs.js?9015",
+      file_url: "//cdn.shopify.com/s/files/1/0566/8113/6327/files/?9088",
+      asset_url: "//cdn.shopify.com/s/files/1/0566/8113/6327/t/12/assets/boost-pfs.js?9088",
       collection_id: 0,
       collection_handle: "",
       collection_product_count: 0,
@@ -4717,7 +4768,7 @@ default_sort_order: {"search":"","all":""},
 
 <!-- Include Resources --><script defer src="//cdn.shopify.com/s/files/1/0566/8113/6327/t/12/assets/boost-pfs-vendor.js?v=25380105239681548471669816473"></script>
   <script defer src="//cdn.shopify.com/s/files/1/0566/8113/6327/t/12/assets/boost-pfs-core.js?v=172179946527975767531669816473"></script>
-  <script defer src="//cdn.shopify.com/s/files/1/0566/8113/6327/t/12/assets/boost-pfs-filter.js?v=169744128388418329021675066355"></script>
+  <script defer src="//cdn.shopify.com/s/files/1/0566/8113/6327/t/12/assets/boost-pfs-filter.js?v=175806183621157272231675089754"></script>
   <script defer src="//cdn.shopify.com/s/files/1/0566/8113/6327/t/12/assets/boost-pfs-instant-search.js?v=95495445503357874451669816473"></script><!-- Initialize App -->
 <script defer src="//cdn.shopify.com/s/files/1/0566/8113/6327/t/12/assets/boost-pfs-init.js?v=164080107980954591611669822199"></script>
 
