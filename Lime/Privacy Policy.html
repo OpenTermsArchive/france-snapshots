@@ -498,12 +498,12 @@ Télécharger l'app</a>
 <h1 class="max-w-prose text-lg lg:headline-02">Avis de confidentialité</h1>
 <div class="mt-10 text-center">
 <ul class="inline-flex overflow-hidden rounded-full border divide-s">
-<li><a href="https://www.li.me/fr-fr/legal/privacy-policy" class="block py-4 px-8 hover:bg-brand-green focus:bg-brand-green transition-all duration-250">FR</a></li>
+<li><a href="https://www.li.me/fr-fr/legal/privacy-policy" class="block py-4 px-8 hover:bg-brand-green focus:bg-brand-green transition-all duration-250 bg-brand-green text-white">FR</a></li>
 <li><a href="https://www.li.me/en-fr/legal/privacy-policy" class="block py-4 px-8 hover:bg-brand-green focus:bg-brand-green transition-all duration-250">EN</a></li>
 </ul>
 </div>
 </div>
-</div>
+ </div>
 <div class="py-8 lg:py-12">
 <div class="box-content mx-auto max-w-[820px] px-6">
 <div class="prose prose-lg">
@@ -538,7 +538,7 @@ Télécharger l'app</a>
 </a>
 </div>
 <div class="space-y-6 lg:grid lg:grid-cols-6 lg:col-span-6 lg:gap-5 lg:space-y-0">
- <div class="lg:col-span-2 lg:pt-6 lg:space-y-8">
+<div class="lg:col-span-2 lg:pt-6 lg:space-y-8">
 <h4 class="text-3xl lg:headline-04">
 <button type="button" @click="open = open == '1' ? null : '1'" class="relative w-full lg:pointer-events-none text-start" :aria-expanded="open == '1' ? 'true' : 'false'" aria-label="footer_nav_toggle_nous_rejoindre" aria-expanded="false">
 Nous rejoindre
@@ -559,6 +559,7 @@ Nous rejoindre
 Travailler chez Lime</a>
 </li>
 <li>
+
 <a class="text-gray-300 transition lg:text-sm hover:text-white focus:text-white headline-04" href="https://www.li.me/fr-fr/blog">
 Lime le blog</a>
 </li>
@@ -640,7 +641,7 @@ Lime Access</a>
 <a class="text-gray-300 transition lg:text-sm hover:text-white focus:text-white headline-04" href="https://www.li.me/fr-fr/pourquoi/communaute/lime-hero">
 Lime Hero</a>
 </li>
-<li>
+ <li>
 <a class="text-gray-300 transition lg:text-sm hover:text-white focus:text-white headline-04" href="https://www.li.me/fr-fr/pourquoi/communaute/lime-assist">
 Lime Assist</a>
 </li>
@@ -681,7 +682,7 @@ Sitemap</a>
 <li>
 <a class="block h-8 w-8" href="https://www.facebook.com/limebike/" rel="noopener noreferrer" target="_blank" aria-label="Facebook">
 <img src="/static/img/social/facebook.png" alt="Facebook" class="block w-full h-full">
-</a>
+ </a>
 </li>
 <li>
 <a class="block h-8 w-8" href="https://www.linkedin.com/company/limebike/" rel="noopener noreferrer" target="_blank" aria-label="LinkedIn">
@@ -700,7 +701,7 @@ Sitemap</a>
 </li>
 </ul>
 </div>
- </div>
+</div>
 </div>
 <div class="text-xs lg:grid lg:grid-cols-12 lg:gap-5">
 <div class="pb-2 lg:col-span-3 lg:pb-0">
@@ -834,7 +835,7 @@ Sitemap</a>
 <span>Chile</span>
 </button>
 </div>
- <div>
+<div>
 <button type="button" @click="activeGroup = 'Colombia'" class="flex items-center w-full h-12 text-sm space-s-2 text-gray-150 hover:text-green-100 focus:text-green-100" :class="{
                                     'text-green-100 font-medium': 'Colombia' == activeGroup,
                                     'text-gray-150 hover:text-green-100 focus:text-green-100': 'Colombia' != activeGroup
@@ -911,7 +912,7 @@ Sitemap</a>
                                     'text-green-100 font-medium': 'Hungary' == activeGroup,
                                     'text-gray-150 hover:text-green-100 focus:text-green-100': 'Hungary' != activeGroup
                                 }">
- <svg class="w-[21px] h-[21px] rounded-full" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g fill-rule="evenodd"><path d="m512 512h-512v-512h512z" fill="#fff"></path><path d="m512 512h-512v-170.7h512z" fill="#388d00"></path><path d="m512 170.8h-512v-170.7h512z" fill="#d43516"></path></g></svg>
+<svg class="w-[21px] h-[21px] rounded-full" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><g fill-rule="evenodd"><path d="m512 512h-512v-512h512z" fill="#fff"></path><path d="m512 512h-512v-170.7h512z" fill="#388d00"></path><path d="m512 170.8h-512v-170.7h512z" fill="#d43516"></path></g></svg>
 <span>Hungary</span>
 </button>
 </div>
@@ -1091,7 +1092,6 @@ Sitemap</a>
 <div class="absolute top-0 bottom-0 -left-5 w-5 bg-gradient-to-r from-white"></div>
 <div class="flex overflow-auto px-5 pb-3 -mx-5 text-sm whitespace-nowrap space-s-8 text-gray-150">
 <a href="https://www.li.me/de-at/redirector" class="block py-2 hover:text-green-100 focus:text-green-100 align-center" :class="{'text-green-100 font-medium': 11 == 41}">Deutsch</a>
-
 <a href="https://www.li.me/en-at/redirector" class="block py-2 hover:text-green-100 focus:text-green-100 align-center" :class="{'text-green-100 font-medium': 12 == 41}">English</a>
 </div>
 </div>
@@ -1116,8 +1116,8 @@ Sitemap</a>
 <div class="absolute top-0 bottom-0 -right-5 w-5 bg-gradient-to-l from-white"></div>
 <div class="absolute top-0 bottom-0 -left-5 w-5 bg-gradient-to-r from-white"></div>
 <div class="flex overflow-auto px-5 pb-3 -mx-5 text-sm whitespace-nowrap space-s-8 text-gray-150">
-
 <a href="https://www.li.me/bg-bg/redirector" class="block py-2 hover:text-green-100 focus:text-green-100 align-center" :class="{'text-green-100 font-medium': 23 == 41}">Български</a>
+
 <a href="https://www.li.me/en-bg/redirector" class="block py-2 hover:text-green-100 focus:text-green-100 align-center" :class="{'text-green-100 font-medium': 9 == 41}">English</a>
 </div>
 </div>
@@ -1142,6 +1142,7 @@ Sitemap</a>
 <div class="absolute top-0 bottom-0 -left-5 w-5 bg-gradient-to-r from-white"></div>
 <div class="flex overflow-auto px-5 pb-3 -mx-5 text-sm whitespace-nowrap space-s-8 text-gray-150">
 <a href="https://www.li.me/es-co/redirector" class="block py-2 hover:text-green-100 focus:text-green-100 align-center" :class="{'text-green-100 font-medium': 70 == 41}">Español</a>
+
 <a href="https://www.li.me/en-co/redirector" class="block py-2 hover:text-green-100 focus:text-green-100 align-center" :class="{'text-green-100 font-medium': 71 == 41}">English</a>
 </div>
 </div>
@@ -1166,6 +1167,7 @@ Sitemap</a>
 <div class="absolute top-0 bottom-0 -left-5 w-5 bg-gradient-to-r from-white"></div>
 <div class="flex overflow-auto px-5 pb-3 -mx-5 text-sm whitespace-nowrap space-s-8 text-gray-150">
 <a href="https://www.li.me/da-dk/redirector" class="block py-2 hover:text-green-100 focus:text-green-100 align-center" :class="{'text-green-100 font-medium': 20 == 41}">Dansk</a>
+
 <a href="https://www.li.me/en-dk/redirector" class="block py-2 hover:text-green-100 focus:text-green-100 align-center" :class="{'text-green-100 font-medium': 63 == 41}">English</a>
 </div>
 </div>
@@ -1499,4 +1501,4 @@ function replaceUrls(url, injectElements) {
               s-17-7.626-17-17S14.61,6,23.984,6z"></path></svg></div><div id="ot-fltr-cntr"><button id="filter-btn-handler" aria-label="Filter" aria-haspopup="true"><svg role="presentation" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 402.577 402.577" style="enable-background:new 0 0 402.577 402.577;" xml:space="preserve"><title>Filter Button</title><g><path fill="#2c3643" d="M400.858,11.427c-3.241-7.421-8.85-11.132-16.854-11.136H18.564c-7.993,0-13.61,3.715-16.846,11.136
                             c-3.234,7.801-1.903,14.467,3.999,19.985l140.757,140.753v138.755c0,4.955,1.809,9.232,5.424,12.854l73.085,73.083
                             c3.429,3.614,7.71,5.428,12.851,5.428c2.282,0,4.66-0.479,7.135-1.43c7.426-3.238,11.14-8.851,11.14-16.845V172.166L396.861,31.413
-                            C402.765,25.895,404.093,19.231,400.858,11.427z"></path></g></svg></button></div></div></div><section id="ot-lst-cnt" class="ot-pc-scrollbar"><div class="ot-sdk-row"><div class="ot-sdk-column"><div id="ot-sel-blk"><div class="ot-sel-all"><div class="ot-sel-all-hdr"><span class="ot-consent-hdr">Consent</span> <span class="ot-li-hdr">Leg.Interest</span></div><div class="ot-sel-all-chkbox"><div class="ot-chkbox" id="ot-selall-hostcntr"><input id="select-all-hosts-groups-handler" type="checkbox" aria-checked="false"> <label for="select-all-hosts-groups-handler"><span class="ot-label-txt">checkbox label</span></label> <span class="ot-label-status">label</span></div><div class="ot-chkbox" id="ot-selall-vencntr"><input id="select-all-vendor-groups-handler" type="checkbox" aria-checked="false"> <label for="select-all-vendor-groups-handler"><span class="ot-label-txt">checkbox label</span></label> <span class="ot-label-status">label</span></div><div class="ot-chkbox" id="ot-selall-licntr"><input id="select-all-vendor-leg-handler" type="checkbox" aria-checked="false"> <label for="select-all-vendor-leg-handler"><span class="ot-label-txt">checkbox label</span></label> <span class="ot-label-status">label</span></div></div></div></div></div></div></section></div><div id="ot-anchor"></div><section id="ot-fltr-modal"><div id="ot-fltr-cnt"><button id="clear-filters-handler">Clear</button><div class="ot-fltr-scrlcnt ot-pc-scrollbar"><div class="ot-fltr-opts"><div class="ot-fltr-opt"><div class="ot-chkbox"><input id="chkbox-id" type="checkbox" aria-checked="false" class="category-filter-handler"> <label for="chkbox-id"><span class="ot-label-txt">checkbox label</span></label> <span class="ot-label-status">label</span></div></div></div><div class="ot-fltr-btns"><button id="filter-apply-handler">Apply</button> <button id="filter-cancel-handler">Cancel</button></div></div></div></section></section><!-- Footer buttons and logo --><div class="ot-pc-footer"><div class="ot-btn-container"><button class="save-preference-btn-handler onetrust-close-btn-handler">Confirm My Choices</button><div class="ot-btn-subcntr"> <button id="accept-recommended-btn-handler">Allow All</button></div></div><div class="ot-pc-footer-logo"><a href="https://onetrust.com/poweredbyonetrust" target="_blank" rel="noopener noreferrer" style="background-image: url(&quot;https://cdn.cookielaw.org/logos/static/poweredBy_ot_logo.svg&quot;)" aria-label="Powered by OneTrust Opens in a new window"></a></div></div><!-- Cookie subgroup container --><!-- Vendor list link --><!-- Cookie lost link --><!-- Toggle HTML element --><!-- Checkbox HTML --><!-- Arrow SVG element --><!-- Accordion basic element --><span class="ot-scrn-rdr" aria-atomic="true" aria-live="polite"></span><iframe class="ot-text-resize" title="onetrust-text-resize" style="position:absolute;top:-50000px;width:100em;" aria-hidden="true"></iframe></div><div id="onetrust-banner-sdk" class="otFloatingRoundedCorner bottom ot-wo-title" style="bottom: 1rem"><div class="ot-sdk-container" role="dialog" aria-describedby="onetrust-policy-text"><div class="ot-sdk-row"><div id="onetrust-group-container" class="ot-sdk-twelve ot-sdk-columns"><div id="onetrust-policy"><div class="banner-header"><div class="banner_logo"></div></div><p id="onetrust-policy-text">By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts. </p></div></div><div id="onetrust-button-group-parent" class="ot-sdk-twelve ot-sdk-columns"><div id="onetrust-button-group"><div class="banner-actions-container"><button id="onetrust-accept-btn-handler">Accept All Cookies</button> </div><button id="onetrust-pc-btn-handler" class="cookie-setting-link">Cookies Settings</button></div></div><!-- Close Button --><div id="onetrust-close-btn-container"><button class="onetrust-close-btn-handler banner-close-button ot-close-icon" aria-label="Close"></button></div><!-- Close Button END--></div></div></div></div></body></html>
+                            C402.765,25.895,404.093,19.231,400.858,11.427z"></path></g></svg></button></div></div></div><section id="ot-lst-cnt" class="ot-pc-scrollbar"><div class="ot-sdk-row"><div class="ot-sdk-column"><div id="ot-sel-blk"><div class="ot-sel-all"><div class="ot-sel-all-hdr"><span class="ot-consent-hdr">Consent</span> <span class="ot-li-hdr">Leg.Interest</span></div><div class="ot-sel-all-chkbox"><div class="ot-chkbox" id="ot-selall-hostcntr"><input id="select-all-hosts-groups-handler" type="checkbox" aria-checked="false"> <label for="select-all-hosts-groups-handler"><span class="ot-label-txt">checkbox label</span></label> <span class="ot-label-status">label</span></div><div class="ot-chkbox" id="ot-selall-vencntr"><input id="select-all-vendor-groups-handler" type="checkbox" aria-checked="false"> <label for="select-all-vendor-groups-handler"><span class="ot-label-txt">checkbox label</span></label> <span class="ot-label-status">label</span></div><div class="ot-chkbox" id="ot-selall-licntr"><input id="select-all-vendor-leg-handler" type="checkbox" aria-checked="false"> <label for="select-all-vendor-leg-handler"><span class="ot-label-txt">checkbox label</span></label> <span class="ot-label-status">label</span></div></div></div></div></div></div></section></div><div id="ot-anchor"></div><section id="ot-fltr-modal"><div id="ot-fltr-cnt"><button id="clear-filters-handler">Clear</button><div class="ot-fltr-scrlcnt ot-pc-scrollbar"><div class="ot-fltr-opts"><div class="ot-fltr-opt"><div class="ot-chkbox"><input id="chkbox-id" type="checkbox" aria-checked="false" class="category-filter-handler"> <label for="chkbox-id"><span class="ot-label-txt">checkbox label</span></label> <span class="ot-label-status">label</span></div></div></div><div class="ot-fltr-btns"><button id="filter-apply-handler">Apply</button> <button id="filter-cancel-handler">Cancel</button></div></div></div></section></section><!-- Footer buttons and logo --><div class="ot-pc-footer"><div class="ot-btn-container"><button class="save-preference-btn-handler onetrust-close-btn-handler">Confirm My Choices</button><div class="ot-btn-subcntr"> <button id="accept-recommended-btn-handler">Allow All</button></div></div><div class="ot-pc-footer-logo"><a href="https://onetrust.com/poweredbyonetrust" target="_blank" rel="noopener noreferrer" style="background-image: url(&quot;https://cdn.cookielaw.org/logos/static/poweredBy_ot_logo.svg&quot;)" aria-label="Powered by OneTrust Opens in a new window"></a></div></div><!-- Cookie subgroup container --><!-- Vendor list link --><!-- Cookie lost link --><!-- Toggle HTML element --><!-- Checkbox HTML --><!-- Arrow SVG element --><!-- Accordion basic element --><span class="ot-scrn-rdr" aria-atomic="true" aria-live="polite"></span><iframe class="ot-text-resize" title="onetrust-text-resize" style="position:absolute;top:-50000px;width:100em;" aria-hidden="true"></iframe></div><div id="onetrust-banner-sdk" class="otFloatingRoundedCorner bottom ot-wo-title" style="bottom: -300px; animation-name: slide-down-custom; animation-duration: 2000ms; animation-fill-mode: forwards; animation-timing-function: ease-out;"><div class="ot-sdk-container" role="dialog" aria-describedby="onetrust-policy-text"><div class="ot-sdk-row"><div id="onetrust-group-container" class="ot-sdk-twelve ot-sdk-columns"><div id="onetrust-policy"><div class="banner-header"><div class="banner_logo"></div></div><p id="onetrust-policy-text">By clicking “Accept All Cookies”, you agree to the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts. </p></div></div><div id="onetrust-button-group-parent" class="ot-sdk-twelve ot-sdk-columns"><div id="onetrust-button-group"><div class="banner-actions-container"><button id="onetrust-accept-btn-handler">Accept All Cookies</button> </div><button id="onetrust-pc-btn-handler" class="cookie-setting-link">Cookies Settings</button></div></div><!-- Close Button --><div id="onetrust-close-btn-container"><button class="onetrust-close-btn-handler banner-close-button ot-close-icon" aria-label="Close"></button></div><!-- Close Button END--></div></div></div></div></body></html>
