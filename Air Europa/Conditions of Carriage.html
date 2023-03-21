@@ -2392,7 +2392,7 @@
 
 
 	<form id="loginPrototype" method="post" enctype="application/x-www-form-urlencoded">
-		<input type="hidden" name="csrf" value="KM_KRXtoQfhOcc2Yj234DrL33H431DAN_fFyd27OxnY:AAABhwBKDxU:quyGa6_eR0NabXzLPlQAuA"/>
+		<input type="hidden" name="csrf" value="no78o-wgytmIi_j5iqzbOdXrnTRer0Wt9e2Npz0iEYQ:AAABhwQmqjs:TAPxWcGi0YhQCx2JsoYcEA"/>
 		<input type="hidden" id="mgnlToken" name="mgnlToken" value=""/>
 		<input type="hidden" id="mgnlReturnTo" name="mgnlReturnTo" value="/fr/fr/aea/informacion-para-volar/condiciones/condiciones-de-transporte.html"/>
 		<input type="hidden" id="rskIdLogin" name="rskId"/>
@@ -2407,6 +2407,8 @@
 	
 	<script type="text/javascript">
 		window.onload = function() {
+		
+		    $("input[name='csrf']").val(getCookieValue("csrf"));
 		
 			var ip_script = document.createElement('script');
 			ip_script.setAttribute('src','https://api.ipify.org?format=jsonp&callback=getIP');
@@ -2544,7 +2546,7 @@
 			function refreshToken(responseTokenJanoHeaderR) {
 				var page = 'node /fr/aea/informacion-para-volar/condiciones/condiciones-de-transporte';
 				var url = '/fr/fr/aea/informacion-para-volar/condiciones/condiciones-de-transporte.html';
-				responseTokenJanoHeaderR.csrf="KM_KRXtoQfhOcc2Yj234DrL33H431DAN_fFyd27OxnY:AAABhwBKDxU:quyGa6_eR0NabXzLPlQAuA";
+				responseTokenJanoHeaderR.csrf="no78o-wgytmIi_j5iqzbOdXrnTRer0Wt9e2Npz0iEYQ:AAABhwQmqjs:TAPxWcGi0YhQCx2JsoYcEA";
 				$.ajax({
 				    type: "POST",
 				    global: false, 
@@ -2559,6 +2561,23 @@
 				});
 
 			}
+			
+			function getCookieValue(cname) { // cname is nothing but the cookie value which 
+                                 //contains the value
+                    var name = cname + "=";
+                      var decodedCookie = decodeURIComponent(document.cookie);
+                      var ca = decodedCookie.split(';');
+                      for(var i = 0; i <ca.length; i++) {
+                        var c = ca[i];
+                        while (c.charAt(0) == ' ') {
+                          c = c.substring(1);
+                        }
+                        if (c.indexOf(name) == 0) {
+                          return c.substring(name.length, c.length);
+                        }
+                      }
+                      return "";
+                    }
 			
 			// Comprobamos si es necesario realizar login en la cabecera o en Magnolia
 				login(false); //Si hay error no llamar a login
