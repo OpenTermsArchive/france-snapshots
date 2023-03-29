@@ -1117,8 +1117,8 @@ Ces mesures se divisent en mesures organisationnelles et techniques. Les premiè
 
 
 	<form id="loginPrototype" method="post" enctype="application/x-www-form-urlencoded">
-		<input type="hidden" name="csrf" value="DZJ9CCT7HmKMqtRB6fyHZOi1NF7ApmUbhaj5u5wU6pg:AAABhy1ZjxU:2MpktrwLBSQVPmUfL2b2gg"/>
-		// <input type="hidden" id="mgnlToken" name="mgnlToken" value=""/>
+		<input type="hidden" name="csrf" value="UnW-mHNY73G-aNf0Xe8IlEdxkWNY39ET-6tmW-l1Gq8:AAABhy6jDqY:OSSR1fq_If2FtwSAvlqlxg"/>
+		<input type="hidden" id="mgnlToken" name="mgnlToken" value=""/>
 		<input type="hidden" id="mgnlReturnTo" name="mgnlReturnTo" value="/fr/fr/aea/informacion-para-volar/condiciones/politica-de-privacidad.html"/>
 		<input type="hidden" id="rskIdLogin" name="rskId"/>
 		<input type="hidden" id="sessionIdLogin" name="sessionId"/>	 
@@ -1139,27 +1139,7 @@ Ces mesures se divisent en mesures organisationnelles et techniques. Les premiè
 			document.head.appendChild(ip_script);
 
             		
-		    var csrfVal = getCookieValue("csrf");
-            if(csrfVal != ""){
-            	$("input[name='csrf']").val(csrfVal);
-            }
-            
-            function getCookieValue(cname) { // cname is nothing but the cookie value which 
-            			 //contains the value
-            	var name = cname + "=";
-            	var decodedCookie = decodeURIComponent(document.cookie);
-            	var ca = decodedCookie.split(';');
-            	for(var i = 0; i <ca.length; i++) {
-            		var c = ca[i];
-            		while (c.charAt(0) == ' ') {
-            		    c = c.substring(1);
-            		}
-            		if (c.indexOf(name) == 0) {
-            			return c.substring(name.length, c.length);
-            		}
-            	}
-            	return "";
-            }
+		  
             
 			
 			function getIP(json) {
@@ -1256,7 +1236,7 @@ Ces mesures se divisent en mesures organisationnelles et techniques. Les premiè
 			function refreshToken(responseTokenJanoHeaderR) {
 				var page = 'node /fr/aea/informacion-para-volar/condiciones/politica-de-privacidad';
 				var url = '/fr/fr/aea/informacion-para-volar/condiciones/politica-de-privacidad.html';
-				responseTokenJanoHeaderR.csrf="DZJ9CCT7HmKMqtRB6fyHZOi1NF7ApmUbhaj5u5wU6pg:AAABhy1ZjxU:2MpktrwLBSQVPmUfL2b2gg";
+				responseTokenJanoHeaderR.csrf="UnW-mHNY73G-aNf0Xe8IlEdxkWNY39ET-6tmW-l1Gq8:AAABhy6jDqY:OSSR1fq_If2FtwSAvlqlxg";
 				$.ajax({
 				    type: "POST",
 				    global: false, 
