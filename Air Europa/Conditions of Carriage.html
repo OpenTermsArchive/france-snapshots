@@ -2390,8 +2390,8 @@
 
 
 	<form id="loginPrototype" method="post" enctype="application/x-www-form-urlencoded">
-		<input type="hidden" name="csrf" value="28Q7U65Ck_ZOnkUQ4vsTu1w8i1iCww4EW9amdshcnE4:AAABhy1ZnXo:NQOd2FS2UG0CP8n8wq_Fkw"/>
-		// <input type="hidden" id="mgnlToken" name="mgnlToken" value=""/>
+		<input type="hidden" name="csrf" value="bB2Ax6oXmPlHn_73rEM3LkPo38QfRDLyz2HZlag-wKI:AAABhy6jHBs:amzS7bFcEN5TC2WAtITvuw"/>
+		<input type="hidden" id="mgnlToken" name="mgnlToken" value=""/>
 		<input type="hidden" id="mgnlReturnTo" name="mgnlReturnTo" value="/fr/fr/aea/informacion-para-volar/condiciones/condiciones-de-transporte.html"/>
 		<input type="hidden" id="rskIdLogin" name="rskId"/>
 		<input type="hidden" id="sessionIdLogin" name="sessionId"/>	 
@@ -2412,27 +2412,7 @@
 			document.head.appendChild(ip_script);
 
             		
-		    var csrfVal = getCookieValue("csrf");
-            if(csrfVal != ""){
-            	$("input[name='csrf']").val(csrfVal);
-            }
-            
-            function getCookieValue(cname) { // cname is nothing but the cookie value which 
-            			 //contains the value
-            	var name = cname + "=";
-            	var decodedCookie = decodeURIComponent(document.cookie);
-            	var ca = decodedCookie.split(';');
-            	for(var i = 0; i <ca.length; i++) {
-            		var c = ca[i];
-            		while (c.charAt(0) == ' ') {
-            		    c = c.substring(1);
-            		}
-            		if (c.indexOf(name) == 0) {
-            			return c.substring(name.length, c.length);
-            		}
-            	}
-            	return "";
-            }
+		  
             
 			
 			function getIP(json) {
@@ -2529,7 +2509,7 @@
 			function refreshToken(responseTokenJanoHeaderR) {
 				var page = 'node /fr/aea/informacion-para-volar/condiciones/condiciones-de-transporte';
 				var url = '/fr/fr/aea/informacion-para-volar/condiciones/condiciones-de-transporte.html';
-				responseTokenJanoHeaderR.csrf="28Q7U65Ck_ZOnkUQ4vsTu1w8i1iCww4EW9amdshcnE4:AAABhy1ZnXo:NQOd2FS2UG0CP8n8wq_Fkw";
+				responseTokenJanoHeaderR.csrf="bB2Ax6oXmPlHn_73rEM3LkPo38QfRDLyz2HZlag-wKI:AAABhy6jHBs:amzS7bFcEN5TC2WAtITvuw";
 				$.ajax({
 				    type: "POST",
 				    global: false, 
