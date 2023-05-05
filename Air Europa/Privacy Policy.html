@@ -13,9 +13,12 @@
 	
 
 	<script>
-	(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
-	var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='digitalData'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
-	f.parentNode.insertBefore(j,f);})(window,document,'script','digitalData','GTM-MNJZCFD');
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MNJZCFD');
+
 	
 	</script>
 
@@ -1119,7 +1122,7 @@ Ces mesures se divisent en mesures organisationnelles et techniques. Les premiè
 
 
 	<form id="loginPrototype" method="post" enctype="application/x-www-form-urlencoded">
-		<input type="hidden" name="csrf" value="_Gf_rhw9r8buZXmjoUF0I8EHX0KISz93LAs9p_T5LNQ:AAABh-r34ug:8i6vw8JTxIE2Bs7-2kXyBg"/>
+		<input type="hidden" name="csrf" value="YqGTXPCdMrNW8VOpqko1sQdAfJFsShWXpK55daGaz5s:AAABh-vk29g:ApSsoD26bAgNCkL-Uub4JQ"/>
 		<input type="hidden" id="mgnlToken" name="mgnlToken" value=""/>
 		<input type="hidden" id="mgnlReturnTo" name="mgnlReturnTo" value="/fr/fr/aea/informacion-para-volar/condiciones/politica-de-privacidad.html"/>
 		<input type="hidden" id="rskIdLogin" name="rskId"/>
@@ -1133,7 +1136,7 @@ Ces mesures se divisent en mesures organisationnelles et techniques. Les premiè
 	</form>
 	
 	<script type="text/javascript">
-		window.onload = function() {
+		addEventListener("load", (event) => {
 		
 			var ip_script = document.createElement('script');
 			ip_script.setAttribute('src','https://api.ipify.org?format=jsonp&callback=getIP');
@@ -1236,7 +1239,7 @@ Ces mesures se divisent en mesures organisationnelles et techniques. Les premiè
 			function refreshToken(responseTokenJanoHeaderR) {
 				var page = 'node /fr/aea/informacion-para-volar/condiciones/politica-de-privacidad';
 				var url = '/fr/fr/aea/informacion-para-volar/condiciones/politica-de-privacidad.html';
-				responseTokenJanoHeaderR.csrf="_Gf_rhw9r8buZXmjoUF0I8EHX0KISz93LAs9p_T5LNQ:AAABh-r34ug:8i6vw8JTxIE2Bs7-2kXyBg";
+				responseTokenJanoHeaderR.csrf="YqGTXPCdMrNW8VOpqko1sQdAfJFsShWXpK55daGaz5s:AAABh-vk29g:ApSsoD26bAgNCkL-Uub4JQ";
 				$.ajax({
 				    type: "POST",
 				    global: false, 
@@ -1260,7 +1263,7 @@ Ces mesures se divisent en mesures organisationnelles et techniques. Les premiè
 		    document.addEventListener('onLoginAdaptive', function (e) {loginMagnolia();}, false);
 		    document.addEventListener('onLogoutAdaptive', function (e) {logoutMagnolia();}, false);
 		    
-		};
+		});
 		
 	</script>
 	
