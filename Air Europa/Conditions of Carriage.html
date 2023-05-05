@@ -13,9 +13,12 @@
 	
 
 	<script>
-	(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
-	var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='digitalData'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
-	f.parentNode.insertBefore(j,f);})(window,document,'script','digitalData','GTM-MNJZCFD');
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MNJZCFD');
+
 	
 	</script>
 
@@ -2598,7 +2601,7 @@
 
 
 	<form id="loginPrototype" method="post" enctype="application/x-www-form-urlencoded">
-		<input type="hidden" name="csrf" value="Be_5dSt1b1TVKOCDW9u-pQP9kukqvCujRiYBhnBge3M:AAABh-rdlxg:Q3zd7EmbEvc5Sl6DXlIZxA"/>
+		<input type="hidden" name="csrf" value="RFmtFqXs0D_VYUBKlIPtVR91eyPwEZCEODp-5YFV8L4:AAABh-vhVm4:cXTd7C9jMzf95QFBk9umOg"/>
 		<input type="hidden" id="mgnlToken" name="mgnlToken" value=""/>
 		<input type="hidden" id="mgnlReturnTo" name="mgnlReturnTo" value="/fr/fr/aea/informacion-para-volar/condiciones/condiciones-de-transporte.html"/>
 		<input type="hidden" id="rskIdLogin" name="rskId"/>
@@ -2612,7 +2615,7 @@
 	</form>
 	
 	<script type="text/javascript">
-		window.onload = function() {
+		addEventListener("load", (event) => {
 		
 			var ip_script = document.createElement('script');
 			ip_script.setAttribute('src','https://api.ipify.org?format=jsonp&callback=getIP');
@@ -2715,7 +2718,7 @@
 			function refreshToken(responseTokenJanoHeaderR) {
 				var page = 'node /fr/aea/informacion-para-volar/condiciones/condiciones-de-transporte';
 				var url = '/fr/fr/aea/informacion-para-volar/condiciones/condiciones-de-transporte.html';
-				responseTokenJanoHeaderR.csrf="Be_5dSt1b1TVKOCDW9u-pQP9kukqvCujRiYBhnBge3M:AAABh-rdlxg:Q3zd7EmbEvc5Sl6DXlIZxA";
+				responseTokenJanoHeaderR.csrf="RFmtFqXs0D_VYUBKlIPtVR91eyPwEZCEODp-5YFV8L4:AAABh-vhVm4:cXTd7C9jMzf95QFBk9umOg";
 				$.ajax({
 				    type: "POST",
 				    global: false, 
@@ -2739,7 +2742,7 @@
 		    document.addEventListener('onLoginAdaptive', function (e) {loginMagnolia();}, false);
 		    document.addEventListener('onLogoutAdaptive', function (e) {logoutMagnolia();}, false);
 		    
-		};
+		});
 		
 	</script>
 	
