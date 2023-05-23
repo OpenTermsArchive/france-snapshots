@@ -3,32 +3,139 @@
   <!--[if IE 9 ]><html class="ie9 no-js"> <![endif]-->
   <!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js"> <!--<![endif]-->
   <head>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N5PGFTQ');</script>
+<!-- End Google Tag Manager -->
+
+
+<script>
+
+  console.log(location.href)
+  dataLayer.push({
+    'event': 'generic',
+    'page': {
+            'pageType': "page",
+              
+    },
+    'user': {
+            'userLogged': "0",
+            
+    }
+});
+
+  
+
+  
+
+  
+
+  if (location.href.includes('store-locator')) {
+    dataLayer.push({
+    'event': 'storeLocator'
+    });
+  }
+  const popup = document.querySelector('#footer-menu-4 .needsclick.go3894874857.kl-private-reset-css-Xuajs1')
+  if(popup) {
+    popup.addEventListener('click', function(event) {
+        dataLayer.push({
+          'event': 'newsletterSubmission',
+          'category': 'Footer',
+          });
+    });
+  } 
+  const popup2 = document.querySelector('[role="dialog"] .needsclick.go952291206.kl-private-reset-css-Xuajs1')
+  if(popup2) {
+    popup2.addEventListener('click', function(event) {
+        dataLayer.push({
+          'event': 'newsletterSubmission',
+          'category': 'Pop Up',
+          });
+    });
+  } 
+  
+
+
+
+  var selectors = ["input[name='add']", "button[name='add']", "#add-to-cart", "#AddToCartText", "#AddToCart", ".gtmatc", ".product-form__cart-submit", "#AddToCart-product-template", ".product-form__add-to-cart", ".ajaxcart__qty--plus"];
+  
+  selectors.forEach(function(selector) {
+    var element = document.querySelector(selector);
+    if(element) {
+      console.log('click')
+      element.addEventListener('click', function() {
+        console.log('clickAgai')
+        dataLayer.push({
+          'event': 'addToCart',
+          'list': 'product detail',
+          'currencyCode': 'EUR',
+          'productAddToCart': [{
+            'name':  '',
+            'id': '',
+            'category': '',
+            'category2': '',// No direct equivalent in Liquid
+            'price': '',
+            'originalPrice': '',// No direct equivalent in Liquid
+            'color': '',
+            'size': '',
+            'quantity': '1' // Adjust according to your need
+          }]
+        });
+      }, true);
+    }
+  });
+    function getURLParameter(name) {
+        return decodeURIComponent((new RegExp('[?|&]' + name + '=' + '([^&;]+?)(&|#|;|$)').exec(location.search)||[,""])[1].replace(/\+/g, '%20'))||null;
+    }
+    
+    // Check if 'account_created' parameter exists and equals 'true'
+    if (getURLParameter('account_created') == 'true') {
+        dataLayer.push({
+            'event': 'accountCreation',
+            'newsletterSubmission': 'true'
+        });
+    }
+</script>
+
+
+
+
+
+
+
+    <script>
+      if (dataLayer.map( (event) => { return event['event'] }).includes('axeptio_activate_google_analytics') ) {
+
+        window.addEventListener('load', function(){
+          // Track 'Add to Cart' event
+          
+          
+          
+      
+          // Track 'Begin Checkout' event
+          
+            document.querySelectorAll('[name="checkout"]').forEach(function(button) {
+              button.addEventListener('click', function() {
+                gtag('event', 'begin_checkout', {
+                  'items': [
+                    
+                  ]
+                });
+              });
+            });
+          
+        });
+      }
+    </script>
+
     <script src="//assets.findify.io/kookai-fr.myshopify.com.min.js" async defer></script>
     
-    <meta name="google-site-verification" content="eF39a3QDDfgSea46KwOU8tvowfeAUBpmarFI13bkV9g" />
     <meta name="viewport">
-<meta name="facebook-domain-verification" content="zbvrr3ugrbhg2xr09zkeuv0tp1k8or" />
-<meta name="google-site-verification" content="G2Ye81jRvDMF5YttzTR9q0Xhlp1xPNkdqqpSe-q84Mc" />
-    
-    <!-- Google Tag Manager 
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-TTWRH2X');</script>
-    End Google Tag Manager -->
-    
-    <!-- OneSignal Notifications 
-    <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
-    <script>
-      var OneSignal = window.OneSignal || [];
-      OneSignal.push(function() {
-        OneSignal.init({
-          appId: "ee9a2775-9508-42b6-9ff3-7c9d0fa73c7c",
-        });
-      });
-    </script>-->
-    <!-- END OneSignal Notifications -->
+    <meta name="facebook-domain-verification" content="zbvrr3ugrbhg2xr09zkeuv0tp1k8or" />
+
 
     <!-- Basic page needs ================================================== -->
     <meta charset="utf-8">
@@ -97,10 +204,10 @@
     <meta name="theme-color" content="#d9eeef">
 
     <!-- CSS ================================================== -->
-    <link href="//cdn.shopify.com/s/files/1/0046/9552/3398/t/67/assets/timber.scss.css?v=182972109649040167541684752639" rel="stylesheet" type="text/css" media="all" />
+    <link href="//cdn.shopify.com/s/files/1/0046/9552/3398/t/67/assets/timber.scss.css?v=102471680351183206041684866137" rel="stylesheet" type="text/css" media="all" />
     <link href="//cdn.shopify.com/s/files/1/0046/9552/3398/t/67/assets/axeptio-custom.css?v=100573642655832939111679318654" rel="stylesheet" type="text/css" media="all" />
 
-    <link href="//cdn.shopify.com/s/files/1/0046/9552/3398/t/67/assets/drawer.scss.css?122681" rel="stylesheet" type="text/css" media="all" />
+    <link href="//cdn.shopify.com/s/files/1/0046/9552/3398/t/67/assets/drawer.scss.css?122774" rel="stylesheet" type="text/css" media="all" />
     <link href="//cdn.shopify.com/s/files/1/0046/9552/3398/t/67/assets/sections.css?v=158140105869517803341683731611" rel="stylesheet" type="text/css" media="all" />
 
     <!-- Header hook for plugins ================================================== -->
@@ -111,7 +218,7 @@
 <meta id="in-context-paypal-metadata" data-shop-id="4695523398" data-venmo-supported="false" data-environment="production" data-locale="fr_FR" data-paypal-v4="true" data-currency="EUR">
 <script>
   (function() {
-    var scripts = ["https://cdn.shopify.com/shopifycloud/checkout-web/assets/runtime.baseline.fr.a9ed006060371ee3a746.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/checkout-web-packages-packages_checkout-react-html_src_hooks_title_ts.baseline.fr.51613ebfa79bdc4f36a4.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/vendors-node_modules_google-libphonenumber_dist_libphonenumber_js.baseline.fr.8fef19e28be4de3e1ff7.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/app_components_AddressForm_AddressForm_tsx-app_components_Step_Step_tsx-app_utilities_receipt-224401.baseline.fr.6a0d8101efcf2292b8e4.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/Information.baseline.fr.c054f90740c922d30017.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/checkout-web-ui-packages_checkout-web-ui_src_styles_global_css_ts-packages_checkout-web-ui_sr-2f1ec2.baseline.fr.daf700caefd9e0e3ac13.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/vendors-node_modules_bugsnag_js_browser_notifier_js-node_modules_formatjs_intl-datetimeformat-227e1f.baseline.fr.3ea7ce4306edbaa1a186.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/checkout-web-packages-packages_card-fields-react_src_hook_ts-packages_checkout-graphql_src_in-92a386.baseline.fr.5765f56cc515f9ce8472.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/app.baseline.fr.727ace90597e24863150.js"];
+    var scripts = ["https://cdn.shopify.com/shopifycloud/checkout-web/assets/runtime.baseline.fr.1d47f08a0191a5745ba8.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/checkout-web-packages-packages_checkout-react-html_src_hooks_title_ts.baseline.fr.51613ebfa79bdc4f36a4.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/vendors-node_modules_google-libphonenumber_dist_libphonenumber_js.baseline.fr.8fef19e28be4de3e1ff7.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/app_components_AddressForm_AddressForm_tsx-app_components_Step_Step_tsx-app_utilities_receipt-224401.baseline.fr.6a0d8101efcf2292b8e4.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/Information.baseline.fr.0cda803289efe6cc6a55.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/checkout-web-ui-packages_checkout-web-ui_src_styles_global_css_ts-packages_checkout-web-ui_sr-2f1ec2.baseline.fr.daf700caefd9e0e3ac13.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/vendors-node_modules_bugsnag_js_browser_notifier_js-node_modules_formatjs_intl-datetimeformat-227e1f.baseline.fr.3ea7ce4306edbaa1a186.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/checkout-web-packages-packages_card-fields-react_src_hook_ts-packages_checkout-graphql_src_in-92a386.baseline.fr.5765f56cc515f9ce8472.js", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/app.baseline.fr.f370bc29f0a6483173b9.js"];
     var styles = ["https://cdn.shopify.com/shopifycloud/checkout-web/assets/checkout-web-ui-packages_checkout-web-ui_src_styles_global_css_ts-packages_checkout-web-ui_sr-2f1ec2.baseline.fr.b4da27a039bd6f2c121b.css", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/vendors-node_modules_bugsnag_js_browser_notifier_js-node_modules_formatjs_intl-datetimeformat-227e1f.baseline.fr.1d319a05bc556462adb2.css", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/app.baseline.fr.721fdcf4f3214e1eeac8.css", "https://cdn.shopify.com/shopifycloud/checkout-web/assets/Information.baseline.fr.4614b4080d9d60c247c7.css"];
 
     function prefetch(url, as, callback) {
@@ -178,7 +285,7 @@ Shopify.routes.root = "/";</script>
     window.addEventListener('load', asyncLoad, false);
   }
 })();</script>
-<script id="__st">var __st={"a":4695523398,"offset":7200,"reqid":"8bb92d40-e6af-4581-a5eb-bb67654de124","pageurl":"www.kookai.fr\/pages\/conditions-generales-de-vente","s":"pages-21032468550","u":"be7c0f7e0bae","p":"page","rtyp":"page","rid":21032468550};</script>
+<script id="__st">var __st={"a":4695523398,"offset":7200,"reqid":"e9a1bf06-4601-4619-a2eb-59681d2be033","pageurl":"www.kookai.fr\/pages\/conditions-generales-de-vente","s":"pages-21032468550","u":"bd9a641d4a23","p":"page","rtyp":"page","rid":21032468550};</script>
 <script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
 <script>!function(o){o.addEventListener("DOMContentLoaded",function(){window.Shopify=window.Shopify||{},window.Shopify.recaptchaV3=window.Shopify.recaptchaV3||{siteKey:"6LcCR2cUAAAAANS1Gpq_mDIJ2pQuJphsSQaUEuc9"};var t=['form[action*="/contact"] input[name="form_type"][value="contact"]','form[action*="/comments"] input[name="form_type"][value="new_comment"]','form[action*="/account"] input[name="form_type"][value="customer_login"]','form[action*="/account"] input[name="form_type"][value="recover_customer_password"]','form[action*="/account"] input[name="form_type"][value="create_customer"]','form[action*="/contact"] input[name="form_type"][value="customer"]'].join(",");function n(e){e=e.target;null==e||null!=(e=function e(t,n){if(null==t.parentElement)return null;if("FORM"!=t.parentElement.tagName)return e(t.parentElement,n);for(var o=t.parentElement.action,r=0;r<n.length;r++)if(-1!==o.indexOf(n[r]))return t.parentElement;return null}(e,["/contact","/comments","/account"]))&&null!=e.querySelector(t)&&((e=o.createElement("script")).setAttribute("src","https://cdn.shopify.com/shopifycloud/storefront-recaptcha-v3/v0.6/index.js"),o.body.appendChild(e),o.removeEventListener("focus",n,!0),o.removeEventListener("change",n,!0),o.removeEventListener("click",n,!0))}o.addEventListener("click",n,!0),o.addEventListener("change",n,!0),o.addEventListener("focus",n,!0)})}(document);</script>
 <script integrity="sha256-4VRZk5nmuLKdyxECzHbrGZ+jOgmvT6eNFej4VE7mT80=" data-source-attribution="shopify.loadfeatures" defer="defer" src="//cdn.shopify.com/shopifycloud/shopify/assets/storefront/load_feature-e154599399e6b8b29dcb1102cc76eb199fa33a09af4fa78d15e8f8544ee64fcd.js" crossorigin="anonymous"></script>
@@ -239,7 +346,7 @@ Shopify.routes.root = "/";</script>
     <link rel="alternate" hreflang="x-default" href="https://kookai.fr/pages/conditions-generales-de-vente">
     
 
-    <script>
+      <script>
 (function() {
 	var findifyImageContainer = document.createElement('div');
 	findifyImageContainer.setAttribute('class', 'findify-image-container');
@@ -340,89 +447,16 @@ Shopify.routes.root = "/";</script>
 
 
 
-    <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-    })(window,document,'script','dataLayer','GTM-N5PGFTQ');</script>
-    <!-- End Google Tag Manager -->
     
-    
-    <!-- Global site tag (gtag.js) - Google Analytics 
-   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-16447843-7"></script>
-   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
 
-    gtag('config', 'UA-16447843-7');
-   </script> -->
-
-   <!-- Global site tag (gtag.js) - Google Ads: 774569805 
-   <script async src="https://www.googletagmanager.com/gtag/js?id=AW-774569805"></script>
-   <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-
-    gtag('config', 'AW-774569805');
-   </script>-->
-
-      <!-- Facebook Pixel Code 
-   <script>
-      !function(f,b,e,v,n,t,s)
-      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-      n.queue=[];t=b.createElement(e);t.async=!0;
-      t.src=v;s=b.getElementsByTagName(e)[0];
-      s.parentNode.insertBefore(t,s)}(window, document,'script',
-      'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '3810754125628956');
-      fbq('track', 'PageView');
-    </script>
-
-    
-    <noscript>
-      <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=662914451272572&ev=PageView&noscript=1"/>
-    </noscript> -->
-    <!-- End Facebook Pixel Code -->
-
-
-    
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/lodash.js/0.10.0/lodash.min.js"></script>
 
     <!--[if (gt IE 9)|!(IE)]><!--><script src="//cdn.shopify.com/s/files/1/0046/9552/3398/t/67/assets/lazysizes.js?v=68441465964607740661678367090" async="async"></script><!--<![endif]-->
-    <!--[if lte IE 9]><script src="//cdn.shopify.com/s/files/1/0046/9552/3398/t/67/assets/lazysizes.min.js?122681"></script><![endif]-->
+    <!--[if lte IE 9]><script src="//cdn.shopify.com/s/files/1/0046/9552/3398/t/67/assets/lazysizes.min.js?122774"></script><![endif]-->
 
     <!--[if (gt IE 9)|!(IE)]><!--><script src="//cdn.shopify.com/s/files/1/0046/9552/3398/t/67/assets/theme.js?v=62736380368709609681678367141" defer="defer"></script><!--<![endif]-->
     <!--[if lte IE 9]><script src="//cdn.shopify.com/s/files/1/0046/9552/3398/t/67/assets/theme.js?v=62736380368709609681678367141"></script><![endif]-->
-    <script>
 
-      if (dataLayer.map( (event) => { return event['event'] }).includes('axeptio_activate_google_analytics') ) {
-
-        window.addEventListener('load', function(){
-          // Track 'Add to Cart' event
-          
-          
-          
-      
-          // Track 'Begin Checkout' event
-          
-            document.querySelectorAll('[name="checkout"]').forEach(function(button) {
-              button.addEventListener('click', function() {
-                gtag('event', 'begin_checkout', {
-                  'items': [
-                    
-                  ]
-                });
-              });
-            });
-          
-        });
-      }
-    </script>
   <!-- BEGIN app block: shopify://apps/store-pickup-delivery/blocks/app-embed/5599aff0-8af1-473a-a372-ecd72a32b4d5 -->
 
 
@@ -667,7 +701,7 @@ for (var attr in meta) {
       first.parentNode.insertBefore(script, first);
     };
     trekkie.load(
-      {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":4695523398,"isMerchantRequest":null,"themeId":132509565104,"themeCityHash":"1333905364936726004","contentLanguage":"fr","currency":"EUR"},"isServerSideCookieWritingEnabled":true,"monorailRegion":"shop_domain"},"Session Attribution":{},"S2S":{"facebookCapiEnabled":false,"source":"trekkie-storefront-renderer"}}
+      {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":4695523398,"isMerchantRequest":null,"themeId":132509565104,"themeCityHash":"8536681978539478874","contentLanguage":"fr","currency":"EUR"},"isServerSideCookieWritingEnabled":true,"monorailRegion":"shop_domain"},"Session Attribution":{},"S2S":{"facebookCapiEnabled":false,"source":"trekkie-storefront-renderer"}}
     );
 
     var loaded = false;
@@ -1076,8 +1110,8 @@ for (var attr in meta) {
     
 
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TTWRH2X"
-    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+      <noscript><iframe src='https://www.googletagmanager.com/ns.html?id=GTM-N5PGFTQ'
+      height='0' width='0' style='display:none;visibility:hidden'></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <script type="text/javascript"  src="//dn3y71tq7jf07.cloudfront.net/kookai.com.au/cbar.js.php" async></script>
 
@@ -3549,7 +3583,7 @@ for (var attr in meta) {
   </script>
 
       
-      <script src="//cdn.shopify.com/s/files/1/0046/9552/3398/t/67/assets/ajax-cart.js?v=17411223865281774991678367173" type="text/javascript"></script>
+      <script src="//cdn.shopify.com/s/files/1/0046/9552/3398/t/67/assets/ajax-cart.js?v=163862810811022260411684866125" type="text/javascript"></script>
       <script>
         jQuery(function($) {
           ajaxCart.init({
@@ -4448,28 +4482,7 @@ Shopify.linkOptionSelectors = function(product) {
 
     </script>
 
-<div id="shopify-block-8308027438266116862" class="shopify-block shopify-app-block"><div
-  id="axeptio_app"
-  data-axeptio-id="632d6c9c89b7e32ec1c087da"
-  data-hotjar-id=""
-  data-aw-id=""
-  data-gtm-id="GTM-TTWRH2X"
-  data-bing-id=""
-></div>
-<style>
-  .axeptio_mount div:empty {
-    display:  block;
-  }
-</style>
-
-
-
-
-
-
-
-
-</div><div id="shopify-block-8605505498557855500" class="shopify-block shopify-app-block"><div id="secomapp_freegifts_version" data-version="3.0"></div>
+<div id="shopify-block-8605505498557855500" class="shopify-block shopify-app-block"><div id="secomapp_freegifts_version" data-version="3.0"></div>
 <!-- BEGIN app snippet: freegifts-snippet -->
 
 <link href="https://cdn.shopify.com/extensions/ee4e038d-4e1c-4c89-9292-eafab6044385/0.72.0/assets/glider.min.css" rel="stylesheet" type="text/css" media="all" />
@@ -4493,8 +4506,8 @@ Shopify.linkOptionSelectors = function(product) {
      data-animation="slideInOutTop"></div>
 <div class="toast" id="add-gift-success-toast"></div>
 
-<script defer src="https://d33a6lvgbd0fej.cloudfront.net/a29va2FpLWZyLm15c2hvcGlmeS5jb20=/freegifts_data_1684766694"></script>
-<div id="secomapp_freegifts_url" data-url="https://d33a6lvgbd0fej.cloudfront.net/a29va2FpLWZyLm15c2hvcGlmeS5jb20=/freegifts_data_1684766694"></div>
+<script defer src="https://d33a6lvgbd0fej.cloudfront.net/a29va2FpLWZyLm15c2hvcGlmeS5jb20=/freegifts_data_1684860764"></script>
+<div id="secomapp_freegifts_url" data-url="https://d33a6lvgbd0fej.cloudfront.net/a29va2FpLWZyLm15c2hvcGlmeS5jb20=/freegifts_data_1684860764"></div>
 
 <script type="text/javascript">
 
@@ -4557,6 +4570,27 @@ Shopify.linkOptionSelectors = function(product) {
 
 </script>
 <!-- END app snippet -->
+
+
+</div><div id="shopify-block-8308027438266116862" class="shopify-block shopify-app-block"><div
+  id="axeptio_app"
+  data-axeptio-id="632d6c9c89b7e32ec1c087da"
+  data-hotjar-id=""
+  data-aw-id=""
+  data-gtm-id="GTM-TTWRH2X"
+  data-bing-id=""
+></div>
+<style>
+  .axeptio_mount div:empty {
+    display:  block;
+  }
+</style>
+
+
+
+
+
+
 
 
 </div></body>
