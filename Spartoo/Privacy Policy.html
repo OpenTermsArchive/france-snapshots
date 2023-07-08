@@ -1287,78 +1287,6 @@ https://www.cnil.fr/fr/plaintes
 			<p>La présente politique de confidentialité est susceptible de modifications, compte tenu notamment des évolutions législatives et règlementaires.</p>
 		</div>
 	</div><link rel=stylesheet type="text/css" href="https://static6.spartoo.com//chat/includes/chat.css" async> <script src="https://static6.spartoo.com//chat/includes/chat.js" async> </script><script>
-			var CHAT_XMLHTTPRequest_ERROR = "Votre navigateur ne supporte pas l'objet XMLHTTPRequest...";
-			var CHAT_INVALID_FORM= "Merci de remplir le formulaire.";
-			var CHAT_MAIL_USED= "Impossible. Vous avez déjà une conversation en cours avec cette adresse e-mail.";
-		</script>
-		
-		<div id="chatMinified" style="display:none;"><i class="icon-blog"></i><div class="chatTitle">Discuter avec un conseiller</div><div style="position:absolute;top:5px;right:10px;font-size:22px;"><i class="icon-flecheHaut"></i></div></div>
-		<div id="chatStart" style="display:none;">
-			<div id="minify"><i class="icon-flecheBas"></i></div>
-			<div class="chatTitle">Discuter avec un conseiller</div>
-		</div>
-
-
-		<div id="chat" style="display:none;" >
-			<div id="minify2" ><i class="icon-flecheBas"></i></div>
-			<div class="chatTitle">Discuter avec un conseiller	<i id="boutonClose" class="icon-annuler" style="position: absolute;right:10px; font-size: 16px;top:13px;"></i></div><div id="conversation"><div id="dateLine" class="dateLine" style="display:none;"></div><div id="0" class="text">Chargement en cours...</div><div class="chatquestionnaire" id="chatquestionnaire" style="display:none">
-			<div>Nous vous serions reconnaissants de prendre quelques secondes pour évaluer la qualité de votre conversation.</div>
-			<div>
-				<div>Résolution de votre demande</div>
-				<div>
-					<input type="radio" id="q1_r" name="q1" style="display:none" value="0"><img src="https://static6.spartoo.com/chat/images/ico-sad-inactive.png" alt="" id="q1_im1" onclick="selectRadio(this,'q1_r',1)" onmouseout="if(!document.getElementById('q1_r').checked)	{this.src = 'chat/images/ico-sad-inactive.png';}else{this.src = 'chat/images/ico-sad.png';}" onmouseover="this.src = 'chat/images/ico-sad.png'" />
-					<input type="radio" id="q1_o" name="q1" style="display:none" value="6"><img src="https://static6.spartoo.com/chat/images/ico-neutral-inactive.png" alt="" id="q1_im2" onclick="selectRadio(this,'q1_o',1)" onmouseout="if(!document.getElementById('q1_o').checked)	{this.src = 'chat/images/ico-neutral-inactive.png';}else{this.src = 'chat/images/ico-neutral.png';}" onmouseover="this.src = 'chat/images/ico-neutral.png'" />
-					<input type="radio" id="q1_v" name="q1" style="display:none" value="10"><img src="https://static6.spartoo.com/chat/images/ico-happy-inactive.png" alt="" id="q1_im3" onclick="selectRadio(this,'q1_v',1)" onmouseout="if(!document.getElementById('q1_v').checked)	{this.src = 'chat/images/ico-happy-inactive.png';}else{this.src = 'chat/images/ico-happy.png';}" onmouseover="this.src = 'chat/images/ico-happy.png'" />
-				</div>
-			</div>
-			<div class="fin-div"></div>
-			<div>
-				<div>Qualité de l'écriture</div>
-				<div style="padding-top :6px;">
-					<input type="radio" id="q2_r" name="q2" style="display:none" value="0"><img src="https://static6.spartoo.com/chat/images/ico-sad-inactive.png" alt="" id="q2_im1" onclick="selectRadio(this,'q2_r',2)" onmouseout="if(!document.getElementById('q2_r').checked)	{this.src = 'chat/images/ico-sad-inactive.png';}else{this.src = 'chat/images/ico-sad.png';}" onmouseover="this.src = 'chat/images/ico-sad.png'" />
-					<input type="radio" id="q2_o" name="q2" style="display:none" value="6" ><img src="https://static6.spartoo.com/chat/images/ico-neutral-inactive.png" alt="" id="q2_im2" onclick="selectRadio(this,'q2_o',2)" onmouseout="if(!document.getElementById('q2_o').checked)	{this.src = 'chat/images/ico-neutral-inactive.png'}else{this.src = 'chat/images/ico-neutral.png';}" onmouseover="this.src = 'chat/images/ico-neutral.png'" />
-					<input type="radio" id="q2_v" name="q2" style="display:none" value="10" ><img src="https://static6.spartoo.com/chat/images/ico-happy-inactive.png" alt="" id="q2_im3" onclick="selectRadio(this,'q2_v',2)" onmouseout="if(!document.getElementById('q2_v').checked)	{this.src = 'chat/images/ico-happy-inactive.png';}else{this.src = 'chat/images/ico-happy.png';}" onmouseover="this.src = 'chat/images/ico-happy.png'" />
-				</div>
-			</div>
-			<div class="fin-div"></div>
-			<div>
-				<div>Délai <br>d'attente</div>
-				<div style="padding-top :6px;">
-					<input type="radio" id="q3_r" name="q3" style="display:none" value="0"><img src="https://static6.spartoo.com/chat/images/ico-sad-inactive.png" alt="" id="q3_im1" onclick="selectRadio(this,'q3_r',3)" onmouseout="if(!document.getElementById('q3_r').checked)	{this.src = 'chat/images/ico-sad-inactive.png';}else{this.src = 'chat/images/ico-sad.png';}" onmouseover="this.src = 'chat/images/ico-sad.png'" />
-					<input type="radio" id="q3_o" name="q3" style="display:none" value="6"><img src="https://static6.spartoo.com/chat/images/ico-neutral-inactive.png" alt="" id="q3_im2" onclick="selectRadio(this,'q3_o',3)" onmouseout="if(!document.getElementById('q3_o').checked)	{this.src = 'chat/images/ico-neutral-inactive.png';}else{this.src = 'chat/images/ico-neutral.png';}" onmouseover="this.src = 'chat/images/ico-neutral.png'" />
-					<input type="radio" id="q3_v" name="q3" style="display:none" value="10"><img src="https://static6.spartoo.com/chat/images/ico-happy-inactive.png" alt="" id="q3_im3" onclick="selectRadio(this,'q3_v',3)" onmouseout="if(!document.getElementById('q3_v').checked)	{this.src = 'chat/images/ico-happy-inactive.png';}else{this.src = 'chat/images/ico-happy.png';}" onmouseover="this.src = 'chat/images/ico-happy.png'" />
-				</div>
-			</div>
-			<div class="fin-div"></div>
-			<div>
-				<div>Quelle note donneriez-vous au conseiller qui vous a répondu ?</div>
-				<div>
-					<input type="radio" id="q6_r" name="q6" style="display:none" value="0"><img src="https://static6.spartoo.com/chat/images/ico-sad-inactive.png" alt="" id="q6_im1" onclick="selectRadio(this,'q6_r',6)" onmouseout="if(!document.getElementById('q6_r').checked)	{this.src = 'chat/images/ico-sad-inactive.png';}else{this.src = 'chat/images/ico-sad.png';}" onmouseover="this.src = 'chat/images/ico-sad.png'" />
-					<input type="radio" id="q6_o" name="q6" style="display:none" value="6"><img src="https://static6.spartoo.com/chat/images/ico-neutral-inactive.png" alt="" id="q6_im2" onclick="selectRadio(this,'q6_o',6)" onmouseout="if(!document.getElementById('q6_o').checked)	{this.src = 'chat/images/ico-neutral-inactive.png';}else{this.src = 'chat/images/ico-neutral.png';}" onmouseover="this.src = 'chat/images/ico-neutral.png'" />
-					<input type="radio" id="q6_v" name="q6" style="display:none" value="10"><img src="https://static6.spartoo.com/chat/images/ico-happy-inactive.png" alt="" id="q6_im3" onclick="selectRadio(this,'q6_v',6)" onmouseout="if(!document.getElementById('q6_v').checked)	{this.src = 'chat/images/ico-happy-inactive.png';}else{this.src = 'chat/images/ico-happy.png';}" onmouseover="this.src = 'chat/images/ico-happy.png'" />
-				</div>
-			</div>
-			<div class="fin-div"></div>
-			<div style="padding-top :10px;">
-				<textarea id="commentaire_questionnaire" style="margin-left:10px;width: 250px;height: 35px;	padding: 5px;border: 1px solid #c0c0c0;	font-family:OpenSans, Arial, sans-serif;	color: #707070;	font-size: 10px;resize:none;" onfocus="clearInput(this,'Commentaire')" >Commentaire</textarea><br />
-				<button type="submit" onclick='satisfaction("Commentaire","Veuillez r\u00e9pondre \u00e0 toutes les questions en s\u00e9lectionnant une \u00e9motic\u00f4ne.");' class="btn btn-mini btn-vert" style="float: right;margin: 5px 5px 0px 0px;">Ok</button>
-			</div>
-
-			</div>
-		</div><div id="ecrire_call" style="font-size: 10px;	color: #707070; visibility:hidden">Votre conseiller est en train d\'écrire...</div>
-	<div id="chatForm" class="chatForm" >
-		<textarea type="text" class="chatInput" placeholder="Ecrivez votre texte ici ..." id="input_msg" onkeypress='checkEnterMsg(this, event,"Ecrivez votre texte ici ...")' onfocus='clearInput(this,"Ecrivez votre texte ici ...")' >Ecrivez votre texte ici ...</textarea><br />
-		<button class="sendMessage" type="submit" onclick='sendMsg("Ecrivez votre texte ici ...");'><img src="https://static6.spartoo.com/chat/images/plane.svg" /></button>
-	</div>
-	<div id="chat_merci" style="display:none">
-	<div style="margin: 10px 0 0 0;	padding: 10px 5px 5px 5px;	background-color: #f0eeee; border-top: 1px solid #dddddd; height: 65px;color:#707070;font-size:12px;font-family:'OpenSansLight', Arial, sans-serif;cursor:pointer">
-		Nous vous remercions d'avoir participé à l'amélioration de notre relation client.
-	</div>
-	<div class="chatClose"><i  id="closeMerci" class="icon-annuler"> Fermer </i></div>
-	</div><div id="chatClose" class="chatClose">
-				<input type="text" id="mailChat" onkeypress='checkEnterMail(this, event,"Votre adresse e-mail : ")' onfocus='clearInput(this,"Votre adresse e-mail : ")' value="Votre adresse e-mail : ">
-				<button type="submit" id="send_mail"  onclick='sendMail("Votre adresse e-mail : ");' class="btn btn-mini btn-vert" style="margin:auto">Ok</button>
-			</div></div><script>
 			var chatStatus = 1;
 		</script></div>
 	<div id="footer">
@@ -1610,7 +1538,7 @@ https://www.cnil.fr/fr/plaintes
 		SP.tags.timeout = 15000;
 	</script>
 
-	<input type="hidden" value="https://www.spartoo.com/footer_tag_iframe.php?lang_id=1&lang=fr&lang2=fr&part_id=0&part=&cid=0&tab_get=lVdtb-M2DP4rQ4D7uNaveduHob3esAOG9nDtfTZkSW6E2JYryU2DYf99lCy5cqKkDVAgrviQoshHJIXWcbRY_yvXSbKeSSwKScUrhR8sWKeKFjV09odcXK_Ws2vcsvqq23T6_3gBaIGLjVJd0QmuOOa1FuTrmV6T-tuYBBDupeINGKUNYnXRkFxcS6P1zIDyIEhuUJLPPVxcvBxw1j9BX3oqlZakqd1zfX292-2uZIeE4vwK82b0-U9jXCIdTCjWgCpq4CRsHc-Xy0Wep0mmEXPnjBC0VQVByhw_BlwnosXv8JdESeq7A75Ixtui4SWrqTYYaWk-laIO9iqNKLFbDMdUAuFtwTsqkAKg9A8cDUBCXxk2XkDM76jcKj5JwSAvIF-KciNYz4j-tRtx6az9arct37W_PTyaFZudDRJkh8R4zoefd9_vb56-_fppVuIBVQq-g9DP7OGcqVtv2forUEt4Y1ILK2maxwhBgKtsUa0QwjlNnMzkwgSAEcir1KGyjhMmKDbZjVcHQMz5llEvUGk0TRrkHRjAC6n2NR0ZfFwwBs6SHitZ1EwqbZxQwvuyHs7iUmDT-EyVU3AZPrBTNKjtK4RVLyDlh5s6WjnwoTifiiV98y_I8sDjTuh8KwVLnLUmSBnQ8yqK_Hg5Y6x5LnpR-watN0yC12JLVVcjMDge0DAo8ik2RBbvC9oLbvf7Zj8dxsQItQyYTMhIdhslqQRrn__i4slkMfG9CUPSjyHZx5D8Y4hfY5LMh0w54sNWIQ7tmNpAFFoyoVCy8E3-sBpfgaL1P1OraR6wqt2ouBjYr__xQ5dFn9IoOtb5dMvmn1Pr9VEk5oJe7GV6sUZ2sUZ-scb8Yo3FxRpLX-NTgW46X2XxGZUXtfcpFh_oMHJE2Sz-jN1Sf1AVqBUDfe97zFve7B2NA1dnelwn5AaKtTxpz-wuOWYcyqdiOFCnx9t6s2Ptg1wwRoY2n5ZI6FwwfQddF3NCi15SEvCzRnKs6QWvCgwzQ6BY6OVCcYXqoez6kDQMgZkosF9bevlpCy5MmYDxwyuhFRNS-XX4aPSB8JMQwBpQGybIGQMV7wUUqWOAo5B6RQVqeA9dtEQyTAVz3nNdM02CDcuoQG-GVJMzzVEesjsNBOc4GVkoRFwnczYJ1Elj03AdwdxcMPW2del8t_AusuHEMJnosXOcEFdHCB2aQBjfEQPJdOM_tDbS1Q3RLd0VvCaTZp6OTDTujsqpZccz588wMCkBRigMZAoq_8kemGZnlOSGdZPZWU_NenqOVrOPNiS0ZjA274P6ceL3X3OMdwWsgwS_jASeFzaEeoABoNDTpa4LZEjGYgICIaqxE7pcXE6EdhIaEK5oD_5cMAEVgisenK1sxFwnB9ggWfC23oc0jvgy1sOv47wfHF5GxIM4N5BAAR4eDqGqGgUNJoHohvZMAgX6xKZnTT7tcBPyLg3gbg-Llhuta4711SH9lByuHBALELTjQn1vKz-w4wvkHfXK6M60VRDpYf5LevclmZtcJ539fOvuLC_vgMewOFI482MLb-GjMqovfrksV3iRwXMpmVdVVdIyIekKlVG6JDEmi3DCa6b7uKJv6mQah5YLV-7lZFcGS48aEAi6CwVcXAIOMyy9acmjQvtzLMRBmMuLoATec-3fSG4CA_Zo5B6O9IOKKuSSe0jCk_7mdrwusb-aDMv__Q8," id="tag_src">
+	<input type="hidden" value="https://www.spartoo.com/footer_tag_iframe.php?lang_id=1&lang=fr&lang2=fr&part_id=0&part=&cid=0&tab_get=lVffb9s4DP5XDgH2uNa_nWQPh3bd4QYc1mHtng1ZkhshtuVKctPgcP_7UbLlyomSNk9xxI8URX5cIim0DoN8_a9cXEfReiGxKCQVLxR-sGCdKlrU0MUXuV6tF9e4ZfVVt-n0_zAHtMDFRqmu6ARXHPNaC9L1Qq9J_W1MAgj3UvEGjNIGsbpoSKqlwXphQKkXJDcoSjMHFy4H3OifoM89lUpL4njcc319vdvtrmSHhOL8CvNm8vlPY1wiHkwo1oAqauAkbB1my2WeZ8s80ojMOiMEbVVBkDLHD8GJYPk5yD9HQRS77oAvkvG2aHjJaqoNBlqazqWog71KI4rGLYZjKoHwtuAdFUgBULoHDgYgoS8MGy8g5ndUbhWfpWCQF5AvRbkRrBdE_44bcWmt_W63Ld-1f9w_mJUxOxskyA6J6Zz3v-6-_7h5_Pb7l1kJB1Qp-A5CvxgPZ03dOsujvwK1hDcmtbCSBVWV4WWIkyQjaUJJFq-szOTCBIARyKvUoRodXCdMUGyyG64OgJjzLaNOoOJgnjTIOzCAF1Ltazox-FwwDJwlPVayqJlU2jihhPdlPZzFpmBM4xNVVsFm-MBO0aC2rxBWvYCUH25qaWXBh-J0Lpb01b0gywOPO6HzrRQscdaaICVAz6sgcONljbHmqehF7RocvWESvBZbqroagcHpgIZBgUuxIbJ4X9Be8HG_b-OnxZgYoZYBkwmZyD5GSSrB2qe_uHg0WYxcXG_8kPh9SPI-JH0f4taYKHEhc464sJWPQzumNhCFlswoFOWuyZ-jxlegaP3P3GqceqxqNyouBvbrP27okuBDGkXHOpduSfYxtV4fRWIu6MVexhdrJBdrpBdrZBdr5BdrLF2NDwW66VxclfwjKs9q71IsPNBh5IiySfgRu6X-oMpTKwb6_ugxb3mztzT2XFyd-Z2QGyjW8qQ9s7vkmHEon4phT52ebuvNjrX3Ahjp23xeXCKhA_QddF3MCS16SYnHzxrJqaYXvCowzAyeYqGXC8UVqoey60JiPwRmXCLPfm3p5KctuDBlAsYPp4RWTEjl1uGj0QfCT3yA0YDaMEHOGKh4L6BIHQMshdQLKlDDe-iiJZJ-KpjznuuaceRtWEYFejOkmpxpjvKQ3bFcJzjHyUh8ITqZs1mgThqbh-sIZgeo161N55uFN9EYTgyTiR47pwlxdYTQofGE8Q0xkEw3_kNrE13tEN3SXcFrMmvm8cRE4-6kHI_seOL8CQYmJcAIhYFMQeU_2QPj5IyS3LBuNjvrqVlPz6Hx5OyGhNYMxua9Xz92-685xpsC1kGCX0Y8z4sxhHqAAaDQ06WuC2RIRj4DgRDV2AptLmfCcRIaELZoD_5cMAEVgivuna3GiM8OsEGy4G2992kc8WWqh1-ned87vEyIe3FuIIECPDwcfFU18BqMPNH17Rl5CvSJTc-afNzhxudd7MHdHhYtO1rXHOurQ_o5OWw5ICNA0I4L9b2t3MBOL5A31AujO9NWQaSH-U_x3acoM0-68fO1uxt5eQc8hsWJwqkbW3gLH5VRffHLZbnCeYJwGmVVVZW0jEi8QmUQL0mISe5PeM10H1f0VZ1M49By4co9n-zKYOlBAzxBt6GAS8BhhqU3LXlQaH-OhdgLs3kRlMB7rv0byY1nwJ6M_IAj_aSi8rlkH5LwpL-5na5L6K5Gw_J__wM," id="tag_src">
 	<input type="hidden" value="1" id="tag_heightWidth">
 	<input type="hidden" value="0" id="tag_border">
 	<div id="tag_iframe_position"></div>
