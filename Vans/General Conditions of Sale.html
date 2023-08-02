@@ -1,7 +1,7 @@
 
 <!doctype html>
 <html class="no-js vfrs cms vfdp-user-guest" lang="fr">
-<!-- STATIC_ESI_PATH: /static/eu/ui/www/esi/release/23.14/esi.html STATIC_SSI_PATH: /static/eu/ui/www/esi/release/23.14/ssi.json -->
+<!-- STATIC_ESI_PATH: /static/eu/ui/www/esi/release/23.15/esi.html STATIC_SSI_PATH: /static/eu/ui/www/esi/release/23.15/ssi.json -->
 
 <head>
 <link rel="preconnect" href="https://static.vans.eu">
@@ -9,10 +9,10 @@
 <link rel="preconnect" href="https://www.googletagmanager.com">
 <link rel="preconnect" href="https://s.go-mpulse.net">
 <link rel="preconnect" href="https://fast.fonts.net">
-<!-- CMS Branch: release/rel-23.14 -->
-<!-- CMS Commit Id: 8d26504 -->
-<!-- CMS Build Version: 23.14.11.8d26504 -->
-<!-- Page Generation Time: 2023/08/01 04:43:15 -->
+<!-- CMS Branch: release/rel-23.15 -->
+<!-- CMS Commit Id: 07f202a -->
+<!-- CMS Build Version: 23.15.22.07f202a -->
+<!-- Page Generation Time: 2023/08/02 05:04:35 -->
 <title>Conditions de Vente</title>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -31,8 +31,8 @@
 		</script>
 <!-- Path: css/global-cms.css StaticAssetMapValue: -->
 <link href="https://static.vans.eu/ui/www/css/fonts.hash-b78bf09c5ca9e545683e8b2d1cbd358d.css" rel="stylesheet" type="text/css"/>
-<link href="https://static.vans.eu/ui/www/css/global-cms.hash-f15a33e057bc06c5d558a37538575302.css" rel="stylesheet" type="text/css"/>
-<link href="https://static.vans.eu/ui/www/css/topnav.hash-856ce0a2af2b92e564e6b2f7d85363b7.css" rel="stylesheet" type="text/css"/>
+<link href="https://static.vans.eu/ui/www/css/global-cms.hash-d6862950f6b96c85ef0b930a2b715405.css" rel="stylesheet" type="text/css"/>
+<link href="https://static.vans.eu/ui/www/css/topnav.hash-a187f178a9b12e50a97e3d006e77f7fa.css" rel="stylesheet" type="text/css"/>
 <link href="https://static.vans.eu/ui/www/css/footer.hash-c62d58281700105ad5b963c57666148d.css" rel="stylesheet" type="text/css"/>
 <link href="https://static.vans.eu/ui/www/css/fs/core.hash-af714df367b055ba5d0a6b112ab4c500.css" rel="stylesheet" type="text/css"/>
 <link href="https://static.vans.eu/ui/www/css/fs/grid.hash-ff15c8d0ff0256d4d72e157c7e63cb17.css" rel="stylesheet" type="text/css"/>
@@ -62,7 +62,7 @@
 <!-- ESI/SSI Start Head Remote-->
 <!-- IncludeURL: https://www.vans.fr/webapp/wcs/stores/servlet/VFPageHeaderRegistryView?storeId=10159&langId=-2&aem=true&pageCategory=help -->
 <!-- ESI include -->
-<!-- generated: Tue Aug 01 03:15:38 EDT 2023 -->
+<!-- generated: Wed Aug 02 00:53:36 EDT 2023 -->
 
 
 <meta name="storeId" content="10159" />
@@ -181,9 +181,9 @@ WCS_CONFIG.global={
 	"currencyCode":"EUR",
 	"fontsDeferredLoadingEnabled":true,
 	"isBloomReachMoreEnabled":false,
-	"ecomBuildLabel":'202307142000',
-	"ecomBuildBranch":'release/rel-23.14',
-	"ecomBuildCommitHash":'4c5a8b613f763f70f7fdb9e8beb9522794e737ce',
+	"ecomBuildLabel":'202307282000',
+	"ecomBuildBranch":'release/rel-23.15',
+	"ecomBuildCommitHash":'5da1bfe8c61424426954a6880351cc3430ac488d',
 	"pricePattern":'{currencySymbol}{priceValue}',
 	"priceDelimiters":{"thousands":".","decimal":","},
 	"instantPageEnabled":true,
@@ -338,7 +338,9 @@ WCS_CONFIG.PDP={
 	"pdpPRContainerArrowsLogicEnabled":false,
 	"pdpCrossSellDataLayerEventEnabled":true,
 	"pdpNotifyMeLiveEmailValidation": false,
-	"pdpNotifyMeCustomSuccessIcon": false
+	"pdpNotifyMeCustomSuccessIcon": false,
+	"pdpNotifyMeCustomPosition": '',
+	"pdpWishlistCustomPosition": ''
 };
 WCS_CONFIG.grid={
 	"showLoadingNotification":true,
@@ -413,7 +415,11 @@ WCS_CONFIG.checkout={
 	"hideItemUnitPrice": true,
 	"checkoutShopcartItemActionInline": true,
 	"checkoutShopcartItemActionsMobileBottom":true,
+	"checkoutShopcartItemActionsMobileBelowTotal":false,
+	"checkoutShopcartItemActionsIconEnabled":true,
+	"checkoutShopcartItemActionsDividerEnabled":false,
 	"checkoutShopcartItemRemoveAsIcon":false,
+	"checkoutShopcartShowSaveToWishlist":false,
 	"checkoutShopcartSaveForLaterEnabled":false,
 	"checkoutShopCartLeaveforPaypalPopupEnabled":false,
 	"checkoutGiftOptionEnabled":false,
@@ -500,7 +506,11 @@ WCS_CONFIG.topnav={
 WCS_CONFIG.quickView={
 	"quickViewAlternateViewsEnabled":true,
 	"qsAddToBagInactiveOnLanding": false,
-	"quickViewNotifyMeEnabled":false
+	"quickViewNotifyMeEnabled":false,
+	"inlineQuickviewMaxRowSizesSmall":2,
+	"inlineQuickviewMaxRowSizesMedium":2,
+	"inlineQuickviewMaxRowSizesLarge":3,
+	"inlineQuickviewMaxRowSizesXLarge":3
 };
 WCS_CONFIG.BackToTop={
 	"text":"Retour en haut de page",
@@ -653,7 +663,7 @@ var STORE_MESSAGES={
 
 <!-- ESI/SSI End Head Remote-->
 <!-- Path: js/manifest.static.js StaticAssetMapValue: -->
-<script src="https://static.vans.eu/ui/www/js/manifest.hash-c6485df92862c49e09dcfe0b0c6b9961.js"></script>
+<script src="https://static.vans.eu/ui/www/js/manifest.hash-d3606bce02f2ae1f2d2ebbc6866ac289.js"></script>
 <!-- Path: js/lib/require.js StaticAssetMapValue: -->
 <script data-main="cms.main" src="https://static.vans.eu/ui/www/js/lib/require.hash-c1f5c95c715a790af37bb34977d74e13.js"></script>
 <script>
@@ -694,7 +704,7 @@ var STORE_MESSAGES={
 <!-- ESI/SSI Start Head Remote-->
 <!-- IncludeURL: https://www.vans.fr/webapp/wcs/stores/servlet/VFPageHeaderScriptsView?storeId=10159&langId=-2&aem=true&pageCategory= -->
 <!-- ESI include -->
-<!-- generated: Tue Aug 01 03:15:38 EDT 2023 -->
+<!-- generated: Wed Aug 02 00:49:54 EDT 2023 -->
 
 <!-- ESI/SSI Start AAM Include-->
 	
@@ -754,7 +764,7 @@ try {
 <link rel="alternate" hreflang="en-gb" href="https://www.vans.co.uk/help/terms.html"/>
 
 <script>(window.BOOMR_mq=window.BOOMR_mq||[]).push(["addVar",{"rua.upush":"false","rua.cpush":"false","rua.upre":"false","rua.cpre":"false","rua.uprl":"false","rua.cprl":"false","rua.cprf":"false","rua.trans":"","rua.cook":"false","rua.ims":"false","rua.ufprl":"false","rua.cfprl":"false","rua.isuxp":"false","rua.texp":"norulematch"}]);</script>
-                              <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="K85KR-RUKM7-HKW9T-2CQAU-UST2B",function(){function e(){if(!o){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,i.parentNode.appendChild(e),o=!0}}function t(e){o=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(i.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",i.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"K85KR-RUKM7-HKW9T-2CQAU-UST2B";var i=document.currentScript||document.getElementsByTagName("script")[0],o=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!o)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),i.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="y32i4clik2duezgjuz3a-f-2b2edf942-clientnsv4-s.akamaihd.net",i="false"=="true"?2:1,o={"ak.v":"36","ak.cp":"504993","ak.ai":parseInt("173823",10),"ak.ol":"0","ak.cr":1,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"3b14f5fa","ak.r":34619,"ak.a2":n,"ak.m":"x","ak.n":"essl","ak.bpcip":"198.244.142.0","ak.cport":34156,"ak.gh":"2.16.76.92","ak.quicv":"","ak.tlsv":"tls1.2","ak.0rtt":"","ak.csrc":"-","ak.acc":"reno","ak.t":"1690936950","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==rNY+B8HVtkkFG8LFXpEul6uaN2M2WYxhEMc78DD9WHMctH1ADMltbWqmERZknIGbdUxBDDjLPOoVG9KzU0mUMoXxfphTbh1moPS4CS7mik2vZaZzl049ACfwpHd5EB9qqZhbqqAjrjP9qA+6lUcz3QGw10GeKGnYFihmrVHjglqZbc5FxpEeVvPhEx3GUYyFVOQGyUQoGV54n0dmrteDIP3Ma8aIXsKTruPMCa5pAj+a+wR94lXk6F8s8sB3HvuQb5GeRQBvfUJ0UVDL9l4bjGGsskAwOgsTz0OoO0cqkWIymMjVpC2bd4i5+z5yBXcZ4ktcqMt8PDa+OG9U4wwGlESVESrc8tiIlR/licCopul5RNjmTUJA4PdDZ8a3ukHci8XuTikyZanSzRVXCJM9b4jw5BIac4obTlSgzILGCjs=","ak.pv":"1380","ak.dpoabenc":"","ak.tf":i};if(""!==t)o["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))o["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(o)},rv:function(){var e=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:o,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
+                              <script>!function(e){var n="https://s.go-mpulse.net/boomerang/";if("False"=="True")e.BOOMR_config=e.BOOMR_config||{},e.BOOMR_config.PageParams=e.BOOMR_config.PageParams||{},e.BOOMR_config.PageParams.pci=!0,n="https://s2.go-mpulse.net/boomerang/";if(window.BOOMR_API_key="K85KR-RUKM7-HKW9T-2CQAU-UST2B",function(){function e(){if(!o){var e=document.createElement("script");e.id="boomr-scr-as",e.src=window.BOOMR.url,e.async=!0,i.parentNode.appendChild(e),o=!0}}function t(e){o=!0;var n,t,a,r,d=document,O=window;if(window.BOOMR.snippetMethod=e?"if":"i",t=function(e,n){var t=d.createElement("script");t.id=n||"boomr-if-as",t.src=window.BOOMR.url,BOOMR_lstart=(new Date).getTime(),e=e||d.body,e.appendChild(t)},!window.addEventListener&&window.attachEvent&&navigator.userAgent.match(/MSIE [67]\./))return window.BOOMR.snippetMethod="s",void t(i.parentNode,"boomr-async");a=document.createElement("IFRAME"),a.src="about:blank",a.title="",a.role="presentation",a.loading="eager",r=(a.frameElement||a).style,r.width=0,r.height=0,r.border=0,r.display="none",i.parentNode.appendChild(a);try{O=a.contentWindow,d=O.document.open()}catch(_){n=document.domain,a.src="javascript:var d=document.open();d.domain='"+n+"';void(0);",O=a.contentWindow,d=O.document.open()}if(n)d._boomrl=function(){this.domain=n,t()},d.write("<bo"+"dy onload='document._boomrl();'>");else if(O._boomrl=function(){t()},O.addEventListener)O.addEventListener("load",O._boomrl,!1);else if(O.attachEvent)O.attachEvent("onload",O._boomrl);d.close()}function a(e){window.BOOMR_onload=e&&e.timeStamp||(new Date).getTime()}if(!window.BOOMR||!window.BOOMR.version&&!window.BOOMR.snippetExecuted){window.BOOMR=window.BOOMR||{},window.BOOMR.snippetStart=(new Date).getTime(),window.BOOMR.snippetExecuted=!0,window.BOOMR.snippetVersion=12,window.BOOMR.url=n+"K85KR-RUKM7-HKW9T-2CQAU-UST2B";var i=document.currentScript||document.getElementsByTagName("script")[0],o=!1,r=document.createElement("link");if(r.relList&&"function"==typeof r.relList.supports&&r.relList.supports("preload")&&"as"in r)window.BOOMR.snippetMethod="p",r.href=window.BOOMR.url,r.rel="preload",r.as="script",r.addEventListener("load",e),r.addEventListener("error",function(){t(!0)}),setTimeout(function(){if(!o)t(!0)},3e3),BOOMR_lstart=(new Date).getTime(),i.parentNode.appendChild(r);else t(!1);if(window.addEventListener)window.addEventListener("load",a,!1);else if(window.attachEvent)window.attachEvent("onload",a)}}(),"".length>0)if(e&&"performance"in e&&e.performance&&"function"==typeof e.performance.setResourceTimingBufferSize)e.performance.setResourceTimingBufferSize();!function(){if(BOOMR=e.BOOMR||{},BOOMR.plugins=BOOMR.plugins||{},!BOOMR.plugins.AK){var n=""=="true"?1:0,t="",a="y32i4clik2duezgj7lnq-f-ae04ea5aa-clientnsv4-s.akamaihd.net",i="false"=="true"?2:1,o={"ak.v":"36","ak.cp":"504993","ak.ai":parseInt("173823",10),"ak.ol":"0","ak.cr":1,"ak.ipv":4,"ak.proto":"http/1.1","ak.rid":"14fd652f","ak.r":34619,"ak.a2":n,"ak.m":"x","ak.n":"essl","ak.bpcip":"198.244.142.0","ak.cport":36488,"ak.gh":"2.18.66.87","ak.quicv":"","ak.tlsv":"tls1.2","ak.0rtt":"","ak.csrc":"-","ak.acc":"reno","ak.t":"1690958555","ak.ak":"hOBiQwZUYzCg5VSAfCLimQ==zM9mRPZLsXlbnxD1zLWQqvAbUrD5TZSTLVh/vwevZvmzmqtfRHnUFlvpH1qPr9lKOFnIhiCFd2HKi+LR8NFrTU4vYqn4DWUYNY9fnHmjfFGXIFkrPT1at+cU0qeOsi4ocbCH4YdG5SLmM5wPoB+ziUpLvY0L+d/Qb0oopipiF49Z+XyNfg6GRCtdAP5886kq8PKBFT3pCXyjkHTCkfppWj/D4uYUBi9VrHo+ax8G3Ee/KFL4k+8qP22LevqlhwdjQvHTYfnFHCUHRwef0VogtMfcc6aaO9v4korLlX5RXQ5RDssWW6vlc58Axw7cCADkgLVnBeageCLoAcTVU4xjGpLluko7QlFj5BSf5oxGXvdabWebUBbL7P7ZXfkT/oJxB9ky1hL69u6CtjOENNYjZrN+XnAwPGdyvqrdosDhSsA=","ak.pv":"1380","ak.dpoabenc":"","ak.tf":i};if(""!==t)o["ak.ruds"]=t;var r={i:!1,av:function(n){var t="http.initiator";if(n&&(!n[t]||"spa_hard"===n[t]))o["ak.feo"]=void 0!==e.aFeoApplied?1:0,BOOMR.addVar(o)},rv:function(){var e=["ak.bpcip","ak.cport","ak.cr","ak.csrc","ak.gh","ak.ipv","ak.m","ak.n","ak.ol","ak.proto","ak.quicv","ak.tlsv","ak.0rtt","ak.r","ak.acc","ak.t","ak.tf"];BOOMR.removeVar(e)}};BOOMR.plugins.AK={akVars:o,akDNSPreFetchDomain:a,init:function(){if(!r.i){var e=BOOMR.subscribe;e("before_beacon",r.av,null,null),e("onbeacon",r.rv,null,null),r.i=!0}return this},is_complete:function(){return!0}}}}()}(window);</script></head>
 <body id="" class="">
 <!--[if lte IE 9]>
 	    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -765,12 +775,12 @@ try {
 <!-- IncludeURL: /utility/vans-top-nav.topnav.html -->
 <!-- ESI include -->
 
-<!-- STATIC_ESI_PATH: /static/eu/ui/www/esi/release/23.14/esi.html STATIC_SSI_PATH: /static/eu/ui/www/esi/release/23.14/ssi.json -->
+<!-- STATIC_ESI_PATH: /static/eu/ui/www/esi/release/23.15/esi.html STATIC_SSI_PATH: /static/eu/ui/www/esi/release/23.15/ssi.json -->
 
-<!-- CMS Branch: release/rel-23.14 -->
-<!-- CMS Commit Id: 8d26504 -->
-<!-- CMS Build Version: 23.14.11.8d26504 -->
-<!-- Page Generation Time: 2023/08/01 07:15:38 -->
+<!-- CMS Branch: release/rel-23.15 -->
+<!-- CMS Commit Id: 07f202a -->
+<!-- CMS Build Version: 23.15.22.07f202a -->
+<!-- Page Generation Time: 2023/08/02 04:47:18 -->
 <div class="topnav"><div id="global-body-overlay" title="Click to close"></div>
 <div class="sticky"></div>
 <header class="sticky sticky-small sticky-medium sticky-large sticky-xlarge peek-a-boo-menu topnav-header  show-menubutton-text centerlogo-small menubuttonleft" data-topnav-sticky-options='{"scroll": "999999" }' role="banner">
@@ -3708,7 +3718,7 @@ require(['jquery'], function () {
 <!-- IncludeURL: /utility/footer-2021.contentonly.html -->
 <!-- ESI include -->
 
-<!-- STATIC_ESI_PATH: /static/eu/ui/www/esi/release/23.14/esi.html STATIC_SSI_PATH: /static/eu/ui/www/esi/release/23.14/ssi.json -->
+<!-- STATIC_ESI_PATH: /static/eu/ui/www/esi/release/23.15/esi.html STATIC_SSI_PATH: /static/eu/ui/www/esi/release/23.15/ssi.json -->
 
 <div class="content parsys"><div class="customhtml2 section"><style>
 		/*
@@ -5524,9 +5534,9 @@ require(['jquery'], function ($) {
 </div>
 <script>
 		var version = {
-			build : "23.14.11.8d26504",
-			branch : "release/rel-23.14",
-			commit : "8d26504"
+			build : "23.15.22.07f202a",
+			branch : "release/rel-23.15",
+			commit : "07f202a"
 		};
 		console.info('CMS Version:', version);
 	</script>
