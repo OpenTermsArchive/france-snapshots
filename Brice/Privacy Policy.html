@@ -68,10 +68,19 @@ if(typeof window[n]!=="function"){window[n]=e;if(window.addEventListener){window
     </script>
 <script>
     window.kameleoonQueue = window.kameleoonQueue || [];
-    var CUSTOM_VISITOR_CODE = 'EjiGKjQM5MdmsmWpa-Uxb4vqCZ8qr68m0Mc=';
+    var CUSTOM_VISITOR_CODE = 'p3y8xLcEJbJRLx-L5MPEKT7iek3t7mngHJ8=';
     if(CUSTOM_VISITOR_CODE != '' && CUSTOM_VISITOR_CODE != null){
         window.kameleoonQueue.push(['Kameleoon.API.Visitor.setVisitorCode', CUSTOM_VISITOR_CODE]);
 
+        
+            var sessionQueueJson = '[{"ABTestSegment":"Control","idExperience":"207041","idVariation":0}]';
+                var sessionQueue = JSON.parse(sessionQueueJson);
+                sessionQueue.forEach((kameleoonData) => {
+                    window.kameleoonQueue.push(['Experiments.assignVariation', kameleoonData.idExperience, kameleoonData.idVariation, true]);
+                    window.kameleoonQueue.push(['Experiments.trigger', kameleoonData.idExperience, true]);
+                });
+            
+            console.log('sessionQueueJson: '+sessionQueueJson);
         
     }
     console.log('CUSTOM_VISITOR_CODE: '+CUSTOM_VISITOR_CODE);
@@ -320,7 +329,7 @@ CQuotient.trackViewProduct = function(/* Object */ cqParamData){
 <div class="header container nav-down">
 <div class="row">
 <div class="col-12">
- <div class="  navbar-header d-flex justify-content-between higher">
+<div class="  navbar-header d-flex justify-content-between higher">
 <div class="pull-left d-flex before-loading before-loading_menu-burger">
 <button class="navbar-toggler navbar-toggler-icon d-xl-none m-auto d-flex" type="button" aria-controls="sg-navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
 </button>
@@ -418,7 +427,6 @@ CQuotient.trackViewProduct = function(/* Object */ cqParamData){
 Nouveaut&eacute;s
 </a>
 </li>
-
 <li class="nav-item dropdown before-loading_menu" role="menuitem">
 <a href="#" id="vetements-responsive" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-beaver-id="Menuvetements" data-beaver-class="UniversTNR">
 V&ecirc;tements
@@ -462,7 +470,7 @@ Sweat
 </a>
 </li>
 <li class="dropdown-item d-none" role="menuitem">
- <a href="/fr-fr/l/pull/" id="HCC20-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatHCC20">
+<a href="/fr-fr/l/pull/" id="HCC20-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatHCC20">
 Pull
 </a>
 </li>
@@ -548,7 +556,7 @@ S&eacute;lection
 <a href="https://www.jules.com/fr-fr/l/mode-ecoresponsable/" id="link-haut-men-in-progress-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatlink-haut-men-in-progress">
 Collection in progress
 </a>
- </li>
+</li>
 <li class="dropdown-item d-none" role="menuitem">
 <a href="https://www.jules.com/fr-fr/l/vetements-adaptes/" id="link-haut-capsule-inclusion-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatlink-haut-capsule-inclusion">
 V&ecirc;tements adapt&eacute;s
@@ -645,7 +653,7 @@ Jean Urbanflex
 <div class="arrondisVet">
 <a href="https://www.jules.com/fr-fr/l/outlet/" onclick="opeco('opeco', 'layer-vetement-push', 'plp-outlet')">
 <picture>
-<source media="(min-width:1280px)" srcset="https://www.jules.com/on/demandware.static/-/Sites/default/dw902faa8d/jules-sfcc/PUSH/PH-Outlet.png 1x, https://www.jules.com/on/demandware.static/-/Sites/default/dw867556f8/jules-sfcc/PUSH/PH-Outlet@2x.png 2x">
+ <source media="(min-width:1280px)" srcset="https://www.jules.com/on/demandware.static/-/Sites/default/dw902faa8d/jules-sfcc/PUSH/PH-Outlet.png 1x, https://www.jules.com/on/demandware.static/-/Sites/default/dw867556f8/jules-sfcc/PUSH/PH-Outlet@2x.png 2x">
 <source srcset="https://www.jules.com/on/demandware.static/-/Sites/default/dwf940aa9b/jules-sfcc/PUSH/px.gif">
 <img alt="Outlet" src="https://www.jules.com/on/demandware.static/-/Sites/default/dw902faa8d/jules-sfcc/PUSH/PH-Outlet.png" class="img-fluid" width="350" height="154">
 </picture>
@@ -730,6 +738,7 @@ Live shopping
 ☀️ Looks d'&eacute;t&eacute;
 </a>
 </li>
+
 <li class="dropdown-item d-none" role="menuitem">
 <a href="https://www.jules.com/fr-fr/l/selection-lin/" id="link-costume-lin-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatlink-costume-lin">
 Le lin
@@ -856,7 +865,7 @@ Sous-v&ecirc;tements
 <a href="/fr-fr/l/ceinture-bretelles/" id="HCA05-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatHCA05">
 Ceinture &amp; Bretelles
 </a>
- </li>
+</li>
 <li class="dropdown-item d-none" role="menuitem">
 <a href="/fr-fr/l/maroquinerie/" id="HCA25-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatHCA25">
 Maroquinerie
@@ -902,7 +911,6 @@ Foulard Ch&egrave;che
 Eau de toilette &amp; soin
 </a>
 </li>
-
 <li class="dropdown-item d-none" role="menuitem">
 <a href="/fr-fr/l/autres-accessoires/" id="HCA13-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatHCA13">
 Autres Accessoires
@@ -1306,7 +1314,7 @@ mot de passe oubli&eacute;&nbsp;?
 </a>
 </div>
 </div>
-<input type="hidden" name="csrf_token" value="j8M--v6Y0a5ZHE4efbH2k7bEdQRVYYKTpCDfYP0iAleD-xGErauYZr8eTEkNN1mB_MONNOM98y3wVoAlApOuYJ1haD2sFNuYqLK7R4KWXKYpdRpNeuPWF4ZIm2igvoEgQzTQqvaTl1G0Y6BsLu1BDPVa3BLwa6qvOa6JagEsegUhtUgw4ts=" />
+<input type="hidden" name="csrf_token" value="JWWxAerJFhV_7pbNHDXYFfJpSrOOTrVKU47-D2Qtfm80_EmH4_Cltjkbrsix2ec8VLSyTNWrWoc-ryOu5RBAJR3f3C_UIcuc6WfnuQ4A_XNz7ycd-wFIum1daE3WiMIyLdEl9zGwL7SXKGvSxG_nChQTPq_7_km-yOGZYg82mEPAQCEDf3Q=" />
 </form>
 </div>
 </div>
@@ -1440,6 +1448,7 @@ Supprimer
 <div class="col-12">
 <div class="modal-part">
 <div class="html-slot-container">
+
 <script>
 				function redirectlogin(){
 					document.location.href="https://www.jules.com/fr-fr/client/identification/"; 
@@ -1718,7 +1727,7 @@ La présente politique de confidentialité peut être modifiée par Jules. Dans 
 </div>
 
 <script type="text/javascript">
-	    dataLayer.push({"event":"pageview","env":{"work":"prod","platform":"web","language":"fr","country":"FR","responsive":"desktop","abversion_2":"Control","abversion_3":"Control","abversion_4":"Control","currency":"eur"},"user":{"accountCreationLoyalty":"no","logged":"no"},"page":{"name":"page-include","template":"politique-de-confidentialite"},"search":{"redirect":"no"},"cart":[]});
+	    dataLayer.push({"event":"pageview","env":{"work":"prod","platform":"web","language":"fr","country":"FR","responsive":"desktop","abversion_2":"Control","abversion_3":"Control","abversion_4":"Control","currency":"eur"},"user":{"accountCreationLoyalty":"no","logged":"no"},"page":{"name":"page-include","template":"politique-de-confidentialite"},"search":{"redirect":"no"},"cart":{"id":"9d77af1998fa164a51754808b5"}});
 	</script>
 <meta value="{&quot;@context&quot;:&quot;http://schema.org/&quot;,&quot;@type&quot;:&quot;BreadcrumbList&quot;,&quot;itemListElement&quot;:[{&quot;@type&quot;:&quot;ListItem&quot;,&quot;position&quot;:1,&quot;name&quot;:&quot;politique-de-confidentialite&quot;,&quot;item&quot;:&quot;https://www.jules.com/fr-fr/static/politique-de-confidentialite.html&quot;}]}" />
 <footer>
@@ -1878,7 +1887,7 @@ Plus de points cumulés pour plus d’avantages !</p>
 <li><a href="https://www.jules.com/fr-fr/static/dpef.html" class="body3">DPEF 2022</a></li>
 <li><a href="https://www.jules.com/on/demandware.static/-/Sites-Jules-SFRA-Library/fr_FR/dwbd9c6394/PDF/declaration_conformite_23S_avril.pdf" target="_Blank" rel="noopener noreferre nofollow" class="body3">Déclaration conformité</a></li>
 <li><a href="https://t.crystalchain.io/prod-agec/company/Jules/" target="_Blank" rel="noopener noreferre" class="body3">Traçabilité produit</a></li>
-</ul> 
+</ul>
 </div>
 </div> 
 </div>
