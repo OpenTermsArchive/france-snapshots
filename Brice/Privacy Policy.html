@@ -68,19 +68,10 @@ if(typeof window[n]!=="function"){window[n]=e;if(window.addEventListener){window
     </script>
 <script>
     window.kameleoonQueue = window.kameleoonQueue || [];
-    var CUSTOM_VISITOR_CODE = 'p3y8xLcEJbJRLx-L5MPEKT7iek3t7mngHJ8=';
+    var CUSTOM_VISITOR_CODE = 'FHhUCZFkuRHGkPwTBSOCtUcVXagiduiA34o=';
     if(CUSTOM_VISITOR_CODE != '' && CUSTOM_VISITOR_CODE != null){
         window.kameleoonQueue.push(['Kameleoon.API.Visitor.setVisitorCode', CUSTOM_VISITOR_CODE]);
 
-        
-            var sessionQueueJson = '[{"ABTestSegment":"Control","idExperience":"207041","idVariation":0}]';
-                var sessionQueue = JSON.parse(sessionQueueJson);
-                sessionQueue.forEach((kameleoonData) => {
-                    window.kameleoonQueue.push(['Experiments.assignVariation', kameleoonData.idExperience, kameleoonData.idVariation, true]);
-                    window.kameleoonQueue.push(['Experiments.trigger', kameleoonData.idExperience, true]);
-                });
-            
-            console.log('sessionQueueJson: '+sessionQueueJson);
         
     }
     console.log('CUSTOM_VISITOR_CODE: '+CUSTOM_VISITOR_CODE);
@@ -329,7 +320,7 @@ CQuotient.trackViewProduct = function(/* Object */ cqParamData){
 <div class="header container nav-down">
 <div class="row">
 <div class="col-12">
-<div class="  navbar-header d-flex justify-content-between higher">
+ <div class="  navbar-header d-flex justify-content-between higher">
 <div class="pull-left d-flex before-loading before-loading_menu-burger">
 <button class="navbar-toggler navbar-toggler-icon d-xl-none m-auto d-flex" type="button" aria-controls="sg-navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
 </button>
@@ -427,6 +418,7 @@ CQuotient.trackViewProduct = function(/* Object */ cqParamData){
 Nouveaut&eacute;s
 </a>
 </li>
+
 <li class="nav-item dropdown before-loading_menu" role="menuitem">
 <a href="#" id="vetements-responsive" class="nav-link dropdown-toggle" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-beaver-id="Menuvetements" data-beaver-class="UniversTNR">
 V&ecirc;tements
@@ -470,7 +462,7 @@ Sweat
 </a>
 </li>
 <li class="dropdown-item d-none" role="menuitem">
-<a href="/fr-fr/l/pull/" id="HCC20-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatHCC20">
+ <a href="/fr-fr/l/pull/" id="HCC20-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatHCC20">
 Pull
 </a>
 </li>
@@ -556,7 +548,7 @@ S&eacute;lection
 <a href="https://www.jules.com/fr-fr/l/mode-ecoresponsable/" id="link-haut-men-in-progress-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatlink-haut-men-in-progress">
 Collection in progress
 </a>
-</li>
+ </li>
 <li class="dropdown-item d-none" role="menuitem">
 <a href="https://www.jules.com/fr-fr/l/vetements-adaptes/" id="link-haut-capsule-inclusion-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatlink-haut-capsule-inclusion">
 V&ecirc;tements adapt&eacute;s
@@ -653,7 +645,7 @@ Jean Urbanflex
 <div class="arrondisVet">
 <a href="https://www.jules.com/fr-fr/l/outlet/" onclick="opeco('opeco', 'layer-vetement-push', 'plp-outlet')">
 <picture>
- <source media="(min-width:1280px)" srcset="https://www.jules.com/on/demandware.static/-/Sites/default/dw902faa8d/jules-sfcc/PUSH/PH-Outlet.png 1x, https://www.jules.com/on/demandware.static/-/Sites/default/dw867556f8/jules-sfcc/PUSH/PH-Outlet@2x.png 2x">
+<source media="(min-width:1280px)" srcset="https://www.jules.com/on/demandware.static/-/Sites/default/dw902faa8d/jules-sfcc/PUSH/PH-Outlet.png 1x, https://www.jules.com/on/demandware.static/-/Sites/default/dw867556f8/jules-sfcc/PUSH/PH-Outlet@2x.png 2x">
 <source srcset="https://www.jules.com/on/demandware.static/-/Sites/default/dwf940aa9b/jules-sfcc/PUSH/px.gif">
 <img alt="Outlet" src="https://www.jules.com/on/demandware.static/-/Sites/default/dw902faa8d/jules-sfcc/PUSH/PH-Outlet.png" class="img-fluid" width="350" height="154">
 </picture>
@@ -738,7 +730,6 @@ Live shopping
 ☀️ Looks d'&eacute;t&eacute;
 </a>
 </li>
-
 <li class="dropdown-item d-none" role="menuitem">
 <a href="https://www.jules.com/fr-fr/l/selection-lin/" id="link-costume-lin-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatlink-costume-lin">
 Le lin
@@ -866,6 +857,7 @@ Sous-v&ecirc;tements
 Ceinture &amp; Bretelles
 </a>
 </li>
+
 <li class="dropdown-item d-none" role="menuitem">
 <a href="/fr-fr/l/maroquinerie/" id="HCA25-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatHCA25">
 Maroquinerie
@@ -1036,7 +1028,7 @@ Outlet
 <a href="https://www.jules.com/fr-fr/l/maillot-de-bain/" onclick="opeco('opeco', 'layer-accessoire-push', 'plp-mdb')">
 <picture>
 <source media="(min-width:1280px)" srcset="https://www.jules.com/on/demandware.static/-/Sites/default/dwb048e66d/jules-sfcc/PUSH/PH-Maillot-De-Bain-FR.jpg 1x, https://www.jules.com/on/demandware.static/-/Sites/default/dw494f2659/jules-sfcc/PUSH/PH-Maillot-De-Bain-FR@2x.jpg 2x">
-<source srcset="https://www.jules.com/on/demandware.static/-/Sites/default/dwf940aa9b/jules-sfcc/PUSH/px.gif">
+ <source srcset="https://www.jules.com/on/demandware.static/-/Sites/default/dwf940aa9b/jules-sfcc/PUSH/px.gif">
 <img alt="Maillots de bain" src="https://www.jules.com/on/demandware.static/-/Sites/default/dwb048e66d/jules-sfcc/PUSH/PH-Maillot-De-Bain-FR.jpg" class="img-fluid pushNav" width="350" height="154">
 </picture>
 </a>
@@ -1314,7 +1306,7 @@ mot de passe oubli&eacute;&nbsp;?
 </a>
 </div>
 </div>
-<input type="hidden" name="csrf_token" value="JWWxAerJFhV_7pbNHDXYFfJpSrOOTrVKU47-D2Qtfm80_EmH4_Cltjkbrsix2ec8VLSyTNWrWoc-ryOu5RBAJR3f3C_UIcuc6WfnuQ4A_XNz7ycd-wFIum1daE3WiMIyLdEl9zGwL7SXKGvSxG_nChQTPq_7_km-yOGZYg82mEPAQCEDf3Q=" />
+<input type="hidden" name="csrf_token" value="ZaAgVgoy8HCY1ZQ3CnXpWfWXdYaUQ-KkkfPOgKQF8rMgTGyrxQbB-XlnqcFTot152x-Ek_93F367C-tkJdRpPnaaP1zEPhPMtJRCN9Irr1O_tJ_RrSp8Ucl0loDHzbZTuwLScNnkrrG8UA--u44eyW96LTJKU027IkUTSqQUFsxc6qhgfiI=" />
 </form>
 </div>
 </div>
@@ -1448,7 +1440,6 @@ Supprimer
 <div class="col-12">
 <div class="modal-part">
 <div class="html-slot-container">
-
 <script>
 				function redirectlogin(){
 					document.location.href="https://www.jules.com/fr-fr/client/identification/"; 
@@ -1552,7 +1543,7 @@ Supprimer
 <p class="text-white text-center mx-auto py-2">Réservez en ligne, essayez en boutique !</p>
 </div>
 </div>
-</div>
+ </div>
 </div>
 </div>
 <script type="text/javascript">
@@ -1727,7 +1718,7 @@ La présente politique de confidentialité peut être modifiée par Jules. Dans 
 </div>
 
 <script type="text/javascript">
-	    dataLayer.push({"event":"pageview","env":{"work":"prod","platform":"web","language":"fr","country":"FR","responsive":"desktop","abversion_2":"Control","abversion_3":"Control","abversion_4":"Control","currency":"eur"},"user":{"accountCreationLoyalty":"no","logged":"no"},"page":{"name":"page-include","template":"politique-de-confidentialite"},"search":{"redirect":"no"},"cart":{"id":"9d77af1998fa164a51754808b5"}});
+	    dataLayer.push({"event":"pageview","env":{"work":"prod","platform":"web","language":"fr","country":"FR","responsive":"desktop","abversion_2":"Control","abversion_3":"Control","abversion_4":"Control","currency":"eur"},"user":{"accountCreationLoyalty":"no","logged":"no"},"page":{"name":"page-include","template":"politique-de-confidentialite"},"search":{"redirect":"no"},"cart":[]});
 	</script>
 <meta value="{&quot;@context&quot;:&quot;http://schema.org/&quot;,&quot;@type&quot;:&quot;BreadcrumbList&quot;,&quot;itemListElement&quot;:[{&quot;@type&quot;:&quot;ListItem&quot;,&quot;position&quot;:1,&quot;name&quot;:&quot;politique-de-confidentialite&quot;,&quot;item&quot;:&quot;https://www.jules.com/fr-fr/static/politique-de-confidentialite.html&quot;}]}" />
 <footer>
@@ -1967,7 +1958,7 @@ OK
 <span>FR/fr</span>
 </a>
 </div>
-<div class="modal right fade" id="localeSelectModal" tabindex="-1" role="dialog" aria-labelledby="localeSelectModal">
+ <div class="modal right fade" id="localeSelectModal" tabindex="-1" role="dialog" aria-labelledby="localeSelectModal">
 <div class="modal-dialog" role="document">
 <div class="modal-content">
 <div class="modal-body row collapsible-xs">
