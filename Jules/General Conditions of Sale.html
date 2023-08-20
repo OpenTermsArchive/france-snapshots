@@ -72,10 +72,19 @@ if(typeof window[n]!=="function"){window[n]=e;if(window.addEventListener){window
     </script>
 <script>
     window.kameleoonQueue = window.kameleoonQueue || [];
-    var CUSTOM_VISITOR_CODE = 'II1SqtuM6u4rYxa5XHcot1l-9_OeqBydBv0=';
+    var CUSTOM_VISITOR_CODE = '3YO7ZqmpkOoPHoQxWn2BKqo5_bCnlbSMCUo=';
     if(CUSTOM_VISITOR_CODE != '' && CUSTOM_VISITOR_CODE != null){
         window.kameleoonQueue.push(['Kameleoon.API.Visitor.setVisitorCode', CUSTOM_VISITOR_CODE]);
 
+        
+            var sessionQueueJson = '[{"ABTestSegment":"bottomOnly","idExperience":"207041","idVariation":869453},{"ABTestSegment":"informationReassurance","idExperience":"207778","idVariation":870872}]';
+                var sessionQueue = JSON.parse(sessionQueueJson);
+                sessionQueue.forEach((kameleoonData) => {
+                    window.kameleoonQueue.push(['Experiments.assignVariation', kameleoonData.idExperience, kameleoonData.idVariation, true]);
+                    window.kameleoonQueue.push(['Experiments.trigger', kameleoonData.idExperience, true]);
+                });
+            
+            console.log('sessionQueueJson: '+sessionQueueJson);
         
     }
     console.log('CUSTOM_VISITOR_CODE: '+CUSTOM_VISITOR_CODE);
@@ -1303,7 +1312,7 @@ mot de passe oubli&eacute;&nbsp;?
 </a>
 </div>
 </div>
-<input type="hidden" name="csrf_token" value="OmdyAQZz0Oe-sZiP_iW6yi90W-yao2rvmDdfwIjr3i1jvQPqqQdhL1Za7KNEQ-J1bdI32vDgVFaYgSz8fN4yNDKzGL4Yl1Xnj3XzK4JoJwemZVuId5mD-ef-y9LWe4MoHH0VSc_aK8wWKKy8wlZWtcXmk1FaNgmk4N6fcS231Z8Ons7gO54=" />
+<input type="hidden" name="csrf_token" value="h_7ANIsOZkyP-p4ZnwuqJ6utK--W0CWj8GjfirktTQRE_yamRQyir8XWFG1lR6IuHiSp-BpDiqqN-pJtE6QDqVy_oViJNiWh0jzyBLlKbym-8GpZekgvvVW5yogsH9IYKr67dBWZ5So9OkUpz8PLYZtoSL8wo_DM67w5Gd8UWRziq8b1D80=" />
 </form>
 </div>
 </div>
@@ -3774,7 +3783,7 @@ du défendeur ou du ressort du siège social de Jules.
 </div>
 
 <script type="text/javascript">
-	    dataLayer.push({"event":"pageview","env":{"work":"prod","platform":"web","language":"fr","country":"FR","responsive":"desktop","abversion_2":"Control","abversion_3":"Control","abversion_4":"Control","currency":"eur"},"user":{"accountCreationLoyalty":"no","logged":"no"},"page":{"name":"page-include","template":"cgv"},"search":{"redirect":"no"},"cart":[]});
+	    dataLayer.push({"event":"pageview","env":{"work":"prod","platform":"web","language":"fr","country":"FR","responsive":"desktop","abversion_2":"Control","abversion_3":"Control","abversion_4":"Control","currency":"eur"},"user":{"accountCreationLoyalty":"no","logged":"no"},"page":{"name":"page-include","template":"cgv"},"search":{"redirect":"no"},"cart":{"id":"b16ab051b4c7ac299a6825abd7"}});
 	</script>
 <meta value="{&quot;@context&quot;:&quot;http://schema.org/&quot;,&quot;@type&quot;:&quot;BreadcrumbList&quot;,&quot;itemListElement&quot;:[{&quot;@type&quot;:&quot;ListItem&quot;,&quot;position&quot;:1,&quot;name&quot;:&quot;cgv&quot;,&quot;item&quot;:&quot;https://www.jules.com/fr-fr/static/cgv.html&quot;}]}" />
 <footer>
