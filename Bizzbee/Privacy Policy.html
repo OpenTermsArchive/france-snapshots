@@ -15,8 +15,8 @@ else{setTimeout(function(){a(e)},5)}}}function e(n,r,o,c,s){function e(e,t,n,a){
 var i=typeof a.data==="string";var e;try{e=i?JSON.parse(a.data):a.data}catch(t){return}if(e[o]){var r=e[o];window[n](r.command,r.parameter,function(e,t){var n={};n[c]={returnValue:e,success:t,callId:r.callId};a.source.postMessage(i?JSON.stringify(n):n,"*")},r.version)}}
 if(typeof window[n]!=="function"){window[n]=e;if(window.addEventListener){window.addEventListener("message",t,false)}else{window.attachEvent("onmessage",t)}}}e("__tcfapi","__tcfapiBuffer","__tcfapiCall","__tcfapiReturn");a("__tcfapiLocator");(function(e){
   var t=document.createElement("script");t.id="spcloader";t.type="text/javascript";t.async=true;t.src="https://sdk.privacy-center.org/"+e+"/loader.js?target="+document.location.hostname;t.charset="utf-8";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)})("7d808e03-6c21-4940-b24e-01fcb598c4c4")})();</script>
-<link rel="preload" href="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1693301211833/js/loadJquery.js" as="script" />
-<script type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1693301211833/js/loadJquery.js"></script>
+<link rel="preload" href="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1693325627692/js/loadJquery.js" as="script" />
+<script type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1693325627692/js/loadJquery.js"></script>
 <script type="text/javascript">
         // Duration in milliseconds to wait while the Kameleoon application file is loaded
         var kameleoonLoadingTimeout = 1000;
@@ -54,20 +54,29 @@ if(typeof window[n]!=="function"){window[n]=e;if(window.addEventListener){window
         }
     </script>
 <script type="text/javascript" src="//usgqb5loji.kameleoon.eu/kameleoon.js" async="true"></script>
-<script defer type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1693301211833/js/loadAlertNotification.js"></script>
-<script defer type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1693301211833/js/loadGtm.js"></script>
-<script defer type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1693301211833/js/main.js"></script>
-<script defer type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1693301211833/js/common.js"></script>
-<script defer type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1693301211833/js/uiShow.js">
+<script defer type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1693325627692/js/loadAlertNotification.js"></script>
+<script defer type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1693325627692/js/loadGtm.js"></script>
+<script defer type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1693325627692/js/main.js"></script>
+<script defer type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1693325627692/js/common.js"></script>
+<script defer type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1693325627692/js/uiShow.js">
     </script>
-<script defer type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1693301211833/js/targetToSell.js">
+<script defer type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1693325627692/js/targetToSell.js">
     </script>
 <script>
     window.kameleoonQueue = window.kameleoonQueue || [];
-    var CUSTOM_VISITOR_CODE = 'KAp9Lfo5eDRLHxM5SayI_PJwdgnCao2KwoM=';
+    var CUSTOM_VISITOR_CODE = '9QHi8LOOW1qFp9Oa-Yf2aO2o14d_9Ev79yQ=';
     if(CUSTOM_VISITOR_CODE != '' && CUSTOM_VISITOR_CODE != null){
         window.kameleoonQueue.push(['Kameleoon.API.Visitor.setVisitorCode', CUSTOM_VISITOR_CODE]);
 
+        
+            var sessionQueueJson = '[{"ABTestSegment":"Control","idExperience":"207040","idVariation":0},{"ABTestSegment":"Control","idExperience":"207780","idVariation":0}]';
+                var sessionQueue = JSON.parse(sessionQueueJson);
+                sessionQueue.forEach((kameleoonData) => {
+                    window.kameleoonQueue.push(['Experiments.assignVariation', kameleoonData.idExperience, kameleoonData.idVariation, true]);
+                    window.kameleoonQueue.push(['Experiments.trigger', kameleoonData.idExperience, true]);
+                });
+            
+            console.log('sessionQueueJson: '+sessionQueueJson);
         
     }
     console.log('CUSTOM_VISITOR_CODE: '+CUSTOM_VISITOR_CODE);
@@ -87,14 +96,14 @@ if(typeof window[n]!=="function"){window[n]=e;if(window.addEventListener){window
 <link rel="icon" type="image/png" href="https://www.b-z-b.com/on/demandware.static/-/Sites/default/dw6c495ea0/96.png" sizes="96x96" />
 <link rel="icon" type="image/png" href="https://www.b-z-b.com/on/demandware.static/-/Sites/default/dw15616d67/128.png" sizes="128x128" />
 <link rel="icon" type="image/png" href="https://www.b-z-b.com/on/demandware.static/-/Sites/default/dw7dce899d/196.png" sizes="196x196" />
-<link rel="preload" href="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1693301211833/fonts/fontawesome-webfont.woff2?v=4.7.0" as="font" type="font/woff2" crossorigin />
-<link rel="preload" href="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1693301211833/fonts/icomoon.ttf?mt5112" as="font" type="font/ttf" crossorigin />
+<link rel="preload" href="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1693325627692/fonts/fontawesome-webfont.woff2?v=4.7.0" as="font" type="font/woff2" crossorigin />
+<link rel="preload" href="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1693325627692/fonts/icomoon.ttf?mt5112" as="font" type="font/ttf" crossorigin />
 <link rel="dns-prefetch" href="//fonts.googleapis.com" />
 <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
 <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" />
-<link rel="stylesheet" href="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1693301211833/css/global.css" />
-<link rel="stylesheet" href="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1693301211833/css/radiusCTA.css" />
+<link rel="stylesheet" href="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1693325627692/css/global.css" />
+<link rel="stylesheet" href="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1693325627692/css/radiusCTA.css" />
 <meta name="google-site-verification" content="ZbPuIEkyRYIStVIFcgHf0n_gFruNpgx-VQSBdt-DzOA" />
 <script type="text/javascript">
         var dataLayer = [];
@@ -715,7 +724,7 @@ BZB Premium🧵
 </a>
 </li>
 <li class="dropdown-item d-none" role="menuitem">
-<a href="/vetement-femme/cares/" id="cares-femme-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatcares-femme">
+<a href="https://www.b-z-b.com/vetement-femme/ecoresponsable/" id="link-cares-femme-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatlink-cares-femme">
 C.A.R.E.S. 🌍
 </a>
 </li>
@@ -984,7 +993,7 @@ BZB Premium🧵
 </a>
 </li>
 <li class="dropdown-item d-none" role="menuitem">
-<a href="/vetement-homme/cares/" id="cares-homme-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatcares-homme">
+<a href="https://www.b-z-b.com/vetement-homme/ecoresponsable/" id="link-cares-homme-responsive" role="button" class="dropdown-link" data-beaver-id="sousCatlink-cares-homme">
 C.A.R.E.S. 🌍
 </a>
 </li>
@@ -1462,7 +1471,7 @@ mot de passe oubli&eacute;&nbsp;?
 </a>
 </div>
 </div>
-<input type="hidden" name="csrf_token" value="7B21sU2DKn7MPUhVZ2s8VOynSeg_QvN7zZmf5QAz3frdkU4H_SO0RFYRZT1nCln9nnSrsqY1Q5x4-DQxTCl3Tm4g_9ffNFSa_gzwJVCHOA4MVWQFW8hUK9w8IdPssE6kwe1jZGmzBwfNi7RIPcDCJ3IICbXya4cvWw88OW0nDNxNxwlSNqQ=" />
+<input type="hidden" name="csrf_token" value="1fyP5LXBRPvXS-H_axembWCKzXQzzYNdzy05IV3SB9-yxW5WiGjwr8KgsUXRhRxhL29RHm3ep9YJqm83QFT_qBZKZGyJAZOFuqxbWaT7CmXW13rgWuIp2id5Nzugb63sOnTC_GDPdc1UDL3sg_zd5TTXZFs2Jr9cBjxV7Z4p7oPvGF1JPWE=" />
 </form>
 </div>
 </div>
@@ -2326,7 +2335,7 @@ par email de toute modification importante et la version révisée sera disponib
 </div>
 
 <script type="text/javascript">
-	    dataLayer.push({"event":"pageview","env":{"work":"prod","platform":"web","language":"fr","country":"FR","responsive":"desktop","abversion_2":"Control","abversion_3":"Control","abversion_4":"Control","currency":"eur"},"user":{"accountCreationLoyalty":"no","logged":"no"},"page":{"name":"page-include","template":"politique-de-confidentialite"},"search":{"redirect":"no"},"cart":[]});
+	    dataLayer.push({"event":"pageview","env":{"work":"prod","platform":"web","language":"fr","country":"FR","responsive":"desktop","abversion_2":"Control","abversion_3":"Control","abversion_4":"Control","currency":"eur"},"user":{"accountCreationLoyalty":"no","logged":"no"},"page":{"name":"page-include","template":"politique-de-confidentialite"},"search":{"redirect":"no"},"cart":{"id":"0069bb15b4df3bd612421d509c"}});
 	</script>
 <meta value="{&quot;@context&quot;:&quot;http://schema.org/&quot;,&quot;@type&quot;:&quot;BreadcrumbList&quot;,&quot;itemListElement&quot;:[{&quot;@type&quot;:&quot;ListItem&quot;,&quot;position&quot;:1,&quot;name&quot;:&quot;politique-de-confidentialite&quot;,&quot;item&quot;:&quot;https://www.b-z-b.com/politique-de-confidentialite.html&quot;}]}" />
 <footer>
@@ -3010,7 +3019,7 @@ Plus de<br/>
 <div class="content-asset">
 <ul>
 <li>Carte cadeau <br></li>
-<li><a href="https://www.b-z-b.com/Ecarte-cadeau/">Offrir une e-carte cadeau</a></li>
+
 <li><a href="https://www.b-z-b.com/consultation-carte-cadeau/">Consulter le solde</a></li>
 <li><a href="https://www.b-z-b.com/carte-cadeau/">Offrir une carte cadeau </a></li>
 <li><a href="https://www.b-z-b.com/activation-carte-cadeau/">Activer ma carte</a></li>
@@ -3140,7 +3149,7 @@ OK
 <div class="sort-background"></div>
 <div class="share-background"></div>
 <script>const pwaApplicationServerPublicKey = "BEbOxNuES60bKLdbM7S1KSTHBWp4SowS8VannQFhV8oK6_0e0lUJbUIYdjlgzrlCZmfM11vIvzIFMHK2UTbN3SQ";</script>
-<script src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1693301211833/js/pwa.js" async></script>
+<script src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1693325627692/js/pwa.js" async></script>
 <script async>
 
         (function (d, s) {
@@ -3169,9 +3178,9 @@ function trackPage() {
 /* ]]> */
 // -->
 </script>
-<script type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1693301211833/internal/jscript/dwanalytics-22.2.js" async="async" onload="trackPage()"></script>
+<script type="text/javascript" src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1693325627692/internal/jscript/dwanalytics-22.2.js" async="async" onload="trackPage()"></script>
 
-<script src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1693301211833/internal/jscript/dwac-21.7.js" type="text/javascript" async="async"></script>
+<script src="/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1693325627692/internal/jscript/dwac-21.7.js" type="text/javascript" async="async"></script>
 <script src="https://cdn.cquotient.com/js/v2/gretel.min.js" type="text/javascript" async="async"></script>
 </body>
 </html>
