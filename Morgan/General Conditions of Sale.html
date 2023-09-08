@@ -152,7 +152,7 @@
 <head>
 <!--[if gt IE 9]><!-->
 <script>//common/scripts.isml</script>
-<script defer type="text/javascript" src="/on/demandware.static/Sites-M2T_FR_SFRA-Site/-/fr_FR/v1694102954510/js/main.js"></script>
+<script defer type="text/javascript" src="/on/demandware.static/Sites-M2T_FR_SFRA-Site/-/fr_FR/v1694123840003/js/main.js"></script>
 <!--<![endif]-->
 <meta charset="UTF-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -165,10 +165,10 @@
 <meta name="facebook-domain-verification" content="4ot511jjp1mq8f63xo1etoe7plthct" />
 <meta name="google-site-verification" content="oz0B2cghJ8cNaCTFTKeCioEEkpiepXfvOfghs662Dm4" />
 <link rel="shortcut icon" href="/on/demandware.static/Sites-M2T_FR_SFRA-Site/-/default/dwd4e6a1f5/images/favicons/favicon.ico" />
-<link rel="stylesheet" href="/on/demandware.static/Sites-M2T_FR_SFRA-Site/-/fr_FR/v1694102954510/css/global.css" />
-<link rel="stylesheet" href="/on/demandware.static/Sites-M2T_FR_SFRA-Site/-/fr_FR/v1694102954510/css/multipleFolder.css" />
+<link rel="stylesheet" href="/on/demandware.static/Sites-M2T_FR_SFRA-Site/-/fr_FR/v1694123840003/css/global.css" />
+<link rel="stylesheet" href="/on/demandware.static/Sites-M2T_FR_SFRA-Site/-/fr_FR/v1694123840003/css/multipleFolder.css" />
 <link rel="alternate" href="https://www.morgandetoi.fr/conditions-generales-vente" hreflang="fr-FR" />
-<link rel="stylesheet" href="/on/demandware.static/Sites-M2T_FR_SFRA-Site/-/fr_FR/v1694102954510/css/skin/skin.css" />
+<link rel="stylesheet" href="/on/demandware.static/Sites-M2T_FR_SFRA-Site/-/fr_FR/v1694123840003/css/skin/skin.css" />
 <script type="text/javascript">
     var pageContext = {"title":"conditions-generales-vente","type":"content","ns":"content"};
 //<![CDATA[
@@ -214,7 +214,7 @@
                 script.type = 'text/javascript';
                 script.async = true;
                 script.id = 'tc_container';
-                script.src = '/on/demandware.static/-/Library-Sites-SharedLibraryMorgan/fr_FR/v1694102954510/tagcommander/20230727/tc_Morgan_1.js'
+                script.src = '/on/demandware.static/-/Library-Sites-SharedLibraryMorgan/fr_FR/v1694123840003/tagcommander/20230727/tc_Morgan_1.js'
 
                 var existingScript = document.getElementById(script.id);
                 if (existingScript) {
@@ -391,9 +391,9 @@ CQuotient.trackViewProduct = function(/* Object */ cqParamData){
 </head>
 <body>
 <div class="page" data-action="Search-ShowContent" data-querystring="fdid=conditions-generales-vente">
-<link rel="stylesheet" href="/on/demandware.static/Sites-M2T_FR_SFRA-Site/-/fr_FR/v1694102954510/css/globale/flags.css" />
-<link rel="stylesheet" href="/on/demandware.static/Sites-M2T_FR_SFRA-Site/-/fr_FR/v1694102954510/css/globale/styles.css" />
-<script type="text/javascript" id="globale-script-loader-data" src="/on/demandware.static/Sites-M2T_FR_SFRA-Site/-/fr_FR/v1694102954510/js/geScriptLoader.js">
+<link rel="stylesheet" href="/on/demandware.static/Sites-M2T_FR_SFRA-Site/-/fr_FR/v1694123840003/css/globale/flags.css" />
+<link rel="stylesheet" href="/on/demandware.static/Sites-M2T_FR_SFRA-Site/-/fr_FR/v1694123840003/css/globale/styles.css" />
+<script type="text/javascript" id="globale-script-loader-data" src="/on/demandware.static/Sites-M2T_FR_SFRA-Site/-/fr_FR/v1694123840003/js/geScriptLoader.js">
 {
   "action": "Globale-ScriptLoaderData",
   "queryString": "",
@@ -2489,6 +2489,107 @@ footer .footer-links .footer-container {
 <a href="/panier/" class="btn btn-primary btn-purchase">Voir mon panier</a>
 </div>
 <div class="atc-dialog-reco hidden">
+
+<script>
+(function(){
+// window.CQuotient is provided on the page by the Analytics code:
+var cq = window.CQuotient;
+if (cq && ('function' == typeof cq.getCQUserId)
+&& ('function' == typeof cq.getCQCookieId)
+&& ('function' == typeof cq.getCQHashedEmail)
+&& ('function' == typeof cq.getCQHashedLogin)) {
+var recommender = '[[&quot;product-to-product&quot;]]';
+// removing any leading/trailing square brackets and escaped quotes:
+recommender=recommender.replace(/\[|\]|&quot;/g,'');
+var separator = '|||';
+var slotConfigurationUUID = 'a6792ef369744632b39d94a108';
+var contextAUID = '';
+var contextSecondaryAUID = '';
+var contextAltAUID = '';
+var contextType = '';
+var anchorsArray = [];
+var contextAUIDs = contextAUID.split(separator);
+var contextSecondaryAUIDs = contextSecondaryAUID.split(separator);
+var contextAltAUIDs = contextAltAUID.split(separator);
+var contextTypes = contextType.split(separator);
+var slotName = 'slot-success-add-cart-reco-einstein';
+var slotConfigId = 'slot-success-add-cart-reco-einstein';
+var slotConfigTemplate = 'slots/recommendation/einstein_3.isml';
+if (contextAUIDs.length == contextSecondaryAUIDs.length)
+{
+for (i = 0; i < contextAUIDs.length; i++) {
+anchorsArray.push({id: contextAUIDs[i], sku: contextSecondaryAUIDs[i], type: contextTypes[i], alt_id: contextAltAUIDs[i]});
+}
+} else {
+anchorsArray = [{id: contextAUID, sku: contextSecondaryAUID, type: contextType, alt_id: contextAltAUID}];
+}
+var urlToCall = '/on/demandware.store/Sites-M2T_FR_SFRA-Site/fr_FR/CQRecomm-Start';
+var params = {
+userId: cq.getCQUserId(),
+cookieId: cq.getCQCookieId(),
+emailId: cq.getCQHashedEmail(),
+loginId: cq.getCQHashedLogin(),
+anchors: anchorsArray,
+slotId: slotName,
+slotConfigId: slotConfigId,
+slotConfigTemplate: slotConfigTemplate,
+ccver: '1.03'
+};
+if (cq.getRecs) {
+cq.getRecs(cq.clientId, recommender, params, cb);
+} else {
+cq.widgets = cq.widgets || [];
+cq.widgets.push({
+recommenderName: recommender,
+parameters: params,
+callback: cb
+});
+}
+};
+function cb(parsed) {
+var arr = parsed[recommender].recs;
+if (arr && 0 < arr.length) {
+var filteredProductIds = '';
+for (i = 0; i < arr.length; i++) {
+filteredProductIds = filteredProductIds + 'pid' + i + '=' + encodeURIComponent(arr[i].id) + '&';
+}
+filteredProductIds = filteredProductIds.substring(0, filteredProductIds.length - 1);//to remove the trailing '&'
+var formData = 'auid=' + encodeURIComponent(contextAUID)
++ '&scid=' + slotConfigurationUUID
++ '&' + filteredProductIds;
+var request = new XMLHttpRequest();
+request.open('POST', urlToCall, true);
+request.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+request.onreadystatechange = function() {
+if (this.readyState === 4) {
+// Got the product data from DW, showing the products now by changing the inner HTML of the DIV:
+var divId = 'cq_recomm_slot-' + slotConfigurationUUID;
+document.getElementById(divId).innerHTML = this.responseText;
+//find and evaluate scripts in response:
+var scripts = document.getElementById(divId).getElementsByTagName('script');
+if (null != scripts) {
+for (var i=0;i<scripts.length;i++) {//not combining script snippets on purpose
+var srcScript = document.createElement('script');
+srcScript.text = scripts[i].innerHTML;
+srcScript.asynch = scripts[i].asynch;
+srcScript.defer = scripts[i].defer;
+srcScript.type = scripts[i].type;
+srcScript.charset = scripts[i].charset;
+document.head.appendChild( srcScript );
+document.head.removeChild( srcScript );
+}
+}
+}
+};
+request.send(formData);
+request = null;
+}
+};
+})();
+</script>
+
+<div id="cq_recomm_slot-a6792ef369744632b39d94a108"></div>
+
 </div>
 </div>
 </div>
@@ -2507,10 +2608,10 @@ footer .footer-links .footer-container {
     </script>
 <!--[if lt IE 10]>
 <script>//common/scripts.isml</script>
-<script defer type="text/javascript" src="/on/demandware.static/Sites-M2T_FR_SFRA-Site/-/fr_FR/v1694102954510/js/main.js"></script>
+<script defer type="text/javascript" src="/on/demandware.static/Sites-M2T_FR_SFRA-Site/-/fr_FR/v1694123840003/js/main.js"></script>
 
     
-        <script defer type="text/javascript" src="/on/demandware.static/Sites-M2T_FR_SFRA-Site/-/fr_FR/v1694102954510/js/T2Srecommend.js"
+        <script defer type="text/javascript" src="/on/demandware.static/Sites-M2T_FR_SFRA-Site/-/fr_FR/v1694123840003/js/T2Srecommend.js"
             
             >
         </script>
@@ -2536,9 +2637,9 @@ function trackPage() {
 /* ]]> */
 // -->
 </script>
-<script type="text/javascript" src="/on/demandware.static/Sites-M2T_FR_SFRA-Site/-/fr_FR/v1694102954510/internal/jscript/dwanalytics-22.2.js" async="async" onload="trackPage()"></script>
+<script type="text/javascript" src="/on/demandware.static/Sites-M2T_FR_SFRA-Site/-/fr_FR/v1694123840003/internal/jscript/dwanalytics-22.2.js" async="async" onload="trackPage()"></script>
 
-<script src="/on/demandware.static/Sites-M2T_FR_SFRA-Site/-/fr_FR/v1694102954510/internal/jscript/dwac-21.7.js" type="text/javascript" async="async"></script>
+<script src="/on/demandware.static/Sites-M2T_FR_SFRA-Site/-/fr_FR/v1694123840003/internal/jscript/dwac-21.7.js" type="text/javascript" async="async"></script>
 <script src="https://cdn.cquotient.com/js/v2/gretel.min.js" type="text/javascript" async="async"></script>
 </body>
 </html>
