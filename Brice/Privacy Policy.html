@@ -72,10 +72,19 @@ if(typeof window[n]!=="function"){window[n]=e;if(window.addEventListener){window
     </script>
 <script>
     window.kameleoonQueue = window.kameleoonQueue || [];
-    var CUSTOM_VISITOR_CODE = 'I7tbGuz8tZ0EJpKYvLKbEmjOGcAWK_ULDcI=';
+    var CUSTOM_VISITOR_CODE = 'g5UVK64rcC-NTJ3vwhmKxhDoJF_Ta7lON3I=';
     if(CUSTOM_VISITOR_CODE != '' && CUSTOM_VISITOR_CODE != null){
         window.kameleoonQueue.push(['Kameleoon.API.Visitor.setVisitorCode', CUSTOM_VISITOR_CODE]);
 
+        
+            var sessionQueueJson = '[{"ABTestSegment":"Control","idExperience":"207830","idVariation":0},{"ABTestSegment":"Control","idExperience":"207041","idVariation":0},{"ABTestSegment":"Control","idExperience":"207778","idVariation":0}]';
+                var sessionQueue = JSON.parse(sessionQueueJson);
+                sessionQueue.forEach((kameleoonData) => {
+                    window.kameleoonQueue.push(['Experiments.assignVariation', kameleoonData.idExperience, kameleoonData.idVariation, true]);
+                    window.kameleoonQueue.push(['Experiments.trigger', kameleoonData.idExperience, true]);
+                });
+            
+            console.log('sessionQueueJson: '+sessionQueueJson);
         
     }
     console.log('CUSTOM_VISITOR_CODE: '+CUSTOM_VISITOR_CODE);
@@ -1476,7 +1485,7 @@ mot de passe oubli&eacute;&nbsp;?
 </a>
 </div>
 </div>
-<input type="hidden" name="csrf_token" value="jYCLsWAftvREXIhEJdXFdDfyzXXfhJe5NdgLZMv-ag-7Dr0pFS428YyKBzRccBbljdi4TjlEabdTrut4RrU-ug7okQ0AzTQ4H9smckOQCqxjB2bRMBw6dDsRplxBdzViwfAemWLSq9gMN0DBUJ-uERaOH_ORG7hjoh8cLbUU5YQXO8nxLeI=" />
+<input type="hidden" name="csrf_token" value="Zi_pGHV98NIJtVoyZW-e2xctnQQiI4V9YFlsHgkllUxsEoGhwmkOM-8kmw7bLVw5E2xLo7yOZqrtvlxipGop9AhNh50oVpUt6RT9rPZQXJvA5fyBGmtvpC4TUIasahWMzqGp2KeEZUlf5Y2tIYAawaMbbTtKirrVfZlQVIlG6WHUiMKf04w=" />
 </form>
 </div>
 </div>
@@ -1916,7 +1925,7 @@ La présente politique de confidentialité peut être modifiée par Jules. Dans 
 </div>
 
 <script type="text/javascript">
-	    dataLayer.push({"event":"pageview","env":{"work":"prod","platform":"web","language":"fr","country":"FR","responsive":"desktop","abversion_2":"Control","abversion_3":"Control","abversion_4":"Control","currency":"eur"},"user":{"accountCreationLoyalty":"no","logged":"no"},"page":{"name":"page-include","template":"politique-de-confidentialite"},"search":{"redirect":"no"},"cart":[]});
+	    dataLayer.push({"event":"pageview","env":{"work":"prod","platform":"web","language":"fr","country":"FR","responsive":"desktop","abversion_2":"Control","abversion_3":"Control","abversion_4":"Control","currency":"eur"},"user":{"accountCreationLoyalty":"no","logged":"no"},"page":{"name":"page-include","template":"politique-de-confidentialite"},"search":{"redirect":"no"},"cart":{"id":"70a206cc2e38ab7f37dcaa6c7d"}});
 	</script>
 <meta value="{&quot;@context&quot;:&quot;http://schema.org/&quot;,&quot;@type&quot;:&quot;BreadcrumbList&quot;,&quot;itemListElement&quot;:[{&quot;@type&quot;:&quot;ListItem&quot;,&quot;position&quot;:1,&quot;name&quot;:&quot;politique-de-confidentialite&quot;,&quot;item&quot;:&quot;https://www.jules.com/fr-fr/static/politique-de-confidentialite.html&quot;}]}" />
 <footer>
