@@ -38,7 +38,7 @@ if(typeof window[n]!=="function"){window[n]=e;if(window.addEventListener){window
         var kameleoonLoadingTimeout = 1000;
 
         window.kameleoonQueue = window.kameleoonQueue || [];
-        var CUSTOM_VISITOR_CODE = 'Wj2io0V3nLiqqy0C5RxoQrNGQ6tDFNbmgPk=';
+        var CUSTOM_VISITOR_CODE = 'EXcxZ1-zHV8c3M0qNmztldUjSl_dhvjG1ic=';
         if(CUSTOM_VISITOR_CODE != '' && CUSTOM_VISITOR_CODE != null){
             window.kameleoonQueue.push(['Kameleoon.API.Visitor.setVisitorCode', CUSTOM_VISITOR_CODE]);
 
@@ -1495,7 +1495,7 @@ mot de passe oubli&eacute;&nbsp;?
 </a>
 </div>
 </div>
-<input type="hidden" name="csrf_token" value="xkUQzD6mi2cp6lAvgqKhsYCqWlL4nrz5xO0IFYKV0qyy_CQosQVdMtphS5rgvuwpRzsNIJeA7sXIRru6n8qgtA-v3LtNPsxYaSgO6OY0yGx6QP3PmjmL3ejwKn3xv33vLlSCtNAmbnOsjxq3JfGNl5CG9K69caOLU-Ec8d9b2HGLm1Tfd-M=" />
+<input type="hidden" name="csrf_token" value="HfayD-VQQ44M_NxROFr0bOUlsOGzbXdTWd2w1F4vDzGvcOHMLmeyNRozsfW0iL1qw9Ahz7QgwJlsN-sjPcZHfQaPEe2UdUiDsdTO5tPUGVnF7qPpxUTpIJxxNaCC96nBLRo812yPQi8y9pC48DohZQRIK8jKFIDznPeolEHJdEpBc0pV7yo=" />
 </form>
 </div>
 </div>
@@ -1735,6 +1735,20 @@ Supprimer
 </div>
 </div>
 </div>
+<div class="header-banner d-flex ml-auto bg-rugby" id="bdo-france-rugby">
+<div class="container gx-0">
+<div class="row gx-0 justify-content-center">
+<a href="https://www.jules.com/fr-fr/l/france-rugby/" onclick="opeco('nav', 'header-bdo-france-rugby', 'plp-france-rubgy')" alt="France rugby">
+<div class="col-12 p-2">
+<div class="contentTexte d-flex flex-column">
+<p class="h4 text-center text-white fw-bold mb-1">Prêts à supporter les bleus ? 🏉🏆</p>
+<p class="h6 text-center text-white">Transformez votre style en un essai avec notre <u>collection incroyable</u> !</p>
+</div>
+</div>
+</a>
+</div>
+</div>
+</div>
 </div>
 <script type="text/javascript">
 	$(document).ready(function(){
@@ -1759,17 +1773,18 @@ Supprimer
 			}, 1000); // Délai de 0,5 seconde
 		}
   
-		// // Obtient le chemin de l'URL actuelle
-		// let currentPath = window.location.pathname;
+		// Obtient le chemin de l'URL actuelle
+		let currentPath = window.location.pathname;
+		console.log(currentPath)
   
-		// // Vérifie si nous sommes sur la page d'accueil
-		// if (currentPath === '/') {
-		// 	// Masquer votre élément ici
-		// 	$('#BDO-op-co').hide();
-		// } else {
-		// 	// Afficher votre élément ici
-		// 	$('#BDO-op-co').show();
-		// }
+		// Vérifie si nous sommes sur la page d'accueil
+		if (currentPath === '/fr-fr/l/france-rugby/' || currentPath === '/') {
+			// Masquer votre élément ici
+			$('#bdo-france-rugby').attr("style", "display: none !important");
+		} else {
+			// Afficher votre élément ici
+			$('#bdo-france-rugby').attr("style", "display: flex !important");
+		}
 	});
 	</script>
 
