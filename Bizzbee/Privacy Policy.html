@@ -30,7 +30,7 @@ if(typeof window[n]!=="function"){window[n]=e;if(window.addEventListener){window
         var kameleoonLoadingTimeout = 1000;
 
         window.kameleoonQueue = window.kameleoonQueue || [];
-        var CUSTOM_VISITOR_CODE = 'n-onkokm6qIjyJEU_D3w2_khjHOr_1SAmY4=';
+        var CUSTOM_VISITOR_CODE = 'eJMhZgKbs9cm8fD4gUa7TjxnJd5viJ4LMFY=';
         if(CUSTOM_VISITOR_CODE != '' && CUSTOM_VISITOR_CODE != null){
             window.kameleoonQueue.push(['Kameleoon.API.Visitor.setVisitorCode', CUSTOM_VISITOR_CODE]);
 
@@ -1437,7 +1437,7 @@ mot de passe oubli&eacute;&nbsp;?
 </a>
 </div>
 </div>
-<input type="hidden" name="csrf_token" value="bJvvwc60nSaN987jFKQL4Nxbdv_Oc1E0gZAlrSz_GDWCl1g0e212mBGialB5-Vmu-Y1b_nGNBWPK5IakDShM3ILLWFAAgH6VvhpIp_yTdCD6UW2PfSnJ2mmytWrF_ZRjBIYor7Bwju_ovwmFeuzGA5Vyh6hiWRzEsGLExHWGm4UkFz3QuhE=" />
+<input type="hidden" name="csrf_token" value="vbwdhn4cNaBDbsUkv0bUrzQt2m2Mj_RKk-_e4zAsg1Ld08gxTJssa9X9cAX_tXkFFXg0v8rdDyIs_qz6-sx71Y01uttNewruY9mV3yK9oREPsKEoRIO_4Jq6ScHmH2NPcU7OXYLr1lB6kH10Uh6K6qfpz9fYx7r4o6R65LD4Km8t7t21F9A=" />
 </form>
 </div>
 </div>
@@ -1605,9 +1605,9 @@ Supprimer
 </header>
 <div class="header-banner">
 <div class="html-slot-container">
-<style>
+<style type="text/css">
 .header-banner{
-		height: auto;
+		height: auto !important;
 		margin: 0;
 	}
 	.hp-banner-op{
@@ -1616,7 +1616,7 @@ Supprimer
 		text-align: center;
 		font-size: 1em;
 		padding: 5px 20px;
-		margin-bottom: 20px;
+		margin-bottom: 0px;
 	}
 
 	.hp-banner-op a{
@@ -1732,7 +1732,7 @@ Supprimer
 
         .header-banner,
         .header-banner-2 {
-            height: 50px;
+            height: auto;
             padding-bottom: 5px;
         }
 
@@ -2031,61 +2031,57 @@ Supprimer
         font-size: 200%;
     }
 	
-     
-     .marquee-rtl {
-            font-size:22px;
-            line-height: 12px;
-            padding: 10px;
-            width: 100%;
-            min-width: 100%;
-            height: 50px;
-            display: flex; /* Utilisation de flexbox */
-            align-items: center; /* Centre verticalement */
-            align-content: center;
-            color: #ffffff;
-            text-align: center;
-            font-weight: bold;
-            margin: auto;
-            position: relative;
-            background-color: black;
-    }
-    
-    .marquee-rtl > :first-child {
-      display: inline-block;                /* modèle de boîte en ligne */
-      padding-right: 2em;                   /* un peu d'espace pour la transition */
-      padding-left: 100%;                   /* placement à droite du conteneur */
-      white-space: nowrap;                  /* pas de passage à la ligne */
-      animation: defilement-rtl 15s infinite linear;
-      animation-name: defilement-rtl;       /* référence à la règle @keyframes mise en oeuvre */
-      animation-duration: 15s;              /* valeur à ajuster suivant la longueur du message */
-      animation-iteration-count: infinite;  /* boucle continue */
-      animation-timing-function: linear;    /* pas vraiment utile ici */
-    }
-    
-    /* Ajout de cette règle pour suspendre l'animation lors du survol */
-    .marquee-rtl:hover > :first-child {
-        animation-play-state: paused;
-    }
-    
-    span.satisfait {
-    margin-left: 100px;
-    
-    }
-    
-    @keyframes defilement-rtl {
-      0% {
-        transform: translate3d(0,0,0);      /* position initiale à droite */
-      }
-      100% {
-        transform: translate3d(-100%,0,0);  /* position finale à gauche */
-      }
-    }
-    
-    </style>
-<div class="marquee-rtl">
-
-<div>🚨 Livraison à domicile ou point retrait OFFERTE dès 10€ 🚨<span class="satisfait">Retour et remboursement gratuits sous 30 jours.</span></div>
+	.header-reassurance{
+		background-color: #000000;
+	}
+	
+	.header-reassurance-message{
+		font-size:12px;
+		line-height: 12px;
+		padding: 10px;
+		width: 90%;
+		max-width: 1400px;
+		color: #ffffff;
+		text-align: center;
+		font-weight: bold;
+		margin: auto;
+		position: relative;
+	}
+	
+	.header-reassurance-message span{
+		font-size: 24px;
+	}
+	
+	.header-reassurance-message a{
+		color: #ffffff;
+		text-decoration: underline;
+		
+	}
+	
+	.header-reassurance-message-close{
+		position: absolute;
+		display: block;
+		width: 15px;
+		height: 15px;
+		right: -10px;
+		top: 12px;
+		font-size: 20px;
+		cursor: pointer;
+		font-weight: 400;
+	}
+</style>
+<div class="header-reassurance">
+<div class="header-reassurance-message">
+<span>🚚</span> Livraison OFFERTE EN MAGASIN / &agrave; domicile et en point retrait d&egrave;s 49&euro; d'achat. <a href="https://www.b-z-b.com/nous-contacter/">En savoir +</a>
+<div class="header-reassurance-message-close">X</div>
 </div>
+</div>
+<script type="text/javascript">
+$('.header-reassurance-message-close').click(function(){
+console.log('ici');
+	$('.header-reassurance').slideToggle();
+});
+</script>
 </div>
 </div>
 
