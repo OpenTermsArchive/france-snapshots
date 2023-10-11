@@ -53,6 +53,7 @@ function OptanonWrapper() { }
 <link rel='dns-prefetch' href='//cdnjs.cloudflare.com' />
 <link rel='dns-prefetch' href='//maps.googleapis.com' />
 <link rel='dns-prefetch' href='//cdn.jsdelivr.net' />
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
 <link rel='dns-prefetch' href='//pro.fontawesome.com' />
 <link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
 <style id='global-styles-inline-css' type='text/css'>
@@ -63,7 +64,8 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 .wp-block-pullquote{font-size: 1.5em;line-height: 1.6;}
 </style>
 <link rel='stylesheet' id='luge-css' href='https://ridedott.com/wp-content/themes/ridedott/assets/css/lib/luge.css?ver=1672763397' type='text/css' media='all' />
-<link rel='stylesheet' id='style-pilopress-css' href='https://ridedott.com/wp-content/themes/ridedott/pilopress/assets/styles.min.css?ver=1687255552' type='text/css' media='all' />
+<link rel='stylesheet' id='style-pilopress-css' href='https://ridedott.com/wp-content/themes/ridedott/pilopress/assets/styles.min.css?ver=1697025716' type='text/css' media='all' />
+<link rel='stylesheet' id='google-font-londrina-solid-css' href='https://fonts.googleapis.com/css2?family=Londrina+Solid%3Awght%40100%3B300%3B400%3B900&#038;display=swap&#038;ver=0.4.3.2' type='text/css' media='all' />
 <link rel='stylesheet' id='plyr-css' href='https://cdnjs.cloudflare.com/ajax/libs/plyr/3.6.8/plyr.min.css?ver=3.6.8' type='text/css' media='all' />
 <link rel='stylesheet' id='select2-css' href='https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css?ver=4.0.13' type='text/css' media='all' />
 <link rel='stylesheet' id='splidejs-css' href='https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/css/splide.min.css?ver=4.0.7' type='text/css' media='all' />
@@ -111,10 +113,16 @@ var pipAddon = {"ajax":"https:\/\/ridedott.com\/wp-admin\/admin-ajax.php","theme
 
                 <div class="wrapper-logo z-10 min-w-max">
                                             <a href="https://ridedott.com/fr">
-                            <img
+                            <!-- <img
                                     class="logo h-8 w-auto object-center object-cover"
                                     src="https://ridedott.com/wp-content/uploads/2022/06/dott-logo.svg"
-                                    alt="">
+                                    alt=""> -->
+                                    <svg class="logo h-8 w-auto object-center object-cover" width="335" height="114" viewBox="0 0 335 114" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M248.075 87.4225C237.39 85.9385 237.983 74.3361 237.983 65.5669V46.5444H256.452C257.903 46.5444 259.09 45.3302 259.09 43.8462V23.6095C259.09 22.1254 257.903 20.9112 256.452 20.9112H237.983V2.69823C237.983 1.2142 236.796 0 235.345 0H213.249C211.798 0 210.611 1.2142 210.611 2.69823C210.611 16.8639 210.611 51.4012 210.611 62.3965C210.611 73.8639 210.149 86.4107 215.69 96.7988C221.758 108.131 234.422 113.191 246.69 113.325H264.367C265.818 113.325 267.005 112.111 267.005 110.627V90.7278C267.005 89.2438 265.818 88.0296 264.367 88.0296C259.024 88.0296 253.154 88.0971 248.075 87.4225Z" fill="currentColor"/>
+                                        <path d="M316.005 87.4225C305.32 85.9385 305.913 74.3361 305.913 65.5669V46.5444H324.381C325.832 46.5444 327.02 45.3302 327.02 43.8462V23.6095C327.02 22.1254 325.832 20.9112 324.381 20.9112H305.913V2.69823C305.913 1.2142 304.726 0 303.275 0H281.179C279.728 0 278.541 1.2142 278.541 2.69823C278.541 16.8639 278.541 51.4012 278.541 62.3965C278.541 73.8639 278.079 86.4107 283.619 96.7988C289.688 108.131 302.351 113.191 314.62 113.325H332.296C333.747 113.325 334.935 112.111 334.935 110.627V90.7278C334.935 89.2438 333.747 88.0296 332.296 88.0296C326.954 88.0296 321.083 88.0971 316.005 87.4225Z" fill="currentColor"/>
+                                        <path d="M150.984 20.8438C125.854 20.8438 105.473 41.6875 105.473 67.3881C105.473 93.0887 125.854 113.932 150.984 113.932C176.114 113.932 196.494 93.0887 196.494 67.3881C196.494 41.6875 176.179 20.8438 150.984 20.8438ZM150.984 89.5135C139.045 89.5135 129.349 79.5976 129.349 67.3881C129.349 55.1786 139.045 45.2627 150.984 45.2627C162.922 45.2627 172.618 55.1786 172.618 67.3881C172.618 79.5976 162.922 89.5135 150.984 89.5135Z" fill="currentColor"/>
+                                        <path d="M63.9185 2.69822V24.9586C32.9843 10.9278 -2.23722 36.426 0.137268 70.8284C2.37984 103.409 37.4694 123.849 65.9632 109.076C81.1995 101.049 90.8953 85.0615 90.9613 67.5231V2.69822C90.9613 1.2142 89.774 0 88.3229 0H66.5568C65.0398 0 63.9185 1.2142 63.9185 2.69822ZM45.7142 89.5136C33.7758 89.5136 24.08 79.5976 24.08 67.3882C24.08 55.1787 33.7758 45.2627 45.7142 45.2627C57.6525 45.2627 67.3483 55.1787 67.3483 67.3882C67.2164 79.5976 57.5866 89.3787 45.7142 89.5136Z" fill="currentColor"/>
+                                    </svg>
                         </a>
                                     </div>
 
@@ -138,7 +146,7 @@ var pipAddon = {"ajax":"https:\/\/ridedott.com\/wp-admin\/admin-ajax.php","theme
                 <nav
                         id="main-menu-fr"
                         class="wrapper-menu-items lg:flex w-full h-auto lg:h-full items-center justify-end absolute lg:static top-[72px] left-full bg-white lg:bg-transparent z-50 transition-all duration-300 pb-12 lg:pb-0 border-t border-gray lg:border-0">
-                    <ul id="menu-main-menu-fr" class=" w-8/12 mx-auto lg:mx-0 lg:w-full lg:flex items-center lg:justify-end h-full p-4 lg:p-0"><li id="menu-item-5766" class="menu-item menu-item-type-post_type menu-item-object-ride-with-us menu-item-5766"><a href="https://ridedott.com/fr/ride-with-us/paris-5/">Déplacez-vous avec nous</a></li>
+                    <ul id="menu-main-menu-fr" class=" w-8/12 mx-auto lg:mx-0 lg:w-full lg:flex items-center lg:justify-end lg:h-full p-4 lg:p-0"><li id="menu-item-5766" class="menu-item menu-item-type-post_type menu-item-object-ride-with-us menu-item-5766"><a href="https://ridedott.com/fr/ride-with-us/paris-5/">Déplacez-vous avec nous</a></li>
 <li id="menu-item-9283" class="menu-item menu-item-type-post_type menu-item-object-the-dott-way menu-item-9283"><a href="https://ridedott.com/fr/the-dott-way/france-3/">L&rsquo;approche Dott</a></li>
 <li id="menu-item-5768" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-5768"><a href="https://ridedott.com/fr/durabilite/">Durabilité</a></li>
 <li id="menu-item-6354" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6354"><a target="_blank" rel="noopener" href="https://jobs.lever.co/dott">Offres d&#8217;emploi</a></li>
@@ -463,7 +471,8 @@ var pipAddon = {"ajax":"https:\/\/ridedott.com\/wp-admin\/admin-ajax.php","theme
                     </a>
                 
                                                         <div class="languages ml-4 hidden lg:inline-block group relative">
-                        <button type="button" class="uppercase p-small font-bold">
+                                                    <a class="button mr-4 uppercase p-small font-bold" href="#" target="_self">HELP</a>
+                                                <button type="button" class="uppercase p-small font-bold">
                             Language: fr                        </button>
                         <ul class="hidden absolute right-0 bottom-full p-4 group-hover:block bg-secondary font-bold text-center rounded-[0.8rem]">
                             	<li class="lang-item lang-item-30 lang-item-en lang-item-first"><a  lang="en-US" hreflang="en-US" href="https://ridedott.com/terms-and-conditions/france/">EN</a></li>
@@ -501,8 +510,11 @@ var pipAddon = {"ajax":"https:\/\/ridedott.com\/wp-admin\/admin-ajax.php","theme
 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6473"><a href="https://ridedott.com/fr/nos-bureaux/">Nos bureaux</a></li>
 </ul>            </nav>
 
-                        <div class="languages ml-4 inline-block group relative lg:hidden">
-                <button type="button" class="uppercase p-small font-bold">
+
+            
+            <div class="languages ml-4 inline-block group relative lg:hidden">
+                                    <a class="button mr-4 uppercase p-small font-bold" href="#" target="_self">HELP</a>
+                                <button type="button" class="uppercase p-small font-bold">
                     Language: fr                </button>
                 <ul class="hidden absolute right-0 bottom-full p-4 group-hover:block bg-secondary font-bold text-center rounded-[0.8rem]">
                     	<li class="lang-item lang-item-30 lang-item-en lang-item-first"><a  lang="en-US" hreflang="en-US" href="https://ridedott.com/terms-and-conditions/france/">EN</a></li>
@@ -530,13 +542,13 @@ var RocketPreloadLinksConfig = {"excludeUris":"\/connect-in\/|\/(?:.+\/)?feed(?:
 <script type='text/javascript' src='https://kit.fontawesome.com/60925f83e2.js?ver=6.0.0' id='fa-js-pro-js'></script>
 <script type='text/javascript' src='https://ridedott.com/wp-content/themes/ridedott/assets/js/lib/lottie_svg.min.js?ver=1672763397' id='lottie-js'></script>
 <script type='text/javascript' src='https://ridedott.com/wp-content/themes/ridedott/assets/js/lib/luge.min.js?ver=1672763397' id='luge-js'></script>
-<script type='text/javascript' src='https://ridedott.com/wp-content/themes/ridedott/assets/js/animations.js?ver=1696250706' id='custom-anims-js'></script>
+<script type='text/javascript' src='https://ridedott.com/wp-content/themes/ridedott/assets/js/animations.js?ver=1697009321' id='custom-anims-js'></script>
 <script type='text/javascript' src='https://ridedott.com/wp-content/plugins/pilopress-addon/assets/js/pip-addon-helpers.js?ver=1672763397' id='pip-addon-helpers-js'></script>
 <script type='text/javascript' src='https://ridedott.com/wp-content/plugins/pilopress-addon/assets/js/pip-layout-class.js?ver=1672763397' id='pip-layout-class-js'></script>
 <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/plyr/3.6.8/plyr.min.js?ver=3.6.8' id='plyr-js'></script>
 <script type='text/javascript' src='https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js?ver=4.0.13' id='select2-js'></script>
 <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/@splidejs/splide@4.0.7/dist/js/splide.min.js?ver=4.0.7' id='splidejs-js'></script>
-<script type='text/javascript' src='https://ridedott.com/wp-content/themes/ridedott/pilopress/layouts/menu-contained-nemo/menu-contained-nemo.js?ver=1672763397' id='pip-flexible-header-layout-menu-js'></script>
+<script type='text/javascript' src='https://ridedott.com/wp-content/themes/ridedott/pilopress/layouts/menu-contained-nemo/menu-contained-nemo.js?ver=1696945680' id='pip-flexible-header-layout-menu-js'></script>
 <script type='text/javascript' src='https://ridedott.com/wp-content/themes/ridedott/pilopress/layouts/hero-terms-insurance-dott/hero-terms-insurance-dott.js?ver=1672763397' id='pip-flexible-layout-hero-terms-insurance-js'></script>
 <script type='text/javascript'>
 (function() {
