@@ -2418,20 +2418,23 @@ Vous pouvez √† tout moment retirer votre consentement au traitement de vos donn√
 
 <script defer>
     const dataDogScript = document.createElement('script');
-    dataDogScript.src = "https://www.datadoghq-browser-agent.com/datadog-rum-v4.js";
+    dataDogScript.src = "https://www.datadoghq-browser-agent.com/eu1/v5/datadog-rum.js";
     dataDogScript.type = "text/javascript";
     dataDogScript.onload = function dataDogOnLoad() {
         try {
             window.DD_RUM &&
             window.DD_RUM.init({
                 site: 'datadoghq.eu',
-                applicationId: '84fb019f-2f20-44ce-9844-494bc450d801',
-                clientToken: 'pub6531283cd2c237efbf40cd43966ca370',
-                service: 'webc-cms-flixbus_fe',
-                sampleRate: 10,
-                premiumSampleRate: 0,
-                version: 'goflix.flixbus-v1.1.76',
+                applicationId: '8ffd3389-3ce1-4b9f-b1f5-4f6604a27a7e',
+                clientToken: 'pub6395d5bd2f2b5751fdf3784e50845d1b',
+                service: 'fxt.webc.cms.goflix',
+                sessionSampleRate: 10,
+                version: 'goflix.flixbus-v1.1.79',
                 env: 'prod',
+                trackSessionAcrossSubdomains: true,
+                useSecureSessionCookie: true,
+                useCrossSiteSessionCookie: true,
+                allowFallbackToLocalStorage: true,
             });
         } catch (e) {
             console.log("Error during data dog initialisation");
