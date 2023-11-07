@@ -387,11 +387,11 @@
     <link rel="preload" as="style" href="//fonts.googleapis.com/css?family=Roboto:400,700&subset=latin" crossorigin/>
     <link href="//fonts.googleapis.com/css?family=Roboto:400,700&subset=latin" rel="stylesheet" type="text/css"
           crossorigin/>
-    <link rel="stylesheet" href="https://cdn-cf.cms.flixbus.com/drupal-assets/goflix-assets/static/bundles/css/basic__columns.5564fa.css"/>
+    <link rel="stylesheet" href="https://cdn-cf.cms.flixbus.com/drupal-assets/goflix-assets/static/bundles/css/basic__columns.35a931.css"/>
 
 
     <script defer async src="//pulse.cro.flixbus.com/static/pulse.js"></script>
-    <script src="https://cdn-cf.cms.flixbus.com/drupal-assets/goflix-assets/static/bundles/js/main.758f95.js"></script>
+    <script src="https://cdn-cf.cms.flixbus.com/drupal-assets/goflix-assets/static/bundles/js/main.ea8acf.js"></script>
     <script src="/assets/uc/cc.js"></script>
     <script defer async type="module"
             src="https://honeycomb-icons.hive.flixbus.com/5.2.1/flix-icons/flix-icons.esm.js"></script>
@@ -1997,16 +1997,19 @@ Il est précisé qu’un aller-retour correspond à deux trajets mais qu’un tr
                 clientToken: 'pub6395d5bd2f2b5751fdf3784e50845d1b',
                 service: 'fxt.webc.cms.goflix',
                 sessionSampleRate: 10,
-                version: 'goflix.flixbus-v1.1.82',
+                version: 'goflix.flixbus-v1.1.83',
                 env: 'prod',
                 trackSessionAcrossSubdomains: true,
                 useSecureSessionCookie: true,
                 useCrossSiteSessionCookie: true,
                 allowFallbackToLocalStorage: true,
-                sampleRate: 10,
                 sessionReplaySampleRate: 10,
                 startSessionReplayRecordingManually: true,
                 enableExperimentalFeatures: ["feature_flags"],
+                trackUserInteractions: true,
+                trackResources: true,
+                trackLongTasks: true,
+                defaultPrivacyLevel: 'allow',
             });
         } catch (e) {
             console.log("Error during data dog initialisation");
