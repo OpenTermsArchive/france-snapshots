@@ -231,6 +231,49 @@
                   text-decoration: none !important;
               }
 </style>
+<script>
++
+// black friday 2023
+// var siteBFPromo = '2023-11_Black-Friday-Week-FW23_DACH';
+// var siteBFPromo = '2023-11_Black-Friday-Week-FW23_UK';
+var siteBFPromo = '2023-11_Black-Friday-Week-FW23_BENEFR';
+// var siteBFPromo = window.location.href.includes('espritshop.pl') '2023-11_Black-Friday-Week-FW23_PL' : '2023-11_Black-Friday-Week-FW23_CZ-DK-SE-FI-IT-ES-EU';
+
+document.addEventListener("DOMContentLoaded", (event) => {
+    var mainContent = document.getElementById("maincontent");
+    var mainContentObserverConfig = { attributes: true, childList: true, subtree: true };
+    jQuery('body').on('click', '.jsAddSingleDay',
+        event => {
+            event.preventDefault();
+            var urlParams = new URLSearchParams(window.location.search);
+            urlParams.set('pmid', siteBFPromo);
+            window.location.search = urlParams;
+        }
+    );
+    var mainContentChanged = (mutationList, observer) => {
+        var mainUrl = new URL(window.location.href);
+        if (mainUrl.searchParams.has('pmid')) {
+            jQuery('.pagination .page-link').each((index,link) => {
+                var ajaxUrlString = jQuery(link).data('ajaxUrl');
+                var hrefUrlString = jQuery(link).attr('href');
+            
+                var ajaxUrl = new URL(ajaxUrlString);
+                var hrefUrl = new URL(hrefUrlString);
+                if (!ajaxUrl.searchParams.has('pmid')) { 
+                   ajaxUrl.searchParams.append('pmid', mainUrl.searchParams.get('pmid'));   
+                   hrefUrl.searchParams.append('pmid', mainUrl.searchParams.get('pmid')); 
+                   jQuery(link).data('ajaxUrl',ajaxUrl.toString());
+                   jQuery(link).attr('href', hrefUrl.toString());
+                }
+            });                             
+        }
+    };
+
+    var mainContentObserver = new MutationObserver(mainContentChanged);
+    mainContentObserver.observe(mainContent, mainContentObserverConfig);
+});
+
+</script>
 <style>
 .product-grid [class*=cm-placement--category-tile].cm-plp-teaser--width-2 .cm-plp-teaser__picture-box:before { padding-top: 75% }
 
@@ -587,7 +630,7 @@ head.appendChild(script);
 <a href="/nouveautes" id="1116" class="nav-link js-nav-link dropdown-toggle " role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="0">
 <span>Nouveaut&eacute;s</span>
 <span class="top-menu-count-bubble">
-235
+277
 </span>
 </a>
 <div class="dropdown-menu
@@ -688,9 +731,6 @@ head.appendChild(script);
 </li>
 <li class="dropdown-item  " role="presentation">
 <a href="/nouveautes/nouveautes-maison/articles-inedits" id="1361" role="menuitem" class="dropdown-link " tabindex="-1">Articles in&eacute;dits</a>
-</li>
-<li class="dropdown-item  " role="presentation">
-<a href="/nouveautes/nouveautes-maison/salle-de-bains" id="1270" role="menuitem" class="dropdown-link " tabindex="-1">Salle de bains</a>
 </li>
 <li class="dropdown-item  " role="presentation">
 <a href="/nouveautes/nouveautes-maison/sejour" id="1220" role="menuitem" class="dropdown-link " tabindex="-1">S&eacute;jour</a>
@@ -2589,6 +2629,9 @@ head.appendChild(script);
 <a href="/maison/salle-de-bains/draps-de-bain" id="1295" role="menuitem" class="dropdown-link " tabindex="-1">Draps de bain</a>
 </li>
 <li class="dropdown-item  " role="presentation">
+<a href="/maison/salle-de-bains/serviettes-de-plage" id="1294" role="menuitem" class="dropdown-link " tabindex="-1">Serviettes de plage</a>
+</li>
+<li class="dropdown-item  " role="presentation">
 <a href="/maison/salle-de-bains/tapis-de-bains" id="1298" role="menuitem" class="dropdown-link " tabindex="-1">Tapis de bains</a>
 </li>
 <li class="dropdown-item  " role="presentation">
@@ -3436,15 +3479,15 @@ head.appendChild(script);
 <div class="d-xxl-none">
 <button type="button" class="search-icon js-search-open icon icon-009-search"></button>
 </div>
-<span class="js-utag-data-container d-none" data-utag-view="[{&quot;page_login_status&quot;:&quot;logged-out&quot;,&quot;sf_sid&quot;:&quot;-mHdgP9Rpn2JpDMlf2bpV0Z_roa2RGsKwkQ=&quot;,&quot;ab_segment&quot;:[]}]" data-utag-link="[]" data-utag-link-search="[]" data-utag-link-subscribe="[]">
+<span class="js-utag-data-container d-none" data-utag-view="[{&quot;page_login_status&quot;:&quot;logged-out&quot;,&quot;sf_sid&quot;:&quot;F05ocYOo2wni8fTYRUlPam2EoMRWzqAJntQ=&quot;,&quot;ab_segment&quot;:[]}]" data-utag-link="[]" data-utag-link-search="[]" data-utag-link-subscribe="[]">
 </span>
 <script async>
     if (dl === undefined) {
         var dl = {};
     }
-    dl.session_id = '-mHdgP9Rpn2JpDMlf2bpV0Z_roa2RGsKwkQ=';
+    dl.session_id = 'F05ocYOo2wni8fTYRUlPam2EoMRWzqAJntQ=';
 </script>
-<input type="hidden" name="data-csrf" class="data-csrf" value="c0yuwO8Q6Rm6NdRfDPyobGtQJmd997cCpDxOH-iUReQdPQrwlXStKIpj026Z--p4a4L2ZisH2eAEMQYtV-5iX6vKxxgOAijIO6nb85MH9Z-IlrgNwBmXfGvZdQ_MajKtvj9OvvtnpbrVIzRqoYJ0R73KDoZ4MrClZCGPns1hGwEr17JwPR8=" />
+<input type="hidden" name="data-csrf" class="data-csrf" value="Gc0TQk74aOyMI0D9POz9gHUW88jJxMQ497ezHqd2J8XJrwG80OwNvW9UU60sixd4lVcJLGBcW2Xu_ZXBVesOevTGElqVbkBHGcnGiHpXgD4SmrxfNVvrkgiOE0LQ2pHLPrx8h0eEoxBLwemknuIJpujkLhz4CySfLrsX3l0SrE-2Mtdw-lY=" />
 <div class="user hidden-xl-down" tabindex="0">
 <a href="https://www.esprit.fr/myesprit/login" class="login-link" title="Connexion">
 Connexion
@@ -3764,7 +3807,7 @@ Votre opinion / suggestions
 </dt>
 <div id="collapseAdvice" class="accordion collapse">
 <dd>
-<a href="/tableaux-des-tailles/sizeTable.html">Tableaux des tailles</a>
+<a href="/guide-des-tailles/sizecharts-overview.html">Guide des tailles</a>
 </dd>
 <dd>
 <a href="/conseils-d-entretien/careInstructions.html">Conseils d'entretien</a>
@@ -3810,16 +3853,16 @@ Votre opinion / suggestions
 <div class="row">
 <div class="col-auto py-3 order-lg-2">
 <dd class="d-block d-lg-inline-block mr-lg-3">
-<a href="/cgv/terms-conditions.html">CGV</a>
+<a href="/cgv/terms-and-conditions.html">CGV</a>
 </dd>
 <dd class="d-block d-lg-inline-block mr-lg-3">
-<a href="/mentions-legales/imprint-redirect.html">Mentions l&eacute;gales</a>
+<a href="/mentions-legales/imprint.html">Mentions l&eacute;gales</a>
 </dd>
 <dd class="d-block d-lg-inline-block mr-lg-3">
-<a href="/retractation/withdrawal.html">R&eacute;tractation</a>
+<a href="/retractation/right-of-withdrawal.html">R&eacute;tractation</a>
 </dd>
 <dd class="d-block d-lg-inline-block mr-lg-3">
-<a href="/protection-des-donnees/dataProtection.html">Protection des donn&eacute;es</a>
+<a href="/protection-des-donnees/data-protection.html">Protection des donn&eacute;es</a>
 </dd>
 <span class="d-block d-lg-inline-block mr-lg-3">
 <div class="content-asset">
