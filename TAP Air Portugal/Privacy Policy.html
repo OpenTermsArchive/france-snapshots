@@ -177,22 +177,47 @@
 
 <!-- #endregion -->
 <!-- #region Styles -->
-    <link rel='stylesheet' href="/assets/css/bundleSass.css?v=28769367-60b2-4e17-bb62-1adc982007da">
+    <link rel='stylesheet' href="/assets/css/bundleSass.css?v=5ef0e108-6102-4680-ace7-b125655343fe">
 
 
-<link rel='stylesheet' href="/assets/css/smart-app-banner.css?v=28769367-60b2-4e17-bb62-1adc982007da">
+<link rel='stylesheet' href="/assets/css/smart-app-banner.css?v=5ef0e108-6102-4680-ace7-b125655343fe">
 
 <!-- #endregion -->
 <!-- #region Scripts -->
 
-    <script src="/assets/js/fundamentals/globals.js?v=28769367-60b2-4e17-bb62-1adc982007da"></script>
+    <script src="/assets/js/fundamentals/globals.js?v=5ef0e108-6102-4680-ace7-b125655343fe"></script>
 
 
 
 
 
 <!-- #endregion -->
+<!-- Start VWO Async SmartCode -->
 
+<link rel="preconnect" href=https://dev.visualwebsiteoptimizer.com />
+
+<script type='text/javascript' id='vwoCode'>
+
+    window._vwo_code || (function () {
+
+        var account_id = 797770,
+
+            version = 2.0,
+
+            settings_tolerance = 2000,
+
+            hide_element = 'body',
+
+            hide_element_style = 'opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important',
+
+            /* DO NOT EDIT BELOW THIS LINE */
+
+            f = false, w = window, d = document, v = d.querySelector('#vwoCode'), cK = '_vwo_' + account_id + '_settings', cc = {}; try { var c = JSON.parse(localStorage.getItem('_vwo_' + account_id + '_config')); cc = c && typeof c === 'object' ? c : {} } catch (e) { } var stT = cc.stT === 'session' ? w.sessionStorage : w.localStorage; code = { use_existing_jquery: function () { return typeof use_existing_jquery !== 'undefined' ? use_existing_jquery : undefined }, library_tolerance: function () { return typeof library_tolerance !== 'undefined' ? library_tolerance : undefined }, settings_tolerance: function () { return cc.sT || settings_tolerance }, hide_element_style: function () { return '{' + (cc.hES || hide_element_style) + '}' }, hide_element: function () { return typeof cc.hE === 'string' ? cc.hE : hide_element }, getVersion: function () { return version }, finish: function () { if (!f) { f = true; var e = d.getElementById('_vis_opt_path_hides'); if (e) e.parentNode.removeChild(e) } }, finished: function () { return f }, load: function (e) { var t = this.getSettings(), n = d.createElement('script'), i = this; if (t) { n.textContent = t; d.getElementsByTagName('head')[0].appendChild(n); if (!w.VWO || VWO.caE) { stT.removeItem(cK); i.load(e) } } else { n.fetchPriority = 'high'; n.src = e; n.type = 'text/javascript'; n.onerror = function () { _vwo_code.finish() }; d.getElementsByTagName('head')[0].appendChild(n) } }, getSettings: function () { try { var e = stT.getItem(cK); if (!e) { return } e = JSON.parse(e); if (Date.now() > e.e) { stT.removeItem(cK); return } return e.s } catch (e) { return } }, init: function () { if (d.URL.indexOf('__vwo_disable__') > -1) return; var e = this.settings_tolerance(); w._vwo_settings_timer = setTimeout(function () { _vwo_code.finish(); stT.removeItem(cK) }, e); var t = d.currentScript, n = d.createElement('style'), i = this.hide_element(), r = t && !t.async && i ? i + this.hide_element_style() : '', c = d.getElementsByTagName('head')[0]; n.setAttribute('id', '_vis_opt_path_hides'); v && n.setAttribute('nonce', v.nonce); n.setAttribute('type', 'text/css'); if (n.styleSheet) n.styleSheet.cssText = r; else n.appendChild(d.createTextNode(r)); c.appendChild(n); this.load('https://dev.visualwebsiteoptimizer.com/j.php?a=' + account_id + '&u=' + encodeURIComponent(d.URL) + '&vn=' + version) } }; w._vwo_code = code; code.init();
+    })();
+
+</script>
+
+<!-- End VWO Async SmartCode -->
 </head>
 <body class="">
 
@@ -206,7 +231,7 @@
     <input id="GlobalUpgradeModalId" type="hidden" value="e80cbe11-5716-408c-ade7-b4bdb181c4c4" >
     <input id="GlobalRedirectLoginPageUrl" type="hidden" value="/fr-fr/login?RedirectToBook=1" >
     <input id="GlobalRedirectNoLoyaltyErrorPageUrl" type="hidden" value="/fr-fr/non-victoria-cliente-register_continue-to-booking" >
-    <input name="__RequestVerificationToken" type="hidden" value="zs9PX4z_dq6LKc1fl2aREblfurZIBOkm2bjppLTE2fY7XtaYprbhhfc6JwpgLtBmKNUg8xwEdRvYXEzwBjt1kWAIc5XbTZo8O8E8zK5h4Bs1:Qduixq9M0bRxj-juzgHTmzPBt7WrN9QGcIjw4tSogqfoexf1ix6z_Y-1IytJnFO0ipEd6pk1ndqc1krckmlR_W_oXG2SQP7HdvyyzzySbxg1" >
+    <input name="__RequestVerificationToken" type="hidden" value="e4Ad_NsNuKn4UYDF7ub5f3ku02KsFYzMOJqWBZAIDSCePhDZbsQ0t8UIZLiSgvg14ifBYMv9UgfmxFAUZVbe72DGPIXAQE94pPWbneEBIBg1:qfyMFOuOHPBjbsGAIP_Ycx8xD1jf45JJBvJm-ANXDWF_fNuvijAa_KftiXB44ra3ig1EUAhRwha3LbjT8cis5I56eiV9XBaJ3d7q84Nft-81" >
     <input id="ResourceVictoriaMiles" type="hidden" value="miles" >
     <input id="ResourceHeaderMiles" type="hidden" value="M" >
     <input id="ResourceMilesToExpire" type="hidden" value="Miles arrivent &#224; &#233;ch&#233;ance" >
@@ -319,6 +344,13 @@
 
                         </div>
                         <div class="matrix-tap__col-8 root-header-mobile-menu">
+                            <div class="root-header__search">
+                                <a href="/fr-fr/rechercher" class="root-header__search__cta" title="rechercher">
+                                    <span class="menu-list-item__cta__item-icon svg-icn-search"></span>
+                                    <span class="prop-hide--sreader">rechercher</span>
+                                </a>
+                            </div>
+
                                 <div class="root-header__login">
                                     <button type="button" class="root-header__menu-list-item__cta js-header-login-cta" title="Connexion">
                                         <span class="menu-list-item__cta__item-icon svg-icn-user"></span>
@@ -326,7 +358,7 @@
                                     </button>
                                 </div>
                             <div class="root-header__burguer">
-                                <button id="cta-4cf493a0-0a39-4321-95af-06d3a5ada29a" class="root-header__burguer__cta js-burguerCTA" title="Menu Principal" aria-controls="4cf493a0-0a39-4321-95af-06d3a5ada29a" aria-expanded="false">
+                                <button id="cta-f08f3465-c836-42d9-b0b1-301a19520a5b" class="root-header__burguer__cta js-burguerCTA" title="Menu Principal" aria-controls="f08f3465-c836-42d9-b0b1-301a19520a5b" aria-expanded="false">
                                     <span class="menu-list-item__cta__item-icon icn-svg svg-icn-hamburger"></span>
                                 </button>
                             </div>
@@ -334,7 +366,7 @@
                     </div>
                 </div>
             </div>
-            <div id="4cf493a0-0a39-4321-95af-06d3a5ada29a" class="matrix-tap__container legacy-layout burguer-container js-burguerContainer" data-aria-labelledby="cta-4cf493a0-0a39-4321-95af-06d3a5ada29a" data-aria-hidden="true">
+            <div id="f08f3465-c836-42d9-b0b1-301a19520a5b" class="matrix-tap__container legacy-layout burguer-container js-burguerContainer" data-aria-labelledby="cta-f08f3465-c836-42d9-b0b1-301a19520a5b" data-aria-hidden="true">
                 <div class="matrix-tap__row">
                     <div class="root-header-logo device-visibility--desktop">
                         <div class="header-logo-holder">
@@ -360,10 +392,10 @@
                             <nav aria-label="Main" class="root-header-main-nav">
                                 <ul class="root-header__menu-list menu-level-one">
                                             <li class="root-header__menu-list-item js-menu-list-item">
-                                                <button id="cta-5572710e-5a0a-4cf8-9d4f-40e1026bffca" type="button" class="root-header__menu-list-item__cta js-menu-list-item__cta" title="Voyage" aria-controls="5572710e-5a0a-4cf8-9d4f-40e1026bffca" aria-expanded="false">
+                                                <button id="cta-98572768-9f78-4993-9a70-e58632eda03c" type="button" class="root-header__menu-list-item__cta js-menu-list-item__cta" title="Voyage" aria-controls="98572768-9f78-4993-9a70-e58632eda03c" aria-expanded="false">
                                                     <span class="menu-list-item__cta__item-content">Voyage</span>
                                                 </button>
-                                                <div id="5572710e-5a0a-4cf8-9d4f-40e1026bffca" class="root-header-main-menu__panel" aria-labelledby="cta-5572710e-5a0a-4cf8-9d4f-40e1026bffca" aria-hidden="true">
+                                                <div id="98572768-9f78-4993-9a70-e58632eda03c" class="root-header-main-menu__panel" aria-labelledby="cta-98572768-9f78-4993-9a70-e58632eda03c" aria-hidden="true">
                                                     <div class="matrix-tap__container">
                                                         <div class="matrix-tap__row">
                                                                     <div class="matrix-tap__col root-header__menu-column flex-grow--1">
@@ -371,12 +403,12 @@
 <span class="icon"><img src="/-/media/Flytap/illustration/icons/icons-in-green/explore-destinations.svg" alt=""></span>                                                                                                                                                            <span class="title-tap--2">Explorer les destinations</span>
 
                                                                         </div>
-                                                                        <button id="cta-65baabc4-610c-4c22-9f6f-4f908bb9fbeb" type="button" class="root-header__menu-level-list-item__cta js-menu-level-list-item__cta device-visibility--mobile" aria-controls="65baabc4-610c-4c22-9f6f-4f908bb9fbeb" aria-expanded="false">
+                                                                        <button id="cta-648d8d3a-7964-4f13-b3da-d17597ef1fca" type="button" class="root-header__menu-level-list-item__cta js-menu-level-list-item__cta device-visibility--mobile" aria-controls="648d8d3a-7964-4f13-b3da-d17597ef1fca" aria-expanded="false">
 
                                                                                 <span class="title-tap--2">Explorer les destinations</span>
 
                                                                         </button>
-                                                                        <ul id="65baabc4-610c-4c22-9f6f-4f908bb9fbeb" class="root-header__menu-list menu-level-two column-count--1" aria-labelledby="cta-65baabc4-610c-4c22-9f6f-4f908bb9fbeb" aria-hidden="true">
+                                                                        <ul id="648d8d3a-7964-4f13-b3da-d17597ef1fca" class="root-header__menu-list menu-level-two column-count--1" aria-labelledby="cta-648d8d3a-7964-4f13-b3da-d17597ef1fca" aria-hidden="true">
                                                                                 <li class="root-header__menu-list-item">
                                                                                         <a href="/fr-fr/destinations" title="Ce lien ouvre la page sur les destinations TAP." target="_self" class="root-header__menu-list-item__cta   ">
                                                                                             <span class="menu-list-item__cta__item-content">Destinations TAP<span class="icon"></span></span>
@@ -414,12 +446,12 @@
 <span class="icon"><img src="/-/media/Flytap/illustration/icons/icons-in-green/book.svg" alt=""></span>                                                                                                                                                            <span class="title-tap--2">R&#233;server</span>
 
                                                                         </div>
-                                                                        <button id="cta-804a6785-8cbe-470f-a8b2-97eb72590072" type="button" class="root-header__menu-level-list-item__cta js-menu-level-list-item__cta device-visibility--mobile" aria-controls="804a6785-8cbe-470f-a8b2-97eb72590072" aria-expanded="false">
+                                                                        <button id="cta-47e1b2c0-574b-464d-93dc-08ca7db1c9a9" type="button" class="root-header__menu-level-list-item__cta js-menu-level-list-item__cta device-visibility--mobile" aria-controls="47e1b2c0-574b-464d-93dc-08ca7db1c9a9" aria-expanded="false">
 
                                                                                 <span class="title-tap--2">R&#233;server</span>
 
                                                                         </button>
-                                                                        <ul id="804a6785-8cbe-470f-a8b2-97eb72590072" class="root-header__menu-list menu-level-two column-count--2" aria-labelledby="cta-804a6785-8cbe-470f-a8b2-97eb72590072" aria-hidden="true">
+                                                                        <ul id="47e1b2c0-574b-464d-93dc-08ca7db1c9a9" class="root-header__menu-list menu-level-two column-count--2" aria-labelledby="cta-47e1b2c0-574b-464d-93dc-08ca7db1c9a9" aria-hidden="true">
                                                                                 <li class="root-header__menu-list-item">
                                                                                         <a href="#" title="Acc&#233;dez au site ici booking.flytap.com. Ce lien s&#39;ouvre dans une nouvelle fen&#234;tre." target="_blank" class="root-header__menu-list-item__cta   js-bookflight">
                                                                                             <span class="menu-list-item__cta__item-content">Rechercher des vols<span class="icon"></span></span>
@@ -463,12 +495,12 @@
 <span class="icon"><img src="/-/media/Flytap/illustration/icons/icons-in-green/travel-with-tap.svg" alt=""></span>                                                                                                                                                            <span class="title-tap--2">Voyager avec TAP</span>
 
                                                                         </div>
-                                                                        <button id="cta-a09dda12-721d-40b3-a366-bf7f7bc18d00" type="button" class="root-header__menu-level-list-item__cta js-menu-level-list-item__cta device-visibility--mobile" aria-controls="a09dda12-721d-40b3-a366-bf7f7bc18d00" aria-expanded="false">
+                                                                        <button id="cta-5e993094-2bf5-4fde-b82d-f5adaec326a3" type="button" class="root-header__menu-level-list-item__cta js-menu-level-list-item__cta device-visibility--mobile" aria-controls="5e993094-2bf5-4fde-b82d-f5adaec326a3" aria-expanded="false">
 
                                                                                 <span class="title-tap--2">Voyager avec TAP</span>
 
                                                                         </button>
-                                                                        <ul id="a09dda12-721d-40b3-a366-bf7f7bc18d00" class="root-header__menu-list menu-level-two column-count--2" aria-labelledby="cta-a09dda12-721d-40b3-a366-bf7f7bc18d00" aria-hidden="true">
+                                                                        <ul id="5e993094-2bf5-4fde-b82d-f5adaec326a3" class="root-header__menu-list menu-level-two column-count--2" aria-labelledby="cta-5e993094-2bf5-4fde-b82d-f5adaec326a3" aria-hidden="true">
                                                                                 <li class="root-header__menu-list-item">
                                                                                         <a href="/fr-fr/informations-de-reservations/produits-tap" title="Ce lien ouvre la page sur les tarifs et produits TAP." target="_self" class="root-header__menu-list-item__cta   ">
                                                                                             <span class="menu-list-item__cta__item-content">Tarifs et produits TAP<span class="icon"></span></span>
@@ -532,10 +564,10 @@
                                                 </div>
                                             </li>
                                             <li class="root-header__menu-list-item js-menu-list-item">
-                                                <button id="cta-d4499f02-ba43-40ae-987d-cc2dc2b71ab0" type="button" class="root-header__menu-list-item__cta js-menu-list-item__cta" title="G&#233;rer la r&#233;servation" aria-controls="d4499f02-ba43-40ae-987d-cc2dc2b71ab0" aria-expanded="false">
+                                                <button id="cta-b4312f7a-79e8-4c01-b156-ae8c0b763466" type="button" class="root-header__menu-list-item__cta js-menu-list-item__cta" title="G&#233;rer la r&#233;servation" aria-controls="b4312f7a-79e8-4c01-b156-ae8c0b763466" aria-expanded="false">
                                                     <span class="menu-list-item__cta__item-content">G&#233;rer la r&#233;servation</span>
                                                 </button>
-                                                <div id="d4499f02-ba43-40ae-987d-cc2dc2b71ab0" class="root-header-main-menu__panel" aria-labelledby="cta-d4499f02-ba43-40ae-987d-cc2dc2b71ab0" aria-hidden="true">
+                                                <div id="b4312f7a-79e8-4c01-b156-ae8c0b763466" class="root-header-main-menu__panel" aria-labelledby="cta-b4312f7a-79e8-4c01-b156-ae8c0b763466" aria-hidden="true">
                                                     <div class="matrix-tap__container">
                                                         <div class="matrix-tap__row">
                                                                     <div class="matrix-tap__col root-header__menu-column flex-grow--2">
@@ -543,12 +575,12 @@
 <span class="icon"><img src="/-/media/Flytap/illustration/icons/icons-in-green/manage-booking-and-add-services.svg" alt=""></span>                                                                                                                                                            <span class="title-tap--2">G&#233;rer et ajouter des services &#224; la r&#233;servation</span>
 
                                                                         </div>
-                                                                        <button id="cta-da46243a-d86c-42f5-ba05-f0d41384758e" type="button" class="root-header__menu-level-list-item__cta js-menu-level-list-item__cta device-visibility--mobile" aria-controls="da46243a-d86c-42f5-ba05-f0d41384758e" aria-expanded="false">
+                                                                        <button id="cta-2c5c40eb-d980-4b9f-812e-02732c25dac6" type="button" class="root-header__menu-level-list-item__cta js-menu-level-list-item__cta device-visibility--mobile" aria-controls="2c5c40eb-d980-4b9f-812e-02732c25dac6" aria-expanded="false">
 
                                                                                 <span class="title-tap--2">G&#233;rer et ajouter des services &#224; la r&#233;servation</span>
 
                                                                         </button>
-                                                                        <ul id="da46243a-d86c-42f5-ba05-f0d41384758e" class="root-header__menu-list menu-level-two column-count--2" aria-labelledby="cta-da46243a-d86c-42f5-ba05-f0d41384758e" aria-hidden="true">
+                                                                        <ul id="2c5c40eb-d980-4b9f-812e-02732c25dac6" class="root-header__menu-list menu-level-two column-count--2" aria-labelledby="cta-2c5c40eb-d980-4b9f-812e-02732c25dac6" aria-hidden="true">
                                                                                 <li class="root-header__menu-list-item">
                                                                                         <a href="/fr-fr/gestion-de-la-reservation" title="Ce lien ouvre la page sur outils pour la gestion des r&#233;servations." target="_self" class="root-header__menu-list-item__cta   ">
                                                                                             <span class="menu-list-item__cta__item-content">Gestion des r&#233;servations<span class="icon"></span></span>
@@ -592,12 +624,12 @@
 <span class="icon"><img src="/-/media/Flytap/illustration/icons/icons-in-green/before-flying.svg" alt=""></span>                                                                                                                                                            <span class="title-tap--2">Pr&#233;parer le voyage</span>
 
                                                                         </div>
-                                                                        <button id="cta-f1a5751d-15d0-4d57-8246-f1f758a519f5" type="button" class="root-header__menu-level-list-item__cta js-menu-level-list-item__cta device-visibility--mobile" aria-controls="f1a5751d-15d0-4d57-8246-f1f758a519f5" aria-expanded="false">
+                                                                        <button id="cta-8c5e5d32-1ae6-45de-8c6e-6b44128bf618" type="button" class="root-header__menu-level-list-item__cta js-menu-level-list-item__cta device-visibility--mobile" aria-controls="8c5e5d32-1ae6-45de-8c6e-6b44128bf618" aria-expanded="false">
 
                                                                                 <span class="title-tap--2">Pr&#233;parer le voyage</span>
 
                                                                         </button>
-                                                                        <ul id="f1a5751d-15d0-4d57-8246-f1f758a519f5" class="root-header__menu-list menu-level-two column-count--2" aria-labelledby="cta-f1a5751d-15d0-4d57-8246-f1f758a519f5" aria-hidden="true">
+                                                                        <ul id="8c5e5d32-1ae6-45de-8c6e-6b44128bf618" class="root-header__menu-list menu-level-two column-count--2" aria-labelledby="cta-8c5e5d32-1ae6-45de-8c6e-6b44128bf618" aria-hidden="true">
                                                                                 <li class="root-header__menu-list-item">
                                                                                         <a href="/fr-fr/bagages" title="Ce lien ouvre la page sur bagages." target="_self" class="root-header__menu-list-item__cta   ">
                                                                                             <span class="menu-list-item__cta__item-content">Bagages<span class="icon"></span></span>
@@ -661,10 +693,10 @@
                                                 </div>
                                             </li>
                                             <li class="root-header__menu-list-item js-menu-list-item">
-                                                <button id="cta-e1fee67b-f008-41b4-9866-d277c2af057e" type="button" class="root-header__menu-list-item__cta js-menu-list-item__cta" title="Enregistrement" aria-controls="e1fee67b-f008-41b4-9866-d277c2af057e" aria-expanded="false">
+                                                <button id="cta-67160e4e-8452-4c3a-a1c3-820b722bc42d" type="button" class="root-header__menu-list-item__cta js-menu-list-item__cta" title="Enregistrement" aria-controls="67160e4e-8452-4c3a-a1c3-820b722bc42d" aria-expanded="false">
                                                     <span class="menu-list-item__cta__item-content">Enregistrement</span>
                                                 </button>
-                                                <div id="e1fee67b-f008-41b4-9866-d277c2af057e" class="root-header-main-menu__panel" aria-labelledby="cta-e1fee67b-f008-41b4-9866-d277c2af057e" aria-hidden="true">
+                                                <div id="67160e4e-8452-4c3a-a1c3-820b722bc42d" class="root-header-main-menu__panel" aria-labelledby="cta-67160e4e-8452-4c3a-a1c3-820b722bc42d" aria-hidden="true">
                                                     <div class="matrix-tap__container">
                                                         <div class="matrix-tap__row">
                                                                     <div class="matrix-tap__col root-header__menu-column flex-grow--1">
@@ -672,12 +704,12 @@
 <span class="icon"><img src="/-/media/Flytap/illustration/icons/icons-in-green/check-in.svg" alt=""></span>                                                                                                                                                            <span class="title-tap--2">Effectuer l&#39;enregistrement</span>
 
                                                                         </div>
-                                                                        <button id="cta-61333cb5-7322-40ca-80d9-4669bb255492" type="button" class="root-header__menu-level-list-item__cta js-menu-level-list-item__cta device-visibility--mobile" aria-controls="61333cb5-7322-40ca-80d9-4669bb255492" aria-expanded="false">
+                                                                        <button id="cta-b018a46f-a01a-45b5-a8d3-de97c68438c4" type="button" class="root-header__menu-level-list-item__cta js-menu-level-list-item__cta device-visibility--mobile" aria-controls="b018a46f-a01a-45b5-a8d3-de97c68438c4" aria-expanded="false">
 
                                                                                 <span class="title-tap--2">Effectuer l&#39;enregistrement</span>
 
                                                                         </button>
-                                                                        <ul id="61333cb5-7322-40ca-80d9-4669bb255492" class="root-header__menu-list menu-level-two column-count--1" aria-labelledby="cta-61333cb5-7322-40ca-80d9-4669bb255492" aria-hidden="true">
+                                                                        <ul id="b018a46f-a01a-45b5-a8d3-de97c68438c4" class="root-header__menu-list menu-level-two column-count--1" aria-labelledby="cta-b018a46f-a01a-45b5-a8d3-de97c68438c4" aria-hidden="true">
                                                                                 <li class="root-header__menu-list-item">
                                                                                         <a href="javascript:$(&#39;.flight-actions .multitab__wrapper li:eq(2) button&#39;).trigger(&#39;click&#39;).focus(); " title="Ce lien ouvre la page sur enregistrement en ligne." target="_self" class="root-header__menu-list-item__cta   ">
                                                                                             <span class="menu-list-item__cta__item-content">Enregistrement en ligne<span class="icon"></span></span>
@@ -723,10 +755,10 @@
                                                 </div>
                                             </li>
                                             <li class="root-header__menu-list-item js-menu-list-item">
-                                                <button id="cta-3b94f4c1-142b-4727-a0a5-4f6a13133dac" type="button" class="root-header__menu-list-item__cta js-menu-list-item__cta" title="Avant le d&#233;part" aria-controls="3b94f4c1-142b-4727-a0a5-4f6a13133dac" aria-expanded="false">
+                                                <button id="cta-429724d8-af03-4f01-a94c-9d3c58fd64b8" type="button" class="root-header__menu-list-item__cta js-menu-list-item__cta" title="Avant le d&#233;part" aria-controls="429724d8-af03-4f01-a94c-9d3c58fd64b8" aria-expanded="false">
                                                     <span class="menu-list-item__cta__item-content">Avant le d&#233;part</span>
                                                 </button>
-                                                <div id="3b94f4c1-142b-4727-a0a5-4f6a13133dac" class="root-header-main-menu__panel" aria-labelledby="cta-3b94f4c1-142b-4727-a0a5-4f6a13133dac" aria-hidden="true">
+                                                <div id="429724d8-af03-4f01-a94c-9d3c58fd64b8" class="root-header-main-menu__panel" aria-labelledby="cta-429724d8-af03-4f01-a94c-9d3c58fd64b8" aria-hidden="true">
                                                     <div class="matrix-tap__container">
                                                         <div class="matrix-tap__row">
                                                                     <div class="matrix-tap__col root-header__menu-column flex-grow--2">
@@ -734,12 +766,12 @@
 <span class="icon"><img src="/-/media/Flytap/illustration/icons/icons-in-green/tap-experience-v3.svg" alt=""></span>                                                                                                                                                            <span class="title-tap--2">Exp&#233;rience TAP</span>
 
                                                                         </div>
-                                                                        <button id="cta-8ffbfca6-44ff-46b0-8034-d300b425f252" type="button" class="root-header__menu-level-list-item__cta js-menu-level-list-item__cta device-visibility--mobile" aria-controls="8ffbfca6-44ff-46b0-8034-d300b425f252" aria-expanded="false">
+                                                                        <button id="cta-8c2eeacb-ceb8-4e1e-8718-5ce409310636" type="button" class="root-header__menu-level-list-item__cta js-menu-level-list-item__cta device-visibility--mobile" aria-controls="8c2eeacb-ceb8-4e1e-8718-5ce409310636" aria-expanded="false">
 
                                                                                 <span class="title-tap--2">Exp&#233;rience TAP</span>
 
                                                                         </button>
-                                                                        <ul id="8ffbfca6-44ff-46b0-8034-d300b425f252" class="root-header__menu-list menu-level-two column-count--2" aria-labelledby="cta-8ffbfca6-44ff-46b0-8034-d300b425f252" aria-hidden="true">
+                                                                        <ul id="8c2eeacb-ceb8-4e1e-8718-5ce409310636" class="root-header__menu-list menu-level-two column-count--2" aria-labelledby="cta-8c2eeacb-ceb8-4e1e-8718-5ce409310636" aria-hidden="true">
                                                                                 <li class="root-header__menu-list-item">
                                                                                         <a href="/fr-fr/experience-tap/voyager-en-classe-affaires" title="Ce lien ouvre la page sur voler en Classe Executive." target="_self" class="root-header__menu-list-item__cta   ">
                                                                                             <span class="menu-list-item__cta__item-content">Voler en Classe Business<span class="icon"></span></span>
@@ -777,12 +809,12 @@
 <span class="icon"><img src="/-/media/Flytap/illustration/icons/icons-in-green/at-the-airport.svg" alt=""></span>                                                                                                                                                            <span class="title-tap--2">&#192; l’a&#233;roport</span>
 
                                                                         </div>
-                                                                        <button id="cta-2d323089-52d5-41c3-886c-5a2e7571a2ae" type="button" class="root-header__menu-level-list-item__cta js-menu-level-list-item__cta device-visibility--mobile" aria-controls="2d323089-52d5-41c3-886c-5a2e7571a2ae" aria-expanded="false">
+                                                                        <button id="cta-48a28961-402d-4a19-ae16-c4e7438c198f" type="button" class="root-header__menu-level-list-item__cta js-menu-level-list-item__cta device-visibility--mobile" aria-controls="48a28961-402d-4a19-ae16-c4e7438c198f" aria-expanded="false">
 
                                                                                 <span class="title-tap--2">&#192; l’a&#233;roport</span>
 
                                                                         </button>
-                                                                        <ul id="2d323089-52d5-41c3-886c-5a2e7571a2ae" class="root-header__menu-list menu-level-two column-count--1" aria-labelledby="cta-2d323089-52d5-41c3-886c-5a2e7571a2ae" aria-hidden="true">
+                                                                        <ul id="48a28961-402d-4a19-ae16-c4e7438c198f" class="root-header__menu-list menu-level-two column-count--1" aria-labelledby="cta-48a28961-402d-4a19-ae16-c4e7438c198f" aria-hidden="true">
                                                                                 <li class="root-header__menu-list-item">
                                                                                         <a href="/fr-fr/a-l-aeroport/centre-d-assistance-clientele-premium" title="Ce lien ouvre la page sur le Premium Customer Center." target="_self" class="root-header__menu-list-item__cta   ">
                                                                                             <span class="menu-list-item__cta__item-content">Premium Customer Center<span class="icon"></span></span>
@@ -814,12 +846,12 @@
 <span class="icon"><img src="/-/media/Flytap/illustration/icons/icons-in-green/on-board.svg" alt=""></span>                                                                                                                                                            <span class="title-tap--2">&#192; bord</span>
 
                                                                         </div>
-                                                                        <button id="cta-8b8d32e7-5fe7-443a-a227-6d0b271130e6" type="button" class="root-header__menu-level-list-item__cta js-menu-level-list-item__cta device-visibility--mobile" aria-controls="8b8d32e7-5fe7-443a-a227-6d0b271130e6" aria-expanded="false">
+                                                                        <button id="cta-d548d221-5b6f-41ad-bfe4-1146d7dd14b0" type="button" class="root-header__menu-level-list-item__cta js-menu-level-list-item__cta device-visibility--mobile" aria-controls="d548d221-5b6f-41ad-bfe4-1146d7dd14b0" aria-expanded="false">
 
                                                                                 <span class="title-tap--2">&#192; bord</span>
 
                                                                         </button>
-                                                                        <ul id="8b8d32e7-5fe7-443a-a227-6d0b271130e6" class="root-header__menu-list menu-level-two column-count--1" aria-labelledby="cta-8b8d32e7-5fe7-443a-a227-6d0b271130e6" aria-hidden="true">
+                                                                        <ul id="d548d221-5b6f-41ad-bfe4-1146d7dd14b0" class="root-header__menu-list menu-level-two column-count--1" aria-labelledby="cta-d548d221-5b6f-41ad-bfe4-1146d7dd14b0" aria-hidden="true">
                                                                                 <li class="root-header__menu-list-item">
                                                                                         <a href="/fr-fr/a-bord/repas-a-bord" title="Ce lien ouvre la page sur les repas &#224; bord." target="_self" class="root-header__menu-list-item__cta   ">
                                                                                             <span class="menu-list-item__cta__item-content">Repas &#224; bord<span class="icon"></span></span>
@@ -865,10 +897,10 @@
                                                 </div>
                                             </li>
                                             <li class="root-header__menu-list-item js-menu-list-item">
-                                                <button id="cta-76fbb88b-478e-4893-869e-54a64cb96f33" type="button" class="root-header__menu-list-item__cta js-menu-list-item__cta" title="TAP Miles&amp;Go" aria-controls="76fbb88b-478e-4893-869e-54a64cb96f33" aria-expanded="false">
+                                                <button id="cta-74d0e5bb-479d-4a63-bd2f-6246e1d2aa89" type="button" class="root-header__menu-list-item__cta js-menu-list-item__cta" title="TAP Miles&amp;Go" aria-controls="74d0e5bb-479d-4a63-bd2f-6246e1d2aa89" aria-expanded="false">
                                                     <span class="menu-list-item__cta__item-content">TAP Miles&amp;Go</span>
                                                 </button>
-                                                <div id="76fbb88b-478e-4893-869e-54a64cb96f33" class="root-header-main-menu__panel" aria-labelledby="cta-76fbb88b-478e-4893-869e-54a64cb96f33" aria-hidden="true">
+                                                <div id="74d0e5bb-479d-4a63-bd2f-6246e1d2aa89" class="root-header-main-menu__panel" aria-labelledby="cta-74d0e5bb-479d-4a63-bd2f-6246e1d2aa89" aria-hidden="true">
                                                     <div class="matrix-tap__container">
                                                         <div class="matrix-tap__row">
                                                                     <div class="matrix-tap__col root-header__menu-column flex-grow--1">
@@ -876,12 +908,12 @@
 <span class="icon"><img src="/-/media/Flytap/illustration/icons/icons-in-green/tap-miles-and-go-mile.svg" alt=""></span>                                                                                                                                                            <span class="title-tap--2">TAP Miles&amp;Go</span>
 
                                                                         </div>
-                                                                        <button id="cta-67a13503-d226-4ad7-97f4-2518532fdd6a" type="button" class="root-header__menu-level-list-item__cta js-menu-level-list-item__cta device-visibility--mobile" aria-controls="67a13503-d226-4ad7-97f4-2518532fdd6a" aria-expanded="false">
+                                                                        <button id="cta-ec498513-b3f1-4f19-b2d5-2ae8534d75e1" type="button" class="root-header__menu-level-list-item__cta js-menu-level-list-item__cta device-visibility--mobile" aria-controls="ec498513-b3f1-4f19-b2d5-2ae8534d75e1" aria-expanded="false">
 
                                                                                 <span class="title-tap--2">TAP Miles&amp;Go</span>
 
                                                                         </button>
-                                                                        <ul id="67a13503-d226-4ad7-97f4-2518532fdd6a" class="root-header__menu-list menu-level-two column-count--1" aria-labelledby="cta-67a13503-d226-4ad7-97f4-2518532fdd6a" aria-hidden="true">
+                                                                        <ul id="ec498513-b3f1-4f19-b2d5-2ae8534d75e1" class="root-header__menu-list menu-level-two column-count--1" aria-labelledby="cta-ec498513-b3f1-4f19-b2d5-2ae8534d75e1" aria-hidden="true">
                                                                                 <li class="root-header__menu-list-item">
                                                                                         <a href="/fr-fr/miles-and-go" title="Ce lien ouvre la page sur le Programme TAP Miles&amp;Go." target="_self" class="root-header__menu-list-item__cta   ">
                                                                                             <span class="menu-list-item__cta__item-content">Conna&#238;tre le Programme<span class="icon"></span></span>
@@ -919,12 +951,12 @@
 <span class="icon"><img src="/-/media/Flytap/illustration/icons/icons-in-green/earn-miles.svg" alt=""></span>                                                                                                                                                            <span class="title-tap--2">Gagner des miles</span>
 
                                                                         </div>
-                                                                        <button id="cta-70cd89dc-1bf6-41cc-94dd-5ff2ae1a4169" type="button" class="root-header__menu-level-list-item__cta js-menu-level-list-item__cta device-visibility--mobile" aria-controls="70cd89dc-1bf6-41cc-94dd-5ff2ae1a4169" aria-expanded="false">
+                                                                        <button id="cta-0622af11-4652-4163-b156-9d2867e2fd74" type="button" class="root-header__menu-level-list-item__cta js-menu-level-list-item__cta device-visibility--mobile" aria-controls="0622af11-4652-4163-b156-9d2867e2fd74" aria-expanded="false">
 
                                                                                 <span class="title-tap--2">Gagner des miles</span>
 
                                                                         </button>
-                                                                        <ul id="70cd89dc-1bf6-41cc-94dd-5ff2ae1a4169" class="root-header__menu-list menu-level-two column-count--1" aria-labelledby="cta-70cd89dc-1bf6-41cc-94dd-5ff2ae1a4169" aria-hidden="true">
+                                                                        <ul id="0622af11-4652-4163-b156-9d2867e2fd74" class="root-header__menu-list menu-level-two column-count--1" aria-labelledby="cta-0622af11-4652-4163-b156-9d2867e2fd74" aria-hidden="true">
                                                                                 <li class="root-header__menu-list-item">
                                                                                         <a href="/fr-fr/espace-client/demander-credit-de-miles" title="Ce lien ouvre la page Demander un cr&#233;dit de miles dans le compteclient. Assurez-vous que vous &#234;tes connect&#233; pour y acc&#233;der." target="_self" class="root-header__menu-list-item__cta   ">
                                                                                             <span class="menu-list-item__cta__item-content">Demander un cr&#233;dit de miles<span class="icon"></span></span>
@@ -956,12 +988,12 @@
 <span class="icon"><img src="/-/media/Flytap/illustration/icons/icons-in-green/use-miles.svg" alt=""></span>                                                                                                                                                            <span class="title-tap--2">Utiliser des miles</span>
 
                                                                         </div>
-                                                                        <button id="cta-b4b4d435-2062-4b51-9a60-84e5fd6c06ec" type="button" class="root-header__menu-level-list-item__cta js-menu-level-list-item__cta device-visibility--mobile" aria-controls="b4b4d435-2062-4b51-9a60-84e5fd6c06ec" aria-expanded="false">
+                                                                        <button id="cta-ab985290-e961-4a41-b911-1dbb12d13af1" type="button" class="root-header__menu-level-list-item__cta js-menu-level-list-item__cta device-visibility--mobile" aria-controls="ab985290-e961-4a41-b911-1dbb12d13af1" aria-expanded="false">
 
                                                                                 <span class="title-tap--2">Utiliser des miles</span>
 
                                                                         </button>
-                                                                        <ul id="b4b4d435-2062-4b51-9a60-84e5fd6c06ec" class="root-header__menu-list menu-level-two column-count--1" aria-labelledby="cta-b4b4d435-2062-4b51-9a60-84e5fd6c06ec" aria-hidden="true">
+                                                                        <ul id="ab985290-e961-4a41-b911-1dbb12d13af1" class="root-header__menu-list menu-level-two column-count--1" aria-labelledby="cta-ab985290-e961-4a41-b911-1dbb12d13af1" aria-hidden="true">
                                                                                 <li class="root-header__menu-list-item">
                                                                                         <a href="/fr-fr/miles-and-go/utiliser-des-miles/miles4extras" title="Ce lien ouvre la page sur R&#233;server des extras avec des miles." target="_self" class="root-header__menu-list-item__cta   ">
                                                                                             <span class="menu-list-item__cta__item-content">R&#233;server des extras avec des miles<span class="icon"></span></span>
@@ -999,12 +1031,12 @@
 <span class="icon"><img src="/-/media/Flytap/illustration/icons/icons-in-green/promotions.svg" alt=""></span>                                                                                                                                                            <span class="title-tap--2">Promotions</span>
 
                                                                         </div>
-                                                                        <button id="cta-9739f394-e17c-4da7-b683-160600959679" type="button" class="root-header__menu-level-list-item__cta js-menu-level-list-item__cta device-visibility--mobile" aria-controls="9739f394-e17c-4da7-b683-160600959679" aria-expanded="false">
+                                                                        <button id="cta-061debf0-edce-4c7c-9f81-40d85fd37817" type="button" class="root-header__menu-level-list-item__cta js-menu-level-list-item__cta device-visibility--mobile" aria-controls="061debf0-edce-4c7c-9f81-40d85fd37817" aria-expanded="false">
 
                                                                                 <span class="title-tap--2">Promotions</span>
 
                                                                         </button>
-                                                                        <ul id="9739f394-e17c-4da7-b683-160600959679" class="root-header__menu-list menu-level-two column-count--1" aria-labelledby="cta-9739f394-e17c-4da7-b683-160600959679" aria-hidden="true">
+                                                                        <ul id="061debf0-edce-4c7c-9f81-40d85fd37817" class="root-header__menu-list menu-level-two column-count--1" aria-labelledby="cta-061debf0-edce-4c7c-9f81-40d85fd37817" aria-hidden="true">
                                                                                 <li class="root-header__menu-list-item">
                                                                                         <a href="/fr-fr/miles-and-go/promotions" title="Ce lien ouvre la page des offres et promotions actuellement disponibles pour les Clients TAP Miles&amp;Go." target="_self" class="root-header__menu-list-item__cta   ">
                                                                                             <span class="menu-list-item__cta__item-content">Promotions &amp; Offres Sp&#233;ciales<span class="icon"></span></span>
@@ -1038,10 +1070,10 @@
                                                 </div>
                                             </li>
                                             <li class="root-header__menu-list-item js-menu-list-item">
-                                                <button id="cta-2fcb06a4-6825-4b00-9f7d-fd55c53296f6" type="button" class="root-header__menu-list-item__cta js-menu-list-item__cta" title="Aide" aria-controls="2fcb06a4-6825-4b00-9f7d-fd55c53296f6" aria-expanded="false">
+                                                <button id="cta-c5430e07-311c-465c-96dd-9449c7611311" type="button" class="root-header__menu-list-item__cta js-menu-list-item__cta" title="Aide" aria-controls="c5430e07-311c-465c-96dd-9449c7611311" aria-expanded="false">
                                                     <span class="menu-list-item__cta__item-content">Aide</span>
                                                 </button>
-                                                <div id="2fcb06a4-6825-4b00-9f7d-fd55c53296f6" class="root-header-main-menu__panel" aria-labelledby="cta-2fcb06a4-6825-4b00-9f7d-fd55c53296f6" aria-hidden="true">
+                                                <div id="c5430e07-311c-465c-96dd-9449c7611311" class="root-header-main-menu__panel" aria-labelledby="cta-c5430e07-311c-465c-96dd-9449c7611311" aria-hidden="true">
                                                     <div class="matrix-tap__container">
                                                         <div class="matrix-tap__row">
                                                                     <div class="matrix-tap__col root-header__menu-column flex-grow--1">
@@ -1049,12 +1081,12 @@
 <span class="icon"><img src="/-/media/Flytap/illustration/icons/icons-in-green/support-and-faq-green-v2.svg" alt=""></span>                                                                                                                                                            <span class="title-tap--2">Service Client</span>
 
                                                                         </div>
-                                                                        <button id="cta-f861a459-fc3d-4739-adb4-61a5a3a22b5b" type="button" class="root-header__menu-level-list-item__cta js-menu-level-list-item__cta device-visibility--mobile" aria-controls="f861a459-fc3d-4739-adb4-61a5a3a22b5b" aria-expanded="false">
+                                                                        <button id="cta-1b85708b-7815-4f12-bfca-11d8f3e5e6bc" type="button" class="root-header__menu-level-list-item__cta js-menu-level-list-item__cta device-visibility--mobile" aria-controls="1b85708b-7815-4f12-bfca-11d8f3e5e6bc" aria-expanded="false">
 
                                                                                 <span class="title-tap--2">Service Client</span>
 
                                                                         </button>
-                                                                        <ul id="f861a459-fc3d-4739-adb4-61a5a3a22b5b" class="root-header__menu-list menu-level-two column-count--1" aria-labelledby="cta-f861a459-fc3d-4739-adb4-61a5a3a22b5b" aria-hidden="true">
+                                                                        <ul id="1b85708b-7815-4f12-bfca-11d8f3e5e6bc" class="root-header__menu-list menu-level-two column-count--1" aria-labelledby="cta-1b85708b-7815-4f12-bfca-11d8f3e5e6bc" aria-hidden="true">
                                                                                 <li class="root-header__menu-list-item">
                                                                                         <a href="/fr-fr/aide/contacts" title="" target="_self" class="root-header__menu-list-item__cta   ">
                                                                                             <span class="menu-list-item__cta__item-content">Contacts<span class="icon"></span></span>
@@ -1080,12 +1112,12 @@
 <span class="icon"><img src="/-/media/Flytap/illustration/icons/icons-in-green/manage-booking-and-add-services.svg" alt=""></span>                                                                                                                                                            <span class="title-tap--2">Informations Pratiques</span>
 
                                                                         </div>
-                                                                        <button id="cta-5f790c7a-e2b8-47ff-8c46-f55f8fb631c0" type="button" class="root-header__menu-level-list-item__cta js-menu-level-list-item__cta device-visibility--mobile" aria-controls="5f790c7a-e2b8-47ff-8c46-f55f8fb631c0" aria-expanded="false">
+                                                                        <button id="cta-2a29a475-2930-48ea-972c-bf981ade6066" type="button" class="root-header__menu-level-list-item__cta js-menu-level-list-item__cta device-visibility--mobile" aria-controls="2a29a475-2930-48ea-972c-bf981ade6066" aria-expanded="false">
 
                                                                                 <span class="title-tap--2">Informations Pratiques</span>
 
                                                                         </button>
-                                                                        <ul id="5f790c7a-e2b8-47ff-8c46-f55f8fb631c0" class="root-header__menu-list menu-level-two column-count--1" aria-labelledby="cta-5f790c7a-e2b8-47ff-8c46-f55f8fb631c0" aria-hidden="true">
+                                                                        <ul id="2a29a475-2930-48ea-972c-bf981ade6066" class="root-header__menu-list menu-level-two column-count--1" aria-labelledby="cta-2a29a475-2930-48ea-972c-bf981ade6066" aria-hidden="true">
                                                                                 <li class="root-header__menu-list-item">
                                                                                         <a href="/fr-fr/remboursements-tap" title="" target="_self" class="root-header__menu-list-item__cta   ">
                                                                                             <span class="menu-list-item__cta__item-content">Remboursements<span class="icon"></span></span>
@@ -1151,14 +1183,16 @@
                                     <span class="menu-list-item__cta__item-content">Connexion</span>
                                 </button>
                             </div>
-                            <div class="root-header__register device-visibility--desktop">
-                                <a href="/fr-fr/inscription/avantages" class="root-header__menu-list-item__cta" title="Inscrivez-vous maintenant !">
-                                    <span class="menu-list-item__cta__item-icon menu-list-item__cta__item-icon--light-theme svg-icn-register"></span>
-                                    <span class="menu-list-item__cta__item-icon menu-list-item__cta__item-icon--dark-theme svg-icn-register-dark"></span>
-                                    <span class="menu-list-item__cta__item-content">Inscrivez-vous maintenant !</span>
-                                </a>
-                            </div>
-                                                    <div class="root-header__topmenu-links device-visibility--mobile">
+
+                        <div class="root-header__search device-visibility--desktop">
+                            <a href="/fr-fr/rechercher" class="root-header__search__cta" title="rechercher">
+                                <span class="menu-list-item__cta__item-icon svg-icn-search"></span>
+                                <span class="prop-hide--sreader">rechercher</span>
+                            </a>
+                        </div>
+
+
+                            <div class="root-header__topmenu-links device-visibility--mobile">
                                 <ul class="root-header__menu-list">
                                         <li class="root-header__menu-list-item">
                                                 <span class="root-header__menu-list-item__cta">
@@ -1217,7 +1251,7 @@
             </div>
 
         </div>
-        <script src="/assets/js/modular/root-header.min.js?v=28769367-60b2-4e17-bb62-1adc982007da" defer></script>
+        <script src="/assets/js/modular/root-header.min.js?v=5ef0e108-6102-4680-ace7-b125655343fe" defer></script>
     </header>
 </div>
         <main class="root-main">
@@ -1226,12 +1260,12 @@
     <div class="ibe-wrapper-indra" data-default-IATA="PAR">
         <app-root class="MyModularWidget "></app-root>
 
-        <link rel="stylesheet" href="https://booking.flytap.com/widget/assets/styles/styles-mini-ibe.css?v=28769367-60b2-4e17-bb62-1adc982007da">
-        <link rel="stylesheet" href="https://unpkg.com/ngx-bootstrap@5.6.0/datepicker/bs-datepicker.css?v=28769367-60b2-4e17-bb62-1adc982007da">
-        <script src="https://booking.flytap.com/widget/runtime.js?v=28769367-60b2-4e17-bb62-1adc982007da" defer></script>
-        <script src="https://booking.flytap.com/widget/polyfills.js?v=28769367-60b2-4e17-bb62-1adc982007da" defer></script>
-        <script src="https://booking.flytap.com/widget/main.js?v=28769367-60b2-4e17-bb62-1adc982007da" defer></script>
-        <script src="/assets/js/modular/ibe.min.js?v=28769367-60b2-4e17-bb62-1adc982007da" defer></script>
+        <link rel="stylesheet" href="https://booking.flytap.com/widget/assets/styles/styles-mini-ibe.css?v=5ef0e108-6102-4680-ace7-b125655343fe">
+        <link rel="stylesheet" href="https://unpkg.com/ngx-bootstrap@5.6.0/datepicker/bs-datepicker.css?v=5ef0e108-6102-4680-ace7-b125655343fe">
+        <script src="https://booking.flytap.com/widget/runtime.js?v=5ef0e108-6102-4680-ace7-b125655343fe" defer></script>
+        <script src="https://booking.flytap.com/widget/polyfills.js?v=5ef0e108-6102-4680-ace7-b125655343fe" defer></script>
+        <script src="https://booking.flytap.com/widget/main.js?v=5ef0e108-6102-4680-ace7-b125655343fe" defer></script>
+        <script src="/assets/js/modular/ibe.min.js?v=5ef0e108-6102-4680-ace7-b125655343fe" defer></script>
     </div>
 
 
@@ -1368,7 +1402,7 @@ Cette Politique de confidentialit&eacute; vise &agrave; vous donner toutes les i
 
 
 
-    <div class="matrix-tap__container legacy-layout expand-collapse-tap expand-collapse-tap--numbered" id="1adecdc3-6d5d-46aa-9489-34490addccd0">
+    <div class="matrix-tap__container legacy-layout expand-collapse-tap expand-collapse-tap--numbered" id="5968b31c-c666-49a6-a076-361cbb6897a0">
                 <div class="matrix-tap__row" >
             <div class="matrix-tap__col">
                 <button class="expand-collapse-tap__title title-tap--3" id="90123c41-c0e3-44f6-a35c-7c5215554f40" data-anchor-code=""> Pourquoi une Politique de confidentialité?</button>
@@ -1861,7 +1895,7 @@ Toutes les compagnies a&eacute;riennes sont l&eacute;galement tenues de c&eacute
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             $(function() {
-                renderStandardExpandCollapse('1adecdc3-6d5d-46aa-9489-34490addccd0', standardExpandCollapseInitFunctions, standardExpandCollapseCallbacks);
+                renderStandardExpandCollapse('5968b31c-c666-49a6-a076-361cbb6897a0', standardExpandCollapseInitFunctions, standardExpandCollapseCallbacks);
             });
         });
 
@@ -1878,8 +1912,8 @@ Toutes les compagnies a&eacute;riennes sont l&eacute;galement tenues de c&eacute
                             <div class="matrix-tap__col-12 matrix-tap__col-lg-2">
                                     <div class="root-footer-item">
                                         <div class="root-footer-item__title prop-device--desktop">Liens utiles</div>
-                                        <button class="root-footer-item__title root-footer-btn-expanded" id="cta-5fb09cad-fb8d-484b-87ec-788ea08f157c" aria-controls="5fb09cad-fb8d-484b-87ec-788ea08f157c" aria-expanded="false" type="button">Liens utiles</button>
-                                        <ul class="root-footer-item__list" id="5fb09cad-fb8d-484b-87ec-788ea08f157c" aria-labelledby="cta-5fb09cad-fb8d-484b-87ec-788ea08f157c" aria-hidden="true">
+                                        <button class="root-footer-item__title root-footer-btn-expanded" id="cta-7094e96b-2bd5-48a7-b9b5-73154b57785f" aria-controls="7094e96b-2bd5-48a7-b9b5-73154b57785f" aria-expanded="false" type="button">Liens utiles</button>
+                                        <ul class="root-footer-item__list" id="7094e96b-2bd5-48a7-b9b5-73154b57785f" aria-labelledby="cta-7094e96b-2bd5-48a7-b9b5-73154b57785f" aria-hidden="true">
                                                     <li>
                                                         <a class="root-footer-item__list__cta" href="javascript:$(&#39;.flight-actions .multitab__wrapper li:eq(2) button&#39;).trigger(&#39;click&#39;).focus(); " target='_self' title="Ce lien ouvre la page sur Enregistrement en ligne." data-ga-title="">
 Enregistrement en ligne
@@ -1916,8 +1950,8 @@ Remboursements
                             <div class="matrix-tap__col-12 matrix-tap__col-lg-2">
                                     <div class="root-footer-item">
                                         <div class="root-footer-item__title prop-device--desktop">Autres informations importantes</div>
-                                        <button class="root-footer-item__title root-footer-btn-expanded" id="cta-4164c46a-69d0-45d7-8452-6d3f944066d8" aria-controls="4164c46a-69d0-45d7-8452-6d3f944066d8" aria-expanded="false" type="button">Autres informations importantes</button>
-                                        <ul class="root-footer-item__list" id="4164c46a-69d0-45d7-8452-6d3f944066d8" aria-labelledby="cta-4164c46a-69d0-45d7-8452-6d3f944066d8" aria-hidden="true">
+                                        <button class="root-footer-item__title root-footer-btn-expanded" id="cta-464326f9-27ac-4dbc-af31-996797ee94a1" aria-controls="464326f9-27ac-4dbc-af31-996797ee94a1" aria-expanded="false" type="button">Autres informations importantes</button>
+                                        <ul class="root-footer-item__list" id="464326f9-27ac-4dbc-af31-996797ee94a1" aria-labelledby="cta-464326f9-27ac-4dbc-af31-996797ee94a1" aria-hidden="true">
                                                     <li>
                                                         <a class="root-footer-item__list__cta" href="/fr-fr/conditions-de-transport" target='_self' title="Ce lien ouvre la page sur les Conditions de transport sur les vols TAP." data-ga-title="">
 Conditions de transport
@@ -1969,8 +2003,8 @@ Liste de s&#233;curit&#233; a&#233;rienne de l&#39;UE
                             <div class="matrix-tap__col-12 matrix-tap__col-lg-2">
                                     <div class="root-footer-item">
                                         <div class="root-footer-item__title prop-device--desktop">Promotions</div>
-                                        <button class="root-footer-item__title root-footer-btn-expanded" id="cta-776a493b-afd0-45f2-9aaf-c11b44ca3555" aria-controls="776a493b-afd0-45f2-9aaf-c11b44ca3555" aria-expanded="false" type="button">Promotions</button>
-                                        <ul class="root-footer-item__list" id="776a493b-afd0-45f2-9aaf-c11b44ca3555" aria-labelledby="cta-776a493b-afd0-45f2-9aaf-c11b44ca3555" aria-hidden="true">
+                                        <button class="root-footer-item__title root-footer-btn-expanded" id="cta-527f6b04-039c-4237-ac98-79c0c24b9cd6" aria-controls="527f6b04-039c-4237-ac98-79c0c24b9cd6" aria-expanded="false" type="button">Promotions</button>
+                                        <ul class="root-footer-item__list" id="527f6b04-039c-4237-ac98-79c0c24b9cd6" aria-labelledby="cta-527f6b04-039c-4237-ac98-79c0c24b9cd6" aria-hidden="true">
                                                     <li>
                                                         <a class="root-footer-item__list__cta" href="https://www.flytap.com/fr_fr/vols-vers-funchal" target='_blank' title="Acc&#233;dez au site ici https://www.flytap.com/fr_fr/vols-vers-funchal. Ce lien s&#39;ouvre dans une nouvelle fen&#234;tre." data-ga-title="">
 Vols Funchal
@@ -2072,7 +2106,7 @@ Paris - Funchal
                 </div>
             </div>
         </div>
-        <script src="/assets/js/modular/root-footer.min.js?v=28769367-60b2-4e17-bb62-1adc982007da" defer></script>
+        <script src="/assets/js/modular/root-footer.min.js?v=5ef0e108-6102-4680-ace7-b125655343fe" defer></script>
 
     </footer>
 </div>
@@ -2204,7 +2238,7 @@ Paris - Funchal
         </div>
     </div>
     <!-- Passengers Selection Modal END -->
-    <script src="/assets/js-mobile/modular/modal-passengers-selection.min.js?v=32293532-90e3-4d07-bd04-ecfc894c579e" defer></script>
+    <script src="/assets/js-mobile/modular/modal-passengers-selection.min.js?v=597977e6-edf8-4058-b61c-c2ccb01466d5" defer></script>
 <!-- DATE PICKER RANGE HOLDER -->
 <div class="datepicker-outside">
     <header>S&#233;lectionner les dates</header>
@@ -2491,7 +2525,7 @@ Paris - Funchal
 
     </script>
 
-<script src='/assets/js/bundle.js?v=CgLu8e0n488LleTJDk1OxHEEDpQG_Wqc_6dB2Q7lBuY1'></script>
+<script src='/assets/js/bundle.js?v=-u3Zlu_Sn8sb28OsXnWW1eAQfC7KARznl3C_q7FUgno1'></script>
 
 
 <script>window.MSInputMethodContext && document.documentMode && document.write('<script src="/assets/js/fundamentals/polyfill/ie11CustomProperties.min.js" defer><\x2fscript>');</script>
@@ -2552,7 +2586,7 @@ Paris - Funchal
         var SessionExpiredLabels = {"ExpiringSessionTitle":"{NAME}, votre session expirera dans :","ExpiringSessionDescription":"Pour des raisons de sécurité, votre session sera automatiquement fermée dans le délai indiqué. Pour renouveler votre session, nous vous invitons à vous reconnecter.","ExpiredSessionTitle":"Votre session a expiré","ExpiredSessionDescription":"Pour garantir votre sécurité et la confidentialité de vos informations, votre session Flytap a été fermée automatiquement. Pour renouveler votre session, nous vous invitons à vous reconnecter.","Days":"jours","Day":"jour","Hours":"h","Minutes":"m","Seconds":"s","Login":"Login","LoginRenewTitle":"{NAME}, pour garantir votre sécurité et la confidentialité de vos informations, veuillez vous reconnecter.","Close":"Fermer"};
         var SessionExpiredId = 'fa9f6ac5-f2ee-46ec-9b07-368b5161a8e1';
     </script>
-    <script src="/assets/js/modular/sessionExpiredWarning.min.js?v=28769367-60b2-4e17-bb62-1adc982007da" defer></script>
+    <script src="/assets/js/modular/sessionExpiredWarning.min.js?v=5ef0e108-6102-4680-ace7-b125655343fe" defer></script>
     <script>
         document.addEventListener('DOMContentLoaded', function () {
             $(function () {
