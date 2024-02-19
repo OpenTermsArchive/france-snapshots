@@ -29,6 +29,11 @@
     <link rel="stylesheet" href="https://s.a-fs.me/diffusion/css/style.e1efe79d29b87d1c.css?v=3">
 
     <style type="text/css">
+
+        body {
+            overflow: auto;
+        }
+
         #main-container-wrapper {
                     min-width: 810px;
         }
@@ -70,12 +75,6 @@
 
         gtag('js', new Date());
 
-                    gtag('config', 'G-FY9ZPHQ070', {
-                'cookie_expires': 3600 * 24 * 365,
-                'page_title': pageTitle,
-                'anonymize_ip': true
-            });
-        
         
             }
 
@@ -99,7 +98,7 @@
     
     
     </head>
-<body ng-app="AdbxApp">
+<body ng-app="AdbxApp" ng-controller="AdbxAppController" ng-swipe-left="preventSwipe($event)" ng-swipe-right="preventSwipe($event)">
 
 
 <adbx-connection-error></adbx-connection-error>
@@ -113,6 +112,7 @@
             <div id="main-container" class="main-container" adbx-main adbx-main-data="{
     &quot;language&quot;: &quot;fr&quot;,
     &quot;languageId&quot;: 1,
+    &quot;isBorne&quot;: false,
     &quot;isMobile&quot;: false,
     &quot;platforms&quot;: {
         &quot;74139&quot;: {
@@ -264,8 +264,9 @@
         var ENV = 'prod';
     var TRACKJS_ENABLED = false;
     var USER_HASH = 'anonymous';
-    var COOKIE_VALIDATION_TOKEN = '1ad2e2bc962b4dc09ea14f2abc586c2c';
+    var COOKIE_VALIDATION_TOKEN = 'e9dd09c2917b9f385e9e8f3d7a51e80e';
     var DISABLE_RECAPTCHA = '';
+    var IS_BORNE = ''
 </script>
 
 <script src="https://s.a-fs.me/diffusion/bower_components/objectFitPolyfill/dist/objectFitPolyfill.min.js?v=3"></script>
@@ -288,8 +289,8 @@
 <script src="https://s.a-fs.me/diffusion/bower_components/angular-bootstrap/ui-bootstrap.min.js?v=3"></script>
 <script src="https://s.a-fs.me/diffusion/bower_components/crypto-js/crypto-js.js?v=3"></script>
 <script src="https://s.a-fs.me/diffusion/bower_components/trackjs/t.js?v=3"></script>
-
-<script src="https://s.a-fs.me/diffusion/js/app.min.5b4bc56387a10263.js?v=3"></script>
+<script src="https://s.a-fs.me/diffusion/bower_components/angular-touch/angular-touch.min.js?v=3"></script>
+<script src="https://s.a-fs.me/diffusion/js/app.min.35908e1cc230bb62.js?v=3"></script>
 <script src="https://s.a-fs.me/diffusion/js/app.tpl.min.9274c64e5ba59647.js?v=3"></script>
 <script src="https://s.a-fs.me/diffusion/js/trackjs.min.80e5943ddfae2f07.js?v=3"></script>
 
