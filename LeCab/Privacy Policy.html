@@ -55,13 +55,19 @@
 <link rel='dns-prefetch' href='//fonts.googleapis.com' />
 <link rel="alternate" type="application/rss+xml" title="LeCab &raquo; Flux" href="https://lecab.fr/feed/" />
 <link rel="alternate" type="application/rss+xml" title="LeCab &raquo; Flux des commentaires" href="https://lecab.fr/comments/feed/" />
-		<!-- This site uses the Google Analytics by MonsterInsights plugin v8.23.1 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+		<!-- This site uses the Google Analytics by MonsterInsights plugin v8.24.0 - Using Analytics tracking - https://www.monsterinsights.com/ -->
 							<script src="//www.googletagmanager.com/gtag/js?id=G-QZSVPRL4DB"  data-cfasync="false" data-wpfc-render="false" type="text/javascript" async></script>
 			<script data-cfasync="false" data-wpfc-render="false" type="text/javascript">
-				var mi_version = '8.23.1';
+				var mi_version = '8.24.0';
 				var mi_track_user = true;
 				var mi_no_track_reason = '';
-				
+								var MonsterInsightsDefaultLocations = {"page_location":"https:\/\/lecab.fr\/politique-de-confidentialite\/"};
+				if ( typeof MonsterInsightsPrivacyGuardFilter === 'function' ) {
+					var MonsterInsightsLocations = (typeof MonsterInsightsExcludeQuery === 'object') ? MonsterInsightsPrivacyGuardFilter( MonsterInsightsExcludeQuery ) : MonsterInsightsPrivacyGuardFilter( MonsterInsightsDefaultLocations );
+				} else {
+					var MonsterInsightsLocations = (typeof MonsterInsightsExcludeQuery === 'object') ? MonsterInsightsExcludeQuery : MonsterInsightsDefaultLocations;
+				}
+
 								var disableStrs = [
 										'ga-disable-G-QZSVPRL4DB',
 									];
@@ -140,6 +146,9 @@
 					__gtagTracker('set', {
 						'developer_id.dZGIzZG': true,
 											});
+					if ( MonsterInsightsLocations.page_location ) {
+						__gtagTracker('set', MonsterInsightsLocations);
+					}
 										__gtagTracker('config', 'G-QZSVPRL4DB', {"forceSSL":"true","link_attribution":"true"} );
 															window.gtag = __gtagTracker;										(function () {
 						/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
@@ -298,8 +307,8 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 <link rel='stylesheet' id='redux-extendify-styles-css' href='https://lecab.fr/wp-content/plugins/redux-framework/redux-core/assets/css/extendify-utilities.css?ver=4.4.11' type='text/css' media='all' />
 <link rel='stylesheet' id='animate-css' href='https://lecab.fr/wp-content/plugins/saasland-core/inc/parallax/assets/css/animate.css?ver=1.0.0' type='text/css' media='all' />
 <link rel='stylesheet' id='dladdons-parallax-style-css' href='https://lecab.fr/wp-content/plugins/saasland-core/inc/parallax/assets/css/style.css?ver=1.0.0' type='text/css' media='all' />
-<link rel='stylesheet' id='drdt-header-footer-css' href='https://lecab.fr/wp-content/plugins/saasland-core/template-modules/header-footer/assets/css/public-mode.css?ver=1708367657' type='text/css' media='all' />
-<link rel='stylesheet' id='themify-icon-css' href='https://lecab.fr/wp-content/plugins/saasland-core/template-modules/header-footer/assets/css/themify-icons.css?ver=1708367657' type='text/css' media='all' />
+<link rel='stylesheet' id='drdt-header-footer-css' href='https://lecab.fr/wp-content/plugins/saasland-core/template-modules/header-footer/assets/css/public-mode.css?ver=1708389440' type='text/css' media='all' />
+<link rel='stylesheet' id='themify-icon-css' href='https://lecab.fr/wp-content/plugins/saasland-core/template-modules/header-footer/assets/css/themify-icons.css?ver=1708389440' type='text/css' media='all' />
 <link rel='stylesheet' id='saasland-fonts-css' href='https://fonts.googleapis.com/css?family=Poppins%3A300%2C400%2C500%2C600%2C700%2C900%7CFigtree%3A400%2C500%2C600%2C700%2C800%2C900&#038;subset' type='text/css' media='all' />
 <link rel='stylesheet' id='bootstrap-css' href='https://lecab.fr/wp-content/themes/saasland/assets/vendors/bootstrap/css/bootstrap.css?ver=6.4.3' type='text/css' media='all' />
 <link rel='stylesheet' id='nice-select-css' href='https://lecab.fr/wp-content/themes/saasland/assets/vendors/nice-select/nice-select.min.css?ver=6.4.3' type='text/css' media='all' />
@@ -421,7 +430,7 @@ body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: 
 <link rel='stylesheet' id='elementor-post-2007-css' href='https://lecab.fr/wp-content/uploads/elementor/css/post-2007.css?ver=1706610311' type='text/css' media='all' />
 <link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=6.4.3' type='text/css' media='all' />
 <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><script type="text/javascript" src="https://lecab.fr/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
-<script type="text/javascript" src="https://lecab.fr/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend-gtag.min.js?ver=8.23.1" id="monsterinsights-frontend-script-js"></script>
+<script type="text/javascript" src="https://lecab.fr/wp-content/plugins/google-analytics-for-wordpress/assets/js/frontend-gtag.min.js?ver=8.24.0" id="monsterinsights-frontend-script-js"></script>
 <script data-cfasync="false" data-wpfc-render="false" type="text/javascript" id='monsterinsights-frontend-script-js-extra'>/* <![CDATA[ */
 var monsterinsights_frontend = {"js_events_tracking":"true","download_extensions":"doc,pdf,ppt,zip,xls,docx,pptx,xlsx","inbound_paths":"[{\"path\":\"\\\/go\\\/\",\"label\":\"affiliate\"},{\"path\":\"\\\/recommend\\\/\",\"label\":\"affiliate\"}]","home_url":"https:\/\/lecab.fr","hash_tracking":"false","v4_id":"G-QZSVPRL4DB"};/* ]]> */
 </script>
@@ -1363,7 +1372,7 @@ var leadin_wordpress = {"userRole":"visitor","pageType":"page","leadinPluginVers
 <script type="text/javascript" src="https://js.hs-scripts.com/9318232.js?integration=WordPress&amp;ver=10.2.17" id="leadin-script-loader-js-js"></script>
 <script type="text/javascript" src="https://lecab.fr/wp-content/plugins/revslider/public/assets/js/rbtools.min.js?ver=6.6.16" defer async id="tp-tools-js"></script>
 <script type="text/javascript" src="https://lecab.fr/wp-content/plugins/revslider/public/assets/js/rs6.min.js?ver=6.6.16" defer async id="revmin-js"></script>
-<script type="text/javascript" src="https://lecab.fr/wp-content/plugins/saasland-core/template-modules/header-footer/assets/scripts/public.js?ver=1708367657" id="drdt-header-footer-js"></script>
+<script type="text/javascript" src="https://lecab.fr/wp-content/plugins/saasland-core/template-modules/header-footer/assets/scripts/public.js?ver=1708389440" id="drdt-header-footer-js"></script>
 <script type="text/javascript" src="https://lecab.fr/wp-content/themes/saasland/assets/vendors/bootstrap/js/popper.min.js?ver=2.9.2" id="popper-js"></script>
 <script type="text/javascript" src="https://lecab.fr/wp-content/themes/saasland/assets/vendors/bootstrap/js/bootstrap.min.js?ver=5.0.2" id="bootstrap-js"></script>
 <script type="text/javascript" id="saasland-script-js-extra">
@@ -1371,7 +1380,7 @@ var leadin_wordpress = {"userRole":"visitor","pageType":"page","leadinPluginVers
 var local_strings = {"ajax_url":"https:\/\/lecab.fr\/wp-admin\/admin-ajax.php","theme_directory":"https:\/\/lecab.fr\/wp-content\/themes\/saasland"};
 /* ]]> */
 </script>
-<script type="text/javascript" src="https://lecab.fr/wp-content/themes/saasland/assets/js/saasland.min.js?ver=1708367657" id="saasland-script-js"></script>
+<script type="text/javascript" src="https://lecab.fr/wp-content/themes/saasland/assets/js/saasland.min.js?ver=1708389440" id="saasland-script-js"></script>
 <script type="text/javascript" src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js?ver=2.1.0" id="lord-icon-js"></script>
 <script type="text/javascript" src="https://lecab.fr/wp-content/plugins/elementor-pro/assets/lib/smartmenus/jquery.smartmenus.min.js?ver=1.0.1" id="smartmenus-js"></script>
 <script type="text/javascript" src="https://lecab.fr/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.18.3" id="elementor-pro-webpack-runtime-js"></script>
@@ -1389,7 +1398,7 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 </script>
 <script type="text/javascript" id="elementor-pro-frontend-js-before">
 /* <![CDATA[ */
-var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/lecab.fr\/wp-admin\/admin-ajax.php","nonce":"4835665c1f","urls":{"assets":"https:\/\/lecab.fr\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/lecab.fr\/wp-json\/"},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/lecab.fr\/wp-admin\/admin-ajax.php","nonce":"5b8fe1b770","urls":{"assets":"https:\/\/lecab.fr\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/lecab.fr\/wp-json\/"},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},
 "facebook_sdk":{"lang":"fr_FR","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/lecab.fr\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
 /* ]]> */
 </script>
@@ -1428,9 +1437,9 @@ s.parentNode.insertBefore(b, s);})(window.lintrk);
 <!--
 Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
 
-Mise en cache objet de 56/646 objets utilisant Memcached
+Mise en cache objet de 145/529 objets utilisant Memcached
 Mise en cache de page à l’aide de Disk 
 Chargement différé
 
-Served from: lecab.fr @ 2024-02-19 19:34:18 by W3 Total Cache
+Served from: lecab.fr @ 2024-02-20 01:37:20 by W3 Total Cache
 -->
