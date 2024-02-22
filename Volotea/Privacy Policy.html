@@ -33,7 +33,7 @@
 <meta name="last-modified" content="2023-03-10" />
 <meta name="pageDate" content="10032023" />
 <meta name="DC.date" content="2023-03-10" />
-<meta name="pageRender" content="22/02/2024 6:42:36 +00:00" />
+<meta name="pageRender" content="22/02/2024 12:42:22 +00:00" />
 <meta itemprop="datePublished" content="10/03/2023 2:55:01">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 
@@ -142,12 +142,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             }
         }
     </script>
-<!-- OneTrust Cookies Consent Notice start for volotea.com -->
-<script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" data-document-language="true" type="text/javascript" charset="UTF-8" data-domain-script="215b6805-a1ea-4d23-b9c3-5cd9a8f2c9e7" ></script>
-<script type="text/javascript">
-function OptanonWrapper() { }
-</script>
-<!-- OneTrust Cookies Consent Notice end for volotea.com -->
+    <!-- OneTrust Cookies Consent Notice start for .volotea.com -->
+    <script type="text/javascript" src="https://cdn.cookielaw.org/consent/215b6805-a1ea-4d23-b9c3-5cd9a8f2c9e7/OtAutoBlock.js"></script>
+    <script src="https://cdn.cookielaw.org/scripttemplates/otSDKStub.js" data-document-language="true" type="text/javascript" charset="UTF-8" data-domain-script="215b6805-a1ea-4d23-b9c3-5cd9a8f2c9e7"></script>
+    <!-- OneTrust Cookies Consent Notice end for .volotea.com -->
 </head>
 <body class="">
     
@@ -449,7 +447,7 @@ function OptanonWrapper() { }
                 <i class="v7-nav-top__lang-icon || v7-i v7-i--lang-fr v7-i--xxs"></i>
                 <i class="v7-nav-top__arrow || v7-i v7-i--down-arrow v7-i--xxxs"></i>
             </span>
-            <div class="v7-nav-top__tooltip || v7-tooltip v7-tooltip--lang v7-tooltip--arrow-top v7-tooltip--arrow-right">
+            <div class="v7-nav-top__tooltip || v7-tooltip v7-tooltip--lang v7-tooltip--arrow-top v7-tooltip--arrow-right" id="div-lang">
                 <nav class="v7-tooltip__list" itemprop="availableLanguage" itemscope itemtype="http://schema.org/Language">
                     <li onclick="location.href='/fr/conditions-legales/politique-de-confidentialite/';" class=v7-is-active itemprop="url sameAs mainEntityOfPage">
                         <i class="v7-tooltip__icon || v7-i v7-i--lang-fr || v7-u-color-white"></i>
@@ -2085,7 +2083,7 @@ function OptanonWrapper() { }
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/ScrollToPlugin.min.js"></script>
 
     <!--------------------------Flight status search popup Widget End-------------------->
-<script src="https://assets.volotea.com/assets/angular/prod.21939db363c3286e.bundle.js" type="text/javascript"></script>
+<script src="https://assets.volotea.com/assets/angular/prod.1b8abab69000942d.bundle.js" type="text/javascript"></script>
     <script>
         $(window).scroll(function () {
 
@@ -2101,6 +2099,9 @@ function OptanonWrapper() { }
         });
     </script>
     <script>
+
+        let dicCategories = new Map();
+        let dicArticles = new Map();
 
             document.addEventListener('DOMContentLoaded',
                 function() {
@@ -2120,9 +2121,125 @@ function OptanonWrapper() { }
                     if (typeof addPageEvent === "function") {
                         addPageEvent(flightSearch, isMega, userInfo, cultureName, pageName, cultureNodeTitle);
                     }
+
+                    convertDictionaryToMapHelCenterUrls();
+
+                    var culture = cultureName.split('-')[0];
+
+                    UpdateUrlOfLang(culture, '', 0);
                 },
                 false);
+
+
+                function convertDictionaryToMapHelCenterUrls() {
+            var jsonDictCategories = {"en":"category","es":"categoria","de":"kategorie","fr":"categorie","pt":"categoria","el":"category","it":"categoria"};
+
+            for (var key in jsonDictCategories) {
+                if (jsonDictCategories.hasOwnProperty(key)) {
+                    dicCategories.set(key, jsonDictCategories[key]);
+                }
+            }
+
+            var jsonDictArticles = {"en":"article","es":"articulo","de":"artikel","fr":"article","pt":"artigo","el":"article","it":"articolo"};
+
+            for (var key in jsonDictArticles) {
+                if (jsonDictArticles.hasOwnProperty(key)) {
+                    dicArticles.set(key, jsonDictArticles[key]);
+                }
+            }
+        }
+
+
+        function UpdateUrlOfLang(culture, name, idPage) {
+
+            let _url = new URL(window.location.href);
+
+            let pathName = _url.pathname;
+
+            if (pathName[pathName.length - 1] != '/') {
+                pathName += '/';
+            }
+
+            const arrayUrl = pathName.split('/');
+
+
+            if (culture == null || culture == '') {
+                culture = arrayUrl[1];
+            }
+
+            if (name == null || name == '') {
+                name = arrayUrl[arrayUrl.length - 3];
+            }
+
+            if (idPage == null || idPage == 0) {
+                idPage = arrayUrl[arrayUrl.length - 2];
+            }
+
+            var nameTypeCat = dicCategories.get(culture);
+
+
+            if (nameTypeCat != null && nameTypeCat != '' && nameTypeCat == name) {
+
+                var divLang = document.getElementById('div-lang');
+                var navLang = divLang.querySelector('nav');
+                var listLiNav = navLang.querySelectorAll('li');
+
+                listLiNav.forEach(function (li) {
+
+                    var onClickAttributeValue = li.getAttribute('onclick');
+
+                    if (!onClickAttributeValue.includes(idPage.toString())) {
+                        var urlLi = onClickAttributeValue.replace("location.href='", "").replace("';", "");
+
+                        var langLi = urlLi.split('/')[1];
+
+                        var contactName = urlLi.split('/')[2];
+
+                        var categoryName = dicCategories.get(langLi);
+
+                        if (categoryName != null && categoryName != '') {
+
+                            urlLi = '/' + langLi + '/' + contactName + '/' + categoryName + '/' + idPage;
+
+                            li.setAttribute('onclick', "location.href='" + urlLi + "';");
+                        }
+                    }
+                });
+            }
+
+            var nameTypeArticle = dicArticles.get(culture);
+
+            if (nameTypeArticle != null && nameTypeArticle != '' && nameTypeArticle == name) {
+
+                var divLang = document.getElementById('div-lang');
+                var navLang = divLang.querySelector('nav');
+                var listLiNav = navLang.querySelectorAll('li');
+
+                listLiNav.forEach(function (li) {
+                    var onClickAttributeValue = li.getAttribute('onclick');
+
+                    if (!onClickAttributeValue.includes(idPage.toString())) {
+                        var urlLi = onClickAttributeValue.replace("location.href='", "").replace("';", "");
+
+                        var langLi = urlLi.split('/')[1];
+
+                        var contactName = urlLi.split('/')[2];
+
+                        var articleName = dicArticles.get(langLi);
+
+                        if (articleName != null && articleName != '') {
+
+                            urlLi = '/' + langLi + '/' + contactName + '/' + articleName + '/' + idPage;
+
+                            li.setAttribute('onclick', "location.href='" + urlLi + "';");
+                        }
+                    }
+
+
+                });
+            }
+        }
     </script>
 
-<script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=2&cb=425003366" async></script></body>
+<script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=2&cb=1305694629" async></script></body>
 </html>
