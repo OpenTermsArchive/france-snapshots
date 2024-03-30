@@ -26,33 +26,7 @@ preload.setAttribute('importance', 'low');
 frzScriptsToPreload2.appendChild(preload)
 });
 (function () { document.head.appendChild(frzScriptsToPreload2); })();
-</script><style>.frz-img{height:auto;}</style><link rel="preconnect" href="https://n9jm8v6ad7.kameleoon.eu"> <meta charset="UTF-8"> <link rel="alternate" href="https://www.jules.com/fr-be/static/politique-de-confidentialite.html" hreflang="fr-be" /> <link rel="alternate" href="https://www.jules.com/fr-fr/static/politique-de-confidentialite.html" hreflang="fr-fr" /> <link rel="alternate" href="https://www.jules.com/nl-be/static/politique-de-confidentialite.html" hreflang="nl-be" /> <link rel="alternate" href="https://www.jules.com/fr-fr/static/politique-de-confidentialite.html" hreflang="x-default" /> <!--[if gt IE 9]><!--> <script>
-        var lastSmartcacheError = localStorage && localStorage.getItem('fasterize-lastSmartcacheError');
-        if (lastSmartcacheError && window.location.href.indexOf('smartcache_missmatching') !== -1) {
-          const details = JSON.parse(lastSmartcacheError);
-          console.log('[smartcache] URL in error', details.url);
-          console.log('[smartcache] fragments');
-          console.table ? console.table(details.fragments) : console.log(details.fragments);
-          console.log('[smartcache] placeholders');
-          console.table ? console.table(details.placeholders) : console.log(details.placeholders);
-        }
-        let sanitizedSearchParamsStr = window.location.search;
-        try {
-          const sanitizedSearchParams = new URLSearchParams(window.location.search);
-          ['frz-flush', 'frz-reason', 'frz-fragments', 'frz-placeholders'].forEach(function(frzQueryParamToRemove){
-            sanitizedSearchParams.delete(frzQueryParamToRemove);
-          });
-          sanitizedSearchParamsStr = sanitizedSearchParams.toString();
-        } catch (err) {
-          console.log("[Fasterize]", err);
-          sanitizedSearchParamsStr = sanitizedSearchParamsStr.replace(/&?frz-[^&]+&?/g, '').replace('?','');
-        }
-        if(sanitizedSearchParamsStr !== '') {
-          history.replaceState(history.state, "", window.location.pathname + '?' + sanitizedSearchParamsStr);  
-        } else {        
-          history.replaceState(history.state, "", window.location.pathname);  
-        }
-        ;fstrz=!0;;function frzRemoveDimensionsTag(img) {
+</script><style>.frz-img{height:auto;}</style><link rel="preconnect" href="https://n9jm8v6ad7.kameleoon.eu"> <meta charset="UTF-8"> <link rel="alternate" href="https://www.jules.com/fr-be/static/politique-de-confidentialite.html" hreflang="fr-be" /> <link rel="alternate" href="https://www.jules.com/fr-fr/static/politique-de-confidentialite.html" hreflang="fr-fr" /> <link rel="alternate" href="https://www.jules.com/nl-be/static/politique-de-confidentialite.html" hreflang="nl-be" /> <link rel="alternate" href="https://www.jules.com/fr-fr/static/politique-de-confidentialite.html" hreflang="x-default" /> <!--[if gt IE 9]><!--> <script>fstrz=!0;;function frzRemoveDimensionsTag(img) {
         // don't verifyAspectRatio if the image is not loaded
         if (!img.classList.contains('lazyfrz')) {
           try {
