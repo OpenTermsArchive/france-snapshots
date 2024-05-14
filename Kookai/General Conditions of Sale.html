@@ -570,7 +570,7 @@ Shopify.routes.root = "/";</script>
     window.addEventListener('load', asyncLoad, false);
   }
 })();</script>
-<script id="__st">var __st={"a":55913644166,"offset":7200,"reqid":"70eac127-0268-43be-a7e4-9af01eb0f3df-1715668643","pageurl":"kookai.fr\/pages\/conditions-generales-de-vente","s":"pages-85775253638","u":"9f7b0851175b","p":"page","rtyp":"page","rid":85775253638};</script>
+<script id="__st">var __st={"a":55913644166,"offset":7200,"reqid":"8382f8d8-b322-4d01-8765-1f7aec554e70-1715690243","pageurl":"kookai.fr\/pages\/conditions-generales-de-vente","s":"pages-85775253638","u":"2a3b785deb01","p":"page","rtyp":"page","rid":85775253638};</script>
 <script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
 <script>!function(){'use strict';const e='contact',t='account',n='new_comment',o=e=>e.map((([e,t])=>`form[action*='/${e}'] input[name='form_type'][value='${t}']`)).join(',');function c(e,t){try{const n=window.sessionStorage;for(const[o,c]of Object.entries(JSON.parse(n.getItem(t))))e.elements[o]&&(e.elements[o].value=c);n.removeItem(t)}catch{}}const s='form_type',r='cptcha';var a,m,i,u;a=window,m=document,u='ce_forms',a[i='Shopify']=a[i]||{},a[i][u]=a[i][u]||{},a[i][u].q=[],function(a,m,i,u,f){const[d,l]=function(c,s){const r=s?[[e,e],['blogs',n],['comments',n],[e,'customer']]:[],a=c?[[t,'customer_login'],[t,'recover_customer_password'],[t,'create_customer']]:[],m=o([...r,...a]),i=o(r.slice(0,3)),u=e=>()=>e?[...document.querySelectorAll(e)].map((e=>e.form)):[];return[u(m),u(i)]}(!0,!0),p=e=>{const t=e.target,n=t instanceof HTMLFormElement?t:t&&t.form;return n&&d().find((e=>n===e))};a.addEventListener('submit',(e=>{p(e)&&e.preventDefault()}));for(const e of['focusin','change'])a.addEventListener(e,(e=>{const t=p(e);t&&!t.dataset[r]&&(i(t,l().some((e=>e===t))),t.dataset[r]=!0)}));const _=m.get('form_key'),v=m.get(s);_&&v&&a.addEventListener('DOMContentLoaded',(()=>{for(const e of l())e.elements[s].value===v&&c(e,_)}))}(m,new URLSearchParams(a.location.search),((e,t)=>{const n=a[i][u],o=n.bindForm,c='6LeHG2ApAAAAAO4rPaDW-qVpPKPOBfjbCpzJB9ey';if(o)return o(e,c,t);n.q.push([e,c,t]),m.body.append(Object.assign(m.createElement('script'),{async:!0,src:'https://cdn.shopify.com/shopifycloud/storefront-forms-hcaptcha/ce_storefront_forms_captcha_recaptcha.v1.0.5.iife.js'}))}))}();</script>
 <script integrity="sha256-n5Uet9jVOXPHGd4hH4B9Y6+BxkTluaaucmYaxAjUcvY=" data-source-attribution="shopify.loadfeatures" defer="defer" src="//kookai.fr/cdn/shopifycloud/shopify/assets/storefront/load_feature-9f951eb7d8d53973c719de211f807d63af81c644e5b9a6ae72661ac408d472f6.js" crossorigin="anonymous"></script>
@@ -584,124 +584,7 @@ Shopify.routes.root = "/";</script>
 
 <meta name="google-site-verification" content="PCyuKZ-vHYId2Ju1qo1Hg7K8G1JiX8nmuLD5L1orEBs" />
   
-<!-- BEGIN app block: shopify://apps/instafeed/blocks/head-block/c447db20-095d-4a10-9725-b5977662c9d5 --><link rel="preconnect" href="https://cdn.nfcube.com/">
-<link rel="preconnect" href="https://scontent.cdninstagram.com/">
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    var script = document.createElement('script');
-    script.src = 'https://cdn.nfcube.com/instafeed-58fe0192c42e7b8f3094c24bf45b0fbd.js';
-    document.body.appendChild(script);
-  });
-</script>
-
-
-
-
-<!-- END app app block --><!-- BEGIN app block: shopify://apps/wisepops-popup-notifications/blocks/app-embed/e7d7a4f7-0df4-4073-9375-5f36db513952 --><script>
-  // Create the wisepops() function
-  window.wisepops_key = window.WisePopsObject = window.wisepops_key || window.WisePopsObject || "wisepops";
-  window[window.wisepops_key] = function () {
-    window[window.wisepops_key].q.push(arguments);
-  };
-  window[window.wisepops_key].q = [];
-  window[window.wisepops_key].l = Date.now();
-
-  // Disable deprecated snippet
-  window._wisepopsSkipShopifyDeprecatedSnippet = true;
-
-  document.addEventListener('wisepops.after-initialization', function () {
-    // https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie/Simple_document.cookie_framework
-    function getCookieValue(sKey) {
-      if (!sKey) { return null; }
-      return decodeURIComponent(document.cookie.replace(new RegExp("(?:(?:^|.*;)\\s*" + encodeURIComponent(sKey).replace(/[\-\.\+\*]/g, "\\$&") + "\\s*\\=\\s*([^;]*).*$)|^.*$"), "$1")) || null;
-    }
-
-    function getTotalInventoryQuantity() {
-      var variants = null;
-      if (!variants) {
-        return null;
-      }
-
-      var totalQuantity = 0;
-      for (var i in variants) {
-        if (variants[i] && variants[i].inventory_quantity) {
-          totalQuantity += variants[i].inventory_quantity;
-        } else {
-          return null;
-        }
-      }
-      return totalQuantity;
-    }
-
-    function getMapCartItems(key){
-      var cartItems = [];
-      return cartItems.map(function (item) {
-        return item[key];
-      })
-      .filter(function (item){
-        if (item !== undefined && item !== null && item !== "") {
-          return true;
-        }
-        return false;
-      })
-      .join(',');
-    }
-
-    
-
-    // Set built-in properties
-    window[window.wisepops_key]('properties', {
-      client_id: null,
-      cart: {
-        discount_code: getCookieValue('discount_code'),
-        item_count: 0,
-        total_price: 0 / 100,
-        skus: getMapCartItems('sku'),
-        items: {}
-      },
-      customer: {
-        accepts_marketing: false,
-        is_logged_in:  false ,
-        last_order: {
-          created_at: null,
-        },
-        orders_count: null,
-        total_spent: (isNaN(null) ? null : (null / 100)),
-        tags:  null ,
-        email: null,
-        first_name: null,
-        last_name: null,
-      },
-      product: {
-        available: null,
-        price:  null ,
-        tags: null,
-        total_inventory_quantity: getTotalInventoryQuantity(),
-        stock: 0,
-      },
-      orders: {}
-    }, { temporary: true });
-
-    // Custom event when product added to cart
-    var shopifyTrackFunction = window.ShopifyAnalytics && ShopifyAnalytics.lib && ShopifyAnalytics.lib.track;
-    var lastAddedToCartTimestamp = 0;
-    if (shopifyTrackFunction) {
-      ShopifyAnalytics.lib.track = function () {
-        if (arguments[0] === 'Added Product') {
-          var currentTimestamp = Date.now();
-          if (currentTimestamp > lastAddedToCartTimestamp + 5000) {
-            window[window.wisepops_key]('event', 'product-added-to-cart');
-            lastAddedToCartTimestamp = currentTimestamp;
-          }
-        }
-        shopifyTrackFunction.apply(this, arguments);
-      };
-    }
-  });
-</script>
-
-<!-- END app app block --><!-- BEGIN app block: shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507 -->
+<!-- BEGIN app block: shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507 -->
 
 
 
@@ -729,6 +612,151 @@ Shopify.routes.root = "/";</script>
 
 
 <!-- END app app block --><!-- BEGIN app block: shopify://apps/live-shopping-by-livemeup/blocks/player-script/82ccf4ed-67f8-4725-9167-e54475d4748e -->
+<!-- END app app block --><!-- BEGIN app block: shopify://apps/instafeed/blocks/head-block/c447db20-095d-4a10-9725-b5977662c9d5 --><link rel="preconnect" href="https://cdn.nfcube.com/">
+<link rel="preconnect" href="https://scontent.cdninstagram.com/">
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var script = document.createElement('script');
+    script.src = 'https://cdn.nfcube.com/instafeed-58fe0192c42e7b8f3094c24bf45b0fbd.js';
+    document.body.appendChild(script);
+  });
+</script>
+
+
+
+
+<!-- END app app block --><!-- BEGIN app block: shopify://apps/sami-wholesale/blocks/app-embed-block/799b9db0-2c2b-4b20-8675-98acd123fbb2 --><style>
+    .samita-ws-loading 
+    [samitaWS-cart-item-key],
+    .samita-ws-loading 
+    [samitaWS-product-id],
+    .samita-ws-loading
+    [samitaWS-variant-id],
+    .samita-ws-loading
+    [samitaWS-cart-item-key],
+    .samita-ws-loading
+    [samitaWS-cart-total-price],
+    .samita-ws-loading
+    [samitaWS-cart-total-discount],
+    .samita-ws-loading
+    [data-cart-item-regular-price],
+    .samita-ws-loading
+    [samitaWS-ajax-cart-subtotal],
+    .samita-ws-loading
+    [data-cart-subtotal],
+    .samita-ws-loading 
+    [samitaws-product-price]{
+        visibility: hidden; opacity: 0;
+    }
+    [samitaws-product-main-price="true"] [samitaws-product-price] {
+        visibility: hidden; opacity: 0;
+    }
+    .samitaWS-original-checkout-button, .samitaWS-original-atc-button {
+        visibility: hidden; opacity: 0; display:none!important;
+    }
+    .samita-ws-enable .shopify-payment-button .shopify-payment-button__button--unbranded {
+        visibility: hidden; opacity: 0; display:none!important;
+    }
+</style>
+
+
+
+
+
+
+<script type="text/javascript">
+    document.getElementsByTagName('html')[0].classList.add('samita-ws-loading', 'samita-ws-enable');
+    window.addEventListener("samitaWSRenderWholesaleCompleted", function(e){
+        document.getElementsByTagName('html')[0].classList.remove('samita-ws-loading');
+    });
+    
+    window.Samita = window.Samita || {};
+    
+    var samitaWSRgFormRecaptchaInit = function(){};
+
+    window.Samita.Wholesale = window.Samita.Wholesale || {};
+    var samitaWholesaleRecaptchaInit = function(){};
+    
+        
+        
+    
+        
+            if (typeof Shopify!= "undefined" && typeof Shopify.theme != "undefined" &&  Shopify.theme.id == 124428320902) {
+                Samita.Wholesale.themeInfo = {"id":124428320902,"name":"Pipeline Lobstter","role":"main","theme_store_id":739,"theme_name":"Pipeline","theme_version":"7.1.3"}
+            }
+            if (!Shopify?.theme) {
+                Samita.Wholesale.themeInfo = {"id":124428320902,"name":"Pipeline Lobstter","role":"main","theme_store_id":739,"theme_name":"Pipeline","theme_version":"7.1.3"}
+            }
+        
+        
+    
+        
+        
+            if (typeof Shopify!= "undefined" && typeof Shopify.theme!= "undefined"  && Shopify.theme.id == 124428320902) {
+                Samita.Wholesale.theme = {"selectors":{"product":{"element":[".Product.Product--large",".product-page",".grid.product-single",".gfqv-product-wrapper",".ga-product",".product-scope"],"form":["form.shopify-product-form","form.ProductForm",".home-product form[action*=\"/cart/add\"]",".shop-product form[action*=\"/cart/add\"]","#shopify-section-featured-product form[action*=\"/cart/add\"]","form.apb-product-form","product-form form[action*=\"/cart/add\"]",".product-page form[action*=\"/cart/add\"]","[id*=\"ProductSection--\"] form[action*=\"/cart/add\"]","form#add-to-cart-form","form.sf-cart__form","form.productForm","form.product-form","form.product-single__form","form.shopify-product-form","form.atc-form","form.atc-form-mobile","form[action*=\"/cart/add\"]:not([hidden])"],"price":["#ProductPrice-product-template",".grid-product__price","#ProductPrice","#single_product__price-template-product",".product-price",".product__price—reg","#productPrice-product-template",".product__current-price",".product-thumb-caption-price-current",".product-item-caption-price-current",".grid-product__price,.product__price","span.price","span.product-price",".productitem--price",".product-pricing","div.price","span.money",".product-item__price",".product-list-item-price","p.price",".product-meta__prices","div.product-price","span#price",".price.money","h3.price","a.price",".price-area",".product-item-price",".pricearea",".collectionGrid .collectionBlock-info > p","#ComparePrice",".product--price-wrapper",".product-page--price-wrapper",".color--shop-accent.font-size--s.t--meta.f--main",".ComparePrice",".ProductPrice",".prodThumb .title span:last-child",".price",".product-single__price-product-template",".product-info-price",".price-money",".prod-price","#price-field",".product-grid--price",".prices,.pricing","#product-price",".money-styling",".compare-at-price",".product-item--price",".card__price",".product-card__price",".product-price__price",".product-item__price-wrapper",".product-single__price",".grid-product__price-wrap","a.grid-link p.grid-link__meta",".product__prices","#comparePrice-product-template","dl[class*=\"price\"]","div[class*=\"price\"]",".gl-card-pricing",".ga-product_price-container"],"signal":"[data-product-handle], [data-product-id]","notSignal":":not([data-section-id=\"product-recommendations\"],[data-section-type=\"product-recommendations\"],#product-area,#looxReviews)","unitPrice":".current-price,.product__price,.price-list,.ProductMeta__PriceList .ProductMeta__Price,.price__regular,.product__price__main,.product__price__main,product__price__wrap","compareAtPrice":"[samitaWS-product-compare-at-price],.product-detail .was-price","variantWrapper":"[samitaWS-product-variant-wrapper],.option-selectors,.radio-swatch input","variantSelector":"input[name=\"id\"]","variantIdByAttribute":"swatch-current-variant, data-id","variantActivator":".cc-select__listbox .cc-select__option,.selector-wrapper select,.clickyboxes a[data-value]","productVariant":"input[name=\"id\"]","quantity":"[samitaWS-product-quantity], [name=qty], [name=quantity]","decreaseQuantity":"[samitaWS-drawer-line-item-qty-decrease], [name=\"minus\"],.js-qty__adjust--minus","increaseQuantity":"[samitaWS-cart-line-item-qty-increase],.js-qty__adjust--plus","addToCartButton":".ProductForm__BuyButtons,.ProductForm__AddToCart,.btn--add-to-cart","paymentButton":"[samitaWS-product-payment], [data-shopify=\"payment-button\"], [data-product-buy-now]"},"collection":{"quickAddBtn":".quick-add__submit","gridWrapperRelatedApp":".ga-product","productLink":"[samitaWS-collection-product-link], a.product-block__link[href*=\"/products/\"], a.indiv-product__link[href*=\"/products/\"], a.thumbnail__link[href*=\"/products/\"], a.product-item__link[href*=\"/products/\"], a.product-card__link[href*=\"/products/\"], a.product-card-link[href*=\"/products/\"], a.product-block__image__link[href*=\"/products/\"], a.stretched-link[href*=\"/products/\"], a.grid-product__link[href*=\"/products/\"], a.product-grid-item--link[href*=\"/products/\"], a.product-link[href*=\"/products/\"], a.product__link[href*=\"/products/\"], a.full-unstyled-link[href*=\"/products/\"], a.grid-item__link[href*=\"/products/\"], a.grid-product__link[href*=\"/products/\"], a[data-product-page-link][href*=\"/products/\"], a[href*=\"/products/\"]","price":["[samitaWS-collection-product-price]",".zify-price .price",".product-card__price","#ProductPrice-product-template","#ProductPrice",".product-price",".product__price—reg","#productPrice-product-template",".product__current-price",".product-thumb-caption-price-current",".product-item-caption-price-current",".grid-product__price,.product__price","span.price","span.product-price",".productitem--price",".product-pricing","div.price","span.money",".product-item__price",".product-list-item-price","p.price",".product-meta__prices","div.product-price","span#price",".price.money","h3.price","a.price",".price-area",".product-item-price",".pricearea",".collectionGrid .collectionBlock-info > p","#ComparePrice",".product--price-wrapper",".product-page--price-wrapper",".color--shop-accent.font-size--s.t--meta.f--main",".ComparePrice",".ProductPrice",".prodThumb .title span:last-child",".price",".product-single__price-product-template",".product-info-price",".price-money",".prod-price","#price-field",".product-grid--price",".prices,.pricing","#product-price",".money-styling",".compare-at-price",".product-item--price",".card__price",".product-card__price",".product-price__price",".product-item__price-wrapper",".product-single__price",".grid-product__price-wrap","a.grid-link p.grid-link__meta",".product__prices","#comparePrice-product-template","dl[class*=\"price\"]","div[class*=\"price\"]",".gl-card-pricing",".ga-product_price-container"],"unitPrice":".price-list,.product-price .product-price__amount,.price,.product-grid-item__price.price,.product__price,.ProductItem__PriceList .ProductItem__Price,.zify-price .price,.product__price","compareAtPrice":"[samitaWS-product-compare-at-price], .price.price--on-sale .price__sale .price-item--regular","notElClass":["samitaWS-card-list","card-list","page-width","collection-template",".cart-item","cart-item-list__body","breadcrumbs","announcement","shopify-section","mega-menu__content","cart_list_items","column_product_info","cart",".cart__image"]},"quickView":[],"quickOrder":{"element":[".samitaWS-quick-order-form"],"price":[".form_product_price_row"],"quantity":[".form_quantity___quanity[name=\"quantity\"]"]},"cart":{"link":"a[href*=\"/cart\"]","countBubble":["[samitaWS-count-bubble]",".cart-count-bubble",".cart-link__bubble"],"form":["#cartform",".Cart.Cart--expanded",".ajax-cart__form-wrapper","#CartPage form[action*=\"/cart\"]",".cart-wrapper form[action*=\"/cart\"]",".main-content-inner form[action=\"/cart\"]",".main-content form[action=\"/cart\"]","[data-section-id=\"cart-template\"] form[action*=\"/cart\"]","cart-items form[action*=\"/cart\"]","form#updateform","form#cartForm","form[action*=\"/cart\"]#cartform",".page-content form[action*=\"/cart\"]","form[action*=\"/cart\"]:not([action*=\"/cart/add\"]):not([hidden])"],"drawerForm":["[samitaWS-drawer-form]","#cart-summary-overlay",".Cart.Drawer__Content","#cart-notification-form"],"drawerCustomForm":["[samitaWS-drawerCustom-form]",".samitaWS-drawerCustom-form"],"page":[{"lineItem":{"key":".samitaWS-cart-line-item-key, .cart-item","quantity":{"wrapper":"[samitaWS-cart-line-item-qty-wrapper]","input":"[samitaWS-cart-line-item-qty],.QuantitySelector__CurrentQuantity","decrease":"[samitaWS-cart-line-item-qty-decrease]","increase":"[samitaWS-cart-line-item-qty-increase]","removeButton":"[samitaWS-cart-line-item-remove-button],.CartItem__Remove"},"price":".cart-item__price .theme-money,.CartItem__LinePriceList .CartItem__Price","priceEnd":".cart-item__total .theme-money","unitPrice":".cart-item__price .theme-money","totalPrice":".cart-item__total .theme-money,.Cart__Total span"},"subtotalPrice":".subtotal .theme-money","checkoutBtn":"form[action*=\"/cart\"] [type=\"submit\"][name=\"checkout\"], #CartDrawer-Checkout,.Cart__Checkout","discountBox":"[samitaWS-cart-discount-box]"}],"drawer":[{"btnClose":"button.drawer__close","lineItem":{"key":".samitaWS-drawer-line-item-key, .cart-item, .CartItem","quantity":{"wrapper":"[samitaWS-drawer-line-item-qty-wrapper], .cart-item__quantity","input":"[samitaWS-drawer-line-item-qty], .quantity__input,.QuantitySelector__CurrentQuantity","decrease":"[samitaWS-drawer-line-item-qty-decrease], [name=\"minus\"]","increase":"[samitaWS-drawer-line-item-qty-increase], [name=\"plus\"]"},"price":"[samitaWS-drawer-product-main-price], .cart-item__details > div.product-option:first-of-type, .CartItem__Info .CartItem__PriceList,.CartItem__PriceList .Price","removeButton":"[samitaWS-drawer-line-item-remove-button], cart-remove-button button","unitPrice":"[samitaWS-drawer-line-item-unit-price], div.product-option","priceEnd":"[samitaWS-cart-product-price-end], .cart-item__totals .cart-item__price-wrapper .price.price--end","totalPrice":"[samitaWS-drawer-line-item-total-price], .cart-item__total .original_price"},"subtotalPrice":"[samitaWS-drawer-line-item-subtotal-price], .hulkapps-cart-original-total","checkoutBtn":"[samitaWS-drawer-checkout-btn], #CartDrawer-Checkout, form[action*=\"/cart\"] [type=\"submit\"][name=\"checkout\"], form[action*=\"/cart\"] [name=\"checkout\"],.Cart__Checkout"}],"drawerCustom":[{"lineItem":{"key":".samitaWS-drawerCustom-line-item-key","quantity":{"wrapper":"[samitaWS-drawerCustom-line-item-qty-wrapper]","input":"[samitaWS-drawerCustom-line-item-qty]","decrease":"[samitaWS-drawerCustom-line-item-qty-decrease]","increase":"[samitaWS-drawerCustom-line-item-qty-increase]"},"removeButton":"[samitaWS-drawerCustom-line-item-remove-button]","price":"[samitaWS-drawerCustom-product-main-price]","priceEnd":"[samitaWS-drawerCustom-product-price-end]","unitPrice":"[samitaWS-drawerCustom-line-item-unit-price]","totalPrice":"[samitaWS-drawerCustom-line-item-total-price]"},"subtotalPrice":".samitaWS-totals--price strong","discountBox":"[samitaWS-cart-discount-box]","checkoutBtn":".samitaWS-btn-checkout"}]},"account":{"elementSelectors":[".customer.account"]}},"integrateApps":["globo.relatedproduct.loaded","globoFilterQuickviewRenderCompleted","globoFilterRenderSearchCompleted","globoFilterRenderCompleted","globoRelatedBuildWidgetCalback","cart:open","cart:build","cart:quantity.cart-cart-drawer","cart:updated","cart:close","collectionUpdate"],"theme_store_id":739,"theme_name":"Pipeline"}
+            } 
+            if (!Shopify?.theme) {
+                Samita.Wholesale.theme = {"selectors":{"product":{"element":[".Product.Product--large",".product-page",".grid.product-single",".gfqv-product-wrapper",".ga-product",".product-scope"],"form":["form.shopify-product-form","form.ProductForm",".home-product form[action*=\"/cart/add\"]",".shop-product form[action*=\"/cart/add\"]","#shopify-section-featured-product form[action*=\"/cart/add\"]","form.apb-product-form","product-form form[action*=\"/cart/add\"]",".product-page form[action*=\"/cart/add\"]","[id*=\"ProductSection--\"] form[action*=\"/cart/add\"]","form#add-to-cart-form","form.sf-cart__form","form.productForm","form.product-form","form.product-single__form","form.shopify-product-form","form.atc-form","form.atc-form-mobile","form[action*=\"/cart/add\"]:not([hidden])"],"price":["#ProductPrice-product-template",".grid-product__price","#ProductPrice","#single_product__price-template-product",".product-price",".product__price—reg","#productPrice-product-template",".product__current-price",".product-thumb-caption-price-current",".product-item-caption-price-current",".grid-product__price,.product__price","span.price","span.product-price",".productitem--price",".product-pricing","div.price","span.money",".product-item__price",".product-list-item-price","p.price",".product-meta__prices","div.product-price","span#price",".price.money","h3.price","a.price",".price-area",".product-item-price",".pricearea",".collectionGrid .collectionBlock-info > p","#ComparePrice",".product--price-wrapper",".product-page--price-wrapper",".color--shop-accent.font-size--s.t--meta.f--main",".ComparePrice",".ProductPrice",".prodThumb .title span:last-child",".price",".product-single__price-product-template",".product-info-price",".price-money",".prod-price","#price-field",".product-grid--price",".prices,.pricing","#product-price",".money-styling",".compare-at-price",".product-item--price",".card__price",".product-card__price",".product-price__price",".product-item__price-wrapper",".product-single__price",".grid-product__price-wrap","a.grid-link p.grid-link__meta",".product__prices","#comparePrice-product-template","dl[class*=\"price\"]","div[class*=\"price\"]",".gl-card-pricing",".ga-product_price-container"],"signal":"[data-product-handle], [data-product-id]","notSignal":":not([data-section-id=\"product-recommendations\"],[data-section-type=\"product-recommendations\"],#product-area,#looxReviews)","unitPrice":".current-price,.product__price,.price-list,.ProductMeta__PriceList .ProductMeta__Price,.price__regular,.product__price__main,.product__price__main,product__price__wrap","compareAtPrice":"[samitaWS-product-compare-at-price],.product-detail .was-price","variantWrapper":"[samitaWS-product-variant-wrapper],.option-selectors,.radio-swatch input","variantSelector":"input[name=\"id\"]","variantIdByAttribute":"swatch-current-variant, data-id","variantActivator":".cc-select__listbox .cc-select__option,.selector-wrapper select,.clickyboxes a[data-value]","productVariant":"input[name=\"id\"]","quantity":"[samitaWS-product-quantity], [name=qty], [name=quantity]","decreaseQuantity":"[samitaWS-drawer-line-item-qty-decrease], [name=\"minus\"],.js-qty__adjust--minus","increaseQuantity":"[samitaWS-cart-line-item-qty-increase],.js-qty__adjust--plus","addToCartButton":".ProductForm__BuyButtons,.ProductForm__AddToCart,.btn--add-to-cart","paymentButton":"[samitaWS-product-payment], [data-shopify=\"payment-button\"], [data-product-buy-now]"},"collection":{"quickAddBtn":".quick-add__submit","gridWrapperRelatedApp":".ga-product","productLink":"[samitaWS-collection-product-link], a.product-block__link[href*=\"/products/\"], a.indiv-product__link[href*=\"/products/\"], a.thumbnail__link[href*=\"/products/\"], a.product-item__link[href*=\"/products/\"], a.product-card__link[href*=\"/products/\"], a.product-card-link[href*=\"/products/\"], a.product-block__image__link[href*=\"/products/\"], a.stretched-link[href*=\"/products/\"], a.grid-product__link[href*=\"/products/\"], a.product-grid-item--link[href*=\"/products/\"], a.product-link[href*=\"/products/\"], a.product__link[href*=\"/products/\"], a.full-unstyled-link[href*=\"/products/\"], a.grid-item__link[href*=\"/products/\"], a.grid-product__link[href*=\"/products/\"], a[data-product-page-link][href*=\"/products/\"], a[href*=\"/products/\"]","price":["[samitaWS-collection-product-price]",".zify-price .price",".product-card__price","#ProductPrice-product-template","#ProductPrice",".product-price",".product__price—reg","#productPrice-product-template",".product__current-price",".product-thumb-caption-price-current",".product-item-caption-price-current",".grid-product__price,.product__price","span.price","span.product-price",".productitem--price",".product-pricing","div.price","span.money",".product-item__price",".product-list-item-price","p.price",".product-meta__prices","div.product-price","span#price",".price.money","h3.price","a.price",".price-area",".product-item-price",".pricearea",".collectionGrid .collectionBlock-info > p","#ComparePrice",".product--price-wrapper",".product-page--price-wrapper",".color--shop-accent.font-size--s.t--meta.f--main",".ComparePrice",".ProductPrice",".prodThumb .title span:last-child",".price",".product-single__price-product-template",".product-info-price",".price-money",".prod-price","#price-field",".product-grid--price",".prices,.pricing","#product-price",".money-styling",".compare-at-price",".product-item--price",".card__price",".product-card__price",".product-price__price",".product-item__price-wrapper",".product-single__price",".grid-product__price-wrap","a.grid-link p.grid-link__meta",".product__prices","#comparePrice-product-template","dl[class*=\"price\"]","div[class*=\"price\"]",".gl-card-pricing",".ga-product_price-container"],"unitPrice":".price-list,.product-price .product-price__amount,.price,.product-grid-item__price.price,.product__price,.ProductItem__PriceList .ProductItem__Price,.zify-price .price,.product__price","compareAtPrice":"[samitaWS-product-compare-at-price], .price.price--on-sale .price__sale .price-item--regular","notElClass":["samitaWS-card-list","card-list","page-width","collection-template",".cart-item","cart-item-list__body","breadcrumbs","announcement","shopify-section","mega-menu__content","cart_list_items","column_product_info","cart",".cart__image"]},"quickView":[],"quickOrder":{"element":[".samitaWS-quick-order-form"],"price":[".form_product_price_row"],"quantity":[".form_quantity___quanity[name=\"quantity\"]"]},"cart":{"link":"a[href*=\"/cart\"]","countBubble":["[samitaWS-count-bubble]",".cart-count-bubble",".cart-link__bubble"],"form":["#cartform",".Cart.Cart--expanded",".ajax-cart__form-wrapper","#CartPage form[action*=\"/cart\"]",".cart-wrapper form[action*=\"/cart\"]",".main-content-inner form[action=\"/cart\"]",".main-content form[action=\"/cart\"]","[data-section-id=\"cart-template\"] form[action*=\"/cart\"]","cart-items form[action*=\"/cart\"]","form#updateform","form#cartForm","form[action*=\"/cart\"]#cartform",".page-content form[action*=\"/cart\"]","form[action*=\"/cart\"]:not([action*=\"/cart/add\"]):not([hidden])"],"drawerForm":["[samitaWS-drawer-form]","#cart-summary-overlay",".Cart.Drawer__Content","#cart-notification-form"],"drawerCustomForm":["[samitaWS-drawerCustom-form]",".samitaWS-drawerCustom-form"],"page":[{"lineItem":{"key":".samitaWS-cart-line-item-key, .cart-item","quantity":{"wrapper":"[samitaWS-cart-line-item-qty-wrapper]","input":"[samitaWS-cart-line-item-qty],.QuantitySelector__CurrentQuantity","decrease":"[samitaWS-cart-line-item-qty-decrease]","increase":"[samitaWS-cart-line-item-qty-increase]","removeButton":"[samitaWS-cart-line-item-remove-button],.CartItem__Remove"},"price":".cart-item__price .theme-money,.CartItem__LinePriceList .CartItem__Price","priceEnd":".cart-item__total .theme-money","unitPrice":".cart-item__price .theme-money","totalPrice":".cart-item__total .theme-money,.Cart__Total span"},"subtotalPrice":".subtotal .theme-money","checkoutBtn":"form[action*=\"/cart\"] [type=\"submit\"][name=\"checkout\"], #CartDrawer-Checkout,.Cart__Checkout","discountBox":"[samitaWS-cart-discount-box]"}],"drawer":[{"btnClose":"button.drawer__close","lineItem":{"key":".samitaWS-drawer-line-item-key, .cart-item, .CartItem","quantity":{"wrapper":"[samitaWS-drawer-line-item-qty-wrapper], .cart-item__quantity","input":"[samitaWS-drawer-line-item-qty], .quantity__input,.QuantitySelector__CurrentQuantity","decrease":"[samitaWS-drawer-line-item-qty-decrease], [name=\"minus\"]","increase":"[samitaWS-drawer-line-item-qty-increase], [name=\"plus\"]"},"price":"[samitaWS-drawer-product-main-price], .cart-item__details > div.product-option:first-of-type, .CartItem__Info .CartItem__PriceList,.CartItem__PriceList .Price","removeButton":"[samitaWS-drawer-line-item-remove-button], cart-remove-button button","unitPrice":"[samitaWS-drawer-line-item-unit-price], div.product-option","priceEnd":"[samitaWS-cart-product-price-end], .cart-item__totals .cart-item__price-wrapper .price.price--end","totalPrice":"[samitaWS-drawer-line-item-total-price], .cart-item__total .original_price"},"subtotalPrice":"[samitaWS-drawer-line-item-subtotal-price], .hulkapps-cart-original-total","checkoutBtn":"[samitaWS-drawer-checkout-btn], #CartDrawer-Checkout, form[action*=\"/cart\"] [type=\"submit\"][name=\"checkout\"], form[action*=\"/cart\"] [name=\"checkout\"],.Cart__Checkout"}],"drawerCustom":[{"lineItem":{"key":".samitaWS-drawerCustom-line-item-key","quantity":{"wrapper":"[samitaWS-drawerCustom-line-item-qty-wrapper]","input":"[samitaWS-drawerCustom-line-item-qty]","decrease":"[samitaWS-drawerCustom-line-item-qty-decrease]","increase":"[samitaWS-drawerCustom-line-item-qty-increase]"},"removeButton":"[samitaWS-drawerCustom-line-item-remove-button]","price":"[samitaWS-drawerCustom-product-main-price]","priceEnd":"[samitaWS-drawerCustom-product-price-end]","unitPrice":"[samitaWS-drawerCustom-line-item-unit-price]","totalPrice":"[samitaWS-drawerCustom-line-item-total-price]"},"subtotalPrice":".samitaWS-totals--price strong","discountBox":"[samitaWS-cart-discount-box]","checkoutBtn":".samitaWS-btn-checkout"}]},"account":{"elementSelectors":[".customer.account"]}},"integrateApps":["globo.relatedproduct.loaded","globoFilterQuickviewRenderCompleted","globoFilterRenderSearchCompleted","globoFilterRenderCompleted","globoRelatedBuildWidgetCalback","cart:open","cart:build","cart:quantity.cart-cart-drawer","cart:updated","cart:close","collectionUpdate"],"theme_store_id":739,"theme_name":"Pipeline"}
+            }
+        
+    
+        
+        
+    
+        
+        
+    
+    Samita.Wholesale.shop = {"id":1330,"configuration":{"money_format":"€{{amount_with_comma_separator}}"},"pricing":[],"settings":{"cart_drawer":{"design":{"bg_navigation":"#DDDDDD","txt_navigation":"#000000","bg_active_navigation":"#FFFFFF","txt_active_navigation":"#000000","bg_content":"#FFFFFF","txt_content":"#000000","bg_footer":"#f5f5f5","txt_footer":"#000000","bg_footer_button":"#000000","txt_footer_button":"#FFFFFF","bg_footer_hover_button":"#000000","txt_footer_hover_button":"#FFFFFF"},"enable":false},"encryption_registration_form_id":true,"general":{"cart_page":false,"discount_methods":{"api":"draft_order_api","custom_discount_label":"Discount"},"multiple_volume_pricing":"newest","multiple_wholesale_pricing":"newest","quick_order_page":{"minimum_search_key":3},"reCaptcha":{"recaptchaType":"v2","siteKey":false,"languageCode":"en"},"show_crossout_price":false,"show_compare_crossout_price":false},"translations":{"default":{"volume_table":{"qty":"Qty","price":"Price","discount":"Discount","buy_qty":"Buy {{qty}}","discount_percent":"{{percent}} Off"},"box_discount":{"label":"Discount","discount_code":"Discount code","apply_discount":"Apply discount","enter_a_valid_discount_code":"Enter a valid discount code","discount_code_is_not_valid_for_the_items_in_your_cart":"Discount code is not valid for the items in your cart","accepted_discounts_calculated_at_checkout":"Accepted! Discounts calculated at checkout"},"quick_order_table":{"name":"Name","image":"Image","price":"Price","compare_at_price":"Compare At Price","product_sku":"Product SKU","vendor":"Vendor","type":"Type","quantity":"Quantity","action":"Action","count_products":"{{count_products}} products","show_count_variants":"Show {{count_variants}} Variants","hide_count_variants":"Hide {{count_variants}} Variants","add_to_cart":"Add To Cart","no_data":"No Data","search_products":"Search Products","search":"Search","your_cart":"Your Cart({{cart_total_items}})","all_products":"All Products","collection_by":"Collection by:","added":"Added!","added_to_cart_success":"Added to Cart Success !","view_cart_and_checkout":"View Cart & Checkout","out_of_stock":"Out of stock","please_select_quantity":"Please Select Quantity","error":"Error!","you_can_only_add_quantity_of_this_to_your_cart":"You can only add {{max_quantity}} of this item to your cart.","volume_pricing":"Volume pricing","load_more":"Load more","quantity_in_cart":"Quantity ({{quantity_in_cart}} in cart)"},"account_table":{"details":"Details","noValue":"No value","tags":"Tags","notes":"Notes","addresses":"Addresses"},"cart_drawer":{"my_account":"My Account","my_cart":"My Cart","logout":"Logout","my_wholesale_cart":"My Wholesale Cart","add_product_by_sku":"Add product by SKU","options":"Options","you_have_no_items_in_your_order":"You have no items in your order!","sub_total":"Sub-total","total_line":"{{total_line}} line","total_items":"{{total_items}} items","proceed_to_checkout":"Proceed to Checkout","tax_and_shipping_costs_calculated_during_checkout":"Tax and shipping costs calculated during checkout","recent_order":"Recent order","clear_order":"Clear order","shopping_lists":"Shopping list","view":"View","view_all":"View all","order":"Order#","date":"Date","amount":"Amount","status":"Status","actions":"Actions","email_address":"Email address","name":"Name","company":"Company","country":"Country","address_book":"Address book","default_shipping_address":"Default shipping address","browse_our_website_to_begin_adding_products_or_use_the_quick_add_box_above":"Browse our website to begin adding products or use the quick add box above.","none_data":"None Data","not_logged_in":"Not logged in!","please_login_to_view_information":"Please {{login|log in}} to view information.","my_details":"My Details","order_history":"Orders History","orders":"Orders","style":"Style:","sku":"SKU:","unfulfilled":"Unfulfilled","fulfilled":"Fulfilled","add_to_cart":"Add To Cart","no_results_found_for_search_value":"No results found for \"{{searchValue}}\"","check_the_spelling_or_use_a_different_word_or_phrase":"Check the spelling or use a different word or phrase.","products":"Products","order_date":"Order date","shipping_method":"Shipping method","total":"Total","add_to_cart_again":"Add To Cart Again","shipping__title":"Shipping ({{shipping_title}})","subtotal":"Subtotal","tax_vat_amount":"Tax VAT({{percent_amount}})","product_add_to_cart_successful":"Product add to cart successful","please_try_again":"Please try again","error":"Error!","added_to_cart":"Added To Cart!","view_cart_and_checkout":"View Cart & Checkout","items_are_no_longer_available":"Items are no longer available.","login":"Login"}}},"notUseFileApp":{"search":false,"quickOrderForm":false}},"url":"kookai-amh.myshopify.com","api_url":"/apps/sami-wholesale","app_url":"https://wholesale.samita.io"};
+    Samita.Wholesale.shop.locale = "fr";
+    Samita.Wholesale.wholesalePricing = [];
+
+    
+
+    
+        
+            
+            
+            Samita.Wholesale.wholesalePricing[1825] = {"1825":{"id":1825,"configs":{"discount_group":{"type":"percent","value":30},"discount_for_variants":[],"active_date":{"types":[null],"start_at":"2024-05-14T07:35:00Z","end_at":"2024-05-26T21:59:59Z"}},"product_configs":{"apply_product":{"type":"collections","manual":{"apply_for_variants":false,"ids":[],"variants":[],"tags":[]},"collections":{"ids":[275593658502]}},"exclude_product":{"type":"none","manual":{"ids":[],"tags":[]},"collections":{"ids":[]}}},"customer_configs":{"apply_customer":{"type":"logged","tags":[]},"exclude_customer":{"type":"none","tags":[]}},"status":1}}[1825];
+        
+    
+    Samita.Wholesale.volumePricing = [];
+
+    
+    
+        
+        
+    
+    Samita.Wholesale.registrationForms = [];
+
+    
+    
+        
+        
+    
+    Samita.Wholesale.quickOrderForms = [];
+    
+    
+        
+        
+    
+    Samita.Wholesale.linklists = "";
+    Samita.Wholesale.canonical_url = "https:\/\/kookai.fr\/pages\/conditions-generales-de-vente";
+    Samita.Wholesale.url = window.Samita.Wholesale.shop.app_url;
+    Samita.Wholesale.apiUrl = window.Samita.Wholesale.shop.api_url;
+    Samita.Wholesale.themeOs20 = true;
+    Samita.Wholesale.__webpack_public_path__ = "https://cdn.shopify.com/extensions/adce8cad-3153-4bd7-a048-29446d31bf66/sami-wholesale-91/assets/";
+    
+        Samita.Wholesale.cart = {"note":null,"attributes":{},"original_total_price":0,"total_price":0,"total_discount":0,"total_weight":0.0,"item_count":0,"items":[],"requires_shipping":false,"currency":"EUR","items_subtotal_price":0,"cart_level_discount_applications":[],"checkout_charge_amount":0};
+    
+    
+    Samita.Wholesale.page = {
+        title : document.title.replaceAll('"', "'"),
+        href : window.location.href,
+        type: "page"
+    };
+    
+</script>
 <!-- END app app block --><!-- BEGIN app block: shopify://apps/wishlist-hero/blocks/app-embed/a9a5079b-59e8-47cb-b659-ecf1c60b9b72 -->
 
 
@@ -982,9 +1010,113 @@ Shopify.routes.root = "/";</script>
   }
 </script><!-- END app snippet -->
 
+<!-- END app app block --><!-- BEGIN app block: shopify://apps/wisepops-popup-notifications/blocks/app-embed/e7d7a4f7-0df4-4073-9375-5f36db513952 --><script>
+  // Create the wisepops() function
+  window.wisepops_key = window.WisePopsObject = window.wisepops_key || window.WisePopsObject || "wisepops";
+  window[window.wisepops_key] = function () {
+    window[window.wisepops_key].q.push(arguments);
+  };
+  window[window.wisepops_key].q = [];
+  window[window.wisepops_key].l = Date.now();
+
+  // Disable deprecated snippet
+  window._wisepopsSkipShopifyDeprecatedSnippet = true;
+
+  document.addEventListener('wisepops.after-initialization', function () {
+    // https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie/Simple_document.cookie_framework
+    function getCookieValue(sKey) {
+      if (!sKey) { return null; }
+      return decodeURIComponent(document.cookie.replace(new RegExp("(?:(?:^|.*;)\\s*" + encodeURIComponent(sKey).replace(/[\-\.\+\*]/g, "\\$&") + "\\s*\\=\\s*([^;]*).*$)|^.*$"), "$1")) || null;
+    }
+
+    function getTotalInventoryQuantity() {
+      var variants = null;
+      if (!variants) {
+        return null;
+      }
+
+      var totalQuantity = 0;
+      for (var i in variants) {
+        if (variants[i] && variants[i].inventory_quantity) {
+          totalQuantity += variants[i].inventory_quantity;
+        } else {
+          return null;
+        }
+      }
+      return totalQuantity;
+    }
+
+    function getMapCartItems(key){
+      var cartItems = [];
+      return cartItems.map(function (item) {
+        return item[key];
+      })
+      .filter(function (item){
+        if (item !== undefined && item !== null && item !== "") {
+          return true;
+        }
+        return false;
+      })
+      .join(',');
+    }
+
+    
+
+    // Set built-in properties
+    window[window.wisepops_key]('properties', {
+      client_id: null,
+      cart: {
+        discount_code: getCookieValue('discount_code'),
+        item_count: 0,
+        total_price: 0 / 100,
+        skus: getMapCartItems('sku'),
+        items: {}
+      },
+      customer: {
+        accepts_marketing: false,
+        is_logged_in:  false ,
+        last_order: {
+          created_at: null,
+        },
+        orders_count: null,
+        total_spent: (isNaN(null) ? null : (null / 100)),
+        tags:  null ,
+        email: null,
+        first_name: null,
+        last_name: null,
+      },
+      product: {
+        available: null,
+        price:  null ,
+        tags: null,
+        total_inventory_quantity: getTotalInventoryQuantity(),
+        stock: 0,
+      },
+      orders: {}
+    }, { temporary: true });
+
+    // Custom event when product added to cart
+    var shopifyTrackFunction = window.ShopifyAnalytics && ShopifyAnalytics.lib && ShopifyAnalytics.lib.track;
+    var lastAddedToCartTimestamp = 0;
+    if (shopifyTrackFunction) {
+      ShopifyAnalytics.lib.track = function () {
+        if (arguments[0] === 'Added Product') {
+          var currentTimestamp = Date.now();
+          if (currentTimestamp > lastAddedToCartTimestamp + 5000) {
+            window[window.wisepops_key]('event', 'product-added-to-cart');
+            lastAddedToCartTimestamp = currentTimestamp;
+          }
+        }
+        shopifyTrackFunction.apply(this, arguments);
+      };
+    }
+  });
+</script>
+
 <!-- END app app block --><script src="https://cdn.shopify.com/extensions/aeb34400-7713-4fbf-8e40-9e17e871a0d2/live-shopping-by-livemeup-28/assets/player-loader.min.js" type="text/javascript" defer="defer"></script>
 <script src="https://cdn.shopify.com/extensions/80d5eb8c-7297-4174-8d8f-86bbdc2eb47d/ekookie-28/assets/ekookie.js" type="text/javascript" defer="defer"></script>
 <link href="https://cdn.shopify.com/extensions/80d5eb8c-7297-4174-8d8f-86bbdc2eb47d/ekookie-28/assets/ekookie.css" rel="stylesheet" type="text/css" media="all">
+<script src="https://cdn.shopify.com/extensions/adce8cad-3153-4bd7-a048-29446d31bf66/sami-wholesale-91/assets/samita.wholesale.index.js" type="text/javascript" defer="defer"></script>
 <link href="https://monorail-edge.shopifysvc.com" rel="dns-prefetch">
 <script>(function(){if ("sendBeacon" in navigator && "performance" in window) {var session_token = document.cookie.match(/_shopify_s=([^;]*)/);function handle_abandonment_event(e) {var entries = performance.getEntries().filter(function(entry) {return /monorail-edge.shopifysvc.com/.test(entry.name);});if (!window.abandonment_tracked && entries.length === 0) {window.abandonment_tracked = true;var currentMs = Date.now();var navigation_start = performance.timing.navigationStart;var payload = {shop_id: 55913644166,url: window.location.href,navigation_start,duration: currentMs - navigation_start,session_token: session_token && session_token.length === 2 ? session_token[1] : "",page_type: "page"};window.navigator.sendBeacon("https://monorail-edge.shopifysvc.com/v1/produce", JSON.stringify({schema_id: "online_store_buyer_site_abandonment/1.1",payload: payload,metadata: {event_created_at_ms: currentMs,event_sent_at_ms: currentMs}}));}}window.addEventListener('pagehide', handle_abandonment_event);}}());</script>
 <script id="web-pixels-manager-setup">(function e(e,n,a,t,r){var o="function"==typeof BigInt&&-1!==BigInt.toString().indexOf("[native code]")?"modern":"legacy";window.Shopify=window.Shopify||{};var i=window.Shopify;i.analytics=i.analytics||{};var s=i.analytics;s.replayQueue=[],s.publish=function(e,n,a){return s.replayQueue.push([e,n,a]),!0};try{self.performance.mark("wpm:start")}catch(e){}var l=[a,"/wpm","/b",r,o.substring(0,1),".js"].join("");!function(e){var n=e.src,a=e.async,t=void 0===a||a,r=e.onload,o=e.onerror,i=document.createElement("script"),s=document.head,l=document.body;i.async=t,i.src=n,r&&i.addEventListener("load",r),o&&i.addEventListener("error",o),s?s.appendChild(i):l?l.appendChild(i):console.error("Did not find a head or body element to append the script")}({src:l,async:!0,onload:function(){var a=window.webPixelsManager.init(e);n(a);var t=window.Shopify.analytics;t.replayQueue.forEach((function(e){var n=e[0],t=e[1],r=e[2];a.publishCustomEvent(n,t,r)})),t.replayQueue=[],t.publish=a.publishCustomEvent,t.visitor=a.visitor},onerror:function(){var n=e.storefrontBaseUrl.replace(/\/$/,""),a="".concat(n,"/.well-known/shopify/monorail/unstable/produce_batch"),r=JSON.stringify({metadata:{event_sent_at_ms:(new Date).getTime()},events:[{schema_id:"web_pixels_manager_load/2.0",payload:{version:t||"latest",page_url:self.location.href,status:"failed",error_msg:"".concat(l," has failed to load")},metadata:{event_created_at_ms:(new Date).getTime()}}]});try{if(self.navigator.sendBeacon.bind(self.navigator)(a,r))return!0}catch(e){}var o=new XMLHttpRequest;try{return o.open("POST",a,!0),o.setRequestHeader("Content-Type","text/plain"),o.send(r),!0}catch(e){console&&console.warn&&console.warn("[Web Pixels Manager] Got an unhandled error while logging a load error.")}return!1}})})({shopId: 55913644166,storefrontBaseUrl: "https://kookai.fr",cdnBaseUrl: "https://kookai.fr/cdn",surface: "storefront-renderer",enabledBetaFlags: ["5de24938","3b4293f9"],webPixelsConfigList: [{"id":"35520646","configuration":"{\"hash\":\"NBpkHZf9aC\",\"ingestion_url\":\"https:\/\/activity.wisepops.com\",\"goal_hash\":\"9sE00qiWeevPH0WOUMxuJRDdnmA7hNRQ\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"b0d9aca365b6ec0785f1f491728cbde0","type":"APP","apiClientId":461977,"privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"]},{"id":"shopify-app-pixel","configuration":"{}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"064","apiClientId":"shopify-pixel","type":"APP","purposes":["ANALYTICS","MARKETING"]},{"id":"shopify-custom-pixel","eventPayloadVersion":"v1","runtimeContext":"LAX","scriptVersion":"064","apiClientId":"shopify-pixel","type":"CUSTOM","purposes":["ANALYTICS","MARKETING"]}],initData: {"cart":null,"checkout":null,"customer":null,"productVariants":[]},},function pageEvents(webPixelsManagerAPI) {webPixelsManagerAPI.publish("page_viewed");},"https://kookai.fr/cdn","f4ef3ca5bc9e5c8c0413f95990c06c2bfb2a1c3f","9b6e89d5wc17a64ecpbbcbb0adm788a56af",);</script>  <script>window.ShopifyAnalytics = window.ShopifyAnalytics || {};
@@ -1123,7 +1255,7 @@ for (var attr in meta) {
       first.parentNode.insertBefore(script, first);
     };
     trekkie.load(
-      {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":55913644166,"isMerchantRequest":null,"themeId":124428320902,"themeCityHash":"11218189861858438228","contentLanguage":"fr","currency":"EUR"},"isServerSideCookieWritingEnabled":true,"monorailRegion":"shop_domain","enabledBetaFlags":["bbcf04e6"]},"Session Attribution":{},"S2S":{"facebookCapiEnabled":false,"source":"trekkie-storefront-renderer"}}
+      {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":55913644166,"isMerchantRequest":null,"themeId":124428320902,"themeCityHash":"5796306962420873140","contentLanguage":"fr","currency":"EUR"},"isServerSideCookieWritingEnabled":true,"monorailRegion":"shop_domain","enabledBetaFlags":["bbcf04e6"]},"Session Attribution":{},"S2S":{"facebookCapiEnabled":false,"source":"trekkie-storefront-renderer"}}
     );
 
     var loaded = false;
@@ -3060,20 +3192,7 @@ Effacer</button>
     for (i=0; i<aCustomSwatches.length; i++) aCustomSwatches[i] = aCustomSwatches[i].split(':');
   </script>
 
-<div id="shopify-block-12526071353035850722" class="shopify-block shopify-app-block"><script id="back-in-stock-helper-embedded">
-  var _BISConfig = _BISConfig || {};
-
-
-
-
-</script>
-
-
-
-</div><div id="shopify-block-15037621279992766403" class="shopify-block shopify-app-block">
-
-
-</div><div id="shopify-block-3058753826952816051" class="shopify-block shopify-app-block">
+<div id="shopify-block-3058753826952816051" class="shopify-block shopify-app-block">
 <!-- <script type="module" src="/assets/iab_module.js"></script> -->
 <script type="text/javascript">
   let settings = {"main_button_color":"#d9eeef","secondary_color":"#dee6e6","text_color":"#212326","button_text_color":"#000000","paint_color":"#d9eeef","logo":"\/\/kookai.fr\/cdn\/shop\/files\/favicon-kookai.jpg?v=1709714610","border_radius":4,"position":"left","paddingbot":10,"paddingside":10,"font_overwrite":true,"header_font":{"error":"json not allowed for this object"},"header_font_size":24,"font_text":{"error":"json not allowed for this object"},"font_text_size":15,"timeout":5,"hide":false,"force":false,"refuse_button":true,"link":null,"debug":false};
@@ -3131,6 +3250,19 @@ Effacer</button>
 <!-- d8e2dc ffe5d9 #ffcad4 f4acb7-->
 
 
+
+
+</div><div id="shopify-block-12526071353035850722" class="shopify-block shopify-app-block"><script id="back-in-stock-helper-embedded">
+  var _BISConfig = _BISConfig || {};
+
+
+
+
+</script>
+
+
+
+</div><div id="shopify-block-15037621279992766403" class="shopify-block shopify-app-block">
 
 
 </div></body>
