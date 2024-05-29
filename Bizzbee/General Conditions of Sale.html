@@ -8,8 +8,8 @@
 <head><script>(function(){function e(e,t){function s(t,n){e.console&&e.console.error("[smartcache] "+t);const r={};n.placeholders.forEach(function(e){r[e.dataset.fstrzFragmentId]={content:e.innerHTML,selector:e.dataset.fstrzFragmentSelector}});const i={url:e.location.href,fragments:n.fragments,placeholders:r};try{e.localStorage&&e.localStorage.setItem("fasterize-lastSmartcacheError",JSON.stringify(i))}catch(s){e.console&&e.console.error("[smartcache] "+s),e.console&&e.console.error(i)}}function o(t,r,i){if(/googlebot/i.test(e.navigator.userAgent)){e.console&&e.console.error("[smartcache] No error handling for googlebots."),e.preventDeferJSStart=0,e.smartCacheInserted=!0;return}if(typeof e.onFrzSmartcacheError=="function"){const o=e.onFrzSmartcacheError(t,r,i);if(o)return}var u="frz-flush=true&frz-reason="+r;if(r==="smartcache_missmatching"){var a=Object.keys(i.fragments).map(function(e){return e+":"+i.fragments[e].selector}),f=i.placeholders.map(function(e){return e.dataset.fstrzFragmentId+":"+e.dataset.fstrzFragmentSelector}),l=a.filter(function(e){return f.indexOf(e)<0}).join(";"),c=f.filter(function(e){return a.indexOf(e)<0}).join(";");u="frz-flush=true&frz-reason=smartcache_missmatching&frz-fragments="+encodeURIComponent(l)+"&frz-placeholders="+encodeURIComponent(c),u=u.substring(0,3e3),s(t,i)}else e.console&&e.console.error("[smartcache] "+t,i);n?console.error("[smartcache] no redirection because an unload is ongoing"):e.location.search=e.location.search===""?u:e.location.search+"&"+u}function u(e){var n=null;for(var r in e){var i=t.querySelector("[data-fstrz-fragment-id="+r+"]"),s=e[r];i&&i.dataset.fstrzFragmentSelector===s.selector?i.innerHTML=s.content:(n||(n={}),n[r]=s)}return n}function a(e){return e.protocol+"//"+e.host+e.pathname+(e.search?e.search:"")}function f(n,s){if(n.response&&n.response.location){const l=new URL(n.response.location,e.location.href);e.location.assign(n.response.location);if(a(e.location)===a(l)&&!e.smartCacheRetryAfterRedirect){e.smartCacheRetryAfterRedirect=!0;const c=t.querySelector("script[src*='smartcache-fragment=true']");if(c&&c.parentNode){const h=t.createElement("script");h.src=c.src,c.parentNode.insertBefore(h,c.nextSibling),c.parentNode.removeChild(c)}}return}if(e.smartCacheInserted)return;e.smartCacheLoaded=!0,e.performance&&e.performance.mark&&e.performance.mark("frz_insert_fragments"+(s?"(remaining)":"")),!s&&typeof e.onFrzSmartcachePreInsertion=="function"&&(n=e.onFrzSmartcachePreInsertion(n));var p=u(s||n);if(!p){var d=[].filter.call(t.querySelectorAll("[data-fstrz-fragment-id]:empty"),function(e){return n[e.dataset.fstrzFragmentId]===undefined});if(d.length>0){o("Some placeholders are empty.","smartcache_missmatching",{fragments:n,placeholders:[].slice.call(t.querySelectorAll("[data-fstrz-fragment-id]"))});return}if(typeof e.onFrzSmartcacheCompleted=="function")try{e.onFrzSmartcacheCompleted()}catch(v){e.console.error("[smartcache] Error on onFrzSmartcacheCompleted",v)}e.preventDeferJSStart=0,e.smartCacheInserted=!0}else i?o("Some fragments cannot be inserted.","smartcache_missmatching",{fragments:n,placeholders:[].slice.call(t.querySelectorAll("[data-fstrz-fragment-id]"))}):r.call(t,"DOMContentLoaded",function(){i=!0,f(n,p)})}var n=!1;e.addEventListener("beforeunload",function(){n=!0}),e.fasterizeNs=e.fasterizeNs||{},e.onerror=function(t,n){return n&&n.indexOf("frz-smartcache-fragment")!==-1&&e.fasterizeNs.handleError("Error while inserting smartcache fragment. Fragment response is likely not a js response","invalid_response",t),!1};var r=t.addEventListener,i=!1;r.call(t,"DOMContentLoaded",function(){i=!0}),e.smartCacheLoaded=!1,e.smartCacheInserted=!1,e.preventDeferJSStart=1200,e.fasterizeNs.processFragments=f,e.fasterizeNs.handleError=o}typeof window!="undefined"&&typeof document!="undefined"?e(window,document):module.exports=e})();</script><script async fetchpriority="high" src="https://www.b-z-b.com/cgv.html?frz-smartcache-fragment=true&frz-timeout=5000&frz-smartcache-v=2&frz-smartcache-placeholders-number=16" onerror="fasterizeNs.handleError('Error while downloading smartcache fragments', 'invalid_status_code')"></script><script>
             var frzScriptsToPreload = document.createDocumentFragment();
             // keep for preload strategy
-            var frzScriptsToPreloadUrls = ["https://www.b-z-b.com/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1716972254695/js/loadJquery.js?frz-v=767","https://www.b-z-b.com/fstrz/0e45ec46c7c4c2ab97d53ed5e2bc4981a57c1ee98eaf5ad2243b4890569a8a4c.js?src=https%3A%2F%2Fwww.b-z-b.com%2Fon%2Fdemandware.static%2FSites-Bizzbee-SFRA-Site%2F-%2Ffr_FR%2Fv1716972254695%2Fjs%2FloadAlertNotification.js%3Ffrz-v%3D767&src=https%3A%2F%2Fwww.b-z-b.com%2Fon%2Fdemandware.static%2FSites-Bizzbee-SFRA-Site%2F-%2Ffr_FR%2Fv1716972254695%2Fjs%2FloadGtm.js%3Ffrz-v%3D767&src=https%3A%2F%2Fwww.b-z-b.com%2Fon%2Fdemandware.static%2FSites-Bizzbee-SFRA-Site%2F-%2Ffr_FR%2Fv1716972254695%2Fjs%2Fmain.js%3Ffrz-v%3D767&src=https%3A%2F%2Fwww.b-z-b.com%2Fon%2Fdemandware.static%2FSites-Bizzbee-SFRA-Site%2F-%2Ffr_FR%2Fv1716972254695%2Fjs%2Fcommon.js%3Ffrz-v%3D767","https://www.b-z-b.com/fstrz/3685cf8d894002f3345ebec3076e4665c9e35d629605bac21b125a595757a7d3.js?src=https%3A%2F%2Fwww.b-z-b.com%2Fon%2Fdemandware.static%2FSites-Bizzbee-SFRA-Site%2F-%2Ffr_FR%2Fv1716972254695%2Fjs%2FuiShow.js%3Ffrz-v%3D767&src=https%3A%2F%2Fwww.b-z-b.com%2Fon%2Fdemandware.static%2FSites-Bizzbee-SFRA-Site%2F-%2Ffr_FR%2Fv1716972254695%2Fjs%2FtargetToSell.js%3Ffrz-v%3D767","https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"];
-            var frzScriptsToPreloadScripts = [{"src":"https://www.b-z-b.com/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1716972254695/js/loadJquery.js?frz-v=767","module":false},{"src":"https://www.b-z-b.com/fstrz/0e45ec46c7c4c2ab97d53ed5e2bc4981a57c1ee98eaf5ad2243b4890569a8a4c.js?src=https%3A%2F%2Fwww.b-z-b.com%2Fon%2Fdemandware.static%2FSites-Bizzbee-SFRA-Site%2F-%2Ffr_FR%2Fv1716972254695%2Fjs%2FloadAlertNotification.js%3Ffrz-v%3D767&src=https%3A%2F%2Fwww.b-z-b.com%2Fon%2Fdemandware.static%2FSites-Bizzbee-SFRA-Site%2F-%2Ffr_FR%2Fv1716972254695%2Fjs%2FloadGtm.js%3Ffrz-v%3D767&src=https%3A%2F%2Fwww.b-z-b.com%2Fon%2Fdemandware.static%2FSites-Bizzbee-SFRA-Site%2F-%2Ffr_FR%2Fv1716972254695%2Fjs%2Fmain.js%3Ffrz-v%3D767&src=https%3A%2F%2Fwww.b-z-b.com%2Fon%2Fdemandware.static%2FSites-Bizzbee-SFRA-Site%2F-%2Ffr_FR%2Fv1716972254695%2Fjs%2Fcommon.js%3Ffrz-v%3D767","module":false},{"src":"https://www.b-z-b.com/fstrz/3685cf8d894002f3345ebec3076e4665c9e35d629605bac21b125a595757a7d3.js?src=https%3A%2F%2Fwww.b-z-b.com%2Fon%2Fdemandware.static%2FSites-Bizzbee-SFRA-Site%2F-%2Ffr_FR%2Fv1716972254695%2Fjs%2FuiShow.js%3Ffrz-v%3D767&src=https%3A%2F%2Fwww.b-z-b.com%2Fon%2Fdemandware.static%2FSites-Bizzbee-SFRA-Site%2F-%2Ffr_FR%2Fv1716972254695%2Fjs%2FtargetToSell.js%3Ffrz-v%3D767","module":false},{"src":"https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js","module":false}];
+            var frzScriptsToPreloadUrls = ["https://www.b-z-b.com/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1716993881009/js/loadJquery.js?frz-v=768","https://www.b-z-b.com/fstrz/035c737b7da07415da94a8d9b0e35f981628a8db0d3dc9809daae4b9aadf7715.js?src=https%3A%2F%2Fwww.b-z-b.com%2Fon%2Fdemandware.static%2FSites-Bizzbee-SFRA-Site%2F-%2Ffr_FR%2Fv1716993881009%2Fjs%2FloadAlertNotification.js%3Ffrz-v%3D768&src=https%3A%2F%2Fwww.b-z-b.com%2Fon%2Fdemandware.static%2FSites-Bizzbee-SFRA-Site%2F-%2Ffr_FR%2Fv1716993881009%2Fjs%2FloadGtm.js%3Ffrz-v%3D768&src=https%3A%2F%2Fwww.b-z-b.com%2Fon%2Fdemandware.static%2FSites-Bizzbee-SFRA-Site%2F-%2Ffr_FR%2Fv1716993881009%2Fjs%2Fmain.js%3Ffrz-v%3D768&src=https%3A%2F%2Fwww.b-z-b.com%2Fon%2Fdemandware.static%2FSites-Bizzbee-SFRA-Site%2F-%2Ffr_FR%2Fv1716993881009%2Fjs%2Fcommon.js%3Ffrz-v%3D768","https://www.b-z-b.com/fstrz/762460bd054e47a31c0dde6fef90dc8c0b6b584c5dfc4810ac1515628180ffb5.js?src=https%3A%2F%2Fwww.b-z-b.com%2Fon%2Fdemandware.static%2FSites-Bizzbee-SFRA-Site%2F-%2Ffr_FR%2Fv1716993881009%2Fjs%2FuiShow.js%3Ffrz-v%3D768&src=https%3A%2F%2Fwww.b-z-b.com%2Fon%2Fdemandware.static%2FSites-Bizzbee-SFRA-Site%2F-%2Ffr_FR%2Fv1716993881009%2Fjs%2FtargetToSell.js%3Ffrz-v%3D768","https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"];
+            var frzScriptsToPreloadScripts = [{"src":"https://www.b-z-b.com/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1716993881009/js/loadJquery.js?frz-v=768","module":false},{"src":"https://www.b-z-b.com/fstrz/035c737b7da07415da94a8d9b0e35f981628a8db0d3dc9809daae4b9aadf7715.js?src=https%3A%2F%2Fwww.b-z-b.com%2Fon%2Fdemandware.static%2FSites-Bizzbee-SFRA-Site%2F-%2Ffr_FR%2Fv1716993881009%2Fjs%2FloadAlertNotification.js%3Ffrz-v%3D768&src=https%3A%2F%2Fwww.b-z-b.com%2Fon%2Fdemandware.static%2FSites-Bizzbee-SFRA-Site%2F-%2Ffr_FR%2Fv1716993881009%2Fjs%2FloadGtm.js%3Ffrz-v%3D768&src=https%3A%2F%2Fwww.b-z-b.com%2Fon%2Fdemandware.static%2FSites-Bizzbee-SFRA-Site%2F-%2Ffr_FR%2Fv1716993881009%2Fjs%2Fmain.js%3Ffrz-v%3D768&src=https%3A%2F%2Fwww.b-z-b.com%2Fon%2Fdemandware.static%2FSites-Bizzbee-SFRA-Site%2F-%2Ffr_FR%2Fv1716993881009%2Fjs%2Fcommon.js%3Ffrz-v%3D768","module":false},{"src":"https://www.b-z-b.com/fstrz/762460bd054e47a31c0dde6fef90dc8c0b6b584c5dfc4810ac1515628180ffb5.js?src=https%3A%2F%2Fwww.b-z-b.com%2Fon%2Fdemandware.static%2FSites-Bizzbee-SFRA-Site%2F-%2Ffr_FR%2Fv1716993881009%2Fjs%2FuiShow.js%3Ffrz-v%3D768&src=https%3A%2F%2Fwww.b-z-b.com%2Fon%2Fdemandware.static%2FSites-Bizzbee-SFRA-Site%2F-%2Ffr_FR%2Fv1716993881009%2Fjs%2FtargetToSell.js%3Ffrz-v%3D768","module":false},{"src":"https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js","module":false}];
             frzScriptsToPreloadScripts.forEach(function (script) {
               var preload = document.createElement('link');
               if (script.module) {
@@ -82,14 +82,14 @@ var i=typeof a.data==="string";var e;try{e=i?JSON.parse(a.data):a.data}catch(t){
 if(typeof window[n]!=="function"){window[n]=e;if(window.addEventListener){window.addEventListener("message",t,false)}else{window.attachEvent("onmessage",t)}}}e("__tcfapi","__tcfapiBuffer","__tcfapiCall","__tcfapiReturn");a("__tcfapiLocator");(function(e){
   var t=document.createElement("script");t.id="spcloader";t.type="text/javascript";t.async=true;t.src="https://sdk.privacy-center.org/"+e+"/loader.js?target="+document.location.hostname;t.charset="utf-8";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(t,n)})("7d808e03-6c21-4940-b24e-01fcb598c4c4")})();</script>
 
-<script type="text/frzjs" frz_orig_src="https://www.b-z-b.com/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1716972254695/js/loadJquery.js?frz-v=767" orig_index="2"></script>
+<script type="text/frzjs" frz_orig_src="https://www.b-z-b.com/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1716993881009/js/loadJquery.js?frz-v=768" orig_index="2"></script>
 <script type="text/frzjs" data-fstrz-fragment-id="fstrz-scss-0" data-fstrz-fragment-selector="script:contains(kameleoonLoadingTimeout)" orig_index="3"></script>
 <script type="text/frzjs" async="true" frz_orig_src="//usgqb5loji.kameleoon.eu/kameleoon.js" orig_index="4"></script>
-<script type="text/frzjs" defer="" frz_orig_src="https://www.b-z-b.com/fstrz/0e45ec46c7c4c2ab97d53ed5e2bc4981a57c1ee98eaf5ad2243b4890569a8a4c.js?src=https%3A%2F%2Fwww.b-z-b.com%2Fon%2Fdemandware.static%2FSites-Bizzbee-SFRA-Site%2F-%2Ffr_FR%2Fv1716972254695%2Fjs%2FloadAlertNotification.js%3Ffrz-v%3D767&amp;src=https%3A%2F%2Fwww.b-z-b.com%2Fon%2Fdemandware.static%2FSites-Bizzbee-SFRA-Site%2F-%2Ffr_FR%2Fv1716972254695%2Fjs%2FloadGtm.js%3Ffrz-v%3D767&amp;src=https%3A%2F%2Fwww.b-z-b.com%2Fon%2Fdemandware.static%2FSites-Bizzbee-SFRA-Site%2F-%2Ffr_FR%2Fv1716972254695%2Fjs%2Fmain.js%3Ffrz-v%3D767&amp;src=https%3A%2F%2Fwww.b-z-b.com%2Fon%2Fdemandware.static%2FSites-Bizzbee-SFRA-Site%2F-%2Ffr_FR%2Fv1716972254695%2Fjs%2Fcommon.js%3Ffrz-v%3D767" orig_index="5"></script>
+<script type="text/frzjs" defer="" frz_orig_src="https://www.b-z-b.com/fstrz/035c737b7da07415da94a8d9b0e35f981628a8db0d3dc9809daae4b9aadf7715.js?src=https%3A%2F%2Fwww.b-z-b.com%2Fon%2Fdemandware.static%2FSites-Bizzbee-SFRA-Site%2F-%2Ffr_FR%2Fv1716993881009%2Fjs%2FloadAlertNotification.js%3Ffrz-v%3D768&amp;src=https%3A%2F%2Fwww.b-z-b.com%2Fon%2Fdemandware.static%2FSites-Bizzbee-SFRA-Site%2F-%2Ffr_FR%2Fv1716993881009%2Fjs%2FloadGtm.js%3Ffrz-v%3D768&amp;src=https%3A%2F%2Fwww.b-z-b.com%2Fon%2Fdemandware.static%2FSites-Bizzbee-SFRA-Site%2F-%2Ffr_FR%2Fv1716993881009%2Fjs%2Fmain.js%3Ffrz-v%3D768&amp;src=https%3A%2F%2Fwww.b-z-b.com%2Fon%2Fdemandware.static%2FSites-Bizzbee-SFRA-Site%2F-%2Ffr_FR%2Fv1716993881009%2Fjs%2Fcommon.js%3Ffrz-v%3D768" orig_index="5"></script>
 
 
 
-<script type="text/frzjs" defer="" frz_orig_src="https://www.b-z-b.com/fstrz/3685cf8d894002f3345ebec3076e4665c9e35d629605bac21b125a595757a7d3.js?src=https%3A%2F%2Fwww.b-z-b.com%2Fon%2Fdemandware.static%2FSites-Bizzbee-SFRA-Site%2F-%2Ffr_FR%2Fv1716972254695%2Fjs%2FuiShow.js%3Ffrz-v%3D767&amp;src=https%3A%2F%2Fwww.b-z-b.com%2Fon%2Fdemandware.static%2FSites-Bizzbee-SFRA-Site%2F-%2Ffr_FR%2Fv1716972254695%2Fjs%2FtargetToSell.js%3Ffrz-v%3D767" orig_index="6"></script>
+<script type="text/frzjs" defer="" frz_orig_src="https://www.b-z-b.com/fstrz/762460bd054e47a31c0dde6fef90dc8c0b6b584c5dfc4810ac1515628180ffb5.js?src=https%3A%2F%2Fwww.b-z-b.com%2Fon%2Fdemandware.static%2FSites-Bizzbee-SFRA-Site%2F-%2Ffr_FR%2Fv1716993881009%2Fjs%2FuiShow.js%3Ffrz-v%3D768&amp;src=https%3A%2F%2Fwww.b-z-b.com%2Fon%2Fdemandware.static%2FSites-Bizzbee-SFRA-Site%2F-%2Ffr_FR%2Fv1716993881009%2Fjs%2FtargetToSell.js%3Ffrz-v%3D768" orig_index="6"></script>
 
 <!--<![endif]-->
 <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -99,18 +99,18 @@ if(typeof window[n]!=="function"){window[n]=e;if(window.addEventListener){window
 <meta name="keywords" content="Retrouve les conditions g&eacute;n&eacute;rales de vente concernant le site e-shopping de&nbsp;Bizzbee. BIZZBEE, concept for guys &amp; girls accros de la mode." />
 <meta name="referrer" content="no-referrer-when-downgrade" />
 <meta name="facebook-domain-verification" content="0u45aln50tx6158522efftheakcjug" />
-<link rel="icon" type="image/png" href="https://www.b-z-b.com/on/demandware.static/-/Sites/default/dwf05dd0f9/16.png?frz-v=767" sizes="16x16">
-<link rel="icon" type="image/png" href="https://www.b-z-b.com/on/demandware.static/-/Sites/default/dw31767cb3/32.png?frz-v=767" sizes="32x32">
-<link rel="icon" type="image/png" href="https://www.b-z-b.com/on/demandware.static/-/Sites/default/dw6c495ea0/96.png?frz-v=767" sizes="96x96">
-<link rel="icon" type="image/png" href="https://www.b-z-b.com/on/demandware.static/-/Sites/default/dw15616d67/128.png?frz-v=767" sizes="128x128">
-<link rel="icon" type="image/png" href="https://www.b-z-b.com/on/demandware.static/-/Sites/default/dw7dce899d/196.png?frz-v=767" sizes="196x196">
+<link rel="icon" type="image/png" href="https://www.b-z-b.com/on/demandware.static/-/Sites/default/dwf05dd0f9/16.png?frz-v=768" sizes="16x16">
+<link rel="icon" type="image/png" href="https://www.b-z-b.com/on/demandware.static/-/Sites/default/dw31767cb3/32.png?frz-v=768" sizes="32x32">
+<link rel="icon" type="image/png" href="https://www.b-z-b.com/on/demandware.static/-/Sites/default/dw6c495ea0/96.png?frz-v=768" sizes="96x96">
+<link rel="icon" type="image/png" href="https://www.b-z-b.com/on/demandware.static/-/Sites/default/dw15616d67/128.png?frz-v=768" sizes="128x128">
+<link rel="icon" type="image/png" href="https://www.b-z-b.com/on/demandware.static/-/Sites/default/dw7dce899d/196.png?frz-v=768" sizes="196x196">
 
 
 <link rel="dns-prefetch" href="//fonts.googleapis.com" />
 <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
 <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;display=swap" media="print" onload="this.onload=null;this.media='all'">
-<link rel="stylesheet" href="https://www.b-z-b.com/fstrz/5d1d9e81ee65e5898b6d92043aecb33bfe84c7e9c5e7b6ce172d804550885612.css?src=https%3A%2F%2Fwww.b-z-b.com%2Fon%2Fdemandware.static%2FSites-Bizzbee-SFRA-Site%2F-%2Ffr_FR%2Fv1716972254695%2Fcss%2Fglobal.css%3Ffrz-v%3D767&amp;src=https%3A%2F%2Fwww.b-z-b.com%2Fon%2Fdemandware.static%2FSites-Bizzbee-SFRA-Site%2F-%2Ffr_FR%2Fv1716972254695%2Fcss%2FradiusCTA.css%3Ffrz-v%3D767" />
+<link rel="stylesheet" href="https://www.b-z-b.com/fstrz/04d9a6a93341c27752e6a97d91a38e0a44c92d43bb74b5978a239cdd88eb45ff.css?src=https%3A%2F%2Fwww.b-z-b.com%2Fon%2Fdemandware.static%2FSites-Bizzbee-SFRA-Site%2F-%2Ffr_FR%2Fv1716993881009%2Fcss%2Fglobal.css%3Ffrz-v%3D768&amp;src=https%3A%2F%2Fwww.b-z-b.com%2Fon%2Fdemandware.static%2FSites-Bizzbee-SFRA-Site%2F-%2Ffr_FR%2Fv1716993881009%2Fcss%2FradiusCTA.css%3Ffrz-v%3D768" />
 
 <meta name="google-site-verification" content="ZbPuIEkyRYIStVIFcgHf0n_gFruNpgx-VQSBdt-DzOA" />
 <script type="text/frzjs" orig_index="7">
@@ -162,7 +162,7 @@ if(typeof window[n]!=="function"){window[n]=e;if(window.addEventListener){window
     //}
 </script>
 <meta name="theme-color" content="#ffffff" />
-<link rel="apple-touch-icon" sizes="180x180" href="https://www.b-z-b.com/on/demandware.static/-/Sites/default/dwe19b0452/bizzbee-sfra/BZB-192X192.png?frz-v=767">
+<link rel="apple-touch-icon" sizes="180x180" href="https://www.b-z-b.com/on/demandware.static/-/Sites/default/dwe19b0452/bizzbee-sfra/BZB-192X192.png?frz-v=768">
 <link rel="manifest" href="/manifest.json" />
 <link rel="canonical" href="https://www.b-z-b.com/cgv.html" />
 <script type="text/frzjs" orig_index="9">//<!--
@@ -607,21 +607,21 @@ Homme
 <div class="containerNavInstalike">
 <ul class="swipeInstaLikeH">
 <li>
-<a class="self_promotion" data-campaignName="P4" data-campaignVariant="van" data-campaignCreation="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dwf9ba8d8c/Bizzbee-SFRA/2024/P4/layer-new-van-P4.webp?frz-v=736" data-campaignUrl="https://www.b-z-b.com/van-life/" data-campaignFormat="layer nouveautes" data-campaignPosition="1" href="https://www.b-z-b.com/van-life/"><img alt="Van life" src="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dwf9ba8d8c/Bizzbee-SFRA/2024/P4/layer-new-van-P4.webp?frz-v=767" title="" width="400" height="500" class="frz-img" onload="frzRemoveDimensionsTag(this)">
+<a class="self_promotion" data-campaignName="P4" data-campaignVariant="van" data-campaignCreation="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dwf9ba8d8c/Bizzbee-SFRA/2024/P4/layer-new-van-P4.webp?frz-v=736" data-campaignUrl="https://www.b-z-b.com/van-life/" data-campaignFormat="layer nouveautes" data-campaignPosition="1" href="https://www.b-z-b.com/van-life/"><img alt="Van life" src="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dwf9ba8d8c/Bizzbee-SFRA/2024/P4/layer-new-van-P4.webp?frz-v=768" title="" width="400" height="500" class="frz-img" onload="frzRemoveDimensionsTag(this)">
 <p>
 Van life
 </p>
 </a>
 </li>
 <li>
-<a class="self_promotion" data-campaignName="P4" data-campaignVariant="lin " data-campaignCreation="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dw94b90de9/Bizzbee-SFRA/2024/P4/layer-new-lin-P4.webp?frz-v=736" data-campaignUrl="https://www.b-z-b.com/vetement-tendances/premium/" data-campaignFormat="layer nouveautes" data-campaignPosition="2" href="https://www.b-z-b.com/vetement-premium/"><img alt="vetements en lin" src="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dw94b90de9/Bizzbee-SFRA/2024/P4/layer-new-lin-P4.webp?frz-v=767" title="" width="400" height="500" class="frz-img" onload="frzRemoveDimensionsTag(this)">
+<a class="self_promotion" data-campaignName="P4" data-campaignVariant="lin " data-campaignCreation="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dw94b90de9/Bizzbee-SFRA/2024/P4/layer-new-lin-P4.webp?frz-v=736" data-campaignUrl="https://www.b-z-b.com/vetement-tendances/premium/" data-campaignFormat="layer nouveautes" data-campaignPosition="2" href="https://www.b-z-b.com/vetement-premium/"><img alt="vetements en lin" src="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dw94b90de9/Bizzbee-SFRA/2024/P4/layer-new-lin-P4.webp?frz-v=768" title="" width="400" height="500" class="frz-img" onload="frzRemoveDimensionsTag(this)">
 <p>
 Lin
 </p>
 </a>
 </li>
 <li>
-<a class="self_promotion" data-campaignName="P4" data-campaignVariant="plage" data-campaignCreation="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dw6e00725d/Bizzbee-SFRA/2024/P4/layer-new-plage-P4.webp?frz-v=736" data-campaignUrl="https://www.b-z-b.com/vetement-plage/" data-campaignFormat="layer nouveautes" data-campaignPosition="3" href="https://www.b-z-b.com/vetement-plage/"><img alt="A la plage" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" title="" data-frz-src="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dw6e00725d/Bizzbee-SFRA/2024/P4/layer-new-plage-P4.webp?frz-v=767" class="frz-img lazyfrz" width="400" height="500" onload="frzRemoveDimensionsTag(this)">
+<a class="self_promotion" data-campaignName="P4" data-campaignVariant="plage" data-campaignCreation="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dw6e00725d/Bizzbee-SFRA/2024/P4/layer-new-plage-P4.webp?frz-v=736" data-campaignUrl="https://www.b-z-b.com/vetement-plage/" data-campaignFormat="layer nouveautes" data-campaignPosition="3" href="https://www.b-z-b.com/vetement-plage/"><img alt="A la plage" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" title="" data-frz-src="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dw6e00725d/Bizzbee-SFRA/2024/P4/layer-new-plage-P4.webp?frz-v=768" class="frz-img lazyfrz" width="400" height="500" onload="frzRemoveDimensionsTag(this)">
 <p>
 A la Plage
 </p>
@@ -986,7 +986,7 @@ Exclu web
 <div class="containerNavInstalikehomme">
 <ul class="swipeInstaLikeHomme">
 <li>
-<a class="self_promotion" data-campaignName="P4" data-campaignVariant data-campaignCreation="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dw6be23ead/Bizzbee-SFRA/2024/P4/layer-femme-P4.webp?frz-v=736" data-campaignUrl="https://www.b-z-b.com/vetement-femme/tee-shirt-polo/" data-campaignFormat="layer femme" data-campaignPosition="1" href="https://www.b-z-b.com/vetement-femme/tee-shirt-polo/"><img alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" title="" data-frz-src="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dw6be23ead/Bizzbee-SFRA/2024/P4/layer-femme-P4.webp?frz-v=767" class="frz-img lazyfrz" width="660" height="1000" onload="frzRemoveDimensionsTag(this)">
+<a class="self_promotion" data-campaignName="P4" data-campaignVariant data-campaignCreation="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dw6be23ead/Bizzbee-SFRA/2024/P4/layer-femme-P4.webp?frz-v=736" data-campaignUrl="https://www.b-z-b.com/vetement-femme/tee-shirt-polo/" data-campaignFormat="layer femme" data-campaignPosition="1" href="https://www.b-z-b.com/vetement-femme/tee-shirt-polo/"><img alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" title="" data-frz-src="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dw6be23ead/Bizzbee-SFRA/2024/P4/layer-femme-P4.webp?frz-v=768" class="frz-img lazyfrz" width="660" height="1000" onload="frzRemoveDimensionsTag(this)">
 <p>
 T-Shirt
 </p>
@@ -1327,7 +1327,7 @@ Exclu web
 <div class="containerNavInstalikehomme">
 <ul class="swipeInstaLikeHomme">
 <li>
-<a class="self_promotion" data-campaignName="P4" data-campaignVariant data-campaignCreation="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dw78da304d/Bizzbee-SFRA/2024/P4/layer-homme-P4.webp?frz-v=736" data-campaignUrl="https://www.b-z-b.com/vetement-homme/tee-shirt/" data-campaignFormat="layer homme" data-campaignPosition="1" href="https://www.b-z-b.com/vetement-homme/tee-shirt/"><img alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" title="" data-frz-src="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dw78da304d/Bizzbee-SFRA/2024/P4/layer-homme-P4.webp?frz-v=767" class="frz-img lazyfrz" width="660" height="1000" onload="frzRemoveDimensionsTag(this)">
+<a class="self_promotion" data-campaignName="P4" data-campaignVariant data-campaignCreation="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dw78da304d/Bizzbee-SFRA/2024/P4/layer-homme-P4.webp?frz-v=736" data-campaignUrl="https://www.b-z-b.com/vetement-homme/tee-shirt/" data-campaignFormat="layer homme" data-campaignPosition="1" href="https://www.b-z-b.com/vetement-homme/tee-shirt/"><img alt="" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" title="" data-frz-src="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dw78da304d/Bizzbee-SFRA/2024/P4/layer-homme-P4.webp?frz-v=768" class="frz-img lazyfrz" width="660" height="1000" onload="frzRemoveDimensionsTag(this)">
 <p>
 T-Shirt
 </p>
@@ -1413,7 +1413,7 @@ Look c&eacute;r&eacute;monie homme
 <div class="col-md-6">
 <div class="card">
 <a class="img-link self_promotion" data-campaignName="P4" data-campaignVariant="femme" data-campaignCreation="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dw1d522d0b/Bizzbee-SFRA/2024/P4/layer-femme-robe-ceremonie-P4.webp?frz-v=736" data-campaignUrl="https://www.b-z-b.com/vetement-femme/robe-ceremonie/" data-campaignFormat="layer ceremonie" data-campaignPosition="1" " href="https://www.b-z-b.com/vetement-femme/robe-ceremonie/">
-<img alt="Ceremonie" loading="lazy" src="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dw1d522d0b/Bizzbee-SFRA/2024/P4/layer-femme-robe-ceremonie-P4.webp?frz-v=767" title="">
+<img alt="Ceremonie" loading="lazy" src="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dw1d522d0b/Bizzbee-SFRA/2024/P4/layer-femme-robe-ceremonie-P4.webp?frz-v=768" title="">
 <div class="container-fluid p-0 mb-0 text-center align-self-center mx-auto">
 <p>Robe</p> </a>
 </div>
@@ -1422,7 +1422,7 @@ Look c&eacute;r&eacute;monie homme
 <div class="col-md-6">
 <div class="card">
 <a class="img-link self_promotion" data-campaignName="P4" data-campaignVariant="homme" data-campaignCreation="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dw7fb677c2/Bizzbee-SFRA/2024/P4/layer-homme-chemise-ceremonie-P4.webp?frz-v=736" data-campaignUrl="https://www.b-z-b.com/vetement-homme/chemise/" data-campaignFormat="layer ceremonie" data-campaignPosition="1" " href="https://www.b-z-b.com/vetement-homme/chemise/">
-<img alt="Ceremonie" loading="lazy" src="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dw7fb677c2/Bizzbee-SFRA/2024/P4/layer-homme-chemise-ceremonie-P4.webp?frz-v=767" title="">
+<img alt="Ceremonie" loading="lazy" src="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dw7fb677c2/Bizzbee-SFRA/2024/P4/layer-homme-chemise-ceremonie-P4.webp?frz-v=768" title="">
 <div class="container-fluid p-0 mb-0 text-center align-self-center mx-auto">
 <p>Chemise</p> </a>
 </div>
@@ -1492,7 +1492,7 @@ background-color: transparent;
 <div class="col-md-6">
 <a href="https://www.b-z-b.com/vetement-bons-plans/femme/" class="lien self_promotion" data-campaignName data-campaignVariant="femme" data-campaignCreation="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dw9998033e/Bizzbee-SFRA/2021/P4/biglayer-outlet-f.jpg?frz-v=660" data-campaignUrl="https://www.b-z-b.com/vetement-bons-plans/femme/" data-campaignFormat="layer outlet" data-campaignPosition="1" onclick="opeco('opeco', 'layer-outlet-femme', 'layer-deroulant-outlet-femme')">
 <div class="card">
-<img src="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dw9998033e/Bizzbee-SFRA/2021/P4/biglayer-outlet-f.jpg?frz-v=767" alt="outlet femme" loading="lazy" width="473" height="200">
+<img src="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dw9998033e/Bizzbee-SFRA/2021/P4/biglayer-outlet-f.jpg?frz-v=768" alt="outlet femme" loading="lazy" width="473" height="200">
 <div class="card-img-overlay p-2 d-flex">
 <div class="container-fluid p-0 mb-0 text-center align-self-center mx-auto">
 <p>Femme</p>
@@ -1504,7 +1504,7 @@ background-color: transparent;
 <div class="col-md-6">
 <a href="https://www.b-z-b.com/vetement-bons-plans/homme/" class="lien self_promotion" data-campaignName data-campaignVariant="homme" data-campaignCreation="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dwd7db9b0c/Bizzbee-SFRA/2021/P4/biglayer-outlet-h.jpg?frz-v=660" data-campaignUrl="https://www.b-z-b.com/vetement-bons-plans/homme/" data-campaignFormat="layer outlet" data-campaignPosition="2" onclick="opeco('opeco', 'layer-outlet-homme', 'layer-deroulant-outlet-homme')">
 <div class="card">
-<img src="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dwd7db9b0c/Bizzbee-SFRA/2021/P4/biglayer-outlet-h.jpg?frz-v=767" alt="outlet homme" loading="lazy" width="473" height="200">
+<img src="https://www.b-z-b.com/on/demandware.static/-/Sites/fr_FR/dwd7db9b0c/Bizzbee-SFRA/2021/P4/biglayer-outlet-h.jpg?frz-v=768" alt="outlet homme" loading="lazy" width="473" height="200">
 <div class="card-img-overlay p-2 d-flex">
 <div class="container-fluid p-0 mb-0 text-center align-self-center mx-auto">
 <p>Homme</p>
@@ -2348,8 +2348,8 @@ h1.logotop img {
 </div>
 </div>
 </div>
-<script type="text/frzjs" frz_orig_src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" orig_index="13"></script>
-<script type="text/frzjs" orig_index="14">
+<script type="text/frzjs" frz_orig_src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" orig_index="11"></script>
+<script type="text/frzjs" orig_index="12">
     var swiper1 = new Swiper('.swiper-container-slider-1', {
         loop: true,
         autoplay: {
@@ -3106,7 +3106,7 @@ IDU pour la Filière Papiers : FR214322_03IBQG »
 </div>
 </div>
 
-<script type="text/frzjs" data-fstrz-fragment-id="fstrz-scss-12" data-fstrz-fragment-selector="script:contains(dataLayer.push)" orig_index="15"></script>
+<script type="text/frzjs" data-fstrz-fragment-id="fstrz-scss-12" data-fstrz-fragment-selector="script:contains(dataLayer.push)" orig_index="13"></script>
 <meta value="{&quot;@context&quot;:&quot;http://schema.org/&quot;,&quot;@type&quot;:&quot;BreadcrumbList&quot;,&quot;itemListElement&quot;:[{&quot;@type&quot;:&quot;ListItem&quot;,&quot;position&quot;:1,&quot;name&quot;:&quot;cgv&quot;,&quot;item&quot;:&quot;https://www.b-z-b.com/cgv.html&quot;}]}" />
 <footer>
 <div class="container-fluid">
@@ -3735,27 +3735,27 @@ IDU pour la Filière Papiers : FR214322_03IBQG »
 <div class="col-sm-12 p-xl-0 p-lg-0 p-md-0 p-sm-0 p-0 ">
 <div class="container containerNavInstalikeHP"><span class="h4">NOS BEST DU MOMENT</span>
 <ul class="swipeInstaLikeHP">
-<li><a class="self_promotion" data-campaignName="P4" data-campaignVariant data-campaignCreation="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dwc05ea2d1/images/homepage/ronds-bashp/rond-bashp-t-shirt-femme.webp?frz-v=736" data-campaignUrl="https://www.b-z-b.com/vetement-femme/tee-shirt-polo/" data-campaignFormat="rond footer" data-campaignPosition="1" href="https://www.b-z-b.com/vetement-femme/tee-shirt-polo/"><img alt="tshirt femme" height="120" loading="lazy" src="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dwc05ea2d1/images/homepage/ronds-bashp/rond-bashp-t-shirt-femme.webp?frz-v=767" title="" width="120">
+<li><a class="self_promotion" data-campaignName="P4" data-campaignVariant data-campaignCreation="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dwc05ea2d1/images/homepage/ronds-bashp/rond-bashp-t-shirt-femme.webp?frz-v=736" data-campaignUrl="https://www.b-z-b.com/vetement-femme/tee-shirt-polo/" data-campaignFormat="rond footer" data-campaignPosition="1" href="https://www.b-z-b.com/vetement-femme/tee-shirt-polo/"><img alt="tshirt femme" height="120" loading="lazy" src="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dwc05ea2d1/images/homepage/ronds-bashp/rond-bashp-t-shirt-femme.webp?frz-v=768" title="" width="120">
 <p>T-shirt femme</p>
 </a>
 </li>
-<li><a class="self_promotion" data-campaignName="P4" data-campaignVariant data-campaignCreation="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw64b4f3f3/images/homepage/ronds-bashp/rond-bashp-t-shirt-homme.webp?frz-v=736" data-campaignUrl="https://www.b-z-b.com/vetement-homme/tee-shirt/" data-campaignFormat="rond footer" data-campaignPosition="2" href="https://www.b-z-b.com/vetement-homme/tee-shirt/"><img alt="tshirt homme" height="120" loading="lazy" src="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw64b4f3f3/images/homepage/ronds-bashp/rond-bashp-t-shirt-homme.webp?frz-v=767" width="120">
+<li><a class="self_promotion" data-campaignName="P4" data-campaignVariant data-campaignCreation="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw64b4f3f3/images/homepage/ronds-bashp/rond-bashp-t-shirt-homme.webp?frz-v=736" data-campaignUrl="https://www.b-z-b.com/vetement-homme/tee-shirt/" data-campaignFormat="rond footer" data-campaignPosition="2" href="https://www.b-z-b.com/vetement-homme/tee-shirt/"><img alt="tshirt homme" height="120" loading="lazy" src="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw64b4f3f3/images/homepage/ronds-bashp/rond-bashp-t-shirt-homme.webp?frz-v=768" width="120">
 <p>T-shirt homme</p>
 </a>
 </li>
-<li><a class="self_promotion" data-campaignName="P4" data-campaignVariant data-campaignCreation="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw5a6aa092/images/homepage/ronds-bashp/rond-bashp-short-femme.webp?frz-v=736" data-campaignUrl="https://www.b-z-b.com/vetement-femme/short-bermuda/" data-campaignFormat="rond footer" data-campaignPosition="3" href="https://www.b-z-b.com/vetement-femme/short-bermuda/"><img alt="short femme" height="120" loading="lazy" src="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw5a6aa092/images/homepage/ronds-bashp/rond-bashp-short-femme.webp?frz-v=767" title="" width="120">
+<li><a class="self_promotion" data-campaignName="P4" data-campaignVariant data-campaignCreation="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw5a6aa092/images/homepage/ronds-bashp/rond-bashp-short-femme.webp?frz-v=736" data-campaignUrl="https://www.b-z-b.com/vetement-femme/short-bermuda/" data-campaignFormat="rond footer" data-campaignPosition="3" href="https://www.b-z-b.com/vetement-femme/short-bermuda/"><img alt="short femme" height="120" loading="lazy" src="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw5a6aa092/images/homepage/ronds-bashp/rond-bashp-short-femme.webp?frz-v=768" title="" width="120">
 <p>Short femme</p>
 </a>
 </li>
-<li><a class="self_promotion" data-campaignName="P4" data-campaignVariant data-campaignCreation="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw6884be40/images/homepage/ronds-bashp/rond-bashp-bermuda-homme.webp?frz-v=736" data-campaignUrl="https://www.b-z-b.com/vetement-homme/bermuda-short/" data-campaignFormat="rond footer" data-campaignPosition="4" href="https://www.b-z-b.com/vetement-homme/bermuda-short/"><img alt="bermuda homme" height="120" loading="lazy" src="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw6884be40/images/homepage/ronds-bashp/rond-bashp-bermuda-homme.webp?frz-v=767" width="120">
+<li><a class="self_promotion" data-campaignName="P4" data-campaignVariant data-campaignCreation="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw6884be40/images/homepage/ronds-bashp/rond-bashp-bermuda-homme.webp?frz-v=736" data-campaignUrl="https://www.b-z-b.com/vetement-homme/bermuda-short/" data-campaignFormat="rond footer" data-campaignPosition="4" href="https://www.b-z-b.com/vetement-homme/bermuda-short/"><img alt="bermuda homme" height="120" loading="lazy" src="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw6884be40/images/homepage/ronds-bashp/rond-bashp-bermuda-homme.webp?frz-v=768" width="120">
 <p>Bermuda Homme</p>
 </a>
 </li>
-<li><a class="self_promotion" data-campaignName="P4" data-campaignVariant data-campaignCreation="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw0c85bda1/images/homepage/ronds-bashp/rond-bashp-maillot-de-bain-femme.webp?frz-v=736" data-campaignUrl="https://www.b-z-b.com/vetement-femme/maillot-de-bain/" data-campaignFormat="rond footer" data-campaignPosition="5" href="https://www.b-z-b.com/vetement-femme/maillot-de-bain/"><img alt="maillot de bain femme" height="120" loading="lazy" src="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw0c85bda1/images/homepage/ronds-bashp/rond-bashp-maillot-de-bain-femme.webp?frz-v=767" width="120">
+<li><a class="self_promotion" data-campaignName="P4" data-campaignVariant data-campaignCreation="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw0c85bda1/images/homepage/ronds-bashp/rond-bashp-maillot-de-bain-femme.webp?frz-v=736" data-campaignUrl="https://www.b-z-b.com/vetement-femme/maillot-de-bain/" data-campaignFormat="rond footer" data-campaignPosition="5" href="https://www.b-z-b.com/vetement-femme/maillot-de-bain/"><img alt="maillot de bain femme" height="120" loading="lazy" src="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw0c85bda1/images/homepage/ronds-bashp/rond-bashp-maillot-de-bain-femme.webp?frz-v=768" width="120">
 <p>Maillot de bain</p>
 </a>
 </li>
-<li><a class="self_promotion" data-campaignName="P4" data-campaignVariant data-campaignCreation="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw1dc0593a/images/homepage/ronds-bashp/rond-bashp-short-bain-homme.webp?frz-v=736" data-campaignUrl="https://www.b-z-b.com/vetement-homme/short-de-bain/" data-campaignFormat="rond footer" data-campaignPosition="6" href="https://www.b-z-b.com/vetement-homme/short-de-bain/"><img alt="short de bain homme" height="120" loading="lazy" src="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw1dc0593a/images/homepage/ronds-bashp/rond-bashp-short-bain-homme.webp?frz-v=767" width="120">
+<li><a class="self_promotion" data-campaignName="P4" data-campaignVariant data-campaignCreation="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw1dc0593a/images/homepage/ronds-bashp/rond-bashp-short-bain-homme.webp?frz-v=736" data-campaignUrl="https://www.b-z-b.com/vetement-homme/short-de-bain/" data-campaignFormat="rond footer" data-campaignPosition="6" href="https://www.b-z-b.com/vetement-homme/short-de-bain/"><img alt="short de bain homme" height="120" loading="lazy" src="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw1dc0593a/images/homepage/ronds-bashp/rond-bashp-short-bain-homme.webp?frz-v=768" width="120">
 <p>Short de bain</p>
 </a>
 </li>
@@ -3776,7 +3776,7 @@ id&eacute;es de looks sur notre galerie !</p>
 galerie</button></a>
 </div>
 <div class="col-xl-9 col-lg-9 col-md-12 col-sm-12">
-<script type="text/frzjs" orig_index="16">
+<script type="text/frzjs" orig_index="14">
                     (function (d, id) {
                         if (!window.flowbox) { var f = function () { f.q.push(arguments); }; f.q = []; window.flowbox = f; }
                         if (d.getElementById(id)) { return; }
@@ -3786,7 +3786,7 @@ galerie</button></a>
                     })(document, 'flowbox-js-embed');
                 </script>
 <div id="js-flowbox-flow">&nbsp;</div>
-<script type="text/frzjs" orig_index="17">
+<script type="text/frzjs" orig_index="15">
                     window.flowbox('init', {
                         container: '#js-flowbox-flow',
                         key: 'BZzNrlihRWi68dfOR_LZ4Q',
@@ -3808,13 +3808,13 @@ galerie</button></a>
 <div class="col-lg-4 col-sm-12 m-auto">
 <div class="row gx-2 p-3">
 <div class="col" style="padding-left: 5px;
-padding-right: 5px;"><a href="https://www.facebook.com/weareBZB" target="_blank"><img alt="facebook" class="icon" height="32" loading="lazy" src="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw7f3660a8/images/icones/facebook-blanc.svg?frz-v=767" width="32"></a></div>
+padding-right: 5px;"><a href="https://www.facebook.com/weareBZB" target="_blank"><img alt="facebook" class="icon" height="32" loading="lazy" src="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw7f3660a8/images/icones/facebook-blanc.svg?frz-v=768" width="32"></a></div>
 <div class="col" style="padding-left: 5px;
-padding-right: 5px;"><a href="https://www.instagram.com/bzb.officiel/" target="_blank"><img alt="instagram" class="icon" height="32" loading="lazy" src="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw90b2950f/images/icones/instagram-blanc.svg?frz-v=767" width="32"></a></div>
+padding-right: 5px;"><a href="https://www.instagram.com/bzb.officiel/" target="_blank"><img alt="instagram" class="icon" height="32" loading="lazy" src="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw90b2950f/images/icones/instagram-blanc.svg?frz-v=768" width="32"></a></div>
 <div class="col" style="padding-left: 5px;
-padding-right: 5px;"><a href="https://www.tiktok.com/@bzb.officiel?_d=secCgsIARCbDRgBIAMoARI%2BCjy5hTg4KoUhxHk0mE2N17VEDR66GoyBPMiyxEKVeW6EkYxWONLY8ZoyNAsYS%2Bk39uKUOpk%2BjnTJFbi0NMoaAA%3D%3D&amp;language=fr&amp;preview_pb=0&amp;sec_user_id=MS4wLjABAAAAoUcgFnPYTHTrK7zuVj2kS4zCAxEssr7a_7vTqqI6ao6UHDmP9TuFQ1kmsqYnGn8O&amp;share_app_name=musically&amp;share_item_id=6885615018054896897&amp;share_link_id=3108d238-5b63-4f57-9022-7bfb16e6a585&amp;timestamp=1603190585&amp;u_code=da7li616h4jbge&amp;user_id=6779191469552796677&amp;utm_campaign=client_share&amp;utm_medium=android&amp;utm_source=copy&amp;source=h5_m" target="_blank"><img alt="tiktok" class="icon" height="32" loading="lazy" src="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dwb14a34ef/images/icones/tiktok-blanc.svg?frz-v=767" width="32"></a></div>
+padding-right: 5px;"><a href="https://www.tiktok.com/@bzb.officiel?_d=secCgsIARCbDRgBIAMoARI%2BCjy5hTg4KoUhxHk0mE2N17VEDR66GoyBPMiyxEKVeW6EkYxWONLY8ZoyNAsYS%2Bk39uKUOpk%2BjnTJFbi0NMoaAA%3D%3D&amp;language=fr&amp;preview_pb=0&amp;sec_user_id=MS4wLjABAAAAoUcgFnPYTHTrK7zuVj2kS4zCAxEssr7a_7vTqqI6ao6UHDmP9TuFQ1kmsqYnGn8O&amp;share_app_name=musically&amp;share_item_id=6885615018054896897&amp;share_link_id=3108d238-5b63-4f57-9022-7bfb16e6a585&amp;timestamp=1603190585&amp;u_code=da7li616h4jbge&amp;user_id=6779191469552796677&amp;utm_campaign=client_share&amp;utm_medium=android&amp;utm_source=copy&amp;source=h5_m" target="_blank"><img alt="tiktok" class="icon" height="32" loading="lazy" src="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dwb14a34ef/images/icones/tiktok-blanc.svg?frz-v=768" width="32"></a></div>
 <div class="col" style="padding-left: 5px;
-padding-right: 5px;"><a href="https://www.youtube.com/channel/UCmBKReoxmoBIDpcUO1V2LXw" target="_blank"><img alt="youtube" class="icon" height="32" loading="lazy" src="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw437eb7f9/images/icones/youtube-blanc.svg?frz-v=767" width="32"></a></div>
+padding-right: 5px;"><a href="https://www.youtube.com/channel/UCmBKReoxmoBIDpcUO1V2LXw" target="_blank"><img alt="youtube" class="icon" height="32" loading="lazy" src="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw437eb7f9/images/icones/youtube-blanc.svg?frz-v=768" width="32"></a></div>
 </div>
 </div>
 </div>
@@ -3898,17 +3898,17 @@ padding-right: 5px;"><a href="https://www.youtube.com/channel/UCmBKReoxmoBIDpcUO
 </style>
 <div class="container reassurances-pictos">
 <ul>
-<li><a href="https://www.b-z-b.com/services.html#livraison-offerte"><img alt="livraison" height="60" loading="lazy" src="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw23ec9f0c/images/reassurances/shipping.svg?frz-v=767" width="60"><br/>
+<li><a href="https://www.b-z-b.com/services.html#livraison-offerte"><img alt="livraison" height="60" loading="lazy" src="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw23ec9f0c/images/reassurances/shipping.svg?frz-v=768" width="60"><br/>
 livraison<br/>
 offerte</a></li>
 
-<li><a href="https://www.b-z-b.com/services.html#retours-gratuits"><img alt="échanges et retour" height="60" loading="lazy" src="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw66600271/images/reassurances/exchange.svg?frz-v=767" width="60"><br/>
+<li><a href="https://www.b-z-b.com/services.html#retours-gratuits"><img alt="échanges et retour" height="60" loading="lazy" src="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw66600271/images/reassurances/exchange.svg?frz-v=768" width="60"><br/>
 RETOURS<br/>
 GRATUITS</a></li>
-<li><a href="https://www.b-z-b.com/services.html#paiment-securise"><img alt="paiement sécurisé" height="60" loading="lazy" src="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw708ac9df/images/reassurances/payment.svg?frz-v=767" width="60"><br/>
+<li><a href="https://www.b-z-b.com/services.html#paiment-securise"><img alt="paiement sécurisé" height="60" loading="lazy" src="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw708ac9df/images/reassurances/payment.svg?frz-v=768" width="60"><br/>
 paiement<br/>
 s&eacute;curis&eacute;</a></li>
-<li><a href="https://www.b-z-b.com/recherche-magasins/"><img alt="magasins" height="60" loading="lazy" src="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dweb1a9645/images/reassurances/store.svg?frz-v=767" width="60"><br/>
+<li><a href="https://www.b-z-b.com/recherche-magasins/"><img alt="magasins" height="60" loading="lazy" src="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dweb1a9645/images/reassurances/store.svg?frz-v=768" width="60"><br/>
 Plus de<br/>
 90 magasins</a></li>
 </ul>
@@ -3973,7 +3973,6 @@ Plus de<br/>
 <div class="content-asset">
 <style>
     img.contact {height:20px}	
-#fete-des-peres-responsive,#link-fete-des-peres-responsive{color: #FF8C00 !important;}
     </style>
 <ul>
 <li>Carte cadeau <br></li>
@@ -4020,7 +4019,7 @@ Plus de<br/>
 
 
 <div style="width: 100%; height: 100%; flex-direction: column; justify-content: flex-start; align-items: center; gap: 20px; display: inline-flex">
-<img style="width: 94px; height: 94px" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-frz-src="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw011558c5/Logo-BZB-carre-noir.svg?frz-v=767" class="lazyfrz">
+<img style="width: 94px; height: 94px" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-frz-src="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw011558c5/Logo-BZB-carre-noir.svg?frz-v=768" class="lazyfrz">
 <div style="flex-direction: column; justify-content: flex-start; align-items: flex-end; gap: 24px; display: flex">
 <div style="width: 45px; height: 1px; opacity: 0.25; background: black"></div>
 <div style="flex-direction: column; justify-content: flex-start; align-items: flex-end; gap: 4px; display: flex">
@@ -4029,10 +4028,7 @@ Plus de<br/>
 </div>
 </div>
 <div style="height: 156.11px; flex-direction: column; justify-content: center; align-items: center; gap: 10px; display: flex">
-<div style="width: 114px; height: 1px; opacity: 0.25; background: black"></div>
-<div style="width: 139px; text-align: right; color: #333333; font-size: 14px; letter-spacing: 1px; font-weight: 500; line-height: 19.60px; white-space: nowrap">TÉLÉCHARGE L’APPLI</div>
-<a href="https://apps.apple.com/fr/app/bzb/id6471973043"> <img style="width: 150px; height: 52.90px" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-frz-src="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dwd81631db/btn-appstore.webp?frz-v=767" class="frz-img lazyfrz" width="226" height="77" onload="frzRemoveDimensionsTag(this)"></a>
-<a href="https://play.google.com/store/apps/details?id=com.bzb.app&hl=fr&gl=US"> <img style="width: 150px; height: 52.21px" src="data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==" data-frz-src="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dwd5f639fb/btn-googleplay.webp?frz-v=767" class="frz-img lazyfrz" width="226" height="75" onload="frzRemoveDimensionsTag(this)"></a>
+
 </div>
 </div>
 </div> 
@@ -4086,11 +4082,11 @@ Plus de<br/>
 </li>
 <li><a href="https://www.b-z-b.com/index-hf.html">Index</a> </li>
 <li><a href="https://www.b-z-b.com/dpef.html">DPEF</a> </li>
-<li><a href="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dwbe281f64/declaration-conformite/declaration-confomite.pdf">Déclaration de conformité</a> </li>
+<li><a href="https://www.b-z-b.com/on/demandware.static/-/Sites-Bizzbee-SFRA-Library/fr_FR/dw430507ac/declaration-conformite/declaration-de-conformite.pdf">Déclaration de conformité</a> </li>
 <li><a href="https://www.b-z-b.com/plan-du-site.html">Plan du site</a></li>
 </ul>
-<script type="text/frzjs" data-fstrz-fragment-id="fstrz-scss-14" data-fstrz-fragment-selector="script:contains(dataLayer.push)" orig_index="18"></script>
-<script type="text/frzjs" orig_index="19">
+<script type="text/frzjs" data-fstrz-fragment-id="fstrz-scss-14" data-fstrz-fragment-selector="script:contains(dataLayer.push)" orig_index="16"></script>
+<script type="text/frzjs" orig_index="17">
 	(function(i,s,o,g,r,a,m) {i[r]=i[r],a=s.createElement(o),
 	    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 	    })(window,document,'script','https://static.critizr.com/widgets/43fb814100cf35c132b393b67d5ea58d.js','cz');
@@ -4115,7 +4111,7 @@ Plus de<br/>
 </div> 
 </footer>
 </div>
-<script type="text/frzjs" data-fstrz-fragment-id="fstrz-scss-15" data-fstrz-fragment-selector="script:contains(dataLayer.push)" orig_index="20"></script>
+<script type="text/frzjs" data-fstrz-fragment-id="fstrz-scss-15" data-fstrz-fragment-selector="script:contains(dataLayer.push)" orig_index="18"></script>
 <div class="error-messaging"></div>
 <div class="onestock-modal">
 <div class="onestock-content">
@@ -4126,9 +4122,9 @@ Plus de<br/>
 <div class="search-background higher"></div>
 <div class="sort-background"></div>
 <div class="share-background"></div>
-<script type="text/frzjs" orig_index="21">const pwaApplicationServerPublicKey = "BEbOxNuES60bKLdbM7S1KSTHBWp4SowS8VannQFhV8oK6_0e0lUJbUIYdjlgzrlCZmfM11vIvzIFMHK2UTbN3SQ";</script>
-<script async type="text/frzjs" frz_orig_src="https://www.b-z-b.com/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1716972254695/js/pwa.js?frz-v=767" orig_index="22"></script>
-<script async type="text/frzjs" orig_index="23">
+<script type="text/frzjs" orig_index="19">const pwaApplicationServerPublicKey = "BEbOxNuES60bKLdbM7S1KSTHBWp4SowS8VannQFhV8oK6_0e0lUJbUIYdjlgzrlCZmfM11vIvzIFMHK2UTbN3SQ";</script>
+<script async type="text/frzjs" frz_orig_src="https://www.b-z-b.com/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1716993881009/js/pwa.js?frz-v=768" orig_index="20"></script>
+<script async type="text/frzjs" orig_index="21">
 
         (function (d, s) {
                 var js = d.createElement('script');
@@ -4140,7 +4136,7 @@ Plus de<br/>
             }(document,'https://rumtag.netvigie.com/netrum.js?'));
     </script>
 
-<script type="text/frzjs" orig_index="24">//<!--
+<script type="text/frzjs" orig_index="22">//<!--
 /* <![CDATA[ */
 function trackPage() {
     try{
@@ -4156,10 +4152,10 @@ function trackPage() {
 /* ]]> */
 // -->
 </script>
-<script type="text/frzjs" async="async" onload="var e=this;if (this==window) e=document.body;e.setAttribute('data-frz-loaded', 1);" frz_orig_src="https://www.b-z-b.com/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1716972254695/internal/jscript/dwanalytics-22.2.js?frz-v=767" data-frz-onload="trackPage()" orig_index="25"></script>
+<script type="text/frzjs" async="async" onload="var e=this;if (this==window) e=document.body;e.setAttribute('data-frz-loaded', 1);" frz_orig_src="https://www.b-z-b.com/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1716993881009/internal/jscript/dwanalytics-22.2.js?frz-v=768" data-frz-onload="trackPage()" orig_index="23"></script>
 
-<script type="text/frzjs" async="async" frz_orig_src="https://www.b-z-b.com/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1716972254695/internal/jscript/dwac-21.7.js?frz-v=767" orig_index="26"></script>
-<script type="text/frzjs" async="async" frz_orig_src="https://cdn.cquotient.com/js/v2/gretel.min.js" orig_index="27"></script>
+<script type="text/frzjs" async="async" frz_orig_src="https://www.b-z-b.com/on/demandware.static/Sites-Bizzbee-SFRA-Site/-/fr_FR/v1716993881009/internal/jscript/dwac-21.7.js?frz-v=768" orig_index="24"></script>
+<script type="text/frzjs" async="async" frz_orig_src="https://cdn.cquotient.com/js/v2/gretel.min.js" orig_index="25"></script>
 <script>
         window.frzDeferJSRequestIdleCallback = false;
         window.frzDeferJSEarlyFetchAsyncScript = false;
