@@ -575,7 +575,7 @@ Shopify.routes.root = "/";</script>
     window.addEventListener('load', asyncLoad, false);
   }
 })();</script>
-<script id="__st">var __st={"a":55913644166,"offset":7200,"reqid":"584f7121-52bc-4be5-a647-54b762f7d8c6-1718692654","pageurl":"kookai.fr\/pages\/politique-de-confidentialite","s":"pages-85842722950","u":"54b6492471e2","p":"page","rtyp":"page","rid":85842722950};</script>
+<script id="__st">var __st={"a":55913644166,"offset":7200,"reqid":"dd29e01e-6fc2-4671-9a5a-0bd01ddebbeb-1718714260","pageurl":"kookai.fr\/pages\/politique-de-confidentialite","s":"pages-85842722950","u":"dea9ea1151d3","p":"page","rtyp":"page","rid":85842722950};</script>
 <script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
 <script id="captcha-bootstrap">!function(){'use strict';const e='contact',t='account',n='new_comment',o=e=>e.map((([e,t])=>`form[action*='/${e}'] input[name='form_type'][value='${t}']`)).join(',');function c(e,t){try{const n=window.sessionStorage;for(const[o,c]of Object.entries(JSON.parse(n.getItem(t))))e.elements[o]&&(e.elements[o].value=c);n.removeItem(t)}catch{}}const r='form_type',s='cptcha';function a(e){e.dataset[s]=!0}((i,m,f,u,d,l,p)=>{if(0)return;let E=!1;const _=(e,t,n)=>{const o=i[f][u],c=o.bindForm,r='6LeHG2ApAAAAAO4rPaDW-qVpPKPOBfjbCpzJB9ey',s={infoText:'',privacyText:'',termsText:''};if(c)return c(e,r,t,s).then(n);o.q.push([[e,r,t,s],n]),E||(m.body.append(Object.assign(m.createElement('script'),{id:'captcha-provider',async:!0,src:'https://cdn.shopify.com/shopifycloud/storefront-forms-hcaptcha/ce_storefront_forms_captcha_recaptcha.v1.2.0.iife.js'})),E=!0)};i[f]=i[f]||{},i[f][u]=i[f][u]||{},i[f][u].q=[],i[f][d]=i[f][d]||{},i[f][d].protect=function(e,t){_(e,void 0,t),a(e)},Object.freeze(i[f][d]),function(i,m,f,u,d,l){const[p,E,_]=function(c,r,s){const a=r?[[e,e],['blogs',n],['comments',n],[e,'customer']]:[],i=c?[[t,'customer_login'],[t,'guest_login'],[t,'recover_customer_password'],[t,'create_customer']]:[],m=[...a,...i],f=o(m),u=o(a.slice(0,3)),d=s&&o(m.filter((([e,t])=>s.includes(t)))),l=e=>()=>e?[...document.querySelectorAll(e)].map((e=>e.form)):[];return[l(f),l(u),l(d)]}(!0,!0,['guest_login']),T=e=>{const t=e.target,n=t instanceof HTMLFormElement?t:t&&t.form;return n&&p().find((e=>n===e))};i.addEventListener('submit',(e=>{T(e)&&e.preventDefault()}));const h=(e,t)=>{e&&!e.dataset[s]&&(f(e,t.some((t=>t===e))),a(e))};for(const e of['focusin','change'])i.addEventListener(e,(e=>h(T(e),E())));const v=m.get('form_key'),g=m.get(r),y=v&&g;i.addEventListener('DOMContentLoaded',(()=>{const e=E();if(y)for(const t of e)t.elements[r].value===g&&c(t,v);[...new Set([..._(),...p().filter((e=>'true'===e.dataset.shopifyCaptcha))])].forEach((t=>h(t,e)))}))}(m,new URLSearchParams(i.location.search),_)})(window,document,'Shopify','ce_forms','captcha')}();</script>
 <script integrity="sha256-n5Uet9jVOXPHGd4hH4B9Y6+BxkTluaaucmYaxAjUcvY=" data-source-attribution="shopify.loadfeatures" defer="defer" src="//kookai.fr/cdn/shopifycloud/shopify/assets/storefront/load_feature-9f951eb7d8d53973c719de211f807d63af81c644e5b9a6ae72661ac408d472f6.js" crossorigin="anonymous"></script>
@@ -589,110 +589,20 @@ Shopify.routes.root = "/";</script>
 
 <meta name="google-site-verification" content="PCyuKZ-vHYId2Ju1qo1Hg7K8G1JiX8nmuLD5L1orEBs" />
   
-<!-- BEGIN app block: shopify://apps/wisepops-popup-notifications/blocks/app-embed/e7d7a4f7-0df4-4073-9375-5f36db513952 --><script>
-  // Create the wisepops() function
-  window.wisepops_key = window.WisePopsObject = window.wisepops_key || window.WisePopsObject || "wisepops";
-  window[window.wisepops_key] = function () {
-    window[window.wisepops_key].q.push(arguments);
-  };
-  window[window.wisepops_key].q = [];
-  window[window.wisepops_key].l = Date.now();
+<!-- BEGIN app block: shopify://apps/instafeed/blocks/head-block/c447db20-095d-4a10-9725-b5977662c9d5 --><link rel="preconnect" href="https://cdn.nfcube.com/">
+<link rel="preconnect" href="https://scontent.cdninstagram.com/">
 
-  // Disable deprecated snippet
-  window._wisepopsSkipShopifyDeprecatedSnippet = true;
-
-  document.addEventListener('wisepops.after-initialization', function () {
-    // https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie/Simple_document.cookie_framework
-    function getCookieValue(sKey) {
-      if (!sKey) { return null; }
-      return decodeURIComponent(document.cookie.replace(new RegExp("(?:(?:^|.*;)\\s*" + encodeURIComponent(sKey).replace(/[\-\.\+\*]/g, "\\$&") + "\\s*\\=\\s*([^;]*).*$)|^.*$"), "$1")) || null;
-    }
-
-    function getTotalInventoryQuantity() {
-      var variants = null;
-      if (!variants) {
-        return null;
-      }
-
-      var totalQuantity = 0;
-      for (var i in variants) {
-        if (variants[i] && variants[i].inventory_quantity) {
-          totalQuantity += variants[i].inventory_quantity;
-        } else {
-          return null;
-        }
-      }
-      return totalQuantity;
-    }
-
-    function getMapCartItems(key){
-      var cartItems = [];
-      return cartItems.map(function (item) {
-        return item[key];
-      })
-      .filter(function (item){
-        if (item !== undefined && item !== null && item !== "") {
-          return true;
-        }
-        return false;
-      })
-      .join(',');
-    }
-
-    
-
-    // Set built-in properties
-    window[window.wisepops_key]('properties', {
-      client_id: null,
-      cart: {
-        discount_code: getCookieValue('discount_code'),
-        item_count: 0,
-        total_price: 0 / 100,
-        skus: getMapCartItems('sku'),
-        items: {}
-      },
-      customer: {
-        accepts_marketing: false,
-        is_logged_in:  false ,
-        last_order: {
-          created_at: null,
-        },
-        orders_count: null,
-        total_spent: (isNaN(null) ? null : (null / 100)),
-        tags:  null ,
-        email: null,
-        first_name: null,
-        last_name: null,
-      },
-      product: {
-        available: null,
-        price:  null ,
-        tags: null,
-        total_inventory_quantity: getTotalInventoryQuantity(),
-        stock: 0,
-      },
-      orders: {}
-    }, { temporary: true });
-
-    // Custom event when product added to cart
-    var shopifyTrackFunction = window.ShopifyAnalytics && ShopifyAnalytics.lib && ShopifyAnalytics.lib.track;
-    var lastAddedToCartTimestamp = 0;
-    if (shopifyTrackFunction) {
-      ShopifyAnalytics.lib.track = function () {
-        if (arguments[0] === 'Added Product') {
-          var currentTimestamp = Date.now();
-          if (currentTimestamp > lastAddedToCartTimestamp + 5000) {
-            window[window.wisepops_key]('event', 'product-added-to-cart');
-            lastAddedToCartTimestamp = currentTimestamp;
-          }
-        }
-        shopifyTrackFunction.apply(this, arguments);
-      };
-    }
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    let instafeedScript = document.createElement('script');
+    instafeedScript.src = 'https://cdn.nfcube.com/instafeed-58fe0192c42e7b8f3094c24bf45b0fbd.js';
+    document.body.appendChild(instafeedScript);
   });
 </script>
 
-<!-- END app app block --><!-- BEGIN app block: shopify://apps/live-shopping-by-livemeup/blocks/player-script/82ccf4ed-67f8-4725-9167-e54475d4748e -->
+
+
+
 <!-- END app app block --><!-- BEGIN app block: shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507 -->
 
 
@@ -717,20 +627,6 @@ Shopify.routes.root = "/";</script>
   <script>
     window.klaviyoReviewsProductDesignMode = false
   </script>
-
-
-
-<!-- END app app block --><!-- BEGIN app block: shopify://apps/instafeed/blocks/head-block/c447db20-095d-4a10-9725-b5977662c9d5 --><link rel="preconnect" href="https://cdn.nfcube.com/">
-<link rel="preconnect" href="https://scontent.cdninstagram.com/">
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    let instafeedScript = document.createElement('script');
-    instafeedScript.src = 'https://cdn.nfcube.com/instafeed-58fe0192c42e7b8f3094c24bf45b0fbd.js';
-    document.body.appendChild(instafeedScript);
-  });
-</script>
-
 
 
 
@@ -995,11 +891,115 @@ Shopify.routes.root = "/";</script>
   }
 </script><!-- END app snippet -->
 
-<!-- END app app block --><script src="https://cdn.shopify.com/extensions/cc0dca68-939e-4cca-9267-94027453320a/live-shopping-by-livemeup-38/assets/player-loader.min.js" type="text/javascript" defer="defer"></script>
+<!-- END app app block --><!-- BEGIN app block: shopify://apps/wisepops-popup-notifications/blocks/app-embed/e7d7a4f7-0df4-4073-9375-5f36db513952 --><script>
+  // Create the wisepops() function
+  window.wisepops_key = window.WisePopsObject = window.wisepops_key || window.WisePopsObject || "wisepops";
+  window[window.wisepops_key] = function () {
+    window[window.wisepops_key].q.push(arguments);
+  };
+  window[window.wisepops_key].q = [];
+  window[window.wisepops_key].l = Date.now();
+
+  // Disable deprecated snippet
+  window._wisepopsSkipShopifyDeprecatedSnippet = true;
+
+  document.addEventListener('wisepops.after-initialization', function () {
+    // https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie/Simple_document.cookie_framework
+    function getCookieValue(sKey) {
+      if (!sKey) { return null; }
+      return decodeURIComponent(document.cookie.replace(new RegExp("(?:(?:^|.*;)\\s*" + encodeURIComponent(sKey).replace(/[\-\.\+\*]/g, "\\$&") + "\\s*\\=\\s*([^;]*).*$)|^.*$"), "$1")) || null;
+    }
+
+    function getTotalInventoryQuantity() {
+      var variants = null;
+      if (!variants) {
+        return null;
+      }
+
+      var totalQuantity = 0;
+      for (var i in variants) {
+        if (variants[i] && variants[i].inventory_quantity) {
+          totalQuantity += variants[i].inventory_quantity;
+        } else {
+          return null;
+        }
+      }
+      return totalQuantity;
+    }
+
+    function getMapCartItems(key){
+      var cartItems = [];
+      return cartItems.map(function (item) {
+        return item[key];
+      })
+      .filter(function (item){
+        if (item !== undefined && item !== null && item !== "") {
+          return true;
+        }
+        return false;
+      })
+      .join(',');
+    }
+
+    
+
+    // Set built-in properties
+    window[window.wisepops_key]('properties', {
+      client_id: null,
+      cart: {
+        discount_code: getCookieValue('discount_code'),
+        item_count: 0,
+        total_price: 0 / 100,
+        skus: getMapCartItems('sku'),
+        items: {}
+      },
+      customer: {
+        accepts_marketing: false,
+        is_logged_in:  false ,
+        last_order: {
+          created_at: null,
+        },
+        orders_count: null,
+        total_spent: (isNaN(null) ? null : (null / 100)),
+        tags:  null ,
+        email: null,
+        first_name: null,
+        last_name: null,
+      },
+      product: {
+        available: null,
+        price:  null ,
+        tags: null,
+        total_inventory_quantity: getTotalInventoryQuantity(),
+        stock: 0,
+      },
+      orders: {}
+    }, { temporary: true });
+
+    // Custom event when product added to cart
+    var shopifyTrackFunction = window.ShopifyAnalytics && ShopifyAnalytics.lib && ShopifyAnalytics.lib.track;
+    var lastAddedToCartTimestamp = 0;
+    if (shopifyTrackFunction) {
+      ShopifyAnalytics.lib.track = function () {
+        if (arguments[0] === 'Added Product') {
+          var currentTimestamp = Date.now();
+          if (currentTimestamp > lastAddedToCartTimestamp + 5000) {
+            window[window.wisepops_key]('event', 'product-added-to-cart');
+            lastAddedToCartTimestamp = currentTimestamp;
+          }
+        }
+        shopifyTrackFunction.apply(this, arguments);
+      };
+    }
+  });
+</script>
+
+<!-- END app app block --><!-- BEGIN app block: shopify://apps/live-shopping-by-livemeup/blocks/player-script/82ccf4ed-67f8-4725-9167-e54475d4748e -->
+<!-- END app app block --><script src="https://cdn.shopify.com/extensions/1675c59f-6e56-4eff-9cd4-978cc68c3001/ekookie-29/assets/ekookie.js" type="text/javascript" defer="defer"></script>
+<link href="https://cdn.shopify.com/extensions/1675c59f-6e56-4eff-9cd4-978cc68c3001/ekookie-29/assets/ekookie.css" rel="stylesheet" type="text/css" media="all">
+<script src="https://cdn.shopify.com/extensions/cc0dca68-939e-4cca-9267-94027453320a/live-shopping-by-livemeup-38/assets/player-loader.min.js" type="text/javascript" defer="defer"></script>
 <script src="https://cdn.shopify.com/extensions/b7242b04-cb01-447a-930e-c1e3c3aa2a4f/kleep-kookai-11/assets/app.js" type="text/javascript" defer="defer"></script>
 <link href="https://cdn.shopify.com/extensions/b7242b04-cb01-447a-930e-c1e3c3aa2a4f/kleep-kookai-11/assets/app.css" rel="stylesheet" type="text/css" media="all">
-<script src="https://cdn.shopify.com/extensions/1675c59f-6e56-4eff-9cd4-978cc68c3001/ekookie-29/assets/ekookie.js" type="text/javascript" defer="defer"></script>
-<link href="https://cdn.shopify.com/extensions/1675c59f-6e56-4eff-9cd4-978cc68c3001/ekookie-29/assets/ekookie.css" rel="stylesheet" type="text/css" media="all">
 <link href="https://monorail-edge.shopifysvc.com" rel="dns-prefetch">
 <script>(function(){if ("sendBeacon" in navigator && "performance" in window) {var session_token = document.cookie.match(/_shopify_s=([^;]*)/);function handle_abandonment_event(e) {var entries = performance.getEntries().filter(function(entry) {return /monorail-edge.shopifysvc.com/.test(entry.name);});if (!window.abandonment_tracked && entries.length === 0) {window.abandonment_tracked = true;var currentMs = Date.now();var navigation_start = performance.timing.navigationStart;var payload = {shop_id: 55913644166,url: window.location.href,navigation_start,duration: currentMs - navigation_start,session_token: session_token && session_token.length === 2 ? session_token[1] : "",page_type: "page"};window.navigator.sendBeacon("https://monorail-edge.shopifysvc.com/v1/produce", JSON.stringify({schema_id: "online_store_buyer_site_abandonment/1.1",payload: payload,metadata: {event_created_at_ms: currentMs,event_sent_at_ms: currentMs}}));}}window.addEventListener('pagehide', handle_abandonment_event);}}());</script>
 <script id="web-pixels-manager-setup">(function e(e,n,a,t,r){var o="function"==typeof BigInt&&-1!==BigInt.toString().indexOf("[native code]")?"modern":"legacy";window.Shopify=window.Shopify||{};var i=window.Shopify;i.analytics=i.analytics||{};var s=i.analytics;s.replayQueue=[],s.publish=function(e,n,a){return s.replayQueue.push([e,n,a]),!0};try{self.performance.mark("wpm:start")}catch(e){}var l=[a,"/wpm","/b",r,o.substring(0,1),".js"].join("");!function(e){var n=e.src,a=e.async,t=void 0===a||a,r=e.onload,o=e.onerror,i=document.createElement("script"),s=document.head,l=document.body;i.async=t,i.src=n,r&&i.addEventListener("load",r),o&&i.addEventListener("error",o),s?s.appendChild(i):l?l.appendChild(i):console.error("Did not find a head or body element to append the script")}({src:l,async:!0,onload:function(){var a=window.webPixelsManager.init(e);n(a);var t=window.Shopify.analytics;t.replayQueue.forEach((function(e){var n=e[0],t=e[1],r=e[2];a.publishCustomEvent(n,t,r)})),t.replayQueue=[],t.publish=a.publishCustomEvent,t.visitor=a.visitor},onerror:function(){var n=e.storefrontBaseUrl.replace(/\/$/,""),a="".concat(n,"/.well-known/shopify/monorail/unstable/produce_batch"),r=JSON.stringify({metadata:{event_sent_at_ms:(new Date).getTime()},events:[{schema_id:"web_pixels_manager_load/2.0",payload:{version:t||"latest",page_url:self.location.href,status:"failed",error_msg:"".concat(l," has failed to load")},metadata:{event_created_at_ms:(new Date).getTime()}}]});try{if(self.navigator.sendBeacon.bind(self.navigator)(a,r))return!0}catch(e){}var o=new XMLHttpRequest;try{return o.open("POST",a,!0),o.setRequestHeader("Content-Type","text/plain"),o.send(r),!0}catch(e){console&&console.warn&&console.warn("[Web Pixels Manager] Got an unhandled error while logging a load error.")}return!1}})})({shopId: 55913644166,storefrontBaseUrl: "https://kookai.fr",extensionsBaseUrl: "https://extensions.shopifycdn.com/cdn/shopifycloud/web-pixels-manager",surface: "storefront-renderer",enabledBetaFlags: ["5de24938"],webPixelsConfigList: [{"id":"110788742","configuration":"{\"name\":\"Kleep tracking\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"6b3b4304bfc3b4d8585607e79440bd9f","type":"APP","apiClientId":128241926145,"privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"]},{"id":"35520646","configuration":"{\"hash\":\"NBpkHZf9aC\",\"ingestion_url\":\"https:\/\/activity.wisepops.com\",\"goal_hash\":\"9sE00qiWeevPH0WOUMxuJRDdnmA7hNRQ\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"b0d9aca365b6ec0785f1f491728cbde0","type":"APP","apiClientId":461977,"privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"]},{"id":"shopify-app-pixel","configuration":"{}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"090","apiClientId":"shopify-pixel","type":"APP","purposes":["ANALYTICS","MARKETING"]},{"id":"shopify-custom-pixel","eventPayloadVersion":"v1","runtimeContext":"LAX","scriptVersion":"090","apiClientId":"shopify-pixel","type":"CUSTOM","purposes":["ANALYTICS","MARKETING"]}],initData: {"cart":null,"checkout":null,"customer":null,"productVariants":[],"shop":{"name":"kookai","paymentSettings":{"currencyCode":"EUR"},"myshopifyDomain":"kookai-amh.myshopify.com","countryCode":"FR","storefrontUrl":"https:\/\/kookai.fr"}},},function pageEvents(webPixelsManagerAPI) {webPixelsManagerAPI.publish("page_viewed");},"https://kookai.fr/cdn","8d0ce2098aa5217e02fe0465224bf8d6f0fcd507","b0b96cf6w01ec5fcfpcc6d96f4m0cc0eb28",);</script>  <script>window.ShopifyAnalytics = window.ShopifyAnalytics || {};
@@ -3527,13 +3527,63 @@ Effacer</button>
 
 
   
-  <div id="shopify-block-12526071353035850722" class="shopify-block shopify-app-block"><script id="back-in-stock-helper-embedded">
-  var _BISConfig = _BISConfig || {};
-
-
-
-
+  <div id="shopify-block-3058753826952816051" class="shopify-block shopify-app-block">
+<!-- <script type="module" src="/assets/iab_module.js"></script> -->
+<script type="text/javascript">
+  let settings = {"main_button_color":"#d9eeef","secondary_color":"#dee6e6","text_color":"#212326","button_text_color":"#000000","paint_color":"#d9eeef","logo":"\/\/kookai.fr\/cdn\/shop\/files\/favicon-kookai.jpg?v=1709714610","border_radius":4,"position":"left","paddingbot":10,"paddingside":10,"font_overwrite":true,"header_font":{"error":"json not allowed for this object"},"header_font_size":24,"font_text":{"error":"json not allowed for this object"},"font_text_size":15,"timeout":5,"hide":false,"force":false,"refuse_button":true,"link":null,"debug":false};
 </script>
+<e-kookie id="ekookie" data-alt_image=""><div class='ek-layer'></div></e-kookie>
+<style>
+  
+  
+
+
+  
+     @font-face {
+  font-family: Abel;
+  font-weight: 400;
+  font-style: normal;
+  src: url("//kookai.fr/cdn/fonts/abel/abel_n4.2b4bc5e26465e4423e1674428c5593b0074dff23.woff2?h1=a29va2FpLWFtaC5hY2NvdW50Lm15c2hvcGlmeS5jb20&h2=a29va2FpLmZy&h3=YWNjb3VudC5rb29rYWkuZnI&hmac=b9c745085260a69c3b0793e644a1c3761e5cc8cc362404172eb048d41f8252ae") format("woff2"),
+       url("//kookai.fr/cdn/fonts/abel/abel_n4.0ee737a0dba62c4db0b41249f4fa9e628bc93fa3.woff?h1=a29va2FpLWFtaC5hY2NvdW50Lm15c2hvcGlmeS5jb20&h2=a29va2FpLmZy&h3=YWNjb3VudC5rb29rYWkuZnI&hmac=9aece7a4dcb2a344f819b030ce8d797ab021f3558173d90adb2e95f76c427a20") format("woff");
+}
+
+     @font-face {
+  font-family: "Avenir Next";
+  font-weight: 400;
+  font-style: normal;
+  src: url("//kookai.fr/cdn/fonts/avenir_next/avenirnext_n4.7fd0287595be20cd5a683102bf49d073b6abf144.woff2?h1=a29va2FpLWFtaC5hY2NvdW50Lm15c2hvcGlmeS5jb20&h2=a29va2FpLmZy&h3=YWNjb3VudC5rb29rYWkuZnI&hmac=cc163be9aa6812b09c276d7c4a0cc1703858b511c2debd6341627a2858ba77b5") format("woff2"),
+       url("//kookai.fr/cdn/fonts/avenir_next/avenirnext_n4.a26a334a0852627a5f36b195112385b0cd700077.woff?h1=a29va2FpLWFtaC5hY2NvdW50Lm15c2hvcGlmeS5jb20&h2=a29va2FpLmZy&h3=YWNjb3VudC5rb29rYWkuZnI&hmac=28b7ef85513912b8ede3a4e771e8b6cd2691cad20046bc235cb95fc32450aee7") format("woff");
+}
+
+  
+</style>
+
+<style data-shopify>
+
+  :root {
+    --ek-main-button-color: #d9eeef;
+    --ek-secondary-color: #dee6e6;
+    --ek-paint-color: #d9eeef;
+    --ek-text-color: #212326;
+    --ek-button-text-color: #000000;
+    --ek-border-radius: 4px;
+    --ek-paddingbot: 10px;
+    --ek-paddingside: 10px;
+    --ek-position: left;
+    --ek-hide: false;
+    --ek-header_font: Abel;
+    --ek-header_font_size: 24px;
+    --ek-font_text: "Avenir Next";
+    --ek-font_text_size: 15px;
+    --ek-font_overwrite: true;
+    --ek-image-button: url('https://cdn.shopify.com/s/files/1/0314/8539/4988/files/cookie-small.png?v=1668520555');
+  }
+</style>
+
+
+<!-- shopify extension push #F2EFEA #FC7753 #66D7D1 #403D58 #DBD56E-->
+<!-- d8e2dc ffe5d9 #ffcad4 f4acb7-->
+
 
 
 
@@ -3592,63 +3642,13 @@ window.KleepSDK.addToCart = async (payload) => {
 
 
 
-</div><div id="shopify-block-3058753826952816051" class="shopify-block shopify-app-block">
-<!-- <script type="module" src="/assets/iab_module.js"></script> -->
-<script type="text/javascript">
-  let settings = {"main_button_color":"#d9eeef","secondary_color":"#dee6e6","text_color":"#212326","button_text_color":"#000000","paint_color":"#d9eeef","logo":"\/\/kookai.fr\/cdn\/shop\/files\/favicon-kookai.jpg?v=1709714610","border_radius":4,"position":"left","paddingbot":10,"paddingside":10,"font_overwrite":true,"header_font":{"error":"json not allowed for this object"},"header_font_size":24,"font_text":{"error":"json not allowed for this object"},"font_text_size":15,"timeout":5,"hide":false,"force":false,"refuse_button":true,"link":null,"debug":false};
+</div><div id="shopify-block-12526071353035850722" class="shopify-block shopify-app-block"><script id="back-in-stock-helper-embedded">
+  var _BISConfig = _BISConfig || {};
+
+
+
+
 </script>
-<e-kookie id="ekookie" data-alt_image=""><div class='ek-layer'></div></e-kookie>
-<style>
-  
-  
-
-
-  
-     @font-face {
-  font-family: Abel;
-  font-weight: 400;
-  font-style: normal;
-  src: url("//kookai.fr/cdn/fonts/abel/abel_n4.2b4bc5e26465e4423e1674428c5593b0074dff23.woff2?h1=a29va2FpLWFtaC5hY2NvdW50Lm15c2hvcGlmeS5jb20&h2=a29va2FpLmZy&h3=YWNjb3VudC5rb29rYWkuZnI&hmac=b9c745085260a69c3b0793e644a1c3761e5cc8cc362404172eb048d41f8252ae") format("woff2"),
-       url("//kookai.fr/cdn/fonts/abel/abel_n4.0ee737a0dba62c4db0b41249f4fa9e628bc93fa3.woff?h1=a29va2FpLWFtaC5hY2NvdW50Lm15c2hvcGlmeS5jb20&h2=a29va2FpLmZy&h3=YWNjb3VudC5rb29rYWkuZnI&hmac=9aece7a4dcb2a344f819b030ce8d797ab021f3558173d90adb2e95f76c427a20") format("woff");
-}
-
-     @font-face {
-  font-family: "Avenir Next";
-  font-weight: 400;
-  font-style: normal;
-  src: url("//kookai.fr/cdn/fonts/avenir_next/avenirnext_n4.7fd0287595be20cd5a683102bf49d073b6abf144.woff2?h1=a29va2FpLWFtaC5hY2NvdW50Lm15c2hvcGlmeS5jb20&h2=a29va2FpLmZy&h3=YWNjb3VudC5rb29rYWkuZnI&hmac=cc163be9aa6812b09c276d7c4a0cc1703858b511c2debd6341627a2858ba77b5") format("woff2"),
-       url("//kookai.fr/cdn/fonts/avenir_next/avenirnext_n4.a26a334a0852627a5f36b195112385b0cd700077.woff?h1=a29va2FpLWFtaC5hY2NvdW50Lm15c2hvcGlmeS5jb20&h2=a29va2FpLmZy&h3=YWNjb3VudC5rb29rYWkuZnI&hmac=28b7ef85513912b8ede3a4e771e8b6cd2691cad20046bc235cb95fc32450aee7") format("woff");
-}
-
-  
-</style>
-
-<style data-shopify>
-
-  :root {
-    --ek-main-button-color: #d9eeef;
-    --ek-secondary-color: #dee6e6;
-    --ek-paint-color: #d9eeef;
-    --ek-text-color: #212326;
-    --ek-button-text-color: #000000;
-    --ek-border-radius: 4px;
-    --ek-paddingbot: 10px;
-    --ek-paddingside: 10px;
-    --ek-position: left;
-    --ek-hide: false;
-    --ek-header_font: Abel;
-    --ek-header_font_size: 24px;
-    --ek-font_text: "Avenir Next";
-    --ek-font_text_size: 15px;
-    --ek-font_overwrite: true;
-    --ek-image-button: url('https://cdn.shopify.com/s/files/1/0314/8539/4988/files/cookie-small.png?v=1668520555');
-  }
-</style>
-
-
-<!-- shopify extension push #F2EFEA #FC7753 #66D7D1 #403D58 #DBD56E-->
-<!-- d8e2dc ffe5d9 #ffcad4 f4acb7-->
-
 
 
 
