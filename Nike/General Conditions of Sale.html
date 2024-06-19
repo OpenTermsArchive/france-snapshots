@@ -1,100 +1,41 @@
-
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
-<head>
-    <script type="text/javascript"  src="https://code.jquery.com/jquery-2.1.1.js"></script>
-    <script type="text/javascript">
-        /**
-         * Overrides the NikeScriptManager request method and prevents
-         * Unite from being loaded twice - It works by looking for the nike.gadget.mobile.OneNikeNav
-         * and removing the unite script, and the disabling the unite config
-         *
-         * Will fail if the ScriptLoader doesn't load with 7 seconds.
-         *
-         * Once the override occurs it falls back to
-         * @param w - window object (Global)
-         */
-        $(function() {
-            var w = window;
-
-            function monitor() {
-                nike.unlisten(nike.EVENT_REQUESTED_SCRIPTS_LOADED, monitor);
-                var originalRequest = nike.ScriptLoader.request;
-                nike.ScriptLoader.request = function request(o, a, b){
-
-                    originalRequest(o, function success(i) {
-                        if (o.data && o.data.gadgetName === 'nike.gadget.mobile.OneNikeNav') {
-                            nike.ScriptLoader.request = originalRequest;
-                            if (i && i.data) {
-                                i.data = i.data.replace(/<script.*unite.*<\/script>/, '');
-                                i.data = i.data.replace(/id="nike-unite/g, 'id="off-nike-unite');
-                            }
-                        }
-                        if (a) {
-                            a(i);
-                        }
-                    }, function failure() {
-                        if (o.data && o.data.gadgetName === 'nike.gadget.mobile.OneNikeNav') {
-                            nike.ScriptLoader.request = originalRequest;
-                        }
-                        if (b) {
-                            b.apply(arguments);
-                        }
-                    });
-                };
-            };
-            // Wait for the nike.listen object to be ready, and then
-            // listen for the EVENT_REQUESTED_SCRIPTS_LOADED event
-            function injectMonitor(w, c) {
-                if (!w.nike || !w.nike.listen) {
-                    if (c <= 1000) {
-                        setTimeout(function() {
-                            injectMonitor(w, c++);
-                        }, 10);
-                    }
-                } else {
-                    nike.listen(nike.EVENT_REQUESTED_SCRIPTS_LOADED, monitor);
-                }
-            };
-            injectMonitor(w, 0);
-        });
-    </script>
-    <script type="text/javascript">
-        var nsgConfig = {
-            HOST: 'https://www.nike.com',
-            BASEPATH: '/styleguide/nsg/',
-            TENANT: 'NIKE',
-            LOCALE: 'fr_be',
-            PLATFORM: 'desktop',
-            PLACEMENT: 'prepend',
-            INPUT: 'touch'
-        };
-    </script>
-    <!-- Stylesheet should go here -->
-    <link href="https://s3-us-west-2.amazonaws.com/external.plus.nikecloud.com/agreementservice/legal.css" rel="stylesheet" />
-    <link rel="stylesheet" href="//nike.com/static/ncss/4.1/dotcom/desktop/css/ncss.fr-be.min.css" />
-    <link rel="stylesheet" href="//assets.commerce.nikecloud.com/ncss/glyphs/2.1/css/glyphs.min.css" />
+  <head>
+    
+    <!-- NSG config file should go here -->
+    <link rel='stylesheet' href='https://s3-us-west-2.amazonaws.com/external.plus.nikecloud.com/agreementservice/legal.css' type='text/css' />
+<link rel="stylesheet" href="//nike.com/static/ncss/4.1/dotcom/desktop/css/ncss.fr-fr.min.css" />
+    <!-- CSS file should go here -->
+    <!-- localized ncss should go here -->
+    <link
+      rel="stylesheet"
+      href="//assets.commerce.nikecloud.com/ncss/glyphs/2.1/css/glyphs.min.css"
+    />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <style>
-        .nav-panel__btn [class*=nsg-glyph--] {
-            position: absolute;
-        }
-        span.nav-right a {text-decoration:none;}
+      .nav-panel__btn [class*='nsg-glyph--'] {
+        position: absolute;
+      }
+      span.nav-right a {
+        text-decoration: none;
+      }
     </style>
-</head>
+  </head>
 
-<body class="legalContainer Desktop Mac">
-<div class="legalAgreement nsg-font-family--platform content" id="legalContainer">
-
-    <h3 style="text-align: center;"><strong>CONDITIONS DE VENTE</strong></h3>
+  <body class="legalContainer Desktop Mac">
+    <div
+      class="legalAgreement nsg-font-family--platform content"
+      id="legalContainer"
+    >
+      <h3 style="text-align: center;"><strong>CONDITIONS DE VENTE</strong></h3>
 <h3 style="text-align: center;"><strong>(EUROPE DE L’OUEST, EUROPE CENTRALE, EUROPE DE L’EST)</strong> </h3>
 <p>lES PRESENTES CONDITIONS DE VENTE S'APPLIQUENT À L'EUROPE DE L’OUEST, À L'EUROPE CENTRALE ET À L'EUROPE DE L'EST, À L'EXCEPTION DE LA BULGARIE, DE LA CROATIE, DE LA NORVÈGE, DE LA ROUMANIE, DE LA SLOVAQUIE, DE LA SUISSE ET DE LA TURQUIE RÉGIES PAR DES CONDITIONS DE VENTE <a href="#ESHOP">DIFFÉRENTES</a>. </p>
 <p>VEUILLEZ LIRE ATTENTIVEMENT CES CONDITIONS DE VENTE AVANT DE COMMANDER DES PRODUITS EN LIGNE À PARTIR DE LA PLATEFORME NIKE. </p>
 <p>SI VOUS ÊTES SITUÉ DANS L'UN DES PAYS IDENTIFIÉS CI-DESSOUS, DES CONDITIONS SUPPLÉMENTAIRES SPÉCIFIQUES PEUVENT VOUS ÊTRE APPLICABLE ET PEUVENT ÊTRE CONSULTÉES À LA FIN DES PRÉSENTES CONDITIONS DE VENTE OU EN CLIQUANT SUR LE LIEN DE RENVOI DU PAYS. CES CONDITIONS SUPPLÉMENTAIRES L’EMPORTENT SUR LES TERMES CI-DESSOUS En cas d'incompatibilitÉ. </p>
 <p><a href="#AUSTRIA">AUTRICHE</a>, <a href="#FRANCE">FRANCE</a>, <a href="#GERMANY">ALLEMAGNE</a>, <a href="#HUNGARY">HONGRIE</a>, <a href="#ITALIE">ITALIE</a>, <a href="#POLAND">POLOGNE</a>. </p>
 <p><strong>APPLICABILITÉ</strong></p>
-<p>Vous lisez les présentes conditions de vente (« Conditions de Vente ») parce que vous utilisez un site internet, une expérience numérique, une plateforme de medias sociaux, une application mobile, une technologie portable NIKE ou un de nos autres produits ou services, lesquels font partis de la plateforme NIKE (« Plateforme »). Ces Conditions de Vente créent un accord juridiquement contraignant entre vous et NIKE et ses filiales (que nous désignons sous les termes « NIKE », « nous », « notre » ou « nos ») concernant les commandes passées pour des produits disponibles sur la Plateforme. Veuillez consulter notre <a href="http://origin-agreementservice.svs.nike.com/rest/agreement?requestType=redirect&agreementType=localEntities&country=FR&language=fr&uxId=com.nike.tos" shape="rect"><strong>Liste des Entités Locales</strong></a> pour obtenir le nom de l'entité NIKE en charge de vous fournir la Plateforme et les informations de contact appropriées. Nike peut modifier ces Conditions de Vente sans notification préalable en publiant des Conditions de Vente modifiées sur sa Plateforme. Les Conditions de Vente affichées sur la Plateforme au moment de votre commande sur ladite Plateforme régiront cet achat. Veuillez lire attentivement ces conditions et vérifiez que les détails de votre commande sont complets et exacts avant de confirmer votre commande. Votre utilisation de la plateforme est également régie par les <a href="http://origin-agreementservice.svs.nike.com/rest/agreement?requestType=redirect&agreementType=termsOfUse&country=FR&language=fr&uxId=com.nike.tos" shape="rect">Conditions d'Utilisation</a> et la <a href="http://origin-agreementservice.svs.nike.com/rest/agreement?requestType=redirect&agreementType=privacyPolicy&country=FR&language=fr&uxId=com.nike.tos" shape="rect">Politique de Confidentialité</a> de NIKE. Les Conditions d'Utilisation sont incorporées ici par ce lien. <strong>[Voir les conditions de la <a href="#HUNGARY">Hongrie</a>.].</strong> </p>
+<p>Vous lisez les présentes conditions de vente (« Conditions de Vente ») parce que vous utilisez un site internet, une expérience numérique, une plateforme de medias sociaux, une application mobile, une technologie portable NIKE ou un de nos autres produits ou services, lesquels font partis de la plateforme NIKE (« Plateforme »). Ces Conditions de Vente créent un accord juridiquement contraignant entre vous et NIKE et ses filiales (que nous désignons sous les termes « NIKE », « nous », « notre » ou « nos ») concernant les commandes passées pour des produits disponibles sur la Plateforme. Veuillez consulter notre <a style="text-decoration: underline;" href="https://agreement-global.lams.svs.nike.com/rest/agreement/localEntities/fr/FR/com.nike.tos/redirect/false">Liste des Entités Locales</a> pour obtenir le nom de l'entité NIKE en charge de vous fournir la Plateforme et les informations de contact appropriées. Nike peut modifier ces Conditions de Vente sans notification préalable en publiant des Conditions de Vente modifiées sur sa Plateforme. Les Conditions de Vente affichées sur la Plateforme au moment de votre commande sur ladite Plateforme régiront cet achat. Veuillez lire attentivement ces conditions et vérifiez que les détails de votre commande sont complets et exacts avant de confirmer votre commande. Votre utilisation de la plateforme est également régie par les <a style="text-decoration: underline;" href="https://agreement-global.lams.svs.nike.com/rest/agreement/termsOfUse/fr/FR/com.nike.tos/redirect/false">Conditions d'Utilisation</a> et la <a style="text-decoration: underline;" href="https://agreement-global.lams.svs.nike.com/rest/agreement/privacyPolicy/fr/FR/com.nike.tos/redirect/false">Politique de Confidentialité</a> de NIKE. Les Conditions d'Utilisation sont incorporées ici par ce lien. <strong>[Voir les conditions de la <a href="#HUNGARY">Hongrie</a>.].</strong> </p>
 <p><strong>PASSER DES COMMANDES SUR LA PLATEFORME</strong><strong> </strong></p>
 <p>ELIGIBILITÉ POUR COMMANDER</p>
 <p>Pour passer une commande sur la Plateforme, vous devez être âgé d’au moins 16 ans, ou plus si la loi applicable l'exige pour conclure un accord avec Nike et un consommateur - et non un revendeur. </p>
@@ -249,8 +190,8 @@
 <p>(b) acceptez que ladite facture soit établie au format électronique et vous soit transmise par e-mail. »</p>
 <p>Date de la dernière révision: Mars 2023</p>
 
-</div>
-<link rel="stylesheet" type="text/css"  href="/_sec/cp_challenge/sec-4-4.css">
+    </div>
+  <link rel="stylesheet" type="text/css"  href="/_sec/cp_challenge/sec-4-4.css">
                                         <script  src="/_sec/cp_challenge/sec-cpt-4-4.js" async defer></script>
                                         <div id="sec-overlay" style="display:none;">
                                         <div id="sec-container">
