@@ -1,34 +1,93 @@
+
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html>
-  <head>
-    
-    <!-- NSG config file should go here -->
-    <link rel='stylesheet' href='https://s3-us-west-2.amazonaws.com/external.plus.nikecloud.com/agreementservice/legal.css' type='text/css' />
-<link rel="stylesheet" href="//nike.com/static/ncss/4.1/dotcom/desktop/css/ncss.fr-fr.min.css" />
-    <!-- CSS file should go here -->
-    <!-- localized ncss should go here -->
-    <link
-      rel="stylesheet"
-      href="//assets.commerce.nikecloud.com/ncss/glyphs/2.1/css/glyphs.min.css"
-    />
+<head>
+    <script type="text/javascript"  src="https://code.jquery.com/jquery-2.1.1.js"></script>
+    <script type="text/javascript">
+        /**
+         * Overrides the NikeScriptManager request method and prevents
+         * Unite from being loaded twice - It works by looking for the nike.gadget.mobile.OneNikeNav
+         * and removing the unite script, and the disabling the unite config
+         *
+         * Will fail if the ScriptLoader doesn't load with 7 seconds.
+         *
+         * Once the override occurs it falls back to
+         * @param w - window object (Global)
+         */
+        $(function() {
+            var w = window;
+
+            function monitor() {
+                nike.unlisten(nike.EVENT_REQUESTED_SCRIPTS_LOADED, monitor);
+                var originalRequest = nike.ScriptLoader.request;
+                nike.ScriptLoader.request = function request(o, a, b){
+
+                    originalRequest(o, function success(i) {
+                        if (o.data && o.data.gadgetName === 'nike.gadget.mobile.OneNikeNav') {
+                            nike.ScriptLoader.request = originalRequest;
+                            if (i && i.data) {
+                                i.data = i.data.replace(/<script.*unite.*<\/script>/, '');
+                                i.data = i.data.replace(/id="nike-unite/g, 'id="off-nike-unite');
+                            }
+                        }
+                        if (a) {
+                            a(i);
+                        }
+                    }, function failure() {
+                        if (o.data && o.data.gadgetName === 'nike.gadget.mobile.OneNikeNav') {
+                            nike.ScriptLoader.request = originalRequest;
+                        }
+                        if (b) {
+                            b.apply(arguments);
+                        }
+                    });
+                };
+            };
+            // Wait for the nike.listen object to be ready, and then
+            // listen for the EVENT_REQUESTED_SCRIPTS_LOADED event
+            function injectMonitor(w, c) {
+                if (!w.nike || !w.nike.listen) {
+                    if (c <= 1000) {
+                        setTimeout(function() {
+                            injectMonitor(w, c++);
+                        }, 10);
+                    }
+                } else {
+                    nike.listen(nike.EVENT_REQUESTED_SCRIPTS_LOADED, monitor);
+                }
+            };
+            injectMonitor(w, 0);
+        });
+    </script>
+    <script type="text/javascript">
+        var nsgConfig = {
+            HOST: 'https://www.nike.com',
+            BASEPATH: '/styleguide/nsg/',
+            TENANT: 'NIKE',
+            LOCALE: 'fr_fr',
+            PLATFORM: 'desktop',
+            PLACEMENT: 'prepend',
+            INPUT: 'touch'
+        };
+    </script>
+    <!-- Stylesheet should go here -->
+    <link href="https://s3-us-west-2.amazonaws.com/external.plus.nikecloud.com/agreementservice/legal.css" rel="stylesheet" />
+    <link rel="stylesheet" href="//nike.com/static/ncss/4.1/dotcom/desktop/css/ncss.fr-fr.min.css" />
+    <link rel="stylesheet" href="//assets.commerce.nikecloud.com/ncss/glyphs/2.1/css/glyphs.min.css" />
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <style>
-      .nav-panel__btn [class*='nsg-glyph--'] {
-        position: absolute;
-      }
-      span.nav-right a {
-        text-decoration: none;
-      }
+        .nav-panel__btn [class*=nsg-glyph--] {
+            position: absolute;
+        }
+        span.nav-right a {text-decoration:none;}
     </style>
-  </head>
+</head>
 
-  <body class="legalContainer Desktop Mac">
-    <div
-      class="legalAgreement nsg-font-family--platform content"
-      id="legalContainer"
-    >
-      <p align="center"><strong>NIKE</strong></p>
+<body class="legalContainer Desktop Mac">
+<div class="legalAgreement nsg-font-family--platform content" id="legalContainer">
+
+    <p align="center"><strong>NIKE</strong></p>
 <p align="center"><strong>POLITIQUE DE CONFIDENTIALITE ET DE GESTION DES COOKIES</strong></p>
 <p>Cette politique de confidentialité décrit les données personnelles qui sont collectées ou générées (traitées) lorsque vous  interagissez avec Nike par l’intermédiaire de nos sites internet , expériences digitales, applications mobiles, magasins, évènements, ou l’un de nos autres produits ou services, lesquels font tous partie de la Plateforme Nike (“<strong>Plateforme</strong>”). Elle explique également la façon dont vos données personnelles sont utilisées, partagées et protégées, les choix dont vous disposez s’agissant de vos données personnelles et la façon dont vous pouvez nous contacter.</p>
 <ul><li><strong><span style="text-decoration: underline;">Qui est responsable du traitement de vos données personnelles</span></strong><strong> ?</strong></li>
@@ -45,7 +104,7 @@
 <li><strong><span style="text-decoration: underline;">Questions et commentaires</span></strong></li>
 </ul><p><strong>Qui est responsable du traitement de vos données personnelles ?</strong></p>
 <p>L’entité Nike responsable du traitement de vos données personnelles va dépendre de la façon dont vous interagissez avec la Plateforme de Nike et de votre localisation géographique dans le monde. Les entités Nike pertinentes sont désignées par “<strong>Nike</strong>”, “<strong>notre</strong>”/“<strong>nos</strong>” et “<strong>nous</strong>” dans la présente Politique de Confidentialité.</p>
-<p>Merci de consulter notre <a style="text-decoration: underline;" href="https://agreement-global.lams.svs.nike.com/rest/agreement/localentities/fr/FR/com.nike.unite/redirect/true">Liste des Entités Locales</a> pour connaître le nom de l’entité Nike responsable et ses coordonnées.</p>
+<p>Merci de consulter notre <a href="http://origin-agreementservice.svs.nike.com/fr/fr-fr/rest/agreement?requestType=redirect&agreementType=localentities&country=FR&language=fr&uxId=com.nike.unite" shape="rect">http://origin-agreementservice.svs.nike.com/fr/fr-fr/rest/agreement?requestType=redirect&agreementType=localentities&country=FR&language=fr&uxId=com.nike.unite</a> pour connaître le nom de l’entité Nike responsable et ses coordonnées.</p>
 <p><strong>Quelles sont les données personnelles que nous collectons et à quel moment ?</strong></p>
 <p>Nous vous demandons de nous communiquer certaines données personnelles pour vous fournir les produits ou services que vous sollicitez. Tel est le cas, par exemple, lorsque vous effectuez des achats, contactez notre service consommateurs, demandez à recevoir des communications, créez un compte, participez à nos événements ou compétitions, ou lorsque vous utilisez notre Plateforme. De plus, lorsque vous demandez des services spécifiques en magasin, nous pourrions vous demander de vous connecter afin de vous fournir ces services, lesquels sont alors associés à votre compte (par exemple, taille, coupe, préférences).</p>
 <p>Ces données personnelles comprennent vos :</p>
@@ -92,9 +151,9 @@
 <p>Nous utilisons les données relatives à la façon dont nos visiteurs utilisent notre Plateforme et nos services, pour comprendre les comportements et préférences des consommateurs.  Par exemple, nous pouvons utiliser les informations sur la façon dont les visiteurs de Nike.com cherchent et trouvent les produits sur ce site afin de comprendre la meilleure façon d’organiser et de présenter nos produits dans les vitrines de nos magasins.</p>
 <p><span style="text-decoration: underline;">Utilisation (traitement) des Informations d’Entraînement</span></p>
 <p>Comme indiqué ci-dessus, Nike collecte des données sur votre activité physique ou sur vos caractéristiques physiques (les “Informations d’Entraînement”) pour vous fournir des services sur notre Plateforme. Les produits et appareils Nike vous permettent également de vous connecter à des appareils tiers qui collectent des informations supplémentaires sur votre activité physique. Compte tenu du caractère personnel de ces données, nous nous efforçons de vous fournir des informations claires sur la manière dont celles-ci seront utilisées.  Dans la mesure où ces données peuvent être considérées comme sensibles dans certains pays, nous prenons les mesures nécessaires pour leur protection et leur utilisation et, si cela est requis par la législation applicable ou par les politiques internes de Nike, nous solliciterons votre consentement pour leur utilisation.</p>
-<p>Cliquez <a style="text-decoration: underline;" href="https://agreement-global.lams.svs.nike.com/rest/agreement/DataLearnMore/fr/FR/com.nike.unite/redirect/true">ici</a> pour en savoir plus sur la façon dont Nike utilise les Informations d’Entraînement et les informations sur votre activité physique recueillies depuis des appareils tiers.</p>
+<p>Cliquez <a href="http://origin-agreementservice.svs.nike.com/fr/fr-fr/rest/agreement?requestType=redirect&agreementType=DataLearnMore&country=FR&language=fr&uxId=com.nike.unite" shape="rect">ici</a> pour en savoir plus sur la façon dont Nike utilise les Informations d’Entraînement et les informations sur votre activité physique recueillies depuis des appareils tiers.</p>
 <p><span style="text-decoration: underline;">Liaison des comptes membres</span></p>
-<p>Si vous choisissez de lier votre compte Nike avec votre compte membre chez un Partenaire de Nike (« liaison des comptes membres »), Nike sollicitera votre consentement pour combiner et utiliser vos données personnelles obtenues grâce à la liaison des comptes membres, en ce compris vos achats et retours. Nous utilisons ces données personnelles afin de créer la page « Achats Partenaires » qui vous est présentée dans votre compte Nike et vous donne accès à certains avantages, comme par exemple l’accès à des produits Nike exclusifs, ainsi que des récompenses et expériences exclusives lorsque vous faites vos achats auprès de nos Partenaires. Nike utilisera aussi ces données pour personnaliser votre expérience sur sa Plateforme et, si vous avez donné votre consentement, pour vous envoyer des communications marketing personnalisées. Cliquez <a style="text-decoration: underline;" href="https://agreement-global.lams.svs.nike.com/rest/agreement/alconsentlearnmore/fr/FR/com.nike.unite/redirect/true">ici</a> pour en savoir plus.</p>
+<p>Si vous choisissez de lier votre compte Nike avec votre compte membre chez un Partenaire de Nike (« liaison des comptes membres »), Nike sollicitera votre consentement pour combiner et utiliser vos données personnelles obtenues grâce à la liaison des comptes membres, en ce compris vos achats et retours. Nous utilisons ces données personnelles afin de créer la page « Achats Partenaires » qui vous est présentée dans votre compte Nike et vous donne accès à certains avantages, comme par exemple l’accès à des produits Nike exclusifs, ainsi que des récompenses et expériences exclusives lorsque vous faites vos achats auprès de nos Partenaires. Nike utilisera aussi ces données pour personnaliser votre expérience sur sa Plateforme et, si vous avez donné votre consentement, pour vous envoyer des communications marketing personnalisées. Cliquez <a href="http://origin-agreementservice.svs.nike.com/fr/fr-fr/rest/agreement?requestType=redirect&agreementType=alconsentlearnmore&country=FR&language=fr&uxId=com.nike.unite" shape="rect">ici</a> pour en savoir plus.</p>
 <p><span style="text-decoration: underline;">Autres finalités</span></p>
 <p>Nous pouvons également utiliser vos données personnelles à d’autres fins ; dans de tels cas, nous vous fournirons des informations spécifiques au moment de leur collecte et solliciterons votre consentement si cela est nécessaire.</p>
 <p><span style="text-decoration: underline;">Fondements légaux</span></p>
@@ -128,7 +187,7 @@
 <p>Si vous bénéficiez d’un compte Nike, vous pouvez refuser de recevoir les communications marketing de Nike en modifiant vos préférences dans la section “<em>voir ou modifier mon profil</em>” de nos Sites. Vous pouvez également refuser en modifiant vos abonnements par e-mail ou SMS en cliquant sur le lien de désinscription ou en suivant les instructions de désabonnement incluses dans le message. Vous pouvez également nous contacter en utilisant les adresses de contact figurant dans la section “Questions et commentaires” ci-après.</p>
 <p><strong>Cookies et balises</strong></p>
 <p>Nike collecte des informations, qui peuvent inclure des données personnelles, depuis votre navigateur lorsque vous utilisez notre Plateforme. Nous utilisons différentes méthodes, telles que les cookies et balises, pour collecter ces informations, lesquelles peuvent inclure vos (i) adresse IP ; (ii) cookie unique d’identification, cookie d’information et informations sur les contenus de votre matériel pour accéder à certaines caractéristiques ; (iii) numéro unique d’identification du matériel et type de matériel ; (iv) domaine, type de navigateur et langue ; (v) système d’exploitation et paramétrage ; (vi) pays et fuseau horaire ; (vii) sites préalablement visités ; (viii) informations sur vos actions sur notre Plateforme, telles que comportement en termes de clics, achats et préférences ; et (ix) heures d’accès et URLs de référence.</p>
-<p>Des tiers peuvent également collecter des informations depuis notre Plateforme par l’intermédiaire de cookies, de modules tiers et widgets. Ces tiers collectent des données directement depuis votre navigateur et le traitement de ces données est soumis à leurs propres politiques de protection des données personnelles. <strong>Plus d’information sur l’identité de ces tiers et leurs politiques de protection des données personnelles est accessible à cette adresse <a style="text-decoration: underline;" href="https://agreement-global.lams.svs.nike.com/rest/agreement/adnetwork/fr/FR/com.nike.unite/redirect/true">ici</a>.</strong></p>
+<p>Des tiers peuvent également collecter des informations depuis notre Plateforme par l’intermédiaire de cookies, de modules tiers et widgets. Ces tiers collectent des données directement depuis votre navigateur et le traitement de ces données est soumis à leurs propres politiques de protection des données personnelles. <strong>Plus d’information sur l’identité de ces tiers et leurs politiques de protection des données personnelles est accessible à cette adresse <a href="http://origin-agreementservice.svs.nike.com/fr/fr-fr/rest/agreement?requestType=redirect&agreementType=adnetwork&country=FR&language=fr&uxId=com.nike.unite" shape="rect">ici</a>.</strong></p>
 <p>Nous utilisons des cookies et des balises pour suivre l’usage de notre Plateforme par nos clients et comprendre leurs préférences (telles que pays et langue). Cela nous permet de fournir des services à nos clients et d’améliorer leur expérience en ligne. Nous utilisons également des cookies et des balises pour obtenir des informations générales sur le trafic de la Plateforme et ses interactions, pour identifier des tendances et obtenir des statistiques, et ainsi améliorer notre Plateforme. Il y a en général quatre catégories de cookies utilisés sur notre Plateforme :</p>
 <ul type="disc"><li><strong>Strictement nécessaires (toujours activés): </strong>Permet aux fonctionnalités principales de mémoriser ta langue, ton emplacement et le contenu de ton panier. Assure aussi la sécurité, la gestion du réseau et 'accessibilité.</li>
 <li><strong><strong>Expériences personalisées</strong>:</strong> Autorise l'utilisation des données comportementales, ave, entre autres, des cookies, pour améliorer ton expérience et te proposer du contenu pertinent sur les plateformes et dans les communications Nike.</li>
@@ -152,8 +211,8 @@
 <p>Les coordonnées de notre Délégué à la Protection des Données sont les suivantes : Nike Privacy Office (Bureau de la Protection des Données Personnelles), Nike Retail B.V., Colosseum 1, 1213NL, Pays-Bas ou <a href="mailto:privacy@nike.com">privacy@nike.com</a>.</p>
 <p>Si vous nous contactez au sujet d’une plainte à propos de vos données personnelles, celle-ci sera traitée en vue de la résoudre de façon efficace et en temps opportun. Vous bénéficiez également du droit d’introduire une réclamation auprès de l’autorité de contrôle compétente dans le pays de votre lieu de résidence.</p>
 
-    </div>
-  <link rel="stylesheet" type="text/css"  href="/_sec/cp_challenge/sec-4-4.css">
+</div>
+<link rel="stylesheet" type="text/css"  href="/_sec/cp_challenge/sec-4-4.css">
                                         <script  src="/_sec/cp_challenge/sec-cpt-4-4.js" async defer></script>
                                         <div id="sec-overlay" style="display:none;">
                                         <div id="sec-container">
