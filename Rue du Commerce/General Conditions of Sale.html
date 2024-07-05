@@ -36,9 +36,8 @@
 
         <script>
         window.dataLayer = window.dataLayer || [];
-
-                    window.dataLayer.push({"event":"datalayer_init","env_template":"cms","env_language":"fr"});
-                    </script>
+                window.dataLayer.push({"event":"datalayer_init","env_template":"cms","env_language":"fr"});
+            </script>
     <script>
         (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
             var f=d.getElementsByTagName(s)[0], j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
@@ -5396,7 +5395,12 @@ Veuillez également noter que tout document justificatif ou d’identité sont c
         
 <script  src="https://www.rueducommerce.fr/build/js/rdc.js?id=0a4ef1ab523557bf7ae1aa8c43b6d7ca"></script>
 	
-	<noscript>
+	<script>
+        function gtmPush() {
+                    }
+        addEventListener("load", gtmPush);
+    </script>
+    <noscript>
         <iframe
                 src="https://www.googletagmanager.com/ns.html?id=GTM-KV4GH4N"
                 height="0"
