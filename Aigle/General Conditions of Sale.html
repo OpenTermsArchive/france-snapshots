@@ -1,30 +1,4 @@
-<link rel="preconnect" href="//cdn-eu.dynamicyield.com"> <link rel="preconnect" href="//st-eu.dynamicyield.com"> <link rel="preconnect" href="//rcom-eu.dynamicyield.com"> <link rel="dns-prefetch" href="//cdn-eu.dynamicyield.com"> <link rel="dns-prefetch" href="//st-eu.dynamicyield.com"> <link rel="dns-prefetch" href="//rcom-eu.dynamicyield.com"> <script>
-        var lastSmartcacheError = localStorage && localStorage.getItem('fasterize-lastSmartcacheError');
-        if (lastSmartcacheError && window.location.href.indexOf('smartcache_missmatching') !== -1) {
-          const details = JSON.parse(lastSmartcacheError);
-          console.log('[smartcache] URL in error', details.url);
-          console.log('[smartcache] fragments');
-          console.table ? console.table(details.fragments) : console.log(details.fragments);
-          console.log('[smartcache] placeholders');
-          console.table ? console.table(details.placeholders) : console.log(details.placeholders);
-        }
-        let sanitizedSearchParamsStr = window.location.search;
-        try {
-          const sanitizedSearchParams = new URLSearchParams(window.location.search);
-          ['frz-flush', 'frz-reason', 'frz-fragments', 'frz-placeholders'].forEach(function(frzQueryParamToRemove){
-            sanitizedSearchParams.delete(frzQueryParamToRemove);
-          });
-          sanitizedSearchParamsStr = sanitizedSearchParams.toString();
-        } catch (err) {
-          console.log("[Fasterize]", err);
-          sanitizedSearchParamsStr = sanitizedSearchParamsStr.replace(/&?frz-[^&]+&?/g, '').replace('?','');
-        }
-        if(sanitizedSearchParamsStr !== '') {
-          history.replaceState(history.state, "", window.location.pathname + '?' + sanitizedSearchParamsStr);  
-        } else {        
-          history.replaceState(history.state, "", window.location.pathname);  
-        }
-        ;fstrz=!0;;
+<link rel="preconnect" href="//cdn-eu.dynamicyield.com"> <link rel="preconnect" href="//st-eu.dynamicyield.com"> <link rel="preconnect" href="//rcom-eu.dynamicyield.com"> <link rel="dns-prefetch" href="//cdn-eu.dynamicyield.com"> <link rel="dns-prefetch" href="//st-eu.dynamicyield.com"> <link rel="dns-prefetch" href="//rcom-eu.dynamicyield.com"> <script>fstrz=!0;;
       function removePictureTag(imgElt) {
         try {
           if (imgElt.parentNode.tagName === 'PICTURE' && imgElt.currentSrc.indexOf('base64') === -1) {
