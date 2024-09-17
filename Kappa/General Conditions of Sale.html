@@ -198,7 +198,7 @@ Shopify.routes.root = "/";</script>
     window.addEventListener('load', asyncLoad, false);
   }
 })();</script>
-<script id="__st">var __st={"a":56681136327,"offset":7200,"reqid":"ee95e28b-6362-409c-a2f0-d14676070f3c-1726576640","pageurl":"www.kappa.fr\/pages\/cgv","s":"pages-82250334407","u":"70d690c0c064","p":"page","rtyp":"page","rid":82250334407};</script>
+<script id="__st">var __st={"a":56681136327,"offset":7200,"reqid":"1053ba47-f42b-427e-96f0-dba4cb34dfa7-1726598238","pageurl":"www.kappa.fr\/pages\/cgv","s":"pages-82250334407","u":"0484a9759c54","p":"page","rtyp":"page","rid":82250334407};</script>
 <script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
 <script id="captcha-bootstrap">!function(){'use strict';const t='contact',e='account',n='new_comment',o=[[t,t],['blogs',n],['comments',n],[t,'customer']],c=[[e,'customer_login'],[e,'guest_login'],[e,'recover_customer_password'],[e,'create_customer']],r=t=>t.map((([t,e])=>`form[action*='/${t}']:not([data-nocaptcha='true']) input[name='form_type'][value='${e}']`)).join(',');function s(t,e,n=!1){try{const o=window.sessionStorage;for(const[n,c]of Object.entries(JSON.parse(o.getItem(e))))t.elements[n]&&(t.elements[n].value=c);n&&o.removeItem(e)}catch{}}const a='form_key',i=['recaptcha-v3-token','g-recaptcha-response','h-captcha-response','password'],u=()=>{try{return window.sessionStorage}catch{return}},m=t=>t.elements[a],f='form_type',d='cptcha';function p(t){t.dataset[d]=!0}const l=window,h=l.document,_='Shopify',y='ce_forms',E='captcha';let v=!1;((t,e)=>{const n=(g='f06e6c50-85a8-45c8-87d0-21a2b65856fe','https://cdn.shopify.com/shopifycloud/storefront-forms-hcaptcha/ce_storefront_forms_captcha_hcaptcha.v1.4.0.iife.js',T={infoText:'Protégé par hCaptcha',privacyText:'Confidentialité',termsText:'Conditions'},(t,e,n)=>{const o=l[_][y],c=o.bindForm;if(c)return c(t,g,e,T).then(n);o.q.push([[t,g,e,T],n]),v||(h.body.append(Object.assign(h.createElement('script'),{id:'captcha-provider',async:!0,src:'https://cdn.shopify.com/shopifycloud/storefront-forms-hcaptcha/ce_storefront_forms_captcha_hcaptcha.v1.4.0.iife.js'})),v=!0)});var g,T;l[_]=l[_]||{},l[_][y]=l[_][y]||{},l[_][y].q=[],l[_][E]=l[_][E]||{},l[_][E].protect=function(t,e){n(t,void 0,e),p(t)},Object.freeze(l[_][E]),function(t,e,n,l,h,_){const[y,E,v,g]=function(t,e,n){const s=e?o:[],a=t?c:[],i=[...s,...a],u=[...o],m=r(i),f=r(s),d=n&&r(i.filter((([t,e])=>n.includes(e)))),p=r(u),l=t=>()=>t?[...document.querySelectorAll(t)].map((t=>t.form)):[];return[l(m),l(f),l(d),l(p)]}(l,h,_),T=t=>{const e=t.target;return e instanceof HTMLFormElement?e:e&&e.form},S=t=>y().includes(t);t.addEventListener('submit',(t=>{const e=T(t);if(!e)return;const n=S(e)&&!e.dataset.hcaptchaBound&&!e.dataset.recaptchaBound,o=m(e),c=g().includes(e)&&(!o||!o.value);(n||c)&&t.preventDefault(),c&&!n&&(function(t){try{if(!u())return;!function(t){const e=u();if(!e)return;const n=m(t);if(!n)return;const o=n.value;o&&e.removeItem(o)}(t);const e=Array.from(Array(32),(()=>Math.random().toString(36)[2])).join('');!function(t,e){m(t)||t.append(Object.assign(document.createElement('input'),{type:'hidden',name:a})),t.elements[a].value=e}(t,e),function(t,e){const n=u();if(!n)return;const o=[...t.querySelectorAll('input[type="password"]')].map((({name:t})=>t)),c=[...i,...o],r={};for(const[s,a]of new FormData(t).entries())c.includes(s)||(r[s]=a);n.setItem(e,JSON.stringify(r))}(t,e)}catch(e){console.error('failed to persist form',e)}}(e),e.submit())}));const w=(t,e)=>{t&&!t.dataset[d]&&(n(t,e.some((e=>e===t))),p(t))};for(const o of['focusin','change'])t.addEventListener(o,(t=>{const e=T(t);S(e)&&w(e,E())}));const A=e.get('form_key'),b=e.get(f),I=A&&b;t.addEventListener('DOMContentLoaded',(()=>{const t=E();if(I)for(const e of t)e.elements[f].value===b&&s(e,A);[...new Set([...v(),...y().filter((t=>'true'===t.dataset.shopifyCaptcha))])].forEach((e=>w(e,t)))}))}(h,new URLSearchParams(l.location.search),n,!0,!0,['guest_login'])})()}();</script>
 <script id="captcha-terms">!function(){'use strict';const e=/recaptcha|reCATPCHA|google|Googl/gi,t=o=>{let c=o.firstChild;for(;c;)c.nodeType===Node.TEXT_NODE?c.textContent=c.textContent.replace(e,'hCaptcha'):c.nodeType===Node.ELEMENT_NODE&&t(c),c=c.nextSibling};document.addEventListener('DOMContentLoaded',(()=>{(e=>{const o=document.querySelector('p[data-spam-detection-disclaimer]');if(o){for(const e of['terms','privacy']){const t=o.querySelector(`a[href*='https://policies.google.com/${e}']`);t&&(t.href=`https://hcaptcha.com/${e}`)}t(o)}})()}))}();</script>
@@ -4127,7 +4127,49 @@ for (var attr in meta) {
 
 </div>
       </main><!-- BEGIN sections: footer-group -->
-<div id="shopify-section-sections--21692390703450__footer" class="shopify-section shopify-section-group-footer-group"><style data-shopify>.site-footer {
+<div id="shopify-section-sections--21692390703450__rich_text_K93F8V" class="shopify-section shopify-section-group-footer-group index-section"><div class="text-center page-width page-width--narrow"><div class="theme-block" ><h2></h2></div></div>
+</div><div id="shopify-section-sections--21692390703450__text_columns_gHfExb" class="shopify-section shopify-section-group-footer-group index-section"><div class="page-width"><div class="grid grid--uniform grid--flush-bottom"><div class="grid__item medium-up--one-third text-center"  data-aos="row-of-3"><div style="margin: 0 auto; max-width: 140px;"><a href="/pages/livraison"><div class="image-wrap text-spacing " style="height: 0; padding-bottom: 100.0%;">
+
+
+
+<image-element data-aos="image-fade-in" data-aos-offset="150">
+
+
+  
+<img src="//www.kappa.fr/cdn/shop/files/Picto-Livraison_Offerte-Noir_52df92d7-7ce2-4ed9-889a-f50c843559cb.png?v=1726577601&amp;width=1080" alt="Livraison offerte dès 59€" srcset="//www.kappa.fr/cdn/shop/files/Picto-Livraison_Offerte-Noir_52df92d7-7ce2-4ed9-889a-f50c843559cb.png?v=1726577601&amp;width=180 180w, //www.kappa.fr/cdn/shop/files/Picto-Livraison_Offerte-Noir_52df92d7-7ce2-4ed9-889a-f50c843559cb.png?v=1726577601&amp;width=360 360w, //www.kappa.fr/cdn/shop/files/Picto-Livraison_Offerte-Noir_52df92d7-7ce2-4ed9-889a-f50c843559cb.png?v=1726577601&amp;width=540 540w, //www.kappa.fr/cdn/shop/files/Picto-Livraison_Offerte-Noir_52df92d7-7ce2-4ed9-889a-f50c843559cb.png?v=1726577601&amp;width=720 720w, //www.kappa.fr/cdn/shop/files/Picto-Livraison_Offerte-Noir_52df92d7-7ce2-4ed9-889a-f50c843559cb.png?v=1726577601&amp;width=900 900w, //www.kappa.fr/cdn/shop/files/Picto-Livraison_Offerte-Noir_52df92d7-7ce2-4ed9-889a-f50c843559cb.png?v=1726577601&amp;width=1080 1080w" width="1080" height="1080.0" loading="lazy" class=" image-element" sizes="(min-width: 769px) 33vw, 100vw">
+  
+
+
+</image-element>
+</div></a></div><div class="rte-setting text-spacing"><p>*À partir de 59€ (En france métropolitaine)</p></div></div><div class="grid__item medium-up--one-third text-center"  data-aos="row-of-3"><div style="margin: 0 auto; max-width: 140px;"><a href="/pages/paiement"><div class="image-wrap text-spacing " style="height: 0; padding-bottom: 100.0%;">
+
+
+
+<image-element data-aos="image-fade-in" data-aos-offset="150">
+
+
+  
+<img src="//www.kappa.fr/cdn/shop/files/Picto-Paiement_Securise-Noir_528ec82f-8503-4817-a4fe-f24cf3c75a4c.png?v=1726577614&amp;width=1080" alt="Paiement sécurisé" srcset="//www.kappa.fr/cdn/shop/files/Picto-Paiement_Securise-Noir_528ec82f-8503-4817-a4fe-f24cf3c75a4c.png?v=1726577614&amp;width=180 180w, //www.kappa.fr/cdn/shop/files/Picto-Paiement_Securise-Noir_528ec82f-8503-4817-a4fe-f24cf3c75a4c.png?v=1726577614&amp;width=360 360w, //www.kappa.fr/cdn/shop/files/Picto-Paiement_Securise-Noir_528ec82f-8503-4817-a4fe-f24cf3c75a4c.png?v=1726577614&amp;width=540 540w, //www.kappa.fr/cdn/shop/files/Picto-Paiement_Securise-Noir_528ec82f-8503-4817-a4fe-f24cf3c75a4c.png?v=1726577614&amp;width=720 720w, //www.kappa.fr/cdn/shop/files/Picto-Paiement_Securise-Noir_528ec82f-8503-4817-a4fe-f24cf3c75a4c.png?v=1726577614&amp;width=900 900w, //www.kappa.fr/cdn/shop/files/Picto-Paiement_Securise-Noir_528ec82f-8503-4817-a4fe-f24cf3c75a4c.png?v=1726577614&amp;width=1080 1080w" width="1080" height="1080.0" loading="lazy" class=" image-element" sizes="(min-width: 769px) 33vw, 100vw">
+  
+
+
+</image-element>
+</div></a></div><div class="rte-setting text-spacing"><p>CB, Visa, Mastercard, PayPal</p></div></div><div class="grid__item medium-up--one-third text-center"  data-aos="row-of-3"><div style="margin: 0 auto; max-width: 140px;"><a href="https://www.kappa.fr/pages/faq?hcUrl=%2Ffr-FR"><div class="image-wrap text-spacing " style="height: 0; padding-bottom: 100.0%;">
+
+
+
+<image-element data-aos="image-fade-in" data-aos-offset="150">
+
+
+  
+<img src="//www.kappa.fr/cdn/shop/files/Picto-Service_Client-Noir_20f8e526-a8eb-4c64-8011-64299af82973.png?v=1726577633&amp;width=1080" alt="Service client" srcset="//www.kappa.fr/cdn/shop/files/Picto-Service_Client-Noir_20f8e526-a8eb-4c64-8011-64299af82973.png?v=1726577633&amp;width=180 180w, //www.kappa.fr/cdn/shop/files/Picto-Service_Client-Noir_20f8e526-a8eb-4c64-8011-64299af82973.png?v=1726577633&amp;width=360 360w, //www.kappa.fr/cdn/shop/files/Picto-Service_Client-Noir_20f8e526-a8eb-4c64-8011-64299af82973.png?v=1726577633&amp;width=540 540w, //www.kappa.fr/cdn/shop/files/Picto-Service_Client-Noir_20f8e526-a8eb-4c64-8011-64299af82973.png?v=1726577633&amp;width=720 720w, //www.kappa.fr/cdn/shop/files/Picto-Service_Client-Noir_20f8e526-a8eb-4c64-8011-64299af82973.png?v=1726577633&amp;width=900 900w, //www.kappa.fr/cdn/shop/files/Picto-Service_Client-Noir_20f8e526-a8eb-4c64-8011-64299af82973.png?v=1726577633&amp;width=1080 1080w" width="1080" height="1080.0" loading="lazy" class=" image-element" sizes="(min-width: 769px) 33vw, 100vw">
+  
+
+
+</image-element>
+</div></a></div><div class="rte-setting text-spacing"><p>Besoin d'aide ? Consultez notre FAQ</p></div></div></div>
+</div>
+</div><div id="shopify-section-sections--21692390703450__footer" class="shopify-section shopify-section-group-footer-group"><style data-shopify>.site-footer {
       border-top: 1px solid #e8e8e1;
     }</style><footer class="site-footer" data-section-id="sections--21692390703450__footer" data-section-type="footer-section">
   <div class="page-width">
