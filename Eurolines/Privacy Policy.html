@@ -32,7 +32,7 @@
     <link href="//honeycomb.flixbus.com/dist/11.0.1/css/honeycomb-fonts.css" rel="stylesheet" type="text/css" crossorigin=""/>
 
     <link rel="stylesheet" href="https://cdn-cf.cms.flixbus.com/drupal-assets/flix-home-assets/cms_honeycomb.83f8cd.css" async />
-    <link rel="stylesheet" href="https://cdn-cf.cms.flixbus.com/drupal-assets/flix-home-assets/styles.244e6a.css" async />
+    <link rel="stylesheet" href="https://cdn-cf.cms.flixbus.com/drupal-assets/flix-home-assets/styles.9db19b.css" async />
 
     <link
       rel="apple-touch-icon"
@@ -355,6 +355,23 @@
 
 
 
+    
+      <div class="flix-page-container" role="banner" aria-label="banner">
+          
+            <a class="long-term-info-box-anchor" href="https://www.flixbus.co.uk/scotland"
+               onclick="emitLongTermInfoBoxClickEvent()">
+              <div class="long-term-info-box-container">
+                <div class="long-term-info-box-text-container">
+                  <p class="flix-h4 long-term-info-box-title">NEC and Young Scot accepted on Scottish routes.</p>
+                  <div class="flix-text long-term-info-box-text">For more information and destination ideas, click here.</div>
+                </div>
+                <div class="flix-btn flix-btn--link flix-btn--has-icon flix-btn--square">
+                    <flix-icon name="arrow-right" size="4" aria-hidden="true"></flix-icon>
+                </div>
+              </div>
+            </a>
+          
+      </div>
     
 
 
@@ -852,7 +869,7 @@
         </div>
 
 
-        <div class="flix-header-widgets">
+        <div id="header-widgets-container" class="flix-header-widgets">
           <div class="flix-language-switcher">
             <button type="button" class="flix-language-switcher__toggle" data-popup="language-selection-popup"
                     data-firstfocusable="close-button" data-lastfocusable="last-focusable-item">
@@ -863,6 +880,7 @@
               <span class="flix-sr-only">Open language selection</span>
             </button>
           </div>
+          <account-widget/>
         </div>
       </div>
     </header>
@@ -1506,6 +1524,12 @@
       </picture>
     </div>
     
+      <div class="hero-banner">
+        <div class="hero-banner-container">
+          <p class="hero-banner-message">All Scottish routes accept <span>NEC card</span></p>
+        </div>
+      </div>
+    
     <div class="hero-content">
       <h1 class="flix-h1 flix-h1--section-header hero-heading" data-vo-hidden="false">
           Affordable coach travel from just £4.49*
@@ -1765,7 +1789,7 @@
       <div class="rich-text-wrapper flix-page-container" data-testid="rich-text">
         <div class="rich-text-container"  id="rich-text-container">
           <div class="flix-text" id="rich-text">
-               <h2>Get Cheap Coach Tickets Easily with FlixBus!</h2><p><span>If you're looking to travel around England, </span><a href="/scotland"><span>Scotland</span></a><span> and Wales or even worldwide, FlixBus has got you covered with our </span><a href="https://www.flixbus.co.uk/coach"><span lang="EN-US">extensive range of destinations</span></a><span>! </span> With over 400,000 routes across the globe, you can easily find the perfect option for your trip. Plus, our cheap coach tickets make it easy and affordable to get wherever you want to go, whether it's for work or play.</p><h2>Coach Routes and Timetables to Suit Your Schedule</h2><p>Travelling  with FlixBus is simple and hassle-free, thanks to our frequent coach connections, reliable coach schedules, and comfy, modern coaches. Our extensive network spans 40+ countries and over 3,000 destinations worldwide, making it easy to plan and book your trip online or through our user-friendly app. Plus, stay connected on the go with free WiFi on most of our coaches, and track your journey in real-time with our advanced tracking system. <span>What’s more if you are a </span><a href="https://www.flixbus.co.uk/nec"><span lang="EN-US">holder of the National Entitlement Card (NEC) in Scotland</span></a><span> you can travel for free on our Scottish lines!</span></p><h2>Buying Your Coach Tickets is Easy with FlixBus</h2><p> Our website and app make it easy to plan your journey, find the cheapest coach fares, and purchase your coach tickets securely. Whether you're planning ahead or booking last-minute trip, FlixBus makes buying coach tickets a breeze. Plus, with our convenient e-ticket system, you can board your coach without the hassle of paper tickets as your phone will serve as your ticket!</p><h2>Discover the Best Destinations Across England, Scotland &amp; Beyond! </h2><p class="MsoNormal"><span>Hop onboard a FlixBus and visit some of the most popular cities the UK and Europe</span> <span>. Whether you’re exploring </span><a href="https://www.flixbus.co.uk/coach/london"><span lang="EN-US">London</span></a><span>, spending a weekend partying in </span><a href="https://www.flixbus.co.uk/coach/glasgow"><span lang="EN-US">Glasgow</span></a><span>, soaking up the culture in </span><a href="https://www.flixbus.co.uk/coach/edinburgh"><span lang="EN-US">Edinburgh</span></a><span>, discovering the hidden gems of </span><a href="https://www.flixbus.co.uk/coach/bristol"><span lang="EN-US">Bristol</span></a><span>, or crossing the Channel by coach to explore the beauty of </span><a href="https://www.flixbus.co.uk/coach/paris"><span lang="EN-US">Paris</span></a><span>, our extensive network of coach routes makes it effortless to experience all that the UK and Europe has to offer!</span></p><h2>Travelling with FlixBus is a more sustainable choice</h2><p>Travelling by coach is not just a convenient choice but also an environmentally responsible one, as coach travel reduces traffic and emissions compared to travelling by car. We’re working to make coach travel even greener with high environmental standards across our fleet of coaches, the use of alternative drive and fuel technologies, and the option for all passengers to offset their carbon when buying their coach tickets. So when you travel with FlixBus you can know you’re making a responsible choice</p><h2>Travel in Comfort and Style with FlixBus</h2><p>FlixBus not only prioritises comfort and convenience for your journey, but also ensures that you can travel with all your necessary luggage. Each passenger is allowed to bring one carry-on and one stowed luggage with them on the coach. In addition to the luggage allowances, our coaches offer amenities like on-board WiFi, extra legroom, power outlets, and toilets, making your trip as smooth and enjoyable as possible. With our user-friendly app and simple booking platform, planning your coach travel has never been easier. Book your coach ticket with FlixBus today and travel in comfort and style with all your luggage in tow.</p><p> </p>
+               <h2>Get Cheap Coach Tickets Easily with FlixBus!</h2><p><span>If you're looking to travel around England, </span><a href="/scotland"><span>Scotland</span></a><span> and Wales or even worldwide, FlixBus has got you covered with our </span><a href="https://www.flixbus.co.uk/coach"><span lang="EN-US">extensive range of destinations</span></a><span>! </span> With over 400,000 routes across the globe, you can easily find the perfect option for your trip. Plus, our cheap coach tickets make it easy and affordable to get wherever you want to go, whether it's for work or play.</p><h2>Coach Routes and Timetables to Suit Your Schedule</h2><p>Travelling  with FlixBus is simple and hassle-free, thanks to our frequent coach connections, reliable coach schedules, and comfy, modern coaches. Our extensive network spans 40+ countries and over 3,000 destinations worldwide, making it easy to plan and book your trip online or through our user-friendly app. Plus, stay connected on the go with free WiFi on most of our coaches, and track your journey in real-time with our advanced tracking system. <span>What’s more if you are a </span><a href="https://www.flixbus.co.uk/nec"><span lang="EN-US">holder of the National Entitlement Card (NEC) in Scotland</span></a><span> you can travel for free on our Scottish lines!</span></p><h2>Buying Your Coach Tickets is Easy with FlixBus</h2><p> Our website and app make it easy to plan your journey, find the cheapest coach fares, and purchase your coach tickets securely. Whether you're planning ahead or booking last-minute trip, FlixBus makes buying coach tickets a breeze. Plus, with our convenient e-ticket system, you can board your coach without the hassle of paper tickets as your phone will serve as your ticket!</p><h2>Discover the Best Destinations Across England, Scotland &amp; Beyond! </h2><p class="MsoNormal"><span>Hop onboard a FlixBus and visit some of the most popular cities the UK and Europe. Whether you’re exploring </span><a href="https://www.flixbus.co.uk/coach/london"><span lang="EN-US">London</span></a><span>, spending a weekend partying in </span><a href="https://www.flixbus.co.uk/coach/glasgow"><span lang="EN-US">Glasgow</span></a><span>, soaking up the culture in </span><a href="https://www.flixbus.co.uk/coach/edinburgh"><span lang="EN-US">Edinburgh</span></a><span>, discovering the hidden gems of </span><a href="https://www.flixbus.co.uk/coach/bristol"><span lang="EN-US">Bristol</span></a><span>, or crossing the Channel by coach to explore the beauty of </span><a href="https://www.flixbus.co.uk/coach/paris"><span lang="EN-US">Paris</span></a><span>, our extensive network of coach routes makes it effortless to experience all that the UK and Europe has to offer!</span></p><h2>Travelling with FlixBus is a more sustainable choice</h2><p>Travelling by coach is not just a convenient choice but also an environmentally responsible one, as coach travel reduces traffic and emissions compared to travelling by car. We’re working to make coach travel even greener with high environmental standards across our fleet of coaches, the use of alternative drive and fuel technologies, and the option for all passengers to offset their carbon when buying their coach tickets. So when you travel with FlixBus you can know you’re making a responsible choice.</p><h2>Travel in Comfort and Style with FlixBus</h2><p>FlixBus not only prioritises comfort and convenience for your journey, but also ensures that you can travel with all your necessary luggage. Each passenger is allowed to bring one carry-on and one stowed luggage with them on the coach. In addition to the luggage allowances, our coaches offer amenities like on-board WiFi, extra legroom, power outlets, and toilets, making your trip as smooth and enjoyable as possible. With our user-friendly app and simple booking platform, planning your coach travel has never been easier. Book your coach ticket with FlixBus today and travel in comfort and style with all your luggage in tow.</p><p> </p>
           </div>
           <div id="rich-text-fadeout" class="rich-text-fadeout"></div>
         </div>
@@ -1841,11 +1865,11 @@
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
-                      <a href="/coach/edinburgh" class="popular-routes-item">Edinburgh</a>
+                      <a href="/coach/glasgow" class="popular-routes-item">Glasgow</a>
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
-                      <a href="/coach/glasgow" class="popular-routes-item">Glasgow</a>
+                      <a href="/coach/edinburgh" class="popular-routes-item">Edinburgh</a>
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
@@ -1861,7 +1885,11 @@
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
-                      <a href="/coach/newcastle-upon-tyne" class="popular-routes-item">Newcastle upon Tyne</a>
+                      <a href="/coach/leicester" class="popular-routes-item">Leicester</a>
+                    </li>
+                  
+                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
+                      <a href="/coach/nottingham" class="popular-routes-item">Nottingham</a>
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
@@ -1869,11 +1897,7 @@
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
-                      <a href="/coach/leicester" class="popular-routes-item">Leicester</a>
-                    </li>
-                  
-                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
-                      <a href="/coach/nottingham" class="popular-routes-item">Nottingham</a>
+                      <a href="/coach/newcastle-upon-tyne" class="popular-routes-item">Newcastle upon Tyne</a>
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
@@ -1885,15 +1909,15 @@
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
+                      <a href="/coach/dundee" class="popular-routes-item">Dundee</a>
+                    </li>
+                  
+                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
                       <a href="/coach/london-gatwick-airport" class="popular-routes-item">London Gatwick Airport</a>
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
                       <a href="/coach/cambridge" class="popular-routes-item">Cambridge</a>
-                    </li>
-                  
-                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
-                      <a href="/coach/dundee" class="popular-routes-item">Dundee</a>
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
@@ -1920,6 +1944,10 @@
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
+                      <a href="/bus-routes/london-birmingham" class="popular-routes-item">London - Birmingham</a>
+                    </li>
+                  
+                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
                       <a href="/bus-routes/paris-london" class="popular-routes-item">Paris - London</a>
                     </li>
                   
@@ -1936,15 +1964,7 @@
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
-                      <a href="/bus-routes/london-birmingham" class="popular-routes-item">London - Birmingham</a>
-                    </li>
-                  
-                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
                       <a href="/bus-routes/birmingham-london" class="popular-routes-item">Birmingham - London</a>
-                    </li>
-                  
-                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
-                      <a href="/bus-routes/cardiff-london" class="popular-routes-item">Cardiff - London</a>
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
@@ -1952,15 +1972,7 @@
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
-                      <a href="/bus-routes/london-cardiff" class="popular-routes-item">London - Cardiff</a>
-                    </li>
-                  
-                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
                       <a href="/bus-routes/nottingham-london" class="popular-routes-item">Nottingham - London</a>
-                    </li>
-                  
-                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
-                      <a href="/bus-routes/leeds-london" class="popular-routes-item">Leeds - London</a>
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
@@ -1968,15 +1980,19 @@
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
-                      <a href="/bus-routes/london-amsterdam" class="popular-routes-item">London - Amsterdam</a>
-                    </li>
-                  
-                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
                       <a href="/bus-routes/london-leicester" class="popular-routes-item">London - Leicester</a>
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
-                      <a href="/bus-routes/london-edinburgh" class="popular-routes-item">London - Edinburgh</a>
+                      <a href="/bus-routes/cardiff-london" class="popular-routes-item">Cardiff - London</a>
+                    </li>
+                  
+                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
+                      <a href="/bus-routes/london-cardiff" class="popular-routes-item">London - Cardiff</a>
+                    </li>
+                  
+                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
+                      <a href="/bus-routes/leeds-london" class="popular-routes-item">Leeds - London</a>
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
@@ -1984,11 +2000,19 @@
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
-                      <a href="/bus-routes/sheffield-london" class="popular-routes-item">Sheffield - London</a>
+                      <a href="/bus-routes/london-edinburgh" class="popular-routes-item">London - Edinburgh</a>
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
-                      <a href="/bus-routes/edinburgh-london" class="popular-routes-item">Edinburgh - London</a>
+                      <a href="/bus-routes/london-amsterdam" class="popular-routes-item">London - Amsterdam</a>
+                    </li>
+                  
+                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
+                      <a href="/bus-routes/glasgow-edinburgh" class="popular-routes-item">Glasgow - Edinburgh</a>
+                    </li>
+                  
+                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
+                      <a href="/bus-routes/birmingham-manchester" class="popular-routes-item">Birmingham - Manchester</a>
                     </li>
                   
                 </ul>
@@ -2510,9 +2534,7 @@
 </script>
 <script>
   const renderOverlays = async () => {
-    await emergencyMessage("en-gb","flixbus",  false );
-    
-      geolocationOverlay("en-gb", [{"URL":"//www.flixbus.bg","LangCode":"bg","HrefLang":"bg","LangName":"Български","IsLast":false},{"URL":"//www.flixbus.ba","LangCode":"bs","HrefLang":"bs","LangName":"Bosanski","IsLast":false},{"URL":"//www.flixbus.cat","LangCode":"ca","HrefLang":"ca","LangName":"Català","IsLast":false},{"URL":"//www.flixbus.cz","LangCode":"cs","HrefLang":"cs","LangName":"Čeština","IsLast":false},{"URL":"//www.flixbus.dk","LangCode":"da","HrefLang":"da","LangName":"Dansk","IsLast":false},{"URL":"//www.flixbus.de","LangCode":"de","HrefLang":"de","LangName":"Deutsch","IsLast":false},{"URL":"//www.flixbus.at","LangCode":"de-at","HrefLang":"de-at","LangName":"Deutsch","IsLast":false},{"URL":"//www.flixbus.ch","LangCode":"de-ch","HrefLang":"de-ch","LangName":"Deutsch","IsLast":false},{"URL":"//www.flixbus.gr","LangCode":"el","HrefLang":"el","LangName":"Ελληνικά","IsLast":false},{"URL":"//www.flixbus.ca","LangCode":"en-ca","HrefLang":"en-ca","LangName":"English","IsLast":false},{"URL":"//www.flixbus.co.uk","LangCode":"en-gb","HrefLang":"en-gb","LangName":"English","IsLast":false},{"URL":"//global.flixbus.com","LangCode":"en-gl","HrefLang":"en","LangName":"English","IsLast":false},{"URL":"//www.flixbus.ie","LangCode":"en-ie","HrefLang":"en-ie","LangName":"English","IsLast":false},{"URL":"//www.flixbus.in","LangCode":"en-in","HrefLang":"en-in","LangName":"English","IsLast":false},{"URL":"//www.flixbus.com","LangCode":"en-us","HrefLang":"en-us","LangName":"English","IsLast":false},{"URL":"//www.flixbus.es","LangCode":"es","HrefLang":"es","LangName":"Español","IsLast":false},{"URL":"//www.flixbus.cl","LangCode":"es-cl","HrefLang":"es-cl","LangName":"Español","IsLast":false},{"URL":"//www.greyhound.com.mx","LangCode":"es-mx","HrefLang":"es-mx","LangName":"Español","IsLast":false},{"URL":"//es-us.flixbus.com","LangCode":"es-us","HrefLang":"es-us","LangName":"Español","IsLast":false},{"URL":"//www.flixbus.ee","LangCode":"et","HrefLang":"et","LangName":"Eesti","IsLast":false},{"URL":"//www.flixbus.fi","LangCode":"fi","HrefLang":"fi","LangName":"Suomi","IsLast":false},{"URL":"//www.flixbus.fr","LangCode":"fr","HrefLang":"fr","LangName":"Français","IsLast":false},{"URL":"//fr.flixbus.be","LangCode":"fr-be","HrefLang":"fr-be","LangName":"Français","IsLast":false},{"URL":"//fr.flixbus.ca","LangCode":"fr-ca","HrefLang":"fr-ca","LangName":"Français","IsLast":false},{"URL":"//fr.flixbus.ch","LangCode":"fr-ch","HrefLang":"fr-ch","LangName":"Français","IsLast":false},{"URL":"//www.flixbus.hr","LangCode":"hr","HrefLang":"hr","LangName":"Hrvatski","IsLast":false},{"URL":"//www.flixbus.hu","LangCode":"hu","HrefLang":"hu","LangName":"Magyar","IsLast":false},{"URL":"//www.flixbus.it","LangCode":"it","HrefLang":"it","LangName":"Italiano","IsLast":false},{"URL":"//it.flixbus.ch","LangCode":"it-ch","HrefLang":"it-ch","LangName":"Italiano","IsLast":false},{"URL":"//www.flixbus.lt","LangCode":"lt","HrefLang":"lt","LangName":"Lietuvių","IsLast":false},{"URL":"//www.flixbus.lv","LangCode":"lv","HrefLang":"lv","LangName":"Latviešu","IsLast":false},{"URL":"//www.flixbus.mk","LangCode":"mk","HrefLang":"mk","LangName":"Македонски","IsLast":false},{"URL":"//www.flixbus.no","LangCode":"nb","HrefLang":"nb","LangName":"Norsk (bokmål)","IsLast":false},{"URL":"//www.flixbus.nl","LangCode":"nl","HrefLang":"nl","LangName":"Nederlands","IsLast":false},{"URL":"//www.flixbus.be","LangCode":"nl-be","HrefLang":"nl-be","LangName":"Nederlands","IsLast":false},{"URL":"//www.flixbus.pl","LangCode":"pl","HrefLang":"pl","LangName":"Polski","IsLast":false},{"URL":"//www.flixbus.com.br","LangCode":"pt-br","HrefLang":"pt-br","LangName":"Português","IsLast":false},{"URL":"//www.flixbus.pt","LangCode":"pt-pt","HrefLang":"pt-pt","LangName":"Português","IsLast":false},{"URL":"//www.flixbus.ro","LangCode":"ro","HrefLang":"ro","LangName":"Română","IsLast":false},{"URL":"//www.flixbus.sk","LangCode":"sk","HrefLang":"sk","LangName":"Slovenčina","IsLast":false},{"URL":"//www.flixbus.si","LangCode":"sl","HrefLang":"sl","LangName":"Slovenščina","IsLast":false},{"URL":"//www.flixbus.al","LangCode":"sq","HrefLang":"sq","LangName":"Shqip","IsLast":false},{"URL":"//www.flixbus.rs","LangCode":"sr","HrefLang":"sr","LangName":"Srpski","IsLast":false},{"URL":"//www.flixbus.se","LangCode":"sv","HrefLang":"sv","LangName":"Svenska","IsLast":false},{"URL":"//www.flixbus.com.tr","LangCode":"tr","HrefLang":"tr","LangName":"Türkçe","IsLast":false},{"URL":"//www.flixbus.ua","LangCode":"uk","HrefLang":"uk","LangName":"Українська","IsLast":false},{"URL":"//zh-us.flixbus.com","LangCode":"zh-us","HrefLang":"zh-us","LangName":"中文","IsLast":true}], "https://cdn-cf.cms.flixbus.com/drupal-assets", {"geo_location_overlay_text":{"at":"Diese Website ist auf {{current_language}}. Möchtest Du zur \u003cb\u003edeutschen\u003c/b\u003e Version wechseln?","bg":"Този уебсайт е на {{current_language}}. Искаш ли да превключиш към версията на {{suggested_language}}?","bs":"Ova veb stranica je u{{current_language}}. Želite li se prebaciti na verziju {{suggested_language}}?","ca":"Aquest lloc web està en {{current_language}}. Vols canviar a la versió en {{suggested_language}}?","cs":"Tyto webové stránky jsou v {{current_language}}. Chcete přejít na verzi v {{suggested_language}}?","da":"Denne hjemmeside er i {{current_language}}. Vil du skifte til {{suggested_language}} versionen?","de":"Diese Website ist auf {{current_language}}. Möchtest Du zur \u003cb\u003edeutschen\u003c/b\u003e Version wechseln?","de-at":"Diese Website ist auf {{current_language}}. Möchtest Du zur \u003cb\u003edeutschen\u003c/b\u003e Version wechseln?","de-ch":"Diese Website ist auf {{current_language}}. Möchtest Du zur \u003cb\u003edeutschen\u003c/b\u003e Version wechseln?","el":"Αυτός ο ιστότοπος βρίσκεται στο {{current_language}}. Θέλεις να αλλάξεις στην έκδοση {{suggested_language}};","en-ca":"This website is in {{current_language}}. Would you like to switch to the {{suggested_language}} version?","en-gb":"This website is in {{current_language}}. Would you like to switch to the {{suggested_language}} version?","en-gl":"This website is in {{current_language}}. Would you like to switch to the {{suggested_language}} version?","en-ie":"This website is in {{current_language}}. Would you like to switch to the {{suggested_language}} version?","en-in":"This website is in {{current_language}}. Would you like to switch to the {{suggested_language}} version?","en-us":"This website is in {{current_language}}. Would you like to switch to the {{suggested_language}} version?","es":"","es-cl":"Este sitio web está en {{current_language}}. ¿Quieres cambiar a la versión en {{suggested_language}}?","es-mx":"Este sitio web está en {{current_language}}. ¿Quieres cambiar a la versión en {{suggested_language}}?","es-us":"","et":"See veebisait on {{current_language}}. Kas soovite {{suggested_language}} versioonile ümber lülitada?","fi":"","fr":"Ce site Web est en {{current_language}}. Souhaitez-vous passer à la version en {{suggested_language}} ?","fr-be":"Ce site Web est en {{current_language}}. Souhaitez-vous passer à la version en {{suggested_language}} ?","fr-ca":"Ce site Web est en {{current_language}}. Souhaitez-vous passer à la version en {{suggested_language}} ?","fr-ch":"Ce site Web est en {{current_language}}. Souhaitez-vous passer à la version en {{suggested_language}} ?","hr":"Ova web stranica je na {{current_language}}. Želite li se prebaciti na {{suggested_language}} verziju?","hu":"Ez a webhely {{current_language}} nyelven jelenik meg. Szeretnél átváltani {{suggested_language}} nyelvre?","it":"Il sito web è in {{current_language}}. Vuoi passare alla versione in {{suggested_language}}?","it-ch":"Il sito web è in {{current_language}}. Vuoi passare alla versione in {{suggested_language}}?","lt":"Ši svetainė yra {{current_language}}. Ar norite perjungti į {{suggested_language}} versiją?","lv":"","mk":"Оваа веб-страница е на {{current_language}}. Дали сакаш да се префрлиш на верзијата на {{suggested_language}}?","nb":"Dette nettstedet er på {{current_language}}. Vil du bytte til {{suggested_language}} versjon?","nl":"Deze website is in het {{current_language}}. Wi je naar de {{suggested_language}} versie overschakelen?","nl-be":"Deze website is in het {{current_language}}. Wi je naar de {{suggested_language}} versie overschakelen?","pl":"Język tej strony to {{current_language}}. Czy chcesz przełączyć język na {{suggested_language}}?","pt-br":"Este site está em {{current_language}}. Você quer mudar para a versão em {{suggested_language}}?","pt-pt":"","ro":"Acest site web este în {{current_language}}. Doriți să comutați la versiunea {{suggested_language}}?","ru":"Язык этого веб-сайта — {{current_language}}. Хотите переключить язык на {{suggested_language}}?","sk":"Táto internetová stránka je v {{current_language}}. Chcete prepnúť na verziu {{suggested_language}}?","sl":"To spletno mesto je v {{current_language}}. Ali želiš preklopiti na {{suggested_language}} različico?","sq":"Kjo uebfaqe është në {{current_language}}. Dëshiron të kalosh në versionin {{suggested_language}}?","sr":"Ovaj veb-sajt je na jeziku {{current_language}}. Da li želite da pređete na verziju na {{suggested_language}}?","sv":"Denna webbplats finns på {{current_language}}. Vill du byta till den {{suggested_language}} versionen?","tr":"İnternet sitesini {{current_language}} görüntülemektesiniz. Dili {{suggested_language}} olarak değiştirmek ister misiniz?","uk":"Мова цього веб-сайту — {{current_language}}. Хочете змінити мову цього веб-сайту, щоб показувалася {{suggested_language}} версія?","zh-us":"本网站正在{{current_language}}。是否要切换{{suggested_language}}到版本？"}});
+    await emergencyMessage("en-gb","flixbus",  true );
     
   }
   renderOverlays();
@@ -2570,7 +2592,7 @@
         site: 'datadoghq.eu',
         service: 'fxt.webc.cms.gohome',
         sessionSampleRate: 10,
-        version: "gohome.20240904.085856",
+        version: "gohome.20240924.082659",
         trackSessionAcrossSubdomains: true,
         useSecureSessionCookie: true,
         useCrossSiteSessionCookie: true,
@@ -2586,6 +2608,7 @@
     })
   </script>
 
+  
 
 </body>
 </html>
