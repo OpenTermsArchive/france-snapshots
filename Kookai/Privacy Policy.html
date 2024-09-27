@@ -577,7 +577,7 @@ Shopify.routes.root = "/";</script>
     window.addEventListener('load', asyncLoad, false);
   }
 })();</script>
-<script id="__st">var __st={"a":55913644166,"offset":7200,"reqid":"9830bc63-f8e7-49dc-838d-9c6080b9e686-1727419013","pageurl":"kookai.fr\/pages\/politique-de-confidentialite","s":"pages-85842722950","u":"b224fe1273a8","p":"page","rtyp":"page","rid":85842722950};</script>
+<script id="__st">var __st={"a":55913644166,"offset":7200,"reqid":"1ac07ee3-fac8-4947-861c-ebfc0c334946-1727440640","pageurl":"kookai.fr\/pages\/politique-de-confidentialite","s":"pages-85842722950","u":"59d5530ae5d7","p":"page","rtyp":"page","rid":85842722950};</script>
 <script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
 <script id="captcha-bootstrap">!function(){'use strict';const t='contact',e='account',n='new_comment',o=[[t,t],['blogs',n],['comments',n],[t,'customer']],c=[[e,'customer_login'],[e,'guest_login'],[e,'recover_customer_password'],[e,'create_customer']],r=t=>t.map((([t,e])=>`form[action*='/${t}']:not([data-nocaptcha='true']) input[name='form_type'][value='${e}']`)).join(',');function s(t,e,n=!1){try{const o=window.sessionStorage;for(const[n,c]of Object.entries(JSON.parse(o.getItem(e))))t.elements[n]&&(t.elements[n].value=c);n&&o.removeItem(e)}catch{}}const a='form_key',i=['recaptcha-v3-token','g-recaptcha-response','h-captcha-response','password'],u=()=>{try{return window.sessionStorage}catch{return}},m=t=>t.elements[a],f='form_type',d='cptcha';function p(t){t.dataset[d]=!0}const l=window,h=l.document,_='Shopify',y='ce_forms',E='captcha';let v=!1;((t,e)=>{const n=(g='f06e6c50-85a8-45c8-87d0-21a2b65856fe','https://cdn.shopify.com/shopifycloud/storefront-forms-hcaptcha/ce_storefront_forms_captcha_hcaptcha.v1.4.0.iife.js',T={infoText:'Protégé par hCaptcha',privacyText:'Confidentialité',termsText:'Conditions'},(t,e,n)=>{const o=l[_][y],c=o.bindForm;if(c)return c(t,g,e,T).then(n);o.q.push([[t,g,e,T],n]),v||(h.body.append(Object.assign(h.createElement('script'),{id:'captcha-provider',async:!0,src:'https://cdn.shopify.com/shopifycloud/storefront-forms-hcaptcha/ce_storefront_forms_captcha_hcaptcha.v1.4.0.iife.js'})),v=!0)});var g,T;l[_]=l[_]||{},l[_][y]=l[_][y]||{},l[_][y].q=[],l[_][E]=l[_][E]||{},l[_][E].protect=function(t,e){n(t,void 0,e),p(t)},Object.freeze(l[_][E]),function(t,e,n,l,h,_){const[y,E,v,g]=function(t,e,n){const s=e?o:[],a=t?c:[],i=[...s,...a],u=[...o],m=r(i),f=r(s),d=n&&r(i.filter((([t,e])=>n.includes(e)))),p=r(u),l=t=>()=>t?[...document.querySelectorAll(t)].map((t=>t.form)):[];return[l(m),l(f),l(d),l(p)]}(l,h,_),T=t=>{const e=t.target;return e instanceof HTMLFormElement?e:e&&e.form},S=t=>y().includes(t);t.addEventListener('submit',(t=>{const e=T(t);if(!e)return;const n=S(e)&&!e.dataset.hcaptchaBound&&!e.dataset.recaptchaBound,o=m(e),c=g().includes(e)&&(!o||!o.value);(n||c)&&t.preventDefault(),c&&!n&&(function(t){try{if(!u())return;!function(t){const e=u();if(!e)return;const n=m(t);if(!n)return;const o=n.value;o&&e.removeItem(o)}(t);const e=Array.from(Array(32),(()=>Math.random().toString(36)[2])).join('');!function(t,e){m(t)||t.append(Object.assign(document.createElement('input'),{type:'hidden',name:a})),t.elements[a].value=e}(t,e),function(t,e){const n=u();if(!n)return;const o=[...t.querySelectorAll('input[type="password"]')].map((({name:t})=>t)),c=[...i,...o],r={};for(const[s,a]of new FormData(t).entries())c.includes(s)||(r[s]=a);n.setItem(e,JSON.stringify(r))}(t,e)}catch(e){console.error('failed to persist form',e)}}(e),e.submit())}));const w=(t,e)=>{t&&!t.dataset[d]&&(n(t,e.some((e=>e===t))),p(t))};for(const o of['focusin','change'])t.addEventListener(o,(t=>{const e=T(t);S(e)&&w(e,E())}));const A=e.get('form_key'),b=e.get(f),I=A&&b;t.addEventListener('DOMContentLoaded',(()=>{const t=E();if(I)for(const e of t)e.elements[f].value===b&&s(e,A);[...new Set([...v(),...y().filter((t=>'true'===t.dataset.shopifyCaptcha))])].forEach((e=>w(e,t)))}))}(h,new URLSearchParams(l.location.search),n,!0,!0,['guest_login'])})()}();</script>
 <script id="captcha-terms">!function(){'use strict';const e=/recaptcha|reCATPCHA|google|Googl/gi,t=o=>{let c=o.firstChild;for(;c;)c.nodeType===Node.TEXT_NODE?c.textContent=c.textContent.replace(e,'hCaptcha'):c.nodeType===Node.ELEMENT_NODE&&t(c),c=c.nextSibling};document.addEventListener('DOMContentLoaded',(()=>{(e=>{const o=document.querySelector('p[data-spam-detection-disclaimer]');if(o){for(const e of['terms','privacy']){const t=o.querySelector(`a[href*='https://policies.google.com/${e}']`);t&&(t.href=`https://hcaptcha.com/${e}`)}t(o)}})()}))}();</script>
@@ -903,23 +903,30 @@ Shopify.routes.root = "/";</script>
 
 <meta name="google-site-verification" content="PCyuKZ-vHYId2Ju1qo1Hg7K8G1JiX8nmuLD5L1orEBs" />
   
-<!-- BEGIN app block: shopify://apps/instafeed/blocks/head-block/c447db20-095d-4a10-9725-b5977662c9d5 --><link rel="preconnect" href="https://cdn.nfcube.com/">
-<link rel="preconnect" href="https://scontent.cdninstagram.com/">
+<!-- BEGIN app block: shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507 -->
+
+
+
+
+
+
+
+
+
+
+
+
+  <script async src="https://static.klaviyo.com/onsite/js/XbwuFJ/klaviyo.js?company_id=XbwuFJ"></script>
+  <script>!function(){if(!window.klaviyo){window._klOnsite=window._klOnsite||[];try{window.klaviyo=new Proxy({},{get:function(n,i){return"push"===i?function(){var n;(n=window._klOnsite).push.apply(n,arguments)}:function(){for(var n=arguments.length,o=new Array(n),w=0;w<n;w++)o[w]=arguments[w];var t="function"==typeof o[o.length-1]?o.pop():void 0,e=new Promise((function(n){window._klOnsite.push([i].concat(o,[function(i){t&&t(i),n(i)}]))}));return e}}})}catch(n){window.klaviyo=window.klaviyo||[],window.klaviyo.push=function(){var n;(n=window._klOnsite).push.apply(n,arguments)}}}}();</script>
+
+  
+
+
 
 
   <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      let instafeedScript = document.createElement('script');
-
-      
-        instafeedScript.src = 'https://cdn.nfcube.com/instafeed-58fe0192c42e7b8f3094c24bf45b0fbd.js';
-      
-
-      document.body.appendChild(instafeedScript);
-    });
+    window.klaviyoReviewsProductDesignMode = false
   </script>
-
-
 
 
 
@@ -1025,16 +1032,6 @@ Shopify.routes.root = "/";</script>
     }
   });
 </script>
-
-<!-- END app app block --><!-- BEGIN app block: shopify://apps/loyoly/blocks/international/f8398f67-b476-4b74-89b8-cb199b7011c9 --><script>
-  // Set the current lang
-  window.loyoly_lang_code = 'fr'
-  // Set the convert rate
-  window.loyoly_convert_rate = window.Shopify.currency.rate
-  // Set the current money code
-  window.loyoly_money_code = 'EUR'
-</script>
-
 
 <!-- END app app block --><!-- BEGIN app block: shopify://apps/wishlist-hero/blocks/app-embed/a9a5079b-59e8-47cb-b659-ecf1c60b9b72 -->
 
@@ -1264,37 +1261,40 @@ Shopify.routes.root = "/";</script>
   window.WLH_reload_translations();
 </script><!-- END app snippet -->
 
-<!-- END app app block --><!-- BEGIN app block: shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507 -->
+<!-- END app app block --><!-- BEGIN app block: shopify://apps/live-shopping-by-livemeup/blocks/player-script/82ccf4ed-67f8-4725-9167-e54475d4748e -->
+<!-- END app app block --><!-- BEGIN app block: shopify://apps/loyoly/blocks/international/f8398f67-b476-4b74-89b8-cb199b7011c9 --><script>
+  // Set the current lang
+  window.loyoly_lang_code = 'fr'
+  // Set the convert rate
+  window.loyoly_convert_rate = window.Shopify.currency.rate
+  // Set the current money code
+  window.loyoly_money_code = 'EUR'
+</script>
 
 
-
-
-
-
-
-
-
-
-
-
-  <script async src="https://static.klaviyo.com/onsite/js/XbwuFJ/klaviyo.js?company_id=XbwuFJ"></script>
-  <script>!function(){if(!window.klaviyo){window._klOnsite=window._klOnsite||[];try{window.klaviyo=new Proxy({},{get:function(n,i){return"push"===i?function(){var n;(n=window._klOnsite).push.apply(n,arguments)}:function(){for(var n=arguments.length,o=new Array(n),w=0;w<n;w++)o[w]=arguments[w];var t="function"==typeof o[o.length-1]?o.pop():void 0,e=new Promise((function(n){window._klOnsite.push([i].concat(o,[function(i){t&&t(i),n(i)}]))}));return e}}})}catch(n){window.klaviyo=window.klaviyo||[],window.klaviyo.push=function(){var n;(n=window._klOnsite).push.apply(n,arguments)}}}}();</script>
-
-  
-
-
+<!-- END app app block --><!-- BEGIN app block: shopify://apps/instafeed/blocks/head-block/c447db20-095d-4a10-9725-b5977662c9d5 --><link rel="preconnect" href="https://cdn.nfcube.com/">
+<link rel="preconnect" href="https://scontent.cdninstagram.com/">
 
 
   <script>
-    window.klaviyoReviewsProductDesignMode = false
+    document.addEventListener('DOMContentLoaded', function () {
+      let instafeedScript = document.createElement('script');
+
+      
+        instafeedScript.src = 'https://cdn.nfcube.com/instafeed-58fe0192c42e7b8f3094c24bf45b0fbd.js';
+      
+
+      document.body.appendChild(instafeedScript);
+    });
   </script>
 
 
 
-<!-- END app app block --><!-- BEGIN app block: shopify://apps/live-shopping-by-livemeup/blocks/player-script/82ccf4ed-67f8-4725-9167-e54475d4748e -->
+
+
 <!-- END app app block --><script src="https://cdn.shopify.com/extensions/1675c59f-6e56-4eff-9cd4-978cc68c3001/ekookie-29/assets/ekookie.js" type="text/javascript" defer="defer"></script>
 <link href="https://cdn.shopify.com/extensions/1675c59f-6e56-4eff-9cd4-978cc68c3001/ekookie-29/assets/ekookie.css" rel="stylesheet" type="text/css" media="all">
-<script src="https://cdn.shopify.com/extensions/3b89ae49-db40-4001-b7b2-a72c51022d3f/live-shopping-by-livemeup-44/assets/player-loader.min.js" type="text/javascript" defer="defer"></script>
+<script src="https://cdn.shopify.com/extensions/ab0f1a48-99f3-48df-bd4e-52b666d8e630/live-shopping-by-livemeup-45/assets/player-loader.min.js" type="text/javascript" defer="defer"></script>
 <script src="https://cdn.shopify.com/extensions/0502890f-333f-4e04-a7fb-e3de5783e2ec/kleep-kookai-52/assets/kleep-app.js" type="text/javascript" defer="defer"></script>
 <link href="https://cdn.shopify.com/extensions/0502890f-333f-4e04-a7fb-e3de5783e2ec/kleep-kookai-52/assets/kleep-app.css" rel="stylesheet" type="text/css" media="all">
 <link href="https://monorail-edge.shopifysvc.com" rel="dns-prefetch">
@@ -1647,6 +1647,26 @@ for (var attr in meta) {
         x-data="announcementSlider(5000)">
         <div 
       x-ref="announce_text"
+      
+      class="section-padding items-center flex text-center w-full"
+      
+><div
+                class="w-full px-[--outer] text-[0] overflow-hidden"
+                data-ticker-frame
+                x-data="announcementTicker({ waitForSlider: true })"
+              >
+                <div
+                  class="inline-flex items-center transition-opacity duration-500 ease-linear ticker--unloaded"
+                  data-ticker-scale
+                >
+                  <div
+                    class="rte--lock-font rte--lock-size px-4 flex flex-row items-center accent-size-4"
+                    data-ticker-text
+                  ><p>FRENCH DAYS : -30% sur le 2ème article acheté sur la nouvelle collection !</p>
+</div>
+                </div>
+              </div></div><div 
+      x-ref="text_jFwwwy"
       
       class="section-padding items-center flex text-center w-full"
       
@@ -3923,18 +3943,7 @@ Effacer</button>
 
 
 
-</div><div id="shopify-block-12526071353035850722" class="shopify-block shopify-app-block">
-  <script defer src="https://app.backinstock.org/widget/85996_1724504617.js?category=bis&v=6"></script>
-
-
-<script id="back-in-stock-helper-embedded">
-  // Back in Stock: Customer Alerts helper script
-  var _BISConfig = _BISConfig || {};
-
-  
-
-  
-</script>
+</div><div id="shopify-block-15037621279992766403" class="shopify-block shopify-app-block">
 
 
 </div><div id="shopify-block-15489274632472357321" class="shopify-block shopify-app-block"><!-- BEGIN app snippet: socloz --><script>
@@ -4035,7 +4044,18 @@ Effacer</button>
   })();
 </script>
 <!-- END app snippet -->
-</div><div id="shopify-block-15037621279992766403" class="shopify-block shopify-app-block">
+</div><div id="shopify-block-12526071353035850722" class="shopify-block shopify-app-block">
+  <script defer src="https://app.backinstock.org/widget/85996_1724504617.js?category=bis&v=6"></script>
+
+
+<script id="back-in-stock-helper-embedded">
+  // Back in Stock: Customer Alerts helper script
+  var _BISConfig = _BISConfig || {};
+
+  
+
+  
+</script>
 
 
 </div><div id="shopify-block-10986913126602382387" class="shopify-block shopify-app-block">
