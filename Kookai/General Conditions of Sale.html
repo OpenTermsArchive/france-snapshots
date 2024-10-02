@@ -577,7 +577,7 @@ Shopify.routes.root = "/";</script>
     window.addEventListener('load', asyncLoad, false);
   }
 })();</script>
-<script id="__st">var __st={"a":55913644166,"offset":7200,"reqid":"f3b1f549-b8f6-47a0-b986-7e48a509ea09-1727829434","pageurl":"kookai.fr\/pages\/conditions-generales-de-vente","s":"pages-85775253638","u":"0d679d75e954","p":"page","rtyp":"page","rid":85775253638};</script>
+<script id="__st">var __st={"a":55913644166,"offset":7200,"reqid":"9a572726-b586-4009-9c26-b119d8641e2d-1727851046","pageurl":"kookai.fr\/pages\/conditions-generales-de-vente","s":"pages-85775253638","u":"06bec452f81c","p":"page","rtyp":"page","rid":85775253638};</script>
 <script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
 <script id="captcha-bootstrap">!function(){'use strict';const t='contact',e='account',n='new_comment',o=[[t,t],['blogs',n],['comments',n],[t,'customer']],c=[[e,'customer_login'],[e,'guest_login'],[e,'recover_customer_password'],[e,'create_customer']],r=t=>t.map((([t,e])=>`form[action*='/${t}']:not([data-nocaptcha='true']) input[name='form_type'][value='${e}']`)).join(',');function s(t,e,n=!1){try{const o=window.sessionStorage;for(const[n,c]of Object.entries(JSON.parse(o.getItem(e))))t.elements[n]&&(t.elements[n].value=c);n&&o.removeItem(e)}catch{}}const a='form_key',i=['recaptcha-v3-token','g-recaptcha-response','h-captcha-response','password'],u=()=>{try{return window.sessionStorage}catch{return}},m=t=>t.elements[a],f='form_type',d='cptcha';function p(t){t.dataset[d]=!0}const l=window,h=l.document,_='Shopify',y='ce_forms',E='captcha';let v=!1;((t,e)=>{const n=(g='f06e6c50-85a8-45c8-87d0-21a2b65856fe','https://cdn.shopify.com/shopifycloud/storefront-forms-hcaptcha/ce_storefront_forms_captcha_hcaptcha.v1.4.0.iife.js',T={infoText:'Protégé par hCaptcha',privacyText:'Confidentialité',termsText:'Conditions'},(t,e,n)=>{const o=l[_][y],c=o.bindForm;if(c)return c(t,g,e,T).then(n);o.q.push([[t,g,e,T],n]),v||(h.body.append(Object.assign(h.createElement('script'),{id:'captcha-provider',async:!0,src:'https://cdn.shopify.com/shopifycloud/storefront-forms-hcaptcha/ce_storefront_forms_captcha_hcaptcha.v1.4.0.iife.js'})),v=!0)});var g,T;l[_]=l[_]||{},l[_][y]=l[_][y]||{},l[_][y].q=[],l[_][E]=l[_][E]||{},l[_][E].protect=function(t,e){n(t,void 0,e),p(t)},Object.freeze(l[_][E]),function(t,e,n,l,h,_){const[y,E,v,g]=function(t,e,n){const s=e?o:[],a=t?c:[],i=[...s,...a],u=[...o],m=r(i),f=r(s),d=n&&r(i.filter((([t,e])=>n.includes(e)))),p=r(u),l=t=>()=>t?[...document.querySelectorAll(t)].map((t=>t.form)):[];return[l(m),l(f),l(d),l(p)]}(l,h,_),T=t=>{const e=t.target;return e instanceof HTMLFormElement?e:e&&e.form},S=t=>y().includes(t);t.addEventListener('submit',(t=>{const e=T(t);if(!e)return;const n=S(e)&&!e.dataset.hcaptchaBound&&!e.dataset.recaptchaBound,o=m(e),c=g().includes(e)&&(!o||!o.value);(n||c)&&t.preventDefault(),c&&!n&&(function(t){try{if(!u())return;!function(t){const e=u();if(!e)return;const n=m(t);if(!n)return;const o=n.value;o&&e.removeItem(o)}(t);const e=Array.from(Array(32),(()=>Math.random().toString(36)[2])).join('');!function(t,e){m(t)||t.append(Object.assign(document.createElement('input'),{type:'hidden',name:a})),t.elements[a].value=e}(t,e),function(t,e){const n=u();if(!n)return;const o=[...t.querySelectorAll('input[type="password"]')].map((({name:t})=>t)),c=[...i,...o],r={};for(const[s,a]of new FormData(t).entries())c.includes(s)||(r[s]=a);n.setItem(e,JSON.stringify(r))}(t,e)}catch(e){console.error('failed to persist form',e)}}(e),e.submit())}));const w=(t,e)=>{t&&!t.dataset[d]&&(n(t,e.some((e=>e===t))),p(t))};for(const o of['focusin','change'])t.addEventListener(o,(t=>{const e=T(t);S(e)&&w(e,E())}));const A=e.get('form_key'),b=e.get(f),I=A&&b;t.addEventListener('DOMContentLoaded',(()=>{const t=E();if(I)for(const e of t)e.elements[f].value===b&&s(e,A);[...new Set([...v(),...y().filter((t=>'true'===t.dataset.shopifyCaptcha))])].forEach((e=>w(e,t)))}))}(h,new URLSearchParams(l.location.search),n,!0,!0,['guest_login'])})()}();</script>
 <script id="captcha-terms">!function(){'use strict';const e=/recaptcha|reCATPCHA|google|Googl/gi,t=o=>{let c=o.firstChild;for(;c;)c.nodeType===Node.TEXT_NODE?c.textContent=c.textContent.replace(e,'hCaptcha'):c.nodeType===Node.ELEMENT_NODE&&t(c),c=c.nextSibling};document.addEventListener('DOMContentLoaded',(()=>{(e=>{const o=document.querySelector('p[data-spam-detection-disclaimer]');if(o){for(const e of['terms','privacy']){const t=o.querySelector(`a[href*='https://policies.google.com/${e}']`);t&&(t.href=`https://hcaptcha.com/${e}`)}t(o)}})()}))}();</script>
@@ -1006,6 +1006,26 @@ Shopify.routes.root = "/";</script>
   });
 </script>
 
+<!-- END app app block --><!-- BEGIN app block: shopify://apps/instafeed/blocks/head-block/c447db20-095d-4a10-9725-b5977662c9d5 --><link rel="preconnect" href="https://cdn.nfcube.com/">
+<link rel="preconnect" href="https://scontent.cdninstagram.com/">
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      let instafeedScript = document.createElement('script');
+
+      
+        instafeedScript.src = 'https://cdn.nfcube.com/instafeed-58fe0192c42e7b8f3094c24bf45b0fbd.js';
+      
+
+      document.body.appendChild(instafeedScript);
+    });
+  </script>
+
+
+
+
+
 <!-- END app app block --><!-- BEGIN app block: shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507 -->
 
 
@@ -1033,27 +1053,17 @@ Shopify.routes.root = "/";</script>
 
 
 
-<!-- END app app block --><!-- BEGIN app block: shopify://apps/instafeed/blocks/head-block/c447db20-095d-4a10-9725-b5977662c9d5 --><link rel="preconnect" href="https://cdn.nfcube.com/">
-<link rel="preconnect" href="https://scontent.cdninstagram.com/">
-
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      let instafeedScript = document.createElement('script');
-
-      
-        instafeedScript.src = 'https://cdn.nfcube.com/instafeed-58fe0192c42e7b8f3094c24bf45b0fbd.js';
-      
-
-      document.body.appendChild(instafeedScript);
-    });
-  </script>
-
-
-
-
-
 <!-- END app app block --><!-- BEGIN app block: shopify://apps/live-shopping-by-livemeup/blocks/player-script/82ccf4ed-67f8-4725-9167-e54475d4748e -->
+<!-- END app app block --><!-- BEGIN app block: shopify://apps/loyoly/blocks/international/f8398f67-b476-4b74-89b8-cb199b7011c9 --><script>
+  // Set the current lang
+  window.loyoly_lang_code = 'fr'
+  // Set the convert rate
+  window.loyoly_convert_rate = window.Shopify.currency.rate
+  // Set the current money code
+  window.loyoly_money_code = 'EUR'
+</script>
+
+
 <!-- END app app block --><!-- BEGIN app block: shopify://apps/wishlist-hero/blocks/app-embed/a9a5079b-59e8-47cb-b659-ecf1c60b9b72 -->
 
 <script type="text/javascript">
@@ -1282,19 +1292,9 @@ Shopify.routes.root = "/";</script>
   window.WLH_reload_translations();
 </script><!-- END app snippet -->
 
-<!-- END app app block --><!-- BEGIN app block: shopify://apps/loyoly/blocks/international/f8398f67-b476-4b74-89b8-cb199b7011c9 --><script>
-  // Set the current lang
-  window.loyoly_lang_code = 'fr'
-  // Set the convert rate
-  window.loyoly_convert_rate = window.Shopify.currency.rate
-  // Set the current money code
-  window.loyoly_money_code = 'EUR'
-</script>
-
-
-<!-- END app app block --><script src="https://cdn.shopify.com/extensions/9e29bfb4-1f94-46f4-94e1-830f6df1778d/kleep-kookai-55/assets/kleep-app.js" type="text/javascript" defer="defer"></script>
+<!-- END app app block --><script src="https://cdn.shopify.com/extensions/ab0f1a48-99f3-48df-bd4e-52b666d8e630/live-shopping-by-livemeup-45/assets/player-loader.min.js" type="text/javascript" defer="defer"></script>
+<script src="https://cdn.shopify.com/extensions/9e29bfb4-1f94-46f4-94e1-830f6df1778d/kleep-kookai-55/assets/kleep-app.js" type="text/javascript" defer="defer"></script>
 <link href="https://cdn.shopify.com/extensions/9e29bfb4-1f94-46f4-94e1-830f6df1778d/kleep-kookai-55/assets/kleep-app.css" rel="stylesheet" type="text/css" media="all">
-<script src="https://cdn.shopify.com/extensions/ab0f1a48-99f3-48df-bd4e-52b666d8e630/live-shopping-by-livemeup-45/assets/player-loader.min.js" type="text/javascript" defer="defer"></script>
 <script src="https://cdn.shopify.com/extensions/1675c59f-6e56-4eff-9cd4-978cc68c3001/ekookie-29/assets/ekookie.js" type="text/javascript" defer="defer"></script>
 <link href="https://cdn.shopify.com/extensions/1675c59f-6e56-4eff-9cd4-978cc68c3001/ekookie-29/assets/ekookie.css" rel="stylesheet" type="text/css" media="all">
 <link href="https://monorail-edge.shopifysvc.com" rel="dns-prefetch">
@@ -3465,7 +3465,21 @@ Effacer</button>
 
 
   
-  <div id="shopify-block-15037621279992766403" class="shopify-block shopify-app-block">
+  <div id="shopify-block-12526071353035850722" class="shopify-block shopify-app-block">
+  <script defer src="https://app.backinstock.org/widget/85996_1724504617.js?category=bis&v=6"></script>
+
+
+<script id="back-in-stock-helper-embedded">
+  // Back in Stock: Customer Alerts helper script
+  var _BISConfig = _BISConfig || {};
+
+  
+
+  
+</script>
+
+
+</div><div id="shopify-block-15037621279992766403" class="shopify-block shopify-app-block">
 
 
 </div><div id="shopify-block-10986913126602382387" class="shopify-block shopify-app-block">
@@ -3525,80 +3539,6 @@ Effacer</button>
     });
   </script>
 
-
-
-</div><div id="shopify-block-3058753826952816051" class="shopify-block shopify-app-block">
-<!-- <script type="module" src="/assets/iab_module.js"></script> -->
-<script type="text/javascript">
-  let settings = {"main_button_color":"#d9eeef","secondary_color":"#dee6e6","text_color":"#212326","button_text_color":"#000000","paint_color":"#d9eeef","logo":"\/\/kookai.fr\/cdn\/shop\/files\/favicon-kookai.jpg?v=1709714610","border_radius":4,"position":"left","paddingbot":10,"paddingside":10,"font_overwrite":true,"header_font":{"error":"json not allowed for this object"},"header_font_size":24,"font_text":{"error":"json not allowed for this object"},"font_text_size":15,"timeout":5,"hide":false,"force":false,"refuse_button":true,"link":null,"debug":false};
-</script>
-<e-kookie id="ekookie" data-alt_image=""><div class='ek-layer'></div></e-kookie>
-<style>
-  
-  
-
-
-  
-     @font-face {
-  font-family: Abel;
-  font-weight: 400;
-  font-style: normal;
-  src: url("//kookai.fr/cdn/fonts/abel/abel_n4.2b4bc5e26465e4423e1674428c5593b0074dff23.woff2?h1=a29va2FpLWFtaC5hY2NvdW50Lm15c2hvcGlmeS5jb20&h2=a29va2FpLmZy&h3=YWNjb3VudC5rb29rYWkuZnI&hmac=b9c745085260a69c3b0793e644a1c3761e5cc8cc362404172eb048d41f8252ae") format("woff2"),
-       url("//kookai.fr/cdn/fonts/abel/abel_n4.0ee737a0dba62c4db0b41249f4fa9e628bc93fa3.woff?h1=a29va2FpLWFtaC5hY2NvdW50Lm15c2hvcGlmeS5jb20&h2=a29va2FpLmZy&h3=YWNjb3VudC5rb29rYWkuZnI&hmac=9aece7a4dcb2a344f819b030ce8d797ab021f3558173d90adb2e95f76c427a20") format("woff");
-}
-
-     @font-face {
-  font-family: "Avenir Next";
-  font-weight: 400;
-  font-style: normal;
-  src: url("//kookai.fr/cdn/fonts/avenir_next/avenirnext_n4.7fd0287595be20cd5a683102bf49d073b6abf144.woff2?h1=a29va2FpLWFtaC5hY2NvdW50Lm15c2hvcGlmeS5jb20&h2=a29va2FpLmZy&h3=YWNjb3VudC5rb29rYWkuZnI&hmac=cc163be9aa6812b09c276d7c4a0cc1703858b511c2debd6341627a2858ba77b5") format("woff2"),
-       url("//kookai.fr/cdn/fonts/avenir_next/avenirnext_n4.a26a334a0852627a5f36b195112385b0cd700077.woff?h1=a29va2FpLWFtaC5hY2NvdW50Lm15c2hvcGlmeS5jb20&h2=a29va2FpLmZy&h3=YWNjb3VudC5rb29rYWkuZnI&hmac=28b7ef85513912b8ede3a4e771e8b6cd2691cad20046bc235cb95fc32450aee7") format("woff");
-}
-
-  
-</style>
-
-<style data-shopify>
-
-  :root {
-    --ek-main-button-color: #d9eeef;
-    --ek-secondary-color: #dee6e6;
-    --ek-paint-color: #d9eeef;
-    --ek-text-color: #212326;
-    --ek-button-text-color: #000000;
-    --ek-border-radius: 4px;
-    --ek-paddingbot: 10px;
-    --ek-paddingside: 10px;
-    --ek-position: left;
-    --ek-hide: false;
-    --ek-header_font: Abel;
-    --ek-header_font_size: 24px;
-    --ek-font_text: "Avenir Next";
-    --ek-font_text_size: 15px;
-    --ek-font_overwrite: true;
-    --ek-image-button: url('https://cdn.shopify.com/s/files/1/0314/8539/4988/files/cookie-small.png?v=1668520555');
-  }
-</style>
-
-
-<!-- shopify extension push #F2EFEA #FC7753 #66D7D1 #403D58 #DBD56E-->
-<!-- d8e2dc ffe5d9 #ffcad4 f4acb7-->
-
-
-
-
-</div><!-- Failed to render app block "9513407616245537438": app block path "shopify://apps/sami-wholesale/blocks/app-embed-block/799b9db0-2c2b-4b20-8675-98acd123fbb2" does not exist --><div id="shopify-block-12526071353035850722" class="shopify-block shopify-app-block">
-  <script defer src="https://app.backinstock.org/widget/85996_1724504617.js?category=bis&v=6"></script>
-
-
-<script id="back-in-stock-helper-embedded">
-  // Back in Stock: Customer Alerts helper script
-  var _BISConfig = _BISConfig || {};
-
-  
-
-  
-</script>
 
 
 </div><div id="shopify-block-15489274632472357321" class="shopify-block shopify-app-block"><!-- BEGIN app snippet: socloz --><script>
@@ -3699,5 +3639,65 @@ Effacer</button>
   })();
 </script>
 <!-- END app snippet -->
+</div><!-- Failed to render app block "9513407616245537438": app block path "shopify://apps/sami-wholesale/blocks/app-embed-block/799b9db0-2c2b-4b20-8675-98acd123fbb2" does not exist --><div id="shopify-block-3058753826952816051" class="shopify-block shopify-app-block">
+<!-- <script type="module" src="/assets/iab_module.js"></script> -->
+<script type="text/javascript">
+  let settings = {"main_button_color":"#d9eeef","secondary_color":"#dee6e6","text_color":"#212326","button_text_color":"#000000","paint_color":"#d9eeef","logo":"\/\/kookai.fr\/cdn\/shop\/files\/favicon-kookai.jpg?v=1709714610","border_radius":4,"position":"left","paddingbot":10,"paddingside":10,"font_overwrite":true,"header_font":{"error":"json not allowed for this object"},"header_font_size":24,"font_text":{"error":"json not allowed for this object"},"font_text_size":15,"timeout":5,"hide":false,"force":false,"refuse_button":true,"link":null,"debug":false};
+</script>
+<e-kookie id="ekookie" data-alt_image=""><div class='ek-layer'></div></e-kookie>
+<style>
+  
+  
+
+
+  
+     @font-face {
+  font-family: Abel;
+  font-weight: 400;
+  font-style: normal;
+  src: url("//kookai.fr/cdn/fonts/abel/abel_n4.2b4bc5e26465e4423e1674428c5593b0074dff23.woff2?h1=a29va2FpLWFtaC5hY2NvdW50Lm15c2hvcGlmeS5jb20&h2=a29va2FpLmZy&h3=YWNjb3VudC5rb29rYWkuZnI&hmac=b9c745085260a69c3b0793e644a1c3761e5cc8cc362404172eb048d41f8252ae") format("woff2"),
+       url("//kookai.fr/cdn/fonts/abel/abel_n4.0ee737a0dba62c4db0b41249f4fa9e628bc93fa3.woff?h1=a29va2FpLWFtaC5hY2NvdW50Lm15c2hvcGlmeS5jb20&h2=a29va2FpLmZy&h3=YWNjb3VudC5rb29rYWkuZnI&hmac=9aece7a4dcb2a344f819b030ce8d797ab021f3558173d90adb2e95f76c427a20") format("woff");
+}
+
+     @font-face {
+  font-family: "Avenir Next";
+  font-weight: 400;
+  font-style: normal;
+  src: url("//kookai.fr/cdn/fonts/avenir_next/avenirnext_n4.7fd0287595be20cd5a683102bf49d073b6abf144.woff2?h1=a29va2FpLWFtaC5hY2NvdW50Lm15c2hvcGlmeS5jb20&h2=a29va2FpLmZy&h3=YWNjb3VudC5rb29rYWkuZnI&hmac=cc163be9aa6812b09c276d7c4a0cc1703858b511c2debd6341627a2858ba77b5") format("woff2"),
+       url("//kookai.fr/cdn/fonts/avenir_next/avenirnext_n4.a26a334a0852627a5f36b195112385b0cd700077.woff?h1=a29va2FpLWFtaC5hY2NvdW50Lm15c2hvcGlmeS5jb20&h2=a29va2FpLmZy&h3=YWNjb3VudC5rb29rYWkuZnI&hmac=28b7ef85513912b8ede3a4e771e8b6cd2691cad20046bc235cb95fc32450aee7") format("woff");
+}
+
+  
+</style>
+
+<style data-shopify>
+
+  :root {
+    --ek-main-button-color: #d9eeef;
+    --ek-secondary-color: #dee6e6;
+    --ek-paint-color: #d9eeef;
+    --ek-text-color: #212326;
+    --ek-button-text-color: #000000;
+    --ek-border-radius: 4px;
+    --ek-paddingbot: 10px;
+    --ek-paddingside: 10px;
+    --ek-position: left;
+    --ek-hide: false;
+    --ek-header_font: Abel;
+    --ek-header_font_size: 24px;
+    --ek-font_text: "Avenir Next";
+    --ek-font_text_size: 15px;
+    --ek-font_overwrite: true;
+    --ek-image-button: url('https://cdn.shopify.com/s/files/1/0314/8539/4988/files/cookie-small.png?v=1668520555');
+  }
+</style>
+
+
+<!-- shopify extension push #F2EFEA #FC7753 #66D7D1 #403D58 #DBD56E-->
+<!-- d8e2dc ffe5d9 #ffcad4 f4acb7-->
+
+
+
+
 </div></body>
 </html>
