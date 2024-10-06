@@ -577,7 +577,7 @@ Shopify.routes.root = "/";</script>
     window.addEventListener('load', asyncLoad, false);
   }
 })();</script>
-<script id="__st">var __st={"a":55913644166,"offset":7200,"reqid":"46b1e8ba-209d-41ab-be7a-12c9a3ebc372-1728153423","pageurl":"kookai.fr\/pages\/conditions-generales-de-vente","s":"pages-85775253638","u":"f886af31f94b","p":"page","rtyp":"page","rid":85775253638};</script>
+<script id="__st">var __st={"a":55913644166,"offset":7200,"reqid":"16494fab-b704-443b-bd96-8882ebdeb571-1728175043","pageurl":"kookai.fr\/pages\/conditions-generales-de-vente","s":"pages-85775253638","u":"c0056ad656e4","p":"page","rtyp":"page","rid":85775253638};</script>
 <script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
 <script id="captcha-bootstrap">!function(){'use strict';const t='contact',e='account',n='new_comment',o=[[t,t],['blogs',n],['comments',n],[t,'customer']],c=[[e,'customer_login'],[e,'guest_login'],[e,'recover_customer_password'],[e,'create_customer']],r=t=>t.map((([t,e])=>`form[action*='/${t}']:not([data-nocaptcha='true']) input[name='form_type'][value='${e}']`)).join(',');function s(t,e,n=!1){try{const o=window.sessionStorage;for(const[n,c]of Object.entries(JSON.parse(o.getItem(e))))t.elements[n]&&(t.elements[n].value=c);n&&o.removeItem(e)}catch{}}const a='form_key',i=['recaptcha-v3-token','g-recaptcha-response','h-captcha-response','password'],u=()=>{try{return window.sessionStorage}catch{return}},m=t=>t.elements[a],f='form_type',d='cptcha';function p(t){t.dataset[d]=!0}const l=window,h=l.document,_='Shopify',y='ce_forms',E='captcha';let v=!1;((t,e)=>{const n=(g='f06e6c50-85a8-45c8-87d0-21a2b65856fe','https://cdn.shopify.com/shopifycloud/storefront-forms-hcaptcha/ce_storefront_forms_captcha_hcaptcha.v1.4.0.iife.js',T={infoText:'Protégé par hCaptcha',privacyText:'Confidentialité',termsText:'Conditions'},(t,e,n)=>{const o=l[_][y],c=o.bindForm;if(c)return c(t,g,e,T).then(n);o.q.push([[t,g,e,T],n]),v||(h.body.append(Object.assign(h.createElement('script'),{id:'captcha-provider',async:!0,src:'https://cdn.shopify.com/shopifycloud/storefront-forms-hcaptcha/ce_storefront_forms_captcha_hcaptcha.v1.4.0.iife.js'})),v=!0)});var g,T;l[_]=l[_]||{},l[_][y]=l[_][y]||{},l[_][y].q=[],l[_][E]=l[_][E]||{},l[_][E].protect=function(t,e){n(t,void 0,e),p(t)},Object.freeze(l[_][E]),function(t,e,n,l,h,_){const[y,E,v,g]=function(t,e,n){const s=e?o:[],a=t?c:[],i=[...s,...a],u=[...o],m=r(i),f=r(s),d=n&&r(i.filter((([t,e])=>n.includes(e)))),p=r(u),l=t=>()=>t?[...document.querySelectorAll(t)].map((t=>t.form)):[];return[l(m),l(f),l(d),l(p)]}(l,h,_),T=t=>{const e=t.target;return e instanceof HTMLFormElement?e:e&&e.form},S=t=>y().includes(t);t.addEventListener('submit',(t=>{const e=T(t);if(!e)return;const n=S(e)&&!e.dataset.hcaptchaBound&&!e.dataset.recaptchaBound,o=m(e),c=g().includes(e)&&(!o||!o.value);(n||c)&&t.preventDefault(),c&&!n&&(function(t){try{if(!u())return;!function(t){const e=u();if(!e)return;const n=m(t);if(!n)return;const o=n.value;o&&e.removeItem(o)}(t);const e=Array.from(Array(32),(()=>Math.random().toString(36)[2])).join('');!function(t,e){m(t)||t.append(Object.assign(document.createElement('input'),{type:'hidden',name:a})),t.elements[a].value=e}(t,e),function(t,e){const n=u();if(!n)return;const o=[...t.querySelectorAll('input[type="password"]')].map((({name:t})=>t)),c=[...i,...o],r={};for(const[s,a]of new FormData(t).entries())c.includes(s)||(r[s]=a);n.setItem(e,JSON.stringify(r))}(t,e)}catch(e){console.error('failed to persist form',e)}}(e),e.submit())}));const w=(t,e)=>{t&&!t.dataset[d]&&(n(t,e.some((e=>e===t))),p(t))};for(const o of['focusin','change'])t.addEventListener(o,(t=>{const e=T(t);S(e)&&w(e,E())}));const A=e.get('form_key'),b=e.get(f),I=A&&b;t.addEventListener('DOMContentLoaded',(()=>{const t=E();if(I)for(const e of t)e.elements[f].value===b&&s(e,A);[...new Set([...v(),...y().filter((t=>'true'===t.dataset.shopifyCaptcha))])].forEach((e=>w(e,t)))}))}(h,new URLSearchParams(l.location.search),n,!0,!0,['guest_login'])})()}();</script>
 <script id="captcha-terms">!function(){'use strict';const e=/recaptcha|reCATPCHA|google|Googl/gi,t=o=>{let c=o.firstChild;for(;c;)c.nodeType===Node.TEXT_NODE?c.textContent=c.textContent.replace(e,'hCaptcha'):c.nodeType===Node.ELEMENT_NODE&&t(c),c=c.nextSibling};document.addEventListener('DOMContentLoaded',(()=>{(e=>{const o=document.querySelector('p[data-spam-detection-disclaimer]');if(o){for(const e of['terms','privacy']){const t=o.querySelector(`a[href*='https://policies.google.com/${e}']`);t&&(t.href=`https://hcaptcha.com/${e}`)}t(o)}})()}))}();</script>
@@ -1038,7 +1038,6 @@ Shopify.routes.root = "/";</script>
   });
 </script>
 
-<!-- END app app block --><!-- BEGIN app block: shopify://apps/live-shopping-by-livemeup/blocks/player-script/82ccf4ed-67f8-4725-9167-e54475d4748e -->
 <!-- END app app block --><!-- BEGIN app block: shopify://apps/instafeed/blocks/head-block/c447db20-095d-4a10-9725-b5977662c9d5 --><link rel="preconnect" href="https://cdn.nfcube.com/">
 <link rel="preconnect" href="https://scontent.cdninstagram.com/">
 
@@ -1314,6 +1313,7 @@ Shopify.routes.root = "/";</script>
 
 
 
+<!-- END app app block --><!-- BEGIN app block: shopify://apps/live-shopping-by-livemeup/blocks/player-script/82ccf4ed-67f8-4725-9167-e54475d4748e -->
 <!-- END app app block --><!-- BEGIN app block: shopify://apps/loyoly/blocks/international/f8398f67-b476-4b74-89b8-cb199b7011c9 --><script>
   // Set the current lang
   window.loyoly_lang_code = 'fr'
@@ -1324,11 +1324,11 @@ Shopify.routes.root = "/";</script>
 </script>
 
 
-<!-- END app app block --><script src="https://cdn.shopify.com/extensions/1675c59f-6e56-4eff-9cd4-978cc68c3001/ekookie-29/assets/ekookie.js" type="text/javascript" defer="defer"></script>
-<link href="https://cdn.shopify.com/extensions/1675c59f-6e56-4eff-9cd4-978cc68c3001/ekookie-29/assets/ekookie.css" rel="stylesheet" type="text/css" media="all">
-<script src="https://cdn.shopify.com/extensions/ab0f1a48-99f3-48df-bd4e-52b666d8e630/live-shopping-by-livemeup-45/assets/player-loader.min.js" type="text/javascript" defer="defer"></script>
-<script src="https://cdn.shopify.com/extensions/d1370dba-b91a-4d48-943f-5c4789389906/kleep-kookai-60/assets/kleep-app.js" type="text/javascript" defer="defer"></script>
+<!-- END app app block --><script src="https://cdn.shopify.com/extensions/d1370dba-b91a-4d48-943f-5c4789389906/kleep-kookai-60/assets/kleep-app.js" type="text/javascript" defer="defer"></script>
 <link href="https://cdn.shopify.com/extensions/d1370dba-b91a-4d48-943f-5c4789389906/kleep-kookai-60/assets/kleep-app.css" rel="stylesheet" type="text/css" media="all">
+<script src="https://cdn.shopify.com/extensions/ab0f1a48-99f3-48df-bd4e-52b666d8e630/live-shopping-by-livemeup-45/assets/player-loader.min.js" type="text/javascript" defer="defer"></script>
+<script src="https://cdn.shopify.com/extensions/1675c59f-6e56-4eff-9cd4-978cc68c3001/ekookie-29/assets/ekookie.js" type="text/javascript" defer="defer"></script>
+<link href="https://cdn.shopify.com/extensions/1675c59f-6e56-4eff-9cd4-978cc68c3001/ekookie-29/assets/ekookie.css" rel="stylesheet" type="text/css" media="all">
 <link href="https://monorail-edge.shopifysvc.com" rel="dns-prefetch">
 <script>(function(){if ("sendBeacon" in navigator && "performance" in window) {var session_token = document.cookie.match(/_shopify_s=([^;]*)/);function handle_abandonment_event(e) {var entries = performance.getEntries().filter(function(entry) {return /monorail-edge.shopifysvc.com/.test(entry.name);});if (!window.abandonment_tracked && entries.length === 0) {window.abandonment_tracked = true;var currentMs = Date.now();var navigation_start = performance.timing.navigationStart;var payload = {shop_id: 55913644166,url: window.location.href,navigation_start,duration: currentMs - navigation_start,session_token: session_token && session_token.length === 2 ? session_token[1] : "",page_type: "page"};window.navigator.sendBeacon("https://monorail-edge.shopifysvc.com/v1/produce", JSON.stringify({schema_id: "online_store_buyer_site_abandonment/1.1",payload: payload,metadata: {event_created_at_ms: currentMs,event_sent_at_ms: currentMs}}));}}window.addEventListener('pagehide', handle_abandonment_event);}}());</script>
 <script id="web-pixels-manager-setup">(function d(d,e,r,a,n){var o,i,t,s,l=(i=(o={modern:/Edge?\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Firefox\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Chrom(ium|e)\/(9{2}|\d{3,})\.\d+(\.\d+|)|(Maci|X1{2}).+ Version\/(15\.\d+|(1[6-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(9{2}|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(15[._]\d+|(1[6-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](12[89]|1[3-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Android.+Firefox\/(12[7-9]|1[3-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(12[89]|1[3-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|SamsungBrowser\/([2-9]\d|\d{3,})\.\d+/,legacy:/Edge?\/(1[6-9]|[2-9]\d|\d{3,})\.\d+(\.\d+|)|Firefox\/(5[4-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)|Chrom(ium|e)\/(5[1-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)([\d.]+$|.*Safari\/(?![\d.]+ Edge\/[\d.]+$))|(Maci|X1{2}).+ Version\/(10\.\d+|(1[1-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(3[89]|[4-9]\d|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(10[._]\d+|(1[1-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](12[89]|1[3-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Mobile Safari.+OPR\/([89]\d|\d{3,})\.\d+\.\d+|Android.+Firefox\/(12[7-9]|1[3-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(12[89]|1[3-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+(UC? ?Browser|UCWEB|U3)[ /]?(15\.([5-9]|\d{2,})|(1[6-9]|[2-9]\d|\d{3,})\.\d+)\.\d+|SamsungBrowser\/(5\.\d+|([6-9]|\d{2,})\.\d+)|Android.+MQ{2}Browser\/(14(\.(9|\d{2,})|)|(1[5-9]|[2-9]\d|\d{3,})(\.\d+|))(\.\d+|)|K[Aa][Ii]OS\/(3\.\d+|([4-9]|\d{2,})\.\d+)(\.\d+|)/}).modern,t=o.legacy,s=navigator.userAgent,i.test(s)?"modern":(t.test(s),"legacy"));window.Shopify=window.Shopify||{};var c=window.Shopify;c.analytics=c.analytics||{};var u=c.analytics;u.replayQueue=[],u.publish=function(d,e,r){return u.replayQueue.push([d,e,r]),!0};try{self.performance.mark("wpm:start")}catch(d){}var h=[r,"/wpm","/b",n,l.substring(0,1),".js"].join("");!function(d){var e=d.src,r=d.async,a=void 0===r||r,n=d.onload,o=d.onerror,i=document.createElement("script"),t=document.head,s=document.body;i.async=a,i.src=e,n&&i.addEventListener("load",n),o&&i.addEventListener("error",o),t?t.appendChild(i):s?s.appendChild(i):console.error("Did not find a head or body element to append the script")}({src:h,async:!0,onload:function(){var r=window.webPixelsManager.init(d);e(r);var a=window.Shopify.analytics;a.replayQueue.forEach((function(d){var e=d[0],a=d[1],n=d[2];r.publishCustomEvent(e,a,n)})),a.replayQueue=[],a.publish=r.publishCustomEvent,a.visitor=r.visitor},onerror:function(){var e=d.storefrontBaseUrl.replace(/\/$/,""),r="".concat(e,"/.well-known/shopify/monorail/unstable/produce_batch"),n=JSON.stringify({metadata:{event_sent_at_ms:(new Date).getTime()},events:[{schema_id:"web_pixels_manager_load/3.1",payload:{version:a||"latest",bundle_target:l,page_url:self.location.href,status:"failed",surface:d.surface,error_msg:"".concat(h," has failed to load")},metadata:{event_created_at_ms:(new Date).getTime()}}]});try{if(self.navigator.sendBeacon.bind(self.navigator)(r,n))return!0}catch(d){}var o=new XMLHttpRequest;try{return o.open("POST",r,!0),o.setRequestHeader("Content-Type","text/plain"),o.send(n),!0}catch(d){console&&console.warn&&console.warn("[Web Pixels Manager] Got an unhandled error while logging a load error.")}return!1}})})({shopId: 55913644166,storefrontBaseUrl: "https://kookai.fr",extensionsBaseUrl: "https://extensions.shopifycdn.com/cdn/shopifycloud/web-pixels-manager",surface: "storefront-renderer",enabledBetaFlags: ["5de24938","d04dc9f4","4735909c"],webPixelsConfigList: [{"id":"349601926","configuration":"{\"shopId\":\"kookaiamhmA8259D8F\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"ea38194678c1c7092fd8d72e70ea5ea5","type":"APP","apiClientId":5610109,"privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"]},{"id":"310476934","configuration":"{\"config\":\"{\\\"pixel_id\\\":\\\"G-LR7WNVS7JQ\\\",\\\"target_country\\\":\\\"FR\\\",\\\"gtag_events\\\":[{\\\"type\\\":\\\"search\\\",\\\"action_label\\\":[\\\"G-LR7WNVS7JQ\\\",\\\"AW-11120616110\\\/1x6oCLifi7AZEK7F3LYp\\\"]},{\\\"type\\\":\\\"begin_checkout\\\",\\\"action_label\\\":[\\\"G-LR7WNVS7JQ\\\",\\\"AW-11120616110\\\/9m7mCL6fi7AZEK7F3LYp\\\"]},{\\\"type\\\":\\\"view_item\\\",\\\"action_label\\\":[\\\"G-LR7WNVS7JQ\\\",\\\"AW-11120616110\\\/lN4qCLWfi7AZEK7F3LYp\\\",\\\"MC-7GGLCMXZ7Y\\\"]},{\\\"type\\\":\\\"purchase\\\",\\\"action_label\\\":[\\\"G-LR7WNVS7JQ\\\",\\\"AW-11120616110\\\/6ivoCK-fi7AZEK7F3LYp\\\",\\\"MC-7GGLCMXZ7Y\\\"]},{\\\"type\\\":\\\"page_view\\\",\\\"action_label\\\":[\\\"G-LR7WNVS7JQ\\\",\\\"AW-11120616110\\\/fhA9CLKfi7AZEK7F3LYp\\\",\\\"MC-7GGLCMXZ7Y\\\"]},{\\\"type\\\":\\\"add_payment_info\\\",\\\"action_label\\\":[\\\"G-LR7WNVS7JQ\\\",\\\"AW-11120616110\\\/2g7ZCMGfi7AZEK7F3LYp\\\"]},{\\\"type\\\":\\\"add_to_cart\\\",\\\"action_label\\\":[\\\"G-LR7WNVS7JQ\\\",\\\"AW-11120616110\\\/6ZuDCLufi7AZEK7F3LYp\\\"]}],\\\"enable_monitoring_mode\\\":false}\"}","eventPayloadVersion":"v1","runtimeContext":"OPEN","scriptVersion":"a46b87f88a4ff97a9490f9aa4799ba7b","type":"APP","apiClientId":1780363,"privacyPurposes":[]},{"id":"301039750","configuration":"{\"pixelCode\":\"CPHCQLRC77UABR90VAAG\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"22e92c2ad45662f435e4801458fb78cc","type":"APP","apiClientId":4383523,"privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"]},{"id":"181010566","configuration":"{\"pixel_id\":\"1419179662098843\",\"pixel_type\":\"facebook_pixel\",\"metaapp_system_user_token\":\"-\"}","eventPayloadVersion":"v1","runtimeContext":"OPEN","scriptVersion":"8b3843af2d71780cfb83fdde884ce168","type":"APP","apiClientId":2329312,"privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"]},{"id":"110788742","configuration":"{\"name\":\"Kleep tracking\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"cc257e42d938e7bad7db9d077adf80bd","type":"APP","apiClientId":128241926145,"privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"]},{"id":"35520646","configuration":"{\"hash\":\"NBpkHZf9aC\",\"ingestion_url\":\"https:\/\/activity.wisepops.com\",\"goal_hash\":\"9sE00qiWeevPH0WOUMxuJRDdnmA7hNRQ\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"b0d9aca365b6ec0785f1f491728cbde0","type":"APP","apiClientId":461977,"privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"]},{"id":"shopify-app-pixel","configuration":"{}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"0220","apiClientId":"shopify-pixel","type":"APP","privacyPurposes":["ANALYTICS","MARKETING"]},{"id":"shopify-custom-pixel","eventPayloadVersion":"v1","runtimeContext":"LAX","scriptVersion":"0220","apiClientId":"shopify-pixel","type":"CUSTOM","privacyPurposes":["ANALYTICS","MARKETING"]}],isMerchantRequest: false,initData: {"shop":{"name":"kookai","paymentSettings":{"currencyCode":"EUR"},"myshopifyDomain":"kookai-amh.myshopify.com","countryCode":"FR","storefrontUrl":"https:\/\/kookai.fr"},"customer":null,"cart":null,"checkout":null,"productVariants":[],"purchasingCompany":null},},function pageEvents(webPixelsManagerAPI) {webPixelsManagerAPI.publish("page_viewed", {});},"https://kookai.fr/cdn","c603cad85eb05b83e6e5c704430c32b4973aa77f","a83c77b0w327a473fp4badfd8bm97b5fd29",);</script>  <script>window.ShopifyAnalytics = window.ShopifyAnalytics || {};
@@ -3483,64 +3483,105 @@ Effacer</button>
 
 
   
-  <div id="shopify-block-3058753826952816051" class="shopify-block shopify-app-block">
-<!-- <script type="module" src="/assets/iab_module.js"></script> -->
-<script type="text/javascript">
-  let settings = {"main_button_color":"#d9eeef","secondary_color":"#dee6e6","text_color":"#212326","button_text_color":"#000000","paint_color":"#d9eeef","logo":"\/\/kookai.fr\/cdn\/shop\/files\/favicon-kookai.jpg?v=1709714610","border_radius":4,"position":"left","paddingbot":10,"paddingside":10,"font_overwrite":true,"header_font":{"error":"json not allowed for this object"},"header_font_size":24,"font_text":{"error":"json not allowed for this object"},"font_text_size":15,"timeout":5,"hide":false,"force":false,"refuse_button":true,"link":null,"debug":false};
-</script>
-<e-kookie id="ekookie" data-alt_image=""><div class='ek-layer'></div></e-kookie>
-<style>
-  
-  
+  <div id="shopify-block-10986913126602382387" class="shopify-block shopify-app-block">
 
 
-  
-     @font-face {
-  font-family: Abel;
-  font-weight: 400;
-  font-style: normal;
-  src: url("//kookai.fr/cdn/fonts/abel/abel_n4.2b4bc5e26465e4423e1674428c5593b0074dff23.woff2?h1=a29va2FpLWFtaC5hY2NvdW50Lm15c2hvcGlmeS5jb20&h2=a29va2FpLmZy&h3=YWNjb3VudC5rb29rYWkuZnI&hmac=b9c745085260a69c3b0793e644a1c3761e5cc8cc362404172eb048d41f8252ae") format("woff2"),
-       url("//kookai.fr/cdn/fonts/abel/abel_n4.0ee737a0dba62c4db0b41249f4fa9e628bc93fa3.woff?h1=a29va2FpLWFtaC5hY2NvdW50Lm15c2hvcGlmeS5jb20&h2=a29va2FpLmZy&h3=YWNjb3VudC5rb29rYWkuZnI&hmac=9aece7a4dcb2a344f819b030ce8d797ab021f3558173d90adb2e95f76c427a20") format("woff");
-}
 
-     @font-face {
-  font-family: "Avenir Next";
-  font-weight: 400;
-  font-style: normal;
-  src: url("//kookai.fr/cdn/fonts/avenir_next/avenirnext_n4.7fd0287595be20cd5a683102bf49d073b6abf144.woff2?h1=a29va2FpLWFtaC5hY2NvdW50Lm15c2hvcGlmeS5jb20&h2=a29va2FpLmZy&h3=YWNjb3VudC5rb29rYWkuZnI&hmac=cc163be9aa6812b09c276d7c4a0cc1703858b511c2debd6341627a2858ba77b5") format("woff2"),
-       url("//kookai.fr/cdn/fonts/avenir_next/avenirnext_n4.a26a334a0852627a5f36b195112385b0cd700077.woff?h1=a29va2FpLWFtaC5hY2NvdW50Lm15c2hvcGlmeS5jb20&h2=a29va2FpLmZy&h3=YWNjb3VudC5rb29rYWkuZnI&hmac=28b7ef85513912b8ede3a4e771e8b6cd2691cad20046bc235cb95fc32450aee7") format("woff");
-}
 
-  
-</style>
+<script>
+  window.KleepSDK = {};
+  window.KleepSDK.debugEnabled = false;
+  const kleepToggleDebug = () => {
+    if (typeof window.KleepSDK.debugEnabled === 'undefined') {
+      console.error("debugEnabled variable is not defined on the window KleepSDK object.");
+      return;
+    }
+    window.KleepSDK.debugEnabled = !window.KleepSDK.debugEnabled;
+    console.log("Debug is on: ", window.KleepSDK.debugEnabled)
+  };
+  window.KleepSDK.toggleDebug = kleepToggleDebug;
+  window.KleepSDK.hooksForStore = {};
+  window.KleepSDK.shopHost = 'kookai.fr';
+  window.KleepSDK.kleep_simulate_atc_click = 'true';
+  window.KleepSDK.kleep_preselect_variants = 'false';
+  window.KleepSDK.kleep_preselect_delay = '1000';
+  window.KleepSDK.origin = 'https://kookai.fr';
+  const updateKleepSDKSettings = (settings = {}) => {
+    const KleepSDK = window.KleepSDK;
 
-<style data-shopify>
+    if (!KleepSDK) {
+      console.error("KleepSDK is not defined on the window object.");
+      return;
+    }
 
-  :root {
-    --ek-main-button-color: #d9eeef;
-    --ek-secondary-color: #dee6e6;
-    --ek-paint-color: #d9eeef;
-    --ek-text-color: #212326;
-    --ek-button-text-color: #000000;
-    --ek-border-radius: 4px;
-    --ek-paddingbot: 10px;
-    --ek-paddingside: 10px;
-    --ek-position: left;
-    --ek-hide: false;
-    --ek-header_font: Abel;
-    --ek-header_font_size: 24px;
-    --ek-font_text: "Avenir Next";
-    --ek-font_text_size: 15px;
-    --ek-font_overwrite: true;
-    --ek-image-button: url('https://cdn.shopify.com/s/files/1/0314/8539/4988/files/cookie-small.png?v=1668520555');
+    const validKeys = new Set(['kleep_simulate_atc_click', 'kleep_preselect_variants', 'kleep_preselect_delay', 'origin']);
+
+    for (const [key, value] of Object.entries(settings)) {
+      if (validKeys.has(key)) {
+        KleepSDK[key] = value;
+        console.log(`Successfully updated: ${key} = ${value}`);
+      } else {
+        console.warn(`Invalid property: ${key}. Allowed keys: ${[...validKeys].join(', ')}`);
+      }
+    }
   }
-</style>
+  window.KleepSDK.updateKleepSDKSettings = updateKleepSDKSettings;
+</script>
+
+<script async src="https://cdn.shopify.com/extensions/d1370dba-b91a-4d48-943f-5c4789389906/kleep-kookai-60/assets/kleep-constants.js"></script>
+
+<div
+  class="kleep-wrapper"
+>
+  <iframe
+    data-iframe-url="https://modal.kleep.ai"
+    class="kleep-iframe"
+    data-categories="unclassified"
+    data-src="https://modal.kleep.ai?domain=kookai.fr&product_id=&customer_id=&lang=fr"
+    src="https://modal.kleep.ai?domain=kookai.fr&product_id=&customer_id=&lang=fr"
+    title="Kleep.ai"
+  ></iframe>
+</div>
 
 
-<!-- shopify extension push #F2EFEA #FC7753 #66D7D1 #403D58 #DBD56E-->
-<!-- d8e2dc ffe5d9 #ffcad4 f4acb7-->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      localStorage.removeItem('posthog_api_key');
+    });
+  </script>
 
 
+
+
+
+
+
+<script defer src="https://cdn.shopify.com/extensions/d1370dba-b91a-4d48-943f-5c4789389906/kleep-kookai-60/assets/kleep-add-to-cart-func.js"></script>
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      localStorage.removeItem('kleep_cid');
+    });
+  </script>
+
+
+
+</div><div id="shopify-block-15037621279992766403" class="shopify-block shopify-app-block">
+
+
+</div><div id="shopify-block-12526071353035850722" class="shopify-block shopify-app-block">
+  <script defer src="https://app.backinstock.org/widget/85996_1724504617.js?category=bis&v=6"></script>
+
+
+<script id="back-in-stock-helper-embedded">
+  // Back in Stock: Customer Alerts helper script
+  var _BISConfig = _BISConfig || {};
+
+  
+
+  
+</script>
 
 
 </div><div id="shopify-block-15489274632472357321" class="shopify-block shopify-app-block"><!-- BEGIN app snippet: socloz --><script>
@@ -3641,105 +3682,64 @@ Effacer</button>
   })();
 </script>
 <!-- END app snippet -->
-</div><div id="shopify-block-10986913126602382387" class="shopify-block shopify-app-block">
+</div><div id="shopify-block-3058753826952816051" class="shopify-block shopify-app-block">
+<!-- <script type="module" src="/assets/iab_module.js"></script> -->
+<script type="text/javascript">
+  let settings = {"main_button_color":"#d9eeef","secondary_color":"#dee6e6","text_color":"#212326","button_text_color":"#000000","paint_color":"#d9eeef","logo":"\/\/kookai.fr\/cdn\/shop\/files\/favicon-kookai.jpg?v=1709714610","border_radius":4,"position":"left","paddingbot":10,"paddingside":10,"font_overwrite":true,"header_font":{"error":"json not allowed for this object"},"header_font_size":24,"font_text":{"error":"json not allowed for this object"},"font_text_size":15,"timeout":5,"hide":false,"force":false,"refuse_button":true,"link":null,"debug":false};
+</script>
+<e-kookie id="ekookie" data-alt_image=""><div class='ek-layer'></div></e-kookie>
+<style>
+  
+  
 
 
+  
+     @font-face {
+  font-family: Abel;
+  font-weight: 400;
+  font-style: normal;
+  src: url("//kookai.fr/cdn/fonts/abel/abel_n4.2b4bc5e26465e4423e1674428c5593b0074dff23.woff2?h1=a29va2FpLWFtaC5hY2NvdW50Lm15c2hvcGlmeS5jb20&h2=a29va2FpLmZy&h3=YWNjb3VudC5rb29rYWkuZnI&hmac=b9c745085260a69c3b0793e644a1c3761e5cc8cc362404172eb048d41f8252ae") format("woff2"),
+       url("//kookai.fr/cdn/fonts/abel/abel_n4.0ee737a0dba62c4db0b41249f4fa9e628bc93fa3.woff?h1=a29va2FpLWFtaC5hY2NvdW50Lm15c2hvcGlmeS5jb20&h2=a29va2FpLmZy&h3=YWNjb3VudC5rb29rYWkuZnI&hmac=9aece7a4dcb2a344f819b030ce8d797ab021f3558173d90adb2e95f76c427a20") format("woff");
+}
 
+     @font-face {
+  font-family: "Avenir Next";
+  font-weight: 400;
+  font-style: normal;
+  src: url("//kookai.fr/cdn/fonts/avenir_next/avenirnext_n4.7fd0287595be20cd5a683102bf49d073b6abf144.woff2?h1=a29va2FpLWFtaC5hY2NvdW50Lm15c2hvcGlmeS5jb20&h2=a29va2FpLmZy&h3=YWNjb3VudC5rb29rYWkuZnI&hmac=cc163be9aa6812b09c276d7c4a0cc1703858b511c2debd6341627a2858ba77b5") format("woff2"),
+       url("//kookai.fr/cdn/fonts/avenir_next/avenirnext_n4.a26a334a0852627a5f36b195112385b0cd700077.woff?h1=a29va2FpLWFtaC5hY2NvdW50Lm15c2hvcGlmeS5jb20&h2=a29va2FpLmZy&h3=YWNjb3VudC5rb29rYWkuZnI&hmac=28b7ef85513912b8ede3a4e771e8b6cd2691cad20046bc235cb95fc32450aee7") format("woff");
+}
 
-<script>
-  window.KleepSDK = {};
-  window.KleepSDK.debugEnabled = false;
-  const kleepToggleDebug = () => {
-    if (typeof window.KleepSDK.debugEnabled === 'undefined') {
-      console.error("debugEnabled variable is not defined on the window KleepSDK object.");
-      return;
-    }
-    window.KleepSDK.debugEnabled = !window.KleepSDK.debugEnabled;
-    console.log("Debug is on: ", window.KleepSDK.debugEnabled)
-  };
-  window.KleepSDK.toggleDebug = kleepToggleDebug;
-  window.KleepSDK.hooksForStore = {};
-  window.KleepSDK.shopHost = 'kookai.fr';
-  window.KleepSDK.kleep_simulate_atc_click = 'true';
-  window.KleepSDK.kleep_preselect_variants = 'false';
-  window.KleepSDK.kleep_preselect_delay = '1000';
-  window.KleepSDK.origin = 'https://kookai.fr';
-  const updateKleepSDKSettings = (settings = {}) => {
-    const KleepSDK = window.KleepSDK;
+  
+</style>
 
-    if (!KleepSDK) {
-      console.error("KleepSDK is not defined on the window object.");
-      return;
-    }
+<style data-shopify>
 
-    const validKeys = new Set(['kleep_simulate_atc_click', 'kleep_preselect_variants', 'kleep_preselect_delay', 'origin']);
-
-    for (const [key, value] of Object.entries(settings)) {
-      if (validKeys.has(key)) {
-        KleepSDK[key] = value;
-        console.log(`Successfully updated: ${key} = ${value}`);
-      } else {
-        console.warn(`Invalid property: ${key}. Allowed keys: ${[...validKeys].join(', ')}`);
-      }
-    }
+  :root {
+    --ek-main-button-color: #d9eeef;
+    --ek-secondary-color: #dee6e6;
+    --ek-paint-color: #d9eeef;
+    --ek-text-color: #212326;
+    --ek-button-text-color: #000000;
+    --ek-border-radius: 4px;
+    --ek-paddingbot: 10px;
+    --ek-paddingside: 10px;
+    --ek-position: left;
+    --ek-hide: false;
+    --ek-header_font: Abel;
+    --ek-header_font_size: 24px;
+    --ek-font_text: "Avenir Next";
+    --ek-font_text_size: 15px;
+    --ek-font_overwrite: true;
+    --ek-image-button: url('https://cdn.shopify.com/s/files/1/0314/8539/4988/files/cookie-small.png?v=1668520555');
   }
-  window.KleepSDK.updateKleepSDKSettings = updateKleepSDKSettings;
-</script>
-
-<script async src="https://cdn.shopify.com/extensions/d1370dba-b91a-4d48-943f-5c4789389906/kleep-kookai-60/assets/kleep-constants.js"></script>
-
-<div
-  class="kleep-wrapper"
->
-  <iframe
-    data-iframe-url="https://modal.kleep.ai"
-    class="kleep-iframe"
-    data-categories="unclassified"
-    data-src="https://modal.kleep.ai?domain=kookai.fr&product_id=&customer_id=&lang=fr"
-    src="https://modal.kleep.ai?domain=kookai.fr&product_id=&customer_id=&lang=fr"
-    title="Kleep.ai"
-  ></iframe>
-</div>
+</style>
 
 
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      localStorage.removeItem('posthog_api_key');
-    });
-  </script>
+<!-- shopify extension push #F2EFEA #FC7753 #66D7D1 #403D58 #DBD56E-->
+<!-- d8e2dc ffe5d9 #ffcad4 f4acb7-->
 
 
-
-
-
-
-
-<script defer src="https://cdn.shopify.com/extensions/d1370dba-b91a-4d48-943f-5c4789389906/kleep-kookai-60/assets/kleep-add-to-cart-func.js"></script>
-
-
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      localStorage.removeItem('kleep_cid');
-    });
-  </script>
-
-
-
-</div><div id="shopify-block-12526071353035850722" class="shopify-block shopify-app-block">
-  <script defer src="https://app.backinstock.org/widget/85996_1724504617.js?category=bis&v=6"></script>
-
-
-<script id="back-in-stock-helper-embedded">
-  // Back in Stock: Customer Alerts helper script
-  var _BISConfig = _BISConfig || {};
-
-  
-
-  
-</script>
-
-
-</div><div id="shopify-block-15037621279992766403" class="shopify-block shopify-app-block">
 
 
 </div></body>
