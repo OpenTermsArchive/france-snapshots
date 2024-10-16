@@ -202,7 +202,7 @@ Shopify.routes.root = "/";</script>
     window.addEventListener('load', asyncLoad, false);
   }
 })();</script>
-<script id="__st">var __st={"a":65445527736,"offset":7200,"reqid":"94efa627-da9e-42c5-849d-79364fd3a851-1729082255","pageurl":"www.jennyfer.com\/policies\/terms-of-sale","u":"78277f4c89c9"};</script>
+<script id="__st">var __st={"a":65445527736,"offset":7200,"reqid":"5187d6db-78cd-4759-8dff-bdb747d0978e-1729103877","pageurl":"www.jennyfer.com\/policies\/terms-of-sale","u":"93f05e32ba68"};</script>
 <script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
 <script id="captcha-bootstrap">!function(){'use strict';const t='contact',e='account',n='new_comment',o=[[t,t],['blogs',n],['comments',n],[t,'customer']],c=[[e,'customer_login'],[e,'guest_login'],[e,'recover_customer_password'],[e,'create_customer']],r=t=>t.map((([t,e])=>`form[action*='/${t}']:not([data-nocaptcha='true']) input[name='form_type'][value='${e}']`)).join(',');function s(t,e,n=!1){try{const o=window.sessionStorage;for(const[n,c]of Object.entries(JSON.parse(o.getItem(e))))t.elements[n]&&(t.elements[n].value=c);n&&o.removeItem(e)}catch{}}const a='form_key',i=['recaptcha-v3-token','g-recaptcha-response','h-captcha-response','password'],u=()=>{try{return window.sessionStorage}catch{return}},m=t=>t.elements[a],f='form_type',d='cptcha';function p(t){t.dataset[d]=!0}const l=window,h=l.document,_='Shopify',y='ce_forms',E='captcha';let v=!1;((t,e)=>{const n=(g='f06e6c50-85a8-45c8-87d0-21a2b65856fe','https://cdn.shopify.com/shopifycloud/storefront-forms-hcaptcha/ce_storefront_forms_captcha_hcaptcha.v1.4.0.iife.js',T={infoText:'Protégé par hCaptcha',privacyText:'Confidentialité',termsText:'Conditions'},(t,e,n)=>{const o=l[_][y],c=o.bindForm;if(c)return c(t,g,e,T).then(n);o.q.push([[t,g,e,T],n]),v||(h.body.append(Object.assign(h.createElement('script'),{id:'captcha-provider',async:!0,src:'https://cdn.shopify.com/shopifycloud/storefront-forms-hcaptcha/ce_storefront_forms_captcha_hcaptcha.v1.4.0.iife.js'})),v=!0)});var g,T;l[_]=l[_]||{},l[_][y]=l[_][y]||{},l[_][y].q=[],l[_][E]=l[_][E]||{},l[_][E].protect=function(t,e){n(t,void 0,e),p(t)},Object.freeze(l[_][E]),function(t,e,n,l,h,_){const[y,E,v,g]=function(t,e,n){const s=e?o:[],a=t?c:[],i=[...s,...a],u=[...o],m=r(i),f=r(s),d=n&&r(i.filter((([t,e])=>n.includes(e)))),p=r(u),l=t=>()=>t?[...document.querySelectorAll(t)].map((t=>t.form)):[];return[l(m),l(f),l(d),l(p)]}(l,h,_),T=t=>{const e=t.target;return e instanceof HTMLFormElement?e:e&&e.form},S=t=>y().includes(t);t.addEventListener('submit',(t=>{const e=T(t);if(!e)return;const n=S(e)&&!e.dataset.hcaptchaBound&&!e.dataset.recaptchaBound,o=m(e),c=g().includes(e)&&(!o||!o.value);(n||c)&&t.preventDefault(),c&&!n&&(function(t){try{if(!u())return;!function(t){const e=u();if(!e)return;const n=m(t);if(!n)return;const o=n.value;o&&e.removeItem(o)}(t);const e=Array.from(Array(32),(()=>Math.random().toString(36)[2])).join('');!function(t,e){m(t)||t.append(Object.assign(document.createElement('input'),{type:'hidden',name:a})),t.elements[a].value=e}(t,e),function(t,e){const n=u();if(!n)return;const o=[...t.querySelectorAll('input[type="password"]')].map((({name:t})=>t)),c=[...i,...o],r={};for(const[s,a]of new FormData(t).entries())c.includes(s)||(r[s]=a);n.setItem(e,JSON.stringify(r))}(t,e)}catch(e){console.error('failed to persist form',e)}}(e),e.submit())}));const w=(t,e)=>{t&&!t.dataset[d]&&(n(t,e.some((e=>e===t))),p(t))};for(const o of['focusin','change'])t.addEventListener(o,(t=>{const e=T(t);S(e)&&w(e,E())}));const A=e.get('form_key'),b=e.get(f),I=A&&b;t.addEventListener('DOMContentLoaded',(()=>{const t=E();if(I)for(const e of t)e.elements[f].value===b&&s(e,A);[...new Set([...v(),...y().filter((t=>'true'===t.dataset.shopifyCaptcha))])].forEach((e=>w(e,t)))}))}(h,new URLSearchParams(l.location.search),n,!0,!0,['guest_login'])})()}();</script>
 <script id="captcha-terms">!function(){'use strict';const e=/recaptcha|reCATPCHA|google|Googl/gi,t=o=>{let c=o.firstChild;for(;c;)c.nodeType===Node.TEXT_NODE?c.textContent=c.textContent.replace(e,'hCaptcha'):c.nodeType===Node.ELEMENT_NODE&&t(c),c=c.nextSibling};document.addEventListener('DOMContentLoaded',(()=>{(e=>{const o=document.querySelector('p[data-spam-detection-disclaimer]');if(o){for(const e of['terms','privacy']){const t=o.querySelector(`a[href*='https://policies.google.com/${e}']`);t&&(t.href=`https://hcaptcha.com/${e}`)}t(o)}})()}))}();</script>
@@ -819,7 +819,55 @@ Shopify.routes.root = "/";</script>
         }
     </style>
 </noscript>
-<!-- BEGIN app block: shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8 --><!-- Start of Judge.me Core -->
+<!-- BEGIN app block: shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507 -->
+
+
+
+
+
+
+
+
+
+
+
+
+  <script async src="https://static.klaviyo.com/onsite/js/Y8kXUt/klaviyo.js?company_id=Y8kXUt"></script>
+  <script>!function(){if(!window.klaviyo){window._klOnsite=window._klOnsite||[];try{window.klaviyo=new Proxy({},{get:function(n,i){return"push"===i?function(){var n;(n=window._klOnsite).push.apply(n,arguments)}:function(){for(var n=arguments.length,o=new Array(n),w=0;w<n;w++)o[w]=arguments[w];var t="function"==typeof o[o.length-1]?o.pop():void 0,e=new Promise((function(n){window._klOnsite.push([i].concat(o,[function(i){t&&t(i),n(i)}]))}));return e}}})}catch(n){window.klaviyo=window.klaviyo||[],window.klaviyo.push=function(){var n;(n=window._klOnsite).push.apply(n,arguments)}}}}();</script>
+
+  
+
+
+
+
+  <script>
+    window.klaviyoReviewsProductDesignMode = false
+  </script>
+
+
+
+<!-- END app app block --><!-- BEGIN app block: shopify://apps/sc-easy-redirects/blocks/app/be3f8dbd-5d43-46b4-ba43-2d65046054c2 -->
+    <!-- common for all pages -->
+    
+    
+        <script src="https://cdn.shopify.com/extensions/264f3360-3201-4ab7-9087-2c63466c86a3/sc-easy-redirects-5/assets/esc-redirect-app-live-feature.js" async></script>
+    
+
+
+
+
+<!-- END app app block --><!-- BEGIN app block: shopify://apps/gorgias-live-chat-helpdesk/blocks/gorgias/a66db725-7b96-4e3f-916e-6c8e6f87aaaa -->
+<script defer data-gorgias-loader-chat src="https://config.gorgias.chat/bundle-loader/shopify/jennyfer-eu.myshopify.com"></script>
+
+
+<script defer data-gorgias-loader-convert  src="https://bundle.dyn-rev.app/loader.js?shop_name=jennyfer-eu"></script>
+
+
+<script defer data-gorgias-loader-mailto-replace  src="https://config.gorgias.help/api/contact-forms/replace-mailto-script.js?shopName=jennyfer-eu"></script>
+
+
+
+<!-- END app app block --><!-- BEGIN app block: shopify://apps/judge-me-reviews/blocks/judgeme_core/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8 --><!-- Start of Judge.me Core -->
 <link rel="dns-prefetch" href="https://cdn.judge.me">
 <script data-cfasync='false' class='jdgm-settings-script'>window.jdgmSettings={"pagination":5,"disable_web_reviews":false,"badge_no_review_text":"Aucun avis","badge_n_reviews_text":"{{ n }} avis/avis","hide_badge_preview_if_no_reviews":true,"badge_hide_text":false,"enforce_center_preview_badge":false,"widget_title":"Avis des clients","widget_open_form_text":"Écrire un avis","widget_close_form_text":"Annuler l'avis","widget_refresh_page_text":"Rafraîchir la page","widget_summary_text":"Basé sur {{ number_of_reviews }} avis","widget_no_review_text":"Aucun avis pour le moment","widget_name_field_text":"nom","widget_verified_name_field_text":"Nom vérifié (public)","widget_name_placeholder_text":"Entrez votre nom (public)","widget_required_field_error_text":"Ce champ est requis.","widget_email_field_text":"Email","widget_verified_email_field_text":"Email vérifié (privé, ne peut être modifié)","widget_email_placeholder_text":"Entrez votre email (privé)","widget_email_field_error_text":"Veuillez saisir une adresse email valide.","widget_rating_field_text":"Note","widget_review_title_field_text":"Titre de l'avis","widget_review_title_placeholder_text":"Donnez un titre à votre avis","widget_review_body_field_text":"Votre avis","widget_review_body_placeholder_text":"Écrivez vos commentaires ici","widget_pictures_field_text":"Image (facultatif)","widget_submit_review_text":"Soumettre l'Avis","widget_submit_verified_review_text":"Soumettre un avis vérifié","widget_submit_success_msg_with_auto_publish":"Nous vous remercions! Veuillez actualiser la page dans quelques instants pour voir votre avis. Vous pouvez supprimer ou modifier votre avis en vous connectant à \u003ca href='https://judge.me/login' target='_blank' rel='nofollow noopener'\u003eJudge.me\u003c/a\u003e","widget_submit_success_msg_no_auto_publish":"Nous vous remercions! Votre avis sera publié dès qu'il est approuvé par l'administrateur de la boutique. Vous pouvez supprimer ou modifier votre avis en vous connectant à \u003ca href='https://judge.me/login' target='_blank' rel='nofollow noopener'\u003eJudge.me\u003c/a\u003e","widget_show_default_reviews_out_of_total_text":"Affichage de {{ n_reviews_shown }} avis sur {{ n_reviews }}.","widget_show_all_link_text":"Afficher tout","widget_show_less_link_text":"Afficher moins","widget_author_said_text":"{{ reviewer_name }} a dit :","widget_days_text":"Il y a {{ n }} jours","widget_weeks_text":"Il y a {{ n }} semaine/semaine","widget_months_text":"Il y a {{ n }} mois/mois","widget_years_text":"Il y a {{ n }} année/années","widget_yesterday_text":"Hier","widget_today_text":"Aujourd'hui","widget_replied_text":"\u003e\u003e {{ shop_name }} a répondu :","widget_read_more_text":"Lire la suite","widget_rating_filter_see_all_text":"Voir tous les avis","widget_sorting_most_recent_text":"Le plus récent","widget_sorting_highest_rating_text":"Note la plus élevée","widget_sorting_lowest_rating_text":"Note la plus basse","widget_sorting_with_pictures_text":"Avec images seulement","widget_sorting_most_helpful_text":"Le plus utile","widget_open_question_form_text":"poser une question","widget_reviews_subtab_text":"Avis","widget_questions_subtab_text":"Questions","widget_question_label_text":"Question","widget_answer_label_text":"Réponse","widget_question_placeholder_text":"Écrivez votre question ici","widget_submit_question_text":"Soumettre une question","widget_question_submit_success_text":"Merci de votre question ! Nous vous aviserons une fois qu'il aura obtenu une réponse.","verified_badge_text":"Vérifié","verified_badge_placement":"left-of-reviewer-name","widget_hide_border":false,"widget_social_share":false,"all_reviews_include_out_of_store_products":true,"all_reviews_out_of_store_text":"(hors boutique)","all_reviews_product_name_prefix_text":"sur","enable_review_pictures":true,"review_date_format":"dd/mm/yyyy","widget_product_reviews_subtab_text":"Avis sur Produits","widget_shop_reviews_subtab_text":"Avis sur Boutique","widget_write_a_store_review_text":"Écrire un avis sur la boutique","widget_sorting_pictures_first_text":"Photos en Premier","floating_tab_button_name":"★ Avis Judge.me","floating_tab_title":"Laissez nos clients parler de nous","floating_tab_url":"","floating_tab_url_enabled":false,"all_reviews_text_badge_text":"Les clients nous évaluent {{ shop.metafields.judgeme.all_reviews_rating | round: 1 }}/5 basé sur {{ shop.metafields.judgeme.all_reviews_count }} avis.","all_reviews_text_badge_text_branded_style":"{{ shop.metafields.judgeme.all_reviews_rating | round: 1 }} sur 5 étoiles basé sur {{ shop.metafields.judgeme.all_reviews_count }} avis","all_reviews_text_badge_url":"","all_reviews_text_style":"branded","featured_carousel_title":"Laissez nos clients parler de nous","featured_carousel_count_text":"d'après {{ n }} avis","featured_carousel_url":"","verified_count_badge_style":"branded","verified_count_badge_url":"","picture_reminder_submit_button":"Télécharger des photos","widget_sorting_videos_first_text":"Vidéos en Premier","widget_review_pending_text":"en attente","remove_microdata_snippet":false,"preview_badge_no_question_text":"Aucune question","preview_badge_n_question_text":"{{ number_of_questions }} question/questions","remove_judgeme_branding":true,"widget_search_bar_placeholder":"Rechercher des avis","widget_sorting_verified_only_text":"Vérifiés seulement","featured_carousel_verified_badge_enable":true,"featured_carousel_more_reviews_button_text":"Read more reviews","featured_carousel_view_product_button_text":"Voir le produit","all_reviews_page_load_more_text":"Charger plus d'avis","widget_advanced_speed_features":5,"widget_public_name_text":"affiché publiquement comme","default_reviewer_name_has_non_latin":true,"widget_reviewer_anonymous":"Anonyme","medals_widget_title":"Médailles d'Avis Judge.me","widget_invalid_yt_video_url_error_text":"Pas une URL de vidéo YouTube","widget_max_length_field_error_text":"Veuillez ne pas saisir plus de {0} caractères.","widget_verified_by_shop_text":"Vérifié par Shop","widget_load_with_code_splitting":true,"widget_ugc_title":"Fait par nous, partagé par vous","widget_ugc_subtitle":"Taguez-nous pour voir votre photo apparaître sur notre page","widget_ugc_primary_button_text":"Acheter maintenant","widget_ugc_secondary_button_text":"Charger plus","widget_ugc_reviews_button_text":"Voir les avis","widget_primary_color":"#000000","widget_summary_average_rating_text":"{{ average_rating }} sur 5","widget_media_grid_title":"Photos et vidéos des clients","widget_media_grid_see_more_text":"Voir plus","widget_verified_by_judgeme_text":"Vérifié par Judge.me","widget_verified_by_judgeme_text_in_store_medals":"Verified by Judge.me","widget_media_field_exceed_quantity_message":"Désolé, nous ne pouvons accepter que {{ max_media }} pour un seul avis.","widget_media_field_exceed_limit_message":"{{ file_name }} est trop volumineux, veuillez sélectionner un {{ media_type }} inférieur à {{ size_limit }} Mo.","widget_review_submitted_text":"Avis soumis !","widget_question_submitted_text":"Question soumise !","widget_close_form_text_question":"Annuler","widget_write_your_answer_here_text":"Écrivez votre réponse ici","widget_show_collected_by_judgeme":true,"widget_collected_by_judgeme_text":"collecté par Judge.me","widget_pagination_type":"load_more","widget_load_more_text":"Charger plus","widget_full_review_text":"Revue complète","widget_read_more_reviews_text":"Lire plus d\u0026#39;avis","widget_read_questions_text":"Lire les questions","widget_questions_and_answers_text":"questions et réponses","widget_verified_by_text":"Vérifié par","widget_number_of_reviews_text":"{{ number_of_reviews }} avis","widget_back_button_text":"Retour","widget_next_button_text":"Suivant","widget_custom_forms_filter_button":"Filtres","how_reviews_are_collected":"Comment les avis sont-ils collectés ?","widget_gdpr_statement":"En soumettant votre avis, vous acceptez les \u003ca href='https://judge.me/terms' target='_blank' rel='nofollow noopener'\u003etermes et conditions de Judge.me\u003c/a\u003e et \u003ca href='https://judge.me/privacy' target='_blank' rel='nofollow noopener'\u003epolitique de confidentialité\u003c/a\u003e et les \u003ca href='https://judge.me/content-policy' target='_blank' rel='nofollow noopener'\u003epolitiques de contenu\u003c/a\u003e.","platform":"shopify","branding_url":"https://judge.me/reviews","branding_text":"Propulsé par Judge.me","locale":"en","reply_name":"Jennyfer","widget_version":"3.0","footer":true,"autopublish":true,"review_dates":true,"enable_custom_form":false,"can_be_branded":false};</script> <style class='jdgm-settings-style'>.jdgm-xx{left:0}:root{--jdgm-primary-color:#000;--jdgm-secondary-color:rgba(0,0,0,0.1);--jdgm-star-color:#000;--jdgm-write-review-text-color:white;--jdgm-write-review-bg-color:#000000;--jdgm-paginate-color:#000;--jdgm-border-radius:0;--jdgm-reviewer-name-color:#000000}.jdgm-histogram__bar-content{background-color:#000}.jdgm-rev[data-verified-buyer=true] .jdgm-rev__icon.jdgm-rev__icon:after,.jdgm-rev__buyer-badge.jdgm-rev__buyer-badge{color:white;background-color:#000}.jdgm-review-widget--small .jdgm-gallery.jdgm-gallery .jdgm-gallery__thumbnail-link:nth-child(8) .jdgm-gallery__thumbnail-wrapper.jdgm-gallery__thumbnail-wrapper:before{content:"Voir plus"}@media only screen and (min-width: 768px){.jdgm-gallery.jdgm-gallery .jdgm-gallery__thumbnail-link:nth-child(8) .jdgm-gallery__thumbnail-wrapper.jdgm-gallery__thumbnail-wrapper:before{content:"Voir plus"}}.jdgm-prev-badge[data-average-rating='0.00']{display:none !important}.jdgm-author-all-initials{display:none !important}.jdgm-author-last-initial{display:none !important}.jdgm-rev-widg__title{visibility:hidden}.jdgm-rev-widg__summary-text{visibility:hidden}.jdgm-prev-badge__text{visibility:hidden}.jdgm-rev__replier:before{content:'jennyfer-eu.myshopify.com'}.jdgm-rev__prod-link-prefix:before{content:'sur'}.jdgm-rev__out-of-store-text:before{content:'(hors boutique)'}@media only screen and (min-width: 768px){.jdgm-rev__pics .jdgm-rev_all-rev-page-picture-separator,.jdgm-rev__pics .jdgm-rev__product-picture{display:none}}@media only screen and (max-width: 768px){.jdgm-rev__pics .jdgm-rev_all-rev-page-picture-separator,.jdgm-rev__pics .jdgm-rev__product-picture{display:none}}.jdgm-preview-badge[data-template="product"]{display:none !important}.jdgm-preview-badge[data-template="collection"]{display:none !important}.jdgm-preview-badge[data-template="index"]{display:none !important}.jdgm-review-widget[data-from-snippet="true"]{display:none !important}.jdgm-verified-count-badget[data-from-snippet="true"]{display:none !important}.jdgm-carousel-wrapper[data-from-snippet="true"]{display:none !important}.jdgm-all-reviews-text[data-from-snippet="true"]{display:none !important}.jdgm-medals-section[data-from-snippet="true"]{display:none !important}.jdgm-ugc-media-wrapper[data-from-snippet="true"]{display:none !important}
 </style> <style class='jdgm-settings-style'></style>
@@ -888,16 +936,6 @@ jdgm.loadJS(jdgm.CDN_HOST+"loader.js"))}))}(document);
 </script>
 <!-- END app snippet -->
 <!-- End of Judge.me Core -->
-
-
-
-<!-- END app app block --><!-- BEGIN app block: shopify://apps/sc-easy-redirects/blocks/app/be3f8dbd-5d43-46b4-ba43-2d65046054c2 -->
-    <!-- common for all pages -->
-    
-    
-        <script src="https://cdn.shopify.com/extensions/264f3360-3201-4ab7-9087-2c63466c86a3/sc-easy-redirects-5/assets/esc-redirect-app-live-feature.js" async></script>
-    
-
 
 
 
@@ -1693,47 +1731,9 @@ jdgm.loadJS(jdgm.CDN_HOST+"loader.js"))}))}(document);
 
 <!-- END app snippet -->
 
-<!-- END app app block --><!-- BEGIN app block: shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507 -->
-
-
-
-
-
-
-
-
-
-
-
-
-  <script async src="https://static.klaviyo.com/onsite/js/Y8kXUt/klaviyo.js?company_id=Y8kXUt"></script>
-  <script>!function(){if(!window.klaviyo){window._klOnsite=window._klOnsite||[];try{window.klaviyo=new Proxy({},{get:function(n,i){return"push"===i?function(){var n;(n=window._klOnsite).push.apply(n,arguments)}:function(){for(var n=arguments.length,o=new Array(n),w=0;w<n;w++)o[w]=arguments[w];var t="function"==typeof o[o.length-1]?o.pop():void 0,e=new Promise((function(n){window._klOnsite.push([i].concat(o,[function(i){t&&t(i),n(i)}]))}));return e}}})}catch(n){window.klaviyo=window.klaviyo||[],window.klaviyo.push=function(){var n;(n=window._klOnsite).push.apply(n,arguments)}}}}();</script>
-
-  
-
-
-
-
-  <script>
-    window.klaviyoReviewsProductDesignMode = false
-  </script>
-
-
-
-<!-- END app app block --><!-- BEGIN app block: shopify://apps/gorgias-live-chat-helpdesk/blocks/gorgias/a66db725-7b96-4e3f-916e-6c8e6f87aaaa -->
-<script defer data-gorgias-loader-chat src="https://config.gorgias.chat/bundle-loader/shopify/jennyfer-eu.myshopify.com"></script>
-
-
-<script defer data-gorgias-loader-convert  src="https://bundle.dyn-rev.app/loader.js?shop_name=jennyfer-eu"></script>
-
-
-<script defer data-gorgias-loader-mailto-replace  src="https://config.gorgias.help/api/contact-forms/replace-mailto-script.js?shopName=jennyfer-eu"></script>
-
-
-
 <!-- END app app block --><link href="https://monorail-edge.shopifysvc.com" rel="dns-prefetch">
 <script>(function(){if ("sendBeacon" in navigator && "performance" in window) {var session_token = document.cookie.match(/_shopify_s=([^;]*)/);function handle_abandonment_event(e) {var entries = performance.getEntries().filter(function(entry) {return /monorail-edge.shopifysvc.com/.test(entry.name);});if (!window.abandonment_tracked && entries.length === 0) {window.abandonment_tracked = true;var currentMs = Date.now();var navigation_start = performance.timing.navigationStart;var payload = {shop_id: 65445527736,url: window.location.href,navigation_start,duration: currentMs - navigation_start,session_token: session_token && session_token.length === 2 ? session_token[1] : "",page_type: "policy"};window.navigator.sendBeacon("https://monorail-edge.shopifysvc.com/v1/produce", JSON.stringify({schema_id: "online_store_buyer_site_abandonment/1.1",payload: payload,metadata: {event_created_at_ms: currentMs,event_sent_at_ms: currentMs}}));}}window.addEventListener('pagehide', handle_abandonment_event);}}());</script>
-<script id="web-pixels-manager-setup">(function d(d,e,r,a,n){var o,i,t,s,l=(i=(o={modern:/Edge?\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Firefox\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Chrom(ium|e)\/(9{2}|\d{3,})\.\d+(\.\d+|)|(Maci|X1{2}).+ Version\/(15\.\d+|(1[6-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(9{2}|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(15[._]\d+|(1[6-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](12[89]|1[3-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Android.+Firefox\/(12[7-9]|1[3-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(12[89]|1[3-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|SamsungBrowser\/([2-9]\d|\d{3,})\.\d+/,legacy:/Edge?\/(1[6-9]|[2-9]\d|\d{3,})\.\d+(\.\d+|)|Firefox\/(5[4-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)|Chrom(ium|e)\/(5[1-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)([\d.]+$|.*Safari\/(?![\d.]+ Edge\/[\d.]+$))|(Maci|X1{2}).+ Version\/(10\.\d+|(1[1-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(3[89]|[4-9]\d|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(10[._]\d+|(1[1-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](12[89]|1[3-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Mobile Safari.+OPR\/([89]\d|\d{3,})\.\d+\.\d+|Android.+Firefox\/(12[7-9]|1[3-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(12[89]|1[3-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+(UC? ?Browser|UCWEB|U3)[ /]?(15\.([5-9]|\d{2,})|(1[6-9]|[2-9]\d|\d{3,})\.\d+)\.\d+|SamsungBrowser\/(5\.\d+|([6-9]|\d{2,})\.\d+)|Android.+MQ{2}Browser\/(14(\.(9|\d{2,})|)|(1[5-9]|[2-9]\d|\d{3,})(\.\d+|))(\.\d+|)|K[Aa][Ii]OS\/(3\.\d+|([4-9]|\d{2,})\.\d+)(\.\d+|)/}).modern,t=o.legacy,s=navigator.userAgent,i.test(s)?"modern":(t.test(s),"legacy"));window.Shopify=window.Shopify||{};var c=window.Shopify;c.analytics=c.analytics||{};var u=c.analytics;u.replayQueue=[],u.publish=function(d,e,r){return u.replayQueue.push([d,e,r]),!0};try{self.performance.mark("wpm:start")}catch(d){}var h=[r,"/wpm","/b",n,l.substring(0,1),".js"].join("");!function(d){var e=d.src,r=d.async,a=void 0===r||r,n=d.onload,o=d.onerror,i=document.createElement("script"),t=document.head,s=document.body;i.async=a,i.src=e,n&&i.addEventListener("load",n),o&&i.addEventListener("error",o),t?t.appendChild(i):s?s.appendChild(i):console.error("Did not find a head or body element to append the script")}({src:h,async:!0,onload:function(){var r=window.webPixelsManager.init(d);e(r);var a=window.Shopify.analytics;a.replayQueue.forEach((function(d){var e=d[0],a=d[1],n=d[2];r.publishCustomEvent(e,a,n)})),a.replayQueue=[],a.publish=r.publishCustomEvent,a.visitor=r.visitor},onerror:function(){var e=d.storefrontBaseUrl.replace(/\/$/,""),r="".concat(e,"/.well-known/shopify/monorail/unstable/produce_batch"),n=JSON.stringify({metadata:{event_sent_at_ms:(new Date).getTime()},events:[{schema_id:"web_pixels_manager_load/3.1",payload:{version:a||"latest",bundle_target:l,page_url:self.location.href,status:"failed",surface:d.surface,error_msg:"".concat(h," has failed to load")},metadata:{event_created_at_ms:(new Date).getTime()}}]});try{if(self.navigator.sendBeacon.bind(self.navigator)(r,n))return!0}catch(d){}var o=new XMLHttpRequest;try{return o.open("POST",r,!0),o.setRequestHeader("Content-Type","text/plain"),o.send(n),!0}catch(d){console&&console.warn&&console.warn("[Web Pixels Manager] Got an unhandled error while logging a load error.")}return!1}})})({shopId: 65445527736,storefrontBaseUrl: "https://www.jennyfer.com",extensionsBaseUrl: "https://extensions.shopifycdn.com/cdn/shopifycloud/web-pixels-manager",surface: "storefront-renderer",enabledBetaFlags: ["5de24938","d04dc9f4","4735909c"],webPixelsConfigList: [{"id":"710803640","configuration":"{\"pixelId\":\"ebc13d12-3246-4019-bbdd-58b4385d31d5\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"bb41bf091d86ec09beb5141ead6fafc0","type":"APP","apiClientId":2556259,"privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"]},{"id":"676364472","configuration":"{\"config\":\"{\\\"pixel_id\\\":\\\"G-VD4WBBE3DT\\\",\\\"target_country\\\":\\\"FR\\\",\\\"gtag_events\\\":[{\\\"type\\\":\\\"search\\\",\\\"action_label\\\":[\\\"G-VD4WBBE3DT\\\",\\\"AW-979418247\\\/6G-jCO_X7tgZEIf5gtMD\\\"]},{\\\"type\\\":\\\"begin_checkout\\\",\\\"action_label\\\":[\\\"G-VD4WBBE3DT\\\",\\\"AW-979418247\\\/-cg_CPXX7tgZEIf5gtMD\\\"]},{\\\"type\\\":\\\"view_item\\\",\\\"action_label\\\":[\\\"G-VD4WBBE3DT\\\",\\\"AW-979418247\\\/rMh_COzX7tgZEIf5gtMD\\\",\\\"MC-QZR888ZM1J\\\"]},{\\\"type\\\":\\\"purchase\\\",\\\"action_label\\\":[\\\"G-VD4WBBE3DT\\\",\\\"AW-979418247\\\/KypuCObX7tgZEIf5gtMD\\\",\\\"MC-QZR888ZM1J\\\"]},{\\\"type\\\":\\\"page_view\\\",\\\"action_label\\\":[\\\"G-VD4WBBE3DT\\\",\\\"AW-979418247\\\/03-iCOnX7tgZEIf5gtMD\\\",\\\"MC-QZR888ZM1J\\\"]},{\\\"type\\\":\\\"add_payment_info\\\",\\\"action_label\\\":[\\\"G-VD4WBBE3DT\\\",\\\"AW-979418247\\\/83zaCPjX7tgZEIf5gtMD\\\"]},{\\\"type\\\":\\\"add_to_cart\\\",\\\"action_label\\\":[\\\"G-VD4WBBE3DT\\\",\\\"AW-979418247\\\/w2IWCPLX7tgZEIf5gtMD\\\"]}],\\\"enable_monitoring_mode\\\":false}\"}","eventPayloadVersion":"v1","runtimeContext":"OPEN","scriptVersion":"a46b87f88a4ff97a9490f9aa4799ba7b","type":"APP","apiClientId":1780363,"privacyPurposes":[]},{"id":"634093752","configuration":"{\"tagID\":\"2614365941247\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"4fd0680eed907adaf3f85849c393d688","type":"APP","apiClientId":3009811,"privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"]},{"id":"631701688","configuration":"{\"pixel_id\":\"334677527413363\",\"pixel_type\":\"facebook_pixel\"}","eventPayloadVersion":"v1","runtimeContext":"OPEN","scriptVersion":"8b3843af2d71780cfb83fdde884ce168","type":"APP","apiClientId":2329312,"privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"]},{"id":"shopify-app-pixel","configuration":"{}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"0220","apiClientId":"shopify-pixel","type":"APP","privacyPurposes":["ANALYTICS","MARKETING"]},{"id":"shopify-custom-pixel","eventPayloadVersion":"v1","runtimeContext":"LAX","scriptVersion":"0220","apiClientId":"shopify-pixel","type":"CUSTOM","privacyPurposes":["ANALYTICS","MARKETING"]}],isMerchantRequest: false,initData: {"shop":{"name":"Jennyfer","paymentSettings":{"currencyCode":"EUR"},"myshopifyDomain":"jennyfer-eu.myshopify.com","countryCode":"FR","storefrontUrl":"https:\/\/www.jennyfer.com"},"customer":null,"cart":null,"checkout":null,"productVariants":[],"purchasingCompany":null},},function pageEvents(webPixelsManagerAPI) {webPixelsManagerAPI.publish("page_viewed", {});},"https://www.jennyfer.com/cdn","c17f43df2ea61047758f2147f7f0c56ff85786cd","636c29b9wdc524ceep276e28dbmd606dcac",);</script>  <script>window.ShopifyAnalytics = window.ShopifyAnalytics || {};
+<script id="web-pixels-manager-setup">(function d(d,e,r,a,n){var o,i,t,s,l=(i=(o={modern:/Edge?\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Firefox\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Chrom(ium|e)\/(9{2}|\d{3,})\.\d+(\.\d+|)|(Maci|X1{2}).+ Version\/(15\.\d+|(1[6-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(9{2}|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(15[._]\d+|(1[6-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](12[89]|1[3-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Android.+Firefox\/(12[7-9]|1[3-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(12[89]|1[3-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|SamsungBrowser\/([2-9]\d|\d{3,})\.\d+/,legacy:/Edge?\/(1[6-9]|[2-9]\d|\d{3,})\.\d+(\.\d+|)|Firefox\/(5[4-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)|Chrom(ium|e)\/(5[1-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)([\d.]+$|.*Safari\/(?![\d.]+ Edge\/[\d.]+$))|(Maci|X1{2}).+ Version\/(10\.\d+|(1[1-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(3[89]|[4-9]\d|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(10[._]\d+|(1[1-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](12[89]|1[3-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Mobile Safari.+OPR\/([89]\d|\d{3,})\.\d+\.\d+|Android.+Firefox\/(12[7-9]|1[3-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(12[89]|1[3-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+(UC? ?Browser|UCWEB|U3)[ /]?(15\.([5-9]|\d{2,})|(1[6-9]|[2-9]\d|\d{3,})\.\d+)\.\d+|SamsungBrowser\/(5\.\d+|([6-9]|\d{2,})\.\d+)|Android.+MQ{2}Browser\/(14(\.(9|\d{2,})|)|(1[5-9]|[2-9]\d|\d{3,})(\.\d+|))(\.\d+|)|K[Aa][Ii]OS\/(3\.\d+|([4-9]|\d{2,})\.\d+)(\.\d+|)/}).modern,t=o.legacy,s=navigator.userAgent,i.test(s)?"modern":(t.test(s),"legacy"));window.Shopify=window.Shopify||{};var c=window.Shopify;c.analytics=c.analytics||{};var u=c.analytics;u.replayQueue=[],u.publish=function(d,e,r){return u.replayQueue.push([d,e,r]),!0};try{self.performance.mark("wpm:start")}catch(d){}var h=[r,"/wpm","/b",n,l.substring(0,1),".js"].join("");!function(d){var e=d.src,r=d.async,a=void 0===r||r,n=d.onload,o=d.onerror,i=document.createElement("script"),t=document.head,s=document.body;i.async=a,i.src=e,n&&i.addEventListener("load",n),o&&i.addEventListener("error",o),t?t.appendChild(i):s?s.appendChild(i):console.error("Did not find a head or body element to append the script")}({src:h,async:!0,onload:function(){var r=window.webPixelsManager.init(d);e(r);var a=window.Shopify.analytics;a.replayQueue.forEach((function(d){var e=d[0],a=d[1],n=d[2];r.publishCustomEvent(e,a,n)})),a.replayQueue=[],a.publish=r.publishCustomEvent,a.visitor=r.visitor},onerror:function(){var e=d.storefrontBaseUrl.replace(/\/$/,""),r="".concat(e,"/.well-known/shopify/monorail/unstable/produce_batch"),n=JSON.stringify({metadata:{event_sent_at_ms:(new Date).getTime()},events:[{schema_id:"web_pixels_manager_load/3.1",payload:{version:a||"latest",bundle_target:l,page_url:self.location.href,status:"failed",surface:d.surface,error_msg:"".concat(h," has failed to load")},metadata:{event_created_at_ms:(new Date).getTime()}}]});try{if(self.navigator.sendBeacon.bind(self.navigator)(r,n))return!0}catch(d){}var o=new XMLHttpRequest;try{return o.open("POST",r,!0),o.setRequestHeader("Content-Type","text/plain"),o.send(n),!0}catch(d){console&&console.warn&&console.warn("[Web Pixels Manager] Got an unhandled error while logging a load error.")}return!1}})})({shopId: 65445527736,storefrontBaseUrl: "https://www.jennyfer.com",extensionsBaseUrl: "https://extensions.shopifycdn.com/cdn/shopifycloud/web-pixels-manager",surface: "storefront-renderer",enabledBetaFlags: ["5de24938","d04dc9f4","4735909c"],webPixelsConfigList: [{"id":"710803640","configuration":"{\"pixelId\":\"ebc13d12-3246-4019-bbdd-58b4385d31d5\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"bb41bf091d86ec09beb5141ead6fafc0","type":"APP","apiClientId":2556259,"privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"]},{"id":"676364472","configuration":"{\"config\":\"{\\\"pixel_id\\\":\\\"G-VD4WBBE3DT\\\",\\\"target_country\\\":\\\"FR\\\",\\\"gtag_events\\\":[{\\\"type\\\":\\\"search\\\",\\\"action_label\\\":[\\\"G-VD4WBBE3DT\\\",\\\"AW-979418247\\\/6G-jCO_X7tgZEIf5gtMD\\\"]},{\\\"type\\\":\\\"begin_checkout\\\",\\\"action_label\\\":[\\\"G-VD4WBBE3DT\\\",\\\"AW-979418247\\\/-cg_CPXX7tgZEIf5gtMD\\\"]},{\\\"type\\\":\\\"view_item\\\",\\\"action_label\\\":[\\\"G-VD4WBBE3DT\\\",\\\"AW-979418247\\\/rMh_COzX7tgZEIf5gtMD\\\",\\\"MC-QZR888ZM1J\\\"]},{\\\"type\\\":\\\"purchase\\\",\\\"action_label\\\":[\\\"G-VD4WBBE3DT\\\",\\\"AW-979418247\\\/KypuCObX7tgZEIf5gtMD\\\",\\\"MC-QZR888ZM1J\\\"]},{\\\"type\\\":\\\"page_view\\\",\\\"action_label\\\":[\\\"G-VD4WBBE3DT\\\",\\\"AW-979418247\\\/03-iCOnX7tgZEIf5gtMD\\\",\\\"MC-QZR888ZM1J\\\"]},{\\\"type\\\":\\\"add_payment_info\\\",\\\"action_label\\\":[\\\"G-VD4WBBE3DT\\\",\\\"AW-979418247\\\/83zaCPjX7tgZEIf5gtMD\\\"]},{\\\"type\\\":\\\"add_to_cart\\\",\\\"action_label\\\":[\\\"G-VD4WBBE3DT\\\",\\\"AW-979418247\\\/w2IWCPLX7tgZEIf5gtMD\\\"]}],\\\"enable_monitoring_mode\\\":false}\"}","eventPayloadVersion":"v1","runtimeContext":"OPEN","scriptVersion":"a46b87f88a4ff97a9490f9aa4799ba7b","type":"APP","apiClientId":1780363,"privacyPurposes":[]},{"id":"634093752","configuration":"{\"tagID\":\"2614365941247\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"4fd0680eed907adaf3f85849c393d688","type":"APP","apiClientId":3009811,"privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"]},{"id":"631701688","configuration":"{\"pixel_id\":\"334677527413363\",\"pixel_type\":\"facebook_pixel\"}","eventPayloadVersion":"v1","runtimeContext":"OPEN","scriptVersion":"8b3843af2d71780cfb83fdde884ce168","type":"APP","apiClientId":2329312,"privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"]},{"id":"shopify-app-pixel","configuration":"{}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"0220","apiClientId":"shopify-pixel","type":"APP","privacyPurposes":["ANALYTICS","MARKETING"]},{"id":"shopify-custom-pixel","eventPayloadVersion":"v1","runtimeContext":"LAX","scriptVersion":"0220","apiClientId":"shopify-pixel","type":"CUSTOM","privacyPurposes":["ANALYTICS","MARKETING"]}],isMerchantRequest: false,initData: {"shop":{"name":"Jennyfer","paymentSettings":{"currencyCode":"EUR"},"myshopifyDomain":"jennyfer-eu.myshopify.com","countryCode":"FR","storefrontUrl":"https:\/\/www.jennyfer.com"},"customer":null,"cart":null,"checkout":null,"productVariants":[],"purchasingCompany":null},},function pageEvents(webPixelsManagerAPI) {webPixelsManagerAPI.publish("page_viewed", {});},"https://www.jennyfer.com/cdn","11af1ea0f21d7aa4b567296b38b6285185cfb9c3","f89442e3w5976a1a5pcc3547ffmf63603f5",);</script>  <script>window.ShopifyAnalytics = window.ShopifyAnalytics || {};
 window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
 window.ShopifyAnalytics.meta.currency = 'EUR';
 var meta = {"page":{}};
@@ -1857,15 +1857,15 @@ for (var attr in meta) {
       theme_id: 165713543352,
       app_name: "storefront",
       context_url: window.location.href,
-      source_url: "//www.jennyfer.com/cdn/s/trekkie.storefront.c1258b47cccb7bc2aeeaeb253b8999e078bd2f6b.min.js"});
+      source_url: "//www.jennyfer.com/cdn/s/trekkie.storefront.a8ef5c2c4f1c6e0839c6b8857d0a2edb7d22d961.min.js"});
 
         };
         scriptFallback.async = true;
-        scriptFallback.src = '//www.jennyfer.com/cdn/s/trekkie.storefront.c1258b47cccb7bc2aeeaeb253b8999e078bd2f6b.min.js';
+        scriptFallback.src = '//www.jennyfer.com/cdn/s/trekkie.storefront.a8ef5c2c4f1c6e0839c6b8857d0a2edb7d22d961.min.js';
         first.parentNode.insertBefore(scriptFallback, first);
       };
       script.async = true;
-      script.src = '//www.jennyfer.com/cdn/s/trekkie.storefront.c1258b47cccb7bc2aeeaeb253b8999e078bd2f6b.min.js';
+      script.src = '//www.jennyfer.com/cdn/s/trekkie.storefront.a8ef5c2c4f1c6e0839c6b8857d0a2edb7d22d961.min.js';
       first.parentNode.insertBefore(script, first);
     };
     trekkie.load(
@@ -3320,10 +3320,7 @@ for (var attr in meta) {
 
   <div class="shopify-policy__body">
     <div class="rte">
-        <h2>Conditions générales de vente<img><img><img>
-</h2>
-<p> </p>
-<p>1. PREAMBULE<br> <br>La société STOCK J BOUTIQUE JENNYFER (SAS, au capital de  57 188 986  euros, inscrite au sous le numéro 338 880 180 RCS Bobigny, et dont le siège social est sis 1, rue Etienne Dolet (93 400) Saint ouen , France) <br>Les présentes conditions générales de ventes (les « CGV ») déterminent l’ensemble des conditions régissant le contrat d’achat d’Articles (le « Contrat ») conclu entre JENNYFER et le consommateur (le « Client »).<br> <br>Le Site est réservé aux commandes des seules personnes physiques majeures, non commerçantes, ayant la capacité juridique de contracter, et exclusivement domiciliées dans l’un des pays de livraison tel que spécifié à l’article 5.1 des CGV.<br> <br>JENNYFER se réserve le droit de modifier à tout moment et sans préavis les CGV, ce que le Client accepte, les CGV applicables étant celles en vigueur au moment de l’achat d’un Article (la « Commande »). Il est de la responsabilité du Client de vérifier les CGV en vigueur avant toute Commande. En toute hypothèse, la nullité de l’une des clauses des CGV n’entraînerait pas celle des autres clauses.<br> <br>En effectuant une Commande sur le Site, le Client déclare et reconnait accepter pleinement et sans réserve les CGV. <br> <br>2. ARTICLES  <br> <br>2.1. Caractéristiques des Articles<br> <br>La description des Articles faisant foi est celle publiée sur le Site au moment de la Commande. </p>
+        <p>1. PREAMBULE<br> <br>La société STOCK J BOUTIQUE JENNYFER (SAS, au capital de  57 188 986  euros, inscrite au sous le numéro 338 880 180 RCS Bobigny, et dont le siège social est sis 1, rue Etienne Dolet (93 400) Saint ouen , France) <br>Les présentes conditions générales de ventes (les « CGV ») déterminent l’ensemble des conditions régissant le contrat d’achat d’Articles (le « Contrat ») conclu entre JENNYFER et le consommateur (le « Client »).<br> <br>Le Site est réservé aux commandes des seules personnes physiques majeures, non commerçantes, ayant la capacité juridique de contracter, et exclusivement domiciliées dans l’un des pays de livraison tel que spécifié à l’article 5.1 des CGV.<br> <br>JENNYFER se réserve le droit de modifier à tout moment et sans préavis les CGV, ce que le Client accepte, les CGV applicables étant celles en vigueur au moment de l’achat d’un Article (la « Commande »). Il est de la responsabilité du Client de vérifier les CGV en vigueur avant toute Commande. En toute hypothèse, la nullité de l’une des clauses des CGV n’entraînerait pas celle des autres clauses.<br> <br>En effectuant une Commande sur le Site, le Client déclare et reconnait accepter pleinement et sans réserve les CGV. <br> <br>2. ARTICLES  <br> <br>2.1. Caractéristiques des Articles<br> <br>La description des Articles faisant foi est celle publiée sur le Site au moment de la Commande. </p>
 <p>Chaque Article est accompagné d’une fiche descriptive détaillant les caractéristiques essentielles de l’Article (notamment les tailles et couleurs disponibles, la composition ainsi qu’un bref descriptif de l’Article), du prix unitaire TTC en euros, ainsi que d’une ou plusieurs photographies de l’Article.<br> <br>Les Articles sont décrits et présentés avec la plus grande exactitude possible. Le Client reconnait et accepte que les Articles qui lui sont livrés puissent présenter des différences minimes par rapport à leur photographie de présentation. <br> <br>2.2. Disponibilité des Articles<br> <br>La disponibilité des Articles ne peut être garantie. En cas d’Article devenu indisponible après la confirmation de la commande, JENNYFER informera le Client par email de l’indisponibilité d’un ou plusieurs Articles. Le Client sera remboursé du montant des Articles indisponibles, et des frais de livraison si l’intégralité de sa commande est indisponible, dans un délai maximum de quatorze (14) jours suivant l’information donnée au Client de l’indisponibilité totale ou partielle des Articles. Le remboursement des Articles achetés en utilisant la e-carte cadeau JENNYFER sera effectué conformément aux modalités de l’Article 6.  <br> <br>3. COMMANDE <br> <br>3.1. Compte client<br> <br>Pour effectuer une commande, le Client doit obligatoirement créer un compte client (le « Compte Client ») en suivant la procédure d’inscription disponible sur le Site, et notamment en indiquant une adresse email et un mot de passe. Ce Compte Client est personnel. Le Client s’engage à informer sans délai JENNYFER de l’utilisation frauduleuse de son Compte Client dès qu’il en a connaissance. En cas de perte ou de vol du mot de passe, le Client pourra solliciter auprès de JENNYFER la génération d’un nouveau mot de passe.<br> <br>3.2. Etapes de la Commande<br> <br>Pour commander, le Client doit choisir les Articles qu’il souhaite commander puis est invité à vérifier son panier et à renseigner le pays et le mode de livraison choisis. Après avoir validé son panier, le Client doit ensuite confirmer les modalités de livraison choisies et indiquer les coordonnées auxquelles il peut être joint au sujet de sa livraison.<br> <br>Enfin, le Client doit confirmer définitivement sa commande en acceptant les présentes CGV puis cliquer sur le bouton « Payer ma commande » pour payer sa commande.<br> <br>3.3. Confirmation de la Commande<br> <br>La commande ne devient définitive qu’après son paiement complet, conformément à l’article 3.4 des CGV.<br> <br>JENNYFER se réserve toutefois le droit de ne pas confirmer une commande en cas de motifs légitimes et notamment en cas de litige de paiement ou en cas de non-respect des dispositions des CGV (par exemple si la quantité achetée laisse supposer que le Client achète les Articles pour les revendre et pas pour ses besoins personnels).<br> <br>Lorsque la commande est confirmée par JENNYFER, un email récapitulatif de commande est envoyé au Client à l’adresse indiquée sur son Compte Client.<br> <br>3.4. Paiement de la Commande<br> <br>Le Client peut régler la commande en ligne par carte bancaire (Visa, Mastercard), par Paypal ou en utilisant la e-carte cadeau JENNYFER (la carte cadeau magasin n’est pas utilisable sur le Site – pour plus de renseignements sur les cartes cadeaux JENNYFER, le Client est invité à consulter la rubrique « faq – aide » du Site).<br> <br>Le Client garantit à JENNYFER disposer des autorisations nécessaires à l’usage du mode de paiement choisi. En cas de paiement par carte bancaire, les informations de facturation que le Client déclare lors de la Commande doivent correspondre à celles du titulaire de la carte de paiement utilisée, afin de permettre à JENNYFER de contacter ce dernier directement si nécessaire, notamment aux fins de vérifications ou de demande d’informations complémentaires.<br> <br>En cas de défaut de paiement, d’adresse de facturation erronée ou de tout problème du fait du Client se rapportant au paiement de la Commande, JENNYFER se réserve le droit de bloquer cette dernière jusqu’à la parfaite résolution du litige. <br> <br>4. PRIX DES ARTICLES <br> <br>4.1. Information sur les prix<br> <br>Les prix sont indiqués toutes taxes comprises (au taux de TVA française applicable au jour de la Commande) en Euros. Les frais de livraison sont des coûts complémentaires non compris dans le prix des Articles. Les frais de livraison varient en fonction du mode de livraison choisi et sont indiqués à toutes les étapes de la commande.<br> <br>Le Client est informé que, dans certains cas, en fonction du lieu de livraison, des taxes et des frais de douanes complémentaires sont susceptibles de s’appliquer.<br> <br>De manière exceptionnelle, il est possible que des erreurs affectent le prix des Articles. Le cas échéant, JENNYFER informera le Client sans délai de l’existence de ces erreurs.</p>
 <p>4.2. Modification des prix<br> <br>JENNYFER se réserve le droit de modifier à tout moment le prix des Articles. Les prix applicables à sont ceux en vigueur au jour de la commande. <br> <br>5. LIVRAISON<br> <br>5.1. Zones de livraison<br> <br>JENNYFER livre les Articles présentés sur le Site exclusivement dans les pays suivants : France, Italie, Luxembourg, Espagne et Belgique.<br> <br>Les Articles sont exclusivement livrés à l’adresse de livraison indiquée par le Client lors de la commande. Aucune modification de l’adresse de livraison ne pourra intervenir après que la commande ait été confirmée par JENNYFER.<br> <br>5.2. Frais de livraison<br> <br>Les frais de livraison de la Commande sont à la charge du Client. Le montant de ces frais varie en fonction du mode de livraison et du lieu de livraison de la Commande. Ce montant est indiqué et porté à la connaissance du Client à toutes les étapes du processus de commande.<br> <br>Les modes de livraison proposés au Client varient en fonction de l’adresse de livraison.</p>
 <p>Les Articles commandés sont livrés en un seul ou plusieurs colis selon le volume de la Commande.  <br> <br>5.3. Délais de livraison<br> <br>Les délais de livraison varient en fonction du volume de la Commande mais ne dépasseront pas 30 jours.<br> <br>Le délai de livraison d’une commande est confirmé au Client par JENNYFER dans l’email de confirmation de commande. JENNYFER s’engage à mettre tous les moyens en œuvre pour respecter le délai de livraison.<br> <br>Dans l’hypothèse où, pour quelque raison que ce soit, JENNYFER serait dans l’impossibilité de respecter le délai de livraison indiqué, JENNYFER en informera le Client et le Client aura le choix de confirmer son souhait d’être livré à la nouvelle date de livraison qui lui sera proposée, ou de l’annuler sans frais ni pénalités. <br> <br>Dans l’hypothèse où les informations de facturation communiquées par le Client sont incomplètes ou erronées, JENNYFER peut solliciter du Client la communication d’informations complémentaires, ce qui est susceptible de prolonger le délai de livraison, sans que la responsabilité de JENNYFER ne puisse être engagée à ce titre. <br> <br>En tout état de cause, JENNYFER décline toute responsabilité liée à un retard dans la livraison tenant à un cas de force majeure.<br> <br>La livraison est considérée comme effectuée :<br> <br>- au moment de la signature par le Client ou tout tiers désigné par ce dernier de l’accusé de réception de la commande à l’adresse de livraison spécifiée lors de la commande ; ou<br> <br>- au moment où les Articles sont déposés dans un relais ou tout autre point de livraison sélectionné par le Client.<br> <br>5.4. Impossibilité de livraison<br> <br>Si la Commande n’a pu être livrée pour des raisons imputables au Client (notamment du fait d’une erreur dans l’adresse de livraison), JENNYFER se réserve le droit, à sa entière discrétion, d’annuler la commande à l’issue d’un délai de trente (30) jours suivant la date de livraison initialement prévue.<br> <br>Le cas échéant, JENNYFER se réserve le droit de facturer au Client les éventuels frais de transport supplémentaires inhérents à l’impossibilité pour JENNYFER de livrer la commande.<br>  <br>6. DROIT DE RETRACTATION - RETOUR DES ARTICLES<br> <br>Le Client dispose d’un droit de rétractation pour lui permettre de retourner les Articles qui ne le satisfont pas. Les Articles doivent être retournés dans leur emballage d’origine et en parfait état.<br> <br>Pour retourner ses Articles, le Client doit demander un bon retour au plus tard quatorze (14) jours à compter de la date de livraison. Pour cela il peut :<br>- soit compléter le formulaire de rétractation joint en annexe aux présentes CGV et l’envoyer à l’adresse suivante : STOCK J BOUTIQUE JENNYFER - Droit de rétractation 1, Rue Etienne Dolet (93406) SAINT OUEN cedex, France. Un bon retour lui sera adressé par courrier ;<br>- soit se connecter à son Compte Client. Dans la rubrique « mes commandes », le Client doit sélectionner les Articles à retourner puis valider le retour. Un email contenant le bon de retour lui sera alors adressé.<br> <br>Le Client devra ensuite renvoyer les Articles à l’entrepôt de JENNYFER, à l’adresse Le Grand Roissy – Bâtiment A, rue de Guivry, 77990 LE MESNIL-AMELOT- France. Les Articles devront être accompagnés du bon de retour, ainsi que de la facture qui était jointe au colis. Ils devront être envoyés au plus tard  quatorze (14) jours après la réception par le Client du bon de retour.<br> <br>Les frais de retour restent à la charge du Client.<br> <br>JENNYFER remboursera au Client le prix d’achat du (des) Article(s) retourné(s), ainsi que les frais de livraison, sur la base du mode de livraison standard, si l’intégralité de la commande est retournée.<br> <br>Les achats effectués en utilisant la e-carte cadeau JENNYFER font l’objet d’un remboursement effectué exclusivement par virement bancaire. Le Client exerçant son droit de rétractation devra communiquer à JENNYFER un relevé d’identité bancaire (IBAN/BIC). Ces coordonnées bancaires ne seront pas conservées par JENNYFER au-delà du temps nécessaire à l’exécution du virement.<br> <br>Pour les Articles livrés en France, le Client a également la possibilité de retourner les Articles dans l’un des magasins JENNYFER en France métropolitaine y compris la Corse (hors les magasins de Cahors et du Puy en Velay et corners en grands magasins), dans un délai de 30 (trente) jours à compter de la date de livraison. Il devra présenter l’email de confirmation de commande ainsi qu’une pièce d’identité à son nom ou au nom de la personne ayant effectuée la commande.<br> <br>7. VERIFICATION DE LA COMMANDE <br> <br>Au moment de la réception de la commande, le Client doit vérifier que les Articles livrés sont conformes à la commande.<br> <br>Dans l’hypothèse où, après réception de la commande, le Client constate qu’un ou plusieurs Articles commandés n’ont pas été livrés ou ne correspondent pas aux Articles commandés, il doit en informer JENNYFER, dans un délai de sept (7) jours ouvrés suivant la livraison de la commande par l’un des moyens de contact suivant :<br> <br>- en utilisant le <a href="/pages/contact" rel="noopener" target="_blank">formulaire de contact </a>accessible sur le lien de contact ; ou <br> <br>- par email à l’adresse sav@jennyfer.com.<br> <br>Dans sa réclamation, le Client devra apporter toutes les précisions relatives à sa réclamation.<br> <br>Passé ce délai, la livraison sera considérée comme conforme à la commande, sans préjudice de l’application de la garantie légale de conformité et des vices cachés (article 8).<br> <br>8. DEFAUT DE CONFORMITE ET VICE CACHE<br> <br>JENNYFER est tenu des défauts de conformité des Articles dans les conditions de l’article L.217-4 et suivants du code de la consommation et des défauts cachés de la chose vendue dans les conditions prévues aux articles 1641 et suivants du code civil.<br> <br>Lorsqu'il agit en garantie légale de conformité, le Client :<br> <br>- bénéficie d'un délai de deux ans à compter de la délivrance de l’Article pour agir ;<br>- peut choisir entre la réparation ou le remplacement de l’Article, sous réserve des conditions de coût prévues par l'article L. 217-9 du code de la consommation ;<br>- est dispensé de rapporter la preuve de l'existence du défaut de conformité de l’Article durant les vingt-quatre mois suivant la délivrance de l’Article.<br> <br>Le Client peut décider de mettre en œuvre la garantie contre les défauts cachés de la chose vendue au sens de l'article 1641 du code civil et dans cette hypothèse, il peut choisir entre la résolution de la vente ou une réduction du prix de vente conformément à l'article 1644 du code civil<br> <br> <br>Dans l’hypothèse où le Client constate un défaut de conformité et/ou vice caché, il doit en informer JENNYFER dans les meilleurs délais par l’un des moyens de Contact mentionnés à l’Article 7. La procédure à suivre pour retourner les Articles lui sera indiqué par JENNYFER.<br> <br> <br>9. DONNEES A CARACTERE PERSONNEL<br> <br>JENNYFER accorde une importance fondamentale à la vie privée de tout un chacun. En conséquence, les traitements effectués par JENNYFER sont strictement limités et encadrés par le présent Article. Sauf disposition contraire des CGV, les dispositions de la Chartre de confidentialité, les Conditions générales d’utilisation (les « CGU ») sont applicables aux données à caractère personnel du Client.<br> <br>9.1. Types de données pouvant être collectées<br> <br>Les données à caractère personnel (« Donnée(s) Personnelle(s) ») pouvant être collectées par JENNYFER sont notamment les suivantes :<br> <br>- Nom ;<br>- Prénom ;<br>- Date de naissance ;<br>- Adresse du domicile ;<br>- Code postal ;<br>- Ville ;<br>- Pays ;<br>- Numéro de téléphone ;<br>- Données bancaires ;<br>- Adresse email.<br> <br>JENNYFER informera le Client de manière claire et sans ambigüité des Données Personnelles dont la communication est obligatoire.<br> <br>A toutes fins utiles, JENNYFER attire l’attention du Client sur le fait que les Données Personnelles communiquées dans le cadre d’une commande sont indispensables au traitement de cette commande. Par conséquent, toute Donnée Personnelle erronée ou tout refus de communication de Donnée Personnelle pourra conduire JENNYFER à ne pas confirmer la commande.<br> <br>9.2. Finalité des traitements <br> <br>Les Données Personnelles sont exclusivement collectées par JENNYFER à des fins de gestion administrative et commerciale (notamment exécution et livraison de la commande). Avec l’accord du Client, les Données Personnelles peuvent également être utilisées à des fins de prospection commerciale.<br> <br>9.3. Destinataire des traitements<br> <br>Les destinataires des Données Personnelles sont déterminés à l’Article 8.2 des CGU.</p>
@@ -4161,6 +4158,12 @@ for (var attr in meta) {
                                 </li>
                             
                                 <li>
+                                    <a class="u-color-light h5" href="/collections/jean-baggy">
+                                        Jeans baggy femme
+                                    </a>
+                                </li>
+                            
+                                <li>
                                     <a class="u-color-light h5" href="/collections/jean-flare">
                                         Jeans flare femme
                                     </a>
@@ -4718,12 +4721,7 @@ for (var attr in meta) {
 <script>
     console.log('%c👋 Hi folks ! Since you\'re here, here is some informations that you might be interested in :\r\n- 🚀 Made with caffeine and love by W3lead https://www.w3lead.com\r\n- 🏢 We are located 189 rue du Temple — 75003 Paris, FR\r\n- 👉 We\'re hiring ! https://www.w3lead.com/jobs', 'line-height:2;');
 </script>
-<div id="shopify-block-8776485610325655785" class="shopify-block shopify-app-block">
-  <link href="https://cdn.shopify.com/extensions/7d04ace4-54a2-4e06-8e31-97b40035de57/hiko-social-login-91/assets/fonts.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
-
-<link href="https://cdn.shopify.com/extensions/7d04ace4-54a2-4e06-8e31-97b40035de57/hiko-social-login-91/assets/styles.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"><script src="https://cdn.shopify.com/extensions/7d04ace4-54a2-4e06-8e31-97b40035de57/hiko-social-login-91/assets/app.js?" async defer></script>
-
-</div><div id="shopify-block-6680288666557934739" class="shopify-block shopify-app-block"><script id="wkWishlistPage" type="application/json">
+<div id="shopify-block-6680288666557934739" class="shopify-block shopify-app-block"><script id="wkWishlistPage" type="application/json">
   {
     "showVendor": false,
     "showProductTitle": true,
@@ -4739,7 +4737,7 @@ for (var attr in meta) {
   }
 </script>
 
-  <script type="module" src="https://cdn.shopify.com/extensions/50f07d38-fa0e-4c7c-a266-dc0fc9e93856/wishlist-king-197/assets/block-wishlist-page.js"></script>
+  <script type="module" src="https://cdn.shopify.com/extensions/69296e0a-3aed-498e-a588-3e0f4a40c2a2/wishlist-king-198/assets/block-wishlist-page.js"></script>
 
 <style>
   wishlist-page {
@@ -4782,47 +4780,6 @@ for (var attr in meta) {
   }
 </style>
 
-</div><div id="shopify-block-4139971114690857691" class="shopify-block shopify-app-block">
-<script id="wkCollectionButtons" type="application/json">
-  {
-    "injectMethod": "insertAfter",
-    "buttonPlacement": "top-end",
-    "productLinkSelector": "",
-    "injectReferenceJs": "(target, app) => target",
-    "floatingReferenceJs": "(target, app) => target",
-    "productHandleJs": "(target, app) => app.theme.getProductHandle(target.element.href)",
-    "productVariantJs": "(target, app) => app.theme.getVariantId(target.element.href)",
-    "integration": {
-      "productLinkSelector": "",
-      "injectReferenceJs": "(target, app) => target",
-      "floatingReferenceJs": "(target, app) => target",
-      "productHandleJs": "(target, app) => app.theme.getProductHandle(target.element.href)",
-      "productVariantJs": "(target, app) => app.theme.getVariantId(target.element.href)"
-    }
-  }
-</script>
-
-  <script type="module" src="https://cdn.shopify.com/extensions/50f07d38-fa0e-4c7c-a266-dc0fc9e93856/wishlist-king-197/assets/block-wishlist-button-collection.js"></script>
-
-<style>
-  wishlist-button-collection {
-    --icon-size: 18px;
-    --icon-stroke-width: 1px;
-    --button-offset-vertical: 0px;
-    --button-offset-horizontal: 0px;
-    --button-background-size: 34px;
-    --button-background-border-radius: 24px;
-    --button-border-width: 1px;
-    --button-background-opacity: 85%;
-
-    --button-background: none;
-    --button-border: none;
-    --icon-stroke: rgb(var(--wk-color-accent-1));
-
-    
-  }
-</style>
-
 </div><div id="shopify-block-13655089695959051254" class="shopify-block shopify-app-block"><script id="wkThemeCode" type="application/json">
   {
     "customIconsUrl": null,
@@ -4844,34 +4801,39 @@ for (var attr in meta) {
   }
 </script>
 
-  <script type="module" src="https://cdn.shopify.com/extensions/50f07d38-fa0e-4c7c-a266-dc0fc9e93856/wishlist-king-197/assets/block-code-access.js"></script>
+  <script type="module" src="https://cdn.shopify.com/extensions/69296e0a-3aed-498e-a588-3e0f4a40c2a2/wishlist-king-198/assets/block-code-access.js"></script>
 
+
+</div><div id="shopify-block-8776485610325655785" class="shopify-block shopify-app-block">
+  <link href="https://cdn.shopify.com/extensions/7d04ace4-54a2-4e06-8e31-97b40035de57/hiko-social-login-91/assets/fonts.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+<link href="https://cdn.shopify.com/extensions/7d04ace4-54a2-4e06-8e31-97b40035de57/hiko-social-login-91/assets/styles.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'"><script src="https://cdn.shopify.com/extensions/7d04ace4-54a2-4e06-8e31-97b40035de57/hiko-social-login-91/assets/app.js?" async defer></script>
 
 </div><div id="shopify-block-14197025361042770389" class="shopify-block shopify-app-block">
 
   <script>
-    window.WishlistKingAppLoaderURL = "https://cdn.shopify.com/extensions/50f07d38-fa0e-4c7c-a266-dc0fc9e93856/wishlist-king-197/assets/app-loader.js";
+    window.WishlistKingAppLoaderURL = "https://cdn.shopify.com/extensions/69296e0a-3aed-498e-a588-3e0f4a40c2a2/wishlist-king-198/assets/app-loader.js";
   </script>
   <script id="wkAppSettings" type="application/json">
     {
       "assets": {
         "themeCssFile": null,
         "localeJsonFile": "locale-fr.json",
-        "appBaseCss": "https://cdn.shopify.com/extensions/50f07d38-fa0e-4c7c-a266-dc0fc9e93856/wishlist-king-197/assets/app-base.css",
-        "componentWishlistButtonBlockJs": "https://cdn.shopify.com/extensions/50f07d38-fa0e-4c7c-a266-dc0fc9e93856/wishlist-king-197/assets/component-wishlist-button-block.js",
-        "componentWishlistLinkJs": "https://cdn.shopify.com/extensions/50f07d38-fa0e-4c7c-a266-dc0fc9e93856/wishlist-king-197/assets/component-wishlist-link.js",
-        "componentWishlistLinkCss": "https://cdn.shopify.com/extensions/50f07d38-fa0e-4c7c-a266-dc0fc9e93856/wishlist-king-197/assets/component-wishlist-link.css",
-        "componentWishlistLinkBlockJs": "https://cdn.shopify.com/extensions/50f07d38-fa0e-4c7c-a266-dc0fc9e93856/wishlist-king-197/assets/component-wishlist-link-block.js",
-        "componentWishlistPageBundleJs": "https://cdn.shopify.com/extensions/50f07d38-fa0e-4c7c-a266-dc0fc9e93856/wishlist-king-197/assets/component-wishlist-page-bundle.js",
-        "componentWishlistPageBundleCss": "https://cdn.shopify.com/extensions/50f07d38-fa0e-4c7c-a266-dc0fc9e93856/wishlist-king-197/assets/component-wishlist-page-bundle.css",
-        "componentWishlistLinkFloatingJs": "https://cdn.shopify.com/extensions/50f07d38-fa0e-4c7c-a266-dc0fc9e93856/wishlist-king-197/assets/component-wishlist-link-floating.js",
-        "componentWishlistLinkFloatingCss": "https://cdn.shopify.com/extensions/50f07d38-fa0e-4c7c-a266-dc0fc9e93856/wishlist-king-197/assets/component-wishlist-link-floating.css",
-        "componentWishlistButtonCollectionJs": "https://cdn.shopify.com/extensions/50f07d38-fa0e-4c7c-a266-dc0fc9e93856/wishlist-king-197/assets/component-wishlist-button-collection.js",
-        "componentWishlistButtonCollectionCss": "https://cdn.shopify.com/extensions/50f07d38-fa0e-4c7c-a266-dc0fc9e93856/wishlist-king-197/assets/component-wishlist-button-collection.css",
-        "componentWishlistButtonProductJs": "https://cdn.shopify.com/extensions/50f07d38-fa0e-4c7c-a266-dc0fc9e93856/wishlist-king-197/assets/component-wishlist-button-product.js",
-        "componentWishlistButtonProductCss": "https://cdn.shopify.com/extensions/50f07d38-fa0e-4c7c-a266-dc0fc9e93856/wishlist-king-197/assets/component-wishlist-button-product.css",
-        "componentSaveForLaterCss": "https://cdn.shopify.com/extensions/50f07d38-fa0e-4c7c-a266-dc0fc9e93856/wishlist-king-197/assets/component-save-for-later.css",
-        "componentAccountDialogCss": "https://cdn.shopify.com/extensions/50f07d38-fa0e-4c7c-a266-dc0fc9e93856/wishlist-king-197/assets/component-account-dialog.css"
+        "appBaseCss": "https://cdn.shopify.com/extensions/69296e0a-3aed-498e-a588-3e0f4a40c2a2/wishlist-king-198/assets/app-base.css",
+        "componentWishlistButtonBlockJs": "https://cdn.shopify.com/extensions/69296e0a-3aed-498e-a588-3e0f4a40c2a2/wishlist-king-198/assets/component-wishlist-button-block.js",
+        "componentWishlistLinkJs": "https://cdn.shopify.com/extensions/69296e0a-3aed-498e-a588-3e0f4a40c2a2/wishlist-king-198/assets/component-wishlist-link.js",
+        "componentWishlistLinkCss": "https://cdn.shopify.com/extensions/69296e0a-3aed-498e-a588-3e0f4a40c2a2/wishlist-king-198/assets/component-wishlist-link.css",
+        "componentWishlistLinkBlockJs": "https://cdn.shopify.com/extensions/69296e0a-3aed-498e-a588-3e0f4a40c2a2/wishlist-king-198/assets/component-wishlist-link-block.js",
+        "componentWishlistPageBundleJs": "https://cdn.shopify.com/extensions/69296e0a-3aed-498e-a588-3e0f4a40c2a2/wishlist-king-198/assets/component-wishlist-page-bundle.js",
+        "componentWishlistPageBundleCss": "https://cdn.shopify.com/extensions/69296e0a-3aed-498e-a588-3e0f4a40c2a2/wishlist-king-198/assets/component-wishlist-page-bundle.css",
+        "componentWishlistLinkFloatingJs": "https://cdn.shopify.com/extensions/69296e0a-3aed-498e-a588-3e0f4a40c2a2/wishlist-king-198/assets/component-wishlist-link-floating.js",
+        "componentWishlistLinkFloatingCss": "https://cdn.shopify.com/extensions/69296e0a-3aed-498e-a588-3e0f4a40c2a2/wishlist-king-198/assets/component-wishlist-link-floating.css",
+        "componentWishlistButtonCollectionJs": "https://cdn.shopify.com/extensions/69296e0a-3aed-498e-a588-3e0f4a40c2a2/wishlist-king-198/assets/component-wishlist-button-collection.js",
+        "componentWishlistButtonCollectionCss": "https://cdn.shopify.com/extensions/69296e0a-3aed-498e-a588-3e0f4a40c2a2/wishlist-king-198/assets/component-wishlist-button-collection.css",
+        "componentWishlistButtonProductJs": "https://cdn.shopify.com/extensions/69296e0a-3aed-498e-a588-3e0f4a40c2a2/wishlist-king-198/assets/component-wishlist-button-product.js",
+        "componentWishlistButtonProductCss": "https://cdn.shopify.com/extensions/69296e0a-3aed-498e-a588-3e0f4a40c2a2/wishlist-king-198/assets/component-wishlist-button-product.css",
+        "componentSaveForLaterCss": "https://cdn.shopify.com/extensions/69296e0a-3aed-498e-a588-3e0f4a40c2a2/wishlist-king-198/assets/component-save-for-later.css",
+        "componentAccountDialogCss": "https://cdn.shopify.com/extensions/69296e0a-3aed-498e-a588-3e0f4a40c2a2/wishlist-king-198/assets/component-account-dialog.css"
       },
       "config": {
         "apiHost": "https:\/\/api.appmate.io\/v2",
@@ -4887,7 +4849,7 @@ for (var attr in meta) {
         "shopCustomerAccountsEnabled": true,
         "fileUrl": "\/\/www.jennyfer.com\/cdn\/shop\/files\/?19704",
         "storefrontAccessToken": "a6f15e9f1add9c5b7db6d8841f3e6025",
-        "storefrontVersion": "2023-10",
+        "storefrontVersion": "2024-01",
         "localeIsoCode": "fr",
         "token": "90b925c0d284be9d78358b024da159ef0f7a2e07c9ebaf923df9df1ff259b554"
       },
@@ -4927,7 +4889,7 @@ for (var attr in meta) {
     }
   </script>
   
-    <script type="module" src="https://cdn.shopify.com/extensions/50f07d38-fa0e-4c7c-a266-dc0fc9e93856/wishlist-king-197/assets/block-app-settings.js"></script>
+    <script type="module" src="https://cdn.shopify.com/extensions/69296e0a-3aed-498e-a588-3e0f4a40c2a2/wishlist-king-198/assets/block-app-settings.js"></script>
   
   <style>
     :root {
@@ -4952,6 +4914,47 @@ for (var attr in meta) {
     }
   </style>
 
+
+</div><div id="shopify-block-4139971114690857691" class="shopify-block shopify-app-block">
+<script id="wkCollectionButtons" type="application/json">
+  {
+    "injectMethod": "insertAfter",
+    "buttonPlacement": "top-end",
+    "productLinkSelector": "",
+    "injectReferenceJs": "(target, app) => target",
+    "floatingReferenceJs": "(target, app) => target",
+    "productHandleJs": "(target, app) => app.theme.getProductHandle(target.element.href)",
+    "productVariantJs": "(target, app) => app.theme.getVariantId(target.element.href)",
+    "integration": {
+      "productLinkSelector": "",
+      "injectReferenceJs": "(target, app) => target",
+      "floatingReferenceJs": "(target, app) => target",
+      "productHandleJs": "(target, app) => app.theme.getProductHandle(target.element.href)",
+      "productVariantJs": "(target, app) => app.theme.getVariantId(target.element.href)"
+    }
+  }
+</script>
+
+  <script type="module" src="https://cdn.shopify.com/extensions/69296e0a-3aed-498e-a588-3e0f4a40c2a2/wishlist-king-198/assets/block-wishlist-button-collection.js"></script>
+
+<style>
+  wishlist-button-collection {
+    --icon-size: 18px;
+    --icon-stroke-width: 1px;
+    --button-offset-vertical: 0px;
+    --button-offset-horizontal: 0px;
+    --button-background-size: 34px;
+    --button-background-border-radius: 24px;
+    --button-border-width: 1px;
+    --button-background-opacity: 85%;
+
+    --button-background: none;
+    --button-border: none;
+    --icon-stroke: rgb(var(--wk-color-accent-1));
+
+    
+  }
+</style>
 
 </div></body>
 </html>
