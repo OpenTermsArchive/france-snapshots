@@ -32,7 +32,7 @@
     <link href="//honeycomb.flixbus.com/dist/11.0.1/css/honeycomb-fonts.css" rel="stylesheet" type="text/css" crossorigin=""/>
 
     <link rel="stylesheet" href="https://cdn-cf.cms.flixbus.com/drupal-assets/flix-home-assets/cms_honeycomb.f1a3e9.css" async />
-    <link rel="stylesheet" href="https://cdn-cf.cms.flixbus.com/drupal-assets/flix-home-assets/styles.c6b801.css" async />
+    <link rel="stylesheet" href="https://cdn-cf.cms.flixbus.com/drupal-assets/flix-home-assets/styles.e8c359.css" async />
 
     <link
       rel="apple-touch-icon"
@@ -1529,7 +1529,10 @@
 <main id="main-content">
     
   <div class="hero-container" data-testid="hero">
-    <div class="hero-image-container">
+
+    
+
+    <div id="default-hero-image-container" class="hero-image-container">
       <picture>
         <source srcset="https://cdn-cf.cms.flixbus.com/drupal-assets/2021-10/desktop-flix-hero-q4-2021.jpg" media="(min-width: 1200px)" />
         <source srcset="https://cdn-cf.cms.flixbus.com/drupal-assets/2021-10/tablet-flix-hero-q4-2021.jpeg" media="(min-width: 600px)" />
@@ -1537,6 +1540,7 @@
         <img class="hero-image" alt="" src="https://cdn-cf.cms.flixbus.com/drupal-assets/2021-10/mobile-flix-hero-q4-2021.jpg" />
       </picture>
     </div>
+  
     
       <div class="hero-banner">
         <div class="hero-banner-container">
@@ -1544,6 +1548,7 @@
         </div>
       </div>
     
+
     <div class="hero-content">
       <h1 class="flix-h1 flix-h1--section-header hero-heading" data-vo-hidden="false">
           Affordable coach travel from just £4.49*
@@ -1585,6 +1590,13 @@
       </div>
     </div>
   </div>
+
+  <script>
+    if (window.Aetna && 'webc_fxp_1838' in window.Aetna) {
+      document.getElementById("default-hero-image-container").style.display = "none";
+      document.getElementById("ab-test-1838").style.display = "block";
+    }
+  </script>
 
     
     
@@ -2606,7 +2618,7 @@
         site: 'datadoghq.eu',
         service: 'fxt.webc.cms.gohome',
         sessionSampleRate: 10,
-        version: "gohome.20241022.065615",
+        version: "gohome.20241022.140652",
         trackSessionAcrossSubdomains: true,
         useSecureSessionCookie: true,
         useCrossSiteSessionCookie: true,
