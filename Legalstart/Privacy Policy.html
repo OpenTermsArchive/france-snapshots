@@ -15,7 +15,7 @@
 		
 		<link rel="dns-prefetch" href="//static.affilae.com">
 		<link rel="dns-prefetch" href="//js.hs-banner.com">
-		<link rel="dns-prefetch" href="//js.hs-analytics.net">
+		
 		<link rel="dns-prefetch" href="//js.hubspot.com">
 		
 		
@@ -114,10 +114,48 @@ a.cta_button{-moz-box-sizing:content-box !important;-webkit-box-sizing:content-b
 
 
 
-<script src="https://www.legalstart.fr/lsmsr/353vxup57k1unjm.js?aw=P64CF36" defer fetchpriority="low"></script>
+
 <script>
-window.dataLayer = window.dataLayer || [];
-window.dataLayer.push({'gtm.start':new Date().getTime(), event:'gtm.js'});
+  function awp_injectScript(scriptUrl, timeOut = 0, attributes = {}) {
+    const preloadAndInjectScript = () => {
+      const preloadLink = document.createElement('link');
+      preloadLink.href = scriptUrl;
+      preloadLink.rel = 'preload';
+      preloadLink.as = 'script';
+      preloadLink.fetchPriority = 'low';
+      document.head.appendChild(preloadLink);
+      document.addEventListener('DOMContentLoaded', function () {
+        setTimeout(() => {
+          const appendScript = () => {
+            const script = document.createElement('script');
+            script.src = scriptUrl;
+            script.async = true;
+            script.fetchPriority = 'low';
+            if (attributes && typeof attributes === 'object') {
+              for (const [key, value] of Object.entries(attributes)) {
+                script.setAttribute(key, value);
+              }
+            }
+            document.head.appendChild(script);
+          };
+          if ('requestIdleCallback' in window) {
+            window.requestIdleCallback(appendScript);
+          } else {
+            appendScript();
+          }
+        }, timeOut);
+      });
+    };
+    
+    preloadAndInjectScript();
+  }
+  
+  awp_injectScript("https://www.legalstart.fr/lsmsr/353vxup57k1unjm.js?aw=P64CF36", 500);
+</script>
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({'gtm.start':new Date().getTime(), event:'gtm.js'});
 </script>
 <meta property="og:url" content="https://www.legalstart.fr/corp/vie-privee/">
 <meta name="twitter:card" content="summary">
@@ -2720,8 +2758,8 @@ _hsq.push(["setContentMetadata", {
 
 <script type="text/javascript">
 var hsVars = {
-    render_id: "f6a4d4a8-f4bd-4d48-ae34-d8948ad3b1c4",
-    ticks: 1732029268703,
+    render_id: "55bc5bbc-3767-4a40-8313-652b9e6a1867",
+    ticks: 1732203506857,
     page_id: 62082670938,
     
     content_group_id: 0,
