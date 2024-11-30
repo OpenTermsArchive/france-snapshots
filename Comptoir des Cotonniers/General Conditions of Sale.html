@@ -724,65 +724,6 @@ console.log('SW registration failed: ', registrationError);
 
                 
                 
-                    <div class="chat-bot-info" data-site-id="CDC-FR" data-organization-id="00D09000007U47z" data-host-url="https://fastretailing.my.site.com/ESWCDCChat1713344120319" data-embedded-msg="CDC_Chat_Service_Deployment" data-language="fr" data-country="FR" data-channel="Chat" data-storeland-id="null"></div>
-                    <script>
-                        function initEmbeddedMessaging() {
-                            try {
-                                var chatBotInfo = document.getElementsByClassName('chat-bot-info')[0];
-                                var organizationId = chatBotInfo.getAttribute('data-organization-id');
-                                var hostUrl = chatBotInfo.getAttribute('data-host-url');
-                                var embeddedMsg = chatBotInfo.getAttribute('data-embedded-msg');
-                                var language = chatBotInfo.getAttribute('data-language');
-                                var country = chatBotInfo.getAttribute('data-country');
-                                var channel = chatBotInfo.getAttribute('data-channel');
-                                var storelandID = chatBotInfo.getAttribute('data-storeland-id');
-                                var siteID = chatBotInfo.getAttribute('data-site-id');
-                                var brand = siteID.includes("CDC") ? "CDC" : "PTT";
-
-                                embeddedservice_bootstrap.settings.language = language;
-
-                                window.addEventListener("onEmbeddedMessagingReady", () => {
-                                    embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({
-                                        "Storeland_Id" : storelandID,
-                                        "Brand" : brand,
-                                        "Language" : language,
-                                        "Channel" : channel,
-                                        "Country" : country
-                                    });
-                                });
-
-                                embeddedservice_bootstrap.init(
-                                    organizationId,
-                                    embeddedMsg,
-                                    hostUrl,
-                                    {
-                                        scrt2URL: 'https://fastretailing--dev.sandbox.my.salesforce-scrt.com'
-                                    }
-                                );
-                            } catch (err) {
-                                console.error('Error loading Embedded Messaging: ', err);
-                            }
-                        };
-                    </script>
-                    <script src='https://fastretailing.my.site.com/ESWCDCChat1713344120319/assets/js/bootstrap.min.js' onload="initEmbeddedMessaging()" ></script>
-                    <div class="button-container-popup__content chat-bot chat-bot--mobile">
-                        <p>
-                            Contactez-nous depuis notre Chatbot
-                        </p>
-                        
-
-
-
-
-
-
-
-<span class="svg-wrapper " style="width:28px; height:29px;">
-    <svg width='28' height='29' fill='none' xmlns='http://www.w3.org/2000/svg'><circle cx='14' cy='14.582' r='14' fill='#000' style='fill:#000;fill-opacity:1'/><g clip-path='url(#a)' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'><path d='M8.833 20.957v-9.209a2.125 2.125 0 0 1 2.125-2.124h7.084a2.125 2.125 0 0 1 2.125 2.124v4.25a2.125 2.125 0 0 1-2.125 2.126h-6.375l-2.834 2.833z' fill='#fff' stroke='#fff' style='fill:#fff;fill-opacity:1;stroke:#fff;stroke-opacity:1'/><path d='M14.5 13.873v.007M11.667 13.873v.007M17.333 13.873v.007' stroke='#000' style='stroke:#000;stroke-opacity:1'/></g><defs><clipPath id='a'><path fill='#fff' style='fill:#fff;fill-opacity:1' transform='translate(6 6.082)' d='M0 0h17v17H0z'/></clipPath></defs></svg>
-</span>
-
-                    </div>
-                
 
                 
                 
@@ -1590,13 +1531,13 @@ D&eacute;j&agrave; cliente ?
 
 
 
-<label for="dwfrm_login_username_d0eixtzgknyy"><span class="required-indicator"></span><span>Votre e-mail</span></label>
+<label for="dwfrm_login_username_d0unxafrfvfy"><span class="required-indicator"></span><span>Votre e-mail</span></label>
 
 
 <div class="field-wrapper ">
 
 <span class="input-wrapper">
-<input placeholder="Votre e-mail*" class="input-text  required" type="email"  id="dwfrm_login_username_d0eixtzgknyy" name="dwfrm_login_username_d0eixtzgknyy" value=""  />
+<input placeholder="Votre e-mail*" class="input-text  required" type="email"  id="dwfrm_login_username_d0unxafrfvfy" name="dwfrm_login_username_d0unxafrfvfy" value=""  />
 </span>
 </div>
 
@@ -1619,13 +1560,13 @@ D&eacute;j&agrave; cliente ?
 
 
 
-<label for="dwfrm_login_password_d0ahluynokdo"><span class="required-indicator"></span><span>Mot de passe</span></label>
+<label for="dwfrm_login_password_d0jwoaoiutjs"><span class="required-indicator"></span><span>Mot de passe</span></label>
 
 
 <div class="field-wrapper ">
 
 <span class="input-wrapper">
-<input placeholder="Mot de passe*" class="input-text password8char  required" type="password"  id="dwfrm_login_password_d0ahluynokdo" name="dwfrm_login_password_d0ahluynokdo" value="" autocomplete="off"  />
+<input placeholder="Mot de passe*" class="input-text password8char  required" type="password"  id="dwfrm_login_password_d0jwoaoiutjs" name="dwfrm_login_password_d0jwoaoiutjs" value="" autocomplete="off"  />
 </span>
 </div>
 
@@ -1644,7 +1585,7 @@ D&eacute;j&agrave; cliente ?
 <div class="row">
 <button type="submit" class="red" name="dwfrm_login_login">Me connecter</button>
 </div>
-<input type="hidden" name="dwfrm_login_securekey" value="1154850212"/>
+<input type="hidden" name="dwfrm_login_securekey" value="772188742"/>
 <input type="hidden" name="isAccountPage" value="null"/>
 </div>
 </form>
@@ -1683,14 +1624,14 @@ sur le site ?
 
 
 </div>
-<input type="hidden" name="dwfrm_profile_securekey" value="206347573"/>
+<input type="hidden" name="dwfrm_profile_securekey" value="1832806544"/>
 <div class="row">
 <div class="row">
 <button type="submit" class="red last" >Cr&eacute;er un compte</button>
 </div>
 </div>
 </div>
-<input type="hidden" name="csrf_token" value="bHgzrWd9EWPjVefN8cIcgaw7mZ7P7U_kceKmsH1qu-lnKohjFgtMkI2JqJoAY7bfjaG7URUv8pYyIGPEJ6TVjKq_hLeEpnWNE5d1FOitY58RBcUoD2Mje-H1cer6Jg_X7ftKCG8Miau3KaDVcs8oGEaUZAZxpMwYzyuaL3_npQESGSNbwB8=" />
+<input type="hidden" name="csrf_token" value="okWRKQpI3vTXi15bEQO9BCgxT5fRklU5bULL_NVOcL9ENEGMB5CIvijCAE2mSTT0GdCZsH2IPf6W11Jaq-S3CXzMAsDWtBu2g8aBPXveFIqnHsIwhSAcVGUBsU1tWt2YiD7UthyMW_auHZ-oHDCxW_us63FSfiHnUhry6svPqfxye_l1Es8=" />
 </form>
 </div>
 <div class="cdc-nav-form-info">
@@ -1961,13 +1902,13 @@ D&eacute;j&agrave; cliente ?
 
 
 
-<label for="dwfrm_login_username_d0qrkdtbgmcx"><span class="required-indicator"></span><span>Votre e-mail</span></label>
+<label for="dwfrm_login_username_d0ofmgswtyfa"><span class="required-indicator"></span><span>Votre e-mail</span></label>
 
 
 <div class="field-wrapper ">
 
 <span class="input-wrapper">
-<input placeholder="Votre e-mail*" class="input-text  required" type="email"  id="dwfrm_login_username_d0qrkdtbgmcx" name="dwfrm_login_username_d0qrkdtbgmcx" value=""  />
+<input placeholder="Votre e-mail*" class="input-text  required" type="email"  id="dwfrm_login_username_d0ofmgswtyfa" name="dwfrm_login_username_d0ofmgswtyfa" value=""  />
 </span>
 </div>
 
@@ -1990,13 +1931,13 @@ D&eacute;j&agrave; cliente ?
 
 
 
-<label for="dwfrm_login_password_d0zejluaybow"><span class="required-indicator"></span><span>Mot de passe</span></label>
+<label for="dwfrm_login_password_d0pzdwrhobsn"><span class="required-indicator"></span><span>Mot de passe</span></label>
 
 
 <div class="field-wrapper ">
 
 <span class="input-wrapper">
-<input placeholder="Mot de passe*" class="input-text password8char  required" type="password"  id="dwfrm_login_password_d0zejluaybow" name="dwfrm_login_password_d0zejluaybow" value="" autocomplete="off"  />
+<input placeholder="Mot de passe*" class="input-text password8char  required" type="password"  id="dwfrm_login_password_d0pzdwrhobsn" name="dwfrm_login_password_d0pzdwrhobsn" value="" autocomplete="off"  />
 </span>
 </div>
 
@@ -2015,7 +1956,7 @@ D&eacute;j&agrave; cliente ?
 <div class="row">
 <button type="submit" class="red" name="dwfrm_login_login">Me connecter</button>
 </div>
-<input type="hidden" name="dwfrm_login_securekey" value="1154850212"/>
+<input type="hidden" name="dwfrm_login_securekey" value="772188742"/>
 <input type="hidden" name="isAccountPage" value="null"/>
 </div>
 </form>
@@ -2054,14 +1995,14 @@ sur le site ?
 
 
 </div>
-<input type="hidden" name="dwfrm_profile_securekey" value="206347573"/>
+<input type="hidden" name="dwfrm_profile_securekey" value="1832806544"/>
 <div class="row">
 <div class="row">
 <button type="submit" class="red last" >Cr&eacute;er un compte</button>
 </div>
 </div>
 </div>
-<input type="hidden" name="csrf_token" value="xz9t5fV9n7_GiX19-vmXzUmEHlHGCu_HvcE55vSdQ4tdCZrPto2GddfPPa-7EkKFL-3G0P-2Dr_kvD0c_NRbwcrY9hZuQ79e1qRcdyFYHzjv3sMCLiNnHgrwJ4Iz2zmrBPrPc42pFnFZJEjgp0a0AmjusCFUCnjdxi6sBTmMbxeDqke2m3E=" />
+<input type="hidden" name="csrf_token" value="2QLv7F1KFKJ9StIpSvZHByIhtmfjCtVz0V-V5zD9Vs6_w7w3oGvXL40yvMpl8_Si0ipVaQ_aNIXW8TdjCRcuzsccSPz1KMkA6jBoLKrJDxMGVc7MDx6IHYgqP1XqFdQCY68JGZ4HOYaH9f3pgEfhpNbEcDSnoPXkp9GBIH315fjmex67oKk=" />
 </form>
 </div>
 <div class="cdc-nav-form-info">
@@ -7491,7 +7432,7 @@ Vous pouvez &eacute;galement taper &laquo; cookies &raquo; dans la rubrique &laq
 			<p>SERVICE CLIENT<br> 01 43 12 03 33 </p>
 		</div>
 	</div>
-<script type="text/javascript"  src="/kDUdErQ2aRDo9HpEafDb0nBC/J9uOVw2zDNLb/ZxJDZw/WhxCCkt/TCmsB"></script></body>
+<script type="text/javascript"  src="/k92IxS/zuDAd/uknyY/HSHX/9Sarf8czchVD9NVE/Bj4tAQ/ZGxYX1/lTY0kB"></script></body>
 
 </div> <!-- End content-asset -->
 
