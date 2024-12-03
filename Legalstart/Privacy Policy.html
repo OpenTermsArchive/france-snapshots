@@ -112,51 +112,6 @@ a.cta_button{-moz-box-sizing:content-box !important;-webkit-box-sizing:content-b
     <link rel="canonical" href="https://www.legalstart.fr/corp/vie-privee/">
 
 
-
-
-
-<script>
-  function awp_injectScript(scriptUrl, timeOut = 0, attributes = {}) {
-    const preloadAndInjectScript = () => {
-      const preloadLink = document.createElement('link');
-      preloadLink.href = scriptUrl;
-      preloadLink.rel = 'preload';
-      preloadLink.as = 'script';
-      preloadLink.fetchPriority = 'low';
-      document.head.appendChild(preloadLink);
-      document.addEventListener('DOMContentLoaded', function () {
-        setTimeout(() => {
-          const appendScript = () => {
-            const script = document.createElement('script');
-            script.src = scriptUrl;
-            script.async = true;
-            script.fetchPriority = 'low';
-            if (attributes && typeof attributes === 'object') {
-              for (const [key, value] of Object.entries(attributes)) {
-                script.setAttribute(key, value);
-              }
-            }
-            document.head.appendChild(script);
-          };
-          if ('requestIdleCallback' in window) {
-            window.requestIdleCallback(appendScript);
-          } else {
-            appendScript();
-          }
-        }, timeOut);
-      });
-    };
-    
-    preloadAndInjectScript();
-  }
-  
-  awp_injectScript("https://www.legalstart.fr/lsmsr/353vxup57k1unjm.js?aw=P64CF36", 500);
-</script>
-
-<script>
-  window.dataLayer = window.dataLayer || [];
-  window.dataLayer.push({'gtm.start':new Date().getTime(), event:'gtm.js'});
-</script>
 <meta property="og:url" content="https://www.legalstart.fr/corp/vie-privee/">
 <meta name="twitter:card" content="summary">
 <meta http-equiv="content-language" content="fr">
@@ -2758,8 +2713,8 @@ _hsq.push(["setContentMetadata", {
 
 <script type="text/javascript">
 var hsVars = {
-    render_id: "43ab177f-b387-4635-9bbb-c43f5a4f8835",
-    ticks: 1733135565175,
+    render_id: "4d0d587f-a2e6-4f88-bf0e-5bc695cbd984",
+    ticks: 1733220388721,
     page_id: 62082670938,
     
     content_group_id: 0,
@@ -2778,6 +2733,53 @@ var hsVars = {
 
 
 <script defer src="/hs/hsstatic/HubspotToolsMenu/static-1.354/js/index.js"></script>
+
+
+
+
+
+<script>
+  function awp_injectScript(scriptUrl, timeOut = 0, attributes = {}) {
+    const preloadAndInjectScript = () => {
+      const preloadLink = document.createElement('link');
+      preloadLink.href = scriptUrl;
+      preloadLink.rel = 'preload';
+      preloadLink.as = 'script';
+      preloadLink.fetchPriority = 'low';
+      document.head.appendChild(preloadLink);
+      document.addEventListener('DOMContentLoaded', function () {
+        setTimeout(() => {
+          const appendScript = () => {
+            const script = document.createElement('script');
+            script.src = scriptUrl;
+            script.async = true;
+            script.fetchPriority = 'low';
+            if (attributes && typeof attributes === 'object') {
+              for (const [key, value] of Object.entries(attributes)) {
+                script.setAttribute(key, value);
+              }
+            }
+            document.head.appendChild(script);
+          };
+          if ('requestIdleCallback' in window) {
+            window.requestIdleCallback(appendScript);
+          } else {
+            appendScript();
+          }
+        }, timeOut);
+      });
+    };
+    
+    preloadAndInjectScript();
+  }
+  
+  awp_injectScript("https://www.legalstart.fr/lsmsr/353vxup57k1unjm.js?aw=P64CF36", 500);
+</script>
+
+<script>
+  window.dataLayer = window.dataLayer || [];
+  window.dataLayer.push({'gtm.start':new Date().getTime(), event:'gtm.js'});
+</script>
 
 <!-- Managed by Thai (tnguyen@yolaw.fr) -->
 
