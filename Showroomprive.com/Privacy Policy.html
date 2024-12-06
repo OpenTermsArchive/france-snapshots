@@ -10,11 +10,11 @@
     <meta id="meta_privacy_policy" name="keywords" content="showroom prive, ventes privees sur internet, retrouvez les mentions légales de ventes d’un produit. Cette page regroupe toutes les informations d’aide en ligne concernant la vente d’un produit." />
 
 
-    <script type="text/javascript" src="/ruxitagentjs_ICA7NVfghqrtux_10303241106123517.js" data-dtconfig="rid=RID_-1809683635|rpid=-2032384308|domain=showroomprive.com|reportUrl=/rb_bf16440rul|app=229858f65ef07f43|featureHash=ICA7NVfghqrtux|vcfi=0|srsr=1000|vcv=0|xb=https://[a-zA-Z]^bs.clarity^bs.ms/collect|rdnt=1|uxrgce=1|cuc=9samu2hm|mel=100000|dpvc=1|md=mdcc1=a#SpanCartRolloverQuantity,mdcc2=btc_vars.user_rfm,mdcc3=a#SpanCartRolloverTotal,mdcc4=dgclid,mdcc5=bdocument.referrer,mdcc6=dutm_campaign,mdcc7=dutm_medium,mdcc8=dutm_source,mdcc9=bnavigator.userAgent,mdcc10=dutm_term,mdcc11=dutm_content,mdcc12=dcategorie,mdcc13=dvente,mdcc14=dboutique,mdcc15=dproduit,mdcc16=dsport,mdcc18=du,mdcc21=fx-ocdn|lastModification=1732701561139|mdp=mdcc4|tp=500,50,0|agentUri=/ruxitagentjs_ICA7NVfghqrtux_10303241106123517.js"></script><script type="text/javascript" src="//static.cedex.it.showroomprive.com/v4/js/Externals/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="/ruxitagentjs_ICA7NVfghqrtux_10303241106123517.js" data-dtconfig="rid=RID_-1809683635|rpid=846591048|domain=showroomprive.com|reportUrl=/rb_bf16440rul|app=229858f65ef07f43|featureHash=ICA7NVfghqrtux|vcfi=0|srsr=1000|vcv=0|xb=https://[a-zA-Z]^bs.clarity^bs.ms/collect|rdnt=1|uxrgce=1|cuc=9samu2hm|mel=100000|dpvc=1|md=mdcc1=a#SpanCartRolloverQuantity,mdcc2=btc_vars.user_rfm,mdcc3=a#SpanCartRolloverTotal,mdcc4=dgclid,mdcc5=bdocument.referrer,mdcc6=dutm_campaign,mdcc7=dutm_medium,mdcc8=dutm_source,mdcc9=bnavigator.userAgent,mdcc10=dutm_term,mdcc11=dutm_content,mdcc12=dcategorie,mdcc13=dvente,mdcc14=dboutique,mdcc15=dproduit,mdcc16=dsport,mdcc18=du,mdcc21=fx-ocdn|lastModification=1732701561139|mdp=mdcc4|tp=500,50,0|agentUri=/ruxitagentjs_ICA7NVfghqrtux_10303241106123517.js"></script><script type="text/javascript" src="//static.cedex.it.showroomprive.com/v4/js/Externals/jquery-1.12.3.min.js"></script>
     <script type="text/javascript" src="//static.cedex.it.showroomprive.com/v4/js/Externals/jquery-ui-1.11.4.min.js"></script>
     <script type="text/javascript" src="//static.cedex.it.showroomprive.com/v4/js/Externals/jquery-datepicker-fr.js"></script>
     <script type="text/javascript" src="//static.cedex.it.showroomprive.com/v4/js/Externals/lodash-2.4.2.compat.min.js"></script>
-    <script type="text/javascript" src="//static.cedex.it.showroomprive.com/v4/js/tags/gtm_1.js?v=1.0.0"></script>
+    
     <script type="text/javascript">
         var dataLayer = [];
         if (document.location.href.indexOf("/ficheproduit.aspx") !== -1) {
@@ -32,10 +32,18 @@
                         if (response != "") {
                             var resp = JSON.parse(response);
                             if (resp.data != null) {
-                                dataLayer = JSON.parse(resp.data.tag);
-                                dataLayer.push({ 'event': 'datalayer_ready' });
+                                dataLayer = JSON.parse(resp.data.tag);                              
+
+                                // insert GTM container 1
+                                var script = document.createElement('script');
+                                script.type = 'text/javascript';
+                                script.src = '//static.cedex.it.showroomprive.com/v4/js/tags/gtm_1.js?v=1.0.0';
+                                document.getElementsByTagName('head')[0].appendChild(script);
+
                                 EVENTS_TC.init();
                                 EVENTS_TC["ficheproduit"].init();
+
+                                dataLayer.push({ 'event': 'datalayer_ready' });
                             }
                             else
                             {
@@ -53,7 +61,14 @@
         }
         else {
             // synchronous call to get datalayer
-            dataLayer = [{"userVip":"N","userEmployee":"N","productArray":[],"promotionArray":[],"orderGlobalArray":[],"envTemplate":"other_generic","envWork":"prod","envCountry":"FR","envLanguage":"FR","envDevice":"d","pageTitle":"Showroomprive : les ventes privées de grandes marques","pageType":"other","pageUniverse":"Accueil","pageSubuniverse":"","userShippingTest":null}];
+            dataLayer = [{"userVip":"N","userEmployee":"N","productArray":[],"promotionArray":[],"orderGlobalArray":[],"envTemplate":"other_generic","envWork":"prod","envCountry":"FR","envLanguage":"FR","envDevice":"d","pageTitle":"Showroomprive : les ventes privées de grandes marques","pageType":"other","pageUniverse":"Accueil","pageSubuniverse":"","userShippingTest":null}];       
+
+            // insert GTM container 1
+            var script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.src = '//static.cedex.it.showroomprive.com/v4/js/tags/gtm_1.js?v=1.0.0';
+            document.getElementsByTagName('head')[0].appendChild(script);
+
             dataLayer.push({ 'event': 'datalayer_ready' });
         }
 
@@ -107,7 +122,7 @@
     
     <script type="text/javascript" src="//static.cedex.it.showroomprive.com/v4/js/Common/angular_loader.js?ver=0-0-7"></script>
     <script type="text/javascript">
-		var _angularLoader = AngularLoader("//static.cedex.it.showroomprive.com/v4/HPNg/", "1.0.337", ("False" === "True"));
+		var _angularLoader = AngularLoader("//static.cedex.it.showroomprive.com/v4/HPNg/", "1.0.339", ("False" === "True"));
 		_angularLoader.init();
 	</script>
     
@@ -194,7 +209,7 @@
 <body class="body_politique_confidentialite  bg-body txt-dark" id="body" data-pagekey="" data-pagevalue="" data-theme="">
     <form method="post" action="./politique_confidentialite.aspx" id="form1">
 <div class="aspNetHidden">
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="8gRfhBiTlmw2fNdWr7LDxEGfuRoD7sKaZ+y16Rrs5UyeQB+AbyfLqlH8TXhwz1WZZJhnQ83pFOgJnnN74EZwYamG55A3H38MFnvV/FTsNJydSXqGt9bkHSiMeTHshZ07pBL9DkNNXsQyXflMFSZLZ7oaHLjJT3ZPi1lKPn6sWQLQvDYXO4xUPI1HuWUTTmrr2YG4qXP0JuLVRjFrrao8fHNZrLKY1m92ScPb0Z2acavHqzDIigUj/DiNZCskDYom1fjz4Ow1reMlHTzbfjJnmJZVNhhehjzFJseDaLUUrZchqqeTt/Vllxo8rwk1nUdnJcFH5kxj14m9bO4vymeYmraP7PrYCAfofjI1yybw/L3QSiybhG2XbMe+K6qhpEzU50S2ophbBHAw743yE7akHlcWHRYsCFylQMHzXb9RHE6+/K+erCu08qOVaj2vE3wfBAIAh582PBtuaMPK2ggZPhXL1nRkWlVyArUJCxcnUmNS2eu1IjpONJ2Y5YaX35AfUIt9bAyeasTKUXHvxXLflJRwZKvkKygkVmFExl9T6iE/CmXdFTq1DquujaMjFaCLMvgcOpbA5J1K5iKe+VfC8cC+7k91jfq+4C1VtcIbJx01rU4c+Rw2BJ1ZwYIeCqTClkgeM0IlXTvxdpZw1IOx/hA4cHo5IvJnp7l4vFl08g6k+YGDlQnBDR+9DvzATzZ6GkMNiqlm4Oin7HH/2FRJuP7QQqmnkP/1y93AD9C8fbCgHUheHMMLPZTfqJ0XQ2Uo6ibcbznSGVdR/6aVN66utwoe5DYfb+cxD2iVY9fwYYMk7S7/v6FDJh7NOxREOP+pNZTq1kPgXqgw8MLnACX7KiV+G3JoGlxoAcVBnCMvc1YgSzqxO/0Fh47KpeCq85gv2FdAjxzMOW0k3KmWCeZa189/Kn5A7bSrJcabc5MiG+rqP3AfnJ4/Mkumv1VTWKesJCnBgbyqsk6b24eQYQ42bsH6I6basZYezBYq9Ybnu/suoJ24zPqV+G3uzjL9y4k8xIy+H8zGQMi9jEyF8E4u+KQD75zR+m9SeLMTU2MlTJfd+cOuIdF0gg/tonAnKi4m33AUVg6dCkAx/ZNS0HDhm/B9WPh1A7G3bsXNZGZVrYl+Ed96mO+2caYfElHUn/qHwY8UCRylWTuU/jzxWlR2/zEJ3OL/hsshvNzPT6JuhZqHN+b3NM8iXJAaIvO69dEL0xR/wkC5bM5PX3PiKjscSABXs9G5l0vfBIte8YE+cSnc96Bu8n9OEGLkCBR0ekCyPW1EZhS62v4HuSifP+12PrDxopu7sQZZrpSfwxza7UhR3OrwTQRIPG+SlH6MAt1Rjg/TzfTBIWnIuKLmPebkFcuThkaK72X4NU6pTWlp15zGkWYvTFkAKmuWevCawrMsWCdXPqh8ghorKhwU3kMe3MDLsd0K6BDkdhsASxjdABnT/F50NzrAdWYkISgZR0knsvUFaXO+1k1trSZDZ0DBCSBeFkVETrTDRzTajvU2liga8OSsWbHU4NPE4/oZyIfbAhcbba28u0CdNQrx018nQ0SB1qnZH5WUEREloYh4xMTpsSRFV6pygDT6n6B5ivg1ALpNwev8Npy8Pd+639zmEeg/+uQzgXbNnr8ygvFn0qmqo6cTUwYbGPmiWhUx5QT6NEEjZLTwp1DNVKg+aFmimSevnLffCexwmsD0Un2tSNSw98V7h2g8ndcyMtKf5awcjw/vIoKNZAcmRkafygAfsovvRVSf98ifjEeeT3FbG9Fb/noafTdVu/Xj1OtiwB9vOLHSxKCRS3xk9rLF7b5xgiQl54uPN3yE/B8wu+IxNjerTG3IJfTjO8HAJBizO6o9gAc4fYV6hBmMqF6Dxyovfdn9+S7A0JzBvoobXoPXmoinqFWF1Af7AzrFGZr+ispwU9OgTDN3gk9VeZxI6iZ0/bILvpYgfALpfLSavXms+4W8XcLHwG6JVTdZO/qyWpHQQTF/JU3QfreVH4/39lkrPfPJvT12sb8zynWatSYW1cOImPLNo3HN4O2Cr459zKf42kIhoA==" />
 </div>
 
 <div class="aspNetHidden">
