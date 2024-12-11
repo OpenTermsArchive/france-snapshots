@@ -10,11 +10,11 @@
     <meta id="meta_privacy_policy" name="keywords" content="showroom prive, ventes privees sur internet, retrouvez les mentions légales de ventes d’un produit. Cette page regroupe toutes les informations d’aide en ligne concernant la vente d’un produit." />
 
 
-    <script type="text/javascript" src="/ruxitagentjs_ICA7NVfghqrtux_10303241106123517.js" data-dtconfig="rid=RID_-1809683635|rpid=-2022729244|domain=showroomprive.com|reportUrl=/rb_bf16440rul|app=229858f65ef07f43|featureHash=ICA7NVfghqrtux|vcfi=0|srsr=1000|vcv=0|xb=https://[a-zA-Z]^bs.clarity^bs.ms/collect|rdnt=1|uxrgce=1|cuc=9samu2hm|mel=100000|dpvc=1|md=mdcc1=a#SpanCartRolloverQuantity,mdcc2=btc_vars.user_rfm,mdcc3=a#SpanCartRolloverTotal,mdcc4=dgclid,mdcc5=bdocument.referrer,mdcc6=dutm_campaign,mdcc7=dutm_medium,mdcc8=dutm_source,mdcc9=bnavigator.userAgent,mdcc10=dutm_term,mdcc11=dutm_content,mdcc12=dcategorie,mdcc13=dvente,mdcc14=dboutique,mdcc15=dproduit,mdcc16=dsport,mdcc18=du,mdcc21=fx-ocdn|lastModification=1733762665189|mdp=mdcc4|tp=500,50,0|agentUri=/ruxitagentjs_ICA7NVfghqrtux_10303241106123517.js"></script><script type="text/javascript" src="//static.cedex.it.showroomprive.com/v4/js/Externals/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="/ruxitagentjs_ICA7NVfghqrtux_10303241106123517.js" data-dtconfig="rid=RID_-1809683635|rpid=-374926795|domain=showroomprive.com|reportUrl=/rb_bf16440rul|app=229858f65ef07f43|featureHash=ICA7NVfghqrtux|vcfi=0|srsr=1000|vcv=0|xb=https://[a-zA-Z]^bs.clarity^bs.ms/collect|rdnt=1|uxrgce=1|cuc=9samu2hm|mel=100000|dpvc=1|md=mdcc1=a#SpanCartRolloverQuantity,mdcc2=btc_vars.user_rfm,mdcc3=a#SpanCartRolloverTotal,mdcc4=dgclid,mdcc5=bdocument.referrer,mdcc6=dutm_campaign,mdcc7=dutm_medium,mdcc8=dutm_source,mdcc9=bnavigator.userAgent,mdcc10=dutm_term,mdcc11=dutm_content,mdcc12=dcategorie,mdcc13=dvente,mdcc14=dboutique,mdcc15=dproduit,mdcc16=dsport,mdcc18=du,mdcc21=fx-ocdn|lastModification=1733762665189|mdp=mdcc4|tp=500,50,0|agentUri=/ruxitagentjs_ICA7NVfghqrtux_10303241106123517.js"></script><script type="text/javascript" src="//static.cedex.it.showroomprive.com/v4/js/Externals/jquery-1.12.3.min.js"></script>
     <script type="text/javascript" src="//static.cedex.it.showroomprive.com/v4/js/Externals/jquery-ui-1.11.4.min.js"></script>
     <script type="text/javascript" src="//static.cedex.it.showroomprive.com/v4/js/Externals/jquery-datepicker-fr.js"></script>
     <script type="text/javascript" src="//static.cedex.it.showroomprive.com/v4/js/Externals/lodash-2.4.2.compat.min.js"></script>
-    
+    <script type="text/javascript" src="//static.cedex.it.showroomprive.com/v4/js/tags/gtm_1.js?v=1.0.0"></script>
     <script type="text/javascript">
         var dataLayer = [];
         if (document.location.href.indexOf("/ficheproduit.aspx") !== -1) {
@@ -32,18 +32,10 @@
                         if (response != "") {
                             var resp = JSON.parse(response);
                             if (resp.data != null) {
-                                dataLayer = JSON.parse(resp.data.tag);                              
-
-                                // insert GTM container 1
-                                var script = document.createElement('script');
-                                script.type = 'text/javascript';
-                                script.src = '//static.cedex.it.showroomprive.com/v4/js/tags/gtm_1.js?v=1.0.0';
-                                document.getElementsByTagName('head')[0].appendChild(script);
-
+                                dataLayer = JSON.parse(resp.data.tag);
+                                dataLayer.push({ 'event': 'datalayer_ready' });
                                 EVENTS_TC.init();
                                 EVENTS_TC["ficheproduit"].init();
-
-                                dataLayer.push({ 'event': 'datalayer_ready' });
                             }
                             else
                             {
@@ -61,14 +53,7 @@
         }
         else {
             // synchronous call to get datalayer
-            dataLayer = [{"userVip":"N","userEmployee":"N","productArray":[],"promotionArray":[],"orderGlobalArray":[],"envTemplate":"other_generic","envWork":"prod","envCountry":"FR","envLanguage":"FR","envDevice":"d","pageTitle":"Showroomprive : les ventes privées de grandes marques","pageType":"other","pageUniverse":"Accueil","pageSubuniverse":"","userShippingTest":null}];       
-
-            // insert GTM container 1
-            var script = document.createElement('script');
-            script.type = 'text/javascript';
-            script.src = '//static.cedex.it.showroomprive.com/v4/js/tags/gtm_1.js?v=1.0.0';
-            document.getElementsByTagName('head')[0].appendChild(script);
-
+            dataLayer = [{"userVip":"N","userEmployee":"N","productArray":[],"promotionArray":[],"orderGlobalArray":[],"envTemplate":"other_generic","envWork":"prod","envCountry":"FR","envLanguage":"FR","envDevice":"d","pageTitle":"Showroomprive : les ventes privées de grandes marques","pageType":"other","pageUniverse":"Accueil","pageSubuniverse":"","userShippingTest":null}];
             dataLayer.push({ 'event': 'datalayer_ready' });
         }
 
@@ -209,7 +194,7 @@
 <body class="body_politique_confidentialite  bg-body txt-dark" id="body" data-pagekey="" data-pagevalue="" data-theme="">
     <form method="post" action="./politique_confidentialite.aspx" id="form1">
 <div class="aspNetHidden">
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
 </div>
 
 <div class="aspNetHidden">
