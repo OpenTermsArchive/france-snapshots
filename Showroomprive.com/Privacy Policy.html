@@ -10,11 +10,11 @@
     <meta id="meta_privacy_policy" name="keywords" content="showroom prive, ventes privees sur internet, retrouvez les mentions légales de ventes d’un produit. Cette page regroupe toutes les informations d’aide en ligne concernant la vente d’un produit." />
 
 
-    <script type="text/javascript" src="/ruxitagentjs_ICA7NVfghqrtux_10303241106123517.js" data-dtconfig="rid=RID_-1809683635|rpid=1633617739|domain=showroomprive.com|reportUrl=/rb_bf16440rul|app=229858f65ef07f43|featureHash=ICA7NVfghqrtux|vcfi=0|srsr=1000|vcv=0|xb=https://[a-zA-Z]^bs.clarity^bs.ms/collect|rdnt=1|uxrgce=1|cuc=9samu2hm|mel=100000|dpvc=1|md=mdcc1=a#SpanCartRolloverQuantity,mdcc2=btc_vars.user_rfm,mdcc3=a#SpanCartRolloverTotal,mdcc4=dgclid,mdcc5=bdocument.referrer,mdcc6=dutm_campaign,mdcc7=dutm_medium,mdcc8=dutm_source,mdcc9=bnavigator.userAgent,mdcc10=dutm_term,mdcc11=dutm_content,mdcc12=dcategorie,mdcc13=dvente,mdcc14=dboutique,mdcc15=dproduit,mdcc16=dsport,mdcc18=du,mdcc21=fx-ocdn|lastModification=1733762665189|mdp=mdcc4|tp=500,50,0|agentUri=/ruxitagentjs_ICA7NVfghqrtux_10303241106123517.js"></script><script type="text/javascript" src="//static.cedex.it.showroomprive.com/v4/js/Externals/jquery-1.12.3.min.js"></script>
+    <script type="text/javascript" src="/ruxitagentjs_ICA7NVfghqrtux_10303241106123517.js" data-dtconfig="rid=RID_-1809683635|rpid=1536160911|domain=showroomprive.com|reportUrl=/rb_bf16440rul|app=229858f65ef07f43|featureHash=ICA7NVfghqrtux|vcfi=0|srsr=1000|vcv=0|xb=https://[a-zA-Z]^bs.clarity^bs.ms/collect|rdnt=1|uxrgce=1|cuc=9samu2hm|mel=100000|dpvc=1|md=mdcc1=a#SpanCartRolloverQuantity,mdcc2=btc_vars.user_rfm,mdcc3=a#SpanCartRolloverTotal,mdcc4=dgclid,mdcc5=bdocument.referrer,mdcc6=dutm_campaign,mdcc7=dutm_medium,mdcc8=dutm_source,mdcc9=bnavigator.userAgent,mdcc10=dutm_term,mdcc11=dutm_content,mdcc12=dcategorie,mdcc13=dvente,mdcc14=dboutique,mdcc15=dproduit,mdcc16=dsport,mdcc18=du,mdcc21=fx-ocdn|lastModification=1733762665189|mdp=mdcc4|tp=500,50,0|agentUri=/ruxitagentjs_ICA7NVfghqrtux_10303241106123517.js"></script><script type="text/javascript" src="//static.cedex.it.showroomprive.com/v4/js/Externals/jquery-1.12.3.min.js"></script>
     <script type="text/javascript" src="//static.cedex.it.showroomprive.com/v4/js/Externals/jquery-ui-1.11.4.min.js"></script>
     <script type="text/javascript" src="//static.cedex.it.showroomprive.com/v4/js/Externals/jquery-datepicker-fr.js"></script>
     <script type="text/javascript" src="//static.cedex.it.showroomprive.com/v4/js/Externals/lodash-2.4.2.compat.min.js"></script>
-    <script type="text/javascript" src="//static.cedex.it.showroomprive.com/v4/js/tags/gtm_1.js?v=1.0.0"></script>
+    
     <script type="text/javascript">
         var dataLayer = [];
         if (document.location.href.indexOf("/ficheproduit.aspx") !== -1) {
@@ -32,10 +32,18 @@
                         if (response != "") {
                             var resp = JSON.parse(response);
                             if (resp.data != null) {
-                                dataLayer = JSON.parse(resp.data.tag);
-                                dataLayer.push({ 'event': 'datalayer_ready' });
+                                dataLayer = JSON.parse(resp.data.tag);                              
+
+                                // insert GTM container 1
+                                var script = document.createElement('script');
+                                script.type = 'text/javascript';
+                                script.src = '//static.cedex.it.showroomprive.com/v4/js/tags/gtm_1.js?v=1.0.0';
+                                document.getElementsByTagName('head')[0].appendChild(script);
+
                                 EVENTS_TC.init();
                                 EVENTS_TC["ficheproduit"].init();
+
+                                dataLayer.push({ 'event': 'datalayer_ready' });
                             }
                             else
                             {
@@ -53,7 +61,14 @@
         }
         else {
             // synchronous call to get datalayer
-            dataLayer = [{"userVip":"N","userEmployee":"N","productArray":[],"promotionArray":[],"orderGlobalArray":[],"envTemplate":"other_generic","envWork":"prod","envCountry":"FR","envLanguage":"FR","envDevice":"m","pageTitle":"Showroomprive : les ventes privées de grandes marques","pageType":"other","pageUniverse":"Accueil","pageSubuniverse":"","userShippingTest":null}];
+            dataLayer = [{"userVip":"N","userEmployee":"N","productArray":[],"promotionArray":[],"orderGlobalArray":[],"envTemplate":"other_generic","envWork":"prod","envCountry":"FR","envLanguage":"FR","envDevice":"d","pageTitle":"Showroomprive : les ventes privées de grandes marques","pageType":"other","pageUniverse":"Accueil","pageSubuniverse":"","userShippingTest":null}];       
+
+            // insert GTM container 1
+            var script = document.createElement('script');
+            script.type = 'text/javascript';
+            script.src = '//static.cedex.it.showroomprive.com/v4/js/tags/gtm_1.js?v=1.0.0';
+            document.getElementsByTagName('head')[0].appendChild(script);
+
             dataLayer.push({ 'event': 'datalayer_ready' });
         }
 
@@ -194,7 +209,7 @@
 <body class="body_politique_confidentialite  bg-body txt-dark" id="body" data-pagekey="" data-pagevalue="" data-theme="">
     <form method="post" action="./politique_confidentialite.aspx" id="form1">
 <div class="aspNetHidden">
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="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" />
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="jZ5SpuQy+7QinykQFMVtFlrtI7Fue/aw60rn1SBm68KF8IlVB81D8ibv81labEe6DO2J//zU8USs5bg5+dkvJhIrHCS/lV1V7p6qMqpfvLyCdQfMEb8vhzzkmzq623z9QkhMbtovpNYF9qkhPzmNhxBRN4rH3SxM1obdtbRC/gI1Uj3AxusyWp9DT+yr/bUpzBSRJxY432vpds2UiqwczN/51frJrFXFKE2jy9aDoJCw2TiwJfvtDM+d5eTkPuYR6JFvqCSjhZgCTdY4jj2jQUrgeaK9NvclVAU/Oi4qO4B7d5ANWgYjHmkgQo+mSeJGRPVe0jauOrPS5VvVdCaYCcvwsGEnV7VbjaZJposn1vFU0jHltahzNROAW08JcwE/Svsgr4u758rT4Sjb92H6oNRHaSxJ2Crhrc1hSFoLvCOebEw/KuhDah53FCmvCgzBedjOUDp4U863/XED+Pou06yR9nsmWkNwgJrMCeY6omHuvaaMZfpvQxy826ZuKna8DMuOpewrYSR+A/8BmSVLZCihuLlHHdtXnhK1CXTuOMoyaqCtG8+Ll+9HUoP23PAQeJ3YdbDUKF8EDqBq6FwzDnzst55qZhg/kl0LLyNu0M9+23i5mVenUGTS9ZeZaF/DD1//ADxxU34tTxRxo4xgjgJ4G4jvLJDuMfkQL9nepdYZ968phM4uWF4Is2+jLM86wjPBcMpzIzUoAJO1LIP2b52dguKJmdxv0zSrF7GRkSDrIeJ+/1ug35Iq49/7tcnVDnGTMr+CDL4ij9FtmdmwkBNra7tcS8wxqRri7i/cbcDF0RkcDkoBEys1uDzsBdz+8Vic9pGFB45SkargtND/t5W2ejDu9+4t2G4e3M0QeKzBvabrWL4qwxZBgbdEKpWg1UfUv/VGWPw/Hjs6WfbsKZvDygdKsnmZNpYG8j9Jt7jae0o4Xyyi2LEYKNLgFfBBehH/1JwR4xvMFD3TZBn7Wjc7jIkmWEZXIb8idQHEibvfHr5zU6rZrNomxGUs+l0OSjbXdJHe7NCeGez/mHULX9d0xdvyAjOFDtfGeaUKQICpONs9BizRldcw6LbioIoQdnOTiik2PidkBlPwBOmFnYlitYDHhNWfG+9B3G1jaVD+SIS42KEZJMIevzqJOsWMU+ePTOMqa3eJyockf/DXORUjjzgzMx5x4NGdTIkZKYlNyFI48JUalEjDo2iItwl7u6XpwK5sXrLHM18v7NgMtJv0C2akBoZxsmQ1+6C9WSO2I3utCf2i3BHTYw4HjTJtBn7onxNhfRqL5R82vXlVVeqd/049RyhzlzYfLdPCmL+7Lt3PYQ9Af7TVKqaUEHW2qHEITvp79HPsfmKJdXLFgfatKJH8cylpBAJPU/M4N44GBl26rJYTugdqrbM2NBJr57ldi5yAW+l11m5lpXV4p0hyCqU1wh1ScNNSC5jn2QH+AqflH2aTHiWe/BVCISVkNWAnRgme1W5RSzWL8YSbNLhotO+fDwXhtgcQUWdgbBHszWWr+DJTgfx60jlFVoxt8RdNS1NrqWdGjLa1diaWul8GyEJsNvf1Y8mpdAPlUyIvHU8jzNsZ+YlF1GdukWtactjITRlxIXIS8eAjr9tlPTEzlSS1Huz7A+rbgQCbI8eFITm8uOXyKusOjsPDnTDRe+u4zckpYxY+Or6SK3L5QHjM12aBf+w3AM857ZzgTOIV//DytEhM7zDVT2cWlZEKfb3DfGbnI3nPCj+ZqPGakZZdJm/ESrWObK7DdhUjndLYA8N57WVzUdRkHXje/8JpbbFBCuEhawk6gZwIalis7nfqXIzigcyK5TZCruGD3vMESqz8nViqcRR5pWkEnT3weKGr1eyxmeTovAubV/SF+q1WT+HbEiSX7FmQr5wGqkBoZSeszyMnR+xeXx+SVRpdBqwEaaDX/yQ0rTCkHAdPzaG959meThEx2fz8IKDN0jy/uVdgAFOFQIZswTnlBgOonQ9touxniwgjUQkZCvo282wvPaO6EW/BvpbQJZYwJVV0vDIcQc9MyF/iQNtIzwCkDD0GyA==" />
 </div>
 
 <div class="aspNetHidden">
@@ -541,8 +556,8 @@
     marques et/ou produits  préférés, liens sur lesquels vous avez cliqués,
     actions réalisées sur le Site,  temps passé par page etc.)
     <a name="_Hlk173508712">
-        en fonction de vos choix en  matière de cookies et communications ainsi
-        que de vos actions d'ouverture de nos  emails
+        en fonction de vos choix en  matière de cookies et communications d'une
+        part ainsi que de vos actions  d'ouverture de nos emails d'autre part
     </a>
     ;
 </p>
@@ -666,14 +681,12 @@
 <p>
     Si  vous souhaitez paramétrer vos choix en matière de communications,
     cookies et partage  de données rendez-vous sur les pages «
-    <a href="https://www.showroomprive.com/moncompte/mespreferences.aspx">
-        Préférences de contact
-    </a>
-    » ou «
+    <strong><a href="https://www.showroomprive.com/moncompte/mespreferences.aspx">Préférences 
+    de contact</a></strong>» ou «
     <a href="https://www.showroomprive.com/moncompte/mescoordonnees.aspx">
-        Cookies et Communications
+        <strong>Cookies et Communications</strong>
     </a>
-    »,  accessibles depuis votre compte.
+    », accessibles depuis votre compte.
 </p>
 <p align="center">
     <strong><u>4. Combien de temps conservons-nous vos données ?</u></strong>
@@ -702,9 +715,9 @@
 </p>
 <p>
     Certaines de vos Données  Personnelles sont toutefois conservées pour des
-    durées réduites : 90 jours  maximum pour les données de localisation, 30
-    jours maximum pour les enregistrements  de vos échanges téléphoniques avec
-    notre service client.
+    durées réduites : 90 jours  maximum pour les données de localisation, 6 mois
+    maximum pour les enregistrements  de vos échanges téléphoniques avec notre
+    service client.
 </p>
 <p>
     Quelques semaines avant l'expiration  de ce délai de 3 ans, nous pourrons
@@ -868,27 +881,23 @@
 <p>
     -           Vous  ne souhaitez plus recevoir de communication ou souhaitez
     accéder à vos  données : veuillez utiliser
-    <a href="https://www.showroomprive.com/nouscontacter/form.aspx?formid=20">
-        le formulaire en ligne
-    </a>
-    .
+    <strong>
+        <u>le formulaire en ligne</u>.
+    </strong>
 </p>
 <p>
     -           Vous  souhaitez supprimer votre compte :   veuillez utiliser
-    <a href="https://www.showroomprive.com/nouscontacter/form.aspx?formid=47">
-        le formulaire en ligne
-    </a>
-    .
+    <strong><u>le formulaire en ligne</u>.</strong>
 </p>
 <p>
     <a name="_Hlk170490352">
         Si vous souhaitez paramétrer vos  choix en matière de communications,
         cookies et partage de données rendez-vous sur  les pages «
     </a>
-    <a href="https://www.showroomprive.com/moncompte/mespreferences.aspx">Préférences 
-    de contact</a>» ou «
+    <a href="https://www.showroomprive.com/moncompte/mespreferences.aspx">
+    <strong>Préférences de contact</strong> </a>» ou «
     <a href="https://www.showroomprive.com/moncompte/mescoordonnees.aspx">
-        Cookies et Communications
+        <strong>Cookies et Communications</strong>
     </a>
     »,  accessibles depuis votre compte.
 </p>
@@ -928,8 +937,8 @@
 </p>
 <p>
     En  cas de non réponse ou de réponse qui vous semblerait insatisfaisante,
-    vous disposez  également du droit d'introduire une réclamation auprès d'une
-    autorité de  contrôle :
+    vous  disposez également du droit d'introduire une réclamation auprès d'une
+    autorité  de contrôle :
 </p>
 <ul type="disc">
     <li>
@@ -999,12 +1008,12 @@
     <strong><u>8. Sécurisation et confidentialité des paiements</u></strong>
 </p>
 <p>
-    Nous attachons une grande  importance à ce que vos achats se passent dans
-    les meilleures conditions de  sécurité possible. A ce titre, vos
-    transactions sont confidentielles, cryptées  et protégées grâce au protocole
-    SSL (Secure Sockets Layer). Lors du paiement de  votre commande par carte
-    bancaire, la transaction se fait entre vous et le  groupe MONEXT, le groupe
-    ADYEN ou le Groupe PAYPAL (Braintree) reconnus pour leur  fiabilité en
+    Nous attachons une  grande importance à ce que vos achats se passent dans
+    les meilleures conditions  de sécurité possible. A ce titre, vos
+    transactions sont confidentielles,  cryptées et protégées grâce au protocole
+    SSL (Secure Sockets Layer). Lors du  paiement de votre commande par carte
+    bancaire, la transaction se fait entre  vous et le groupe MONEXT, le groupe
+    ADYEN ou le Groupe PAYPAL (Braintree) reconnus  pour leur fiabilité en
     matière de transactions sur Internet.
 </p>
 <p>
@@ -1062,9 +1071,10 @@
 <p>
     -           En  vous rendant dans la rubrique «
     <a href="https://www.showroomprive.com/moncompte/mescoordonnees.aspx">
-        Mes informations personnelles
+        <strong>Mes informations personnelles</strong>
     </a>
-    » puis « Mes cartes  enregistrées », et en cliquant sur la petite croix ; ou
+    » puis « <strong>Mes cartes enregistrées</strong> »,  et en cliquant sur la
+    petite croix ; ou
 </p>
 <p>
     -           En  nous écrivant à l'adresse email suivante :
@@ -1172,14 +1182,12 @@
 </p>
 <p>
     Vous  pouvez consulter la liste des Cookies présents sur le Site
-    <a
-        href="https://static.cedex.it.showroomprive.com/v4/0/docs/info_cookies.pdf"
-    >
-        ici
-    </a>
-    .  Nous vous invitons également à consulter les politiques en matière  de
-    cookies et données personnelles de nos  Partenaires, sur leurs sites
-    respectifs.
+    <strong>
+        <a href="https://static.cedex.it.showroomprive.com/v4/0/docs/info_cookies.pdf">ici</a>
+    </strong>
+    <strong>.</strong> Nous vous invitons également à consulter les politiques
+    en matière de cookies  et données personnelles de nos Partenaires, sur leurs
+    sites respectifs.
 </p>
 <p>
     Vous  avez le contrôle sur les Cookies (hors cookies fonctionnels
@@ -1192,11 +1200,11 @@
 </p>
 <p>
     Vous  pouvez également à tout moment paramétrer vos souhaits en matière de
-    cookies  sur l'outil développé par Showroomprive.com,
-    <a href="https://www.showroomprive.com/moncompte/mescoordonnees.aspx">
+    cookies sur  l'outil développé par Showroomprive.com,
+    <strong>
         accessible ici
-    </a>
-    ou directement dans votre navigateur.
+    </strong>
+    ou directement dans votre  navigateur.
 </p>
 <p>
     Vous  trouverez ci-dessous les différentes modalités de gestion de vos
