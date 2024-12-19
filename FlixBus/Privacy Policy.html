@@ -1858,7 +1858,7 @@
                 clientToken: 'pub6395d5bd2f2b5751fdf3784e50845d1b',
                 service: 'fxt.webc.cms.goflix',
                 sessionSampleRate: 10,
-                version: 'goflix.flixbus-v1.2.55',
+                version: 'goflix.flixbus-v1.2.56',
                 env: 'prod',
                 trackSessionAcrossSubdomains: true,
                 useSecureSessionCookie: true,
@@ -1886,7 +1886,26 @@
 <script defer async type="nomodule"
         src="https://honeycomb-icons.hive.flixbus.com/6.0.0/flix-icons/flix-icons.js"></script>
 
+<script>
+document.addEventListener("DOMContentLoaded", (event) => {
+    if (window.location.pathname == '/fernbusterminal-hannover' || window.location.pathname == '/bus-terminal-hanover') {
+        fetch(" https://hannover-timetable-gbx-stations-public.ew1p1.k8s.flix.tech/").then((response) => {
+            response.text().then((html) => {
+                console.debug(html);
+                const part = html.replace(/.*<body>(.*)<\/body>.*/is, '$1');
+                console.debug(part);
+                if (part) {
+                    const elem = document.createElement('div');
+                    elem.innerHTML = part;
+                    const referenceNode = document.querySelector("img.basic-page-header-image");
+                    referenceNode.parentNode.insertBefore(elem, referenceNode.nextSibling);
+                }
+            });
 
+        });
+    }
+});
+</script>
 </body>
 </html>
 
