@@ -26,11 +26,11 @@ var ue_csm = window,
 pec:0,ts:0,erl:[],ter:[],buffer:[],mxe:50,startTimer:function(){a.ts++;setInterval(function(){d.ue&&a.pec<a.ec&&d.uex("at");a.pec=a.ec},1E4)}};l.skipTrace=1;h.skipTrace=1;h.isStub=1;d.ueLogError=h;d.ue_err=a;e.onerror=l})(ue_csm,window);
 
 
-var ue_id = 'YS08NHED1ZY29WP0117H',
+var ue_id = 'DV3JYFVQEW1FBRBWMQ6D',
     ue_url = '/rd/uedata',
     ue_navtiming = 1,
     ue_mid = 'A13V1IB3VIYZZH',
-    ue_sid = '259-4715660-1047046',
+    ue_sid = '259-7429482-4323404',
     ue_sn = 'www.amazon.fr',
     ue_furl = 'fls-eu.amazon.fr',
     ue_surl = 'https://unagi-eu.amazon.com/1/events/com.amazon.csm.nexusclient.prod',
@@ -39,7 +39,7 @@ var ue_id = 'YS08NHED1ZY29WP0117H',
     ue_urt = 3,
     ue_rpl_ns = 'cel-rpl',
     ue_ddq = 1,
-    ue_fpf = '//fls-eu.amazon.fr/1/batch/1/OP/A13V1IB3VIYZZH:259-4715660-1047046:YS08NHED1ZY29WP0117H$uedata=s:',
+    ue_fpf = '//fls-eu.amazon.fr/1/batch/1/OP/A13V1IB3VIYZZH:259-7429482-4323404:DV3JYFVQEW1FBRBWMQ6D$uedata=s:',
     ue_sbuimp = 1,
     ue_ibft = 0,
     ue_sswmts = 0,
@@ -77,14 +77,20 @@ ue.stub(ue,"log");ue.stub(ue,"onunload");ue.stub(ue,"onflush");
 "csmcount",{c:1,bf:d}):a.clog(e,"csmcount",{bf:d}));a.cv.buffer.push({c:b,v:f})};a.count("baselineCounter2",1);a&&a.event&&(a.event(g(),"csm","csm.CSMBaselineEvent.4"),a.count("nexusBaselineCounter",1,{bf:1}))})(ue_csm);
 
 
+(function(g,h,l){if("function"===typeof h.addEventListener&&"function"===typeof l.querySelectorAll){var e,r=["mouseenter","mouseleave"],t="click dblclick mousedown mouseover mouseout touchstart keydown keypress MSPointerDown pointerdown focusin".split(" ").concat(r),n=!1,p=[];var u=function(a){for(var b=[];a;)b.push(a),a=a.parentNode;return b};var q=function(a,b){var d=-1,c;for(c=0;c<b.length;c++)if(b[c]===a){d=c;break}return d};var v=function(a,b){a=q(a,b);0<=a&&b.splice(a,1)};var x=function(a){a=
+u(a);for(var b,d,c=0;c<a.length;c++)if(d=a[c],(b=d.nodeName)&&b!==l.nodeName){b=b.toLowerCase();if(d.id)return b+"#"+d.id+(f?">"+f:"");(d=d.getAttribute("class"))&&(b=b+"."+d.split(" ").join("."));var f=b+(f?">"+f:"")}return f};var y=function(a){return a.replace(/[^\w.:\-]/g,function(a){return"#"===a?"::":">"===a?":-":"_"})};var w=function(a,b){if(g.ue&&g.ue.count&&g.ueLogError){a=x(a);var d=y(a);var c="degraded"===b?"A UX degrading element has entered the viewport: "+a:"A "+b+" was not handled on element: "+
+a;g.ueLogError({m:c,fromOnError:1},{logLevel:"ERROR",attribution:a,message:c});b=["TNR","TNR:"+b,"TNR:"+d,"TNR:"+b+":"+d];for(e=0;e<b.length;e++)g.ue.count(b[e],(g.ue.count(b[e])||0)+1)}};var z=function(a){a=a.getBoundingClientRect();return a.top<a.bottom&&a.left<a.right&&0<=a.bottom&&a.top<=h.innerHeight&&0<=a.right&&a.left<=h.innerWidth};var m=function(){n||(n=!0,setTimeout(function(){[].forEach.call(l.querySelectorAll("[data-ux-degraded]"),function(a){z(a)?0>q(a,p)&&(p.push(a),w(a,"degraded")):
+v(a,p)});n=!1},250))};h.addEventListener("scroll",m);h.addEventListener("resize",m);m=function(a){var b=!1,d=0>q(a,r);l.addEventListener(a,function(c){if(!b){b=!0;var f=[],e=d?u(c.target):[c.target],g,h;for(g=0;g<e.length;g++){var k=e[g];k.getAttribute&&("mouseover"===a&&k===c.target&&((h=k.getAttribute("data-ux-jq-mouseenter"))||""===h)&&f.push(k),((h=k.getAttribute("data-ux-"+a))||""===h)&&f.push(k))}f.length?(c.ack=c.acknowledge=function(a){a=a||c.currentTarget;v(a,f)},setTimeout(function(){var c;
+for(c=0;c<f.length;c++)w(f[c],a);b=!1},250)):b=!1}},!0)};for(e=0;e<t.length;e++)m(t[e])}})(ue_csm,window,document);
+
 
 var ue_hoe = +new Date();
 }
 window.ueinit = window.ue_ihb;
 </script>
 
-<!-- 1b8itlus -->
-<script>window.ue && ue.count && ue.count('CSMLibrarySize', 10173)</script>
+<!-- 9zjhim6uvg4ierbon0eyqjmy64 -->
+<script>window.ue && ue.count && ue.count('CSMLibrarySize', 12336)</script>
 <!-- sp:end-feature:csm:head-open-part2 -->
 <!-- sp:feature:aui-assets -->
 <link rel="stylesheet" href="https://m.media-amazon.com/images/I/11EIQ5IGqaL._RC|01ZTHTZObnL.css,51E2xlOsf1L.css,31fFxDf00KL.css,11j2+ObrspL.css,01qDClimA1L.css,01pOTCa2wPL.css,413Vvv3GONL.css,11TIuySqr6L.css,01Rw4F+QU6L.css,11JJsNcqOIL.css,01J3raiFJrL.css,01IdKcBuAdL.css,014QJx7nWqL.css,21Otytu1xYL.css,01Sv7-fQIGL.css,51vh6Mh74TL.css,01XPHJk60-L.css,11ChJlzZQoL.css,01UgxIH-BSL.css,01fxuupJToL.css,21+W7u4fDzL.css,11wazUu-8nL.css,21RWaJb6t+L.css,11I+YZzE7kL.css,211Xmr7zN2L.css,01CFUgsA-YL.css,31WWobXdJQL.css,116t+WD27UL.css,111bsezNMhL.css,11tNhCU--0L.css,11msBd9oOTL.css,11BO1RWH3kL.css,011ylpySXkL.css,21Dzvx3cZoL.css,11Wb9slw7JL.css,01uDrkI-EcL.css,215Q9RsWvdL.css,113EFChyAjL.css,11hvENnYNUL.css,11Qek6G6pNL.css,01890+Vwk8L.css,014VAMpg+ZL.css,01qiwJ7qDfL.css,21TAMzcrOKL.css,016mfgi+D2L.css,01gU3ljx0fL.css,21l8QuSB5IL.css,013-xYw+SRL.css_.css?AUIClients/AmazonUI#fr.not-trident" />
@@ -186,7 +192,7 @@ return b.mix_csa_internal("Content",a,{element:c})}catch(f){return P.logError(f,
 <script>
     window.P && P.register('sp.load.js');
     window.P.register('cf');
-    window._contextEventModel={"customerId":"1","sessionId":"259-4715660-1047046","marketplaceId":"A13V1IB3VIYZZH","locale":"fr_FR","timestamp":"2025-01-09T12:32:27.216773883Z","eventCategory":"PreContact","eventType":"HelpPageEvent","eventData":"{\"nodeId\":\"GX7NJQ4ZB8MHFRNJ\",\"nodeTitle\":\"Notice : Protection de vos informations personnelles\",\"ancestorNodeTitles\":[\"Politiques et informations légales\",\"Sécurité et confidentialité\",\"Besoin d\u0027aide supplémentaire\"],\"ancestorNodeIds\":[\"GWFZQ8U37JV9AUT5\",\"GRFTMVHP4HXMESSP\",\"G508510\"]}","sushiEndpoint":"https://unagi.amazon.fr/1/events/com.amazon.HorizonteHelpService.DUB.Prod.events"};
+    window._contextEventModel={"customerId":"1","sessionId":"259-7429482-4323404","marketplaceId":"A13V1IB3VIYZZH","locale":"fr_FR","timestamp":"2025-01-10T00:32:25.305573128Z","eventCategory":"PreContact","eventType":"HelpPageEvent","eventData":"{\"nodeId\":\"GX7NJQ4ZB8MHFRNJ\",\"nodeTitle\":\"Notice : Protection de vos informations personnelles\",\"ancestorNodeTitles\":[\"Politiques et informations légales\",\"Sécurité et confidentialité\",\"Besoin d\u0027aide supplémentaire\"],\"ancestorNodeIds\":[\"GWFZQ8U37JV9AUT5\",\"GRFTMVHP4HXMESSP\",\"G508510\"]}","sushiEndpoint":"https://unagi.amazon.fr/1/events/com.amazon.HorizonteHelpService.DUB.Prod.events"};
 </script>
 
 
@@ -202,7 +208,7 @@ return b.mix_csa_internal("Content",a,{element:c})}catch(f){return P.logError(f,
     
 
 
-    <meta name="description" content="Dernière mise à jour le 20 décembre 2024.">
+    <meta name="description" content="Dernière mise à jour le 09 janvier 2025.">
 
 
     <link rel="canonical" href="https://www.amazon.fr/gp/help/customer/display.html?nodeId=GX7NJQ4ZB8MHFRNJ"></link>
@@ -293,7 +299,7 @@ return b.mix_csa_internal("Content",a,{element:c})}catch(f){return P.logError(f,
         }
         s.list1 = s.prop15;
 
-        s.prop38 = '259\-4715660\-1047046'; 
+        s.prop38 = '259\-7429482\-4323404'; 
         s.eVar38 = s.prop38;
 
         s.prop41 = 'fr_FR';  
@@ -569,7 +575,7 @@ return b.mix_csa_internal("Content",a,{element:c})}catch(f){return P.logError(f,
 
 <!--&&&Portal&Delimiter&&&--><!-- sp:end-feature:host-assets -->
 <!-- sp:feature:encrypted-slate-token -->
-<meta name='encrypted-slate-token' content='AnYxrY83Xxg6q1lg4IsWrMtzmnSnw/rNlx9wRll69loSaHwsMOrJz1XraHH56L6ZRX4YoSSR1OGG3WrQlWXfcZypM2j3JyAJOhgHKpJeMI0I30jC6RagC+qoJfJ4m6kObBGs5JXbXY27eZMSXXfb3CmPMMcVjEupBFklk4qA5ottEsQg0wh5roSDsflqt3/+XTRQ7UkXClue3TH9I7rxF/vRmAswMPWl2hSosZ1aQdvu+4b410rJrEpLOxER4K2kDDrcjap1'>
+<meta name='encrypted-slate-token' content='AnYxmKLGFHL+saRDev1lJc4JRxS4leEIEyp9szEuZsFdYAWg8QQ2ryda/wuAviVBsFn9cDSf25i/R2jjpWOkobMvoKK+vW7ZoKyimqpqedEMyWHukLwdtJPX+XUeaIgfqZBYMAndRUloJXA9jbKs/HlxcNjvaOwjO9ppob5tQDBwsDy5YjpQFemaHqPxlmhp8ZPLuKjsxkQ+L3Io9y8EQTP4UHVDxfw6kfes0hEa2fGplS6ZmZZ16xwH8rg6MaD5et+kBc7hnA=='>
 <!-- sp:end-feature:encrypted-slate-token -->
 <!-- sp:feature:csm:head-close -->
 <script type='text/javascript'>
@@ -613,7 +619,7 @@ if (typeof ues === 'function') {
 <!-- sp:feature:start-body -->
 <body class="a-m-fr a-aui_72554-c a-aui_a11y_6_837773-c a-aui_killswitch_csa_logger_372963-t1 a-aui_pci_risk_banner_210084-c a-aui_template_weblab_cache_333406-c a-aui_tnr_v2_180836-c a-bw_aui_cxc_alert_measurement_1074111-c"><div id="a-page"><script type="a-state" data-a-state="{&quot;key&quot;:&quot;a-wlab-states&quot;}">{"AUI_A11Y_6_837773":"C","AUI_TNR_V2_180836":"C","AUI_TEMPLATE_WEBLAB_CACHE_333406":"C","BW_AUI_CXC_ALERT_MEASUREMENT_1074111":"C","AUI_72554":"C","AUI_KILLSWITCH_CSA_LOGGER_372963":"T1","AUI_PCI_RISK_BANNER_210084":"C"}</script><script>typeof uex === 'function' && uex('ld', 'portal-bb', {wb: 1})</script><!-- sp:end-feature:start-body -->
 <!-- sp:feature:csm:body-open -->
-    <img height="1" width="1" style='display:none;visibility:hidden;' src='//fls-eu.amazon.fr/1/batch/1/OP/A13V1IB3VIYZZH:259-4715660-1047046:YS08NHED1ZY29WP0117H$uedata=s:%2Frd%2Fuedata%3Fstaticb%26id%3DYS08NHED1ZY29WP0117H:0' alt="" onload="window.ue_sbl && window.ue_sbl();"/>
+    <img height="1" width="1" style='display:none;visibility:hidden;' src='//fls-eu.amazon.fr/1/batch/1/OP/A13V1IB3VIYZZH:259-7429482-4323404:DV3JYFVQEW1FBRBWMQ6D$uedata=s:%2Frd%2Fuedata%3Fstaticb%26id%3DDV3JYFVQEW1FBRBWMQ6D:0' alt="" onload="window.ue_sbl && window.ue_sbl();"/>
 
 
 <script>
@@ -625,15 +631,15 @@ if (window.csa) {
         'Events.Namespace': 'csa',
         'ObfuscatedMarketplaceId': 'A13V1IB3VIYZZH',
         'Events.SushiEndpoint': 'https://unagi.amazon.fr/1/events/com.amazon.csm.csa.prod',
-        'CacheDetection.RequestID': "YS08NHED1ZY29WP0117H",
+        'CacheDetection.RequestID': "DV3JYFVQEW1FBRBWMQ6D",
         'CacheDetection.Callback': window.ue && ue.reset,
         'LCP.elementDedup': 1,
         'lob': '1'
     });
 
     csa("Events")("setEntity", {
-        page: {requestId: "YS08NHED1ZY29WP0117H", meaningful: "interactive"},
-        session: {id: "259-4715660-1047046"}
+        page: {requestId: "DV3JYFVQEW1FBRBWMQ6D", meaningful: "interactive"},
+        session: {id: "259-7429482-4323404"}
     });
 }
 !function(r){var e,i,o="splice",u=r.csa,f={},c={},a=r.csa._s,s=0,l=0,g=-1,h={},v={},d={},n=Object.keys,p=function(){};function t(n,t){return u(n,t)}function m(n,t){var r=c[n]||{};k(r,t),c[n]=r,l++,S(U,0)}function w(n,t,r){var i=!0;return t=D(t),r&&r.buffered&&(i=(d[n]||[]).every(function(n){return!1!==t(n)})),i?(h[n]||(h[n]=[]),h[n].push(t),function(){!function(n,t){var r=h[n];r&&r[o](r.indexOf(t),1)}(n,t)}):p}function b(n,t){if(t=D(t),n in v)return t(v[n]),p;return w(n,function(n){return t(n),!1})}function y(n,t){if(u("Errors")("logError",n),f.DEBUG)throw t||n}function E(){return Math.abs(4294967295*Math.random()|0).toString(36)}function D(n,t){return function(){try{return n.apply(this,arguments)}catch(n){y(n.message||n,n)}}}function S(n,t){return r.setTimeout(D(n),t)}function U(){for(var n=0;n<a.length;){var t=a[n],r=t[0]in c;if(!r&&!i)return void(s=a.length);r?(a[o](s=n,1),I(t)):n++}g=l}function I(n){var t=c[n[0]],r=n[1],i=r[0];if(!t||!t[i])return y("Undefined function: "+t+"/"+i);e=n[3],c[n[2]]=t[i].apply(t,r.slice(1))||{},e=0}function O(){i=1,U()}function k(t,r){n(r).forEach(function(n){t[n]=r[n]})}b("$beforeunload",O),m("Config",{instance:function(n){k(f,n)}}),u.plugin=D(function(n){n(t)}),t.config=f,t.register=m,t.on=w,t.once=b,t.blank=p,t.emit=function(n,t,r){for(var i=h[n]||[],e=0;e<i.length;)!1===i[e](t)?i[o](e,1):e++;v[n]=t||{},r&&r.buffered&&(d[n]||(d[n]=[]),100<=d[n].length&&d[n].shift(),d[n].push(t||{}))},t.UUID=function(){return[E(),E(),E(),E()].join("-")},t.time=function(n){var t=e?new Date(e.time):new Date;return"ISO"===n?t.toISOString():t.getTime()},t.error=y,t.warn=function(n,t){if(u("Errors")("logWarn",n),f.DEBUG)throw t||n},t.exec=D,t.timeout=S,t.interval=function(n,t){return r.setInterval(D(n),t)},(t.global=r).csa._s.push=function(n){n[0]in c&&(!a.length||i)?(I(n),a.length&&g!==l&&U()):a[o](s++,0,n)},U(),S(function(){S(O,f.SkipMissingPluginsTimeout||5e3)},1)}("undefined"!=typeof window?window:global);csa.plugin(function(o){var f="addEventListener",e="requestAnimationFrame",t=o.exec,r=o.global,u=o.on;o.raf=function(n){if(r[e])return r[e](t(n))},o.on=function(n,e,t,r){if(n&&"function"==typeof n[f]){var i=o.exec(t);return n[f](e,i,r),function(){n.removeEventListener(e,i,r)}}return"string"==typeof n?u(n,e,t,r):o.blank}});csa.plugin(function(o){var t,n,r={},e="localStorage",c="sessionStorage",a="local",i="session",u=o.exec;function s(e,t){var n;try{r[t]=!!(n=o.global[e]),n=n||{}}catch(e){r[t]=!(n={})}return n}function f(){t=t||s(e,a),n=n||s(c,i)}function l(e){return e&&e[i]?n:t}o.store=u(function(e,t,n){f();var o=l(n);return e?t?void(o[e]=t):o[e]:Object.keys(o)}),o.storageSupport=u(function(){return f(),r}),o.deleteStored=u(function(e,t){f();var n=l(t);if("function"==typeof e)for(var o in n)n.hasOwnProperty(o)&&e(o,n[o])&&delete n[o];else delete n[e]})});csa.plugin(function(n){n.types={ovl:function(n){var r=[];if(n)for(var i in n)n.hasOwnProperty(i)&&r.push(n[i]);return r}}});csa.plugin(function(a){var e=a.config,n="Errors",c="fcsmln",s=e["KillSwitch."+n];function r(n){return function(e){a("Metrics",{producerId:"csa",dimensions:{message:e}})("recordMetric",n,1)}}function t(r){var t,o,l=a("Events",{producerId:r.producerId,lob:e.lob||"0"}),i=["name","type","csm","adb"],u={url:"pageURL",file:"f",line:"l",column:"c"};this.log=function(e){if(!s&&!function(e){if(!e)return!0;for(var n in e)return!1;return!0}(e)){var n=r.logOptions||{ent:{page:["pageType","subPageType","requestId"]}};l("log",function(n){return t=a.UUID(),o={messageId:t,schemaId:r.schemaId||"<ns>.Error.6",errorMessage:n.m||null,attribution:n.attribution||null,logLevel:"FATAL",url:null,file:null,line:null,column:null,stack:n.s||[],context:n.cinfo||{},metadata:{}},n.logLevel&&(o.logLevel=""+n.logLevel),i.forEach(function(e){n[e]&&(o.metadata[e]=n[e])}),c in n&&(o.metadata[c]=n[c]+""),"INFO"===n.logLevel||Object.keys(u).forEach(function(e){"number"!=typeof n[u[e]]&&"string"!=typeof n[u[e]]||(o[e]=""+n[u[e]])}),o}(e),n)}}}a.register(n,{instance:function(e){return new t(e||{})},logError:r("jsError"),logWarn:r("jsWarn")})});csa.plugin(function(o){var r,e,n,t,a,i="function",u="willDisappear",f="$app.",p="$document.",c="focus",s="blur",d="active",l="resign",$=o.global,b=o.exec,m=o.config["Transport.AnonymizeRequests"]||!1,g=o("Events"),h=$.location,v=$.document||{},y=$.P||{},P=(($.performance||{}).navigation||{}).type,w=o.on,k=o.emit,E=v.hidden,T={};h&&v&&(w($,"beforeunload",D),w($,"pagehide",D),w(v,"visibilitychange",R(p,function(){return v.visibilityState||"unknown"})),w(v,c,R(p+c)),w(v,s,R(p+s)),y.when&&y.when("mash").execute(function(e){e&&(w(e,"appPause",R(f+"pause")),w(e,"appResume",R(f+"resume")),R(f+"deviceready")(),$.cordova&&$.cordova.platformId&&R(f+cordova.platformId)(),w(v,d,R(f+d)),w(v,l,R(f+l)))}),e=$.app||{},n=b(function(){k(f+"willDisappear"),D()}),a=typeof(t=e[u])==i,e[u]=b(function(){n(),a&&t()}),$.app||($.app=e),"complete"===v.readyState?A():w($,"load",A),E?S():x(),o.on("$app.blur",S),o.on("$app.focus",x),o.on("$document.blur",S),o.on("$document.focus",x),o.on("$document.hidden",S),o.on("$document.visible",x),o.register("SPA",{newPage:I}),I({transitionType:{0:"hard",1:"refresh",2:"back-button"}[P]||"unknown"}));function I(n,e){var t=!!r,a=(e=e||{}).keepPageAttributes;t&&(k("$beforePageTransition"),k("$pageTransition")),t&&!a&&g("removeEntity","page"),r=o.UUID(),a?T.id=r:T={schemaId:"<ns>.PageEntity.2",id:r,url:m?h.href.split("?")[0]:h.href,server:h.hostname,path:h.pathname,referrer:m?v.referrer.split("?")[0]:v.referrer,title:v.title},Object.keys(n||{}).forEach(function(e){T[e]=n[e]}),g("setEntity",{page:T}),k("$pageChange",T,{buffered:1}),t&&k("$afterPageTransition")}function A(){k("$load"),k("$ready"),k("$afterload")}function D(){k("$ready"),k("$beforeunload"),k("$unload"),k("$afterunload")}function S(){E||(k("$visible",!1,{buffered:1}),E=!0)}function x(){E&&(k("$visible",!0,{buffered:1}),E=!1)}function R(n,t){return b(function(){var e=typeof t==i?n+t():n;k(e)})}});csa.plugin(function(c){var e="Events",n="UNKNOWN",s="id",a="all",i="messageId",o="timestamp",u="producerId",r="application",f="obfuscatedMarketplaceId",d="entities",l="schemaId",p="version",v="attributes",g="<ns>",b="lob",t="session",h=c.config,m=(c.global.location||{}).host,I=h[e+".Namespace"]||"csa_other",y=h.Application||"Other"+(m?":"+m:""),O=h["Transport.AnonymizeRequests"]||!1,E=c("Transport"),U={},A=function(e,t){Object.keys(e).forEach(t)};function N(n,i,o){A(i,function(e){var t=o===a||(o||{})[e];e in n||(n[e]={version:1,id:i[e][s]||c.UUID()}),S(n[e],i[e],t)})}function S(t,n,i){A(n,function(e){!function(e,t,n){return"string"!=typeof t&&e!==p?c.error("Attribute is not of type string: "+e):!0===n||1===n||(e===s||!!~(n||[]).indexOf(e))}(e,n[e],i)||(t[e]=n[e])})}function k(o,e,r){A(e,function(e){var t=o[e];if(t[l]){var n={},i={};n[s]=t[s],n[u]=t[u]||r[u],n[l]=t[l],n[p]=t[p]++,n[v]=i,w(n,r),S(i,t,1),D(i),E("log",n)}})}function w(e,t){e[o]=function(e){return"number"==typeof e&&(e=new Date(e).toISOString()),e||c.time("ISO")}(e[o]),e[i]=e[i]||c.UUID(),e[r]=y,e[f]=h.ObfuscatedMarketplaceId||n,e[l]=e[l].replace(g,I),t&&t[b]&&(e[b]=t[b])}function D(e){delete e[p],delete e[l],delete e[u]}function T(o){var r={};this.log=function(e,t){var n={},i=(t||{}).ent;return e?"string"!=typeof e[l]?c.error("A valid schema id is required for the event"):(w(e,o),N(n,U,i),N(n,r,i),N(n,e[d]||{},i),A(n,function(e){D(n[e])}),e[u]=o[u],e[d]=n,t&&t[b]&&(e[b]=t[b]),void E("log",e,t)):c.error("The event cannot be undefined")},this.setEntity=function(e){O&&delete e[t],N(r,e,a),k(r,e,o)}}h["KillSwitch."+e]||c.register(e,{setEntity:function(e){O&&delete e[t],c.emit("$entities.set",e,{buffered:1}),N(U,e,a),k(U,e,{producerId:"csa",lob:h[b]||"0"})},removeEntity:function(e){delete U[e]},instance:function(e){return new T(e)}})});csa.plugin(function(s){var c,g="Transport",l="post",f="preflight",r="csa.cajun.",i="store",a="deleteStored",u="sendBeacon",t="__merge",e="messageId",n=".FlushInterval",o=0,d=s.config[g+".BufferSize"]||2e3,h=s.config[g+".RetryDelay"]||1500,p=s.config[g+".AnonymizeRequests"]||!1,v={},y=0,m=[],E=s.global,R=E.document,b=s.timeout,k=E.Object.keys,w=s.config[g+n]||5e3,I=w,O=s.config[g+n+".BackoffFactor"]||1,S=s.config[g+n+".BackoffLimit"]||3e4,B=0;function T(n){if(864e5<s.time()-+new Date(n.timestamp))return s.warn("Event is too old: "+n);y<d&&(n[e]in v||(v[n[e]]=n,y++),"function"==typeof n[t]&&n[t](v[n[e]]),!B&&o&&(B=b(q,function(){var n=I;return I=Math.min(n*O,S),n}())))}function q(){m.forEach(function(e){var o=[];k(v).forEach(function(n){var t=v[n];e.accepts(t)&&o.push(t)}),o.length&&(e.chunks?e.chunks(o).forEach(function(n){D(e,n)}):D(e,o))}),v={},B=0}function D(t,e){function o(){s[a](r+n)}var n=s.UUID();s[i](r+n,JSON.stringify(e)),[function(n,t,e){var o=E.navigator||{},r=E.cordova||{};if(p)return 0;if(!o[u]||!n[l])return 0;n[f]&&r&&"ios"===r.platformId&&!c&&((new Image).src=n[f]().url,c=1);var i=n[l](t);if(!i.type&&o[u](i.url,i.body))return e(),1},function(n,t,e){if(!n[l])return 0;var o=n[l](t),r=o.url,i=o.body,c=o.type,f=new XMLHttpRequest,a=0;function u(n,t,e){f.open("POST",n),f.withCredentials=!p,e&&f.setRequestHeader("Content-Type",e),f.send(t)}return f.onload=function(){f.status<299?e():s.config[g+".XHRRetries"]&&a<3&&b(function(){u(r,i,c)},++a*h)},u(r,i,c),1}].some(function(n){try{return n(t,e,o)}catch(n){}})}k&&(s.once("$afterload",function(){o=1,function(e){(s[i]()||[]).forEach(function(n){if(!n.indexOf(r))try{var t=s[i](n);s[a](n),JSON.parse(t).forEach(e)}catch(n){s.error(n)}})}(T),s.on(R,"visibilitychange",q,!1),q()}),s.once("$afterunload",function(){o=1,q()}),s.on("$afterPageTransition",function(){y=0,I=w}),s.register(g,{log:T,register:function(n){m.push(n)}}))});csa.plugin(function(n){var r=n.config["Events.SushiEndpoint"];n("Transport")("register",{accepts:function(n){return n.schemaId},post:function(n){var t=n.map(function(n){return{data:n}});return{url:r,body:JSON.stringify({events:t})}},preflight:function(){var n,t=/\/\/(.*?)\//.exec(r);return t&&t[1]&&(n="https://"+t[1]+"/ping"),{url:n}},chunks:function(n){for(var t=[];500<n.length;)t.push(n.splice(0,500));return t.push(n),t}})});csa.plugin(function(n){var t,a,o,r,e=n.config,i="PageViews",d=e[i+".ImpressionMinimumTime"]||1e3,s="hidden",c="innerHeight",l="innerWidth",g="renderedTo",f=g+"Viewed",m=g+"Meaningful",u=g+"Impressed",p=1,h=2,v=3,w=4,P=5,y="loaded",I=7,b=8,T=n.global,S=n.on,E=n("Events",{producerId:"csa",lob:e.lob||"0"}),K=T.document,V={},$={},M=P,R=e["KillSwitch."+i],H=e["KillSwitch.PageRender"],W=e["KillSwitch.PageImpressed"];function j(e){if(!V[I]){if(V[e]=n.time(),e!==v&&e!==y||(t=t||V[e]),t&&M===w){if(a=a||V[e],!R)(i={})[m]=t-o,i[f]=a-o,k("PageView.5",i);r=r||n.timeout(x,d)}var i;if(e!==P&&e!==p&&e!==h||(clearTimeout(r),r=0),e!==p&&e!==h||H||k("PageRender.4",{transitionType:e===p?"hard":"soft"}),e===I&&!W)(i={})[m]=t-o,i[f]=a-o,i[u]=V[e]-o,k("PageImpressed.3",i)}}function k(e,i){$[e]||(i.schemaId="<ns>."+e,E("log",i,{ent:"all"}),$[e]=1)}function q(){0===T[c]&&0===T[l]?(M=b,n("Events")("setEntity",{page:{viewport:"hidden-iframe"}})):M=K[s]?P:w,j(M)}function x(){j(I),r=0}function z(){var e=o?h:p;V={},$={},a=t=0,o=n.time(),j(e),q()}function A(){var e=K.readyState;"interactive"===e&&j(v),"complete"===e&&j(y)}K&&void 0!==K[s]?(z(),S(K,"visibilitychange",q,!1),S(K,"readystatechange",A,!1),S("$afterPageTransition",z),S("$timing:loaded",A),n.once("$load",A)):n.warn("Page visibility not supported")});csa.plugin(function(c){var s=c.config["Interactions.ParentChainLength"]||35,e="click",r="touches",f="timeStamp",o="length",u="pageX",g="pageY",p="pageXOffset",h="pageYOffset",m=250,v=5,d=200,l=.5,t={capture:!0,passive:!0},X=c.global,Y=c.emit,n=c.on,x=X.Math.abs,a=(X.document||{}).documentElement||{},y={x:0,y:0,t:0,sX:0,sY:0},N={x:0,y:0,t:0,sX:0,sY:0};function b(t){if(t.id)return"//*[@id='"+t.id+"']";var e=function(t){var e,n=1;for(e=t.previousSibling;e;e=e.previousSibling)e.nodeName===t.nodeName&&(n+=1);return n}(t),n=t.nodeName;return 1!==e&&(n+="["+e+"]"),t.parentNode&&(n=b(t.parentNode)+"/"+n),n}function I(t,e,n){var a=c("Content",{target:n}),i={schemaId:"<ns>.ContentInteraction.2",interaction:t,interactionData:e,messageId:c.UUID()};if(n){var r=b(n);r&&(i.attribution=r);var o=function(t){for(var e=t,n=e.tagName,a=!1,i=t?t.href:null,r=0;r<s;r++){if(!e||!e.parentElement){a=!0;break}n=(e=e.parentElement).tagName+"/"+n,i=i||e.href}return a||(n=".../"+n),{pc:n,hr:i}}(n);o.pc&&(i.interactionData.parentChain=o.pc),o.hr&&(i.interactionData.href=o.hr)}a("log",i),Y("$content.interaction",{e:i,w:a})}function i(t){I(e,{interactionX:""+t.pageX,interactionY:""+t.pageY},t.target)}function C(t){if(t&&t[r]&&1===t[r][o]){var e=t[r][0];N=y={e:t.target,x:e[u],y:e[g],t:t[f],sX:X[p],sY:X[h]}}}function D(t){if(t&&t[r]&&1===t[r][o]&&y&&N){var e=t[r][0],n=t[f],a=n-N.t,i={e:t.target,x:e[u],y:e[g],t:n,sX:X[p],sY:X[h]};N=i,d<=a&&(y=i)}}function E(t){if(t){var e=x(y.x-N.x),n=x(y.y-N.y),a=x(y.sX-N.sX),i=x(y.sY-N.sY),r=t[f]-y.t;if(m<1e3*e/r&&v<e||m<1e3*n/r&&v<n){var o=n<e;o&&a&&e*l<=a||!o&&i&&n*l<=i||I((o?"horizontal":"vertical")+"-swipe",{interactionX:""+y.x,interactionY:""+y.y,endX:""+N.x,endY:""+N.y},y.e)}}}n(a,e,i,t),n(a,"touchstart",C,t),n(a,"touchmove",D,t),n(a,"touchend",E,t)});csa.plugin(function(s){var a,o,t,c,e,n="MutationObserver",l="observe",i="disconnect",f="_csa_flt",b="_csa_llt",d="_csa_mr",p="_csa_mi",v="lastChild",m="length",h={childList:!0,subtree:!0},_=10,g=25,r=1e3,y=4,u=s.global,k=u.document,w=k.body||k.documentElement,I=Date.now,L=[],O=[],B=[],M=0,x=0,C=0,D=1,E=[],F=[],S=0,V=s.blank;I&&u[n]&&(M=0,o=new u[n]($),(t=new u[n](Y))[l](w,{attributes:!0,subtree:!0,attributeFilter:["src"],attributeOldValue:!0}),V=s.on(u,"scroll",j,{passive:!0}),s.once("$ready",A),D&&(z(),e=s.interval(q,r)),s.register("SpeedIndexBuffers",{getBuffers:function(e){e&&(A(),j(),e(M,E,L,O,B),o&&o[i](),t&&t[i](),V())},registerListener:function(e){a=e},replayModuleIsLive:function(){s.timeout(A,0)}}));function Y(e){L.push({t:I(),m:e})}function $(e){O.push({t:I(),m:e}),C=1,a&&a()}function j(){C&&(B.push({t:I(),y:x}),x=u.pageYOffset,C=0)}function q(){var e=I();(!c||r<e-c)&&z()}function z(){for(var e=w,t=I(),n=[],i=[],r=0,u=0;e;)e[f]?++r:(e[f]=t,n.push(e),u=1),i[m]<y&&i.push(e),e[p]=S,e[b]=t,e=e[v];u&&(r<F[m]&&function(e){for(var t=e,n=F[m];t<n;t++){var i=F[t];if(i){if(i[d])break;if(i[p]<S){i[d]=1,o[l](i,h);break}}}}(r),F=i,E.push({t:t,m:n}),++S,C=u,a&&a()),D&&s.timeout(z,u?_:g),c=t}function A(){D&&(D=0,e&&u.clearInterval(e),e=null,z(),o[l](w,h))}});
@@ -642,12 +648,12 @@ var ue_dsbl_ss_um = false;
 csa.plugin(function(b){var a=b.global,e=a.uet,g=a.uex,h=a.ue,c=a.Object,k=0,d={largestContentfulPaint:"lcp",visuallyLoaded50:"vl50",visuallyLoaded90:"vl90",visuallyLoaded100:"vl100"};a.ue_dsbl_ss_um||(d.speedIndex="si",d.atfSpeedIndex="atfsi");b&&e&&g&&c.keys&&h&&(b.once("$ditched.beforemitigation",function(){k=1}),c.keys(d).forEach(function(a){b.on("$timing:"+a,function(b){var f=d[a];if(h.isl||k){var c="csa:"+f;e(f,c,void 0,b);g("at",c)}else e(f,void 0,void 0,b)})}))});
 
 
-window.rx = { 'rid':'YS08NHED1ZY29WP0117H', 'sid':'259-4715660-1047046', 'c':{  'rxp':'/rd/uedata' }};
+window.rx = { 'rid':'DV3JYFVQEW1FBRBWMQ6D', 'sid':'259-7429482-4323404', 'c':{  'rxp':'/rd/uedata' }};
 </script>
 <script>window.ue && ue.count && ue.count('CSMLibrarySize', 16252)</script>
 <!-- sp:end-feature:csm:body-open -->
 <!-- sp:feature:cookie-consent-banner -->
-<span class="a-declarative" data-action="sp-cc" data-sp-cc="{&quot;customerId&quot;:&quot;null&quot;,&quot;rejectAllAction&quot;:&quot;/privacyprefs/sp/consent/v2/rejectall&quot;,&quot;sessionId&quot;:&quot;259-4715660-1047046&quot;,&quot;userId&quot;:&quot;259-4715660-1047046&quot;}"><form id="sp-cc" method="post" action="/privacyprefs/sp/consent/v2/acceptall"><input type="hidden" name="anti-csrftoken-a2z" value="hIwq+t3vDbRMeaVj8mv5N06+sGBH+Msr+esW2fOGvqYAAAAAAGd/wds0OWNkODRlYy02OTJjLTQ3ZTctYjZlMS00M2I3ODUxM2Q0MzY="/><input type="hidden" name="timeStamp" value="1736425947236"/><input type="hidden" name="locale" value="fr_FR"/><input type="hidden" name="isMobile" value="false"/><input type="hidden" name="userType" value="UNAUTHENTICATED"/><input type="hidden" name="sessionId" value="259-4715660-1047046"/><input type="hidden" name="treatmentName" value="EXP_OFF"/><input type="hidden" name="marketplace" value="A13V1IB3VIYZZH"/><input type="hidden" name="oCT" value="ads"/><div class="sp-cc-text"><h4 class="a-spacing-small">Cookies et choix publicitaires</h4><p class="a-spacing-none"><p>Si vous y consentez, nous pourrons utiliser vos informations personnelles provenant de ces <a href="/gp/help/customer/display.html?nodeId=T1fdzp9ecINEaVWTyY">Services Amazon</a> pour personnaliser les publicités que nous vous proposons sur d'autres services. Par exemple, nous pourrons utiliser votre historique des vidéos regardées sur Prime Video pour personnaliser les publicités que nous affichons sur nos Boutiques ou sur Fire TV. Nous pourrons également utiliser des informations personnelles provenant de tiers (comme des informations démographiques, par exemple).</p><p>De plus, si vous y consentez, nous utiliserons également des cookies pour compléter votre expérience d'achat dans les boutiques Amazon, comme indiqué dans notre <a href="/gp/help/customer/display.html?nodeId=201890250&ref_=footer_cookies_notice">Politique relative aux cookies</a>. Votre choix s'applique à l'utilisation des cookies publicitaires internes et tiers sur ce service. Les cookies stockent des informations standard relatives à un appareil, telles qu'un identifiant unique, ou y accèdent. Les <a href="/privacyprefs/retail/partners">96 tiers</a> qui utilisent des cookies sur ce service le font dans le but d'afficher et de mesurer des publicités personnalisées, de générer des informations sur l'audience, et de développer et d'améliorer des produits.</p><p>Dans tous les cas, nous utilisons des cookies et des outils similaires, qui sont nécessaires pour vous permettre d'effectuer des achats, d'améliorer votre expérience d'achat et de fournir nos services, comme indiqué dans notre <a href="/gp/help/customer/display.html?nodeId=201890250&ref_=footer_cookies_notice">Politique relative aux cookies</a>. Nous utilisons également ces cookies pour comprendre comment les clients utilisent nos services (par exemple, en mesurant les visites de sites) afin de pouvoir apporter des améliorations. Cliquez sur Refuser pour refuser, ou sur Personnaliser pour faire des choix publicitaires plus détaillés, ou pour en savoir plus. Vous pouvez modifier vos choix à tout moment en accédant à la section <a href="/privacyprefs/retail?oCT=ads&ref_=portal_banner_cpp">Cookies et choix publicitaires</a>. Pour en savoir plus sur la manière dont Amazon utilise les cookies et les informations personnelles, telles que l'historique des commandes sur la Boutique ou l'historique des vidéos regardées, et à quelles fins, consultez notre <a href="/gp/help/customer/display.html?nodeId=201909010&ref_=footer_privacy">Déclaration de confidentialité</a> et notre <a href="/gp/help/customer/display.html?nodeId=201890250&ref_=footer_cookies_notice">Politique relative aux cookies</a>.</p></p><div id="sp-cc-error" class="a-box a-alert-inline a-alert-inline-error aok-hidden a-spacing-top-base" role="alert"><div class="a-box-inner a-alert-container"><i class="a-icon a-icon-alert"></i><div class="a-alert-content">Désolé, un problème s&#x27;est produit lors de l&#x27;enregistrement de vos préférences. Veuillez réessayer.</div></div></div></div><div class="sp-cc-buttons-container"><div class="sp-cc-buttons"><span class="a-button a-button-primary"><span class="a-button-inner"><input id="sp-cc-accept" tabindex="1" name="accept" class="a-button-input celwidget" type="submit" value="all"/><span class="a-button-text" aria-hidden="true">Accepter</span></span></span><span class="a-button a-button-base"><span class="a-button-inner"><button id="sp-cc-rejectall-link" tabindex="2" class="a-button-text a-text-center celwidget" type="button">Refuser</button></span></span><div class="sp-cc-customize-container"><a id="sp-cc-customize" class="a-size-base a-align-center a-link-normal" href="/privacyprefs/retail?oCT=ads&amp;ref_=portal_banner_cpp">Personnaliser</a></div></div></div></form></span><script>P.register('privcon-sp-consent-banner-ready');</script><!-- sp:end-feature:cookie-consent-banner -->
+<span class="a-declarative" data-action="sp-cc" data-sp-cc="{&quot;customerId&quot;:&quot;null&quot;,&quot;rejectAllAction&quot;:&quot;/privacyprefs/sp/consent/v2/rejectall&quot;,&quot;sessionId&quot;:&quot;259-7429482-4323404&quot;,&quot;userId&quot;:&quot;259-7429482-4323404&quot;}"><form id="sp-cc" method="post" action="/privacyprefs/sp/consent/v2/acceptall"><input type="hidden" name="anti-csrftoken-a2z" value="hOU9nIpkwStHjpCGpZJjWM4jkFUcUPjmK7zZIH/rqq7RAAAAAGeAapk0OWNkODRlYy02OTJjLTQ3ZTctYjZlMS00M2I3ODUxM2Q0MzY="/><input type="hidden" name="timeStamp" value="1736469145323"/><input type="hidden" name="locale" value="fr_FR"/><input type="hidden" name="isMobile" value="false"/><input type="hidden" name="userType" value="UNAUTHENTICATED"/><input type="hidden" name="sessionId" value="259-7429482-4323404"/><input type="hidden" name="treatmentName" value="EXP_OFF"/><input type="hidden" name="marketplace" value="A13V1IB3VIYZZH"/><input type="hidden" name="oCT" value="ads"/><div class="sp-cc-text"><h4 class="a-spacing-small">Cookies et choix publicitaires</h4><p class="a-spacing-none"><p>Si vous y consentez, nous pourrons utiliser vos informations personnelles provenant de ces <a href="/gp/help/customer/display.html?nodeId=T1fdzp9ecINEaVWTyY">Services Amazon</a> pour personnaliser les publicités que nous vous proposons sur d'autres services. Par exemple, nous pourrons utiliser votre historique des vidéos regardées sur Prime Video pour personnaliser les publicités que nous affichons sur nos Boutiques ou sur Fire TV. Nous pourrons également utiliser des informations personnelles provenant de tiers (comme des informations démographiques, par exemple).</p><p>De plus, si vous y consentez, nous utiliserons également des cookies pour compléter votre expérience d'achat dans les boutiques Amazon, comme indiqué dans notre <a href="/gp/help/customer/display.html?nodeId=201890250&ref_=footer_cookies_notice">Politique relative aux cookies</a>. Votre choix s'applique à l'utilisation des cookies publicitaires internes et tiers sur ce service. Les cookies stockent des informations standard relatives à un appareil, telles qu'un identifiant unique, ou y accèdent. Les <a href="/privacyprefs/retail/partners">96 tiers</a> qui utilisent des cookies sur ce service le font dans le but d'afficher et de mesurer des publicités personnalisées, de générer des informations sur l'audience, et de développer et d'améliorer des produits.</p><p>Dans tous les cas, nous utilisons des cookies et des outils similaires, qui sont nécessaires pour vous permettre d'effectuer des achats, d'améliorer votre expérience d'achat et de fournir nos services, comme indiqué dans notre <a href="/gp/help/customer/display.html?nodeId=201890250&ref_=footer_cookies_notice">Politique relative aux cookies</a>. Nous utilisons également ces cookies pour comprendre comment les clients utilisent nos services (par exemple, en mesurant les visites de sites) afin de pouvoir apporter des améliorations. Cliquez sur Refuser pour refuser, ou sur Personnaliser pour faire des choix publicitaires plus détaillés, ou pour en savoir plus. Vous pouvez modifier vos choix à tout moment en accédant à la section <a href="/privacyprefs/retail?oCT=ads&ref_=portal_banner_cpp">Cookies et choix publicitaires</a>. Pour en savoir plus sur la manière dont Amazon utilise les cookies et les informations personnelles, telles que l'historique des commandes sur la Boutique ou l'historique des vidéos regardées, et à quelles fins, consultez notre <a href="/gp/help/customer/display.html?nodeId=201909010&ref_=footer_privacy">Déclaration de confidentialité</a> et notre <a href="/gp/help/customer/display.html?nodeId=201890250&ref_=footer_cookies_notice">Politique relative aux cookies</a>.</p></p><div id="sp-cc-error" class="a-box a-alert-inline a-alert-inline-error aok-hidden a-spacing-top-base" role="alert"><div class="a-box-inner a-alert-container"><i class="a-icon a-icon-alert"></i><div class="a-alert-content">Désolé, un problème s&#x27;est produit lors de l&#x27;enregistrement de vos préférences. Veuillez réessayer.</div></div></div></div><div class="sp-cc-buttons-container"><div class="sp-cc-buttons"><span class="a-button a-button-primary"><span class="a-button-inner"><input id="sp-cc-accept" tabindex="1" name="accept" class="a-button-input celwidget" type="submit" value="all"/><span class="a-button-text" aria-hidden="true">Accepter</span></span></span><span class="a-button a-button-base"><span class="a-button-inner"><button id="sp-cc-rejectall-link" tabindex="2" class="a-button-text a-text-center celwidget" type="button">Refuser</button></span></span><div class="sp-cc-customize-container"><a id="sp-cc-customize" class="a-size-base a-align-center a-link-normal" href="/privacyprefs/retail?oCT=ads&amp;ref_=portal_banner_cpp">Personnaliser</a></div></div></div></form></span><script>P.register('privcon-sp-consent-banner-ready');</script><!-- sp:end-feature:cookie-consent-banner -->
 <!-- sp:feature:nav-inline-js -->
 <!-- NAVYAAN JS -->
 
@@ -668,7 +674,7 @@ $Nav.declare('img.pixel', 'https://m.media-amazon.com/images/G/08/x-locale/commo
 <script type="text/javascript">var nav_t_after_preload_sprite = + new Date();</script>
 <script>
 (window.AmazonUIPageJS ? AmazonUIPageJS : P).when('navCF').execute(function() {
-  (window.AmazonUIPageJS ? AmazonUIPageJS : P).load.js('https://images-eu.ssl-images-amazon.com/images/I/51zmCyOWOfL._RC|71uxeSm0Y8L.js,01w4L3R-4KL.js,01mtJ+nefCL.js,71IvFWEeWdL.js,41jBieyCvYL.js,01wXnKULArL.js,01+pnQJuQ0L.js,21Un7Tx1UGL.js,41H5p9B-JpL.js,51HrkAbbpLL.js,31pICZB5M9L.js,11lw6J7z8iL.js,31+UifI0MIL.js,01VYGE8lGhL.js,01tDwkxEoCL.js_.js?AUIClients/NavDesktopUberAsset#desktop.language-fr.fr.878681-T1.1079958-T1.803398-T1.1089549-T1.1043986-T1.1103974-T1.1121224-T1.970718-T1');
+  (window.AmazonUIPageJS ? AmazonUIPageJS : P).load.js('https://images-eu.ssl-images-amazon.com/images/I/51zmCyOWOfL._RC|71WozEO-5DL.js,01w4L3R-4KL.js,01mtJ+nefCL.js,71n+F6uTt6L.js,41jBieyCvYL.js,01wXnKULArL.js,01+pnQJuQ0L.js,21Un7Tx1UGL.js,41H5p9B-JpL.js,51HrkAbbpLL.js,31pICZB5M9L.js,11lw6J7z8iL.js,31+UifI0MIL.js,01VYGE8lGhL.js,01tDwkxEoCL.js_.js?AUIClients/NavDesktopUberAsset#desktop.language-fr.fr.878681-T1.1079958-T1.803398-T1.1089549-T1.948355-T2.1043986-T1.1103974-T1.1121224-T1');
 });
 </script>
 <!-- sp:end-feature:nav-inline-js -->
@@ -979,7 +985,7 @@ $Nav.declare('img.pixel', 'https://m.media-amazon.com/images/G/08/x-locale/commo
 <script type='text/javascript'>window.navmet.push({key:'Logo',end:+new Date(),begin:window.navmet.tmp});</script>
         
 <div id="nav-global-location-slot">
-    <span id="nav-global-location-data-modal-action" class="a-declarative nav-progressive-attribute" data-a-modal='{&quot;width&quot;:375, &quot;closeButton&quot;:&quot;true&quot;,&quot;popoverLabel&quot;:&quot;Choisissez votre emplacement&quot;, &quot;ajaxHeaders&quot;:{&quot;anti-csrftoken-a2z&quot;:&quot;hNoHQP/AHFXO/YazsY/WNhQQa/zDJk16yK26Ohf1JibvAAAAAGd/wdsAAAAB&quot;}, &quot;name&quot;:&quot;glow-modal&quot;, &quot;url&quot;:&quot;/portal-migration/hz/glow/get-rendered-address-selections?deviceType&#x3D;desktop&amp;pageType&#x3D;GPHelp&amp;storeContext&#x3D;NoStoreName&amp;actionSource&#x3D;desktop-modal&quot;, &quot;footer&quot;:null,&quot;header&quot;:&quot;Choisissez votre emplacement&quot;}' data-action="a-modal">
+    <span id="nav-global-location-data-modal-action" class="a-declarative nav-progressive-attribute" data-a-modal='{&quot;width&quot;:375, &quot;closeButton&quot;:&quot;true&quot;,&quot;popoverLabel&quot;:&quot;Choisissez votre emplacement&quot;, &quot;ajaxHeaders&quot;:{&quot;anti-csrftoken-a2z&quot;:&quot;hA1hNAlaw/zFp6ktNrCeKwxFiECd039Lw4DlBPHdkzGPAAAAAGeAapkAAAAB&quot;}, &quot;name&quot;:&quot;glow-modal&quot;, &quot;url&quot;:&quot;/portal-migration/hz/glow/get-rendered-address-selections?deviceType&#x3D;desktop&amp;pageType&#x3D;GPHelp&amp;storeContext&#x3D;NoStoreName&amp;actionSource&#x3D;desktop-modal&quot;, &quot;footer&quot;:null,&quot;header&quot;:&quot;Choisissez votre emplacement&quot;}' data-action="a-modal">
         <a id="nav-global-location-popover-link" role="button" tabindex="0" class="nav-a nav-a-2 a-popover-trigger a-declarative nav-progressive-attribute" href="">
             <div class="nav-sprite nav-progressive-attribute" id="nav-packard-glow-loc-icon"></div>
             <div id="glow-ingress-block">
@@ -994,7 +1000,7 @@ $Nav.declare('img.pixel', 'https://m.media-amazon.com/images/G/08/x-locale/commo
         </span>
         <input data-addnewaddress="add-new" id="unifiedLocation1ClickAddress" name="dropdown-selection" type="hidden" value="add-new" class="nav-progressive-attribute" />
         <input data-addnewaddress="add-new" id="ubbShipTo" name="dropdown-selection-ubb" type="hidden" value="add-new" class="nav-progressive-attribute"/>
-        <input id="glowValidationToken" name="glow-validation-token" type="hidden" value="hNoHQP/AHFXO/YazsY/WNhQQa/zDJk16yK26Ohf1JibvAAAAAGd/wdsAAAAB" class="nav-progressive-attribute"/>
+        <input id="glowValidationToken" name="glow-validation-token" type="hidden" value="hA1hNAlaw/zFp6ktNrCeKwxFiECd039Lw4DlBPHdkzGPAAAAAGeAapkAAAAB" class="nav-progressive-attribute"/>
         <input id="glowDestinationType" name="glow-destination-type" type="hidden" value="REALM_DEFAULT" class="nav-progressive-attribute"/>
 </div>
 
@@ -1286,7 +1292,7 @@ sur Amazon</a>
         <script type='text/javascript'>window.navmet.tmp=+new Date();</script><!-- Navyaan SWM -->
 <div id="nav-swmslot">
   <div id="navSwmHoliday" style="height: 39px; width: 400px; overflow: hidden; position: relative; ">
-    <a aria-label="Nouvelle année, à vous de jouer" href="/NYNY25/?_encoding=UTF8&ref_=nav_swm_en_SWM&pf_rd_p=7e3bc1ff-4de8-4a7b-8000-fa78ec32b363&pf_rd_s=nav-sitewide-msg&pf_rd_t=4201&pf_rd_i=navbar-4201&pf_rd_m=A13V1IB3VIYZZH&pf_rd_r=YS08NHED1ZY29WP0117H" class="nav-imageHref" >
+    <a aria-label="Nouvelle année, à vous de jouer" href="/NYNY25/?_encoding=UTF8&ref_=nav_swm_en_SWM&pf_rd_p=7e3bc1ff-4de8-4a7b-8000-fa78ec32b363&pf_rd_s=nav-sitewide-msg&pf_rd_t=4201&pf_rd_i=navbar-4201&pf_rd_m=A13V1IB3VIYZZH&pf_rd_r=DV3JYFVQEW1FBRBWMQ6D" class="nav-imageHref" >
   <img alt="Nouvelle année, à vous de jouer" src="https://m.media-amazon.com/images/G/08/EU-STORES/2024/xPF/Q4/11Nov/NYNY/EU9/TRAFFIC/Exp_HP_Dt_SWMS_400X39_20KB._CB539125974_.jpg">
 </a>
       </div>
@@ -1399,7 +1405,7 @@ sur Amazon</a>
   if (typeof uet === 'function') {  uet('x1', 'ewc', {wb: 1}); }
 
   window.$Nav && $Nav.declare('config.ewc', (function() {
-    var config = {"enablePersistent":true,"viewportWidthForPersistent":1400,"isEWCLogging":1,"isEWCStateExpanded":true,"EWCStateReason":"fixed","isSmallScreenEnabled":true,"isFreshCustomer":false,"errorContent":{"html":"<div class='nav-ewc-error'><span class='nav-title'></span><p class='nav-paragraph'>Il y a un problème récupérer votre panier dès maintenant</p><a href='/gp/cart/view.html?ref_=nav_err_ewc_timeout' class='nav-action-button'><span class='nav-action-inner'>Votre panier</span></a></div>"},"url":"/cart/ewc/compact?hostPageType=GPHelp&hostSubPageType=null&hostPageRID=YS08NHED1ZY29WP0117H&prerender=0","cartCount":0,"freshCartCount":0,"almCartCount":0,"primeWardrobeCartCount":0,"isCompactViewEnabled":true,"isCompactEWCRendered":true,"isWiderCompactEWCRendered":true,"EWCBrowserCacheKey":"EWC_Cache_259-4715660-1047046__EUR_fr_FR","isContentRepainted":false,"clearCache":false,"loadFromCacheWithDelay":0,"delayRenderingTillATF":false};
+    var config = {"enablePersistent":true,"viewportWidthForPersistent":1400,"isEWCLogging":1,"isEWCStateExpanded":true,"EWCStateReason":"fixed","isSmallScreenEnabled":true,"isFreshCustomer":false,"errorContent":{"html":"<div class='nav-ewc-error'><span class='nav-title'></span><p class='nav-paragraph'>Il y a un problème récupérer votre panier dès maintenant</p><a href='/gp/cart/view.html?ref_=nav_err_ewc_timeout' class='nav-action-button'><span class='nav-action-inner'>Votre panier</span></a></div>"},"url":"/cart/ewc/compact?hostPageType=GPHelp&hostSubPageType=null&hostPageRID=DV3JYFVQEW1FBRBWMQ6D&prerender=0","cartCount":0,"freshCartCount":0,"almCartCount":0,"primeWardrobeCartCount":0,"isCompactViewEnabled":true,"isCompactEWCRendered":true,"isWiderCompactEWCRendered":true,"EWCBrowserCacheKey":"EWC_Cache_259-7429482-4323404__EUR_fr_FR","isContentRepainted":false,"clearCache":false,"loadFromCacheWithDelay":0,"delayRenderingTillATF":false};
     var hasAui = window.P && window.P.AUI_BUILD_DATE;
     var isRTLEnabled = (document.dir === 'rtl');
     config.pinnable = config.pinnable && hasAui;
@@ -1851,8 +1857,8 @@ window.$Nav && $Nav.when("util.templates").run("FlyoutErrorTemplate", function(t
   , searchAliases: []
   , filterAliases: []
   , pageType: "GPHelp"
-  , requestId: "YS08NHED1ZY29WP0117H"
-  , sessionId: "259-4715660-1047046"
+  , requestId: "DV3JYFVQEW1FBRBWMQ6D"
+  , sessionId: "259-7429482-4323404"
   , language: "fr_FR"
   , customerId: ""
   , asin: ""
@@ -2049,14 +2055,14 @@ window.$Nav && $Nav.declare('config.isSubnavFlyoutMigrationEnabled',true);
 
 window.$Nav && $Nav.declare('config.recordEvUrl','\x2Fgp\x2Fnavigation\x2Fajax\x2Frecordevent.html');
 window.$Nav && $Nav.declare('config.recordEvInterval',15000);
-window.$Nav && $Nav.declare('config.sessionId','259\x2D4715660\x2D1047046');
-window.$Nav && $Nav.declare('config.requestId','YS08NHED1ZY29WP0117H');
+window.$Nav && $Nav.declare('config.sessionId','259\x2D7429482\x2D4323404');
+window.$Nav && $Nav.declare('config.requestId','DV3JYFVQEW1FBRBWMQ6D');
 
 window.$Nav && $Nav.declare('config.alexaListEnabled',true);
 
 window.$Nav && $Nav.declare('config.readyOnATF',false);
 
-window.$Nav && $Nav.declare('config.dynamicMenuArgs',{"rid":"YS08NHED1ZY29WP0117H","isFullWidthPrime":0,"isPrime":0,"dynamicRequest":1,"weblabs":"","isFreshRegionAndCustomer":"","primeMenuWidth":310});
+window.$Nav && $Nav.declare('config.dynamicMenuArgs',{"rid":"DV3JYFVQEW1FBRBWMQ6D","isFullWidthPrime":0,"isPrime":0,"dynamicRequest":1,"weblabs":"","isFreshRegionAndCustomer":"","primeMenuWidth":310});
 
 window.$Nav && $Nav.declare('config.customerName',false);
 
@@ -2164,7 +2170,7 @@ window.$Nav && $Nav.declare('config.pssFlag',0);
 
 window.$Nav && $Nav.declare('config.isPrimeTooltipMigrated',false);
 
-window.$Nav && $Nav.declare('config.hashCustomerAndSessionId','bd075072c319eeb244c7458f21fd487cd873cbaf');
+window.$Nav && $Nav.declare('config.hashCustomerAndSessionId','de2adfbe59ff67ccfbcd5ddff648ebd8ecc052e4');
 
 window.$Nav && $Nav.declare('config.isExportMode',false);
 
@@ -2341,13 +2347,13 @@ window.$Nav && $Nav.declare('configComplete');
     
 </div>
                 <div class="help-service-content">
-                    <div class="oas-uuid-do-not-delete" data-id="914bac4e-16ce-48cb-8ccd-bd3a277f7c46">
+                    <div class="oas-uuid-do-not-delete" data-id="572dc9d4-48a2-4327-9479-48199710a074">
 <article role="article" class="help-content" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304" aria-labelledby="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__GUID-2C1DF364-8FA3-4387-BCDB-2A63B7C51B64"> 
    <h1 id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__GUID-2C1DF364-8FA3-4387-BCDB-2A63B7C51B64">Notice : Protection de vos informations personnelles</h1>  
     
    
    <div id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__GUID-92B5A89C-FC8F-4FFF-8FBA-1E47514241BF">
-      <p class="lead"> Dernière mise à jour le 20 décembre 2024.</p> 
+      <p class="lead"> Dernière mise à jour le 09 janvier 2025.</p> 
       	 
       <section class="a-section" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__SECTION_1C6D1AC66515423FB7C6F4273D4DC4F0">
          <p> <a class="same_window" href="https://www.amazon.fr/gp/help/customer/display.html?nodeId=GYT8SUSD2E9EWE8Q" target="_self">Consultez les versions précédentes des Notices de protection de vos informations personnelles</a>.</p> 
@@ -2410,10 +2416,10 @@ window.$Nav && $Nav.declare('configComplete');
          <div class="a-spacing-base">
             <p> 
                		
-               </p><ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_117D4AF334BC485194C8A55B79D25435">
+               <ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_117D4AF334BC485194C8A55B79D25435">
                   <li id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__LI_99DA5444A9B04F2FBB1FA69883EF912B"><span class="a-list-item"><strong id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__GUID-39438202-CC36-45CA-982E-79076CBF1CDB"> Informations que vous nous communiquez</strong></span></li> 
                   		</ul>
-            <p></p>
+            </p>
          </div> 
          <p> Nous collectons et enregistrons toutes les informations que vous nous communiquez
             via les Services Amazon. Pour consulter quelques exemples des informations que nous
@@ -2422,9 +2428,9 @@ window.$Nav && $Nav.declare('configComplete');
          <div class="a-spacing-base">
             <p> 
                		
-               </p><ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_FAB7FA9F24694FB3B48FEB3F985D875D">
+               <ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_FAB7FA9F24694FB3B48FEB3F985D875D">
                   <li id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__LI_C944D1D650114EA5A2D1EDE696EC70D9"><span class="a-list-item"><strong id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__GUID-8E8C126D-EDE4-4D70-AF8E-B6BD7F8A61CC"> Informations collectées automatiquement</strong></span></li> 
-                  		</ul> <p></p>
+                  		</ul> </p>
          </div> 
          <p> Nous collectons et enregistrons automatiquement certains types d'informations concernant
             votre utilisation des Services Amazon, notamment votre interaction avec le contenu
@@ -2437,13 +2443,13 @@ window.$Nav && $Nav.declare('configComplete');
          <div class="a-spacing-base">
             <p> 
                		
-               </p><ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_0AC078F9C7A64F8998D3A7E7FC5AF8AD">
+               <ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_0AC078F9C7A64F8998D3A7E7FC5AF8AD">
                   <li id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__LI_25BF6A8AB4F84B2EBFD51A12BBCAF081"><span class="a-list-item"><strong id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__GUID-C084C60C-098E-45E8-8721-E3CBBD4D951F"> Informations issues d'autres sources</strong></span></li> 
                   		</ul> Nous pouvons également recevoir d'autres informations vous concernant de sources
                différentes, telles que des informations de livraison et d'adresse mises à jour par
                nos transporteurs, que nous utilisons pour corriger nos registres et livrer plus facilement
                votre prochaine commande. Pour consulter des exemples d'informations que nous recevons
-               de tiers, consultez la section <a href="#GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__SECTION_834D111DCC86437A8336C1F6256B5C5E">Exemples d'informations collectées</a>.<p></p>
+               de tiers, consultez la section <a href="#GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__SECTION_834D111DCC86437A8336C1F6256B5C5E">Exemples d'informations collectées</a>.</p>
          </div> 
          <p> </p> 
          	 </section> 
@@ -2456,90 +2462,90 @@ window.$Nav && $Nav.declare('configComplete');
          <div class="a-spacing-base">
             <p> 
                		
-               </p><ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_AC5ECD3722744A6EB17C39EA910292D1">
+               <ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_AC5ECD3722744A6EB17C39EA910292D1">
                   <li id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__LI_F9EDAFEF493449B08DA2FD7CE5B5C8DB"><span class="a-list-item"><strong id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__GUID-639215EC-4F18-4FB4-AC7E-A5D5DB25BD64"> Commande, livraison des produits et fourniture des services.</strong></span></li> 
                   		</ul>Nous utilisons vos informations personnelles aux fins de l'enregistrement et du traitement
                des commandes, de la livraison des produits, de la fourniture des services, du traitement
                des paiements et de communication avec vous en relation avec vos commandes, les produits,
-               les services et nos offres promotionnelles. <p></p>
+               les services et nos offres promotionnelles. </p>
          </div> 
          <div class="a-spacing-base">
             <p> 
                		
-               </p><ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_8FB5D8DB4BD24C919BE311F70B0C30AD">
+               <ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_8FB5D8DB4BD24C919BE311F70B0C30AD">
                   <li id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__LI_B5B5360E7A324488957B643A209771FB"><span class="a-list-item"><strong id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__GUID-B9243B53-B032-4197-A02C-931112D50BFA"> Fourniture, résolution des problèmes et amélioration des Services Amazon.</strong></span></li> 
                   		</ul>Nous utilisons vos informations personnelles pour vous fournir des fonctionnalités,
                analyser des performances, corriger les erreurs et améliorer l'accessibilité et l'efficacité
-               des Services Amazon.<p></p>
+               des Services Amazon.</p>
          </div> 
          <div class="a-spacing-base">
             <p> 
                		
-               </p><ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_3870F17C4E0F448FA4F6301DCA3B4B6D">
+               <ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_3870F17C4E0F448FA4F6301DCA3B4B6D">
                   <li id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__LI_79213F16CFD74754A7781331A10C8214"><span class="a-list-item"><strong id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__GUID-07D432E3-8653-4398-96BE-9E3ED6950FC2"> Recommandations et personnalisation.</strong></span></li> 
                   		</ul> Nous utilisons vos informations personnelles afin de vous recommander des fonctions,
                des produits et des services qui pourraient vous intéresser, identifier vos préférences
-               et personnaliser votre expérience avec les Services Amazon. <p></p>
+               et personnaliser votre expérience avec les Services Amazon. </p>
          </div> 
          <div class="a-spacing-base">
             <p> 
                		
-               </p><ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_65D30B3CFCCB4DBB942203D16C475658">
+               <ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_65D30B3CFCCB4DBB942203D16C475658">
                   <li id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__LI_13EFE7784F1845C0814727D28A0BD925"><span class="a-list-item"><strong id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__GUID-29B315E4-7C59-45B4-8C90-4E77B59325B2"> Fourniture de services vocaux, d'imagerie et de caméra.</strong></span></li> 
                   		</ul>Lorsque vous utilisez des services vocaux, d'imagerie et de caméra, nous utilisons
                vos entrées vocales, images, vidéos, ainsi que d'autres informations personnelles
                afin de répondre à vos demandes, pour vous fournir les services demandés et améliorer
                les Services Amazon. Pour plus d'informations sur les services vocaux Alexa, consultez
-               la page <a class="same_window" href="https://www.amazon.fr/gp/help/customer/display.html/?nodeId=GA7E98TJFEJLYSFR" target="_self">Alexa, appareils Echo et vos informations personnelles</a>.<p></p>
+               la page <a class="same_window" href="https://www.amazon.fr/gp/help/customer/display.html/?nodeId=GA7E98TJFEJLYSFR" target="_self">Alexa, appareils Echo et vos informations personnelles</a>.</p>
          </div> 
          <div class="a-spacing-base">
             <p> 
                		
-               </p><ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_D519E05360E44178AF47506BAC7C5BBC">
+               <ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_D519E05360E44178AF47506BAC7C5BBC">
                   <li id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__LI_C0395FD4EFF64896AFB4F88B68634FFD"><span class="a-list-item"><strong id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__GUID-6B3E8D0D-3668-43CB-A2F8-1D17C92ED823"> Publicité.</strong></span></li> 
                   		</ul>Nous utilisons vos informations personnelles afin de vous présenter des publicités
                basées sur vos centres d'intérêts relatives à des fonctions, des produits et des services
                qui pourraient vous intéresser. Pour en savoir plus, veuillez prendre connaissance
-               de notre <a href="https://www.amazon.fr/gp/help/customer/display.html?nodeId=201909150" target="_blank">Notice Publicités basées sur vos centres d'intérêt</a>.<p></p>
+               de notre <a href="https://www.amazon.fr/gp/help/customer/display.html?nodeId=201909150" target="_blank">Notice Publicités basées sur vos centres d'intérêt</a>.</p>
          </div> 
          <div class="a-spacing-base">
             <p> 
                		
-               </p><ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_F6196F0D8AB24E7280D68F9248091EE8">
+               <ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_F6196F0D8AB24E7280D68F9248091EE8">
                   <li id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__LI_5018FED7893041798F2CED3B2FC00FA2"><span class="a-list-item"><strong id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__GUID-34FD4798-A59A-4251-B57E-419EB5C70BCE">Prévention de la fraude et risques de crédit.</strong></span></li> 
                   		</ul>Nous utilisons vos informations personnelles afin de prévenir et détecter les fraudes
                et abus dans le but de protéger la sécurité de nos clients, d'Amazon Europe et d'autres.
                Nous pourrons être amené à utiliser des méthodes d'évaluation afin d'apprécier et
-               gérer les risques de crédit.<p></p>
+               gérer les risques de crédit.</p>
          </div>
          <div class="a-spacing-base">
             <p> 
                		
-               </p><ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_E9166D4BDDAF4647BABC9D8BC2350A4C">
+               <ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_E9166D4BDDAF4647BABC9D8BC2350A4C">
                   <li id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__LI_686B60B0D2904AF5B136D2BD0E46F624"><span class="a-list-item"><strong id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__GUID-4AEC39F5-2102-421B-83D1-603B04FFBC45">Nous conformer à nos obligations légales.</strong></span></li> 
                   		</ul>Dans certains cas, nous collectons et utilisons vos informations personnelles afin
                de nous conformer aux obligations légales. Par exemple, nous collectons les informations
                des vendeurs tiers relatives aux lieux d'établissement et coordonnées bancaires avec,
-               parmi les finalités de cette collecte, celle de vérifier leur identité.<p></p>
+               parmi les finalités de cette collecte, celle de vérifier leur identité.</p>
          </div>
          <div class="a-spacing-base">
             <p> 
                		
-               </p><ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_36AF0B6387BF47B4832A591B8055D8D5">
+               <ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_36AF0B6387BF47B4832A591B8055D8D5">
                   <li id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__LI_D2C7DE30DE8C422D8D9BA2FF38B0053D"><span class="a-list-item"><strong id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__GUID-88B4A832-B535-410C-B868-1E3CF9D1BB75">Communiquer avec vous.</strong></span></li> 
                   		</ul>Nous utilisons vos informations personnelles afin de communiquer avec vous au sujet
-               des Services Amazon via différents canaux (ex. téléphone, email, chat).<p></p>
+               des Services Amazon via différents canaux (ex. téléphone, email, chat).</p>
          </div> 
          <div class="a-spacing-base">
             <p> 
                		
-               </p><ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_DB7B2C5BA18A4C4885FBC63C8D0E897E">
+               <ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_DB7B2C5BA18A4C4885FBC63C8D0E897E">
                   <li id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__LI_14D561B307DA41678C5FBDA83A1B7CF1"><span class="a-list-item"><strong id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__GUID-BE68ED9A-DAFC-4261-9942-C5FE820EBBE6">Finalités pour lesquelles nous recueillons votre consentement.</strong></span></li> 
                   		</ul>Nous pourrons également être amenés à requérir votre consentement pour l'utilisation
                de vos informations personnelles pour une finalité spécifique que nous vous indiquerons.
                Lorsque vous consentez à l'utilisation de vos informations personnelles pour cette
                finalité spécifique, vous pourrez retirer votre consentement à tout moment et nous
-               cesserons toute utilisation supplémentaire de vos informations pour cette finalité.<p></p>
+               cesserons toute utilisation supplémentaire de vos informations pour cette finalité.</p>
          </div> 
          	 </section> 
       	 
@@ -2565,7 +2571,7 @@ window.$Nav && $Nav.declare('configComplete');
          <div class="a-spacing-base">
             <p> 
                		
-               </p><ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_1F299813DCB14C739F4677E44BB26D78">
+               <ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_1F299813DCB14C739F4677E44BB26D78">
                   <li id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__LI_BC39F9EA932447DFB5C07D19219399D6"><span class="a-list-item"><strong id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__GUID-93B3FB3E-D385-4BFC-A50E-7ECEC17A8F7F"> Transactions impliquant des tiers</strong></span></li> 
                   		</ul>Nous mettons à votre disposition des services, des produits, des applications ou des
                skills fournis par des tiers afin d'être utilisés sur ou via les Services Amazon.
@@ -2575,13 +2581,13 @@ window.$Nav && $Nav.declare('configComplete');
                ou commercialisons des lignes de produits de façon conjointe avec des tiers partenaires,
                tel que des cartes de crédit co-brandées. Vous pouvez savoir quand un tiers est impliqué
                dans vos transactions et quand nous partageons avec ce tiers les informations personnelles
-               relatives à ces transactions.<p></p>
+               relatives à ces transactions.</p>
          </div> 
          <p> </p> 
          <div class="a-spacing-base">
             <p> 
                		
-               </p><ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_D941E88E38634BB788CCBCEE530190C0">
+               <ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_D941E88E38634BB788CCBCEE530190C0">
                   <li id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__LI_44404D15D9674F4FA7366F8568E956FB"><span class="a-list-item"><strong id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__GUID-0335682A-A8C0-409C-8B27-F1E4EBCF22D9"> Prestataires de services tiers</strong></span></li> 
                   		</ul>Nous avons recours à d'autres sociétés ou personnes indépendantes lesquelles fournissent
                certains services pour notre compte. En voici quelques exemples : le traitement des
@@ -2595,12 +2601,12 @@ window.$Nav && $Nav.declare('configComplete');
                personnelles nécessaires à l'exécution de leurs prestations et ne sont pas autorisés
                à les utiliser à d'autres fins. De plus, ils sont tenus d'utiliser ces informations
                personnelles en conformité avec la présente Notice et en application des lois applicables
-               à la protection des données personnelles.<p></p>
+               à la protection des données personnelles.</p>
          </div> 
          <div class="a-spacing-base">
             <p> 
                		
-               </p><ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_E596CFD290BF4577A077F3FE7E56BCE1">
+               <ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_E596CFD290BF4577A077F3FE7E56BCE1">
                   <li id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__LI_CD34D13DCC1F4AC3B56B04539B863496"><span class="a-list-item"><strong id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__GUID-9BAE8B2C-3FE3-4532-B2EF-670C1314304D"> Transfert d'activités</strong></span></li> 
                   		</ul>Dans le cadre du développement de nos activités, nous pouvons être amenés à vendre
                ou acquérir d'autres activités ou services. À l'occasion de telles transactions, les
@@ -2609,12 +2615,12 @@ window.$Nav && $Nav.declare('configComplete');
                préexistante (sauf, bien entendu, accord contraire du client). Par ailleurs, dans
                le cas, peu probable, où Amazon.com, Inc. ou une part substantielle de ses actifs
                seraient acquises, les informations relatives aux clients seraient bien entendu également
-               transmises à l'acquéreur comme faisant partie des actifs transférés.<p></p>
+               transmises à l'acquéreur comme faisant partie des actifs transférés.</p>
          </div> 
          <div class="a-spacing-base">
             <p> 
                		
-               </p><ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_2E14B581458F4442A4A9E8EFF17FAFAD">
+               <ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_2E14B581458F4442A4A9E8EFF17FAFAD">
                   <li id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__LI_BCDDCB6F5ECD4880BDB092699CF729E2"><span class="a-list-item"><strong id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__GUID-C6839FD8-071D-4E94-A0A2-BDE9890E6B79"> Protection d'Amazon Europe et des tiers</strong></span></li> 
                   		</ul> Nous divulguons le contenu des comptes clients et autres informations personnelles
                lorsque nous y sommes légalement obligés ou si cette divulgation est nécessaire pour
@@ -2622,7 +2628,7 @@ window.$Nav && $Nav.declare('configComplete');
                ou pour protéger les droits, la propriété ou la sécurité d'Amazon Europe ou de nos
                utilisateurs ou d'autres personnes. Cela inclut l'échange d'informations avec d'autres
                entreprises et organisations dans un but de protection contre la fraude et de réduction
-               du risque de crédit.<p></p>
+               du risque de crédit.</p>
          </div> 
          <p> Dans tous les autres cas, vous serez averti si vos informations personnelles venaient
             à être partagées avec un tiers et vous aurez la possibilité de ne pas donner votre
@@ -2630,14 +2636,14 @@ window.$Nav && $Nav.declare('configComplete');
          <div class="a-spacing-base">
             <p> 
                		
-               </p><ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_5C46E7EBD46C481A834F6CD1FBE941A8">
+               <ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_5C46E7EBD46C481A834F6CD1FBE941A8">
                   <li id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__LI_E09210BCE5D648E4A85CC2ECB419AB19"><span class="a-list-item"><strong id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__GUID-497415BB-4D2A-4158-8634-D14B07BCC1D5"> Transferts hors de l'Espace Economique Européen (E.E.E.)</strong></span></li> 
                   		</ul>Lorsque nous transférons des informations personnelles à des pays ne faisant pas partie
                de l'Espace économique européen, nous nous assurons que ces informations sont transférées
                en conformité avec la présente Notice et en application des lois applicables à la
                protection des données personnelles. Nous nous appuyons sur les décisions de la Commission
                européenne en matière d'adéquation ou utilisons des contrats assortis de garanties
-               standard publiés par la Commission européenne (vous pouvez en <span class="help-display-cond help-display-cond-hidden help-display-cond-rule-platform-DesktopBrowser help-display-cond-rule-platform-MobileBrowser help-display-cond-rule-platform-PhoneAppAndroid help-display-cond-rule-platform-TabletAppAndroid" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__GUID-B085E5B6-9D1C-4B28-95A3-46A5B903340A"><a href="https://www.amazon.fr/contact-us/" target="_blank">demander une copie au Service Client</a></span>).<p></p>
+               standard publiés par la Commission européenne (vous pouvez en <span class="help-display-cond help-display-cond-hidden help-display-cond-rule-platform-DesktopBrowser help-display-cond-rule-platform-MobileBrowser help-display-cond-rule-platform-PhoneAppAndroid help-display-cond-rule-platform-TabletAppAndroid" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__GUID-B085E5B6-9D1C-4B28-95A3-46A5B903340A"><a href="https://www.amazon.fr/contact-us/" target="_blank">demander une copie au Service Client</a></span>).</p>
          </div> 
          	 </section> 
       	 
@@ -2669,7 +2675,7 @@ window.$Nav && $Nav.declare('configComplete');
          <div class="a-spacing-base">
             <p> 
                		
-               </p><ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_3BA6354586BC4E13989760E343D1DB92">
+               <ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_3BA6354586BC4E13989760E343D1DB92">
                   <li id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__LI_6A56B5D82E7C4F2995CA997C2A76AE41"><span class="a-list-item"><strong id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__GUID-F7E5DB12-3BDD-4A1E-BFE4-B3B4CBBD96BA"> Annonceurs tiers et liens vers d'autres sites Internet</strong></span></li> 
                   		</ul> Nous affichons des publicités venant d'annonceurs tiers pour vous aider à trouver
                et découvrir des fonctions, des produits et des services qui pourraient vous intéresser.
@@ -2680,12 +2686,12 @@ window.$Nav && $Nav.declare('configComplete');
                lorsque vous interagissez avec leurs contenus, publicités et services. Pour plus d'informations
                concernant les publicités émanant de tiers, y compris les tiers avec lesquels nous
                collaborons, et vos choix par rapport à la publicité, veuillez prendre connaissance
-               de notre <a href="https://www.amazon.fr/gp/help/customer/display.html/?nodeId=G64JFZVFDY66XG9K" target="_blank">Notice Publicités basées sur vos centres d'intérêt</a>.<p></p>
+               de notre <a href="https://www.amazon.fr/gp/help/customer/display.html/?nodeId=G64JFZVFDY66XG9K" target="_blank">Notice Publicités basées sur vos centres d'intérêt</a>.</p>
          </div> 
          <div class="a-spacing-base">
             <p> 
                		
-               </p><ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_7051B49BEFAF4CAE9C33C1D37AFF35B5">
+               <ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_7051B49BEFAF4CAE9C33C1D37AFF35B5">
                   <li id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__LI_67C2777FA1574B64BEB585DFF3313854"><span class="a-list-item"><strong id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__GUID-38043DBD-CD12-4D76-A507-F0A425B6FDD5"> L'utilisation des services d'Annonceurs tiers</strong></span></li> 
                   		</ul> Nous fournissons aux sociétés de publicité des informations qui leur permettent de
                vous proposer des publicités plus utiles et plus pertinentes sur les Services Amazon
@@ -2703,7 +2709,7 @@ window.$Nav && $Nav.declare('configComplete');
                efficaces sur les Services Amazon. Certaines sociétés de publicité utilisent également
                ces informations pour vous proposer des publicités pertinentes provenant d'autres
                annonceurs. Vous pouvez faire des choix concernant ces utilisations de vos informations
-               personnelles sur la page <span class="help-display-cond help-display-cond-hidden help-display-cond-rule-platform-DesktopBrowser help-display-cond-rule-platform-MobileBrowser help-display-cond-rule-platform-PhoneAppAndroid" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__GUID-79A79668-B26B-4684-90E2-8B4F138D5B61"><a href="https://www.amazon.fr/privacyprefs/retail?oCT=ads" target="_blank">Cookies et choix publicitaires</a></span> et sur la page des <span class="help-display-cond help-display-cond-hidden help-display-cond-rule-platform-DesktopBrowser help-display-cond-rule-platform-MobileBrowser help-display-cond-rule-platform-PhoneAppAndroid help-display-cond-rule-platform-TabletAppAndroid" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__GUID-A6AAED3A-7A21-49CC-8F86-6A968DA63BD7"><a class="same_window" href="https://www.amazon.fr/adprefs" target="_self">Préférences en matière de Publicité</a></span>. <p></p>
+               personnelles sur la page <span class="help-display-cond help-display-cond-hidden help-display-cond-rule-platform-DesktopBrowser help-display-cond-rule-platform-MobileBrowser help-display-cond-rule-platform-PhoneAppAndroid" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__GUID-79A79668-B26B-4684-90E2-8B4F138D5B61"><a href="https://www.amazon.fr/privacyprefs/retail?oCT=ads" target="_blank">Cookies et choix publicitaires</a></span> et sur la page des <span class="help-display-cond help-display-cond-hidden help-display-cond-rule-platform-DesktopBrowser help-display-cond-rule-platform-MobileBrowser help-display-cond-rule-platform-PhoneAppAndroid help-display-cond-rule-platform-TabletAppAndroid" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__GUID-A6AAED3A-7A21-49CC-8F86-6A968DA63BD7"><a class="same_window" href="https://www.amazon.fr/adprefs" target="_self">Préférences en matière de Publicité</a></span>. </p>
          </div> 
          	 </section> 
       	 
@@ -2722,43 +2728,43 @@ window.$Nav && $Nav.declare('configComplete');
          <div class="a-spacing-base">
             <p> 
                		
-               </p><ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_49F33A23A2C1466BA7737A495C2B8991">
+               <ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_49F33A23A2C1466BA7737A495C2B8991">
                   <li id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__LI_1E02A857560A42E0858CDC7DD79FBEEF"><span class="a-list-item"> Comme mentionné ci-dessus, vous avez la possibilité de ne communiquer que certaines
                         informations, mais, dans ce cas, vous pourriez ne pas être en mesure d'utiliser de
                         nombreux Services Amazon.</span></li> 
-                  		</ul> <p></p>
+                  		</ul> </p>
          </div> 
          <div class="a-spacing-base">
             <p> 
                		
-               </p><ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_CB7B117207274A958A5F4E2C83BD0BD0">
+               <ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_CB7B117207274A958A5F4E2C83BD0BD0">
                   <li id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__LI_0AD921FA19264D1A80C1FF3203669424"><span class="a-list-item"> Vous pouvez ajouter ou actualiser certaines informations sur les pages citées dans
                         la section « <a href="#GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__SECTION_364C0C44D62C4B86971674A94E5B92FF">Informations auxquelles vous avez accès</a> ». Si vous mettez une information à jour, nous conservons généralement une copie
                         de vos informations initiales.</span></li> 
-                  		</ul> <p></p>
+                  		</ul> </p>
          </div> 
          <div class="a-spacing-base">
             <p> 
                		
-               </p><ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_DD90D6F59E5649E5811591D10A27BE12">
+               <ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_DD90D6F59E5649E5811591D10A27BE12">
                   <li id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__LI_C0B31E846E644842BE59E63B9BA8C306"><span class="a-list-item"> Si vous ne souhaitez pas recevoir d'e-mails ou autres communications de notre part,
                         veuillez modifier la section Préférences de Communication de <span class="help-display-cond help-display-cond-hidden help-display-cond-rule-platform-DesktopBrowser help-display-cond-rule-platform-MobileBrowser help-display-cond-rule-platform-PhoneAppAndroid help-display-cond-rule-platform-TabletAppAndroid" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__GUID-B5DC0EC9-FACB-44EE-8030-99943B5959FE"><a href="https://www.amazon.fr/gp/css/homepage.html" target="_blank">Votre compte</a></span>. Si vous ne souhaitez pas recevoir de notifications de notre part, veuillez modifier
                         les paramètres de notification de l'application ou de votre appareil.</span></li> 
-                  		</ul> <p></p>
+                  		</ul> </p>
          </div> 
          <div class="a-spacing-base">
             <p> 
                		
-               </p><ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_8D1BA20413AB46B7A1FC5511611D68F0">
+               <ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_8D1BA20413AB46B7A1FC5511611D68F0">
                   <li id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__LI_0B04136D50C04CCC8523D1C6FFBEDA9A"><span class="a-list-item"> Vous pouvez donner ou retirer votre consentement à notre utilisation d'informations
                         personnelles pour personnaliser les publicités que nous vous présentons sur la page
                         <span class="help-display-cond help-display-cond-hidden help-display-cond-rule-platform-DesktopBrowser help-display-cond-rule-platform-MobileBrowser help-display-cond-rule-platform-PhoneAppAndroid" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__PH_0BD3C84AB04241509882EC3E4932F7F4"><a href="https://www.amazon.fr/privacyprefs/retail?oCT=ads" target="_blank">Cookies et choix publicitaires</a></span>. Vous pouvez également modifier vos <span class="help-display-cond help-display-cond-hidden help-display-cond-rule-platform-DesktopBrowser help-display-cond-rule-platform-MobileBrowser help-display-cond-rule-platform-PhoneAppAndroid help-display-cond-rule-platform-TabletAppAndroid" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__GUID-4E9D673A-1E1C-43BC-B1B3-CEF9F4ED28BF"><a class="same_window" href="https://www.amazon.fr/adprefs" target="_self">Préférences en matière de publicité</a></span>.</span></li> 
-                  		</ul> <p></p>
+                  		</ul> </p>
          </div> 
          <div class="a-spacing-base">
             <p> 
                		
-               </p><ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_E5EB02FF90ED4445B3ACB95955F80D85">
+               <ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_E5EB02FF90ED4445B3ACB95955F80D85">
                   <li id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__LI_06FBC595E5B843B8BDC5B8E1B247F8AD"><span class="a-list-item"> La section Aide de la barre d'outils de la plupart des navigateurs et appareils vous
                         indique comment refuser les nouveaux « cookies » ou recevoir de votre navigateur un
                         message signalant leur réception ou comment désactiver tous les « cookies ». Dans
@@ -2768,48 +2774,48 @@ window.$Nav && $Nav.declare('configComplete');
                         ajouter de produits à votre panier de commande, finaliser votre commande ou utiliser
                         les Services Amazon qui nécessitent l'ouverture d'un compte. Pour plus d'informations
                         sur les cookies, veuillez consulter notre <a href="https://www.amazon.fr/gp/help/customer/display.html?nodeId=GVASXV5UZ64R4Y25" target="_blank">Notice Cookies</a>.</span></li> 
-                  		</ul> <p></p>
+                  		</ul> </p>
          </div>
          <div class="a-spacing-base">
             <p> 
                		
-               </p><ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_5211EC9661F3453EB7F4AAEFAC380D34">
+               <ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_5211EC9661F3453EB7F4AAEFAC380D34">
                   <li id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__LI_C68F258B06424C9FB5D6891CC1AED58C"><span class="a-list-item">Vous pouvez consentir ou retirer votre consentement aux cookies publicitaires sur
                         la page <span class="help-display-cond help-display-cond-hidden help-display-cond-rule-platform-DesktopBrowser help-display-cond-rule-platform-MobileBrowser help-display-cond-rule-platform-PhoneAppAndroid" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__PH_B948BDFE2D2043CA8B1F9E6258B12BD9"><a href="https://www.amazon.fr/privacyprefs/retail?oCT=ads" target="_blank">Cookies et choix publicitaires</a></span>.</span></li> 
                   		</ul>
-            <p></p>
+            </p>
          </div> 
          <div class="a-spacing-base">
             <p> 
                		
-               </p><ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_3B76CFC032B2416595085EF944E4B121">
+               <ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_3B76CFC032B2416595085EF944E4B121">
                   <li id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__LI_1CD6BF2F755D42BEAF502E26E41653D2"><span class="a-list-item"> Si vous souhaitez naviguer anonymement sur nos sites internet, sans relier l'activité
                         de navigation à votre compte, vous pourrez le faire en vous <a class="same_window" href="https://www.amazon.fr/gp/help/customer/display.html?nodeId=GQL359FK7DM8294C" target="_self">déconnectant</a> de votre compte et en désactivant les cookies sur votre navigateur.</span></li> 
-                  		</ul> <p></p>
+                  		</ul> </p>
          </div>
          <div class="a-spacing-base">
             <p> 
                		
-               </p><ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_2474AB7FD6A3441295C6F5544C6E6E16">
+               <ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_2474AB7FD6A3441295C6F5544C6E6E16">
                   <li id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__LI_4500378517484A56AF684F62DE17C261"><span class="a-list-item">Vous pouvez <span class="help-display-cond help-display-cond-hidden help-display-cond-rule-platform-DesktopBrowser help-display-cond-rule-platform-MobileBrowser help-display-cond-rule-platform-PhoneAppAndroid help-display-cond-rule-platform-TabletAppAndroid" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__GUID-07DE6305-3155-4C72-AC5C-57CDEE77BCC7"><a href="https://www.amazon.fr/gp/yourstore/iyr/" target="_blank">gérer les recommandations que vous recevez dans notre boutique</a></span>, <span class="help-display-cond help-display-cond-hidden help-display-cond-rule-platform-DesktopBrowser help-display-cond-rule-platform-MobileBrowser help-display-cond-rule-platform-PhoneAppAndroid help-display-cond-rule-platform-TabletAppAndroid" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__GUID-52D977EB-1666-451D-8C85-02F4EABDEDAC"><a href="https://www.amazon.fr/gp/yourstore/home" target="_blank">supprimer les recommandations que vous ne voulez pas voir</a></span> (en sélectionnant les recommandations pour une catégorie de produits que vous n’avez
                         pas achetés auparavant puis en cliquant sur « En savoir plus et gérer » et en sélectionnant
                         « Supprimer des articles »), et <span class="help-display-cond help-display-cond-hidden help-display-cond-rule-platform-DesktopBrowser help-display-cond-rule-platform-MobileBrowser help-display-cond-rule-platform-PhoneAppAndroid help-display-cond-rule-platform-TabletAppAndroid" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__GUID-C1F0D7F2-193B-4904-BCB2-680952026F30"><a href="https://www.amazon.fr/gp/history" target="_blank">modifier votre historique de navigation</a></span>.</span></li> 
                   		</ul>
-            <p></p>
+            </p>
          </div> 
          <div class="a-spacing-base">
             <p> 
                		
-               </p><ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_02563858A5F04AF8B72A60A472598585">
+               <ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_02563858A5F04AF8B72A60A472598585">
                   <li id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__LI_5D47F85E41584C83863C0DF22C568B06"><span class="a-list-item"> Lorsque vous consentez à l'utilisation de vos informations personnelles pour une
                         finalité déterminée, vous pouvez retirer ce consentement à tout moment et nous mettrons
                         fin à toute autre utilisation de vos informations pour cette finalité.</span></li> 
-                  		</ul> <p></p>
+                  		</ul> </p>
          </div> 
          <div class="a-spacing-base">
             <p> 
                		
-               </p><ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_7618F743184A437885AF872F55E5B575">
+               <ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_7618F743184A437885AF872F55E5B575">
                   <li id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__LI_D314124F6C274544BB712010905B84BD"><span class="a-list-item"> Vous pourrez également décider de ne pas autoriser l'utilisation de certaines autres
                         informations en l'indiquant dans les paramètres de la page en question de la boutique
                         Amazon (ex. dans la section « Gérer votre Contenu et vos Appareils»), de l'appareil
@@ -2821,25 +2827,25 @@ window.$Nav && $Nav.declare('configComplete');
                         fabriqués par des tiers, nous vous recommandons de prendre contact avec votre opérateur
                         de téléphonie mobile ou le fabricant de votre appareil dans la mesure où les paramètres
                         d'autorisation peuvent être différents selon les appareils.</span></li> 
-                  		</ul> <p></p>
+                  		</ul> </p>
          </div> 
          <div class="a-spacing-base">
             <p> 
                		
-               </p><ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_56EF79E98EC0422880F070B81A71E1DC">
+               <ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_56EF79E98EC0422880F070B81A71E1DC">
                   <li id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__LI_88E0EF2E549C45A1A3836372B31CE37F"><span class="a-list-item"> Si vous êtes un vendeur tiers, vous pouvez ajouter ou mettre à jour certaines de
                         vos informations dans <span class="help-display-cond help-display-cond-hidden help-display-cond-rule-platform-DesktopBrowser help-display-cond-rule-platform-MobileBrowser help-display-cond-rule-platform-PhoneAppAndroid help-display-cond-rule-platform-TabletAppAndroid" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__GUID-3CA55769-CCDC-42A5-A3EE-439677C7504D"><a class="same_window" href="https://services.amazon.fr/" target="_self">Seller Central</a></span>, mettre à jour les informations de votre compte en accédant à la section <span id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__GUID-5FE251C1-5099-454A-987C-50CA37907938"><a class="same_window" href="https://sellercentral.amazon.fr/gp/homepage.html?ref=asfr_sc_topnav&amp;ld=ASFR404Direct" target="_self">Informations sur le compte vendeur</a></span>, et paramétrer les emails et autres communications que vous recevez de notre part
                         en mettant à jour vos <span class="help-display-cond help-display-cond-hidden help-display-cond-rule-platform-DesktopBrowser help-display-cond-rule-platform-MobileBrowser help-display-cond-rule-platform-PhoneAppAndroid help-display-cond-rule-platform-TabletAppAndroid" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__GUID-8B0D4CBF-24AE-4C7A-92D1-8EBCAB7E3373"><a class="same_window" href="https://sellercentral.amazon.fr/notifications/preferences" target="_self">Préférences de notification</a></span>.</span></li> 
-                  		</ul> <p></p>
+                  		</ul> </p>
          </div> 
          <div class="a-spacing-base">
             <p> 
                		
-               </p><ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_9662C9FA670B412A8911D3C8FE913194">
+               <ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_9662C9FA670B412A8911D3C8FE913194">
                   <li id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__LI_AFECC7AE7A41487FB594EF0F4F2AB686"><span class="a-list-item"> Si vous êtes un auteur, vous pouvez ajouter ou mettre à jour les informations que
                         vous avez fournies sur Author Portal ou Author Central en accédant respectivement
                         à vos comptes Author Portal et Author Central.</span></li> 
-                  		</ul> <p></p>
+                  		</ul> </p>
          </div> 
          	 </section> 
       	 
@@ -2921,12 +2927,12 @@ window.$Nav && $Nav.declare('configComplete');
          <div class="a-spacing-base">
             <p> 
                		
-               </p><ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_B5E7378B9DDE4D3F8252A83013BB2F54">
+               <ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_B5E7378B9DDE4D3F8252A83013BB2F54">
                   <li id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__LI_EF85A6B40F3C4B54B67DBA8CA8CEA3CF"><span class="a-list-item"> <a class="same_window" href="https://www.amazon.fr/gp/help/customer/display.html?nodeId=548524" target="_self">Conditions d'utilisation et générales de vente</a> </span></li>
                   <li id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__LI_7ECFF5E5E2234871936EBA0EB48A6E0D"><span class="a-list-item"><a class="same_window" href="https://www.amazon.fr/gp/help/customer/display.html/ref=gw_m_b_he?ie=UTF8&amp;nodeId=559912" target="_self">Pages d'aide</a></span></li>
                   <li id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__LI_EED0D759287044BD813EA5CB7F07CD3C"><span class="a-list-item"><a class="same_window" href="https://www.amazon.fr/gp/your-account/order-history" target="_self"> Vos achats</a></span></li> 
                   <li id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__LI_66227419F2C44D8680F88BCA4BED5DE8"><span class="a-list-item"><a href="https://www.amazon.fr/gp/help/customer/display.html?nodeId=GLHXEX85MENUE4XF" target="_blank">Votre profil et les Lignes directrices communautaires</a></span></li> 
-                  		</ul> <p></p>
+                  		</ul> </p>
          </div> 
          	 </section> 
       	 
@@ -2937,7 +2943,7 @@ window.$Nav && $Nav.declare('configComplete');
          <div class="a-spacing-base">
             <p> 
                		
-               </p><ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_6EB3743D3E4243539A674A3564678480">
+               <ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_6EB3743D3E4243539A674A3564678480">
                   <li id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__LI_D0EAE66257D549BCAF8EF06EE9EB15F5"><span class="a-list-item">recherchez des produits ou services dans nos boutiques ;</span></li>
                   <li id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__LI_168430E6982C4621B4F2E561D596B503"><span class="a-list-item">ajoutez ou supprimez un article de votre panier, passez une commande via les Services
                         Amazon ;</span></li>
@@ -2966,7 +2972,7 @@ window.$Nav && $Nav.declare('configComplete');
                   <li id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__LI_0B8BE477AD0042A99008A795057175E5"><span class="a-list-item">paramétrez un rappel de vos évènements ; ou</span></li>
                   <li id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__LI_99D8AAD971754746A10A232F32406880"><span class="a-list-item">paramétrez des « Alertes de disponibilité » telle que l'Alerte sur la disponibilité
                         des articles.</span></li> 
-                  		</ul> <p></p>
+                  		</ul> </p>
          </div> 
          <p> Par ces actions, vous nous fournissez des informations qui peuvent être : votre nom,
             adresse et numéro de téléphone, des informations de paiement, votre âge, votre localisation
@@ -2988,7 +2994,7 @@ window.$Nav && $Nav.declare('configComplete');
          <div class="a-spacing-base">
             <p> 
                		
-               </p><ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_FA823AD83BB84F9D8CFB6F47E974CBF7">
+               <ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_FA823AD83BB84F9D8CFB6F47E974CBF7">
                   <li id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__LI_0A2C6A2FE65F497AB4774A375A7CAD0C"><span class="a-list-item">l'adresse IP (Internet Protocol) qui relie votre ordinateur ou tout autre appareil
                         à Internet ;</span></li>
                   <li id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__LI_B8D4733E28FB4CDCB6E99B52707B33F6"><span class="a-list-item">les données de connexion, les adresses e-mail, et mots de passe,</span></li>
@@ -3023,7 +3029,7 @@ window.$Nav && $Nav.declare('configComplete');
                   <li id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__LI_ED03CFE691DD4D91962B31A74DD33D9C"><span class="a-list-item">les image sous les vidéos lorsque vous faites vos achats dans nos boutiques en utilisant
                         les Services Amazon.</span></li> 
                   		</ul>
-            <p></p>
+            </p>
          </div> 
          <p> Nous pouvons aussi utiliser des identificateurs d'appareil, des cookies et toute
             autre technologie sur les appareils, applications et nos pages internet pour collecter
@@ -3036,7 +3042,7 @@ window.$Nav && $Nav.declare('configComplete');
          <div class="a-spacing-base">
             <p><strong id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__GUID-368978A8-4A03-4D91-8CF7-E6D44B5FF219"> Voici quelques exemples d'informations que nous recevons d'autres sources :</strong> 
                		
-               </p><ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_1BBC4790DA7C4ECEBCCCA6E1F4BD7DB3">
+               <ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_1BBC4790DA7C4ECEBCCCA6E1F4BD7DB3">
                   <li id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__LI_C1FA28D3A4E54CB7A5431263AFA1FF87"><span class="a-list-item">les informations actualisées de nos transporteurs et autres parties tierces sur les
                         livraisons et les adresses que nous utilisons pour mettre à jour nos bases de données,
                         optimiser l'exécution de vos prochaines commandes et pouvoir communiquer plus facilement
@@ -3054,7 +3060,7 @@ window.$Nav && $Nav.declare('configComplete');
                   <li id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__LI_A1702F214A2D46EBB6831FD73B39D7C4"><span class="a-list-item"> des renseignements provenant d'agences de renseignements commerciaux que nous utilisons
                         pour prévenir ou détecter les fraudes et pour pouvoir offrir certains services de
                         crédit et financiers à certains clients.</span></li> 
-                  		</ul> <p></p>
+                  		</ul> </p>
          </div> 
          	 </section> 
       	 
@@ -3065,7 +3071,7 @@ window.$Nav && $Nav.declare('configComplete');
          <div class="a-spacing-base">
             <p> 
                		
-               </p><ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_CE4C2EA982A146E386F39ECC2ED8041C">
+               <ul class="a-unordered-list a-vertical" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__UL_CE4C2EA982A146E386F39ECC2ED8041C">
                   <li id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__LI_ADFE7D40FC3047E9A48C53EE230493DA"><span class="a-list-item"> le statut de vos commandes récentes (incluant vos abonnements) ;</span></li>
                   <li id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__LI_801AE891AC5C4AA4ABA927FEB2ADBF51"><span class="a-list-item"> votre historique de commande complet ;</span></li>
                   <li id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__LI_CC83C8D22F5F4FAA8FE197D49E102AA6"><span class="a-list-item"> vos informations personnelles (notamment vos nom, adresse e-mail et mot de passe,
@@ -3094,7 +3100,7 @@ window.$Nav && $Nav.declare('configComplete');
                   <li id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__LI_BA6BBDF9B17A423CB076128A7F15BE09"><span class="a-list-item"> si vous êtes un développeur participant à nos Programmes de Services de Développement,
                         vous pouvez accéder à votre compte ainsi qu'aux autres informations et configurer
                         vos préférences de communication en mettant à jour votre compte dans le <span class="help-display-cond help-display-cond-hidden help-display-cond-rule-platform-DesktopBrowser help-display-cond-rule-platform-MobileBrowser help-display-cond-rule-platform-PhoneAppAndroid help-display-cond-rule-platform-TabletAppAndroid" id="GUID-45AD78C8-97B0-4FAC-BB81-E55E7DCE1304__GUID-A19065CE-E070-459E-BDF8-85F6E7DF23BD"><a class="same_window" href="https://developer.amazon.com" target="_self">Portail des Services de Développeurs</a></span>.</span></li> 
-                  		</ul> <p></p>
+                  		</ul> </p>
          </div> 
          	 </section> 
       	 
@@ -3196,9 +3202,10 @@ window.$Nav && $Nav.declare('configComplete');
             Services Amazon que nous proposons à nos clients. Pour vous aider à mieux comprendre
             chaque objectif, vous pouvez consulter les <a href="https://www.amazon.fr/gp/help/customer/display.html?nodeId=TcxwSYJNmpQYGgNWkX" target="_blank">catégories d'informations personnelles que nous utilisons généralement pour chaque
                objectif et les bases juridiques sur lesquelles nous nous appuyons</a>. </p>
-         <p> Nous pouvons utiliser vos informations personnelles pour prendre des décisions totalement
-            automatisées qui ont un impact juridique ou équivalent significatif à votre égard.
-            Si nous prenons une telle mesure, nous vous en informerons. </p> 
+         <p> Nous pouvons utiliser vos informations personnelles pour prendre des décisions exclusivement
+            automatisées produisant des effets juridiques vous concernant ou vous affectant de
+            manière significative de façon similaire. Si nous prenons une telle mesure, nous vous
+            en informerons.</p> 
          	 </section> 
       </div> 
    </article></div>
@@ -3796,7 +3803,7 @@ window.$Nav && $Nav.declare('configComplete');
                       marketplaceId: 'A13V1IB3VIYZZH',
                       localCountryCode: 'FR',
                          customerId: null,
-                      sessionId: '259\x2D4715660\x2D1047046',
+                      sessionId: '259\x2D7429482\x2D4323404',
                       deviceType: 'DESKTOP',
                       referrer: '',
                       url: '\x2Fgp\x2Fhelp\x2Fcustomer\x2Fdisplay.html',
@@ -4034,12 +4041,27 @@ window.$Nav && $Nav.declare('configComplete');
 
   
 </div>
-<div id="sis_pixel_r2" aria-hidden="true" style="height:1px; position: absolute; left: -1000000px; top: -1000000px;"></div><script>(function(a,b){a.attachEvent?a.attachEvent("onload",b):a.addEventListener&&a.addEventListener("load",b,!1)})(window,function(){setTimeout(function(){var el=document.getElementById("sis_pixel_r2");el&&(el.innerHTML='<iframe id="DAsis" src="//aax-eu.amazon-adsystem.com/s/iu3?d=amazon.fr&slot=navFooter&old_oo=0&ts=1736425947297&s=Ac0xCLuW5CsxHjk2o5ahuZAtzFsseiSQ1-owfElDW_Ke&gdpr_consent=&gdpr_consent_avl=&cb=1736425947297" width="1" height="1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" tabindex="-1" sandbox></iframe>');var event=new Event("SISPixelCardLoaded");document.dispatchEvent(event);},300)});</script>
+<div id="sis_pixel_r2" aria-hidden="true" style="height:1px; position: absolute; left: -1000000px; top: -1000000px;"></div><script>(function(a,b){a.attachEvent?a.attachEvent("onload",b):a.addEventListener&&a.addEventListener("load",b,!1)})(window,function(){setTimeout(function(){var el=document.getElementById("sis_pixel_r2");el&&(el.innerHTML='<iframe id="DAsis" src="//aax-eu.amazon-adsystem.com/s/iu3?d=amazon.fr&slot=navFooter&old_oo=0&ts=1736469145383&s=AdonRQHVL44IASu0DKxVT9D95XSDvO02n0Gtscg8AC1B&gdpr_consent=&gdpr_consent_avl=&cb=1736469145383" width="1" height="1" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" tabindex="-1" sandbox></iframe>');var event=new Event("SISPixelCardLoaded");document.dispatchEvent(event);},300)});</script>
 
   <!-- NAVYAAN FOOTER END -->
 
 <!-- sp:end-feature:nav-footer -->
 <!-- sp:feature:configured-sitewide-assets -->
+<script>
+(window.AmazonUIPageJS ? AmazonUIPageJS : P).when('afterLoad').execute(function() {
+(function(k,h,B){var y=k.ue||{},m=function(){},v=function(b){return function(g,d){d||(d="ERROR");g=g&&g.stack&&g.message?g:JSON.stringify(g);b({logLevel:d,attribution:"MSAVowelsJavascriptAssets",message:g})}}(k.ueLogError||m),p=function(b){return function(g,d){b("MSAVowelsJavascriptAssets:"+g,d)}}(y.count||m),w=function(b){return function(){try{return b.apply(this,arguments)}catch(g){v(g,"FATAL")}}},t=function(){var b=Array.prototype.slice.call(arguments,0);b[0]=w(b[0]);return k.setTimeout.apply(null,
+b)},x=function(){p("invoked",1);(function(){try{var d=h.createElement("link").relList.supports("preload")}catch(H){d=!1}return function(b){var f=d?h.createElement("link"):new Image;f.onerror=f.onload=w(function(){f&&f.parentElement&&f.parentElement.removeChild(f)});d?(f.rel="preload",f.as="image",f.referrerPolicy="strict-origin-when-cross-origin",f.href=b,h.head.appendChild(f)):(f.style.display="none",f.referrerPolicy="strict-origin-when-cross-origin",f.src=b,h.documentElement.appendChild(f))}})();
+var b=function(d){d={events:[{data:d}]};d=JSON.stringify(d);var b=g(k.location.href),f="https://unagi-na.amazon.com";b&&b.toLowerCase().endsWith("amazon.cn")&&(f="https://unagi.amazon.cn");b=f+"/1/events/com.amazon.Vowels.ClientMetrics";navigator&&navigator.sendBeacon?navigator.sendBeacon(b,d):fetch(b,{method:"POST",body:d}).catch(function(b){v(b,"WARN")})},g=function(b){return(b=b.match(/^https?:\/\/([^\/?#]+)(?:[\/?#]|$)/i))&&b[1]};t(function(){P.when("3p-promise").execute(function(d){function g(){for(var a=
+new URLSearchParams,c=0;c<arguments.length;c++){var n=arguments[c],b;for(b in n)a.set(b,n[b])}return a.toString()}function f(){for(var a={},c=0;c<arguments.length;c++){var b=arguments[c],u;for(u in b)a[u]=b[u]}return a}function t(a,c){var n=a.name,u=a.startTime||0,e=a.connectEnd||0,z=a.connectStart||0,d=a.domainLookupEnd||0,g=a.domainLookupStart||0,k=a.requestStart||0,l=a.responseEnd||0,h=a.responseStart||0,p=a.secureConnectionStart||0,t=a.transferSize||0,m=a.duration||0;0>=m&&0<u&&0<l&&(m=l-u);var q=
+{src:n,sy:c+".2023-05-05"};0<=n.indexOf("/images/G/01/msa/vowels/metrics")?q.l=r(m):(0<t&&(q.siz=t),0<h-k&&0<h&&0<k&&(q.ttf=r(h-k)),0<l-h&&0<l&&0<h&&(q.con=r(l-h)),0<m&&(q.dur=r(m)));0<d-g&&0<d&&0<g&&(q.dns=r(d-g));0<e-z&&0<e&&0<z&&(q.tcp=r(e-z));0<e-p&&0<e&&0<p&&(q.tls=r(e-p));"serverTiming"in a&&a.serverTiming.slice(0,15).forEach(function(c){var a="st_"+c.name,e=c.description.substring(0,Math.min(64,c.description.length));q[a]=encodeURIComponent(c.duration+";"+e)});a=f(C,q);b(a)}function m(a){var c=
+f(C,{src:a,error:1}),b=l.now();return fetch(a).then(function(n){var e=l.now();var d=n.headers.get("x-cache")||"";d=0<=d.indexOf("cloudfront")?"c":0<=d.indexOf("akamai")?"a":0<=d.indexOf("fastly")?"f":"u";if(!n.ok)throw c.l=r(e-b),c.status=n.status,c.sy=d+".2023-05-05",w(d,c),c;n={name:a,duration:e-b};e=l.getEntriesByName(a);t(1===e.length?e[0]:n,d);return{cdn:d,url:a}},function(a){c.message=a.message;c.sy="u.2023-05-05";w("u",c);throw a;})}function w(a,c){try{var d=new URL(c.src)}catch(e){throw e;
+}var f=c.status;"u"===a?x(d,f).then(function(a){a.forEach(function(a){c.sy=a+".2023-05-05";b(c)})}):b(c)}function x(a,c){var b=[];a=[A(a,"f"),A(a,"c"),A(a,"a")];return d.all(a.map(y)).then(function(a){a.forEach(function(a){"fulfilled"===a.status?c&&a.value.statusCode===c&&b.push(a.value.cdn):c===B&&b.push(a.reason)});return 0<b.length?b:["u"]})}function y(a){return a.then(function(a){return{value:a,status:"fulfilled"}},function(a){return{reason:a,status:"rejected"}})}function A(a,c){a.hostname=E[c];
+return fetch(a).then(function(a){return{cdn:c,statusCode:a.status}}).catch(function(a){v(a,"WARN");throw c;})}function F(){for(var a=new RegExp("^https://(.*.(images|ssl-images|media)-amazon.(?:com|cn)|"+k.location.hostname+")/images/","i"),c={},b=0,d="",e,f,g=l.getEntriesByType("resource"),h=g.length-1;0<=h;h--)e=g[h],0<e.transferSize&&e.transferSize>=e.encodedBodySize&&(e=a.exec(String(g[h].name)))&&3===e.length&&(e=e[1],f=c[e]=(c[e]||0)+1,f>b&&(d=e,b=f));return d}var D=navigator.userAgent,r=Math.round,
+l=k.performance,C={s:h.domain,u:k.location.pathname,tz:D},E={a:"a.media-amazon.com",c:"dk9ps7goqoeef.cloudfront.net",f:"f.media-amazon.com"},G=k.URLSearchParams&&k.fetch;l&&"function"===typeof l.getEntriesByName&&"function"===typeof l.getEntriesByType&&"function"===typeof l.now&&0>D.toLowerCase().indexOf("firefox")&&G?function(){var a=F()||"m.media-amazon.com";m("https://"+a+"/images/G/01/msa/vowels/metrics.jpg?"+g({time:+new Date,rand:r(1E6*Math.random()).toString()})).then(function(){var c="STID"+
+r(1E6*Math.random()).toString()+"-"+ +new Date;return m("https://"+a+"/images/G/01/msa/vowels/metrics._"+c+"_.jpg")}).then(function(c){c=c.cdn;p("cdn:"+c,1);var b=l.getEntriesByType("resource");if(b===B||0>=b.length)c=0;else{var d="https://"+a+"/images/",e,f=0;for(e=0;e<b.length&&3>f;e++){var g=b[e];var h=g.name;0<g.transferSize&&g.transferSize>=g.encodedBodySize&&0===h.indexOf(d)&&!(0<h.indexOf("/images/G/01/msa/vowels/metrics"))&&(t(g,c),f++)}c=f}p("resourceCount",c)},function(a){p("resourceError",
+1);a instanceof TypeError&&a.message&&a.message.includes("Failed to fetch")?v(a,"WARN"):v(a,"ERROR")})}():p("unsupportedBrowser",1)})},4E3)};"loading"!==h.readyState?t(x,1E3):k.addEventListener&&k.addEventListener("DOMContentLoaded",function(){t(x,1E3)});p("registered",1)})(window,document);
+});
+</script>
 <script>
 (window.AmazonUIPageJS ? AmazonUIPageJS : P).when('afterLoad').execute(function() {
   (window.AmazonUIPageJS ? AmazonUIPageJS : P).load.js('https://m.media-amazon.com/images/I/41enQvbo0+L.js?AUIClients/AmazonLightsaberPageAssets#1061544-T1');
@@ -4258,7 +4280,7 @@ rx.ex64("UlgBKScmUURCJ1ddJCS4MxUpLUFKRlBIQEtRBSUkJ7gzFSknUEAFJSQmFSkmUEBdBSVkIXU
 </div>
 
 <noscript>
-    <img height="1" width="1" style='display:none;visibility:hidden;' src='//fls-eu.amazon.fr/1/batch/1/OP/A13V1IB3VIYZZH:259-4715660-1047046:YS08NHED1ZY29WP0117H$uedata=s:%2Frd%2Fuedata%3Fnoscript%26id%3DYS08NHED1ZY29WP0117H:0' alt=""/>
+    <img height="1" width="1" style='display:none;visibility:hidden;' src='//fls-eu.amazon.fr/1/batch/1/OP/A13V1IB3VIYZZH:259-7429482-4323404:DV3JYFVQEW1FBRBWMQ6D$uedata=s:%2Frd%2Fuedata%3Fnoscript%26id%3DDV3JYFVQEW1FBRBWMQ6D:0' alt=""/>
 </noscript>
 
 <script>window.ue && ue.count && ue.count('CSMLibrarySize', 81367)</script>
@@ -4268,4 +4290,4 @@ rx.ex64("UlgBKScmUURCJ1ddJCS4MxUpLUFKRlBIQEtRBSUkJ7gzFSknUEAFJSQmFSkmUEBdBSVkIXU
        .__(.)< (MEOW)
         \___)   
  ~~~~~~~~~~~~~~~~~~-->
-<!-- sp:eh:SM1k/c1soyqMtG+HBJNc+OPNPu60uiE34ROWgAoLaTsy/orzjGJiEQ/3E7L3OgbPWkzE5DZIMr0IHedx9xTwAQ2KGm6vw7EAst8Nq/iVwuq4mGL9vnJCYt4Ihbs= -->
+<!-- sp:eh:zdOvedn+c1v9YLnbyFsCR4jY09ARCXP9fOLzbabvOWMB6xN6rsxXCbuSnHz1fgZzrszfjySpzKjXtHSz1pIwkxDj1FXyj0w3toXPz0qouzm0ZOhM8zTDjP2JT2k= -->
