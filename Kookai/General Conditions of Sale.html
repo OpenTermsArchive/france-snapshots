@@ -576,7 +576,7 @@ Shopify.routes.root = "/";</script>
     window.addEventListener('load', asyncLoad, false);
   }
 })();</script>
-<script id="__st">var __st={"a":55913644166,"offset":3600,"reqid":"c77eca4f-c08c-4446-a5e2-034a158e450a-1739407018","pageurl":"kookai.fr\/pages\/conditions-generales-de-vente","s":"pages-85775253638","u":"679f46ca37af","p":"page","rtyp":"page","rid":85775253638};</script>
+<script id="__st">var __st={"a":55913644166,"offset":3600,"reqid":"008d3510-b4b8-4ba4-9e7c-4351cb233a44-1739450224","pageurl":"kookai.fr\/pages\/conditions-generales-de-vente","s":"pages-85775253638","u":"9d58403c39b2","p":"page","rtyp":"page","rid":85775253638};</script>
 <script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
 <script id="captcha-bootstrap">!function(){'use strict';const t='contact',e='account',n='new_comment',o=[[t,t],['blogs',n],['comments',n],[t,'customer']],c=[[e,'customer_login'],[e,'guest_login'],[e,'recover_customer_password'],[e,'create_customer']],r=t=>t.map((([t,e])=>`form[action*='/${t}']:not([data-nocaptcha='true']) input[name='form_type'][value='${e}']`)).join(','),a=t=>()=>t?[...document.querySelectorAll(t)].map((t=>t.form)):[];function s(){const t=[...o],e=r(t);return a(e)}const i='password',u='form_key',d=['recaptcha-v3-token','g-recaptcha-response','h-captcha-response',i],f=()=>{try{return window.sessionStorage}catch{return}},m='__shopify_v',_=t=>t.elements[u];function p(t,e,n=!1){try{const o=window.sessionStorage,c=JSON.parse(o.getItem(e)),{data:r}=function(t){const{data:e,action:n}=t;return t[m]||n?{data:e,action:n}:{data:t,action:n}}(c);for(const[e,n]of Object.entries(r))t.elements[e]&&(t.elements[e].value=n);n&&o.removeItem(e)}catch(o){console.error('form repopulation failed',{error:o})}}const l='form_type',E='cptcha';function T(t){t.dataset[E]=!0}const w=window,h=w.document,L='Shopify',v='ce_forms',y='captcha';let A=!1;((t,e)=>{const n=(g='f06e6c50-85a8-45c8-87d0-21a2b65856fe',I='https://cdn.shopify.com/shopifycloud/storefront-forms-hcaptcha/ce_storefront_forms_captcha_hcaptcha.v1.5.2.iife.js',D={infoText:'Protégé par hCaptcha',privacyText:'Confidentialité',termsText:'Conditions'},(t,e,n)=>{const o=w[L][v],c=o.bindForm;if(c)return c(t,g,e,D).then(n);var r;o.q.push([[t,g,e,D],n]),r=I,A||(h.body.append(Object.assign(h.createElement('script'),{id:'captcha-provider',async:!0,src:r})),A=!0)});var g,I,D;w[L]=w[L]||{},w[L][v]=w[L][v]||{},w[L][v].q=[],w[L][y]=w[L][y]||{},w[L][y].protect=function(t,e){n(t,void 0,e),T(t)},Object.freeze(w[L][y]),function(t,e,n,w,h,L){const[v,y,A,g]=function(t,e,n){const i=e?o:[],u=t?c:[],d=[...i,...u],f=r(d),m=r(i),_=r(d.filter((([t,e])=>n.includes(e))));return[a(f),a(m),a(_),s()]}(w,h,L),I=t=>{const e=t.target;return e instanceof HTMLFormElement?e:e&&e.form},D=t=>v().includes(t);t.addEventListener('submit',(t=>{const e=I(t);if(!e)return;const n=D(e)&&!e.dataset.hcaptchaBound&&!e.dataset.recaptchaBound,o=_(e),c=g().includes(e)&&(!o||!o.value);(n||c)&&t.preventDefault(),c&&!n&&(function(t){try{if(!f())return;!function(t){const e=f();if(!e)return;const n=_(t);if(!n)return;const o=n.value;o&&e.removeItem(o)}(t);const e=Array.from(Array(32),(()=>Math.random().toString(36)[2])).join('');!function(t,e){_(t)||t.append(Object.assign(document.createElement('input'),{type:'hidden',name:u})),t.elements[u].value=e}(t,e),function(t,e){const n=f();if(!n)return;const o=[...t.querySelectorAll(`input[type='${i}']`)].map((({name:t})=>t)),c=[...d,...o],r={};for(const[a,s]of new FormData(t).entries())c.includes(a)||(r[a]=s);n.setItem(e,JSON.stringify({[m]:1,action:t.action,data:r}))}(t,e)}catch(e){console.error('failed to persist form',e)}}(e),e.submit())}));const S=(t,e)=>{t&&!t.dataset[E]&&(n(t,e.some((e=>e===t))),T(t))};for(const o of['focusin','change'])t.addEventListener(o,(t=>{const e=I(t);D(e)&&S(e,y())}));const B=e.get('form_key'),M=e.get(l),P=B&&M;t.addEventListener('DOMContentLoaded',(()=>{const t=y();if(P)for(const e of t)e.elements[l].value===M&&p(e,B);[...new Set([...A(),...v().filter((t=>'true'===t.dataset.shopifyCaptcha))])].forEach((e=>S(e,t)))}))}(h,new URLSearchParams(w.location.search),n,t,e,['guest_login'])})(!0,!0)}();</script>
 <script integrity="sha256-EGCDRYTvIEOXsReXgqGwkAR+5Dl8tickSrieA/ZcQwc=" data-source-attribution="shopify.loadfeatures" defer="defer" src="//kookai.fr/cdn/shopifycloud/shopify/assets/storefront/load_feature-1060834584ef204397b1179782a1b090047ee4397cb627244ab89e03f65c4307.js" crossorigin="anonymous"></script>
@@ -634,6 +634,47 @@ Shopify.routes.root = "/";</script>
       document.body.appendChild(instafeedScript);
     });
   </script>
+
+
+
+
+
+<!-- END app block --><!-- BEGIN app block: shopify://apps/live-shopping-by-livemeup/blocks/player-script/82ccf4ed-67f8-4725-9167-e54475d4748e -->
+<!-- END app block --><!-- BEGIN app block: shopify://apps/wholesale-pricing-discount/blocks/app-embed/94cbfa01-7191-4bb2-bcd8-b519b9b3bd06 --><script>
+
+  window.wpdExtensionIsProductPage = "";
+;
+window.wpdExtensionIsCartPage = false;
+
+window.showCrossOutPrice = true;
+window.WPDAppProxy = "/apps/wpdapp";
+
+
+window.WPDMarketLocalization = "";
+window.WPDMoneyFormat = "€{{amount_with_comma_separator}}";
+
+
+	
+	
+
+  
+  
+  
+  
+	
+  
+    window.is_wcp_wholesale_customer = false;
+  
+  window.wcp_customer = {
+      email: "",
+      id: "",
+      tags: null,
+      default_address: null,
+      tax_exempt: false
+    };
+  window.shopPermanentDomain = "kookai-amh.myshopify.com";
+  window.wpdAPIRootUrl = "https://bdr.wholesalehelper.io/";
+</script>
 
 
 
@@ -744,47 +785,6 @@ Shopify.routes.root = "/";</script>
   });
 </script>
 
-<!-- END app block --><!-- BEGIN app block: shopify://apps/wholesale-pricing-discount/blocks/app-embed/94cbfa01-7191-4bb2-bcd8-b519b9b3bd06 --><script>
-
-  window.wpdExtensionIsProductPage = "";
-;
-window.wpdExtensionIsCartPage = false;
-
-window.showCrossOutPrice = true;
-window.WPDAppProxy = "/apps/wpdapp";
-
-
-window.WPDMarketLocalization = "";
-window.WPDMoneyFormat = "€{{amount_with_comma_separator}}";
-
-
-	
-	
-
-  
-  
-  
-  
-	
-  
-    window.is_wcp_wholesale_customer = false;
-  
-  window.wcp_customer = {
-      email: "",
-      id: "",
-      tags: null,
-      default_address: null,
-      tax_exempt: false
-    };
-  window.shopPermanentDomain = "kookai-amh.myshopify.com";
-  window.wpdAPIRootUrl = "https://bdr.wholesalehelper.io/";
-</script>
-
-
-
-
-
-<!-- END app block --><!-- BEGIN app block: shopify://apps/sk-advanced-form-builder/blocks/app/f3e35b58-5874-4ef2-8e03-c92cda6e49eb --><script src="https://www.google.com/recaptcha/enterprise.js" async></script>
 <!-- END app block --><!-- BEGIN app block: shopify://apps/wishlist-hero/blocks/app-embed/a9a5079b-59e8-47cb-b659-ecf1c60b9b72 -->
 
 <script type="text/javascript">
@@ -1013,6 +1013,7 @@ window.WPDMoneyFormat = "€{{amount_with_comma_separator}}";
   window.WLH_reload_translations();
 </script><!-- END app snippet -->
 
+<!-- END app block --><!-- BEGIN app block: shopify://apps/sk-advanced-form-builder/blocks/app/f3e35b58-5874-4ef2-8e03-c92cda6e49eb --><script src="https://www.google.com/recaptcha/enterprise.js" async></script>
 <!-- END app block --><!-- BEGIN app block: shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507 -->
 
 
@@ -1054,14 +1055,13 @@ window.WPDMoneyFormat = "€{{amount_with_comma_separator}}";
 </script>
 
 
-<!-- END app block --><!-- BEGIN app block: shopify://apps/live-shopping-by-livemeup/blocks/player-script/82ccf4ed-67f8-4725-9167-e54475d4748e -->
-<!-- END app block --><script src="https://cdn.shopify.com/extensions/9e00c635-6dec-4f75-b87c-7624a1b7cb15/sk-advanced-form-builder-154/assets/formbuilder.js" type="text/javascript" defer="defer"></script>
-<link href="https://cdn.shopify.com/extensions/9e00c635-6dec-4f75-b87c-7624a1b7cb15/sk-advanced-form-builder-154/assets/formbuilder.css" rel="stylesheet" type="text/css" media="all">
+<!-- END app block --><script src="https://cdn.shopify.com/extensions/bc48e151-00bb-47cc-ae50-328875096f5d/live-shopping-by-livemeup-65/assets/player-loader.min.js" type="text/javascript" defer="defer"></script>
 <script src="https://cdn.shopify.com/extensions/1675c59f-6e56-4eff-9cd4-978cc68c3001/ekookie-29/assets/ekookie.js" type="text/javascript" defer="defer"></script>
 <link href="https://cdn.shopify.com/extensions/1675c59f-6e56-4eff-9cd4-978cc68c3001/ekookie-29/assets/ekookie.css" rel="stylesheet" type="text/css" media="all">
-<script src="https://cdn.shopify.com/extensions/5f452150-eb0f-41b5-982a-a7ed1c3398e9/live-shopping-by-livemeup-64/assets/player-loader.min.js" type="text/javascript" defer="defer"></script>
 <script src="https://cdn.shopify.com/extensions/8044c7c8-1d0c-426a-96f3-c5fc61eb6c66/kleep-kookai-107/assets/kleep-app.js" type="text/javascript" defer="defer"></script>
 <link href="https://cdn.shopify.com/extensions/8044c7c8-1d0c-426a-96f3-c5fc61eb6c66/kleep-kookai-107/assets/kleep-app.css" rel="stylesheet" type="text/css" media="all">
+<script src="https://cdn.shopify.com/extensions/9e00c635-6dec-4f75-b87c-7624a1b7cb15/sk-advanced-form-builder-154/assets/formbuilder.js" type="text/javascript" defer="defer"></script>
+<link href="https://cdn.shopify.com/extensions/9e00c635-6dec-4f75-b87c-7624a1b7cb15/sk-advanced-form-builder-154/assets/formbuilder.css" rel="stylesheet" type="text/css" media="all">
 <link href="https://monorail-edge.shopifysvc.com" rel="dns-prefetch">
 <script>(function(){if ("sendBeacon" in navigator && "performance" in window) {var session_token = document.cookie.match(/_shopify_s=([^;]*)/);function handle_abandonment_event(e) {var entries = performance.getEntries().filter(function(entry) {return /monorail-edge.shopifysvc.com/.test(entry.name);});if (!window.abandonment_tracked && entries.length === 0) {window.abandonment_tracked = true;var currentMs = Date.now();var navigation_start = performance.timing.navigationStart;var payload = {shop_id: 55913644166,url: window.location.href,navigation_start,duration: currentMs - navigation_start,session_token: session_token && session_token.length === 2 ? session_token[1] : "",page_type: "page"};window.navigator.sendBeacon("https://monorail-edge.shopifysvc.com/v1/produce", JSON.stringify({schema_id: "online_store_buyer_site_abandonment/1.1",payload: payload,metadata: {event_created_at_ms: currentMs,event_sent_at_ms: currentMs}}));}}window.addEventListener('pagehide', handle_abandonment_event);}}());</script>
 <script id="web-pixels-manager-setup">(function d(d,e,n,o,r,i){if(!Boolean(null===(t=null===(a=window.Shopify)||void 0===a?void 0:a.analytics)||void 0===t?void 0:t.replayQueue)){var a,t,s=function(){var d={modern:/Edge?\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Firefox\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Chrom(ium|e)\/(9{2}|\d{3,})\.\d+(\.\d+|)|(Maci|X1{2}).+ Version\/(15\.\d+|(1[6-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(9{2}|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(15[._]\d+|(1[6-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](13\d|1[4-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Android.+Firefox\/(13\d|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(13\d|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|SamsungBrowser\/([2-9]\d|\d{3,})\.\d+/,legacy:/Edge?\/(1[6-9]|[2-9]\d|\d{3,})\.\d+(\.\d+|)|Firefox\/(5[4-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)|Chrom(ium|e)\/(5[1-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)([\d.]+$|.*Safari\/(?![\d.]+ Edge\/[\d.]+$))|(Maci|X1{2}).+ Version\/(10\.\d+|(1[1-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(3[89]|[4-9]\d|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(10[._]\d+|(1[1-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](13\d|1[4-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Mobile Safari.+OPR\/([89]\d|\d{3,})\.\d+\.\d+|Android.+Firefox\/(13\d|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(13\d|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+(UC? ?Browser|UCWEB|U3)[ /]?(15\.([5-9]|\d{2,})|(1[6-9]|[2-9]\d|\d{3,})\.\d+)\.\d+|SamsungBrowser\/(5\.\d+|([6-9]|\d{2,})\.\d+)|Android.+MQ{2}Browser\/(14(\.(9|\d{2,})|)|(1[5-9]|[2-9]\d|\d{3,})(\.\d+|))(\.\d+|)|K[Aa][Ii]OS\/(3\.\d+|([4-9]|\d{2,})\.\d+)(\.\d+|)/},e=d.modern,n=d.legacy,o=navigator.userAgent;return e.test(o)?"modern":(n.test(o),"legacy")}(),l=null!=i?i:{modern:"",legacy:""};window.Shopify=window.Shopify||{};var u=window.Shopify;u.analytics=u.analytics||{};var c=u.analytics;c.replayQueue=[],c.publish=function(d,e,n){return c.replayQueue.push([d,e,n]),!0};try{self.performance.mark("wpm:start")}catch(d){}var f=[n,"/wpm","/b",r,s.substring(0,1),".js"].join(""),h=l[s];!function(d){var e=d.src,n=d.async,o=void 0===n||n,r=d.onload,i=d.onerror,a=d.sri,t=document.createElement("script"),s=document.head,l=document.body;t.async=o,t.src=e,a&&(t.integrity=a,t.crossOrigin="anonymous"),r&&t.addEventListener("load",r),i&&t.addEventListener("error",i),s?s.appendChild(t):l?l.appendChild(t):console.error("Did not find a head or body element to append the script")}({src:f,async:!0,onload:function(){if(!function(){var d,e;return Boolean(null===(e=null===(d=window.Shopify)||void 0===d?void 0:d.analytics)||void 0===e?void 0:e.initialized)}()){var n=window.webPixelsManager.init(d)||void 0;if(n){e(n);var o=window.Shopify.analytics;o.replayQueue.forEach((function(d){var e=d[0],o=d[1],r=d[2];n.publishCustomEvent(e,o,r)})),o.replayQueue=[],o.publish=n.publishCustomEvent,o.visitor=n.visitor,o.initialized=!0}}},onerror:function(){var e=d.storefrontBaseUrl.replace(/\/$/,""),n="".concat(e,"/.well-known/shopify/monorail/unstable/produce_batch"),r=JSON.stringify({metadata:{event_sent_at_ms:(new Date).getTime()},events:[{schema_id:"web_pixels_manager_load/3.1",payload:{version:o||"latest",bundle_target:s,page_url:self.location.href,status:"failed",surface:d.surface,error_msg:"".concat(f," has failed to load")},metadata:{event_created_at_ms:(new Date).getTime()}}]});try{if(self.navigator.sendBeacon.bind(self.navigator)(n,r))return!0}catch(d){}var i=new XMLHttpRequest;try{return i.open("POST",n,!0),i.setRequestHeader("Content-Type","text/plain"),i.send(r),!0}catch(d){console&&console.warn&&console.warn("[Web Pixels Manager] Got an unhandled error while logging a load error.")}return!1},sri:function(d){return"string"==typeof d&&/^sha384-[A-Za-z0-9+/=]+$/.test(d)}(h)?h:""})}})({shopId: 55913644166,storefrontBaseUrl: "https://kookai.fr",extensionsBaseUrl: "https://extensions.shopifycdn.com/cdn/shopifycloud/web-pixels-manager",surface: "storefront-renderer",enabledBetaFlags: ["6a396365"],webPixelsConfigList: [{"id":"349601926","configuration":"{\"shopId\":\"kookaiamhmA8259D8F\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"d7c881bdecfda765ff75e9c60924ec3b","type":"APP","apiClientId":5610109,"privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"]},{"id":"310476934","configuration":"{\"config\":\"{\\\"pixel_id\\\":\\\"G-LR7WNVS7JQ\\\",\\\"target_country\\\":\\\"FR\\\",\\\"gtag_events\\\":[{\\\"type\\\":\\\"search\\\",\\\"action_label\\\":[\\\"G-LR7WNVS7JQ\\\",\\\"AW-11120616110\\\/1x6oCLifi7AZEK7F3LYp\\\"]},{\\\"type\\\":\\\"begin_checkout\\\",\\\"action_label\\\":[\\\"G-LR7WNVS7JQ\\\",\\\"AW-11120616110\\\/9m7mCL6fi7AZEK7F3LYp\\\"]},{\\\"type\\\":\\\"view_item\\\",\\\"action_label\\\":[\\\"G-LR7WNVS7JQ\\\",\\\"AW-11120616110\\\/lN4qCLWfi7AZEK7F3LYp\\\",\\\"MC-7GGLCMXZ7Y\\\"]},{\\\"type\\\":\\\"purchase\\\",\\\"action_label\\\":[\\\"G-LR7WNVS7JQ\\\",\\\"AW-11120616110\\\/6ivoCK-fi7AZEK7F3LYp\\\",\\\"MC-7GGLCMXZ7Y\\\"]},{\\\"type\\\":\\\"page_view\\\",\\\"action_label\\\":[\\\"G-LR7WNVS7JQ\\\",\\\"AW-11120616110\\\/fhA9CLKfi7AZEK7F3LYp\\\",\\\"MC-7GGLCMXZ7Y\\\"]},{\\\"type\\\":\\\"add_payment_info\\\",\\\"action_label\\\":[\\\"G-LR7WNVS7JQ\\\",\\\"AW-11120616110\\\/2g7ZCMGfi7AZEK7F3LYp\\\"]},{\\\"type\\\":\\\"add_to_cart\\\",\\\"action_label\\\":[\\\"G-LR7WNVS7JQ\\\",\\\"AW-11120616110\\\/6ZuDCLufi7AZEK7F3LYp\\\"]}],\\\"enable_monitoring_mode\\\":false}\"}","eventPayloadVersion":"v1","runtimeContext":"OPEN","scriptVersion":"642ed32d7fafb3e0986c8ba3bf3908a1","type":"APP","apiClientId":1780363,"privacyPurposes":[]},{"id":"301039750","configuration":"{\"pixelCode\":\"CPHCQLRC77UABR90VAAG\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"22e92c2ad45662f435e4801458fb78cc","type":"APP","apiClientId":4383523,"privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"]},{"id":"181010566","configuration":"{\"pixel_id\":\"1419179662098843\",\"pixel_type\":\"facebook_pixel\",\"metaapp_system_user_token\":\"-\"}","eventPayloadVersion":"v1","runtimeContext":"OPEN","scriptVersion":"8d894c63179843e74a9691414b5ad83d","type":"APP","apiClientId":2329312,"privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"]},{"id":"110788742","configuration":"{\"name\":\"Kleep tracking\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"9db09b21aad9728cdb8461820f77c143","type":"APP","apiClientId":128241926145,"privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"]},{"id":"35520646","configuration":"{\"hash\":\"NBpkHZf9aC\",\"ingestion_url\":\"https:\/\/activity.wisepops.com\",\"goal_hash\":\"9sE00qiWeevPH0WOUMxuJRDdnmA7hNRQ\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"b0d9aca365b6ec0785f1f491728cbde0","type":"APP","apiClientId":461977,"privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"]},{"id":"shopify-app-pixel","configuration":"{}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"0282","apiClientId":"shopify-pixel","type":"APP","privacyPurposes":["ANALYTICS","MARKETING"]},{"id":"shopify-custom-pixel","eventPayloadVersion":"v1","runtimeContext":"LAX","scriptVersion":"0282","apiClientId":"shopify-pixel","type":"CUSTOM","privacyPurposes":["ANALYTICS","MARKETING"]}],isMerchantRequest: false,effectiveTopLevelDomain: "",initData: {"shop":{"name":"kookai","paymentSettings":{"currencyCode":"EUR"},"myshopifyDomain":"kookai-amh.myshopify.com","countryCode":"FR","storefrontUrl":"https:\/\/kookai.fr"},"customer":null,"cart":null,"checkout":null,"productVariants":[],"purchasingCompany":null},},function pageEvents(webPixelsManagerAPI) {webPixelsManagerAPI.publish("page_viewed", {});},"https://kookai.fr/cdn","a11aa786bed511ff60116ebe4ee8f5fe8d90f6fb","cf305650w885c0c31p80eb78f9m0c90eed8",{"modern":"","legacy":""});</script>  <script>window.ShopifyAnalytics = window.ShopifyAnalytics || {};
@@ -1509,79 +1509,6 @@ for (var attr in meta) {
       
         <!-- /snippets/nav-item.liquid -->
 
-<div class="menu__item  parent"
-  data-main-menu-text-item
-  
-    role="button"
-    aria-haspopup="true"
-    aria-expanded="false"
-    data-hover-disclosure-toggle="dropdown-f56c5042c6edbc29304981ede8520663"
-    aria-controls="dropdown-f56c5042c6edbc29304981ede8520663"
-  >
-  <a href="/collections/outlet-pe24" data-top-link class="navlink navlink--toplevel">
-    <span class="navtext">OUTLET</span>
-  </a>
-  
-    <div class="header__dropdown"
-      data-hover-disclosure
-      id="dropdown-f56c5042c6edbc29304981ede8520663">
-      <div class="header__dropdown__wrapper">
-        <div class="header__dropdown__inner">
-            
-              
-              <a href="/collections/outlet-pe24-tops-chemises" data-stagger class="navlink navlink--child">
-                <span class="navtext">Outlet Tops &amp; Chemises</span>
-              </a>
-            
-              
-              <a href="/collections/outlet-pe24-robes" data-stagger class="navlink navlink--child">
-                <span class="navtext">Outlet Robes</span>
-              </a>
-            
-              
-              <a href="/collections/outlet-pe24-pulls-gilets" data-stagger class="navlink navlink--child">
-                <span class="navtext">Outlet Pulls &amp; Gilets</span>
-              </a>
-            
-              
-              <a href="/collections/outlet-pe24-pantalons" data-stagger class="navlink navlink--child">
-                <span class="navtext">Outlet Pantalons</span>
-              </a>
-            
-              
-              <a href="/collections/outlet-pe24-jupes-shorts" data-stagger class="navlink navlink--child">
-                <span class="navtext">Outlet Jupes &amp; Shorts</span>
-              </a>
-            
-              
-              <a href="/collections/outlet-pe24-vestes" data-stagger class="navlink navlink--child">
-                <span class="navtext">Outlet Vestes</span>
-              </a>
-            
-              
-              <a href="/collections/outlet-pe24-selection-a-50" data-stagger class="navlink navlink--child">
-                <span class="navtext">Outlet -50%</span>
-              </a>
-            
-              
-              <a href="/collections/outlet-pe24-selection-a-60" data-stagger class="navlink navlink--child">
-                <span class="navtext">Outlet -60%</span>
-              </a>
-            
-              
-              <a href="/collections/outlet-pe24-selection-a-70" data-stagger class="navlink navlink--child">
-                <span class="navtext">Outlet -70%</span>
-              </a>
-            
-</div>
-      </div>
-    </div>
-  
-</div>
-
-      
-        <!-- /snippets/nav-item.liquid -->
-
 <div class="menu__item  child"
   data-main-menu-text-item
   >
@@ -1995,107 +1922,6 @@ Effacer</button>
 
             
           
-            <!-- /snippets/nav-item-mobile.liquid --><div class="sliderule__wrapper"><button class="sliderow"
-      data-animates="0"
-      data-sliderule-open="sliderule-145bb63972163f5784f762fc933d4942">
-      <span class="sliderow__title">OUTLET</span>
-      <span class="sliderule__chevron--right">
-        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-arrow-medium-right" viewBox="0 0 9 15"><path fill-rule="evenodd" d="M6.875 7.066.87 1.06 1.93 0l6.006 6.005L7.94 6 9 7.06l-.004.006.005.005-1.06 1.06-.006-.004-6.005 6.005-1.061-1.06 6.005-6.006z"/></svg>
-        <span class="visually-hidden">Expand menu</span>
-      </span>
-    </button>
-
-    <div class="mobile__menu__dropdown sliderule__panel"
-      data-sliderule
-      id="sliderule-145bb63972163f5784f762fc933d4942"><div class="sliderow sliderow__back" data-animates="1">
-        <button class="drawer__button"
-          data-sliderule-close="sliderule-145bb63972163f5784f762fc933d4942">
-          <span class="sliderule__chevron--left">
-            <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-arrow-medium-left" viewBox="0 0 9 15"><path fill-rule="evenodd" d="M2.127 7.066 8.132 1.06 7.072 0 1.065 6.005 1.061 6 0 7.06l.004.006L0 7.07l1.06 1.06.006-.004 6.005 6.005 1.061-1.06-6.005-6.006z"/></svg>
-            <span class="visually-hidden">Masquer le menu</span>
-          </span>
-        </button>
-        <a class="sliderow__title" href="/collections/outlet-pe24">OUTLET</a>
-      </div><div class="sliderow__links" data-links>
-        
-          
-          
-          <!-- /snippets/nav-item-mobile.liquid --><div class="sliderule__wrapper">
-    <div class="sliderow" data-animates="1">
-      <a class="sliderow__title" href="/collections/outlet-pe24-tops-chemises">Outlet Tops &amp; Chemises</a>
-    </div></div>
-
-        
-          
-          
-          <!-- /snippets/nav-item-mobile.liquid --><div class="sliderule__wrapper">
-    <div class="sliderow" data-animates="1">
-      <a class="sliderow__title" href="/collections/outlet-pe24-robes">Outlet Robes</a>
-    </div></div>
-
-        
-          
-          
-          <!-- /snippets/nav-item-mobile.liquid --><div class="sliderule__wrapper">
-    <div class="sliderow" data-animates="1">
-      <a class="sliderow__title" href="/collections/outlet-pe24-pulls-gilets">Outlet Pulls &amp; Gilets</a>
-    </div></div>
-
-        
-          
-          
-          <!-- /snippets/nav-item-mobile.liquid --><div class="sliderule__wrapper">
-    <div class="sliderow" data-animates="1">
-      <a class="sliderow__title" href="/collections/outlet-pe24-pantalons">Outlet Pantalons</a>
-    </div></div>
-
-        
-          
-          
-          <!-- /snippets/nav-item-mobile.liquid --><div class="sliderule__wrapper">
-    <div class="sliderow" data-animates="1">
-      <a class="sliderow__title" href="/collections/outlet-pe24-jupes-shorts">Outlet Jupes &amp; Shorts</a>
-    </div></div>
-
-        
-          
-          
-          <!-- /snippets/nav-item-mobile.liquid --><div class="sliderule__wrapper">
-    <div class="sliderow" data-animates="1">
-      <a class="sliderow__title" href="/collections/outlet-pe24-vestes">Outlet Vestes</a>
-    </div></div>
-
-        
-          
-          
-          <!-- /snippets/nav-item-mobile.liquid --><div class="sliderule__wrapper">
-    <div class="sliderow" data-animates="1">
-      <a class="sliderow__title" href="/collections/outlet-pe24-selection-a-50">Outlet -50%</a>
-    </div></div>
-
-        
-          
-          
-          <!-- /snippets/nav-item-mobile.liquid --><div class="sliderule__wrapper">
-    <div class="sliderow" data-animates="1">
-      <a class="sliderow__title" href="/collections/outlet-pe24-selection-a-60">Outlet -60%</a>
-    </div></div>
-
-        
-          
-          
-          <!-- /snippets/nav-item-mobile.liquid --><div class="sliderule__wrapper">
-    <div class="sliderow" data-animates="1">
-      <a class="sliderow__title" href="/collections/outlet-pe24-selection-a-70">Outlet -70%</a>
-    </div></div>
-
-        
-      </div><div class="sliderule-grid blocks-0">
-          
-        </div></div></div>
-
-            
-          
             <!-- /snippets/nav-item-mobile.liquid --><div class="sliderule__wrapper">
     <div class="sliderow" data-animates="0">
       <a class="sliderow__title" href="/pages/lookbook-lola">INSTA</a>
@@ -2112,7 +1938,7 @@ Effacer</button>
           
             <!-- /snippets/nav-item-mobile.liquid --><div class="sliderule__wrapper"><button class="sliderow"
       data-animates="0"
-      data-sliderule-open="sliderule-93d6c5cfca7ba519e091ce635868b3a6">
+      data-sliderule-open="sliderule-a4cef9ebffb33cc8bc73e0047327f1ad">
       <span class="sliderow__title">A PROPOS</span>
       <span class="sliderule__chevron--right">
         <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-arrow-medium-right" viewBox="0 0 9 15"><path fill-rule="evenodd" d="M6.875 7.066.87 1.06 1.93 0l6.006 6.005L7.94 6 9 7.06l-.004.006.005.005-1.06 1.06-.006-.004-6.005 6.005-1.061-1.06 6.005-6.006z"/></svg>
@@ -2122,9 +1948,9 @@ Effacer</button>
 
     <div class="mobile__menu__dropdown sliderule__panel"
       data-sliderule
-      id="sliderule-93d6c5cfca7ba519e091ce635868b3a6"><div class="sliderow sliderow__back" data-animates="1">
+      id="sliderule-a4cef9ebffb33cc8bc73e0047327f1ad"><div class="sliderow sliderow__back" data-animates="1">
         <button class="drawer__button"
-          data-sliderule-close="sliderule-93d6c5cfca7ba519e091ce635868b3a6">
+          data-sliderule-close="sliderule-a4cef9ebffb33cc8bc73e0047327f1ad">
           <span class="sliderule__chevron--left">
             <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-arrow-medium-left" viewBox="0 0 9 15"><path fill-rule="evenodd" d="M2.127 7.066 8.132 1.06 7.072 0 1.065 6.005 1.061 6 0 7.06l.004.006L0 7.07l1.06 1.06.006-.004 6.005 6.005 1.061-1.06-6.005-6.006z"/></svg>
             <span class="visually-hidden">Masquer le menu</span>
@@ -2137,7 +1963,7 @@ Effacer</button>
           
           <!-- /snippets/nav-item-mobile.liquid --><div class="sliderule__wrapper"><button class="sliderow"
       data-animates="1"
-      data-sliderule-open="sliderule-4bfff3b88c8759250126578c39131da4">
+      data-sliderule-open="sliderule-b76c912e49e2b90bea1c4d45e67b2762">
       <span class="sliderow__title">NEWS</span>
       <span class="sliderule__chevron--right">
         <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-arrow-medium-right" viewBox="0 0 9 15"><path fill-rule="evenodd" d="M6.875 7.066.87 1.06 1.93 0l6.006 6.005L7.94 6 9 7.06l-.004.006.005.005-1.06 1.06-.006-.004-6.005 6.005-1.061-1.06 6.005-6.006z"/></svg>
@@ -2147,9 +1973,9 @@ Effacer</button>
 
     <div class="mobile__menu__dropdown sliderule__panel"
       data-sliderule
-      id="sliderule-4bfff3b88c8759250126578c39131da4"><div class="sliderow sliderow__back" data-animates="2">
+      id="sliderule-b76c912e49e2b90bea1c4d45e67b2762"><div class="sliderow sliderow__back" data-animates="2">
         <button class="drawer__button"
-          data-sliderule-close="sliderule-4bfff3b88c8759250126578c39131da4">
+          data-sliderule-close="sliderule-b76c912e49e2b90bea1c4d45e67b2762">
           <span class="sliderule__chevron--left">
             <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-arrow-medium-left" viewBox="0 0 9 15"><path fill-rule="evenodd" d="M2.127 7.066 8.132 1.06 7.072 0 1.065 6.005 1.061 6 0 7.06l.004.006L0 7.07l1.06 1.06.006-.004 6.005 6.005 1.061-1.06-6.005-6.006z"/></svg>
             <span class="visually-hidden">Masquer le menu</span>
@@ -2175,7 +2001,7 @@ Effacer</button>
           
           <!-- /snippets/nav-item-mobile.liquid --><div class="sliderule__wrapper"><button class="sliderow"
       data-animates="1"
-      data-sliderule-open="sliderule-24428afc157f8bc33d627ad69a2b1ada">
+      data-sliderule-open="sliderule-8cf6682ac7f787ee40663af1e65f4a92">
       <span class="sliderow__title">LOOKBOOK</span>
       <span class="sliderule__chevron--right">
         <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-arrow-medium-right" viewBox="0 0 9 15"><path fill-rule="evenodd" d="M6.875 7.066.87 1.06 1.93 0l6.006 6.005L7.94 6 9 7.06l-.004.006.005.005-1.06 1.06-.006-.004-6.005 6.005-1.061-1.06 6.005-6.006z"/></svg>
@@ -2185,9 +2011,9 @@ Effacer</button>
 
     <div class="mobile__menu__dropdown sliderule__panel"
       data-sliderule
-      id="sliderule-24428afc157f8bc33d627ad69a2b1ada"><div class="sliderow sliderow__back" data-animates="2">
+      id="sliderule-8cf6682ac7f787ee40663af1e65f4a92"><div class="sliderow sliderow__back" data-animates="2">
         <button class="drawer__button"
-          data-sliderule-close="sliderule-24428afc157f8bc33d627ad69a2b1ada">
+          data-sliderule-close="sliderule-8cf6682ac7f787ee40663af1e65f4a92">
           <span class="sliderule__chevron--left">
             <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-arrow-medium-left" viewBox="0 0 9 15"><path fill-rule="evenodd" d="M2.127 7.066 8.132 1.06 7.072 0 1.065 6.005 1.061 6 0 7.06l.004.006L0 7.07l1.06 1.06.006-.004 6.005 6.005 1.061-1.06-6.005-6.006z"/></svg>
             <span class="visually-hidden">Masquer le menu</span>
@@ -2237,7 +2063,7 @@ Effacer</button>
           
           <!-- /snippets/nav-item-mobile.liquid --><div class="sliderule__wrapper"><button class="sliderow"
       data-animates="1"
-      data-sliderule-open="sliderule-e52063966e3a0f395fc2e238c5120b60">
+      data-sliderule-open="sliderule-a27698135427ea89f05e25467af8974f">
       <span class="sliderow__title">LA MARQUE</span>
       <span class="sliderule__chevron--right">
         <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-arrow-medium-right" viewBox="0 0 9 15"><path fill-rule="evenodd" d="M6.875 7.066.87 1.06 1.93 0l6.006 6.005L7.94 6 9 7.06l-.004.006.005.005-1.06 1.06-.006-.004-6.005 6.005-1.061-1.06 6.005-6.006z"/></svg>
@@ -2247,9 +2073,9 @@ Effacer</button>
 
     <div class="mobile__menu__dropdown sliderule__panel"
       data-sliderule
-      id="sliderule-e52063966e3a0f395fc2e238c5120b60"><div class="sliderow sliderow__back" data-animates="2">
+      id="sliderule-a27698135427ea89f05e25467af8974f"><div class="sliderow sliderow__back" data-animates="2">
         <button class="drawer__button"
-          data-sliderule-close="sliderule-e52063966e3a0f395fc2e238c5120b60">
+          data-sliderule-close="sliderule-a27698135427ea89f05e25467af8974f">
           <span class="sliderule__chevron--left">
             <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-arrow-medium-left" viewBox="0 0 9 15"><path fill-rule="evenodd" d="M2.127 7.066 8.132 1.06 7.072 0 1.065 6.005 1.061 6 0 7.06l.004.006L0 7.07l1.06 1.06.006-.004 6.005 6.005 1.061-1.06-6.005-6.006z"/></svg>
             <span class="visually-hidden">Masquer le menu</span>
@@ -3191,104 +3017,6 @@ Effacer</button>
   <div id="shopify-block-AcFdsU3o1VWgvMXA0Y__15037621279992766403" class="shopify-block shopify-app-block">
 
 
-</div><div id="shopify-block-ANGxqbVhoL2ZtZkIwa__15489274632472357321" class="shopify-block shopify-app-block"><!-- BEGIN app snippet: socloz --><script>
-  (function() {
-    // Do we hide the Socloz button?
-    let soclozHideButton = false;
-    const exclusionString = '';
-    let hasExclusionTag = false;
-
-    
-
-    if (exclusionString.includes('|') || hasExclusionTag) {
-      soclozHideButton = true;
-    }
-
-    // We put the right label on the Socloz buttons
-    const soclozButtonLabel = 'Réserver en magasin';
-    const soclozProductAttribute = 'ean';
-    const allSoclozButtons = document.getElementsByClassName("socloz");
-    for (let i = 0; i < allSoclozButtons.length; i++) {
-      let currentLabel = allSoclozButtons[i].textContent;
-      let computedLabel = (currentLabel && currentLabel.indexOf('Translation missing') === -1) ? currentLabel : soclozButtonLabel;
-      allSoclozButtons[i].textContent = computedLabel;
-
-      
-      if (soclozHideButton) {
-        allSoclozButtons[i].style.display = "none";
-      }
-    }
-
-    // Let's parse the variants to get the right SKU, color and size if any
-    const soclozVariants = {};
-    let indexSize = -1;
-    let indexColor = -1;
-    const options = null;
-    for (let i = 0; i < options.length; i++) {
-      const option = options[i].toLowerCase();
-      if (option == 'size' || option == 'größe' || option == 'taille') {
-        indexSize = i;
-      }
-      if (option == 'color' || option == 'colour' || option == 'couleur' || option == 'farbe') {
-        indexColor = i;
-      }
-    }
-
-    let variantOptions = [];
-    
-
-    // The update Socloz button function
-    const updateSoclozProduct = (variantId) => {
-      const soclozTag = document.querySelector('.socloz');
-      if (soclozTag) {
-        const soclozVariant = soclozVariants[variantId];
-        if (soclozVariant) {
-          soclozTag.dataset.soclozProductId = (soclozProductAttribute == 'ean') ? soclozVariant.ean : soclozVariant.sku;
-          soclozTag.dataset.soclozProductId_type = soclozProductAttribute;
-          if (soclozVariant.size) {
-            soclozTag.dataset.soclozProductAttributesClothes_size = soclozVariant.size;
-          }
-          if (soclozVariant.color) {
-            soclozTag.dataset.soclozProductAttributesColor = soclozVariant.color;
-          }
-        } else {
-          console.log('[socloz] Variant not found variantID=' + variantId);
-        }
-      }
-    }
-  
-     // We put a listener on the product page form to update the Socloz button accordingly
-     const formTypes = document.querySelectorAll('[name="form_type"]');
-    [...formTypes].some((input) => {
-      if (input.value == 'product') {
-        const fid = input.parentNode.querySelector('[name="id"]');
-        if (fid.value != '') {
-          updateSoclozProduct(fid.value);
-        }
-        fid.addEventListener('change', function(e) {
-          updateSoclozProduct(this.value);
-        })
-      }
-    })
-    
-    // And then the Socloz JS
-    var _scs = [];
-    _scs.push(['app_key', '0543cac9aa4f1a9c627442a50f29a89e']);
-    _scs.push(['locale', 'fr']);
-    _scs.push(['country', 'FR']);
-    
-    (function(d, s, id, _scs) {
-        if (d.getElementById(id)) return;
-        var i, sc = d.createElement(s), sj = d.getElementsByTagName(s)[0];
-        var apiUrl = 'https://api.socloz.com';
-        apiUrl = ('' !== apiUrl) ? apiUrl : 'https://api.socloz.com';
-        sc.id = id; sc.async = true; sc.src = apiUrl + '/v4/js/popup.js';
-        for (i = 0; i < _scs.length; i++) sc.setAttribute('data-socloz-'+_scs[i][0], _scs[i][1]);
-        sj.parentNode.insertBefore(sc, sj);
-    })(document, 'script', 'soclozjs', _scs);
-  })();
-</script>
-<!-- END app snippet -->
 </div><div id="shopify-block-Ad3lHck9Ccldkb2R1R__12526071353035850722" class="shopify-block shopify-app-block">
   <script defer src="https://app.backinstock.org/widget/85996_1724504617.js?category=bis&v=6"></script>
 
@@ -3515,5 +3243,103 @@ Effacer</button>
 
 
 
+</div><div id="shopify-block-ANGxqbVhoL2ZtZkIwa__15489274632472357321" class="shopify-block shopify-app-block"><!-- BEGIN app snippet: socloz --><script>
+  (function() {
+    // Do we hide the Socloz button?
+    let soclozHideButton = false;
+    const exclusionString = '';
+    let hasExclusionTag = false;
+
+    
+
+    if (exclusionString.includes('|') || hasExclusionTag) {
+      soclozHideButton = true;
+    }
+
+    // We put the right label on the Socloz buttons
+    const soclozButtonLabel = 'Réserver en magasin';
+    const soclozProductAttribute = 'ean';
+    const allSoclozButtons = document.getElementsByClassName("socloz");
+    for (let i = 0; i < allSoclozButtons.length; i++) {
+      let currentLabel = allSoclozButtons[i].textContent;
+      let computedLabel = (currentLabel && currentLabel.indexOf('Translation missing') === -1) ? currentLabel : soclozButtonLabel;
+      allSoclozButtons[i].textContent = computedLabel;
+
+      
+      if (soclozHideButton) {
+        allSoclozButtons[i].style.display = "none";
+      }
+    }
+
+    // Let's parse the variants to get the right SKU, color and size if any
+    const soclozVariants = {};
+    let indexSize = -1;
+    let indexColor = -1;
+    const options = null;
+    for (let i = 0; i < options.length; i++) {
+      const option = options[i].toLowerCase();
+      if (option == 'size' || option == 'größe' || option == 'taille') {
+        indexSize = i;
+      }
+      if (option == 'color' || option == 'colour' || option == 'couleur' || option == 'farbe') {
+        indexColor = i;
+      }
+    }
+
+    let variantOptions = [];
+    
+
+    // The update Socloz button function
+    const updateSoclozProduct = (variantId) => {
+      const soclozTag = document.querySelector('.socloz');
+      if (soclozTag) {
+        const soclozVariant = soclozVariants[variantId];
+        if (soclozVariant) {
+          soclozTag.dataset.soclozProductId = (soclozProductAttribute == 'ean') ? soclozVariant.ean : soclozVariant.sku;
+          soclozTag.dataset.soclozProductId_type = soclozProductAttribute;
+          if (soclozVariant.size) {
+            soclozTag.dataset.soclozProductAttributesClothes_size = soclozVariant.size;
+          }
+          if (soclozVariant.color) {
+            soclozTag.dataset.soclozProductAttributesColor = soclozVariant.color;
+          }
+        } else {
+          console.log('[socloz] Variant not found variantID=' + variantId);
+        }
+      }
+    }
+  
+     // We put a listener on the product page form to update the Socloz button accordingly
+     const formTypes = document.querySelectorAll('[name="form_type"]');
+    [...formTypes].some((input) => {
+      if (input.value == 'product') {
+        const fid = input.parentNode.querySelector('[name="id"]');
+        if (fid.value != '') {
+          updateSoclozProduct(fid.value);
+        }
+        fid.addEventListener('change', function(e) {
+          updateSoclozProduct(this.value);
+        })
+      }
+    })
+    
+    // And then the Socloz JS
+    var _scs = [];
+    _scs.push(['app_key', '0543cac9aa4f1a9c627442a50f29a89e']);
+    _scs.push(['locale', 'fr']);
+    _scs.push(['country', 'FR']);
+    
+    (function(d, s, id, _scs) {
+        if (d.getElementById(id)) return;
+        var i, sc = d.createElement(s), sj = d.getElementsByTagName(s)[0];
+        var apiUrl = 'https://api.socloz.com';
+        apiUrl = ('' !== apiUrl) ? apiUrl : 'https://api.socloz.com';
+        sc.id = id; sc.async = true; sc.src = apiUrl + '/v4/js/popup.js';
+        for (i = 0; i < _scs.length; i++) sc.setAttribute('data-socloz-'+_scs[i][0], _scs[i][1]);
+        sj.parentNode.insertBefore(sc, sj);
+    })(document, 'script', 'soclozjs', _scs);
+  })();
+</script>
+<!-- END app snippet -->
 </div></body>
 </html>
