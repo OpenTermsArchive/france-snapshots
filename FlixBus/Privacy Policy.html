@@ -22,6 +22,10 @@
 
     <title>Confidentialité → FlixBus</title>
 
+    <link rel="preload" as="script" href="https://cdn-cf.cms.flixbus.com/drupal-assets/goflix-assets/static/bundles/js/abTestHandler.5f1b2b.js"/>
+
+    <script src="https://cdn-cf.cms.flixbus.com/drupal-assets/goflix-assets/static/bundles/js/abTestHandler.5f1b2b.js"></script>
+
     <link rel="canonical" href="https://www.flixbus.fr/confidentialite" />
 
     
@@ -394,8 +398,8 @@
     <link rel="preconnect" href="//honeycomb.flixbus.com/"/>
     <link rel="preload" as="style" href="//honeycomb.flixbus.com/dist/11.2.2/css/honeycomb-fonts.css" crossorigin=""/>
     <link href="//honeycomb.flixbus.com/dist/11.2.2/css/honeycomb-fonts.css" rel="stylesheet" type="text/css" crossorigin=""/>
-    <link rel="stylesheet" href="https://cdn-cf.cms.flixbus.com/drupal-assets/goflix-assets/static/bundles/css/basic__columns.94e7a3.css"/>
-    <script src="https://cdn-cf.cms.flixbus.com/drupal-assets/goflix-assets/static/bundles/js/main.b527a3.js"></script>
+    <link rel="stylesheet" href="https://cdn-cf.cms.flixbus.com/drupal-assets/goflix-assets/static/bundles/css/basic__columns.824e91.css"/>
+    <script src="https://cdn-cf.cms.flixbus.com/drupal-assets/goflix-assets/static/bundles/js/main.4a4ee3.js"></script>
     <script src="/assets/uc/cc.js"></script>
 
 
@@ -1583,6 +1587,7 @@
 
 
 
+
 <div class="flix-page-container">
     <div class="footer-sizer">
         <div class="flix-grid footer-social">
@@ -1621,14 +1626,7 @@
                             <a target="_blank" rel="noopener noreferrer"
                             href="https://www.facebook.com/FlixBusFR"
                             onclick="emitFooterNavigationClickEvent('facebook', 'Social')">
-                                <img
-                                        width="37"
-                                        height="29"
-                                        alt="footer facebook link"
-                                        class="footer-social-image"
-                                        data-lazyload-src="https://cdn-cf.cms.flixbus.com/drupal-assets/footer/facebook.svg"
-                                        src=""
-                                />
+                            <flix-icon name="facebook" color="primary-content" size="5" class="footer-social-image"></flix-icon>
                             </a>
                         </li>
                     
@@ -1638,14 +1636,7 @@
                             <a target="_blank" rel="noopener noreferrer"
                             href="https://www.instagram.com/flixbus"
                             onclick="emitFooterNavigationClickEvent('instagram', 'Social')">
-                                <img
-                                        width="37"
-                                        height="29"
-                                        alt="footer instagram link"
-                                        class="footer-social-image"
-                                        data-lazyload-src="https://cdn-cf.cms.flixbus.com/drupal-assets/footer/insta.svg"
-                                        src=""
-                                />
+                            <flix-icon name="insta" color="primary-content" size="5" class="footer-social-image"></flix-icon>
                             </a>
                         </li>
                     
@@ -1655,14 +1646,7 @@
                             <a target="_blank" rel="noopener noreferrer"
                             href="http://www.youtube.com/user/EinfachBusfahren?feature=watch"
                             onclick="emitFooterNavigationClickEvent('youtube', 'Social')">
-                                <img
-                                        width="37"
-                                        height="29"
-                                        alt="footer youtube link"
-                                        class="footer-social-image"
-                                        data-lazyload-src="https://cdn-cf.cms.flixbus.com/drupal-assets/footer/youtube.svg"
-                                        src=""
-                                />
+                            <flix-icon name="youtube" color="primary-content" size="5" class="footer-social-image"></flix-icon>
                             </a>
                         </li>
                     
@@ -1672,14 +1656,7 @@
                             <a target="_blank" rel="noopener noreferrer"
                             href="https://de.linkedin.com/company/flixbus"
                             onclick="emitFooterNavigationClickEvent('linkedin', 'Social')">
-                                <img
-                                        width="37"
-                                        height="29"
-                                        alt="footer linkedin link"
-                                        class="footer-social-image"
-                                        data-lazyload-src="https://cdn-cf.cms.flixbus.com/drupal-assets/footer/linkedin.svg"
-                                        src=""
-                                />
+                            <flix-icon name="linkedin" color="primary-content" size="5" class="footer-social-image"></flix-icon>
                             </a>
                         </li>
                     
@@ -1689,14 +1666,7 @@
                             <a target="_blank" rel="noopener noreferrer"
                             href="https://twitter.com/FlixBus_FR"
                             onclick="emitFooterNavigationClickEvent('twitter', 'Social')">
-                                <img
-                                        width="37"
-                                        height="29"
-                                        alt="footer twitter link"
-                                        class="footer-social-image"
-                                        data-lazyload-src="https://cdn-cf.cms.flixbus.com/drupal-assets/footer/x-formerly-twitter.svg"
-                                        src=""
-                                />
+                            <flix-icon name="x" color="primary-content" size="5" class="footer-social-image"></flix-icon>
                             </a>
                         </li>
                     
@@ -1706,16 +1676,11 @@
                             <a target="_blank" rel="noopener noreferrer"
                             href="https://www.tiktok.com/@flixbus"
                             onclick="emitFooterNavigationClickEvent('tiktok', 'Social')">
-                                <img
-                                        width="37"
-                                        height="29"
-                                        alt="footer tiktok link"
-                                        class="footer-social-image"
-                                        data-lazyload-src="https://cdn-cf.cms.flixbus.com/drupal-assets/footer/tiktok.svg"
-                                        src=""
-                                />
+                            <flix-icon name="tik-tok" color="primary-content" size="5" class="footer-social-image"></flix-icon>
                             </a>
                         </li>
+                    
+
                     
 
                     
@@ -1871,7 +1836,7 @@
                 clientToken: 'pub6395d5bd2f2b5751fdf3784e50845d1b',
                 service: 'fxt.webc.cms.goflix',
                 sessionSampleRate: 10,
-                version: 'goflix.flixbus-v1.2.60',
+                version: 'goflix.flixbus-v1.2.61',
                 env: 'prod',
                 trackSessionAcrossSubdomains: true,
                 useSecureSessionCookie: true,
@@ -1894,10 +1859,9 @@
 
 
 <script defer async src="//pulse.cro.flixbus.com/static/pulse.js"></script>
-<script defer async type="module"
-        src="https://honeycomb-icons.hive.flixbus.com/6.0.0/flix-icons/flix-icons.esm.js"></script>
-<script defer async type="nomodule"
-        src="https://honeycomb-icons.hive.flixbus.com/6.0.0/flix-icons/flix-icons.js"></script>
+<script defer async type="module" src="https://honeycomb-icons.hive.flixbus.com/9.0.0/flix-icons/flix-icons.esm.js"></script>
+<script defer async type="nomodule" src="https://honeycomb-icons.hive.flixbus.com/9.0.0/flix-icons/flix-icons.js"></script>
+
 
 <script>
 document.addEventListener("DOMContentLoaded", (event) => {
