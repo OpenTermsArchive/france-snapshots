@@ -130,6 +130,19 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 :where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
 :root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
 </style>
+<link rel='stylesheet' id='ppress-frontend-css' href='https://www.cityscoot.eu/wp-content/plugins/wp-user-avatar/assets/css/frontend.min.css?ver=4.15.22' type='text/css' media='all' />
+<link rel='stylesheet' id='ppress-flatpickr-css' href='https://www.cityscoot.eu/wp-content/plugins/wp-user-avatar/assets/flatpickr/flatpickr.min.css?ver=4.15.22' type='text/css' media='all' />
+<link rel='stylesheet' id='ppress-select2-css' href='https://www.cityscoot.eu/wp-content/plugins/wp-user-avatar/assets/select2/select2.min.css?ver=6.7.2' type='text/css' media='all' />
+<link rel='stylesheet' id='brand-management-public-css' href='https://www.cityscoot.eu/wp-content/plugins/brand-management-plugin/public/css/brand-management-public.css?ver=6.7.2' type='text/css' media='screen' />
+<script type="text/javascript" src="https://www.cityscoot.eu/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="text/javascript" src="https://www.cityscoot.eu/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="text/javascript" src="https://www.cityscoot.eu/wp-content/plugins/wp-user-avatar/assets/flatpickr/flatpickr.min.js?ver=4.15.22" id="ppress-flatpickr-js"></script>
+<script type="text/javascript" src="https://www.cityscoot.eu/wp-content/plugins/wp-user-avatar/assets/select2/select2.min.js?ver=4.15.22" id="ppress-select2-js"></script>
+<script type="text/javascript" id="brand-management-ajax-handler-js-extra">
+/* <![CDATA[ */
+var likes_handler = {"id":"1","url":"https:\/\/www.cityscoot.eu\/wp-admin\/admin-ajax.php","nonce":"1062aa9f1f","fail_text":"You have already voted.","partner_label_css_url":"\/wp-content\/plugins\/brand-management-plugin\/public\/css\/bm-partner-label.css","black_friday_deal_css_url":"\/wp-content\/plugins\/brand-management-plugin\/public\/css\/bm-black-friday-deal.css"};
+/* ]]> */
+</script>
 <link rel="https://api.w.org/" href="https://www.cityscoot.eu/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://www.cityscoot.eu/wp-json/wp/v2/pages/985" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://www.cityscoot.eu/xmlrpc.php?rsd" />
 <meta name="generator" content="WordPress 6.7.2" />
 <link rel='shortlink' href='https://www.cityscoot.eu/?p=985' />
@@ -156,7 +169,12 @@ window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15
 	padding-left:20px;
 	margin-bottom:15px;
 }
-
+tbody.campaign-compact-table__offers-wrapper td {
+    border: none !important;
+}
+td.campaign-compact-table__offer-key-features ul li {
+    list-style: none;
+}
 nav.nav-cityscoot #logo-cityscoot>a>img {
     width: 250px;
     height: 60px;
@@ -406,6 +424,46 @@ footer .footer_copyright_container p
 {
         display: block;
     }
+
+/*AUTHOR SECTION START*/
+.main-title{
+	text-align:left;
+}
+.custom_top_author {
+    display: flex;
+	align-items: center;
+    gap: 16px;
+    margin-bottom: 20px;
+}
+.author_imag img {
+    width: 60px;
+	min-width:60px;
+    height: 60px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+.name_author_out {
+    display: flex;
+}
+.name_author_out span.lbl {
+    margin-right: 5px;
+	line-height:20px;
+}
+.name_author_out h4 {
+    margin: 0;
+    color: #000;
+    line-height: 24px;
+    font-size: 18px;
+    font-weight: normal;
+}
+.name_author_out p{
+margin-bottom:0;
+}
+/*AUTHOR SECTION END*/
+.campaign-compact-table__offer-logo img {
+   height: auto;
+ }
+
 @media screen and (max-width: 992px) 
 {
 	body #page 
@@ -1027,5 +1085,11 @@ var homeURL = "https:\/\/www.cityscoot.eu\/";
 			gtag('config', 'G-0YT8F45486');
 			</script>
 						<script defer src="https://www.cityscoot.eu/files/wp-content/cache/autoptimize/js/autoptimize_fbdf9198d3afa033cde8d4f76f2f7606.js"></script><script defer src="https://www.cityscoot.eu/files/beacon.min.js" data-cf-beacon="{&quot;rayId&quot;:&quot;80a1d8379cfd6fd3&quot;,&quot;version&quot;:&quot;2023.8.0&quot;,&quot;b&quot;:1,&quot;token&quot;:&quot;aa6749cc5104461196d91a037f74a47b&quot;,&quot;si&quot;:100}" ></script>
+<script type="text/javascript" id="ppress-frontend-script-js-extra">
+/* <![CDATA[ */
+var pp_ajax_form = {"ajaxurl":"https:\/\/www.cityscoot.eu\/wp-admin\/admin-ajax.php","confirm_delete":"Are you sure?","deleting_text":"Deleting...","deleting_error":"An error occurred. Please try again.","nonce":"04903b4ade","disable_ajax_form":"false","is_checkout":"0","is_checkout_tax_enabled":"0","is_checkout_autoscroll_enabled":"true"};
+/* ]]> */
+</script>
+<script type="text/javascript" src="https://www.cityscoot.eu/wp-content/plugins/wp-user-avatar/assets/js/frontend.min.js?ver=4.15.22" id="ppress-frontend-script-js"></script>
 </body>
 </html>
