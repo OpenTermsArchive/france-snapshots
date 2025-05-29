@@ -33,7 +33,7 @@
 <meta name="last-modified" content="2023-03-10" />
 <meta name="pageDate" content="10032023" />
 <meta name="DC.date" content="2023-03-10" />
-<meta name="pageRender" content="29/05/2025 0:43:02 +00:00" />
+<meta name="pageRender" content="29/05/2025 12:42:52 +00:00" />
 <meta itemprop="datePublished" content="10/03/2023 2:55:01">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
     <link rel="alternate" hreflang="fr-FR" href="https://www.volotea.com/fr/conditions-legales/politique-de-confidentialite/" />
@@ -201,37 +201,37 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
      
                     <!-----------------------Top left menu Widget End------------------>
                     
-    <ul class="v7-nav-top__list v7-nav-top__list--right">
-                <li class="v7-nav-top__item">
-                    <a href="/fr/information/" class=" v7-nav-top__link v7-nav-top__link--state || v7-link" >
-                        Informations avant de voyager
-                        <i class="v7-i-svg v7-i-svg--xxs v7-i--vmiddle || v7-u-color-brand test">
-                            <svg class="v7-i-svg__src">
-                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.volotea.com/assets/img/sprite.svg#svg-notification"></use>
-                            </svg>
-                        </i>
-                    </a>
-                </li>
-                <li class="v7-nav-top__item">
-                    <a href="https://www.volotea.com/fr/contact/article/18392260658973" class=" v7-nav-top__link v7-nav-top__link--state || v7-link" >
-                        Assistance
-                        <i class="v7-i-svg v7-i-svg--xxs v7-i--vmiddle || v7-u-color-brand test">
-                            <svg class="v7-i-svg__src">
-                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.volotea.com/assets/img/sprite.svg#svg-assistance"></use>
-                            </svg>
-                        </i>
-                    </a>
-                </li>
 
-                <li class="v7-nav-top__item">
-                    <span class="v7-nav-top__link v7-nav-top__link--help || v7-link">
-                        Aide
-                        <i class="v7-nav-top__arrow v7-i-svg v7-i-svg--xxxs">
-                            <svg class="v7-i-svg__src">
-                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.volotea.com/assets/img/sprite.svg#svg-down-arrow"></use>
-                            </svg>
-                        </i>
-                        <div class="v7-menu-layer v7-menu-layer--help" id="js-menu-layer-help">
+    <ul class="v7-nav-top__list v7-nav-top__list--right">
+                    <li class="v7-nav-top__item">
+                        <a href="/fr/information/" class=" v7-nav-top__link v7-nav-top__link--state || v7-link" >
+                        Informations avant de voyager
+                            <i class="v7-i-svg v7-i-svg--xxs v7-i--vmiddle || v7-u-color-brand test">
+                                <svg class="v7-i-svg__src">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.volotea.com/assets/img/sprite.svg#svg-notification"></use>
+                                </svg>
+                            </i>
+                        </a>
+                    </li>
+                    <li class="v7-nav-top__item">
+                        <a href="https://www.volotea.com/fr/contact/article/18392260658973" class=" v7-nav-top__link v7-nav-top__link--state || v7-link" >
+                        Assistance
+                            <i class="v7-i-svg v7-i-svg--xxs v7-i--vmiddle || v7-u-color-brand test">
+                                <svg class="v7-i-svg__src">
+                                    <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.volotea.com/assets/img/sprite.svg#svg-assistance"></use>
+                                </svg>
+                            </i>
+                        </a>
+                    </li>
+            <li id="help-menu" class="v7-nav-top__item">
+                <span class="v7-nav-top__link v7-nav-top__link--help || v7-link">
+                    Aide
+                    <i class="v7-nav-top__arrow v7-i-svg v7-i-svg--xxxs">
+                        <svg class="v7-i-svg__src">
+                            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="https://www.volotea.com/assets/img/sprite.svg#svg-down-arrow"></use>
+                        </svg>
+                    </i>
+                    <div class="v7-menu-layer v7-menu-layer--help" id="js-menu-layer-help">
     <div class="v7-menu-layer__header">
         <i class="v7-i v7-i--xxxs v7-i--prev-arrow || v7-u-color-dark-60"></i>
         <h2 class="v7-main-title">
@@ -455,8 +455,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </div>
 
 
-                    </span>
-                </li>
+                </span>
+            </li>
+            <script>    
+                var element = document.getElementById('help-menu')
+                element.addEventListener('mouseover', chatBot, false)
+
+                function chatBot() {
+                    var homeUrl = "https://www.volotea.com/fr/conditions-legales/politique-de-confidentialite/";
+                    var host = "https://www.volotea.com/fr/"
+
+                    if (homeUrl === host && "fr-FR" === "fr-FR") {
+                        var chatBotSdkElement = document.getElementById('inbenta-bot-sdk');
+    
+                        if (chatBotSdkElement) {
+                            chatBotSdkElement.style.opacity = '1'
+                            chatBotSdkElement.style.display = 'block'
+                        }
+                    }
+                }
+            </script>
+
     </ul>
 
 
@@ -500,7 +519,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             </div>
         </li>
     </ul>
-
                 </nav>
                 
 <header class="v7-menu v7-menu--tiny v7-menu--section || v7-menu--mobile" itemscope itemtype="http://schema.org/SiteNavigationElement">
@@ -2135,7 +2153,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/ScrollToPlugin.min.js"></script>
 
     <!--------------------------Flight status search popup Widget End-------------------->
-<script src="https://assets.volotea.com/assets/angular/prod.1e4568658e47056b.bundle.js" type="text/javascript"></script>
+<script src="https://assets.volotea.com/assets/angular/prod.b963010673fee14a.bundle.js" type="text/javascript"></script>
     <script>
         $(window).scroll(function () {
 
@@ -2293,5 +2311,5 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         }
     </script>
 
-<script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=2&cb=1800687065" async></script></body>
+<script type="text/javascript" src="/_Incapsula_Resource?SWJIYLWA=719d34d31c8e3a6e6fffd425f7e032f3&ns=2&cb=399882901" async></script></body>
 </html>
