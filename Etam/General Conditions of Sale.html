@@ -412,15 +412,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   color: #1E1E1E !important;
   line-height: 1.4 !important;
 }
+
 #didomi-host .didomi-popup-backdrop {
   background-color: rgba(11, 18, 21, .5);
-  overflow: auto !important;
-  bottom: 0;
-  height: auto !important;
-}
-
-#didomi-host #didomi-popup .didomi-popup-notice {
-    padding: 0 !important;
 }
 
 #didomi-host .didomi-popup-notice-optin-type .didomi-popup-view {
@@ -428,11 +422,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   display: flex !important;
   width: unset !important;
 }
+
 #didomi-host .didomi-popup-container {
   border: 0 solid transparent !important;
   background-color: #fff !important;
-  border-radius: 2px !important;
-  max-height: unset !important;
+  border-radius: 0 !important;
+  max-height: calc(100vh - 20px) !important;
 }
 
 #didomi-host .didomi-popup-container.didomi-popup__dialog  {
@@ -443,34 +438,37 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   border-color: transparent !important;
   padding: 0 !important;
 }
+
 #didomi-host .etam-group-logo-container {
+  text-align: center;
   margin-bottom: 6px !important;
 }
+
 #didomi-host .didomi-popup-container .didomi-popup-notice-logo-container {
-  margin: 0 !important;
-}
-#didomi-host .didomi-popup-notice .didomi-popup-notice-logo {
-  max-width: unset !important;
-  object-fit: cover;
-}
-#didomi-host .didomi-notice-view-partners-link span {
-  font-size: 12px !important;
-  line-height: 16px !important;
-}
-#didomi-host .didomi-mobile #didomi-popup .didomi-popup-notice p {
-    text-align: left !important;
-}
-#didomi-host p.etam-group-title {
-  font-size: 20px !important;
-  font-weight: 700 !important;
-  line-height: 26px !important;
+  margin: auto !important;
 }
 
+#didomi-host .didomi-popup-notice .didomi-popup-notice-logo {
+  width: 67px !important;
+  margin-bottom: 0 !important;
+  max-width: unset !important;
+}
+
+#didomi-host .didomi-popup-notice-text-container p,
+#didomi-host .didomi-notice-view-partners-link span {
+ font-size: 14px !important;
+  line-height: 20px !important;
+}
+
+#didomi-host p.etam-group-title {
+  font-size: 24px !important;
+  font-weight: 700 !important;
+  line-height: 32px !important;
+}
 #didomi-host a:not(.didomi-no-link-style):hover,
 #didomi-host .didomi-popup-notice .didomi-popup-notice-buttons .didomi-components-button:hover {
    opacity: 1 !important; 
 }
-
 
 #didomi-host .didomi-button,
 #didomi-host .button.didomi-consent-popup-view-vendors-list-link {
@@ -529,97 +527,79 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   max-height: unset !important;
   padding: 0 !important;
 }
+
 #didomi-host .didomi-popup-notice-optin-type {
   display: flex !important;
 }
+
 #didomi-host .didomi-popup-notice .didomi-popup-notice-text {
   max-width: unset !important;
 }
+
 #didomi-host .didomi-mobile #didomi-notice.didomi-regular-notice.bottom {
   border-color: transparent !important;
   border-width: 0 !important;
   padding: 0 !important;
 }
+
 #didomi-host .didomi-mobile #didomi-notice.didomi-regular-notice .didomi-notice__interior-border {
   padding: 24px !important;
 }
+
 #didomi-host .didomi-exterior-border.didomi-popup__exterior-border {
   margin: auto 0 0 !important;
 }
-@media screen and (max-width: 1199.5px) {
-  #didomi-host .didomi-exterior-border {
-    margin-top: auto !important;
-    margin-bottom: 0 !important;
-  }
-  #didomi-host .didomi-popup-container .didomi-popup-notice-logo-container,
-  #didomi-host .didomi-popup-notice .didomi-popup-notice-logo {
-        width: 100% !important;
-        height: 262px !important;
-        margin-bottom: 0 !important;
-        max-width: unset !important;
-    }
-  #didomi-host .didomi-popup-notice.didomi-popup-notice-with-data-processing {
-    max-width: unset !important;
-    width: 100% !important;
-    padding: 0 !important;
-  }
-  #didomi-host .didomi-popup-notice-optin-type .didomi-popup-view {
-    flex-direction: column !important;
-    flex-wrap: wrap !important;
-    padding: 0 !important;
-  }
-  
-  #didomi-host .didomi-popup-notice .didomi-popup-notice-text p:not(.etam-group-title)  {
-        font-size: 12px !important;
-        line-height: 16px !important;
-  }
-  
-  #didomi-host .didomi-popup-notice-text-container {
-    padding: 24px !important;
-  }
-  #didomi-host .didomi-popup-notice .didomi-popup-notice-buttons {
-    display: grid;
-    margin: 0 24px 12px !important;
-  }
-}
+
 @media screen and (max-width: 599.5px) {
-    #didomi-host .didomi-popup-container .didomi-popup-notice-logo-container,
-    #didomi-host .didomi-popup-notice .didomi-popup-notice-logo {
-        height: 200px !important;
-        object-position: center 18%;
-    }
     
-    #didomi-host p.etam-group-title {
+  #didomi-host .didomi-popup-notice-text-container,
+  #didomi-host .didomi-popup-notice-text-container p:not(.etam-group-title) {
+    text-align: left!important;
+  }
+  
+  #didomi-host p.etam-group-title {
       margin-bottom: 12px !important;
    }
-    #didomi-host .didomi-screen-xsmall #didomi-notice.didomi-regular-notice #buttons.multiple {
-        flex-direction: column-reverse !important;
+  
+  #didomi-host .didomi-screen-xsmall #didomi-notice.didomi-regular-notice #buttons.multiple {
+    flex-direction: column-reverse !important;
+    gap: 12px;
+  }
+  
+  #didomi-host .didomi-screen-xsmall #didomi-notice.didomi-regular-notice #buttons.multiple button {
+    margin-bottom: 0 !important;
+  }
+
+    #didomi-host .didomi-popup-notice .didomi-popup-notice-buttons {
         gap: 12px;
     }
-    #didomi-host .didomi-screen-xsmall #didomi-notice.didomi-regular-notice #buttons.multiple button {
-        margin-bottom: 0 !important;
-    }
-    #didomi-host .didomi-popup-notice .didomi-popup-notice-buttons {
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, 1fr);
-        grid-column-gap: 0;
-        grid-row-gap: 12px;
+
+  #didomi-host .didomi-popup-notice .didomi-popup-notice-buttons {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 0;
+    grid-row-gap: 12px;
   }
-    #didomi-host #didomi-notice-learn-more-button { 
-        grid-area: 3 / 1 / 4 / 2;
-        margin-top: -16px !important;
-    }
-    #didomi-host #didomi-notice-disagree-button { 
-        grid-area: 2 / 1 / 3 / 2;
-    }
-    #didomi-host #didomi-notice-agree-button {
-        grid-area: 1 / 1 / 2 / 2;
-    }
-    #didomi-host #didomi-notice-disagree-button,
-    #didomi-host #didomi-notice-agree-button {
-        margin-top: 0 !important;
-    }
+  
+  #didomi-host #didomi-notice-learn-more-button { 
+    grid-area: 3 / 1 / 4 / 2;
+    margin-top: -16px !important;
+  }
+  
+  #didomi-host #didomi-notice-disagree-button { 
+    grid-area: 2 / 1 / 3 / 2;
+  }
+  
+  #didomi-host #didomi-notice-agree-button {
+    grid-area: 1 / 1 / 2 / 2;
+  }
+  
+  #didomi-host #didomi-notice-disagree-button,
+  #didomi-host #didomi-notice-agree-button {
+    margin-top: 0 !important;
+  }
 }
+
 @media screen and (min-width: 600px) {
    #didomi-host p.etam-group-title {
       margin-bottom: 16px !important;
@@ -629,7 +609,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     padding: 40px !important;
   }
 }
+
 @media screen and (min-width: 600px) and (max-width: 1199.5px) {
+  #didomi-host .didomi-popup-notice-text-container,
+  #didomi-host .didomi-popup-notice-text-container p:not(.etam-group-title) {
+    text-align: center!important;
+  }
+  
   #didomi-host .didomi-mobile #didomi-notice.didomi-regular-notice #buttons {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -637,12 +623,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     grid-column-gap: 0px;
     grid-row-gap: 0px;
   }
+  
   #didomi-host #didomi-notice-learn-more-button { 
     grid-area: 2 / 1 / 3 / 3; 
   }
+  
   #didomi-host #didomi-notice-disagree-button { 
     grid-area: 1 / 1 / 2 / 2;    
   }
+  
   #didomi-host #didomi-notice-agree-button {
     grid-area: 1 / 2 / 2 / 3;
   }
@@ -654,54 +643,99 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     grid-row-gap: 0; 
     margin-top: 0 !important;
   }
+
   #didomi-host #didomi-notice-learn-more-button { 
     grid-area: 2 / 1 / 3 / 3; 
   }
+  
   #didomi-host #didomi-notice-disagree-button { 
     grid-area: 1 / 1 / 2 / 2;    
   }
+  
   #didomi-host #didomi-notice-agree-button {
     grid-area: 1 / 2 / 2 / 3; 
   }
 }
-@media screen and (min-width: 1200px) {
-    #didomi-host .didomi-popup-backdrop {
-        overflow: hidden !important;
-    }
-    #didomi-host .didomi-popup-notice .didomi-popup-notice-logo {
-        height: 100% !important;
-        margin-bottom: 0 !important;
-    }
-    
+
+@media screen and (max-width: 1199.5px) {
+  #didomi-host .didomi-exterior-border {
+    margin-top: auto !important;
+    margin-bottom: 0 !important;
+  }
+  
     #didomi-host .didomi-popup-notice .didomi-popup-notice-text p:not(.etam-group-title) {
         font-size: 12px !important;
         line-height: 16px !important;
     }
+  
+    #didomi-host .didomi-popup-container {
+        padding: 0 !important;
+    }
+  
+  #didomi-host .didomi-popup-notice-logo-container {
+    padding-top: 24px !important;
+  }
+  
+  #didomi-host .didomi-popup-notice.didomi-popup-notice-with-data-processing {
+    max-width: unset !important;
+    width: 100% !important;
+    padding: 0 !important;
+  }
+  
+  #didomi-host .didomi-popup-notice-optin-type .didomi-popup-view {
+    flex-direction: column !important;
+    flex-wrap: wrap !important;
+    padding: 0 !important;
+  }
+  
+  #didomi-host .didomi-popup-notice-text-container {
+    padding: 12px 24px 24px !important;
+  }
+
+  #didomi-host p.etam-group-title {
+    text-align: center !important;
+  }
+
+  #didomi-host .didomi-popup-notice .didomi-popup-notice-buttons {
+    display: grid;
+    margin: 0 24px 12px !important;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #didomi-host .didomi-popup-container .didomi-popup-notice-logo-container {
+    margin-left: 40px !important;
+  }
+  
+  #didomi-host .didomi-popup__backdrop.didomi-notice-popup .didomi-popup-view {
+    align-items: center !important;
+  }
+
   #didomi-host .didomi-popup-notice-text-container {
     padding: 40px !important;
   }
+  
   #didomi-host .didomi-popup-notice .didomi-popup-notice-buttons {
     margin: 0 40px 0 0 !important;
     display: flex;
     flex-direction: column-reverse !important;
     gap: 12px !important;
   }
-
+  
+  #didomi-host .didomi-popup-notice-buttons .didomi-components-button {
+    min-width: 295px !important;
+  }
+  
   #didomi-host #didomi-notice-learn-more-button { 
     margin-top: -8px !important;
-    margin-bottom: -16px !important;
+    margin-bottom: -14px !important;
   }
+  
   #didomi-host .didomi-screen-medium .didomi-popup-notice, 
   #didomi-host .didomi-screen-large .didomi-popup-notice, 
   #didomi-host .didomi-screen-xlarge .didomi-popup-notice {
     max-width: 100% !important;
   }
-}
-
-@media screen and (min-width: 1400px) {
-    #didomi-host .didomi-popup-notice-optin-type .didomi-components-button {
-        min-width: 295px !important;
-    }
 }
 
 /* second layer Learn More */
@@ -869,6 +903,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 #didomi-host .didomi-consent-popup-view-vendors-list-link {
     padding: 11px 24px !important;
+    border: 1px solid black !important;
     border-radius: var(--sfra-border-radius) !important;
     font-weight: 400 !important;
 }
@@ -951,7 +986,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 #didomi-host .didomi-popup-container .didomi-popup-notice-logo-container {
   text-align: center;
 }
-      </style><div class="didomi-popup-view" tabindex="-1" role="document" style="outline: none;"><div class="didomi-popup-notice-logo-container"><img class="didomi-popup-notice-logo" alt="&quot;lingerie femme&quot;" src="https://images.etam.com/on/demandware.static/-/Library-Sites-ETAM_sharedLibrary/default/v118146b4a7bcdb536d20e4e6c14924fefff843db/Visuels_CMP/visuel_CMP_ETAM_carre.jpg?env=dev&amp;sw=1000"></div><div class="didomi-popup-notice-text-container"><div class="didomi-popup-notice-text"><div>
+      </style><div class="didomi-popup-view" tabindex="-1" role="document" style="outline: none;"><div class="didomi-popup-notice-logo-container"><img class="didomi-popup-notice-logo" alt="&quot;lingerie femme&quot;" src="https://images.etam.com/on/demandware.static/-/Sites/default/dw8d6ed06f/Etam_Logo_BLACK.png"></div><div class="didomi-popup-notice-text-container"><div class="didomi-popup-notice-text"><div>
 <p class="etam-group-title title-03">Comme une belle lingerie, nos cookies s’adaptent à vos envies !</p>
 <p class="body-02">Chez Etam, nous et nos partenaires utilisons des cookies sur notre site internet pour vous proposer des contenus personnalisés et des publicités adaptées à vos centres d’intérêt, vous proposer des services liés aux réseaux sociaux, pour analyser et optimiser et mesurer les performances du site et de la publicité. En cas d’acceptation des cookies, vous consentez au dépôt de tous les cookies sur notre site. En cas de refus, seuls les cookies strictement nécessaires au fonctionnement du site seront déposés. Vous pourrez toujours modifier ou retirer votre consentement à tout moment en cliquant sur « Personnaliser mes cookies». Pour plus d’informations sur les cookies, consultez notre <a href="https://www.etam.com/chartedeconfidentialite.html" target="_blank">politique de confidentialité</a>.</p></div></div><a tabindex="0" class="didomi-notice-view-partners-link" role="button"><span>Voir nos partenaires</span></a></div><div id="buttons" class="multiple didomi-buttons didomi-popup-notice-buttons"><button id="didomi-notice-learn-more-button" class="didomi-components-button didomi-button didomi-learn-more-button didomi-button-standard standard-button" aria-label="Personnaliser mes cookies" style="color: rgb(68, 68, 68); background-color: rgb(238, 238, 238); border-radius: 0px; border-color: rgba(34, 34, 34, 0.2); border-width: 1px;"><span>Personnaliser mes cookies</span></button><button id="didomi-notice-disagree-button" class="didomi-components-button didomi-button didomi-disagree-button didomi-components-button--color didomi-button-highlight highlight-button" aria-label="Continuer sans accepter" style="color: rgb(255, 255, 255); background-color: rgb(0, 0, 0); border-radius: 0px; border-color: rgba(0, 0, 0, 0.3); border-width: 1px;"><span>Continuer sans accepter</span></button><button id="didomi-notice-agree-button" class="didomi-components-button didomi-button didomi-dismiss-button didomi-components-button--color didomi-button-highlight highlight-button" aria-label="Tout accepter" style="color: rgb(255, 255, 255); background-color: rgb(0, 0, 0); border-radius: 0px; border-color: rgba(0, 0, 0, 0.3); border-width: 1px;"><span>Tout accepter</span></button></div><div></div></div></div></div></div></div></div>
 
@@ -40773,7 +40808,7 @@ window.dataLayer = window.dataLayer || [];
 		<li class="titleSubFooter"><a class="titleItemFooter"><span>Mes services</span></a>
 
 			<ul class="linkSubFooter">
-				<li id="storeLocatorItem"><a id="storeLocatorLink" target="_blank" rel="noreferrer" href="https://www.etam.com/nos-boutiques">Trouver une boutique</a>
+				<li id="storeLocatorItem"><a id="storeLocatorLink" target="_blank" rel="noreferrer">Trouver une boutique</a>
 				</li>
 				<li><a href="https://www.etam.com/fr_centre_aide.html" target="_blank" rel="noreferrer">Centre d'aide et questions fréquentes</a>
 				</li>
@@ -41562,7 +41597,7 @@ event_category:"globale_error",event_action:c,event_label:a&&a.details?a.details
 			</div>
 		</div>
 	</div>
-<script type="text/javascript" id="" charset="">window.uetq=window.uetq||[];window.uetq.push("consent","default",{ad_storage:"denied"});window.uetq.push("consent","update",{ad_storage:google_tag_manager["rm"]["47948560"](782)});</script><div id="toastWrapper" class="toast-container position-fixed end-0"><div class="loading toast"><div class="toast__wrapper"><div class="loader-element black"><div></div><div></div><div></div><div></div></div><div class="toast__content"><div class="toast__header"></div></div></div></div><div class="toast fade show" id="countryNotification">
+<script type="text/javascript" id="" charset="">window.uetq=window.uetq||[];window.uetq.push("consent","default",{ad_storage:"denied"});window.uetq.push("consent","update",{ad_storage:google_tag_manager["rm"]["47948560"](782)});</script><div id="toastWrapper" class="toast-container position-fixed end-0"><div class="loading toast"><div class="toast__wrapper"><div class="loader-element black"><div></div><div></div><div></div><div></div></div><div class="toast__content"><div class="toast__header"></div></div></div></div><div class="toast fade show showing" id="countryNotification">
     <div class="countryNotificationContainer toast__wrapper">
       <div class="toast__left">
         <i class="flag-icon flag-icon-gb"></i>
