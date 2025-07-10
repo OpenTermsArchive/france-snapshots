@@ -681,66 +681,6 @@ console.log('SW registration failed: ', registrationError);
 
                 
                 
-                    <div class="chat-bot-info" data-site-id="CDC-FR" data-organization-id="00D09000007U47z" data-scrt2-url="https://fastretailing.my.salesforce-scrt.com" data-host-url="https://fastretailing.my.site.com/ESWCDCChat1713344120319" data-embedded-msg="CDC_Chat_Service_Deployment" data-language="fr" data-country="FR" data-channel="Chat" data-storeland-id="null"></div>
-                    <script>
-                        function initEmbeddedMessaging() {
-                            try {
-                                var chatBotInfo = document.getElementsByClassName('chat-bot-info')[0];
-                                var organizationId = chatBotInfo.getAttribute('data-organization-id');
-                                var scrt2URL = chatBotInfo.getAttribute('data-scrt2-url');
-                                var hostUrl = chatBotInfo.getAttribute('data-host-url');
-                                var embeddedMsg = chatBotInfo.getAttribute('data-embedded-msg');
-                                var language = chatBotInfo.getAttribute('data-language');
-                                var country = chatBotInfo.getAttribute('data-country');
-                                var channel = chatBotInfo.getAttribute('data-channel');
-                                var storelandID = chatBotInfo.getAttribute('data-storeland-id');
-                                var siteID = chatBotInfo.getAttribute('data-site-id');
-                                var brand = siteID.includes("CDC") ? "CDC" : "PTT";
-
-                                embeddedservice_bootstrap.settings.language = language;
-
-                                window.addEventListener("onEmbeddedMessagingReady", () => {
-                                    embeddedservice_bootstrap.prechatAPI.setHiddenPrechatFields({
-                                        "Storeland_Id" : storelandID,
-                                        "Brand" : brand,
-                                        "Language" : language,
-                                        "Channel" : channel,
-                                        "Country" : country
-                                    });
-                                });
-
-                                embeddedservice_bootstrap.init(
-                                    organizationId,
-                                    embeddedMsg,
-                                    hostUrl,
-                                    {
-                                        scrt2URL: scrt2URL
-                                    }
-                                );
-                            } catch (err) {
-                                console.error('Error loading Embedded Messaging: ', err);
-                            }
-                        };
-                    </script>
-                    <script src='https://fastretailing.my.site.com/ESWCDCChat1713344120319/assets/js/bootstrap.min.js' onload="initEmbeddedMessaging()" ></script>
-                    <div class="button-container-popup__content chat-bot ">
-                        <p>
-                            Contactez-nous depuis notre Chatbot
-                        </p>
-                        
-
-
-
-
-
-
-
-<span class="svg-wrapper " style="width:28px; height:29px;">
-    <svg width='28' height='29' fill='none' xmlns='http://www.w3.org/2000/svg'><circle cx='14' cy='14.582' r='14' fill='#000' style='fill:#000;fill-opacity:1'/><g clip-path='url(#a)' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'><path d='M8.833 20.957v-9.209a2.125 2.125 0 0 1 2.125-2.124h7.084a2.125 2.125 0 0 1 2.125 2.124v4.25a2.125 2.125 0 0 1-2.125 2.126h-6.375l-2.834 2.833z' fill='#fff' stroke='#fff' style='fill:#fff;fill-opacity:1;stroke:#fff;stroke-opacity:1'/><path d='M14.5 13.873v.007M11.667 13.873v.007M17.333 13.873v.007' stroke='#000' style='stroke:#000;stroke-opacity:1'/></g><defs><clipPath id='a'><path fill='#fff' style='fill:#fff;fill-opacity:1' transform='translate(6 6.082)' d='M0 0h17v17H0z'/></clipPath></defs></svg>
-</span>
-
-                    </div>
-                
 
                 
                 
@@ -1492,13 +1432,13 @@ D&eacute;j&agrave; cliente ?
 
 
 
-<label for="dwfrm_login_username_d0rdazxouqhf"><span class="required-indicator"></span><span>Votre adresse mail</span></label>
+<label for="dwfrm_login_username_d0rbrubpfvek"><span class="required-indicator"></span><span>Votre adresse mail</span></label>
 
 
 <div class="field-wrapper ">
 
 <span class="input-wrapper">
-<input placeholder="Votre adresse mail*" class="input-text  required" type="email"  id="dwfrm_login_username_d0rdazxouqhf" name="dwfrm_login_username_d0rdazxouqhf" value=""  />
+<input placeholder="Votre adresse mail*" class="input-text  required" type="email"  id="dwfrm_login_username_d0rbrubpfvek" name="dwfrm_login_username_d0rbrubpfvek" value=""  />
 </span>
 </div>
 
@@ -1521,13 +1461,13 @@ D&eacute;j&agrave; cliente ?
 
 
 
-<label for="dwfrm_login_password_d0nllbbhhibp"><span class="required-indicator"></span><span>Votre mot de passe</span></label>
+<label for="dwfrm_login_password_d0pwsqpmhdnx"><span class="required-indicator"></span><span>Votre mot de passe</span></label>
 
 
 <div class="field-wrapper ">
 
 <span class="input-wrapper">
-<input placeholder="Votre mot de passe*" class="input-text password8char  required" type="password"  id="dwfrm_login_password_d0nllbbhhibp" name="dwfrm_login_password_d0nllbbhhibp" value="" autocomplete="off"  />
+<input placeholder="Votre mot de passe*" class="input-text password8char  required" type="password"  id="dwfrm_login_password_d0pwsqpmhdnx" name="dwfrm_login_password_d0pwsqpmhdnx" value="" autocomplete="off"  />
 </span>
 </div>
 
@@ -1546,7 +1486,7 @@ D&eacute;j&agrave; cliente ?
 <div class="row">
 <button type="submit" class="frt-button" name="dwfrm_login_login">Me connecter</button>
 </div>
-<input type="hidden" name="dwfrm_login_securekey" value="1978891010"/>
+<input type="hidden" name="dwfrm_login_securekey" value="1896940701"/>
 <input type="hidden" name="isAccountPage" value="null"/>
 </div>
 </form>
@@ -1586,14 +1526,14 @@ sur le site ?
 
 
 </div>
-<input type="hidden" name="dwfrm_profile_securekey" value="109320028"/>
+<input type="hidden" name="dwfrm_profile_securekey" value="1698250692"/>
 <div class="row">
 <div class="row">
 <button type="submit" class="last frt-button" >Cr&eacute;er un compte</button>
 </div>
 </div>
 </div>
-<input type="hidden" name="csrf_token" value="O3lwvHn3bCc4EcFOfutJZh0S9ajAB3VCYW74UnoEf38Rog34FGWamxyvFI_bdqae-h6hTZM3yPYran0KEFwgIbESZbnMlozBnV_GbyS1PNwwRak7K88j-PSrgyUyBoZEAar5APE0mRHH6j1u-qIW0WvIR8jD87Db-GYjrhkt1E_IjWTYWUg=" />
+<input type="hidden" name="csrf_token" value="utd6wNF3NpRQqpuomHNwknboQKSjlkpbGKMnu0EfRhRFWzg9ac9RYlWlsAb8ozFDDSk9_fjnn_w3YdeI-OG9QJzTHMno0MO-FK937a-nUFN93QkU9ZQjXqziZn_8NY16Vc-iDqRe4d3koVPftR4e4123tixybf090676Zumco-rYYIT1OlE=" />
 </form>
 </div>
 <div class="cdc-nav-form-info">
@@ -1686,7 +1626,7 @@ sur le site ?
     </div>
 </div>
 
-<input class="minicart_csrf_token" type="hidden" name="csrf_token" value="WrE9g2JjlsgPJyiqSVIyno_C1d0B2DcVzEXinAjHZAF4yOMv7Dyf_KvsKvEsDlDvi-S3RH43K6lavwi3d7o5INc4tYMRHvaDjMshd-c7eQzgnzR6Ryl7rOmXPZO9Se-yFtiBxP-fHut9sWxPwW7ZqN3TvEEqtcJXQKItoC6mEXHH69kXb2o="/>
+<input class="minicart_csrf_token" type="hidden" name="csrf_token" value="9H16jFsiXyZhUDYVn3qDK0TnOYNq3l0tHt1aGL9e4qZKr5lOhPDgV92qATF3Cc9BwGXkANhDJnqHImHmClAls1MvOVpKfJfLy1mtInXWsxhd6uPkKRwM4DvF2lqroot4qqj9TXjwv1Pc94yLvXTPzRrfpBnHNZgNIEweOYaWa5zMLC_CcCE="/>
 
 <div class="minicart-mobile">
 </div>
@@ -1874,13 +1814,13 @@ D&eacute;j&agrave; cliente ?
 
 
 
-<label for="dwfrm_login_username_d0xrerhpevsa"><span class="required-indicator"></span><span>Votre adresse mail</span></label>
+<label for="dwfrm_login_username_d0wsqnhiarxv"><span class="required-indicator"></span><span>Votre adresse mail</span></label>
 
 
 <div class="field-wrapper ">
 
 <span class="input-wrapper">
-<input placeholder="Votre adresse mail*" class="input-text  required" type="email"  id="dwfrm_login_username_d0xrerhpevsa" name="dwfrm_login_username_d0xrerhpevsa" value=""  />
+<input placeholder="Votre adresse mail*" class="input-text  required" type="email"  id="dwfrm_login_username_d0wsqnhiarxv" name="dwfrm_login_username_d0wsqnhiarxv" value=""  />
 </span>
 </div>
 
@@ -1903,13 +1843,13 @@ D&eacute;j&agrave; cliente ?
 
 
 
-<label for="dwfrm_login_password_d0evsfcblgrr"><span class="required-indicator"></span><span>Votre mot de passe</span></label>
+<label for="dwfrm_login_password_d0wfozuvyxgm"><span class="required-indicator"></span><span>Votre mot de passe</span></label>
 
 
 <div class="field-wrapper ">
 
 <span class="input-wrapper">
-<input placeholder="Votre mot de passe*" class="input-text password8char  required" type="password"  id="dwfrm_login_password_d0evsfcblgrr" name="dwfrm_login_password_d0evsfcblgrr" value="" autocomplete="off"  />
+<input placeholder="Votre mot de passe*" class="input-text password8char  required" type="password"  id="dwfrm_login_password_d0wfozuvyxgm" name="dwfrm_login_password_d0wfozuvyxgm" value="" autocomplete="off"  />
 </span>
 </div>
 
@@ -1928,7 +1868,7 @@ D&eacute;j&agrave; cliente ?
 <div class="row">
 <button type="submit" class="frt-button" name="dwfrm_login_login">Me connecter</button>
 </div>
-<input type="hidden" name="dwfrm_login_securekey" value="1978891010"/>
+<input type="hidden" name="dwfrm_login_securekey" value="1896940701"/>
 <input type="hidden" name="isAccountPage" value="null"/>
 </div>
 </form>
@@ -1968,14 +1908,14 @@ sur le site ?
 
 
 </div>
-<input type="hidden" name="dwfrm_profile_securekey" value="109320028"/>
+<input type="hidden" name="dwfrm_profile_securekey" value="1698250692"/>
 <div class="row">
 <div class="row">
 <button type="submit" class="last frt-button" >Cr&eacute;er un compte</button>
 </div>
 </div>
 </div>
-<input type="hidden" name="csrf_token" value="NItwR74f0uTAZagSpufYXXEUQkWn6t-JzUzu3NA8_kEa5buzDTuh50rdBt-56Dro8e4wwh6Gt8xiCTSq9_5Rtmm19LIe_v4xrZQydKRqKhuSqKA6AJXPDcPf9NzTnjnAObbtd-X1Vc89R_6fUqa1l9Xf4f4jBLu7bow8p4aVJ92d-E0a4qo=" />
+<input type="hidden" name="csrf_token" value="JD3xrN_8eJnA61tGfHGNEiIjvK3IVqAiW1ycqjkC3k0BUXaD4IETeBDwIiiTEHtggcDry3ICY0Ye5d-yjGVx-HYYsdVi8-Sf-Y4Hze7pj3txFYBsg9qhES-B8Y0WQyj96dIk_ydo0UG8KHACZIvvtj0umUGOEEXrQkt22IoNAd8BQMbtxkE=" />
 </form>
 </div>
 <div class="cdc-nav-form-info">
@@ -2069,7 +2009,7 @@ sur le site ?
     </div>
 </div>
 
-<input class="minicart_csrf_token" type="hidden" name="csrf_token" value="3Pq3zU-eQqK3r2pnuElWRVECSNaTSlJWXEeJ6CjYiP0x6a9jrrPBPtMoy2SNcvfthESBnxXxyPIpNO8Flm8JThVYgTai3tkh6qPe_P1nIt9VnO0072QrCTNq-HnNESyA1p3LwaCb5f_HT07wu33C_sql8y10FuYZEcXupmFNPe_Tqf3okOE="/>
+<input class="minicart_csrf_token" type="hidden" name="csrf_token" value="prNigMYDnHpfKrkkQIsXsDZaIDcEyG58EK6XTS9b_S9VgHXZoHKchSvFwA506bD7oP7cbuuadB4Ukh1RNeeu2ed-xn18CJvkiNd_uIkv-i9jZUc5hc23m66o61syndVe_cwkfU4r0KSBq19fFxLgJzkcCuLY-wauqwaJwkeLDOG0KytTTXw="/>
 
 <div class="minicart-mobile">
 </div>
@@ -8808,38 +8748,38 @@ Vos informations font l'objet d'un traitement destiné à la gestion de votre co
     <div class="cdc-select">
         <select class="hidden-xs hidden-sm" name="select" id="country-select">
             
-                <option value="DE" data-url="https://www.comptoirdescotonniers.de/agb-c4.html?utm_source=email_auto&amp;utm_medium=email_auto_site&amp;utm_campaign=F_R_email_auto_expe"  >
+                <option value="DE" data-url="https://www.comptoirdescotonniers.de/agb-c4.html"  >
                     Allemagne
                 </option>
             
-                <option value="ES" data-url="https://www.comptoirdescotonniers.es/condiciones-generales-venta-c4.html?utm_source=email_auto&amp;utm_medium=email_auto_site&amp;utm_campaign=F_R_email_auto_expe"  >
+                <option value="ES" data-url="https://www.comptoirdescotonniers.es/condiciones-generales-venta-c4.html"  >
                     Espagne
                 </option>
             
-                <option value="EU" data-url="https://www.comptoirdescotonniers.eu/terms-conditions-c4.html?utm_source=email_auto&amp;utm_medium=email_auto_site&amp;utm_campaign=F_R_email_auto_expe"  >
+                <option value="EU" data-url="https://www.comptoirdescotonniers.eu/terms-conditions-c4.html"  >
                     Europe
                 </option>
             
-                <option value="FR" data-url="https://www.comptoirdescotonniers.com/cgv-c4.html?utm_source=email_auto&amp;utm_medium=email_auto_site&amp;utm_campaign=F_R_email_auto_expe" selected >
+                <option value="FR" data-url="https://www.comptoirdescotonniers.com/cgv-c4.html" selected >
                     France
                 </option>
             
         </select>
         <select class="hidden-md hidden-lg" name="select" id="country-select">
             
-                <option value="DE" data-url="https://www.comptoirdescotonniers.de/agb-c4.html?utm_source=email_auto&amp;utm_medium=email_auto_site&amp;utm_campaign=F_R_email_auto_expe"  >
+                <option value="DE" data-url="https://www.comptoirdescotonniers.de/agb-c4.html"  >
                     DE
                 </option>
             
-                <option value="ES" data-url="https://www.comptoirdescotonniers.es/condiciones-generales-venta-c4.html?utm_source=email_auto&amp;utm_medium=email_auto_site&amp;utm_campaign=F_R_email_auto_expe"  >
+                <option value="ES" data-url="https://www.comptoirdescotonniers.es/condiciones-generales-venta-c4.html"  >
                     ES
                 </option>
             
-                <option value="EU" data-url="https://www.comptoirdescotonniers.eu/terms-conditions-c4.html?utm_source=email_auto&amp;utm_medium=email_auto_site&amp;utm_campaign=F_R_email_auto_expe"  >
+                <option value="EU" data-url="https://www.comptoirdescotonniers.eu/terms-conditions-c4.html"  >
                     EU
                 </option>
             
-                <option value="FR" data-url="https://www.comptoirdescotonniers.com/cgv-c4.html?utm_source=email_auto&amp;utm_medium=email_auto_site&amp;utm_campaign=F_R_email_auto_expe" selected >
+                <option value="FR" data-url="https://www.comptoirdescotonniers.com/cgv-c4.html" selected >
                     FR
                 </option>
             
@@ -9486,7 +9426,7 @@ footer .footer-links {
                     </label>
                     <div class="field-wrapper ">
                         <input placeholder="Votre adresse e-mail*" tabindex="-1" class="input-text c-newsletter__input required" type="email" id="dwfrm_newsletter_email" name="newsletterEmail" value=""/>
-                        <input type="hidden" name="csrf_token" value="0w0aorFFcXNa6ddzjxhRuIz2UATOIwngGzl4bimLw83VDAyVHeCxusVWfPUijipntGqadcqrrpTPFasf9IBqXw3InY4a9Y0mwI16IN_rqEs80OOB7sx1KJ3p85Ob5os7am3GEmWwlhYs2-adwJoJZLP6OrgdsbDCUAszzEFd4mVjhcMcObo="/>
+                        <input type="hidden" name="csrf_token" value="V86w2CUsYkC67tvVRpAtD7cd2FljH8nnPEEnSb2tc1aHIGKLHvXUQMIxyubBVrJny8qF3egV7_CoLcAxbK5AKpzei8EMHWb2D4a40xi88hLRTziFh_wkLSlOJ-SehfcU2LNxjZsTWg7dbRHf6YKZ98uhJXRxeZ8zkgVMlOwrKtn8N-kFOJc="/>
                     </div>
                     <div class="form-caption"></div>
                 </div>
