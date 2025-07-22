@@ -1852,7 +1852,7 @@
                 clientToken: 'pub6395d5bd2f2b5751fdf3784e50845d1b',
                 service: 'fxt.webc.cms.goflix',
                 sessionSampleRate: 7,
-                version: 'goflix.flixbus-v1.5.2',
+                version: 'goflix.flixbus-v1.5.4',
                 env: 'prod',
                 trackSessionAcrossSubdomains: true,
                 useSecureSessionCookie: true,
@@ -1882,7 +1882,7 @@
 <script>
 document.addEventListener("DOMContentLoaded", (event) => {
     if (window.location.pathname == '/fernbusterminal-hannover' || window.location.pathname == '/bus-terminal-hanover') {
-        fetch(" https://hannover-timetable-gbx-stations-public.ew1p1.k8s.flix.tech/").then((response) => {
+        fetch("https://hannover-timetable-gbx-stations-public.ew1p1.k8s.flix.tech/").then((response) => {
             response.text().then((html) => {
                 console.debug(html);
                 const part = html.replace(/.*<body>(.*)<\/body>.*/is, '$1');
