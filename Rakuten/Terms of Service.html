@@ -22,7 +22,7 @@ Pour consulter la version des Conditi...">
 <link rel="alternate" hreflang="x-default" href="https://help.fr.shopping.rakuten.net/hc/fr/articles/5179761027730-Conditions-G%C3%A9n%C3%A9rales-d-Utilisation">
 
   <link rel="stylesheet" href="//static.zdassets.com/hc/assets/application-bd52ad6f1b9c761cf3790d2f5d3dd0fa.css" media="all" id="stylesheet">
-  <link rel="stylesheet" type="text/css" href="/hc/theming_assets/937824/504099/style.css?digest=28689323589650">
+  <link rel="stylesheet" type="text/css" href="/hc/theming_assets/937824/504099/style.css?digest=28694913959698">
 
   <link rel="icon" type="image/x-icon" href="/hc/theming_assets/01K1B4J60BH7MSDYV5KZGX42AT">
 
@@ -30,50 +30,32 @@ Pour consulter la version des Conditi...">
     
 
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-<script type="text/javascript" src="/hc/theming_assets/01K2CJ4XK92EJBRWR241DEFGAH"></script><script type="text/javascript" src="/hc/theming_assets/01K1B4J46RBPTPMA2YJ1K55JDV"></script><script id="spcloader" type="text/javascript" async="" src="https://sdk.privacy-center.org/cf68c9f5-2900-4a80-a413-8347d137161a/loader.js?target_type=notice&amp;target=D9fNtHCe" charset="utf-8"></script><script>
+<script type="text/javascript" src="/hc/theming_assets/01K2CS7F7T5EDVMA5T1GN5RH6P"></script><script type="text/javascript" src="/hc/theming_assets/01K1B4J46RBPTPMA2YJ1K55JDV"></script><script id="spcloader" type="text/javascript" async="" src="https://sdk.privacy-center.org/cf68c9f5-2900-4a80-a413-8347d137161a/loader.js?target_type=notice&amp;target=D9fNtHCe" charset="utf-8"></script><script>
 (function () {
-  console.log("?")
   // 1) Stocker le referrer UNE SEULE FOIS (pour la session)
   if (!sessionStorage.getItem('help_origin_referrer')) {
     sessionStorage.setItem('help_origin_referrer', document.referrer || '');
   }
-  window.originReferrer = sessionStorage.getItem('help_origin_referrer');
-
   // 2) Déduire le market (es/fr) UNE SEULE FOIS depuis le referrer stocké
   if (!sessionStorage.getItem('help_origin_market')) {
     let market = 'fr'; // défaut
     let rakuten = 'Rakuten France'
     try {
-      if (window.originReferrer) {
-        const refURL = new URL(window.originReferrer);
-        const host = refURL.hostname.toLowerCase();
-
+      if (sessionStorage.getItem('help_origin_referrer') !== null) {
+        const pathRef = sessionStorage.getItem('help_origin_referrer').toLowerCase();
         // Adapte/complète ces conditions si besoin (autres domaines)
         if (
-          host.endsWith('rakuten.es') ||
-          host.endsWith('es.shopping.rakuten.com') ||
-          host.endsWith('www.rakuten.es')
+          pathRef.includes('es.shopping.rakuten.com')
         ) {
           market = 'es';
           rakuten = "Rakuten España";
-        } else if (
-          host.endsWith('rakuten.fr') ||
-          host.endsWith('fr.shopping.rakuten.com') ||
-          host.endsWith('www.rakuten.fr')
-        ) {
-          market = 'fr';
-          rakuten = "Rakuten France";
         }
       }
     } catch (e) { /* referrer vide ou non-parseable → on garde fr */ }
-
     sessionStorage.setItem('help_origin_market', market);
     sessionStorage.setItem('rakuten', rakuten);
 
   }
-
-  // 3) Exposer la valeur pour tes autres scripts
-  window.originMarket = sessionStorage.getItem('help_origin_market');
 })();
 </script>
 
@@ -111,9 +93,9 @@ window.useTranslations = function(fn) {
     try {
       const lang = window.lang;
       const assetPath =
-        lang === "es" ? "/hc/theming_assets/01K2CHYVM3C4SM1DF47FE0WY74" :
+        lang === "es" ? "/hc/theming_assets/01K2CXKTPPWS68HQG28EH485RE" :
         lang === "en" ? "/hc/theming_assets/01K1B4J4RAZXYEKP5YYGFN57W3" :
-                        "/hc/theming_assets/01K2CHYV5HB9H1RHWTVFS80J3G";
+                        "/hc/theming_assets/01K2CXKTRKQMFGM00E5J7Q7B09";
 
       const res = await fetch(assetPath);
       if (!res.ok) throw new Error("fetch translations failed");
@@ -148,7 +130,7 @@ window.useTranslations = function(fn) {
         // Main script, containing meta feature
         var mainScr = document.createElement('script');
         mainScr.type = 'text/javascript';
-        mainScr.src = "/hc/theming_assets/01K2CJ4XK92EJBRWR241DEFGAH";
+        mainScr.src = "/hc/theming_assets/01K2CS7F7T5EDVMA5T1GN5RH6P";
         s.parentNode.insertBefore(mainScr, s);
 
         // Moment.js script
@@ -179,7 +161,7 @@ window.useTranslations = function(fn) {
             script : function() {
               var scr = document.createElement('script');
               scr.type = 'text/javascript';
-              scr.src = "/hc/theming_assets/01K2CHYW57ZGG4Z9E7A6ZTD5VC";
+              scr.src = "/hc/theming_assets/01K2CTVV0FDVFAZTHE60EEQEGY";
               s.parentNode.insertBefore(scr, s);
             },
             css : function() {
@@ -199,7 +181,7 @@ window.useTranslations = function(fn) {
             script : function() {
               var scr = document.createElement('script');
               scr.type = 'text/javascript';
-              scr.src = "/hc/theming_assets/01K2CHYW57ZGG4Z9E7A6ZTD5VC";
+              scr.src = "/hc/theming_assets/01K2CTVV0FDVFAZTHE60EEQEGY";
               s.parentNode.insertBefore(scr, s);
             },
             css : function() {
@@ -219,7 +201,7 @@ window.useTranslations = function(fn) {
             script : function() {
               var scr = document.createElement('script');
               scr.type = 'text/javascript';
-              scr.src = "/hc/theming_assets/01K2CHYW8EWMTW97AKA6RWVNQ8";
+              scr.src = "/hc/theming_assets/01K2CV6431YRFHKG0RB48894XH";
               s.parentNode.insertBefore(scr, s);
             },
             css : function() {
@@ -237,7 +219,7 @@ window.useTranslations = function(fn) {
             script : function() {
               var scr = document.createElement('script');
               scr.type = 'text/javascript';
-              scr.src = "/hc/theming_assets/01K2CHYW8EWMTW97AKA6RWVNQ8";
+              scr.src = "/hc/theming_assets/01K2CV6431YRFHKG0RB48894XH";
               s.parentNode.insertBefore(scr, s);
             },
             css : function() {
@@ -1975,43 +1957,125 @@ window.didomiOnReady.push(function (Didomi) {
 })()
 </script>
 <script type="text/javascript">
-  document.addEventListener("DOMContentLoaded", function () {
-    const interval = setInterval(() => {
-      const data = window.translations;
-      const lang = window.lang || "fr";
-      const cmwc = document.querySelector('cmwc-f3226f73-f686-4d73-ba3b-71db03b2e047_f3226f73-f686-4d73-ba3b-71db03b2e047');
-      if (!cmwc || !cmwc.shadowRoot) return;
+document.addEventListener("DOMContentLoaded", function () {
+  const HOST_SELECTOR = 'cmwc-f3226f73-f686-4d73-ba3b-71db03b2e047_f3226f73-f686-4d73-ba3b-71db03b2e047';
+  let isPatching = false;
 
-      const shadow = cmwc.shadowRoot;
-      const desc = shadow.getElementById('agentDescription');
-      const input = shadow.getElementById('chat-input');
-      const bubbles = shadow.querySelectorAll('.wc-c-bubble--clean p');
-      const sheetHeader = shadow.getElementById('sheetHeader');
-      const langButtonSpan = document.querySelector(
-        '.wc-c-menu__button[data-cmwc-test-id="language-button"] span');
-      const resetButtonSpan = document.querySelector(
-        '.wc-c-menu__button[data-cmwc-test-id="reset-button"] span');
+  function T() {
+    const d = window.translations || {};
+    return {
+      // tu as déjà ces clés :
+      sys1: d.systemMessage1 || '',
+      sys2: d.systemMessage2 || '',
+      sheet: d.systemMessage3 || '',
+      langBtn: d.systemMessage4 || '',
+      resetBtn: d.systemMessage5 || '',
+      desc: d.agentDescription || '',
+      chatPH: d.chatInputPlaceholder || '',
+      modalText: d.modalRestartText || 'Êtes-vous sûr(e) de vouloir recommencer une conversation ?',
+      modalAccept: d.modalRestartAccept || 'Oui',
+      modalDecline: d.modalRestartDecline || 'Non',
+      langPH: d.languageSearchPlaceholder || 'Rechercher',
+      langAria: d.languageSearchAria || 'Rechercher des langues',
+      headerTitle: (d.chatHeaderTitle || ''),        // optionnel
+      openBtn: (d.chatOpenButton || 'Envoyer un message'),
+      sendBtn: (d.chatSendButton || 'Envoyer'),
+    };
+  }
 
-      if (bubbles.length >= 2) {
-        if (bubbles[0]) bubbles[0].textContent = data.systemMessage1;
-        if (bubbles[1]) bubbles[1].textContent = data.systemMessage2;
+  function setText(el, val) { if (el && el.textContent !== val) el.textContent = val; }
+  function setAttr(el, k, v) { if (el && el.getAttribute(k) !== v) el.setAttribute(k, v); }
+
+  function patch(root) {
+    if (!root || isPatching) return;
+    isPatching = true;
+    try {
+      const t = T();
+
+      // Bulles d’ouverture
+      const bubbles = root.querySelectorAll('.wc-c-bubble--clean p');
+      if (bubbles[0]) setText(bubbles[0], t.sys1);
+      if (bubbles[1]) setText(bubbles[1], t.sys2);
+
+      // Titre / description en-tête
+      const headerTitle = root.querySelector('[data-cmwc-test-id="header-title"], .wc-c-header__title');
+      const headerDesc  = root.querySelector('#agentDescription, [data-cmwc-test-id="header-description"], .wc-c-header__description');
+      if (t.headerTitle) setText(headerTitle, t.headerTitle); // seulement si clé fournie
+      setText(headerDesc, t.desc);
+
+      // Champ de saisie
+      const input = root.getElementById('chat-input');
+      if (input) {
+        if (input.placeholder !== t.chatPH) input.placeholder = t.chatPH;
+        setAttr(input, 'aria-label', t.chatPH || 'Message');
       }
-      if (desc && input && sheetHeader && langButtonSpan && resetButtonSpan) {
-        desc.textContent = data.agentDescription;
-        input.setAttribute('placeholder', data.chatInputPlaceholder);
-        sheetHeader.textContent = data.systemMessage3;
-        langButtonSpan.textContent = data.systemMessage4;
-        resetButtonSpan.textContent = data.systemMessage5;
-        clearInterval(interval);
-      }
-    }, 300);
 
-    // arrêter au bout de 10s si ça ne marche pas
-    setTimeout(() => clearInterval(interval), 10000);
-  });
+      // Bouton “Envoyer un message” (ouvrir le chat)
+      const openBtnText =
+        root.querySelector('[data-cmwc-test-id="start-chat-button"] .wc-c-button__text') ||
+        root.querySelector('[data-cmwc-test-id="open-chat-button"] .wc-c-button__text') ||
+        root.querySelector('button[aria-controls="chat"] .wc-c-button__text');
+      setText(openBtnText, t.openBtn);
+
+      // Bouton “Envoyer”
+      const sendBtn =
+        root.querySelector('[data-cmwc-test-id="send-button"]') ||
+        root.querySelector('button[aria-label="Send"], button[aria-label="Envoyer"], button[aria-label="Enviar"]');
+      setAttr(sendBtn, 'aria-label', t.sendBtn);
+      const sendBtnText = sendBtn && sendBtn.querySelector('.wc-c-button__text, span');
+      setText(sendBtnText, t.sendBtn);
+
+      // Menu : “Paramètres / Choisir ma langue / Recommencer”
+      const sheetHeader     = root.getElementById('sheetHeader');
+      const langButtonSpan  = root.querySelector('.wc-c-menu__button[data-cmwc-test-id="language-button"] span');
+      const resetButtonSpan = root.querySelector('.wc-c-menu__button[data-cmwc-test-id="reset-button"] span');
+      setText(sheetHeader, t.sheet);
+      setText(langButtonSpan, t.langBtn);
+      setText(resetButtonSpan, t.resetBtn);
+
+      // Modale “Recommencer ?”
+      const modalText = root.querySelector('.wc-c-sheet__content .wc-c-modal p');
+      const decline   = root.querySelector('.wc-c-modal__footer .wc-c-option--clean');
+      const accept    = root.querySelector('.wc-c-modal__footer .wc-c-option:not(.wc-c-option--clean)');
+      setText(modalText, t.modalText);
+      setText(decline, t.modalDecline); setAttr(decline, 'aria-label', t.modalDecline);
+      setText(accept,  t.modalAccept);  setAttr(accept,  'aria-label', t.modalAccept);
+
+      // Recherche de langue
+      const langSearch = root.querySelector('input[type="search"][aria-controls="languageList"]');
+      if (langSearch) {
+        if (langSearch.placeholder !== t.langPH) langSearch.placeholder = t.langPH;
+        setAttr(langSearch, 'aria-label', t.langAria || t.langPH);
+      }
+    } finally { isPatching = false; }
+  }
+
+  function attach() {
+    const host = document.querySelector(HOST_SELECTOR);
+    const root = host && host.shadowRoot; // Shadow ouvert requis
+    if (!root) return false;
+
+    patch(root);
+
+    const shadowObs = new MutationObserver(() => {
+      requestAnimationFrame(() => patch(root)); // throttle + évite boucles
+    });
+    shadowObs.observe(root, { childList: true, subtree: true });
+
+    document.addEventListener('translations:ready', () => patch(root));
+    document.addEventListener('click', () => requestAnimationFrame(() => patch(root)), true);
+
+    return true;
+  }
+
+  if (!attach()) {
+    const docObs = new MutationObserver(() => { if (attach()) docObs.disconnect(); });
+    docObs.observe(document.documentElement, { childList: true, subtree: true });
+    setTimeout(() => docObs.disconnect(), 15000);
+  }
+});
+
 </script>
-
-
 
   <!-- END CM.COM CHATBOT -->
 <!-- START HEYDAY LIVECHAT 
@@ -2066,7 +2130,7 @@ window.didomiOnReady.push(function (Didomi) {
 
   
   <script src="//static.zdassets.com/hc/assets/hc_enduser-6c9c842b3376c78ecfab8500e5a2bf42.js"></script><script type="module" crossorigin="anonymous" src="https://webchat.digitalcx.com/webchat.js"></script>
-  <script type="text/javascript" src="/hc/theming_assets/937824/504099/script.js?digest=28689323589650"></script>
+  <script type="text/javascript" src="/hc/theming_assets/937824/504099/script.js?digest=28694913959698"></script>
   
 
 <cmwc-f3226f73-f686-4d73-ba3b-71db03b2e047_f3226f73-f686-4d73-ba3b-71db03b2e047 instancekey="f3226f73-f686-4d73-ba3b-71db03b2e047_f3226f73-f686-4d73-ba3b-71db03b2e047" data-cmwc-test-id="f3226f73-f686-4d73-ba3b-71db03b2e047_f3226f73-f686-4d73-ba3b-71db03b2e047"></cmwc-f3226f73-f686-4d73-ba3b-71db03b2e047_f3226f73-f686-4d73-ba3b-71db03b2e047></body></html>
