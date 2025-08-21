@@ -36,7 +36,7 @@
     <link href="//honeycomb.flixbus.com/dist/11.0.1/css/honeycomb-fonts.css" rel="stylesheet" type="text/css" crossorigin=""/>
 
     <link rel="stylesheet" href="https://cdn-cf.cms.flixbus.com/drupal-assets/flix-home-assets/cms_honeycomb.77662e.css" async />
-    <link rel="stylesheet" href="https://cdn-cf.cms.flixbus.com/drupal-assets/flix-home-assets/styles.f5d7c0.css" async />
+    <link rel="stylesheet" href="https://cdn-cf.cms.flixbus.com/drupal-assets/flix-home-assets/styles.a366c1.css" async />
 
     <link
       rel="apple-touch-icon"
@@ -155,6 +155,10 @@
         
             
               <link rel="alternate" hreflang="en-gb" href="https://www.flixbus.co.uk" />
+            
+        
+            
+              <link rel="alternate" hreflang="x-default" href=https://global.flixbus.com />
             
         
             
@@ -481,6 +485,8 @@
   
       
   
+      
+  
 
   <section id="geolocation-overlay" class="geolocation-overlay flix-page-container" style="display: none" aria-label="Geolocation Targetting Message">
     <div class="geolocation-overlay__content">
@@ -540,6 +546,8 @@
     
         
             
+        
+    
         
     
         
@@ -1075,6 +1083,19 @@
                       <a class="flix-language-switcher-popup__link"
                          id="" lang="en"
                          onclick="emitLanguageSwitcherClickEvent(&#34;en-gl&#34;)" href="//global.flixbus.com/?noRedirect=true">
+                        <img class="flix-language-switcher__flag"
+                             data-lazyload-src="https://cdn-cf.cms.flixbus.com/drupal-assets/flags/en-gl.min.svg" src=""
+                             alt="" />
+                          English
+                      </a>
+                    </li>
+                  
+              
+                  
+                    <li class="flix-language-switcher-popup__item">
+                      <a class="flix-language-switcher-popup__link"
+                         id="" lang="en"
+                         onclick="emitLanguageSwitcherClickEvent(&#34;en-gl&#34;)" href="//www.test.com/?noRedirect=true">
                         <img class="flix-language-switcher__flag"
                              data-lazyload-src="https://cdn-cf.cms.flixbus.com/drupal-assets/flags/en-gl.min.svg" src=""
                              alt="" />
@@ -1851,36 +1872,63 @@
     
       <div id="section-25996" style="clear: both" data-vo-hidden="false">
           
-                
                     
-  <section id="map-teaser-component" data-testid="exploration-map-teaser"
-           class="exploration-map-teaser-container">
-    <div class="flix-page-container">
-      <a target="_self" href="https://www.flixbus.co.uk/bus-routes" class="exploration-map-teaser-wrapper"
-         onclick="emitExplorationMapTeaserClickEvent()">
-        <img
-          height="180"
-          data-lazyload="https://cdn-cf.cms.flixbus.com/drupal-assets/styles/exploration_map_teaser_0_5x/s3/2021-05/map-teaser-flix.jpeg 450w, https://cdn-cf.cms.flixbus.com/drupal-assets/styles/exploration_map_teaser/s3/2021-05/map-teaser-flix.jpeg 900w"
-          src="https://cdn-cf.cms.flixbus.com/drupal-assets/styles/20px/s3/2021-05/map-teaser-flix.jpeg"
-          sizes="(min-width:600px) 25vw, 100vw"
-          alt=""
-          class="exploration-map-teaser-image"
-        />
-        <div class="exploration-map-teaser-text">
-          <h2 class="flix-h2 flix-h2--section-header exploration-map-teaser-headline">
-              Discover all destinations
-          </h2>
-          <p class="flix-text exploration-map-teaser-description">Choose from over 3,000 travel destinations in 40+ countries.</p>
-          <p class="flix-btn flix-btn--link flix-btn--sm exploration-map-teaser-link">
-            <span>Explore the map</span>
-            <flix-icon name="arrow-right" size="3" aria-hidden="true"></flix-icon>
-          </p>
-        </div>
-      </a>
-    </div>
-  </section>
 
-                
+
+
+
+<div role="link" tabindex="0" onclick="location.href='https:\/\/www.flixbus.co.uk\/bus-routes'"
+    onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();location.href='https:\/\/www.flixbus.co.uk\/bus-routes'}"
+    class="page-content-wrapper flix-page-container exploration-map-banner">
+    
+
+
+
+
+
+<div class="exploration-map-banner-content">
+    <div class="exploration-map-banner-content-title">Where to next?</div>
+    <div class="exploration-map-banner-content-text">
+        Discover our travel map with over 8000 destinations worldwide.
+    </div>
+    <div class="flix-btn flix-btn--primary flix-btn--lg exploration-map-banner-content-cta-button" onclick="emitExplorationMapBannerClickEvent()">
+        <flix-icon name="map" solid="true" aria-hidden="true"></flix-icon>
+        
+        <span>Explore the map</span>
+    </div>
+</div>
+
+    
+
+
+
+
+
+
+<div class="exploration-map-banner-image">
+    <picture>
+        
+        <source media="(max-width: 767.98px)" srcset="
+            https://cdn-cf.cms.flixbus.com/drupal-assets/exploration-map-banner/flixbus-mobile.avif 375w,
+            https://cdn-cf.cms.flixbus.com/drupal-assets/exploration-map-banner/flixbus-mobile-large.avif 767w">
+
+        
+        <source media="(min-width: 768px) and (max-width: 1023.98px)" srcset="
+            https://cdn-cf.cms.flixbus.com/drupal-assets/exploration-map-banner/flixbus-tablet.avif 398w,
+            https://cdn-cf.cms.flixbus.com/drupal-assets/exploration-map-banner/flixbus-tablet-large.avif 1024w">
+
+        
+        <source media="(min-width: 1024px)" srcset="
+            https://cdn-cf.cms.flixbus.com/drupal-assets/exploration-map-banner/flixbus-desktop.avif 724w,
+            https://cdn-cf.cms.flixbus.com/drupal-assets/exploration-map-banner/flixbus-desktop-large.avif 1366w">
+
+        <img data-lazyload-src="https://cdn-cf.cms.flixbus.com/drupal-assets/exploration-map-banner/flixbus-desktop.avif" alt="Vehicle passing through a city">
+    </picture>
+</div>
+
+
+</div>
+
           
       </div>
     
@@ -2042,7 +2090,7 @@
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
-                      <a href="/bus-routes/london-paris" class="popular-routes-item">London - Paris</a>
+                      <a href="/bus-routes/london-bristol" class="popular-routes-item">London - Bristol</a>
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
@@ -2050,7 +2098,7 @@
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
-                      <a href="/bus-routes/london-bristol" class="popular-routes-item">London - Bristol</a>
+                      <a href="/bus-routes/london-paris" class="popular-routes-item">London - Paris</a>
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
@@ -2078,11 +2126,11 @@
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
-                      <a href="/bus-routes/nottingham-london" class="popular-routes-item">Nottingham - London</a>
+                      <a href="/bus-routes/cardiff-london" class="popular-routes-item">Cardiff - London</a>
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
-                      <a href="/bus-routes/cardiff-london" class="popular-routes-item">Cardiff - London</a>
+                      <a href="/bus-routes/nottingham-london" class="popular-routes-item">Nottingham - London</a>
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
@@ -2090,7 +2138,7 @@
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
-                      <a href="/bus-routes/london-cardiff" class="popular-routes-item">London - Cardiff</a>
+                      <a href="/bus-routes/london-leeds" class="popular-routes-item">London - Leeds</a>
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
@@ -2098,15 +2146,7 @@
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
-                      <a href="/bus-routes/london-leeds" class="popular-routes-item">London - Leeds</a>
-                    </li>
-                  
-                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
-                      <a href="/bus-routes/london-bournemouth" class="popular-routes-item">London - Bournemouth</a>
-                    </li>
-                  
-                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
-                      <a href="/bus-routes/glasgow-edinburgh" class="popular-routes-item">Glasgow - Edinburgh</a>
+                      <a href="/bus-routes/london-cardiff" class="popular-routes-item">London - Cardiff</a>
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
@@ -2114,7 +2154,15 @@
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
-                      <a href="/bus-routes/bournemouth-london" class="popular-routes-item">Bournemouth - London</a>
+                      <a href="/bus-routes/glasgow-edinburgh" class="popular-routes-item">Glasgow - Edinburgh</a>
+                    </li>
+                  
+                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
+                      <a href="/bus-routes/london-bournemouth" class="popular-routes-item">London - Bournemouth</a>
+                    </li>
+                  
+                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
+                      <a href="/bus-routes/london-edinburgh" class="popular-routes-item">London - Edinburgh</a>
                     </li>
                   
                 </ul>
@@ -2670,7 +2718,7 @@
         site: 'datadoghq.eu',
         service: 'fxt.webc.cms.gohome',
         sessionSampleRate: 7,
-        version: "gohome.20250818.141422",
+        version: "gohome.20250820.143239",
         trackSessionAcrossSubdomains: true,
         useSecureSessionCookie: true,
         useCrossSiteSessionCookie: true,
