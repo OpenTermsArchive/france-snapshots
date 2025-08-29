@@ -28,10 +28,23 @@
       window.COOKIE_PREFIX = 'bsnm';
     </script>
     
-    
+    
+<script>
+   window.consentModeDefault = false
+   window.THEME_INFO = window.THEME_INFO || {};
+   window.token_storefront = '73dc1f46775a51dc54385b491ff52680';
+   window.storename = 'www.kappa.fr'
+   THEME_INFO.logged = 'not_logged';
+   THEME_INFO.brand_name = 'Kappa';
+   THEME_INFO.language = 'fr';
+   THEME_INFO.currency = 'EUR';
+   THEME_INFO.pageType = 'page';
+   
+   
+  window.best_previous_price = 'Meilleur prix précédent:'
+</script>
 
-    
-      <script src="//www.kappa.fr/cdn/shop/t/54/assets/custom_library.js?v=109484472619788549001747921767"></script>
+      <script src="//www.kappa.fr/cdn/shop/t/57/assets/custom_library.js?v=8516337022930126781756454970"></script>
     
 
     
@@ -42,27 +55,15 @@
     <link rel="dns-prefetch" href="https://maps.googleapis.com">
     <link rel="dns-prefetch" href="https://maps.gstatic.com">
     
-   
+    
 
 
   
 
 
-        
-<script>
-  window.THEME_INFO = window.THEME_INFO || {};
-  window.token_storefront = '73dc1f46775a51dc54385b491ff52680';
-  window.storename = 'www.kappa.fr'
-  THEME_INFO.logged = 'not_logged';
-  THEME_INFO.brand_name = 'Kappa';
-  THEME_INFO.language = 'fr';
-  THEME_INFO.currency = 'EUR';
-  THEME_INFO.pageType = 'page';
-  
-  
+    
 
-</script>
-
+    
 
     <link rel="shortcut icon" href="//www.kappa.fr/cdn/shop/files/kappa-omini-red-logo_32x32.png?v=1721894960" type="image/png"><title>Conditions générales de vente</title>
 <meta name="description" content="Kappa a reçu des plaintes de d&#39;utilisateurs concernant la non-livraison de produits achetés en ligne sur des sites prétendants vendre du Kappa. Ces sites web n&#39;ont aucun lien avec Kappa France ni avec aucune entreprise directement ou indirectement liée à Kappa France."><meta property="og:site_name" content="Kappa France">
@@ -103,9 +104,9 @@
 }
 
   
-</style><link href="//www.kappa.fr/cdn/shop/t/54/assets/theme.css?v=171456918995211973181747921852" rel="stylesheet" type="text/css" media="all" />
+</style><link href="//www.kappa.fr/cdn/shop/t/57/assets/theme.css?v=18987507084678479541756454970" rel="stylesheet" type="text/css" media="all" />
     
-    <link href="//www.kappa.fr/cdn/shop/t/54/assets/custom_css.css?v=83028453070164951791747921850" rel="stylesheet" type="text/css" media="all" /><style data-shopify>:root {
+    <link href="//www.kappa.fr/cdn/shop/t/57/assets/custom_css.css?v=29046156690389860971756454969" rel="stylesheet" type="text/css" media="all" /><style data-shopify>:root {
     --typeHeaderPrimary: Helvetica;
     --typeHeaderFallback: 'Helvetica Neue', Arial, 'Lucida Grande', sans-serif;
     --typeHeaderSize: 37px;
@@ -201,7 +202,7 @@ Shopify.shop = "kappafrance.myshopify.com";
 Shopify.locale = "fr";
 Shopify.currency = {"active":"EUR","rate":"1.0"};
 Shopify.country = "FR";
-Shopify.theme = {"name":"Live Theme - 22\/05\/2025","id":181491466586,"schema_name":"Basic\/Impulse 1.1.2","schema_version":"7.5.1","theme_store_id":857,"role":"main"};
+Shopify.theme = {"name":"Live Theme - 29\/08\/2025","id":184923750746,"schema_name":"Basic\/Impulse 1.1.2","schema_version":"7.5.1","theme_store_id":857,"role":"main"};
 Shopify.theme.handle = "null";
 Shopify.theme.style = {"id":null,"handle":null};
 Shopify.cdnHost = "www.kappa.fr/cdn";
@@ -241,7 +242,7 @@ Shopify.routes.root = "/";</script>
     window.addEventListener('load', asyncLoad, false);
   }
 })();</script>
-<script id="__st">var __st={"a":56681136327,"offset":7200,"reqid":"38dc1f02-e625-461d-8c66-61d53e0a841c-1756427918","pageurl":"www.kappa.fr\/pages\/cgv","s":"pages-82250334407","u":"73960da19eac","p":"page","rtyp":"page","rid":82250334407};</script>
+<script id="__st">var __st={"a":56681136327,"offset":7200,"reqid":"d59e7e13-e91f-48d7-afba-b69e14ee6987-1756471152","pageurl":"www.kappa.fr\/pages\/cgv","s":"pages-82250334407","u":"8d07028a761d","p":"page","rtyp":"page","rid":82250334407};</script>
 <script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
 <script id="captcha-bootstrap">!function(){'use strict';const t='contact',e='account',n='new_comment',o=[[t,t],['blogs',n],['comments',n],[t,'customer']],c=[[e,'customer_login'],[e,'guest_login'],[e,'recover_customer_password'],[e,'create_customer']],r=t=>t.map((([t,e])=>`form[action*='/${t}']:not([data-nocaptcha='true']) input[name='form_type'][value='${e}']`)).join(','),a=t=>()=>t?[...document.querySelectorAll(t)].map((t=>t.form)):[];function s(){const t=[...o],e=r(t);return a(e)}const i='password',u='form_key',d=['recaptcha-v3-token','g-recaptcha-response','h-captcha-response',i],f=()=>{try{return window.sessionStorage}catch{return}},m='__shopify_v',_=t=>t.elements[u];function p(t,e,n=!1){try{const o=window.sessionStorage,c=JSON.parse(o.getItem(e)),{data:r}=function(t){const{data:e,action:n}=t;return t[m]||n?{data:e,action:n}:{data:t,action:n}}(c);for(const[e,n]of Object.entries(r))t.elements[e]&&(t.elements[e].value=n);n&&o.removeItem(e)}catch(o){console.error('form repopulation failed',{error:o})}}const l='form_type',E='cptcha';function T(t){t.dataset[E]=!0}const w=window,h=w.document,L='Shopify',v='ce_forms',y='captcha';let A=!1;((t,e)=>{const n=(g='f06e6c50-85a8-45c8-87d0-21a2b65856fe',I='https://cdn.shopify.com/shopifycloud/storefront-forms-hcaptcha/ce_storefront_forms_captcha_hcaptcha.v1.5.2.iife.js',D={infoText:'Protégé par hCaptcha',privacyText:'Confidentialité',termsText:'Conditions'},(t,e,n)=>{const o=w[L][v],c=o.bindForm;if(c)return c(t,g,e,D).then(n);var r;o.q.push([[t,g,e,D],n]),r=I,A||(h.body.append(Object.assign(h.createElement('script'),{id:'captcha-provider',async:!0,src:r})),A=!0)});var g,I,D;w[L]=w[L]||{},w[L][v]=w[L][v]||{},w[L][v].q=[],w[L][y]=w[L][y]||{},w[L][y].protect=function(t,e){n(t,void 0,e),T(t)},Object.freeze(w[L][y]),function(t,e,n,w,h,L){const[v,y,A,g]=function(t,e,n){const i=e?o:[],u=t?c:[],d=[...i,...u],f=r(d),m=r(i),_=r(d.filter((([t,e])=>n.includes(e))));return[a(f),a(m),a(_),s()]}(w,h,L),I=t=>{const e=t.target;return e instanceof HTMLFormElement?e:e&&e.form},D=t=>v().includes(t);t.addEventListener('submit',(t=>{const e=I(t);if(!e)return;const n=D(e)&&!e.dataset.hcaptchaBound&&!e.dataset.recaptchaBound,o=_(e),c=g().includes(e)&&(!o||!o.value);(n||c)&&t.preventDefault(),c&&!n&&(function(t){try{if(!f())return;!function(t){const e=f();if(!e)return;const n=_(t);if(!n)return;const o=n.value;o&&e.removeItem(o)}(t);const e=Array.from(Array(32),(()=>Math.random().toString(36)[2])).join('');!function(t,e){_(t)||t.append(Object.assign(document.createElement('input'),{type:'hidden',name:u})),t.elements[u].value=e}(t,e),function(t,e){const n=f();if(!n)return;const o=[...t.querySelectorAll(`input[type='${i}']`)].map((({name:t})=>t)),c=[...d,...o],r={};for(const[a,s]of new FormData(t).entries())c.includes(a)||(r[a]=s);n.setItem(e,JSON.stringify({[m]:1,action:t.action,data:r}))}(t,e)}catch(e){console.error('failed to persist form',e)}}(e),e.submit())}));const S=(t,e)=>{t&&!t.dataset[E]&&(n(t,e.some((e=>e===t))),T(t))};for(const o of['focusin','change'])t.addEventListener(o,(t=>{const e=I(t);D(e)&&S(e,y())}));const B=e.get('form_key'),M=e.get(l),P=B&&M;t.addEventListener('DOMContentLoaded',(()=>{const t=y();if(P)for(const e of t)e.elements[l].value===M&&p(e,B);[...new Set([...A(),...v().filter((t=>'true'===t.dataset.shopifyCaptcha))])].forEach((e=>S(e,t)))}))}(h,new URLSearchParams(w.location.search),n,t,e,['guest_login'])})(!0,!0)}();</script>
 <script integrity="sha256-52AcMU7V7pcBOXWImdc/TAGTFKeNjmkeM1Pvks/DTgc=" data-source-attribution="shopify.loadfeatures" defer="defer" src="//www.kappa.fr/cdn/shopifycloud/storefront/assets/storefront/load_feature-81c60534.js" crossorigin="anonymous"></script>
@@ -307,6 +308,16 @@ Shopify.routes.root = "/";</script>
     
     
 
+    <script>
+      window.earlyAccessInit = function () {
+        updateEarlyAccessPrices(
+          false,
+          '',
+          'code15'
+        )
+      }
+    </script>
+
     
 
     
@@ -354,9 +365,9 @@ Shopify.routes.root = "/";</script>
 
     
 
-    <script src="//www.kappa.fr/cdn/shop/t/54/assets/vendor-scripts-v11.js" defer="defer"></script>
+    <script src="//www.kappa.fr/cdn/shop/t/57/assets/vendor-scripts-v11.js" defer="defer"></script>
     
-      <script src="//www.kappa.fr/cdn/shop/t/54/assets/original.js?v=101402414836282976501747921941" defer></script>
+      <script src="//www.kappa.fr/cdn/shop/t/57/assets/original.js?v=74607095421666201801756454971" defer></script>
     
 
     <!-- Google Tag Manager -->
@@ -364,7 +375,7 @@ Shopify.routes.root = "/";</script>
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-5BF36652');</script>
+})(window,document,'script','dataLayer','GTM-5WGT73R9');</script>
 <!-- End Google Tag Manager -->
     
 
@@ -385,7 +396,38 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 
 
-<!-- BEGIN app block: shopify://apps/iadvize-ai-copilot/blocks/iadvize-tag/97672039-3647-476c-9ad9-4f6daaa2d3e4 --><!-- START IADVIZE LIVECHAT -->
+<!-- BEGIN app block: shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507 -->
+
+
+
+
+
+
+
+
+
+
+
+
+  <script async src="https://static.klaviyo.com/onsite/js/SLa688/klaviyo.js?company_id=SLa688"></script>
+  <script>!function(){if(!window.klaviyo){window._klOnsite=window._klOnsite||[];try{window.klaviyo=new Proxy({},{get:function(n,i){return"push"===i?function(){var n;(n=window._klOnsite).push.apply(n,arguments)}:function(){for(var n=arguments.length,o=new Array(n),w=0;w<n;w++)o[w]=arguments[w];var t="function"==typeof o[o.length-1]?o.pop():void 0,e=new Promise((function(n){window._klOnsite.push([i].concat(o,[function(i){t&&t(i),n(i)}]))}));return e}}})}catch(n){window.klaviyo=window.klaviyo||[],window.klaviyo.push=function(){var n;(n=window._klOnsite).push.apply(n,arguments)}}}}();</script>
+
+  
+
+
+
+
+  <script>
+    window.klaviyoReviewsProductDesignMode = false
+  </script>
+
+
+
+
+
+
+
+<!-- END app block --><!-- BEGIN app block: shopify://apps/iadvize-ai-copilot/blocks/iadvize-tag/97672039-3647-476c-9ad9-4f6daaa2d3e4 --><!-- START IADVIZE LIVECHAT -->
 
 <script>
   function loadIAdvize() {
@@ -516,41 +558,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!-- END IADVIZE LIVECHAT -->
 
 
-<!-- END app block --><!-- BEGIN app block: shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507 -->
-
-
-
-
-
-
-
-
-
-
-
-
-  <script async src="https://static.klaviyo.com/onsite/js/SLa688/klaviyo.js?company_id=SLa688"></script>
-  <script>!function(){if(!window.klaviyo){window._klOnsite=window._klOnsite||[];try{window.klaviyo=new Proxy({},{get:function(n,i){return"push"===i?function(){var n;(n=window._klOnsite).push.apply(n,arguments)}:function(){for(var n=arguments.length,o=new Array(n),w=0;w<n;w++)o[w]=arguments[w];var t="function"==typeof o[o.length-1]?o.pop():void 0,e=new Promise((function(n){window._klOnsite.push([i].concat(o,[function(i){t&&t(i),n(i)}]))}));return e}}})}catch(n){window.klaviyo=window.klaviyo||[],window.klaviyo.push=function(){var n;(n=window._klOnsite).push.apply(n,arguments)}}}}();</script>
-
-  
-
-
-
-
-  <script>
-    window.klaviyoReviewsProductDesignMode = false
-  </script>
-
-
-
-
-
-
-
 <!-- END app block --><script src="https://cdn.shopify.com/extensions/341b63e8-75de-4462-a13a-6917fade4544/trueprofit-profit-analytics-19/assets/embedded.js" type="text/javascript" defer="defer"></script>
 <link href="https://monorail-edge.shopifysvc.com" rel="dns-prefetch">
 <script>(function(){if ("sendBeacon" in navigator && "performance" in window) {try {var session_token_from_headers = performance.getEntriesByType('navigation')[0].serverTiming.find(x => x.name == '_s').description;} catch {var session_token_from_headers = undefined;}var session_cookie_matches = document.cookie.match(/_shopify_s=([^;]*)/);var session_token_from_cookie = session_cookie_matches && session_cookie_matches.length === 2 ? session_cookie_matches[1] : "";var session_token = session_token_from_headers || session_token_from_cookie || "";function handle_abandonment_event(e) {var entries = performance.getEntries().filter(function(entry) {return /monorail-edge.shopifysvc.com/.test(entry.name);});if (!window.abandonment_tracked && entries.length === 0) {window.abandonment_tracked = true;var currentMs = Date.now();var navigation_start = performance.timing.navigationStart;var payload = {shop_id: 56681136327,url: window.location.href,navigation_start,duration: currentMs - navigation_start,session_token,page_type: "page"};window.navigator.sendBeacon("https://monorail-edge.shopifysvc.com/v1/produce", JSON.stringify({schema_id: "online_store_buyer_site_abandonment/1.1",payload: payload,metadata: {event_created_at_ms: currentMs,event_sent_at_ms: currentMs}}));}}window.addEventListener('pagehide', handle_abandonment_event);}}());</script>
-<script id="web-pixels-manager-setup">(function e(e,d,r,n,o){if(void 0===o&&(o={}),!Boolean(null===(a=null===(i=window.Shopify)||void 0===i?void 0:i.analytics)||void 0===a?void 0:a.replayQueue)){var i,a;window.Shopify=window.Shopify||{};var t=window.Shopify;t.analytics=t.analytics||{};var s=t.analytics;s.replayQueue=[],s.publish=function(e,d,r){return s.replayQueue.push([e,d,r]),!0};try{self.performance.mark("wpm:start")}catch(e){}var l=function(){var e={modern:/Edge?\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Firefox\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Chrom(ium|e)\/(9{2}|\d{3,})\.\d+(\.\d+|)|(Maci|X1{2}).+ Version\/(15\.\d+|(1[6-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(9{2}|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(15[._]\d+|(1[6-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](13[3-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Android.+Firefox\/(13[5-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(13[3-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|SamsungBrowser\/([2-9]\d|\d{3,})\.\d+/,legacy:/Edge?\/(1[6-9]|[2-9]\d|\d{3,})\.\d+(\.\d+|)|Firefox\/(5[4-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)|Chrom(ium|e)\/(5[1-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)([\d.]+$|.*Safari\/(?![\d.]+ Edge\/[\d.]+$))|(Maci|X1{2}).+ Version\/(10\.\d+|(1[1-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(3[89]|[4-9]\d|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(10[._]\d+|(1[1-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](13[3-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Mobile Safari.+OPR\/([89]\d|\d{3,})\.\d+\.\d+|Android.+Firefox\/(13[5-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(13[3-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+(UC? ?Browser|UCWEB|U3)[ /]?(15\.([5-9]|\d{2,})|(1[6-9]|[2-9]\d|\d{3,})\.\d+)\.\d+|SamsungBrowser\/(5\.\d+|([6-9]|\d{2,})\.\d+)|Android.+MQ{2}Browser\/(14(\.(9|\d{2,})|)|(1[5-9]|[2-9]\d|\d{3,})(\.\d+|))(\.\d+|)|K[Aa][Ii]OS\/(3\.\d+|([4-9]|\d{2,})\.\d+)(\.\d+|)/},d=e.modern,r=e.legacy,n=navigator.userAgent;return n.match(d)?"modern":n.match(r)?"legacy":"unknown"}(),u="modern"===l?"modern":"legacy",c=(null!=n?n:{modern:"",legacy:""})[u],f=function(e){return[e.baseUrl,"/wpm","/b",e.hashVersion,"modern"===e.buildTarget?"m":"l",".js"].join("")}({baseUrl:d,hashVersion:r,buildTarget:u}),m=function(e){var d=e.version,r=e.bundleTarget,n=e.surface,o=e.pageUrl,i=e.monorailEndpoint;return{emit:function(e){var a=e.status,t=e.errorMsg,s=(new Date).getTime(),l=JSON.stringify({metadata:{event_sent_at_ms:s},events:[{schema_id:"web_pixels_manager_load/3.1",payload:{version:d,bundle_target:r,page_url:o,status:a,surface:n,error_msg:t},metadata:{event_created_at_ms:s}}]});if(!i)return console&&console.warn&&console.warn("[Web Pixels Manager] No Monorail endpoint provided, skipping logging."),!1;try{return self.navigator.sendBeacon.bind(self.navigator)(i,l)}catch(e){}var u=new XMLHttpRequest;try{return u.open("POST",i,!0),u.setRequestHeader("Content-Type","text/plain"),u.send(l),!0}catch(e){return console&&console.warn&&console.warn("[Web Pixels Manager] Got an unhandled error while logging to Monorail."),!1}}}}({version:r,bundleTarget:l,surface:e.surface,pageUrl:self.location.href,monorailEndpoint:e.monorailEndpoint});try{o.browserTarget=l,function(e){var d=e.src,r=e.async,n=void 0===r||r,o=e.onload,i=e.onerror,a=e.sri,t=e.scriptDataAttributes,s=void 0===t?{}:t,l=document.createElement("script"),u=document.querySelector("head"),c=document.querySelector("body");if(l.async=n,l.src=d,a&&(l.integrity=a,l.crossOrigin="anonymous"),s)for(var f in s)if(Object.prototype.hasOwnProperty.call(s,f))try{l.dataset[f]=s[f]}catch(e){}if(o&&l.addEventListener("load",o),i&&l.addEventListener("error",i),u)u.appendChild(l);else{if(!c)throw new Error("Did not find a head or body element to append the script");c.appendChild(l)}}({src:f,async:!0,onload:function(){if(!function(){var e,d;return Boolean(null===(d=null===(e=window.Shopify)||void 0===e?void 0:e.analytics)||void 0===d?void 0:d.initialized)}()){var d=window.webPixelsManager.init(e)||void 0;if(d){var r=window.Shopify.analytics;r.replayQueue.forEach((function(e){var r=e[0],n=e[1],o=e[2];d.publishCustomEvent(r,n,o)})),r.replayQueue=[],r.publish=d.publishCustomEvent,r.visitor=d.visitor,r.initialized=!0}}},onerror:function(){return m.emit({status:"failed",errorMsg:"".concat(f," has failed to load")})},sri:function(e){var d=/^sha384-[A-Za-z0-9+/=]+$/;return"string"==typeof e&&d.test(e)}(c)?c:"",scriptDataAttributes:o}),m.emit({status:"loading"})}catch(e){m.emit({status:"failed",errorMsg:(null==e?void 0:e.message)||"Unknown error"})}}})({shopId: 56681136327,storefrontBaseUrl: "https://www.kappa.fr",extensionsBaseUrl: "https://extensions.shopifycdn.com/cdn/shopifycloud/web-pixels-manager",monorailEndpoint: "https://monorail-edge.shopifysvc.com/unstable/produce_batch",surface: "storefront-renderer",enabledBetaFlags: ["ac843a20"],webPixelsConfigList: [{"id":"2704343386","configuration":"{\"hashed_organization_id\":\"3e6cbd9958007d13956a4f1b768e2c15_v1\",\"app_key\":\"kappafrance\",\"allow_collect_personal_data\":\"true\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"c3e64302e4c6a915b615bb03ddf3784a","type":"APP","apiClientId":111542,"privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"]},{"id":"2653815130","configuration":"{\"account_ID\":\"208711\",\"google_analytics_tracking_tag\":\"1\",\"measurement_id\":\"2\",\"api_secret\":\"3\",\"shop_settings\":\"{\\\"custom_pixel_script\\\":\\\"https:\\\\\\\/\\\\\\\/storage.googleapis.com\\\\\\\/gsf-scripts\\\\\\\/custom-pixels\\\\\\\/kappafrance.js\\\"}\"}","eventPayloadVersion":"v1","runtimeContext":"LAX","scriptVersion":"c6b888297782ed4a1cba19cda43d6625","type":"APP","apiClientId":1558137,"privacyPurposes":[]},{"id":"2546008410","configuration":"{\"partnerId\": \"10912\", \"environment\": \"prod\", \"countryCode\": \"FR\", \"logLevel\": \"none\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"68b9166c2ae42b35ced9723d302e4ea0","type":"APP","apiClientId":5829751,"privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"]},{"id":"2521760090","configuration":"{\"myshopifyDomain\":\"kappafrance.myshopify.com\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"23b97d18e2aa74363140dc29c9284e87","type":"APP","apiClientId":2775569,"privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"]},{"id":"2204434778","configuration":"{\"site_id\":\"e6ee3ff8-cfa7-4e06-b5c2-cbfd11719947\",\"analytics_endpoint\":\"https:\\\/\\\/na.shgcdn3.com\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"695709fc3f146fa50a25299517a954f2","type":"APP","apiClientId":1158168,"privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"]},{"id":"2165539162","configuration":"{\"projectId\":\"9264\", \"platform\": \"ha\", \"transactionEndpoint\": \"https:\/\/api.iadvize.com\/engagement\/short-conversions?platform=ha\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"eef4a0edddb5eff52a0cc729918f06af","type":"APP","apiClientId":86693281793,"privacyPurposes":["ANALYTICS"]},{"id":"1567621466","configuration":"{\"pixel_id\":\"767693474796354\",\"pixel_type\":\"facebook_pixel\"}","eventPayloadVersion":"v1","runtimeContext":"OPEN","scriptVersion":"6d8c3ef0426b37b2a9b717daeb719f58","type":"APP","apiClientId":2329312,"privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"]},{"id":"1199931738","configuration":"{\"shopId\":\"56681136327\",\"pixelEndpoint\":\"https:\/\/wpx.svc.trueprofit.io\/api\/evt\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"f2f7a5ecd155c6e61d8f2070584ad3a1","type":"APP","apiClientId":2553263,"privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"]},{"id":"35094874","configuration":"{\"advertiserId\":\"20945\",\"shopDomain\":\"kappafrance.myshopify.com\",\"appVersion\":\"shopifyApp_5.2.3\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"3bd0ccbf5c292c9d1866f9badea9929a","type":"APP","apiClientId":2887701,"privacyPurposes":["ANALYTICS","MARKETING"]},{"id":"215843162","eventPayloadVersion":"1","runtimeContext":"LAX","scriptVersion":"1","type":"CUSTOM","privacyPurposes":["SALE_OF_DATA"],"name":"GTM UNIFIED"},{"id":"shopify-app-pixel","configuration":"{}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"0450","apiClientId":"shopify-pixel","type":"APP","privacyPurposes":["ANALYTICS","MARKETING"]},{"id":"shopify-custom-pixel","eventPayloadVersion":"v1","runtimeContext":"LAX","scriptVersion":"0450","apiClientId":"shopify-pixel","type":"CUSTOM","privacyPurposes":["ANALYTICS","MARKETING"]}],isMerchantRequest: false,initData: {"shop":{"name":"Kappa France","paymentSettings":{"currencyCode":"EUR"},"myshopifyDomain":"kappafrance.myshopify.com","countryCode":"FR","storefrontUrl":"https:\/\/www.kappa.fr"},"customer":null,"cart":null,"checkout":null,"productVariants":[],"purchasingCompany":null},},"https://www.kappa.fr/cdn","b36d0edew7a8858acp2da920f9m790c9b2d",{"modern":"","legacy":""},{"shopId":"56681136327","storefrontBaseUrl":"https:\/\/www.kappa.fr","extensionBaseUrl":"https:\/\/extensions.shopifycdn.com\/cdn\/shopifycloud\/web-pixels-manager","surface":"storefront-renderer","enabledBetaFlags":"[\"ac843a20\"]","isMerchantRequest":"false","hashVersion":"b36d0edew7a8858acp2da920f9m790c9b2d","publish":"custom","events":"[[\"page_viewed\",{}]]"});</script><script>
+<script id="web-pixels-manager-setup">(function e(e,d,r,n,o){if(void 0===o&&(o={}),!Boolean(null===(a=null===(i=window.Shopify)||void 0===i?void 0:i.analytics)||void 0===a?void 0:a.replayQueue)){var i,a;window.Shopify=window.Shopify||{};var t=window.Shopify;t.analytics=t.analytics||{};var s=t.analytics;s.replayQueue=[],s.publish=function(e,d,r){return s.replayQueue.push([e,d,r]),!0};try{self.performance.mark("wpm:start")}catch(e){}var l=function(){var e={modern:/Edge?\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Firefox\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Chrom(ium|e)\/(9{2}|\d{3,})\.\d+(\.\d+|)|(Maci|X1{2}).+ Version\/(15\.\d+|(1[6-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(9{2}|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(15[._]\d+|(1[6-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](13[3-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Android.+Firefox\/(13[5-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(13[3-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|SamsungBrowser\/([2-9]\d|\d{3,})\.\d+/,legacy:/Edge?\/(1[6-9]|[2-9]\d|\d{3,})\.\d+(\.\d+|)|Firefox\/(5[4-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)|Chrom(ium|e)\/(5[1-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)([\d.]+$|.*Safari\/(?![\d.]+ Edge\/[\d.]+$))|(Maci|X1{2}).+ Version\/(10\.\d+|(1[1-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(3[89]|[4-9]\d|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(10[._]\d+|(1[1-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](13[3-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Mobile Safari.+OPR\/([89]\d|\d{3,})\.\d+\.\d+|Android.+Firefox\/(13[5-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(13[3-9]|1[4-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+(UC? ?Browser|UCWEB|U3)[ /]?(15\.([5-9]|\d{2,})|(1[6-9]|[2-9]\d|\d{3,})\.\d+)\.\d+|SamsungBrowser\/(5\.\d+|([6-9]|\d{2,})\.\d+)|Android.+MQ{2}Browser\/(14(\.(9|\d{2,})|)|(1[5-9]|[2-9]\d|\d{3,})(\.\d+|))(\.\d+|)|K[Aa][Ii]OS\/(3\.\d+|([4-9]|\d{2,})\.\d+)(\.\d+|)/},d=e.modern,r=e.legacy,n=navigator.userAgent;return n.match(d)?"modern":n.match(r)?"legacy":"unknown"}(),u="modern"===l?"modern":"legacy",c=(null!=n?n:{modern:"",legacy:""})[u],f=function(e){return[e.baseUrl,"/wpm","/b",e.hashVersion,"modern"===e.buildTarget?"m":"l",".js"].join("")}({baseUrl:d,hashVersion:r,buildTarget:u}),m=function(e){var d=e.version,r=e.bundleTarget,n=e.surface,o=e.pageUrl,i=e.monorailEndpoint;return{emit:function(e){var a=e.status,t=e.errorMsg,s=(new Date).getTime(),l=JSON.stringify({metadata:{event_sent_at_ms:s},events:[{schema_id:"web_pixels_manager_load/3.1",payload:{version:d,bundle_target:r,page_url:o,status:a,surface:n,error_msg:t},metadata:{event_created_at_ms:s}}]});if(!i)return console&&console.warn&&console.warn("[Web Pixels Manager] No Monorail endpoint provided, skipping logging."),!1;try{return self.navigator.sendBeacon.bind(self.navigator)(i,l)}catch(e){}var u=new XMLHttpRequest;try{return u.open("POST",i,!0),u.setRequestHeader("Content-Type","text/plain"),u.send(l),!0}catch(e){return console&&console.warn&&console.warn("[Web Pixels Manager] Got an unhandled error while logging to Monorail."),!1}}}}({version:r,bundleTarget:l,surface:e.surface,pageUrl:self.location.href,monorailEndpoint:e.monorailEndpoint});try{o.browserTarget=l,function(e){var d=e.src,r=e.async,n=void 0===r||r,o=e.onload,i=e.onerror,a=e.sri,t=e.scriptDataAttributes,s=void 0===t?{}:t,l=document.createElement("script"),u=document.querySelector("head"),c=document.querySelector("body");if(l.async=n,l.src=d,a&&(l.integrity=a,l.crossOrigin="anonymous"),s)for(var f in s)if(Object.prototype.hasOwnProperty.call(s,f))try{l.dataset[f]=s[f]}catch(e){}if(o&&l.addEventListener("load",o),i&&l.addEventListener("error",i),u)u.appendChild(l);else{if(!c)throw new Error("Did not find a head or body element to append the script");c.appendChild(l)}}({src:f,async:!0,onload:function(){if(!function(){var e,d;return Boolean(null===(d=null===(e=window.Shopify)||void 0===e?void 0:e.analytics)||void 0===d?void 0:d.initialized)}()){var d=window.webPixelsManager.init(e)||void 0;if(d){var r=window.Shopify.analytics;r.replayQueue.forEach((function(e){var r=e[0],n=e[1],o=e[2];d.publishCustomEvent(r,n,o)})),r.replayQueue=[],r.publish=d.publishCustomEvent,r.visitor=d.visitor,r.initialized=!0}}},onerror:function(){return m.emit({status:"failed",errorMsg:"".concat(f," has failed to load")})},sri:function(e){var d=/^sha384-[A-Za-z0-9+/=]+$/;return"string"==typeof e&&d.test(e)}(c)?c:"",scriptDataAttributes:o}),m.emit({status:"loading"})}catch(e){m.emit({status:"failed",errorMsg:(null==e?void 0:e.message)||"Unknown error"})}}})({shopId: 56681136327,storefrontBaseUrl: "https://www.kappa.fr",extensionsBaseUrl: "https://extensions.shopifycdn.com/cdn/shopifycloud/web-pixels-manager",monorailEndpoint: "https://monorail-edge.shopifysvc.com/unstable/produce_batch",surface: "storefront-renderer",enabledBetaFlags: ["ac843a20"],webPixelsConfigList: [{"id":"2704343386","configuration":"{\"hashed_organization_id\":\"3e6cbd9958007d13956a4f1b768e2c15_v1\",\"app_key\":\"kappafrance\",\"allow_collect_personal_data\":\"true\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"c3e64302e4c6a915b615bb03ddf3784a","type":"APP","apiClientId":111542,"privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"]},{"id":"2653815130","configuration":"{\"account_ID\":\"208711\",\"google_analytics_tracking_tag\":\"1\",\"measurement_id\":\"2\",\"api_secret\":\"3\",\"shop_settings\":\"{\\\"custom_pixel_script\\\":\\\"https:\\\\\\\/\\\\\\\/storage.googleapis.com\\\\\\\/gsf-scripts\\\\\\\/custom-pixels\\\\\\\/kappafrance.js\\\"}\"}","eventPayloadVersion":"v1","runtimeContext":"LAX","scriptVersion":"c6b888297782ed4a1cba19cda43d6625","type":"APP","apiClientId":1558137,"privacyPurposes":[]},{"id":"2546008410","configuration":"{\"partnerId\": \"10912\", \"environment\": \"prod\", \"countryCode\": \"FR\", \"logLevel\": \"none\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"68b9166c2ae42b35ced9723d302e4ea0","type":"APP","apiClientId":5829751,"privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"]},{"id":"2521760090","configuration":"{\"myshopifyDomain\":\"kappafrance.myshopify.com\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"23b97d18e2aa74363140dc29c9284e87","type":"APP","apiClientId":2775569,"privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"]},{"id":"2204434778","configuration":"{\"site_id\":\"e6ee3ff8-cfa7-4e06-b5c2-cbfd11719947\",\"analytics_endpoint\":\"https:\\\/\\\/na.shgcdn3.com\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"695709fc3f146fa50a25299517a954f2","type":"APP","apiClientId":1158168,"privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"]},{"id":"2165539162","configuration":"{\"projectId\":\"9264\", \"platform\": \"ha\", \"transactionEndpoint\": \"https:\/\/api.iadvize.com\/engagement\/short-conversions?platform=ha\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"eef4a0edddb5eff52a0cc729918f06af","type":"APP","apiClientId":86693281793,"privacyPurposes":["ANALYTICS"]},{"id":"1567621466","configuration":"{\"pixel_id\":\"767693474796354\",\"pixel_type\":\"facebook_pixel\"}","eventPayloadVersion":"v1","runtimeContext":"OPEN","scriptVersion":"6d8c3ef0426b37b2a9b717daeb719f58","type":"APP","apiClientId":2329312,"privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"]},{"id":"1199931738","configuration":"{\"shopId\":\"56681136327\",\"pixelEndpoint\":\"https:\/\/wpx.svc.trueprofit.io\/api\/evt\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"f2f7a5ecd155c6e61d8f2070584ad3a1","type":"APP","apiClientId":2553263,"privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"]},{"id":"35094874","configuration":"{\"advertiserId\":\"20945\",\"shopDomain\":\"kappafrance.myshopify.com\",\"appVersion\":\"shopifyApp_5.2.3\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"3bd0ccbf5c292c9d1866f9badea9929a","type":"APP","apiClientId":2887701,"privacyPurposes":["ANALYTICS","MARKETING"]},{"id":"215843162","eventPayloadVersion":"1","runtimeContext":"LAX","scriptVersion":"2","type":"CUSTOM","privacyPurposes":["SALE_OF_DATA"],"name":"GTM UNIFIED"},{"id":"shopify-app-pixel","configuration":"{}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"0450","apiClientId":"shopify-pixel","type":"APP","privacyPurposes":["ANALYTICS","MARKETING"]},{"id":"shopify-custom-pixel","eventPayloadVersion":"v1","runtimeContext":"LAX","scriptVersion":"0450","apiClientId":"shopify-pixel","type":"CUSTOM","privacyPurposes":["ANALYTICS","MARKETING"]}],isMerchantRequest: false,initData: {"shop":{"name":"Kappa France","paymentSettings":{"currencyCode":"EUR"},"myshopifyDomain":"kappafrance.myshopify.com","countryCode":"FR","storefrontUrl":"https:\/\/www.kappa.fr"},"customer":null,"cart":null,"checkout":null,"productVariants":[],"purchasingCompany":null},},"https://www.kappa.fr/cdn","b36d0edew7a8858acp2da920f9m790c9b2d",{"modern":"","legacy":""},{"shopId":"56681136327","storefrontBaseUrl":"https:\/\/www.kappa.fr","extensionBaseUrl":"https:\/\/extensions.shopifycdn.com\/cdn\/shopifycloud\/web-pixels-manager","surface":"storefront-renderer","enabledBetaFlags":"[\"ac843a20\"]","isMerchantRequest":"false","hashVersion":"b36d0edew7a8858acp2da920f9m790c9b2d","publish":"custom","events":"[[\"page_viewed\",{}]]"});</script><script>
   window.ShopifyAnalytics = window.ShopifyAnalytics || {};
   window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
   window.ShopifyAnalytics.meta.currency = 'EUR';
@@ -670,7 +681,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     Monorail.produce('monorail-edge.shopifysvc.com',
       'trekkie_storefront_load_errors/1.1',
       {shop_id: 56681136327,
-      theme_id: 181491466586,
+      theme_id: 184923750746,
       app_name: "storefront",
       context_url: window.location.href,
       source_url: "//www.kappa.fr/cdn/s/trekkie.storefront.5a4f78eb26ea594ba1b5d72f179d68114c7cf8ca.min.js"});
@@ -685,7 +696,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       first.parentNode.insertBefore(script, first);
     };
     trekkie.load(
-      {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":56681136327,"isMerchantRequest":null,"themeId":181491466586,"themeCityHash":"11803625129075064922","contentLanguage":"fr","currency":"EUR"},"isServerSideCookieWritingEnabled":true,"monorailRegion":"shop_domain"},"Session Attribution":{},"S2S":{"facebookCapiEnabled":true,"source":"trekkie-storefront-renderer","apiClientId":580111}}
+      {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":56681136327,"isMerchantRequest":null,"themeId":184923750746,"themeCityHash":"7523461001638588598","contentLanguage":"fr","currency":"EUR"},"isServerSideCookieWritingEnabled":true,"monorailRegion":"shop_domain"},"Session Attribution":{},"S2S":{"facebookCapiEnabled":true,"source":"trekkie-storefront-renderer","apiClientId":580111}}
     );
 
     var loaded = false;
@@ -724,7 +735,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   data-shop-id="56681136327"
   data-render-region="gcp-europe-west1"
   data-page-type="page"
-  data-theme-instance-id="181491466586"
+  data-theme-instance-id="184923750746"
   data-theme-name="Basic/Impulse 1.1.2"
   data-theme-version="7.5.1"
   data-monorail-region="shop_domain"
@@ -747,33 +758,31 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     
     
       <script data-countrysplash-brand="kappa">
-  if (!document.body) {
-    console.log('CSB - 03 - body not initialized')
-  }
-  fetch(
-    'https://raw.githubusercontent.com/BasicNet-Spa/countrysplash/refs/heads/main/file.js'
-  )
-    .then((response) => {
-      if (!response.ok) {
-        console.log('CSB - 04 - fetch error of the country pop up')
-        throw new Error(`Errore durante il fetch: ${response.statusText}`)
-      }
-      return response.text()
-    })
-    .then((scriptContent) => {
-      const script = document.createElement('script')
-      script.type = 'module'
-      script.textContent = scriptContent
-      document.body.appendChild(script)
-      console.log('CSB - Countrysplash loaded correctly')
-    })
-    .catch((error) => {
-      console.log('CSB - 05 - GENERIC ERROR', error)
-    })
-</script>
+        if (!document.body) {
+          console.log('CSB - 03 - body not initialized');
+        }
+        fetch('https://raw.githubusercontent.com/BasicNet-Spa/countrysplash/refs/heads/main/file.js')
+          .then((response) => {
+            if (!response.ok) {
+              console.log('CSB - 04 - fetch error of the country pop up');
+              throw new Error(`Errore durante il fetch: ${response.statusText}`);
+            }
+            return response.text();
+          })
+          .then((scriptContent) => {
+            const script = document.createElement('script');
+            script.type = 'module';
+            script.textContent = scriptContent;
+            document.body.appendChild(script);
+            console.log('CSB - Countrysplash loaded correctly');
+          })
+          .catch((error) => {
+            console.log('CSB - 05 - GENERIC ERROR', error);
+          });
+      </script>
     
     <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5BF36652"
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5WGT73R9"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
     
@@ -781,11 +790,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <div id="PageContainer" class="page-container">
       <div class="transition-body"><!-- BEGIN sections: header-group -->
-<div id="shopify-section-sections--25214909874522__announcement" class="shopify-section shopify-section-group-header-group"><style></style>
+<div id="shopify-section-sections--25954409873754__announcement" class="shopify-section shopify-section-group-header-group"><style></style>
   <div class="announcement-bar">
     <div class="page-width">
       <div class="slideshow-wrapper">
-        <button type="button" class="visually-hidden slideshow__pause" data-id="sections--25214909874522__announcement" aria-live="polite">
+        <button type="button" class="visually-hidden slideshow__pause" data-id="sections--25954409873754__announcement" aria-live="polite">
           <span class="slideshow__pause-stop">
             <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-pause" viewBox="0 0 10 13"><path d="M0 0h3v13H0zm7 0h3v13H7z" fill-rule="evenodd"/></svg>
             <span class="icon__fallback-text">Diaporama Pause</span>
@@ -818,7 +827,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 
-</div><div id="shopify-section-sections--25214909874522__header" class="shopify-section shopify-section-group-header-group">
+</div><div id="shopify-section-sections--25954409873754__header" class="shopify-section shopify-section-group-header-group"><style data-shopify>
+
+
+  .pdp-h2{
+    font-size: 16px !important;
+  }
+  
+  .grid-product__link .colorname-title{
+    font-size: 12px !important;
+  } 
+
+@media only screen and (max-width: 768px){
+  .pdp-h2{
+    font-size: 14px !important;
+  }
+  
+  .grid-product__link .colorname-title{
+    font-size: calc(12px) !important;
+  } 
+
+}
+
+</style>
 
 
 <div id="NavDrawer" class="drawer drawer--right">
@@ -892,65 +923,65 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                               <ul class="mobile-nav__grandchildlist">
                                 
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/nouveau/man-all"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Nouveautés
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/nouveau/man-all"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Nouveautés
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/les-ardentes"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Les Ardentes
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/les-ardentes"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Les Ardentes
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/kappa-x-courir"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Courir
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/kappa-x-courir"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Courir
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/kappa-x-too-hot"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Too Hot
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/kappa-x-too-hot"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Too Hot
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/promotions/man-all"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Promotions
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/promotions/man-all"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Promotions
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/homme"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Tous les produits
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/homme"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Tous les produits
+                                      </a>
+                                    </li>
                                   
                                 
                               </ul>
@@ -981,75 +1012,75 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                               <ul class="mobile-nav__grandchildlist">
                                 
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/hauts-t-shirts-homme"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Hauts & t-shirts
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/hauts-t-shirts-homme"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Hauts & t-shirts
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/sweatshirts-hoodies-homme"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Sweatshirts, hoodies & pulls
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/sweatshirts-hoodies-homme"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Sweatshirts, hoodies & pulls
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/vestes-manteaux-homme"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Vestes & doudounes
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/vestes-manteaux-homme"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Vestes & doudounes
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/shorts-homme"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Shorts
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/shorts-homme"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Shorts
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/pantalons-hommes"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Pantalons & joggings
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/pantalons-hommes"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Pantalons & joggings
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/maillots-de-bain-homme"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Maillots de bain
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/maillots-de-bain-homme"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Maillots de bain
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/survetements-homme"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Survêtements
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/survetements-homme"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Survêtements
+                                      </a>
+                                    </li>
                                   
                                 
                               </ul>
@@ -1080,45 +1111,45 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                               <ul class="mobile-nav__grandchildlist">
                                 
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/chaussures-baskets-sneakers-homme"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Baskets & sneakers
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/chaussures-baskets-sneakers-homme"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Baskets & sneakers
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/chaussures-training-homme"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Training
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/chaussures-training-homme"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Training
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/chaussures-boots-homme"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Boots
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/chaussures-boots-homme"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Boots
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/claquettes-et-tongs-homme"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Claquettes & tongs
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/claquettes-et-tongs-homme"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Claquettes & tongs
+                                      </a>
+                                    </li>
                                   
                                 
                               </ul>
@@ -1149,55 +1180,55 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                               <ul class="mobile-nav__grandchildlist">
                                 
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/chaussettes-homme"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Chaussettes
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/chaussettes-homme"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Chaussettes
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/echarpes-gants-homme"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Gants & écharpes
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/echarpes-gants-homme"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Gants & écharpes
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/chapeaux-homme"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Casquettes & bonnets
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/chapeaux-homme"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Casquettes & bonnets
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/sacs-ceintures-homme"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Sacs & sacs à dos
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/sacs-ceintures-homme"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Sacs & sacs à dos
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/ballon-equipement"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Ballons
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/ballon-equipement"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Ballons
+                                      </a>
+                                    </li>
                                   
                                 
                               </ul>
@@ -1228,75 +1259,75 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                               <ul class="mobile-nav__grandchildlist">
                                 
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/homme-sport-football"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Football
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/homme-sport-football"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Football
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/homme-sport-rugby"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Rugby
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/homme-sport-rugby"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Rugby
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/homme-sport-ski"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Sports d'hiver
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/homme-sport-ski"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Sports d'hiver
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/homme-sport-handball"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Handball
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/homme-sport-handball"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Handball
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/homme-sport-basketball"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Basketball
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/homme-sport-basketball"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Basketball
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/homme-sport-running-training"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Running & Training
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/homme-sport-running-training"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Running & Training
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/homme-sport-padel-tennis"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Padel & Tennis
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/homme-sport-padel-tennis"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Padel & Tennis
+                                      </a>
+                                    </li>
                                   
                                 
                               </ul>
@@ -1354,55 +1385,55 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                               <ul class="mobile-nav__grandchildlist">
                                 
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/nouveau/woman-all"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Nouveautés
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/nouveau/woman-all"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Nouveautés
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/les-ardentes"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Les Ardentes
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/les-ardentes"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Les Ardentes
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/femme-sport-running-training"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Training
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/femme-sport-running-training"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Training
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/promotions/woman-all"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Promotions
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/promotions/woman-all"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Promotions
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/femme"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Tous les produits
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/femme"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Tous les produits
+                                      </a>
+                                    </li>
                                   
                                 
                               </ul>
@@ -1433,65 +1464,65 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                               <ul class="mobile-nav__grandchildlist">
                                 
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/hauts-t-shirts-femme"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Hauts & t-shirts
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/hauts-t-shirts-femme"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Hauts & t-shirts
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/sweatshirts-hoodies-femme"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Sweatshirts, hoodies & pulls
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/sweatshirts-hoodies-femme"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Sweatshirts, hoodies & pulls
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/vestes-manteaux-femme"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Vestes & doudounes
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/vestes-manteaux-femme"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Vestes & doudounes
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/shorts-femme"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Shorts
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/shorts-femme"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Shorts
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/pantalons-leggings-femme"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Pantalons & joggings
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/pantalons-leggings-femme"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Pantalons & joggings
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/robes-jupes-femme"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Jupes & robes
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/robes-jupes-femme"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Jupes & robes
+                                      </a>
+                                    </li>
                                   
                                 
                               </ul>
@@ -1522,45 +1553,45 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                               <ul class="mobile-nav__grandchildlist">
                                 
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/chaussures-baskets-sneakers-femme"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Baskets & sneakers
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/chaussures-baskets-sneakers-femme"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Baskets & sneakers
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/chaussures-training-femme"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Training
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/chaussures-training-femme"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Training
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/chaussures-boots-femme"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Boots
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/chaussures-boots-femme"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Boots
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/claquettes-et-tongs-femme"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Claquettes & tongs
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/claquettes-et-tongs-femme"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Claquettes & tongs
+                                      </a>
+                                    </li>
                                   
                                 
                               </ul>
@@ -1591,55 +1622,55 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                               <ul class="mobile-nav__grandchildlist">
                                 
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/chaussettes-femme"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Chaussettes
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/chaussettes-femme"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Chaussettes
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/echarpes-gants-femme"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Gants & écharpes
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/echarpes-gants-femme"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Gants & écharpes
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/chapeaux-femme"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Casquettes & bonnets
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/chapeaux-femme"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Casquettes & bonnets
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/sacs-ceintures-femme"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Sacs & sacs à dos
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/sacs-ceintures-femme"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Sacs & sacs à dos
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/ballon-equipement"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Ballons
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/ballon-equipement"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Ballons
+                                      </a>
+                                    </li>
                                   
                                 
                               </ul>
@@ -1670,75 +1701,75 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                               <ul class="mobile-nav__grandchildlist">
                                 
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/femme-sport-football"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Football
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/femme-sport-football"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Football
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/femme-sport-rugby"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Rugby
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/femme-sport-rugby"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Rugby
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/femme-sport-ski"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Sports d'hiver
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/femme-sport-ski"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Sports d'hiver
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/femme-sport-handball"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Handball
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/femme-sport-handball"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Handball
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/femme-sport-basketball"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Basketball
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/femme-sport-basketball"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Basketball
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/femme-sport-running-training"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Running & Training
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/femme-sport-running-training"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Running & Training
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/femme-sport-padel-tennis"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Padel & Tennis
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/femme-sport-padel-tennis"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Padel & Tennis
+                                      </a>
+                                    </li>
                                   
                                 
                               </ul>
@@ -1796,35 +1827,35 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                               <ul class="mobile-nav__grandchildlist">
                                 
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/nouveau/kid-all"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Nouveautés
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/nouveau/kid-all"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Nouveautés
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/promotions/kid-all"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Promotions
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/promotions/kid-all"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Promotions
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/enfant"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Tous les produits
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/enfant"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Tous les produits
+                                      </a>
+                                    </li>
                                   
                                 
                               </ul>
@@ -1855,65 +1886,65 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                               <ul class="mobile-nav__grandchildlist">
                                 
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/t-shirts-tops-enfant"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Hauts & t-shirts
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/t-shirts-tops-enfant"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Hauts & t-shirts
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/sweatshirts-hoodies-enfant"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Sweatshirts & hoodies
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/sweatshirts-hoodies-enfant"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Sweatshirts & hoodies
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/veste-manteaux-enfant"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Vestes & doudounes
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/veste-manteaux-enfant"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Vestes & doudounes
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/shorts-enfant"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Shorts
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/shorts-enfant"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Shorts
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/pantalons-enfant"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Pantalons & joggings
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/pantalons-enfant"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Pantalons & joggings
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/survetements-enfant"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Survêtements
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/survetements-enfant"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Survêtements
+                                      </a>
+                                    </li>
                                   
                                 
                               </ul>
@@ -1944,45 +1975,45 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                               <ul class="mobile-nav__grandchildlist">
                                 
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/chaussures-baskets-sneakers-enfant"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Baskets & sneakers
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/chaussures-baskets-sneakers-enfant"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Baskets & sneakers
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/chaussures-training-enfant"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Training
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/chaussures-training-enfant"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Training
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/chaussures-boots-enfant"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Boots 
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/chaussures-boots-enfant"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Boots 
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/claquettes-tongs-enfant"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Claquettes & tongs
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/claquettes-tongs-enfant"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Claquettes & tongs
+                                      </a>
+                                    </li>
                                   
                                 
                               </ul>
@@ -2013,35 +2044,35 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                               <ul class="mobile-nav__grandchildlist">
                                 
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/chaussettes-enfant"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Chaussettes
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/chaussettes-enfant"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Chaussettes
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/sacs-enfant"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Sacs à dos
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/sacs-enfant"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Sacs à dos
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/ballon-equipement"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Ballons
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/ballon-equipement"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Ballons
+                                      </a>
+                                    </li>
                                   
                                 
                               </ul>
@@ -2072,65 +2103,65 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                               <ul class="mobile-nav__grandchildlist">
                                 
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/enfant-sport-football"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Football
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/enfant-sport-football"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Football
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/enfant-sport-rugby"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Rugby
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/enfant-sport-rugby"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Rugby
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/enfant-sport-handball"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Handball
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/enfant-sport-handball"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Handball
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/enfant-sport-basketball"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Basketball
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/enfant-sport-basketball"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Basketball
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/enfant-sport-running"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Running & Training
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/enfant-sport-running"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Running & Training
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/enfant-sport-padel-tennis"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Padel & Tennis
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/enfant-sport-padel-tennis"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Padel & Tennis
+                                      </a>
+                                    </li>
                                   
                                 
                               </ul>
@@ -2188,25 +2219,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                               <ul class="mobile-nav__grandchildlist">
                                 
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/promotions/sport"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Promotions
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/promotions/sport"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Promotions
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/sports"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Tous les produits
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/sports"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Tous les produits
+                                      </a>
+                                    </li>
                                   
                                 
                               </ul>
@@ -2237,35 +2268,35 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                               <ul class="mobile-nav__grandchildlist">
                                 
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/football-tenue-entrainement"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Tenues d'entraînement
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/football-tenue-entrainement"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Tenues d'entraînement
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/football-tenue-sortie"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Tenues de sortie
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/football-tenue-sortie"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Tenues de sortie
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/football-accessoires"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Accessoires
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/football-accessoires"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Accessoires
+                                      </a>
+                                    </li>
                                   
                                 
                               </ul>
@@ -2296,35 +2327,35 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                               <ul class="mobile-nav__grandchildlist">
                                 
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/rugby-tenue-entrainement"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Tenues d'entraînement
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/rugby-tenue-entrainement"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Tenues d'entraînement
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/rugby-tenue-sortie"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Tenues de sortie
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/rugby-tenue-sortie"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Tenues de sortie
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/rugby-accessoires"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Accessoires
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/rugby-accessoires"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Accessoires
+                                      </a>
+                                    </li>
                                   
                                 
                               </ul>
@@ -2355,55 +2386,55 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                               <ul class="mobile-nav__grandchildlist">
                                 
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/ski"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Ski & Snowboard
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/ski"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Ski & Snowboard
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/sport-basketball"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Basketball
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/sport-basketball"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Basketball
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/sport-handball"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Handball
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/sport-handball"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Handball
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/sport-running-training"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Running & Training
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/sport-running-training"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Running & Training
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/sport-padel-tennis"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Padel & Tennis
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/sport-padel-tennis"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Padel & Tennis
+                                      </a>
+                                    </li>
                                   
                                 
                               </ul>
@@ -2461,65 +2492,65 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                               <ul class="mobile-nav__grandchildlist">
                                 
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/ogc-nice"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          OGC Nice
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/ogc-nice"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        OGC Nice
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/wydad-ac"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Wydad AC
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/wydad-ac"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Wydad AC
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/us-endoume"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          US Endoume
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/us-endoume"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        US Endoume
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/esperance-sportive-de-tunis"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          ES Tunis
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/esperance-sportive-de-tunis"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        ES Tunis
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/promotions/CLUB"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Promotions
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/promotions/CLUB"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Promotions
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/tous-les-clubs-professionnels"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Tous les produits
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/tous-les-clubs-professionnels"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Tous les produits
+                                      </a>
+                                    </li>
                                   
                                 
                               </ul>
@@ -2550,235 +2581,235 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                               <ul class="mobile-nav__grandchildlist">
                                 
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/ogc-nice"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          OGC Nice
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/ogc-nice"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        OGC Nice
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/fc-metz"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          FC Metz
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/fc-metz"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        FC Metz
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/club-red-star-fc"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Red Star FC
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/club-red-star-fc"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Red Star FC
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/clermont-foot-63"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Clermont Foot 63
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/clermont-foot-63"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Clermont Foot 63
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/club-sm-caen"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          SM Caen
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/club-sm-caen"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        SM Caen
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/fc-versailles"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          FC Versailles
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/fc-versailles"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        FC Versailles
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/ea-guingamp"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          EA Guingamp
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/ea-guingamp"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        EA Guingamp
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/as-monaco"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          AS Monaco
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/as-monaco"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        AS Monaco
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/wydad-ac"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Wydad AC
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/wydad-ac"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Wydad AC
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/esperance-sportive-de-tunis"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          ES Tunis
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/esperance-sportive-de-tunis"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        ES Tunis
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="https://www.kappa.fr/collections/js-kabylie"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          JS Kabylie
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="https://www.kappa.fr/collections/js-kabylie"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        JS Kabylie
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/federation-tunisienne-de-football"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Tunisie
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/federation-tunisienne-de-football"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Tunisie
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/vasco-da-gama"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Vasco de Gama
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/vasco-da-gama"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Vasco de Gama
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/athens-kallithea-fc"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Athens Kallithea FC
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/athens-kallithea-fc"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Athens Kallithea FC
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/brescia-calcio"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Brescia Calcio
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/brescia-calcio"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Brescia Calcio
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/fiorentina"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          ACF Fiorentina
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/fiorentina"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        ACF Fiorentina
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/club-real-valladolid"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Real Valladolid
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/club-real-valladolid"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Real Valladolid
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/genoa-cfc"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Genoa CFC
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/genoa-cfc"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Genoa CFC
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/club-deportivo-la-corogne"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Deportivo la Corogne
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/club-deportivo-la-corogne"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Deportivo la Corogne
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/hull-city"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Hull City
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/hull-city"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Hull City
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/kaizer-chiefs"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Kaizer Chiefs
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/kaizer-chiefs"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Kaizer Chiefs
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/cercle-bruges"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                           Cercle Brugge
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/cercle-bruges"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                         Cercle Brugge
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/spezia-calcio"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Spezia Calcio
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/spezia-calcio"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Spezia Calcio
+                                      </a>
+                                    </li>
                                   
                                 
                               </ul>
@@ -2809,35 +2840,35 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                               <ul class="mobile-nav__grandchildlist">
                                 
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/stade-francais-paris"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Stade Français Paris
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/stade-francais-paris"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Stade Français Paris
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/ubb-rugby"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          UBB Rugby
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/ubb-rugby"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        UBB Rugby
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/fc-grenoble-rugby"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          FC Grenoble Rugby
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/fc-grenoble-rugby"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        FC Grenoble Rugby
+                                      </a>
+                                    </li>
                                   
                                 
                               </ul>
@@ -2868,55 +2899,55 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                               <ul class="mobile-nav__grandchildlist">
                                 
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/peugeot-sport"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Peugeot Sport
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/peugeot-sport"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Peugeot Sport
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/24h-le-mans"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          24H du Mans
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/24h-le-mans"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        24H du Mans
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/vr46"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          VR46
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/vr46"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        VR46
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/kappa-x-bwt-alpine-f1-team"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          BWT Alpine F1 Team
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/kappa-x-bwt-alpine-f1-team"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        BWT Alpine F1 Team
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/alpine-endurance-team"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          Alpine Endurance Team
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/alpine-endurance-team"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        Alpine Endurance Team
+                                      </a>
+                                    </li>
                                   
                                 
                               </ul>
@@ -2947,25 +2978,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                               <ul class="mobile-nav__grandchildlist">
                                 
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/us-ski-team"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          US Ski Team
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/us-ski-team"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        US Ski Team
+                                      </a>
+                                    </li>
                                   
-                                      <li class="mobile-nav__item">
-                                        <a
-                                          href="/collections/equipe-france-snowboardcross"
-                                          class="mobile-nav__link"
-                                          
-                                        >
-                                          FFS Snowboard Team
-                                        </a>
-                                      </li>
+                                    <li class="mobile-nav__item">
+                                      <a
+                                        href="/collections/equipe-france-snowboardcross"
+                                        class="mobile-nav__link"
+                                        
+                                      >
+                                        FFS Snowboard Team
+                                      </a>
+                                    </li>
                                   
                                 
                               </ul>
@@ -3152,7 +3183,86 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         </div>
       </div>
     </form>
-  </div><style>
+  </div><div id="ContactDrawer" class="drawer drawer--right">
+<div class = "contact_drawer_header">
+    <button class="js-drawer-close drawer__close" aria-label="Close">
+                <svg
+                    aria-hidden="true"
+                    focusable="false"
+                    role="presentation"
+                    class="icon icon-close"
+                    viewBox="0 0 64 64">
+                    <title>icon-X</title><path d="m19 17.61 27.12 27.13m0-27.12L19 44.74"/>
+                </svg>
+            </button>
+</div>
+        <div class="drawer__inner" id="AppSupportContent" style="padding:20px;">
+
+    </div>
+</div>
+
+
+<template id="returns-form-template">
+  <div class="upper_part_form">
+    <h2 class="contact_drawer_title returns_drawer_title">
+      Choisissez les articles que vous souhaitez retourner
+    </h2>
+    <ul class="returns-item-list" style="list-style:none;padding:0;margin:0;"></ul>
+    <label class="formSelectLabel">
+      Sélectionnez la méthode de retour
+      <select name="returnMethod">
+            
+            
+            
+            
+            
+            
+            
+      </select>
+    </label>
+
+    <label class="formSelectLabel">
+      Veuillez sélectionner votre méthode de remboursement préférée
+      <select name="refundDestination">
+        
+        
+      </select>
+    </label>
+  </div>
+
+  <div class="submitContainer">
+    <button id="submitReturn" class="btn btn--full">
+      Envoyer la demande
+    </button>
+  </div>
+</template>
+
+<template id="returns-item-template">
+  <li class="returns-item" style="display:flex; align-items:center; margin-bottom:1rem;">
+    <img class="returns-item__img" style="width:100px; margin-right:1rem;" src="" alt=""/>
+
+    <div style="flex:1">
+      <h4 class="returns-item__title"></h4>
+      <div class="returns-item__qty"></div>
+    </div>
+
+    <div class="returns-item__controls">
+      <label>
+        <input
+          type="checkbox"
+          class="returns-item__checkbox"
+          name="returnItems"
+          value=""
+        />
+        Sélectionner
+      </label>
+      
+    </div>
+  </li>
+</template>
+ 
+
+<style>
   .site-nav__link,
   .site-nav__dropdown-link:not(.site-nav__dropdown-link--top-level) {
     font-size: 14px;
@@ -3181,7 +3291,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       border-top: 0;
     }</style>
 
-<div data-section-id="sections--25214909874522__header" data-section-type="header">
+<div data-section-id="sections--25954409873754__header" data-section-type="header">
 
 <div class="toolbar  small--hide ">
   <div class="page-width">
@@ -4087,7 +4197,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- END sections: header-group --><!-- BEGIN sections: popup-group -->
 
 <!-- END sections: popup-group --><main class="main-content" id="MainContent">
-          <div id="shopify-section-template--25214916657498__shogun-helper" class="shopify-section">
+          <div id="shopify-section-template--25954416918874__shogun-helper" class="shopify-section">
 
 
 
@@ -4112,7 +4222,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 
-</div><section id="shopify-section-template--25214916657498__main" class="shopify-section"><div class="page-width page-width--narrow page-content">
+</div><section id="shopify-section-template--25954416918874__main" class="shopify-section"><div class="page-width page-width--narrow page-content">
 
 
 <header class="section-header">
@@ -4322,14 +4432,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </div>
 
 
-</section><div id="shopify-section-template--25214916657498__shogun-optimizer" class="shopify-section">
+</section><div id="shopify-section-template--25954416918874__shogun-optimizer" class="shopify-section">
 
 
 
 
 </div>
-        </main><!-- BEGIN sections: footer-group -->
-<div id="shopify-section-sections--25214909710682__advanced_content_gmPfka" class="shopify-section shopify-section-group-footer-group"><div class="custom-content"><div class="custom__item small--one-whole one-third align--center" >
+        </main>
+        
+<!-- BEGIN sections: footer-group -->
+<div id="shopify-section-sections--25954409709914__advanced_content_gmPfka" class="shopify-section shopify-section-group-footer-group"><div class="custom-content"><div class="custom__item small--one-whole one-third align--center" >
       <div class="custom__item-inner custom__item-inner--image"><div class="aos-animate"><a href="/pages/livraison"><div class="image-wrap" style="height: 0; padding-bottom: 15.625%;">
 
 
@@ -4369,9 +4481,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 </div></a></div></div>
     </div></div>
-<style> #shopify-section-sections--25214909710682__advanced_content_gmPfka .custom-content {padding-block: 10px;} </style></div><div id="shopify-section-sections--25214909710682__footer" class="shopify-section shopify-section-group-footer-group"><style data-shopify>.site-footer {
+<style> #shopify-section-sections--25954409709914__advanced_content_gmPfka .custom-content {padding-block: 10px;} </style></div><div id="shopify-section-sections--25954409709914__footer" class="shopify-section shopify-section-group-footer-group"><style data-shopify>.site-footer {
       border-top: 1px solid #e8e8e1;
-    }</style><footer class="site-footer" data-section-id="sections--25214909710682__footer" data-section-type="footer-section">
+    }</style><footer class="site-footer" data-section-id="sections--25954409709914__footer" data-section-type="footer-section">
   <div class="page-width">
     <div class="grid"><div
           
@@ -4412,14 +4524,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="footer__collapsible">
         <ul class="no-bullets site-footer__linklist">
           <li>
-              <a href="/pages/marque">Marque</a>
+              <a href="/pages/marque" rel="">Marque</a>
             </li><li>
-              <a href="/blogs/news">News</a>
+              <a href="/blogs/news" rel="">News</a>
             </li><li>
-              <a href="https://connect.studentbeans.com/v4/hosted/kappa/fr">Offre étudiante</a>
+              <a href="https://connect.studentbeans.com/v4/hosted/kappa/fr" rel="">Offre étudiante</a>
             </li>
             <li>
-              <a class="country_splash_open" style="cursor: pointer">Changer de pays</a>
+              <a class="country_splash_open" style="cursor: pointer" rel="">Changer de pays</a>
             </li>
           
         </ul>
@@ -4464,21 +4576,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="footer__collapsible">
         <ul class="no-bullets site-footer__linklist">
           <li>
-              <a href="/pages/faq">FAQ</a>
+              <a href="/pages/faq" rel="">FAQ</a>
             </li><li>
-              <a href="https://www.kappa.fr/apps/suivi-commande">Suivre ma commande</a>
+              <a href="https://www.kappa.fr/apps/suivi-commande" rel="">Suivre ma commande</a>
             </li><li>
-              <a href="/pages/livraison">Livraison</a>
+              <a href="/pages/livraison" rel="">Livraison</a>
             </li><li>
-              <a href="https://www.kappa.fr/apps/retour-commande">Retourner ma commande</a>
+              <a href="https://www.kappa.fr/apps/retour-commande" rel="">Retourner ma commande</a>
             </li><li>
-              <a href="/pages/contact">Contactez-nous</a>
+              <a href="/pages/contact" rel="">Contactez-nous</a>
             </li><li>
-              <a href="/pages/tailles">Guide de tailles</a>
+              <a href="/pages/tailles" rel="">Guide de tailles</a>
             </li><li>
-              <a href="/pages/disposal-of-packaging">Élimination des emballages</a>
+              <a href="/pages/disposal-of-packaging" rel="">Élimination des emballages</a>
             </li><li>
-              <a href="/pages/paiement">Paiement sécurisé</a>
+              <a href="/pages/paiement" rel="">Paiement sécurisé</a>
             </li>
         </ul>
       </div>
@@ -4522,15 +4634,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="footer__collapsible">
         <ul class="no-bullets site-footer__linklist">
           <li>
-              <a href="/pages/newsletter">Newsletter</a>
+              <a href="/pages/newsletter" rel="">Newsletter</a>
             </li><li>
-              <a href="/account/register">Mon compte</a>
+              <a href="/account/register" rel="">Mon compte</a>
             </li><li>
-              <a href="/pages/cgv">Conditions générales de vente</a>
+              <a href="/pages/cgv" rel="">Conditions générales de vente</a>
             </li><li>
-              <a href="/pages/privacy-policy">Politique de confidentialité</a>
+              <a href="/pages/privacy-policy" rel="">Politique de confidentialité</a>
             </li><li>
-              <a href="/pages/mentions-legales">Mentions légales</a>
+              <a href="/pages/mentions-legales" rel="">Mentions légales</a>
             </li>
         </ul>
       </div>
@@ -4566,7 +4678,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
 
-<style> #shopify-section-sections--25214909710682__footer .payment-icons {display: flex; justify-content: center;} </style></div>
+<style> #shopify-section-sections--25954409709914__footer .payment-icons {display: flex; justify-content: center;} </style></div>
 <!-- END sections: footer-group --></div>
     </div><div id="VideoModal" class="modal modal--solid">
   <div class="modal__inner">
@@ -4634,18 +4746,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     
 
-    <script src="//www.kappa.fr/cdn/shop/t/54/assets/custom_javascript_refer.js?v=111603181540343972631747921767" defer></script>
-    <script src="//www.kappa.fr/cdn/shop/t/54/assets/cookie.js?v=71681972337173646911747921767" defer></script>
-    <script src="//www.kappa.fr/cdn/shop/t/54/assets/dataLayer.js?v=155981032015651186161747921767" defer></script>
-
+    <script src="//www.kappa.fr/cdn/shop/t/57/assets/custom_javascript_refer.js?v=111603181540343972631756454723" defer></script>
+    <script src="//www.kappa.fr/cdn/shop/t/57/assets/cookie.js?v=71681972337173646911756454723" defer></script>
+    <script src="//www.kappa.fr/cdn/shop/t/57/assets/dataLayer.js?v=7291629434121494221756454969" defer></script>
 
     
     <script>
       var userLang = navigator.language || navigator.userLanguage;
-      var userLangCode = userLang.split("-")[0]; 
+      var userLangCode = userLang.split("-")[0];
       var shopifyLang = window.Shopify.locale;
-      
-      window.Translations = 
+
+      window.Translations =
       {
         "it":
         {
@@ -4658,7 +4769,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           "en":"Inglese",
           "fr":"Francese",
           "de":"Tedesco"
-        
+
         },
         "fr":
         {
@@ -4713,9 +4824,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       window.availableLanguages = [{"shop_locale":{"locale":"fr","enabled":true,"primary":true,"published":true}}];
     </script>
 
-<div id="full-page-loader" style="display:none;">
-    <div class="centered-content"></div>
-</div>
+    <div id="full-page-loader" style="display:none;">
+      <div class="centered-content"></div>
+    </div>
   <style> #CustomerLoginForm input,.search__input,.grid-product__tag,.tag__checkbox:before,.collection-filter select {border-radius: var(--buttonRadius);} </style>
 <div id="shopify-block-AZTI3VUE3SFNzM3F6d__2912608901741945173" class="shopify-block shopify-app-block">
 </div><div id="shopify-block-AQ294THJtK3dKSWVyc__9989034428746501443" class="shopify-block shopify-app-block"><link rel="stylesheet" href="https://cdn.shopify.com/extensions/6367dfb5-e920-424b-a709-5fbc839b9963/wishlist-prod-31/assets/style.css">
