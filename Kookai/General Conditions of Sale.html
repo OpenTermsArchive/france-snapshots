@@ -579,7 +579,7 @@ Shopify.routes.root = "/";</script>
     window.addEventListener('load', asyncLoad, false);
   }
 })();</script>
-<script id="__st">var __st={"a":55913644166,"offset":7200,"reqid":"bc6beb7f-42ef-42c6-9cfa-3211ab1c71b4-1757032687","pageurl":"kookai.fr\/pages\/conditions-generales-de-vente","s":"pages-85775253638","u":"5597f5c36fbb","p":"page","rtyp":"page","rid":85775253638};</script>
+<script id="__st">var __st={"a":55913644166,"offset":7200,"reqid":"10b67930-7b99-4398-a690-d38731527a09-1757075923","pageurl":"kookai.fr\/pages\/conditions-generales-de-vente","s":"pages-85775253638","u":"f1bf47e4be73","p":"page","rtyp":"page","rid":85775253638};</script>
 <script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
 <script id="captcha-bootstrap">!function(){'use strict';const t='contact',e='account',n='new_comment',o=[[t,t],['blogs',n],['comments',n],[t,'customer']],c=[[e,'customer_login'],[e,'guest_login'],[e,'recover_customer_password'],[e,'create_customer']],r=t=>t.map((([t,e])=>`form[action*='/${t}']:not([data-nocaptcha='true']) input[name='form_type'][value='${e}']`)).join(','),a=t=>()=>t?[...document.querySelectorAll(t)].map((t=>t.form)):[];function s(){const t=[...o],e=r(t);return a(e)}const i='password',u='form_key',d=['recaptcha-v3-token','g-recaptcha-response','h-captcha-response',i],f=()=>{try{return window.sessionStorage}catch{return}},m='__shopify_v',_=t=>t.elements[u];function p(t,e,n=!1){try{const o=window.sessionStorage,c=JSON.parse(o.getItem(e)),{data:r}=function(t){const{data:e,action:n}=t;return t[m]||n?{data:e,action:n}:{data:t,action:n}}(c);for(const[e,n]of Object.entries(r))t.elements[e]&&(t.elements[e].value=n);n&&o.removeItem(e)}catch(o){console.error('form repopulation failed',{error:o})}}const l='form_type',E='cptcha';function T(t){t.dataset[E]=!0}const w=window,h=w.document,L='Shopify',v='ce_forms',y='captcha';let A=!1;((t,e)=>{const n=(g='f06e6c50-85a8-45c8-87d0-21a2b65856fe',I='https://cdn.shopify.com/shopifycloud/storefront-forms-hcaptcha/ce_storefront_forms_captcha_hcaptcha.v1.5.2.iife.js',D={infoText:'Protégé par hCaptcha',privacyText:'Confidentialité',termsText:'Conditions'},(t,e,n)=>{const o=w[L][v],c=o.bindForm;if(c)return c(t,g,e,D).then(n);var r;o.q.push([[t,g,e,D],n]),r=I,A||(h.body.append(Object.assign(h.createElement('script'),{id:'captcha-provider',async:!0,src:r})),A=!0)});var g,I,D;w[L]=w[L]||{},w[L][v]=w[L][v]||{},w[L][v].q=[],w[L][y]=w[L][y]||{},w[L][y].protect=function(t,e){n(t,void 0,e),T(t)},Object.freeze(w[L][y]),function(t,e,n,w,h,L){const[v,y,A,g]=function(t,e,n){const i=e?o:[],u=t?c:[],d=[...i,...u],f=r(d),m=r(i),_=r(d.filter((([t,e])=>n.includes(e))));return[a(f),a(m),a(_),s()]}(w,h,L),I=t=>{const e=t.target;return e instanceof HTMLFormElement?e:e&&e.form},D=t=>v().includes(t);t.addEventListener('submit',(t=>{const e=I(t);if(!e)return;const n=D(e)&&!e.dataset.hcaptchaBound&&!e.dataset.recaptchaBound,o=_(e),c=g().includes(e)&&(!o||!o.value);(n||c)&&t.preventDefault(),c&&!n&&(function(t){try{if(!f())return;!function(t){const e=f();if(!e)return;const n=_(t);if(!n)return;const o=n.value;o&&e.removeItem(o)}(t);const e=Array.from(Array(32),(()=>Math.random().toString(36)[2])).join('');!function(t,e){_(t)||t.append(Object.assign(document.createElement('input'),{type:'hidden',name:u})),t.elements[u].value=e}(t,e),function(t,e){const n=f();if(!n)return;const o=[...t.querySelectorAll(`input[type='${i}']`)].map((({name:t})=>t)),c=[...d,...o],r={};for(const[a,s]of new FormData(t).entries())c.includes(a)||(r[a]=s);n.setItem(e,JSON.stringify({[m]:1,action:t.action,data:r}))}(t,e)}catch(e){console.error('failed to persist form',e)}}(e),e.submit())}));const S=(t,e)=>{t&&!t.dataset[E]&&(n(t,e.some((e=>e===t))),T(t))};for(const o of['focusin','change'])t.addEventListener(o,(t=>{const e=I(t);D(e)&&S(e,y())}));const B=e.get('form_key'),M=e.get(l),P=B&&M;t.addEventListener('DOMContentLoaded',(()=>{const t=y();if(P)for(const e of t)e.elements[l].value===M&&p(e,B);[...new Set([...A(),...v().filter((t=>'true'===t.dataset.shopifyCaptcha))])].forEach((e=>S(e,t)))}))}(h,new URLSearchParams(w.location.search),n,t,e,['guest_login'])})(!0,!0)}();</script>
 <script integrity="sha256-52AcMU7V7pcBOXWImdc/TAGTFKeNjmkeM1Pvks/DTgc=" data-source-attribution="shopify.loadfeatures" defer="defer" src="//kookai.fr/cdn/shopifycloud/storefront/assets/storefront/load_feature-81c60534.js" crossorigin="anonymous"></script>
@@ -656,139 +656,6 @@ window.WPDMoneyFormat = "€{{amount_with_comma_separator}}";
   window.shopPermanentDomain = "kookai-amh.myshopify.com";
   window.wpdAPIRootUrl = "https://bdr.wholesalehelper.io/";
 </script>
-
-
-
-
-
-<!-- END app block --><!-- BEGIN app block: shopify://apps/sk-form-builder/blocks/app/f3e35b58-5874-4ef2-8e03-c92cda6e49eb --><script src="https://cdn.jsdelivr.net/npm/country-state-city@3.1.1/lib/index.min.js"></script>
-<script src="https://www.google.com/recaptcha/enterprise.js" async></script>
-<script src="https://cdn.shopify.com/extensions/b5c298e4-0d05-413c-9cdd-027ad582f6e7/sk-form-builder-210/assets/country.js"></script>
-
-<script>
-	window.skplan = {"freeplan": 1, "plan": null, "billable": true};
-</script>
-<!-- END app block --><!-- BEGIN app block: shopify://apps/wisepops-ai-popups-push-cro/blocks/app-embed/e7d7a4f7-0df4-4073-9375-5f36db513952 --><script>
-  // Create the wisepops() function
-  window.wisepops_key = window.WisePopsObject = window.wisepops_key || window.WisePopsObject || "wisepops";
-  window[window.wisepops_key] = function () {
-    window[window.wisepops_key].q.push(arguments);
-  };
-  window[window.wisepops_key].q = [];
-  window[window.wisepops_key].l = Date.now();
-
-  // Disable deprecated snippet
-  window._wisepopsSkipShopifyDeprecatedSnippet = true;
-
-  document.addEventListener('wisepops.after-initialization', function () {
-    // https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie/Simple_document.cookie_framework
-    function getCookieValue(sKey) {
-      if (!sKey) { return null; }
-      return decodeURIComponent(document.cookie.replace(new RegExp("(?:(?:^|.*;)\\s*" + encodeURIComponent(sKey).replace(/[\-\.\+\*]/g, "\\$&") + "\\s*\\=\\s*([^;]*).*$)|^.*$"), "$1")) || null;
-    }
-
-    function getTotalInventoryQuantity() {
-      var variants = null;
-      if (!variants) {
-        return null;
-      }
-
-      var totalQuantity = 0;
-      for (var i in variants) {
-        if (variants[i] && variants[i].inventory_quantity) {
-          totalQuantity += variants[i].inventory_quantity;
-        } else {
-          return null;
-        }
-      }
-      return totalQuantity;
-    }
-
-    function getMapCartItems(key){
-      var cartItems = [];
-      return cartItems.map(function (item) {
-        return item[key];
-      })
-      .filter(function (item){
-        if (item !== undefined && item !== null && item !== "") {
-          return true;
-        }
-        return false;
-      })
-      .join(',');
-    }
-
-    
-
-    // Set built-in properties
-    window[window.wisepops_key]('properties', {
-      client_id: null,
-      cart: {
-        discount_code: getCookieValue('discount_code'),
-        item_count: 0,
-        total_price: 0 / 100,
-        skus: getMapCartItems('sku'),
-        items: []
-      },
-      customer: {
-        accepts_marketing: false,
-        is_logged_in:  false ,
-        last_order: {
-          created_at: null,
-        },
-        orders_count: null,
-        total_spent: (isNaN(null) ? null : (null / 100)),
-        tags:  null ,
-        email: null,
-        first_name: null,
-        last_name: null,
-      },
-      product: {
-        available: null,
-        price:  null ,
-        tags: null,
-        total_inventory_quantity: getTotalInventoryQuantity(),
-        stock: 0,
-      },
-      orders: {},
-      
-
-    }, { temporary: true });
-
-    // Custom event when product added to cart
-    var shopifyTrackFunction = window.ShopifyAnalytics && ShopifyAnalytics.lib && ShopifyAnalytics.lib.track;
-    var lastAddedToCartTimestamp = 0;
-    if (shopifyTrackFunction) {
-      ShopifyAnalytics.lib.track = function () {
-        if (arguments[0] === 'Added Product') {
-          var currentTimestamp = Date.now();
-          if (currentTimestamp > lastAddedToCartTimestamp + 5000) {
-            window[window.wisepops_key]('event', 'product-added-to-cart');
-            lastAddedToCartTimestamp = currentTimestamp;
-          }
-        }
-        shopifyTrackFunction.apply(this, arguments);
-      };
-    }
-  });
-</script>
-
-
-<!-- END app block --><!-- BEGIN app block: shopify://apps/instafeed/blocks/head-block/c447db20-095d-4a10-9725-b5977662c9d5 --><link rel="preconnect" href="https://cdn.nfcube.com/">
-<link rel="preconnect" href="https://scontent.cdninstagram.com/">
-
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      let instafeedScript = document.createElement('script');
-
-      
-        instafeedScript.src = 'https://cdn.nfcube.com/instafeed-893a13d77b5c2cd0bd0f77b76fef4dc4.js';
-      
-
-      document.body.appendChild(instafeedScript);
-    });
-  </script>
 
 
 
@@ -1049,6 +916,170 @@ window.WPDMoneyFormat = "€{{amount_with_comma_separator}}";
   window.WLH_reload_translations();
 </script><!-- END app snippet -->
 
+<!-- END app block --><!-- BEGIN app block: shopify://apps/instafeed/blocks/head-block/c447db20-095d-4a10-9725-b5977662c9d5 --><link rel="preconnect" href="https://cdn.nfcube.com/">
+<link rel="preconnect" href="https://scontent.cdninstagram.com/">
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      let instafeedScript = document.createElement('script');
+
+      
+        instafeedScript.src = 'https://cdn.nfcube.com/instafeed-893a13d77b5c2cd0bd0f77b76fef4dc4.js';
+      
+
+      document.body.appendChild(instafeedScript);
+    });
+  </script>
+
+
+
+
+
+<!-- END app block --><!-- BEGIN app block: shopify://apps/sk-form-builder/blocks/app/f3e35b58-5874-4ef2-8e03-c92cda6e49eb --><script src="https://cdn.jsdelivr.net/npm/country-state-city@3.1.1/lib/index.min.js"></script>
+<script src="https://www.google.com/recaptcha/enterprise.js" async></script>
+<script src="https://cdn.shopify.com/extensions/b5c298e4-0d05-413c-9cdd-027ad582f6e7/sk-form-builder-210/assets/country.js"></script>
+
+<script>
+	window.skplan = {"freeplan": 1, "plan": null, "billable": true};
+</script>
+<!-- END app block --><!-- BEGIN app block: shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507 -->
+
+
+
+
+
+
+
+
+
+
+
+
+  <script async src="https://static.klaviyo.com/onsite/js/XbwuFJ/klaviyo.js?company_id=XbwuFJ"></script>
+  <script>!function(){if(!window.klaviyo){window._klOnsite=window._klOnsite||[];try{window.klaviyo=new Proxy({},{get:function(n,i){return"push"===i?function(){var n;(n=window._klOnsite).push.apply(n,arguments)}:function(){for(var n=arguments.length,o=new Array(n),w=0;w<n;w++)o[w]=arguments[w];var t="function"==typeof o[o.length-1]?o.pop():void 0,e=new Promise((function(n){window._klOnsite.push([i].concat(o,[function(i){t&&t(i),n(i)}]))}));return e}}})}catch(n){window.klaviyo=window.klaviyo||[],window.klaviyo.push=function(){var n;(n=window._klOnsite).push.apply(n,arguments)}}}}();</script>
+
+  
+
+
+
+
+  <script>
+    window.klaviyoReviewsProductDesignMode = false
+  </script>
+
+
+
+
+
+
+
+<!-- END app block --><!-- BEGIN app block: shopify://apps/wisepops-ai-popups-push-cro/blocks/app-embed/e7d7a4f7-0df4-4073-9375-5f36db513952 --><script>
+  // Create the wisepops() function
+  window.wisepops_key = window.WisePopsObject = window.wisepops_key || window.WisePopsObject || "wisepops";
+  window[window.wisepops_key] = function () {
+    window[window.wisepops_key].q.push(arguments);
+  };
+  window[window.wisepops_key].q = [];
+  window[window.wisepops_key].l = Date.now();
+
+  // Disable deprecated snippet
+  window._wisepopsSkipShopifyDeprecatedSnippet = true;
+
+  document.addEventListener('wisepops.after-initialization', function () {
+    // https://developer.mozilla.org/en-US/docs/Web/API/Document/cookie/Simple_document.cookie_framework
+    function getCookieValue(sKey) {
+      if (!sKey) { return null; }
+      return decodeURIComponent(document.cookie.replace(new RegExp("(?:(?:^|.*;)\\s*" + encodeURIComponent(sKey).replace(/[\-\.\+\*]/g, "\\$&") + "\\s*\\=\\s*([^;]*).*$)|^.*$"), "$1")) || null;
+    }
+
+    function getTotalInventoryQuantity() {
+      var variants = null;
+      if (!variants) {
+        return null;
+      }
+
+      var totalQuantity = 0;
+      for (var i in variants) {
+        if (variants[i] && variants[i].inventory_quantity) {
+          totalQuantity += variants[i].inventory_quantity;
+        } else {
+          return null;
+        }
+      }
+      return totalQuantity;
+    }
+
+    function getMapCartItems(key){
+      var cartItems = [];
+      return cartItems.map(function (item) {
+        return item[key];
+      })
+      .filter(function (item){
+        if (item !== undefined && item !== null && item !== "") {
+          return true;
+        }
+        return false;
+      })
+      .join(',');
+    }
+
+    
+
+    // Set built-in properties
+    window[window.wisepops_key]('properties', {
+      client_id: null,
+      cart: {
+        discount_code: getCookieValue('discount_code'),
+        item_count: 0,
+        total_price: 0 / 100,
+        skus: getMapCartItems('sku'),
+        items: []
+      },
+      customer: {
+        accepts_marketing: false,
+        is_logged_in:  false ,
+        last_order: {
+          created_at: null,
+        },
+        orders_count: null,
+        total_spent: (isNaN(null) ? null : (null / 100)),
+        tags:  null ,
+        email: null,
+        first_name: null,
+        last_name: null,
+      },
+      product: {
+        available: null,
+        price:  null ,
+        tags: null,
+        total_inventory_quantity: getTotalInventoryQuantity(),
+        stock: 0,
+      },
+      orders: {},
+      
+
+    }, { temporary: true });
+
+    // Custom event when product added to cart
+    var shopifyTrackFunction = window.ShopifyAnalytics && ShopifyAnalytics.lib && ShopifyAnalytics.lib.track;
+    var lastAddedToCartTimestamp = 0;
+    if (shopifyTrackFunction) {
+      ShopifyAnalytics.lib.track = function () {
+        if (arguments[0] === 'Added Product') {
+          var currentTimestamp = Date.now();
+          if (currentTimestamp > lastAddedToCartTimestamp + 5000) {
+            window[window.wisepops_key]('event', 'product-added-to-cart');
+            lastAddedToCartTimestamp = currentTimestamp;
+          }
+        }
+        shopifyTrackFunction.apply(this, arguments);
+      };
+    }
+  });
+</script>
+
+
 <!-- END app block --><!-- BEGIN app block: shopify://apps/livemeup-live-shopping/blocks/player-script/82ccf4ed-67f8-4725-9167-e54475d4748e -->
 <!-- END app block --><!-- BEGIN app block: shopify://apps/depict/blocks/depict_brand_features/ad5c7d1f-ddfb-424b-b936-7f08c4544f6b -->
 
@@ -1098,41 +1129,10 @@ Collection id:  -->
 </script>
 
 
-<!-- END app block --><!-- BEGIN app block: shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507 -->
-
-
-
-
-
-
-
-
-
-
-
-
-  <script async src="https://static.klaviyo.com/onsite/js/XbwuFJ/klaviyo.js?company_id=XbwuFJ"></script>
-  <script>!function(){if(!window.klaviyo){window._klOnsite=window._klOnsite||[];try{window.klaviyo=new Proxy({},{get:function(n,i){return"push"===i?function(){var n;(n=window._klOnsite).push.apply(n,arguments)}:function(){for(var n=arguments.length,o=new Array(n),w=0;w<n;w++)o[w]=arguments[w];var t="function"==typeof o[o.length-1]?o.pop():void 0,e=new Promise((function(n){window._klOnsite.push([i].concat(o,[function(i){t&&t(i),n(i)}]))}));return e}}})}catch(n){window.klaviyo=window.klaviyo||[],window.klaviyo.push=function(){var n;(n=window._klOnsite).push.apply(n,arguments)}}}}();</script>
-
-  
-
-
-
-
-  <script>
-    window.klaviyoReviewsProductDesignMode = false
-  </script>
-
-
-
-
-
-
-
-<!-- END app block --><script src="https://cdn.shopify.com/extensions/b5c298e4-0d05-413c-9cdd-027ad582f6e7/sk-form-builder-210/assets/formbuilder.js" type="text/javascript" defer="defer"></script>
+<!-- END app block --><script src="https://cdn.shopify.com/extensions/7da272ea-44ac-4eba-8d27-5b127f8934b0/kleep-kookai-151/assets/kleep-app.js" type="text/javascript" defer="defer"></script>
+<link href="https://cdn.shopify.com/extensions/7da272ea-44ac-4eba-8d27-5b127f8934b0/kleep-kookai-151/assets/kleep-app.css" rel="stylesheet" type="text/css" media="all">
+<script src="https://cdn.shopify.com/extensions/b5c298e4-0d05-413c-9cdd-027ad582f6e7/sk-form-builder-210/assets/formbuilder.js" type="text/javascript" defer="defer"></script>
 <link href="https://cdn.shopify.com/extensions/b5c298e4-0d05-413c-9cdd-027ad582f6e7/sk-form-builder-210/assets/formbuilder.css" rel="stylesheet" type="text/css" media="all">
-<script src="https://cdn.shopify.com/extensions/7790f84e-7899-459e-b34a-193572ad0aa5/kleep-kookai-149/assets/kleep-app.js" type="text/javascript" defer="defer"></script>
-<link href="https://cdn.shopify.com/extensions/7790f84e-7899-459e-b34a-193572ad0aa5/kleep-kookai-149/assets/kleep-app.css" rel="stylesheet" type="text/css" media="all">
 <script src="https://cdn.shopify.com/extensions/1675c59f-6e56-4eff-9cd4-978cc68c3001/ekookie-29/assets/ekookie.js" type="text/javascript" defer="defer"></script>
 <link href="https://cdn.shopify.com/extensions/1675c59f-6e56-4eff-9cd4-978cc68c3001/ekookie-29/assets/ekookie.css" rel="stylesheet" type="text/css" media="all">
 <script src="https://cdn.shopify.com/extensions/626b49de-152e-486b-9a72-8dd987235bf7/livemeup-live-shopping-86/assets/player-loader.min.js" type="text/javascript" defer="defer"></script>
@@ -1533,6 +1533,64 @@ Collection id:  -->
     role="button"
     aria-haspopup="true"
     aria-expanded="false"
+    data-hover-disclosure-toggle="dropdown-e843cc9d1812906a8d6349def0f1026f"
+    aria-controls="dropdown-e843cc9d1812906a8d6349def0f1026f"
+  >
+  <a href="/collections/collection-ah25" data-top-link class="navlink navlink--toplevel">
+    <span class="navtext">NOUVELLE COLLECTION</span>
+  </a>
+  
+    <div class="header__dropdown"
+      data-hover-disclosure
+      id="dropdown-e843cc9d1812906a8d6349def0f1026f">
+      <div class="header__dropdown__wrapper">
+        <div class="header__dropdown__inner">
+            
+              
+              <a href="/collections/collection-ah25-tops-chemises" data-stagger class="navlink navlink--child">
+                <span class="navtext">Tops &amp; Chemises</span>
+              </a>
+            
+              
+              <a href="/collections/collection-ah25-pantalons-jeans" data-stagger class="navlink navlink--child">
+                <span class="navtext">Pantalons &amp; Jeans</span>
+              </a>
+            
+              
+              <a href="/collections/collection-ah25-jupes-shorts" data-stagger class="navlink navlink--child">
+                <span class="navtext">Jupes &amp; Shorts</span>
+              </a>
+            
+              
+              <a href="/collections/collection-ah25-robes" data-stagger class="navlink navlink--child">
+                <span class="navtext">Robes</span>
+              </a>
+            
+              
+              <a href="/collections/collection-ah25-pulls-gilets" data-stagger class="navlink navlink--child">
+                <span class="navtext">Pulls &amp; Gilets</span>
+              </a>
+            
+              
+              <a href="/collections/collection-ah25-vestes-manteaux" data-stagger class="navlink navlink--child">
+                <span class="navtext">Veste &amp; Manteaux</span>
+              </a>
+            
+</div>
+      </div>
+    </div>
+  
+</div>
+
+      
+        <!-- /snippets/nav-item.liquid -->
+
+<div class="menu__item  parent"
+  data-main-menu-text-item
+  
+    role="button"
+    aria-haspopup="true"
+    aria-expanded="false"
     data-hover-disclosure-toggle="dropdown-3c3d79f612b4456ea0e67c2fe267a2f6"
     aria-controls="dropdown-3c3d79f612b4456ea0e67c2fe267a2f6"
   >
@@ -1596,69 +1654,6 @@ Collection id:  -->
   <a href="/collections/denim-bar" data-top-link class="navlink navlink--toplevel">
     <span class="navtext">DENIM BAR</span>
   </a>
-  
-</div>
-
-      
-        <!-- /snippets/nav-item.liquid -->
-
-<div class="menu__item  parent"
-  data-main-menu-text-item
-  
-    role="button"
-    aria-haspopup="true"
-    aria-expanded="false"
-    data-hover-disclosure-toggle="dropdown-f23cd4045970e6f724c4598b15196521"
-    aria-controls="dropdown-f23cd4045970e6f724c4598b15196521"
-  >
-  <a href="/collections/collection-pe25" data-top-link class="navlink navlink--toplevel">
-    <span class="navtext">NOUVELLE COLLECTION</span>
-  </a>
-  
-    <div class="header__dropdown"
-      data-hover-disclosure
-      id="dropdown-f23cd4045970e6f724c4598b15196521">
-      <div class="header__dropdown__wrapper">
-        <div class="header__dropdown__inner">
-            
-              
-              <a href="/collections/collection-pe25-tops-chemises" data-stagger class="navlink navlink--child">
-                <span class="navtext">Tops &amp; Chemises</span>
-              </a>
-            
-              
-              <a href="/collections/collection-pe25-pantalons-jeans" data-stagger class="navlink navlink--child">
-                <span class="navtext">Pantalons &amp; Jeans</span>
-              </a>
-            
-              
-              <a href="/collections/collection-pe25-jupes-shorts" data-stagger class="navlink navlink--child">
-                <span class="navtext">Jupes &amp; Shorts</span>
-              </a>
-            
-              
-              <a href="/collections/collection-pe25-robes" data-stagger class="navlink navlink--child">
-                <span class="navtext">Robes</span>
-              </a>
-            
-              
-              <a href="/collections/collection-pe25-pulls-gilets" data-stagger class="navlink navlink--child">
-                <span class="navtext">Pulls &amp; Gilets</span>
-              </a>
-            
-              
-              <a href="/collections/collection-pe25-vestes-manteaux" data-stagger class="navlink navlink--child">
-                <span class="navtext">Veste &amp; Manteaux</span>
-              </a>
-            
-              
-              <a href="/collections/collection-pe25-accessoires" data-stagger class="navlink navlink--child">
-                <span class="navtext">Accessoires</span>
-              </a>
-            
-</div>
-      </div>
-    </div>
   
 </div>
 
@@ -1909,7 +1904,84 @@ Effacer</button>
           
             <!-- /snippets/nav-item-mobile.liquid --><div class="sliderule__wrapper"><button class="sliderow"
       data-animates="0"
-      data-sliderule-open="sliderule-4bea7d18195f1ac1ea01111730cd873b">
+      data-sliderule-open="sliderule-0577c11cfef5a6db5c181040e8554ffa">
+      <span class="sliderow__title">NOUVELLE COLLECTION</span>
+      <span class="sliderule__chevron--right">
+        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-arrow-medium-right" viewBox="0 0 9 15"><path fill-rule="evenodd" d="M6.875 7.066.87 1.06 1.93 0l6.006 6.005L7.94 6 9 7.06l-.004.006.005.005-1.06 1.06-.006-.004-6.005 6.005-1.061-1.06 6.005-6.006z"/></svg>
+        <span class="visually-hidden">Expand menu</span>
+      </span>
+    </button>
+
+    <div class="mobile__menu__dropdown sliderule__panel"
+      data-sliderule
+      id="sliderule-0577c11cfef5a6db5c181040e8554ffa"><div class="sliderow sliderow__back" data-animates="1">
+        <button class="drawer__button"
+          data-sliderule-close="sliderule-0577c11cfef5a6db5c181040e8554ffa">
+          <span class="sliderule__chevron--left">
+            <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-arrow-medium-left" viewBox="0 0 9 15"><path fill-rule="evenodd" d="M2.127 7.066 8.132 1.06 7.072 0 1.065 6.005 1.061 6 0 7.06l.004.006L0 7.07l1.06 1.06.006-.004 6.005 6.005 1.061-1.06-6.005-6.006z"/></svg>
+            <span class="visually-hidden">Masquer le menu</span>
+          </span>
+        </button>
+        <a class="sliderow__title" href="/collections/collection-ah25">NOUVELLE COLLECTION</a>
+      </div><div class="sliderow__links" data-links>
+        
+          
+          
+          <!-- /snippets/nav-item-mobile.liquid --><div class="sliderule__wrapper">
+    <div class="sliderow" data-animates="1">
+      <a class="sliderow__title" href="/collections/collection-ah25-tops-chemises">Tops &amp; Chemises</a>
+    </div></div>
+
+        
+          
+          
+          <!-- /snippets/nav-item-mobile.liquid --><div class="sliderule__wrapper">
+    <div class="sliderow" data-animates="1">
+      <a class="sliderow__title" href="/collections/collection-ah25-pantalons-jeans">Pantalons &amp; Jeans</a>
+    </div></div>
+
+        
+          
+          
+          <!-- /snippets/nav-item-mobile.liquid --><div class="sliderule__wrapper">
+    <div class="sliderow" data-animates="1">
+      <a class="sliderow__title" href="/collections/collection-ah25-jupes-shorts">Jupes &amp; Shorts</a>
+    </div></div>
+
+        
+          
+          
+          <!-- /snippets/nav-item-mobile.liquid --><div class="sliderule__wrapper">
+    <div class="sliderow" data-animates="1">
+      <a class="sliderow__title" href="/collections/collection-ah25-robes">Robes</a>
+    </div></div>
+
+        
+          
+          
+          <!-- /snippets/nav-item-mobile.liquid --><div class="sliderule__wrapper">
+    <div class="sliderow" data-animates="1">
+      <a class="sliderow__title" href="/collections/collection-ah25-pulls-gilets">Pulls &amp; Gilets</a>
+    </div></div>
+
+        
+          
+          
+          <!-- /snippets/nav-item-mobile.liquid --><div class="sliderule__wrapper">
+    <div class="sliderow" data-animates="1">
+      <a class="sliderow__title" href="/collections/collection-ah25-vestes-manteaux">Veste &amp; Manteaux</a>
+    </div></div>
+
+        
+      </div><div class="sliderule-grid blocks-0">
+          
+        </div></div></div>
+
+            
+          
+            <!-- /snippets/nav-item-mobile.liquid --><div class="sliderule__wrapper"><button class="sliderow"
+      data-animates="0"
+      data-sliderule-open="sliderule-ce74fdea2e96b79ca458acdd2b40b67e">
       <span class="sliderow__title">Derniers Jours </span>
       <span class="sliderule__chevron--right">
         <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-arrow-medium-right" viewBox="0 0 9 15"><path fill-rule="evenodd" d="M6.875 7.066.87 1.06 1.93 0l6.006 6.005L7.94 6 9 7.06l-.004.006.005.005-1.06 1.06-.006-.004-6.005 6.005-1.061-1.06 6.005-6.006z"/></svg>
@@ -1919,9 +1991,9 @@ Effacer</button>
 
     <div class="mobile__menu__dropdown sliderule__panel"
       data-sliderule
-      id="sliderule-4bea7d18195f1ac1ea01111730cd873b"><div class="sliderow sliderow__back" data-animates="1">
+      id="sliderule-ce74fdea2e96b79ca458acdd2b40b67e"><div class="sliderow sliderow__back" data-animates="1">
         <button class="drawer__button"
-          data-sliderule-close="sliderule-4bea7d18195f1ac1ea01111730cd873b">
+          data-sliderule-close="sliderule-ce74fdea2e96b79ca458acdd2b40b67e">
           <span class="sliderule__chevron--left">
             <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-arrow-medium-left" viewBox="0 0 9 15"><path fill-rule="evenodd" d="M2.127 7.066 8.132 1.06 7.072 0 1.065 6.005 1.061 6 0 7.06l.004.006L0 7.07l1.06 1.06.006-.004 6.005 6.005 1.061-1.06-6.005-6.006z"/></svg>
             <span class="visually-hidden">Masquer le menu</span>
@@ -1996,91 +2068,6 @@ Effacer</button>
     <div class="sliderow" data-animates="0">
       <a class="sliderow__title" href="/collections/denim-bar">DENIM BAR</a>
     </div></div>
-
-            
-          
-            <!-- /snippets/nav-item-mobile.liquid --><div class="sliderule__wrapper"><button class="sliderow"
-      data-animates="0"
-      data-sliderule-open="sliderule-a4e6cd520b3d8791d7661508cf7e6714">
-      <span class="sliderow__title">NOUVELLE COLLECTION</span>
-      <span class="sliderule__chevron--right">
-        <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-arrow-medium-right" viewBox="0 0 9 15"><path fill-rule="evenodd" d="M6.875 7.066.87 1.06 1.93 0l6.006 6.005L7.94 6 9 7.06l-.004.006.005.005-1.06 1.06-.006-.004-6.005 6.005-1.061-1.06 6.005-6.006z"/></svg>
-        <span class="visually-hidden">Expand menu</span>
-      </span>
-    </button>
-
-    <div class="mobile__menu__dropdown sliderule__panel"
-      data-sliderule
-      id="sliderule-a4e6cd520b3d8791d7661508cf7e6714"><div class="sliderow sliderow__back" data-animates="1">
-        <button class="drawer__button"
-          data-sliderule-close="sliderule-a4e6cd520b3d8791d7661508cf7e6714">
-          <span class="sliderule__chevron--left">
-            <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon-arrow-medium-left" viewBox="0 0 9 15"><path fill-rule="evenodd" d="M2.127 7.066 8.132 1.06 7.072 0 1.065 6.005 1.061 6 0 7.06l.004.006L0 7.07l1.06 1.06.006-.004 6.005 6.005 1.061-1.06-6.005-6.006z"/></svg>
-            <span class="visually-hidden">Masquer le menu</span>
-          </span>
-        </button>
-        <a class="sliderow__title" href="/collections/collection-pe25">NOUVELLE COLLECTION</a>
-      </div><div class="sliderow__links" data-links>
-        
-          
-          
-          <!-- /snippets/nav-item-mobile.liquid --><div class="sliderule__wrapper">
-    <div class="sliderow" data-animates="1">
-      <a class="sliderow__title" href="/collections/collection-pe25-tops-chemises">Tops &amp; Chemises</a>
-    </div></div>
-
-        
-          
-          
-          <!-- /snippets/nav-item-mobile.liquid --><div class="sliderule__wrapper">
-    <div class="sliderow" data-animates="1">
-      <a class="sliderow__title" href="/collections/collection-pe25-pantalons-jeans">Pantalons &amp; Jeans</a>
-    </div></div>
-
-        
-          
-          
-          <!-- /snippets/nav-item-mobile.liquid --><div class="sliderule__wrapper">
-    <div class="sliderow" data-animates="1">
-      <a class="sliderow__title" href="/collections/collection-pe25-jupes-shorts">Jupes &amp; Shorts</a>
-    </div></div>
-
-        
-          
-          
-          <!-- /snippets/nav-item-mobile.liquid --><div class="sliderule__wrapper">
-    <div class="sliderow" data-animates="1">
-      <a class="sliderow__title" href="/collections/collection-pe25-robes">Robes</a>
-    </div></div>
-
-        
-          
-          
-          <!-- /snippets/nav-item-mobile.liquid --><div class="sliderule__wrapper">
-    <div class="sliderow" data-animates="1">
-      <a class="sliderow__title" href="/collections/collection-pe25-pulls-gilets">Pulls &amp; Gilets</a>
-    </div></div>
-
-        
-          
-          
-          <!-- /snippets/nav-item-mobile.liquid --><div class="sliderule__wrapper">
-    <div class="sliderow" data-animates="1">
-      <a class="sliderow__title" href="/collections/collection-pe25-vestes-manteaux">Veste &amp; Manteaux</a>
-    </div></div>
-
-        
-          
-          
-          <!-- /snippets/nav-item-mobile.liquid --><div class="sliderule__wrapper">
-    <div class="sliderow" data-animates="1">
-      <a class="sliderow__title" href="/collections/collection-pe25-accessoires">Accessoires</a>
-    </div></div>
-
-        
-      </div><div class="sliderule-grid blocks-0">
-          
-        </div></div></div>
 
             
           
@@ -2998,26 +2985,7 @@ Effacer</button>
   
  
 	
-  <div id="shopify-block-Ad3lHck9Ccldkb2R1R__12526071353035850722" class="shopify-block shopify-app-block">
-  <script defer src="https://app.backinstock.org/widget/85996_1746008085.js?category=bis&v=6"></script>
-
-
-<script id="back-in-stock-helper-embedded">
-  var _BISConfig = _BISConfig || {};
-
-  
-
-  
-</script>
-
-<script id="preorders-helper-embedded">
-  
-</script>
-
-
-
-
-</div><!-- Failed to render app block "15489274632472357321": app block path "shopify://apps/socloz-oms-platform/blocks/socloz/c6a7c761-d946-44db-9010-2f17d35f5c59" does not exist --><div id="shopify-block-AYTlDbGJDaEcyb1JEc__10986913126602382387" class="shopify-block shopify-app-block">
+  <div id="shopify-block-AYTlDbGJDaEcyb1JEc__10986913126602382387" class="shopify-block shopify-app-block">
 
   <style>
     @media (max-width: 1085px) {
@@ -3123,7 +3091,7 @@ span.kleep-badge {
   
 </script>
 
-<script src="https://cdn.shopify.com/extensions/7790f84e-7899-459e-b34a-193572ad0aa5/kleep-kookai-149/assets/kleep-constants.js"></script>
+<script src="https://cdn.shopify.com/extensions/7da272ea-44ac-4eba-8d27-5b127f8934b0/kleep-kookai-151/assets/kleep-constants.js"></script>
 
 
 
@@ -3141,7 +3109,7 @@ span.kleep-badge {
     window.KleepSDK.currencies[isoCode] = window.KleepSDK.currencySymbols[idx];
     })
   </script>
-  <script defer src="https://cdn.shopify.com/extensions/7790f84e-7899-459e-b34a-193572ad0aa5/kleep-kookai-149/assets/kleep-search.js"></script>
+  <script defer src="https://cdn.shopify.com/extensions/7da272ea-44ac-4eba-8d27-5b127f8934b0/kleep-kookai-151/assets/kleep-search.js"></script>
 
 
 <script id="kleep-languages" type="application/json">
@@ -3222,5 +3190,24 @@ span.kleep-badge {
 
 
 
-</div></body>
+</div><div id="shopify-block-Ad3lHck9Ccldkb2R1R__12526071353035850722" class="shopify-block shopify-app-block">
+  <script defer src="https://app.backinstock.org/widget/85996_1746008085.js?category=bis&v=6"></script>
+
+
+<script id="back-in-stock-helper-embedded">
+  var _BISConfig = _BISConfig || {};
+
+  
+
+  
+</script>
+
+<script id="preorders-helper-embedded">
+  
+</script>
+
+
+
+
+</div><!-- Failed to render app block "15489274632472357321": app block path "shopify://apps/socloz-oms-platform/blocks/socloz/c6a7c761-d946-44db-9010-2f17d35f5c59" does not exist --></body>
 </html>
