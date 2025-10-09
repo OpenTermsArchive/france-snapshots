@@ -1384,15 +1384,15 @@ if (isMobileSimple.any()) {
 				<aside id="aside">
 					
 	<div id="moteur_default" class="moteur_reservation">
-<form action="#" class="tab-frame mr_inner_defaut">
-	<fieldset>
-		<legend class="hidden">
-			radio form
-		</legend>
-		<div class="tab-title">
-			<h1>Réserver votre vol</h1>
-			<div class="title-form">
-				<div class="radio-holder">
+<form action="#" class="tab-frame mr_inner_defaut moteur_reservation_with_promo_code">
+    <fieldset>
+        <legend class="hidden">
+            radio form
+        </legend>
+        <div class="tab-title">
+            <h1>Réserver votre vol</h1>
+            <div class="title-form">
+                <div class="radio-holder">
 					<div class="radio-row">
 						<input type="radio" class="radio radio1" name="aller_retour_1" id="item1" value="retour" checked="checked">
 						<label for="item1">Aller-retour</label>
@@ -1404,11 +1404,11 @@ if (isMobileSimple.any()) {
 						<input type="radio" class="radio radio3" name="aller_retour_1" id="item3" value="multi">
 						<label for="item3">multi-destinations</label>
 					</div></div>
-			</div>
-		</div>
-		<div class="row-holder">
-			<div class="frame-row">
-				<div class="location-block sel_destination_depart">
+            </div>
+        </div>
+        <div class="row-holder">
+            <div class="frame-row">
+                <div class="location-block sel_destination_depart">
 					<label class="hidden">sel_destination_depart</label>
 					<div class="input-holder">
 						<span class="text step-elem location-input" id="sel_destination_depart" data-aeroport="RUN" data-continent="Afrique - Océan Indien" data-pays="Réunion" data-codedepart="ABZ ACC AMS ATH BCN BER BHX BIO BKK BLL BLQ BOM BRE BUD BUH CDG CNX CPH CPT DAR DEL DIE DPS DUB DUR DUS DZA EDI FIH FLR FRA FTU FUK GOA GOT GVA HAH HAJ HAM HKG HKT JKT JNB KBV KUL LIS LJU LON LUN MAA MAD MAN MEL MJN MNL MOQ MRU MUC NAP NCL NGO NOS NUE OSA OSL PRG QJZ QXB QXG ROM RRG SEL SEZ SIN SMS SPK STO STR SVB SYD TLE TMM TNR TPE TRN TXL TYO VCE VGO VIE WAW XDB XHK XIZ XOP XPJ XRF XSH XWG XYD XZI XZN ZFJ ZFQ ZLN ZRH ZYN ZYR" data-via="Destinations Air Austral" data-label="Saint-Denis" data-codepays="RE">Saint-Denis</span>
@@ -1737,7 +1737,7 @@ if (isMobileSimple.any()) {
 						</div>
 					</div>
 				</div>
-				<div class="location-block sel_destination_arrivee">
+                <div class="location-block sel_destination_arrivee">
 					<label class="hidden">sel_destination_arrivee</label>
 					<div class="input-holder">
 						<span class="text step-elem location-input" id="sel_destination_arrivee" data-aeroport="CDG" data-continent="Europe" data-pays="France/Belgique" data-codedepart="DAR DIE DZA FTU HAH MJN MRU NOS RRG RUN SEZ TLE TMM TNR" data-via="Destinations Air Austral" data-label="Paris CDG" data-codepays="FR">Paris CDG</span>
@@ -2066,20 +2066,20 @@ if (isMobileSimple.any()) {
 						</div>
 					</div>
 				</div>
-			</div>
-			<div class="frame-row">
-				<div class="calendar-block date1">
+            </div>
+            <div class="frame-row">
+                <div class="calendar-block date1">
 					<label for="date1" class="hidden">date 1</label>
 					<span class="from step-elem"></span>
 					<input type="text" readonly="readonly" placeholder="Date de départ" class="text from" id="date1">
 				</div>
-				<div class="calendar-block date2">
+                <div class="calendar-block date2">
 					<label for="date2" class="hidden">date 2</label>
 					<span class="from step-elem"></span>
 					<input type="text" readonly="readonly" placeholder="Date de retour" class="text to" id="date2">
 				</div>
-				<div class="select-box voyager-counter">
-					<div class="select-frame">
+                <div class="select-box voyager-counter">
+                    <div class="select-frame">
 						<a data-prefix="voyageur(s)" href="#" class="open step-elem">1 voyageur(s)</a>
 						<input type="hidden" name="quantity">
 						<div class="popup-frame">
@@ -2137,45 +2137,50 @@ if (isMobileSimple.any()) {
 							<span class="arrow"></span>
 						</div>
 					</div>
-					<div class="tooltip-holder">
-						<a href="#" class="tooltip-box open">info</a>
-						<div class="tooltip-popup">
-							<p><strong>Tarif Jeune disponible uniquement sur les routes</strong></p><ul><li>Réunion, Mayotte &lt;&gt; Paris</li><li>Réunion &lt;&gt; Mayotte</li></ul><p>Pour bénéficier des avantages du tarif "jeune", le passager Jeune doit être réservé séparément.</p><p><strong>Il est possible de réserver dans un même dossier des passagers Adulte(s) et Jeune(s): dans ce cas, les conditions tarifaires "Adulte" seront appliquées, y compris la franchise bagage</strong></p>
-							<a href="#" class="close">close</a>
-							<span class="arrow"></span>
-						</div>
-					</div>
-				</div>
-				<div class="select-box">
-					<div class="select-holder">
-						<select name="classe_voyage" id="classe_voyage" title="Loisirs"><option value="LOISIRS" data-cabin="E" data-label="Loisirs">Loisirs - économique</option><option value="CONFORT" data-cabin="N" data-label="Confort">Confort - économique premium</option><option value="AUSTRAL" data-cabin="B" data-label="Club Austral">Club Austral - affaires</option></select>
-						<span class="select-opener step-elem"></span>
-					</div>
-					<div class="tooltip-holder">
-						<a href="#" class="tooltip-box open">info</a>
-						<div class="tooltip-popup">
-							<p><strong>Sélectionnez votre classe de voyage:</strong></p><ul><li>Classe Loisirs - économie</li><li>Classe Confort - économie premium</li><li>Classe Club Austral - affaires</li></ul><p>Puis, cliquez sur "RÉSERVER" pour lancer la recherche de tarifs et disponibilités.</p>
-							<a href="#" class="close">close</a>
-							<span class="arrow"></span>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="tab-aside">
-			<div class="aside-row">
-				<a href="reservation/reservation-abonne.html" class="tarif">tarif abonné</a>
-				<a href="contenus-communs/billet-prime.html" class="billet">billet prime</a>
-			</div>
-			<a href="javascript:validerFormulaire('col');" class="reserv" data-emplacement="col">Réserver</a>
-		</div>
-		<input type="submit" class="hidden">
-	</fieldset>
+                    <div class="tooltip-holder">
+                        <a href="#" class="tooltip-box open">info</a>
+                        <div class="tooltip-popup">
+                            <p><strong>Tarif Jeune disponible uniquement sur les routes</strong></p><ul><li>Réunion, Mayotte &lt;&gt; Paris</li><li>Réunion &lt;&gt; Mayotte</li></ul><p>Pour bénéficier des avantages du tarif "jeune", le passager Jeune doit être réservé séparément.</p><p><strong>Il est possible de réserver dans un même dossier des passagers Adulte(s) et Jeune(s): dans ce cas, les conditions tarifaires "Adulte" seront appliquées, y compris la franchise bagage</strong></p>
+                            <a href="#" class="close">close</a>
+                            <span class="arrow"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="select-box">
+                    <div class="select-holder">
+                        <select name="classe_voyage" id="classe_voyage" title="Loisirs"><option value="LOISIRS" data-cabin="E" data-label="Loisirs">Loisirs - économique</option><option value="CONFORT" data-cabin="N" data-label="Confort">Confort - économique premium</option><option value="AUSTRAL" data-cabin="B" data-label="Club Austral">Club Austral - affaires</option></select>
+                        <span class="select-opener step-elem"></span>
+                    </div>
+                    <div class="tooltip-holder">
+                        <a href="#" class="tooltip-box open">info</a>
+                        <div class="tooltip-popup">
+                            <p><strong>Sélectionnez votre classe de voyage:</strong></p><ul><li>Classe Loisirs - économie</li><li>Classe Confort - économie premium</li><li>Classe Club Austral - affaires</li></ul><p>Puis, cliquez sur "RÉSERVER" pour lancer la recherche de tarifs et disponibilités.</p>
+                            <a href="#" class="close">close</a>
+                            <span class="arrow"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="tab-aside">
+            <div class="aside-row">
+                <a href="reservation/reservation-abonne.html" class="tarif">tarif abonné</a>
+                <a href="contenus-communs/billet-prime.html" class="billet">billet prime</a>
+            </div>
+            <div class="aside-row mr_promocode_row">
+                <div class="input-holder">
+                    <input type="text" name="mr_promocode" id="mr_promocode" placeholder="Code promo" class="text from promocode-field">
+                </div>
+            </div>
+            <a href="javascript:validerFormulaire('col');" class="reserv" data-emplacement="col">Réserver</a>
+        </div>
+        <input type="submit" class="hidden">
+    </fieldset>
 </form>
 <style type="text/css">
-	#aside .tab-frame > .after, #aside .tab-frame:before {
-	    border: medium none;
-	}
+#aside .tab-frame > .after, #aside .tab-frame:before {
+  border: medium none;
+}
 </style>
 <div id="amadeus"><form name="amadeus_form" id="amadeus_form" action="#" method="post" onsubmit="if (!window.__cfRLUnblockHandlers) return false; _gaq.push(['_linkByPost', document.amadeus_form]);"></form></div>
 <!--<script type="text/javascript">
@@ -10123,5 +10128,5 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <!--<script type="text/javascript" src="typo3temp/vhs-assets-checkConsentMobileV1.js"></script>-->
 
 <script defer="" src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;1bd02321cfed48499f7e074ce96c83c8&quot;,&quot;server_timing&quot;:{&quot;name&quot;:{&quot;cfCacheStatus&quot;:true,&quot;cfEdge&quot;:true,&quot;cfExtPri&quot;:true,&quot;cfL4&quot;:true,&quot;cfOrigin&quot;:true,&quot;cfSpeedBrain&quot;:true},&quot;location_startswith&quot;:null}}" crossorigin="anonymous"></script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'98b9c4ee2dc976f9',t:'MTc1OTk2OTgyNA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"></iframe>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'98bde3a33db3cdbd',t:'MTc2MDAxMzAyNQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border: none; visibility: hidden;"></iframe>
 </body></html>
