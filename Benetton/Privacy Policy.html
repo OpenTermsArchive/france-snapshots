@@ -107,7 +107,7 @@ f=false,w=window,d=document,vwoCodeEl=d.querySelector('#vwoCode'),code={use_exis
 		function riskifiedBeaconLoad() {
 			
 			var store_domain = 'UCB_fr.com';
-			var session_id = 'b2O3sH0PyYp-Tn_v2WPWKVLhkjlJwKC--po=';
+			var session_id = '-zVusNV1yqBtfc9xYTVwIKQvX692P1E7B4k=';
 			var url = ('https:' == document.location.protocol ? 'https://'
 					: 'http://')
 					+ "beacon.riskified.com?shop="
@@ -474,6 +474,67 @@ window.apiroot = "/on/demandware.store/Sites-UCB_fr-Site/fr_FR";
 <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W2W9KS&gtm_auth=YmSMGIPS7C3xyOsKetKXEA&gtm_preview=env-167&gtm_cookies_win=x"
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+
+<script>
+ document.addEventListener('DOMContentLoaded', () => {
+var bodyLang = document.documentElement.getAttribute('lang')
+var addtocartCta = document.querySelector('.prices-add-to-cart-actions .add-to-cart');
+var soldOutLabel = document.querySelector('.label-soldout');
+var soldout=false;
+if (soldOutLabel && soldOutLabel.classList.contains('show')) {
+  soldout=true;
+}
+if (soldout) {
+  switch (bodyLang) {
+    case 'it':
+      oofCta = "AVVISAMI QUANDO DISPONIBILE";
+      break;
+    case 'es':
+      oofCta = "AVÍSAME CUANDO ESTÉ DISPONIBLE";
+      break;
+    case 'fr':
+      oofCta = "M’AVERTIR LORSQUE L’ARTICLE EST DISPONIBLE";
+      break;
+    case 'de':
+      oofCta = "BEI VERFÜGBARKEIT BENACHRICHTIGEN";
+      break;
+    case 'pt':
+      oofCta = "NOTIFIQUE-ME QUANDO ESTIVER DISPONÍVEL";
+      break;
+    case 'el':
+      oofCta = "ΕΝΗΜΈΡΩΣΕ ΜΕ ΌΤΑΝ ΘΑ ΕΊΝΑΙ ΔΙΑΘΈΣΙΜΟ";
+      break;
+    case 'en':
+      oofCta = "NOTIFY ME WHEN AVAILABLE";
+      break;
+    default:
+      oofCta = "NOTIFY ME WHEN AVAILABLE";
+  }
+  // Rimuovo scelta taglia e form/bcta aggiungi al carrello
+ 
+  document.querySelector('[data-attr="size"]').remove();
+  document.querySelector('.add-to-cart').remove();
+  soldOutLabel.remove();
+  var lowAvailability = document.querySelector('.product-overlay .low-availability');
+  if (lowAvailability) {
+    lowAvailability.remove();
+  }
+ 
+var pdActionWrap = document.querySelector('.product-details-container .cart-and-ipay.ben-pdp-buttons');
+var oofCtaWrap = document.createElement('button');
+oofCtaWrap.setAttribute('id', 'outofstockModal');
+oofCtaWrap.classList.add('btn-primary', 'outofstockmodal','btn','btn-primary-c');
+oofCtaWrap.innerHTML = oofCta;
+pdActionWrap.after(oofCtaWrap);
+pdActionWrap.classList.add('d-none'); 
+  // creazione e inserimento <span> testo avvisami
+  var oofTxtWrap = document.createElement('span');
+  oofTxtWrap.classList.add('low-availability');
+  oofTxtWrap.innerHTML = '<strong style="text-transform:none">' + oofTxt + '</strong>';
+  pdActionWrap.prepend(oofTxtWrap);
+}
+ });
+</script>
 
 
 <div class="page" data-action="Page-Show" data-querystring="">
@@ -1429,6 +1490,13 @@ Looks coordonn&eacute;s
 
 
 <div class="d-flex flex-row">
+
+<a href="https://fr.benetton.com/femme-must-mave-automne/" class="menu-item menu-item-4-liv" data-gtm-label2="editorial_women-autumn" style="">
+Les must-have de la saison
+</a>
+
+<div class="pl-2"><span class="menu-item-label" style="color: #009848;">NEWLABEL</span></div>
+
 
 </div></div><div class="experience-component experience-menu_megamenu_item">
 
