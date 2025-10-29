@@ -5,11 +5,11 @@
 
 
 <!DOCTYPE html>
-<html lang="fr" data-publicpath="/on/demandware.static/Sites-UCB_fr-Site/-/fr_FR/v1761692325564/" class="page-Page-Show" data-action="page-show">
+<html lang="fr" data-publicpath="/on/demandware.static/Sites-UCB_fr-Site/-/fr_FR/v1761725709335/" class="page-Page-Show" data-action="page-show">
 <head>
 
 
-<link rel="stylesheet" href="/on/demandware.static/Sites-UCB_fr-Site/-/fr_FR/v1761692325564/css/app.css" />
+<link rel="stylesheet" href="/on/demandware.static/Sites-UCB_fr-Site/-/fr_FR/v1761725709335/css/app.css" />
 
 
 
@@ -95,7 +95,7 @@ f=false,w=window,d=document,vwoCodeEl=d.querySelector('#vwoCode'),code={use_exis
 
 
 
-  <script src="/on/demandware.static/Sites-UCB_fr-Site/-/fr_FR/v1761692325564/js/main.js" defer=""></script>
+  <script src="/on/demandware.static/Sites-UCB_fr-Site/-/fr_FR/v1761725709335/js/main.js" defer=""></script>
 
 
 
@@ -107,7 +107,7 @@ f=false,w=window,d=document,vwoCodeEl=d.querySelector('#vwoCode'),code={use_exis
 		function riskifiedBeaconLoad() {
 			
 			var store_domain = 'UCB_fr.com';
-			var session_id = '8Lk-7tQBkPudNjPy1jHGeag8Eiv-ObTRn7E=';
+			var session_id = 'J5ax0cAFIrky4nYviUJ2vPwqAaIeWnoaTwI=';
 			var url = ('https:' == document.location.protocol ? 'https://'
 					: 'http://')
 					+ "beacon.riskified.com?shop="
@@ -157,7 +157,7 @@ f=false,w=window,d=document,vwoCodeEl=d.querySelector('#vwoCode'),code={use_exis
   
 
   
-        <meta property="og:image" content="https://fr.benetton.com/on/demandware.static/-/Library-Sites-BenettonSharedLibrary/fr_FR/v1761692325564/meta.og:image">
+        <meta property="og:image" content="https://fr.benetton.com/on/demandware.static/-/Library-Sites-BenettonSharedLibrary/fr_FR/v1761725709335/meta.og:image">
   
 
   
@@ -479,12 +479,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
  document.addEventListener('DOMContentLoaded', () => {
 var bodyLang = document.documentElement.getAttribute('lang')
 var addtocartCta = document.querySelector('.prices-add-to-cart-actions .add-to-cart');
+var sizeAvaiable = document.querySelectorAll('.product-details-container [data-attr="size"] .btn-size:not(:disabled)').length;
 var soldOutLabel = document.querySelector('.label-soldout');
-var soldout=false;
-if (soldOutLabel && soldOutLabel.classList.contains('show')) {
-  soldout=true;
-}
-if (soldout) {
+if (sizeAvaiable == 0) {
   switch (bodyLang) {
     case 'it':
       oofCta = "AVVISAMI QUANDO DISPONIBILE";
@@ -512,8 +509,8 @@ if (soldout) {
   }
   // Rimuovo scelta taglia e form/bcta aggiungi al carrello
  
-  document.querySelector('[data-attr="size"]').remove();
-  document.querySelector('.add-to-cart').remove();
+  document.querySelector('.product-details-container [data-attr="size"]').remove();
+  document.querySelector('.product-details-container .add-to-cart').remove();
   soldOutLabel.remove();
   var lowAvailability = document.querySelector('.product-overlay .low-availability');
   if (lowAvailability) {
@@ -1472,6 +1469,13 @@ Looks coordonn&eacute;s
 
 
 <div class="d-flex flex-row">
+
+<a href="https://fr.benetton.com/femme-must-mave-automne/" class="menu-item menu-item-4-liv" data-gtm-label2="editorial_women-autumn" style="">
+Les must-have de la saison
+</a>
+
+<div class="pl-2"><span class="menu-item-label" style="color: #009848;">NEWLABEL</span></div>
+
 
 </div></div><div class="experience-component experience-menu_megamenu_item">
 
@@ -9461,9 +9465,9 @@ function trackPage() {
 /* ]]> */
 // -->
 </script>
-<script type="text/javascript" src="/on/demandware.static/Sites-UCB_fr-Site/-/fr_FR/v1761692325564/internal/jscript/dwanalytics-22.2.js" async="async" onload="trackPage()"></script>
+<script type="text/javascript" src="/on/demandware.static/Sites-UCB_fr-Site/-/fr_FR/v1761725709335/internal/jscript/dwanalytics-22.2.js" async="async" onload="trackPage()"></script>
 <!-- Demandware Active Data (body_end-active_data.js) -->
-<script src="/on/demandware.static/Sites-UCB_fr-Site/-/fr_FR/v1761692325564/internal/jscript/dwac-21.7.js" type="text/javascript" async="async"></script><!-- CQuotient Activity Tracking (body_end-cquotient.js) -->
+<script src="/on/demandware.static/Sites-UCB_fr-Site/-/fr_FR/v1761725709335/internal/jscript/dwac-21.7.js" type="text/javascript" async="async"></script><!-- CQuotient Activity Tracking (body_end-cquotient.js) -->
 <script src="https://cdn.cquotient.com/js/v2/gretel.min.js" type="text/javascript" async="async"></script>
 </body>
 </html>
