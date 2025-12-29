@@ -227,7 +227,7 @@ await import("//www.kappa.fr/cdn/shopifycloud/shop-js/modules/v2/chunk.common_TH
     window.addEventListener('load', asyncLoad, false);
   }
 })();</script>
-<script id="__st">var __st={"a":56681136327,"offset":3600,"reqid":"6c54b6dd-7947-4ef5-99ba-e3e74853268b-1766968615","pageurl":"www.kappa.fr\/pages\/cgv","s":"pages-82250334407","u":"40232e00f202","p":"page","rtyp":"page","rid":82250334407};</script>
+<script id="__st">var __st={"a":56681136327,"offset":3600,"reqid":"bd012f67-39ea-44c6-ae08-9836015de36d-1767011831","pageurl":"www.kappa.fr\/pages\/cgv","s":"pages-82250334407","u":"f96f6cbcfbc4","p":"page","rtyp":"page","rid":82250334407};</script>
 <script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
 <script id="captcha-bootstrap">!function(){'use strict';const t='contact',e='account',n='new_comment',o=[[t,t],['blogs',n],['comments',n],[t,'customer']],c=[[e,'customer_login'],[e,'guest_login'],[e,'recover_customer_password'],[e,'create_customer']],r=t=>t.map((([t,e])=>`form[action*='/${t}']:not([data-nocaptcha='true']) input[name='form_type'][value='${e}']`)).join(','),a=t=>()=>t?[...document.querySelectorAll(t)].map((t=>t.form)):[];function s(){const t=[...o],e=r(t);return a(e)}const i='password',u='form_key',d=['recaptcha-v3-token','g-recaptcha-response','h-captcha-response',i],f=()=>{try{return window.sessionStorage}catch{return}},m='__shopify_v',_=t=>t.elements[u];function p(t,e,n=!1){try{const o=window.sessionStorage,c=JSON.parse(o.getItem(e)),{data:r}=function(t){const{data:e,action:n}=t;return t[m]||n?{data:e,action:n}:{data:t,action:n}}(c);for(const[e,n]of Object.entries(r))t.elements[e]&&(t.elements[e].value=n);n&&o.removeItem(e)}catch(o){console.error('form repopulation failed',{error:o})}}const l='form_type',E='cptcha';function T(t){t.dataset[E]=!0}const w=window,h=w.document,L='Shopify',v='ce_forms',y='captcha';let A=!1;((t,e)=>{const n=(g='f06e6c50-85a8-45c8-87d0-21a2b65856fe',I='https://cdn.shopify.com/shopifycloud/storefront-forms-hcaptcha/ce_storefront_forms_captcha_hcaptcha.v1.5.2.iife.js',D={infoText:'Protégé par hCaptcha',privacyText:'Confidentialité',termsText:'Conditions'},(t,e,n)=>{const o=w[L][v],c=o.bindForm;if(c)return c(t,g,e,D).then(n);var r;o.q.push([[t,g,e,D],n]),r=I,A||(h.body.append(Object.assign(h.createElement('script'),{id:'captcha-provider',async:!0,src:r})),A=!0)});var g,I,D;w[L]=w[L]||{},w[L][v]=w[L][v]||{},w[L][v].q=[],w[L][y]=w[L][y]||{},w[L][y].protect=function(t,e){n(t,void 0,e),T(t)},Object.freeze(w[L][y]),function(t,e,n,w,h,L){const[v,y,A,g]=function(t,e,n){const i=e?o:[],u=t?c:[],d=[...i,...u],f=r(d),m=r(i),_=r(d.filter((([t,e])=>n.includes(e))));return[a(f),a(m),a(_),s()]}(w,h,L),I=t=>{const e=t.target;return e instanceof HTMLFormElement?e:e&&e.form},D=t=>v().includes(t);t.addEventListener('submit',(t=>{const e=I(t);if(!e)return;const n=D(e)&&!e.dataset.hcaptchaBound&&!e.dataset.recaptchaBound,o=_(e),c=g().includes(e)&&(!o||!o.value);(n||c)&&t.preventDefault(),c&&!n&&(function(t){try{if(!f())return;!function(t){const e=f();if(!e)return;const n=_(t);if(!n)return;const o=n.value;o&&e.removeItem(o)}(t);const e=Array.from(Array(32),(()=>Math.random().toString(36)[2])).join('');!function(t,e){_(t)||t.append(Object.assign(document.createElement('input'),{type:'hidden',name:u})),t.elements[u].value=e}(t,e),function(t,e){const n=f();if(!n)return;const o=[...t.querySelectorAll(`input[type='${i}']`)].map((({name:t})=>t)),c=[...d,...o],r={};for(const[a,s]of new FormData(t).entries())c.includes(a)||(r[a]=s);n.setItem(e,JSON.stringify({[m]:1,action:t.action,data:r}))}(t,e)}catch(e){console.error('failed to persist form',e)}}(e),e.submit())}));const S=(t,e)=>{t&&!t.dataset[E]&&(n(t,e.some((e=>e===t))),T(t))};for(const o of['focusin','change'])t.addEventListener(o,(t=>{const e=I(t);D(e)&&S(e,y())}));const B=e.get('form_key'),M=e.get(l),P=B&&M;t.addEventListener('DOMContentLoaded',(()=>{const t=y();if(P)for(const e of t)e.elements[l].value===M&&p(e,B);[...new Set([...A(),...v().filter((t=>'true'===t.dataset.shopifyCaptcha))])].forEach((e=>S(e,t)))}))}(h,new URLSearchParams(w.location.search),n,t,e,['guest_login'])})(!0,!0)}();</script>
 <script integrity="sha256-4kQ18oKyAcykRKYeNunJcIwy7WH5gtpwJnB7kiuLZ1E=" data-source-attribution="shopify.loadfeatures" defer="defer" src="//www.kappa.fr/cdn/shopifycloud/storefront/assets/storefront/load_feature-a0a9edcb.js" crossorigin="anonymous"></script>
@@ -572,6 +572,37 @@ function loadIAdvize() {
 <!-- END IADVIZE LIVECHAT -->
 
 
+<!-- END app block --><!-- BEGIN app block: shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507 -->
+
+
+
+
+
+
+
+
+
+
+
+
+  <script async src="https://static.klaviyo.com/onsite/js/SLa688/klaviyo.js?company_id=SLa688"></script>
+  <script>!function(){if(!window.klaviyo){window._klOnsite=window._klOnsite||[];try{window.klaviyo=new Proxy({},{get:function(n,i){return"push"===i?function(){var n;(n=window._klOnsite).push.apply(n,arguments)}:function(){for(var n=arguments.length,o=new Array(n),w=0;w<n;w++)o[w]=arguments[w];var t="function"==typeof o[o.length-1]?o.pop():void 0,e=new Promise((function(n){window._klOnsite.push([i].concat(o,[function(i){t&&t(i),n(i)}]))}));return e}}})}catch(n){window.klaviyo=window.klaviyo||[],window.klaviyo.push=function(){var n;(n=window._klOnsite).push.apply(n,arguments)}}}}();</script>
+
+  
+
+
+
+
+  <script>
+    window.klaviyoReviewsProductDesignMode = false
+  </script>
+
+
+
+
+
+
+
 <!-- END app block --><!-- BEGIN app block: shopify://apps/supergrid-by-depict/blocks/depict_brand_features/ad5c7d1f-ddfb-424b-b936-7f08c4544f6b -->
 
 
@@ -633,37 +664,6 @@ function loadIAdvize() {
 </script>
 
 
-<!-- END app block --><!-- BEGIN app block: shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507 -->
-
-
-
-
-
-
-
-
-
-
-
-
-  <script async src="https://static.klaviyo.com/onsite/js/SLa688/klaviyo.js?company_id=SLa688"></script>
-  <script>!function(){if(!window.klaviyo){window._klOnsite=window._klOnsite||[];try{window.klaviyo=new Proxy({},{get:function(n,i){return"push"===i?function(){var n;(n=window._klOnsite).push.apply(n,arguments)}:function(){for(var n=arguments.length,o=new Array(n),w=0;w<n;w++)o[w]=arguments[w];var t="function"==typeof o[o.length-1]?o.pop():void 0,e=new Promise((function(n){window._klOnsite.push([i].concat(o,[function(i){t&&t(i),n(i)}]))}));return e}}})}catch(n){window.klaviyo=window.klaviyo||[],window.klaviyo.push=function(){var n;(n=window._klOnsite).push.apply(n,arguments)}}}}();</script>
-
-  
-
-
-
-
-  <script>
-    window.klaviyoReviewsProductDesignMode = false
-  </script>
-
-
-
-
-
-
-
 <!-- END app block --><script src="https://cdn.shopify.com/extensions/341b63e8-75de-4462-a13a-6917fade4544/trueprofit-profit-analytics-19/assets/embedded.js" type="text/javascript" defer="defer"></script>
 <link href="https://monorail-edge.shopifysvc.com" rel="dns-prefetch">
 <script>(function(){if ("sendBeacon" in navigator && "performance" in window) {try {var session_token_from_headers = performance.getEntriesByType('navigation')[0].serverTiming.find(x => x.name == '_s').description;} catch {var session_token_from_headers = undefined;}var session_cookie_matches = document.cookie.match(/_shopify_s=([^;]*)/);var session_token_from_cookie = session_cookie_matches && session_cookie_matches.length === 2 ? session_cookie_matches[1] : "";var session_token = session_token_from_headers || session_token_from_cookie || "";function handle_abandonment_event(e) {var entries = performance.getEntries().filter(function(entry) {return /monorail-edge.shopifysvc.com/.test(entry.name);});if (!window.abandonment_tracked && entries.length === 0) {window.abandonment_tracked = true;var currentMs = Date.now();var navigation_start = performance.timing.navigationStart;var payload = {shop_id: 56681136327,url: window.location.href,navigation_start,duration: currentMs - navigation_start,session_token,page_type: "page"};window.navigator.sendBeacon("https://monorail-edge.shopifysvc.com/v1/produce", JSON.stringify({schema_id: "online_store_buyer_site_abandonment/1.1",payload: payload,metadata: {event_created_at_ms: currentMs,event_sent_at_ms: currentMs}}));}}window.addEventListener('pagehide', handle_abandonment_event);}}());</script>
@@ -671,7 +671,7 @@ function loadIAdvize() {
   window.ShopifyAnalytics = window.ShopifyAnalytics || {};
   window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
   window.ShopifyAnalytics.meta.currency = 'EUR';
-  var meta = {"page":{"pageType":"page","resourceType":"page","resourceId":82250334407,"requestId":"6c54b6dd-7947-4ef5-99ba-e3e74853268b-1766968615"}};
+  var meta = {"page":{"pageType":"page","resourceType":"page","resourceId":82250334407,"requestId":"bd012f67-39ea-44c6-ae08-9836015de36d-1767011831"}};
   for (var attr in meta) {
     window.ShopifyAnalytics.meta[attr] = meta[attr];
   }
@@ -817,7 +817,7 @@ function loadIAdvize() {
       try { window.ShopifyAnalytics.merchantGoogleAnalytics.call(this); } catch(error) {};
       document.write = originalDocumentWrite;
 
-      window.ShopifyAnalytics.lib.page(null,{"pageType":"page","resourceType":"page","resourceId":82250334407,"requestId":"6c54b6dd-7947-4ef5-99ba-e3e74853268b-1766968615","shopifyEmitted":true});
+      window.ShopifyAnalytics.lib.page(null,{"pageType":"page","resourceType":"page","resourceId":82250334407,"requestId":"bd012f67-39ea-44c6-ae08-9836015de36d-1767011831","shopifyEmitted":true});
 
       var match = window.location.pathname.match(/checkouts\/(.+)\/(thank_you|post_purchase)/)
       var token = match? match[1]: undefined;
@@ -987,233 +987,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         role="navigation"
         aria-label="Primary"
       ><li class="mobile-nav__item appear-animation appear-delay-2"><div class="mobile-nav__has-sublist"><a
-                    href="/collections/idees-cadeaux"
-                    class="mobile-nav__link mobile-nav__link--top-level menu-highlight"
-                    id="Label-collections-idees-cadeaux1"
-                    
-                  >
-                    Idées cadeaux
-                  </a>
-                  <div class="mobile-nav__toggle">
-                    <button
-                      type="button"
-                      aria-controls="Linklist-collections-idees-cadeaux1"
-                      
-                      aria-labelledby="Label-collections-idees-cadeaux1"
-                      class="collapsible-trigger collapsible--auto-height"
-                    ><span class="collapsible-trigger__icon collapsible-trigger__icon--open" role="presentation">
-  <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="m1.57 1.59 12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none"/></svg>
-</span>
-</button>
-                  </div></div><div
-                id="Linklist-collections-idees-cadeaux1"
-                class="mobile-nav__sublist collapsible-content collapsible-content--all"
-                
-              >
-                <div class="collapsible-content__inner">
-                  <ul class="mobile-nav__sublist"><li class="mobile-nav__item">
-                        <div class="mobile-nav__child-item"><a
-                              href="/collections/idees-cadeaux"
-                              class="mobile-nav__link "
-                              id="Sublabel-collections-idees-cadeaux1"
-                              
-                            >
-                              Par budget
-                            </a><button
-                              type="button"
-                              aria-controls="Sublinklist-collections-idees-cadeaux1-collections-idees-cadeaux1"
-                              aria-labelledby="Sublabel-collections-idees-cadeaux1"
-                              class="collapsible-trigger"
-                            ><span class="collapsible-trigger__icon collapsible-trigger__icon--circle collapsible-trigger__icon--open" role="presentation">
-  <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="m1.57 1.59 12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none"/></svg>
-</span>
-</button></div><div
-                            id="Sublinklist-collections-idees-cadeaux1-collections-idees-cadeaux1"
-                            aria-labelledby="Sublabel-collections-idees-cadeaux1"
-                            class="mobile-nav__sublist collapsible-content collapsible-content--all"
-                            
-                          >
-                            <div class="collapsible-content__inner">
-                              <ul class="mobile-nav__grandchildlist">
-                                
-                                  
-                                    <li class="mobile-nav__item">
-                                      <a
-                                        href="/collections/idees-cadeaux/0-50"
-                                        class="mobile-nav__link "
-                                        
-                                      >
-                                        Moins de 50€
-                                      </a>
-                                    </li>
-                                  
-                                    <li class="mobile-nav__item">
-                                      <a
-                                        href="/collections/idees-cadeaux/51-100"
-                                        class="mobile-nav__link "
-                                        
-                                      >
-                                        Moins de 100€
-                                      </a>
-                                    </li>
-                                  
-                                    <li class="mobile-nav__item">
-                                      <a
-                                        href="/collections/idees-cadeaux/100etplus"
-                                        class="mobile-nav__link "
-                                        
-                                      >
-                                        Plus de 100€
-                                      </a>
-                                    </li>
-                                  
-                                
-                              </ul>
-                            </div>
-                          </div></li><li class="mobile-nav__item">
-                        <div class="mobile-nav__child-item"><a
-                              href="/collections/idees-cadeaux"
-                              class="mobile-nav__link "
-                              id="Sublabel-collections-idees-cadeaux2"
-                              
-                            >
-                              Par genre
-                            </a><button
-                              type="button"
-                              aria-controls="Sublinklist-collections-idees-cadeaux1-collections-idees-cadeaux2"
-                              aria-labelledby="Sublabel-collections-idees-cadeaux2"
-                              class="collapsible-trigger"
-                            ><span class="collapsible-trigger__icon collapsible-trigger__icon--circle collapsible-trigger__icon--open" role="presentation">
-  <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="m1.57 1.59 12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none"/></svg>
-</span>
-</button></div><div
-                            id="Sublinklist-collections-idees-cadeaux1-collections-idees-cadeaux2"
-                            aria-labelledby="Sublabel-collections-idees-cadeaux2"
-                            class="mobile-nav__sublist collapsible-content collapsible-content--all"
-                            
-                          >
-                            <div class="collapsible-content__inner">
-                              <ul class="mobile-nav__grandchildlist">
-                                
-                                  
-                                    <li class="mobile-nav__item">
-                                      <a
-                                        href="/collections/idees-cadeaux/man-all"
-                                        class="mobile-nav__link "
-                                        
-                                      >
-                                        Pour lui
-                                      </a>
-                                    </li>
-                                  
-                                    <li class="mobile-nav__item">
-                                      <a
-                                        href="/collections/idees-cadeaux/woman-all"
-                                        class="mobile-nav__link "
-                                        
-                                      >
-                                        Pour elle
-                                      </a>
-                                    </li>
-                                  
-                                    <li class="mobile-nav__item">
-                                      <a
-                                        href="/collections/idees-cadeaux/kid-all"
-                                        class="mobile-nav__link "
-                                        
-                                      >
-                                        Pour les enfants
-                                      </a>
-                                    </li>
-                                  
-                                
-                              </ul>
-                            </div>
-                          </div></li><li class="mobile-nav__item">
-                        <div class="mobile-nav__child-item"><a
-                              href="/collections/idees-cadeaux/sport"
-                              class="mobile-nav__link "
-                              id="Sublabel-collections-idees-cadeaux-sport3"
-                              
-                            >
-                              Par sport
-                            </a><button
-                              type="button"
-                              aria-controls="Sublinklist-collections-idees-cadeaux1-collections-idees-cadeaux-sport3"
-                              aria-labelledby="Sublabel-collections-idees-cadeaux-sport3"
-                              class="collapsible-trigger"
-                            ><span class="collapsible-trigger__icon collapsible-trigger__icon--circle collapsible-trigger__icon--open" role="presentation">
-  <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="m1.57 1.59 12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none"/></svg>
-</span>
-</button></div><div
-                            id="Sublinklist-collections-idees-cadeaux1-collections-idees-cadeaux-sport3"
-                            aria-labelledby="Sublabel-collections-idees-cadeaux-sport3"
-                            class="mobile-nav__sublist collapsible-content collapsible-content--all"
-                            
-                          >
-                            <div class="collapsible-content__inner">
-                              <ul class="mobile-nav__grandchildlist">
-                                
-                                  
-                                    <li class="mobile-nav__item">
-                                      <a
-                                        href="/collections/idees-cadeaux/Football"
-                                        class="mobile-nav__link "
-                                        
-                                      >
-                                        Football
-                                      </a>
-                                    </li>
-                                  
-                                    <li class="mobile-nav__item">
-                                      <a
-                                        href="/collections/idees-cadeaux/Rugby"
-                                        class="mobile-nav__link "
-                                        
-                                      >
-                                        Rugby
-                                      </a>
-                                    </li>
-                                  
-                                    <li class="mobile-nav__item">
-                                      <a
-                                        href="/collections/idees-cadeaux/Running-&-Training"
-                                        class="mobile-nav__link "
-                                        
-                                      >
-                                        Running & Training
-                                      </a>
-                                    </li>
-                                  
-                                    <li class="mobile-nav__item">
-                                      <a
-                                        href="/collections/idees-cadeaux/ski"
-                                        class="mobile-nav__link "
-                                        
-                                      >
-                                        Ski & Snowboard
-                                      </a>
-                                    </li>
-                                  
-                                    <li class="mobile-nav__item">
-                                      <a
-                                        href="/collections/idees-cadeaux/club"
-                                        class="mobile-nav__link "
-                                        
-                                      >
-                                        Clubs
-                                      </a>
-                                    </li>
-                                  
-                                
-                              </ul>
-                            </div>
-                          </div></li></ul>
-                </div>
-              </div></li><li class="mobile-nav__item appear-animation appear-delay-3"><div class="mobile-nav__has-sublist"><a
                     href="/pages/homme"
                     class="mobile-nav__link mobile-nav__link--top-level "
-                    id="Label-pages-homme2"
+                    id="Label-pages-homme1"
                     
                   >
                     Homme
@@ -1221,16 +997,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   <div class="mobile-nav__toggle">
                     <button
                       type="button"
-                      aria-controls="Linklist-pages-homme2"
+                      aria-controls="Linklist-pages-homme1"
                       
-                      aria-labelledby="Label-pages-homme2"
+                      aria-labelledby="Label-pages-homme1"
                       class="collapsible-trigger collapsible--auto-height"
                     ><span class="collapsible-trigger__icon collapsible-trigger__icon--open" role="presentation">
   <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="m1.57 1.59 12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none"/></svg>
 </span>
 </button>
                   </div></div><div
-                id="Linklist-pages-homme2"
+                id="Linklist-pages-homme1"
                 class="mobile-nav__sublist collapsible-content collapsible-content--all"
                 
               >
@@ -1245,14 +1021,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                               A la une
                             </a><button
                               type="button"
-                              aria-controls="Sublinklist-pages-homme2-pages-homme1"
+                              aria-controls="Sublinklist-pages-homme1-pages-homme1"
                               aria-labelledby="Sublabel-pages-homme1"
                               class="collapsible-trigger"
                             ><span class="collapsible-trigger__icon collapsible-trigger__icon--circle collapsible-trigger__icon--open" role="presentation">
   <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="m1.57 1.59 12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none"/></svg>
 </span>
 </button></div><div
-                            id="Sublinklist-pages-homme2-pages-homme1"
+                            id="Sublinklist-pages-homme1-pages-homme1"
                             aria-labelledby="Sublabel-pages-homme1"
                             class="mobile-nav__sublist collapsible-content collapsible-content--all"
                             
@@ -1260,16 +1036,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <div class="collapsible-content__inner">
                               <ul class="mobile-nav__grandchildlist">
                                 
-                                  
-                                    <li class="mobile-nav__item">
-                                      <a
-                                        href="/collections/idees-cadeaux/man-all"
-                                        class="mobile-nav__link "
-                                        
-                                      >
-                                        Idées Cadeaux
-                                      </a>
-                                    </li>
                                   
                                     <li class="mobile-nav__item">
                                       <a
@@ -1344,14 +1110,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                               Vêtements
                             </a><button
                               type="button"
-                              aria-controls="Sublinklist-pages-homme2-collections-vetements-homme2"
+                              aria-controls="Sublinklist-pages-homme1-collections-vetements-homme2"
                               aria-labelledby="Sublabel-collections-vetements-homme2"
                               class="collapsible-trigger"
                             ><span class="collapsible-trigger__icon collapsible-trigger__icon--circle collapsible-trigger__icon--open" role="presentation">
   <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="m1.57 1.59 12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none"/></svg>
 </span>
 </button></div><div
-                            id="Sublinklist-pages-homme2-collections-vetements-homme2"
+                            id="Sublinklist-pages-homme1-collections-vetements-homme2"
                             aria-labelledby="Sublabel-collections-vetements-homme2"
                             class="mobile-nav__sublist collapsible-content collapsible-content--all"
                             
@@ -1443,14 +1209,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                               Chaussures
                             </a><button
                               type="button"
-                              aria-controls="Sublinklist-pages-homme2-collections-chaussures-homme3"
+                              aria-controls="Sublinklist-pages-homme1-collections-chaussures-homme3"
                               aria-labelledby="Sublabel-collections-chaussures-homme3"
                               class="collapsible-trigger"
                             ><span class="collapsible-trigger__icon collapsible-trigger__icon--circle collapsible-trigger__icon--open" role="presentation">
   <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="m1.57 1.59 12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none"/></svg>
 </span>
 </button></div><div
-                            id="Sublinklist-pages-homme2-collections-chaussures-homme3"
+                            id="Sublinklist-pages-homme1-collections-chaussures-homme3"
                             aria-labelledby="Sublabel-collections-chaussures-homme3"
                             class="mobile-nav__sublist collapsible-content collapsible-content--all"
                             
@@ -1512,14 +1278,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                               Par collection
                             </a><button
                               type="button"
-                              aria-controls="Sublinklist-pages-homme2-pages-homme4"
+                              aria-controls="Sublinklist-pages-homme1-pages-homme4"
                               aria-labelledby="Sublabel-pages-homme4"
                               class="collapsible-trigger"
                             ><span class="collapsible-trigger__icon collapsible-trigger__icon--circle collapsible-trigger__icon--open" role="presentation">
   <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="m1.57 1.59 12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none"/></svg>
 </span>
 </button></div><div
-                            id="Sublinklist-pages-homme2-pages-homme4"
+                            id="Sublinklist-pages-homme1-pages-homme4"
                             aria-labelledby="Sublabel-pages-homme4"
                             class="mobile-nav__sublist collapsible-content collapsible-content--all"
                             
@@ -1591,14 +1357,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                               Par sport
                             </a><button
                               type="button"
-                              aria-controls="Sublinklist-pages-homme2-collections-homme-sport5"
+                              aria-controls="Sublinklist-pages-homme1-collections-homme-sport5"
                               aria-labelledby="Sublabel-collections-homme-sport5"
                               class="collapsible-trigger"
                             ><span class="collapsible-trigger__icon collapsible-trigger__icon--circle collapsible-trigger__icon--open" role="presentation">
   <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="m1.57 1.59 12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none"/></svg>
 </span>
 </button></div><div
-                            id="Sublinklist-pages-homme2-collections-homme-sport5"
+                            id="Sublinklist-pages-homme1-collections-homme-sport5"
                             aria-labelledby="Sublabel-collections-homme-sport5"
                             class="mobile-nav__sublist collapsible-content collapsible-content--all"
                             
@@ -1672,10 +1438,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             </div>
                           </div></li></ul>
                 </div>
-              </div></li><li class="mobile-nav__item appear-animation appear-delay-4"><div class="mobile-nav__has-sublist"><a
+              </div></li><li class="mobile-nav__item appear-animation appear-delay-3"><div class="mobile-nav__has-sublist"><a
                     href="/pages/femme"
                     class="mobile-nav__link mobile-nav__link--top-level "
-                    id="Label-pages-femme3"
+                    id="Label-pages-femme2"
                     
                   >
                     Femme
@@ -1683,16 +1449,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   <div class="mobile-nav__toggle">
                     <button
                       type="button"
-                      aria-controls="Linklist-pages-femme3"
+                      aria-controls="Linklist-pages-femme2"
                       
-                      aria-labelledby="Label-pages-femme3"
+                      aria-labelledby="Label-pages-femme2"
                       class="collapsible-trigger collapsible--auto-height"
                     ><span class="collapsible-trigger__icon collapsible-trigger__icon--open" role="presentation">
   <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="m1.57 1.59 12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none"/></svg>
 </span>
 </button>
                   </div></div><div
-                id="Linklist-pages-femme3"
+                id="Linklist-pages-femme2"
                 class="mobile-nav__sublist collapsible-content collapsible-content--all"
                 
               >
@@ -1707,14 +1473,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                               A la une
                             </a><button
                               type="button"
-                              aria-controls="Sublinklist-pages-femme3-pages-femme1"
+                              aria-controls="Sublinklist-pages-femme2-pages-femme1"
                               aria-labelledby="Sublabel-pages-femme1"
                               class="collapsible-trigger"
                             ><span class="collapsible-trigger__icon collapsible-trigger__icon--circle collapsible-trigger__icon--open" role="presentation">
   <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="m1.57 1.59 12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none"/></svg>
 </span>
 </button></div><div
-                            id="Sublinklist-pages-femme3-pages-femme1"
+                            id="Sublinklist-pages-femme2-pages-femme1"
                             aria-labelledby="Sublabel-pages-femme1"
                             class="mobile-nav__sublist collapsible-content collapsible-content--all"
                             
@@ -1722,16 +1488,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <div class="collapsible-content__inner">
                               <ul class="mobile-nav__grandchildlist">
                                 
-                                  
-                                    <li class="mobile-nav__item">
-                                      <a
-                                        href="/collections/idees-cadeaux/woman-all"
-                                        class="mobile-nav__link "
-                                        
-                                      >
-                                        Idées Cadeaux
-                                      </a>
-                                    </li>
                                   
                                     <li class="mobile-nav__item">
                                       <a
@@ -1796,14 +1552,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                               Vêtements
                             </a><button
                               type="button"
-                              aria-controls="Sublinklist-pages-femme3-collections-vetements-femme2"
+                              aria-controls="Sublinklist-pages-femme2-collections-vetements-femme2"
                               aria-labelledby="Sublabel-collections-vetements-femme2"
                               class="collapsible-trigger"
                             ><span class="collapsible-trigger__icon collapsible-trigger__icon--circle collapsible-trigger__icon--open" role="presentation">
   <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="m1.57 1.59 12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none"/></svg>
 </span>
 </button></div><div
-                            id="Sublinklist-pages-femme3-collections-vetements-femme2"
+                            id="Sublinklist-pages-femme2-collections-vetements-femme2"
                             aria-labelledby="Sublabel-collections-vetements-femme2"
                             class="mobile-nav__sublist collapsible-content collapsible-content--all"
                             
@@ -1895,14 +1651,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                               Chaussures
                             </a><button
                               type="button"
-                              aria-controls="Sublinklist-pages-femme3-collections-chaussures-femme3"
+                              aria-controls="Sublinklist-pages-femme2-collections-chaussures-femme3"
                               aria-labelledby="Sublabel-collections-chaussures-femme3"
                               class="collapsible-trigger"
                             ><span class="collapsible-trigger__icon collapsible-trigger__icon--circle collapsible-trigger__icon--open" role="presentation">
   <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="m1.57 1.59 12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none"/></svg>
 </span>
 </button></div><div
-                            id="Sublinklist-pages-femme3-collections-chaussures-femme3"
+                            id="Sublinklist-pages-femme2-collections-chaussures-femme3"
                             aria-labelledby="Sublabel-collections-chaussures-femme3"
                             class="mobile-nav__sublist collapsible-content collapsible-content--all"
                             
@@ -1964,14 +1720,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                               Par collection
                             </a><button
                               type="button"
-                              aria-controls="Sublinklist-pages-femme3-pages-femme4"
+                              aria-controls="Sublinklist-pages-femme2-pages-femme4"
                               aria-labelledby="Sublabel-pages-femme4"
                               class="collapsible-trigger"
                             ><span class="collapsible-trigger__icon collapsible-trigger__icon--circle collapsible-trigger__icon--open" role="presentation">
   <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="m1.57 1.59 12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none"/></svg>
 </span>
 </button></div><div
-                            id="Sublinklist-pages-femme3-pages-femme4"
+                            id="Sublinklist-pages-femme2-pages-femme4"
                             aria-labelledby="Sublabel-pages-femme4"
                             class="mobile-nav__sublist collapsible-content collapsible-content--all"
                             
@@ -2033,14 +1789,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                               Par sport
                             </a><button
                               type="button"
-                              aria-controls="Sublinklist-pages-femme3-collections-femme-sport5"
+                              aria-controls="Sublinklist-pages-femme2-collections-femme-sport5"
                               aria-labelledby="Sublabel-collections-femme-sport5"
                               class="collapsible-trigger"
                             ><span class="collapsible-trigger__icon collapsible-trigger__icon--circle collapsible-trigger__icon--open" role="presentation">
   <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="m1.57 1.59 12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none"/></svg>
 </span>
 </button></div><div
-                            id="Sublinklist-pages-femme3-collections-femme-sport5"
+                            id="Sublinklist-pages-femme2-collections-femme-sport5"
                             aria-labelledby="Sublabel-collections-femme-sport5"
                             class="mobile-nav__sublist collapsible-content collapsible-content--all"
                             
@@ -2114,10 +1870,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             </div>
                           </div></li></ul>
                 </div>
-              </div></li><li class="mobile-nav__item appear-animation appear-delay-5"><div class="mobile-nav__has-sublist"><a
+              </div></li><li class="mobile-nav__item appear-animation appear-delay-4"><div class="mobile-nav__has-sublist"><a
                     href="/pages/enfant"
                     class="mobile-nav__link mobile-nav__link--top-level "
-                    id="Label-pages-enfant4"
+                    id="Label-pages-enfant3"
                     
                   >
                     Enfant
@@ -2125,16 +1881,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   <div class="mobile-nav__toggle">
                     <button
                       type="button"
-                      aria-controls="Linklist-pages-enfant4"
+                      aria-controls="Linklist-pages-enfant3"
                       
-                      aria-labelledby="Label-pages-enfant4"
+                      aria-labelledby="Label-pages-enfant3"
                       class="collapsible-trigger collapsible--auto-height"
                     ><span class="collapsible-trigger__icon collapsible-trigger__icon--open" role="presentation">
   <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="m1.57 1.59 12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none"/></svg>
 </span>
 </button>
                   </div></div><div
-                id="Linklist-pages-enfant4"
+                id="Linklist-pages-enfant3"
                 class="mobile-nav__sublist collapsible-content collapsible-content--all"
                 
               >
@@ -2149,14 +1905,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                               A la une
                             </a><button
                               type="button"
-                              aria-controls="Sublinklist-pages-enfant4-collections-vetements-enfant1"
+                              aria-controls="Sublinklist-pages-enfant3-collections-vetements-enfant1"
                               aria-labelledby="Sublabel-collections-vetements-enfant1"
                               class="collapsible-trigger"
                             ><span class="collapsible-trigger__icon collapsible-trigger__icon--circle collapsible-trigger__icon--open" role="presentation">
   <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="m1.57 1.59 12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none"/></svg>
 </span>
 </button></div><div
-                            id="Sublinklist-pages-enfant4-collections-vetements-enfant1"
+                            id="Sublinklist-pages-enfant3-collections-vetements-enfant1"
                             aria-labelledby="Sublabel-collections-vetements-enfant1"
                             class="mobile-nav__sublist collapsible-content collapsible-content--all"
                             
@@ -2164,16 +1920,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <div class="collapsible-content__inner">
                               <ul class="mobile-nav__grandchildlist">
                                 
-                                  
-                                    <li class="mobile-nav__item">
-                                      <a
-                                        href="/collections/idees-cadeaux/kid-all"
-                                        class="mobile-nav__link "
-                                        
-                                      >
-                                        Idées Cadeaux
-                                      </a>
-                                    </li>
                                   
                                     <li class="mobile-nav__item">
                                       <a
@@ -2228,14 +1974,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                               Vêtements
                             </a><button
                               type="button"
-                              aria-controls="Sublinklist-pages-enfant4-collections-vetements-enfant2"
+                              aria-controls="Sublinklist-pages-enfant3-collections-vetements-enfant2"
                               aria-labelledby="Sublabel-collections-vetements-enfant2"
                               class="collapsible-trigger"
                             ><span class="collapsible-trigger__icon collapsible-trigger__icon--circle collapsible-trigger__icon--open" role="presentation">
   <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="m1.57 1.59 12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none"/></svg>
 </span>
 </button></div><div
-                            id="Sublinklist-pages-enfant4-collections-vetements-enfant2"
+                            id="Sublinklist-pages-enfant3-collections-vetements-enfant2"
                             aria-labelledby="Sublabel-collections-vetements-enfant2"
                             class="mobile-nav__sublist collapsible-content collapsible-content--all"
                             
@@ -2317,14 +2063,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                               Chaussures
                             </a><button
                               type="button"
-                              aria-controls="Sublinklist-pages-enfant4-collections-chaussures-enfant3"
+                              aria-controls="Sublinklist-pages-enfant3-collections-chaussures-enfant3"
                               aria-labelledby="Sublabel-collections-chaussures-enfant3"
                               class="collapsible-trigger"
                             ><span class="collapsible-trigger__icon collapsible-trigger__icon--circle collapsible-trigger__icon--open" role="presentation">
   <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="m1.57 1.59 12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none"/></svg>
 </span>
 </button></div><div
-                            id="Sublinklist-pages-enfant4-collections-chaussures-enfant3"
+                            id="Sublinklist-pages-enfant3-collections-chaussures-enfant3"
                             aria-labelledby="Sublabel-collections-chaussures-enfant3"
                             class="mobile-nav__sublist collapsible-content collapsible-content--all"
                             
@@ -2386,14 +2132,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                               Accessoires
                             </a><button
                               type="button"
-                              aria-controls="Sublinklist-pages-enfant4-collections-accessoires-enfant4"
+                              aria-controls="Sublinklist-pages-enfant3-collections-accessoires-enfant4"
                               aria-labelledby="Sublabel-collections-accessoires-enfant4"
                               class="collapsible-trigger"
                             ><span class="collapsible-trigger__icon collapsible-trigger__icon--circle collapsible-trigger__icon--open" role="presentation">
   <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="m1.57 1.59 12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none"/></svg>
 </span>
 </button></div><div
-                            id="Sublinklist-pages-enfant4-collections-accessoires-enfant4"
+                            id="Sublinklist-pages-enfant3-collections-accessoires-enfant4"
                             aria-labelledby="Sublabel-collections-accessoires-enfant4"
                             class="mobile-nav__sublist collapsible-content collapsible-content--all"
                             
@@ -2445,14 +2191,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                               Par sport
                             </a><button
                               type="button"
-                              aria-controls="Sublinklist-pages-enfant4-collections-enfant-sport5"
+                              aria-controls="Sublinklist-pages-enfant3-collections-enfant-sport5"
                               aria-labelledby="Sublabel-collections-enfant-sport5"
                               class="collapsible-trigger"
                             ><span class="collapsible-trigger__icon collapsible-trigger__icon--circle collapsible-trigger__icon--open" role="presentation">
   <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="m1.57 1.59 12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none"/></svg>
 </span>
 </button></div><div
-                            id="Sublinklist-pages-enfant4-collections-enfant-sport5"
+                            id="Sublinklist-pages-enfant3-collections-enfant-sport5"
                             aria-labelledby="Sublabel-collections-enfant-sport5"
                             class="mobile-nav__sublist collapsible-content collapsible-content--all"
                             
@@ -2516,10 +2262,10 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             </div>
                           </div></li></ul>
                 </div>
-              </div></li><li class="mobile-nav__item appear-animation appear-delay-6"><div class="mobile-nav__has-sublist"><a
+              </div></li><li class="mobile-nav__item appear-animation appear-delay-5"><div class="mobile-nav__has-sublist"><a
                     href="/collections/sport"
                     class="mobile-nav__link mobile-nav__link--top-level "
-                    id="Label-collections-sport5"
+                    id="Label-collections-sport4"
                     
                   >
                     Sports
@@ -2527,16 +2273,16 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   <div class="mobile-nav__toggle">
                     <button
                       type="button"
-                      aria-controls="Linklist-collections-sport5"
+                      aria-controls="Linklist-collections-sport4"
                       
-                      aria-labelledby="Label-collections-sport5"
+                      aria-labelledby="Label-collections-sport4"
                       class="collapsible-trigger collapsible--auto-height"
                     ><span class="collapsible-trigger__icon collapsible-trigger__icon--open" role="presentation">
   <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="m1.57 1.59 12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none"/></svg>
 </span>
 </button>
                   </div></div><div
-                id="Linklist-collections-sport5"
+                id="Linklist-collections-sport4"
                 class="mobile-nav__sublist collapsible-content collapsible-content--all"
                 
               >
@@ -2551,14 +2297,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                               Football
                             </a><button
                               type="button"
-                              aria-controls="Sublinklist-collections-sport5-collections-football1"
+                              aria-controls="Sublinklist-collections-sport4-collections-football1"
                               aria-labelledby="Sublabel-collections-football1"
                               class="collapsible-trigger"
                             ><span class="collapsible-trigger__icon collapsible-trigger__icon--circle collapsible-trigger__icon--open" role="presentation">
   <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="m1.57 1.59 12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none"/></svg>
 </span>
 </button></div><div
-                            id="Sublinklist-collections-sport5-collections-football1"
+                            id="Sublinklist-collections-sport4-collections-football1"
                             aria-labelledby="Sublabel-collections-football1"
                             class="mobile-nav__sublist collapsible-content collapsible-content--all"
                             
@@ -2659,16 +2405,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                   
                                     <li class="mobile-nav__item">
                                       <a
-                                        href="/collections/idees-cadeaux/Football"
-                                        class="mobile-nav__link "
-                                        
-                                      >
-                                        Idées Cadeaux
-                                      </a>
-                                    </li>
-                                  
-                                    <li class="mobile-nav__item">
-                                      <a
                                         href="/collections/football"
                                         class="mobile-nav__link "
                                         
@@ -2690,14 +2426,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                               Rugby
                             </a><button
                               type="button"
-                              aria-controls="Sublinklist-collections-sport5-collections-rugby2"
+                              aria-controls="Sublinklist-collections-sport4-collections-rugby2"
                               aria-labelledby="Sublabel-collections-rugby2"
                               class="collapsible-trigger"
                             ><span class="collapsible-trigger__icon collapsible-trigger__icon--circle collapsible-trigger__icon--open" role="presentation">
   <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="m1.57 1.59 12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none"/></svg>
 </span>
 </button></div><div
-                            id="Sublinklist-collections-sport5-collections-rugby2"
+                            id="Sublinklist-collections-sport4-collections-rugby2"
                             aria-labelledby="Sublabel-collections-rugby2"
                             class="mobile-nav__sublist collapsible-content collapsible-content--all"
                             
@@ -2778,16 +2514,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                   
                                     <li class="mobile-nav__item">
                                       <a
-                                        href="/collections/idees-cadeaux/Rugby"
-                                        class="mobile-nav__link "
-                                        
-                                      >
-                                        Idées Cadeaux
-                                      </a>
-                                    </li>
-                                  
-                                    <li class="mobile-nav__item">
-                                      <a
                                         href="/collections/rugby"
                                         class="mobile-nav__link "
                                         
@@ -2809,14 +2535,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                               Motorsport
                             </a><button
                               type="button"
-                              aria-controls="Sublinklist-collections-sport5-collections-motorsport3"
+                              aria-controls="Sublinklist-collections-sport4-collections-motorsport3"
                               aria-labelledby="Sublabel-collections-motorsport3"
                               class="collapsible-trigger"
                             ><span class="collapsible-trigger__icon collapsible-trigger__icon--circle collapsible-trigger__icon--open" role="presentation">
   <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="m1.57 1.59 12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none"/></svg>
 </span>
 </button></div><div
-                            id="Sublinklist-collections-sport5-collections-motorsport3"
+                            id="Sublinklist-collections-sport4-collections-motorsport3"
                             aria-labelledby="Sublabel-collections-motorsport3"
                             class="mobile-nav__sublist collapsible-content collapsible-content--all"
                             
@@ -2918,14 +2644,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                               Ski &amp; Snowboard
                             </a><button
                               type="button"
-                              aria-controls="Sublinklist-collections-sport5-pages-ski4"
+                              aria-controls="Sublinklist-collections-sport4-pages-ski4"
                               aria-labelledby="Sublabel-pages-ski4"
                               class="collapsible-trigger"
                             ><span class="collapsible-trigger__icon collapsible-trigger__icon--circle collapsible-trigger__icon--open" role="presentation">
   <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="m1.57 1.59 12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none"/></svg>
 </span>
 </button></div><div
-                            id="Sublinklist-collections-sport5-pages-ski4"
+                            id="Sublinklist-collections-sport4-pages-ski4"
                             aria-labelledby="Sublabel-pages-ski4"
                             class="mobile-nav__sublist collapsible-content collapsible-content--all"
                             
@@ -2996,16 +2722,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                                   
                                     <li class="mobile-nav__item">
                                       <a
-                                        href="/collections/idees-cadeaux/Ski"
-                                        class="mobile-nav__link "
-                                        
-                                      >
-                                        Idées Cadeaux
-                                      </a>
-                                    </li>
-                                  
-                                    <li class="mobile-nav__item">
-                                      <a
                                         href="/collections/ski-snowboard"
                                         class="mobile-nav__link "
                                         
@@ -3027,14 +2743,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                               Autres sports
                             </a><button
                               type="button"
-                              aria-controls="Sublinklist-collections-sport5-collections-sport5"
+                              aria-controls="Sublinklist-collections-sport4-collections-sport5"
                               aria-labelledby="Sublabel-collections-sport5"
                               class="collapsible-trigger"
                             ><span class="collapsible-trigger__icon collapsible-trigger__icon--circle collapsible-trigger__icon--open" role="presentation">
   <svg aria-hidden="true" focusable="false" role="presentation" class="icon icon--wide icon-chevron-down" viewBox="0 0 28 16"><path d="m1.57 1.59 12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none"/></svg>
 </span>
 </button></div><div
-                            id="Sublinklist-collections-sport5-collections-sport5"
+                            id="Sublinklist-collections-sport4-collections-sport5"
                             aria-labelledby="Sublabel-collections-sport5"
                             class="mobile-nav__sublist collapsible-content collapsible-content--all"
                             
@@ -3078,27 +2794,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             </div>
                           </div></li><li class="mobile-nav__item">
                         <div class="mobile-nav__child-item"><a
-                              href="/collections/idees-cadeaux/sport"
-                              class="mobile-nav__link "
-                              id="Sublabel-collections-idees-cadeaux-sport6"
-                              
-                            >
-                              Idées Cadeaux
-                            </a></div></li><li class="mobile-nav__item">
-                        <div class="mobile-nav__child-item"><a
                               href="/collections/sport-froid-pluie"
                               class="mobile-nav__link "
-                              id="Sublabel-collections-sport-froid-pluie7"
+                              id="Sublabel-collections-sport-froid-pluie6"
                               
                             >
                               Équipe-toi pour l&#39;hiver
                             </a></div></li></ul>
                 </div>
               </div></li><li class="mobile-nav__item mobile-nav__item--secondary">
-            <div class="grid"><div class="grid__item one-half appear-animation appear-delay-7">
+            <div class="grid"><div class="grid__item one-half appear-animation appear-delay-6">
                   <a href="/account" class="mobile-nav__link">Se connecter</a>
                 </div></div>
-          </li></ul><ul class="mobile-nav__social appear-animation appear-delay-8"><li class="mobile-nav__social-item">
+          </li></ul><ul class="mobile-nav__social appear-animation appear-delay-7"><li class="mobile-nav__social-item">
             <a
               target="_blank"
               rel="noopener"
@@ -3505,135 +3213,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
           class="site-nav__details"
         >
           <summary
-            data-link="/collections/idees-cadeaux"
-            aria-expanded="false"
-            aria-controls="site-nav-item--1"
-            class="site-nav__link site-nav__link--underline site-nav__link--has-dropdown menu-highlight"
-          >
-            Idées cadeaux
-            <svg
-              aria-hidden="true"
-              focusable="false"
-              role="presentation"
-              class="icon icon--wide icon-chevron-down"
-              viewBox="0 0 28 16"
-            >
-              <path d="m1.57 1.59 12.76 12.77L27.1 1.59" stroke-width="2" stroke="#000" fill="none"/>
-            </svg>
-          </summary>
-      <div class="site-nav__dropdown megamenu text-left">
-          <div class="page-width">
-            <div class="grid">
-              <div class="grid__item medium-up--one-fifth appear-animation appear-delay-1"><div class="h5">
-                    <a
-                      href="/collections/idees-cadeaux"
-                      class="site-nav__dropdown-link site-nav__dropdown-link--top-level "
-                    >Par budget</a>
-                  </div><div>
-                        <a
-                          href="/collections/idees-cadeaux/0-50"
-                          class="site-nav__dropdown-link "
-                        >
-                          Moins de 50€
-                        </a>
-                      </div><div>
-                        <a
-                          href="/collections/idees-cadeaux/51-100"
-                          class="site-nav__dropdown-link "
-                        >
-                          Moins de 100€
-                        </a>
-                      </div><div>
-                        <a
-                          href="/collections/idees-cadeaux/100etplus"
-                          class="site-nav__dropdown-link "
-                        >
-                          Plus de 100€
-                        </a>
-                      </div></div>
-                    <div class="grid__item medium-up--one-fifth appear-animation appear-delay-2"><div class="h5">
-                    <a
-                      href="/collections/idees-cadeaux"
-                      class="site-nav__dropdown-link site-nav__dropdown-link--top-level "
-                    >Par genre</a>
-                  </div><div>
-                        <a
-                          href="/collections/idees-cadeaux/man-all"
-                          class="site-nav__dropdown-link "
-                        >
-                          Pour lui
-                        </a>
-                      </div><div>
-                        <a
-                          href="/collections/idees-cadeaux/woman-all"
-                          class="site-nav__dropdown-link "
-                        >
-                          Pour elle
-                        </a>
-                      </div><div>
-                        <a
-                          href="/collections/idees-cadeaux/kid-all"
-                          class="site-nav__dropdown-link "
-                        >
-                          Pour les enfants
-                        </a>
-                      </div></div>
-                    <div class="grid__item medium-up--one-fifth appear-animation appear-delay-3"><div class="h5">
-                    <a
-                      href="/collections/idees-cadeaux/sport"
-                      class="site-nav__dropdown-link site-nav__dropdown-link--top-level "
-                    >Par sport</a>
-                  </div><div>
-                        <a
-                          href="/collections/idees-cadeaux/Football"
-                          class="site-nav__dropdown-link "
-                        >
-                          Football
-                        </a>
-                      </div><div>
-                        <a
-                          href="/collections/idees-cadeaux/Rugby"
-                          class="site-nav__dropdown-link "
-                        >
-                          Rugby
-                        </a>
-                      </div><div>
-                        <a
-                          href="/collections/idees-cadeaux/Running-&-Training"
-                          class="site-nav__dropdown-link "
-                        >
-                          Running & Training
-                        </a>
-                      </div><div>
-                        <a
-                          href="/collections/idees-cadeaux/ski"
-                          class="site-nav__dropdown-link "
-                        >
-                          Ski & Snowboard
-                        </a>
-                      </div><div>
-                        <a
-                          href="/collections/idees-cadeaux/club"
-                          class="site-nav__dropdown-link "
-                        >
-                          Clubs
-                        </a>
-                      </div></div>
-            </div></div>
-        </div>
-        </details>
-      
-    </li><li class="site-nav__item site-nav__expanded-item site-nav--has-dropdown site-nav--is-megamenu">
-      
-        <details
-          data-hover="true"
-          id="site-nav-item--2"
-          class="site-nav__details"
-        >
-          <summary
             data-link="/pages/homme"
             aria-expanded="false"
-            aria-controls="site-nav-item--2"
+            aria-controls="site-nav-item--1"
             class="site-nav__link site-nav__link--underline site-nav__link--has-dropdown "
           >
             Homme
@@ -3656,13 +3238,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                       class="site-nav__dropdown-link site-nav__dropdown-link--top-level "
                     >A la une</a>
                   </div><div>
-                        <a
-                          href="/collections/idees-cadeaux/man-all"
-                          class="site-nav__dropdown-link "
-                        >
-                          Idées Cadeaux
-                        </a>
-                      </div><div>
                         <a
                           href="/collections/nouveau/man-all"
                           class="site-nav__dropdown-link "
@@ -3891,13 +3466,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       
         <details
           data-hover="true"
-          id="site-nav-item--3"
+          id="site-nav-item--2"
           class="site-nav__details"
         >
           <summary
             data-link="/pages/femme"
             aria-expanded="false"
-            aria-controls="site-nav-item--3"
+            aria-controls="site-nav-item--2"
             class="site-nav__link site-nav__link--underline site-nav__link--has-dropdown "
           >
             Femme
@@ -3920,13 +3495,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                       class="site-nav__dropdown-link site-nav__dropdown-link--top-level "
                     >A la une</a>
                   </div><div>
-                        <a
-                          href="/collections/idees-cadeaux/woman-all"
-                          class="site-nav__dropdown-link "
-                        >
-                          Idées Cadeaux
-                        </a>
-                      </div><div>
                         <a
                           href="/collections/nouveau/woman-all"
                           class="site-nav__dropdown-link "
@@ -4141,13 +3709,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       
         <details
           data-hover="true"
-          id="site-nav-item--4"
+          id="site-nav-item--3"
           class="site-nav__details"
         >
           <summary
             data-link="/pages/enfant"
             aria-expanded="false"
-            aria-controls="site-nav-item--4"
+            aria-controls="site-nav-item--3"
             class="site-nav__link site-nav__link--underline site-nav__link--has-dropdown "
           >
             Enfant
@@ -4170,13 +3738,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                       class="site-nav__dropdown-link site-nav__dropdown-link--top-level "
                     >A la une</a>
                   </div><div>
-                        <a
-                          href="/collections/idees-cadeaux/kid-all"
-                          class="site-nav__dropdown-link "
-                        >
-                          Idées Cadeaux
-                        </a>
-                      </div><div>
                         <a
                           href="/collections/nouveau/kid-all"
                           class="site-nav__dropdown-link "
@@ -4363,13 +3924,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       
         <details
           data-hover="true"
-          id="site-nav-item--5"
+          id="site-nav-item--4"
           class="site-nav__details"
         >
           <summary
             data-link="/collections/sport"
             aria-expanded="false"
-            aria-controls="site-nav-item--5"
+            aria-controls="site-nav-item--4"
             class="site-nav__link site-nav__link--underline site-nav__link--has-dropdown "
           >
             Sports
@@ -4456,13 +4017,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </a>
                       </div><div>
                         <a
-                          href="/collections/idees-cadeaux/Football"
-                          class="site-nav__dropdown-link "
-                        >
-                          Idées Cadeaux
-                        </a>
-                      </div><div>
-                        <a
                           href="/collections/football"
                           class="site-nav__dropdown-link "
                         >
@@ -4522,13 +4076,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                           class="site-nav__dropdown-link "
                         >
                           Promotions
-                        </a>
-                      </div><div>
-                        <a
-                          href="/collections/idees-cadeaux/Rugby"
-                          class="site-nav__dropdown-link "
-                        >
-                          Idées Cadeaux
                         </a>
                       </div><div>
                         <a
@@ -4649,13 +4196,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </a>
                       </div><div>
                         <a
-                          href="/collections/idees-cadeaux/Ski"
-                          class="site-nav__dropdown-link "
-                        >
-                          Idées Cadeaux
-                        </a>
-                      </div><div>
-                        <a
                           href="/collections/ski-snowboard"
                           class="site-nav__dropdown-link "
                         >
@@ -4690,11 +4230,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                         </a>
                       </div></div>
                     <div class="grid__item medium-up--one-fifth appear-animation appear-delay-6"><div class="h5">
-                    <a
-                      href="/collections/idees-cadeaux/sport"
-                      class="site-nav__dropdown-link site-nav__dropdown-link--top-level "
-                    >Idées Cadeaux</a>
-                  </div><div class="h5">
                     <a
                       href="/collections/sport-froid-pluie"
                       class="site-nav__dropdown-link site-nav__dropdown-link--top-level "
