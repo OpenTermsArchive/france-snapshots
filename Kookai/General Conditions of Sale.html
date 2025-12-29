@@ -588,7 +588,7 @@ await import("//kookai.fr/cdn/shopifycloud/shop-js/modules/v2/chunk.common_THX2l
     window.addEventListener('load', asyncLoad, false);
   }
 })();</script>
-<script id="__st">var __st={"a":55913644166,"offset":3600,"reqid":"392eb27f-9ff2-4535-8965-d3fd09257483-1766968618","pageurl":"kookai.fr\/pages\/conditions-generales-de-vente","s":"pages-85775253638","u":"693ae4b24fb0","p":"page","rtyp":"page","rid":85775253638};</script>
+<script id="__st">var __st={"a":55913644166,"offset":3600,"reqid":"c6928ed4-bce5-4aa2-8efb-5e63baf1c3bc-1767011833","pageurl":"kookai.fr\/pages\/conditions-generales-de-vente","s":"pages-85775253638","u":"c39ebe4bcd9a","p":"page","rtyp":"page","rid":85775253638};</script>
 <script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
 <script id="captcha-bootstrap">!function(){'use strict';const t='contact',e='account',n='new_comment',o=[[t,t],['blogs',n],['comments',n],[t,'customer']],c=[[e,'customer_login'],[e,'guest_login'],[e,'recover_customer_password'],[e,'create_customer']],r=t=>t.map((([t,e])=>`form[action*='/${t}']:not([data-nocaptcha='true']) input[name='form_type'][value='${e}']`)).join(','),a=t=>()=>t?[...document.querySelectorAll(t)].map((t=>t.form)):[];function s(){const t=[...o],e=r(t);return a(e)}const i='password',u='form_key',d=['recaptcha-v3-token','g-recaptcha-response','h-captcha-response',i],f=()=>{try{return window.sessionStorage}catch{return}},m='__shopify_v',_=t=>t.elements[u];function p(t,e,n=!1){try{const o=window.sessionStorage,c=JSON.parse(o.getItem(e)),{data:r}=function(t){const{data:e,action:n}=t;return t[m]||n?{data:e,action:n}:{data:t,action:n}}(c);for(const[e,n]of Object.entries(r))t.elements[e]&&(t.elements[e].value=n);n&&o.removeItem(e)}catch(o){console.error('form repopulation failed',{error:o})}}const l='form_type',E='cptcha';function T(t){t.dataset[E]=!0}const w=window,h=w.document,L='Shopify',v='ce_forms',y='captcha';let A=!1;((t,e)=>{const n=(g='f06e6c50-85a8-45c8-87d0-21a2b65856fe',I='https://cdn.shopify.com/shopifycloud/storefront-forms-hcaptcha/ce_storefront_forms_captcha_hcaptcha.v1.5.2.iife.js',D={infoText:'Protégé par hCaptcha',privacyText:'Confidentialité',termsText:'Conditions'},(t,e,n)=>{const o=w[L][v],c=o.bindForm;if(c)return c(t,g,e,D).then(n);var r;o.q.push([[t,g,e,D],n]),r=I,A||(h.body.append(Object.assign(h.createElement('script'),{id:'captcha-provider',async:!0,src:r})),A=!0)});var g,I,D;w[L]=w[L]||{},w[L][v]=w[L][v]||{},w[L][v].q=[],w[L][y]=w[L][y]||{},w[L][y].protect=function(t,e){n(t,void 0,e),T(t)},Object.freeze(w[L][y]),function(t,e,n,w,h,L){const[v,y,A,g]=function(t,e,n){const i=e?o:[],u=t?c:[],d=[...i,...u],f=r(d),m=r(i),_=r(d.filter((([t,e])=>n.includes(e))));return[a(f),a(m),a(_),s()]}(w,h,L),I=t=>{const e=t.target;return e instanceof HTMLFormElement?e:e&&e.form},D=t=>v().includes(t);t.addEventListener('submit',(t=>{const e=I(t);if(!e)return;const n=D(e)&&!e.dataset.hcaptchaBound&&!e.dataset.recaptchaBound,o=_(e),c=g().includes(e)&&(!o||!o.value);(n||c)&&t.preventDefault(),c&&!n&&(function(t){try{if(!f())return;!function(t){const e=f();if(!e)return;const n=_(t);if(!n)return;const o=n.value;o&&e.removeItem(o)}(t);const e=Array.from(Array(32),(()=>Math.random().toString(36)[2])).join('');!function(t,e){_(t)||t.append(Object.assign(document.createElement('input'),{type:'hidden',name:u})),t.elements[u].value=e}(t,e),function(t,e){const n=f();if(!n)return;const o=[...t.querySelectorAll(`input[type='${i}']`)].map((({name:t})=>t)),c=[...d,...o],r={};for(const[a,s]of new FormData(t).entries())c.includes(a)||(r[a]=s);n.setItem(e,JSON.stringify({[m]:1,action:t.action,data:r}))}(t,e)}catch(e){console.error('failed to persist form',e)}}(e),e.submit())}));const S=(t,e)=>{t&&!t.dataset[E]&&(n(t,e.some((e=>e===t))),T(t))};for(const o of['focusin','change'])t.addEventListener(o,(t=>{const e=I(t);D(e)&&S(e,y())}));const B=e.get('form_key'),M=e.get(l),P=B&&M;t.addEventListener('DOMContentLoaded',(()=>{const t=y();if(P)for(const e of t)e.elements[l].value===M&&p(e,B);[...new Set([...A(),...v().filter((t=>'true'===t.dataset.shopifyCaptcha))])].forEach((e=>S(e,t)))}))}(h,new URLSearchParams(w.location.search),n,t,e,['guest_login'])})(!0,!0)}();</script>
 <script integrity="sha256-4kQ18oKyAcykRKYeNunJcIwy7WH5gtpwJnB7kiuLZ1E=" data-source-attribution="shopify.loadfeatures" defer="defer" src="//kookai.fr/cdn/shopifycloud/storefront/assets/storefront/load_feature-a0a9edcb.js" crossorigin="anonymous"></script>
@@ -631,7 +631,83 @@ await import("//kookai.fr/cdn/shopifycloud/shop-js/modules/v2/chunk.common_THX2l
 <meta name="google-site-verification" content="PCyuKZ-vHYId2Ju1qo1Hg7K8G1JiX8nmuLD5L1orEBs" />
  <meta name="google-site-verification" content="dY3K_BaAbzZcX_K4KUIeN1PF4MI-JYIg2Mtf9-Eu8kA" /> 
  <meta name="google-site-verification" content="OBREjbkZAbYeGO2kTdpfQGuQ9X-lWovgP1SG3oL64I8" />
-<!-- BEGIN app block: shopify://apps/supergrid-by-depict/blocks/depict_brand_features/ad5c7d1f-ddfb-424b-b936-7f08c4544f6b -->
+<!-- BEGIN app block: shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507 -->
+
+
+
+
+
+
+
+
+
+
+
+
+  <script async src="https://static.klaviyo.com/onsite/js/XbwuFJ/klaviyo.js?company_id=XbwuFJ"></script>
+  <script>!function(){if(!window.klaviyo){window._klOnsite=window._klOnsite||[];try{window.klaviyo=new Proxy({},{get:function(n,i){return"push"===i?function(){var n;(n=window._klOnsite).push.apply(n,arguments)}:function(){for(var n=arguments.length,o=new Array(n),w=0;w<n;w++)o[w]=arguments[w];var t="function"==typeof o[o.length-1]?o.pop():void 0,e=new Promise((function(n){window._klOnsite.push([i].concat(o,[function(i){t&&t(i),n(i)}]))}));return e}}})}catch(n){window.klaviyo=window.klaviyo||[],window.klaviyo.push=function(){var n;(n=window._klOnsite).push.apply(n,arguments)}}}}();</script>
+
+  
+
+
+
+
+  <script>
+    window.klaviyoReviewsProductDesignMode = false
+  </script>
+
+
+
+
+
+
+
+<!-- END app block --><!-- BEGIN app block: shopify://apps/wsh-wholesale-pricing/blocks/app-embed/94cbfa01-7191-4bb2-bcd8-b519b9b3bd06 --><script>
+
+  window.wpdExtensionIsProductPage = "";
+;
+window.wpdExtensionIsCartPage = false;
+
+window.showCrossOutPrice = true;
+window.WPDAppProxy = "/apps/wpdapp";
+
+
+window.WPDMarketLocalization = "";
+window.WPDMoneyFormat = "€{{amount_with_comma_separator}}";
+
+
+	
+	
+
+  
+  
+  
+  
+	
+  
+    window.is_wcp_wholesale_customer = false;
+  
+  window.wcp_customer = {
+      email: "",
+      id: "",
+      tags: null,
+      default_address: null,
+      tax_exempt: false
+    };
+  window.shopPermanentDomain = "kookai-amh.myshopify.com";
+  window.wpdAPIRootUrl = "https://bdr.wholesalehelper.io/";
+</script>
+
+
+
+
+
+<!-- END app block --><!-- BEGIN app block: shopify://apps/livemeup-live-shopping/blocks/player-script/82ccf4ed-67f8-4725-9167-e54475d4748e -->
+<!-- END app block --><!-- BEGIN app block: shopify://apps/redirect-hero/blocks/live-redirect/303f77a4-ad21-4d11-82f8-47eb94136aff --><script>
+    const liveRedirectActive = ;
+</script>
+
+<!-- END app block --><!-- BEGIN app block: shopify://apps/supergrid-by-depict/blocks/depict_brand_features/ad5c7d1f-ddfb-424b-b936-7f08c4544f6b -->
 
 
 <!--
@@ -692,7 +768,31 @@ await import("//kookai.fr/cdn/shopifycloud/shop-js/modules/v2/chunk.common_THX2l
 </script>
 
 
-<!-- END app block --><!-- BEGIN app block: shopify://apps/livemeup-live-shopping/blocks/player-script/82ccf4ed-67f8-4725-9167-e54475d4748e -->
+<!-- END app block --><!-- BEGIN app block: shopify://apps/instafeed/blocks/head-block/c447db20-095d-4a10-9725-b5977662c9d5 --><link rel="preconnect" href="https://cdn.nfcube.com/">
+<link rel="preconnect" href="https://scontent.cdninstagram.com/">
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      let instafeedScript = document.createElement('script');
+
+      
+        instafeedScript.src = 'https://cdn.nfcube.com/instafeed-893a13d77b5c2cd0bd0f77b76fef4dc4.js';
+      
+
+      document.body.appendChild(instafeedScript);
+    });
+  </script>
+
+
+
+
+
+<!-- END app block --><!-- BEGIN app block: shopify://apps/sk-form-builder/blocks/app/f3e35b58-5874-4ef2-8e03-c92cda6e49eb --><div class="skformscript" data-src="https://cdn.shopify.com/extensions/019b4f19-1246-728a-ae0d-783808ed67d8/formbuilder-theme-app-258/assets/skform.js"></div>
+
+<script>
+	window.skplan = {"freeplan": 1, "plan": null, "billable": true};
+</script>
 <!-- END app block --><!-- BEGIN app block: shopify://apps/wishlist-hero/blocks/app-embed/a9a5079b-59e8-47cb-b659-ecf1c60b9b72 -->
 
 
@@ -952,31 +1052,6 @@ await import("//kookai.fr/cdn/shopifycloud/shop-js/modules/v2/chunk.common_THX2l
   window.WLH_reload_translations();
 </script><!-- END app snippet -->
 
-<!-- END app block --><!-- BEGIN app block: shopify://apps/instafeed/blocks/head-block/c447db20-095d-4a10-9725-b5977662c9d5 --><link rel="preconnect" href="https://cdn.nfcube.com/">
-<link rel="preconnect" href="https://scontent.cdninstagram.com/">
-
-
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      let instafeedScript = document.createElement('script');
-
-      
-        instafeedScript.src = 'https://cdn.nfcube.com/instafeed-893a13d77b5c2cd0bd0f77b76fef4dc4.js';
-      
-
-      document.body.appendChild(instafeedScript);
-    });
-  </script>
-
-
-
-
-
-<!-- END app block --><!-- BEGIN app block: shopify://apps/sk-form-builder/blocks/app/f3e35b58-5874-4ef2-8e03-c92cda6e49eb --><div class="skformscript" data-src="https://cdn.shopify.com/extensions/019b4f19-1246-728a-ae0d-783808ed67d8/formbuilder-theme-app-258/assets/skform.js"></div>
-
-<script>
-	window.skplan = {"freeplan": 1, "plan": null, "billable": true};
-</script>
 <!-- END app block --><!-- BEGIN app block: shopify://apps/wisepops-email-sms-popups/blocks/app-embed/e7d7a4f7-0df4-4073-9375-5f36db513952 --><script>
   // Create the wisepops() function
   window.wisepops_key = window.WisePopsObject = window.wisepops_key || window.WisePopsObject || "wisepops";
@@ -1111,87 +1186,12 @@ await import("//kookai.fr/cdn/shopifycloud/shop-js/modules/v2/chunk.common_THX2l
 </script>
 
 
-<!-- END app block --><!-- BEGIN app block: shopify://apps/redirect-hero/blocks/live-redirect/303f77a4-ad21-4d11-82f8-47eb94136aff --><script>
-    const liveRedirectActive = ;
-</script>
-
-<!-- END app block --><!-- BEGIN app block: shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507 -->
-
-
-
-
-
-
-
-
-
-
-
-
-  <script async src="https://static.klaviyo.com/onsite/js/XbwuFJ/klaviyo.js?company_id=XbwuFJ"></script>
-  <script>!function(){if(!window.klaviyo){window._klOnsite=window._klOnsite||[];try{window.klaviyo=new Proxy({},{get:function(n,i){return"push"===i?function(){var n;(n=window._klOnsite).push.apply(n,arguments)}:function(){for(var n=arguments.length,o=new Array(n),w=0;w<n;w++)o[w]=arguments[w];var t="function"==typeof o[o.length-1]?o.pop():void 0,e=new Promise((function(n){window._klOnsite.push([i].concat(o,[function(i){t&&t(i),n(i)}]))}));return e}}})}catch(n){window.klaviyo=window.klaviyo||[],window.klaviyo.push=function(){var n;(n=window._klOnsite).push.apply(n,arguments)}}}}();</script>
-
-  
-
-
-
-
-  <script>
-    window.klaviyoReviewsProductDesignMode = false
-  </script>
-
-
-
-
-
-
-
-<!-- END app block --><!-- BEGIN app block: shopify://apps/wsh-wholesale-pricing/blocks/app-embed/94cbfa01-7191-4bb2-bcd8-b519b9b3bd06 --><script>
-
-  window.wpdExtensionIsProductPage = "";
-;
-window.wpdExtensionIsCartPage = false;
-
-window.showCrossOutPrice = true;
-window.WPDAppProxy = "/apps/wpdapp";
-
-
-window.WPDMarketLocalization = "";
-window.WPDMoneyFormat = "€{{amount_with_comma_separator}}";
-
-
-	
-	
-
-  
-  
-  
-  
-	
-  
-    window.is_wcp_wholesale_customer = false;
-  
-  window.wcp_customer = {
-      email: "",
-      id: "",
-      tags: null,
-      default_address: null,
-      tax_exempt: false
-    };
-  window.shopPermanentDomain = "kookai-amh.myshopify.com";
-  window.wpdAPIRootUrl = "https://bdr.wholesalehelper.io/";
-</script>
-
-
-
-
-
-<!-- END app block --><script src="https://cdn.shopify.com/extensions/019b5a22-d005-760c-ad75-e58a5907d438/bellepoque-shopify-backoffice-131/assets/player-loader.min.js" type="text/javascript" defer="defer"></script>
-<script src="https://cdn.shopify.com/extensions/019b11da-208c-7dbf-bd24-527927dae412/kleep-sources-172/assets/kleep-app.js" type="text/javascript" defer="defer"></script>
+<!-- END app block --><script src="https://cdn.shopify.com/extensions/019b11da-208c-7dbf-bd24-527927dae412/kleep-sources-172/assets/kleep-app.js" type="text/javascript" defer="defer"></script>
 <link href="https://cdn.shopify.com/extensions/019b11da-208c-7dbf-bd24-527927dae412/kleep-sources-172/assets/kleep-app.css" rel="stylesheet" type="text/css" media="all">
+<script src="https://cdn.shopify.com/extensions/019b5a22-d005-760c-ad75-e58a5907d438/bellepoque-shopify-backoffice-131/assets/player-loader.min.js" type="text/javascript" defer="defer"></script>
+<script src="https://cdn.shopify.com/extensions/019a7200-5425-72d4-8b41-08bfdf8fe3f0/app-extension-34/assets/live-redirect.js" type="text/javascript" defer="defer"></script>
 <script src="https://cdn.shopify.com/extensions/019b4f19-1246-728a-ae0d-783808ed67d8/formbuilder-theme-app-258/assets/formbuilder.js" type="text/javascript" defer="defer"></script>
 <link href="https://cdn.shopify.com/extensions/019b4f19-1246-728a-ae0d-783808ed67d8/formbuilder-theme-app-258/assets/formbuilder.css" rel="stylesheet" type="text/css" media="all">
-<script src="https://cdn.shopify.com/extensions/019a7200-5425-72d4-8b41-08bfdf8fe3f0/app-extension-34/assets/live-redirect.js" type="text/javascript" defer="defer"></script>
 <script src="https://cdn.shopify.com/extensions/1675c59f-6e56-4eff-9cd4-978cc68c3001/ekookie-29/assets/ekookie.js" type="text/javascript" defer="defer"></script>
 <link href="https://cdn.shopify.com/extensions/1675c59f-6e56-4eff-9cd4-978cc68c3001/ekookie-29/assets/ekookie.css" rel="stylesheet" type="text/css" media="all">
 <link href="https://monorail-edge.shopifysvc.com" rel="dns-prefetch">
@@ -1200,7 +1200,7 @@ window.WPDMoneyFormat = "€{{amount_with_comma_separator}}";
   window.ShopifyAnalytics = window.ShopifyAnalytics || {};
   window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
   window.ShopifyAnalytics.meta.currency = 'EUR';
-  var meta = {"page":{"pageType":"page","resourceType":"page","resourceId":85775253638,"requestId":"392eb27f-9ff2-4535-8965-d3fd09257483-1766968618"}};
+  var meta = {"page":{"pageType":"page","resourceType":"page","resourceId":85775253638,"requestId":"c6928ed4-bce5-4aa2-8efb-5e63baf1c3bc-1767011833"}};
   for (var attr in meta) {
     window.ShopifyAnalytics.meta[attr] = meta[attr];
   }
@@ -1346,7 +1346,7 @@ window.WPDMoneyFormat = "€{{amount_with_comma_separator}}";
       try { window.ShopifyAnalytics.merchantGoogleAnalytics.call(this); } catch(error) {};
       document.write = originalDocumentWrite;
 
-      window.ShopifyAnalytics.lib.page(null,{"pageType":"page","resourceType":"page","resourceId":85775253638,"requestId":"392eb27f-9ff2-4535-8965-d3fd09257483-1766968618","shopifyEmitted":true});
+      window.ShopifyAnalytics.lib.page(null,{"pageType":"page","resourceType":"page","resourceId":85775253638,"requestId":"c6928ed4-bce5-4aa2-8efb-5e63baf1c3bc-1767011833","shopifyEmitted":true});
 
       var match = window.location.pathname.match(/checkouts\/(.+)\/(thank_you|post_purchase)/)
       var token = match? match[1]: undefined;
@@ -3048,6 +3048,54 @@ span.kleep-badge {
 
 
 
+</div><div id="shopify-block-AcFdsU3o1VWgvMXA0Y__15037621279992766403" class="shopify-block shopify-app-block alma-old-badge">
+
+
+</div><div id="shopify-block-AK3hkUGZ2VWFUa1owV__12424619676349770391" class="shopify-block shopify-app-block"><!-- BEGIN app snippet: country-condition-check --><script defer>
+  (async () => {
+    
+
+    const items = Object.values({"BA746202":{"_id":"694aa8a16c65ed1813b86cd3","name":"Exclusion VP","id":"BA746202","storeId":"55913644166","type":"label","subtype":"text","textValue":{"original":"Hors VP"},"status":"published","previewLink":null,"link":{"value":"","blank":false},"settings":{"tooltip":{"locale":{"original":"I'm tooltip 🤓"},"link":{"value":"","blank":false},"font":{"isCustom":false,"customFont":"Arial, sans-serif","family":"Montserrat","weight":400,"size":{"desktop":{"value":18,"unit":"px"},"tablet":null,"mobile":null},"style":["bold"],"padding":{"desktop":{"top":0,"bottom":0,"left":0,"right":0,"unit":"px"},"tablet":null,"mobile":null},"color":{"text":"#000000ff","background":"#ffffffff","border":"#000000ff"}},"borderRadius":{"value":0,"unit":"px"}},"styles":{"sizes":{"defaultSize":"custom","desktop":{"width":80,"height":30,"unit":"px"},"tablet":{"width":80,"height":40,"unit":"px"},"mobile":{"width":60,"height":30,"unit":"px"}},"rotation":0,"shape":"rectangle","font":{"isCustom":false,"customFont":"Arial, sans-serif","family":"Abel","weight":400,"size":{"desktop":{"value":20,"unit":"px"},"tablet":null,"mobile":null},"style":"normal","padding":{"desktop":{"top":0,"bottom":0,"left":0,"right":0,"unit":"px"},"tablet":null,"mobile":null},"color":{"text":"#ffffffff","background":"#e2b237ee","border":"#000000ff"},"borderRadius":{"value":3,"unit":"px"}}},"position":{"corner":"top-left","badge":{"default":"aboveProductTitle","isCustom":false,"custom":{"positionInProductPage":"","positionInHomePage":"","positionInCollectionPage":"","positionInOtherPage":""},"place":"left"},"margin":{"desktop":{"top":0,"bottom":0,"left":0,"right":0,"unit":"px"},"tablet":null,"mobile":null}},"animation":"none","visibility":["Home Page","Product Pages","Search Results Pages","Cart Page","Collection Pages","Other Pages"],"weekSchedule":[null,null,null,null,null,null,null],"displayPeriod":{"allTime":true},"displayCondition":{"type":"any","variants":[{"id":"collectionsSelected","settings":{"equality":"is_equal","collections":["gid:\/\/shopify\/Collection\/685122355577"]}}]}},"metafieldId":"","createdAt":"2025-12-23T14:35:13.949Z","updatedAt":"2025-12-23T14:49:56.339Z","__v":0}});
+
+    if (!items.length) return;
+
+    const hasCountryCondition = items.some(({ status, settings }) =>
+      status === 'published' &&
+      settings?.displayCondition?.variants?.some(c => c.id === 'visitorCountry')
+    );
+
+    if (!hasCountryCondition || sessionStorage.getItem('country')) return;
+
+    try {
+      const res = await fetch(`${window?.Shopify?.routes?.root || '/'}browsing_context_suggestions.json?source=geolocation_recommendation&country[enabled]=true`);
+      const json = await res.json();
+      const country = json?.detected_values?.country?.handle;
+      if (country) sessionStorage.setItem('country', country);
+    } catch (e) {
+      console.error('Geolocation fetch failed:', e);
+    }
+  })()
+</script>
+<!-- END app snippet -->
+
+
+<script>
+  window.pageTemplate = "page";
+  window.extensionVersion = "starter-kit-208";
+  window.currentPageProduct = "";
+  window.checkRender = "";
+  window.__lablyItems = [{"_id":"694aa8a16c65ed1813b86cd3","name":"Exclusion VP","id":"BA746202","storeId":"55913644166","type":"label","subtype":"text","textValue":{"original":"Hors VP"},"status":"published","previewLink":null,"link":{"value":"","blank":false},"settings":{"tooltip":{"locale":{"original":"I'm tooltip 🤓"},"link":{"value":"","blank":false},"font":{"isCustom":false,"customFont":"Arial, sans-serif","family":"Montserrat","weight":400,"size":{"desktop":{"value":18,"unit":"px"},"tablet":null,"mobile":null},"style":["bold"],"padding":{"desktop":{"top":0,"bottom":0,"left":0,"right":0,"unit":"px"},"tablet":null,"mobile":null},"color":{"text":"#000000ff","background":"#ffffffff","border":"#000000ff"}},"borderRadius":{"value":0,"unit":"px"}},"styles":{"sizes":{"defaultSize":"custom","desktop":{"width":80,"height":30,"unit":"px"},"tablet":{"width":80,"height":40,"unit":"px"},"mobile":{"width":60,"height":30,"unit":"px"}},"rotation":0,"shape":"rectangle","font":{"isCustom":false,"customFont":"Arial, sans-serif","family":"Abel","weight":400,"size":{"desktop":{"value":20,"unit":"px"},"tablet":null,"mobile":null},"style":"normal","padding":{"desktop":{"top":0,"bottom":0,"left":0,"right":0,"unit":"px"},"tablet":null,"mobile":null},"color":{"text":"#ffffffff","background":"#e2b237ee","border":"#000000ff"},"borderRadius":{"value":3,"unit":"px"}}},"position":{"corner":"top-left","badge":{"default":"aboveProductTitle","isCustom":false,"custom":{"positionInProductPage":"","positionInHomePage":"","positionInCollectionPage":"","positionInOtherPage":""},"place":"left"},"margin":{"desktop":{"top":0,"bottom":0,"left":0,"right":0,"unit":"px"},"tablet":null,"mobile":null}},"animation":"none","visibility":["Home Page","Product Pages","Search Results Pages","Cart Page","Collection Pages","Other Pages"],"weekSchedule":[null,null,null,null,null,null,null],"displayPeriod":{"allTime":true},"displayCondition":{"type":"any","variants":[{"id":"collectionsSelected","settings":{"equality":"is_equal","collections":["gid://shopify/Collection/685122355577"]}}]}},"metafieldId":"","createdAt":"2025-12-23T14:35:13.949Z","updatedAt":"2025-12-23T14:49:56.339Z","__v":0}
+];
+</script>
+
+<script defer src="https://cdn.shopify.com/extensions/019b4fd0-1e6e-796b-bbab-971b836d6ad3/starter-kit-208/assets/vendors.js"></script>
+<script defer src="https://cdn.shopify.com/extensions/019b4fd0-1e6e-796b-bbab-971b836d6ad3/starter-kit-208/assets/lably.js"></script>
+<div
+    id="_lably_root"
+    data-storefront-access-token="  a42882f1b72a8f2d8b8b28cc239c12ae"
+></div>
+
+
 </div><div id="shopify-block-Ad3lHck9Ccldkb2R1R__12526071353035850722" class="shopify-block shopify-app-block">
   <script defer src="https://backinstock.useamp.com/widget/85996_1765517666.js?category=bis&v=6"></script>
 
@@ -3063,6 +3111,9 @@ span.kleep-badge {
 <script id="preorders-helper-embedded">
   
 </script>
+
+
+<script defer type="module" src="https://cdn.shopify.com/extensions/019b6897-0798-769d-b160-af1df0d06a63/back-in-stock-41/assets/preorder-product-page-updater.js"></script>
 
 
 
@@ -3125,54 +3176,6 @@ span.kleep-badge {
 <!-- d8e2dc ffe5d9 #ffcad4 f4acb7-->
 
 
-
-
-</div><div id="shopify-block-AcFdsU3o1VWgvMXA0Y__15037621279992766403" class="shopify-block shopify-app-block alma-old-badge">
-
-
-</div><div id="shopify-block-AK3hkUGZ2VWFUa1owV__12424619676349770391" class="shopify-block shopify-app-block"><!-- BEGIN app snippet: country-condition-check --><script defer>
-  (async () => {
-    
-
-    const items = Object.values({"BA746202":{"_id":"694aa8a16c65ed1813b86cd3","name":"Exclusion VP","id":"BA746202","storeId":"55913644166","type":"label","subtype":"text","textValue":{"original":"Hors VP"},"status":"published","previewLink":null,"link":{"value":"","blank":false},"settings":{"tooltip":{"locale":{"original":"I'm tooltip 🤓"},"link":{"value":"","blank":false},"font":{"isCustom":false,"customFont":"Arial, sans-serif","family":"Montserrat","weight":400,"size":{"desktop":{"value":18,"unit":"px"},"tablet":null,"mobile":null},"style":["bold"],"padding":{"desktop":{"top":0,"bottom":0,"left":0,"right":0,"unit":"px"},"tablet":null,"mobile":null},"color":{"text":"#000000ff","background":"#ffffffff","border":"#000000ff"}},"borderRadius":{"value":0,"unit":"px"}},"styles":{"sizes":{"defaultSize":"custom","desktop":{"width":80,"height":30,"unit":"px"},"tablet":{"width":80,"height":40,"unit":"px"},"mobile":{"width":60,"height":30,"unit":"px"}},"rotation":0,"shape":"rectangle","font":{"isCustom":false,"customFont":"Arial, sans-serif","family":"Abel","weight":400,"size":{"desktop":{"value":20,"unit":"px"},"tablet":null,"mobile":null},"style":"normal","padding":{"desktop":{"top":0,"bottom":0,"left":0,"right":0,"unit":"px"},"tablet":null,"mobile":null},"color":{"text":"#ffffffff","background":"#e2b237ee","border":"#000000ff"},"borderRadius":{"value":3,"unit":"px"}}},"position":{"corner":"top-left","badge":{"default":"aboveProductTitle","isCustom":false,"custom":{"positionInProductPage":"","positionInHomePage":"","positionInCollectionPage":"","positionInOtherPage":""},"place":"left"},"margin":{"desktop":{"top":0,"bottom":0,"left":0,"right":0,"unit":"px"},"tablet":null,"mobile":null}},"animation":"none","visibility":["Home Page","Product Pages","Search Results Pages","Cart Page","Collection Pages","Other Pages"],"weekSchedule":[null,null,null,null,null,null,null],"displayPeriod":{"allTime":true},"displayCondition":{"type":"any","variants":[{"id":"collectionsSelected","settings":{"equality":"is_equal","collections":["gid:\/\/shopify\/Collection\/685122355577"]}}]}},"metafieldId":"","createdAt":"2025-12-23T14:35:13.949Z","updatedAt":"2025-12-23T14:49:56.339Z","__v":0}});
-
-    if (!items.length) return;
-
-    const hasCountryCondition = items.some(({ status, settings }) =>
-      status === 'published' &&
-      settings?.displayCondition?.variants?.some(c => c.id === 'visitorCountry')
-    );
-
-    if (!hasCountryCondition || sessionStorage.getItem('country')) return;
-
-    try {
-      const res = await fetch(`${window?.Shopify?.routes?.root || '/'}browsing_context_suggestions.json?source=geolocation_recommendation&country[enabled]=true`);
-      const json = await res.json();
-      const country = json?.detected_values?.country?.handle;
-      if (country) sessionStorage.setItem('country', country);
-    } catch (e) {
-      console.error('Geolocation fetch failed:', e);
-    }
-  })()
-</script>
-<!-- END app snippet -->
-
-
-<script>
-  window.pageTemplate = "page";
-  window.extensionVersion = "starter-kit-208";
-  window.currentPageProduct = "";
-  window.checkRender = "";
-  window.__lablyItems = [{"_id":"694aa8a16c65ed1813b86cd3","name":"Exclusion VP","id":"BA746202","storeId":"55913644166","type":"label","subtype":"text","textValue":{"original":"Hors VP"},"status":"published","previewLink":null,"link":{"value":"","blank":false},"settings":{"tooltip":{"locale":{"original":"I'm tooltip 🤓"},"link":{"value":"","blank":false},"font":{"isCustom":false,"customFont":"Arial, sans-serif","family":"Montserrat","weight":400,"size":{"desktop":{"value":18,"unit":"px"},"tablet":null,"mobile":null},"style":["bold"],"padding":{"desktop":{"top":0,"bottom":0,"left":0,"right":0,"unit":"px"},"tablet":null,"mobile":null},"color":{"text":"#000000ff","background":"#ffffffff","border":"#000000ff"}},"borderRadius":{"value":0,"unit":"px"}},"styles":{"sizes":{"defaultSize":"custom","desktop":{"width":80,"height":30,"unit":"px"},"tablet":{"width":80,"height":40,"unit":"px"},"mobile":{"width":60,"height":30,"unit":"px"}},"rotation":0,"shape":"rectangle","font":{"isCustom":false,"customFont":"Arial, sans-serif","family":"Abel","weight":400,"size":{"desktop":{"value":20,"unit":"px"},"tablet":null,"mobile":null},"style":"normal","padding":{"desktop":{"top":0,"bottom":0,"left":0,"right":0,"unit":"px"},"tablet":null,"mobile":null},"color":{"text":"#ffffffff","background":"#e2b237ee","border":"#000000ff"},"borderRadius":{"value":3,"unit":"px"}}},"position":{"corner":"top-left","badge":{"default":"aboveProductTitle","isCustom":false,"custom":{"positionInProductPage":"","positionInHomePage":"","positionInCollectionPage":"","positionInOtherPage":""},"place":"left"},"margin":{"desktop":{"top":0,"bottom":0,"left":0,"right":0,"unit":"px"},"tablet":null,"mobile":null}},"animation":"none","visibility":["Home Page","Product Pages","Search Results Pages","Cart Page","Collection Pages","Other Pages"],"weekSchedule":[null,null,null,null,null,null,null],"displayPeriod":{"allTime":true},"displayCondition":{"type":"any","variants":[{"id":"collectionsSelected","settings":{"equality":"is_equal","collections":["gid://shopify/Collection/685122355577"]}}]}},"metafieldId":"","createdAt":"2025-12-23T14:35:13.949Z","updatedAt":"2025-12-23T14:49:56.339Z","__v":0}
-];
-</script>
-
-<script defer src="https://cdn.shopify.com/extensions/019b4fd0-1e6e-796b-bbab-971b836d6ad3/starter-kit-208/assets/vendors.js"></script>
-<script defer src="https://cdn.shopify.com/extensions/019b4fd0-1e6e-796b-bbab-971b836d6ad3/starter-kit-208/assets/lably.js"></script>
-<div
-    id="_lably_root"
-    data-storefront-access-token="  a42882f1b72a8f2d8b8b28cc239c12ae"
-></div>
 
 
 </div></body>
