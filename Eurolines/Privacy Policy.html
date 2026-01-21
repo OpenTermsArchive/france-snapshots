@@ -2694,7 +2694,7 @@
 <script defer async type="module" src="https://honeycomb-icons.hive.flixbus.com/9.0.0/flix-icons/flix-icons.esm.js"></script>
 <script defer async type="nomodule" src="https://honeycomb-icons.hive.flixbus.com/9.0.0/flix-icons/flix-icons.js"></script>
 
-<script src="https://cdn-cf.cms.flixbus.com/drupal-assets/flix-home-assets/main.ef614c.js"></script>
+<script src="https://cdn-cf.cms.flixbus.com/drupal-assets/flix-home-assets/main.880177.js"></script>
 <script>
   injectSearchMask(
    "en",
@@ -2835,6 +2835,14 @@
           }
           
           window.braze.requestContentCardsRefresh();
+
+          if (typeof window.sendSnowplowUserToBraze === 'function') {
+            window.sendSnowplowUserToBraze();
+          } else {
+            window.addEventListener('snowplowUserSenderReady', function() {
+              window.sendSnowplowUserToBraze();
+            }, { once: true });
+          }
 
           window.braze.openSession();
 
