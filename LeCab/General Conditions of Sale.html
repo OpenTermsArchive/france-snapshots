@@ -13,6 +13,31 @@
 	const gtm4wp_scrollerscript_readerlocation    = 150;
 	const gtm4wp_scrollerscript_contentelementid  = "content";
 	const gtm4wp_scrollerscript_scannertime       = 60;
+	var CookieLawInfo_Accept_Callback = (function() {
+		var gtm4wp_original_cli_callback = CookieLawInfo_Accept_Callback;
+	
+		return function() {
+			if ( !window.CLI.consent ) {
+				return false;
+			}
+		
+			window.dataLayer = window.dataLayer || [];
+			window.dataLayer.push({
+				"event": "cookie_consent_update",
+				"consent_data": window.CLI.consent
+			});
+		
+			for(var i in window.CLI.consent) {
+				window.dataLayer.push({
+					"event": "cookie_consent_" + i
+				});
+			}
+	
+			if ( "function" == typeof gtm4wp_original_cli_callback ) {
+				gtm4wp_original_cli_callback();
+			}
+		}
+	})();
 </script>
 <!-- End Google Tag Manager for WordPress by gtm4wp.com -->
 <!-- Optimisation des moteurs de recherche par Rank Math - https://rankmath.com/ -->
@@ -28,16 +53,9 @@
 <meta property="og:site_name" content="LeCab | Le VTC 100% français | Disponible dans toute la France" />
 <meta property="article:publisher" content="https://www.facebook.com/LeCab/" />
 <meta property="og:updated_time" content="2025-10-14T14:49:16+02:00" />
-<meta property="og:image" content="https://lecab.fr/wp-content/uploads/2026/01/lecab-reseaux-sociaux.jpg" />
-<meta property="og:image:secure_url" content="https://lecab.fr/wp-content/uploads/2026/01/lecab-reseaux-sociaux.jpg" />
-<meta property="og:image:width" content="1200" />
-<meta property="og:image:height" content="630" />
-<meta property="og:image:alt" content="LeCab - VTC France" />
-<meta property="og:image:type" content="image/jpeg" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content="Pour tout savoir sur nos Conditions Générales de Vente | LeCab | Votre Chauffeur Privé VTC 24h/7j" />
 <meta name="twitter:description" content="Les Conditions Générales de Vente LeCab | Votre Chauffeur Privé VTC 24h/7j régissent les relations juridiques entre la Société et le Client dans le cadre de l&#039;utilisation de..." />
-<meta name="twitter:image" content="https://lecab.fr/wp-content/uploads/2026/01/lecab-reseaux-sociaux.jpg" />
 <script type="application/ld+json" class="rank-math-schema">{"@context":"https://schema.org","@graph":[{"@type":"BreadcrumbList","@id":"https://lecab.fr/conditions-generales-de-vente/#breadcrumb","itemListElement":[{"@type":"ListItem","position":"1","item":{"@id":"https://lecab.fr","name":"Home"}},{"@type":"ListItem","position":"2","item":{"@id":"https://lecab.fr/conditions-generales-de-vente/","name":"Conditions G\u00e9n\u00e9rales de Vente"}}]}]}</script>
 <!-- /Extension Rank Math WordPress SEO -->
 
@@ -55,7 +73,7 @@
 <link rel="alternate" type="application/rss+xml" title="LeCab | Votre Chauffeur Privé VTC 24h/7j &raquo; Flux des commentaires" href="https://lecab.fr/comments/feed/" />
 <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://lecab.fr/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flecab.fr%2Fconditions-generales-de-vente%2F" />
 <link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://lecab.fr/wp-json/oembed/1.0/embed?url=https%3A%2F%2Flecab.fr%2Fconditions-generales-de-vente%2F&#038;format=xml" />
-<link rel='stylesheet' id='all-css-534ddce6c851f8e7e9dac8f69949a94f' href='https://lecab.fr/_static/??-eJydk+tywiAQhV+oiJcx6o9OH8UhsCYosAwLpunTl3gZ05lYTX6SPd+ZswfSeCbRRXCR28S8SZV2xBsv0VLNjxC9kKf9GZzCwEWKaEWMWt4nLEMXMacgeZm0UVeYlQblibK5AkaxNfDs+0wSfTSPGPcMRrSYIquCVvyPUDtpkgLiR+IWlBZgwF4W6B18xiEwA5WQ7cxq95LOs/65z9yjxTqPiNdgDLJS/3BBBJF4ll1nY4AahMoJD4gRwrMSbmG67h/kIVxUaijiv2CjVQWRaSsqeAtmPuCAgRPn3JVLkzwsqmRyKZSf0amdugOh1MIwnRka7ZFFSkeNThjiwnsDrIHypAcv/Z003V1qV03FK8TKwN4KP36X/p2yEr+nGjigCIoJKTGoXM2QT/IGher7dAYeKbLNCO1qu1uMkC+Wq9UI+bJYb1/Lr5Xnv8/davDofe5oAhmwxIgd+GU/F5tit54X82L7C3VWCwg=' type='text/css' media='all' />
+<link rel='stylesheet' id='all-css-8c3605fec7b96726cc9a26fe2dc818c5' href='https://lecab.fr/_static/??-eJydk9tuwyAQRH+olCRubg9VPyXCsLGJgUUsxHW/vjgXxZWSJvYj3jmj2QG3nkl0EVzkNjFvUqUd8dZLtFTzA0QvZLM7glMYuEgRrYhRy+uEZegk5hQkL5M26gyz0qBsKJsrYBQ7A4++v0uit/YW45rBiA5TZFXQiv8RaidNUkD8QNyC0gIM2NMCg4PPOARmoBKye7faPaXzbHgeMtdosc4j4jUYg6zUP1wQQSSeZefZGKAGoXLCPWKE8KiES5i++xu5DyeVuhfxX7DVqoLItBUVvAQzH/COgRPH3JVLkzwsqmRyKZSfUdNN3YFQamGYzgyN9sgipaNGJwxx4b0B1kLZ6LuX/kqa/i61q6biFWJlYGeFH7/L8E5Zid9TDRxQBMWElBhUruaeT/IGhRr69AYeKbL1CG2x2c5HyOeLohghX6yWm+fyc+X573OXGjx6nzuaQAYsMWIPftnP+Xq1XRazj+3sF3VXCwQ=' type='text/css' media='all' />
 <style id='wp-img-auto-sizes-contain-inline-css'>
 img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 /*# sourceURL=wp-img-auto-sizes-contain-inline-css */
@@ -343,7 +361,7 @@ var JETPACK_MU_WPCOM_SETTINGS = {"assetsUrl":"https://lecab.fr/wp-content/mu-plu
 <script src="https://lecab.fr/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
 <script type='text/javascript'  src='https://lecab.fr/wp-includes/js/jquery/jquery-migrate.min.js?m=1686289764'></script>
 <script src="https://lecab.fr/wp-content/plugins/duracelltomi-google-tag-manager/dist/js/analytics-talk-content-tracking.js?ver=1.22.3" id="gtm4wp-scroll-tracking-js"></script>
-<script type='text/javascript'  src='https://lecab.fr/wp-content/plugins/elementor-pro/assets/js/page-transitions.min.js?m=1769175225'></script>
+<script type='text/javascript'  src='https://lecab.fr/wp-content/plugins/elementor-pro/assets/js/page-transitions.min.js?m=1769518934'></script>
 <link rel="https://api.w.org/" href="https://lecab.fr/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://lecab.fr/wp-json/wp/v2/pages/3891" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://lecab.fr/xmlrpc.php?rsd" />
 
 <link rel='shortlink' href='https://wp.me/PgEIAp-10L' />
@@ -358,7 +376,7 @@ var JETPACK_MU_WPCOM_SETTINGS = {"assetsUrl":"https://lecab.fr/wp-content/mu-plu
 <!-- Google Tag Manager for WordPress by gtm4wp.com -->
 <!-- GTM Container placement set to automatic -->
 <script data-cfasync="false" data-pagespeed-no-defer>
-	var dataLayer_content = {"pageTitle":"Pour tout savoir sur nos Conditions Générales de Vente | LeCab | Votre Chauffeur Privé VTC 24h\/7j","pagePostType":"page","pagePostType2":"single-page","browserName":"Chrome","browserVersion":"143.0.0.0","browserEngineName":"Blink","browserEngineVersion":"","osName":"Windows","osVersion":10,"deviceType":"desktop","deviceManufacturer":"","deviceModel":""};
+	var dataLayer_content = {"pageTitle":"Pour tout savoir sur nos Conditions Générales de Vente | LeCab | Votre Chauffeur Privé VTC 24h\/7j","pagePostType":"page","pagePostType2":"single-page","browserName":"","browserVersion":"","browserEngineName":"","browserEngineVersion":"","osName":"","osVersion":"","deviceType":"","deviceManufacturer":"","deviceModel":""};
 	dataLayer.push( dataLayer_content );
 </script>
 <script data-cfasync="false" data-pagespeed-no-defer>
@@ -387,10 +405,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					}
 				}
 			</style>
-			<link rel="icon" href="https://lecab.fr/wp-content/uploads/2025/09/cropped-Favicon-Lecab-1.png" sizes="32x32" />
-<link rel="icon" href="https://lecab.fr/wp-content/uploads/2025/09/cropped-Favicon-Lecab-1.png" sizes="192x192" />
-<link rel="apple-touch-icon" href="https://lecab.fr/wp-content/uploads/2025/09/cropped-Favicon-Lecab-1.png" />
-<meta name="msapplication-TileImage" content="https://lecab.fr/wp-content/uploads/2025/09/cropped-Favicon-Lecab-1.png" />
+			<link rel="icon" href="https://lecab.fr/wp-content/uploads/2026/01/cropped-favicon-lecab-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://lecab.fr/wp-content/uploads/2026/01/cropped-favicon-lecab-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://lecab.fr/wp-content/uploads/2026/01/cropped-favicon-lecab-180x180.png" />
+<meta name="msapplication-TileImage" content="https://lecab.fr/wp-content/uploads/2026/01/cropped-favicon-lecab-270x270.png" />
 <style type="text/css" id="wp-custom-css">.elementor-widget-theme-post-content a:not(.elementor-button){
 	text-decoration: underline !important;
 }
@@ -841,8 +859,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 					<p class="elementor-heading-title elementor-size-default"><a href="/conditions-generales-de-vente/">CGV</a></p>				</div>
 				<div class="elementor-element elementor-element-75e95f55 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading" data-id="75e95f55" data-element_type="widget" data-widget_type="heading.default">
 					<p class="elementor-heading-title elementor-size-default"><a href="/mentions-legales/">Mentions Légales</a></p>				</div>
-				<div class="elementor-element elementor-element-3c3393ce elementor-widget-mobile__width-inherit elementor-widget elementor-widget-heading" data-id="3c3393ce" data-element_type="widget" data-widget_type="heading.default">
-					<p class="elementor-heading-title elementor-size-default">Gestion des cookies 🍪 </p>				</div>
+				<div class="elementor-element elementor-element-20f4e9d elementor-widget-mobile__width-inherit elementor-widget elementor-widget-html" data-id="20f4e9d" data-element_type="widget" data-widget_type="html.default">
+					<p class="elementor-heading-title elementor-size-default"><a href="javascript:Didomi.preferences.show()">Gestion des cookies 🍪 </a></p>				</div>
 					</div>
 				</div>
 				</footer>
@@ -885,13 +903,13 @@ var leadin_wordpress = {"userRole":"visitor","pageType":"page","leadinPluginVers
 </script>
 <script src="https://js.hs-scripts.com/9318232.js?integration=WordPress&amp;ver=11.3.37" id="leadin-script-loader-js-js"></script>
 <script src="https://lecab.fr/wp-content/plugins/duracelltomi-google-tag-manager/dist/js/gtm4wp-form-move-tracker.js?ver=1.22.3" id="gtm4wp-form-move-tracker-js"></script>
-<script type='text/javascript'  src='https://lecab.fr/_static/??-eJyVjcEKwjAQRH/IZFFL1YP4LWmylsRkE7NZgn9vKRT0Inh8zMybXpTN1JAalCizJwaMmBbOVZWawTBjY4DoJ1jSZqipYmb8Ap086cC7/sO2mQJDx6kY+9BVqPn07/pe15JTKTuJyB9zTzaKw7UWnoL1BeLB5rp93NJ1fxovw3AYj+c33UtepQ=='></script>
+<script type='text/javascript'  src='https://lecab.fr/_static/??-eJyVjdsKwyAQRH+ouoRe81D6LUa3QaurdV2kf98QCLQvhT4eZuZML8pmakgNSpTZEwNGTAvnqkrNYJixMUD0EyxpM9RUMTN+gU6edOBd/2HbTIGh41SMfegq1Hz6d32va8mplJ1E5I+5JxvF4VoLT8H6AvFgc90+buk6nE/jcbiM+8Mb3V9eqA=='></script>
 <script id="elementor-frontend-js-before">
-var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Partager sur Facebook","shareOnTwitter":"Partager sur Twitter","pinIt":"L\u2019\u00e9pingler","download":"T\u00e9l\u00e9charger","downloadImage":"T\u00e9l\u00e9charger une image","fullscreen":"Plein \u00e9cran","zoom":"Zoom","share":"Partager","playVideo":"Lire la vid\u00e9o","previous":"Pr\u00e9c\u00e9dent","next":"Suivant","close":"Fermer","a11yCarouselPrevSlideMessage":"Diapositive pr\u00e9c\u00e9dente","a11yCarouselNextSlideMessage":"Diapositive suivante","a11yCarouselFirstSlideMessage":"Ceci est la premi\u00e8re diapositive","a11yCarouselLastSlideMessage":"Ceci est la derni\u00e8re diapositive","a11yCarouselPaginationBulletMessage":"Aller \u00e0 la diapositive"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Portrait mobile","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Paysage","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablette en mode portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablette en mode paysage","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Portable","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"\u00c9cran large","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"3.34.3","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"e_optimized_markup":true,"theme_builder_v2":true,"nested-elements":true,"home_screen":true,"global_classes_should_enforce_capabilities":true,"e_variables":true,"cloud-library":true,"e_opt_in_v4_page":true,"e_interactions":true,"e_editor_one":true,"import-export-customization":true,"mega-menu":true,"e_pro_variables":true},"urls":{"assets":"https:\/\/lecab.fr\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/lecab.fr\/wp-admin\/admin-ajax.php","uploadUrl":"https:\/\/lecab.fr\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"87e60fedfc"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"body_background_background":"classic","active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":3891,"title":"Pour%20tout%20savoir%20sur%20nos%20Conditions%20G%C3%A9n%C3%A9rales%20de%20Vente%20%7C%20LeCab%20%7C%20Votre%20Chauffeur%20Priv%C3%A9%20VTC%2024h%2F7j","excerpt":"","featuredImage":false}};
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Partager sur Facebook","shareOnTwitter":"Partager sur Twitter","pinIt":"L\u2019\u00e9pingler","download":"T\u00e9l\u00e9charger","downloadImage":"T\u00e9l\u00e9charger une image","fullscreen":"Plein \u00e9cran","zoom":"Zoom","share":"Partager","playVideo":"Lire la vid\u00e9o","previous":"Pr\u00e9c\u00e9dent","next":"Suivant","close":"Fermer","a11yCarouselPrevSlideMessage":"Diapositive pr\u00e9c\u00e9dente","a11yCarouselNextSlideMessage":"Diapositive suivante","a11yCarouselFirstSlideMessage":"Ceci est la premi\u00e8re diapositive","a11yCarouselLastSlideMessage":"Ceci est la derni\u00e8re diapositive","a11yCarouselPaginationBulletMessage":"Aller \u00e0 la diapositive"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Portrait mobile","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile Paysage","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablette en mode portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablette en mode paysage","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Portable","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"\u00c9cran large","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":false},"version":"3.34.3","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"e_optimized_markup":true,"theme_builder_v2":true,"nested-elements":true,"home_screen":true,"global_classes_should_enforce_capabilities":true,"e_variables":true,"cloud-library":true,"e_opt_in_v4_page":true,"e_interactions":true,"e_editor_one":true,"import-export-customization":true,"mega-menu":true,"e_pro_variables":true},"urls":{"assets":"https:\/\/lecab.fr\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/lecab.fr\/wp-admin\/admin-ajax.php","uploadUrl":"https:\/\/lecab.fr\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"6c48ff14ba"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"body_background_background":"classic","active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description"},"post":{"id":3891,"title":"Pour%20tout%20savoir%20sur%20nos%20Conditions%20G%C3%A9n%C3%A9rales%20de%20Vente%20%7C%20LeCab%20%7C%20Votre%20Chauffeur%20Priv%C3%A9%20VTC%2024h%2F7j","excerpt":"","featuredImage":false}};
 //# sourceURL=elementor-frontend-js-before
 </script>
 <script src="https://lecab.fr/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.34.3" id="elementor-frontend-js"></script>
-<script type='text/javascript'  src='https://lecab.fr/_static/??-eJyVzEsKgDAMRdENaYOCigNxLVqCVPuzSSndvUVExw7ve3CSr6WzjJbB67gpS4AaTWkXah8cLETIBFqtQGYJXK5IsJ8RQxbfIoyyYqcq/fFYySO/1l2PM5upGfqxGbq27S6v0D4B'></script>
+<script type='text/javascript'  src='https://lecab.fr/_static/??-eJyVzEkKgDAQRNELaZrgvBDPotJIYibTHcTbKyK6dvmr4O0hn71jdAzBpEU5AjRor/YxD9HDSIRMYNQEZMfI15UI9JYwHuJbhFVOaMr2Px6reT1e667HGWwvm7qrZNsV5Qmv7D4J'></script>
 <script id="jetpack-stats-js-before">
 _stq = window._stq || [];
 _stq.push([ "view", {"v":"ext","blog":"246125889","post":"3891","tz":"1","srv":"lecab.fr","hp":"atomic","ac":"2","amp":"0","j":"1:15.5-a.5"} ]);
@@ -899,7 +917,7 @@ _stq.push([ "clickTrackerInit", "246125889", "3891" ]);
 //# sourceURL=jetpack-stats-js-before
 </script>
 <script src="https://stats.wp.com/e-202605.js" id="jetpack-stats-js" defer data-wp-strategy="defer"></script>
-<script type='text/javascript'  src='https://lecab.fr/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?m=1769175225'></script>
+<script type='text/javascript'  src='https://lecab.fr/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?m=1769518934'></script>
 <script src="https://lecab.fr/wp-content/plugins/gutenberg/build/scripts/hooks/index.min.js?ver=7496969728ca0f95732d" id="wp-hooks-js"></script>
 <script src="https://lecab.fr/wp-content/plugins/gutenberg/build/scripts/i18n/index.min.js?ver=781d11515ad3d91786ec" id="wp-i18n-js"></script>
 <script id="wp-i18n-js-after">
@@ -907,11 +925,11 @@ wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
 //# sourceURL=wp-i18n-js-after
 </script>
 <script id="elementor-pro-frontend-js-before">
-var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/lecab.fr\/wp-admin\/admin-ajax.php","nonce":"eb87e4a3cf","urls":{"assets":"https:\/\/lecab.fr\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/lecab.fr\/wp-json\/"},"settings":{"lazy_load_background_images":true},"popup":{"hasPopUps":false},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},"facebook_sdk":{"lang":"fr_FR","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/lecab.fr\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/lecab.fr\/wp-admin\/admin-ajax.php","nonce":"ff3c4229f7","urls":{"assets":"https:\/\/lecab.fr\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/lecab.fr\/wp-json\/"},"settings":{"lazy_load_background_images":true},"popup":{"hasPopUps":false},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},"facebook_sdk":{"lang":"fr_FR","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/lecab.fr\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
 //# sourceURL=elementor-pro-frontend-js-before
 </script>
-<script src="https://lecab.fr/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.34.2" id="elementor-pro-frontend-js"></script>
-<script src="https://lecab.fr/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.34.2" id="pro-elements-handlers-js"></script>
+<script src="https://lecab.fr/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.34.3" id="elementor-pro-frontend-js"></script>
+<script src="https://lecab.fr/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.34.3" id="pro-elements-handlers-js"></script>
 <script id="wp-emoji-settings" type="application/json">
 {"baseUrl":"https://s.w.org/images/core/emoji/17.0.2/72x72/","ext":".png","svgUrl":"https://s.w.org/images/core/emoji/17.0.2/svg/","svgExt":".svg","source":{"concatemoji":"https://lecab.fr/wp-includes/js/wp-emoji-release.min.js?ver=6.9"}}
 </script>
