@@ -229,7 +229,7 @@ await import("//www.kappa.fr/cdn/shopifycloud/shop-js/modules/v2/chunk.modal_B1s
     window.addEventListener('load', asyncLoad, false);
   }
 })();</script>
-<script id="__st">var __st={"a":56681136327,"offset":3600,"reqid":"ff0f719c-ba85-4412-8878-c497fc8c55ad-1772887054","pageurl":"www.kappa.fr\/pages\/cgv","s":"pages-82250334407","u":"42b4c0b8d7cd","p":"page","rtyp":"page","rid":82250334407};</script>
+<script id="__st">var __st={"a":56681136327,"offset":3600,"reqid":"7e517bec-b7a9-41b2-bba3-aef573535538-1772930283","pageurl":"www.kappa.fr\/pages\/cgv","s":"pages-82250334407","u":"e3501527016e","p":"page","rtyp":"page","rid":82250334407};</script>
 <script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
 <script id="captcha-bootstrap">!function(){'use strict';const t='contact',e='account',n='new_comment',o=[[t,t],['blogs',n],['comments',n],[t,'customer']],c=[[e,'customer_login'],[e,'guest_login'],[e,'recover_customer_password'],[e,'create_customer']],r=t=>t.map((([t,e])=>`form[action*='/${t}']:not([data-nocaptcha='true']) input[name='form_type'][value='${e}']`)).join(','),a=t=>()=>t?[...document.querySelectorAll(t)].map((t=>t.form)):[];function s(){const t=[...o],e=r(t);return a(e)}const i='password',u='form_key',d=['recaptcha-v3-token','g-recaptcha-response','h-captcha-response',i],f=()=>{try{return window.sessionStorage}catch{return}},m='__shopify_v',_=t=>t.elements[u];function p(t,e,n=!1){try{const o=window.sessionStorage,c=JSON.parse(o.getItem(e)),{data:r}=function(t){const{data:e,action:n}=t;return t[m]||n?{data:e,action:n}:{data:t,action:n}}(c);for(const[e,n]of Object.entries(r))t.elements[e]&&(t.elements[e].value=n);n&&o.removeItem(e)}catch(o){console.error('form repopulation failed',{error:o})}}const l='form_type',E='cptcha';function T(t){t.dataset[E]=!0}const w=window,h=w.document,L='Shopify',v='ce_forms',y='captcha';let A=!1;((t,e)=>{const n=(g='f06e6c50-85a8-45c8-87d0-21a2b65856fe',I='https://cdn.shopify.com/shopifycloud/storefront-forms-hcaptcha/ce_storefront_forms_captcha_hcaptcha.v1.5.2.iife.js',D={infoText:'Protégé par hCaptcha',privacyText:'Confidentialité',termsText:'Conditions'},(t,e,n)=>{const o=w[L][v],c=o.bindForm;if(c)return c(t,g,e,D).then(n);var r;o.q.push([[t,g,e,D],n]),r=I,A||(h.body.append(Object.assign(h.createElement('script'),{id:'captcha-provider',async:!0,src:r})),A=!0)});var g,I,D;w[L]=w[L]||{},w[L][v]=w[L][v]||{},w[L][v].q=[],w[L][y]=w[L][y]||{},w[L][y].protect=function(t,e){n(t,void 0,e),T(t)},Object.freeze(w[L][y]),function(t,e,n,w,h,L){const[v,y,A,g]=function(t,e,n){const i=e?o:[],u=t?c:[],d=[...i,...u],f=r(d),m=r(i),_=r(d.filter((([t,e])=>n.includes(e))));return[a(f),a(m),a(_),s()]}(w,h,L),I=t=>{const e=t.target;return e instanceof HTMLFormElement?e:e&&e.form},D=t=>v().includes(t);t.addEventListener('submit',(t=>{const e=I(t);if(!e)return;const n=D(e)&&!e.dataset.hcaptchaBound&&!e.dataset.recaptchaBound,o=_(e),c=g().includes(e)&&(!o||!o.value);(n||c)&&t.preventDefault(),c&&!n&&(function(t){try{if(!f())return;!function(t){const e=f();if(!e)return;const n=_(t);if(!n)return;const o=n.value;o&&e.removeItem(o)}(t);const e=Array.from(Array(32),(()=>Math.random().toString(36)[2])).join('');!function(t,e){_(t)||t.append(Object.assign(document.createElement('input'),{type:'hidden',name:u})),t.elements[u].value=e}(t,e),function(t,e){const n=f();if(!n)return;const o=[...t.querySelectorAll(`input[type='${i}']`)].map((({name:t})=>t)),c=[...d,...o],r={};for(const[a,s]of new FormData(t).entries())c.includes(a)||(r[a]=s);n.setItem(e,JSON.stringify({[m]:1,action:t.action,data:r}))}(t,e)}catch(e){console.error('failed to persist form',e)}}(e),e.submit())}));const S=(t,e)=>{t&&!t.dataset[E]&&(n(t,e.some((e=>e===t))),T(t))};for(const o of['focusin','change'])t.addEventListener(o,(t=>{const e=I(t);D(e)&&S(e,y())}));const B=e.get('form_key'),M=e.get(l),P=B&&M;t.addEventListener('DOMContentLoaded',(()=>{const t=y();if(P)for(const e of t)e.elements[l].value===M&&p(e,B);[...new Set([...A(),...v().filter((t=>'true'===t.dataset.shopifyCaptcha))])].forEach((e=>S(e,t)))}))}(h,new URLSearchParams(w.location.search),n,t,e,['guest_login'])})(!0,!0)}();</script>
 <script integrity="sha256-4kQ18oKyAcykRKYeNunJcIwy7WH5gtpwJnB7kiuLZ1E=" data-source-attribution="shopify.loadfeatures" defer="defer" src="//www.kappa.fr/cdn/shopifycloud/storefront/assets/storefront/load_feature-a0a9edcb.js" crossorigin="anonymous"></script>
@@ -601,6 +601,14 @@ function loadIAdvize() {
 <!-- END IADVIZE LIVECHAT -->
 
 
+<!-- END app block --><!-- BEGIN app block: shopify://apps/join-stories/blocks/global-script/01ec6b69-ffcd-4917-91ec-8e867f5f7704 -->
+  <script
+    src='https://kappa.my.join-stories.com/scripts/global.js'
+    type='text/javascript'
+  ></script>
+
+
+
 <!-- END app block --><!-- BEGIN app block: shopify://apps/supergrid-by-depict/blocks/depict_brand_features/ad5c7d1f-ddfb-424b-b936-7f08c4544f6b -->
 
 
@@ -662,14 +670,6 @@ function loadIAdvize() {
 </script>
 
 
-<!-- END app block --><!-- BEGIN app block: shopify://apps/join-stories/blocks/global-script/01ec6b69-ffcd-4917-91ec-8e867f5f7704 -->
-  <script
-    src='https://kappa.my.join-stories.com/scripts/global.js'
-    type='text/javascript'
-  ></script>
-
-
-
 <!-- END app block --><script src="https://cdn.shopify.com/extensions/341b63e8-75de-4462-a13a-6917fade4544/trueprofit-profit-analytics-19/assets/embedded.js" type="text/javascript" defer="defer"></script>
 <link href="https://monorail-edge.shopifysvc.com" rel="dns-prefetch">
 <script>(function(){if ("sendBeacon" in navigator && "performance" in window) {try {var session_token_from_headers = performance.getEntriesByType('navigation')[0].serverTiming.find(x => x.name == '_s').description;} catch {var session_token_from_headers = undefined;}var session_cookie_matches = document.cookie.match(/_shopify_s=([^;]*)/);var session_token_from_cookie = session_cookie_matches && session_cookie_matches.length === 2 ? session_cookie_matches[1] : "";var session_token = session_token_from_headers || session_token_from_cookie || "";function handle_abandonment_event(e) {var entries = performance.getEntries().filter(function(entry) {return /monorail-edge.shopifysvc.com/.test(entry.name);});if (!window.abandonment_tracked && entries.length === 0) {window.abandonment_tracked = true;var currentMs = Date.now();var navigation_start = performance.timing.navigationStart;var payload = {shop_id: 56681136327,url: window.location.href,navigation_start,duration: currentMs - navigation_start,session_token,page_type: "page"};window.navigator.sendBeacon("https://monorail-edge.shopifysvc.com/v1/produce", JSON.stringify({schema_id: "online_store_buyer_site_abandonment/1.1",payload: payload,metadata: {event_created_at_ms: currentMs,event_sent_at_ms: currentMs}}));}}window.addEventListener('pagehide', handle_abandonment_event);}}());</script>
@@ -677,7 +677,7 @@ function loadIAdvize() {
   window.ShopifyAnalytics = window.ShopifyAnalytics || {};
   window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
   window.ShopifyAnalytics.meta.currency = 'EUR';
-  var meta = {"page":{"pageType":"page","resourceType":"page","resourceId":82250334407,"requestId":"ff0f719c-ba85-4412-8878-c497fc8c55ad-1772887054"}};
+  var meta = {"page":{"pageType":"page","resourceType":"page","resourceId":82250334407,"requestId":"7e517bec-b7a9-41b2-bba3-aef573535538-1772930283"}};
   for (var attr in meta) {
     window.ShopifyAnalytics.meta[attr] = meta[attr];
   }
@@ -823,7 +823,7 @@ function loadIAdvize() {
       try { window.ShopifyAnalytics.merchantGoogleAnalytics.call(this); } catch(error) {};
       document.write = originalDocumentWrite;
 
-      window.ShopifyAnalytics.lib.page(null,{"pageType":"page","resourceType":"page","resourceId":82250334407,"requestId":"ff0f719c-ba85-4412-8878-c497fc8c55ad-1772887054","shopifyEmitted":true});
+      window.ShopifyAnalytics.lib.page(null,{"pageType":"page","resourceType":"page","resourceId":82250334407,"requestId":"7e517bec-b7a9-41b2-bba3-aef573535538-1772930283","shopifyEmitted":true});
 
       var match = window.location.pathname.match(/checkouts\/(.+)\/(thank_you|post_purchase)/)
       var token = match? match[1]: undefined;
@@ -5108,7 +5108,65 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="centered-content"></div>
     </div>
   <style> #CustomerLoginForm input,.search__input,.grid-product__tag,.tag__checkbox:before,.collection-filter select {border-radius: var(--buttonRadius);} </style>
-<div id="shopify-block-AQ294THJtK3dKSWVyc__9989034428746501443" class="shopify-block shopify-app-block"><link rel="stylesheet" href="https://cdn.shopify.com/extensions/019c8b01-a158-7a55-b6c2-a9ff9046b1cf/wishlist-prod-1-40/assets/style.css">
+<div id="shopify-block-AZTI3VUE3SFNzM3F6d__2912608901741945173" class="shopify-block shopify-app-block">
+</div><div id="shopify-block-AaW53NVNIM3V6M3RCV__15393088698543645836" class="shopify-block shopify-app-block"><!-- BEGIN app snippet: vite-tag -->
+
+
+  <script src="https://cdn.shopify.com/extensions/019cc35f-b8d3-786d-a083-fb947ae6b73c/essential-preorder-2826/assets/app-embed-B3o-GOpx.js" type="module" crossorigin="anonymous"></script>
+  <link href="//cdn.shopify.com/extensions/019cc35f-b8d3-786d-a083-fb947ae6b73c/essential-preorder-2826/assets/app-embed-Co4IKZfY.css" rel="stylesheet" type="text/css" media="all" />
+
+<!-- END app snippet -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+  window.essentialPreorderConfigs = {
+    addToCartTexts: [
+      window.variantStrings?.addToCart,
+      window.variantStrings?.soldOut,
+      window.theme?.strings?.addToCart,
+      window.theme?.strings?.soldOut,
+      window.theme?.variantStrings?.addToCart,
+      window.theme?.variantStrings?.soldOut,
+      window.MinimogStrings?.addToCart,
+      window.MinimogStrings?.soldOut,
+      window.themeVariables?.strings?.productFormAddToCart,
+      window.themeVariables?.strings?.productFormSoldOut
+    ].filter(Boolean),
+    selectedOrFirstAvailableVariantId: "null",
+    permanentDomain: "kappafrance.myshopify.com",
+    selectedLocale: "fr",
+    selectedCountry: "FR",
+  }
+</script>
+
+<essential-preorder-app-embed
+  cart="{&quot;note&quot;:null,&quot;attributes&quot;:{},&quot;original_total_price&quot;:0,&quot;total_price&quot;:0,&quot;total_discount&quot;:0,&quot;total_weight&quot;:0.0,&quot;item_count&quot;:0,&quot;items&quot;:[],&quot;requires_shipping&quot;:false,&quot;currency&quot;:&quot;EUR&quot;,&quot;items_subtotal_price&quot;:0,&quot;cart_level_discount_applications&quot;:[],&quot;checkout_charge_amount&quot;:0}"
+  cart-inventory-quantity-by-variant-id="{}"
+  product="null"
+  preorder-app-data="{&quot;preorderCampaigns&quot;:[{&quot;id&quot;:&quot;5090b650-f457-4ebd-bb16-bc1fef69218a&quot;,&quot;sellingPlanIds&quot;:[692085719386],&quot;content&quot;:{&quot;preorderType&quot;:&quot;OUT_OF_STOCK&quot;,&quot;inventoryHasLimit&quot;:false,&quot;inventoryAvailable&quot;:null,&quot;buttonText&quot;:&quot;PRE COMMANDE&quot;,&quot;message&quot;:&quot;&quot;,&quot;discountType&quot;:&quot;PERCENTAGE&quot;,&quot;discountValue&quot;:0,&quot;paymentType&quot;:&quot;FULL&quot;,&quot;paymentCheckoutChargeType&quot;:null,&quot;paymentCheckoutChargeValue&quot;:null,&quot;paymentRemainingBalanceChargeType&quot;:null,&quot;paymentRemainingBalanceChargeDayValue&quot;:null,&quot;paymentRemainingBalanceChargeDateValue&quot;:null,&quot;paymentDetailsText&quot;:null,&quot;paymentDetailsTextEnabled&quot;:false,&quot;cartDiscountKey&quot;:null,&quot;cartNoteKey&quot;:&quot;Note&quot;,&quot;cartNoteText&quot;:&quot;Preorder&quot;,&quot;orderTags&quot;:[&quot;Essential Preorder&quot;],&quot;customerTags&quot;:[&quot;Essential Preorder&quot;],&quot;fulfilmentType&quot;:&quot;ON_HOLD&quot;,&quot;fulfilmentScheduledType&quot;:null,&quot;fulfilmentScheduledDayValue&quot;:null,&quot;fulfilmentScheduledDateValue&quot;:null,&quot;automaticInventoryPolicyEnabled&quot;:true},&quot;design&quot;:{&quot;buttonStyleType&quot;:&quot;DEFAULT&quot;,&quot;backgroundType&quot;:&quot;MONOCHROME&quot;,&quot;monochromeBackgroundColor&quot;:&quot;#008060&quot;,&quot;gradientBackgroundStartColor&quot;:null,&quot;gradientBackgroundEndColor&quot;:null,&quot;gradientBackgroundAngle&quot;:null,&quot;buttonTextColor&quot;:&quot;#ffffff&quot;,&quot;buttonTextFontSize&quot;:15,&quot;borderRadius&quot;:8,&quot;borderSize&quot;:0,&quot;borderColor&quot;:&quot;#ffffff&quot;,&quot;insideTopSpacing&quot;:20,&quot;insideBottomSpacing&quot;:20,&quot;outsideTopSpacing&quot;:0,&quot;outsideBottomSpacing&quot;:0,&quot;font&quot;:&quot;INHERIT&quot;,&quot;messageFontSize&quot;:null,&quot;messageColor&quot;:null,&quot;paymentDetailsTextFontSize&quot;:null,&quot;paymentDetailsTextColor&quot;:null,&quot;discountedPriceFontSize&quot;:null,&quot;discountedPriceColor&quot;:null,&quot;priceFontSize&quot;:null,&quot;priceColor&quot;:null,&quot;pricesAlign&quot;:null},&quot;placement&quot;:{&quot;specificProducts&quot;:[{&quot;id&quot;:&quot;gid://shopify/ProductVariant/49336883413338&quot;},{&quot;id&quot;:&quot;gid://shopify/ProductVariant/49336883315034&quot;},{&quot;id&quot;:&quot;gid://shopify/ProductVariant/49336883249498&quot;},{&quot;id&quot;:&quot;gid://shopify/ProductVariant/49336883216730&quot;},{&quot;id&quot;:&quot;gid://shopify/ProductVariant/49336883347802&quot;},{&quot;id&quot;:&quot;gid://shopify/ProductVariant/49336883118426&quot;}]},&quot;contentTranslations&quot;:[],&quot;createdAt&quot;:&quot;2026-03-02T13:04:27.567Z&quot;}],&quot;preorderDisplay&quot;:{&quot;featuredProductsEnabled&quot;:true,&quot;listEnabled&quot;:true,&quot;quickViewEnabled&quot;:true,&quot;discountEnabled&quot;:true},&quot;publicAccessToken&quot;:&quot;11beecdc1f47d73e583449e7af4fa764&quot;,&quot;isStaging&quot;:false}"
+  preorder-app-data-back-in-stock="{&quot;backInStockCampaigns&quot;:[]}"
+  preorder-app-data-inventory-quantity-limits="[]"
+  preorder-app-data-app-settings="{&quot;paidFeatures&quot;:{&quot;isCustomizeEmailDisabled&quot;:false,&quot;isTranslationsDisabled&quot;:false,&quot;isButtonInQuickAddModalDisabled&quot;:false,&quot;isPreorderConfirmationEmailDisabled&quot;:false}}"
+  product-collections="null"
+  inventory-quantity-by-variant-id="{}"
+  money-format-by-settings="{{amount_with_comma_separator}} €"
+  money-format="{{amount_with_comma_separator}} €"
+  template="page"
+></essential-preorder-app-embed>
+
+
+</div><div id="shopify-block-AQ294THJtK3dKSWVyc__9989034428746501443" class="shopify-block shopify-app-block"><link rel="stylesheet" href="https://cdn.shopify.com/extensions/019c8b01-a158-7a55-b6c2-a9ff9046b1cf/wishlist-prod-1-40/assets/style.css">
 
   <link rel="stylesheet" href="https://cdn.shopify.com/extensions/019c8b01-a158-7a55-b6c2-a9ff9046b1cf/wishlist-prod-1-40/assets/reverse-label-style.css">
 
@@ -5577,64 +5635,6 @@ function bnHandleWishlistModal(isAdding) {
       })
 </script>
 <!-- END app snippet -->
-
-
-</div><div id="shopify-block-AZTI3VUE3SFNzM3F6d__2912608901741945173" class="shopify-block shopify-app-block">
-</div><div id="shopify-block-AaW53NVNIM3V6M3RCV__15393088698543645836" class="shopify-block shopify-app-block"><!-- BEGIN app snippet: vite-tag -->
-
-
-  <script src="https://cdn.shopify.com/extensions/019cc35f-b8d3-786d-a083-fb947ae6b73c/essential-preorder-2826/assets/app-embed-B3o-GOpx.js" type="module" crossorigin="anonymous"></script>
-  <link href="//cdn.shopify.com/extensions/019cc35f-b8d3-786d-a083-fb947ae6b73c/essential-preorder-2826/assets/app-embed-Co4IKZfY.css" rel="stylesheet" type="text/css" media="all" />
-
-<!-- END app snippet -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-<script>
-  window.essentialPreorderConfigs = {
-    addToCartTexts: [
-      window.variantStrings?.addToCart,
-      window.variantStrings?.soldOut,
-      window.theme?.strings?.addToCart,
-      window.theme?.strings?.soldOut,
-      window.theme?.variantStrings?.addToCart,
-      window.theme?.variantStrings?.soldOut,
-      window.MinimogStrings?.addToCart,
-      window.MinimogStrings?.soldOut,
-      window.themeVariables?.strings?.productFormAddToCart,
-      window.themeVariables?.strings?.productFormSoldOut
-    ].filter(Boolean),
-    selectedOrFirstAvailableVariantId: "null",
-    permanentDomain: "kappafrance.myshopify.com",
-    selectedLocale: "fr",
-    selectedCountry: "FR",
-  }
-</script>
-
-<essential-preorder-app-embed
-  cart="{&quot;note&quot;:null,&quot;attributes&quot;:{},&quot;original_total_price&quot;:0,&quot;total_price&quot;:0,&quot;total_discount&quot;:0,&quot;total_weight&quot;:0.0,&quot;item_count&quot;:0,&quot;items&quot;:[],&quot;requires_shipping&quot;:false,&quot;currency&quot;:&quot;EUR&quot;,&quot;items_subtotal_price&quot;:0,&quot;cart_level_discount_applications&quot;:[],&quot;checkout_charge_amount&quot;:0}"
-  cart-inventory-quantity-by-variant-id="{}"
-  product="null"
-  preorder-app-data="{&quot;preorderCampaigns&quot;:[{&quot;id&quot;:&quot;5090b650-f457-4ebd-bb16-bc1fef69218a&quot;,&quot;sellingPlanIds&quot;:[692085719386],&quot;content&quot;:{&quot;preorderType&quot;:&quot;OUT_OF_STOCK&quot;,&quot;inventoryHasLimit&quot;:false,&quot;inventoryAvailable&quot;:null,&quot;buttonText&quot;:&quot;PRE COMMANDE&quot;,&quot;message&quot;:&quot;&quot;,&quot;discountType&quot;:&quot;PERCENTAGE&quot;,&quot;discountValue&quot;:0,&quot;paymentType&quot;:&quot;FULL&quot;,&quot;paymentCheckoutChargeType&quot;:null,&quot;paymentCheckoutChargeValue&quot;:null,&quot;paymentRemainingBalanceChargeType&quot;:null,&quot;paymentRemainingBalanceChargeDayValue&quot;:null,&quot;paymentRemainingBalanceChargeDateValue&quot;:null,&quot;paymentDetailsText&quot;:null,&quot;paymentDetailsTextEnabled&quot;:false,&quot;cartDiscountKey&quot;:null,&quot;cartNoteKey&quot;:&quot;Note&quot;,&quot;cartNoteText&quot;:&quot;Preorder&quot;,&quot;orderTags&quot;:[&quot;Essential Preorder&quot;],&quot;customerTags&quot;:[&quot;Essential Preorder&quot;],&quot;fulfilmentType&quot;:&quot;ON_HOLD&quot;,&quot;fulfilmentScheduledType&quot;:null,&quot;fulfilmentScheduledDayValue&quot;:null,&quot;fulfilmentScheduledDateValue&quot;:null,&quot;automaticInventoryPolicyEnabled&quot;:true},&quot;design&quot;:{&quot;buttonStyleType&quot;:&quot;DEFAULT&quot;,&quot;backgroundType&quot;:&quot;MONOCHROME&quot;,&quot;monochromeBackgroundColor&quot;:&quot;#008060&quot;,&quot;gradientBackgroundStartColor&quot;:null,&quot;gradientBackgroundEndColor&quot;:null,&quot;gradientBackgroundAngle&quot;:null,&quot;buttonTextColor&quot;:&quot;#ffffff&quot;,&quot;buttonTextFontSize&quot;:15,&quot;borderRadius&quot;:8,&quot;borderSize&quot;:0,&quot;borderColor&quot;:&quot;#ffffff&quot;,&quot;insideTopSpacing&quot;:20,&quot;insideBottomSpacing&quot;:20,&quot;outsideTopSpacing&quot;:0,&quot;outsideBottomSpacing&quot;:0,&quot;font&quot;:&quot;INHERIT&quot;,&quot;messageFontSize&quot;:null,&quot;messageColor&quot;:null,&quot;paymentDetailsTextFontSize&quot;:null,&quot;paymentDetailsTextColor&quot;:null,&quot;discountedPriceFontSize&quot;:null,&quot;discountedPriceColor&quot;:null,&quot;priceFontSize&quot;:null,&quot;priceColor&quot;:null,&quot;pricesAlign&quot;:null},&quot;placement&quot;:{&quot;specificProducts&quot;:[{&quot;id&quot;:&quot;gid://shopify/ProductVariant/49336883413338&quot;},{&quot;id&quot;:&quot;gid://shopify/ProductVariant/49336883315034&quot;},{&quot;id&quot;:&quot;gid://shopify/ProductVariant/49336883249498&quot;},{&quot;id&quot;:&quot;gid://shopify/ProductVariant/49336883216730&quot;},{&quot;id&quot;:&quot;gid://shopify/ProductVariant/49336883347802&quot;},{&quot;id&quot;:&quot;gid://shopify/ProductVariant/49336883118426&quot;}]},&quot;contentTranslations&quot;:[],&quot;createdAt&quot;:&quot;2026-03-02T13:04:27.567Z&quot;}],&quot;preorderDisplay&quot;:{&quot;featuredProductsEnabled&quot;:true,&quot;listEnabled&quot;:true,&quot;quickViewEnabled&quot;:true,&quot;discountEnabled&quot;:true},&quot;publicAccessToken&quot;:&quot;11beecdc1f47d73e583449e7af4fa764&quot;,&quot;isStaging&quot;:false}"
-  preorder-app-data-back-in-stock="{&quot;backInStockCampaigns&quot;:[]}"
-  preorder-app-data-inventory-quantity-limits="[]"
-  preorder-app-data-app-settings="{&quot;paidFeatures&quot;:{&quot;isCustomizeEmailDisabled&quot;:false,&quot;isTranslationsDisabled&quot;:false,&quot;isButtonInQuickAddModalDisabled&quot;:false,&quot;isPreorderConfirmationEmailDisabled&quot;:false}}"
-  product-collections="null"
-  inventory-quantity-by-variant-id="{}"
-  money-format-by-settings="{{amount_with_comma_separator}} €"
-  money-format="{{amount_with_comma_separator}} €"
-  template="page"
-></essential-preorder-app-embed>
 
 
 </div></body>
