@@ -177,7 +177,6 @@ a.cta_button{-moz-box-sizing:content-box !important;-webkit-box-sizing:content-b
 		<meta property="og:image" content="https://www.legalstart.fr/hubfs/markentive/assets/image/vignette_ls_rebrand.png">
 		<meta name="twitter:image" content="https://www.legalstart.fr/hubfs/markentive/assets/image/vignette_ls_rebrand.png">
 		
-		
 		<script type="application/ld+json">
 		{
 			"@context": "https://schema.org",
@@ -2870,9 +2869,9 @@ var hsVars = hsVars || {}; hsVars['language'] = 'fr';
 <script defer src="https://www.legalstart.fr/hubfs/hub_generated/template_assets/1/61774587505/1743595616148/template_local-storage.min.js"></script>
 <script defer src="https://www.legalstart.fr/hubfs/hub_generated/template_assets/1/61774633818/1743595617103/template_session-storage.min.js"></script>
 <script defer src="https://www.legalstart.fr/hubfs/hub_generated/template_assets/1/61439592206/1743595614444/template_unsent-events-queue.min.js"></script>
-<script defer src="https://www.legalstart.fr/hubfs/hub_generated/template_assets/1/62851832843/1743595617536/template_tools.min.js"></script>
-<script defer src="https://www.legalstart.fr/hubfs/hub_generated/template_assets/1/62851832838/1747304127597/template_points.min.js"></script>
-<script defer src="https://www.legalstart.fr/hubfs/hub_generated/template_assets/1/60935314007/1743595612925/template_index.min.js"></script>
+<script defer src="https://www.legalstart.fr/hubfs/hub_generated/template_assets/1/62851832843/1773116259727/template_tools.min.js"></script>
+<script defer src="https://www.legalstart.fr/hubfs/hub_generated/template_assets/1/62851832838/1773116292761/template_points.min.js"></script>
+<script defer src="https://www.legalstart.fr/hubfs/hub_generated/template_assets/1/60935314007/1773116310113/template_index.min.js"></script>
 
 <!-- Start of HubSpot Analytics Code -->
 <script type="text/javascript">
@@ -2899,8 +2898,8 @@ _hsq.push(["setContentMetadata", {
 
 <script type="text/javascript">
 var hsVars = {
-    render_id: "b14b689e-5d49-4dd5-96d4-b66d4a57d06b",
-    ticks: 1773072944898,
+    render_id: "29914e2d-8908-46ea-9a7f-979752149253",
+    ticks: 1773116410415,
     page_id: 60459634331,
     
     content_group_id: 0,
@@ -2930,18 +2929,6 @@ var hsVars = {
 
 
 <script type="text/javascript">
-  
-  function getSnowplowDuid(cookieName) {
-    cookieName = cookieName || '_sp_';
-    const matcher = new RegExp(cookieName + 'id\\.[a-f0-9]+=([^;]+);?');
-    const match = document.cookie.match(matcher);
-    if (match && match[1]) {
-      return match[1].split('.')[0];
-    } else {
-      return false;
-    }
-  }
-
   
   function loadSegment() {
     const lsSegmentCDN = "https://cdn-sgmt.legalstart.fr";
@@ -3000,12 +2987,6 @@ var hsVars = {
         };
         analytics._cdn = lsSegmentCDN;
         if (writeKey) {
-          
-          const snowplowDomainUID = getSnowplowDuid();
-          if (snowplowDomainUID) {
-            analytics.setAnonymousId(snowplowDomainUID)
-          }
-
           analytics._writeKey = writeKey;
           analytics.SNIPPET_VERSION = "5.2.0";
           analytics.load(writeKey);
@@ -3013,52 +2994,7 @@ var hsVars = {
       }
   };
 
-  
-  (function (p, l, o, w, i, n, g) {
-    if (!p[i]) {
-      p.GlobalSnowplowNamespace = p.GlobalSnowplowNamespace || [];
-      p.GlobalSnowplowNamespace.push(i);
-      p[i] = function () {
-        (p[i].q = p[i].q || []).push(arguments);
-      };
-      p[i].q = p[i].q || [];
-      n = l.createElement(o);
-      g = l.getElementsByTagName(o)[0];
-      n.async = 1;
-      n.src = w;
-      n.onload = function () {
-        loadSegment();
-        var _le = new CustomEvent("pixel_tracker_loaded", { bubbles: true });
-        l.dispatchEvent(_le);
-      };
-      g.parentNode.insertBefore(n, g);
-    }
-  })(window, document, "script", "/hubfs/assets/libs/sp.10.0.2.js", "snowplow");
-  window.snowplow(
-    "newTracker",
-    "yolaw_hubspot_cms_tracker",
-    "//pt.legalstart.fr",
-    {
-      appId: "yolaw_hubspot_cms_prod",
-      cookieSameSite: "Lax",
-      discoverRootDomain: true,
-      encodeBase64: true,
-      eventMethod: 'get',
-      forceSecureTracker: true,
-      platform: "web",
-      respectDoNotTrack: true,
-    }
-  );
-  window.snowplow('addGlobalContexts', [
-    {
-      schema: 'iglu:fr.legalstart/hubspot_page_context/jsonschema/1-0-0',
-      data: {
-        page_id: '60459634331',
-        page_path: window.location.pathname
-      }
-    },
-  ]);
-  
+  loadSegment();
 </script>
 
 
