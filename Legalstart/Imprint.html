@@ -7,7 +7,6 @@
     
 
 
-
 <script>
 (function(lsSegmentCDN, writeKey) {
   var analytics = window.analytics = window.analytics || [];
@@ -21,20 +20,19 @@
       for (var e = 0; e < analytics.methods.length; e++) { var key = analytics.methods[e]; analytics[key] = analytics.factory(key); }
       analytics.load = function(key, e) { var t = document.createElement("script"); t.type = "text/javascript"; t.async = !0; t.src = lsSegmentCDN + "/load?write_key=" + writeKey; var n = document.getElementsByTagName("script")[0]; n.parentNode.insertBefore(t, n); analytics._loadOptions = e; };
       analytics._cdn = lsSegmentCDN;
-			analytics.setAnonymousId();
+      analytics.setAnonymousId();
       if (writeKey) { analytics._writeKey = writeKey; analytics.SNIPPET_VERSION = "5.2.0"; analytics.load(writeKey); }
     }
   }
 })("https://cdn-sgmt.legalstart.fr", "dW2bqdwLNglvQVvMJuPsSYxtWngA0TxU");
 </script>
-
 <script>
 (function() {
   var AMPLITUDE_API_KEY    = '3dba168a0c6894ef29c12d94280d8778';
   var AMPLITUDE_DEPLOY_KEY = 'client-a5yyn5u3aTgftghsWQnLWqhNvfflJgyI';
 
   function getSegId() {
-    var m = document.cookie.match(new RegExp('(^| )ajs_anonymous_id=([^;]+)'));
+    var m = document.cookie.match(/(^| )ajs_anonymous_id=([^;]+)/);
     if (m) return decodeURIComponent(m[2]).replace(/^"(.*)"$/, '$1');
     try {
       var ls = window.localStorage.getItem('ajs_anonymous_id');
@@ -43,38 +41,58 @@
     return null;
   }
 
-  function initAmplitude() {
+  function runExperiments() {
     var sid = getSegId();
-    window.amplitude.add(window.sessionReplay.plugin({ sampleRate: 1 }));
-    window.amplitude.init(AMPLITUDE_API_KEY, Object.assign(
-      sid ? { deviceId: sid } : {},
-      {
-        autocapture: true,
-        cookieDomain: '.legalstart.fr',
-        identityStorage: 'localStorage',
-        fetchRemoteConfig: true,
-        experiment: {
-          deploymentKey: AMPLITUDE_DEPLOY_KEY
-        }
+    if (!sid) return;
+
+    window.amplitude.init(AMPLITUDE_API_KEY, {
+      deviceId: sid,
+      autocapture: false,       // Segment gère le tracking, pas Amplitude
+      defaultTracking: false,   // idem
+      cookieDomain: '.legalstart.fr',
+      identityStorage: 'localStorage',
+      fetchRemoteConfig: true,
+      experiment: { deploymentKey: AMPLITUDE_DEPLOY_KEY }
+    });
+
+    window.amplitude.experiment.fetch({
+      user: {
+        user_properties: { page_path: window.location.pathname }
       }
-    ));
+    }).then(function() {
+      var allVariants = window.amplitude.experiment.all();
+
+      Object.keys(allVariants).forEach(function(experimentKey) {
+        var variant     = allVariants[experimentKey];
+        var variantId   = variant.value || 'control';
+        var redirectUrl = variant.payload && variant.payload.redirect_url;
+
+        window.analytics.track('Experiment Viewed', {
+          experiment_id:       experimentKey,
+          variant_id:          variantId,
+          amplitude_device_id: window.amplitude.getDeviceId()
+        });
+
+        if (redirectUrl && window.location.pathname !== redirectUrl) {
+          window.location.replace(redirectUrl);
+        }
+      });
+    }).catch(function() {});
   }
 
-  // Amplitude attend que Segment soit prêt pour récupérer l'anonymous ID
   function loadAmplitude() {
     var script = document.createElement('script');
     script.src = 'https://cdn.amplitude.com/script/' + AMPLITUDE_API_KEY + '.js';
-    script.onload = initAmplitude;
+    script.onload = runExperiments;
     script.onerror = function() { console.warn('[Amplitude] Échec du chargement du SDK'); };
     document.head.appendChild(script);
   }
 
-  // analytics.ready() garantit que Segment a écrit ajs_anonymous_id avant l'init Amplitude
   if (window.analytics && window.analytics.ready) {
     window.analytics.ready(loadAmplitude);
-  } else {
-    loadAmplitude();
   }
+  // Pas de fallback : sans ajs_anonymous_id garanti, on ne charge pas Amplitude
+
 })();
 </script>
     
@@ -114,8 +132,8 @@
 a.cta_button{-moz-box-sizing:content-box !important;-webkit-box-sizing:content-box !important;box-sizing:content-box !important;vertical-align:middle}.hs-breadcrumb-menu{list-style-type:none;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px}.hs-breadcrumb-menu-item{float:left;padding:10px 0px 10px 10px}.hs-breadcrumb-menu-divider:before{content:'›';padding-left:10px}.hs-featured-image-link{border:0}.hs-featured-image{float:right;margin:0 0 20px 20px;max-width:50%}@media (max-width: 568px){.hs-featured-image{float:none;margin:0;width:100%;max-width:100%}}.hs-screen-reader-text{clip:rect(1px, 1px, 1px, 1px);height:1px;overflow:hidden;position:absolute !important;width:1px}
 </style>
 
-<link rel="stylesheet" href="https://www.legalstart.fr/hubfs/hub_generated/template_assets/1/168574251929/1774024316204/template_glide.core.min.css">
-<link rel="stylesheet" href="https://www.legalstart.fr/hubfs/hub_generated/template_assets/1/178859757076/1774024313757/template_rebrand-compiled.min.css">
+<link rel="stylesheet" href="https://www.legalstart.fr/hubfs/hub_generated/template_assets/1/168574251929/1774457086125/template_glide.core.min.css">
+<link rel="stylesheet" href="https://www.legalstart.fr/hubfs/hub_generated/template_assets/1/178859757076/1774457092463/template_rebrand-compiled.min.css">
 <link rel="stylesheet" href="https://www.legalstart.fr/hubfs/hub_generated/module_assets/1/185418849420/1771848822025/module_header_banner_promo.min.css">
 <!-- Editor Styles -->
 <style id="hs_editor_style" type="text/css">
@@ -2689,8 +2707,8 @@ var hsVars = hsVars || {}; hsVars['language'] = 'fr';
 </script>
 
 <script src="/hs/hsstatic/cos-i18n/static-1.53/bundles/project.js"></script>
-<script src="https://www.legalstart.fr/hubfs/hub_generated/template_assets/1/168573240893/1774024320181/template_glide.min.js"></script>
-<script src="https://www.legalstart.fr/hubfs/hub_generated/template_assets/1/56160525828/1774024314049/template_main.min.js"></script>
+<script src="https://www.legalstart.fr/hubfs/hub_generated/template_assets/1/168573240893/1774457085684/template_glide.min.js"></script>
+<script src="https://www.legalstart.fr/hubfs/hub_generated/template_assets/1/56160525828/1774457079736/template_main.min.js"></script>
 <script defer src="https://www.legalstart.fr/hubfs/hub_generated/template_assets/1/61774615673/1743595616617/template_active-sessions.min.js"></script>
 <script defer src="https://www.legalstart.fr/hubfs/hub_generated/template_assets/1/61354816083/1743595614029/template_cookies.min.js"></script>
 <script defer src="https://www.legalstart.fr/hubfs/hub_generated/template_assets/1/61774587505/1743595616148/template_local-storage.min.js"></script>
@@ -2725,8 +2743,8 @@ _hsq.push(["setContentMetadata", {
 
 <script type="text/javascript">
 var hsVars = {
-    render_id: "095f60a4-422f-4b0b-aa63-bd63176e375a",
-    ticks: 1774231395607,
+    render_id: "48cab5f0-2f0e-4b08-a4d3-35a2439ccc3d",
+    ticks: 1774539114032,
     page_id: 61997592202,
     
     content_group_id: 0,
