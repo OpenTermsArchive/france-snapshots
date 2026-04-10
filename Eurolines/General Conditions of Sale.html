@@ -38,7 +38,7 @@
     <link rel="stylesheet" href="https://honeycomb.flixbus.com/dist/15.3.3/css/honeycomb-fonts.css" crossorigin="">
 
     <link rel="stylesheet" href="https://cdn-cf.cms.flixbus.com/drupal-assets/flix-home-assets/cms_honeycomb.f4a64e.css" async />
-    <link rel="stylesheet" href="https://cdn-cf.cms.flixbus.com/drupal-assets/flix-home-assets/styles.ca8b6e.css" async />
+    <link rel="stylesheet" href="https://cdn-cf.cms.flixbus.com/drupal-assets/flix-home-assets/styles.d80e83.css" async />
 
     <link
       rel="apple-touch-icon"
@@ -3001,7 +3001,7 @@
 <script defer async type="module" src="https://honeycomb-icons.hive.flixbus.com/9.0.0/flix-icons/flix-icons.esm.js"></script>
 <script defer async type="nomodule" src="https://honeycomb-icons.hive.flixbus.com/9.0.0/flix-icons/flix-icons.js"></script>
 
-<script src="https://cdn-cf.cms.flixbus.com/drupal-assets/flix-home-assets/main.52f17b.js"></script>
+<script src="https://cdn-cf.cms.flixbus.com/drupal-assets/flix-home-assets/main.3e0589.js"></script>
 <script>
   injectSearchMask(
    "en",
@@ -3174,5 +3174,22 @@
      
     })();
   </script>
+  
+  <script id="smart-banner-init">
+    console.debug("Initializing Adjust Smart Banner with language: en-gl and project: flixbus", AdjustSmartBanner);
+    
+    AdjustSmartBanner.init({
+      language: "en-gl",
+      appToken: {
+        android: "9zdykjd53an3",
+        ios: "ndyze3cmakhe"
+      },
+      logLevel: "verbose"
+    });
+    
+    observeSmartBanner();
+  </script>
+  
 </body>
+
 </html>
