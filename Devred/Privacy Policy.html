@@ -3,8 +3,7 @@
 <html lang="fr" dir="ltr">
   <head>
 		
-	<script async crossorigin fetchpriority="high" src="/cdn/shopifycloud/importmap-polyfill/es-modules-shim.2.4.0.js"></script>
-<script>const observerCFH=new MutationObserver(e=>{e.forEach(({addedNodes:e})=>{e.forEach(e=>{if(e.nodeType===Node.ELEMENT_NODE&&"SCRIPT"===e.tagName){let{innerHTML:t,className:a,src:n}=e;t.includes("asyncLoad")&&(e.innerHTML=t.replace("if(window.attachEvent)","document.addEventListener('asyncLazyLoad', event => { asyncLoad(); });if(window.attachEvent)").replaceAll(", asyncLoad",", () => {}")),t.includes("PreviewBarInjector")&&(e.innerHTML=t.replace("DOMContentLoaded","asyncLazyLoad")),"analytics"===a&&(e.type="text/lazyload");(n.includes("assets/storefront/features")||n.includes("assets/shopify_pay")||n.includes("connect.facebook.net"))&&(e.setAttribute("data-src",n),e.removeAttribute("src"))}})})});observerCFH.observe(document.documentElement,{childList:!0,subtree:!0});</script>
+	<script>const observerCFH=new MutationObserver(e=>{e.forEach(({addedNodes:e})=>{e.forEach(e=>{if(e.nodeType===Node.ELEMENT_NODE&&"SCRIPT"===e.tagName){let{innerHTML:t,className:a,src:n}=e;t.includes("asyncLoad")&&(e.innerHTML=t.replace("if(window.attachEvent)","document.addEventListener('asyncLazyLoad', event => { asyncLoad(); });if(window.attachEvent)").replaceAll(", asyncLoad",", () => {}")),t.includes("PreviewBarInjector")&&(e.innerHTML=t.replace("DOMContentLoaded","asyncLazyLoad")),"analytics"===a&&(e.type="text/lazyload");(n.includes("assets/storefront/features")||n.includes("assets/shopify_pay")||n.includes("connect.facebook.net"))&&(e.setAttribute("data-src",n),e.removeAttribute("src"))}})})});observerCFH.observe(document.documentElement,{childList:!0,subtree:!0});</script>
 
 
 
@@ -545,7 +544,7 @@ Shopify.shopJsCdnBaseUrl = "https://cdn.shopify.com/shopifycloud/shop-js";</scri
 <script>
   window.ShopifyPay = window.ShopifyPay || {};
   window.ShopifyPay.apiHost = "shop.app\/pay";
-  window.ShopifyPay.redirectState = null;
+  window.ShopifyPay.redirectState = "pending";
 </script>
 <script>
   window.Shopify = window.Shopify || {};
@@ -586,7 +585,7 @@ Shopify.shopJsCdnBaseUrl = "https://cdn.shopify.com/shopifycloud/shop-js";</scri
     window.addEventListener('load', asyncLoad, false);
   }
 })();</script>
-<script id="__st">var __st={"a":96206586243,"offset":7200,"reqid":"52ad133c-d74a-4be6-8d56-b54e873362fc-1778027913","pageurl":"devred.com\/pages\/charte-pour-la-protection-des-donnees","s":"pages-705873707395","u":"25c53d435e05","p":"page","rtyp":"page","rid":705873707395};</script>
+<script id="__st">var __st={"a":96206586243,"offset":7200,"reqid":"0113799c-90d3-4062-b177-15f1073dec5b-1778070621","pageurl":"devred.com\/pages\/charte-pour-la-protection-des-donnees?_gl=1%2A62nr2k%2A_up%2AMQ..%2A_ga%2ANDQ5MTU0ODM2LjE3NzgwNjk4NzQ.%2A_ga_F4RDJ76M6K%2AczE3NzgwNjk4NzMkbzEkZzEkdDE3NzgwNzA1OTYkajQwJGwwJGgw","s":"pages-705873707395","u":"f79a0a6c13d7","p":"page","rtyp":"page","rid":705873707395};</script>
 <script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
 <script id="captcha-bootstrap">!function(){'use strict';const t='contact',e='account',n='new_comment',o=[[t,t],['blogs',n],['comments',n],[t,'customer']],c=[[e,'customer_login'],[e,'guest_login'],[e,'recover_customer_password'],[e,'create_customer']],r=t=>t.map((([t,e])=>`form[action*='/${t}']:not([data-nocaptcha='true']) input[name='form_type'][value='${e}']`)).join(','),a=t=>()=>t?[...document.querySelectorAll(t)].map((t=>t.form)):[];function s(){const t=[...o],e=r(t);return a(e)}const i='password',u='form_key',d=['recaptcha-v3-token','g-recaptcha-response','h-captcha-response',i],f=()=>{try{return window.sessionStorage}catch{return}},m='__shopify_v',_=t=>t.elements[u];function p(t,e,n=!1){try{const o=window.sessionStorage,c=JSON.parse(o.getItem(e)),{data:r}=function(t){const{data:e,action:n}=t;return t[m]||n?{data:e,action:n}:{data:t,action:n}}(c);for(const[e,n]of Object.entries(r))t.elements[e]&&(t.elements[e].value=n);n&&o.removeItem(e)}catch(o){console.error('form repopulation failed',{error:o})}}const l='form_type',E='cptcha';function T(t){t.dataset[E]=!0}const w=window,h=w.document,L='Shopify',v='ce_forms',y='captcha';let A=!1;((t,e)=>{const n=(g='f06e6c50-85a8-45c8-87d0-21a2b65856fe',I='https://cdn.shopify.com/shopifycloud/storefront-forms-hcaptcha/ce_storefront_forms_captcha_hcaptcha.v1.5.2.iife.js',D={infoText:'Protégé par hCaptcha',privacyText:'Confidentialité',termsText:'Conditions'},(t,e,n)=>{const o=w[L][v],c=o.bindForm;if(c)return c(t,g,e,D).then(n);var r;o.q.push([[t,g,e,D],n]),r=I,A||(h.body.append(Object.assign(h.createElement('script'),{id:'captcha-provider',async:!0,src:r})),A=!0)});var g,I,D;w[L]=w[L]||{},w[L][v]=w[L][v]||{},w[L][v].q=[],w[L][y]=w[L][y]||{},w[L][y].protect=function(t,e){n(t,void 0,e),T(t)},Object.freeze(w[L][y]),function(t,e,n,w,h,L){const[v,y,A,g]=function(t,e,n){const i=e?o:[],u=t?c:[],d=[...i,...u],f=r(d),m=r(i),_=r(d.filter((([t,e])=>n.includes(e))));return[a(f),a(m),a(_),s()]}(w,h,L),I=t=>{const e=t.target;return e instanceof HTMLFormElement?e:e&&e.form},D=t=>v().includes(t);t.addEventListener('submit',(t=>{const e=I(t);if(!e)return;const n=D(e)&&!e.dataset.hcaptchaBound&&!e.dataset.recaptchaBound,o=_(e),c=g().includes(e)&&(!o||!o.value);(n||c)&&t.preventDefault(),c&&!n&&(function(t){try{if(!f())return;!function(t){const e=f();if(!e)return;const n=_(t);if(!n)return;const o=n.value;o&&e.removeItem(o)}(t);const e=Array.from(Array(32),(()=>Math.random().toString(36)[2])).join('');!function(t,e){_(t)||t.append(Object.assign(document.createElement('input'),{type:'hidden',name:u})),t.elements[u].value=e}(t,e),function(t,e){const n=f();if(!n)return;const o=[...t.querySelectorAll(`input[type='${i}']`)].map((({name:t})=>t)),c=[...d,...o],r={};for(const[a,s]of new FormData(t).entries())c.includes(a)||(r[a]=s);n.setItem(e,JSON.stringify({[m]:1,action:t.action,data:r}))}(t,e)}catch(e){console.error('failed to persist form',e)}}(e),e.submit())}));const S=(t,e)=>{t&&!t.dataset[E]&&(n(t,e.some((e=>e===t))),T(t))};for(const o of['focusin','change'])t.addEventListener(o,(t=>{const e=I(t);D(e)&&S(e,y())}));const B=e.get('form_key'),M=e.get(l),P=B&&M;t.addEventListener('DOMContentLoaded',(()=>{const t=y();if(P)for(const e of t)e.elements[l].value===M&&p(e,B);[...new Set([...A(),...v().filter((t=>'true'===t.dataset.shopifyCaptcha))])].forEach((e=>S(e,t)))}))}(h,new URLSearchParams(w.location.search),n,t,e,['guest_login'])})(!0,!0)}();</script>
 <script integrity="sha256-JjoPp5ZfB1sSAs5SQaol1x1GgvveM+BgmRzyDexInEQ=" data-source-attribution="shopify.loadfeatures" defer="defer" src="//devred.com/cdn/shopifycloud/storefront/assets/storefront/load_feature-1bd60354.js" crossorigin="anonymous"></script>
@@ -1273,7 +1272,7 @@ Shopify.shopJsCdnBaseUrl = "https://cdn.shopify.com/shopifycloud/shop-js";</scri
   window.ShopifyAnalytics = window.ShopifyAnalytics || {};
   window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
   window.ShopifyAnalytics.meta.currency = 'EUR';
-  var meta = {"page":{"pageType":"page","resourceType":"page","resourceId":705873707395,"requestId":"52ad133c-d74a-4be6-8d56-b54e873362fc-1778027913"}};
+  var meta = {"page":{"pageType":"page","resourceType":"page","resourceId":705873707395,"requestId":"0113799c-90d3-4062-b177-15f1073dec5b-1778070621"}};
   for (var attr in meta) {
     window.ShopifyAnalytics.meta[attr] = meta[attr];
   }
@@ -1417,7 +1416,7 @@ first.parentNode.insertBefore(script, first);
 
     };
     trekkie.load(
-      {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":96206586243,"isMerchantRequest":null,"themeId":189621272963,"themeCityHash":"6255383968237799870","contentLanguage":"fr","currency":"EUR","eventMetadataId":"6d37d7b3-8075-42cd-a37a-b1e60525d9ad"},"isServerSideCookieWritingEnabled":true,"monorailRegion":"shop_domain","enabledBetaFlags":["b5387b81","d5bdd5d0"]},"Session Attribution":{},"S2S":{"facebookCapiEnabled":true,"source":"trekkie-storefront-renderer","apiClientId":580111}}
+      {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":96206586243,"isMerchantRequest":null,"themeId":189621272963,"themeCityHash":"6255383968237799870","contentLanguage":"fr","currency":"EUR","eventMetadataId":"fc62248a-49e8-4159-abc2-24078fa4ed76"},"isServerSideCookieWritingEnabled":true,"monorailRegion":"shop_domain","enabledBetaFlags":["b5387b81","d5bdd5d0"]},"Session Attribution":{},"S2S":{"facebookCapiEnabled":true,"source":"trekkie-storefront-renderer","apiClientId":580111}}
     );
 
     var loaded = false;
@@ -1432,7 +1431,7 @@ first.parentNode.insertBefore(script, first);
       try { window.ShopifyAnalytics.merchantGoogleAnalytics.call(this); } catch(error) {};
       document.write = originalDocumentWrite;
 
-      window.ShopifyAnalytics.lib.page(null,{"pageType":"page","resourceType":"page","resourceId":705873707395,"requestId":"52ad133c-d74a-4be6-8d56-b54e873362fc-1778027913","shopifyEmitted":true});
+      window.ShopifyAnalytics.lib.page(null,{"pageType":"page","resourceType":"page","resourceId":705873707395,"requestId":"0113799c-90d3-4062-b177-15f1073dec5b-1778070621","shopifyEmitted":true});
 
       var match = window.location.pathname.match(/checkouts\/(.+)\/(thank_you|post_purchase)/)
       var token = match? match[1]: undefined;
@@ -2042,18 +2041,18 @@ first.parentNode.insertBefore(script, first);
                 >Boutiques</a></li>
 
               <li><a
-                  href="/collections/rdv-devred"
-                  class="block link-reversed"
-                  
-                  
-                >rdv.devred</a></li>
-
-              <li><a
                   href="/collections/outlet"
                   class="block link-reversed"
                   
                   
-                >Outlet</a></li></ul></nav><nav class="header__secondary-nav" aria-label="Navigation secondaire">
+                >Outlet</a></li>
+
+              <li><a
+                  href="/collections/atelier"
+                  class="block link-reversed"
+                  
+                  
+                >L'atelier</a></li></ul></nav><nav class="header__secondary-nav" aria-label="Navigation secondaire">
       <ul class="contents unstyled-list"><li class="header__news-link" hidden>
           <news-modal-button class="contents">
             <button class="tap-area" aria-controls="news-modal" aria-expanded="false">
@@ -2162,7 +2161,7 @@ first.parentNode.insertBefore(script, first);
     <div part="content">
       <slot></slot>
     </div>
-  </template><header-menu-drawer-panel id="menu-drawer-panel-main" data-main-panel class="menu-drawer__panel"><div class="menu-drawer__tabs"><button type="button" class="menu-drawer__tab  is-active" data-tab-toggle data-tab-index="1">Eshop</button><button type="button" class="menu-drawer__tab " data-tab-toggle data-tab-index="2">Costumes</button><button type="button" class="menu-drawer__tab " data-tab-toggle data-tab-index="3">La Marque</button><a href="/pages/nos-boutiques" class="menu-drawer__tab ">Boutiques</a><a href="/collections/rdv-devred" class="menu-drawer__tab ">rdv.devred</a><a href="/collections/outlet" class="menu-drawer__tab ">Outlet</a></div><div class="menu-drawer__panel-body"><div class="menu-drawer__tab-content is-visible" data-tab-content="1"><ul class="menu-drawer__tab-links unstyled-list"><li><a href="/collections/nouveautes" class="menu-drawer__tab-link">
+  </template><header-menu-drawer-panel id="menu-drawer-panel-main" data-main-panel class="menu-drawer__panel"><div class="menu-drawer__tabs"><button type="button" class="menu-drawer__tab  is-active" data-tab-toggle data-tab-index="1">Eshop</button><button type="button" class="menu-drawer__tab " data-tab-toggle data-tab-index="2">Costumes</button><button type="button" class="menu-drawer__tab " data-tab-toggle data-tab-index="3">La Marque</button><a href="/pages/nos-boutiques" class="menu-drawer__tab ">Boutiques</a><a href="/collections/outlet" class="menu-drawer__tab ">Outlet</a><a href="/collections/atelier" class="menu-drawer__tab ">L'atelier</a></div><div class="menu-drawer__panel-body"><div class="menu-drawer__tab-content is-visible" data-tab-content="1"><ul class="menu-drawer__tab-links unstyled-list"><li><a href="/collections/nouveautes" class="menu-drawer__tab-link">
                           <span>Nouveautés</span>
                         </a></li><li><a href="/collections/collection-lin" class="menu-drawer__tab-link">
                           <span>Collection lin</span>
@@ -2965,7 +2964,7 @@ first.parentNode.insertBefore(script, first);
 </div><div class="footer__block footer__block--links footer__block--accordion-links" ><div class="v-stack gap-4.5 sm-max:hidden"><p class="subheading">Aide & contact</p><ul class="v-stack gap-2.5 unstyled-list" role="list"><li>
                             <a href="/pages/contact" class="link-reversed link-tap-area">Nous contacter</a>
                           </li><li>
-                            <a href="https://account.devred.com/profile?locale=fr&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ5eGR2c3cteXcubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzc4NjMyNzEzLCJuYmYiOjE3NzgwMjc5MTN9.BjSgaRY7k9xtwvCAb4YRoaEbskydq-cUO2-Jl_Jac54&region_country=FR" class="link-reversed link-tap-area">Suivre mon colis</a>
+                            <a href="https://account.devred.com/profile?locale=fr&region_country=FR&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ5eGR2c3cteXcubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzc4Njc1NDIxLCJuYmYiOjE3NzgwNzA2MjF9.yus2WeiH-g7U3xr-2Y5YLaQ1f2H_QuZjpFDKiRmrqPg" class="link-reversed link-tap-area">Suivre mon colis</a>
                           </li><li>
                             <a href="https://devred.com/pages/cgv#delais-de-livraison" class="link-reversed link-tap-area">Livraison & retours</a>
                           </li><li>
@@ -2995,7 +2994,7 @@ first.parentNode.insertBefore(script, first);
     <div class="accordion__content "><ul class="v-stack gap-2.5 unstyled-list" role="list"><li>
                             <a href="/pages/contact" class="link-reversed link-tap-area">Nous contacter</a>
                           </li><li>
-                            <a href="https://account.devred.com/profile?locale=fr&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ5eGR2c3cteXcubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzc4NjMyNzEzLCJuYmYiOjE3NzgwMjc5MTN9.BjSgaRY7k9xtwvCAb4YRoaEbskydq-cUO2-Jl_Jac54&region_country=FR" class="link-reversed link-tap-area">Suivre mon colis</a>
+                            <a href="https://account.devred.com/profile?locale=fr&region_country=FR&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ5eGR2c3cteXcubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzc4Njc1NDIxLCJuYmYiOjE3NzgwNzA2MjF9.yus2WeiH-g7U3xr-2Y5YLaQ1f2H_QuZjpFDKiRmrqPg" class="link-reversed link-tap-area">Suivre mon colis</a>
                           </li><li>
                             <a href="https://devred.com/pages/cgv#delais-de-livraison" class="link-reversed link-tap-area">Livraison & retours</a>
                           </li><li>
