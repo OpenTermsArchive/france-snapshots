@@ -3940,27 +3940,38 @@ window.location.reload();
 
 ">
 
-<div class="swiper-container">
-<div class="swiper-wrapper">
 
 
-<!-- dwMarker="content" dwContentID="8c092d1bc03a2a666aa88f45c8" assetID="hb_vitrine6_ss25_vp_nonlog_prolong" -->
-<div class="header-banner-item swiper-slide">
-<a href="https://www.aigle.com/fr/fr/fr-fr-selection-ventes-privees">DERNIERS JOURS | Connectez-vous ou inscrivez-vous pour accéder aux Ventes Privées</a>
+<!-- dwMarker="content" dwContentID="7249892f0c0fcc7bc9a6b8a8c5" assetID="hb_vitrine6_countdown_vp" -->
+<div class="header-banner-item">
+<a href="https://www.aigle.com/fr/fr/fr-fr-selection-ventes-privees" 
+   style="display:block; text-align:center; font-size:16px; text-decoration:none; color:inherit;">
+  Plus que <span id="countdown" style="font-weight:bold"></span> avant la fin des Ventes privées | <u>EN PROFITER</u>
+</a>
+
+<script>
+var countDownDate = new Date("May 10, 2026 23:59:00").getTime();
+
+var x = setInterval(function() {
+  var now = new Date().getTime();
+  var distance = countDownDate - now;
+
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  document.getElementById("countdown").innerHTML =
+    days + " jours " + hours + " h " + minutes + " min " + seconds + " s";
+
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("countdown").innerHTML = "";
+  }
+}, 1000);
+</script>
 </div>
 
-<!-- dwMarker="content" dwContentID="8e74702b89a48e5346c3fa0477" assetID="hb_reassurance_liv" -->
-<div class="header-banner-item swiper-slide">
-<a>Livraison offerte en point relais dès 150€ d'achat & retour offert sous 30 jours</a>
-</div>
-
-<!-- dwMarker="content" dwContentID="923952af62182595315177662b" assetID="hb_reassurance_liv_clickandcollect" -->
-<div class="header-banner-item swiper-slide">
-<a>Livraison offerte en click & collect dans votre magasin Aigle</a>
-</div>
-
-</div>
-</div>
 
 </div>
 
