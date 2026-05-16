@@ -3,8 +3,7 @@
 <html lang="fr" dir="ltr">
   <head>
 		
-	<script async crossorigin fetchpriority="high" src="/cdn/shopifycloud/importmap-polyfill/es-modules-shim.2.4.0.js"></script>
-<script>const observerCFH=new MutationObserver(e=>{e.forEach(({addedNodes:e})=>{e.forEach(e=>{if(e.nodeType===Node.ELEMENT_NODE&&"SCRIPT"===e.tagName){let{innerHTML:t,className:a,src:n}=e;t.includes("asyncLoad")&&(e.innerHTML=t.replace("if(window.attachEvent)","document.addEventListener('asyncLazyLoad', event => { asyncLoad(); });if(window.attachEvent)").replaceAll(", asyncLoad",", () => {}")),t.includes("PreviewBarInjector")&&(e.innerHTML=t.replace("DOMContentLoaded","asyncLazyLoad")),"analytics"===a&&(e.type="text/lazyload");(n.includes("assets/storefront/features")||n.includes("assets/shopify_pay")||n.includes("connect.facebook.net"))&&(e.setAttribute("data-src",n),e.removeAttribute("src"))}})})});observerCFH.observe(document.documentElement,{childList:!0,subtree:!0});</script>
+	<script>const observerCFH=new MutationObserver(e=>{e.forEach(({addedNodes:e})=>{e.forEach(e=>{if(e.nodeType===Node.ELEMENT_NODE&&"SCRIPT"===e.tagName){let{innerHTML:t,className:a,src:n}=e;t.includes("asyncLoad")&&(e.innerHTML=t.replace("if(window.attachEvent)","document.addEventListener('asyncLazyLoad', event => { asyncLoad(); });if(window.attachEvent)").replaceAll(", asyncLoad",", () => {}")),t.includes("PreviewBarInjector")&&(e.innerHTML=t.replace("DOMContentLoaded","asyncLazyLoad")),"analytics"===a&&(e.type="text/lazyload");(n.includes("assets/storefront/features")||n.includes("assets/shopify_pay")||n.includes("connect.facebook.net"))&&(e.setAttribute("data-src",n),e.removeAttribute("src"))}})})});observerCFH.observe(document.documentElement,{childList:!0,subtree:!0});</script>
 
 
 
@@ -548,7 +547,7 @@ Shopify.SignInWithShop.User.recognized = false;</script>
 <script>
   window.ShopifyPay = window.ShopifyPay || {};
   window.ShopifyPay.apiHost = "shop.app\/pay";
-  window.ShopifyPay.redirectState = null;
+  window.ShopifyPay.redirectState = "pending";
 </script>
 <script>
   window.Shopify = window.Shopify || {};
@@ -589,7 +588,7 @@ Shopify.SignInWithShop.User.recognized = false;</script>
     window.addEventListener('load', asyncLoad, false);
   }
 })();</script>
-<script id="__st">var __st={"a":96206586243,"offset":7200,"reqid":"5c611463-00fd-4fb1-9106-4435cc3d7371-1778891976","pageurl":"devred.com\/pages\/charte-pour-la-protection-des-donnees","s":"pages-705873707395","u":"5d82ba1dc5dc","p":"page","rtyp":"page","rid":705873707395};</script>
+<script id="__st">var __st={"a":96206586243,"offset":7200,"reqid":"04ea552a-a145-4682-9ee6-674a77b2203e-1778935101","pageurl":"devred.com\/pages\/charte-pour-la-protection-des-donnees","s":"pages-705873707395","u":"a281beb11ed2","p":"page","rtyp":"page","rid":705873707395};</script>
 <script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
 <script id="captcha-bootstrap">!function(){'use strict';const t='contact',e='account',n='new_comment',o=[[t,t],['blogs',n],['comments',n],[t,'customer']],c=[[e,'customer_login'],[e,'guest_login'],[e,'recover_customer_password'],[e,'create_customer']],r=t=>t.map((([t,e])=>`form[action*='/${t}']:not([data-nocaptcha='true']) input[name='form_type'][value='${e}']`)).join(','),a=t=>()=>t?[...document.querySelectorAll(t)].map((t=>t.form)):[];function s(){const t=[...o],e=r(t);return a(e)}const i='password',u='form_key',d=['recaptcha-v3-token','g-recaptcha-response','h-captcha-response',i],f=()=>{try{return window.sessionStorage}catch{return}},m='__shopify_v',_=t=>t.elements[u];function p(t,e,n=!1){try{const o=window.sessionStorage,c=JSON.parse(o.getItem(e)),{data:r}=function(t){const{data:e,action:n}=t;return t[m]||n?{data:e,action:n}:{data:t,action:n}}(c);for(const[e,n]of Object.entries(r))t.elements[e]&&(t.elements[e].value=n);n&&o.removeItem(e)}catch(o){console.error('form repopulation failed',{error:o})}}const l='form_type',E='cptcha';function T(t){t.dataset[E]=!0}const w=window,h=w.document,L='Shopify',v='ce_forms',y='captcha';let A=!1;((t,e)=>{const n=(g='f06e6c50-85a8-45c8-87d0-21a2b65856fe',I='https://cdn.shopify.com/shopifycloud/storefront-forms-hcaptcha/ce_storefront_forms_captcha_hcaptcha.v1.5.2.iife.js',D={infoText:'Protégé par hCaptcha',privacyText:'Confidentialité',termsText:'Conditions'},(t,e,n)=>{const o=w[L][v],c=o.bindForm;if(c)return c(t,g,e,D).then(n);var r;o.q.push([[t,g,e,D],n]),r=I,A||(h.body.append(Object.assign(h.createElement('script'),{id:'captcha-provider',async:!0,src:r})),A=!0)});var g,I,D;w[L]=w[L]||{},w[L][v]=w[L][v]||{},w[L][v].q=[],w[L][y]=w[L][y]||{},w[L][y].protect=function(t,e){n(t,void 0,e),T(t)},Object.freeze(w[L][y]),function(t,e,n,w,h,L){const[v,y,A,g]=function(t,e,n){const i=e?o:[],u=t?c:[],d=[...i,...u],f=r(d),m=r(i),_=r(d.filter((([t,e])=>n.includes(e))));return[a(f),a(m),a(_),s()]}(w,h,L),I=t=>{const e=t.target;return e instanceof HTMLFormElement?e:e&&e.form},D=t=>v().includes(t);t.addEventListener('submit',(t=>{const e=I(t);if(!e)return;const n=D(e)&&!e.dataset.hcaptchaBound&&!e.dataset.recaptchaBound,o=_(e),c=g().includes(e)&&(!o||!o.value);(n||c)&&t.preventDefault(),c&&!n&&(function(t){try{if(!f())return;!function(t){const e=f();if(!e)return;const n=_(t);if(!n)return;const o=n.value;o&&e.removeItem(o)}(t);const e=Array.from(Array(32),(()=>Math.random().toString(36)[2])).join('');!function(t,e){_(t)||t.append(Object.assign(document.createElement('input'),{type:'hidden',name:u})),t.elements[u].value=e}(t,e),function(t,e){const n=f();if(!n)return;const o=[...t.querySelectorAll(`input[type='${i}']`)].map((({name:t})=>t)),c=[...d,...o],r={};for(const[a,s]of new FormData(t).entries())c.includes(a)||(r[a]=s);n.setItem(e,JSON.stringify({[m]:1,action:t.action,data:r}))}(t,e)}catch(e){console.error('failed to persist form',e)}}(e),e.submit())}));const S=(t,e)=>{t&&!t.dataset[E]&&(n(t,e.some((e=>e===t))),T(t))};for(const o of['focusin','change'])t.addEventListener(o,(t=>{const e=I(t);D(e)&&S(e,y())}));const B=e.get('form_key'),M=e.get(l),P=B&&M;t.addEventListener('DOMContentLoaded',(()=>{const t=y();if(P)for(const e of t)e.elements[l].value===M&&p(e,B);[...new Set([...A(),...v().filter((t=>'true'===t.dataset.shopifyCaptcha))])].forEach((e=>S(e,t)))}))}(h,new URLSearchParams(w.location.search),n,t,e,['guest_login'])})(!0,!0)}();</script>
 <script integrity="sha256-JjoPp5ZfB1sSAs5SQaol1x1GgvveM+BgmRzyDexInEQ=" data-source-attribution="shopify.loadfeatures" defer="defer" src="//devred.com/cdn/shopifycloud/storefront/assets/storefront/load_feature-1bd60354.js" crossorigin="anonymous"></script>
@@ -632,7 +631,581 @@ Shopify.SignInWithShop.User.recognized = false;</script>
 
   	<script type="text/javascript">(function(){(function(e,i,o){var n=document.createElement("link");n.rel="preconnect";n.as="script";var t=document.createElement("link");t.rel="dns-prefetch";t.as="script";var r=document.createElement("script");r.id="spcloader";r.type="text/javascript";r["async"]=true;r.charset="utf-8";window.didomiConfig=window.didomiConfig||{};window.didomiConfig.sdkPath=window.didomiConfig.sdkPath||o||"https://sdk.privacy-center.org/";const d=window.didomiConfig.sdkPath;var a=d+e+"/loader.js?target_type=notice&target="+i;if(window.didomiConfig&&window.didomiConfig.user){var c=window.didomiConfig.user;var s=c.country;var f=c.region;if(s){a=a+"&country="+s;if(f){a=a+"&region="+f}}}n.href=d;t.href=d;r.src=a;var m=document.getElementsByTagName("script")[0];m.parentNode.insertBefore(n,m);m.parentNode.insertBefore(t,m);m.parentNode.insertBefore(r,m)})("d6df97e7-c23b-42a5-800e-4f14988dc6e2","yqADRDQe")})();</script>
 
-<link href="//devred.com/cdn/shop/t/18/assets/theme.css?v=143957053335943372931778485079" rel="stylesheet" type="text/css" media="all" /><!-- BEGIN app block: shopify://apps/ab-tasty/blocks/abtasty-tag/50439cd8-89e0-4240-838a-2948c07c763d -->
+<link href="//devred.com/cdn/shop/t/18/assets/theme.css?v=143957053335943372931778485079" rel="stylesheet" type="text/css" media="all" /><!-- BEGIN app block: shopify://apps/pixee-facebook-pixel/blocks/facebook-pixel/61bbb1d9-d4be-4d08-879a-ee3ccb59f558 -->
+<!-- BEGIN app snippet: tiktok-pixel --><script>
+    sessionStorage.setItem("gropulseTikTokActivePixelData", "");
+  </script><!-- END app snippet -->
+<!-- BEGIN app snippet: pinterest-pixel -->
+<script>
+    sessionStorage.setItem("gropulsePinterestActivePixelData", "");
+  </script><!-- END app snippet -->
+<!-- BEGIN app snippet: custom-event-selector -->
+
+<div id="pixee-custom-event-selector-modal" class="pixee-custom-event-modal">
+  <div class="pixee-custom-event-modal-content">
+    <div class="pixee-custom-event-modal-header">
+      <p class="pixee-modal-title">Custom Event Setup</p>
+      <span class="pixee-custom-event-close">&times;</span>
+    </div>
+    <div class="pixee-custom-event-modal-body">
+      <p>Click on the elements you want to track as custom events. Selected elements will appear in the list below.</p>
+      
+      <button id="pixee-track-new-button" class="pixee-track-new-button">Track New Element</button>
+      
+      <div class="pixee-selected-elements">
+        <span class="pixee-selected-elements-title">Selected Elements (0)</span>
+        <ul id="pixee-selected-elements-list"></ul>
+      </div>
+    </div>
+    <div class="pixee-custom-event-modal-footer">
+      <button id="pixee-finish-setup-button" class="pixee-finish-setup-button">Finish Setup</button>
+    </div>
+  </div>
+</div>
+
+<style>
+.pixee-custom-event-modal {
+  display: none;
+  position: fixed;
+  z-index: 99999;
+  left: 20px;
+  top: 20px;
+  width: 400px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.pixee-custom-event-modal-content {
+  width: 100%;
+}
+
+.pixee-custom-event-modal-header {
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.pixee-custom-event-modal-header .pixee-modal-title {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.pixee-custom-event-close {
+  color: #aaa;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.pixee-custom-event-close:hover {
+  color: #555;
+}
+
+.pixee-custom-event-modal-body {
+  padding: 20px;
+}
+
+.pixee-custom-event-modal-footer {
+  padding: 15px 20px;
+  border-top: 1px solid #e5e5e5;
+  text-align: right;
+}
+
+.pixee-track-new-button,
+.pixee-finish-setup-button {
+  padding: 10px 15px;
+  border-radius: 4px;
+  border: none;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.pixee-track-new-button {
+  background-color: #4CAF50;
+  color: white;
+  margin-top: 10px;
+}
+
+.pixee-finish-setup-button {
+  background-color: #2196F3;
+  color: white;
+}
+
+.pixee-selected-elements {
+  margin-top: 20px;
+}
+
+.pixee-selected-elements-title {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+#pixee-selected-elements-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  max-height: 200px;
+  overflow-y: auto;
+  border: 1px solid #e5e5e5;
+  border-radius: 4px;
+}
+
+#pixee-selected-elements-list li {
+  padding: 10px;
+  border-bottom: 1px solid #e5e5e5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#pixee-selected-elements-list li:last-child {
+  border-bottom: none;
+}
+
+.pixee-element-info {
+  flex: 1;
+  font-size: 14px;
+  word-break: break-word;
+}
+
+.pixee-remove-element {
+  color: #f44336;
+  cursor: pointer;
+  margin-left: 10px;
+}
+
+.pixee-page-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 99990;
+  pointer-events: none;
+}
+
+.pixee-highlight-element {
+  position: absolute;
+  pointer-events: none;
+  background-color: rgba(76, 175, 80, 0.2);
+  border: 2px solid #4CAF50;
+  z-index: 99991;
+  box-sizing: border-box;
+}
+
+/* Make modal draggable */
+.pixee-custom-event-modal-header {
+  cursor: move;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 480px) {
+  .pixee-custom-event-modal {
+    width: 90%;
+    left: 5%;
+    top: 5%;
+  }
+}
+</style>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  // Parse URL parameters
+  const urlParams = new URLSearchParams(window.location.search);
+  const customEventParam = urlParams.get('customEvent');
+  const redirectUrl = urlParams.get('redirectUrl');
+  
+  // Initialize session storage if customEvent param is present
+  if (customEventParam === '1') {
+    // Set flag in session storage to show the modal across page navigation
+    sessionStorage.setItem('pixeeCustomEventSetupActive', 'true');
+    // Store redirect URL for later use
+    if (redirectUrl) {
+      sessionStorage.setItem('pixeeCustomEventRedirectUrl', redirectUrl);
+    }
+  }
+  
+  // Don't proceed if setup mode is not active
+  if (sessionStorage.getItem('pixeeCustomEventSetupActive') !== 'true') return;
+  
+  const modal = document.getElementById('pixee-custom-event-selector-modal');
+  const trackNewButton = document.getElementById('pixee-track-new-button');
+  const finishSetupButton = document.getElementById('pixee-finish-setup-button');
+  const closeButton = document.querySelector('.pixee-custom-event-close');
+  const selectedElementsList = document.getElementById('pixee-selected-elements-list');
+  const selectedElementsHeader = document.querySelector('.pixee-selected-elements-title');
+  
+  let isSelectionMode = false;
+  let selectedElements = [];
+  let overlay = null;
+  let highlightElement = null;
+  
+  // Load previously selected elements from session storage
+  const storedElements = sessionStorage.getItem('pixeeSelectedElements');
+  if (storedElements) {
+    try {
+      selectedElements = JSON.parse(storedElements);
+      updateSelectedElementsList();
+    } catch (error) {
+      console.error('Error loading stored elements:', error);
+    }
+  }
+  
+  // Make the modal draggable
+  makeElementDraggable(modal, document.querySelector('.pixee-custom-event-modal-header'));
+  
+  // Show the modal
+  modal.style.display = 'block';
+  
+  // Click event handlers
+  trackNewButton.addEventListener('click', function() {
+    if (isSelectionMode) {
+      // Cancel selection mode if active
+      disableSelectionMode();
+    } else {
+      // Enable selection mode
+      enableSelectionMode();
+    }
+  });
+  finishSetupButton.addEventListener('click', finishSetup);
+  closeButton.addEventListener('click', closeModal);
+  
+  function makeElementDraggable(element, handle) {
+    let pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+    
+    // Try to get saved position from session storage
+    const savedPosition = getSavedModalPosition();
+    if (savedPosition) {
+      element.style.top = savedPosition.top + "px";
+      element.style.left = savedPosition.left + "px";
+    }
+    
+    handle.onmousedown = dragMouseDown;
+    
+    function dragMouseDown(e) {
+      e.preventDefault();
+      pos3 = e.clientX;
+      pos4 = e.clientY;
+      document.onmouseup = closeDragElement;
+      document.onmousemove = elementDrag;
+    }
+    
+    function elementDrag(e) {
+      e.preventDefault();
+      pos1 = pos3 - e.clientX;
+      pos2 = pos4 - e.clientY;
+      pos3 = e.clientX;
+      pos4 = e.clientY;
+      
+      // Calculate new position ensuring it stays within viewport
+      let newTop = element.offsetTop - pos2;
+      let newLeft = element.offsetLeft - pos1;
+      
+      // Get viewport dimensions
+      const viewportWidth = window.innerWidth;
+      const viewportHeight = window.innerHeight;
+      
+      // Limit to viewport boundaries
+      newTop = Math.max(0, Math.min(newTop, viewportHeight - 100));
+      newLeft = Math.max(0, Math.min(newLeft, viewportWidth - 100));
+      
+      element.style.top = newTop + "px";
+      element.style.left = newLeft + "px";
+      
+      // Save position to session storage
+      saveModalPosition(newTop, newLeft);
+    }
+    
+    function closeDragElement() {
+      document.onmouseup = null;
+      document.onmousemove = null;
+      
+      // Save final position
+      saveModalPosition(element.offsetTop, element.offsetLeft);
+    }
+  }
+  
+  // Save modal position to session storage
+  function saveModalPosition(top, left) {
+    try {
+      sessionStorage.setItem('pixeeModalPosition', JSON.stringify({ top, left }));
+    } catch (error) {
+      console.error('Error saving modal position:', error);
+    }
+  }
+  
+  // Get saved modal position from session storage
+  function getSavedModalPosition() {
+    try {
+      const position = sessionStorage.getItem('pixeeModalPosition');
+      return position ? JSON.parse(position) : null;
+    } catch (error) {
+      console.error('Error getting modal position:', error);
+      return null;
+    }
+  }
+  
+  function enableSelectionMode() {
+    if (isSelectionMode) return;
+    
+    isSelectionMode = true;
+    trackNewButton.textContent = 'Cancel Selection';
+    trackNewButton.style.backgroundColor = '#f44336';
+    
+    // Create overlay
+    overlay = document.createElement('div');
+    overlay.className = 'pixee-page-overlay';
+    document.body.appendChild(overlay);
+    
+    // Create highlight element
+    highlightElement = document.createElement('div');
+    highlightElement.className = 'pixee-highlight-element';
+    document.body.appendChild(highlightElement);
+    
+    // Add event listeners for element selection
+    document.addEventListener('mouseover', highlightTargetElement);
+    document.addEventListener('click', selectElement, true);
+  }
+  
+  function disableSelectionMode() {
+    if (!isSelectionMode) return;
+    
+    isSelectionMode = false;
+    trackNewButton.textContent = 'Track New Element';
+    trackNewButton.style.backgroundColor = '#4CAF50';
+    
+    // Remove overlay and highlight
+    if (overlay) {
+      document.body.removeChild(overlay);
+      overlay = null;
+    }
+    
+    if (highlightElement) {
+      document.body.removeChild(highlightElement);
+      highlightElement = null;
+    }
+    
+    // Remove event listeners
+    document.removeEventListener('mouseover', highlightTargetElement);
+    document.removeEventListener('click', selectElement, true);
+  }
+  
+  // Helper function to update the list of selected elements
+  function updateSelectedElementsList() {
+    // Clear existing list
+    selectedElementsList.innerHTML = '';
+    
+    // Update the header count
+    selectedElementsHeader.textContent = `Selected Elements (${selectedElements.length})`;
+    
+    // Add each element to the list
+    selectedElements.forEach(element => {
+      const li = document.createElement('li');
+      li.dataset.id = element.id;
+      
+      const elementInfo = document.createElement('div');
+      elementInfo.className = 'pixee-element-info';
+      elementInfo.textContent = `"${element.text}" (${element.selector})`;
+      
+      const removeButton = document.createElement('span');
+      removeButton.className = 'pixee-remove-element';
+      removeButton.textContent = '✕';
+      removeButton.addEventListener('click', function() {
+        removeElementFromList(element.id);
+      });
+      
+      li.appendChild(elementInfo);
+      li.appendChild(removeButton);
+      selectedElementsList.appendChild(li);
+    });
+    
+    // Save to session storage
+    sessionStorage.setItem('pixeeSelectedElements', JSON.stringify(selectedElements));
+  }
+  
+  function highlightTargetElement(e) {
+    if (!isSelectionMode) return;
+    
+    // Don't highlight elements in the modal itself
+    if (e.target.closest('#pixee-custom-event-selector-modal')) {
+      if (highlightElement) {
+        highlightElement.style.display = 'none';
+      }
+      return;
+    }
+    
+    const rect = e.target.getBoundingClientRect();
+    highlightElement.style.display = 'block';
+    highlightElement.style.width = rect.width + 'px';
+    highlightElement.style.height = rect.height + 'px';
+    highlightElement.style.left = (window.pageXOffset + rect.left) + 'px';
+    highlightElement.style.top = (window.pageYOffset + rect.top) + 'px';
+  }
+  
+  function selectElement(e) {
+    if (!isSelectionMode) return;
+    
+    // Don't select elements in the modal itself
+    if (e.target.closest('#pixee-custom-event-selector-modal')) {
+      return;
+    }
+    
+    // Prevent default action (like following links)
+    e.preventDefault();
+    e.stopPropagation();
+    
+    // Generate a selector for the clicked element
+    const selector = generateSelector(e.target);
+    
+    // Add to selected elements list
+    addElementToList(e.target, selector);
+    
+    // Disable selection mode
+    disableSelectionMode();
+  }
+  
+  function generateSelector(element) {
+    // First try ID selector if available
+    if (element.id) {
+      return `#${element.id}`;
+    }
+    
+    // Try with classes
+    if (element.className && typeof element.className === 'string') {
+      const classes = element.className.trim().split(/\s+/);
+      if (classes.length > 0) {
+        const classSelector = `.${classes.join('.')}`;
+        if (document.querySelectorAll(classSelector).length === 1) {
+          return classSelector;
+        }
+      }
+    }
+    
+    // Use tag name with nth-child
+    let path = '';
+    let parent = element;
+    
+    while (parent) {
+      if (parent === document.body) {
+        path = 'body ' + path;
+        break;
+      }
+      
+      let tag = parent.tagName.toLowerCase();
+      let siblings = Array.from(parent.parentNode.children).filter(child => child.tagName === parent.tagName);
+      
+      if (siblings.length > 1) {
+        let index = siblings.indexOf(parent) + 1;
+        tag += `:nth-child(${index})`;
+      }
+      
+      path = tag + (path ? ' > ' + path : '');
+      parent = parent.parentNode;
+      
+      // Stop at a certain depth to avoid overly complex selectors
+      if (path.split('>').length > 5) {
+        break;
+      }
+    }
+    
+    return path.trim();
+  }
+  
+  function addElementToList(element, selector) {
+    // Create a unique ID for this element
+    const elementId = 'element-' + Date.now();
+    
+    // Add to our array
+    selectedElements.push({
+      id: elementId,
+      selector: selector,
+      text: element.textContent.trim().substring(0, 50) || element.tagName.toLowerCase()
+    });
+    
+    // Update the display
+    updateSelectedElementsList();
+  }
+  
+  function removeElementFromList(id) {
+    // Remove from array
+    selectedElements = selectedElements.filter(el => el.id !== id);
+    
+    // Update the display
+    updateSelectedElementsList();
+  }
+  
+  function closeModal() {
+    disableSelectionMode();
+    modal.style.display = 'none';
+    
+    // Clear setup mode and data but keep the modal position
+    sessionStorage.removeItem('pixeeCustomEventSetupActive');
+    sessionStorage.removeItem('pixeeSelectedElements');
+    // We intentionally don't remove pixeeModalPosition here to persist it across sessions
+  }
+  
+  function finishSetup() {
+    
+    // Check if we have elements selected
+    if (selectedElements.length > 0) {
+      // Clean up our internal tracking but keep the modal position
+      sessionStorage.removeItem('pixeeCustomEventSetupActive');
+      sessionStorage.removeItem('pixeeSelectedElements');
+      // We intentionally don't remove pixeeModalPosition to persist it
+      
+      // Redirect back to the app with selected elements as a URL parameter
+      const savedRedirectUrl = sessionStorage.getItem('pixeeCustomEventRedirectUrl') || redirectUrl;
+      
+      if (savedRedirectUrl) {
+        // Encode selected elements for URL
+        const encodedElements = encodeURIComponent(JSON.stringify(selectedElements));
+        
+        // Determine if we need to add a ? or & for the parameter
+        const separator = savedRedirectUrl.includes('?') ? '&' : '?';        
+        
+        // Redirect to the app with the selected elements in the URL
+        window.location.href = `${savedRedirectUrl}${separator}selectedElements=${encodedElements}`;
+      }
+    } else {
+      alert('Please select at least one element to track.');
+    }
+  }
+});
+</script><!-- END app snippet -->
+<script>
+    sessionStorage.setItem("gropulseActivePixelData", "");
+  </script><script>
+    sessionStorage.setItem("gropulsePixeeEventListData", JSON.stringify({"purchase":false,"initiateCheckout":false,"addToCart":false,"search":false,"viewContent":false,"viewCategory":false}));
+  </script><script>
+    sessionStorage.setItem("gropulseCustomEvents", "");
+  </script><script>
+  const isGroPulsePixeeWebPixelLoaded = Boolean(sessionStorage.getItem("isGroPulsePixeeWebPixelLoaded"));
+</script>
+
+<script>
+  function generateEventId() {
+    // Combine timestamp with random string to ensure uniqueness
+    return `${Date.now()}_${Math.random().toString(36).slice(2, 11)}`;
+  }
+</script>
+
+
+
+
+
+<!-- END app block --><!-- BEGIN app block: shopify://apps/ab-tasty/blocks/abtasty-tag/50439cd8-89e0-4240-838a-2948c07c763d -->
   
     <script
       type="text/javascript"
@@ -1345,580 +1918,6 @@ Shopify.SignInWithShop.User.recognized = false;</script>
 </script>
 
 
-<!-- END app block --><!-- BEGIN app block: shopify://apps/pixee-facebook-pixel/blocks/facebook-pixel/61bbb1d9-d4be-4d08-879a-ee3ccb59f558 -->
-<!-- BEGIN app snippet: tiktok-pixel --><script>
-    sessionStorage.setItem("gropulseTikTokActivePixelData", "");
-  </script><!-- END app snippet -->
-<!-- BEGIN app snippet: pinterest-pixel -->
-<script>
-    sessionStorage.setItem("gropulsePinterestActivePixelData", "");
-  </script><!-- END app snippet -->
-<!-- BEGIN app snippet: custom-event-selector -->
-
-<div id="pixee-custom-event-selector-modal" class="pixee-custom-event-modal">
-  <div class="pixee-custom-event-modal-content">
-    <div class="pixee-custom-event-modal-header">
-      <p class="pixee-modal-title">Custom Event Setup</p>
-      <span class="pixee-custom-event-close">&times;</span>
-    </div>
-    <div class="pixee-custom-event-modal-body">
-      <p>Click on the elements you want to track as custom events. Selected elements will appear in the list below.</p>
-      
-      <button id="pixee-track-new-button" class="pixee-track-new-button">Track New Element</button>
-      
-      <div class="pixee-selected-elements">
-        <span class="pixee-selected-elements-title">Selected Elements (0)</span>
-        <ul id="pixee-selected-elements-list"></ul>
-      </div>
-    </div>
-    <div class="pixee-custom-event-modal-footer">
-      <button id="pixee-finish-setup-button" class="pixee-finish-setup-button">Finish Setup</button>
-    </div>
-  </div>
-</div>
-
-<style>
-.pixee-custom-event-modal {
-  display: none;
-  position: fixed;
-  z-index: 99999;
-  left: 20px;
-  top: 20px;
-  width: 400px;
-  background-color: #fff;
-  border-radius: 8px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  max-height: 90vh;
-  overflow-y: auto;
-}
-
-.pixee-custom-event-modal-content {
-  width: 100%;
-}
-
-.pixee-custom-event-modal-header {
-  padding: 15px 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #e5e5e5;
-}
-
-.pixee-custom-event-modal-header .pixee-modal-title {
-  margin: 0;
-  font-size: 18px;
-  font-weight: 600;
-  color: #333;
-}
-
-.pixee-custom-event-close {
-  color: #aaa;
-  font-size: 24px;
-  font-weight: bold;
-  cursor: pointer;
-}
-
-.pixee-custom-event-close:hover {
-  color: #555;
-}
-
-.pixee-custom-event-modal-body {
-  padding: 20px;
-}
-
-.pixee-custom-event-modal-footer {
-  padding: 15px 20px;
-  border-top: 1px solid #e5e5e5;
-  text-align: right;
-}
-
-.pixee-track-new-button,
-.pixee-finish-setup-button {
-  padding: 10px 15px;
-  border-radius: 4px;
-  border: none;
-  font-size: 14px;
-  font-weight: 500;
-  cursor: pointer;
-}
-
-.pixee-track-new-button {
-  background-color: #4CAF50;
-  color: white;
-  margin-top: 10px;
-}
-
-.pixee-finish-setup-button {
-  background-color: #2196F3;
-  color: white;
-}
-
-.pixee-selected-elements {
-  margin-top: 20px;
-}
-
-.pixee-selected-elements-title {
-  display: block;
-  font-size: 16px;
-  margin-bottom: 10px;
-  font-weight: 500;
-}
-
-#pixee-selected-elements-list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  max-height: 200px;
-  overflow-y: auto;
-  border: 1px solid #e5e5e5;
-  border-radius: 4px;
-}
-
-#pixee-selected-elements-list li {
-  padding: 10px;
-  border-bottom: 1px solid #e5e5e5;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#pixee-selected-elements-list li:last-child {
-  border-bottom: none;
-}
-
-.pixee-element-info {
-  flex: 1;
-  font-size: 14px;
-  word-break: break-word;
-}
-
-.pixee-remove-element {
-  color: #f44336;
-  cursor: pointer;
-  margin-left: 10px;
-}
-
-.pixee-page-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.3);
-  z-index: 99990;
-  pointer-events: none;
-}
-
-.pixee-highlight-element {
-  position: absolute;
-  pointer-events: none;
-  background-color: rgba(76, 175, 80, 0.2);
-  border: 2px solid #4CAF50;
-  z-index: 99991;
-  box-sizing: border-box;
-}
-
-/* Make modal draggable */
-.pixee-custom-event-modal-header {
-  cursor: move;
-}
-
-/* Responsive styles */
-@media screen and (max-width: 480px) {
-  .pixee-custom-event-modal {
-    width: 90%;
-    left: 5%;
-    top: 5%;
-  }
-}
-</style>
-
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  // Parse URL parameters
-  const urlParams = new URLSearchParams(window.location.search);
-  const customEventParam = urlParams.get('customEvent');
-  const redirectUrl = urlParams.get('redirectUrl');
-  
-  // Initialize session storage if customEvent param is present
-  if (customEventParam === '1') {
-    // Set flag in session storage to show the modal across page navigation
-    sessionStorage.setItem('pixeeCustomEventSetupActive', 'true');
-    // Store redirect URL for later use
-    if (redirectUrl) {
-      sessionStorage.setItem('pixeeCustomEventRedirectUrl', redirectUrl);
-    }
-  }
-  
-  // Don't proceed if setup mode is not active
-  if (sessionStorage.getItem('pixeeCustomEventSetupActive') !== 'true') return;
-  
-  const modal = document.getElementById('pixee-custom-event-selector-modal');
-  const trackNewButton = document.getElementById('pixee-track-new-button');
-  const finishSetupButton = document.getElementById('pixee-finish-setup-button');
-  const closeButton = document.querySelector('.pixee-custom-event-close');
-  const selectedElementsList = document.getElementById('pixee-selected-elements-list');
-  const selectedElementsHeader = document.querySelector('.pixee-selected-elements-title');
-  
-  let isSelectionMode = false;
-  let selectedElements = [];
-  let overlay = null;
-  let highlightElement = null;
-  
-  // Load previously selected elements from session storage
-  const storedElements = sessionStorage.getItem('pixeeSelectedElements');
-  if (storedElements) {
-    try {
-      selectedElements = JSON.parse(storedElements);
-      updateSelectedElementsList();
-    } catch (error) {
-      console.error('Error loading stored elements:', error);
-    }
-  }
-  
-  // Make the modal draggable
-  makeElementDraggable(modal, document.querySelector('.pixee-custom-event-modal-header'));
-  
-  // Show the modal
-  modal.style.display = 'block';
-  
-  // Click event handlers
-  trackNewButton.addEventListener('click', function() {
-    if (isSelectionMode) {
-      // Cancel selection mode if active
-      disableSelectionMode();
-    } else {
-      // Enable selection mode
-      enableSelectionMode();
-    }
-  });
-  finishSetupButton.addEventListener('click', finishSetup);
-  closeButton.addEventListener('click', closeModal);
-  
-  function makeElementDraggable(element, handle) {
-    let pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-    
-    // Try to get saved position from session storage
-    const savedPosition = getSavedModalPosition();
-    if (savedPosition) {
-      element.style.top = savedPosition.top + "px";
-      element.style.left = savedPosition.left + "px";
-    }
-    
-    handle.onmousedown = dragMouseDown;
-    
-    function dragMouseDown(e) {
-      e.preventDefault();
-      pos3 = e.clientX;
-      pos4 = e.clientY;
-      document.onmouseup = closeDragElement;
-      document.onmousemove = elementDrag;
-    }
-    
-    function elementDrag(e) {
-      e.preventDefault();
-      pos1 = pos3 - e.clientX;
-      pos2 = pos4 - e.clientY;
-      pos3 = e.clientX;
-      pos4 = e.clientY;
-      
-      // Calculate new position ensuring it stays within viewport
-      let newTop = element.offsetTop - pos2;
-      let newLeft = element.offsetLeft - pos1;
-      
-      // Get viewport dimensions
-      const viewportWidth = window.innerWidth;
-      const viewportHeight = window.innerHeight;
-      
-      // Limit to viewport boundaries
-      newTop = Math.max(0, Math.min(newTop, viewportHeight - 100));
-      newLeft = Math.max(0, Math.min(newLeft, viewportWidth - 100));
-      
-      element.style.top = newTop + "px";
-      element.style.left = newLeft + "px";
-      
-      // Save position to session storage
-      saveModalPosition(newTop, newLeft);
-    }
-    
-    function closeDragElement() {
-      document.onmouseup = null;
-      document.onmousemove = null;
-      
-      // Save final position
-      saveModalPosition(element.offsetTop, element.offsetLeft);
-    }
-  }
-  
-  // Save modal position to session storage
-  function saveModalPosition(top, left) {
-    try {
-      sessionStorage.setItem('pixeeModalPosition', JSON.stringify({ top, left }));
-    } catch (error) {
-      console.error('Error saving modal position:', error);
-    }
-  }
-  
-  // Get saved modal position from session storage
-  function getSavedModalPosition() {
-    try {
-      const position = sessionStorage.getItem('pixeeModalPosition');
-      return position ? JSON.parse(position) : null;
-    } catch (error) {
-      console.error('Error getting modal position:', error);
-      return null;
-    }
-  }
-  
-  function enableSelectionMode() {
-    if (isSelectionMode) return;
-    
-    isSelectionMode = true;
-    trackNewButton.textContent = 'Cancel Selection';
-    trackNewButton.style.backgroundColor = '#f44336';
-    
-    // Create overlay
-    overlay = document.createElement('div');
-    overlay.className = 'pixee-page-overlay';
-    document.body.appendChild(overlay);
-    
-    // Create highlight element
-    highlightElement = document.createElement('div');
-    highlightElement.className = 'pixee-highlight-element';
-    document.body.appendChild(highlightElement);
-    
-    // Add event listeners for element selection
-    document.addEventListener('mouseover', highlightTargetElement);
-    document.addEventListener('click', selectElement, true);
-  }
-  
-  function disableSelectionMode() {
-    if (!isSelectionMode) return;
-    
-    isSelectionMode = false;
-    trackNewButton.textContent = 'Track New Element';
-    trackNewButton.style.backgroundColor = '#4CAF50';
-    
-    // Remove overlay and highlight
-    if (overlay) {
-      document.body.removeChild(overlay);
-      overlay = null;
-    }
-    
-    if (highlightElement) {
-      document.body.removeChild(highlightElement);
-      highlightElement = null;
-    }
-    
-    // Remove event listeners
-    document.removeEventListener('mouseover', highlightTargetElement);
-    document.removeEventListener('click', selectElement, true);
-  }
-  
-  // Helper function to update the list of selected elements
-  function updateSelectedElementsList() {
-    // Clear existing list
-    selectedElementsList.innerHTML = '';
-    
-    // Update the header count
-    selectedElementsHeader.textContent = `Selected Elements (${selectedElements.length})`;
-    
-    // Add each element to the list
-    selectedElements.forEach(element => {
-      const li = document.createElement('li');
-      li.dataset.id = element.id;
-      
-      const elementInfo = document.createElement('div');
-      elementInfo.className = 'pixee-element-info';
-      elementInfo.textContent = `"${element.text}" (${element.selector})`;
-      
-      const removeButton = document.createElement('span');
-      removeButton.className = 'pixee-remove-element';
-      removeButton.textContent = '✕';
-      removeButton.addEventListener('click', function() {
-        removeElementFromList(element.id);
-      });
-      
-      li.appendChild(elementInfo);
-      li.appendChild(removeButton);
-      selectedElementsList.appendChild(li);
-    });
-    
-    // Save to session storage
-    sessionStorage.setItem('pixeeSelectedElements', JSON.stringify(selectedElements));
-  }
-  
-  function highlightTargetElement(e) {
-    if (!isSelectionMode) return;
-    
-    // Don't highlight elements in the modal itself
-    if (e.target.closest('#pixee-custom-event-selector-modal')) {
-      if (highlightElement) {
-        highlightElement.style.display = 'none';
-      }
-      return;
-    }
-    
-    const rect = e.target.getBoundingClientRect();
-    highlightElement.style.display = 'block';
-    highlightElement.style.width = rect.width + 'px';
-    highlightElement.style.height = rect.height + 'px';
-    highlightElement.style.left = (window.pageXOffset + rect.left) + 'px';
-    highlightElement.style.top = (window.pageYOffset + rect.top) + 'px';
-  }
-  
-  function selectElement(e) {
-    if (!isSelectionMode) return;
-    
-    // Don't select elements in the modal itself
-    if (e.target.closest('#pixee-custom-event-selector-modal')) {
-      return;
-    }
-    
-    // Prevent default action (like following links)
-    e.preventDefault();
-    e.stopPropagation();
-    
-    // Generate a selector for the clicked element
-    const selector = generateSelector(e.target);
-    
-    // Add to selected elements list
-    addElementToList(e.target, selector);
-    
-    // Disable selection mode
-    disableSelectionMode();
-  }
-  
-  function generateSelector(element) {
-    // First try ID selector if available
-    if (element.id) {
-      return `#${element.id}`;
-    }
-    
-    // Try with classes
-    if (element.className && typeof element.className === 'string') {
-      const classes = element.className.trim().split(/\s+/);
-      if (classes.length > 0) {
-        const classSelector = `.${classes.join('.')}`;
-        if (document.querySelectorAll(classSelector).length === 1) {
-          return classSelector;
-        }
-      }
-    }
-    
-    // Use tag name with nth-child
-    let path = '';
-    let parent = element;
-    
-    while (parent) {
-      if (parent === document.body) {
-        path = 'body ' + path;
-        break;
-      }
-      
-      let tag = parent.tagName.toLowerCase();
-      let siblings = Array.from(parent.parentNode.children).filter(child => child.tagName === parent.tagName);
-      
-      if (siblings.length > 1) {
-        let index = siblings.indexOf(parent) + 1;
-        tag += `:nth-child(${index})`;
-      }
-      
-      path = tag + (path ? ' > ' + path : '');
-      parent = parent.parentNode;
-      
-      // Stop at a certain depth to avoid overly complex selectors
-      if (path.split('>').length > 5) {
-        break;
-      }
-    }
-    
-    return path.trim();
-  }
-  
-  function addElementToList(element, selector) {
-    // Create a unique ID for this element
-    const elementId = 'element-' + Date.now();
-    
-    // Add to our array
-    selectedElements.push({
-      id: elementId,
-      selector: selector,
-      text: element.textContent.trim().substring(0, 50) || element.tagName.toLowerCase()
-    });
-    
-    // Update the display
-    updateSelectedElementsList();
-  }
-  
-  function removeElementFromList(id) {
-    // Remove from array
-    selectedElements = selectedElements.filter(el => el.id !== id);
-    
-    // Update the display
-    updateSelectedElementsList();
-  }
-  
-  function closeModal() {
-    disableSelectionMode();
-    modal.style.display = 'none';
-    
-    // Clear setup mode and data but keep the modal position
-    sessionStorage.removeItem('pixeeCustomEventSetupActive');
-    sessionStorage.removeItem('pixeeSelectedElements');
-    // We intentionally don't remove pixeeModalPosition here to persist it across sessions
-  }
-  
-  function finishSetup() {
-    
-    // Check if we have elements selected
-    if (selectedElements.length > 0) {
-      // Clean up our internal tracking but keep the modal position
-      sessionStorage.removeItem('pixeeCustomEventSetupActive');
-      sessionStorage.removeItem('pixeeSelectedElements');
-      // We intentionally don't remove pixeeModalPosition to persist it
-      
-      // Redirect back to the app with selected elements as a URL parameter
-      const savedRedirectUrl = sessionStorage.getItem('pixeeCustomEventRedirectUrl') || redirectUrl;
-      
-      if (savedRedirectUrl) {
-        // Encode selected elements for URL
-        const encodedElements = encodeURIComponent(JSON.stringify(selectedElements));
-        
-        // Determine if we need to add a ? or & for the parameter
-        const separator = savedRedirectUrl.includes('?') ? '&' : '?';        
-        
-        // Redirect to the app with the selected elements in the URL
-        window.location.href = `${savedRedirectUrl}${separator}selectedElements=${encodedElements}`;
-      }
-    } else {
-      alert('Please select at least one element to track.');
-    }
-  }
-});
-</script><!-- END app snippet -->
-<script>
-    sessionStorage.setItem("gropulseActivePixelData", "");
-  </script><script>
-    sessionStorage.setItem("gropulsePixeeEventListData", JSON.stringify({"purchase":false,"initiateCheckout":false,"addToCart":false,"search":false,"viewContent":false,"viewCategory":false}));
-  </script><script>
-    sessionStorage.setItem("gropulseCustomEvents", "");
-  </script><script>
-  const isGroPulsePixeeWebPixelLoaded = Boolean(sessionStorage.getItem("isGroPulsePixeeWebPixelLoaded"));
-</script>
-
-<script>
-  function generateEventId() {
-    // Combine timestamp with random string to ensure uniqueness
-    return `${Date.now()}_${Math.random().toString(36).slice(2, 11)}`;
-  }
-</script>
-
-
-
-
-
 <!-- END app block --><script src="https://cdn.shopify.com/extensions/019e2158-0fec-7349-8168-5902fffe5129/kleep-sources-24/assets/kleep-app.js" type="text/javascript" defer="defer"></script>
 <link href="https://cdn.shopify.com/extensions/019e2158-0fec-7349-8168-5902fffe5129/kleep-sources-24/assets/kleep-app.css" rel="stylesheet" type="text/css" media="all">
 <link href="https://monorail-edge.shopifysvc.com" rel="dns-prefetch">
@@ -1930,7 +1929,7 @@ document.addEventListener('DOMContentLoaded', function() {
   window.ShopifyAnalytics = window.ShopifyAnalytics || {};
   window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
   window.ShopifyAnalytics.meta.currency = 'EUR';
-  var meta = {"page":{"pageType":"page","resourceType":"page","resourceId":705873707395,"requestId":"5c611463-00fd-4fb1-9106-4435cc3d7371-1778891976"}};
+  var meta = {"page":{"pageType":"page","resourceType":"page","resourceId":705873707395,"requestId":"04ea552a-a145-4682-9ee6-674a77b2203e-1778935101"}};
   for (var attr in meta) {
     window.ShopifyAnalytics.meta[attr] = meta[attr];
   }
@@ -2074,7 +2073,7 @@ first.parentNode.insertBefore(script, first);
 
     };
     trekkie.load(
-      {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":96206586243,"isMerchantRequest":null,"themeId":196206264707,"themeCityHash":"6255383968237799870","contentLanguage":"fr","currency":"EUR","eventMetadataId":"0aed5ef5-a467-4fe7-a1cc-7ad7a0928412"},"isServerSideCookieWritingEnabled":true,"monorailRegion":"shop_domain","enabledBetaFlags":["b5387b81","d5bdd5d0"]},"Session Attribution":{},"S2S":{"facebookCapiEnabled":true,"source":"trekkie-storefront-renderer","apiClientId":580111}}
+      {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":96206586243,"isMerchantRequest":null,"themeId":196206264707,"themeCityHash":"6255383968237799870","contentLanguage":"fr","currency":"EUR","eventMetadataId":"7b0da01c-19a2-4c27-a519-e03e955eb816"},"isServerSideCookieWritingEnabled":true,"monorailRegion":"shop_domain","enabledBetaFlags":["b5387b81","d5bdd5d0"]},"Session Attribution":{},"S2S":{"facebookCapiEnabled":true,"source":"trekkie-storefront-renderer","apiClientId":580111}}
     );
 
     var loaded = false;
@@ -2089,7 +2088,7 @@ first.parentNode.insertBefore(script, first);
       try { window.ShopifyAnalytics.merchantGoogleAnalytics.call(this); } catch(error) {};
       document.write = originalDocumentWrite;
 
-      window.ShopifyAnalytics.lib.page(null,{"pageType":"page","resourceType":"page","resourceId":705873707395,"requestId":"5c611463-00fd-4fb1-9106-4435cc3d7371-1778891976","shopifyEmitted":true});
+      window.ShopifyAnalytics.lib.page(null,{"pageType":"page","resourceType":"page","resourceId":705873707395,"requestId":"04ea552a-a145-4682-9ee6-674a77b2203e-1778935101","shopifyEmitted":true});
 
       var match = window.location.pathname.match(/checkouts\/(.+)\/(thank_you|post_purchase)/)
       var token = match? match[1]: undefined;
@@ -3622,7 +3621,7 @@ first.parentNode.insertBefore(script, first);
 </div><div class="footer__block footer__block--links footer__block--accordion-links" ><div class="v-stack gap-4.5 sm-max:hidden"><p class="subheading">Aide & contact</p><ul class="v-stack gap-2.5 unstyled-list" role="list"><li>
                             <a href="/pages/contact" class="link-reversed link-tap-area">Nous contacter</a>
                           </li><li>
-                            <a href="https://account.devred.com/profile?locale=fr&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ5eGR2c3cteXcubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzc5NDk2Nzc3LCJuYmYiOjE3Nzg4OTE5Nzd9.7sqmFWBLh-3w1pQoabiAYlnxe2JmpbExdB9kortgQUI&region_country=FR" class="link-reversed link-tap-area">Suivre mon colis</a>
+                            <a href="https://account.devred.com/profile?locale=fr&region_country=FR&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ5eGR2c3cteXcubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzc5NTM5OTAxLCJuYmYiOjE3Nzg5MzUxMDF9.K8TJHsb1yA_fbDfoLNxCnzRiP5scHDA_WljUzZPR4cg" class="link-reversed link-tap-area">Suivre mon colis</a>
                           </li><li>
                             <a href="https://devred.com/pages/cgv#delais-de-livraison" class="link-reversed link-tap-area">Livraison & retours</a>
                           </li><li>
@@ -3652,7 +3651,7 @@ first.parentNode.insertBefore(script, first);
     <div class="accordion__content "><ul class="v-stack gap-2.5 unstyled-list" role="list"><li>
                             <a href="/pages/contact" class="link-reversed link-tap-area">Nous contacter</a>
                           </li><li>
-                            <a href="https://account.devred.com/profile?locale=fr&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ5eGR2c3cteXcubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzc5NDk2Nzc3LCJuYmYiOjE3Nzg4OTE5Nzd9.7sqmFWBLh-3w1pQoabiAYlnxe2JmpbExdB9kortgQUI&region_country=FR" class="link-reversed link-tap-area">Suivre mon colis</a>
+                            <a href="https://account.devred.com/profile?locale=fr&region_country=FR&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ5eGR2c3cteXcubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzc5NTM5OTAxLCJuYmYiOjE3Nzg5MzUxMDF9.K8TJHsb1yA_fbDfoLNxCnzRiP5scHDA_WljUzZPR4cg" class="link-reversed link-tap-area">Suivre mon colis</a>
                           </li><li>
                             <a href="https://devred.com/pages/cgv#delais-de-livraison" class="link-reversed link-tap-area">Livraison & retours</a>
                           </li><li>
