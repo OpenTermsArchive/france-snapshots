@@ -39,7 +39,7 @@
     <link rel="stylesheet" href="https://honeycomb.flixbus.com/dist/15.3.3/css/honeycomb-fonts.css" crossorigin="">
 
     <link rel="stylesheet" href="https://cdn-cf.cms.flixbus.com/drupal-assets/flix-home-assets/cms_honeycomb.f4a64e.css" async />
-    <link rel="stylesheet" href="https://cdn-cf.cms.flixbus.com/drupal-assets/flix-home-assets/styles.4202fc.css" async />
+    <link rel="stylesheet" href="https://cdn-cf.cms.flixbus.com/drupal-assets/flix-home-assets/styles.bbb220.css" async />
 
     <link
       rel="apple-touch-icon"
@@ -1588,12 +1588,6 @@
 
   <main id="main-content">
     
-
-
-
-
-
-
   <div class="hero-container" data-testid="hero">
 
     <div id="default-hero-image-container" class="hero-image-container">
@@ -1609,14 +1603,14 @@
 
     
 
-    
-
 
 
 
     <div class="hero-content">
       <h1 class="flix-h1 flix-h1--section-header hero-heading" data-vo-hidden="false">
-        <span>Low cost bus travel</span>
+        <span class="hero-heading-default">Low cost bus travel</span>
+        <span class="fxp_2082-1 hero-heading--no-image">Low cost bus travel</span>
+        <span class="fxp_2082-2 hero-heading--no-image">Low cost bus travel</span>
       </h1>
       <div class="hero-search-mask-wrapper">
           
@@ -1656,7 +1650,27 @@
       </div>
     </div>
 
-    
+    <script>
+      if (
+        window.Aetna &&
+        (window.Aetna.webc_fxp_2082 === 1 || window.Aetna.webc_fxp_2082 === 2) &&
+        window.innerWidth < 600
+      ) {
+        var defaultHeroImage = document.getElementById('default-hero-image-container');
+        if (defaultHeroImage) {
+          defaultHeroImage.style.display = 'none';
+        }
+        var defaultHeadingSpan = document.querySelector('.hero-heading-default');
+        if (defaultHeadingSpan) {
+          defaultHeadingSpan.style.display = 'none';
+        }
+        document.querySelector('.hero-content').style.marginTop = '24px';
+        var heroContainer = document.querySelector('.hero-container');
+        heroContainer.style.marginBottom = '24px';
+        heroContainer.style.boxShadow = '0 12px 24px rgba(0, 0, 0, 0.1)';
+        document.querySelector('.hero-heading').style.paddingBottom = '7px';
+      }
+    </script>
   </div>
 
     
@@ -2404,15 +2418,15 @@
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
+                      <a href="/bus/bremen" class="popular-routes-item">Bremen</a>
+                    </li>
+                  
+                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
                       <a href="/bus/mannheim" class="popular-routes-item">Mannheim</a>
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
                       <a href="/bus/heidelberg" class="popular-routes-item">Heidelberg</a>
-                    </li>
-                  
-                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
-                      <a href="/bus/bremen" class="popular-routes-item">Bremen</a>
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
@@ -2455,19 +2469,15 @@
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
-                      <a href="/bus-routes/bus-berlin-hanover" class="popular-routes-item">Berlin - Hanover</a>
-                    </li>
-                  
-                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
                       <a href="/bus-routes/bus-berlin-frankfurt" class="popular-routes-item">Berlin - Frankfurt</a>
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
-                      <a href="/bus-routes/bus-berlin-cologne" class="popular-routes-item">Berlin - Cologne</a>
+                      <a href="/bus-routes/bus-berlin-hanover" class="popular-routes-item">Berlin - Hanover</a>
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
-                      <a href="/bus-routes/bus-cologne-berlin" class="popular-routes-item">Cologne - Berlin</a>
+                      <a href="/bus-routes/bus-berlin-cologne" class="popular-routes-item">Berlin - Cologne</a>
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
@@ -2479,15 +2489,19 @@
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
+                      <a href="/bus-routes/bus-cologne-berlin" class="popular-routes-item">Cologne - Berlin</a>
+                    </li>
+                  
+                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
                       <a href="/bus-routes/bus-stuttgart-berlin" class="popular-routes-item">Stuttgart - Berlin</a>
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
-                      <a href="/bus-routes/bus-dusseldorf-berlin" class="popular-routes-item">Düsseldorf - Berlin</a>
+                      <a href="/bus-routes/bus-berlin-stuttgart" class="popular-routes-item">Berlin - Stuttgart</a>
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
-                      <a href="/bus-routes/bus-berlin-stuttgart" class="popular-routes-item">Berlin - Stuttgart</a>
+                      <a href="/bus-routes/bus-dusseldorf-berlin" class="popular-routes-item">Düsseldorf - Berlin</a>
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
@@ -2499,15 +2513,15 @@
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
-                      <a href="/bus-routes/bus-dresden-prague" class="popular-routes-item">Dresden - Prague</a>
-                    </li>
-                  
-                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
                       <a href="/bus-routes/bus-stuttgart-frankfurt" class="popular-routes-item">Stuttgart - Frankfurt</a>
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
-                      <a href="/bus-routes/bus-prague-berlin" class="popular-routes-item">Prague - Berlin</a>
+                      <a href="/bus-routes/bus-frankfurt-stuttgart" class="popular-routes-item">Frankfurt - Stuttgart</a>
+                    </li>
+                  
+                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
+                      <a href="/bus-routes/bus-dresden-prague" class="popular-routes-item">Dresden - Prague</a>
                     </li>
                   
                 </ul>
@@ -2863,7 +2877,9 @@
             </h4>
             <div class="footer-social-apps">
               
-                <a href="https://app.adjust.com/67gsoo_vdpzc0?campaign=Footer&amp;adgroup=EN&amp;deep_link=flixbus%3A%2F%2Fbooking%3Fwt_mc%3Downed.com.FlixBus.website.footer.footer.footer.ad&amp;fallback=https%3A%2F%2Fglobal.flixbus.com%2Fservice%2Fbus-app" onclick="emitFooterNavigationClickEvent('app', 'Social')">
+                <a href="https://app.adjust.com/67gsoo_vdpzc0?campaign=Footer&amp;adgroup=EN&amp;deep_link=flixbus%3A%2F%2Fbooking%3Fwt_mc%3Downed.com.FlixBus.website.footer.footer.footer.ad&amp;fallback=https%3A%2F%2Fglobal.flixbus.com%2Fservice%2Fbus-app"
+                   aria-label="Get it on Google Play"
+                   onclick="emitFooterNavigationClickEvent('app', 'Social')">
                   <img
                     width="120"
                     height="33"
@@ -2871,6 +2887,10 @@
                     data-lazyload-src="https://cdn-cf.cms.flixbus.com/drupal-assets/footer/googleplay.svg"
                     src=""
                   />
+                </a>
+                <a href="https://app.adjust.com/67gsoo_vdpzc0?campaign=Footer&amp;adgroup=EN&amp;deep_link=flixbus%3A%2F%2Fbooking%3Fwt_mc%3Downed.com.FlixBus.website.footer.footer.footer.ad&amp;fallback=https%3A%2F%2Fglobal.flixbus.com%2Fservice%2Fbus-app"
+                   aria-label="Download on the App Store"
+                   onclick="emitFooterNavigationClickEvent('app', 'Social')">
                   <img
                     width="120"
                     height="33"
@@ -2891,6 +2911,7 @@
                 <li>
                   <a target="_blank" rel="noopener noreferrer"
                     href="https://www.facebook.com/FlixBus"
+                    aria-label="Facebook"
                     onclick="emitFooterNavigationClickEvent('facebook', 'Social')">
                     <flix-icon name="facebook"  color="primary-content" size="5" class="footer-social-image"></flix-icon>
                   </a>
@@ -2900,6 +2921,7 @@
                 <li>
                   <a target="_blank" rel="noopener noreferrer"
                     href="https://www.instagram.com/flixbus"
+                    aria-label="Instagram"
                     onclick="emitFooterNavigationClickEvent('instagram', 'Social')">
                     <flix-icon name="insta"  color="primary-content" size="5" class="footer-social-image"></flix-icon>
                   </a>
@@ -2909,6 +2931,7 @@
                 <li>
                   <a target="_blank" rel="noopener noreferrer"
                     href="http://www.youtube.com/user/EinfachBusfahren?feature=watch"
+                    aria-label="YouTube"
                     onclick="emitFooterNavigationClickEvent('youtube', 'Social')">
                     <flix-icon name="youtube"  color="primary-content" size="5" class="footer-social-image"></flix-icon>
                   </a>
@@ -2918,6 +2941,7 @@
                 <li>
                   <a target="_blank" rel="noopener noreferrer"
                     href="https://de.linkedin.com/company/flixbus"
+                    aria-label="LinkedIn"
                     onclick="emitFooterNavigationClickEvent('linkedin', 'Social')">
                     <flix-icon name="linkedin"  color="primary-content" size="5" class="footer-social-image"></flix-icon>
                   </a>
@@ -2927,6 +2951,7 @@
                 <li>
                   <a target="_blank" rel="noopener noreferrer"
                     href="https://twitter.com/FlixBus"
+                    aria-label="X (Twitter)"
                     onclick="emitFooterNavigationClickEvent('twitter', 'Social')">
                     <flix-icon name="x"  color="primary-content" size="5" class="footer-social-image"></flix-icon>
                   </a>
@@ -2936,6 +2961,7 @@
                   <li>
                     <a target="_blank" rel="noopener noreferrer"
                        href="https://www.tiktok.com/@flixbus"
+                       aria-label="TikTok"
                        onclick="emitFooterNavigationClickEvent('tiktok', 'Social')">
                        <flix-icon name="tik-tok"  color="primary-content" size="5" class="footer-social-image"></flix-icon>
                     </a>
@@ -3166,7 +3192,7 @@
         site: 'datadoghq.eu',
         service: 'fxt.webc.cms.gohome',
         sessionSampleRate: 7,
-        version: "master",
+        version: "v1-97-54",
         trackSessionAcrossSubdomains: true,
         useSecureSessionCookie: true,
         useCrossSiteSessionCookie: true,
