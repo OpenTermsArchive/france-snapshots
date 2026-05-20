@@ -5,6 +5,16 @@
 
 
 
+
+
+
+
+
+  
+    
+  
+
+
 <!DOCTYPE html>
 <html lang="en" class="flix-theme-default">
 <head>
@@ -26,9 +36,9 @@
 
     <title>FlixBus: Affordable Global Bus Travel</title>
 
-    <link rel="preload" as="script" href="https://cdn-cf.cms.flixbus.com/drupal-assets/flix-home-assets/abTestHandler.27b605.js"/>
+    <link rel="preload" as="script" href="https://cdn-cf.cms.flixbus.com/drupal-assets/flix-home-assets/abTestHandler.499d62.js"/>
 
-    <script src="https://cdn-cf.cms.flixbus.com/drupal-assets/flix-home-assets/abTestHandler.27b605.js"></script>
+    <script src="https://cdn-cf.cms.flixbus.com/drupal-assets/flix-home-assets/abTestHandler.499d62.js"></script>
     <script src="/assets/uc/cc.js"></script>
     <link rel="canonical" href="https://global.flixbus.com" />
     <link rel="preconnect" href="//cdn-cf.cms.flixbus.com/" crossorigin>
@@ -39,7 +49,7 @@
     <link rel="stylesheet" href="https://honeycomb.flixbus.com/dist/15.3.3/css/honeycomb-fonts.css" crossorigin="">
 
     <link rel="stylesheet" href="https://cdn-cf.cms.flixbus.com/drupal-assets/flix-home-assets/cms_honeycomb.f4a64e.css" async />
-    <link rel="stylesheet" href="https://cdn-cf.cms.flixbus.com/drupal-assets/flix-home-assets/styles.bbb220.css" async />
+    <link rel="stylesheet" href="https://cdn-cf.cms.flixbus.com/drupal-assets/flix-home-assets/styles.eaa276.css" async />
 
     <link
       rel="apple-touch-icon"
@@ -1606,6 +1616,7 @@
 
 
 
+
     <div class="hero-content">
       <h1 class="flix-h1 flix-h1--section-header hero-heading" data-vo-hidden="false">
         <span class="hero-heading-default">Low cost bus travel</span>
@@ -1675,6 +1686,8 @@
 
     
 
+
+
 <div class="inline-promo-wrapper fxp_2082-1">
     <div id="inline-promo-placeholder" class="inline-promo-placeholder">
         <div class="inline-promo-placeholder-inner">
@@ -1685,10 +1698,29 @@
     <div id="inline-promo-component"></div>
 </div>
 
+<script>
+  if (window.Aetna && window.Aetna["webc_fxp_2082"] ===  1 ) {
+    document.documentElement.classList.add("homepage-has-inline-promo");
+    document.documentElement.classList.add("homepage-has-promo-before-usps");
+  }
+</script>
+
+
 
     
 
-<div class="promo-communication-wrapper fxp_2082-2">
+
+
+
+
+
+
+
+
+
+
+
+<div class="promo-communication-wrapper fxp_2082-2 ">
 <div id="promo-communication-placeholder-MainContentPromoArea" class="promo-placeholder-container promo-placeholder-container--MainContentPromoArea" data-testid="promo-communication-placeholder-MainContentPromoArea">
     <div class="promo-placeholder-card">
         <div class="promo-placeholder-card-inner">
@@ -1720,6 +1752,16 @@
 </div>
 <div id="promo-communication-component-MainContentPromoArea" data-testid="promo-communication-container-MainContentPromoArea"></div>
 </div>
+
+
+<script>
+  if (window.Aetna && window.Aetna["webc_fxp_2082"] ===  2 ) {
+    document.documentElement.classList.add("homepage-has-promo-before-usps");
+  }
+</script>
+
+
+
 
 
     
@@ -3099,7 +3141,7 @@
 
   
   
-  if (window.Aetna && window.Aetna.webc_fxp_2082 === 1) {
+  if (window.Aetna && window.Aetna["webc_fxp_2082"] ===  1 ) {
     injectReactComponent(
       "InlinePromo",
       "inline-promo-component",
@@ -3116,7 +3158,26 @@
 
   
   
-  if (window.Aetna && window.Aetna.webc_fxp_2082 === 2) {
+  const promoCommunicationCards = [{"image":{"url":"https://cdn-cf.cms.flixbus.com/drupal-assets/promos/Bike_web.webp","alt":"Bring your bike on your next trip"},"abTest":{"flag":"webc_fxp_2082","variant":2},"title":"Bring your bike on your next trip","description":"Turn any trip into a cycling adventure.","cta":{"text":"View details","url":"https://global.flixbus.com/service/bike-travel"},"isStrongPromo":true}];
+  const visiblePromoCommunicationCards = promoCommunicationCards
+    .filter(function(card) {
+      if (!card.abTest) {
+        return true;
+      }
+
+      return window.Aetna && window.Aetna[card.abTest.flag] === card.abTest.variant;
+    })
+    .map(function(card) {
+      if (!card.abTest) {
+        return card;
+      }
+
+      const visibleCard = Object.assign({}, card);
+      delete visibleCard.abTest;
+      return visibleCard;
+    });
+
+  if (visiblePromoCommunicationCards.length > 0) {
     injectReactComponent(
       "PromoCommunication",
       "promo-communication-component-MainContentPromoArea",
@@ -3126,12 +3187,17 @@
         
         promoData: {
           placement: "MainContentPromoArea",
-          cards: [{"image":{"url":"https://cdn-cf.cms.flixbus.com/drupal-assets/promos/Bike_web.webp","alt":"Bring your bike on your next trip"},"title":"Bring your bike on your next trip","description":"Turn any trip into a cycling adventure.","cta":{"text":"View details","url":"https://global.flixbus.com/service/bike-travel"},"isStrongPromo":true}]
+          cards: visiblePromoCommunicationCards
         }
       },
       "promo-communication-placeholder-MainContentPromoArea",
       ""
     );
+  } else {
+    const promoCommunicationWrapper = document.querySelector(".promo-communication-wrapper");
+    if (promoCommunicationWrapper) {
+      promoCommunicationWrapper.remove();
+    }
   }
   
 </script>
@@ -3192,7 +3258,7 @@
         site: 'datadoghq.eu',
         service: 'fxt.webc.cms.gohome',
         sessionSampleRate: 7,
-        version: "v1-97-54",
+        version: "v1-97-55",
         trackSessionAcrossSubdomains: true,
         useSecureSessionCookie: true,
         useCrossSiteSessionCookie: true,
