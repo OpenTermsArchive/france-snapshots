@@ -49,7 +49,7 @@
     <link rel="stylesheet" href="https://honeycomb.flixbus.com/dist/15.3.3/css/honeycomb-fonts.css" crossorigin="">
 
     <link rel="stylesheet" href="https://cdn-cf.cms.flixbus.com/drupal-assets/flix-home-assets/cms_honeycomb.f4a64e.css" async />
-    <link rel="stylesheet" href="https://cdn-cf.cms.flixbus.com/drupal-assets/flix-home-assets/styles.6b6c08.css" async />
+    <link rel="stylesheet" href="https://cdn-cf.cms.flixbus.com/drupal-assets/flix-home-assets/styles.7dcbfd.css" async />
 
     <link
       rel="apple-touch-icon"
@@ -1598,6 +1598,8 @@
 
   <main id="main-content">
     
+
+
   <div class="hero-container" data-testid="hero">
 
     <div id="default-hero-image-container" class="hero-image-container">
@@ -1619,9 +1621,9 @@
 
     <div class="hero-content">
       <h1 class="flix-h1 flix-h1--section-header hero-heading" data-vo-hidden="false">
-        <span class="hero-heading-default">Low cost bus travel</span>
-        <span class="fxp_2082-1 hero-heading--no-image">Low cost bus travel</span>
-        <span class="fxp_2082-2 hero-heading--no-image">Low cost bus travel</span>
+        
+          <span>Low cost bus travel</span>
+        
       </h1>
       <div class="hero-search-mask-wrapper">
           
@@ -1660,28 +1662,6 @@
         <div id="search-mask-component" style="border-radius: 5px" data-testid="search-mask-container"></div>
       </div>
     </div>
-
-    <script>
-      if (
-        window.Aetna &&
-        (window.Aetna.webc_fxp_2082 === 1 || window.Aetna.webc_fxp_2082 === 2) &&
-        window.innerWidth < 600
-      ) {
-        var defaultHeroImage = document.getElementById('default-hero-image-container');
-        if (defaultHeroImage) {
-          defaultHeroImage.style.display = 'none';
-        }
-        var defaultHeadingSpan = document.querySelector('.hero-heading-default');
-        if (defaultHeadingSpan) {
-          defaultHeadingSpan.style.display = 'none';
-        }
-        document.querySelector('.hero-content').style.marginTop = '24px';
-        var heroContainer = document.querySelector('.hero-container');
-        heroContainer.style.marginBottom = '24px';
-        heroContainer.style.boxShadow = '0 12px 24px rgba(0, 0, 0, 0.1)';
-        document.querySelector('.hero-heading').style.paddingBottom = '7px';
-      }
-    </script>
   </div>
 
     
@@ -2464,11 +2444,11 @@
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
-                      <a href="/bus/mannheim" class="popular-routes-item">Mannheim</a>
+                      <a href="/bus/bremen" class="popular-routes-item">Bremen</a>
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
-                      <a href="/bus/bremen" class="popular-routes-item">Bremen</a>
+                      <a href="/bus/mannheim" class="popular-routes-item">Mannheim</a>
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
@@ -2551,11 +2531,11 @@
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
-                      <a href="/bus-routes/bus-berlin-prague" class="popular-routes-item">Berlin - Prague</a>
+                      <a href="/bus-routes/bus-stuttgart-frankfurt" class="popular-routes-item">Stuttgart - Frankfurt</a>
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
-                      <a href="/bus-routes/bus-stuttgart-frankfurt" class="popular-routes-item">Stuttgart - Frankfurt</a>
+                      <a href="/bus-routes/bus-berlin-prague" class="popular-routes-item">Berlin - Prague</a>
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
@@ -2563,7 +2543,7 @@
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
-                      <a href="/bus-routes/bus-prague-berlin" class="popular-routes-item">Prague - Berlin</a>
+                      <a href="/bus-routes/bus-cologne-hamburg" class="popular-routes-item">Cologne - Hamburg</a>
                     </li>
                   
                 </ul>
@@ -3258,7 +3238,7 @@
         site: 'datadoghq.eu',
         service: 'fxt.webc.cms.gohome',
         sessionSampleRate: 7,
-        version: "master",
+        version: "v1-97-59",
         trackSessionAcrossSubdomains: true,
         useSecureSessionCookie: true,
         useCrossSiteSessionCookie: true,
