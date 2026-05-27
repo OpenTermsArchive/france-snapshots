@@ -1600,17 +1600,21 @@
     
 
 
+
   <div class="hero-container" data-testid="hero">
-
-    <div id="default-hero-image-container" class="hero-image-container">
+    <div id="default-hero-image-container"
+      class="hero-image-container">
+      
       <picture>
-        <source srcset="https://cdn-cf.cms.flixbus.com/drupal-assets/2021-10/desktop-flix-hero-q4-2021.jpg" media="(min-width: 1200px)" />
-        <source srcset="https://cdn-cf.cms.flixbus.com/drupal-assets/2021-10/tablet-flix-hero-q4-2021.jpeg" media="(min-width: 600px)" />
-        <source srcset="https://cdn-cf.cms.flixbus.com/drupal-assets/2021-10/mobile-flix-hero-q4-2021.jpg" media="(max-width: 599px)" />
-        <img class="hero-image" alt="" fetchpriority="high" src="https://cdn-cf.cms.flixbus.com/drupal-assets/2021-10/mobile-flix-hero-q4-2021.jpg" />
+        <source srcset="https://cdn-cf.cms.flixbus.com/drupal-assets/flixtrain-and-bus/train-bus-desktop.webp" media="(min-width: 1200px)" />
+        <source srcset="https://cdn-cf.cms.flixbus.com/drupal-assets/flixtrain-and-bus/train-bus-tablet.webp" media="(min-width: 600px)" />
+        <source srcset="https://cdn-cf.cms.flixbus.com/drupal-assets/flixtrain-and-bus/train-bus-mobile.webp" media="(max-width: 599px)" />
+        <img class="hero-image" alt="" src="https://cdn-cf.cms.flixbus.com/drupal-assets/flixtrain-and-bus/train-bus-mobile.webp" />
       </picture>
+      
+  
     </div>
-
+  
     
 
     
@@ -1622,7 +1626,9 @@
     <div class="hero-content">
       <h1 class="flix-h1 flix-h1--section-header hero-heading" data-vo-hidden="false">
         
-          <span>Low cost bus travel</span>
+        
+        <span class="hero-heading-default">Low cost bus and train travel</span>
+        
         
       </h1>
       <div class="hero-search-mask-wrapper">
@@ -3238,7 +3244,7 @@
         site: 'datadoghq.eu',
         service: 'fxt.webc.cms.gohome',
         sessionSampleRate: 7,
-        version: "v1-97-61",
+        version: "v1-97-62",
         trackSessionAcrossSubdomains: true,
         useSecureSessionCookie: true,
         useCrossSiteSessionCookie: true,
