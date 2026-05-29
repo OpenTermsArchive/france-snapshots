@@ -49,7 +49,7 @@
     <link rel="stylesheet" href="https://honeycomb.flixbus.com/dist/15.3.3/css/honeycomb-fonts.css" crossorigin="">
 
     <link rel="stylesheet" href="https://cdn-cf.cms.flixbus.com/drupal-assets/flix-home-assets/cms_honeycomb.f4a64e.css" async />
-    <link rel="stylesheet" href="https://cdn-cf.cms.flixbus.com/drupal-assets/flix-home-assets/styles.d02ae4.css" async />
+    <link rel="stylesheet" href="https://cdn-cf.cms.flixbus.com/drupal-assets/flix-home-assets/styles.09fbf7.css" async />
 
     <link
       rel="apple-touch-icon"
@@ -1601,6 +1601,10 @@
 
 
 
+
+
+  
+
   <div class="hero-container" data-testid="hero">
     <div id="default-hero-image-container"
       class="hero-image-container">
@@ -1612,8 +1616,9 @@
         <img class="hero-image" alt="" src="https://cdn-cf.cms.flixbus.com/drupal-assets/flixtrain-and-bus/train-bus-mobile.webp" />
       </picture>
       
-  
+
     </div>
+    
   
     
 
@@ -1706,7 +1711,9 @@
 
 
 
-<div class="promo-communication-wrapper fxp_2082-2 ">
+
+
+<div class="promo-communication-wrapper fxp_2082-2  ">
 <div id="promo-communication-placeholder-MainContentPromoArea" class="promo-placeholder-container promo-placeholder-container--MainContentPromoArea" data-testid="promo-communication-placeholder-MainContentPromoArea">
     <div class="promo-placeholder-card">
         <div class="promo-placeholder-card-inner">
@@ -2497,11 +2504,11 @@
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
-                      <a href="/bus-routes/bus-frankfurt-berlin" class="popular-routes-item">Frankfurt - Berlin</a>
+                      <a href="/bus-routes/bus-berlin-hanover" class="popular-routes-item">Berlin - Hanover</a>
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
-                      <a href="/bus-routes/bus-berlin-hanover" class="popular-routes-item">Berlin - Hanover</a>
+                      <a href="/bus-routes/bus-frankfurt-berlin" class="popular-routes-item">Frankfurt - Berlin</a>
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
@@ -2549,7 +2556,7 @@
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
-                      <a href="/bus-routes/bus-cologne-hamburg" class="popular-routes-item">Cologne - Hamburg</a>
+                      <a href="/bus-routes/bus-stuttgart-frankfurt" class="popular-routes-item">Stuttgart - Frankfurt</a>
                     </li>
                   
                 </ul>
@@ -3162,18 +3169,20 @@
     });
 
   if (visiblePromoCommunicationCards.length > 0) {
+    const promoCommunicationProps = {
+      project: "flixbus",
+      containerId: "promo-communication-component-MainContentPromoArea",
+      promoData: {
+        placement: "MainContentPromoArea",
+        cards: visiblePromoCommunicationCards
+      }
+    };
+    
+
     injectReactComponent(
       "PromoCommunication",
       "promo-communication-component-MainContentPromoArea",
-      {
-        project: "flixbus",
-        containerId: "promo-communication-component-MainContentPromoArea",
-        
-        promoData: {
-          placement: "MainContentPromoArea",
-          cards: visiblePromoCommunicationCards
-        }
-      },
+      promoCommunicationProps,
       "promo-communication-placeholder-MainContentPromoArea",
       ""
     );
@@ -3242,7 +3251,7 @@
         site: 'datadoghq.eu',
         service: 'fxt.webc.cms.gohome',
         sessionSampleRate: 7,
-        version: "master",
+        version: "v1-97-67",
         trackSessionAcrossSubdomains: true,
         useSecureSessionCookie: true,
         useCrossSiteSessionCookie: true,
