@@ -3,8 +3,7 @@
 <html lang="fr" dir="ltr">
   <head>
 		
-	<script async crossorigin fetchpriority="high" src="/cdn/shopifycloud/importmap-polyfill/es-modules-shim.2.4.0.js"></script>
-<script>const observerCFH=new MutationObserver(e=>{e.forEach(({addedNodes:e})=>{e.forEach(e=>{if(e.nodeType===Node.ELEMENT_NODE&&"SCRIPT"===e.tagName){let{innerHTML:t,className:a,src:n}=e;t.includes("asyncLoad")&&(e.innerHTML=t.replace("if(window.attachEvent)","document.addEventListener('asyncLazyLoad', event => { asyncLoad(); });if(window.attachEvent)").replaceAll(", asyncLoad",", () => {}")),t.includes("PreviewBarInjector")&&(e.innerHTML=t.replace("DOMContentLoaded","asyncLazyLoad")),"analytics"===a&&(e.type="text/lazyload");(n.includes("assets/storefront/features")||n.includes("assets/shopify_pay")||n.includes("connect.facebook.net"))&&(e.setAttribute("data-src",n),e.removeAttribute("src"))}})})});observerCFH.observe(document.documentElement,{childList:!0,subtree:!0});</script>
+	<script>const observerCFH=new MutationObserver(e=>{e.forEach(({addedNodes:e})=>{e.forEach(e=>{if(e.nodeType===Node.ELEMENT_NODE&&"SCRIPT"===e.tagName){let{innerHTML:t,className:a,src:n}=e;t.includes("asyncLoad")&&(e.innerHTML=t.replace("if(window.attachEvent)","document.addEventListener('asyncLazyLoad', event => { asyncLoad(); });if(window.attachEvent)").replaceAll(", asyncLoad",", () => {}")),t.includes("PreviewBarInjector")&&(e.innerHTML=t.replace("DOMContentLoaded","asyncLazyLoad")),"analytics"===a&&(e.type="text/lazyload");(n.includes("assets/storefront/features")||n.includes("assets/shopify_pay")||n.includes("connect.facebook.net"))&&(e.setAttribute("data-src",n),e.removeAttribute("src"))}})})});observerCFH.observe(document.documentElement,{childList:!0,subtree:!0});</script>
 
 
 
@@ -548,7 +547,7 @@ Shopify.SignInWithShop.User.recognized = false;</script>
 <script>
   window.ShopifyPay = window.ShopifyPay || {};
   window.ShopifyPay.apiHost = "shop.app\/pay";
-  window.ShopifyPay.redirectState = null;
+  window.ShopifyPay.redirectState = "pending";
 </script>
 <script>
   window.Shopify = window.Shopify || {};
@@ -567,7 +566,7 @@ Shopify.SignInWithShop.User.recognized = false;</script>
 <script>
   window.Shopify = window.Shopify || {};
   if (!window.Shopify.featureAssets) window.Shopify.featureAssets = {};
-  window.Shopify.featureAssets['shop-js'] = {"shop-toast-manager":["modules/v2/loader.shop-toast-manager.fr.esm.js"],"listener":["modules/v2/loader.listener.fr.esm.js"],"shop-login-button":["modules/v2/loader.shop-login-button.fr.esm.js"],"shop-cash-offers":["modules/v2/loader.shop-cash-offers.fr.esm.js"],"init-windoid":["modules/v2/loader.init-windoid.fr.esm.js"],"init-shop-user-recognition":["modules/v2/loader.init-shop-user-recognition.fr.esm.js"],"init-fed-cm":["modules/v2/loader.init-fed-cm.fr.esm.js"],"init-shop-email-lookup-coordinator":["modules/v2/loader.init-shop-email-lookup-coordinator.fr.esm.js"],"avatar":["modules/v2/loader.avatar.fr.esm.js"],"checkout-modal":["modules/v2/loader.checkout-modal.fr.esm.js"],"shop-button":["modules/v2/loader.shop-button.fr.esm.js"],"init-shop-cart-sync":["modules/v2/loader.init-shop-cart-sync.fr.esm.js"],"shop-user-recognition":["modules/v2/loader.shop-user-recognition.fr.esm.js"],"pay-button":["modules/v2/loader.pay-button.fr.esm.js"],"init-customer-accounts":["modules/v2/loader.init-customer-accounts.fr.esm.js"],"shop-login":["modules/v2/loader.shop-login.fr.esm.js"],"shop-cart-sync":["modules/v2/loader.shop-cart-sync.fr.esm.js"],"init-customer-accounts-sign-up":["modules/v2/loader.init-customer-accounts-sign-up.fr.esm.js"],"shop-follow-button":["modules/v2/loader.shop-follow-button.fr.esm.js"],"init-shop-for-new-customer-accounts":["modules/v2/loader.init-shop-for-new-customer-accounts.fr.esm.js"],"lead-capture":["modules/v2/loader.lead-capture.fr.esm.js"],"payment-terms":["modules/v2/loader.payment-terms.fr.esm.js"]};
+  window.Shopify.featureAssets['shop-js'] = {"shop-cash-offers":["modules/v2/loader.shop-cash-offers.fr.esm.js"],"shop-button":["modules/v2/loader.shop-button.fr.esm.js"],"listener":["modules/v2/loader.listener.fr.esm.js"],"init-shop-cart-sync":["modules/v2/loader.init-shop-cart-sync.fr.esm.js"],"init-shop-user-recognition":["modules/v2/loader.init-shop-user-recognition.fr.esm.js"],"init-windoid":["modules/v2/loader.init-windoid.fr.esm.js"],"init-fed-cm":["modules/v2/loader.init-fed-cm.fr.esm.js"],"checkout-modal":["modules/v2/loader.checkout-modal.fr.esm.js"],"init-shop-email-lookup-coordinator":["modules/v2/loader.init-shop-email-lookup-coordinator.fr.esm.js"],"avatar":["modules/v2/loader.avatar.fr.esm.js"],"shop-toast-manager":["modules/v2/loader.shop-toast-manager.fr.esm.js"],"init-customer-accounts-sign-up":["modules/v2/loader.init-customer-accounts-sign-up.fr.esm.js"],"shop-login":["modules/v2/loader.shop-login.fr.esm.js"],"init-shop-for-new-customer-accounts":["modules/v2/loader.init-shop-for-new-customer-accounts.fr.esm.js"],"init-customer-accounts":["modules/v2/loader.init-customer-accounts.fr.esm.js"],"shop-login-button":["modules/v2/loader.shop-login-button.fr.esm.js"],"shop-user-recognition":["modules/v2/loader.shop-user-recognition.fr.esm.js"],"shop-cart-sync":["modules/v2/loader.shop-cart-sync.fr.esm.js"],"pay-button":["modules/v2/loader.pay-button.fr.esm.js"],"shop-follow-button":["modules/v2/loader.shop-follow-button.fr.esm.js"],"lead-capture":["modules/v2/loader.lead-capture.fr.esm.js"],"payment-terms":["modules/v2/loader.payment-terms.fr.esm.js"]};
 </script>
 <script>(function() {
   var isLoaded = false;
@@ -590,7 +589,7 @@ Shopify.SignInWithShop.User.recognized = false;</script>
     window.addEventListener('load', asyncLoad, false);
   }
 })();</script>
-<script id="__st">var __st={"a":96206586243,"offset":7200,"reqid":"3640513e-fc1c-4a7e-9513-03fd522f012a-1780447267","pageurl":"devred.com\/pages\/charte-pour-la-protection-des-donnees","s":"pages-705873707395","u":"3c85840b2fdb","p":"page","rtyp":"page","rid":705873707395};</script>
+<script id="__st">var __st={"a":96206586243,"offset":7200,"reqid":"dcf545dd-db42-46de-955d-bb9c17517b82-1780490267","pageurl":"devred.com\/pages\/charte-pour-la-protection-des-donnees","s":"pages-705873707395","u":"7f5ded078633","p":"page","rtyp":"page","rid":705873707395};</script>
 <script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
 <script id="captcha-bootstrap">!function(){'use strict';const t='contact',e='account',n='new_comment',o=[[t,t],['blogs',n],['comments',n],[t,'customer']],c=[[e,'customer_login'],[e,'guest_login'],[e,'recover_customer_password'],[e,'create_customer']],r=t=>t.map((([t,e])=>`form[action*='/${t}']:not([data-nocaptcha='true']) input[name='form_type'][value='${e}']`)).join(','),a=t=>()=>t?[...document.querySelectorAll(t)].map((t=>t.form)):[];function s(){const t=[...o],e=r(t);return a(e)}const i='password',u='form_key',d=['recaptcha-v3-token','g-recaptcha-response','h-captcha-response',i],f=()=>{try{return window.sessionStorage}catch{return}},m='__shopify_v',_=t=>t.elements[u];function p(t,e,n=!1){try{const o=window.sessionStorage,c=JSON.parse(o.getItem(e)),{data:r}=function(t){const{data:e,action:n}=t;return t[m]||n?{data:e,action:n}:{data:t,action:n}}(c);for(const[e,n]of Object.entries(r))t.elements[e]&&(t.elements[e].value=n);n&&o.removeItem(e)}catch(o){console.error('form repopulation failed',{error:o})}}const l='form_type',E='cptcha';function T(t){t.dataset[E]=!0}const w=window,h=w.document,L='Shopify',v='ce_forms',y='captcha';let A=!1;((t,e)=>{const n=(g='f06e6c50-85a8-45c8-87d0-21a2b65856fe',I='https://cdn.shopify.com/shopifycloud/storefront-forms-hcaptcha/ce_storefront_forms_captcha_hcaptcha.v1.5.2.iife.js',D={infoText:'Protégé par hCaptcha',privacyText:'Confidentialité',termsText:'Conditions'},(t,e,n)=>{const o=w[L][v],c=o.bindForm;if(c)return c(t,g,e,D).then(n);var r;o.q.push([[t,g,e,D],n]),r=I,A||(h.body.append(Object.assign(h.createElement('script'),{id:'captcha-provider',async:!0,src:r})),A=!0)});var g,I,D;w[L]=w[L]||{},w[L][v]=w[L][v]||{},w[L][v].q=[],w[L][y]=w[L][y]||{},w[L][y].protect=function(t,e){n(t,void 0,e),T(t)},Object.freeze(w[L][y]),function(t,e,n,w,h,L){const[v,y,A,g]=function(t,e,n){const i=e?o:[],u=t?c:[],d=[...i,...u],f=r(d),m=r(i),_=r(d.filter((([t,e])=>n.includes(e))));return[a(f),a(m),a(_),s()]}(w,h,L),I=t=>{const e=t.target;return e instanceof HTMLFormElement?e:e&&e.form},D=t=>v().includes(t);t.addEventListener('submit',(t=>{const e=I(t);if(!e)return;const n=D(e)&&!e.dataset.hcaptchaBound&&!e.dataset.recaptchaBound,o=_(e),c=g().includes(e)&&(!o||!o.value);(n||c)&&t.preventDefault(),c&&!n&&(function(t){try{if(!f())return;!function(t){const e=f();if(!e)return;const n=_(t);if(!n)return;const o=n.value;o&&e.removeItem(o)}(t);const e=Array.from(Array(32),(()=>Math.random().toString(36)[2])).join('');!function(t,e){_(t)||t.append(Object.assign(document.createElement('input'),{type:'hidden',name:u})),t.elements[u].value=e}(t,e),function(t,e){const n=f();if(!n)return;const o=[...t.querySelectorAll(`input[type='${i}']`)].map((({name:t})=>t)),c=[...d,...o],r={};for(const[a,s]of new FormData(t).entries())c.includes(a)||(r[a]=s);n.setItem(e,JSON.stringify({[m]:1,action:t.action,data:r}))}(t,e)}catch(e){console.error('failed to persist form',e)}}(e),e.submit())}));const S=(t,e)=>{t&&!t.dataset[E]&&(n(t,e.some((e=>e===t))),T(t))};for(const o of['focusin','change'])t.addEventListener(o,(t=>{const e=I(t);D(e)&&S(e,y())}));const B=e.get('form_key'),M=e.get(l),P=B&&M;t.addEventListener('DOMContentLoaded',(()=>{const t=y();if(P)for(const e of t)e.elements[l].value===M&&p(e,B);[...new Set([...A(),...v().filter((t=>'true'===t.dataset.shopifyCaptcha))])].forEach((e=>S(e,t)))}))}(h,new URLSearchParams(w.location.search),n,t,e,['guest_login'])})(!0,!0)}();</script>
 <script integrity="sha256-JjoPp5ZfB1sSAs5SQaol1x1GgvveM+BgmRzyDexInEQ=" data-source-attribution="shopify.loadfeatures" defer="defer" src="//devred.com/cdn/shopifycloud/storefront/assets/storefront/load_feature-1bd60354.js" crossorigin="anonymous"></script>
@@ -1358,7 +1357,7 @@ Shopify.SignInWithShop.User.recognized = false;</script>
   window.ShopifyAnalytics = window.ShopifyAnalytics || {};
   window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
   window.ShopifyAnalytics.meta.currency = 'EUR';
-  var meta = {"page":{"pageType":"page","resourceType":"page","resourceId":705873707395,"requestId":"3640513e-fc1c-4a7e-9513-03fd522f012a-1780447267"}};
+  var meta = {"page":{"pageType":"page","resourceType":"page","resourceId":705873707395,"requestId":"dcf545dd-db42-46de-955d-bb9c17517b82-1780490267"}};
   for (var attr in meta) {
     window.ShopifyAnalytics.meta[attr] = meta[attr];
   }
@@ -1502,7 +1501,7 @@ first.parentNode.insertBefore(script, first);
 
     };
     trekkie.load(
-      {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":96206586243,"isMerchantRequest":null,"themeId":196828201347,"themeCityHash":"6255383968237799870","contentLanguage":"fr","currency":"EUR","eventMetadataId":"9e1e2d0b-9298-4220-92c7-0f12ba2519d9"},"isServerSideCookieWritingEnabled":true,"monorailRegion":"shop_domain","enabledBetaFlags":["b5387b81","d5bdd5d0"]},"Session Attribution":{},"S2S":{"facebookCapiEnabled":true,"source":"trekkie-storefront-renderer","apiClientId":580111}}
+      {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":96206586243,"isMerchantRequest":null,"themeId":196828201347,"themeCityHash":"6255383968237799870","contentLanguage":"fr","currency":"EUR","eventMetadataId":"7c27cb7b-5374-48b1-8319-7a0dbe9df3f6"},"isServerSideCookieWritingEnabled":true,"monorailRegion":"shop_domain","enabledBetaFlags":["b5387b81","d5bdd5d0"]},"Session Attribution":{},"S2S":{"facebookCapiEnabled":true,"source":"trekkie-storefront-renderer","apiClientId":580111}}
     );
 
     var loaded = false;
@@ -1517,7 +1516,7 @@ first.parentNode.insertBefore(script, first);
       try { window.ShopifyAnalytics.merchantGoogleAnalytics.call(this); } catch(error) {};
       document.write = originalDocumentWrite;
 
-      window.ShopifyAnalytics.lib.page(null,{"pageType":"page","resourceType":"page","resourceId":705873707395,"requestId":"3640513e-fc1c-4a7e-9513-03fd522f012a-1780447267","shopifyEmitted":true});
+      window.ShopifyAnalytics.lib.page(null,{"pageType":"page","resourceType":"page","resourceId":705873707395,"requestId":"dcf545dd-db42-46de-955d-bb9c17517b82-1780490267","shopifyEmitted":true});
 
       var match = window.location.pathname.match(/checkouts\/(.+)\/(thank_you|post_purchase)/)
       var token = match? match[1]: undefined;
@@ -1891,9 +1890,9 @@ first.parentNode.insertBefore(script, first);
                   </li><li>
                     <a href="/collections/pulls-et-gilets" class="link-reversed">Mailles</a>
                   </li><li>
-                    <a href="/collections/pantalons-ville" class="link-reversed">Pantalons à pince</a>
-                  </li><li>
                     <a href="/collections/jeans" class="link-reversed">Jeans </a>
+                  </li><li>
+                    <a href="https://devred.com/collections/costumes" class="link-reversed">Costumes</a>
                   </li><li>
                     <a href="/collections/pret-a-porter" class="link-reversed">Tout le prêt-à-porter</a>
                   </li></ul>
@@ -1964,13 +1963,13 @@ first.parentNode.insertBefore(script, first);
 
     <scroll-carousel id="promo-block-list-mega_menu_GkMCchmega-menu-carousel" class="menu-promo__carousel scroll-area">
 
-        <a href="/collections/collection-lin" class="menu-promo__item  group"><div class="v-stack justify-items-start gap-3"><div class="overflow-hidden"><img src="//devred.com/cdn/shop/files/chemise-ceremonie.jpg?v=1775204539&amp;width=2034" alt="Collection lin" srcset="//devred.com/cdn/shop/files/chemise-ceremonie.jpg?v=1775204539&amp;width=305 305w, //devred.com/cdn/shop/files/chemise-ceremonie.jpg?v=1775204539&amp;width=610 610w, //devred.com/cdn/shop/files/chemise-ceremonie.jpg?v=1775204539&amp;width=915 915w" width="2034" height="2712" loading="lazy" sizes="305px" class="zoom-image group-hover:zoom"></div><div class="v-stack text-start gap-1"><p class="subheading">Collection lin</p>
+        <a href="/collections/valise-vacances" class="menu-promo__item  group"><div class="v-stack justify-items-start gap-3"><div class="overflow-hidden"><img src="//devred.com/cdn/shop/files/Day1_Devred_Stills_S8_Look_08_0792_RGB_LD_72dpi.jpg?v=1779958511&amp;width=2097" alt="Valise vacances" srcset="//devred.com/cdn/shop/files/Day1_Devred_Stills_S8_Look_08_0792_RGB_LD_72dpi.jpg?v=1779958511&amp;width=305 305w, //devred.com/cdn/shop/files/Day1_Devred_Stills_S8_Look_08_0792_RGB_LD_72dpi.jpg?v=1779958511&amp;width=610 610w, //devred.com/cdn/shop/files/Day1_Devred_Stills_S8_Look_08_0792_RGB_LD_72dpi.jpg?v=1779958511&amp;width=915 915w" width="2097" height="2796" loading="lazy" sizes="305px" class="zoom-image group-hover:zoom"></div><div class="v-stack text-start gap-1"><p class="subheading">Valise vacances</p>
           
-<p>Découvrez notre sélection</p></div></div></a>
+<p>Découvrez notre collection</p></div></div></a>
 
-        <a href="/collections/costumes" class="menu-promo__item  group"><div class="v-stack justify-items-start gap-3"><div class="overflow-hidden"><img src="//devred.com/cdn/shop/files/costume-ceremonie.jpg?v=1775204539&amp;width=2034" alt="Costume de cérémonie" srcset="//devred.com/cdn/shop/files/costume-ceremonie.jpg?v=1775204539&amp;width=305 305w, //devred.com/cdn/shop/files/costume-ceremonie.jpg?v=1775204539&amp;width=610 610w, //devred.com/cdn/shop/files/costume-ceremonie.jpg?v=1775204539&amp;width=915 915w" width="2034" height="2712" loading="lazy" sizes="305px" class="zoom-image group-hover:zoom"></div><div class="v-stack text-start gap-1"><p class="subheading">Costume de cérémonie</p>
+        <a href="/collections/ventes-privees" class="menu-promo__item  group"><div class="v-stack justify-items-start gap-3"><div class="overflow-hidden"><img src="//devred.com/cdn/shop/files/Day3_Devred_Stills_S7_Look_02_0576_RGB_LD_72dpi_d42bbd43-ea27-431d-84a4-3332be50e036.jpg?v=1778158429&amp;width=2044" alt="Ventes privées" srcset="//devred.com/cdn/shop/files/Day3_Devred_Stills_S7_Look_02_0576_RGB_LD_72dpi_d42bbd43-ea27-431d-84a4-3332be50e036.jpg?v=1778158429&amp;width=305 305w, //devred.com/cdn/shop/files/Day3_Devred_Stills_S7_Look_02_0576_RGB_LD_72dpi_d42bbd43-ea27-431d-84a4-3332be50e036.jpg?v=1778158429&amp;width=610 610w, //devred.com/cdn/shop/files/Day3_Devred_Stills_S7_Look_02_0576_RGB_LD_72dpi_d42bbd43-ea27-431d-84a4-3332be50e036.jpg?v=1778158429&amp;width=915 915w" width="2044" height="2725" loading="lazy" sizes="305px" class="zoom-image group-hover:zoom"></div><div class="v-stack text-start gap-1"><p class="subheading">Ventes privées</p>
           
-<p>Découvrez nos costumes</p></div></div></a>
+<p>Jusqu'à -50% sur une sélection</p></div></div></a>
 
 
 
@@ -2056,9 +2055,9 @@ first.parentNode.insertBefore(script, first);
 
     <scroll-carousel id="promo-block-list-mega_menu_Bb9i7nmega-menu-carousel" class="menu-promo__carousel scroll-area">
 
-        <a href="/products/costume-3-pieces-slim-en-laine-beige-clair-bwoolpe26" class="menu-promo__item  group"><div class="v-stack justify-items-start gap-3"><div class="overflow-hidden"><img src="//devred.com/cdn/shop/files/gilet-sans-manche-ville-homme-5121095_04_1.webp?v=1775658349&amp;width=800" alt="Costume en laine" srcset="//devred.com/cdn/shop/files/gilet-sans-manche-ville-homme-5121095_04_1.webp?v=1775658349&amp;width=305 305w, //devred.com/cdn/shop/files/gilet-sans-manche-ville-homme-5121095_04_1.webp?v=1775658349&amp;width=610 610w" width="800" height="1067" loading="lazy" sizes="305px" class="zoom-image group-hover:zoom"></div><div class="v-stack text-start gap-1"><p class="subheading">Costume en laine</p>
+        <a href="https://devred.com/collections/ventes-privees-costumes" class="menu-promo__item  group"><div class="v-stack justify-items-start gap-3"><div class="overflow-hidden"><img src="//devred.com/cdn/shop/files/Day3_Devred_Stills_S7_Look_02_0576_RGB_LD_72dpi_7c8dca96-8dc1-4e7b-964b-ee46a9df009a.jpg?v=1779192872&amp;width=2044" alt="Ventes Privées Costumes" srcset="//devred.com/cdn/shop/files/Day3_Devred_Stills_S7_Look_02_0576_RGB_LD_72dpi_7c8dca96-8dc1-4e7b-964b-ee46a9df009a.jpg?v=1779192872&amp;width=305 305w, //devred.com/cdn/shop/files/Day3_Devred_Stills_S7_Look_02_0576_RGB_LD_72dpi_7c8dca96-8dc1-4e7b-964b-ee46a9df009a.jpg?v=1779192872&amp;width=610 610w, //devred.com/cdn/shop/files/Day3_Devred_Stills_S7_Look_02_0576_RGB_LD_72dpi_7c8dca96-8dc1-4e7b-964b-ee46a9df009a.jpg?v=1779192872&amp;width=915 915w" width="2044" height="2725" loading="lazy" sizes="305px" class="zoom-image group-hover:zoom"></div><div class="v-stack text-start gap-1"><p class="subheading">Ventes Privées Costumes</p>
           
-</div></div></a>
+<p>Jusqu'à -50% sur une sélection</p></div></div></a>
 
         <a href="/collections/accessoires-ceremonie" class="menu-promo__item  group"><div class="v-stack justify-items-start gap-3"><div class="overflow-hidden"><img src="//devred.com/cdn/shop/files/Veste_de_costume_slim_bistretch_-_DEVRED_1902.png?v=1775659228&amp;width=1000" alt="Accessoires de cérémonie" srcset="//devred.com/cdn/shop/files/Veste_de_costume_slim_bistretch_-_DEVRED_1902.png?v=1775659228&amp;width=305 305w, //devred.com/cdn/shop/files/Veste_de_costume_slim_bistretch_-_DEVRED_1902.png?v=1775659228&amp;width=610 610w, //devred.com/cdn/shop/files/Veste_de_costume_slim_bistretch_-_DEVRED_1902.png?v=1775659228&amp;width=915 915w" width="1000" height="1333" loading="lazy" sizes="305px" class="zoom-image group-hover:zoom"></div><div class="v-stack text-start gap-1"><p class="subheading">Accessoires de cérémonie</p>
           
@@ -2129,11 +2128,11 @@ first.parentNode.insertBefore(script, first);
                 >Boutiques</a></li>
 
               <li><a
-                  href="/collections/outlet"
+                  href="/collections/ventes-privees"
                   class="block link-reversed"
                   
                   
-                >Outlet</a></li>
+                >Ventes privées</a></li>
 
               <li><a
                   href="/collections/atelier"
@@ -2249,7 +2248,7 @@ first.parentNode.insertBefore(script, first);
     <div part="content">
       <slot></slot>
     </div>
-  </template><header-menu-drawer-panel id="menu-drawer-panel-main" data-main-panel class="menu-drawer__panel"><div class="menu-drawer__tabs"><button type="button" class="menu-drawer__tab  is-active" data-tab-toggle data-tab-index="1">Eshop</button><button type="button" class="menu-drawer__tab " data-tab-toggle data-tab-index="2">Costumes</button><button type="button" class="menu-drawer__tab " data-tab-toggle data-tab-index="3">La Marque</button><a href="/pages/nos-boutiques" class="menu-drawer__tab ">Boutiques</a><a href="/collections/outlet" class="menu-drawer__tab ">Outlet</a><a href="/collections/atelier" class="menu-drawer__tab ">L'atelier</a></div><div class="menu-drawer__panel-body"><div class="menu-drawer__tab-content is-visible" data-tab-content="1"><ul class="menu-drawer__tab-links unstyled-list"><li><a href="/collections/nouveautes" class="menu-drawer__tab-link">
+  </template><header-menu-drawer-panel id="menu-drawer-panel-main" data-main-panel class="menu-drawer__panel"><div class="menu-drawer__tabs"><button type="button" class="menu-drawer__tab  is-active" data-tab-toggle data-tab-index="1">Eshop</button><button type="button" class="menu-drawer__tab " data-tab-toggle data-tab-index="2">Costumes</button><button type="button" class="menu-drawer__tab " data-tab-toggle data-tab-index="3">La Marque</button><a href="/pages/nos-boutiques" class="menu-drawer__tab ">Boutiques</a><a href="/collections/ventes-privees" class="menu-drawer__tab ">Ventes privées</a><a href="/collections/atelier" class="menu-drawer__tab ">L'atelier</a></div><div class="menu-drawer__panel-body"><div class="menu-drawer__tab-content is-visible" data-tab-content="1"><ul class="menu-drawer__tab-links unstyled-list"><li><a href="/collections/nouveautes" class="menu-drawer__tab-link">
                           <span>Nouveautés</span>
                         </a></li><li><a href="/collections/valise-vacances" class="menu-drawer__tab-link">
                           <span>Valise Vacances</span>
@@ -2363,13 +2362,13 @@ first.parentNode.insertBefore(script, first);
 
     <scroll-carousel id="promo-block-list-mega_menu_GkMCchdrawer-carousel" class="menu-promo__carousel scroll-area">
 
-        <a href="/collections/collection-lin" class="menu-promo__item  group"><div class="v-stack justify-items-start gap-3"><div class="overflow-hidden"><img src="//devred.com/cdn/shop/files/chemise-ceremonie.jpg?v=1775204539&amp;width=2034" alt="Collection lin" srcset="//devred.com/cdn/shop/files/chemise-ceremonie.jpg?v=1775204539&amp;width=305 305w, //devred.com/cdn/shop/files/chemise-ceremonie.jpg?v=1775204539&amp;width=610 610w, //devred.com/cdn/shop/files/chemise-ceremonie.jpg?v=1775204539&amp;width=915 915w" width="2034" height="2712" loading="lazy" sizes="305px" class="zoom-image group-hover:zoom"></div><div class="v-stack text-start gap-1"><p class="subheading">Collection lin</p>
+        <a href="/collections/valise-vacances" class="menu-promo__item  group"><div class="v-stack justify-items-start gap-3"><div class="overflow-hidden"><img src="//devred.com/cdn/shop/files/Day1_Devred_Stills_S8_Look_08_0792_RGB_LD_72dpi.jpg?v=1779958511&amp;width=2097" alt="Valise vacances" srcset="//devred.com/cdn/shop/files/Day1_Devred_Stills_S8_Look_08_0792_RGB_LD_72dpi.jpg?v=1779958511&amp;width=305 305w, //devred.com/cdn/shop/files/Day1_Devred_Stills_S8_Look_08_0792_RGB_LD_72dpi.jpg?v=1779958511&amp;width=610 610w, //devred.com/cdn/shop/files/Day1_Devred_Stills_S8_Look_08_0792_RGB_LD_72dpi.jpg?v=1779958511&amp;width=915 915w" width="2097" height="2796" loading="lazy" sizes="305px" class="zoom-image group-hover:zoom"></div><div class="v-stack text-start gap-1"><p class="subheading">Valise vacances</p>
           
-<p>Découvrez notre sélection</p></div></div></a>
+<p>Découvrez notre collection</p></div></div></a>
 
-        <a href="/collections/costumes" class="menu-promo__item  group"><div class="v-stack justify-items-start gap-3"><div class="overflow-hidden"><img src="//devred.com/cdn/shop/files/costume-ceremonie.jpg?v=1775204539&amp;width=2034" alt="Costume de cérémonie" srcset="//devred.com/cdn/shop/files/costume-ceremonie.jpg?v=1775204539&amp;width=305 305w, //devred.com/cdn/shop/files/costume-ceremonie.jpg?v=1775204539&amp;width=610 610w, //devred.com/cdn/shop/files/costume-ceremonie.jpg?v=1775204539&amp;width=915 915w" width="2034" height="2712" loading="lazy" sizes="305px" class="zoom-image group-hover:zoom"></div><div class="v-stack text-start gap-1"><p class="subheading">Costume de cérémonie</p>
+        <a href="/collections/ventes-privees" class="menu-promo__item  group"><div class="v-stack justify-items-start gap-3"><div class="overflow-hidden"><img src="//devred.com/cdn/shop/files/Day3_Devred_Stills_S7_Look_02_0576_RGB_LD_72dpi_d42bbd43-ea27-431d-84a4-3332be50e036.jpg?v=1778158429&amp;width=2044" alt="Ventes privées" srcset="//devred.com/cdn/shop/files/Day3_Devred_Stills_S7_Look_02_0576_RGB_LD_72dpi_d42bbd43-ea27-431d-84a4-3332be50e036.jpg?v=1778158429&amp;width=305 305w, //devred.com/cdn/shop/files/Day3_Devred_Stills_S7_Look_02_0576_RGB_LD_72dpi_d42bbd43-ea27-431d-84a4-3332be50e036.jpg?v=1778158429&amp;width=610 610w, //devred.com/cdn/shop/files/Day3_Devred_Stills_S7_Look_02_0576_RGB_LD_72dpi_d42bbd43-ea27-431d-84a4-3332be50e036.jpg?v=1778158429&amp;width=915 915w" width="2044" height="2725" loading="lazy" sizes="305px" class="zoom-image group-hover:zoom"></div><div class="v-stack text-start gap-1"><p class="subheading">Ventes privées</p>
           
-<p>Découvrez nos costumes</p></div></div></a>
+<p>Jusqu'à -50% sur une sélection</p></div></div></a>
 
 
 
@@ -2414,9 +2413,9 @@ first.parentNode.insertBefore(script, first);
 
     <scroll-carousel id="promo-block-list-mega_menu_Bb9i7ndrawer-carousel" class="menu-promo__carousel scroll-area">
 
-        <a href="/products/costume-3-pieces-slim-en-laine-beige-clair-bwoolpe26" class="menu-promo__item  group"><div class="v-stack justify-items-start gap-3"><div class="overflow-hidden"><img src="//devred.com/cdn/shop/files/gilet-sans-manche-ville-homme-5121095_04_1.webp?v=1775658349&amp;width=800" alt="Costume en laine" srcset="//devred.com/cdn/shop/files/gilet-sans-manche-ville-homme-5121095_04_1.webp?v=1775658349&amp;width=305 305w, //devred.com/cdn/shop/files/gilet-sans-manche-ville-homme-5121095_04_1.webp?v=1775658349&amp;width=610 610w" width="800" height="1067" loading="lazy" sizes="305px" class="zoom-image group-hover:zoom"></div><div class="v-stack text-start gap-1"><p class="subheading">Costume en laine</p>
+        <a href="https://devred.com/collections/ventes-privees-costumes" class="menu-promo__item  group"><div class="v-stack justify-items-start gap-3"><div class="overflow-hidden"><img src="//devred.com/cdn/shop/files/Day3_Devred_Stills_S7_Look_02_0576_RGB_LD_72dpi_7c8dca96-8dc1-4e7b-964b-ee46a9df009a.jpg?v=1779192872&amp;width=2044" alt="Ventes Privées Costumes" srcset="//devred.com/cdn/shop/files/Day3_Devred_Stills_S7_Look_02_0576_RGB_LD_72dpi_7c8dca96-8dc1-4e7b-964b-ee46a9df009a.jpg?v=1779192872&amp;width=305 305w, //devred.com/cdn/shop/files/Day3_Devred_Stills_S7_Look_02_0576_RGB_LD_72dpi_7c8dca96-8dc1-4e7b-964b-ee46a9df009a.jpg?v=1779192872&amp;width=610 610w, //devred.com/cdn/shop/files/Day3_Devred_Stills_S7_Look_02_0576_RGB_LD_72dpi_7c8dca96-8dc1-4e7b-964b-ee46a9df009a.jpg?v=1779192872&amp;width=915 915w" width="2044" height="2725" loading="lazy" sizes="305px" class="zoom-image group-hover:zoom"></div><div class="v-stack text-start gap-1"><p class="subheading">Ventes Privées Costumes</p>
           
-</div></div></a>
+<p>Jusqu'à -50% sur une sélection</p></div></div></a>
 
         <a href="/collections/accessoires-ceremonie" class="menu-promo__item  group"><div class="v-stack justify-items-start gap-3"><div class="overflow-hidden"><img src="//devred.com/cdn/shop/files/Veste_de_costume_slim_bistretch_-_DEVRED_1902.png?v=1775659228&amp;width=1000" alt="Accessoires de cérémonie" srcset="//devred.com/cdn/shop/files/Veste_de_costume_slim_bistretch_-_DEVRED_1902.png?v=1775659228&amp;width=305 305w, //devred.com/cdn/shop/files/Veste_de_costume_slim_bistretch_-_DEVRED_1902.png?v=1775659228&amp;width=610 610w, //devred.com/cdn/shop/files/Veste_de_costume_slim_bistretch_-_DEVRED_1902.png?v=1775659228&amp;width=915 915w" width="1000" height="1333" loading="lazy" sizes="305px" class="zoom-image group-hover:zoom"></div><div class="v-stack text-start gap-1"><p class="subheading">Accessoires de cérémonie</p>
           
@@ -2565,12 +2564,12 @@ first.parentNode.insertBefore(script, first);
                       <span>Mailles</span>
                     </a>
                   </li><li>
-                    <a href="/collections/pantalons-ville" class="menu-drawer__tab-link">
-                      <span>Pantalons à pince</span>
-                    </a>
-                  </li><li>
                     <a href="/collections/jeans" class="menu-drawer__tab-link">
                       <span>Jeans </span>
+                    </a>
+                  </li><li>
+                    <a href="https://devred.com/collections/costumes" class="menu-drawer__tab-link">
+                      <span>Costumes</span>
                     </a>
                   </li><li>
                     <a href="/collections/pret-a-porter" class="menu-drawer__tab-link">
@@ -3052,7 +3051,7 @@ first.parentNode.insertBefore(script, first);
 </div><div class="footer__block footer__block--links footer__block--accordion-links" ><div class="v-stack gap-4.5 sm-max:hidden"><p class="subheading">Aide & contact</p><ul class="v-stack gap-2.5 unstyled-list" role="list"><li>
                             <a href="/pages/contact" class="link-reversed link-tap-area">Nous contacter</a>
                           </li><li>
-                            <a href="https://account.devred.com/profile?locale=fr&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ5eGR2c3cteXcubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzgxMDUyMDY3LCJuYmYiOjE3ODA0NDcyNjd9.QrPhWaRxXOk5c6OqW0mfVz1zXA-51V97YGukYjRNBFI&region_country=FR" class="link-reversed link-tap-area">Suivre mon colis</a>
+                            <a href="https://account.devred.com/profile?locale=fr&region_country=FR&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ5eGR2c3cteXcubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzgxMDk1MDY3LCJuYmYiOjE3ODA0OTAyNjd9.FoKj5xsgT84LCmvmqrMkhxmy2xRrxvHHvqbD4fTcjxk" class="link-reversed link-tap-area">Suivre mon colis</a>
                           </li><li>
                             <a href="https://devred.com/pages/cgv#delais-de-livraison" class="link-reversed link-tap-area">Livraison & retours</a>
                           </li><li>
@@ -3082,7 +3081,7 @@ first.parentNode.insertBefore(script, first);
     <div class="accordion__content "><ul class="v-stack gap-2.5 unstyled-list" role="list"><li>
                             <a href="/pages/contact" class="link-reversed link-tap-area">Nous contacter</a>
                           </li><li>
-                            <a href="https://account.devred.com/profile?locale=fr&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ5eGR2c3cteXcubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzgxMDUyMDY3LCJuYmYiOjE3ODA0NDcyNjd9.QrPhWaRxXOk5c6OqW0mfVz1zXA-51V97YGukYjRNBFI&region_country=FR" class="link-reversed link-tap-area">Suivre mon colis</a>
+                            <a href="https://account.devred.com/profile?locale=fr&region_country=FR&buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ5eGR2c3cteXcubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzgxMDk1MDY3LCJuYmYiOjE3ODA0OTAyNjd9.FoKj5xsgT84LCmvmqrMkhxmy2xRrxvHHvqbD4fTcjxk" class="link-reversed link-tap-area">Suivre mon colis</a>
                           </li><li>
                             <a href="https://devred.com/pages/cgv#delais-de-livraison" class="link-reversed link-tap-area">Livraison & retours</a>
                           </li><li>
@@ -3271,7 +3270,7 @@ first.parentNode.insertBefore(script, first);
 
 
 </div><div id="shopify-block-Ad3lHck9Ccldkb2R1R__12526071353035850722" class="shopify-block shopify-app-block">
-  <script defer src="https://backinstock.useamp.com/widget/219673_1774631000.js?category=bis&v=6"></script>
+  <script defer src="https://backinstock.useamp.com/widget/219673_1780480812.js?category=bis&v=6"></script>
 
 
 <script id="back-in-stock-helper-embedded">
