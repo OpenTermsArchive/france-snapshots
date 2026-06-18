@@ -1,26 +1,1763 @@
-<!DOCTYPE html>
-			<html lang="fr">
+
+	<!DOCTYPE html>
+		<html lang="fr">
 			<head>
-				<meta charset="UTF-8">
-				<meta name="viewport" content="width=device-width, initial-scale=1.0">
-				<title>Vérification de sécurité | Spartoo</title>
-				<link rel="stylesheet" href="/css/pow.css">
-			</head>
-			<body>
-				<div class="container">
-					<div class="logo">Spartoo</div>
-					<h1>Vérification de votre navigateur ...</h1>
-					<div class="loader" id="loader"></div>
-					<p>Nous vérifions que vous n'êtes pas un robot. Cela ne prendra que quelques secondes.</p>
-					<p id="status">Vérification en cours ...</p>
+			<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+			<title>Protection des données personnelles</title>
+			<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5">
 
-					<div id="pow-data" data-challenge="ae74f1024b15bc212c491498bd9cbe3de99c6d36e8c830fee56e338a512fce99" data-difficulty="3" data-rounds="8"></div>
+		<link rel="stylesheet" href="https://imgext.spartoo.com/css/styles_desktop_SP-20260612.css" media="all" />
+		<link rel="stylesheet" href="https://imgext.spartoo.com/css/css_desktop_SP_fr-20260612.css" media="all" />
+	<link rel="search" type="application/opensearchdescription+xml" title="www.spartoo.com" href="/searchEngine.xml" />
 
-					<form id="pow-form" method="POST" style="display:none;">
-						<input type="hidden" name="pow_nonce" id="pow-nonce">
-						<input type="hidden" name="pow_ts" value="1781700458">
-					</form>
+		<script type="text/javascript" nonce="0db458abc6ed059d8341dbdd3c697a40">
+			window.onerror = function (msg, err_url, line, column, error) {
+
+				if(msg == "ResizeObserver loop limit exceeded" ||
+					msg == "ResizeObserver loop completed with undelivered notifications.") {
+					return;
+				}
+
+				let details = "";
+				if(typeof error != "undefined" && error !== null) {
+					if(typeof error.stack == "string") {
+						details = error.stack;
+					} else if(typeof error.toString == "function") {
+						details = error.toString();
+					}
+				}
+
+				var source_code = document.documentElement.innerHTML.split("\n");
+				source_code.splice(line + 0, source_code.length - (line + 0));
+				source_code.splice(0, line - 0);
+
+				var post_data = "action=insert&msg=" + encodeURIComponent(msg)
+					+ "&err_url=" + encodeURIComponent(err_url)
+					+ "&line=" + encodeURIComponent(line)
+					+ "&column=" + encodeURIComponent(column)
+					+ "&error=" + encodeURIComponent(details)
+					+ "&browser=" + encodeURIComponent(navigator.userAgent)
+					+ "&source_code=" + encodeURIComponent(source_code.join("\n"));
+
+				var XhrObj = new XMLHttpRequest();
+
+				XhrObj.open("GET", "/ajax/save_javascript_error.php" + "?" + post_data);
+
+				XhrObj.send(null);
+			};
+		</script>
+	<script type="text/javascript" crossorigin="anonymous" src="https://imgext.spartoo.com/js/min/js_desktop_fr.min-20260612.js"></script>
+	<script type="text/javascript" crossorigin="anonymous" src="https://imgext.spartoo.com/js/min/js_async_fr.min-20260612.js" async defer ></script>
+	<script type="text/javascript" crossorigin="anonymous" src="https://imgext.spartoo.com/js/libext/jquery/jquery.produits.js"></script>
+
+		<link rel="apple-touch-icon" sizes="180x180" href="https://imgext.spartoo.com/images/favicon/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="https://imgext.spartoo.com/images/favicon/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="https://imgext.spartoo.com/images/favicon/favicon-16x16.png" />
+		<link rel="manifest" href="/images/favicon/manifest.json" />
+		<link rel="mask-icon" href="https://imgext.spartoo.com/images/favicon/safari-pinned-tab.svg" color="#C30040" />
+		<meta name="theme-color" content="#C30040" />
+<meta name="robots" content="noodp" />
+	<script>
+		var pushId = 'web.com.spartoo';
+
+		var pushNotification = function () {
+			'use strict';
+
+			if ('safari' in window && 'pushNotification' in window.safari){
+				var permissionData = window.safari.pushNotification.permission(pushId);
+				checkRemotePermission(permissionData);
+			}
+		};
+		var checkRemotePermission = function (permissionData){
+			'use strict';
+
+			if(permissionData.permission === 'default'){
+				console.log("default");
+				window.safari.pushNotification.requestPermission(
+					'https://www.spartoo.com/mobile/webservices_appli_mobile',
+					pushId,
+					{},
+					checkRemotePermission
+				);
+			} else if(permissionData.permission === 'denied'){
+				console.log("denied");
+			} else if(permissionData.permission === 'granted'){
+				console.log("granted");
+			}
+		};
+	</script>
+			<link rel="alternate" media="only screen and (max-width: 640px)" href="https://www.spartoo.com/mobile/cnil.php" />
+			<link rel="alternate" media="handheld" href="https://www.spartoo.com/mobile/cnil.php" />
+		</head>
+		<body onload="">
+
+				<a class="skip-link" href="#skip-link-anchor">Aller au contenu principal</a>
+			<div id="popup_alert_parent"></div>
+			<script>
+				/**
+				 * Fonction qui détermine si on met les cookies selon le choix du visiteur + gestion gtag
+				 * @param  bool $allow_cookies Choix du visiteur du l'acceptation des cookies (1 ou 0)
+				 */
+				function verifCookies(allow_cookies){
+
+					if(typeof gtag != "undefined") {
+						if(allow_cookies == 1) {
+							gtag("consent", "update", {
+								"ad_storage": "granted",
+								"analytics_storage": "granted",
+								"ad_user_data": "granted",
+								"ad_personalization": "granted"
+							});
+						} else {
+							gtag("consent", "update", {
+								"ad_storage": "denied",
+								"analytics_storage": "denied",
+								"ad_user_data": "denied",
+								"ad_personalization": "denied"
+							});
+						}
+					}
+
+					if(allow_cookies == 1) {
+						window.uetq = window.uetq || [];
+						window.uetq.push("consent", "update", {"ad_storage": "granted"});
+					} else {
+						window.uetq = window.uetq || [];
+						window.uetq.push("consent", "update", {"ad_storage": "denied"});
+					}
+
+					if(allow_cookies == 1 && typeof load_tag === "function") {
+						load_tag();
+						setTimeout(unload_tag, SP.tags.timeout);
+					}
+
+					if($.ajax) {
+						$.ajax({
+							type: "GET",
+							url: "../ajax/allow_cookies.php",
+							data: "allow_cookies=" + allow_cookies
+						}).done(function(result) {
+							$(".cookies_info").hide();
+						});
+					} else {
+						$(".cookies_info").hide();
+					}
+				}
+			</script>
+
+
+			<div class="cookies_info">
+				<div class="cookies_info-pop">
+					<div class="cookies_info-pop-title">Gestion des préférences sur les cookies</div>
+					<div class="cookies_info-pop-text">Spartoo utilise des cookies strictement nécessaires au fonctionnement du site internet, ainsi que pour la personnalisation du contenu et l'analyse du trafic. Nos partenaires utilisent des cookies afin d'afficher de la publicité personnalisée en fonction de votre navigation et de votre profil. Si vous cliquez sur "Tout accepter et fermer" ci-dessous, vous pourrez à tout moment modifier vos préférences dans votre compte client. Si vous cliquez sur "Tout refuser", seuls les cookies strictement nécessaires au fonctionnement du site seront utilisés. Pour plus d'informations, veuillez lire notre <a href="https://www.spartoo.com/cnil.php">Politique de protection des données</a>.</div>
+					<div class="cookies_info-pop-buttons">
+						<button class="cookies_info-pop-buttons-refuse" onclick="javascript:verifCookies(0);">Tout refuser</button>
+						<button class="cookies_info-pop-buttons-accept" onclick="javascript:verifCookies(1);">Tout accepter et fermer</button>
+					</div>
 				</div>
-				<script src="https://imgext.spartoo.com/js/page/pow.js"></script>
-			</body>
-			</html>
+			</div><script>
+			var TEXT_SEARCH_SUGGESTIONS = "Suggestions de recherche";
+			var HEADER_MENU_TREND_NOW = "Tendances du moment";
+			var TEXT_SEARCH_BEST_SALES = "Meilleures Ventes";
+		</script>
+			<script>
+				$(
+					function(){
+						SP.HeaderFront.header_services_init([{"index":"<a href=\"spartoo-ventes-privees.php\">Journ\u00e9es magiques! Jusqu'\u00e0 -30%<i class=\"icon-flecheDroite\"><\/i><\/a>"},{"index":"Livraison gratuite et retour offert"}], 0, 105);
+					}
+				);
+			</script><div id="header_services"><div></div></div><div id="parent">
+			<script type="text/javascript">
+				function timer_op_right() {}
+			</script>
+				<header id="header">
+					<div class="topLine">
+						<div>
+							<span>
+							Service client&nbsp;
+							<a id="callNumber" href="tel:01 85 09 79 58">01 85 09 79 58<span id="call_horaires">lundi - vendredi : 9h - 22h | samedi - dimanche : 9h - 17h (prix d'un appel local)</span></a>&nbsp;
+							</span>
+							<a href="https://www.spartoo.com/compte.php?commande=1" >Suivi de commande</a>
+							<a href="javascript:faq_popup('retour');">Retours</a>
+							<a href="contact.php" >Aide</a>
+							
+							
+						</div>
+					</div>
+						<div class="header_top">
+					<a href="/" class="logo">
+						<img src="https://imgext.spartoo.com/includes/languages/french/images/topLogo.svg" alt="Spartoo" width="230" height="115" />
+					</a>
+						<form  class="searchContainer search headerSearch" action="search.php" method="get" id="form_search"><input class="headerSearchBar" type="text" name="keywords" id="keywords_field" autocomplete="off" value="" onfocus="completeSearchEngine();" onclick="displayDefaultResults();" placeholder="Rechercher un modèle, marque, référence"  /><button id="submit_search" class="valid_search" type="submit" aria-label="Rechercher"><i class="icon-rechercher"></i></button>
+						</form>
+						<div class="headerOptions">
+							<div class="headerOption">
+
+								<a href="https://www.spartoo.com/compte.php" ><i class="icon-persoCompte "></i>Mon compte</a></div><div class="headerOption">
+				<a href="https://www.spartoo.com/wishList_sp.php"><i class="icon-coeur"></i>Mes Préférés</a></div>			<div class="headerOption" onmouseover="if(typeof(get_panier_hover) != 'undefined'){get_panier_hover();}">
+								<a href="panier.php"><i class="icon-panier"></i>Mon panier</a><div id="topPanier">
+								</div>
+							</div>
+						</div>
+					</div>
+				</header>
+		
+		<nav id="nav"><ul id="onglets" onmouseover="if(typeof SP != 'undefined' && typeof SP.front != 'undefined' && typeof SP.front.lazyLoader != 'undefined'){ SP.front.lazyLoader.lazyHeader(); }"><div style="width:calc((100% - 1200px)/2);"></div>
+			<li><a href="chaussures-nouvelle-collection.php" >Nouveautés</a>
+				<div id="menuGlobal">
+					<div>
+						<div class="headerMenu_linkListTitle"><a href="chaussures-nouvelle-collection-femme.php" >Femme</a></div>
+						<div class="listLiens_specialLink_newF" style="background: url(https://imgext.spartoo.com/images//header_menu_new_sprite_pe---20260507.jpg) no-repeat 0 0;"></div>
+						<div><a href="chaussures-nouvelle-collection-femme.php" >Collection Printemps / Été</a></div>
+						<a href="chaussures-nouvelle-collection-femme-chaussures.php" >Nouveautés chaussures</a><br />
+						<a href="chaussures-nouvelle-collection-femme-vetements.php" >Nouveautés vêtements</a><br />
+						<a href="chaussures-nouvelle-collection-femme-sacs.php" >Nouveautés sacs</a><br />&nbsp;<br />
+						<a href="nouvelle-collection-semaine-femme.php" >Nouveautés de cette semaine</a> <br />
+						<a href="nouvelle-collection-mois-femme.php" >Nouveautés de ce mois</a> <br />
+						<div><a href="Petits-prix-st-11975-0-femme.php" >Sélection femme à moins de 70€  <i class="icon-flecheDroite"></i></a></div>
+						<div><a href="chaussures-nouvelle-collection-femme.php" >Toutes les nouveautés de la saison</a> <i class="icon-flecheDroite"></i></div>
+					</div><div>
+						<div class="headerMenu_linkListTitle"><a href="chaussures-nouvelle-collection-homme.php" >Homme</a></div>
+						<div class="listLiens_specialLink_newH" style="background: url(https://imgext.spartoo.com/images//header_menu_new_sprite_pe---20260507.jpg) no-repeat 0 -87px;"></div>
+						<div><a href="chaussures-nouvelle-collection-homme.php" >Collection Printemps / Été</a></div>
+						<a href="chaussures-nouvelle-collection-homme-chaussures.php" >Nouveautés chaussures</a><br />
+						<a href="chaussures-nouvelle-collection-homme-vetements.php" >Nouveautés vêtements</a><br />
+						<a href="chaussures-nouvelle-collection-homme-sacs.php" >Nouveautés sacs</a><br />&nbsp;<br />
+						<a href="nouvelle-collection-semaine-homme.php" >Nouveautés de cette semaine</a><br/>
+						<a href="nouvelle-collection-mois-homme.php" >Nouveautés de ce mois</a><br />
+						<div><a href="Petits-prix-st-11975-0-homme.php" >Sélection homme à moins de 70€  <i class="icon-flecheDroite"></i></a></div>
+						<div><a href="chaussures-nouvelle-collection-homme.php" >Toutes les nouveautés de la saison</a> <i class="icon-flecheDroite"></i></div>
+					</div><div>
+						<div class="headerMenu_linkListTitle"><a href="chaussures-nouvelle-collection-enfants.php" >Enfant</a></div>
+						<div class="listLiens_specialLink_newK" style="background: url(https://imgext.spartoo.com/images//header_menu_new_sprite_pe---20260507.jpg) no-repeat 0 -174px;"></div>
+						<div><a href="chaussures-nouvelle-collection-enfants.php" >Collection Printemps / Été</a></div>
+						<a href="chaussures-nouvelle-collection-enfants-chaussures.php" >Nouveautés chaussures</a><br />
+						<a href="chaussures-nouvelle-collection-enfants-vetements.php" >Nouveautés vêtements</a><br />
+						<a href="chaussures-nouvelle-collection-enfants-sacs.php" >Nouveautés sacs</a><br />&nbsp;<br />
+						<a href="nouvelle-collection-semaine-enfants.php" >Nouveautés de cette semaine</a><br/>
+						<a href="nouvelle-collection-mois-enfants.php" >Nouveautés de ce mois</a> <br />
+						<div><a href="Petits-prix-st-11975-0-enfants.php" >Sélection enfant à moins de 70€  <i class="icon-flecheDroite"></i></a></div>
+						<div><a href="chaussures-nouvelle-collection-enfants.php" >Toutes les nouveautés de la saison</a> <i class="icon-flecheDroite"></i></div>
+					</div><div>
+						<div class="headerMenu_linkListTitle"><a href="univers-luxe.php?classement=NEW_PRODUCTS" >Luxe</a></div>
+						<div class="listLiens_specialLink_newK" style="background: url(https://imgext.spartoo.com/images//header_menu_luxe---20260507.jpg) no-repeat 0 0;"></div>
+						<div><a href="univers-luxe.php?classement=NEW_PRODUCTS" >Collection Printemps / Été</a></div>
+						<a href="univers-luxe-chaussures.php?classement=NEW_PRODUCTS" >Nouveautés chaussures</a><br />
+						<a href="univers-luxe-vetements.php?classement=NEW_PRODUCTS" >Nouveautés vêtements</a><br />
+						<a href="univers-luxe-sacs.php?classement=NEW_PRODUCTS" >Nouveautés sacs</a><br />
+						<br />
+						<br /><br /><br />
+						<div><a href="univers-luxe.php?classement=NEW_PRODUCTS" >Toutes les nouveautés de la saison</a> <i class="icon-flecheDroite"></i></div>
+					</div><div><div class="headerMenu_linkListTitle"><a href="tendances-mode.php?filterGender=f">Inspirations Femme</a></div><a href="tendances-mode.php?tendance_id=33169" >Mode estivale</a><br /><a href="tendances-mode.php?tendance_id=33121" >Allure rayures</a><br /><a href="tendances-mode.php?tendance_id=33073" >Boho style</a><br /><a href="tendances-mode.php?tendance_id=33025" >Flower mania</a><br /><div class="headerMenu_linkListTitle"><a href="tendances-mode.php?filterGender=h" class="header_gender_trend_link">Inspirations Homme</a></div><a href="tendances-mode.php?tendance_id=33193" >Colormania</a><br /><a href="tendances-mode.php?tendance_id=33145" >Cool attitude</a><br /><a href="tendances-mode.php?tendance_id=33097" >Mix de textures</a><br /><a href="tendances-mode.php?tendance_id=33049" >Nouvelle ère</a><br />
+					<a href="service_cadeau.php" class="header_carteKdo" style="margin-top:20px;">
+						<img class="lazyHeader" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/header_menu_carteKdo.gif" alt="Offrez la mode en cadeau" />
+						Carte cadeau
+					</a>
+				</div><div class="headerMenu_linkMagtoo"><a href="http://www.magtoo.fr" target="_blank" rel="noopener"><img class="lazyHeader" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/magtoo.gif" alt="Mag mode en ligne" /></a></div>
+			</div>
+		</li>
+		<li><a href="femme.php">Femme</a>
+			<div id="menuFemme"><div>
+					<div class="headerMenu_linkListTitle"><a href="chaussures-femmes.php" >Chaussures femmes</a></div>
+					<a href="Mule-Sabot-femme-st-10217-10139-0.php" ><i class="icon-mules"></i> Mules / Sabots</a><br /><a href="Basket-femme-st-10217-10157-0.php" ><i class="icon-sneakers"></i> Baskets</a><br /><a href="Sandale-femme-st-10217-10148-0.php" ><i class="icon-sandales"></i> Sandales et Nu-pieds</a><br /><a href="tong-femme-st-10217-10155-0.php" ><i class="icon-tongs"></i> Tongs / Claquettes</a><br /><a href="Ballerine-femme-st-10217-10119-0.php" ><i class="icon-ballerines"></i> Ballerines / Babies</a><br /><a href="Slip-ons-femme-st-10217-10152-0.php" ><i class="icon-slipon"></i> Slip ons</a><br /><a href="Bottine-femme-st-10217-10127-0.php" ><i class="icon-boots"></i> Bottines / Boots</a><br /><a href="Escarpin-femme-st-10217-10134-0.php" ><i class="icon-escarpins"></i> Escarpins</a><br /><a href="Espadrilles-femme-st-10217-10135-0.php" ><i class="icon-espadrilles"></i> Espadrilles</a><br /><a href="Chaussures-de-sport-femme-st-10217-10005-0.php" ><i class="icon-sport"></i> Chaussures de sport</a><br /><a href="Mocassins-et-Chaussures-bateau-femme-st-10217-10129-0.php" ><i class="icon-mocassins"></i> Mocassins & Chaussures bateau</a><br /><a href="Chaussons-femme-st-10217-10141-0.php" ><i class="icon-chaussons"></i> Pantoufles / Chaussons</a><br />
+					<div><a href="Petits-prix-st-11975-0-femme-chaussures.php" >Chaussures femme à moins de 70€  <i class="icon-flecheDroite"></i></a></div>
+					<div><a href="chaussures-femmes.php" >Toutes les chaussures femme <i class="icon-flecheDroite"></i></a></div>
+				</div><div>
+					<div class="headerMenu_linkListTitle"><a href="vetements-femme.php" >Vêtements femme</a></div>
+					<a href="Robes-femme-st-10617-10515-0.php" ><i class="icon-robes"></i> Robes</a><br /><a href="T-shirts-ET-Polos-femme-st-10617-10170-0.php" ><i class="icon-tshirt"></i> T-shirts & Polos</a><br /><a href="Vestes-femme-st-10617-10174-0.php" ><i class="icon-vestes"></i> Vestes</a><br /><a href="Jeans-femme-st-10617-10176-0.php" ><i class="icon-jeans"></i> Jeans</a><br /><a href="Shorts-ET-Bermudas-femme-st-10617-10181-0.php" ><i class="icon-bermudas"></i> Shorts & Bermudas</a><br /><a href="Manteaux-femme-st-10617-10168-0.php" ><i class="icon-manteaux"></i> Manteaux</a><br /><a href="Maillots-de-bain-femme-st-10617-10193-0.php" ><i class="icon-maillotsbain"></i> Maillots & Shorts de bain </a><br /><a href="Pantalons-femme-st-10617-10179-0.php" ><i class="icon-pantalons"></i> Pantalons</a><br /><a href="Chemises-ET-Tuniques-femme-st-10617-10183-0.php" ><i class="icon-blouses"></i> Tops / Blouses</a><br /><a href="Sweats-ET-Polaires-femme-st-10617-10801-0.php" ><i class="icon-sweats"></i> Sweats & Polaires</a><br /><a href="Pulls-ET-Gilets-femme-st-10617-10171-0.php" ><i class="icon-pulls"></i> Pulls & Gilets</a><br /><a href="Jupes-femme-st-10617-10508-0.php" ><i class="icon-jupes"></i> Jupes</a><br />
+					<div><a href="Petits-prix-st-11975-0-femme-vetements.php" >Vêtements femme à moins de 70€  <i class="icon-flecheDroite"></i></a></div>
+					<div><a href="vetements-femme.php" >Tous les vêtements femme <i class="icon-flecheDroite"></i></a></div>
+				</div><div>
+					<div class="headerMenu_linkListTitle"><a href="Sous-vetements-st-11474-0-femme.php" >Sous-vêtements femme</a></div>
+					<a href="Culottes-ET-autres-bas-femme-st-11474-11392-0.php" ><i class="icon-slips"></i> Culottes & autres bas</a><br /><a href="Soutiens-Gorge-ET-Brassieres-femme-st-11474-10191-0.php" ><i class="icon-soutifs"></i> Soutiens-Gorge & Brassières</a><br /><a href="Autres-types-de-lingerie-femme-st-11474-11393-0.php" ><i class="icon-underwear"></i> Autres types de lingerie</a><br />
+					<br />
+					<div class="headerMenu_linkListTitle"><a href="sacs-femme.php" >Sacs femme</a></div>
+					<a href="Sac-bandouliere-femme-st-10568-10147-0.php" ><i class="icon-bandouliere"></i> Besaces / Sacs bandoulière</a><br /><a href="Sac-a-main-femme-st-10568-10160-0.php" ><i class="icon-sacamain"></i> Sacs à main</a><br /><a href="sac-a-dos-femme-st-10568-10162-0.php" ><i class="icon-sacados"></i> Sacs à dos</a><br /><a href="Cabas-Sac-shopping-femme-st-10568-10674-0.php" ><i class="icon-cabas"></i> Cabas / Sacs shopping</a><br /><a href="sacoche-femme-st-10568-10677-0.php" ><i class="icon-pochette"></i> Pochettes / Sacoches</a><br /><a href="Sac-de-voyage-femme-st-10568-10213-0.php" ><i class="icon-valise"></i> Sacs de voyage</a><br /><a href="portefeuille-femme-st-10568-10201-0.php" ><i class="icon-portefeuille"></i> Portefeuilles / Porte-monnaie</a><br />
+					<div><a href="Petits-prix-st-11975-0-femme-sacs.php" >Sacs femme à moins de 70€  <i class="icon-flecheDroite"></i></a></div>
+					<div><a href="sacs-femme.php" >Tous les sacs femme <i class="icon-flecheDroite"></i></a></div>
+				</div><div>
+					<div class="headerMenu_linkListTitle"><a href="beaute-femme.php" >Beauté</a></div>
+					<a href="Parfums-femme-st-485-426-0.php" ><i class="icon-parfums"></i> Parfums</a><br /><a href="Ongles-femme-st-485-425-0.php" ><i class="icon-ongles"></i> Ongles</a><br /><a href="Soins-cheveux-femme-st-485-428-0.php" ><i class="icon-shampoing"></i> Soins cheveux</a><br /><a href="Maquillage-teint-femme-st-485-424-0.php" ><i class="icon-teint"></i> Maquillage teint</a><br />
+					<br /><div class="headerMenu_linkListTitle"><a href="univers-luxe.php">Luxe</a></div>
+					<a href="Basket-femme-st-10641-10157-0.php" ><i class="icon-sneakers"></i> Baskets</a><br /><a href="Sandale-femme-st-10641-10148-0.php" ><i class="icon-sandales"></i> Sandales et Nu-pieds</a><br /><a href="Vestes-femme-st-10641-10174-0.php" ><i class="icon-vestes"></i> Vestes</a><br />
+					<br>
+					<div class="headerMenu_linkListTitle"><a href="montres-femme.php" >Bijoux</a></div>
+					<a href="Bijoux-femme-st-17-10522-0.php" ><i class="icon-bijoux"></i> Bijoux</a><br /><a href="Montres-femme-st-17-10494-0.php" ><i class="icon-montres"></i> Montres</a><br /><a href="Lunettes-de-soleil-femme-st-17-9847-0.php" ><i class="icon-solaire"></i> Lunettes de soleil</a><br />
+				</div><div>
+					<div class="headerMenu_linkListTitle"><a href="chaussures-vetements-sport-femme.php#rst">Sport</a></div>
+					<a href="selection-chaussures-vetements-bmx-skate-413-femme.php" ><i class="icon-skate2"></i> BMX / Skate</a><br /><a href="selection-chaussures-vetements-sport-indoor-402-femme.php" ><i class="icon-indoor"></i> Sport Indoor</a><br /><a href="selection-chaussures-vetements-running-trail-407-femme.php" ><i class="icon-running"></i> Running</a><br /><a href="selection-chaussures-vetements-fitness-training-405-femme.php" ><i class="icon-fitness"></i> Fitness / Training</a><br />
+					<br />
+					<div class="headerMenu_linkListTitle">Voir la sélection</div>
+					<a href="made-in-france-st-11562-0-femme.php" ><img src="https://imgext.spartoo.com/images//flags_alt/flag_fr.png" width="15" alt="Made in France" /> Made in France</a><br />
+					<a href="chaussure-ecoresponsable-femme.php" ><i class="icon-eco" style="color: #428863;"></i> Écoresponsable</a><br />
+					<a href="Garantie-du-prix-le-plus-bas-st-11940-0-femme.php" >La garantie du prix le plus bas</a><br />
+					<a href="Petits-prix-st-11975-0-femme.php" >Sélection à moins de 70€</a><br />
+					<div class="headerMenu_linkListTitle"><a href="tendances-mode.php?filterGender=f" class="header_gender_trend_link">Inspirations</a></div>
+					<a href="service_cadeau.php" class="header_carteKdo" style="margin-top:20px;">
+						<img class="lazyHeader" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/header_menu_carteKdo.gif" alt="Offrez la mode en cadeau" />
+						Carte cadeau
+					</a>
+				</div></div>
+		</li>
+		<li><a href="homme.php">Homme</a>
+			<div id="menuHomme">
+				<div>
+					<div class="headerMenu_linkListTitle"><a href="chaussures-hommes.php" >Chaussures hommes</a></div>
+					<a href="Mule-Sabot-homme-st-10218-10139-0.php" ><i class="icon-mules"></i> Mules / Sabots</a><br /><a href="Basket-homme-st-10218-10157-0.php" ><i class="icon-sneakers"></i> Baskets</a><br /><a href="tong-homme-st-10218-10155-0.php" ><i class="icon-tongs"></i> Tongs / Claquettes</a><br /><a href="Mocassins-et-Chaussures-bateau-homme-st-10218-10129-0.php" ><i class="icon-mocassins"></i> Mocassins & Chaussures bateau</a><br /><a href="Sandale-homme-st-10218-10148-0.php" ><i class="icon-sandales"></i> Sandales et Nu-pieds</a><br /><a href="Slip-ons-homme-st-10218-10152-0.php" ><i class="icon-slipon"></i> Slip ons</a><br /><a href="Derbies-et-Richelieu-homme-st-10218-10156-0.php" ><i class="icon-derbies"></i> Derbies & Richelieu</a><br /><a href="Bottine-homme-st-10218-10127-0.php" ><i class="icon-boots"></i> Bottines / Boots</a><br /><a href="Chaussures-de-sport-homme-st-10218-10005-0.php" ><i class="icon-sport"></i> Chaussures de sport</a><br /><a href="Espadrilles-homme-st-10218-10135-0.php" ><i class="icon-espadrilles"></i> Espadrilles</a><br /><a href="Chaussure-Skate-homme-st-10218-10150-0.php" ><i class="icon-skate"></i> Skate</a><br /><a href="Chaussons-homme-st-10218-10141-0.php" ><i class="icon-chaussons"></i> Pantoufles / Chaussons</a><br />
+					<div><a href="Petits-prix-st-11975-0-homme-chaussures.php" >Chaussures homme à moins de 70€  <i class="icon-flecheDroite"></i></a></div>
+					<div><a href="chaussures-hommes.php" >Toutes les chaussures homme <i class="icon-flecheDroite"></i></a></div>
+				</div><div>
+					<div class="headerMenu_linkListTitle"><a href="vetements-homme.php" >Vêtements homme</a></div>
+					<a href="T-shirts-ET-Polos-homme-st-10617-10170-0.php" ><i class="icon-tshirt"></i> T-shirts & Polos</a><br /><a href="Shorts-ET-Bermudas-homme-st-10617-10181-0.php" ><i class="icon-bermudas"></i> Shorts & Bermudas</a><br /><a href="Vestes-homme-st-10617-10174-0.php" ><i class="icon-vestes"></i> Vestes</a><br /><a href="Chemises-homme-st-10617-10166-0.php" ><i class="icon-chemises"></i> Chemises</a><br /><a href="Sweats-ET-Polaires-homme-st-10617-10801-0.php" ><i class="icon-sweats"></i> Sweats & Polaires</a><br /><a href="Jeans-homme-st-10617-10176-0.php" ><i class="icon-jeans"></i> Jeans</a><br /><a href="Maillots-de-bain-homme-st-10617-10193-0.php" ><i class="icon-maillotsbain"></i> Maillots & Shorts de bain </a><br /><a href="Joggings-ET-Survetements-homme-st-10617-10997-0.php" ><i class="icon-joggings"></i> Joggings & Survêtements</a><br /><a href="Pantalons-homme-st-10617-10179-0.php" ><i class="icon-pantalons"></i> Pantalons</a><br /><a href="Manteaux-homme-st-10617-10168-0.php" ><i class="icon-manteaux"></i> Manteaux</a><br /><a href="Pulls-ET-Gilets-homme-st-10617-10171-0.php" ><i class="icon-pulls"></i> Pulls & Gilets</a><br /><a href="Pyjamas-Chemises-de-nuit-homme-st-10617-9988-0.php" ><i class="icon-pyjamas"></i> Pyjamas / Chemises de nuit</a><br />
+					<div><a href="Petits-prix-st-11975-0-homme-vetements.php" >Vêtements homme à moins de 70€  <i class="icon-flecheDroite"></i></a></div>
+					<div><a href="vetements-homme.php" >Tous les vêtements homme <i class="icon-flecheDroite"></i></a></div>
+				</div><div>
+					<div class="headerMenu_linkListTitle"><a href="Sous-vetements-st-11474-0-homme.php" >Sous-vêtements homme</a></div>
+					<a href="Boxers-homme-st-11474-10185-0.php" ><i class="icon-boxers"></i> Boxers</a><br /><a href="Calecons-homme-st-11474-10187-0.php" ><i class="icon-calecons"></i> Caleçons</a><br /><a href="Slips-homme-st-11474-10190-0.php" ><i class="icon-slips"></i> Slips</a><br />
+					<br />
+					<div class="headerMenu_linkListTitle"><a href="sacs-homme.php" >Sacs homme</a></div>
+					<a href="sacoche-homme-st-10568-10677-0.php" ><i class="icon-pochette"></i> Pochettes / Sacoches</a><br /><a href="sac-a-dos-homme-st-10568-10162-0.php" ><i class="icon-sacados"></i> Sacs à dos</a><br /><a href="Sac-de-voyage-homme-st-10568-10213-0.php" ><i class="icon-valise"></i> Sacs de voyage</a><br /><a href="Sac-bandouliere-homme-st-10568-10147-0.php" ><i class="icon-bandouliere"></i> Besaces / Sacs bandoulière</a><br /><a href="Valise-homme-st-10568-10215-0.php" ><i class="icon-valise"></i> Valises</a><br /><a href="portefeuille-homme-st-10568-10201-0.php" ><i class="icon-portefeuille"></i> Portefeuilles / Porte-monnaie</a><br /><a href="trousse-homme-st-10568-10566-0.php" ><i class="icon-trousse"></i> Trousses</a><br />
+					<div><a href="Petits-prix-st-11975-0-homme-sacs.php" >Sacs homme à moins de 70€  <i class="icon-flecheDroite"></i></a></div>
+					<div><a href="sacs-homme.php" >Tous les sacs homme <i class="icon-flecheDroite"></i></a></div>
+				</div><div>
+					<div class="headerMenu_linkListTitle"><a href="beaute-homme.php" >Beauté</a></div>
+					<a href="Parfums-homme-st-485-426-0.php" ><i class="icon-parfums"></i> Parfums</a><br /><a href="Soins-cheveux-homme-st-485-428-0.php" ><i class="icon-shampoing"></i> Soins cheveux</a><br /><a href="Soins-visage-homme-st-485-420-0.php" ><i class="icon-visage"></i> Soins visage</a><br />
+					<br />
+					<div class="headerMenu_linkListTitle"><a href="univers-luxe.php">Luxe</a></div>
+					<a href="T-shirts-ET-Polos-homme-st-10641-10170-0.php" ><i class="icon-tshirt"></i> T-shirts & Polos</a><br /><a href="Basket-homme-st-10641-10157-0.php" ><i class="icon-sneakers"></i> Baskets</a><br /><a href="Vestes-homme-st-10641-10174-0.php" ><i class="icon-vestes"></i> Vestes</a><br /><a href="Boxers-homme-st-10641-10185-0.php" ><i class="icon-boxers"></i> Boxers</a><br />
+					<br>
+					<div class="headerMenu_linkListTitle"><a href="montres-homme.php" >Bijoux</a></div>
+					<a href="Bijoux-homme-st-17-10522-0.php" ><i class="icon-bijoux"></i> Bijoux</a><br /><a href="Lunettes-de-soleil-homme-st-17-9847-0.php" ><i class="icon-solaire"></i> Lunettes de soleil</a><br /><a href="Montres-homme-st-17-10494-0.php" ><i class="icon-montres"></i> Montres</a><br />
+				</div><div>
+					<div class="headerMenu_linkListTitle"><a href="chaussures-vetements-sport-homme.php#rst">Sport</a></div>
+					<a href="selection-chaussures-vetements-bmx-skate-413-homme.php" ><i class="icon-skate2"></i> BMX / Skate</a><br /><a href="selection-chaussures-vetements-running-trail-407-homme.php" ><i class="icon-running"></i> Running</a><br /><a href="selection-chaussures-vetements-sport-indoor-402-homme.php" ><i class="icon-indoor"></i> Sport Indoor</a><br /><a href="selection-chaussures-vetements-fitness-training-405-homme.php" ><i class="icon-fitness"></i> Fitness / Training</a><br />
+					<br />
+					<div class="headerMenu_linkListTitle">Voir la sélection</div>
+					<a href="made-in-france-st-11562-0-homme.php" ><img src="https://imgext.spartoo.com/images//flags_alt/flag_fr.png" width="15" alt="Made in France" /> Made in France</a><br />
+					<a href="chaussure-ecoresponsable-homme.php" ><i class="icon-eco" style="color: #428863;"></i> Écoresponsable</a><br />
+					<a href="Garantie-du-prix-le-plus-bas-st-11940-0-homme.php" >La garantie du prix le plus bas</a><br />
+					<a href="Petits-prix-st-11975-0-homme.php" >Sélection à moins de 70€</a><br />
+					<div class="headerMenu_linkListTitle"><a href="tendances-mode.php?filterGender=h" class="header_gender_trend_link">Inspirations</a></div>
+					<a href="service_cadeau.php" class="header_carteKdo" style="margin-top:20px;">
+						<img class="lazyHeader" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/header_menu_carteKdo.gif" alt="Offrez la mode en cadeau" />
+						Carte cadeau
+					</a>
+				</div>
+			</div>
+		</li>
+		<li><a href="enfant.php">Enfant</a>
+			<div id="menuEnfant">
+				<div>
+					<div class="headerMenu_linkListTitle"><a href="bebe.php" >Bébé (0-2 ans)</a></div>
+					<a href="Sandale-st-32-10148.php" ><i class="icon-sandales"></i> Sandales et Nu-pieds</a><br /><a href="Basket-st-32-10157.php" ><i class="icon-sneakers"></i> Baskets</a><br /><a href="Mule-Sabot-st-32-10139.php" ><i class="icon-mules"></i> Mules / Sabots</a><br /><a href="Chaussures-de-sport-st-32-10005.php" ><i class="icon-sport"></i> Chaussures de sport</a><br /><a href="Ballerine-st-32-10119.php" ><i class="icon-ballerines"></i> Ballerines / Babies</a><br />
+					<a href="Bodies-enfant-st-32-12265.php" > Bodies enfant</a><br /><a href="T-shirts-ET-Polos-st-32-10170.php" ><i class="icon-tshirt"></i> T-shirts & Polos</a><br /><a href="Sweats-ET-Polaires-st-32-10801.php" ><i class="icon-sweats"></i> Sweats & Polaires</a><br />
+					<a href="Robes-st-32-10515.php" ><i class="icon-robes"></i> Robes</a><br /><a href="T-shirts-ET-Polos-st-32-10170.php" ><i class="icon-tshirt"></i> T-shirts & Polos</a><br />
+					<div><a href="Petits-prix-st-11975-0-enfants.php" >Sélection à moins de 70€  <i class="icon-flecheDroite"></i></a></div>
+					<div><a href="bebe-chaussures.php" >Toutes les chaussures <i class="icon-flecheDroite"></i></a></div>
+					<div><a href="bebe-vetements.php" >Tous les vêtements <i class="icon-flecheDroite"></i></a></div>
+					<div><a href="bebe-sacs.php" >Tous les sacs <i class="icon-flecheDroite"></i></a></div>
+				</div><div>
+					<div class="headerMenu_linkListTitle"><a href="enfants.php" >Enfant (2-12 ans)</a></div>
+					<a href="Sandale-st-33-10148.php" ><i class="icon-sandales"></i> Sandales et Nu-pieds</a><br /><a href="Basket-st-33-10157.php" ><i class="icon-sneakers"></i> Baskets</a><br /><a href="Mule-Sabot-st-33-10139.php" ><i class="icon-mules"></i> Mules / Sabots</a><br /><a href="Chaussures-de-sport-st-33-10005.php" ><i class="icon-sport"></i> Chaussures de sport</a><br /><a href="tong-st-33-10155.php" ><i class="icon-tongs"></i> Tongs / Claquettes</a><br />
+					<a href="T-shirts-ET-Polos-st-33-10170.php" ><i class="icon-tshirt"></i> T-shirts & Polos</a><br /><a href="Shorts-ET-Bermudas-st-33-10181.php" ><i class="icon-bermudas"></i> Shorts & Bermudas</a><br /><a href="Vestes-st-33-10174.php" ><i class="icon-vestes"></i> Vestes</a><br />
+					<a href="Cartable-st-33-10610.php" ><i class="icon-cartable"></i> Cartable scolaire</a><br /><a href="trousse-st-33-10566.php" ><i class="icon-trousse"></i> Trousses</a><br />
+					<div><a href="Petits-prix-st-11975-0-enfants.php" >Sélection à moins de 70€  <i class="icon-flecheDroite"></i></a></div>
+					<div><a href="enfants-chaussures.php" >Toutes les chaussures <i class="icon-flecheDroite"></i></a></div>
+					<div><a href="enfants-vetements.php" >Tous les vêtements <i class="icon-flecheDroite"></i></a></div>
+					<div><a href="enfants-sacs.php" >Tous les sacs <i class="icon-flecheDroite"></i></a></div>
+				</div><div>
+					<div class="headerMenu_linkListTitle"><a href="ados.php" >Ados (12-16 ans)</a></div>
+					<a href="Basket-st-34-10157.php" ><i class="icon-sneakers"></i> Baskets</a><br /><a href="Sandale-st-34-10148.php" ><i class="icon-sandales"></i> Sandales et Nu-pieds</a><br /><a href="tong-st-34-10155.php" ><i class="icon-tongs"></i> Tongs / Claquettes</a><br /><a href="Mule-Sabot-st-34-10139.php" ><i class="icon-mules"></i> Mules / Sabots</a><br /><a href="Ballerine-st-34-10119.php" ><i class="icon-ballerines"></i> Ballerines / Babies</a><br />
+					<a href="T-shirts-ET-Polos-st-34-10170.php" ><i class="icon-tshirt"></i> T-shirts & Polos</a><br /><a href="Shorts-ET-Bermudas-st-34-10181.php" ><i class="icon-bermudas"></i> Shorts & Bermudas</a><br /><a href="Vestes-st-34-10174.php" ><i class="icon-vestes"></i> Vestes</a><br />
+					<a href="sac-a-dos-st-34-10162.php" ><i class="icon-sacados"></i> Sacs à dos</a><br /><a href="trousse-st-34-10566.php" ><i class="icon-trousse"></i> Trousses</a><br />
+					<div><a href="Petits-prix-st-11975-0-enfants.php" >Sélection à moins de 70€  <i class="icon-flecheDroite"></i></a></div>
+					<div><a href="ados-chaussures.php" >Toutes les chaussures <i class="icon-flecheDroite"></i></a></div>
+					<div><a href="ados-vetements.php" >Tous les vêtements <i class="icon-flecheDroite"></i></a></div>
+					<div><a href="ados-sacs.php" >Tous les sacs <i class="icon-flecheDroite"></i></a></div>
+				</div>
+				<div>
+					<div class="headerMenu_linkListTitle"><a href="marques.php">Marques à la une</a></div>
+					<a href="birkenstock-enfants.php" >BIRKENSTOCK</a><br /><a href="Citrouille-et-Compagnie-b1154-enfants.php" >Citrouille et Compagnie</a><br /><a href="Converse-b5-enfants.php" >Converse</a><br /><a href="Crocs-b508-enfants.php" >Crocs</a><br /><a href="Easy-Peasy-b7936-enfants.php" >Easy Peasy</a><br /><a href="GBB-b487-enfants.php" >GBB</a><br /><a href="Geox-b40-enfants.php" >Geox</a><br /><a href="Little-Mary-b806-enfants.php" >Little Mary</a><br /><a href="adidas-enfants.php" >adidas</a><br />
+					<div><a href="marques.php?gender=K" >Toutes les marques Enfant <i class="icon-flecheDroite"></i></a></div>
+					<br>
+					<div class="headerMenu_linkListTitle">Voir la sélection</div>
+					<a href="Garantie-du-prix-le-plus-bas-st-11940-0-enfants.php" >La garantie du prix le plus bas</a><br />
+					<a href="Petits-prix-st-11975-0-enfants.php" >Sélection à moins de 70€</a><br>
+				</div><div>
+					<div class="headerMenu_linkListTitle">Marque à la une</div><a href="Easy-Peasy-b7936.php#rst">
+						<img class="lazyHeader" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/header_kids_7936---20260507.jpg" alt="Easy Peasy" />
+					</a>
+		<a href="service_cadeau.php" class="header_carteKdo" style="margin-top:20px;">
+						<img class="lazyHeader" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/header_menu_carteKdo.gif" alt="Offrez la mode en cadeau" />
+						Carte cadeau
+					</a>
+				</div>
+			</div>
+		</li>
+				<li>
+					<a href="marques.php" id="headerMenuBrand">8948 Marques</a>
+					<div id="menuBrand">
+						<ul>
+							<li>
+								<p class="menuBrandDiv">Top 100</p>
+								<div id="topBrand">
+									<div class="listBrand"><span class="brandLetter">A</span><br /><a href="adidas.php" >adidas</a><br /><a href="Airstep-b511.php" >Airstep / A.S.98</a><br /><a href="Allrounder-by-Mephisto-b2421.php" >Allrounder by Mephisto</a><br /><a href="Art-b105.php" >Art</a><br /><a href="Ash-b121.php" >Ash</a><br /><a href="Asics-b63.php" >Asics</a><br /><span class="brandLetter">B</span><br />
+						<a href="birkenstock.php" class="bestBrand">BIRKENSTOCK</a>
+						<br><a href="hugo-boss.php" >BOSS</a><br />
+						<a href="BOTD-b29549.php" class="bestBrand">BOTD</a>
+						<br><a href="Bensimon-b330.php" >Bensimon</a><br />
+						<a href="Betty-London-b939.php" class="bestBrand">Betty London</a>
+						<br><a href="Billowy-b7805.php" >Billowy</a><br /><a href="Bopy-b1287.php" >Bopy</a><br /><span class="brandLetter">C</span><br /><a href="Cacatoes-b86127.php" >Cacatoès</a><br /><a href="Camper-b32.php" >Camper</a><br />
+						<a href="Carlington-b472.php" class="bestBrand">Carlington</a>
+						<br>
+						<a href="Casual-Attitude-b985.php" class="bestBrand">Casual Attitude</a>
+						<br><a href="Caterpillar-b228.php" >Caterpillar</a><br /><a href="Chattawak-b47356.php" >Chattawak</a><br />
+						<a href="Citrouille-et-Compagnie-b1154.php" class="bestBrand">Citrouille et Compagnie</a>
+						<br>
+									</div>
+									<div class="listBrand"><a href="Clarks-b21.php" >Clarks</a><br />
+						<a href="Converse-b5.php" class="bestBrand">Converse</a>
+						<br><a href="Cool-shoe-b803.php" >Cool shoe</a><br /><a href="Crocs-b508.php" >Crocs</a><br /><span class="brandLetter">D</span><br /><a href="Dorking-b680.php" >Dorking</a><br /><a href="Dr.-Martens-b76.php" >Dr. Martens</a><br />
+						<a href="Dream-in-Green-b940.php" class="bestBrand">Dream in Green</a>
+						<br><span class="brandLetter">E</span><br />
+						<a href="Easy-Peasy-b7936.php" class="bestBrand">Easy Peasy</a>
+						<br><a href="El-Naturalista-b43.php" >El Naturalista</a><br /><a href="Eva-Frutos-b89221.php" >Eva Frutos</a><br /><span class="brandLetter">F</span><br />
+						<a href="Fashion-brands-b68758.php" class="bestBrand">Fashion brands</a>
+						<br>
+						<a href="Fericelli-b984.php" class="bestBrand">Fericelli</a>
+						<br><a href="FitFlop-b402.php" >FitFlop</a><br /><a href="Fluchos-b678.php" >Fluchos</a><br /><a href="Fred-Perry-b801.php" >Fred Perry</a><br /><span class="brandLetter">G</span><br />
+						<a href="GBB-b487.php" class="bestBrand">GBB</a>
+						<br><a href="Gabor-b629.php" >Gabor</a><br /><a href="Geox-b40.php" >Geox</a><br /><a href="Gioseppo-b1009.php" >Gioseppo</a><br />
+									</div>
+									<div class="listBrand"><a href="Gola-b73.php" >Gola</a><br /><a href="Guess-b775.php" >Guess</a><br /><span class="brandLetter">H</span><br /><a href="HEYDUDE-b88155.php" >HEYDUDE</a><br /><a href="HOFF-b62266.php" >HOFF</a><br /><a href="Havaianas-b333.php" >Havaianas</a><br /><span class="brandLetter">I</span><br /><a href="Inuovo-b88500.php" >Inuovo</a><br /><span class="brandLetter">J</span><br />
+						<a href="JB-Martin-b108.php" class="bestBrand">JB Martin</a>
+						<br><a href="JOTT-b58125.php" >JOTT</a><br /><a href="Jack-ET-Jones-b1483.php" >Jack & Jones</a><br /><a href="Josef-Seibel-b1925.php" >Josef Seibel</a><br /><span class="brandLetter">K</span><br /><a href="K-Way-b2430.php" >K-Way</a><br /><a href="Kickers-b65.php" >Kickers</a><br /><span class="brandLetter">L</span><br /><a href="L-Atelier-Tropezien-b79253.php" >L'Atelier Tropézien</a><br /><a href="LANCASTER-b59834.php" >LANCASTER</a><br /><a href="Lacoste-b90.php" >Lacoste</a><br /><a href="Lancel-b88824.php" >Lancel</a><br /><a href="Laura-Vita-b66846.php" >Laura Vita</a><br /><a href="ralph-lauren.php" >Lauren Ralph Lauren</a><br />
+									</div>
+									<div class="listBrand"><a href="Le-Temps-des-Cerises-b622.php" >Le Temps des Cerises</a><br /><a href="lpb.php" >Les Petites Bombes</a><br />
+						<a href="Les-Tropeziennes-par-M.Belarbi-b118.php" class="bestBrand">Les Tropeziennes par M.Be..</a>
+						<br><a href="Levi-s-b95.php" >Levi's</a><br />
+						<a href="Little-Mary-b806.php" class="bestBrand">Little Mary</a>
+						<br><span class="brandLetter">M</span><br /><a href="MICHAEL-Michael-Kors-b2093.php" >MICHAEL Michael Kors</a><br /><a href="Mam-Zelle-b27704.php" >Mam'Zelle</a><br /><a href="Mapache-b88569.php" >Mapache</a><br /><a href="Mephisto-b2862.php" >Mephisto</a><br /><a href="Mjus-b1061.php" >Mjus</a><br />
+						<a href="Moony-Mood-b551.php" class="bestBrand">Moony Mood</a>
+						<br><a href="Mustang-b1058.php" >Mustang</a><br /><span class="brandLetter">N</span><br /><a href="Nat-et-Nin-b579.php" >Nat et Nin</a><br /><a href="NeroGiardini-b51792.php" >NeroGiardini</a><br />
+						<a href="New-Balance-b337.php" class="bestBrand">New Balance</a>
+						<br><a href="Nike-b4.php" >Nike</a><br /><a href="No-Name-b424.php" >No Name</a><br /><span class="brandLetter">O</span><br /><a href="Only-b1500.php" >Only</a><br /><span class="brandLetter">P</span><br /><a href="palladium.php" >Palladium</a><br />
+									</div>
+									<div class="listBrand"><a href="birkenstock.php" >Papillio</a><br />
+						<a href="Pellet-b1526.php" class="bestBrand">Pellet</a>
+						<br><a href="Philippe-Model-b49766.php" >Philippe Model</a><br /><a href="Pikolinos-b113.php" >Pikolinos</a><br /><a href="Plakton-b59859.php" >Plakton</a><br /><a href="ralph-lauren.php" >Polo Ralph Lauren</a><br /><a href="Pom-d-Api-b499.php" >Pom d'Api</a><br /><a href="Puma-b36.php" >Puma</a><br /><span class="brandLetter">R</span><br /><a href="Redskins-b120.php" >Redskins</a><br /><a href="reebok.php" >Reebok Classic</a><br /><a href="Remonte-b882.php" >Remonte</a><br /><a href="Rieker-b785.php" >Rieker</a><br /><span class="brandLetter">S</span><br /><a href="Sebago-b226.php" >Sebago</a><br /><a href="Semerdjian-b61485.php" >Semerdjian</a><br /><a href="Shoo-Pom-b10241.php" >Shoo Pom</a><br /><a href="skechers.php" >Skechers</a><br />
+						<a href="So-Size-b1542.php" class="bestBrand">So Size</a>
+						<br><a href="Superga-b115.php" >Superga</a><br /><a href="Sweet-Lemon-b35790.php" >Sweet Lemon</a><br /><span class="brandLetter">T</span><br /><a href="TBS-b1165.php" >TBS</a><br />
+									</div>
+									<div class="listBrand"><a href="Tamaris-b595.php" >Tamaris</a><br /><a href="Tann-s-b997.php" >Tann's</a><br /><a href="Teddy-Smith-b1880.php" >Teddy Smith</a><br /><a href="Teva-b1153.php" >Teva</a><br /><a href="Timberland-b103.php" >Timberland</a><br /><a href="tommy-hilfiger.php" >Tommy Hilfiger</a><br /><span class="brandLetter">U</span><br /><a href="UGG-b409.php" >UGG</a><br /><a href="Unisa-b233.php" >Unisa</a><br /><span class="brandLetter">V</span><br /><a href="Vanessa-Wu-b60109.php" >Vanessa Wu</a><br /><a href="Vans-b52.php" >Vans</a><br /><a href="Veja-b2005.php" >Veja</a><br /><a href="Victoria-b485.php" >Victoria</a><br /><span class="brandLetter">Y</span><br /><a href="YOKONO-b71899.php" >YOKONO</a><br />
+						<a href="Yurban-b1893.php" class="bestBrand">Yurban</a>
+						<br>
+									</div>
+								</div>
+							</li>
+							<li>
+								<p class="menuBrandDiv">A - B</p>
+								<div id="brand1">
+									<div class="listBrand"><span class="brandLetter">#</span><br /><a href="-47-Brand-b46517.php" >'47 Brand</a><br /><a href="0-105-b89523.php" >0-105</a><br /><a href="1789-Cala-b1888.php" >1789 Cala</a><br /><a href="2-Go-Fashion-b68006.php" >2 Go Fashion</a><br /><a href="24-Hrs-b2160.php" >24 Hrs</a><br /><a href="48-Horas-b2265.php" >48 Horas</a><br /><a href="4B12-b71262.php" >4B12</a><br /><a href="5Pm-b89691.php" >5Pm</a><br /><span class="brandLetter">A</span><br /><a href="Acebo-s-b10187.php" >Acebo's</a><br /><a href="adidas.php" class="bestBrand">adidas</a><br /><a href="adidas-TERREX-b74646.php" >adidas TERREX</a><br /><a href="Adige-b65134.php" >Adige</a><br /><a href="Admas-b57342.php" >Admas</a><br /><a href="Adolfo-Dominguez-b15523.php" >Adolfo Dominguez</a><br /><a href="Aeronautica-Militare-b2459.php" >Aeronautica Mili..</a><br /><a href="Agatha-Ruiz-de-la-Prada-b481.php" >Agatha Ruiz de l..</a><br /><a href="Aigle-b16.php" >Aigle</a><br /><a href="Airstep-b511.php" class="bestBrand">Airstep / A.S.98</a><br /><a href="Aku-b2934.php" >Aku</a><br /><a href="Albano-b2429.php" >Albano</a><br /><a href="Alberto-Guardiani-b4143.php" >Alberto Guardian..</a><br />
+												</div>
+												<div class="listBrand"><a href="Alfonso-b38962.php" >Alfonso</a><br /><a href="Alibi-b27196.php" >Alibi</a><br /><a href="Aliwell-b15479.php" >Aliwell</a><br /><a href="Allrounder-by-Mephisto-b2421.php" class="bestBrand">Allrounder by Me..</a><br /><a href="ALMA-EN-PENA-b88227.php" >ALMA EN PENA</a><br /><a href="ALOHAS-b88139.php" >ALOHAS</a><br /><a href="Alpe-b89105.php" >Alpe</a><br /><a href="Alpha-Industries-b9380.php" >Alpha Industries</a><br /><a href="Altex-b13301.php" >Altex</a><br /><a href="Ama-Brand-b64795.php" >Ama Brand</a><br /><a href="Amarpies-b42054.php" >Amarpies</a><br /><a href="Amelie-b51096.php" >Amelie</a><br /><a href="American-Tourister-b33562.php" >American Tourist..</a><br /><a href="American-Vintage-b149.php" >American Vintage</a><br /><a href="Ami-Paris-b62436.php" >Ami Paris</a><br /><a href="Anatomic-ET-Co-b49797.php" >Anatomic & Co</a><br /><a href="Anatonic-b63964.php" >Anatonic</a><br /><a href="Andrea-Conti-b2019.php" >Andrea Conti</a><br /><a href="Andypola-b88240.php" >Andypola</a><br /><a href="Anekke-b41132.php" >Anekke</a><br /><a href="Angel-Alarcon-b7812.php" >Angel Alarcon</a><br /><a href="Angelitos-b2348.php" >Angelitos</a><br /><a href="Animal-b12617.php" >Animal</a><br />
+												</div>
+												<div class="listBrand"><a href="Anna-Luchini-b81178.php" >Anna Luchini</a><br /><a href="Another-Trend-b89131.php" >Another Trend</a><br /><a href="Anthology-Paris-b88827.php" >Anthology Paris</a><br /><a href="Antony-Morato-b1950.php" >Antony Morato</a><br /><a href="Aplauso-b11899.php" >Aplauso</a><br /><a href="Apple-Of-Eden-b29333.php" >Apple Of Eden</a><br /><a href="Ara-b786.php" >Ara</a><br /><a href="Arche-b20203.php" >Arche</a><br /><a href="Arcopedico-b7389.php" >Arcopedico</a><br /><a href="Arena-b6795.php" >Arena</a><br /><a href="Argenta-b20354.php" >Argenta</a><br /><a href="ARIZONA-LOVE-b88825.php" >ARIZONA LOVE</a><br /><a href="Armani-Exchange-st-11503-0.php" >Armani Exchange</a><br /><a href="Armata-Di-Mare-b26877.php" >Armata Di Mare</a><br /><a href="Armistice-b43017.php" >Armistice</a><br /><a href="Armor-Lux-b40172.php" >Armor Lux</a><br /><a href="Art-b105.php" class="bestBrand">Art</a><br /><a href="Art-of-Soule-b754.php" >Art of Soule</a><br /><a href="Arthur-ET-Aston-b1297.php" >Arthur & Aston</a><br /><a href="Artiker-b50267.php" >Artiker</a><br /><a href="Ash-b121.php" class="bestBrand">Ash</a><br /><a href="Asics-b63.php" class="bestBrand">Asics</a><br /><a href="Asolo-b702.php" >Asolo</a><br />
+												</div>
+												<div class="listBrand"><a href="Asquith-ET-Fox-b47345.php" >Asquith & Fox</a><br /><a href="Asso-b9907.php" >Asso</a><br /><a href="Aster-b117.php" >Aster</a><br /><a href="At.p.co-b2712.php" >At.p.co</a><br /><a href="Athena-b58892.php" >Athena</a><br /><a href="Autenti-b35111.php" >Autenti</a><br /><a href="Autry-b62293.php" >Autry</a><br /><a href="Avarcas-C.ortuno-b85955.php" >Avarcas C.ortuño</a><br /><a href="Azzaro-b122.php" >Azzaro</a><br /><span class="brandLetter">B</span><br /><a href="B.young-b441.php" >B.young</a><br /><a href="Babybotte-b1644.php" >Babybotte</a><br /><a href="Back-70-b89024.php" >Back 70</a><br /><a href="Back70-b78206.php" >Back70</a><br /><a href="Baerchi-b7806.php" >Baerchi</a><br /><a href="Bamba-By-Victoria-b27461.php" >Bamba By Victori..</a><br /><a href="Banana-Moon-b1593.php" >Banana Moon</a><br /><a href="Barbour-b1933.php" >Barbour</a><br /><a href="Basilic-Pepper-b45170.php" >Basilic Pepper</a><br /><a href="Bayton-b32112.php" >Bayton</a><br /><a href="Be-Only-b734.php" >Be Only</a><br /><a href="Bellamy-b7665.php" >Bellamy</a><br /><a href="Belvida-b44754.php" >Belvida</a><br />
+												</div>
+												<div class="listBrand"><a href="Bensimon-b330.php" class="bestBrand">Bensimon</a><br /><a href="BEPPI-b31117.php" >BEPPI</a><br /><a href="Berkemann-b8515.php" >Berkemann</a><br /><a href="Bernie-Mev-b12050.php" >Bernie Mev</a><br /><a href="Berwick-1707-b33824.php" >Berwick 1707</a><br /><a href="Best-Mountain-b540.php" >Best Mountain</a><br /><a href="Bibi-Lou-b89652.php" >Bibi Lou</a><br /><a href="Billabong-b852.php" >Billabong</a><br /><a href="Billowy-b7805.php" class="bestBrand">Billowy</a><br /><a href="Billtornade-b825.php" >Billtornade</a><br /><a href="Bioline-b35868.php" >Bioline</a><br /><a href="Biomecanics-b52797.php" >Biomecanics</a><br /><a href="Bionatura-b8644.php" >Bionatura</a><br /><a href="birkenstock.php" class="bestBrand">BIRKENSTOCK</a><br /><a href="Bisgaard-b65305.php" >Bisgaard</a><br /><a href="Blackstone-b176.php" >Blackstone</a><br /><a href="Blanditos-b75371.php" >Blanditos</a><br /><a href="Blauer-b89141.php" >Blauer</a><br /><a href="Blowfish-Malibu-b607.php" >Blowfish Malibu</a><br /><a href="Blundstone-b30403.php" >Blundstone</a><br /><a href="Blusandal-b57092.php" >Blusandal</a><br /><a href="Bob-Company-b89002.php" >Bob Company</a><br /><a href="Boleta-b7934.php" >Boleta</a><br />
+												</div>
+												<div class="listBrand"><a href="Bons-baisers-de-Paname-b61627.php" >Bons baisers de ..</a><br /><a href="Bonton-b88466.php" >Bonton</a><br /><a href="Bopy-b1287.php" class="bestBrand">Bopy</a><br /><a href="Bosabo-b61861.php" >Bosabo</a><br /><a href="hugo-boss.php" class="bestBrand">BOSS</a><br /><a href="Boucheron-b39523.php" >Boucheron</a><br /><a href="Boulevard-b10460.php" >Boulevard</a><br /><a href="Brasileras-b8694.php" >Brasileras</a><br /><a href="Breezy-Rollers-b88509.php" >Breezy Rollers</a><br /><a href="Brett-ET-Sons-b279.php" >Brett & Sons</a><br /><a href="Bronx-b232.php" >Bronx</a><br /><a href="Brooks-b8191.php" >Brooks</a><br /><a href="Brunos-b41585.php" >Brunos</a><br /><a href="Bryan-b17606.php" >Bryan</a><br /><a href="Bueno-Shoes-b32715.php" >Bueno Shoes</a><br /><a href="Buffalo-b22.php" >Buffalo</a><br /><a href="Bugatti-b1634.php" >Bugatti</a><br /><a href="Build-Your-Brand-b47343.php" >Build Your Brand</a><br /><a href="Bull-Boys-b58654.php" >Bull Boys</a><br /><a href="Bullboxer-b817.php" >Bullboxer</a><br /><a href="Buonarotti-b13021.php" >Buonarotti</a><br /><a href="Burberry-b2705.php" >Burberry</a><br /><a href="Burkely-b52021.php" >Burkely</a><br />
+												</div>
+												<div class="listBrand">
+									</div>
+								</div>
+							</li>
+							<li>
+								<p class="menuBrandDiv">C - E</p>
+								<div id="brand2">
+									<div class="listBrand"><span class="brandLetter">C</span><br /><a href="C-M-b34244.php" >C M</a><br /><a href="Cacatoes-b86127.php" class="bestBrand">Cacatoès</a><br /><a href="Cacharel-b1176.php" >Cacharel</a><br /><a href="Cafe-Noir-b100.php" >Café Noir</a><br /><a href="Calceo-b81657.php" >Calceo</a><br /><a href="CallagHan-b1057.php" >CallagHan</a><br /><a href="Calvin-Klein-Jeans-b403.php" >Calvin Klein Jea..</a><br /><a href="Calzamedi-b9243.php" >Calzamedi</a><br /><a href="Cameleon-b7753.php" >Cameleon</a><br /><a href="Camper-b32.php" class="bestBrand">Camper</a><br /><a href="Caprice-b1330.php" >Caprice</a><br /><a href="CARAMEL-ET-CIE-b60085.php" >CARAMEL & CIE</a><br /><a href="Carla-Tortosa-b54025.php" >Carla Tortosa</a><br /><a href="Carmela-b88506.php" >Carmela</a><br /><a href="Caryatis-b78221.php" >Caryatis</a><br /><a href="Casablanca-b46613.php" >Casablanca</a><br /><a href="Casta-b49423.php" >Casta</a><br /><a href="Castaner-b321.php" >Castaner</a><br /><a href="Casual-b42424.php" >Casual</a><br /><a href="Caterpillar-b228.php" class="bestBrand">Caterpillar</a><br /><a href="Caval-b79251.php" >Caval</a><br /><a href="Cbp-Conbuenpie-b45973.php" >Cbp - Conbuenpie</a><br />
+												</div>
+												<div class="listBrand"><a href="Cerruti-1881-b695.php" >Cerruti 1881</a><br /><a href="Cetti-b88631.php" >Cetti</a><br /><a href="Chabrand-b1422.php" >Chabrand</a><br /><a href="Champion-b48477.php" >Champion</a><br /><a href="Chantelle-b11820.php" >Chantelle</a><br /><a href="Chapeau-Tendance-b58522.php" >Chapeau-Tendance</a><br /><a href="Chattawak-b47356.php" class="bestBrand">Chattawak</a><br /><a href="Chetto-b30817.php" >Chetto</a><br /><a href="Cheval-Firenze-b88852.php" >Cheval Firenze</a><br /><a href="Chicco-b1141.php" >Chicco</a><br /><a href="Chie-Mihara-b319.php" >Chie Mihara</a><br /><a href="Chika-10-b8481.php" >Chika 10</a><br /><a href="Chiruca-b4112.php" >Chiruca</a><br /><a href="Cienta-b9253.php" >Cienta</a><br /><a href="Cink-me-b33749.php" >Cink-me</a><br /><a href="Cipriata-b42418.php" >Cipriata</a><br /><a href="Clae-b1503.php" >Clae</a><br /><a href="Clarks-b21.php" class="bestBrand">Clarks</a><br /><a href="Clinique-b42221.php" >Clinique</a><br /><a href="Clio-Blue-b27599.php" >Clio Blue</a><br /><a href="Coach-b59002.php" >Coach</a><br /><a href="Coco-ET-Abricot-b5677.php" >Coco & Abricot</a><br /><a href="Colmar-b88630.php" >Colmar</a><br />
+												</div>
+												<div class="listBrand"><a href="Colores-b50406.php" >Colores</a><br /><a href="Colors-of-California-b1050.php" >Colors of Califo..</a><br /><a href="Columbia-b23.php" >Columbia</a><br /><a href="Compania-Fantastica-b2065.php" >Compania Fantast..</a><br /><a href="Confort-b7862.php" >Confort</a><br /><a href="Converse-b5.php" class="bestBrand">Converse</a><br /><a href="Cool-shoe-b803.php" class="bestBrand">Cool shoe</a><br /><a href="Coolway-b621.php" >Coolway</a><br /><a href="Corina-b6728.php" >Corina</a><br /><a href="Cosmos-Comfort-b53767.php" >Cosmos Comfort</a><br /><a href="Coton-Du-Monde-b28063.php" >Coton Du Monde</a><br /><a href="Cotopaxi-b81648.php" >Cotopaxi</a><br /><a href="Craft-b8377.php" >Craft</a><br /><a href="Creator-b27360.php" >Creator</a><br /><a href="Crime-London-b88189.php" >Crime London</a><br /><a href="Crocs-b508.php" class="bestBrand">Crocs</a><br /><a href="Cruyff-b1905.php" >Cruyff</a><br /><a href="Cult-b2890.php" >Cult</a><br /><a href="Custo-Barcelona-b8116.php" >Custo Barcelona</a><br /><a href="Celeste-b66064.php" >Céleste</a><br /><a href="Cote-Table-b67212.php" >Côté Table</a><br /><span class="brandLetter">D</span><br /><a href="DETG-b823.php" >D&G</a><br />
+												</div>
+												<div class="listBrand"><a href="D-angela-b9713.php" >D'angela</a><br /><a href="D.Co-Copenhagen-b1555.php" >D.Co Copenhagen</a><br /><a href="D.Franklin-b88188.php" >D.Franklin</a><br /><a href="Daniel-Wellington-b9090.php" >Daniel Wellingto..</a><br /><a href="Dare-2b-b8482.php" >Dare 2b</a><br /><a href="David-Jones-b996.php" >David Jones</a><br /><a href="Davidoff-b41344.php" >Davidoff</a><br /><a href="Daxon-b70084.php" >Daxon</a><br /><a href="Dc-Comics-b12585.php" >Dc Comics</a><br /><a href="DC-Shoes-b61.php" >DC Shoes</a><br /><a href="Decoris-b67688.php" >Decoris</a><br /><a href="Deeluxe-b1042.php" >Deeluxe</a><br /><a href="Degre-Celsius-b53459.php" >Degré Celsius</a><br /><a href="DELSEY-PARIS-b1108.php" >DELSEY PARIS</a><br /><a href="Derhy-b1847.php" >Derhy</a><br /><a href="Desigual-b749.php" >Desigual</a><br /><a href="Desiree-b7315.php" >Desiree</a><br /><a href="Desoto-b60822.php" >Desoto</a><br /><a href="Dessange-b49510.php" >Dessange</a><br /><a href="Dessins-Animes-b1416.php" >Dessins Animés</a><br /><a href="Diadora-b2003.php" >Diadora</a><br /><a href="Dickies-b938.php" >Dickies</a><br /><a href="Didriksons-b11462.php" >Didriksons</a><br />
+												</div>
+												<div class="listBrand"><a href="Diesel-b240.php" >Diesel</a><br /><a href="Digel-b28440.php" >Digel</a><br /><a href="DIM-b1523.php" >DIM</a><br /><a href="Disney-b1270.php" >Disney</a><br /><a href="Dockers-b1446.php" >Dockers</a><br /><a href="Dockers-by-Gerli-b968.php" >Dockers by Gerli</a><br /><a href="Doctor-Cutillas-b2198.php" >Doctor Cutillas</a><br /><a href="Dogg-b88582.php" >Dogg</a><br /><a href="Donna-Lucca-b53621.php" >Donna Lucca</a><br /><a href="Doremi-b33802.php" >Doremi</a><br /><a href="Dorking-b680.php" class="bestBrand">Dorking</a><br /><a href="Dr.-Martens-b76.php" class="bestBrand">Dr. Martens</a><br /><a href="Dsquared-b2723.php" >Dsquared</a><br /><a href="Duke-b48917.php" >Duke</a><br /><a href="DVS-b20.php" >DVS</a><br /><span class="brandLetter">E</span><br /><a href="Eastpak-b1278.php" >Eastpak</a><br /><a href="EAX-st-11503-0.php" >EAX</a><br /><a href="Ecco-b1302.php" >Ecco</a><br /><a href="Eden-Park-b919.php" >Eden Park</a><br /><a href="El-Naturalista-b43.php" class="bestBrand">El Naturalista</a><br /><a href="Element-b238.php" >Element</a><br /><a href="Elizabeth-Stuart-b35791.php" >Elizabeth Stuart</a><br />
+												</div>
+												<div class="listBrand"><a href="Ellesse-b837.php" >Ellesse</a><br /><a href="Elong-b10096.php" >Elong</a><br /><a href="Emilie-Karston-b53131.php" >Emilie Karston</a><br /><a href="Emma-Go-b896.php" >Emma Go</a><br /><a href="Emme-Marella-b44433.php" >Emme Marella</a><br /><a href="Emporio-Armani-st-11503-0.php" >Emporio Armani</a><br /><a href="Emporio-Armani-EA7-st-11503-0.php" >Emporio Armani E..</a><br /><a href="EMU-b672.php" >EMU</a><br /><a href="Enval-b6859.php" >Enval</a><br /><a href="Eoligeros-b74582.php" >Eoligeros</a><br /><a href="Es-b94.php" >Es</a><br /><a href="Escada-b1948.php" >Escada</a><br /><a href="Esprit-b229.php" >Esprit</a><br /><a href="Estee-Lauder-b42498.php" >Estee Lauder</a><br /><a href="Etika-b53596.php" >Etika</a><br /><a href="Etnies-b60.php" >Etnies</a><br /><a href="Etrier-b7395.php" >Etrier</a><br /><a href="Eva-Frutos-b89221.php" class="bestBrand">Eva Frutos</a><br /><a href="Everybody-b10067.php" >Everybody</a><br /><a href="Exit-b17391.php" >Exit</a><br /><a href="Exquise-b60934.php" >Exquise</a><br /><a href="Exton-b2875.php" >Exton</a><br /><a href="Exe-Shoes-b88190.php" >Exé Shoes</a><br />
+												</div>
+												<div class="listBrand">
+									</div>
+								</div>
+							</li>
+							<li>
+								<p class="menuBrandDiv">F - J</p>
+								<div id="brand3">
+									<div class="listBrand"><span class="brandLetter">F</span><br /><a href="Fabiolas-b33572.php" >Fabiolas</a><br /><a href="Fagola-b88576.php" >Fagola</a><br /><a href="Faguo-b838.php" >Faguo</a><br /><a href="Famaco-b35494.php" >Famaco</a><br /><a href="Fantasy-Sandals-b39682.php" >Fantasy Sandals</a><br /><a href="Fargeot-b8313.php" >Fargeot</a><br /><a href="Feiyue-b914.php" >Feiyue</a><br /><a href="Felmini-b2071.php" >Felmini</a><br /><a href="Fidelio-b20511.php" >Fidelio</a><br /><a href="Fila-b1615.php" >Fila</a><br /><a href="Fischer-b10336.php" >Fischer</a><br /><a href="FitFlop-b402.php" class="bestBrand">FitFlop</a><br /><a href="Florett-b35761.php" >Florett</a><br /><a href="Flower-Mountain-b89654.php" >Flower Mountain</a><br /><a href="Fluchos-b678.php" class="bestBrand">Fluchos</a><br /><a href="Fly-Flot-b9000.php" >Fly Flot</a><br /><a href="Fly-London-b474.php" >Fly London</a><br /><a href="Forever-ET-Always-Shoes-b89106.php" >Forever & Always..</a><br /><a href="Fracomina-b27451.php" >Fracomina</a><br /><a href="Frailera-b81515.php" >Frailera</a><br /><a href="Frau-b6226.php" >Frau</a><br /><a href="Fred-Perry-b801.php" class="bestBrand">Fred Perry</a><br />
+												</div>
+												<div class="listBrand"><a href="Freegun-b1629.php" >Freegun</a><br /><a href="Freelance-b1960.php" >Freelance</a><br /><a href="Freeman-T.Porter-b1383.php" >Freeman T.Porter</a><br /><a href="Froddo-b12743.php" >Froddo</a><br /><a href="Fru.it-b482.php" >Fru.it</a><br /><a href="Fruit-Of-The-Loom-b11030.php" >Fruit Of The Loo..</a><br /><a href="Funny-Lola-b34257.php" >Funny Lola</a><br /><a href="Furla-b28082.php" >Furla</a><br /><a href="Fusion-b11139.php" >Fusion</a><br /><a href="Future-Home-b74565.php" >Future Home</a><br /><span class="brandLetter">G</span><br /><a href="G-Star-Raw-b1285.php" >G-Star Raw</a><br /><a href="Gabor-b629.php" class="bestBrand">Gabor</a><br /><a href="Gaimo-b11980.php" >Gaimo</a><br /><a href="Gallantry-b7755.php" >Gallantry</a><br /><a href="gallery-dept-b89480.php" >gallery dept</a><br /><a href="Gant-b83.php" >Gant</a><br /><a href="Ganter-b20501.php" >Ganter</a><br /><a href="Gardian-b42978.php" >Gardian</a><br /><a href="Gardini-b2959.php" >Gardini</a><br /><a href="Garnier-b42554.php" >Garnier</a><br /><a href="Garvalin-b916.php" >Garvalin</a><br /><a href="Gave-Lux-b86397.php" >Gave Lux</a><br />
+												</div>
+												<div class="listBrand"><a href="Gemini-b29078.php" >Gemini</a><br /><a href="Geographical-Norway-b49461.php" >Geographical Nor..</a><br /><a href="Geox-b40.php" class="bestBrand">Geox</a><br /><a href="Gertrude-Gaston-b43015.php" >Gertrude + Gasto..</a><br /><a href="Gianni-Conti-b32701.php" >Gianni Conti</a><br /><a href="Gianni-Crasto-b41777.php" >Gianni Crasto</a><br /><a href="Giesswein-b243.php" >Giesswein</a><br /><a href="Gio-b58168.php" >Gio +</a><br /><a href="Gioseppo-b1009.php" class="bestBrand">Gioseppo</a><br /><a href="Givenchy-b7691.php" >Givenchy</a><br /><a href="Globe-b31.php" >Globe</a><br /><a href="Goby-b81656.php" >Goby</a><br /><a href="Gola-b73.php" class="bestBrand">Gola</a><br /><a href="Gold-Star-b40754.php" >Gold Star</a><br /><a href="Golden-Goose-b8031.php" >Golden Goose</a><br /><a href="Grace-ET-Mila-b11871.php" >Grace & Mila</a><br /><a href="Gran-Sasso-b32002.php" >Gran Sasso</a><br /><a href="Grisport-b2680.php" >Grisport</a><br /><a href="Grunland-b5002.php" >Grunland</a><br /><a href="Guerlain-b42222.php" >Guerlain</a><br /><a href="Guess-b775.php" class="bestBrand">Guess</a><br /><span class="brandLetter">H</span><br /><a href="Haboob-b88474.php" >Haboob</a><br />
+												</div>
+												<div class="listBrand"><a href="Haflinger-b8304.php" >Haflinger</a><br /><a href="Hardrige-b1915.php" >Hardrige</a><br /><a href="Harmont-ET-Blaine-b26115.php" >Harmont & Blaine</a><br /><a href="Harrington-b1941.php" >Harrington</a><br /><a href="Havaianas-b333.php" class="bestBrand">Havaianas</a><br /><a href="Heelys-b349.php" >Heelys</a><br /><a href="Heller-b5664.php" >Heller</a><br /><a href="Hello-Confort-b89272.php" >Hello Confort</a><br /><a href="Helly-Hansen-b1156.php" >Helly Hansen</a><br /><a href="Helvetica-b88546.php" >Helvetica</a><br /><a href="Hermes-Paris-b29366.php" >Hermès Paris</a><br /><a href="Herno-b9205.php" >Herno</a><br /><a href="Herschel-b5744.php" >Herschel</a><br /><a href="Hexagona-b1369.php" >Hexagona</a><br /><a href="HEYDUDE-b88155.php" class="bestBrand">HEYDUDE</a><br /><a href="Hip-Hop-Honour-b9699.php" >Hip Hop Honour</a><br /><a href="Hispanitas-b691.php" >Hispanitas</a><br /><a href="HOFF-b62266.php" class="bestBrand">HOFF</a><br /><a href="Hoka-b8949.php" >Hoka</a><br /><a href="Hom-b60382.php" >Hom</a><br /><a href="Horspist-b28988.php" >Horspist</a><br /><a href="Hub-Footwear-b1556.php" >Hub Footwear</a><br /><a href="hugo-boss.php" >HUGO</a><br />
+												</div>
+												<div class="listBrand"><a href="hummel-b957.php" >hummel</a><br /><a href="Hush-puppies-b230.php" >Hush puppies</a><br /><a href="Hogl-b1109.php" >Högl</a><br /><span class="brandLetter">I</span><br /><a href="I-Am-b28896.php" >I Am</a><br /><a href="Ibeliv-b60611.php" >Ibeliv</a><br /><a href="Iberico-Shoes-b61904.php" >Iberico Shoes</a><br /><a href="Ichi-b439.php" >Ichi</a><br /><a href="IgIETCO-b59618.php" >IgI&CO</a><br /><a href="IGOR-b47505.php" >IGOR</a><br /><a href="Ikks-b490.php" >Ikks</a><br /><a href="Ilse-Jacobsen-b6855.php" >Ilse Jacobsen</a><br /><a href="im-free-b89650.php" >im free</a><br /><a href="Imac-b8153.php" >Imac</a><br /><a href="Inblu-b930.php" >Inblu</a><br /><a href="Interbios-b6729.php" >Interbios</a><br /><a href="Inuovo-b88500.php" class="bestBrand">Inuovo</a><br /><a href="Iota-b45909.php" >Iota</a><br /><a href="Ipanema-b1514.php" >Ipanema</a><br /><a href="Irregular-Choice-b69.php" >Irregular Choice</a><br /><a href="Isabella-Rhea-b81180.php" >Isabella Rhea</a><br /><a href="Isla-Bonita-By-Sigris-b66740.php" >Isla Bonita By S..</a><br /><a href="Isotoner-b57600.php" >Isotoner</a><br />
+												</div>
+												<div class="listBrand"><a href="Issey-Miyake-b34630.php" >Issey Miyake</a><br /><span class="brandLetter">J</span><br /><a href="Jack-ET-Jones-b1483.php" class="bestBrand">Jack & Jones</a><br /><a href="Jacquemus-b42975.php" >Jacquemus</a><br /><a href="Jana-b1469.php" >Jana</a><br /><a href="JanetETJanet-b1331.php" >Janet&Janet</a><br /><a href="Janira-b52350.php" >Janira</a><br /><a href="Javer-b2307.php" >Javer</a><br /><a href="JDY-b46320.php" >JDY</a><br /><a href="Jeannot-b6761.php" >Jeannot</a><br /><a href="Jeffery-West-b1290.php" >Jeffery-West</a><br /><a href="Jennyfer-b44251.php" >Jennyfer</a><br /><a href="Jimmy-Choo-b8714.php" >Jimmy Choo</a><br /><a href="JJXX-b88657.php" >JJXX</a><br /><a href="Joia-b64040.php" >Joia</a><br /><a href="Joma-b1614.php" >Joma</a><br /><a href="Jomos-b7977.php" >Jomos</a><br /><a href="Jonak-b317.php" >Jonak</a><br /><a href="Josef-Seibel-b1925.php" class="bestBrand">Josef Seibel</a><br /><a href="JOTT-b58125.php" class="bestBrand">JOTT</a><br /><a href="Juicy-Couture-b1650.php" >Juicy Couture</a><br /><a href="Jump-b35.php" >Jump</a><br /><a href="Jungla-b11900.php" >Jungla</a><br />
+												</div>
+												<div class="listBrand">
+									</div>
+								</div>
+							</li>
+							<li>
+								<p class="menuBrandDiv">K - M</p>
+								<div id="brand4">
+									<div class="listBrand"><span class="brandLetter">K</span><br /><a href="K-Jacques-b8711.php" >K Jacques</a><br /><a href="K-Way-b2430.php" class="bestBrand">K-Way</a><br /><a href="K.mary-b64773.php" >K.mary</a><br /><a href="Kamo-Gutsu-b48229.php" >Kamo-Gutsu</a><br /><a href="Kangaroos-b832.php" >Kangaroos</a><br /><a href="Kanna-b8845.php" >Kanna</a><br /><a href="Kaola-b38877.php" >Kaola</a><br /><a href="Kaporal-b697.php" >Kaporal</a><br /><a href="Kappa-b345.php" >Kappa</a><br /><a href="Karl-Lagerfeld-b44199.php" >Karl Lagerfeld</a><br /><a href="Karston-b39956.php" >Karston</a><br /><a href="Katana-b1610.php" >Katana</a><br /><a href="Kawasaki-b835.php" >Kawasaki</a><br /><a href="Kdopa-b1375.php" >Kdopa</a><br /><a href="Kebello-b9593.php" >Kebello</a><br /><a href="Kebo-b13223.php" >Kebo</a><br /><a href="Keen-b85.php" >Keen</a><br /><a href="Kenzo-b67.php" >Kenzo</a><br /><a href="Keslem-b60632.php" >Keslem</a><br /><a href="Keys-b932.php" >Keys</a><br /><a href="Kickers-b65.php" class="bestBrand">Kickers</a><br /><a href="kimberfeeel-b89562.php" >kimberfeeel</a><br />
+												</div>
+												<div class="listBrand"><a href="Kipling-b126.php" >Kipling</a><br /><a href="KOST-b777.php" >KOST</a><br /><a href="Krisbut-b10780.php" >Krisbut</a><br /><a href="Kurt-Geiger-London-b61735.php" >Kurt Geiger Lond..</a><br /><span class="brandLetter">L</span><br /><a href="L-Atelier-Tropezien-b79253.php" class="bestBrand">L'Atelier Tropéz..</a><br /><a href="L-oreal-b42329.php" >L'oréal</a><br /><a href="La-Bande-A-Mich-b78930.php" >La Bande A Mich</a><br /><a href="La-Bottine-Souriante-b9958.php" >La Bottine Souri..</a><br /><a href="La-Carrie-b43970.php" >La Carrie</a><br /><a href="La-Fiancee-Du-Mekong-b38111.php" >La Fiancee Du Me..</a><br /><a href="La-Maison-De-L-espadrille-b7268.php" >La Maison De L'e..</a><br /><a href="La-Martina-b1040.php" >La Martina</a><br /><a href="La-Modeuse-b41941.php" >La Modeuse</a><br /><a href="La-Petite-Etoile-b40282.php" >La Petite Etoile</a><br /><a href="La-Sportiva-b10346.php" >La Sportiva</a><br /><a href="La-Strada-b2474.php" >La Strada</a><br /><a href="Lacoste-b90.php" class="bestBrand">Lacoste</a><br /><a href="Lady-s-Secret-b888.php" >Lady's Secret</a><br /><a href="Lamarthe-b1902.php" >Lamarthe</a><br /><a href="Lambretta-b195.php" >Lambretta</a><br /><a href="LANCASTER-b59834.php" class="bestBrand">LANCASTER</a><br /><a href="Lancel-b88824.php" class="bestBrand">Lancel</a><br />
+												</div>
+												<div class="listBrand"><a href="Latino-b50650.php" >Latino</a><br /><a href="Laura-Biagiotti-b2851.php" >Laura Biagiotti</a><br /><a href="Laura-Vita-b66846.php" class="bestBrand">Laura Vita</a><br /><a href="ralph-lauren.php" class="bestBrand">Lauren Ralph Lau..</a><br /><a href="Lazamani-b13416.php" >Lazamani</a><br /><a href="Le-Coq-Sportif-b84.php" >Le Coq Sportif</a><br /><a href="Le-Tanneur-b428.php" >Le Tanneur</a><br /><a href="Le-Temps-des-Cerises-b622.php" class="bestBrand">Le Temps des Cer..</a><br /><a href="Lee-b1826.php" >Lee</a><br /><a href="Lee-Cooper-b79.php" >Lee Cooper</a><br /><a href="Legero-b1429.php" >Legero</a><br /><a href="Lemon-Jelly-b7085.php" >Lemon Jelly</a><br /><a href="lpb.php" class="bestBrand">LPB</a><br /><a href="lpb.php" class="bestBrand">Les Petites Bomb..</a><br /><a href="Les-Tropeziennes-par-M.Belarbi-b118.php" class="bestBrand">Les Tropeziennes..</a><br /><a href="Levi-s-b95.php" class="bestBrand">Levi's</a><br /><a href="Limma-b88137.php" >Limma</a><br /><a href="Linder-b68777.php" >Linder</a><br /><a href="Liu-Jo-b61947.php" >Liu Jo</a><br /><a href="Livia-b6938.php" >Livia</a><br /><a href="Lloyd-b1913.php" >Lloyd</a><br /><a href="Lois-b2371.php" >Lois</a><br /><a href="Lollipops-b99.php" >Lollipops</a><br /><a href="Longo-b10413.php" >Longo</a><br />
+												</div>
+												<div class="listBrand"><a href="Lorenzi-b30613.php" >Lorenzi</a><br /><a href="Lotto-b1559.php" >Lotto</a><br /><a href="Love-Moschino-b1539.php" >Love Moschino</a><br /><a href="Luisa-Vannini-b81181.php" >Luisa Vannini</a><br /><a href="Lumberjack-b788.php" >Lumberjack</a><br /><a href="Luna-Kids-b61862.php" >Luna Kids</a><br /><a href="Lune-Et-L-autre-b16793.php" >Lune Et L'autre</a><br /><a href="LXH-b66514.php" >LXH</a><br /><a href="Lyle-ET-Scott-b50730.php" >Lyle & Scott</a><br /><span class="brandLetter">M</span><br /><a href="Mac-Alyster-b19141.php" >Mac Alyster</a><br /><a href="Mac-Douglas-b1436.php" >Mac Douglas</a><br /><a href="Macarena-b10229.php" >Macarena</a><br /><a href="Madory-b67341.php" >Madory</a><br /><a href="Maison-Minelli-b353.php" >Maison Minelli</a><br /><a href="Mam-Zelle-b27704.php" class="bestBrand">Mam'Zelle</a><br /><a href="Mapache-b88569.php" class="bestBrand">Mapache</a><br /><a href="Marc-Ellis-b7685.php" >Marc Ellis</a><br /><a href="Marco-Tozzi-b1344.php" >Marco Tozzi</a><br /><a href="Maria-Mare-b2486.php" >Maria Mare</a><br /><a href="Marila-b12461.php" >Marila</a><br /><a href="Martinelli-b779.php" >Martinelli</a><br /><a href="Maserati-b16790.php" >Maserati</a><br />
+												</div>
+												<div class="listBrand"><a href="Max-Mara-b9279.php" >Max Mara</a><br /><a href="Maybelline-New-York-b57410.php" >Maybelline New Y..</a><br /><a href="Mazelie-b71362.php" >Mazelie</a><br /><a href="MEDUSE-b47506.php" >MEDUSE</a><br /><a href="Meeko-b88082.php" >Meeko</a><br /><a href="Meindl-b1032.php" >Meindl</a><br /><a href="Meline-b1387.php" >Meline</a><br /><a href="Melissa-b318.php" >Melissa</a><br /><a href="Melluso-b964.php" >Melluso</a><br /><a href="Melvin-ET-Hamilton-b1932.php" >Melvin & Hamilto..</a><br /><a href="Menbur-b877.php" >Menbur</a><br /><a href="Menorquinas-b24800.php" >Menorquinas</a><br /><a href="Mephisto-b2862.php" class="bestBrand">Mephisto</a><br /><a href="Merrell-b231.php" >Merrell</a><br /><a href="Metamorf-Ose-b833.php" >Metamorf'Ose</a><br /><a href="Mexas-b67102.php" >Mexas</a><br /><a href="MICHAEL-Michael-Kors-b2093.php" class="bestBrand">MICHAEL Michael ..</a><br /><a href="Mila-Louise-b35975.php" >Mila Louise</a><br /><a href="Milano-b11916.php" >Milano</a><br /><a href="Millet-b10422.php" >Millet</a><br /><a href="Minibel-b86408.php" >Minibel</a><br /><a href="Minka-b25034.php" >Minka</a><br /><a href="Minnetonka-b1115.php" >Minnetonka</a><br />
+												</div>
+												<div class="listBrand"><a href="Minorquines-b88080.php" >Minorquines</a><br /><a href="Miss-Den-b81676.php" >Miss Den</a><br /><a href="Miss-Elastic-b50258.php" >Miss Elastic</a><br /><a href="Mizuno-b1521.php" >Mizuno</a><br /><a href="Mjus-b1061.php" class="bestBrand">Mjus</a><br /><a href="Mkd-b34919.php" >Mkd</a><br /><a href="Mobils-b35915.php" >Mobils</a><br /><a href="Mod-8-b520.php" >Mod'8</a><br /><a href="MOEA-b88841.php" >MOEA</a><br /><a href="Molly-Bracken-b2053.php" >Molly Bracken</a><br /><a href="Moma-b1385.php" >Moma</a><br /><a href="Montevita-b52328.php" >Montevita</a><br /><a href="Morgan-b98.php" >Morgan</a><br /><a href="Morrison-b28527.php" >Morrison</a><br /><a href="Mosaic-b50919.php" >Mosaic</a><br /><a href="Mou-b1566.php" >Mou</a><br /><a href="Mountain-Warehouse-b75200.php" >Mountain Warehou..</a><br /><a href="mrp-b89579.php" >mrp</a><br /><a href="MTNG-b1371.php" >MTNG</a><br /><a href="Munich-b1554.php" >Munich</a><br /><a href="Muratti-b7702.php" >Muratti</a><br /><a href="Mustang-b1058.php" class="bestBrand">Mustang</a><br /><a href="Myma-b1635.php" >Myma</a><br />
+												</div>
+												<div class="listBrand">
+									</div>
+								</div>
+							</li>
+							<li>
+								<p class="menuBrandDiv">N - R</p>
+								<div id="brand5">
+									<div class="listBrand"><span class="brandLetter">N</span><br /><a href="N-GO-b88847.php" >N'GO</a><br /><a href="Nae-Vegan-Shoes-b53818.php" >Nae Vegan Shoes</a><br /><a href="Name-it-b58997.php" >Name it</a><br /><a href="NAN-KU-b89174.php" >NAN-KU</a><br /><a href="Nanucci-b1456.php" >Nanucci</a><br /><a href="Napapijri-b1646.php" >Napapijri</a><br /><a href="Nat-et-Nin-b579.php" class="bestBrand">Nat et Nin</a><br /><a href="Native-Spirit-b83323.php" >Native Spirit</a><br /><a href="Natural-World-b7404.php" >Natural World</a><br /><a href="Naturino-b68.php" >Naturino</a><br /><a href="Neles-b45309.php" >Neles</a><br /><a href="Neosens-b110.php" >Neosens</a><br /><a href="NeroGiardini-b51792.php" class="bestBrand">NeroGiardini</a><br /><a href="New-Balance-b337.php" class="bestBrand">New Balance</a><br /><a href="New-Rock-b26.php" >New Rock</a><br /><a href="New-Era-b59860.php" >New-Era</a><br /><a href="Nike-b4.php" class="bestBrand">Nike</a><br /><a href="Nina-Ricci-b1036.php" >Nina Ricci</a><br /><a href="No-Name-b424.php" class="bestBrand">No Name</a><br /><a href="Noa-Harmon-b47164.php" >Noa Harmon</a><br /><a href="Noisy-May-b2148.php" >Noisy May</a><br /><a href="Nordikas-b4264.php" >Nordikas</a><br />
+												</div>
+												<div class="listBrand"><a href="Novesta-b79426.php" >Novesta</a><br /><span class="brandLetter">O</span><br /><a href="O-neill-b1380.php" >O'neill</a><br /><a href="Oakwood-b1812.php" >Oakwood</a><br /><a href="Off-White-b38365.php" >Off-White</a><br /><a href="Oh-My-Bag-b28083.php" >Oh My Bag</a><br /><a href="Oh-My-Sandals-b89130.php" >Oh My Sandals</a><br /><a href="Olaplex-b41449.php" >Olaplex</a><br /><a href="Olymp-b44005.php" >Olymp</a><br /><a href="On-b26948.php" >On</a><br /><a href="Only-b1500.php" class="bestBrand">Only</a><br /><a href="Only-ET-Sons-b50465.php" >Only & Sons </a><br /><a href="Only-Play-b2152.php" >Only Play</a><br /><a href="Oofos-b35983.php" >Oofos</a><br /><a href="Oraije-b89250.php" >Oraije</a><br /><a href="Osiris-b29.php" >Osiris</a><br /><a href="Otess-Zoi-b71266.php" >Otess / Zoï</a><br /><a href="Oxbow-b11.php" >Oxbow</a><br /><span class="brandLetter">P</span><br /><a href="Pablosky-b1136.php" >Pablosky</a><br /><a href="Paez-b11619.php" >Paez</a><br /><a href="palladium.php" class="bestBrand">Palladium</a><br /><a href="PALOMA-BARCELO-b7888.php" >PALOMA BARCELÓ</a><br />
+												</div>
+												<div class="listBrand"><a href="Panama-Jack-b320.php" >Panama Jack</a><br /><a href="Pantofola-d-Oro-b1389.php" >Pantofola d'Oro</a><br /><a href="Pao-b17211.php" >Pao</a><br /><a href="birkenstock.php" class="bestBrand">Papillio</a><br /><a href="Papucei-b1077.php" >Papucei</a><br /><a href="Pare-Gabia-b332.php" >Pare Gabia</a><br /><a href="Passionata-b88822.php" >Passionata</a><br /><a href="Patagonia-b671.php" >Patagonia</a><br /><a href="Pataugas-b46.php" >Pataugas</a><br /><a href="Patricia-Miller-b2471.php" >Patricia Miller</a><br /><a href="Patrick-b1364.php" >Patrick</a><br /><a href="Paul-Green-b10064.php" >Paul Green</a><br /><a href="Paul-Smith-b65773.php" >Paul Smith</a><br /><a href="Paula-Urban-b2304.php" >Paula Urban</a><br /><a href="Pavement-b89148.php" >Pavement</a><br /><a href="Peak-Mountain-b10404.php" >Peak Mountain</a><br /><a href="Pediconfort-b936.php" >Pediconfort</a><br /><a href="Pedro-Miralles-b687.php" >Pedro Miralles</a><br /><a href="Pedro-Torres-b30477.php" >Pedro Torres</a><br /><a href="Pegada-b45797.php" >Pegada</a><br /><a href="Pepe-jeans-b86.php" >Pepe jeans</a><br /><a href="Peter-Kaiser-b1151.php" >Peter Kaiser</a><br /><a href="Petit-Bateau-b866.php" >Petit Bateau</a><br />
+												</div>
+												<div class="listBrand"><a href="Petrol-Industries-b7338.php" >Petrol Industrie..</a><br /><a href="Philippe-Model-b49766.php" class="bestBrand">Philippe Model</a><br /><a href="Pieces-b693.php" >Pieces</a><br /><a href="Pierre-Cardin-b1075.php" >Pierre Cardin</a><br /><a href="Pierre-Lannier-b1607.php" >Pierre Lannier</a><br /><a href="Piesanto-b2280.php" >Piesanto</a><br /><a href="Pikolinos-b113.php" class="bestBrand">Pikolinos</a><br /><a href="Pinko-b88585.php" >Pinko</a><br /><a href="Piola-b79574.php" >Piola</a><br /><a href="Pisamonas-b28419.php" >Pisamonas</a><br /><a href="Pitas-b47537.php" >Pitas</a><br /><a href="Pitillos-b1062.php" >Pitillos</a><br /><a href="Plakton-b59859.php" class="bestBrand">Plakton</a><br /><a href="PLAYTEX-b58338.php" >PLAYTEX</a><br /><a href="Plumaflex-b64834.php" >Plumaflex</a><br /><a href="Poelman-b20256.php" >Poelman</a><br /><a href="Pol-Fox-b61502.php" >Pol Fox</a><br /><a href="Polo-Club-b6758.php" >Polo Club</a><br /><a href="ralph-lauren.php" class="bestBrand">Polo Ralph Laure..</a><br /><a href="Pom-d-Api-b499.php" class="bestBrand">Pom d'Api</a><br /><a href="Pons-Quintana-b8672.php" >Pons Quintana</a><br /><a href="Popa-b45457.php" >Popa</a><br /><a href="Porronet-b5156.php" >Porronet</a><br />
+												</div>
+												<div class="listBrand"><a href="Portuguese-Flannel-b42014.php" >Portuguese Flann..</a><br /><a href="Poti-Pati-b18610.php" >Poti Pati</a><br /><a href="Prada-b644.php" >Prada</a><br /><a href="Premiata-b1404.php" >Premiata</a><br /><a href="Pretty-Ballerinas-b1393.php" >Pretty Ballerina..</a><br /><a href="Primigi-b1163.php" >Primigi</a><br /><a href="Project-X-Paris-b38260.php" >Project X Paris</a><br /><a href="Prologue-Shoes-b89107.php" >Prologue Shoes</a><br /><a href="Pullin-b58246.php" >Pullin</a><br /><a href="Puma-b36.php" class="bestBrand">Puma</a><br /><a href="Puraai-b73771.php" >Puraai</a><br /><span class="brandLetter">Q</span><br /><a href="Quiksilver-b875.php" >Quiksilver</a><br /><span class="brandLetter">R</span><br /><a href="ralph-lauren.php" >Ralph Lauren</a><br /><a href="Ramones-b43113.php" >Ramones</a><br /><a href="Ravel-b542.php" >Ravel</a><br /><a href="Red-Wing-b1120.php" >Red Wing</a><br /><a href="Redskins-b120.php" class="bestBrand">Redskins</a><br /><a href="reebok.php" class="bestBrand">Reebok</a><br /><a href="reebok.php" class="bestBrand">Reebok Classic</a><br /><a href="reebok.php" >Reebok Sport</a><br /><a href="Reef-b834.php" >Reef</a><br /><a href="Refresh-b1599.php" >Refresh</a><br />
+												</div>
+												<div class="listBrand"><a href="Regard-b244.php" >Regard</a><br /><a href="Regatta-b7587.php" >Regatta</a><br /><a href="Relife-b46395.php" >Relife</a><br /><a href="Remonte-b882.php" class="bestBrand">Remonte</a><br /><a href="Replay-b87.php" >Replay</a><br /><a href="Repo-b7414.php" >Repo</a><br /><a href="Reqin-s-b40397.php" >Reqin's</a><br /><a href="Ria-b7664.php" >Ria</a><br /><a href="Rider-b971.php" >Rider</a><br /><a href="Rieker-b785.php" class="bestBrand">Rieker</a><br /><a href="Rinascimento-b7290.php" >Rinascimento</a><br /><a href="Rip-Curl-b12.php" >Rip Curl</a><br /><a href="Rivedroite-b89025.php" >Rivedroite</a><br /><a href="Riverty-b2248.php" >Riverty</a><br /><a href="Rivieras-b8920.php" >Rivieras</a><br /><a href="Rks-b40639.php" >Rks</a><br /><a href="Robert-Clergerie-b405.php" >Robert Clergerie</a><br /><a href="Roberta-M-b81179.php" >Roberta M</a><br /><a href="Roberto-Festa-Milano-b11997.php" >Roberto Festa Mi..</a><br /><a href="Rohde-b1346.php" >Rohde</a><br /><a href="Rosemetal-b7960.php" >Rosemetal</a><br /><a href="Roxy-b876.php" >Roxy</a><br /><a href="Rugsx-b75365.php" >Rugsx</a><br />
+												</div>
+												<div class="listBrand">
+									</div>
+								</div>
+							</li>
+							<li>
+								<p class="menuBrandDiv">S</p>
+								<div id="brand6">
+									<div class="listBrand"><span class="brandLetter">S</span><br /><a href="S.Oliver-b1328.php" >S.Oliver</a><br /><a href="Sabatini-b24117.php" >Sabatini</a><br /><a href="Sacha-b27594.php" >Sacha</a><br /><a href="Saguaro-b87759.php" >Saguaro</a><br /><a href="Saint-Hilaire-b75123.php" >Saint-Hilaire</a><br /><a href="Salewa-b8284.php" >Salewa</a><br /><a href="Salomon-b326.php" >Salomon</a><br /><a href="Salsa-b2001.php" >Salsa</a><br /><a href="Sandra-Fontan-b31896.php" >Sandra Fontan</a><br /><a href="Sandro-b132.php" >Sandro</a><br /><a href="Sandro-Rosi-b19508.php" >Sandro Rosi</a><br /><a href="Sandy-Shoes-b10257.php" >Sandy Shoes</a><br /><a href="Sanita-b963.php" >Sanita</a><br /><a href="Sanjo-b8943.php" >Sanjo</a><br /><a href="Sano-De-Mephisto-b60566.php" >Sano De Mephisto</a><br /><a href="Sanosan-b49044.php" >Sanosan</a><br /><a href="Sanrio-b22831.php" >Sanrio</a><br /><a href="Sans-marque-b66623.php" >Sans marque</a><br /><a href="Saola-b79916.php" >Saola</a><br /><a href="Satorisan-b7403.php" >Satorisan</a><br /><a href="Saucony-b59.php" >Saucony</a><br /><a href="Save-The-Duck-b10369.php" >Save The Duck</a><br />
+												</div>
+												<div class="listBrand"><a href="sa-paris-b89681.php" >saē paris</a><br /><a href="Scarpeborseonline-b89176.php" >Scarpeborseonlin..</a><br /><a href="Schiesser-b11786.php" >Schiesser</a><br /><a href="Schmoove-b34.php" >Schmoove</a><br /><a href="Scholl-b13.php" >Scholl</a><br /><a href="Schott-b1463.php" >Schott</a><br /><a href="Schwarzkopf-b41418.php" >Schwarzkopf</a><br /><a href="SchOffel-b10344.php" >SchÖffel</a><br /><a href="Seafor-b81976.php" >Seafor</a><br /><a href="Sebago-b226.php" class="bestBrand">Sebago</a><br /><a href="See-by-Chloe-b1379.php" >See by Chloé</a><br /><a href="Segni-Et-Disegni-b86104.php" >Segni Et Disegni</a><br /><a href="Selected-b1585.php" >Selected</a><br /><a href="Selmark-b50816.php" >Selmark</a><br /><a href="Sema-b67211.php" >Sema</a><br /><a href="Semelflex-b36542.php" >Semelflex</a><br /><a href="Semerdjian-b61485.php" class="bestBrand">Semerdjian</a><br /><a href="Semler-b890.php" >Semler</a><br /><a href="Sendra-boots-b790.php" >Sendra boots</a><br /><a href="Serafini-b1390.php" >Serafini</a><br /><a href="Serge-Blanco-b1620.php" >Serge Blanco</a><br /><a href="Serge-Pariente-b8528.php" >Serge Pariente</a><br /><a href="Sergent-Major-b45747.php" >Sergent Major</a><br />
+												</div>
+												<div class="listBrand"><a href="Sergio-Moretti-b63606.php" >Sergio Moretti</a><br /><a href="Sergio-Tacchini-b2037.php" >Sergio Tacchini</a><br /><a href="Sergio-Valentini-b48604.php" >Sergio Valentini</a><br /><a href="Sesame-Street-b43148.php" >Sesame Street</a><br /><a href="Sf-b60455.php" >Sf</a><br /><a href="Shepherd-b1517.php" >Shepherd</a><br /><a href="Shiseido-b41413.php" >Shiseido</a><br /><a href="Shoewear-b61790.php" >Shoewear</a><br /><a href="Shoo-Pom-b10241.php" class="bestBrand">Shoo Pom</a><br /><a href="Signes-Grimalt-b66739.php" >Signes Grimalt</a><br /><a href="Silky-b48933.php" >Silky</a><br /><a href="Silky-Dance-b83285.php" >Silky Dance</a><br /><a href="skechers.php" class="bestBrand">Skechers</a><br /><a href="Skfk-b67620.php" >Skfk</a><br /><a href="Skimp-b8354.php" >Skimp</a><br /><a href="Skinni-Fit-b48969.php" >Skinni Fit</a><br /><a href="Skpat-b46907.php" >Skpat</a><br /><a href="Skr-b60033.php" >Skr</a><br /><a href="Skydiva-b88191.php" >Skydiva</a><br /><a href="Slazenger-b12716.php" >Slazenger</a><br /><a href="Sleepers-b35269.php" >Sleepers</a><br /><a href="Sloggi-b57017.php" >Sloggi </a><br /><a href="Smart-Uns-b48920.php" >Smart Uns</a><br />
+												</div>
+												<div class="listBrand"><a href="Smiffys-b60801.php" >Smiffys</a><br /><a href="Smr23-b58387.php" >Smr23</a><br /><a href="Snipe-b929.php" >Snipe</a><br /><a href="Sofia-Costa-b27586.php" >Sofia Costa</a><br /><a href="Sofie-D-hoore-b49075.php" >Sofie D'hoore</a><br /><a href="Sofsole-b26867.php" >Sofsole</a><br /><a href="Softclox-b25972.php" >Softclox</a><br /><a href="Softinos-b7954.php" >Softinos</a><br /><a href="Softwaves-b33004.php" >Softwaves</a><br /><a href="Soi-Paris-x-Spartoo-b69558.php" >Soi Paris x Spar..</a><br /><a href="Soiree-b79779.php" >Soirée</a><br /><a href="Sole-b12660.php" >Sole</a><br /><a href="Soleil-D-Ocre-b71272.php" >Soleil D'Ocre</a><br /><a href="Soletrader-b71966.php" >Soletrader</a><br /><a href="Solidus-b33357.php" >Solidus</a><br /><a href="Solo-Soprani-b27957.php" >Solo Soprani</a><br /><a href="Sols-b45306.php" >Sols</a><br /><a href="Something-Different-b61247.php" >Something Differ..</a><br /><a href="Sonny-Angel-b65909.php" >Sonny Angel</a><br /><a href="Sorel-b91.php" >Sorel</a><br /><a href="South-Park-b48819.php" >South Park</a><br /><a href="Sovani-b88637.php" >Sovani</a><br /><a href="Spar-Woman-b68475.php" >Spar Woman</a><br />
+												</div>
+												<div class="listBrand"><a href="Speedo-b430.php" >Speedo</a><br /><a href="Sperry-Top-Sider-b14.php" >Sperry Top-Sider</a><br /><a href="Spiro-b47303.php" >Spiro</a><br /><a href="Spiuk-b16972.php" >Spiuk</a><br /><a href="Splashmacs-b48953.php" >Splashmacs</a><br /><a href="Spongebob-Squarepants-b75330.php" >Spongebob Square..</a><br /><a href="Spyro-b81975.php" >Spyro</a><br /><a href="Srk-b11830.php" >Srk</a><br /><a href="Sseinse-b33396.php" >Sseinse</a><br /><a href="St-Gallen-b87237.php" >St Gallen</a><br /><a href="Stackers-Uk-b86117.php" >Stackers Uk</a><br /><a href="Stance-b9364.php" >Stance</a><br /><a href="Star-Trek-b68943.php" >Star Trek</a><br /><a href="Stay-b49516.php" >Stay</a><br /><a href="Stedman-b59439.php" >Stedman</a><br /><a href="Stephen-Allen-b17578.php" >Stephen Allen</a><br /><a href="Steptronic-b8050.php" >Steptronic</a><br /><a href="Steve-Madden-b494.php" >Steve Madden</a><br /><a href="Steven-Rhodes-b70727.php" >Steven Rhodes</a><br /><a href="Stichd-b86677.php" >Stichd</a><br /><a href="Stonefly-b1327.php" >Stonefly</a><br /><a href="Stones-and-Bones-b61812.php" >Stones and Bones</a><br /><a href="Stormtech-b47264.php" >Stormtech</a><br />
+												</div>
+												<div class="listBrand"><a href="Street-One-b9751.php" >Street One</a><br /><a href="Stuppy-b29420.php" >Stuppy</a><br /><a href="Suave-b9821.php" >Suave</a><br /><a href="Suitable-b74955.php" >Suitable</a><br /><a href="Sun-Project-b58293.php" >Sun Project</a><br /><a href="Sun-Valley-b6794.php" >Sun Valley</a><br /><a href="Sun68-b88619.php" >Sun68</a><br /><a href="Sundek-b72444.php" >Sundek</a><br /><a href="Sunni-Sabbi-b81472.php" >Sunni Sabbi</a><br /><a href="Super-Mode-b12198.php" >Super Mode</a><br /><a href="Superdry-b1518.php" >Superdry</a><br /><a href="Superfit-b1430.php" >Superfit</a><br /><a href="Superga-b115.php" class="bestBrand">Superga</a><br /><a href="Supertee-b89693.php" >Supertee</a><br /><a href="Suredelle-b64038.php" >Suredelle</a><br /><a href="Suri-Frey-b12735.php" >Suri Frey</a><br /><a href="Susimoda-b2948.php" >Susimoda</a><br /><a href="Swarovski-b1267.php" >Swarovski</a><br /><a href="Sweet-Lemon-b35790.php" class="bestBrand">Sweet Lemon</a><br /><a href="Swimovate-b15414.php" >Swimovate</a><br /><a href="Swissalpine-b58854.php" >Swissalpine</a><br /><a href="System-Of-A-Down-b43462.php" >System Of A Down</a><br /><a href="Sezane-b67859.php" >Sézane</a><br />
+												</div>
+												<div class="listBrand">
+									</div>
+								</div>
+							</li>
+							<li>
+								<p class="menuBrandDiv">T - Z</p>
+								<div id="brand7">
+									<div class="listBrand"><span class="brandLetter">T</span><br /><a href="Talika-b42117.php" >Talika</a><br /><a href="Tamaris-b595.php" class="bestBrand">Tamaris</a><br /><a href="Tann-s-b997.php" class="bestBrand">Tann's</a><br /><a href="Tartine-Et-Chocolat-b1908.php" >Tartine Et Choco..</a><br /><a href="TBS-b1165.php" class="bestBrand">TBS</a><br /><a href="TEAM-HEROES-b60740.php" >TEAM HEROES </a><br /><a href="Tecnica-b867.php" >Tecnica</a><br /><a href="Ted-Baker-b1126.php" >Ted Baker</a><br /><a href="Teddy-Smith-b1880.php" class="bestBrand">Teddy Smith</a><br /><a href="Tee-Jays-b47280.php" >Tee Jays</a><br /><a href="Tekila-b12453.php" >Tekila</a><br /><a href="Terre-De-Marins-b20548.php" >Terre De Marins</a><br /><a href="Teva-b1153.php" class="bestBrand">Teva</a><br /><a href="Tevi-b81847.php" >Tevi</a><br /><a href="The-Divine-Factory-b9023.php" >The Divine Facto..</a><br /><a href="The-Happy-Monk-b49490.php" >The Happy Monk</a><br /><a href="The-Indian-Face-b20280.php" >The Indian Face</a><br /><a href="The-Mercer-Brand-b79252.php" >The Mercer Brand</a><br /><a href="The-North-Face-b627.php" >The North Face</a><br /><a href="THEAD.-b78658.php" >THEAD.</a><br /><a href="Thierry-Mugler-b80.php" >Thierry Mugler</a><br /><a href="Think-b413.php" >Think</a><br />
+												</div>
+												<div class="listBrand"><a href="Timberland-b103.php" class="bestBrand">Timberland</a><br /><a href="Tina-s-b54212.php" >Tina´s</a><br /><a href="Titanitos-b7821.php" >Titanitos</a><br /><a href="Tkees-b88896.php" >Tkees</a><br /><a href="Tod-s-b1037.php" >Tod's</a><br /><a href="Tom-Ford-b666.php" >Tom Ford</a><br /><a href="Tom-Tailor-b1531.php" >Tom Tailor</a><br /><a href="Tombo-Teamsport-b47305.php" >Tombo Teamsport</a><br /><a href="tommy-hilfiger.php" class="bestBrand">Tommy Hilfiger</a><br /><a href="tommy-hilfiger.php" >Tommy Jeans</a><br /><a href="Toms-b28045.php" >Toms</a><br /><a href="Toni-Pons-b7255.php" >Toni Pons</a><br /><a href="Tony-ET-Paul-b86103.php" >Tony & Paul</a><br /><a href="Toral-b52873.php" >Toral</a><br /><a href="Torrente-b7745.php" >Torrente</a><br /><a href="Torres-b2268.php" >Torres</a><br /><a href="Tosca-Blu-b1916.php" >Tosca Blu</a><br /><a href="Tosel-b70384.php" >Tosel</a><br /><a href="Trango-b40336.php" >Trango</a><br /><a href="Trespass-b25555.php" >Trespass</a><br /><a href="Triumph-b58507.php" >Triumph</a><br /><a href="Triver-Flight-b32517.php" >Triver Flight</a><br /><a href="TRIXIE-b60082.php" >TRIXIE</a><br />
+												</div>
+												<div class="listBrand"><a href="Trojan-b67614.php" >Trojan</a><br /><a href="TUK-b277.php" >TUK</a><br /><a href="Tupie-b12961.php" >Tupie</a><br /><a href="Twest-b77475.php" >Twest</a><br /><a href="Twinset-Actitude-b67234.php" >Twinset Actitude</a><br /><span class="brandLetter">U</span><br /><a href="U.S-Polo-Assn.-b1418.php" >U.S Polo Assn.</a><br /><a href="UGG-b409.php" class="bestBrand">UGG</a><br /><a href="Umbro-b933.php" >Umbro</a><br /><a href="Under-Armour-b35792.php" >Under Armour</a><br /><a href="Unisa-b233.php" class="bestBrand">Unisa</a><br /><a href="Up-44-b88634.php" >Up 44</a><br /><a href="Urban-Jungles-b7847.php" >Urban Jungles</a><br /><a href="Uzurii-b49831.php" >Uzurii</a><br /><span class="brandLetter">V</span><br /><a href="V.gan-b71461.php" >V.gan</a><br /><a href="Vagabond-Shoemakers-b688.php" >Vagabond Shoemak..</a><br /><a href="Vale-In-b74642.php" >Vale In</a><br /><a href="Valentino-Bags-b52336.php" >Valentino Bags</a><br /><a href="Valeria-s-b45238.php" >Valeria's</a><br /><a href="Valleverde-b781.php" >Valleverde</a><br /><a href="Valsport-b1887.php" >Valsport</a><br /><a href="Vanessa-Wu-b60109.php" class="bestBrand">Vanessa Wu</a><br />
+												</div>
+												<div class="listBrand"><a href="Vans-b52.php" class="bestBrand">Vans</a><br /><a href="Veja-b2005.php" class="bestBrand">Veja</a><br /><a href="Vent-Du-Cap-b11832.php" >Vent Du Cap</a><br /><a href="Vera-Collection-b81868.php" >Vera Collection</a><br /><a href="Verbenas-b67684.php" >Verbenas</a><br /><a href="Vernissage-b10323.php" >Vernissage</a><br /><a href="Vero-Moda-b1501.php" >Vero Moda</a><br /><a href="Versace-Jeans-Couture-b28018.php" >Versace Jeans Co..</a><br /><a href="Vibram-Fivefingers-b1127.php" >Vibram Fivefinge..</a><br /><a href="Victoria-b485.php" class="bestBrand">Victoria</a><br /><a href="VidaXL-b66558.php" >VidaXL</a><br /><a href="Vidi-Studio-b17381.php" >Vidi Studio</a><br /><a href="Vidorreta-b7332.php" >Vidorreta</a><br /><a href="Viguera-b7399.php" >Viguera</a><br /><a href="Viktor-ET-Rolf-b34891.php" >Viktor & Rolf</a><br /><a href="Vila-b1602.php" >Vila</a><br /><a href="Viola-Castellani-b86400.php" >Viola Castellani</a><br /><a href="Vionic-b20508.php" >Vionic</a><br /><a href="Vital-b20503.php" >Vital</a><br /><a href="Vivant-b10696.php" >Vivant</a><br /><a href="Vivaraise-b69472.php" >Vivaraise</a><br /><a href="Vivienne-Westwood-b1355.php" >Vivienne Westwoo..</a><br /><a href="Voile-Blanche-b4082.php" >Voile Blanche</a><br />
+												</div>
+												<div class="listBrand"><a href="Von-Dutch-b15.php" >Von Dutch</a><br /><a href="Vsl-b35742.php" >Vsl</a><br /><a href="Vueva-b89175.php" >Vueva</a><br /><a href="Vulca-bicha-b2180.php" >Vulca-bicha</a><br /><a href="Vulladi-b9242.php" >Vulladi</a><br /><span class="brandLetter">W</span><br /><a href="W6yz-b26874.php" >W6yz</a><br /><a href="Waldlaufer-b9507.php" >Waldläufer</a><br /><a href="Walk-ET-Fly-b9788.php" >Walk & Fly</a><br /><a href="Walk-In-Pitas-b57570.php" >Walk In Pitas</a><br /><a href="Walk-In-The-City-b45698.php" >Walk In The City</a><br /><a href="Watts-b9939.php" >Watts</a><br /><a href="Waxx-b10279.php" >Waxx</a><br /><a href="We-Do-b17210.php" >We Do</a><br /><a href="Weekend-Offender-b31648.php" >Weekend Offender</a><br /><a href="Wendy-Trendy-b73424.php" >Wendy Trendy</a><br /><a href="Westland-b1924.php" >Westland</a><br /><a href="Wilson-b2882.php" >Wilson</a><br /><a href="Wolky-b12248.php" >Wolky</a><br /><a href="Wonders-b707.php" >Wonders</a><br /><a href="Woomen-b7749.php" >Woomen</a><br /><a href="Woz-b13246.php" >Woz</a><br /><a href="Wrangler-b868.php" >Wrangler</a><br />
+												</div>
+												<div class="listBrand"><a href="Wushu-Ruyi-b42885.php" >Wushu Ruyi</a><br /><a href="Wylson-b1101.php" >Wylson</a><br /><span class="brandLetter">X</span><br /><a href="Xapatan-b16825.php" >Xapatan</a><br /><a href="Xti-b630.php" >Xti</a><br /><a href="Xy-London-b89164.php" >Xy London</a><br /><span class="brandLetter">Y</span><br /><a href="Yas-b1968.php" >Yas</a><br /><a href="Yeezy-b38687.php" >Yeezy</a><br /><a href="Yellow-b23035.php" >Yellow</a><br /><a href="Yes-Zee-b26200.php" >Yes Zee</a><br /><a href="YOKONO-b71899.php" class="bestBrand">YOKONO</a><br /><a href="Yourbasics-b87733.php" >Yourbasics</a><br /><a href="Yowas-b2367.php" >Yowas</a><br /><a href="Ysabel-Mora-b65933.php" >Ysabel Mora</a><br /><a href="Yves-Saint-Laurent-b8728.php" >Yves Saint Laure..</a><br /><span class="brandLetter">Z</span><br /><a href="Zabba-Difference-b78187.php" >Zabba Difference</a><br /><a href="Zadig-ET-Voltaire-b59004.php" >Zadig & Voltaire</a><br /><a href="Zany-By-Trebede-b88531.php" >Zany By Trebede</a><br /><a href="Zapp-b2472.php" >Zapp</a><br /><a href="Zapy-b30375.php" >Zapy</a><br /><a href="Zouri-b74691.php" >Zouri</a><br />
+												</div>
+												<div class="listBrand">
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</li>
+				<li class="autrementLi"><a href="operation-autrement.php">La mode responsable</a>
+					<div id="menuAutre">
+		
+						<div>
+							<div class="headerMenu_linkListTitle">
+								<a href="achetez-local.php">
+									<img class="lazyHeader" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images//flags_alt/flag_fr.png" width="15" alt="Achetez local" /> Achetez local
+								</a>
+							</div>
+							<a href="achetez-local.php">
+								<img style="margin: 19px auto 18px auto;" class="lazyHeader" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images//header_menu_map.png" alt="Achetez local" />
+							</a><br>
+							<div><a href="achetez-local.php">J'y vais <i class="icon-flecheDroite"></i></a></div>
+						</div>
+			<div>
+								<div class="headerMenu_linkListTitle"><a href="made-in-france-st-11562-0.php" ><img src="https://imgext.spartoo.com/images//flags_alt/flag_fr.png" width="15" alt="Made in France" /> Made in France</a></div>
+								<a href="Espadrilles-st-11562-10135.php" ><i class="icon-espadrilles"></i> Espadrilles</a><br /><a href="Sandale-st-11562-10148.php" ><i class="icon-sandales"></i> Sandales et Nu-pieds</a><br /><a href="Basket-st-11562-10157.php" ><i class="icon-sneakers"></i> Baskets</a><br /><a href="Botte-st-11562-10124.php" ><i class="icon-bottes"></i> Bottes</a><br /><a href="Robes-st-11562-10515.php" ><i class="icon-robes"></i> Robes</a><br /><a href="Chaussures-de-sport-st-11562-10005.php" ><i class="icon-sport"></i> Chaussures de sport</a><br /><a href="T-shirts-ET-Polos-st-11562-10170.php" ><i class="icon-tshirt"></i> T-shirts & Polos</a><br /><a href="Chemises-ET-Tuniques-st-11562-10183.php" ><i class="icon-blouses"></i> Tops / Blouses</a><br /><a href="Sac-a-main-st-11562-10160.php" ><i class="icon-sacamain"></i> Sacs à main</a><br /><a href="Chaussons-st-11562-10141.php" ><i class="icon-chaussons"></i> Pantoufles / Chaussons</a><br /><a href="Bottine-st-11562-10127.php" ><i class="icon-boots"></i> Bottines / Boots</a><br />
+								<div><a href="made-in-france-st-11562-0.php" >Toutes les catégories <i class="icon-flecheDroite"></i></a></div>
+							</div>
+			<div>
+							<div class="headerMenu_linkListTitle"><a href="respartoo.php">ReSpartoo - Seconde Main</a></div>
+							<a href="Sandale-st-11561-10148.php" ><i class="icon-sandales"></i> Sandales et Nu-pieds</a><br /><a href="Mocassins-et-Chaussures-bateau-st-11561-10129.php" ><i class="icon-mocassins"></i> Mocassins & Chaussures bateau</a><br /><a href="Chaussons-st-11561-10141.php" ><i class="icon-chaussons"></i> Pantoufles / Chaussons</a><br /><a href="Ballerine-st-11561-10119.php" ><i class="icon-ballerines"></i> Ballerines / Babies</a><br /><a href="Derbies-et-Richelieu-st-11561-10156.php" ><i class="icon-derbies"></i> Derbies & Richelieu</a><br /><a href="Slip-ons-st-11561-10152.php" ><i class="icon-slipon"></i> Slip ons</a><br /><a href="Basket-st-11561-10157.php" ><i class="icon-sneakers"></i> Baskets</a><br /><a href="Escarpin-st-11561-10134.php" ><i class="icon-escarpins"></i> Escarpins</a><br /><a href="Robes-st-11561-10515.php" ><i class="icon-robes"></i> Robes</a><br /><a href="Bottine-st-11561-10127.php" ><i class="icon-boots"></i> Bottines / Boots</a><br />
+							<div><a href="compte.php?second_hand=1">Je vends <i class="icon-flecheDroite"></i></a></div>
+							<div><a href="produits-seconde-main.php" >Toutes les catégories <i class="icon-flecheDroite"></i></a></div>
+						</div><div>
+							<div class="headerMenu_linkListTitle"><a href="chaussure-ecoresponsable.php" ><i class="icon-eco" style="color: #428863;"></i> Écoresponsable</a></div>
+							<a href="Sandale-st-520-10148.php" ><i class="icon-sandales"></i> Sandales et Nu-pieds</a><br /><a href="Basket-st-520-10157.php" ><i class="icon-sneakers"></i> Baskets</a><br /><a href="Mule-Sabot-st-520-10139.php" ><i class="icon-mules"></i> Mules / Sabots</a><br /><a href="tong-st-520-10155.php" ><i class="icon-tongs"></i> Tongs / Claquettes</a><br /><a href="T-shirts-ET-Polos-st-520-10170.php" ><i class="icon-tshirt"></i> T-shirts & Polos</a><br /><a href="Bottine-st-520-10127.php" ><i class="icon-boots"></i> Bottines / Boots</a><br /><a href="Mocassins-et-Chaussures-bateau-st-520-10129.php" ><i class="icon-mocassins"></i> Mocassins & Chaussures bateau</a><br /><a href="Slip-ons-st-520-10152.php" ><i class="icon-slipon"></i> Slip ons</a><br /><a href="Ballerine-st-520-10119.php" ><i class="icon-ballerines"></i> Ballerines / Babies</a><br /><a href="Cartable-st-520-10610.php" ><i class="icon-cartable"></i> Cartable scolaire</a><br /><a href="Chaussons-st-520-10141.php" ><i class="icon-chaussons"></i> Pantoufles / Chaussons</a><br />
+							<div><a href="chaussure-ecoresponsable.php" >Toutes les catégories <i class="icon-flecheDroite"></i></a></div>
+						</div><div><div id="menusolidaire">
+								<div class="menusolidaireP">
+									<img class="lazyHeader" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/header_menu_solidaire_logo.gif" alt="La paire Solidaire" />
+									<div class="menusolidairetxt">Recyclez vos anciennes chaussures et recevez 20 € <br /><a href="operation-paire_solidaire.php"> J'y vais</a></div>
+								</div>
+								<div class="menusolidaireA">
+									<div class="menusolidairetxt">
+										<img class="lazyHeader" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/header_menu_amref_logo.gif" alt="Amref" /> <br/>
+										Soutenons la formation des <br />sages femmes en Afrique<br />
+										<a href="operation-amref.php">Je soutiens</a>
+									</div>
+									<img class="lazyHeader" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/header_menu_amrefimg_logo.gif" alt="Amref" />
+								</div><div></div>
+							</div>
+						</div></div>
+				</li>
+				<li><a href="sneakers.php#rst">SNEAKERS</a>
+					<div id="menuSneakers">
+						<div>
+				<div style="text-align:center;">
+					<img class="lazyHeader" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/marques/logo-marque-337.jpg" alt="New Balance" /><br>
+					<img style="max-width:100%;" class="lazyHeader" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/branding/U12273_responsive/images/brands/337.jpg" alt="New Balance" />
+				</div> <a href="modele-66677211-New-Balance-327.php">327</a><br><a href="modele-65846702-New-Balance-530.php">530</a><br><a href="modele-29238844-New-Balance-373.php">373</a><br><a href="modele-52382-New-Balance-574.php">574</a><br><div class="headerMenu_linkListTitle"><a href="sneakers-marque337.php#rst">Voir tous les modèles <i class="icon-flecheDroite"></i></a></div></div><div>
+				<div style="text-align:center;">
+					<img class="lazyHeader" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/marques/logo-marque-63.jpg" alt="Asics" /><br>
+					<img style="max-width:100%;" class="lazyHeader" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/branding/U12273_responsive/images/brands/63.jpg" alt="Asics" />
+				</div> <a href="modele-67265364-Asics-Gel-1130.php">Gel-1130</a><br><a href="modele-67556264-Asics-QUANTUM.php">Gel-quantum 360 Vii</a><br><a href="modele-67460722-Asics-GEL-NYC.php">Gel-nyc Black Graphi</a><br><a href="modele-67524378-Asics-Gel-Kayano-14.php">Baskets  Gel-kayano </a><br><div class="headerMenu_linkListTitle"><a href="sneakers-marque63.php#rst">Voir tous les modèles <i class="icon-flecheDroite"></i></a></div></div><div>
+				<div style="text-align:center;">
+					<img class="lazyHeader" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/marques/logo-marque-4.jpg" alt="Nike" /><br>
+					<img style="max-width:100%;" class="lazyHeader" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/branding/U12273_responsive/images/brands/4.jpg" alt="Nike" />
+				</div> <a href="modele-67262168-Nike-DUNK-LOW-RETRO.php">Nike Dunk Low Retro </a><br><a href="modele-67696743-Nike-DUNK-LO.php">Basket  Basket Homme</a><br><a href="modele-67507657-Nike-WMS-P-6000.php">Wms P-6000</a><br><a href="modele-67857765-Nike-CORTEZ-CLASSIC-LEATHER.php">Cortez Classic Leath</a><br><div class="headerMenu_linkListTitle"><a href="sneakers-marque4.php#rst">Voir tous les modèles <i class="icon-flecheDroite"></i></a></div></div><div>
+				<div style="text-align:center;">
+					<img class="lazyHeader" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/marques/logo-marque-59.jpg" alt="Saucony" /><br>
+					<img style="max-width:100%;" class="lazyHeader" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/branding/U12273_responsive/images/brands/59.jpg" alt="Saucony" />
+				</div> <a href="modele-67559135-Saucony-Progrid-Omni-9.php">Progrid Omni 9</a><br><a href="modele-65843669-Saucony-JAZZ-ORIGINAL.php">Jazz Original</a><br><a href="modele-65843673-Saucony-Shadow-5000.php">Shadow 5000 Evr S703</a><br><a href="modele-66228977-Saucony-PEREGRINE.php">Peregrine 12</a><br><div class="headerMenu_linkListTitle"><a href="sneakers-marque59.php#rst">Voir tous les modèles <i class="icon-flecheDroite"></i></a></div></div>
+					</div>
+				</li>
+				<li><a href="chaussures-vetements-sport.php" >Sport</a>
+					<div id="menuSport">
+						<div>
+							<div class="headerMenu_linkListTitle"><a href="chaussures-vetements-sport.php" >Catégories</a></div>
+							<a href="Basket-st-2-10157.php" ><i class="icon-sneakers"></i> Baskets</a><br /><a href="Chaussures-de-sport-st-2-10005.php" ><i class="icon-sport"></i> Chaussures de sport</a><br /><a href="tong-st-2-10155.php" ><i class="icon-tongs"></i> Tongs / Claquettes</a><br /><a href="Ballerine-st-2-10119.php" ><i class="icon-ballerines"></i> Ballerines / Babies</a><br /><a href="Shorts-ET-Bermudas-st-2-10181.php" ><i class="icon-bermudas"></i> Shorts & Bermudas</a><br /><a href="Maillots-de-bain-st-2-10193.php" ><i class="icon-maillotsbain"></i> Maillots & Shorts de bain </a><br /><a href="T-shirts-ET-Polos-st-2-10170.php" ><i class="icon-tshirt"></i> T-shirts & Polos</a><br /><a href="Sac-et-accessoire-sport-st-2-10146.php" ><i class="icon-sacsport"></i> Sacs de sport</a><br /><a href="Slip-ons-st-2-10152.php" ><i class="icon-slipon"></i> Slip ons</a><br /><a href="Accessoires-sport-st-2-10574.php" > Accessoires sport</a><br /><a href="Joggings-ET-Survetements-st-2-10997.php" ><i class="icon-joggings"></i> Joggings & Survêtements</a><br /><a href="sac-a-dos-st-2-10162.php" ><i class="icon-sacados"></i> Sacs à dos</a><br /><a href="Chaussure-Skate-st-2-10150.php" ><i class="icon-skate"></i> Skate</a><br />
+							<div><a href="chaussures-vetements-sport.php" >Toutes les catégories <i class="icon-flecheDroite"></i></a></div>
+						</div>
+						<div>
+							<div>
+								<a href="selection-chaussures-vetements-running-trail-407.php" ><img class="lazyHeader" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/branding/U2_responsive/images/headerMenu_407.jpg" alt="Running" /><br>Running</a>
+							</div>
+							<div>
+								<a href="Trail-st-12309-0.php" ><img class="lazyHeader" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/branding/U2_responsive/images/headerMenu_12309.jpg" alt="Trail" /><br>Trail</a>
+							</div>
+							<div>
+								<a href="selection-chaussures-vetements-randonnee-412.php" ><img class="lazyHeader" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/branding/U2_responsive/images/headerMenu_412.jpg" alt="Randonnée" /><br>Randonnée</a>
+							</div>
+							<div>
+								<a href="selection-chaussures-vetements-sport-indoor-402.php" ><img class="lazyHeader" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/branding/U2_responsive/images/headerMenu_402.jpg" alt="Sport Indoor" /><br>Sport Indoor</a>
+							</div>
+							<div>
+								<a href="selection-chaussures-vetements-fitness-training-405.php" ><img class="lazyHeader" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/branding/U2_responsive/images/headerMenu_405.jpg" alt="Fitness / Training" /><br>Fitness / Training</a>
+							</div>
+							<div>
+								<a href="selection-chaussures-vetements-basketball-408.php" ><img class="lazyHeader" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/branding/U2_responsive/images/headerMenu_408.jpg" alt="Basketball" /><br>Basketball</a>
+							</div>
+							<div>
+								<a href="selection-chaussures-vetements-tennis-403.php" ><img class="lazyHeader" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/branding/U2_responsive/images/headerMenu_403.jpg" alt="Tennis" /><br>Tennis</a>
+							</div>
+							<div>
+								<a href="selection-chaussures-vetements-football-406.php" ><img class="lazyHeader" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/branding/U2_responsive/images/headerMenu_406.jpg" alt="Football" /><br>Football</a>
+							</div>
+							<div>
+								<a href="selection-chaussures-vetements-bmx-skate-413.php" ><img class="lazyHeader" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/branding/U2_responsive/images/headerMenu_413.jpg" alt="BMX / Skate" /><br>BMX / Skate</a>
+							</div>
+							<div>
+								<a href="selection-chaussures-vetements-rugby-409.php" ><img class="lazyHeader" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/branding/U2_responsive/images/headerMenu_409.jpg" alt="Rugby" /><br>Rugby</a>
+							</div>
+						</div>
+					</div>
+				</li>
+			<li><a href="spartoo-ventes-privees.php" class="red">Journées Magiques</a>
+				<div id="menuPrixdoux">
+					<div>
+						<div class="headerMenu_linkListTitle"><a href="spartoo-ventes-privees-femme.php" >Femme</a></div>
+						<a href="Sandale-femme-st-10493-10148-0.php" ><i class="icon-sandales"></i> Sandales et Nu-pieds</a><br /><a href="Basket-femme-st-10493-10157-0.php" ><i class="icon-sneakers"></i> Baskets</a><br /><a href="Mule-Sabot-femme-st-10493-10139-0.php" ><i class="icon-mules"></i> Mules / Sabots</a><br /><a href="Escarpin-femme-st-10493-10134-0.php" ><i class="icon-escarpins"></i> Escarpins</a><br /><a href="Bottine-femme-st-10493-10127-0.php" ><i class="icon-boots"></i> Bottines / Boots</a><br />
+						<a href="Robes-femme-st-10493-10515-0.php" ><i class="icon-robes"></i> Robes</a><br /><a href="T-shirts-ET-Polos-femme-st-10493-10170-0.php" ><i class="icon-tshirt"></i> T-shirts & Polos</a><br /><a href="Jeans-femme-st-10493-10176-0.php" ><i class="icon-jeans"></i> Jeans</a><br />
+						<a href="Sac-a-main-femme-st-10493-10160-0.php" ><i class="icon-sacamain"></i> Sacs à main</a><br /><a href="Sac-bandouliere-femme-st-10493-10147-0.php" ><i class="icon-bandouliere"></i> Besaces / Sacs bandoulière</a><br /><a href="sac-a-dos-femme-st-10493-10162-0.php" ><i class="icon-sacados"></i> Sacs à dos</a><br />
+						<div><a href="spartoo-ventes-privees-femme-chaussures.php" >Toutes les chaussures femme <i class="icon-flecheDroite"></i></a></div>
+						<div><a href="spartoo-ventes-privees-femme-vetements.php" >Voir tous les vêtements femme <i class="icon-flecheDroite"></i></a></div>
+						<div><a href="spartoo-ventes-privees-femme-sacs.php" >Tous les sacs femme <i class="icon-flecheDroite"></i></a></div>
+					</div><div>
+						<div class="headerMenu_linkListTitle"><a href="spartoo-ventes-privees-homme.php" >Homme</a></div>
+						<a href="Basket-homme-st-10493-10157-0.php" ><i class="icon-sneakers"></i> Baskets</a><br /><a href="Mocassins-et-Chaussures-bateau-homme-st-10493-10129-0.php" ><i class="icon-mocassins"></i> Mocassins & Chaussures bateau</a><br /><a href="tong-homme-st-10493-10155-0.php" ><i class="icon-tongs"></i> Tongs / Claquettes</a><br /><a href="Sandale-homme-st-10493-10148-0.php" ><i class="icon-sandales"></i> Sandales et Nu-pieds</a><br /><a href="Chaussures-de-sport-homme-st-10493-10005-0.php" ><i class="icon-sport"></i> Chaussures de sport</a><br />
+						<a href="T-shirts-ET-Polos-homme-st-10493-10170-0.php" ><i class="icon-tshirt"></i> T-shirts & Polos</a><br /><a href="Shorts-ET-Bermudas-homme-st-10493-10181-0.php" ><i class="icon-bermudas"></i> Shorts & Bermudas</a><br /><a href="Chemises-homme-st-10493-10166-0.php" ><i class="icon-chemises"></i> Chemises</a><br />
+						<a href="sacoche-homme-st-10493-10677-0.php" ><i class="icon-pochette"></i> Pochettes / Sacoches</a><br /><a href="sac-a-dos-homme-st-10493-10162-0.php" ><i class="icon-sacados"></i> Sacs à dos</a><br /><a href="Sac-bandouliere-homme-st-10493-10147-0.php" ><i class="icon-bandouliere"></i> Besaces / Sacs bandoulière</a><br />
+						<div><a href="spartoo-ventes-privees-homme-chaussures.php" >Toutes les chaussures homme <i class="icon-flecheDroite"></i></a></div>
+						<div><a href="spartoo-ventes-privees-homme-vetements.php" >Voir tous les vêtements homme <i class="icon-flecheDroite"></i></a></div>
+						<div><a href="spartoo-ventes-privees-homme-sacs.php" >Tous les sacs homme <i class="icon-flecheDroite"></i></a></div>
+					</div><div>
+						<div class="headerMenu_linkListTitle"><a href="spartoo-ventes-privees-enfants.php" >Enfant</a></div>
+						<a href="Sandale-enfants-st-10493-10148-0.php" ><i class="icon-sandales"></i> Sandales et Nu-pieds</a><br /><a href="Basket-enfants-st-10493-10157-0.php" ><i class="icon-sneakers"></i> Baskets</a><br /><a href="tong-enfants-st-10493-10155-0.php" ><i class="icon-tongs"></i> Tongs / Claquettes</a><br /><a href="Chaussures-de-sport-enfants-st-10493-10005-0.php" ><i class="icon-sport"></i> Chaussures de sport</a><br /><a href="Ballerine-enfants-st-10493-10119-0.php" ><i class="icon-ballerines"></i> Ballerines / Babies</a><br />
+						<a href="T-shirts-ET-Polos-enfants-st-10493-10170-0.php" ><i class="icon-tshirt"></i> T-shirts & Polos</a><br /><a href="Shorts-ET-Bermudas-enfants-st-10493-10181-0.php" ><i class="icon-bermudas"></i> Shorts & Bermudas</a><br /><a href="Sweats-ET-Polaires-enfants-st-10493-10801-0.php" ><i class="icon-sweats"></i> Sweats & Polaires</a><br />
+						<a href="Cartable-enfants-st-10493-10610-0.php" ><i class="icon-cartable"></i> Cartable scolaire</a><br /><a href="sac-a-dos-enfants-st-10493-10162-0.php" ><i class="icon-sacados"></i> Sacs à dos</a><br /><a href="Sac-a-main-enfants-st-10493-10160-0.php" ><i class="icon-sacamain"></i> Sacs à main</a><br />
+						<div><a href="spartoo-ventes-privees-enfants-chaussures.php" >Toutes les chaussures <i class="icon-flecheDroite"></i></a></div>
+						<div><a href="spartoo-ventes-privees-enfants-vetements.php" >Vêtements <i class="icon-flecheDroite"></i></a></div>
+						<div><a href="spartoo-ventes-privees-enfants-sacs.php" >Sacs <i class="icon-flecheDroite"></i></a></div>
+					</div>
+					<div id="destock" style="overflow-y: auto;max-height: 90%;scrollbar-width: thin;scrollbar-color: #707070 #e6e6e6;">
+						<div class="headerMenu_linkListTitle"><a href="Journees-magiques-dernieres-tailles-st-12320-0.php" >Dernières tailles</a></div>
+						<div class="headerMenu_linkListSubTitle">Chaussures</div><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-102.php" >16</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-23.php" >17</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-24.php" >18</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-25.php" >19</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-26.php" >20</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-27.php" >21</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-28.php" >22</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-29.php" >23</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-30.php" >24</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-31.php" >25</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-32.php" >26</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-34.php" >28</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-35.php" >29</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-36.php" >30</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-37.php" >31</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-38.php" >32</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-39.php" >33</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-40.php" >34</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-33.php" >27</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-41.php" >35</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-1.php" >36</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-2.php" >37</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-3.php" >38</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-4.php" >39</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-5.php" >40</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-6.php" >41</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-7.php" >42</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-8.php" >43</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-9.php" >44</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-10.php" >45</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-11.php" >46</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-84.php" >47</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-85.php" >48</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-86.php" >49</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-105.php" >50</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-289.php" >51</a></span><div class="headerMenu_linkListSubTitle">Vêtements</div><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-14979.php" >XXS</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-291.php" >XS</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-282.php" >S</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-283.php" >M</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-284.php" >L</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-285.php" >XL</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-250.php" >XXL</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-604.php" >3XL</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-15432.php" >32</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-15066.php" >34</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-15067.php" >36</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-15068.php" >38</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-15069.php" >40</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-15070.php" >42</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-15071.php" >44</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-15072.php" >46</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-15073.php" >48</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-15074.php" >50</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-15075.php" >52</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-15080.php" >US 24</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-15081.php" >US 25</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-662.php" >US 26</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-649.php" >US 27</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-641.php" >US 28</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-642.php" >US 29</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-643.php" >US 30</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-15082.php" >US 31</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-15083.php" >US 32</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-15084.php" >US 33</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-15085.php" >US 34</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-15087.php" >US 36</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-15089.php" >US 38</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-14828.php" >T0</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-891.php" >T1</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-890.php" >T2</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-14868.php" >T4</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-15110.php" >T6</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-15893.php" >Naissance</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-15896.php" >1 mois</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-15726.php" >3 mois</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-15727.php" >6 mois</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-15728.php" >9 mois</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-15729.php" >12 mois</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-15730.php" >18 mois</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-15731.php" >2 ans</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-15732.php" >3 ans</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-15733.php" >4 ans</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-15734.php" >5 ans</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-15735.php" >6 ans</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-15736.php" >7 ans</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-15737.php" >8 ans</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-15902.php" >9 ans</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-15738.php" >10 ans</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-15739.php" >12 ans</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-15740.php" >14 ans</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-15741.php" >16 ans</a></span><span class="headerMenuSize"><a href="Journees-magiques-dernieres-tailles-st-12320-0-taille-19781.php" >18 ans</a></span></div>
+				</div>
+			</li>
+				<li><a href="univers-luxe.php">Luxe</a>
+					<div id="menuLuxe">
+						<div>
+							<div class="headerMenu_linkListTitle"><a href="marques.php?type=2">Marques à la une</a></div>
+							<a href="hugo-boss.php" >BOSS</a><br /><a href="Calvin-Klein-Jeans-b403.php" >Calvin Klein Jeans</a><br /><a href="hugo-boss.php" >HUGO</a><br /><a href="K-Way-b2430.php" >K-Way</a><br /><a href="Karl-Lagerfeld-b44199.php" >Karl Lagerfeld</a><br /><a href="Lacoste-b90.php" >Lacoste</a><br /><a href="Lancel-b88824.php" >Lancel</a><br /><a href="ralph-lauren.php" >Lauren Ralph Lauren</a><br /><a href="MICHAEL-Michael-Kors-b2093.php" >MICHAEL Michael Kors</a><br /><a href="ralph-lauren.php" >Polo Ralph Lauren</a><br /><a href="tommy-hilfiger.php" >Tommy Hilfiger</a><br /><a href="tommy-hilfiger.php" >Tommy Jeans</a><br /><a href="UGG-b409.php" >UGG</a><br />
+							<div><a href="marques.php?type=2">Toutes les marques luxe <i class="icon-flecheDroite"></i></a></div>
+						</div>
+						<div>
+							<div class="headerMenu_linkListTitle"><a href="univers-luxe-chaussures.php" >Chaussures <i class="icon-flecheDroite"></i></a></div>
+							<a href="Basket-st-10641-10157.php" ><i class="icon-sneakers"></i> Baskets</a><br /><a href="Sandale-st-10641-10148.php" ><i class="icon-sandales"></i> Sandales et Nu-pieds</a><br /><a href="tong-st-10641-10155.php" ><i class="icon-tongs"></i> Tongs / Claquettes</a><br /><a href="Mule-Sabot-st-10641-10139.php" ><i class="icon-mules"></i> Mules / Sabots</a><br /><a href="Mocassins-et-Chaussures-bateau-st-10641-10129.php" ><i class="icon-mocassins"></i> Mocassins & Chaussures bateau</a><br /><a href="Escarpin-st-10641-10134.php" ><i class="icon-escarpins"></i> Escarpins</a><br /><a href="Chaussons-st-10641-10141.php" ><i class="icon-chaussons"></i> Pantoufles / Chaussons</a><br /><a href="Ballerine-st-10641-10119.php" ><i class="icon-ballerines"></i> Ballerines / Babies</a><br /><a href="Bottine-st-10641-10127.php" ><i class="icon-boots"></i> Bottines / Boots</a><br /><a href="Espadrilles-st-10641-10135.php" ><i class="icon-espadrilles"></i> Espadrilles</a><br /><a href="Botte-st-10641-10124.php" ><i class="icon-bottes"></i> Bottes</a><br /><a href="Derbies-et-Richelieu-st-10641-10156.php" ><i class="icon-derbies"></i> Derbies & Richelieu</a><br /><a href="Slip-ons-st-10641-10152.php" ><i class="icon-slipon"></i> Slip ons</a><br />
+							<div><a href="univers-luxe-chaussures.php" >Toutes les chaussures luxe <i class="icon-flecheDroite"></i></a></div>
+						</div>
+						<div>
+							<div class="headerMenu_linkListTitle"><a href="univers-luxe-sacs.php" >Maroquinerie <i class="icon-flecheDroite"></i></a></div>
+							<a href="Sac-a-main-st-10641-10160.php" ><i class="icon-sacamain"></i> Sacs à main</a><br /><a href="sacoche-st-10641-10677.php" ><i class="icon-pochette"></i> Pochettes / Sacoches</a><br /><a href="Sac-bandouliere-st-10641-10147.php" ><i class="icon-bandouliere"></i> Besaces / Sacs bandoulière</a><br /><a href="portefeuille-st-10641-10201.php" ><i class="icon-portefeuille"></i> Portefeuilles / Porte-monnaie</a><br /><a href="Cabas-Sac-shopping-st-10641-10674.php" ><i class="icon-cabas"></i> Cabas / Sacs shopping</a><br /><a href="Sac-de-voyage-st-10641-10213.php" ><i class="icon-valise"></i> Sacs de voyage</a><br /><a href="porte-document-st-10641-10683.php" ><i class="icon-portedoc"></i> Porte-Documents / Serviettes</a><br /><a href="sac-a-dos-st-10641-10162.php" ><i class="icon-sacados"></i> Sacs à dos</a><br /><a href="Vanity-st-10641-10673.php" ><i class="icon-vanity"></i> Vanity / Trousses de toilette</a><br /><a href="Valise-st-10641-10215.php" ><i class="icon-valise"></i> Valises</a><br /><a href="trousse-st-10641-10566.php" ><i class="icon-trousse"></i> Trousses</a><br /><a href="Sac-et-accessoire-sport-st-10641-10146.php" ><i class="icon-sacsport"></i> Sacs de sport</a><br /><a href="Sac-ordinateur-st-10641-10599.php" ><i class="icon-sacordi"></i> Sacs ordinateur</a><br />
+							<div><a href="univers-luxe-sacs.php" >Toute la maroquinerie luxe <i class="icon-flecheDroite"></i></a></div>
+						</div>
+						<img class="lazyHeader" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images//headerMenu_luxe.jpg" alt="" style="margin: 25px 0 0 50px;align-self: baseline;" />
+					</div>
+				</li><div style="width:calc((100% - 1200px)/2);"></div>
+</ul>
+
+
+<script>
+	$(document).ready(
+		function() {
+			if (is_touch_device()) {
+				$("#nav > ul > li > a").on("mousedown", false);
+				$("#nav > ul > li > a").on("click", false);
+
+				$("#nav > ul > li > div > ul > li > a").on("mousedown", false);
+				$("#nav > ul > li > div > ul > li > a").on("click", false);
+
+				$("#menuBrand > ul > li > div.menuBrandDiv").on("mousedown", false);
+				$("#menuBrand > ul > li > div.menuBrandDiv").on("click", false);
+			}
+			function openLink(event) {
+				event.preventDefault();
+			}
+		});
+</script>
+
+		</nav>
+		<div id="skip-link-anchor"></div>
+			<div id="skip-link-anchor"></div>
+		<div style="display:flex;justify-content:space-around;"><div id="luckydays">
+						<a href="#" id="ld_close_div" onclick="$('#luckydays').hide();return false;">Fermer&nbsp;<i class="icon-annuler"></i></a>
+						<div id="content_jeux" style="background-image: url('https://imgext.spartoo.com/images/bg_luckydays.png')">
+							<div id="jeux">
+								<img src="https://imgext.spartoo.com/images/cadre_luckydays.png" width="220" height="220" id="cadre" alt="LUCKY DAYS" />
+								<img src="https://imgext.spartoo.com/images/roue_luckydays.svg" width="200" height="200" alt="LUCKY DAYS" class="ma_roue" id="roue" />
+							</div>
+							<p class="ld_phrase">Tous les jours, gagnez les chaussures de vos rêves !</p>
+							<div class="content_bt">
+								<button type="button" id="ld_bouton" onclick="if(typeof luckydays_init != 'undefined'){ luckydays_init('6b7bdf76e14ab522e0e9125cb3527a2c4fcbc30c3f654625e36306da1c71c805'); }">LANCER LA ROUE</button>
+								<div id="ld_gain"></div>
+							</div>
+						</div>
+						<div id="formulaire_send">
+						</div>
+					</div></div>
+				<script src="https://imgext.spartoo.com/js/min/page_luckydays.min.js"></script>
+			<div class="subscribe_push" id="subscribe_push_bell" style="display:none">
+				<div>
+					<p><i class="icon-bell"></i> Restez connecté à la mode !</p>
+					<p>Souscrivez aux notifications pour recevoir nos dernières actualités, les nouvelles sur votre commande...</p>
+					<p>Pas de mail requis</p>
+					<p>
+						<a id="ignore_pushs">Non merci</a>
+						<a class="btn bt_black btn-small" id="activate_pushs">Activer</a>
+					</p>
+				</div>
+				<img src="https://imgext.spartoo.com/images//mobile/home/subscribe_push.jpg" alt="Restez connecté à la mode !" />
+			</div>
+		
+			<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+			<script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-messaging-compat.js"></script>
+
+			<script>
+				var push_url = "https://www.spartoo.com/ajax/push/subscribe_push.php";
+
+				if (!('serviceWorker' in navigator)) {
+					console.warn('ServiceWorker arent supported.')
+				} else if (!('PushManager' in window)) {
+					console.warn('Push messaging isnt supported . ');
+				} else if (Notification.permission === 'denied') {
+					console.warn('The user has blocked notifications.');
+				} else if (typeof Notification.requestPermission != "function") {
+					console.warn('Notifications arent supported.');
+				} else if (typeof firebase != "object") {
+				 	console.warn('Firebase is not loaded.');
+				} else if (Notification.permission === 'default' && !sessionStorage.getItem('spartoo_ask_push')) {
+					sessionStorage.setItem('spartoo_ask_push', true);
+					document.addEventListener("DOMContentLoaded", () => {
+						Notification.requestPermission().then((permission) => {
+							if (Notification.permission === 'default') {
+								display_push_bell()
+							} else if (permission === 'granted') {
+								initialiseState()
+							}
+						})
+					})
+				} else if (Notification.permission === 'granted') {
+					initialiseState()
+				}
+
+				function initialiseState() {
+					firebase.initializeApp({
+						apiKey: "AIzaSyCJgSb99i0hfbAVL_21B3Olrsi8qXjzgDE",
+						authDomain: "project-1071538987441837613.firebaseapp.com",
+						databaseURL: "https://project-1071538987441837613.firebaseio.com",
+						projectId: "project-1071538987441837613",
+						storageBucket: "project-1071538987441837613.appspot.com",
+						messagingSenderId: "1037069204882",
+						appId: "1:1037069204882:web:5abd5aaa58c267f718154b"
+					});
+					const messaging = firebase.messaging();
+
+					if (messaging === null) {
+						return
+					}
+
+					messaging.getToken().then(function(token) {
+						data = {
+							subscription : token,
+							mode : 'subscribe'
+						}
+						data['chrome'] = (navigator.userAgent.indexOf("Chrome") != -1);
+						data['firefox'] = (navigator.userAgent.indexOf("Firefox") != -1);
+						data['safari'] = (navigator.userAgent.indexOf("Safari") != -1);
+						$.ajax({
+							type: 'POST',
+							url: push_url,
+							data : data
+						})
+					})
+				}
+
+				/**
+				* Affiche ou non la popup pour s abonner aux pushs navs
+				* @param type: none - block
+				*/
+				function display_push_bell(type) {
+					if(!(getCookie("subscribe_push_spartoo") == "disable")) {
+						document.getElementById("subscribe_push_bell").style.display = 'block';
+					}
+				}
+
+				// Quand on s abonne aux pushs
+				$('#activate_pushs').on('click', function() {
+					$("#subscribe_push_bell").fadeOut();
+					Notification.requestPermission().then((permission) => {
+						if (permission === 'granted') {
+							initialiseState()
+						}
+					})
+				})
+
+				// Quand on clic sur Non merci
+				$('#ignore_pushs').on('click', function() {
+					$("#subscribe_push_bell").fadeOut();
+					var d = new Date();
+					d.setTime(d.getTime() + (90 * 24 * 60 * 60 * 1000));
+					var expires = "expires="+d.toUTCString();
+					document.cookie = "subscribe_push_spartoo=disable;" + expires + ";secure;path=/";
+
+				});
+
+			</script>
+		
+	<div id="contentTop">
+		<a id="top"></a>
+		<h1>Politique de protection des données</h1>
+	</div>
+	<div class="contentCentre">
+		<div class="section-cnil">
+			<h2><span>1</span>La collecte de données à caractère personnel</h2>
+			<p>Lors de la création de votre compte et de vos commandes sur le site www.spartoo.com (ci-après dénommé le Site), SPARTOO recueille des données à caractère personnel. La protection de vos données personnelles est au cœur des préoccupations de SPARTOO , qui s’attache à l’amélioration constante de sa conformité au Règlement Général sur la Protection des Données (RGPD), ainsi qu’à la loi Informatique et Libertés n°78-17 du 6 janvier 1978 (LIL). <br>
+Le terme <strong>« données personnelles »</strong> est défini par la CNIL comme « toute information relative à une personne physique susceptible d'être identifiée, directement ou indirectement ».</p>
+		</div>
+		<div class="section-cnil">
+			<h2><span>2</span>Le responsable du traitement des données personnelles</h2>
+			<p>Le responsable du traitement des données personnelles est défini comme une société déterminant les finalités et les moyens d’un traitement.<br>
+Les données personnelles qui sont collectées sur le Site sont traitées par :<br><br>
+<strong>SPARTOO </strong> Société Anonyme<br>
+Immatriculée au RCS de Grenoble sous le n° 489 895 821,<br>
+Dont le siège social est situé 16 rue Henri Barbusse 38100 Grenoble (ci-après : SPARTOO)<br><br>
+SPARTOO a désigné un délégué à la protection des données personnelles (ci-après : DPO).<br><br>
+Vous pouvez vous adresser au DPO par :<br>
+- Courrier électronique : à dpo@spartoo.com <br>
+- Courrier postal : SPARTOO  - DPO -16 rue Henri Barbusse 38100 Grenoble
+
+</p>
+		</div>
+		<div class="section-cnil">
+			<h2><span>3</span>Exemples de catégories de données personnelles collectées</h2>
+			<p>Quelles informations personnelles SPARTOO collecte-t-elle sur ses clients ?<br><br>
+- Informations que vous nous communiquez<br>
+Nous collectons et enregistrons toutes les informations que vous nous communiquez sur votre compte SPARTOO. Vous pouvez choisir de ne pas nous communiquer certaines informations, cette décision pourrait cependant vous priver de certains de nos services. <br><br>
+- Informations collectées automatiquement<br>
+Lors de votre navigation sur le site SPARTOO, nous collectons automatiquement certaines informations, notamment relatives à votre utilisation, votre interaction avec le contenu du site SPARTOO. Cette collecte intervient principalement via des "cookies".<br><br>
+- Informations issues d'autres sources<br>
+Nos partenariats marketing nous permettent également de collecter des données personnelles vous concernant, cette collecte étant conditionnée à votre consentement exprès préalable exprimé à l’attention desdits partenaires, . (par exemple Google : https://business.safety.google/privacy/)<br><br>
+Le traitement des données personnelles concerne notamment : <br><br>
+- L’identité ; <br>
+- Les données relatives au paiement ; <br>
+- Les données relatives à la transaction ; <br>
+- La situation familiale, économique ou financière ; <br>
+- Données de navigation ; <br>
+- Les données relatives au suivi de la relation commerciale : historique des commandes, informations liées au SAV, détail des commandes, les incidents de livraison, les réclamations, les échanges, les commentaires ; <br>
+- Les données relatives aux règlements des factures ; <br>
+- Les données nécessaires à la réalisation des actions de fidélisation, de prospection ; <br>
+- Les données relatives à l’organisation et au traitement des jeux concours, et de toute opération promotionnelle ; <br>
+- Dans le cadre de la lutte contre la fraude :  justificatifs d’identités ou de domicile et la copie tronquée de votre carte bancaire ; <br>
+- Les enregistrements téléphoniques lors de vos appels au service client. (Vous avez la possibilité de refuser l’enregistrement lors de votre appel). <br>
+</p>
+		</div>
+		<div class="section-cnil">
+			<h2><span>4</span>Finalités de la collecte des données</h2>
+			<p>Pour quelles finalités SPARTOO traite-t-elle mes informations personnelles ?<br><br>
+SPARTOO traite les données personnelles dans le but de fournir et d'améliorer ses services et l’expérience client.<br>
+Ces finalités incluent notamment :<br><br>
+- Les commandes, la livraison des produits <br>
+SPARTOO traite les données personnelles principalement dans le but de : traiter les commandes, de permettre la livraison des produits, de procéder aux paiements et de communiquer avec les clients s’agissant de leurs commandes, les produits, les services et les offres promotionnelles.<br><br>
+- La personnalisation de votre expérience client SPARTOO <br>
+Nous utilisons vos informations personnelles afin de vous recommander des produits et des services qui pourraient vous intéresser en identifiant vos préférences et en personnalisant votre expérience SPARTOO.<br><br>
+- La conformité à nos obligations légales.<br>
+Dans certains cas, nous avons une obligation légale de collecter et traiter vos informations personnelles. <br><br>
+- Permettre une communication optimisée avec nos clients<br>
+- La prévention contre la fraude <br><br<
+Nous traitons vos informations personnelles dans le but de lutter contre la fraude. Nous pourrons être amenés à utiliser des méthodes d'évaluation (par un algorithme) afin d'anticiper et de gérer les risques de fraude. Ces mesures s’accompagnent parfois d’une demande de justificatifs complémentaires s’agissant de votre identité après validation du paiement.<br>
+Certains traitements de données personnelles nécessitent le recueil de votre consentement pour une finalité spécifique. Lorsque vous consentez au traitement de vos informations personnelles pour cette finalité déterminée, vous pouvez retirer ce consentement à tout moment et il y sera mis fin.<br><br>
+Si vous ne souhaitez pas recevoir la newsletter SPARTOO, vous pouvez vous désabonner depuis l’onglet mes abonnements dans votre compte. <br><br>
+Si vous ne souhaitez pas que nous utilisions vos informations personnelles afin d'afficher des publicités basées sur vos centres d'intérêts, il vous suffit de le notifier dans la section mes paramètres de cookies.<br><br>
+Si vous souhaitez naviguer anonymement sur nos sites internet, vous pourrez le faire en vous déconnectant de votre compte et en désactivant les cookies sur votre navigateur.<br>
+</p>
+		</div>
+		<div class="section-cnil">
+			<h2><span>5</span>Les catégories de destinataires des données personnelles</h2>
+			<p>Les catégories de destinataires de vos données personnelles sont :<br><br>
+- Les Services internes de SPARTOO <br>
+L’accès à vos données à caractère personnel au sein de la société SPARTOO sera limité aux catégories de collaborateurs dans la limite de leurs attributions et en fonction de la finalité du traitement de ces données. <br><br>
+(Les données que nous collectons peuvent être transmises à certaines de nos filiales et à certains de nos prestataires externes, elles concernent notamment : le traitement des commandes de produits, la livraison des produits, le traitement des paiements. Ces prestataires de services tiers ont accès aux informations personnelles nécessaires à l'exécution de leurs prestations et ne sont pas autorisés à les utiliser à d'autres fins et sont en outre tenus de respecter les lois applicables à la protection des données personnelles.<br><br>
+- Certaines données personnelles sont transférées vers un pays hors de l’Union Européenne. Lorsque nous transférons des informations personnelles à des pays ne faisant pas partie de l'Espace économique européen, nous nous assurons que ces informations sont transférées en conformité avec les lois applicables à la protection des données personnelles.<br>
+Exemple : un contrat de sous-traitance avec une société domiciliée à Madagascar qui prend en charge une partie de l’activité du service client de SPARTOO ; Toutes les mesures et garanties nécessaires pour sécuriser de tels transferts ont été prises.<br><br>
+- Peuvent également être destinataires de vos données à caractère personnel les organismes publics, exclusivement pour répondre aux obligations légales, les auxiliaires de justice, les officiers ministériels et les organismes chargés d’effectuer le recouvrement de créances.<br></p>
+		</div>
+		<div class="section-cnil">
+			<h2><span>6</span>Les bases légales </h2>
+			<p>Une base légale d'un traitement est définie comme l’élément autorisant légalement sa mise en œuvre, ce qui donne le droit à un organisme de traiter des données à caractère personnel. 
+Les bases légales sont distinctes en fonction du type de traitement effectué : <br><br>
+- Le contrat : concerne le traitement de toutes les données nécessaires au contrat consenti.<br>
+- Le consentement : vous choisissez de communiquer vos données à caractère personnel en donnant expressément votre consentement qui peut être retiré à tout moment.<br>
+- L’intérêt légitime : l’intérêt doit répondre aux critères de légitimité, nécessité, et ne pas heurter les droits et intérêts des personnes dont les données sont traitées.<br>
+- L’obligation légale : Le traitement des données personnelles résulte d’une obligation légale.<br>
+</p>
+		</div>
+		<div class="section-cnil" id="cookies">
+			<h2><span>7</span>Ensemble des traitements mis en œuvre</h2>
+			<p><table style="border-collapse:collapse;border:1px solid #000;">
+	<tr style="background-color: #e6e6e6;">
+		<td style="padding:5px;border:1px solid #000;"></td>
+		<td style="padding:5px;border:1px solid #000;"><b>Gestion des clients</b></td>
+	</tr>
+	<tr>
+		<td style="padding:5px;border:1px solid #000;"><i>Finalité du traitement</i></td>
+		<td style="padding:5px;border:1px solid #000;">Gestion de la relation commerciale, des commandes, de la livraison, du compte client.</td>
+	</tr>
+	<tr>
+		<td style="padding:5px;border:1px solid #000;"><i>Base légale du traitement</i></td>
+		<td style="padding:5px;border:1px solid #000;">Nécessaire à la conclusion et réalisation du contrat</td>
+	</tr>
+	<tr>
+		<td style="padding:5px;border:1px solid #000;">Destinataires</td>
+		<td style="padding:5px;border:1px solid #000;">
+			Services internes SPARTOO<br>
+			Filiales <br>
+			Sous-traitant<br>
+		</td>
+	</tr>
+	<tr>
+		<td style="padding:5px;border:1px solid #000;">Durée de conservation en base active</td>
+		<td style="padding:5px;border:1px solid #000;">3 ans *</td>
+	</tr>
+</table>
+<br>
+<table style="border-collapse:collapse;border:1px solid #000;">
+	<tr style="background-color: #e6e6e6;">
+		<td style="padding:5px;border:1px solid #000;"></td>
+		<td style="padding:5px;border:1px solid #000;">
+			<b>Gestion des prospects avec et sans compte SPARTOO</b>
+		</td>
+	</tr>
+	<tr>
+		<td style="padding:5px;border:1px solid #000;">
+			<i>Finalité du traitement</i>
+		</td>
+		<td style="padding:5px;border:1px solid #000;">
+			Constituer et gérer des fichiers de prospects, réaliser les opérations de prospection et de promotion des produits SPARTOO et partenaires.
+		</td>
+	</tr>
+	<tr>
+		<td style="padding:5px;border:1px solid #000;">
+			<i>Base légale du traitement</i>
+		</td>
+		<td style="padding:5px;border:1px solid #000;">
+			Consentement
+		</td>
+	</tr>
+	<tr>
+		<td style="padding:5px;border:1px solid #000;">
+			<i>Destinataires</i>
+		</td>
+		<td style="padding:5px;border:1px solid #000;">
+			Services internes SPARTOO
+		</td>
+	</tr>
+	<tr>
+		<td style="padding:5px;border:1px solid #000;">Durée de conservation en base active</td>
+		<td style="padding:5px;border:1px solid #000;">3 ans *</td>
+	</tr>
+</table>
+
+<br />
+<table style="border-collapse:collapse;border:1px solid #000;">
+	<tr style="background-color: #e6e6e6;">
+		<td style="padding:5px;border:1px solid #000;">
+		</td>
+		<td style="padding:5px;border:1px solid #000;">
+			<b>Lutte contre la fraude </b>
+		</td>
+	</tr>
+	<tr>
+		<td style="padding:5px;border:1px solid #000;">
+			Finalité du traitement
+		</td>
+		<td style="padding:5px;border:1px solid #000;">
+			Lutte contre la fraude
+		</td>
+	</tr>
+	<tr>
+		<td style="padding:5px;border:1px solid #000;">
+			Données traitées
+		</td>
+		<td style="padding:5px;border:1px solid #000;">
+			Justificatifs demandés dans le cadre de la lutte contre la fraude
+		</td>
+	</tr>
+	<tr>
+		<td style="padding:5px;border:1px solid #000;">
+			Base légale du traitement
+		</td>
+		<td style="padding:5px;border:1px solid #000;">
+			Intérêt légitime qui consiste à prévenir la fraude
+		</td>
+	</tr>
+	<tr>
+		<td style="padding:5px;border:1px solid #000;">
+			Destinataire
+		</td>
+		<td style="padding:5px;border:1px solid #000;">
+			Services internes SPARTOO
+		</td>
+	</tr>
+	<tr>
+		<td style="padding:5px;border:1px solid #000;">
+			<i>Durée de conservation en base active</i>
+		</td>
+		<td style="padding:5px;border:1px solid #000;">
+			6 mois
+		</td>
+	</tr>
+</table>
+<br />
+
+<table style="border-collapse:collapse;border:1px solid #000;">
+	<tr style="background-color: #e6e6e6;">
+		<td style="padding:5px;border:1px solid #000;"></td>
+		<td style="padding:5px;border:1px solid #000;">
+			<b>Conservation des factures</b>
+		</td>
+	</tr>
+	<tr>
+		<td style="padding:5px;border:1px solid #000;">
+			<i>Finalité du traitement</i>
+		</td>
+		<td style="padding:5px;border:1px solid #000;">
+			Conservation des factures
+		</td>
+	</tr>
+<tr>
+		<td style="padding:5px;border:1px solid #000;">
+			<i>Base légale du traitement</i>
+		</td>
+		<td style="padding:5px;border:1px solid #000;">
+			Obligation légale
+		</td>
+	</tr>
+	<tr>
+		<td style="padding:5px;border:1px solid #000;">
+			<i>Destinataires</i>
+		</td>
+		<td style="padding:5px;border:1px solid #000;">
+			Services internes SPARTOO
+		</td>
+	</tr>
+	<tr>
+		<td style="padding:5px;border:1px solid #000;">
+			<i>Durée de conservation en base intermédiaire </i>
+		</td>
+		<td style="padding:5px;border:1px solid #000;">
+			10 ans à partir de la date d’émission de la facture
+		</td>
+	</tr>
+</table>
+<br>
+<table style="border-collapse:collapse;border:1px solid #000;">
+   <tr style="background-color: #e6e6e6;">
+      <td style="padding:5px;border:1px solid #000;"></td>
+      <td style="padding:5px;border:1px solid #000;">
+         <b>Gestion des utilisateurs de ReSpartoo</b>
+      </td>
+   </tr>
+   <tr>
+      <td style="padding:5px;border:1px solid #000;">
+         <i>Finalité du traitement</i>
+      </td>
+      <td style="padding:5px;border:1px solid #000;">
+         Permettre l’intermédiation entre acheteurs et vendeurs particuliers d’articles d’occasion
+      </td>
+   </tr>
+<tr>
+      <td style="padding:5px;border:1px solid #000;">
+         <i>Base légale du traitement</i>
+      </td>
+      <td style="padding:5px;border:1px solid #000;">
+         Nécessaire à la conclusion et réalisation du Contrat
+      </td>
+   </tr>
+   <tr>
+      <td style="padding:5px;border:1px solid #000;">
+         <i>Destinataires</i>
+      </td>
+      <td style="padding:5px;border:1px solid #000;">
+         Services internes SPARTOO<br>
+         Filiales<br>
+         Sous-traitant
+      </td>
+   </tr>
+   <tr>
+      <td style="padding:5px;border:1px solid #000;">
+         <i>Durée de conservation en base active </i>
+      </td>
+      <td style="padding:5px;border:1px solid #000;">
+         3 ans*
+      </td>
+   </tr>
+</table>
+<br>
+<table style="border-collapse:collapse;border:1px solid #000;">
+   <tr style="background-color: #e6e6e6;">
+      <td style="padding:5px;border:1px solid #000;"></td>
+      <td style="padding:5px;border:1px solid #000;">
+         <b>Gestion des jeux concours</b>
+      </td>
+   </tr>
+   <tr>
+      <td style="padding:5px;border:1px solid #000;">
+         <i>Finalité du traitement</i>
+      </td>
+      <td style="padding:5px;border:1px solid #000;">
+         Participation aux jeux concours, gain de lots, collecte de données prospects
+      </td>
+   </tr>
+<tr>
+      <td style="padding:5px;border:1px solid #000;">
+         <i>Base légale du traitement</i>
+      </td>
+      <td style="padding:5px;border:1px solid #000;">
+         Nécessaire à la conclusion et réalisation du contrat, consentement
+      </td>
+   </tr>
+   <tr>
+      <td style="padding:5px;border:1px solid #000;">
+         <i>Destinataires</i>
+      </td>
+      <td style="padding:5px;border:1px solid #000;">
+         Services internes SPARTOO<br>
+         Prestataires commerciaux
+      </td>
+   </tr>
+   <tr>
+      <td style="padding:5px;border:1px solid #000;">
+         <i>Durée de conservation en base active </i>
+      </td>
+      <td style="padding:5px;border:1px solid #000;">
+         3 ans*
+      </td>
+   </tr>
+</table>
+<br>
+<table style="border-collapse:collapse;border:1px solid #000;">
+   <tr style="background-color: #e6e6e6;">
+      <td style="padding:5px;border:1px solid #000;"></td>
+      <td style="padding:5px;border:1px solid #000;">
+         <b>Gestion droits d’accès, rectification, opposition, effacement, limitation, portabilité </b>
+      </td>
+   </tr>
+   <tr>
+      <td style="padding:5px;border:1px solid #000;">
+         <i>Finalité du traitement</i>
+      </td>
+      <td style="padding:5px;border:1px solid #000;">
+         Permettre aux clients et prospects d’exercer leurs droits quant au traitement de leurs données personnelles
+      </td>
+   </tr>
+<tr>
+      <td style="padding:5px;border:1px solid #000;">
+         <i>Base légale du traitement</i>
+      </td>
+      <td style="padding:5px;border:1px solid #000;">
+         Obligation légale
+      </td>
+   </tr>
+   <tr>
+      <td style="padding:5px;border:1px solid #000;">
+         <i>Destinataires</i>
+      </td>
+      <td style="padding:5px;border:1px solid #000;">
+         Services juridique
+      </td>
+   </tr>
+   <tr>
+      <td style="padding:5px;border:1px solid #000;">
+         <i>Durée de conservation en base</i>
+      </td>
+      <td style="padding:5px;border:1px solid #000;">
+         en base intermédiaire : 5 ans*<br>
+         en base active : 24 heures s’agissant des justificatifs d’identité communiqués dans le cadre de l’exercice du droit à portabilité
+      </td>
+   </tr>
+</table>
+<br>
+<table style="border-collapse:collapse;border:1px solid #000;">
+   <tr style="background-color: #e6e6e6;">
+      <td style="padding:5px;border:1px solid #000;"></td>
+      <td style="padding:5px;border:1px solid #000;">
+         <b>Conservation des données de paiement dans le cadre d’un paiement ponctuel (sous forme cryptée [B-crypt])</b>
+      </td>
+   </tr>
+   <tr>
+      <td style="padding:5px;border:1px solid #000;">
+         <i>Finalité du traitement</i>
+      </td>
+      <td style="padding:5px;border:1px solid #000;">
+         Paiement ponctuel
+      </td>
+   </tr>
+<tr>
+      <td style="padding:5px;border:1px solid #000;">
+         <i>Base légale du traitement</i>
+      </td>
+      <td style="padding:5px;border:1px solid #000;">
+         Nécessaire à la conclusion et réalisation du contrat, Obligation légale
+      </td>
+   </tr>
+   <tr>
+      <td style="padding:5px;border:1px solid #000;">
+         <i>Destinataires</i>
+      </td>
+      <td style="padding:5px;border:1px solid #000;">
+         Services internes SPARTOO
+      </td>
+   </tr>
+   <tr>
+      <td style="padding:5px;border:1px solid #000;">
+         <i>Durée de conservation en base</i>
+      </td>
+      <td style="padding:5px;border:1px solid #000;">
+         en base intermédiaire : 13 mois à compter de la validation du paiement (Article L.133-24 du code de commerce)<br>
+         en base active : jusqu'à validation du paiement
+      </td>
+   </tr>
+</table>
+<br>
+<table style="border-collapse:collapse;border:1px solid #000;">
+   <tr style="background-color: #e6e6e6;">
+      <td style="padding:5px;border:1px solid #000;"></td>
+      <td style="padding:5px;border:1px solid #000;">
+         <b>Gestion des cookies</b>
+      </td>
+   </tr>
+   <tr>
+      <td style="padding:5px;border:1px solid #000;">
+         <i>Finalité du traitement</i>
+      </td>
+      <td style="padding:5px;border:1px solid #000;">
+         Envoi de publicités ciblées et établissement de statistiques
+      </td>
+   </tr>
+<tr>
+      <td style="padding:5px;border:1px solid #000;">
+         <i>Base légale du traitement</i>
+      </td>
+      <td style="padding:5px;border:1px solid #000;">
+         Consentement
+      </td>
+   </tr>
+   <tr>
+      <td style="padding:5px;border:1px solid #000;">
+         <i>Destinataires</i>
+      </td>
+      <td style="padding:5px;border:1px solid #000;">
+         Services internes SPARTOO
+      </td>
+   </tr>
+   <tr>
+      <td style="padding:5px;border:1px solid #000;">
+         <i>Durée de conservation en base</i>
+      </td>
+      <td style="padding:5px;border:1px solid #000;">
+         13 mois post dépôt du cookie
+      </td>
+   </tr>
+</table>
+
+<br><br>
+* à compter de la dernière démarche active : clic sur un lien hypertexte, commande sur le Site, connexion au compte client, visite du Site.<br></p>
+		</div>
+		<div class="section-cnil">
+			<h2><span>8</span>La durée de conservation des données personnelles</h2>
+			<p>Pendant combien de temps conservons-nous vos informations personnelles ?<br>
+Nous conservons vos informations personnelles pour une durée nécessaire à la réalisation des finalités pertinentes et à la réalisation d'obligations légales comme par exemple des obligations fiscales ou comptables, ou pour toute autre durée qui aura pu vous être communiquée.<br><br>
+
+Pour un même traitement les données personnelles suivent plusieurs phases de conservation. Selon le type de traitement et sa finalité les durées de conservation diffèrent.<br>
+
+- La première phase de conservation est le stockage en base active. La conservation est fonction de la réalisation de la finalité du traitement qui en justifie la collecte. Les données sont accessibles aux services opérationnels qui sont en charge du traitement.<br>
+- La deuxième phase est l’archivage intermédiaire. Les données collectées ne sont plus utilisées pour atteindre la finalité à l’origine de la collecte, mais elles conservent un intérêt administratif, comme par exemple la gestion d’un contentieux, d’un impayé, ou leur conservation est autorisée ou requise par la loi. L'archivage intermédiaire est réalisé dans la limite des durées de prescription applicables, ou conformément aux obligations légales de conservation. L’accès à ces données sera restreint à une liste de collaborateurs de la société Spartoo dûment habilités.<br>
+- Après cette phase d’archivage intermédiaire, vos données seront anonymisées. <br><br>
+
+Pour déterminer la durée de conservation de vos données il est nécessaire d’en définir le point de départ. Conformément aux préconisations de la CNIL, ce point de départ est défini par la dernière action positive du client ou du prospect qui suppose une réelle démarche témoignant d’un intérêt pour SPARTOO; par exemple : <br>
+
+- le clic sur un lien hypertexte, <br>
+- une commande, <br>
+- la connexion au compte client<br>
+- la visite sur le site.<br>
+</p>
+		</div>
+		<div class="section-cnil">
+			<h2><span>9</span>Sécurité</h2>
+			<p>La société SPARTOO prend toutes les précautions utiles pour préserver la sécurité de vos données à caractère personnel. <br>
+Elle assure des mesures de sécurité physiques, électroniques et des procédures de sauvegarde en rapport avec la collecte, la conservation et la communication d'informations personnelles de clients. Ces mesures peuvent se traduire notamment par la sollicitation d’une preuve de votre identité dans le cadre d’une demande de portabilité de vos données personnelles.<br><br>
+
+SPARTOO procède notamment au cryptage, à la pseudonymisation et à l’anonymisation des données personnelles et met en œuvre une politique de gestion du mot de passe contraignante.<br><br>
+
+La société SPARTOO utilise un registre de traitement des violations des données, conformément aux articles 33 et 34 du RGPD et s’engage à prévenir toute violation de données, à réagir de manière appropriée, et à notifier les violations auprès de la CNIL et des personnes concernées dans strict respect des délais instaurés par le RGPD.<br><br>
+
+SPARTOO rappelle en outre l’importance de se prémunir contre l’accès non autorisé à votre compte client et du caractère confidentiel de votre mot de passe. 
+<br></p>
+		</div>
+		<div class="section-cnil">
+			<h2><span>10</span>Cookies*</h2>
+			<p>Afin de permettre à nos systèmes de reconnaître votre navigateur ou votre appareil et de vous fournir les services de SPARTOO nous utilisons des « cookies ».<br><br>
+
+Ces « cookies » sont mis en place dans le but de mieux vous servir.<br>
+Nous mesurons le nombre de pages vues, le nombre de visites, ainsi que l’activité des visiteurs sur le Site et leur fréquence de retour. A cet effet, nous utilisons la technologie des « cookies ». Un cookie ne nous permet pas de vous identifier. De manière générale, il enregistre des informations relatives à la navigation de votre ordinateur sur notre site (les pages que vous avez consultées, la date et l’heure de la consultation, etc.) que nous pourrons lire lors de vos visites ultérieures.<br><br>
+
+Les données collectées par les cookies sont uniquement et strictement destinées à un usage interne et ne sont jamais transmises à des tiers. L'utilisation de cookies, propres ou tiers, n'étant pas nécessaire au fonctionnement du site nécessite un consentement exprès de votre part. <br><br>
+
+Vous pouvez manifester votre consentement ou vous opposer à l'utilisation de cookies en paramétrant votre navigateur de manière appropriée. Reportez-vous pour cela aux guides d'utilisation de votre navigateur.<br><br>
+
+Certains cookies appelés "cookie de publicité" nous permettent de suivre votre navigation et enregistrer les produits vus, puis dans un délai maximum de 90 jours de vous présenter des bannières publicitaires en rapport, ou non, avec votre navigation passée. Ces cookies sont liés à votre profil internet (mais ne permettent pas de vous identifier). Ils requièrent également votre consentement exprès de la même façon qu'indiqué ci-dessus. Si vous ne désirez pas ou plus recevoir ces "cookies de publicité", cliquez sur le lien ci-après:<br><br>
+
+<a href="compte.php?category=MyAccount&action=my_cookies">Désactiver les cookies de publicité sur mon profil</a>
+<br><br>
+*Nous sommes parallèlement en cours de mise à jour de notre Politique de confidentialité s’agissant des cookies et traceurs.</p>
+		</div>
+	
+		<div class="section-cnil">
+			<h2><span>11</span>Droit d’accès et de rectification</h2>
+			<p>Conformément au règlement UE 2016/679, vous bénéficiez de plusieurs droits, à savoir :<br><br>
+
+- Un droit d'accès, de modification, de rectification et de suppression des informations vous concernant. <br>
+- Le droit de demander la portabilité de ces informations. <br>
+- La possibilité de vous opposer au traitement de vos informations personnelles ou de nous demander de restreindre le traitement de vos informations personnelles dans certains cas.<br><br>
+
+Vous pouvez également adresser vos demandes :<br>
+-	par courrier électronique : à dpo@spartoo.com<br>
+-	par courrier postal : SPARTOO  – DPO - 16 rue Henri Barbusse 38 100 Grenoble<br>
+</p>
+		</div>
+		<div class="section-cnil">
+			<h2><span>12</span>Droit d’introduire une réclamation auprès d’une autorité compétente</h2>
+			<p>Vous disposez en outre du droit d’introduire une réclamation auprès de la CNIL : <br>
+https://www.cnil.fr/fr/plaintes 
+</p>
+		</div>
+		<div class="section-cnil">
+			<h2><span>13</span>Evolution de la politique de protection des données personnelles</h2>
+			<p>La présente politique de confidentialité est susceptible de modifications, compte tenu notamment des évolutions législatives et règlementaires.</p>
+		</div>
+	</div></div><div id="footer">
+		<div class="footer_services">
+			<div onclick="faq_popup('envoi');"><i class="icon-livraisonGratuite"></i><div>livraison gratuite *<br />en 4 jours garantis</div></div>
+			<div onclick="faq_popup('retour');"><i class="icon-retourGratuit"></i><div>retour gratuit *<br />sous 30 jours</div></div>
+			<div onclick="faq_popup('services');"><i class="icon-prixLePlusBas"></i>La garantie du prix le plus bas</div>
+			<div onclick="document.location.href='contact.php';"><i class="icon-telephone"></i>Besoin d'aide</div>
+		</div><div class="blocks_footer">
+			<div class="block_footer">
+		<div id="newsletter_footer">
+			<div class="footer_title">Newsletter</div>
+			<div class="block_footer_txt">Recevez une réduction de <b>10€</b> et tous nos bons plans en exclusivité.</div>
+			<label for="mail" style="display:none;">Adresse email </label>
+			<input type="text" id="mail" name="email" placeholder="Adresse email " />
+			<div id="result"></div>
+			<div><div class="footer_news_info">En vous inscrivant vous bénéficierez de tous nos bons plans en exclusivité,</div><div class="footer_news_checkboxes">
+					<div>
+						<label class="toggle"><input type="radio" value="F" name="gender" /><span class="slider round"></span></label>
+						<span>Mode femme</span>
+					</div>
+					<div>
+						<label class="toggle"><input type="radio" value="H" name="gender" /><span class="slider round"></span></label>
+						<span>Mode homme</span>
+					</div>
+				</div>
+				<div id="result2"></div><span id="newsSubscribe" class="btn" style="cursor:pointer;"">Je m'inscris</span></div>
+			<script>
+				function validateEmail(email) {
+					var re = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+					return re.test(email);
+				}
+				function validate() {
+					var $result = $("#result");
+					var $result2 = $("#result2");
+					var email = $("#mail").val();
+					var gender = $("input[name='gender']:checked").val();
+					$result.text("");
+					console.log(email + " "+ gender);
+					if(gender != undefined) {
+						if (validateEmail(email)) {
+							sendData('newsletter_footer', 'g='+gender+'&email='+email+'&display_text=1&home_page=1', 'newsletter_abonnement.php', 'GET');return false;
+						} else {
+							$result.text("Votre adresse email ne semble pas être correcte.");
+							$result.css("color", "red");
+						}
+					} else {
+						$result2.text("Veuillez choisir votre genre.");
+						$result2.css("color", "red");
+					}
+					return false;
+				}
+				$("#newsSubscribe").on("click", validate);
+			</script>
+		</div>
+			</div>
+			<div class="block_footer">
+				<div id="footer_avis">
+					<div class="footer_title">Votre avis nous intéresse</div>
+					<div class="block_footer_txt">Aidez nous à améliorer le site en répondant à notre enquête de satisfaction et recevez <b>10€</b></div>
+					<a href="https://www.spartoo.com/survey.php?sid=13165&lang=fr" class="" target="_blank"><div><span class="btn">Je participe <i class="icon-flecheDroite"></i></span></div></a>
+					</div><div class="div_panelvp">
+						Et tentez de gagner <b>100€</b> en rejoignant notre panel
+						<a href="https://fr.panelvp.com" target="_blank" rel="noopener" title="Panel VP"><span class="btn">Je tente ma chance</span></a>
+				</div></div></div><div class="blocks_footer">
+			<div class="block_footer"><div class="footer_title">Gagnez 10 euros</div><a href="service_parrainage.php"><button class="btn">Parrainez vos amis</button></a>
+			</div>
+			<div class="block_footer">
+				<div class="footer_title">-20% pour les étudiants</div>
+				<a href="student.php"><button class="btn">Je m'inscris</button></a>
+			</div>
+		</div><div class="block_footer_links">
+			<div></div>
+				<div class="block_footer_column">
+					<div class="footer_title">Univers</div>
+					<div class="footerLinks"><a href="marques.php" class="footer" >Marques</a><a href="sacs.php" class="footer" >Sacs</a><a href="accessoires.php" class="footer" >Accessoires</a><a href="chaussures-nouvelle-collection.php" class="footer" >Nouveautes</a><a href="chaussures-pas-cher.php" class="footer" >Bons plans</a><a href="chaussures-grandes-tailles.php" class="footer" >Grandes tailles</a><a href="tendances-mode.php?category=2" class="footer" >Tendances</a><a href="selection-operation-11017.php">Sélection partenaires</a>			</div>
+				</div>
+				<div class="block_footer_column">
+					<div class="footer_title">Aide</div>
+					<div class="footerLinks">
+						<a href="contact.php" target="_blank">Contact</a>
+						<a href="faq.php" >F.A.Q.</a>
+						<a href="cgv.php" >C.G.V</a><a href="mentions_legales.php" >Mentions Légales</a><a onclick="show_popup_conditions_offres('Les opérations en cours');return false;" href="">*Conditions des offres en cours</a>
+						<a href="conditions_ref.php" class="footer" >Référencement et critères de classement</a>
+						<a href="cnil.php" class="footer" >Politique de protection des données</a>
+					</div>
+				</div>
+				<div class="block_footer_column">
+					<div class="footer_title">Services</div>
+					<div class="footerLinks"><a href="marketplace_mentions.php" >Marketplace</a><a href="btoostore_mentions.php" >Revendre des produits Spartoo</a><a href="affiliation.php" class="footer" >Affiliation</a><a href="toobone.php" target="_blank" rel="noopener">TOOBONE : logistique et transport</a><a href="spartoo_boutica.php">Spartoo Boutica</a></div>
+				</div>
+				<div class="block_footer_column">
+					<div class="footer_title">Spartoo</div>
+					<div class="footerLinks">
+						<a href="spartoo.php" class="footer" >Qui est SPARTOO ?</a>
+						<a href="https://spartoo.nous-recrutons.fr/" >Rejoignez-nous</a><a href="pressroom" target="_blank">Espace Presse</a><a href="digital_service_act.php" class="footer">Digital Service Act</a><a href="rse/" target="_blank">Nos engagements RSE</a><a href="applications_mobiles_tablettes.php" >Téléchargez l’application pour <u>iOS et Android</u></a><a href="codes_partenaires.php">Les bons plans de nos partenaires</a><a href="cheque-cadeau.php" >Offrez des cartes cadeaux de 30€ à 150€</a>
+					</div>
+				</div>
+				<div></div>
+			</div>
+				<div class="footer_share">
+					<span class="footer_title">Suivez-nous sur</span>
+						<a href="https://www.facebook.com/spartoo.com" target="_blank" title="Facebook" rel="noopener">
+							<i class="icon-facebook"></i>
+						</a>
+						<a href="https://twitter.com/spartoo" target="_blank" title="Twitter" rel="noopener">
+							<i class="icon-twitter"></i>
+						</a>
+						<a href="https://instagram.com/spartoogram/" target="_blank" title="Instagram" rel="noopener">
+							<i class="icon-instagram"></i>
+						</a>
+				</div><a href="https://www.spartoo-finance.com" target="_blank" rel="noopener" class="investors_link">Site investisseurs / Investor website</a><div class="footerInfos_ref"><div id="footerInfos">
+				
+			</div></div><div id="topBrands4footer"></div>
+			<script>
+				$(document).ready(function(){
+					$("#topBrands4footer").append("<div class=\"home_title\">Nos marques</div>");
+					$("#topBrand a").clone().appendTo("#topBrands4footer");
+				});
+			</script><div id="liens_footer">
+					<a class="link_footer" href="https://www.spartoo.com/mobile/cnil.php">Mobile</a>
+					<span class="pipe_footer">|</span>
+					<b><span class="link_footer">Classique</span></b>
+				</div><div class="flags"><a href="https://www.spartoo.com?country_id=73" ><img class="lazy" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/flags_alt/flag_fr.png" alt="Spartoo FR" title="France" /></a><a href="https://www.spartoo.co.uk" ><img class="lazy" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/flags_alt/flag_gb.png" alt="Spartoo UK" title="United Kingdom" /></a><a href="https://www.spartoo.it" ><img class="lazy" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/flags_alt/flag_it.png" alt="Spartoo IT" title="Italia" /></a><a href="https://www.spartoo.es" ><img class="lazy" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/flags_alt/flag_es.png" alt="Spartoo ES" title="España" /></a><a href="https://www.spartoo.de" ><img class="lazy" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/flags_alt/flag_de.png" alt="Spartoo DE" title="Deutschland" /></a><a href="https://www.spartoo.com?country_id=21" >
+				<span class="flag_w_lg">
+					<img class="lazy" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/flags_alt/flag_be2.png" alt="Spartoo BE2" title="Belgique" />
+					<img class="lazy" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/flags_alt/flag_fr.png" alt="Spartoo BE2" title="Belgique" />
+				</span>
+			</a><a href="https://www.spartoo.be" >
+				<span class="flag_w_lg">
+					<img class="lazy" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/flags_alt/flag_be.png" alt="Spartoo BE" title="België" />
+					<img class="lazy" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/flags_alt/flag_nl.png" alt="Spartoo BE" title="België" />
+				</span>
+			</a><a href="https://www.spartoo.com?country_id=124" ><img class="lazy" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/flags_alt/flag_lu.png" alt="Spartoo LU" title="Luxembourg" /></a><a href="https://de.spartoo.ch" >
+				<span class="flag_w_lg">
+					<img class="lazy" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/flags_alt/flag_ch-de.png" alt="Spartoo CH DE" title="Schweiz" />
+					<img class="lazy" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/flags_alt/flag_de.png" alt="Spartoo CH DE" title="Schweiz" />
+				</span>
+			</a><a href="https://fr.spartoo.ch" >
+				<span class="flag_w_lg">
+					<img class="lazy" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/flags_alt/flag_ch-fr.png" alt="Spartoo CH FR" title="Suisse" />
+					<img class="lazy" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/flags_alt/flag_fr.png" alt="Spartoo CH FR" title="Suisse" />
+				</span>
+			</a><a href="https://it.spartoo.ch" >
+				<span class="flag_w_lg">
+					<img class="lazy" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/flags_alt/flag_ch-it.png" alt="Spartoo CH IT" title="Svizzera" />
+					<img class="lazy" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/flags_alt/flag_it.png" alt="Spartoo CH IT" title="Svizzera" />
+				</span>
+			</a><a href="https://www.spartoo.de" ><img class="lazy" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/flags_alt/flag_at.png" alt="Spartoo AT" title="Oesterreich" /></a><a href="https://www.spartoo.gr" ><img class="lazy" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/flags_alt/flag_gr.png" alt="Spartoo GR" title="Ελλάδα" /></a><a href="https://www.spartoo.gr" ><img class="lazy" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/flags_alt/flag_cy.png" alt="Spartoo CY" title="Κύπρος" /></a><a href="https://www.spartoo.cz" ><img class="lazy" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/flags_alt/flag_cz.png" alt="Spartoo CZ" title="Czech Republic" /></a><a href="https://www.spartoo.dk" ><img class="lazy" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/flags_alt/flag_dk.png" alt="Spartoo DK" title="Danmark" /></a><a href="https://www.spartoo.eu" ><img class="lazy" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/flags_alt/flag_ee.png" alt="Spartoo EE" title="Estonia" /></a><a href="https://www.spartoo.fi" ><img class="lazy" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/flags_alt/flag_fi.png" alt="Spartoo FI" title="Suomi" /></a><a href="https://www.spartoo.hu" ><img class="lazy" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/flags_alt/flag_hu.png" alt="Spartoo HU" title="Hungary" /></a><a href="https://www.spartoo.eu" ><img class="lazy" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/flags_alt/flag_ie.png" alt="Spartoo IE" title="Ireland" /></a><a href="https://www.spartoo.eu" ><img class="lazy" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/flags_alt/flag_lv.png" alt="Spartoo LV" title="Latvia" /></a><a href="https://www.spartoo.eu" ><img class="lazy" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/flags_alt/flag_lt.png" alt="Spartoo LT" title="Lithuania" /></a><a href="https://www.spartoo.eu" ><img class="lazy" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/flags_alt/flag_mt.png" alt="Spartoo MT" title="Malta" /></a><a href="https://www.spartoo.com.hr" ><img class="lazy" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/flags_alt/flag_hr.png" alt="Spartoo HR" title="Croatia" /></a><a href="https://www.spartoo.nl" ><img class="lazy" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/flags_alt/flag_nl.png" alt="Spartoo NL" title="Nederland" /></a><a href="https://www.spartoo.pl" ><img class="lazy" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/flags_alt/flag_pl.png" alt="Spartoo PL" title="Polska" /></a><a href="https://www.spartoo.pt" ><img class="lazy" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/flags_alt/flag_pt.png" alt="Spartoo PT" title="Portugal" /></a><a href="https://www.spartoo.ro" ><img class="lazy" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/flags_alt/flag_ro.png" alt="Spartoo RO" title="Romania" /></a><a href="https://www.spartoo.sk" ><img class="lazy" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/flags_alt/flag_sk.png" alt="Spartoo SK" title="Slovakia" /></a><a href="https://www.spartoo.si" ><img class="lazy" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/flags_alt/flag_si.png" alt="Spartoo SI" title="Slovenia" /></a><a href="https://www.spartoo.se" ><img class="lazy" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/flags_alt/flag_se.png" alt="Spartoo SE" title="Sverige" /></a><a href="https://www.spartoo.eu" ><img class="lazy" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/flags_alt/flag_bg.png" alt="Spartoo BG" title="Bulgaria" /></a><a href="https://www.spartoo.cn" ><img class="lazy" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/flags_alt/flag_cn.png" alt="Spartoo CN" title="China" /></a></div><div class="footer_paymentsAndShippingsLogos">
+		<img class="lazy" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/cb-color.svg" style="width: 50px;" alt="cb" onclick="faq_popup('paiement');" />
+		<img class="lazy" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/visa-color.svg" style="width: 50px;" alt="visa" onclick="faq_popup('paiement');" />
+		<img class="lazy" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/mastercard-color.svg" style="height: 35px;" alt="mastercard" onclick="faq_popup('paiement');" />
+		<img class="lazy" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/klarna-color.svg" style="width: 80px;" alt="klarna" onclick="faq_popup('paiement');" />
+		<img class="lazy" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/paypal-color.svg" style="width: 80px;" alt="paypal" onclick="faq_popup('paiement');"/>
+		<img class="lazy" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/colissimo-color.svg" style="width: 90px;" alt="colissimo" onclick="faq_popup('envoi');" />
+		<img class="lazy" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/relaisColis-color.svg" style="width: 40px;" alt="relais colis" onclick="faq_popup('envoi');" />
+		<img class="lazy" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/mondialRelay-color.svg" style="height: 40px;" alt="mondial relay" onclick="faq_popup('envoi');" />
+		<img class="lazy" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/chronopost-color.svg" style="width: 100px;" alt="chronopost" onclick="faq_popup('envoi');" />
+		<img class="lazy" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/colisPrive-color.svg" style="height: 40px;" alt="Colis Privé" onclick="faq_popup('envoi');" /></div><div id="liens_e-commerce">
+			<img class="lazy foot-partenaire" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/foot-fevad.gif" alt="Fevad"/>
+			<img class="lazy foot-partenaire" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/foot-capital2026.gif" alt="Palmarès Capital 2026"/>
+		
+
+		<a href="http://www.toopost.net" target="_blank" rel="noopener"><img class="lazy foot-partenaire" src="https://imgext.spartoo.com/images/trans.gif" data-original="https://imgext.spartoo.com/images/foot-toopost.gif" alt="TOOPOST"/></a></div><span id="GTS_CONTAINER" style="display: block; width: 200px; margin: 5px auto; text-align:center;"></span>
+		<br />
+		<div itemscope itemprop="aggregateRating" itemtype="https://schema.org/AggregateRating" style="padding:10px 0; text-align:center">
+			<span itemprop="itemReviewed" itemscope itemtype="https://schema.org/Organization" style="display: none;">
+				<span itemprop="name">Spartoo.com</span>
+			</span><span class="avis_stars"><i class="icon-star-full"></i><i class="icon-star-full"></i><i class="icon-star-full"></i><i class="icon-star-full"></i><i class="icon-star-half"></i></span><span style="margin-left:5px;">
+				<span itemprop="ratingValue" style="font-weight:bold;">4.60</span>
+				/
+				<span itemprop="bestRating" style="font-weight:bold;">5</span>
+			</span>
+		<span>&nbsp;Calculé sur &nbsp;</span>
+					<a href="https://www.google.com/shopping/customerreviews/merchantreviews?q=spartoo.com"><span itemprop="reviewCount" style="font-weight:bold;">
+						28003</span> avis <span>Google</span>
+					</a>
+			</div>
+		</div>
+		<!-- FOOTER end -->
+
+		<noscript>
+			<div class="noJS">
+				La fonction JavaScript de votre navigateur n'est pas activée !!<br /> Vous devez l'activer pour accéder à toutes les fonctionnalités de notre site.<br />
+				<a href="noJavaScript.php" target="_blank" rel="nofollow">Pour connaitre la procédure à suivre pour activer Javascript cliquez ici.</a>
+			</div>
+		</noscript>
+		<div class="noJS" id="nocookie" style="display:none;">
+			Votre navigateur n'accepte pas les cookies !!<br /> Vous devez l'activer pour accéder à toutes les fonctionnalités de notre site.<br />
+			<a href="noCookies.php" target="_blank" rel="nofollow">Pour connaitre la procédure à suivre pour activer les cookies cliquez ici.</a>
+		</div>
+		<div class="left_buttons">
+		<div class="btn_feedback"	onclick="showPopupNetPromoterScore();" alt="Rate">
+			Donnez votre avis
+		</div>
+			<div class="btn_feedback" onclick="window.location.href='premium.php';">
+				PREMIUM
+			</div></div><div id="spottv" style="display:none;"></div>
+					<!-- Global site tag (gtag.js) - Google AdWords: AW-1066846812-->
+					<script async src="https://www.googletagmanager.com/gtag/js?id=AW-1066846812"></script>
+					<script>
+						window.dataLayer = window.dataLayer || [];
+						function gtag(){
+							dataLayer.push(arguments);
+						}
+
+						var others_tags_loaded = false
+						function load_others_tags() {
+							if (others_tags_loaded) {
+								return;
+							}
+							others_tags_loaded = true
+							window.removeEventListener('mousemove', load_others_tags);
+							window.removeEventListener('scroll', load_others_tags);
+							window.removeEventListener('touchstart', load_others_tags); // Pour le mobile
+							window.removeEventListener('click', load_others_tags);
+
+				
+						gtag("consent", "default", {
+							"ad_storage": "denied",
+							"analytics_storage": "denied",
+							"ad_user_data": "denied",
+							"ad_personalization": "denied"
+						});
+						gtag("js", new Date());gtag("config", "G-HES9MLF1CR", { "send_page_view": false, "anonymize_ip": true});}
+						$(window).on('load', function() {
+							window.addEventListener("mousemove", load_others_tags);
+							window.addEventListener("scroll", load_others_tags);
+							window.addEventListener("touchstart", load_others_tags);
+							window.addEventListener("click", load_others_tags);
+						})
+					</script>
+				<!-- end Global site tag (gtag.js) - Google AdWords -->
+				<script>
+						window.uetq = window.uetq || [];
+						window.uetq.push("consent", "default", {"ad_storage": "denied"});
+					</script><script>
+						function initMicrosoftUET(w, d, t = "script", r = "//bat.bing.com/bat.js", u = "uetq"){
+							var f,n,i;
+							w[u] = w[u]||[];
+							f = function(){
+								if (typeof UET !== "undefined") {
+									var o = {
+										ti: "5423535",
+										enableAutoSpaTracking: true
+									};
+									o.q = w[u];
+									w[u] = new UET(o);
+									w[u].push("pageLoad");
+								} else {
+									console.error("UET is not defined. Ensure the Bing Ads script is loaded.");
+								}
+							}
+							n = d.createElement(t);
+							n.src = r;
+							n.async = 1;
+							n.onload = n.onreadystatechange = function(){
+								var s = this.readyState;
+								(s && s !== "loaded" && s !== "complete") || f();
+								n.onload = n.onreadystatechange=null;
+							};
+							i = d.getElementsByTagName(t)[0];
+							i.parentNode.insertBefore(n,i)
+						};
+
+						initMicrosoftUET(window, document);
+					</script>
+			<script nonce="0db458abc6ed059d8341dbdd3c697a40">
+				gtag("set", "user_properties", []);
+				gtag("event", "page_view", {"page_location" : "%2Fcnil_php="});
+			</script>	<!--====================================
+	* Display Onglet
+	* Cheques cadeaux + Satisfaction
+	======================================-->
+	<script type="text/javascript">
+
+	$(document).ready(function(){
+		$(".left_buttons").css("margin-top",$(".left_buttons").width()/2+"px");
+
+		$('.icon-flecheBas').each(
+			function()
+			{
+				var li = $(this).parent().parent();
+				$(this).css('left', (li.position().left + li.innerWidth() / 2 - 10) + "px");
+			}
+		);
+	});
+
+	</script>
+	
+	<script type="text/javascript" nonce="0db458abc6ed059d8341dbdd3c697a40">
+		var SP = SP || {};
+		SP.tags = SP.tags || {};
+		SP.tags.timeout = 15000;
+	</script>
+
+	<input type="hidden" value="https://www.spartoo.com/footer_tag_iframe.php?lang_id=1&lang=fr&lang2=fr&part_id=0&part=&cid=0&tab_get=lVfbjts2EP0XA3nMrq6-9aHYZFu0QJEESN6KgqBIak2sJCokZa9R9N87pCgtJdHe9ZNlzZnh8MzhcIT3cRzt_1X7JNmvFJFIMXlk8EMkbzVqcM1Wv6j9br-6XCcNr-7aQ2v-xxtAS4IOWreolUILXCIqY8j3K_NOmWcbEkCkU1rUEJTVmFeoprmxRvuVBeVBkDrgJF_7uM0Ud2wvXCKzHql0R1mjL8LmC7cH0bAlLt66cD0xkv3smNLGkqZus_v7-9PpdKdaLLUQd0TUI1m_2hBpH0LzGlxccQ0UcqBwG2-ydB0lBrEekpHS5EyxtrxDbVbx9mO0_phEydpPB3JRXFw0qBYFr5gJGBlrPrXiFtYqrClxS_R0aInJMxItk1gDUPkbdjGAiSNDXFwjTsfwrgiUHTlhCDSimbA--xUd8jVcMIkbKmpLM7xJd1kWxRSXZUJIjrO0iKLBZnmxyXAKHCuTtrFBtpRLRizT8W4GJEI8c7bADQGfmEZdww0LUFGToss_e7XXWEIlB0saTQtcMDWEagoQ0bli4zFwDA1gED7tiFao4kqb5CijoisqJgN0mjWdw3xR9xpSaroSE91JSHy-6CCRATw351OzYi--2LezjFtpCqg1vBK80X6g3TQQr59QXCcrP5jLhCtD4jPTbYUh2Lg5K4fIbxM9q-SMWFwnrV6gDr-5xwFj-cENB0VSOoo2Gs6y5M3T70L-sApI_GzCkPRtSPY2JH8bEm49BjLVR4DAEKzfG3TOv_-xD7uQ1E5cXB-AsIZOlDa0yD7sN-fxGZRcXP01TSDNA1FNKqWQ_SEzf3yWs-hdHqjlra_KbP0-t85sRREh2c1Zpjd7ZDd75Dd7rG_22NzssfU93kV03foum_e4_NRnX2LxzIfThbqz-D1xC_PALp-KLx0RjajPg4wDp2x6JtQB7gR1-ZSZ1ZUgXFxAl9WcBNr5eLAfTrz5KkGRocWnnRQuiq6Fi5YIylCnGA3kWWE1tn4kSkRgTAj0FfMaaaFx1XdnH5KGITB_BdZrCq8-DRLStgmYOLxuW3KptN-yF9MO0E9DXDAXQB-4pFcClKKT0KSWgEFC-ogRrkUHl22BVVgKdr_XLtc0Cd5r1gWucCg1vXKHqrm601wwOctiZCGKLtZsQtTFYFO6FrDY7fPleSjna4RXk6OTwFwwYybNcerZLRCGmlwwja-IXmRmPphHG-U6zM0NOyFR0cm9n45KtOmOzqlTx5MQTzBXaQlBGMx9Gjr_xesyza44qQNvXCfjshmU-4F59daClFVmRjyH_VP__rXbeHUghiT45TTwReEoNLMOXDClGU7ZYoR2IDDiiozcJgGjG5ocgRs_HxCgxnDEg2OYc5hs4IAVEk11Dnks9DL2w8_jnB-cc0bEV3ltIIEG3H8whLpqFAyYBNgNrZkEGvSFRa-G_HFcInUouzSA-zRvWsMEXglijg7tpuIY2gF1XDDJWiH1n00pAsO3hzpydrLXKpjMzP8hffyQrO1XnHt8aR-dLh9Bx_BylHDucwvf3Ys2ag5-sS12ZJNhklwn67IsC1YkNN3hXCJKtzQmdBMueMXNPa7Zi75Yxv7KhSP38-KtDJG-G0CA9IEKOAQCZlj20NDvGp-vqZAEYUNdJKPw2dj8gdXBDzIX-xfY0jcmy1BKw_cqfMU_fBqPS-y_TfrX__0P" id="tag_src">
+	<input type="hidden" value="1" id="tag_heightWidth">
+	<input type="hidden" value="0" id="tag_border">
+	<div id="tag_iframe_position"></div>
+	<object data="object.html" width="1" height="1" border="0" id="tag_object" type="text/html" alt="tag_object" fetchpriority="low"></object><div id="remonte-bt">
+		<span><i class="icon-flecheHaut"></i></span>
+		</div>
+		<script>
+		$(document).ready(
+			function() {
+				$('#remonte-bt').easyTop({"position_X":"right","position_Y":"middle","partage":""});
+
+				/*-- JS POUR LES TEXTES CUSTOM --*/
+				$("#footerInfos #new_custom").on("click","h2",
+					function(event){
+						event.preventDefault();
+						var text_paragraphe = $(this).next();
+						if (!text_paragraphe.hasClass("text_paragraphe")) {
+							text_paragraphe = text_paragraphe.find(".text_paragraphe");
+						}
+						etat = text_paragraphe.css("display");
+						if(etat=="none"){
+							text_paragraphe.slideDown();
+							$("> .icon-flecheDroite",this).css("transform","rotate(90deg)");
+						}else{
+							text_paragraphe.slideUp();
+							$("> .icon-flecheDroite",this).css("transform","rotate(0deg)");
+						}
+					}
+				);
+				/* ---- */
+
+			
+			});
+		</script>
+	</body>
+</html>
