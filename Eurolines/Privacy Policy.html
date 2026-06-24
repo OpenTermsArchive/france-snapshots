@@ -1605,9 +1605,9 @@
 
   
 
-  <div class="hero-container" data-testid="hero">
+  <div class="hero-container hero-container--no-image-mobile" data-testid="hero">
     <div id="default-hero-image-container"
-      class="hero-image-container">
+      class="hero-image-container hero-image-container--hidden-mobile">
       
       <picture>
         <source srcset="https://cdn-cf.cms.flixbus.com/drupal-assets/flixtrain-and-bus/train-bus-desktop.webp" media="(min-width: 1200px)" />
@@ -1632,7 +1632,9 @@
       <h1 class="flix-h1 flix-h1--section-header hero-heading" data-vo-hidden="false">
         
         
-        <span class="hero-heading-default">Low cost bus and train travel</span>
+        <span class="hero-heading-default">Low cost bus travel</span>
+        <span class="hero-heading--no-image">Low cost bus travel</span>
+        
         
         
       </h1>
@@ -3253,7 +3255,7 @@
         site: 'datadoghq.eu',
         service: 'fxt.webc.cms.gohome',
         sessionSampleRate: 7,
-        version: "v1-97-80",
+        version: "v1-97-81",
         trackSessionAcrossSubdomains: true,
         useSecureSessionCookie: true,
         useCrossSiteSessionCookie: true,
