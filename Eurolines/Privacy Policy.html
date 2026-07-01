@@ -47,11 +47,12 @@
     <link href="https://d3k6pebee3cv6.cloudfront.net" rel="preconnect" />
 
     <link rel="preconnect" href="https://honeycomb.flixbus.com" crossorigin>
-    <link rel="preload" as="style" href="https://honeycomb.flixbus.com/dist/15.3.3/css/honeycomb-fonts.css" crossorigin="">
-    <link rel="stylesheet" href="https://honeycomb.flixbus.com/dist/15.3.3/css/honeycomb-fonts.css" crossorigin="">
+    
+    <link rel="preload" as="style" href="https://honeycomb.flixbus.com/dist/15.3.3/css/honeycomb-fonts.css" crossorigin="" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://honeycomb.flixbus.com/dist/15.3.3/css/honeycomb-fonts.css" crossorigin=""></noscript>
 
     <link rel="stylesheet" href="https://cdn-cf.cms.flixbus.com/drupal-assets/flix-home-assets/cms_honeycomb.00d3ac.css" async />
-    <link rel="stylesheet" href="https://cdn-cf.cms.flixbus.com/drupal-assets/flix-home-assets/styles.54f8cb.css" async />
+    <link rel="stylesheet" href="https://cdn-cf.cms.flixbus.com/drupal-assets/flix-home-assets/styles.8308f3.css" async />
 
     <link
       rel="apple-touch-icon"
@@ -1967,7 +1968,7 @@
                 
             
         </div>
-        <div class="carousel-overview-dots" aria-hidden="true"></div>
+        <div class="carousel-overview-dots"></div>
       </div>
     </div>
   </section>
@@ -2420,11 +2421,11 @@
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
-                      <a href="/bus/dusseldorf" class="popular-routes-item">Düsseldorf</a>
+                      <a href="/bus/stuttgart" class="popular-routes-item">Stuttgart</a>
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
-                      <a href="/bus/stuttgart" class="popular-routes-item">Stuttgart</a>
+                      <a href="/bus/dusseldorf" class="popular-routes-item">Düsseldorf</a>
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
@@ -2460,10 +2461,6 @@
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
-                      <a href="/bus/essen" class="popular-routes-item">Essen</a>
-                    </li>
-                  
-                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
                       <a href="/bus/frankfurt-airport-fra" class="popular-routes-item">Frankfurt Airport</a>
                     </li>
                   
@@ -2472,11 +2469,15 @@
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
+                      <a href="/bus/essen" class="popular-routes-item">Essen</a>
+                    </li>
+                  
+                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
                       <a href="/bus/heidelberg" class="popular-routes-item">Heidelberg</a>
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
-                      <a href="/bus/duisburg" class="popular-routes-item">Duisburg</a>
+                      <a href="/bus/berlin-airport" class="popular-routes-item">Berlin Airport</a>
                     </li>
                   
                 </ul>
@@ -2551,11 +2552,11 @@
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
-                      <a href="/bus-routes/bus-dortmund-berlin" class="popular-routes-item">Dortmund - Berlin</a>
+                      <a href="/bus-routes/bus-berlin-prague" class="popular-routes-item">Berlin - Prague</a>
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
-                      <a href="/bus-routes/bus-berlin-prague" class="popular-routes-item">Berlin - Prague</a>
+                      <a href="/bus-routes/bus-dortmund-berlin" class="popular-routes-item">Dortmund - Berlin</a>
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
@@ -3120,7 +3121,7 @@
 <script defer async type="module" src="https://honeycomb-icons.hive.flixbus.com/9.0.0/flix-icons/flix-icons.esm.js"></script>
 <script defer async type="nomodule" src="https://honeycomb-icons.hive.flixbus.com/9.0.0/flix-icons/flix-icons.js"></script>
 
-<script src="https://cdn-cf.cms.flixbus.com/drupal-assets/flix-home-assets/main.bd6838.js"></script>
+<script src="https://cdn-cf.cms.flixbus.com/drupal-assets/flix-home-assets/main.b1f8dd.js"></script>
 <script>
   injectSearchMask(
    "en",
@@ -3132,7 +3133,7 @@
    "https:\/\/www.booking.com\/searchresults.html?aid=8129824\u0026ss={arrival_city_name}\u0026checkin={checkin}\u0026checkout={checkout}\u0026group_adults={group_adults}\u0026group_children={group_children}")
 </script>
 <script>
-  injectReact("");
+  injectReact("prod");
 
   
 
@@ -3150,7 +3151,7 @@
         card: {"title":"Bring your bike on your next trip.","cta":{"text":"View details","url":"https://global.flixbus.com/service/bike-travel"},"isStrongPromo":true,"illustrationName":"bike"}
       },
       "inline-promo-placeholder",
-      ""
+      "prod"
     );
   }
   
@@ -3192,7 +3193,7 @@
       "promo-communication-component-MainContentPromoArea",
       promoCommunicationProps,
       "promo-communication-placeholder-MainContentPromoArea",
-      ""
+      "prod"
     );
   } else {
     const promoCommunicationWrapper = document.querySelector(".promo-communication-wrapper");
@@ -3259,7 +3260,7 @@
         site: 'datadoghq.eu',
         service: 'fxt.webc.cms.gohome',
         sessionSampleRate: 7,
-        version: "v1-97-84",
+        version: "v1-97-88",
         trackSessionAcrossSubdomains: true,
         useSecureSessionCookie: true,
         useCrossSiteSessionCookie: true,
