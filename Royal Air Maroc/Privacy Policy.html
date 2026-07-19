@@ -679,7 +679,7 @@
 			}
 		};
 
-		Liferay.authToken = 'NqM1nEzJ';
+		Liferay.authToken = 'MA0DMFNN';
 
 		
 
@@ -1108,7 +1108,7 @@ Liferay.on(
 
 
 
-	<nav aria-label="Liens rapides" class="bg-dark cadmin quick-access-nav text-center text-white" id="kcyn_quickAccessNav">
+	<nav aria-label="Liens rapides" class="bg-dark cadmin quick-access-nav text-center text-white" id="cuwx_quickAccessNav">
 		
 			
 				<a class="d-block p-2 sr-only sr-only-focusable text-reset" href="#main-content">
@@ -10637,20 +10637,6 @@ Pour une présentation des navigateurs les plus utilisés, consultez le site :<b
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 	
 
 
@@ -10925,62 +10911,6 @@ Pour une présentation des navigateurs les plus utilisés, consultez le site :<b
 
 	Liferay.on('socialBookmarks:share', onShare);
 	Liferay.on('destroyPortlet', onDestroyPortlet);
-})();
-(function() {var $ = AUI.$;var _ = AUI._;
-	function showDialog(uri, title) {
-		Liferay.Util.openModal({
-			id: 'sharingDialog',
-			iframeBodyCssClass: 'sharing-dialog',
-			height: '475px',
-			size: 'md',
-			title: title,
-			url: uri,
-		});
-	}
-
-	var Sharing = {
-		copyLink: function (link) {
-			navigator.clipboard.writeText(link);
-
-			Liferay.Util.openToast({
-				message:
-					'Lien copié dans le presse-papiers.',
-			});
-		},
-
-		manageCollaborators: function (classNameId, classPK) {
-			var manageCollaboratorsParameters = {
-				classNameId: classNameId,
-				classPK: classPK,
-			};
-
-			var manageCollaboratorsURL = Liferay.Util.PortletURL.createPortletURL(
-				'https://www.royalairmaroc.com/dz-fr/group/ram/~/control_panel/manage?p_p_id=com_liferay_sharing_web_portlet_ManageCollaboratorsPortlet&p_p_lifecycle=0&p_p_state=pop_up&p_p_auth=OEjiikqI',
-				manageCollaboratorsParameters
-			);
-
-			showDialog(
-				manageCollaboratorsURL.toString(),
-				'Gérer les collaborateurs'
-			);
-		},
-
-		share: function (classNameId, classPK, title) {
-			var sharingParameters = {
-				classNameId: classNameId,
-				classPK: classPK,
-			};
-
-			var sharingURL = Liferay.Util.PortletURL.createPortletURL(
-				'https://www.royalairmaroc.com/dz-fr/group/ram/~/control_panel/manage?p_p_id=com_liferay_sharing_web_portlet_SharingPortlet&p_p_lifecycle=0&p_p_state=pop_up&p_p_auth=P8jNVLhW',
-				sharingParameters
-			);
-
-			showDialog(sharingURL.toString(), title);
-		},
-	};
-
-	Liferay.Sharing = Sharing;
 })();
 
 	if (window.svg4everybody && Liferay.Data.ICONS_INLINE_SVG) {
