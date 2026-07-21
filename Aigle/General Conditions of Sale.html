@@ -2784,22 +2784,38 @@ window.location.reload();
 
 ">
 
-<div class="swiper-container">
-<div class="swiper-wrapper">
 
 
-<!-- dwMarker="content" dwContentID="9a77a24d57c732e0e9b40f45c0" assetID="hb_vitrine10_ss25_soldes_booster_prolongation" -->
-<div class="header-banner-item swiper-slide">
-<a href="https://www.aigle.com/fr/fr/fr-fr-selection-soldes">Dernière Démarque | -10% supp. dès 2 articles achetés</a>
+<!-- dwMarker="content" dwContentID="facc5b14bf460e6f5d2c11ebaf" assetID="ss26_solde_booster_countdown" -->
+<div class="header-banner-item">
+<a href="https://www.aigle.com/fr/fr/fr-fr-selection-soldes" 
+   style="display:block; text-align:center; font-size:16px; text-decoration:none; color:inherit;">
+  Plus que <span id="countdown" style="font-weight:bold"></span> afin de profiter de -10% supplémentaire | <u>EN PROFITER</u>
+</a>
+
+<script>
+var countDownDate = new Date("July 12, 2026 23:59:00").getTime();
+
+var x = setInterval(function() {
+  var now = new Date().getTime();
+  var distance = countDownDate - now;
+
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  document.getElementById("countdown").innerHTML =
+    days + " jours " + hours + " h " + minutes + " min " + seconds + " s";
+
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("countdown").innerHTML = "";
+  }
+}, 1000);
+</script>
 </div>
 
-<!-- dwMarker="content" dwContentID="8e74702b89a48e5346c3fa0477" assetID="hb_reassurance_liv" -->
-<div class="header-banner-item swiper-slide">
-<a>Livraison offerte en point relais dès 159€ d'achat & retour offert sous 30 jours</a>
-</div>
-
-</div>
-</div>
 
 </div>
 
