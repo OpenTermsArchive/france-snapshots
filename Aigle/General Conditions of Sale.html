@@ -2784,22 +2784,38 @@ window.location.reload();
 
 ">
 
-<div class="swiper-container">
-<div class="swiper-wrapper">
 
 
-<!-- dwMarker="content" dwContentID="9a77a24d57c732e0e9b40f45c0" assetID="hb_vitrine10_ss25_soldes_booster_prolongation" -->
-<div class="header-banner-item swiper-slide">
-<a href="https://www.aigle.com/fr/fr/fr-fr-selection-soldes">Derniers jours | -10% supp. dès 2 articles achetés</a>
+<!-- dwMarker="content" dwContentID="facc5b14bf460e6f5d2c11ebaf" assetID="ss26_solde_booster_countdown" -->
+<div class="header-banner-item">
+<a href="https://www.aigle.com/fr/fr/fr-fr-selection-soldes" 
+   style="display:block; text-align:center; font-size:16px; text-decoration:none; color:inherit;">
+  Plus que <span id="countdown" style="font-weight:bold"></span> afin de profiter de -10% supplémentaire | <u>EN PROFITER</u>
+</a>
+
+<script>
+var countDownDate = new Date("July 12, 2026 23:59:00").getTime();
+
+var x = setInterval(function() {
+  var now = new Date().getTime();
+  var distance = countDownDate - now;
+
+  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  document.getElementById("countdown").innerHTML =
+    days + " jours " + hours + " h " + minutes + " min " + seconds + " s";
+
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("countdown").innerHTML = "";
+  }
+}, 1000);
+</script>
 </div>
 
-<!-- dwMarker="content" dwContentID="8e74702b89a48e5346c3fa0477" assetID="hb_reassurance_liv" -->
-<div class="header-banner-item swiper-slide">
-<a>Livraison offerte en point relais dès 159€ d'achat & retour offert sous 30 jours</a>
-</div>
-
-</div>
-</div>
 
 </div>
 
@@ -10345,7 +10361,7 @@ dw.ac._capture({id: "BG07_avocat", type: "recommendation"});
 
 
 
-<a href="/fr/fr/p/ais25mout008-BG07_avocat.html" data-gtm="{&quot;item_id&quot;:&quot;BG07_avocat&quot;,&quot;item_name&quot;:&quot;AIS25MOUT008&quot;,&quot;currency&quot;:&quot;EUR&quot;,&quot;item_brand&quot;:&quot;Aigle&quot;,&quot;item_variant&quot;:&quot;AVOCAT&quot;,&quot;price&quot;:280,&quot;quantity&quot;:1,&quot;item_list_id&quot;:&quot;Parkas_Manteaux&quot;,&quot;item_list_name&quot;:&quot;Parkas&quot;,&quot;discountedPrice&quot;:168,&quot;discountPercent&quot;:40,&quot;item_category&quot;:&quot;aigle-storefront-catalog-fr&quot;,&quot;item_category2&quot;:&quot;Homme&quot;,&quot;item_category3&quot;:&quot;Parkas &amp; Vestes&quot;,&quot;item_category4&quot;:&quot;Cat&eacute;gories&quot;,&quot;item_category5&quot;:&quot;&quot;}" pid="BG07_avocat"
+<a href="/fr/fr/p/ais25mout008-BG07_avocat.html" data-gtm="{&quot;item_id&quot;:&quot;BG07_avocat&quot;,&quot;item_name&quot;:&quot;AIS25MOUT008&quot;,&quot;currency&quot;:&quot;EUR&quot;,&quot;item_brand&quot;:&quot;Aigle&quot;,&quot;item_variant&quot;:&quot;AVOCAT&quot;,&quot;price&quot;:280,&quot;quantity&quot;:1,&quot;item_list_id&quot;:&quot;Parkas_Manteaux&quot;,&quot;item_list_name&quot;:&quot;Parkas&quot;,&quot;item_category&quot;:&quot;aigle-storefront-catalog-fr&quot;,&quot;item_category2&quot;:&quot;Homme&quot;,&quot;item_category3&quot;:&quot;Parkas &amp; Vestes&quot;,&quot;item_category4&quot;:&quot;Cat&eacute;gories&quot;,&quot;item_category5&quot;:&quot;&quot;}" pid="BG07_avocat"
 class="NewProductList-item is-a-product"
 >
 
@@ -10401,7 +10417,7 @@ class="NewProductList-item is-a-product"
 
 
     <div class="NewProductList-itemCaption">
-        <div class="NewProductList-itemHeader NewProductList-itemHeader--hasDiscount">
+        <div class="NewProductList-itemHeader">
             
             
                 <ul class="NewProductList-itemBenefits">
@@ -10442,15 +10458,10 @@ class="NewProductList-item is-a-product"
 
             <div class="NewProductList-itemPrice">
                 <span class="NewProductList-itemPrice--new">
-                    168,00 &#8364;
+                    280,00 &#8364;
                 </span>
 
                 
-                    
-                        <div class="NewProductList-itemPrice--discount"
-                            style="--discount-bg-color:#365696">
-                            -40%
-                        </div>
                     
 
                     
@@ -10496,10 +10507,6 @@ class="NewProductList-item is-a-product"
                 
             </div>
 
-            
-                <span class="NewProductList-itemPrice--old">
-                    280,00 &#8364;
-                </span>
             
         </div>
     </div>
@@ -10677,7 +10684,7 @@ dw.ac._capture({id: "NA84_marron", type: "recommendation"});
 
 
 
-<a href="/fr/fr/p/tenere-cvs-low-NA84_marron.html" data-gtm="{&quot;item_id&quot;:&quot;NA84_marron&quot;,&quot;item_name&quot;:&quot;TENERE CVS LOW&quot;,&quot;currency&quot;:&quot;EUR&quot;,&quot;item_brand&quot;:&quot;Aigle&quot;,&quot;item_variant&quot;:&quot;MARRON&quot;,&quot;price&quot;:85,&quot;quantity&quot;:1,&quot;item_list_id&quot;:&quot;Chaussures&quot;,&quot;item_list_name&quot;:&quot;Chaussures&quot;,&quot;discountedPrice&quot;:51,&quot;discountPercent&quot;:40,&quot;item_category&quot;:&quot;aigle-storefront-catalog-fr&quot;,&quot;item_category2&quot;:&quot;Ventes Priv&eacute;es&quot;,&quot;item_category3&quot;:&quot;Homme&quot;,&quot;item_category4&quot;:&quot;Cat&eacute;gories&quot;,&quot;item_category5&quot;:&quot;&quot;}" pid="NA84_marron"
+<a href="/fr/fr/p/tenere-cvs-low-NA84_marron.html" data-gtm="{&quot;item_id&quot;:&quot;NA84_marron&quot;,&quot;item_name&quot;:&quot;TENERE CVS LOW&quot;,&quot;currency&quot;:&quot;EUR&quot;,&quot;item_brand&quot;:&quot;Aigle&quot;,&quot;item_variant&quot;:&quot;MARRON&quot;,&quot;price&quot;:85,&quot;quantity&quot;:1,&quot;item_list_id&quot;:&quot;Chaussures&quot;,&quot;item_list_name&quot;:&quot;Chaussures&quot;,&quot;item_category&quot;:&quot;aigle-storefront-catalog-fr&quot;,&quot;item_category2&quot;:&quot;Ventes Priv&eacute;es&quot;,&quot;item_category3&quot;:&quot;Homme&quot;,&quot;item_category4&quot;:&quot;Cat&eacute;gories&quot;,&quot;item_category5&quot;:&quot;&quot;}" pid="NA84_marron"
 class="NewProductList-item is-a-product"
 >
 
@@ -10733,7 +10740,7 @@ class="NewProductList-item is-a-product"
 
 
     <div class="NewProductList-itemCaption">
-        <div class="NewProductList-itemHeader NewProductList-itemHeader--hasDiscount">
+        <div class="NewProductList-itemHeader">
             
             
                 <ul class="NewProductList-itemBenefits">
@@ -10768,15 +10775,10 @@ class="NewProductList-item is-a-product"
 
             <div class="NewProductList-itemPrice">
                 <span class="NewProductList-itemPrice--new">
-                    51,00 &#8364;
+                    85,00 &#8364;
                 </span>
 
                 
-                    
-                        <div class="NewProductList-itemPrice--discount"
-                            style="--discount-bg-color:#365696">
-                            -40%
-                        </div>
                     
 
                     
@@ -10812,10 +10814,6 @@ class="NewProductList-item is-a-product"
                 
             </div>
 
-            
-                <span class="NewProductList-itemPrice--old">
-                    85,00 &#8364;
-                </span>
             
         </div>
     </div>
@@ -10993,7 +10991,7 @@ dw.ac._capture({id: "BS59_empire", type: "recommendation"});
 
 
 
-<a href="/fr/fr/p/ais26mbot010-BS59_empire.html" data-gtm="{&quot;item_id&quot;:&quot;BS59_empire&quot;,&quot;item_name&quot;:&quot;AIS26MBOT010&quot;,&quot;currency&quot;:&quot;EUR&quot;,&quot;item_brand&quot;:&quot;Aigle&quot;,&quot;item_variant&quot;:&quot;EMPIRE&quot;,&quot;price&quot;:95,&quot;quantity&quot;:1,&quot;item_list_id&quot;:&quot;Pantalons_Bermudas&quot;,&quot;item_list_name&quot;:&quot;Pantalons &amp; shorts&quot;,&quot;discountedPrice&quot;:66.5,&quot;discountPercent&quot;:30,&quot;item_category&quot;:&quot;aigle-storefront-catalog-fr&quot;,&quot;item_category2&quot;:&quot;Homme&quot;,&quot;item_category3&quot;:&quot;Pr&ecirc;t-&agrave;-porter&quot;,&quot;item_category4&quot;:&quot;Cat&eacute;gories&quot;,&quot;item_category5&quot;:&quot;&quot;}" pid="BS59_empire"
+<a href="/fr/fr/p/ais26mbot010-BS59_empire.html" data-gtm="{&quot;item_id&quot;:&quot;BS59_empire&quot;,&quot;item_name&quot;:&quot;AIS26MBOT010&quot;,&quot;currency&quot;:&quot;EUR&quot;,&quot;item_brand&quot;:&quot;Aigle&quot;,&quot;item_variant&quot;:&quot;EMPIRE&quot;,&quot;price&quot;:95,&quot;quantity&quot;:1,&quot;item_list_id&quot;:&quot;Pantalons_Bermudas&quot;,&quot;item_list_name&quot;:&quot;Pantalons &amp; shorts&quot;,&quot;item_category&quot;:&quot;aigle-storefront-catalog-fr&quot;,&quot;item_category2&quot;:&quot;Homme&quot;,&quot;item_category3&quot;:&quot;Pr&ecirc;t-&agrave;-porter&quot;,&quot;item_category4&quot;:&quot;Cat&eacute;gories&quot;,&quot;item_category5&quot;:&quot;&quot;}" pid="BS59_empire"
 class="NewProductList-item is-a-product"
 >
 
@@ -11049,7 +11047,7 @@ class="NewProductList-item is-a-product"
 
 
     <div class="NewProductList-itemCaption">
-        <div class="NewProductList-itemHeader NewProductList-itemHeader--hasDiscount">
+        <div class="NewProductList-itemHeader">
             
             
             
@@ -11062,15 +11060,10 @@ class="NewProductList-item is-a-product"
 
             <div class="NewProductList-itemPrice">
                 <span class="NewProductList-itemPrice--new">
-                    66,50 &#8364;
+                    95,00 &#8364;
                 </span>
 
                 
-                    
-                        <div class="NewProductList-itemPrice--discount"
-                            style="--discount-bg-color:#8b9b83">
-                            -30%
-                        </div>
                     
 
                     
@@ -11106,10 +11099,6 @@ class="NewProductList-item is-a-product"
                 
             </div>
 
-            
-                <span class="NewProductList-itemPrice--old">
-                    95,00 &#8364;
-                </span>
             
         </div>
     </div>
