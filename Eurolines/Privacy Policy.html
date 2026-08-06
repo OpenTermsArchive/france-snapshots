@@ -2524,10 +2524,6 @@
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
-                      <a href="/bus-routes/bus-berlin-frankfurt" class="popular-routes-item">Berlin - Frankfurt</a>
-                    </li>
-                  
-                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
                       <a href="/bus-routes/bus-berlin-hanover" class="popular-routes-item">Berlin - Hanover</a>
                     </li>
                   
@@ -2548,6 +2544,10 @@
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
+                      <a href="/bus-routes/bus-berlin-frankfurt" class="popular-routes-item">Berlin - Frankfurt</a>
+                    </li>
+                  
+                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
                       <a href="/bus-routes/bus-berlin-prague" class="popular-routes-item">Berlin - Prague</a>
                     </li>
                   
@@ -2560,11 +2560,11 @@
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
-                      <a href="/bus-routes/bus-munich-zurich" class="popular-routes-item">Munich - Zurich</a>
+                      <a href="/bus-routes/bus-berlin-stuttgart" class="popular-routes-item">Berlin - Stuttgart</a>
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
-                      <a href="/bus-routes/bus-berlin-stuttgart" class="popular-routes-item">Berlin - Stuttgart</a>
+                      <a href="/bus-routes/bus-munich-zurich" class="popular-routes-item">Munich - Zurich</a>
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
@@ -3283,7 +3283,7 @@
         site: 'datadoghq.eu',
         service: 'fxt.webc.cms.gohome',
         sessionSampleRate: 7,
-        version: "v1-98-33",
+        version: "v1-98-34",
         trackSessionAcrossSubdomains: true,
         useSecureSessionCookie: true,
         useCrossSiteSessionCookie: true,
@@ -3332,6 +3332,7 @@
 
             const recentCityId = window.getRecentCityId();
             const currentDomain = window.location.hostname;
+            const currencyWeb = 'EUR';
             const extraData = {};
 
             if (recentCityId) {
@@ -3340,6 +3341,10 @@
 
             if (currentDomain) {
               extraData.last_visited_domain = currentDomain;
+            }
+
+            if (currencyWeb) {
+              extraData.currency_web = currencyWeb;
             }
 
             if (typeof window.sendSnowplowUserToBraze === 'function') {
