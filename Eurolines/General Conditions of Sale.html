@@ -2457,11 +2457,11 @@
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
-                      <a href="/bus/dortmund" class="popular-routes-item">Dortmund</a>
+                      <a href="/bus/freiburg-ibr" class="popular-routes-item">Freiburg (i.Br.)</a>
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
-                      <a href="/bus/freiburg-ibr" class="popular-routes-item">Freiburg (i.Br.)</a>
+                      <a href="/bus/dortmund" class="popular-routes-item">Dortmund</a>
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
@@ -2524,11 +2524,11 @@
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
-                      <a href="/bus-routes/bus-berlin-hanover" class="popular-routes-item">Berlin - Hanover</a>
+                      <a href="/bus-routes/bus-berlin-cologne" class="popular-routes-item">Berlin - Cologne</a>
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
-                      <a href="/bus-routes/bus-berlin-cologne" class="popular-routes-item">Berlin - Cologne</a>
+                      <a href="/bus-routes/bus-berlin-hanover" class="popular-routes-item">Berlin - Hanover</a>
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
@@ -2552,11 +2552,11 @@
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
-                      <a href="/bus-routes/bus-prague-berlin" class="popular-routes-item">Prague - Berlin</a>
+                      <a href="/bus-routes/bus-stuttgart-berlin" class="popular-routes-item">Stuttgart - Berlin</a>
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
-                      <a href="/bus-routes/bus-stuttgart-berlin" class="popular-routes-item">Stuttgart - Berlin</a>
+                      <a href="/bus-routes/bus-prague-berlin" class="popular-routes-item">Prague - Berlin</a>
                     </li>
                   
                     <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
@@ -3142,7 +3142,7 @@
 <script defer async type="module" src="https://honeycomb-icons.hive.flixbus.com/9.0.0/flix-icons/flix-icons.esm.js"></script>
 <script defer async type="nomodule" src="https://honeycomb-icons.hive.flixbus.com/9.0.0/flix-icons/flix-icons.js"></script>
 
-<script src="https://cdn-cf.cms.flixbus.com/drupal-assets/flix-home-assets/main.14c444.js"></script>
+<script src="https://cdn-cf.cms.flixbus.com/drupal-assets/flix-home-assets/main.47a0ed.js"></script>
 <script>
   injectSearchMask(
    "en",
@@ -3283,7 +3283,7 @@
         site: 'datadoghq.eu',
         service: 'fxt.webc.cms.gohome',
         sessionSampleRate: 7,
-        version: "v1-98-34",
+        version: "v1-98-37",
         trackSessionAcrossSubdomains: true,
         useSecureSessionCookie: true,
         useCrossSiteSessionCookie: true,
@@ -3332,7 +3332,6 @@
 
             const recentCityId = window.getRecentCityId();
             const currentDomain = window.location.hostname;
-            const currencyWeb = 'EUR';
             const extraData = {};
 
             if (recentCityId) {
@@ -3341,10 +3340,6 @@
 
             if (currentDomain) {
               extraData.last_visited_domain = currentDomain;
-            }
-
-            if (currencyWeb) {
-              extraData.currency_web = currencyWeb;
             }
 
             if (typeof window.sendSnowplowUserToBraze === 'function') {
