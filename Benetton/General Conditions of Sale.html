@@ -6,10 +6,10 @@
 //# sourceURL=event-observer-collector.js
 </script>
 
-    <script type="application/vnd.locksmith+json" data-locksmith>{"version":"v325","locked":false,"initialized":true,"scope":"page","access_granted":true,"access_denied":false,"requires_customer":false,"manual_lock":false,"remote_lock":false,"has_timeout":false,"remote_rendered":null,"hide_resource":false,"hide_links_to_resource":false,"hide_price":false,"hide_add_to_cart":false,"transparent":true,"locks":{"all":[],"opened":[]},"keys":[],"keys_signature":"19590eaaa65fa71d6a651146c7b850bc52f1c6a366fe209cb9e6c2c55bdb51f2","state":{"template":"page.terms","theme":189857628504,"product":null,"collection":null,"page":"terms","blog":null,"article":null,"app":null},"now":1787186101,"path":"\/pages\/terms","locale_root_url":"\/","canonical_url":"https:\/\/fr.benetton.com\/pages\/terms","customer_id":null,"customer_id_signature":"19590eaaa65fa71d6a651146c7b850bc52f1c6a366fe209cb9e6c2c55bdb51f2","cart":null}</script><script data-locksmith>!function(){undefined;!function(){var s=window.Locksmith={},e=document.querySelector('script[type="application/vnd.locksmith+json"]'),n=e&&e.innerHTML;if(s.state={},s.util={},s.loading=!1,n)try{s.state=JSON.parse(n)}catch(d){}if(document.addEventListener&&document.querySelector){var o,i,a,t=[76,79,67,75,83,77,73,84,72,49,49],c=function(){i=t.slice(0)},l="style",r=function(e){e&&27!==e.keyCode&&"click"!==e.type||(document.removeEventListener("keydown",r),document.removeEventListener("click",r),o&&document.body.removeChild(o),o=null)};c(),document.addEventListener("keyup",function(e){if(e.keyCode===i[0]){if(clearTimeout(a),i.shift(),0<i.length)return void(a=setTimeout(c,1e3));c(),r(),(o=document.createElement("div"))[l].width="50%",o[l].maxWidth="1000px",o[l].height="85%",o[l].border="1px rgba(0, 0, 0, 0.2) solid",o[l].background="rgba(255, 255, 255, 0.99)",o[l].borderRadius="4px",o[l].position="fixed",o[l].top="50%",o[l].left="50%",o[l].transform="translateY(-50%) translateX(-50%)",o[l].boxShadow="0 2px 5px rgba(0, 0, 0, 0.3), 0 0 100vh 100vw rgba(0, 0, 0, 0.5)",o[l].zIndex="2147483645";var t=document.createElement("textarea");t.value=JSON.stringify(JSON.parse(n),null,2),t[l].border="none",t[l].display="block",t[l].boxSizing="border-box",t[l].width="100%",t[l].height="100%",t[l].background="transparent",t[l].padding="22px",t[l].fontFamily="monospace",t[l].fontSize="14px",t[l].color="#333",t[l].resize="none",t[l].outline="none",t.readOnly=!0,o.appendChild(t),document.body.appendChild(o),t.addEventListener("click",function(e){e.stopImmediatePropagation()}),t.select(),document.addEventListener("keydown",r),document.addEventListener("click",r)}})}s.isEmbedded=-1!==window.location.search.indexOf("_ab=0&_fd=0&_sc=1"),s.path=s.state.path||window.location.pathname,s.basePath=s.state.locale_root_url.concat("/apps/locksmith").replace(/^\/\//,"/"),s.reloading=!1,s.util.console=window.console||{log:function(){},error:function(){}},s.util.makeUrl=function(e,t){var n,o=s.basePath+e,i=[],a=s.cache();for(n in a)i.push(n+"="+encodeURIComponent(a[n]));for(n in t)i.push(n+"="+encodeURIComponent(t[n]));return s.state.customer_id&&(i.push("customer_id="+encodeURIComponent(s.state.customer_id)),i.push("customer_id_signature="+encodeURIComponent(s.state.customer_id_signature))),o+=(-1===o.indexOf("?")?"?":"&")+i.join("&")},s._initializeCallbacks=[],s.on=function(e,t){if("initialize"!==e)throw'Locksmith.on() currently only supports the "initialize" event';s._initializeCallbacks.push(t)},s.initializeSession=function(e){if(!s.isEmbedded){var t=!1,n=!0,o=!0;(e=e||{}).silent&&(o=n=!(t=!0)),s.ping({silent:t,spinner:n,reload:o,callback:function(){s._initializeCallbacks.forEach(function(e){e()})}})}},s.cache=function(e){var t={};try{var n=function i(e){return(document.cookie.match("(^|; )"+e+"=([^;]*)")||0)[2]};t=JSON.parse(decodeURIComponent(n("locksmith-params")||"{}"))}catch(d){}if(e){for(var o in e)t[o]=e[o];document.cookie="locksmith-params=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/",document.cookie="locksmith-params="+encodeURIComponent(JSON.stringify(t))+"; path=/"}return t},s.cache.cart=s.state.cart,s.cache.cartLastSaved=null,s.params=s.cache(),s.util.reload=function(){s.reloading=!0;try{window.location.href=window.location.href.replace(/#.*/,"")}catch(d){s.util.console.error("Preferred reload method failed",d),window.location.reload()}},s.cache.saveCart=function(e){if(!s.cache.cart||s.cache.cart===s.cache.cartLastSaved)return e?e():null;var t=s.cache.cartLastSaved;s.cache.cartLastSaved=s.cache.cart,fetch("/cart/update.js",{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},body:JSON.stringify({attributes:{locksmith:s.cache.cart}})}).then(function(e){if(!e.ok)throw new Error("Cart update failed: "+e.status);return e.json()}).then(function(){e&&e()})["catch"](function(e){if(s.cache.cartLastSaved=t,!s.reloading)throw e})},s.util.spinnerHTML='<style>body{background:#FFF}@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}#loading{display:flex;width:100%;height:50vh;color:#777;align-items:center;justify-content:center}#loading .spinner{display:block;animation:spin 600ms linear infinite;position:relative;width:50px;height:50px}#loading .spinner-ring{stroke:currentColor;stroke-dasharray:100%;stroke-width:2px;stroke-linecap:round;fill:none}</style><div id="loading"><div class="spinner"><svg width="100%" height="100%"><svg preserveAspectRatio="xMinYMin"><circle class="spinner-ring" cx="50%" cy="50%" r="45%"></circle></svg></svg></div></div>',s.util.clobberBody=function(e){document.body.innerHTML=e},s.util.clobberDocument=function(e){e.responseText&&(e=e.responseText),document.documentElement&&document.removeChild(document.documentElement);var t=document.open("text/html","replace");t.writeln(e),t.close(),setTimeout(function(){var e=t.querySelector("[autofocus]");e&&e.focus()},100)},s.util.serializeForm=function(e){if(e&&"FORM"===e.nodeName){var t,n,o={};for(t=e.elements.length-1;0<=t;t-=1)if(""!==e.elements[t].name)switch(e.elements[t].nodeName){case"INPUT":switch(e.elements[t].type){default:case"text":case"hidden":case"password":case"button":case"reset":case"submit":o[e.elements[t].name]=e.elements[t].value;break;case"checkbox":case"radio":e.elements[t].checked&&(o[e.elements[t].name]=e.elements[t].value);break;case"file":}break;case"TEXTAREA":o[e.elements[t].name]=e.elements[t].value;break;case"SELECT":switch(e.elements[t].type){case"select-one":o[e.elements[t].name]=e.elements[t].value;break;case"select-multiple":for(n=e.elements[t].options.length-1;0<=n;n-=1)e.elements[t].options[n].selected&&(o[e.elements[t].name]=e.elements[t].options[n].value)}break;case"BUTTON":switch(e.elements[t].type){case"reset":case"submit":case"button":o[e.elements[t].name]=e.elements[t].value}}return o}},s.util.on=function(e,a,s,t){t=t||document;var c="locksmith-"+e+a,n=function(e){var t=e.target,n=e.target.parentElement,o=t&&t.className&&(t.className.baseVal||t.className)||"",i=n&&n.className&&(n.className.baseVal||n.className)||"";("string"==typeof o&&-1!==o.split(/\s+/).indexOf(a)||"string"==typeof i&&-1!==i.split(/\s+/).indexOf(a))&&!e[c]&&(e[c]=!0,s(e))};t.attachEvent?t.attachEvent(e,n):t.addEventListener(e,n,!1)},s.util.enableActions=function(e){s.util.on("click","locksmith-action",function(e){e.preventDefault();var t=e.target;t.dataset.confirmWith&&!confirm(t.dataset.confirmWith)||(t.disabled=!0,t.innerText=t.dataset.disableWith,s.post("/action",t.dataset.locksmithParams,{spinner:!1,type:"text",success:function(e){(e=JSON.parse(e.responseText)).message&&alert(e.message),s.util.reload()}}))},e)},s.util.inject=function(e,t){var n=["data","locksmith","append"];if(-1!==t.indexOf(n.join("-"))){var o=document.createElement("div");o.innerHTML=t,e.appendChild(o)}else e.innerHTML=t;var i,a,s=e.querySelectorAll("script");for(a=0;a<s.length;++a){i=s[a];var c=document.createElement("script");if(i.type&&(c.type=i.type),i.src)c.src=i.src;else{var l=document.createTextNode(i.innerHTML);c.appendChild(l)}e.appendChild(c)}var r=e.querySelector("[autofocus]");r&&r.focus()},s.post=function(e,t,n){!1!==(n=n||{}).spinner&&s.util.clobberBody(s.util.spinnerHTML);var o={};n.container===document?(o.layout=1,n.success=function(e){s.util.clobberDocument(e)}):n.container&&(o.layout=0,n.success=function(e){var t="string"==typeof n.container?document.getElementById(n.container):n.container;t&&(s.util.inject(t,e),t.id===t.firstChild.id&&t.parentElement.replaceChild(t.firstChild,t))}),n.form_type&&(t.form_type=n.form_type),n.include_layout_classes!==undefined&&(t.include_layout_classes=n.include_layout_classes),n.lock_id!==undefined&&(t.lock_id=n.lock_id),s.loading=!0;var i=s.util.makeUrl(e,o),a="json"===n.type||"text"===n.type;fetch(i,{method:"POST",headers:{"Content-Type":"application/json",Accept:a?"application/json":"text/html"},body:JSON.stringify(t)}).then(function(e){if(!e.ok)throw new Error("Request failed: "+e.status);return e.text()}).then(function(e){var t=n.success||s.util.clobberDocument;t(a?{responseText:e}:e)})["catch"](function(e){if(!s.reloading)if("dashboard.weglot.com"!==window.location.host){if(!n.silent)throw alert("Something went wrong! Please refresh and try again."),e;console.error(e)}else console.error(e)})["finally"](function(){s.loading=!1})},s.postResource=function(e,t){e.path=s.path,e.search=window.location.search,e.state=s.state,e.passcode&&(e.passcode=e.passcode.trim()),e.email&&(e.email=e.email.trim()),e.state.cart=s.cache.cart,e.locksmith_json=s.jsonTag,e.locksmith_json_signature=s.jsonTagSignature,s.post("/resource",e,t)},s.ping=function(e){if(!s.isEmbedded){e=e||{};s.post("/ping",{path:s.path,search:window.location.search,state:s.state},{spinner:!!e.spinner,silent:"undefined"==typeof e.silent||e.silent,type:"text",success:function(e){e&&e.responseText?(e=JSON.parse(e.responseText)).messages&&0<e.messages.length&&s.showMessages(e.messages):console.error("[Locksmith] Invalid result in ping callback:",e)}})}},s.timeoutMonitor=function(){var e=s.cache.cart;s.ping({callback:function(){e!==s.cache.cart||setTimeout(function(){s.timeoutMonitor()},6e4)}})},s.showMessages=function(e){var t=document.createElement("div");t.style.position="fixed",t.style.left=0,t.style.right=0,t.style.bottom="-50px",t.style.opacity=0,t.style.background="#191919",t.style.color="#ddd",t.style.transition="bottom 0.2s, opacity 0.2s",t.style.zIndex=999999,t.innerHTML=["<style>","  .locksmith-ab .locksmith-b { display: none; }","  .locksmith-ab.toggled .locksmith-b { display: flex; }","  .locksmith-ab.toggled .locksmith-a { display: none; }","  .locksmith-flex { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; padding: 10px 20px; }","  .locksmith-message + .locksmith-message { border-top: 1px #555 solid; }","  .locksmith-message a { color: inherit; font-weight: bold; }","  .locksmith-message a:hover { color: inherit; opacity: 0.8; }","  a.locksmith-ab-toggle { font-weight: inherit; text-decoration: underline; }","  .locksmith-text { flex-grow: 1; }","  .locksmith-cta { flex-grow: 0; text-align: right; }","  .locksmith-cta button { transform: scale(0.8); transform-origin: left; }","  .locksmith-cta > * { display: block; }","  .locksmith-cta > * + * { margin-top: 10px; }","  .locksmith-message a.locksmith-close { flex-grow: 0; text-decoration: none; margin-left: 15px; font-size: 30px; font-family: monospace; display: block; padding: 2px 10px; }","  @media screen and (max-width: 600px) {","    .locksmith-wide-only { display: none !important; }","    .locksmith-flex { padding: 0 15px; }","    .locksmith-flex > * { margin-top: 5px; margin-bottom: 5px; }","    .locksmith-cta { text-align: left; }","  }","  @media screen and (min-width: 601px) {","    .locksmith-narrow-only { display: none !important; }","  }","</style>"].join("")+e.map(function(e){return'<div class="locksmith-message">'+e+"</div>"}).join(""),document.body.appendChild(t),document.body.style.position="relative",document.body.parentElement.style.paddingBottom=t.offsetHeight+"px",setTimeout(function(){t.style.bottom=0,t.style.opacity=1},50),s.util.on("click","locksmith-ab-toggle",function(e){e.preventDefault();for(var t=e.target.parentElement;-1===t.className.split(" ").indexOf("locksmith-ab");)t=t.parentElement;-1!==t.className.split(" ").indexOf("toggled")?t.className=t.className.replace("toggled",""):t.className=t.className+" toggled"}),s.util.enableActions(t)}}()}();</script>
+    <script type="application/vnd.locksmith+json" data-locksmith>{"version":"v325","locked":false,"initialized":true,"scope":"page","access_granted":true,"access_denied":false,"requires_customer":false,"manual_lock":false,"remote_lock":false,"has_timeout":false,"remote_rendered":null,"hide_resource":false,"hide_links_to_resource":false,"hide_price":false,"hide_add_to_cart":false,"transparent":true,"locks":{"all":[],"opened":[]},"keys":[],"keys_signature":"19590eaaa65fa71d6a651146c7b850bc52f1c6a366fe209cb9e6c2c55bdb51f2","state":{"template":"page.terms","theme":189857628504,"product":null,"collection":null,"page":"terms","blog":null,"article":null,"app":null},"now":1787229312,"path":"\/pages\/terms","locale_root_url":"\/","canonical_url":"https:\/\/fr.benetton.com\/pages\/terms","customer_id":null,"customer_id_signature":"19590eaaa65fa71d6a651146c7b850bc52f1c6a366fe209cb9e6c2c55bdb51f2","cart":null}</script><script data-locksmith>!function(){undefined;!function(){var s=window.Locksmith={},e=document.querySelector('script[type="application/vnd.locksmith+json"]'),n=e&&e.innerHTML;if(s.state={},s.util={},s.loading=!1,n)try{s.state=JSON.parse(n)}catch(d){}if(document.addEventListener&&document.querySelector){var o,i,a,t=[76,79,67,75,83,77,73,84,72,49,49],c=function(){i=t.slice(0)},l="style",r=function(e){e&&27!==e.keyCode&&"click"!==e.type||(document.removeEventListener("keydown",r),document.removeEventListener("click",r),o&&document.body.removeChild(o),o=null)};c(),document.addEventListener("keyup",function(e){if(e.keyCode===i[0]){if(clearTimeout(a),i.shift(),0<i.length)return void(a=setTimeout(c,1e3));c(),r(),(o=document.createElement("div"))[l].width="50%",o[l].maxWidth="1000px",o[l].height="85%",o[l].border="1px rgba(0, 0, 0, 0.2) solid",o[l].background="rgba(255, 255, 255, 0.99)",o[l].borderRadius="4px",o[l].position="fixed",o[l].top="50%",o[l].left="50%",o[l].transform="translateY(-50%) translateX(-50%)",o[l].boxShadow="0 2px 5px rgba(0, 0, 0, 0.3), 0 0 100vh 100vw rgba(0, 0, 0, 0.5)",o[l].zIndex="2147483645";var t=document.createElement("textarea");t.value=JSON.stringify(JSON.parse(n),null,2),t[l].border="none",t[l].display="block",t[l].boxSizing="border-box",t[l].width="100%",t[l].height="100%",t[l].background="transparent",t[l].padding="22px",t[l].fontFamily="monospace",t[l].fontSize="14px",t[l].color="#333",t[l].resize="none",t[l].outline="none",t.readOnly=!0,o.appendChild(t),document.body.appendChild(o),t.addEventListener("click",function(e){e.stopImmediatePropagation()}),t.select(),document.addEventListener("keydown",r),document.addEventListener("click",r)}})}s.isEmbedded=-1!==window.location.search.indexOf("_ab=0&_fd=0&_sc=1"),s.path=s.state.path||window.location.pathname,s.basePath=s.state.locale_root_url.concat("/apps/locksmith").replace(/^\/\//,"/"),s.reloading=!1,s.util.console=window.console||{log:function(){},error:function(){}},s.util.makeUrl=function(e,t){var n,o=s.basePath+e,i=[],a=s.cache();for(n in a)i.push(n+"="+encodeURIComponent(a[n]));for(n in t)i.push(n+"="+encodeURIComponent(t[n]));return s.state.customer_id&&(i.push("customer_id="+encodeURIComponent(s.state.customer_id)),i.push("customer_id_signature="+encodeURIComponent(s.state.customer_id_signature))),o+=(-1===o.indexOf("?")?"?":"&")+i.join("&")},s._initializeCallbacks=[],s.on=function(e,t){if("initialize"!==e)throw'Locksmith.on() currently only supports the "initialize" event';s._initializeCallbacks.push(t)},s.initializeSession=function(e){if(!s.isEmbedded){var t=!1,n=!0,o=!0;(e=e||{}).silent&&(o=n=!(t=!0)),s.ping({silent:t,spinner:n,reload:o,callback:function(){s._initializeCallbacks.forEach(function(e){e()})}})}},s.cache=function(e){var t={};try{var n=function i(e){return(document.cookie.match("(^|; )"+e+"=([^;]*)")||0)[2]};t=JSON.parse(decodeURIComponent(n("locksmith-params")||"{}"))}catch(d){}if(e){for(var o in e)t[o]=e[o];document.cookie="locksmith-params=; expires=Thu, 01 Jan 1970 00:00:00 GMT; path=/",document.cookie="locksmith-params="+encodeURIComponent(JSON.stringify(t))+"; path=/"}return t},s.cache.cart=s.state.cart,s.cache.cartLastSaved=null,s.params=s.cache(),s.util.reload=function(){s.reloading=!0;try{window.location.href=window.location.href.replace(/#.*/,"")}catch(d){s.util.console.error("Preferred reload method failed",d),window.location.reload()}},s.cache.saveCart=function(e){if(!s.cache.cart||s.cache.cart===s.cache.cartLastSaved)return e?e():null;var t=s.cache.cartLastSaved;s.cache.cartLastSaved=s.cache.cart,fetch("/cart/update.js",{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},body:JSON.stringify({attributes:{locksmith:s.cache.cart}})}).then(function(e){if(!e.ok)throw new Error("Cart update failed: "+e.status);return e.json()}).then(function(){e&&e()})["catch"](function(e){if(s.cache.cartLastSaved=t,!s.reloading)throw e})},s.util.spinnerHTML='<style>body{background:#FFF}@keyframes spin{from{transform:rotate(0deg)}to{transform:rotate(360deg)}}#loading{display:flex;width:100%;height:50vh;color:#777;align-items:center;justify-content:center}#loading .spinner{display:block;animation:spin 600ms linear infinite;position:relative;width:50px;height:50px}#loading .spinner-ring{stroke:currentColor;stroke-dasharray:100%;stroke-width:2px;stroke-linecap:round;fill:none}</style><div id="loading"><div class="spinner"><svg width="100%" height="100%"><svg preserveAspectRatio="xMinYMin"><circle class="spinner-ring" cx="50%" cy="50%" r="45%"></circle></svg></svg></div></div>',s.util.clobberBody=function(e){document.body.innerHTML=e},s.util.clobberDocument=function(e){e.responseText&&(e=e.responseText),document.documentElement&&document.removeChild(document.documentElement);var t=document.open("text/html","replace");t.writeln(e),t.close(),setTimeout(function(){var e=t.querySelector("[autofocus]");e&&e.focus()},100)},s.util.serializeForm=function(e){if(e&&"FORM"===e.nodeName){var t,n,o={};for(t=e.elements.length-1;0<=t;t-=1)if(""!==e.elements[t].name)switch(e.elements[t].nodeName){case"INPUT":switch(e.elements[t].type){default:case"text":case"hidden":case"password":case"button":case"reset":case"submit":o[e.elements[t].name]=e.elements[t].value;break;case"checkbox":case"radio":e.elements[t].checked&&(o[e.elements[t].name]=e.elements[t].value);break;case"file":}break;case"TEXTAREA":o[e.elements[t].name]=e.elements[t].value;break;case"SELECT":switch(e.elements[t].type){case"select-one":o[e.elements[t].name]=e.elements[t].value;break;case"select-multiple":for(n=e.elements[t].options.length-1;0<=n;n-=1)e.elements[t].options[n].selected&&(o[e.elements[t].name]=e.elements[t].options[n].value)}break;case"BUTTON":switch(e.elements[t].type){case"reset":case"submit":case"button":o[e.elements[t].name]=e.elements[t].value}}return o}},s.util.on=function(e,a,s,t){t=t||document;var c="locksmith-"+e+a,n=function(e){var t=e.target,n=e.target.parentElement,o=t&&t.className&&(t.className.baseVal||t.className)||"",i=n&&n.className&&(n.className.baseVal||n.className)||"";("string"==typeof o&&-1!==o.split(/\s+/).indexOf(a)||"string"==typeof i&&-1!==i.split(/\s+/).indexOf(a))&&!e[c]&&(e[c]=!0,s(e))};t.attachEvent?t.attachEvent(e,n):t.addEventListener(e,n,!1)},s.util.enableActions=function(e){s.util.on("click","locksmith-action",function(e){e.preventDefault();var t=e.target;t.dataset.confirmWith&&!confirm(t.dataset.confirmWith)||(t.disabled=!0,t.innerText=t.dataset.disableWith,s.post("/action",t.dataset.locksmithParams,{spinner:!1,type:"text",success:function(e){(e=JSON.parse(e.responseText)).message&&alert(e.message),s.util.reload()}}))},e)},s.util.inject=function(e,t){var n=["data","locksmith","append"];if(-1!==t.indexOf(n.join("-"))){var o=document.createElement("div");o.innerHTML=t,e.appendChild(o)}else e.innerHTML=t;var i,a,s=e.querySelectorAll("script");for(a=0;a<s.length;++a){i=s[a];var c=document.createElement("script");if(i.type&&(c.type=i.type),i.src)c.src=i.src;else{var l=document.createTextNode(i.innerHTML);c.appendChild(l)}e.appendChild(c)}var r=e.querySelector("[autofocus]");r&&r.focus()},s.post=function(e,t,n){!1!==(n=n||{}).spinner&&s.util.clobberBody(s.util.spinnerHTML);var o={};n.container===document?(o.layout=1,n.success=function(e){s.util.clobberDocument(e)}):n.container&&(o.layout=0,n.success=function(e){var t="string"==typeof n.container?document.getElementById(n.container):n.container;t&&(s.util.inject(t,e),t.id===t.firstChild.id&&t.parentElement.replaceChild(t.firstChild,t))}),n.form_type&&(t.form_type=n.form_type),n.include_layout_classes!==undefined&&(t.include_layout_classes=n.include_layout_classes),n.lock_id!==undefined&&(t.lock_id=n.lock_id),s.loading=!0;var i=s.util.makeUrl(e,o),a="json"===n.type||"text"===n.type;fetch(i,{method:"POST",headers:{"Content-Type":"application/json",Accept:a?"application/json":"text/html"},body:JSON.stringify(t)}).then(function(e){if(!e.ok)throw new Error("Request failed: "+e.status);return e.text()}).then(function(e){var t=n.success||s.util.clobberDocument;t(a?{responseText:e}:e)})["catch"](function(e){if(!s.reloading)if("dashboard.weglot.com"!==window.location.host){if(!n.silent)throw alert("Something went wrong! Please refresh and try again."),e;console.error(e)}else console.error(e)})["finally"](function(){s.loading=!1})},s.postResource=function(e,t){e.path=s.path,e.search=window.location.search,e.state=s.state,e.passcode&&(e.passcode=e.passcode.trim()),e.email&&(e.email=e.email.trim()),e.state.cart=s.cache.cart,e.locksmith_json=s.jsonTag,e.locksmith_json_signature=s.jsonTagSignature,s.post("/resource",e,t)},s.ping=function(e){if(!s.isEmbedded){e=e||{};s.post("/ping",{path:s.path,search:window.location.search,state:s.state},{spinner:!!e.spinner,silent:"undefined"==typeof e.silent||e.silent,type:"text",success:function(e){e&&e.responseText?(e=JSON.parse(e.responseText)).messages&&0<e.messages.length&&s.showMessages(e.messages):console.error("[Locksmith] Invalid result in ping callback:",e)}})}},s.timeoutMonitor=function(){var e=s.cache.cart;s.ping({callback:function(){e!==s.cache.cart||setTimeout(function(){s.timeoutMonitor()},6e4)}})},s.showMessages=function(e){var t=document.createElement("div");t.style.position="fixed",t.style.left=0,t.style.right=0,t.style.bottom="-50px",t.style.opacity=0,t.style.background="#191919",t.style.color="#ddd",t.style.transition="bottom 0.2s, opacity 0.2s",t.style.zIndex=999999,t.innerHTML=["<style>","  .locksmith-ab .locksmith-b { display: none; }","  .locksmith-ab.toggled .locksmith-b { display: flex; }","  .locksmith-ab.toggled .locksmith-a { display: none; }","  .locksmith-flex { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; padding: 10px 20px; }","  .locksmith-message + .locksmith-message { border-top: 1px #555 solid; }","  .locksmith-message a { color: inherit; font-weight: bold; }","  .locksmith-message a:hover { color: inherit; opacity: 0.8; }","  a.locksmith-ab-toggle { font-weight: inherit; text-decoration: underline; }","  .locksmith-text { flex-grow: 1; }","  .locksmith-cta { flex-grow: 0; text-align: right; }","  .locksmith-cta button { transform: scale(0.8); transform-origin: left; }","  .locksmith-cta > * { display: block; }","  .locksmith-cta > * + * { margin-top: 10px; }","  .locksmith-message a.locksmith-close { flex-grow: 0; text-decoration: none; margin-left: 15px; font-size: 30px; font-family: monospace; display: block; padding: 2px 10px; }","  @media screen and (max-width: 600px) {","    .locksmith-wide-only { display: none !important; }","    .locksmith-flex { padding: 0 15px; }","    .locksmith-flex > * { margin-top: 5px; margin-bottom: 5px; }","    .locksmith-cta { text-align: left; }","  }","  @media screen and (min-width: 601px) {","    .locksmith-narrow-only { display: none !important; }","  }","</style>"].join("")+e.map(function(e){return'<div class="locksmith-message">'+e+"</div>"}).join(""),document.body.appendChild(t),document.body.style.position="relative",document.body.parentElement.style.paddingBottom=t.offsetHeight+"px",setTimeout(function(){t.style.bottom=0,t.style.opacity=1},50),s.util.on("click","locksmith-ab-toggle",function(e){e.preventDefault();for(var t=e.target.parentElement;-1===t.className.split(" ").indexOf("locksmith-ab");)t=t.parentElement;-1!==t.className.split(" ").indexOf("toggled")?t.className=t.className.replace("toggled",""):t.className=t.className+" toggled"}),s.util.enableActions(t)}}()}();</script>
       <script data-locksmith>Locksmith.cache.cart=null</script>
 
-  <script data-locksmith>Locksmith.jsonTag="{\"version\":\"v325\",\"locked\":false,\"initialized\":true,\"scope\":\"page\",\"access_granted\":true,\"access_denied\":false,\"requires_customer\":false,\"manual_lock\":false,\"remote_lock\":false,\"has_timeout\":false,\"remote_rendered\":null,\"hide_resource\":false,\"hide_links_to_resource\":false,\"hide_price\":false,\"hide_add_to_cart\":false,\"transparent\":true,\"locks\":{\"all\":[],\"opened\":[]},\"keys\":[],\"keys_signature\":\"19590eaaa65fa71d6a651146c7b850bc52f1c6a366fe209cb9e6c2c55bdb51f2\",\"state\":{\"template\":\"page.terms\",\"theme\":189857628504,\"product\":null,\"collection\":null,\"page\":\"terms\",\"blog\":null,\"article\":null,\"app\":null},\"now\":1787186101,\"path\":\"\\\/pages\\\/terms\",\"locale_root_url\":\"\\\/\",\"canonical_url\":\"https:\\\/\\\/fr.benetton.com\\\/pages\\\/terms\",\"customer_id\":null,\"customer_id_signature\":\"19590eaaa65fa71d6a651146c7b850bc52f1c6a366fe209cb9e6c2c55bdb51f2\",\"cart\":null}";Locksmith.jsonTagSignature="037416b6453f6ac123cafd816c8f2a2b1c520833196b3d0a6aad4d33bf42489d"</script>
+  <script data-locksmith>Locksmith.jsonTag="{\"version\":\"v325\",\"locked\":false,\"initialized\":true,\"scope\":\"page\",\"access_granted\":true,\"access_denied\":false,\"requires_customer\":false,\"manual_lock\":false,\"remote_lock\":false,\"has_timeout\":false,\"remote_rendered\":null,\"hide_resource\":false,\"hide_links_to_resource\":false,\"hide_price\":false,\"hide_add_to_cart\":false,\"transparent\":true,\"locks\":{\"all\":[],\"opened\":[]},\"keys\":[],\"keys_signature\":\"19590eaaa65fa71d6a651146c7b850bc52f1c6a366fe209cb9e6c2c55bdb51f2\",\"state\":{\"template\":\"page.terms\",\"theme\":189857628504,\"product\":null,\"collection\":null,\"page\":\"terms\",\"blog\":null,\"article\":null,\"app\":null},\"now\":1787229312,\"path\":\"\\\/pages\\\/terms\",\"locale_root_url\":\"\\\/\",\"canonical_url\":\"https:\\\/\\\/fr.benetton.com\\\/pages\\\/terms\",\"customer_id\":null,\"customer_id_signature\":\"19590eaaa65fa71d6a651146c7b850bc52f1c6a366fe209cb9e6c2c55bdb51f2\",\"cart\":null}";Locksmith.jsonTagSignature="e56119f1a7e8ba8ef69c716beba34539ca98a1c9862f1b5354bdb3132e69c3a4"</script>
     <meta charset="utf-8">
     <meta
       name="viewport"
@@ -941,7 +941,7 @@ Shopify.SignInWithShop.User.recognized = false;</script>
   window.Shopify.SignInWithShop?.initShopCartSync?.({"fedCMEnabled":true,"windoidEnabled":true});
 
 </script>
-<script id="__st">var __st={"a":95367299416,"offset":7200,"reqid":"28007bf2-d14e-4af8-9259-c8b569be5704-1787186101","pageurl":"fr.benetton.com\/pages\/terms","s":"pages-159786959192","u":"b7a95dbdc6e5","p":"page","rtyp":"page","rid":159786959192};</script>
+<script id="__st">var __st={"a":95367299416,"offset":7200,"reqid":"2cd13705-5694-4e0b-9f6f-56826080193d-1787229312","pageurl":"fr.benetton.com\/pages\/terms","s":"pages-159786959192","u":"23514fc70320","p":"page","rtyp":"page","rid":159786959192};</script>
 <script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
 <script id="captcha-bootstrap">!function(){'use strict';const t='contact',e='account',n='new_comment',o=[[t,t],['blogs',n],['comments',n],[t,'customer']],c=[[e,'customer_login'],[e,'guest_login'],[e,'recover_customer_password'],[e,'create_customer']],r=t=>t.map((([t,e])=>`form[action*='/${t}']:not([data-nocaptcha='true']) input[name='form_type'][value='${e}']`)).join(','),a=t=>()=>t?[...document.querySelectorAll(t)].map((t=>t.form)):[];function s(){const t=[...o],e=r(t);return a(e)}const i='password',u='form_key',d=['recaptcha-v3-token','g-recaptcha-response','h-captcha-response',i],f=()=>{try{return window.sessionStorage}catch{return}},m='__shopify_v',_=t=>t.elements[u];function p(t,e,n=!1){try{const o=window.sessionStorage,c=JSON.parse(o.getItem(e)),{data:r}=function(t){const{data:e,action:n}=t;return t[m]||n?{data:e,action:n}:{data:t,action:n}}(c);for(const[e,n]of Object.entries(r))t.elements[e]&&(t.elements[e].value=n);n&&o.removeItem(e)}catch(o){console.error('form repopulation failed',{error:o})}}const l='form_type',E='cptcha';function T(t){t.dataset[E]=!0}const w=window,h=w.document,L='Shopify',v='ce_forms',y='captcha';let A=!1;((t,e)=>{const n=(g='f06e6c50-85a8-45c8-87d0-21a2b65856fe',I='https://cdn.shopify.com/shopifycloud/storefront-forms-hcaptcha/ce_storefront_forms_captcha_hcaptcha.v1.5.2.iife.js',D={infoText:'Protégé par hCaptcha',privacyText:'Confidentialité',termsText:'Conditions'},(t,e,n)=>{const o=w[L][v],c=o.bindForm;if(c)return c(t,g,e,D).then(n);var r;o.q.push([[t,g,e,D],n]),r=I,A||(h.body.append(Object.assign(h.createElement('script'),{id:'captcha-provider',async:!0,src:r})),A=!0)});var g,I,D;w[L]=w[L]||{},w[L][v]=w[L][v]||{},w[L][v].q=[],w[L][y]=w[L][y]||{},w[L][y].protect=function(t,e){n(t,void 0,e),T(t)},Object.freeze(w[L][y]),function(t,e,n,w,h,L){const[v,y,A,g]=function(t,e,n){const i=e?o:[],u=t?c:[],d=[...i,...u],f=r(d),m=r(i),_=r(d.filter((([t,e])=>n.includes(e))));return[a(f),a(m),a(_),s()]}(w,h,L),I=t=>{const e=t.target;return e instanceof HTMLFormElement?e:e&&e.form},D=t=>v().includes(t);t.addEventListener('submit',(t=>{const e=I(t);if(!e)return;const n=D(e)&&!e.dataset.hcaptchaBound&&!e.dataset.recaptchaBound,o=_(e),c=g().includes(e)&&(!o||!o.value);(n||c)&&t.preventDefault(),c&&!n&&(function(t){try{if(!f())return;!function(t){const e=f();if(!e)return;const n=_(t);if(!n)return;const o=n.value;o&&e.removeItem(o)}(t);const e=Array.from(Array(32),(()=>Math.random().toString(36)[2])).join('');!function(t,e){_(t)||t.append(Object.assign(document.createElement('input'),{type:'hidden',name:u})),t.elements[u].value=e}(t,e),function(t,e){const n=f();if(!n)return;const o=[...t.querySelectorAll(`input[type='${i}']`)].map((({name:t})=>t)),c=[...d,...o],r={};for(const[a,s]of new FormData(t).entries())c.includes(a)||(r[a]=s);n.setItem(e,JSON.stringify({[m]:1,action:t.action,data:r}))}(t,e)}catch(e){console.error('failed to persist form',e)}}(e),e.submit())}));const S=(t,e)=>{t&&!t.dataset[E]&&(n(t,e.some((e=>e===t))),T(t))};for(const o of['focusin','change'])t.addEventListener(o,(t=>{const e=I(t);D(e)&&S(e,y())}));const B=e.get('form_key'),M=e.get(l),P=B&&M;t.addEventListener('DOMContentLoaded',(()=>{const t=y();if(P)for(const e of t)e.elements[l].value===M&&p(e,B);[...new Set([...A(),...v().filter((t=>'true'===t.dataset.shopifyCaptcha))])].forEach((e=>S(e,t)))}))}(h,new URLSearchParams(w.location.search),n,t,e,['guest_login'])})(!0,!0)}();</script>
 <script integrity="sha256-JjoPp5ZfB1sSAs5SQaol1x1GgvveM+BgmRzyDexInEQ=" data-source-attribution="shopify.loadfeatures" defer="defer" src="//fr.benetton.com/cdn/shopifycloud/storefront/assets/storefront/load_feature-1bd60354.js" crossorigin="anonymous"></script>
@@ -1085,7 +1085,242 @@ Shopify.SignInWithShop.User.recognized = false;</script>
         }, 100);
       });
     </script>
-  <!-- BEGIN app block: shopify://apps/supergrid-by-depict/blocks/depict_brand_features/ad5c7d1f-ddfb-424b-b936-7f08c4544f6b -->
+  <!-- BEGIN app block: shopify://apps/sortd-merchandiser/blocks/app-embed/5176d6ef-993f-4869-ba24-87a0a6bedcf9 -->
+
+
+<script>
+window.cmPercents = {
+  'product_card_view': 100,
+  'product_view': 100,
+  'collection_view': 100,
+  'product_add': 100,
+  'enabled': true,
+  'product_card_selector': '[role="main"] a[href*="/products"], #main a[href*="/products"], main a[href*="/products"], #shopify-section-collection-template a[href*="/products"], .collection-matrix.product-list a[href*="/products"]',
+  'cart_url': '/cart',
+  'store': 'benetton-official.myshopify.com',
+  'submit': '[type="submit"]',
+  'root_locale': '/en',
+  'root': '/',
+  'collection_url': '',
+  'collection_handle': '',
+  'collection_id': null,
+  'permissions': 123,
+  'dynamic_loading': false,
+  'market_id': 104777318744,
+  'market_handle': "france",
+  'country_iso_code': "FR",
+  'version': '030.4'
+};
+
+window.cmTesting = {
+  'tests': '[]',
+  'collection_route': '/collections',
+  'variantA': '',
+  'variantB': '',
+  'variantAId': '',
+  'variantBId': '',
+  'collection_handle': '',
+  'collection_id': null,
+  'canonical_enabled': false
+};
+
+if(!(window.cmPercents.permissions != 123 && sessionStorage.getItem('themePermissions') != 'true')) {
+  sessionStorage.setItem('cmTests', window.cmTesting.tests);
+}
+</script>
+
+
+  
+  <script>
+  var cmInserted=function(){"use strict";var m=100,t=!1,u="animationName",d="",n="Webkit Moz O ms Khtml".split(" "),e="",i=document.createElement("div"),s={strictlyNew:!0,timeout:20,addImportant:!1};if(i.style.animationName&&(t=!0),!1===t)for(var o=0;o<n.length;o++)if(void 0!==i.style[n[o]+"AnimationName"]){e=n[o],u=e+"AnimationName",d="-"+e.toLowerCase()+"-",t=!0;break}function c(t){return s.strictlyNew&&!0===t.QinsQ}function r(t,n){function e(t){t.animationName!==o&&t[u]!==o||c(t.target)||n(t.target)}var i,o="insQ_"+m++,r=s.addImportant?" !important":"";(i=document.createElement("style")).innerHTML="@"+d+"keyframes "+o+" {  from {  outline: 1px solid transparent  } to {  outline: 0px solid transparent }  }\n"+t+" { animation-duration: 0.001s"+r+"; animation-name: "+o+r+"; "+d+"animation-duration: 0.001s"+r+"; "+d+"animation-name: "+o+r+";  } ",document.head.appendChild(i);var a=setTimeout(function(){document.addEventListener("animationstart",e,!1),document.addEventListener("MSAnimationStart",e,!1),document.addEventListener("webkitAnimationStart",e,!1)},s.timeout);return{destroy:function(){clearTimeout(a),i&&(document.head.removeChild(i),i=null),document.removeEventListener("animationstart",e),document.removeEventListener("MSAnimationStart",e),document.removeEventListener("webkitAnimationStart",e)}}}function a(t){t.QinsQ=!0}function f(t){if(t)for(a(t),t=t.firstChild;t;t=t.nextSibling)void 0!==t&&1===t.nodeType&&f(t)}function l(t,n){var e,i=[],o=function(){clearTimeout(e),e=setTimeout(function(){i.forEach(f),n(i),i=[]},10)};return r(t,function(t){if(!c(t)){a(t);var n=function t(n){return c(n.parentNode)||"BODY"===n.nodeName?n:t(n.parentNode)}(t);i.indexOf(n)<0&&i.push(n),o()}})}function v(n){return!(!t||!n.match(/[^{}]/))&&(s.strictlyNew&&f(document.body),{every:function(t){return r(n,t)},summary:function(t){return l(n,t)}})}return v.config=function(t){for(var n in t)t.hasOwnProperty(n)&&(s[n]=t[n])},v}();"undefined"!=typeof module&&void 0!==module.exports&&(module.exports=cmInserted);
+  function cmX() {
+    var ua = (navigator.userAgent || '').toLowerCase();
+  
+    // List of substrings/regexes commonly associated with bots, crawlers and link preview services
+    var botPatterns = [
+      /bot/,                    // generic "bot" substring (covers googlebot, bingbot, etc.)
+      /crawl/,                  // generic "crawl" substring
+      /spider/,
+      /slurp/,                  // Yahoo! Slurp
+      /curl/,                   // curl command-line tool
+      /wget/,                   // wget command-line tool
+      /python-requests/,        // Python requests library
+      /axios/,                  // Axios HTTP client
+      /feedfetcher/,            // Google Feedfetcher
+      /ia_archiver/,            // Alexa IA archiver
+      /facebookexternalhit/,    // Facebook preview bot
+      /facebot/,                // Facebook facebot
+      /google web preview/,
+      /googlebot/,
+      /bingpreview/,
+      /bingbot/,
+      /duckduckbot/,
+      /baiduspider/,
+      /yandex/,                 // Yandex bots (yandexbot, etc.)
+      /sogou/,
+      /exabot/,
+      /dotbot/,
+      /msnbot/,
+      /yahoo/,
+      /adsbot/,                 // Google ads crawler
+      /mediapartners google/,
+      /developers google/,
+      /embedly/,
+      /quora link preview/,
+      /rogerbot/,
+      /applebot/,
+      /tweetmemebot/,
+      /ahrefsbot/,
+      /semrush/,
+      /mj12bot/,
+      /uptimerobot/,
+      /screamingfrog/,
+      /pinterest/,
+      /whatsapp/,               // WhatsApp link preview
+      /telegrambot/,
+      /vkshare/,
+      /slackbot/,
+      /discordbot/,
+      /flipboard/,
+      /preview/,                // generic "preview" (covers some link preview agents)
+      /phantomjs/,
+      /headless/,               // "HeadlessChrome", "headless" etc.
+      /prerender/,              // prerender.io proxy
+      /metauri/,
+      /node-superagent/,
+      /python-urllib/,
+      /java\/[0-9\.]+/,
+      /lighthouse/,             // Google Lighthouse / PSI
+      /chrome-lighthouse/,      // Chrome-specific Lighthouse UA
+      /pagespeed/,              // PageSpeed Insights
+  
+      /yadirectfetcher/,        // Yandex Direct fetcher (ad preview)
+      /mailru\//,               // Mail.ru fetchers
+      /daum[ /]/,               // Daum (Korean portal) crawler
+  
+      /gomezagent/,             // Gomez/Dynatrace synthetic
+      /pingdom/,                // Pingdom synthetic
+      /rigor/,                  // Rigor/Now Catchpoint synthetic
+      /postman/,                // Postman clients (synthetic/API)
+      /firephp/,                // Tooling / not a browser
+  
+      /wappalyzer/,             // Site tech profiler
+      /whatcms\//,              // CMS detector
+      /zgrab/,                  // Scanner
+      /webglance/,              // Site analysis
+      /webkit2png/,             // Screenshotter
+      /analyzer/,               // Generic analyzer keyword
+      /virtuoso/,               // Often seen in crawlers / link checkers
+      /pageburst/,              // Synthetic/page tool
+      /gozilla\//,              // Legacy fetcher
+      /cloudflare/,
+      /cf-network/, 
+      /cf-edge/, 
+      /cf-connecting-ip/
+    ];
+  
+    // Test the user-agent against the bot patterns list
+    for (var i = 0; i < botPatterns.length; i++) {
+      if (botPatterns[i].test(ua)) {
+        return true;
+      }
+    }
+  
+    // Heuristics for headless/automated browsers:
+    // navigator.webdriver is true for Selenium/WebDriver automation
+    if (navigator.webdriver) {
+      return true;
+    }
+    // Most real browsers have a populated navigator.languages array
+    if (!navigator.languages || navigator.languages.length === 0) {
+      return true;
+    }
+    // Headless Chrome sometimes includes "HeadlessChrome" in the UA
+    if (ua.indexOf('headlesschrome') >= 0) {
+      return true;
+    }
+    // PhantomJS and Nightmare.js often set these properties
+    if (window._phantom || window.__nightmare || window.callPhantom) {
+      return true;
+    }
+  
+    // Compare screen height to innerHeight to detect off‑screen or minimized windows (bot heuristic)
+    try {
+      if (typeof screen !== 'undefined' && window.innerHeight && (screen.height - window.innerHeight < 0)) {
+        return true;
+      }
+    } catch (e) {
+      // access to screen may be restricted; ignore errors
+    }
+  
+    // No bot indicators detected
+    return false;
+  }
+  
+  class CMUtils{constructor(){}getCollectionContextFromPath(){let e=(window.location.pathname||"").replace(/\/+$/,""),t=e.split("/").filter(Boolean),n=t.indexOf("collections");if(-1===n||t.length<=n+1)return null;let l=t[n+1],r="/"+t.slice(0,n+2).join("/");return{collection_route:"/"+t.slice(0,n+1).join("/"),collection_url:r,collection_handle:l}}refreshCmTestingFromRoute(){if(!window?.cmTesting)return;let e=this.getCollectionContextFromPath();if(!e){window.cmTesting.collection_handle="",window.cmTesting.variantA="",window.cmTesting.variantB="";return}window.cmTesting.collection_handle=e.collection_handle,window.cmTesting.collection_route=e.collection_route;let t=[];try{t=JSON.parse(window.cmTesting.tests||"[]")}catch(n){t=[]}let l=Array.isArray(t)?t.find(t=>t?.aHandle===e.collection_handle||t?.bHandle===e.collection_handle):null;l?(window.cmTesting.variantA=l.aHandle||"",window.cmTesting.variantB=l.bHandle||""):(window.cmTesting.variantA="",window.cmTesting.variantB="")}fetchCollectionMeta(e){return new Promise(t=>{let n=new XMLHttpRequest;n.open("GET",`${e}.json`,!0),n.responseType="json",n.onload=function(){200===n.status&&n?.response?.collection?t(n.response.collection):t(null)},n.onerror=function(){t(null)},n.send()})}async refreshCmPercentsFromRoute(){if(!window?.cmPercents)return;let e=this.getCollectionContextFromPath();if(!e){window.cmPercents.collection_url="",window.cmPercents.collection_handle="",window.cmPercents.collection_id=null;return}window.cmPercents.collection_url=e.collection_url,window.cmPercents.collection_handle=e.collection_handle;let t=`collection_meta:${e.collection_url}`,n=null;try{n=JSON.parse(sessionStorage.getItem(t)||"null")}catch(l){n=null}if(n?.id){window.cmPercents.collection_id=n.id;return}let r=await this.fetchCollectionMeta(e.collection_url);if(r?.id){window.cmPercents.collection_id=r.id,sessionStorage.setItem(t,JSON.stringify({id:r.id,handle:r.handle||e.collection_handle}));return}window.cmPercents.collection_id=null}saveId(){window?.cmPercents?.collection_id&&sessionStorage.setItem("collectionReferrerId",JSON.stringify({[window.location.href.split("?")[0]]:window.cmPercents.collection_id}))}anyNotFoundIds(e,t){if(void 0!==t){for(let n=0;n<e.length;n++)if(!t[decodeURIComponent(e[n].split("/products/")[1])])return!0}return!1}fetchRedirectedURL(e){return new Promise((t,n)=>{let l=new XMLHttpRequest;l.open("GET",e,!0),l.onload=()=>{200===l.status?t(l.responseURL):n(Error("Failed to fetch redirected URL"))},l.onerror=()=>n(Error("Network error")),l.send()})}filteredProductCards(e,t,n){let l;try{l=JSON.parse(sessionStorage.getItem("viewedProductCards")||'{"cards":[]}')||{cards:[]}}catch(r){l={cards:[]}}let o=[...l.cards];e=[...new Set(e||[])];let c=e.filter(e=>{try{if(e&&e.includes("/products/")&&!l.cards.includes(e.split("/products/")[1].split("?")[0]))return o.push(e.split("/products/")[1].split("?")[0]),!0}catch(t){return!1}});if(sessionStorage.setItem("viewedProductCards",JSON.stringify({cards:o})),void 0!==t){let i=[],s=[];for(let a=0;a<c.length;a++){let u=void 0!==t?t[decodeURIComponent(c[a].split("/products/")[1])]:null;"undefined"!=typeof cmIds&&(u=u??(cmIds.find(e=>e[0]==c[a].split("/products/")[1])??[null,null])[1]),u?s.push(u):i.push(c[a])}return[i,s]}return[c,[]]}trackLinksInView(e,t){let n=new IntersectionObserver(e=>{e.forEach(e=>{e.intersectionRatio>0&&e?.target?.href&&t(e.target.href.replace(/^.*\/\/[^\/]+/,"").split("?")[0],n)})});n.observe(e)}productIdFromCollection(e=1){return new Promise(async(t,n)=>{let l=new XMLHttpRequest;if(!window.location.href){console.error("No location.href available");return}let r=window.location.href.split("?")[0];if(r&&window.cmPercents.root_locale!==window.cmPercents.root){let o;if(sessionStorage.getItem(`collection:${window.cmPercents.collection_url}`))r=sessionStorage.getItem(`collection:${window.cmPercents.collection_url}`);else{try{o=await this.fetchRedirectedURL("https://"+(window.location.host+window.cmPercents.root_locale+"/collections/"+window.cmPercents.collection_handle).replace("//","/"))}catch(c){console.error("Error fetching redirected URL:",c)}o&&(sessionStorage.setItem(`collection:${window.cmPercents.collection_url}`,o),r=o)}}r&&(l.open("GET",`${r}/products.json?limit=250${1!=e?`&page=${e}`:""}`,!0),l.responseType="json",l.onload=async function(){200===l.status&&l?.response?.products?t(l?.response?.products):t(null)},l.onerror=function(){t(null)},l.send())})}get collectionHandle(){let e=document.referrer.split("/");for(var t=0;t<e.length;t++)if("collections"==e[t]&&e.length>t+1)return e[t+1];return null}squashCart(e){let t={};return e.map(e=>t[e.product_id]=e.product_id in t?t[e.product_id]+e.quantity:e.quantity),t}findLineItemDifferences(e,t){let n={};for(let l in e)if(t.hasOwnProperty(l)){let r=e[l]-t[l];r>0&&(n[l]=r)}else n[l]=e[l];return n}get currentCart(){return new Promise((e,t)=>{let n=new XMLHttpRequest;n.open("GET",window.cmPercents.cart_url+".json",!0),n.responseType="json",n.onload=async function(){200===n.status?e(n?.response?.items):e(null)},n.onerror=function(){e(null)},n.send()})}dynamicLoading(e){if(window?.__sortdRouteWatcherInstalled)return;window.__sortdRouteWatcherInstalled=!0;let t=window.location.href,n=null,l=n=>{let l=window.location.href,r=this.getShopifyPageType();"unknown"!=r&&l!==t&&(e(r),setTimeout(()=>{window.SortdTracking?.refresh?.(),window.SortdTracking?.trackPageView?.()},250))};function r(e){clearTimeout(n),n=setTimeout(()=>l(e),100)}let o=history.pushState,c=history.replaceState;history.pushState=function(){let e=o.apply(this,arguments);return r("pushState"),e},history.replaceState=function(){let e=c.apply(this,arguments);return r("replaceState"),e},window.addEventListener("popstate",()=>{r("popstate")}),window.addEventListener("pageshow",()=>{r("pageshow")})}getShopifyPageType(){let e=window.location.pathname;return/\/products\/[^/]+\/?$/.test(e)?"product":/\/collections\/[^/]+\/?$/.test(e)&&!e.includes("/products/")?"collection":"unknown"}}
+  
+  class CMCheckForTests{constructor(){this.utils=new CMUtils,this.tests=window?.cmPercents?.tests?JSON.parse(window.cmPercents.tests):[];try{this.#a()}catch(t){console.error("Error checking for tests:",t);try{document.body.classList.remove("cm-ab-hide")}catch(e){console.error("Error removing class cm-ab-hide:",e)}}}refreshTestsOnDynamicRoute(){if(!window?.cmPercents?.dynamic_loading)return!1;try{return this.utils.refreshCmTestingFromRoute(),this.#a()}catch(t){console.error("Error checking for tests:",t);try{document.body.classList.remove("cm-ab-hide")}catch(e){console.error("Error removing class cm-ab-hide:",e)}return!1}}#b(){return Date.now().toString(36)+Math.random().toString(36).substr(2,25)+"-"+Math.floor(100*Math.random()+1)}#a(){let t=!1;if("collection"!==this.utils.getShopifyPageType())return document.documentElement.classList.remove("cm-ab-hide"),!1;if(window?.cmTesting?.tests&&window?.cmTesting?.collection_handle)try{let e=JSON.parse(window.cmTesting.tests);if(Array.isArray(e)&&e.length>0)for(let s=0;s<e.length;s++){let r=e[s],i=sessionStorage.getItem("sessionIdCm")||this.#b(),n=parseInt(i.split("-")[1])>50,o=r?.aId?r?.aId.replace("gid://shopify/Collection/",""):null,c=r?.bId?r?.bId.replace("gid://shopify/Collection/",""):null;if(sessionStorage.setItem("sessionIdCm",i),n&&o==window.cmTesting.collection_id&&c==window.cmTesting.variantBId){if(!window.cmTesting?.variantB)return!1;if(window.cmTesting.canonical_enabled||!cmX()){let d=new URLSearchParams(window.location.search);if(d.has("cmread"))return document.documentElement.classList.remove("cm-ab-hide"),!1;return d.set("cmread","true"),t=!0,location.replace(window.cmTesting.collection_route+"/"+r?.bHandle+"?"+d.toString()),!0}}else if(c==window.cmTesting.collection_id&&!n&&o==window.cmTesting.variantAId){let a=new URLSearchParams(window.location.search);if(a.has("cmread"))return!1;return a.set("cmread","true"),t=!0,location.replace(window.cmTesting.collection_route+"/"+r?.aHandle+"?"+a.toString()),!0}}}catch(l){console.error("Error parsing tests:",l)}finally{t||document.documentElement.classList.remove("cm-ab-hide")}return!1}}const cmCheckForTests=new CMCheckForTests;class CMEventTracker{#c;#d;#e;#f;#g;#h;#i;#j;#k;#l;#m;#n;#o;#p;#q;constructor(t,e){if(100==window.cmPercents.permissions&&"true"!=sessionStorage.getItem("themePermissions")||(this.#c=t,this.#m="https://us-central1-collection-merchandiser.cloudfunctions.net/event-tracking-trigger",this.#d=sessionStorage.getItem("sessionIdCm"),this.#f=new Date().toISOString(),this.#h=Shopify.shop||window?.cmPercents?.store,this.#i=[],this.#e={},this.collectionProducts,this.#k,this.#l=window?.cmPercents?.submit?document.querySelectorAll(window.cmPercents.submit):null,this.#o=null,this.#p=null,this.#q=null,this.#d||(this.#d=this.#b(),sessionStorage.setItem("sessionIdCm",this.#d)),!this.#d))return;this.#r(),this.#g=new CMUtils,this.#g.saveId(),this.#n=1;try{this.#s()}catch(s){console.log(s)}}dynamicLoading(t){this.#g&&this.#g.dynamicLoading(t)}set setProductCardUrlsToSend(t){0==this.#i.length&&(window.cmPercents.dynamic_loading?this.#q=setTimeout(()=>{this.#t()},1750):setTimeout(()=>{this.#t()},1750)),this.#i.push(t)}#u(){this.#p?.destroy&&(this.#p.destroy(),this.#p=null),this.#o&&(window.removeEventListener("beforeunload",this.#o),this.#o=null),this.#q&&(clearTimeout(this.#q),this.#q=null)}async refreshTrackingOnDynamicRoute(t){window.cmPercents.dynamic_loading&&(await this.#g.refreshCmPercentsFromRoute(),this.#u(),this.#i=[],this.#j={},this.#n=1,this.#f=new Date().toISOString(),"collection"===t&&(this.#g.saveId(),this.#s()))}async #t(){let h=!0;for(;this.#g.anyNotFoundIds(this.#i,this.#j)&&h;){let u=await this.#g.productIdFromCollection(this.#n);this.#n=this.#n+1;let m=Array.isArray(u)?u.reduce((t,e,s,r)=>(t[e.handle]=e.id,t),{}):{};0==Object.keys(m).length&&(h=!1),this.#j={...this.#j,...m}}let p=this.#g.filteredProductCards(this.#i,this.#j,this);p.length>0&&p[1].length>0&&this.#v("product_card_view",null,{ids:p[1],collection_id:window?.cmPercents?.collection_id||0,multiplier:parseFloat(100/window.cmPercents.product_card_view)}),this.#i=[]}async #s(){if(window?.cmPercents?.collection_id){this.#j={};let g=document.querySelectorAll(window.cmPercents.product_card_selector),C=t=>{this.#g.trackLinksInView(t,async(e,s)=>{s.disconnect();let r=parseInt(t?.closest?.(".boost-pfs-filter-product-item")?.getAttribute?.("data-id"),10);Number.isNaN(r)||(this.#j[decodeURIComponent(e.split("/products/")[1])]=r),this.setProductCardUrlsToSend=e})};g.forEach(t=>{C(t)}),window.cmPercents.dynamic_loading?(this.#p=cmInserted(window.cmPercents.product_card_selector).every(t=>{C(t)}),this.#o=()=>{this.#t()},window.addEventListener("beforeunload",this.#o)):(cmInserted(window.cmPercents.product_card_selector).every(t=>{C(t)}),window.addEventListener("beforeunload",()=>{this.#t()}))}}#b(){return Date.now().toString(36)+Math.random().toString(36).substr(2,25)+"-"+Math.floor(100*Math.random()+1)}#r(){let P=window?.cmPercents?.market_id;if(null==P||""===P)return;let f=String(P),y="cmMarketLinkedSessionAndMarket",T=[];try{let I=JSON.parse(sessionStorage.getItem(y)||"[]");T=Array.isArray(I)?I:[I]}catch(S){}let k=T.some(t=>t?.session_id===this.#d&&String(t?.market_id)===f);!k&&(this.#v("session_market",null,{market_id:f,market_handle:window.cmPercents.market_handle||null,country_iso_code:window.cmPercents.country_iso_code||null}),T.push({session_id:this.#d,market_id:f}),sessionStorage.setItem(y,JSON.stringify(T)))}#v(_,v,$){let b={event_type:_,timestamp:this.#f,session_id:this.#d,page_data:this.#e,store:this.#h};b.page_data={...b.page_data,...$},v&&(b.linkData=v);let w=new XMLHttpRequest;w.open("POST","purchase_to_product"!=_&&"product_purchase"!=_?this.#c:this.#m),w.setRequestHeader("Content-Type","application/json"),w.send(JSON.stringify(b))}#w(U){return new Promise(t=>{setTimeout(t,U)})}}
+  
+  const publishDynamicCollectionView=()=>{if(!window?.Shopify?.analytics?.publish)return;let e=parseInt(window?.cmPercents?.collection_id);if(!e)return;sessionStorage.setItem("cmDynamicReferrerId",String(e));let t=String(e);Shopify.analytics.publish("sortd:collection_viewed_dynamic",{data:{collection:{id:t}}})},seedDynamicReferrerFromCurrentPage=()=>{let e=(window.location.pathname||"").replace(/\/+$/,""),t=/\/collections\/[^/]+\/?$/.test(e)&&!e.includes("/products/");if(!t)return;let r=parseInt(window?.cmPercents?.collection_id);r&&sessionStorage.setItem("cmDynamicReferrerId",String(r))},getCurrentProductPath=()=>{let e=(window.location.pathname||"").replace(/\/+$/,""),t=e.split("/").filter(Boolean),r=t.indexOf("products");return -1===r||t.length<=r+1?null:"/"+t.slice(0,r+2).join("/")},fetchProductIdFromPath=e=>new Promise(t=>{let r=new XMLHttpRequest;r.open("GET",`${e}.js`,!0),r.responseType="json",r.onload=function(){200===r.status&&r?.response?.id?t(r.response.id):t(null)},r.onerror=function(){t(null)},r.send()}),publishDynamicProductView=async()=>{if(!window?.Shopify?.analytics?.publish)return;let e=getCurrentProductPath();if(!e)return;let t=`product_meta:${e}`,r=null;try{let n=JSON.parse(sessionStorage.getItem(t)||"null");n?.id&&(r=n.id)}catch(i){}if(r||(!r&&(r=await fetchProductIdFromPath(e))&&sessionStorage.setItem(t,JSON.stringify({id:r})),!r))return;let c=0;try{c=parseInt(sessionStorage.getItem("cmDynamicReferrerId")||"0")||0}catch(l){c=0}Shopify.analytics.publish("sortd:product_viewed_dynamic",{data:{productVariant:{product:{id:String(r)}}},referrer:c}),sessionStorage.removeItem("cmDynamicReferrerId")},handleDynamicRouteChange=async(e,t)=>{let r=cmCheckForTests.refreshTestsOnDynamicRoute();!r&&(await e.refreshTrackingOnDynamicRoute(t),"collection"===t?publishDynamicCollectionView():"product"===t?await publishDynamicProductView():"unknown"===t&&sessionStorage.removeItem("cmDynamicReferrerId"))};
+
+  if (document.readyState === 'complete') {
+    const events = new CMEventTracker('https://cm-event-trigger-6deun5o54a-uw.a.run.app/event-tracking-trigger')
+  
+    if (window.cmPercents.dynamic_loading) {
+      seedDynamicReferrerFromCurrentPage();
+      events.dynamicLoading(async (pageType) => {
+        await handleDynamicRouteChange(events, pageType);
+      });
+    }
+  } else {
+    window.addEventListener("load", () => {
+      const events = new CMEventTracker('https://cm-event-trigger-6deun5o54a-uw.a.run.app/event-tracking-trigger')
+  
+      if (window.cmPercents.dynamic_loading) {
+        seedDynamicReferrerFromCurrentPage();
+        events.dynamicLoading(async (pageType) => {
+          await handleDynamicRouteChange(events, pageType);
+        });
+      }
+    });
+  }
+  
+  
+  </script>
+  <!-- END app block --><!-- BEGIN app block: shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507 -->
+
+
+
+
+
+
+
+
+
+
+
+
+  <script async src="https://static.klaviyo.com/onsite/js/XHxjCU/klaviyo.js?company_id=XHxjCU"></script>
+  <script>!function(){if(!window.klaviyo){window._klOnsite=window._klOnsite||[];try{window.klaviyo=new Proxy({},{get:function(n,i){return"push"===i?function(){var n;(n=window._klOnsite).push.apply(n,arguments)}:function(){for(var n=arguments.length,o=new Array(n),w=0;w<n;w++)o[w]=arguments[w];var t="function"==typeof o[o.length-1]?o.pop():void 0,e=new Promise((function(n){window._klOnsite.push([i].concat(o,[function(i){t&&t(i),n(i)}]))}));return e}}})}catch(n){window.klaviyo=window.klaviyo||[],window.klaviyo.push=function(){var n;(n=window._klOnsite).push.apply(n,arguments)}}}}();</script>
+
+  
+
+
+
+
+  <script>
+    window.klaviyoReviewsProductDesignMode = false
+  </script>
+
+
+
+
+
+
+
+
+
+<!-- END app block --><!-- BEGIN app block: shopify://apps/supergrid-by-depict/blocks/depict_brand_features/ad5c7d1f-ddfb-424b-b936-7f08c4544f6b -->
 
 
 <!--
@@ -1161,128 +1396,16 @@ Shopify.SignInWithShop.User.recognized = false;</script>
 </style>
 
 
-<!-- END app block --><!-- BEGIN app block: shopify://apps/klaviyo-email-marketing-sms/blocks/klaviyo-onsite-embed/2632fe16-c075-4321-a88b-50b567f42507 -->
-
-
-
-
-
-
-
-
-
-
-
-
-  <script async src="https://static.klaviyo.com/onsite/js/XHxjCU/klaviyo.js?company_id=XHxjCU"></script>
-  <script>!function(){if(!window.klaviyo){window._klOnsite=window._klOnsite||[];try{window.klaviyo=new Proxy({},{get:function(n,i){return"push"===i?function(){var n;(n=window._klOnsite).push.apply(n,arguments)}:function(){for(var n=arguments.length,o=new Array(n),w=0;w<n;w++)o[w]=arguments[w];var t="function"==typeof o[o.length-1]?o.pop():void 0,e=new Promise((function(n){window._klOnsite.push([i].concat(o,[function(i){t&&t(i),n(i)}]))}));return e}}})}catch(n){window.klaviyo=window.klaviyo||[],window.klaviyo.push=function(){var n;(n=window._klOnsite).push.apply(n,arguments)}}}}();</script>
-
-  
-
-
-
-
-  <script>
-    window.klaviyoReviewsProductDesignMode = false
-  </script>
-
-
-
-
-
-
-
-
-
-<!-- END app block --><!-- BEGIN app block: shopify://apps/sortd-merchandiser/blocks/app-embed/5176d6ef-993f-4869-ba24-87a0a6bedcf9 -->
-
-
-<script>
-window.cmPercents = {
-  'product_card_view': 100,
-  'product_view': 100,
-  'collection_view': 100,
-  'product_add': 100,
-  'enabled': true,
-  'product_card_selector': '[role="main"] a[href*="/products"], #main a[href*="/products"], main a[href*="/products"], #shopify-section-collection-template a[href*="/products"], .collection-matrix.product-list a[href*="/products"]',
-  'cart_url': '/cart',
-  'store': 'benetton-official.myshopify.com',
-  'submit': '[type="submit"]',
-  'root_locale': '/en',
-  'root': '/',
-  'collection_url': '',
-  'collection_handle': '',
-  'collection_id': null,
-  'permissions': 123,
-  'dynamic_loading': false,
-  'market_id': 104777318744,
-  'market_handle': "france",
-  'country_iso_code': "FR",
-  'version': '030.3'
-};
-
-window.cmTesting = {
-  'tests': '[]',
-  'collection_route': '/collections',
-  'variantA': '',
-  'variantB': '',
-  'collection_handle': '',
-  'canonical_enabled': false
-};
-
-if(!(window.cmPercents.permissions != 123 && sessionStorage.getItem('themePermissions') != 'true')) {
-  sessionStorage.setItem('cmTests', window.cmTesting.tests);
-}
-</script>
-
-
-  
-  <script>
-  var cmInserted=function(){"use strict";var m=100,t=!1,u="animationName",d="",n="Webkit Moz O ms Khtml".split(" "),e="",i=document.createElement("div"),s={strictlyNew:!0,timeout:20,addImportant:!1};if(i.style.animationName&&(t=!0),!1===t)for(var o=0;o<n.length;o++)if(void 0!==i.style[n[o]+"AnimationName"]){e=n[o],u=e+"AnimationName",d="-"+e.toLowerCase()+"-",t=!0;break}function c(t){return s.strictlyNew&&!0===t.QinsQ}function r(t,n){function e(t){t.animationName!==o&&t[u]!==o||c(t.target)||n(t.target)}var i,o="insQ_"+m++,r=s.addImportant?" !important":"";(i=document.createElement("style")).innerHTML="@"+d+"keyframes "+o+" {  from {  outline: 1px solid transparent  } to {  outline: 0px solid transparent }  }\n"+t+" { animation-duration: 0.001s"+r+"; animation-name: "+o+r+"; "+d+"animation-duration: 0.001s"+r+"; "+d+"animation-name: "+o+r+";  } ",document.head.appendChild(i);var a=setTimeout(function(){document.addEventListener("animationstart",e,!1),document.addEventListener("MSAnimationStart",e,!1),document.addEventListener("webkitAnimationStart",e,!1)},s.timeout);return{destroy:function(){clearTimeout(a),i&&(document.head.removeChild(i),i=null),document.removeEventListener("animationstart",e),document.removeEventListener("MSAnimationStart",e),document.removeEventListener("webkitAnimationStart",e)}}}function a(t){t.QinsQ=!0}function f(t){if(t)for(a(t),t=t.firstChild;t;t=t.nextSibling)void 0!==t&&1===t.nodeType&&f(t)}function l(t,n){var e,i=[],o=function(){clearTimeout(e),e=setTimeout(function(){i.forEach(f),n(i),i=[]},10)};return r(t,function(t){if(!c(t)){a(t);var n=function t(n){return c(n.parentNode)||"BODY"===n.nodeName?n:t(n.parentNode)}(t);i.indexOf(n)<0&&i.push(n),o()}})}function v(n){return!(!t||!n.match(/[^{}]/))&&(s.strictlyNew&&f(document.body),{every:function(t){return r(n,t)},summary:function(t){return l(n,t)}})}return v.config=function(t){for(var n in t)t.hasOwnProperty(n)&&(s[n]=t[n])},v}();"undefined"!=typeof module&&void 0!==module.exports&&(module.exports=cmInserted);
-  function cmX(){for(var e=(navigator.userAgent||"").toLowerCase(),r=[/bot/,/crawl/,/spider/,/slurp/,/curl/,/wget/,/python-requests/,/axios/,/feedfetcher/,/ia_archiver/,/facebookexternalhit/,/facebot/,/google web preview/,/googlebot/,/bingpreview/,/bingbot/,/duckduckbot/,/baiduspider/,/yandex/,/sogou/,/exabot/,/dotbot/,/msnbot/,/yahoo/,/adsbot/,/mediapartners google/,/developers google/,/embedly/,/quora link preview/,/rogerbot/,/applebot/,/tweetmemebot/,/ahrefsbot/,/semrush/,/mj12bot/,/uptimerobot/,/screamingfrog/,/pinterest/,/whatsapp/,/telegrambot/,/vkshare/,/slackbot/,/discordbot/,/flipboard/,/preview/,/phantomjs/,/headless/,/prerender/,/metauri/,/node-superagent/,/python-urllib/,/java\/[0-9\.]+/,/lighthouse/,/chrome-lighthouse/,/pagespeed/,/yadirectfetcher/,/mailru\//,/daum[ /]/,/gomezagent/,/pingdom/,/rigor/,/postman/,/firephp/,/wappalyzer/,/whatcms\//,/zgrab/,/webglance/,/webkit2png/,/analyzer/,/virtuoso/,/pageburst/,/gozilla\//,/cloudflare/,/cf-network/,/cf-edge/,/cf-connecting-ip/],t=0;t<r.length;t++)if(r[t].test(e))return!0;if(navigator.webdriver||!navigator.languages||0===navigator.languages.length||e.indexOf("headlesschrome")>=0||window._phantom||window.__nightmare||window.callPhantom)return!0;try{if("undefined"!=typeof screen&&window.innerHeight&&screen.height-window.innerHeight<0)return!0}catch(o){}return!1}
-  
-  class CMUtils{constructor(){}getCollectionContextFromPath(){let e=(window.location.pathname||"").replace(/\/+$/,""),t=e.split("/").filter(Boolean),n=t.indexOf("collections");if(-1===n||t.length<=n+1)return null;let l=t[n+1],r="/"+t.slice(0,n+2).join("/");return{collection_route:"/"+t.slice(0,n+1).join("/"),collection_url:r,collection_handle:l}}refreshCmTestingFromRoute(){if(!window?.cmTesting)return;let e=this.getCollectionContextFromPath();if(!e){window.cmTesting.collection_handle="",window.cmTesting.variantA="",window.cmTesting.variantB="";return}window.cmTesting.collection_handle=e.collection_handle,window.cmTesting.collection_route=e.collection_route;let t=[];try{t=JSON.parse(window.cmTesting.tests||"[]")}catch(n){t=[]}let l=Array.isArray(t)?t.find(t=>t?.aHandle===e.collection_handle||t?.bHandle===e.collection_handle):null;l?(window.cmTesting.variantA=l.aHandle||"",window.cmTesting.variantB=l.bHandle||""):(window.cmTesting.variantA="",window.cmTesting.variantB="")}fetchCollectionMeta(e){return new Promise(t=>{let n=new XMLHttpRequest;n.open("GET",`${e}.json`,!0),n.responseType="json",n.onload=function(){200===n.status&&n?.response?.collection?t(n.response.collection):t(null)},n.onerror=function(){t(null)},n.send()})}async refreshCmPercentsFromRoute(){if(!window?.cmPercents)return;let e=this.getCollectionContextFromPath();if(!e){window.cmPercents.collection_url="",window.cmPercents.collection_handle="",window.cmPercents.collection_id=null;return}window.cmPercents.collection_url=e.collection_url,window.cmPercents.collection_handle=e.collection_handle;let t=`collection_meta:${e.collection_url}`,n=null;try{n=JSON.parse(sessionStorage.getItem(t)||"null")}catch(l){n=null}if(n?.id){window.cmPercents.collection_id=n.id;return}let r=await this.fetchCollectionMeta(e.collection_url);if(r?.id){window.cmPercents.collection_id=r.id,sessionStorage.setItem(t,JSON.stringify({id:r.id,handle:r.handle||e.collection_handle}));return}window.cmPercents.collection_id=null}saveId(){window?.cmPercents?.collection_id&&sessionStorage.setItem("collectionReferrerId",JSON.stringify({[window.location.href.split("?")[0]]:window.cmPercents.collection_id}))}anyNotFoundIds(e,t){if(void 0!==t){for(let n=0;n<e.length;n++)if(!t[decodeURIComponent(e[n].split("/products/")[1])])return!0}return!1}fetchRedirectedURL(e){return new Promise((t,n)=>{let l=new XMLHttpRequest;l.open("GET",e,!0),l.onload=()=>{200===l.status?t(l.responseURL):n(Error("Failed to fetch redirected URL"))},l.onerror=()=>n(Error("Network error")),l.send()})}filteredProductCards(e,t,n){let l;try{l=JSON.parse(sessionStorage.getItem("viewedProductCards")||'{"cards":[]}')||{cards:[]}}catch(r){l={cards:[]}}let o=[...l.cards];e=[...new Set(e||[])];let c=e.filter(e=>{try{if(e&&e.includes("/products/")&&!l.cards.includes(e.split("/products/")[1].split("?")[0]))return o.push(e.split("/products/")[1].split("?")[0]),!0}catch(t){return!1}});if(sessionStorage.setItem("viewedProductCards",JSON.stringify({cards:o})),void 0!==t){let i=[],s=[];for(let a=0;a<c.length;a++){let u=void 0!==t?t[decodeURIComponent(c[a].split("/products/")[1])]:null;"undefined"!=typeof cmIds&&(u=u??(cmIds.find(e=>e[0]==c[a].split("/products/")[1])??[null,null])[1]),u?s.push(u):i.push(c[a])}return[i,s]}return[c,[]]}trackLinksInView(e,t){let n=new IntersectionObserver(e=>{e.forEach(e=>{e.intersectionRatio>0&&e?.target?.href&&t(e.target.href.replace(/^.*\/\/[^\/]+/,"").split("?")[0],n)})});n.observe(e)}productIdFromCollection(e=1){return new Promise(async(t,n)=>{let l=new XMLHttpRequest;if(!window.location.href){console.error("No location.href available");return}let r=window.location.href.split("?")[0];if(r&&window.cmPercents.root_locale!==window.cmPercents.root){let o;if(sessionStorage.getItem(`collection:${window.cmPercents.collection_url}`))r=sessionStorage.getItem(`collection:${window.cmPercents.collection_url}`);else{try{o=await this.fetchRedirectedURL("https://"+(window.location.host+window.cmPercents.root_locale+"/collections/"+window.cmPercents.collection_handle).replace("//","/"))}catch(c){console.error("Error fetching redirected URL:",c)}o&&(sessionStorage.setItem(`collection:${window.cmPercents.collection_url}`,o),r=o)}}r&&(l.open("GET",`${r}/products.json?limit=250${1!=e?`&page=${e}`:""}`,!0),l.responseType="json",l.onload=async function(){200===l.status&&l?.response?.products?t(l?.response?.products):t(null)},l.onerror=function(){t(null)},l.send())})}get collectionHandle(){let e=document.referrer.split("/");for(var t=0;t<e.length;t++)if("collections"==e[t]&&e.length>t+1)return e[t+1];return null}squashCart(e){let t={};return e.map(e=>t[e.product_id]=e.product_id in t?t[e.product_id]+e.quantity:e.quantity),t}findLineItemDifferences(e,t){let n={};for(let l in e)if(t.hasOwnProperty(l)){let r=e[l]-t[l];r>0&&(n[l]=r)}else n[l]=e[l];return n}get currentCart(){return new Promise((e,t)=>{let n=new XMLHttpRequest;n.open("GET",window.cmPercents.cart_url+".json",!0),n.responseType="json",n.onload=async function(){200===n.status?e(n?.response?.items):e(null)},n.onerror=function(){e(null)},n.send()})}dynamicLoading(e){if(window?.__sortdRouteWatcherInstalled)return;window.__sortdRouteWatcherInstalled=!0;let t=window.location.href,n=null,l=n=>{let l=window.location.href,r=this.getShopifyPageType();console.log("page type",r),"unknown"!=r&&l!==t&&(console.log("[Sortd tracking] route changed:",n,l),e(r),setTimeout(()=>{window.SortdTracking?.refresh?.(),window.SortdTracking?.trackPageView?.()},250))};function r(e){clearTimeout(n),console.log("scheduling tracking"),n=setTimeout(()=>l(e),100)}console.log("running tracking");let o=history.pushState,c=history.replaceState;history.pushState=function(){let e=o.apply(this,arguments);return r("pushState"),e},history.replaceState=function(){let e=c.apply(this,arguments);return r("replaceState"),e},window.addEventListener("popstate",()=>{r("popstate")}),window.addEventListener("pageshow",()=>{r("pageshow")})}getShopifyPageType(){let e=window.location.pathname;return/\/products\/[^/]+\/?$/.test(e)?"product":/\/collections\/[^/]+\/?$/.test(e)&&!e.includes("/products/")?"collection":"unknown"}}
-  
-  class CMCheckForTests{constructor(){if(this.utils=new CMUtils,this.tests=window?.cmPercents?.tests?JSON.parse(window.cmPercents.tests):[],"collection"!==this.utils.getShopifyPageType())return document.documentElement.classList.remove("cm-ab-hide"),!1;try{this.#a()}catch(e){console.error("Error checking for tests:",e);try{document.body.classList.remove("cm-ab-hide")}catch(t){console.error("Error removing class cm-ab-hide:",t)}}}refreshTestsOnDynamicRoute(){if(!window?.cmPercents?.dynamic_loading)return!1;try{return this.utils.refreshCmTestingFromRoute(),this.#a()}catch(e){console.error("Error checking for tests:",e);try{document.body.classList.remove("cm-ab-hide")}catch(t){console.error("Error removing class cm-ab-hide:",t)}return!1}}#b(){return Date.now().toString(36)+Math.random().toString(36).substr(2,25)+"-"+Math.floor(100*Math.random()+1)}#a(){let e=!1;if(window?.cmTesting?.tests&&window?.cmTesting?.collection_handle)try{let t=JSON.parse(window.cmTesting.tests);if(Array.isArray(t)&&t.length>0)for(let r=0;r<t.length;r++){let s=t[r],c=sessionStorage.getItem("sessionIdCm")||this.#b(),n=parseInt(c.split("-")[1])>50;if(sessionStorage.setItem("sessionIdCm",c),n&&s?.aHandle==window.cmTesting.collection_handle&&window.cmTesting?.variantB==s?.bHandle){if(!window.cmTesting?.variantB)return!1;if(window.cmTesting.canonical_enabled||!cmX()){let i=new URLSearchParams(window.location.search);if(i.has("cmread"))return document.documentElement.classList.remove("cm-ab-hide"),!1;return i.set("cmread","true"),e=!0,location.replace(window.cmTesting.collection_route+"/"+s?.bHandle+"?"+i.toString()),!0}}else if(s?.bHandle==window.cmTesting.collection_handle&&!n&&s?.aHandle==window.cmTesting.variantA){let o=new URLSearchParams(window.location.search);if(o.has("cmread"))return!1;return o.set("cmread","true"),e=!0,location.replace(window.cmTesting.collection_route+"/"+s?.aHandle+"?"+o.toString()),!0}}}catch(a){console.error("Error parsing tests:",a)}finally{e||document.documentElement.classList.remove("cm-ab-hide")}return!1}}
-  
-  const cmCheckForTests=new CMCheckForTests;
-  
-  class CMEventTracker{#a;#b;#c;#d;#e;#f;#g;#h;#i;#j;#k;#l;#m;#n;#o;constructor(t,e){if(100==window.cmPercents.permissions&&"true"!=sessionStorage.getItem("themePermissions")||(this.#a=t,this.#k="https://us-central1-collection-merchandiser.cloudfunctions.net/event-tracking-trigger",this.#b=sessionStorage.getItem("sessionIdCm"),this.#d=new Date().toISOString(),this.#f=Shopify.shop||window?.cmPercents?.store,this.#g=[],this.#c={},this.collectionProducts,this.#i,this.#j=window?.cmPercents?.submit?document.querySelectorAll(window.cmPercents.submit):null,this.#m=null,this.#n=null,this.#o=null,this.#b||(this.#b=this.#p(),sessionStorage.setItem("sessionIdCm",this.#b)),!this.#b))return;this.#q(),this.#e=new CMUtils,this.#e.saveId(),this.#l=1;try{this.#r()}catch(s){console.log(s)}}dynamicLoading(t){this.#e&&this.#e.dynamicLoading(t)}set setProductCardUrlsToSend(t){0==this.#g.length&&(window.cmPercents.dynamic_loading?this.#o=setTimeout(()=>{this.#s()},1750):setTimeout(()=>{this.#s()},1750)),this.#g.push(t)}#t(){this.#n?.destroy&&(this.#n.destroy(),this.#n=null),this.#m&&(window.removeEventListener("beforeunload",this.#m),this.#m=null),this.#o&&(clearTimeout(this.#o),this.#o=null)}async refreshTrackingOnDynamicRoute(t){window.cmPercents.dynamic_loading&&(await this.#e.refreshCmPercentsFromRoute(),this.#t(),this.#g=[],this.#h={},this.#l=1,this.#d=new Date().toISOString(),"collection"===t&&(this.#e.saveId(),this.#r()))}async #s(){let t=!0;for(;this.#e.anyNotFoundIds(this.#g,this.#h)&&t;){let e=await this.#e.productIdFromCollection(this.#l);this.#l=this.#l+1;let s=Array.isArray(e)?e.reduce((t,e,s,r)=>(t[e.handle]=e.id,t),{}):{};0==Object.keys(s).length&&(t=!1),this.#h={...this.#h,...s}}let r=this.#e.filteredProductCards(this.#g,this.#h,this);r.length>0&&r[1].length>0&&this.#u("product_card_view",null,{ids:r[1],collection_id:window?.cmPercents?.collection_id||0,multiplier:parseFloat(100/window.cmPercents.product_card_view)}),this.#g=[]}async #r(){if(window?.cmPercents?.collection_id){this.#h={};let i=document.querySelectorAll(window.cmPercents.product_card_selector),n=t=>{this.#e.trackLinksInView(t,async(e,s)=>{s.disconnect();let r=parseInt(t?.closest?.(".boost-pfs-filter-product-item")?.getAttribute?.("data-id"),10);Number.isNaN(r)||(this.#h[decodeURIComponent(e.split("/products/")[1])]=r),this.setProductCardUrlsToSend=e})};i.forEach(t=>{n(t)}),window.cmPercents.dynamic_loading?(this.#n=cmInserted(window.cmPercents.product_card_selector).every(t=>{n(t)}),this.#m=()=>{this.#s()},window.addEventListener("beforeunload",this.#m)):(cmInserted(window.cmPercents.product_card_selector).every(t=>{n(t)}),window.addEventListener("beforeunload",()=>{this.#s()}))}}#p(){return Date.now().toString(36)+Math.random().toString(36).substr(2,25)+"-"+Math.floor(100*Math.random()+1)}#q(){let o=window?.cmPercents?.market_id;if(null==o||""===o)return;let c=String(o),d="cmMarketLinkedSessionAndMarket",a=[];try{let l=JSON.parse(sessionStorage.getItem(d)||"[]");a=Array.isArray(l)?l:[l]}catch(u){}let h=a.some(t=>t?.session_id===this.#b&&String(t?.market_id)===c);!h&&(this.#u("session_market",null,{market_id:c,market_handle:window.cmPercents.market_handle||null,country_iso_code:window.cmPercents.country_iso_code||null}),a.push({session_id:this.#b,market_id:c}),sessionStorage.setItem(d,JSON.stringify(a)))}#u(m,p,y){let P={event_type:m,timestamp:this.#d,session_id:this.#b,page_data:this.#c,store:this.#f};P.page_data={...P.page_data,...y},p&&(P.linkData=p);let f=new XMLHttpRequest;f.open("POST","purchase_to_product"!=m&&"product_purchase"!=m?this.#a:this.#k),f.setRequestHeader("Content-Type","application/json"),f.send(JSON.stringify(P))}#v(C){return new Promise(t=>{setTimeout(t,C)})}}const publishDynamicCollectionView=()=>{if(!window?.Shopify?.analytics?.publish)return;let t=parseInt(window?.cmPercents?.collection_id);if(!t)return;sessionStorage.setItem("cmDynamicReferrerId",String(t));let e=String(t);Shopify.analytics.publish("sortd:collection_viewed_dynamic",{data:{collection:{id:e}}})},seedDynamicReferrerFromCurrentPage=()=>{let t=(window.location.pathname||"").replace(/\/+$/,""),e=/\/collections\/[^/]+\/?$/.test(t)&&!t.includes("/products/");if(!e)return;let s=parseInt(window?.cmPercents?.collection_id);s&&sessionStorage.setItem("cmDynamicReferrerId",String(s))},getCurrentProductPath=()=>{let t=(window.location.pathname||"").replace(/\/+$/,""),e=t.split("/").filter(Boolean),s=e.indexOf("products");return -1===s||e.length<=s+1?null:"/"+e.slice(0,s+2).join("/")},fetchProductIdFromPath=t=>new Promise(e=>{let s=new XMLHttpRequest;s.open("GET",`${t}.js`,!0),s.responseType="json",s.onload=function(){200===s.status&&s?.response?.id?e(s.response.id):e(null)},s.onerror=function(){e(null)},s.send()}),publishDynamicProductView=async()=>{if(!window?.Shopify?.analytics?.publish)return;let t=getCurrentProductPath();if(!t)return;let e=`product_meta:${t}`,s=null;try{let r=JSON.parse(sessionStorage.getItem(e)||"null");r?.id&&(s=r.id)}catch(i){}if(s||(!s&&(s=await fetchProductIdFromPath(t))&&sessionStorage.setItem(e,JSON.stringify({id:s})),!s))return;let n=0;try{n=parseInt(sessionStorage.getItem("cmDynamicReferrerId")||"0")||0}catch(o){n=0}Shopify.analytics.publish("sortd:product_viewed_dynamic",{data:{productVariant:{product:{id:String(s)}}},referrer:n}),sessionStorage.removeItem("cmDynamicReferrerId")},handleDynamicRouteChange=async(t,e)=>{let s=cmCheckForTests.refreshTestsOnDynamicRoute();!s&&(await t.refreshTrackingOnDynamicRoute(e),"collection"===e?publishDynamicCollectionView():"product"===e?await publishDynamicProductView():"unknown"===e&&sessionStorage.removeItem("cmDynamicReferrerId"))};
-  
-  if (document.readyState === 'complete') {
-    const events = new CMEventTracker('https://cm-event-trigger-6deun5o54a-uw.a.run.app/event-tracking-trigger')
-  
-    if (window.cmPercents.dynamic_loading) {
-      seedDynamicReferrerFromCurrentPage();
-      events.dynamicLoading(async (pageType) => {
-        await handleDynamicRouteChange(events, pageType);
-      });
-    }
-  } else {
-    window.addEventListener("load", () => {
-      const events = new CMEventTracker('https://cm-event-trigger-6deun5o54a-uw.a.run.app/event-tracking-trigger')
-  
-      if (window.cmPercents.dynamic_loading) {
-        seedDynamicReferrerFromCurrentPage();
-        events.dynamicLoading(async (pageType) => {
-          await handleDynamicRouteChange(events, pageType);
-        });
-      }
-    });
-  }
-  
-  
-  </script>
-  <!-- END app block --><link href="https://monorail-edge.shopifysvc.com" rel="dns-prefetch">
+<!-- END app block --><link href="https://monorail-edge.shopifysvc.com" rel="dns-prefetch">
 <script>(function(){if ("sendBeacon" in navigator && "performance" in window) {try {var session_token_from_headers = performance.getEntriesByType('navigation')[0].serverTiming.find(x => x.name == '_s').description;} catch {var session_token_from_headers = undefined;}var session_cookie_matches = document.cookie.match(/_shopify_s=([^;]*)/);var session_token_from_cookie = session_cookie_matches && session_cookie_matches.length === 2 ? session_cookie_matches[1] : "";var session_token = session_token_from_headers || session_token_from_cookie || "";function handle_abandonment_event(e) {var entries = performance.getEntries().filter(function(entry) {return /monorail-edge.shopifysvc.com/.test(entry.name);});if (!window.abandonment_tracked && entries.length === 0) {window.abandonment_tracked = true;var currentMs = Date.now();var navigation_start = performance.timing.navigationStart;var payload = {shop_id: 95367299416,url: window.location.href,navigation_start,duration: currentMs - navigation_start,session_token,page_type: "page"};window.navigator.sendBeacon("https://monorail-edge.shopifysvc.com/v1/produce", JSON.stringify({schema_id: "online_store_buyer_site_abandonment/1.1",payload: payload,metadata: {event_created_at_ms: currentMs,event_sent_at_ms: currentMs}}));}}window.addEventListener('pagehide', handle_abandonment_event);}}());</script>
 <script>
   window.__TREKKIE_SHIM_QUEUE = window.__TREKKIE_SHIM_QUEUE || [];
 </script>
-<script>(function(){var wpmLoader=function(){"use strict";var e=/Googlebot|Storebot-Google|bingbot|Baiduspider|YandexBot|DuckDuckBot|Slurp|facebookexternalhit|Twitterbot|LinkedInBot|Applebot|AdsBot-Google|Mediapartners-Google|APIs-Google|PetalBot|SemrushBot|AhrefsBot|MJ12bot|DotBot|Acunetix|PerplexityBot|Perplexity-User/i,r=/bytedance/i;function o(){try{var e=document.cookie;if(!e||"string"!=typeof e)return;for(var r=0,o=e.split(";");r<o.length;r++){var d=o[r],t=d.indexOf("=");if(-1!==t){var n=d.slice(0,t).trim();if(n){var i=void 0;try{i=decodeURIComponent(n)}catch(e){i=n}if("_shopify_s"===i){var a=d.slice(t+1).trim();try{return decodeURIComponent(a)}catch(e){return a}}}}}return}catch(e){return}}function d(e){try{"undefined"!=typeof console&&"function"==typeof console.warn&&console.warn(e)}catch(e){}}return function(t,n,i,a){var s,c,u,l,f=arguments.length>4&&void 0!==arguments[4]?arguments[4]:{},p=(c=(s={modern:/Edge?\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Firefox\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Chrom(ium|e)\/(9{2}|\d{3,})\.\d+(\.\d+|)|(Maci|X1{2}).+ Version\/(15\.\d+|(1[6-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(9{2}|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(15[._]\d+|(1[6-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Android.+Firefox\/(15\d|1[6-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|SamsungBrowser\/([2-9]\d|\d{3,})\.\d+/,legacy:/Edge?\/(1[6-9]|[2-9]\d|\d{3,})\.\d+(\.\d+|)|Firefox\/(5[4-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)|Chrom(ium|e)\/(5[1-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)([\d.]+$|.*Safari\/(?![\d.]+ Edge\/[\d.]+$))|(Maci|X1{2}).+ Version\/(10\.\d+|(1[1-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(3[89]|[4-9]\d|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(10[._]\d+|(1[1-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Mobile Safari.+OPR\/([89]\d|\d{3,})\.\d+\.\d+|Android.+Firefox\/(15\d|1[6-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+(UC? ?Browser|UCWEB|U3)[ /]?(15\.([5-9]|\d{2,})|(1[6-9]|[2-9]\d|\d{3,})\.\d+)\.\d+|SamsungBrowser\/(5\.\d+|([6-9]|\d{2,})\.\d+)|Android.+MQ{2}Browser\/(14(\.(9|\d{2,})|)|(1[5-9]|[2-9]\d|\d{3,})(\.\d+|))(\.\d+|)|K[Aa][Ii]OS\/(3\.\d+|([4-9]|\d{2,})\.\d+)(\.\d+|)/}).modern,u=s.legacy,(l=navigator.userAgent).match(e)?"bot":l.match(c)?"modern":l.match(u)?"legacy":l.match(r)?"bot":"unknown"),h=function(e){var r=e.version,t=e.browserTarget,n=e.surface,i=e.shopId,a=e.monorailEndpoint,s=window.location.href;return{emit:function(e){var c,u=e.status,l=e.errorMsg;if(!a)return d("[Web Pixels Manager] No Monorail endpoint provided, skipping logging."),!1;try{var f=(new Date).getTime();c=JSON.stringify({metadata:{event_sent_at_ms:f},events:[{schema_id:"web_pixels_manager_load/3.2",payload:{version:r,bundle_target:t,page_url:s,status:u,surface:n,error_msg:l,shop_id:i,visit_token:o()},metadata:{event_created_at_ms:f}}]})}catch(e){return!1}var p,h=!1;try{"function"==typeof window.navigator.sendBeacon&&-1===(p=window.navigator.userAgent).indexOf("iPhone; CPU iPhone OS 12_")&&-1===p.indexOf("iPad; CPU OS 12_")&&-1===p.indexOf("iPod touch; CPU iPhone OS 12_")&&(h=window.navigator.sendBeacon.bind(window.navigator)(a,c))}catch(e){h=!1}if(h)return!0;try{var m=new XMLHttpRequest;return m.open("POST",a,!0),m.setRequestHeader("Content-Type","text/plain"),m.send(c),!0}catch(e){return d("[Web Pixels Manager] Got an unhandled error while logging to Monorail."),!1}}}}({version:i,browserTarget:p,surface:t.surface,shopId:t.shopId,monorailEndpoint:t.monorailEndpoint});if(Boolean(null==(y=null==(m=window.Shopify)?void 0:m.analytics)?void 0:y.replayQueue))h.emit({status:"setup-skipped",errorMsg:"replay queue already initialized."});else{var m,y;h.emit({status:"setup-started"}),window.Shopify=window.Shopify||{};var g=window.Shopify;g.analytics=g.analytics||{};var v=g.analytics;v.replayQueue=[],v.publish=function(e,r,o){return v.replayQueue.push([e,r,o]),!0};try{self.performance.mark("wpm:start")}catch(e){}var w,b="modern"===p?"modern":"legacy",P=(null!=a?a:{modern:"",legacy:""})[b],S=[(w={baseUrl:n,hashVersion:i,buildTarget:b}).baseUrl,"/wpm","/b",w.hashVersion,"modern"===w.buildTarget?"m":"l",".js"].join("");try{f.browserTarget=p,O(function(){try{O(_)}catch(e){h.emit({status:"failed",errorMsg:U(e)})}}),h.emit({status:"loading"})}catch(e){h.emit({status:"failed",errorMsg:U(e)})}}function C(){if(!function(){var e,r;return Boolean(null==(r=null==(e=window.Shopify)?void 0:e.analytics)?void 0:r.initialized)}()){var e=window.webPixelsManager.init(t)||void 0;if(e){var r=window.Shopify.analytics;r.replayQueue.forEach(function(r){var o=r[0],d=r[1],t=r[2];e.publishCustomEvent(o,d,t)}),r.replayQueue=[],r.publish=e.publishCustomEvent,r.visitor=e.visitor,r.initialized=!0}}}function _(){return h.emit({status:"failed",errorMsg:"".concat(S," has failed to load")})}function O(e){var r;!function(e){var r=e.src,o=e.async,d=void 0===o||o,t=e.onload,n=e.onerror,i=e.sri,a=e.scriptDataAttributes,s=void 0===a?{}:a,c=document.createElement("script"),u=document.querySelector("head"),l=document.querySelector("body");if(c.async=d,c.src=r,i&&(c.integrity=i,c.crossOrigin="anonymous"),s)for(var f in s)if(Object.prototype.hasOwnProperty.call(s,f))try{c.dataset[f]=s[f]}catch(e){}if(t&&c.addEventListener("load",t),n&&c.addEventListener("error",n),u)u.appendChild(c);else{if(!l)throw new Error("Did not find a head or body element to append the script");l.appendChild(c)}}({src:S,async:!0,onload:C,onerror:e,sri:(r=P,"string"==typeof r&&/^sha384-[A-Za-z0-9+/=]+$/.test(r)?P:""),scriptDataAttributes:f})}function U(e){return e instanceof Error?e.message:"Unknown error"}}}();wpmLoader({shopId: 95367299416,storefrontBaseUrl: "https://benetton.com",extensionsBaseUrl: "https://extensions.shopifycdn.com/cdn/shopifycloud/web-pixels-manager",monorailEndpoint: "https://fr.benetton.com/.well-known/shopify/monorail/unstable/produce_batch",surface: "storefront-renderer",enabledBetaFlags: ["d5bdd5d0","656605ce"],webPixelsConfigList: [{"id":"3998318936","configuration":"{\"accountID\": \"123\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"fb84216e286b863787de2c105a003a2e","type":"APP","apiClientId":3094213,"privacyPurposes":[],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_personal_data"],"dataSharingControls":["share_all_events"]},"dataSharingState":"unrestricted"},{"id":"3909189976","configuration":"{\"merchantId\":\"shopify-95367299416\",\"defaultMarketId\":\"103491535192\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"e99d2aed0f210103fa3464489ca6de7e","type":"APP","apiClientId":93504864257,"privacyPurposes":["ANALYTICS"],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_personal_data"],"dataSharingControls":["share_all_events"]},"dataSharingState":"unrestricted"},{"id":"3903127896","configuration":"{\"accountID\":\"XHxjCU\",\"webPixelConfig\":\"eyJlbmFibGVBZGRlZFRvQ2FydEV2ZW50cyI6IHRydWV9\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"524f6c1ee37bacdca7657a665bdca589","type":"APP","apiClientId":123074,"privacyPurposes":["ANALYTICS","MARKETING"],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_address","read_customer_email","read_customer_name","read_customer_personal_data","read_customer_phone"],"dataSharingControls":["share_all_events"]},"dataSharingState":"optimized","enabledFlags":["9a3ed68a"]},{"id":"3867345240","configuration":"{\"swymApiEndpoint\":\"https:\/\/swymstore-v3pro-01.swymrelay.com\",\"swymTier\":\"v3pro-01\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"5b6f6917e306bc7f24523662663331c0","type":"APP","apiClientId":1350849,"privacyPurposes":["ANALYTICS","MARKETING","PREFERENCES"],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_email","read_customer_name","read_customer_personal_data","read_customer_phone"],"dataSharingControls":["share_all_events"]},"dataSharingState":"optimized"},{"id":"288784728","eventPayloadVersion":"1","runtimeContext":"LAX","scriptVersion":"18","type":"CUSTOM","privacyPurposes":[],"name":"GTM Trackings"},{"id":"shopify-app-pixel","configuration":"{}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"0510","apiClientId":"shopify-pixel","type":"APP","privacyPurposes":["ANALYTICS","MARKETING"]},{"id":"shopify-custom-pixel","eventPayloadVersion":"v1","runtimeContext":"LAX","scriptVersion":"0510","apiClientId":"shopify-pixel","type":"CUSTOM","privacyPurposes":["ANALYTICS","MARKETING"]}],isMerchantRequest: false,initData: {"shop":{"name":"Benetton Official","paymentSettings":{"currencyCode":"EUR"},"myshopifyDomain":"benetton-official.myshopify.com","countryCode":"IT","storefrontUrl":"https:\/\/fr.benetton.com"},"customer":null,"cart":null,"checkout":null,"productVariants":[],"products":[],"purchasingCompany":null},},"https://fr.benetton.com/cdn","2d9dfbe8w1156b718pbb247b16m64115e31",{"modern":"","legacy":""},{"trekkieShim":true,"agentContext":true,"apiClientId":"580111","facebookCapiEnabled":"false","themeId":"189857628504","themePublished":"true","eventMetadataId":"81f51c24-212f-48ba-852d-b649ee59dde9","pageType":"page","resourceId":"159786959192","shopId":"95367299416","storefrontBaseUrl":"https:\/\/benetton.com","extensionBaseUrl":"https:\/\/extensions.shopifycdn.com\/cdn\/shopifycloud\/web-pixels-manager","surface":"storefront-renderer","enabledBetaFlags":"[\"d5bdd5d0\", \"656605ce\"]","isMerchantRequest":"false","hashVersion":"2d9dfbe8w1156b718pbb247b16m64115e31","publish":"custom","events":"[[\"page_viewed\",{}]]"});})();</script><script>
+<script>(function(){var wpmLoader=function(){"use strict";var e=/Googlebot|Storebot-Google|bingbot|Baiduspider|YandexBot|DuckDuckBot|Slurp|facebookexternalhit|Twitterbot|LinkedInBot|Applebot|AdsBot-Google|Mediapartners-Google|APIs-Google|PetalBot|SemrushBot|AhrefsBot|MJ12bot|DotBot|Acunetix|PerplexityBot|Perplexity-User/i,r=/bytedance/i;function o(){try{var e=document.cookie;if(!e||"string"!=typeof e)return;for(var r=0,o=e.split(";");r<o.length;r++){var d=o[r],t=d.indexOf("=");if(-1!==t){var n=d.slice(0,t).trim();if(n){var i=void 0;try{i=decodeURIComponent(n)}catch(e){i=n}if("_shopify_s"===i){var a=d.slice(t+1).trim();try{return decodeURIComponent(a)}catch(e){return a}}}}}return}catch(e){return}}function d(e){try{"undefined"!=typeof console&&"function"==typeof console.warn&&console.warn(e)}catch(e){}}return function(t,n,i,a){var s,c,u,l,f=arguments.length>4&&void 0!==arguments[4]?arguments[4]:{},p=(c=(s={modern:/Edge?\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Firefox\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Chrom(ium|e)\/(9{2}|\d{3,})\.\d+(\.\d+|)|(Maci|X1{2}).+ Version\/(15\.\d+|(1[6-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(9{2}|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(15[._]\d+|(1[6-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Android.+Firefox\/(15\d|1[6-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|SamsungBrowser\/([2-9]\d|\d{3,})\.\d+/,legacy:/Edge?\/(1[6-9]|[2-9]\d|\d{3,})\.\d+(\.\d+|)|Firefox\/(5[4-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)|Chrom(ium|e)\/(5[1-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)([\d.]+$|.*Safari\/(?![\d.]+ Edge\/[\d.]+$))|(Maci|X1{2}).+ Version\/(10\.\d+|(1[1-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(3[89]|[4-9]\d|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(10[._]\d+|(1[1-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Mobile Safari.+OPR\/([89]\d|\d{3,})\.\d+\.\d+|Android.+Firefox\/(15\d|1[6-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+(UC? ?Browser|UCWEB|U3)[ /]?(15\.([5-9]|\d{2,})|(1[6-9]|[2-9]\d|\d{3,})\.\d+)\.\d+|SamsungBrowser\/(5\.\d+|([6-9]|\d{2,})\.\d+)|Android.+MQ{2}Browser\/(14(\.(9|\d{2,})|)|(1[5-9]|[2-9]\d|\d{3,})(\.\d+|))(\.\d+|)|K[Aa][Ii]OS\/(3\.\d+|([4-9]|\d{2,})\.\d+)(\.\d+|)/}).modern,u=s.legacy,(l=navigator.userAgent).match(e)?"bot":l.match(c)?"modern":l.match(u)?"legacy":l.match(r)?"bot":"unknown"),h=function(e){var r=e.version,t=e.browserTarget,n=e.surface,i=e.shopId,a=e.monorailEndpoint,s=window.location.href;return{emit:function(e){var c,u=e.status,l=e.errorMsg;if(!a)return d("[Web Pixels Manager] No Monorail endpoint provided, skipping logging."),!1;try{var f=(new Date).getTime();c=JSON.stringify({metadata:{event_sent_at_ms:f},events:[{schema_id:"web_pixels_manager_load/3.2",payload:{version:r,bundle_target:t,page_url:s,status:u,surface:n,error_msg:l,shop_id:i,visit_token:o()},metadata:{event_created_at_ms:f}}]})}catch(e){return!1}var p,h=!1;try{"function"==typeof window.navigator.sendBeacon&&-1===(p=window.navigator.userAgent).indexOf("iPhone; CPU iPhone OS 12_")&&-1===p.indexOf("iPad; CPU OS 12_")&&-1===p.indexOf("iPod touch; CPU iPhone OS 12_")&&(h=window.navigator.sendBeacon.bind(window.navigator)(a,c))}catch(e){h=!1}if(h)return!0;try{var m=new XMLHttpRequest;return m.open("POST",a,!0),m.setRequestHeader("Content-Type","text/plain"),m.send(c),!0}catch(e){return d("[Web Pixels Manager] Got an unhandled error while logging to Monorail."),!1}}}}({version:i,browserTarget:p,surface:t.surface,shopId:t.shopId,monorailEndpoint:t.monorailEndpoint});if(Boolean(null==(y=null==(m=window.Shopify)?void 0:m.analytics)?void 0:y.replayQueue))h.emit({status:"setup-skipped",errorMsg:"replay queue already initialized."});else{var m,y;h.emit({status:"setup-started"}),window.Shopify=window.Shopify||{};var g=window.Shopify;g.analytics=g.analytics||{};var v=g.analytics;v.replayQueue=[],v.publish=function(e,r,o){return v.replayQueue.push([e,r,o]),!0};try{self.performance.mark("wpm:start")}catch(e){}var w,b="modern"===p?"modern":"legacy",P=(null!=a?a:{modern:"",legacy:""})[b],S=[(w={baseUrl:n,hashVersion:i,buildTarget:b}).baseUrl,"/wpm","/b",w.hashVersion,"modern"===w.buildTarget?"m":"l",".js"].join("");try{f.browserTarget=p,O(function(){try{O(_)}catch(e){h.emit({status:"failed",errorMsg:U(e)})}}),h.emit({status:"loading"})}catch(e){h.emit({status:"failed",errorMsg:U(e)})}}function C(){if(!function(){var e,r;return Boolean(null==(r=null==(e=window.Shopify)?void 0:e.analytics)?void 0:r.initialized)}()){var e=window.webPixelsManager.init(t)||void 0;if(e){var r=window.Shopify.analytics;r.replayQueue.forEach(function(r){var o=r[0],d=r[1],t=r[2];e.publishCustomEvent(o,d,t)}),r.replayQueue=[],r.publish=e.publishCustomEvent,r.visitor=e.visitor,r.initialized=!0}}}function _(){return h.emit({status:"failed",errorMsg:"".concat(S," has failed to load")})}function O(e){var r;!function(e){var r=e.src,o=e.async,d=void 0===o||o,t=e.onload,n=e.onerror,i=e.sri,a=e.scriptDataAttributes,s=void 0===a?{}:a,c=document.createElement("script"),u=document.querySelector("head"),l=document.querySelector("body");if(c.async=d,c.src=r,i&&(c.integrity=i,c.crossOrigin="anonymous"),s)for(var f in s)if(Object.prototype.hasOwnProperty.call(s,f))try{c.dataset[f]=s[f]}catch(e){}if(t&&c.addEventListener("load",t),n&&c.addEventListener("error",n),u)u.appendChild(c);else{if(!l)throw new Error("Did not find a head or body element to append the script");l.appendChild(c)}}({src:S,async:!0,onload:C,onerror:e,sri:(r=P,"string"==typeof r&&/^sha384-[A-Za-z0-9+/=]+$/.test(r)?P:""),scriptDataAttributes:f})}function U(e){return e instanceof Error?e.message:"Unknown error"}}}();wpmLoader({shopId: 95367299416,storefrontBaseUrl: "https://benetton.com",extensionsBaseUrl: "https://extensions.shopifycdn.com/cdn/shopifycloud/web-pixels-manager",monorailEndpoint: "https://fr.benetton.com/.well-known/shopify/monorail/unstable/produce_batch",surface: "storefront-renderer",enabledBetaFlags: ["d5bdd5d0","656605ce"],webPixelsConfigList: [{"id":"3998318936","configuration":"{\"accountID\": \"123\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"fb84216e286b863787de2c105a003a2e","type":"APP","apiClientId":3094213,"privacyPurposes":[],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_personal_data"],"dataSharingControls":["share_all_events"]},"dataSharingState":"unrestricted"},{"id":"3909189976","configuration":"{\"merchantId\":\"shopify-95367299416\",\"defaultMarketId\":\"103491535192\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"e99d2aed0f210103fa3464489ca6de7e","type":"APP","apiClientId":93504864257,"privacyPurposes":["ANALYTICS"],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_personal_data"],"dataSharingControls":["share_all_events"]},"dataSharingState":"unrestricted"},{"id":"3903127896","configuration":"{\"accountID\":\"XHxjCU\",\"webPixelConfig\":\"eyJlbmFibGVBZGRlZFRvQ2FydEV2ZW50cyI6IHRydWV9\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"524f6c1ee37bacdca7657a665bdca589","type":"APP","apiClientId":123074,"privacyPurposes":["ANALYTICS","MARKETING"],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_address","read_customer_email","read_customer_name","read_customer_personal_data","read_customer_phone"],"dataSharingControls":["share_all_events"]},"dataSharingState":"optimized","enabledFlags":["9a3ed68a"]},{"id":"3867345240","configuration":"{\"swymApiEndpoint\":\"https:\/\/swymstore-v3pro-01.swymrelay.com\",\"swymTier\":\"v3pro-01\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"5b6f6917e306bc7f24523662663331c0","type":"APP","apiClientId":1350849,"privacyPurposes":["ANALYTICS","MARKETING","PREFERENCES"],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_email","read_customer_name","read_customer_personal_data","read_customer_phone"],"dataSharingControls":["share_all_events"]},"dataSharingState":"optimized"},{"id":"288784728","eventPayloadVersion":"1","runtimeContext":"LAX","scriptVersion":"18","type":"CUSTOM","privacyPurposes":[],"name":"GTM Trackings"},{"id":"shopify-app-pixel","configuration":"{}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"0510","apiClientId":"shopify-pixel","type":"APP","privacyPurposes":["ANALYTICS","MARKETING"]},{"id":"shopify-custom-pixel","eventPayloadVersion":"v1","runtimeContext":"LAX","scriptVersion":"0510","apiClientId":"shopify-pixel","type":"CUSTOM","privacyPurposes":["ANALYTICS","MARKETING"]}],isMerchantRequest: false,initData: {"shop":{"name":"Benetton Official","paymentSettings":{"currencyCode":"EUR"},"myshopifyDomain":"benetton-official.myshopify.com","countryCode":"IT","storefrontUrl":"https:\/\/fr.benetton.com"},"customer":null,"cart":null,"checkout":null,"productVariants":[],"products":[],"purchasingCompany":null},},"https://fr.benetton.com/cdn","2d9dfbe8w1156b718pbb247b16m64115e31",{"modern":"","legacy":""},{"trekkieShim":true,"agentContext":true,"apiClientId":"580111","facebookCapiEnabled":"false","themeId":"189857628504","themePublished":"true","eventMetadataId":"0040f06a-c002-4a7f-b4d9-58e3269b2445","pageType":"page","resourceId":"159786959192","shopId":"95367299416","storefrontBaseUrl":"https:\/\/benetton.com","extensionBaseUrl":"https:\/\/extensions.shopifycdn.com\/cdn\/shopifycloud\/web-pixels-manager","surface":"storefront-renderer","enabledBetaFlags":"[\"d5bdd5d0\", \"656605ce\"]","isMerchantRequest":"false","hashVersion":"2d9dfbe8w1156b718pbb247b16m64115e31","publish":"custom","events":"[[\"page_viewed\",{}]]"});})();</script><script>
   window.ShopifyAnalytics = window.ShopifyAnalytics || {};
   window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
   window.ShopifyAnalytics.meta.currency = 'EUR';
-  var meta = {"page":{"pageType":"page","resourceType":"page","resourceId":159786959192,"requestId":"28007bf2-d14e-4af8-9259-c8b569be5704-1787186101"}};
+  var meta = {"page":{"pageType":"page","resourceType":"page","resourceId":159786959192,"requestId":"2cd13705-5694-4e0b-9f6f-56826080193d-1787229312"}};
   for (var attr in meta) {
     window.ShopifyAnalytics.meta[attr] = meta[attr];
   }
@@ -1426,7 +1549,7 @@ first.parentNode.insertBefore(script, first);
 
     };
     trekkie.load(
-      {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":95367299416,"isMerchantRequest":null,"themeId":189857628504,"themeCityHash":"11051745619328432897","contentLanguage":"fr","currency":"EUR","eventMetadataId":"81f51c24-212f-48ba-852d-b649ee59dde9"},"isServerSideCookieWritingEnabled":true,"monorailRegion":"shop_domain","enabledBetaFlags":["f43e7f5e","b5387b81","d5bdd5d0"]},"Session Attribution":{},"S2S":{"facebookCapiEnabled":false,"source":"trekkie-storefront-renderer","apiClientId":580111}}
+      {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":95367299416,"isMerchantRequest":null,"themeId":189857628504,"themeCityHash":"11051745619328432897","contentLanguage":"fr","currency":"EUR","eventMetadataId":"0040f06a-c002-4a7f-b4d9-58e3269b2445"},"isServerSideCookieWritingEnabled":true,"monorailRegion":"shop_domain","enabledBetaFlags":["f43e7f5e","b5387b81","d5bdd5d0"]},"Session Attribution":{},"S2S":{"facebookCapiEnabled":false,"source":"trekkie-storefront-renderer","apiClientId":580111}}
     );
 
     var loaded = false;
@@ -1449,7 +1572,7 @@ first.parentNode.insertBefore(script, first);
       }
     });
 
-    window.ShopifyAnalytics.lib.page(null,{"pageType":"page","resourceType":"page","resourceId":159786959192,"requestId":"28007bf2-d14e-4af8-9259-c8b569be5704-1787186101","shopifyEmitted":true});
+    window.ShopifyAnalytics.lib.page(null,{"pageType":"page","resourceType":"page","resourceId":159786959192,"requestId":"2cd13705-5694-4e0b-9f6f-56826080193d-1787229312","shopifyEmitted":true});
 
     var eventsListenerScript = document.createElement('script');
     eventsListenerScript.async = true;
@@ -2694,28 +2817,25 @@ first.parentNode.insertBefore(script, first);
           INSPIRATIONS
         </span><ul class="jkl-visual-menu-column__links" role="list"><li>
               <a
+                href="/collections/back-to-school-junior-boy"
+                class="jkl-visual-menu-column__link "
+                
+              >
+                <span class="jkl-menu-link__text">Back to School</span></a>
+            </li><li>
+              <a
                 href="/collections/monochrome-pastel-for-junior-boy"
                 class="jkl-visual-menu-column__link "
                 
               >
-                <span class="jkl-menu-link__text">Couleurs pastel</span><span
-                    class="jkl-menu-link__label"
-                    style="color: #00A651;"
-                  >
-                    NEW
-                  </span></a>
+                <span class="jkl-menu-link__text">Couleurs pastel</span></a>
             </li><li>
               <a
                 href="/collections/mountain-holidays-for-junior-boy"
                 class="jkl-visual-menu-column__link "
                 
               >
-                <span class="jkl-menu-link__text">Vacances actives</span><span
-                    class="jkl-menu-link__label"
-                    style="color: #00A651;"
-                  >
-                    NEW
-                  </span></a>
+                <span class="jkl-menu-link__text">Vacances actives</span></a>
             </li><li>
               <a
                 href="/collections/city-holidays-junior-boy"
@@ -2737,13 +2857,6 @@ first.parentNode.insertBefore(script, first);
                 
               >
                 <span class="jkl-menu-link__text">Summer Camp</span></a>
-            </li><li>
-              <a
-                href="/collections/african-vibes-kids-jb"
-                class="jkl-visual-menu-column__link "
-                
-              >
-                <span class="jkl-menu-link__text">Looks exotiques</span></a>
             </li><li>
               <a
                 href="/collections/garcon-nos-basiques"
@@ -2893,28 +3006,25 @@ first.parentNode.insertBefore(script, first);
           INSPIRATIONS
         </span><ul class="jkl-visual-menu-column__links" role="list"><li>
               <a
+                href="/collections/back-to-school-kid-boy"
+                class="jkl-visual-menu-column__link "
+                
+              >
+                <span class="jkl-menu-link__text">Back to School</span></a>
+            </li><li>
+              <a
                 href="/collections/monochrome-pastel-for-kid-boy"
                 class="jkl-visual-menu-column__link "
                 
               >
-                <span class="jkl-menu-link__text">Couleurs pastel</span><span
-                    class="jkl-menu-link__label"
-                    style="color: #00A651;"
-                  >
-                    NEW
-                  </span></a>
+                <span class="jkl-menu-link__text">Couleurs pastel</span></a>
             </li><li>
               <a
                 href="/collections/mountain-holidays-for-kid-boy"
                 class="jkl-visual-menu-column__link "
                 
               >
-                <span class="jkl-menu-link__text">Vacances actives</span><span
-                    class="jkl-menu-link__label"
-                    style="color: #00A651;"
-                  >
-                    NEW
-                  </span></a>
+                <span class="jkl-menu-link__text">Vacances actives</span></a>
             </li><li>
               <a
                 href="/collections/city-holidays-kid-boy"
@@ -2936,13 +3046,6 @@ first.parentNode.insertBefore(script, first);
                 
               >
                 <span class="jkl-menu-link__text">Summer Camp</span></a>
-            </li><li>
-              <a
-                href="/collections/african-vibes-kids-kb"
-                class="jkl-visual-menu-column__link "
-                
-              >
-                <span class="jkl-menu-link__text">Looks exotiques</span></a>
             </li><li>
               <a
                 href="/collections/bebe-garcon-nos-basiques"
@@ -3102,28 +3205,25 @@ first.parentNode.insertBefore(script, first);
           INSPIRATIONS
         </a><ul class="jkl-visual-menu-column__links" role="list"><li>
               <a
+                href="/collections/back-to-school-junior-girl"
+                class="jkl-visual-menu-column__link "
+                
+              >
+                <span class="jkl-menu-link__text">Back to School</span></a>
+            </li><li>
+              <a
                 href="/collections/monochrome-pastel-for-junior-girl"
                 class="jkl-visual-menu-column__link "
                 
               >
-                <span class="jkl-menu-link__text">Couleurs pastel</span><span
-                    class="jkl-menu-link__label"
-                    style="color: #00A651;"
-                  >
-                    NEW
-                  </span></a>
+                <span class="jkl-menu-link__text">Couleurs pastel</span></a>
             </li><li>
               <a
                 href="/collections/mountain-holidays-for-junior-girl"
                 class="jkl-visual-menu-column__link "
                 
               >
-                <span class="jkl-menu-link__text">Vacances actives</span><span
-                    class="jkl-menu-link__label"
-                    style="color: #00A651;"
-                  >
-                    NEW
-                  </span></a>
+                <span class="jkl-menu-link__text">Vacances actives</span></a>
             </li><li>
               <a
                 href="/collections/city-holidays-junior-girl"
@@ -3145,13 +3245,6 @@ first.parentNode.insertBefore(script, first);
                 
               >
                 <span class="jkl-menu-link__text">Summer Camp</span></a>
-            </li><li>
-              <a
-                href="/collections/african-vibes-kids-jg"
-                class="jkl-visual-menu-column__link "
-                
-              >
-                <span class="jkl-menu-link__text">Looks exotiques</span></a>
             </li><li>
               <a
                 href="/collections/fille-nos-basiques"
@@ -3308,28 +3401,25 @@ first.parentNode.insertBefore(script, first);
           INSPIRATIONS
         </span><ul class="jkl-visual-menu-column__links" role="list"><li>
               <a
+                href="/collections/back-to-school-kid-girl"
+                class="jkl-visual-menu-column__link "
+                
+              >
+                <span class="jkl-menu-link__text">Back to School</span></a>
+            </li><li>
+              <a
                 href="/collections/monochrome-pastel-for-kid-girl"
                 class="jkl-visual-menu-column__link "
                 
               >
-                <span class="jkl-menu-link__text">Couleurs pastel</span><span
-                    class="jkl-menu-link__label"
-                    style="color: #00A651;"
-                  >
-                    NEW
-                  </span></a>
+                <span class="jkl-menu-link__text">Couleurs pastel</span></a>
             </li><li>
               <a
                 href="/collections/mountain-holidays-for-kid-girl"
                 class="jkl-visual-menu-column__link "
                 
               >
-                <span class="jkl-menu-link__text">Vacances actives</span><span
-                    class="jkl-menu-link__label"
-                    style="color: #00A651;"
-                  >
-                    NEW
-                  </span></a>
+                <span class="jkl-menu-link__text">Vacances actives</span></a>
             </li><li>
               <a
                 href="/collections/city-holidays-kid-girl"
@@ -3351,13 +3441,6 @@ first.parentNode.insertBefore(script, first);
                 
               >
                 <span class="jkl-menu-link__text">Summer Camp</span></a>
-            </li><li>
-              <a
-                href="/collections/african-vibes-kids-kg"
-                class="jkl-visual-menu-column__link "
-                
-              >
-                <span class="jkl-menu-link__text">Looks exotiques</span></a>
             </li><li>
               <a
                 href="/collections/bebe-fille-nos-basiques"
@@ -5544,24 +5627,25 @@ first.parentNode.insertBefore(script, first);
 
                   <ul class="jkl-menu jkl-menu--links"><li>
                           <a
+                            href="/collections/back-to-school-junior-boy"
+                            class="jkl-menu__link jkl-menu__link--column"
+                            
+                          >
+                            <span class="jkl-menu__text">Back to School</span></a>
+                        </li><li>
+                          <a
                             href="/collections/monochrome-pastel-for-junior-boy"
                             class="jkl-menu__link jkl-menu__link--column"
                             
                           >
-                            <span class="jkl-menu__text">Couleurs pastel</span><span
-                                class="jkl-menu__label"
-                                style="color: #00A651;"
-                              >NEW</span></a>
+                            <span class="jkl-menu__text">Couleurs pastel</span></a>
                         </li><li>
                           <a
                             href="/collections/mountain-holidays-for-junior-boy"
                             class="jkl-menu__link jkl-menu__link--column"
                             
                           >
-                            <span class="jkl-menu__text">Vacances actives</span><span
-                                class="jkl-menu__label"
-                                style="color: #00A651;"
-                              >NEW</span></a>
+                            <span class="jkl-menu__text">Vacances actives</span></a>
                         </li><li>
                           <a
                             href="/collections/city-holidays-junior-boy"
@@ -5583,13 +5667,6 @@ first.parentNode.insertBefore(script, first);
                             
                           >
                             <span class="jkl-menu__text">Summer Camp</span></a>
-                        </li><li>
-                          <a
-                            href="/collections/african-vibes-kids-jb"
-                            class="jkl-menu__link jkl-menu__link--column"
-                            
-                          >
-                            <span class="jkl-menu__text">Looks exotiques</span></a>
                         </li><li>
                           <a
                             href="/collections/garcon-nos-basiques"
@@ -5719,24 +5796,25 @@ first.parentNode.insertBefore(script, first);
 
                   <ul class="jkl-menu jkl-menu--links"><li>
                           <a
+                            href="/collections/back-to-school-kid-boy"
+                            class="jkl-menu__link jkl-menu__link--column"
+                            
+                          >
+                            <span class="jkl-menu__text">Back to School</span></a>
+                        </li><li>
+                          <a
                             href="/collections/monochrome-pastel-for-kid-boy"
                             class="jkl-menu__link jkl-menu__link--column"
                             
                           >
-                            <span class="jkl-menu__text">Couleurs pastel</span><span
-                                class="jkl-menu__label"
-                                style="color: #00A651;"
-                              >NEW</span></a>
+                            <span class="jkl-menu__text">Couleurs pastel</span></a>
                         </li><li>
                           <a
                             href="/collections/mountain-holidays-for-kid-boy"
                             class="jkl-menu__link jkl-menu__link--column"
                             
                           >
-                            <span class="jkl-menu__text">Vacances actives</span><span
-                                class="jkl-menu__label"
-                                style="color: #00A651;"
-                              >NEW</span></a>
+                            <span class="jkl-menu__text">Vacances actives</span></a>
                         </li><li>
                           <a
                             href="/collections/city-holidays-kid-boy"
@@ -5758,13 +5836,6 @@ first.parentNode.insertBefore(script, first);
                             
                           >
                             <span class="jkl-menu__text">Summer Camp</span></a>
-                        </li><li>
-                          <a
-                            href="/collections/african-vibes-kids-kb"
-                            class="jkl-menu__link jkl-menu__link--column"
-                            
-                          >
-                            <span class="jkl-menu__text">Looks exotiques</span></a>
                         </li><li>
                           <a
                             href="/collections/bebe-garcon-nos-basiques"
@@ -5901,24 +5972,25 @@ first.parentNode.insertBefore(script, first);
 
                   <ul class="jkl-menu jkl-menu--links"><li>
                           <a
+                            href="/collections/back-to-school-junior-girl"
+                            class="jkl-menu__link jkl-menu__link--column"
+                            
+                          >
+                            <span class="jkl-menu__text">Back to School</span></a>
+                        </li><li>
+                          <a
                             href="/collections/monochrome-pastel-for-junior-girl"
                             class="jkl-menu__link jkl-menu__link--column"
                             
                           >
-                            <span class="jkl-menu__text">Couleurs pastel</span><span
-                                class="jkl-menu__label"
-                                style="color: #00A651;"
-                              >NEW</span></a>
+                            <span class="jkl-menu__text">Couleurs pastel</span></a>
                         </li><li>
                           <a
                             href="/collections/mountain-holidays-for-junior-girl"
                             class="jkl-menu__link jkl-menu__link--column"
                             
                           >
-                            <span class="jkl-menu__text">Vacances actives</span><span
-                                class="jkl-menu__label"
-                                style="color: #00A651;"
-                              >NEW</span></a>
+                            <span class="jkl-menu__text">Vacances actives</span></a>
                         </li><li>
                           <a
                             href="/collections/city-holidays-junior-girl"
@@ -5940,13 +6012,6 @@ first.parentNode.insertBefore(script, first);
                             
                           >
                             <span class="jkl-menu__text">Summer Camp</span></a>
-                        </li><li>
-                          <a
-                            href="/collections/african-vibes-kids-jg"
-                            class="jkl-menu__link jkl-menu__link--column"
-                            
-                          >
-                            <span class="jkl-menu__text">Looks exotiques</span></a>
                         </li><li>
                           <a
                             href="/collections/fille-nos-basiques"
@@ -6083,24 +6148,25 @@ first.parentNode.insertBefore(script, first);
 
                   <ul class="jkl-menu jkl-menu--links"><li>
                           <a
+                            href="/collections/back-to-school-kid-girl"
+                            class="jkl-menu__link jkl-menu__link--column"
+                            
+                          >
+                            <span class="jkl-menu__text">Back to School</span></a>
+                        </li><li>
+                          <a
                             href="/collections/monochrome-pastel-for-kid-girl"
                             class="jkl-menu__link jkl-menu__link--column"
                             
                           >
-                            <span class="jkl-menu__text">Couleurs pastel</span><span
-                                class="jkl-menu__label"
-                                style="color: #00A651;"
-                              >NEW</span></a>
+                            <span class="jkl-menu__text">Couleurs pastel</span></a>
                         </li><li>
                           <a
                             href="/collections/mountain-holidays-for-kid-girl"
                             class="jkl-menu__link jkl-menu__link--column"
                             
                           >
-                            <span class="jkl-menu__text">Vacances actives</span><span
-                                class="jkl-menu__label"
-                                style="color: #00A651;"
-                              >NEW</span></a>
+                            <span class="jkl-menu__text">Vacances actives</span></a>
                         </li><li>
                           <a
                             href="/collections/city-holidays-kid-girl"
@@ -6122,13 +6188,6 @@ first.parentNode.insertBefore(script, first);
                             
                           >
                             <span class="jkl-menu__text">Summer Camp</span></a>
-                        </li><li>
-                          <a
-                            href="/collections/african-vibes-kids-kg"
-                            class="jkl-menu__link jkl-menu__link--column"
-                            
-                          >
-                            <span class="jkl-menu__text">Looks exotiques</span></a>
                         </li><li>
                           <a
                             href="/collections/bebe-fille-nos-basiques"
