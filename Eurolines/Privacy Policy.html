@@ -19,7 +19,7 @@
 
 
 <!DOCTYPE html>
-<html lang="en" class="flix-theme-flix homepage-has-promo-before-usps">
+<html lang="en" class="flix-theme-flix homepage-has-inline-promo homepage-has-promo-before-usps">
 <head>
 
     
@@ -1693,7 +1693,7 @@
 
 
 
-<div class="inline-promo-wrapper fxp_2082-1">
+<div class="inline-promo-wrapper ">
     <div id="inline-promo-placeholder" class="inline-promo-placeholder">
         <div class="inline-promo-placeholder-inner">
             <span class="flix-skeleton inline-promo-placeholder-icon"></span>
@@ -1702,13 +1702,6 @@
     </div>
     <div id="inline-promo-component"></div>
 </div>
-
-<script>
-  if (window.Aetna && window.Aetna["webc_fxp_2082"] ===  1 ) {
-    document.documentElement.classList.add("homepage-has-inline-promo");
-    document.documentElement.classList.add("homepage-has-promo-before-usps");
-  }
-</script>
 
 
 
@@ -2596,11 +2589,11 @@
                     </li>
                   
                     <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
-                      <a href="/bus-routes/bus-berlin-cologne" class="popular-routes-item">Berlin - Cologne</a>
+                      <a href="/bus-routes/bus-dresden-berlin" class="popular-routes-item">Dresden - Berlin</a>
                     </li>
                   
                     <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
-                      <a href="/bus-routes/bus-dresden-berlin" class="popular-routes-item">Dresden - Berlin</a>
+                      <a href="/bus-routes/bus-berlin-cologne" class="popular-routes-item">Berlin - Cologne</a>
                     </li>
                   
                     <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
@@ -2612,15 +2605,11 @@
                     </li>
                   
                     <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
-                      <a href="/bus-routes/bus-dortmund-berlin" class="popular-routes-item">Dortmund - Berlin</a>
-                    </li>
-                  
-                    <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
                       <a href="/bus-routes/bus-stuttgart-berlin" class="popular-routes-item">Stuttgart - Berlin</a>
                     </li>
                   
                     <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
-                      <a href="/bus-routes/bus-dusseldorf-berlin" class="popular-routes-item">Düsseldorf - Berlin</a>
+                      <a href="/bus-routes/bus-prague-berlin" class="popular-routes-item">Prague - Berlin</a>
                     </li>
                   
                     <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
@@ -2628,11 +2617,15 @@
                     </li>
                   
                     <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
+                      <a href="/bus-routes/bus-dusseldorf-berlin" class="popular-routes-item">Düsseldorf - Berlin</a>
+                    </li>
+                  
+                    <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
                       <a href="/bus-routes/bus-berlin-dusseldorf" class="popular-routes-item">Berlin - Düsseldorf</a>
                     </li>
                   
                     <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
-                      <a href="/bus-routes/bus-prague-berlin" class="popular-routes-item">Prague - Berlin</a>
+                      <a href="/bus-routes/bus-zurich-munich" class="popular-routes-item">Zurich - Munich</a>
                     </li>
                   
                 </ul>
@@ -3286,14 +3279,14 @@
 
   
   
-  if (window.Aetna && window.Aetna["webc_fxp_2082"] ===  1 ) {
+  {
     injectReactComponent(
       "InlinePromo",
       "inline-promo-component",
       {
         project: "flixbus",
         containerId: "inline-promo-component",
-        card: {"title":"Bring your bike on your next trip.","cta":{"text":"View details","url":"https://global.flixbus.com/service/bike-travel"},"isStrongPromo":true,"illustrationName":"bike"}
+        card: {"endDate":"2026-09-10T01:00:00+01:00","title":"FlixBus is running today. Allow more time to get to the station. The national strike in the Netherlands may affect local transport.","illustrationName":"info"}
       },
       "inline-promo-placeholder",
       "prod"
@@ -3407,7 +3400,7 @@
         site: 'datadoghq.eu',
         service: 'fxt.webc.cms.gohome',
         sessionSampleRate: 7,
-        version: "v1-98-66",
+        version: "v1-98-67",
         trackSessionAcrossSubdomains: true,
         useSecureSessionCookie: true,
         useCrossSiteSessionCookie: true,
