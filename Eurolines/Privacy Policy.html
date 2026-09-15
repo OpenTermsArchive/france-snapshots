@@ -10,6 +10,7 @@
 
 
 
+
   
     
   
@@ -18,7 +19,7 @@
 
 
 <!DOCTYPE html>
-<html lang="en" class="flix-theme-default homepage-has-promo-before-usps">
+<html lang="en" class="flix-theme-flix homepage-has-inline-promo homepage-has-promo-before-usps">
 <head>
 
     
@@ -38,21 +39,22 @@
 
     <title>FlixBus: Affordable Global Bus Travel</title>
 
-    <link rel="preload" as="script" href="https://cdn-cf.cms.flixbus.com/drupal-assets/flix-home-assets/abTestHandler.499d62.js"/>
+    <link rel="preload" as="script" href="https://cdn-cf.cms.flixbus.com/drupal-assets/flix-home-assets/abTestHandler.396c37.js"/>
 
-    <script src="https://cdn-cf.cms.flixbus.com/drupal-assets/flix-home-assets/abTestHandler.499d62.js"></script>
+    <script src="https://cdn-cf.cms.flixbus.com/drupal-assets/flix-home-assets/abTestHandler.396c37.js"></script>
     <script src="/assets/uc/cc.js"></script>
     <link rel="canonical" href="https://global.flixbus.com" />
     <link rel="preconnect" href="//cdn-cf.cms.flixbus.com/" crossorigin>
+    <link rel="preconnect" href="https://react-content-components.cms.flixbus.com" crossorigin>
     <link href="https://d3k6pebee3cv6.cloudfront.net" rel="preconnect" />
 
     <link rel="preconnect" href="https://honeycomb.flixbus.com" crossorigin>
     
-    <link rel="preload" as="style" href="https://honeycomb.flixbus.com/dist/15.3.3/css/honeycomb-fonts.css" crossorigin="" onload="this.onload=null;this.rel='stylesheet'">
-    <noscript><link rel="stylesheet" href="https://honeycomb.flixbus.com/dist/15.3.3/css/honeycomb-fonts.css" crossorigin=""></noscript>
+    <link rel="preload" as="style" href="https://honeycomb.flixbus.com/dist/17.4.0/css/honeycomb-fonts.css" crossorigin="" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://honeycomb.flixbus.com/dist/17.4.0/css/honeycomb-fonts.css" crossorigin=""></noscript>
 
-    <link rel="stylesheet" href="https://cdn-cf.cms.flixbus.com/drupal-assets/flix-home-assets/cms_honeycomb.00d3ac.css" async />
-    <link rel="stylesheet" href="https://cdn-cf.cms.flixbus.com/drupal-assets/flix-home-assets/styles.b7cd63.css" async />
+    <link rel="stylesheet" href="https://cdn-cf.cms.flixbus.com/drupal-assets/flix-home-assets/cms_honeycomb.42ef66.css" />
+    <link rel="stylesheet" href="https://cdn-cf.cms.flixbus.com/drupal-assets/flix-home-assets/styles.7f48b4.css" />
 
     <link
       rel="apple-touch-icon"
@@ -347,6 +349,18 @@
     ]
   }
 }</script>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  <link rel="preload" as="image" href="https://cdn-cf.cms.flixbus.com/resize/drupal-assets/promos/spk-2-77ad0b4530ff.webp?width=600&format=webp" fetchpriority="high" />
+  
 </head>
 <body class="flix-main-wrapper">
   <script>
@@ -493,12 +507,12 @@
 
       <div class="geolocation-overlay__btn">
           <button id="geolocation-overlay__noredirect-btn" type="button" class="flix-btn flix-btn--md">
-            <img id="geolocation-overlay__noredirect-img" class="flix-language-switcher__flag"
+            <img id="geolocation-overlay__noredirect-img" class="flix-flag" width="24" height="24"
                   data-lazyload-src="https://cdn-cf.cms.flixbus.com/drupal-assets/flags/en-gl.min.svg" src="" alt="" />
                   English
           </button>
           <a href="#" id="geolocation-overlay__redirect-btn" class="flix-btn flix-btn--md flix-btn--tertiary">
-              <img id="geolocation-overlay__redirect-img" class="flix-language-switcher__flag"
+              <img id="geolocation-overlay__redirect-img" class="flix-flag" width="24" height="24"
                     data-lazyload-src="" src="" alt="" />
               <span id="geolocation-overlay__redirect-text"></span>
           </a>
@@ -921,10 +935,10 @@
                       
                   
                 <li class="flix-header-burger-menu__item" id="last-focus-mobile-nav">
-                  <button type="button" class="flix-header-burger-menu__link flix-language-switcher__toggle"
+                  <button type="button" class="flix-header-burger-menu__link header-language-switcher__toggle"
                           data-popup="language-selection-popup" data-firstfocusable="close-button"
                           data-lastfocusable="last-focusable-item">
-                    <img class="flix-language-switcher__flag"
+                    <img class="flix-flag" width="24" height="24"
                          data-lazyload-src="https://cdn-cf.cms.flixbus.com/drupal-assets/flags/en-gl.min.svg" src=""
                          alt="" />
                       English
@@ -941,13 +955,13 @@
 
 
         <div id="header-widgets-container" class="flix-header-widgets">
-          <div class="flix-language-switcher">
-            <button type="button" class="flix-language-switcher__toggle" data-popup="language-selection-popup"
+          <div class="header-language-switcher">
+            <button type="button" class="flix-btn flix-btn--link header-language-switcher__toggle" data-popup="language-selection-popup"
                     data-firstfocusable="close-button" data-lastfocusable="last-focusable-item">
-              <img class="flix-language-switcher__flag"
+              <img class="flix-flag" width="24" height="24"
                    data-lazyload-src="https://cdn-cf.cms.flixbus.com/drupal-assets/flags/en-gl.min.svg" src=""
                    alt="" />
-                <span class="flix-language-switcher__code">en</span>
+                <span class="header-language-switcher__code">en</span>
               <span class="flix-sr-only">Open language selection</span>
             </button>
           </div>
@@ -957,20 +971,20 @@
     </header>
 
 
-    <div id="language-selection-popup" class="flix-language-switcher-popup" aria-label="Language selection" hidden="">
-      <div class="flix-language-switcher-popup__body">
+    <div id="language-selection-popup" class="flix-language-switcher" role="dialog" aria-modal="true" aria-label="Language selection" hidden="">
+      <div class="flix-language-switcher__body">
         <button type="button" id="close-button" aria-label="Close language selection"
-                class="flix-language-switcher-popup__close flix-btn flix-btn--square flix-btn--sm flix-btn--link"></button>
+                class="flix-language-switcher__close flix-btn flix-btn--square flix-btn--md flix-btn--link"></button>
 
-        <section aria-labelledby="all-domains" class="flix-language-switcher-popup__region flix-language-switcher-popup__region--columns">
-          <ul class="flix-language-switcher-popup__list">
+        <section aria-labelledby="all-domains" class="flix-language-switcher__region flix-language-switcher__region--columns">
+          <ul class="flix-language-switcher__list">
               
                   
-                    <li class="flix-language-switcher-popup__item">
-                      <a class="flix-language-switcher-popup__link"
+                    <li class="flix-language-switcher__item">
+                      <a class="flix-language-switcher__link"
                          id="" lang="bg"
                          onclick="emitLanguageSwitcherClickEvent(&#34;bg&#34;)" href="//www.flixbus.bg/?noRedirect=true">
-                        <img class="flix-language-switcher__flag"
+                        <img class="flix-flag flix-language-switcher__flag"
                              src="https://cdn-cf.cms.flixbus.com/drupal-assets/flags/bg.min.svg"
                              alt="" />
                           Български
@@ -979,11 +993,11 @@
                   
               
                   
-                    <li class="flix-language-switcher-popup__item">
-                      <a class="flix-language-switcher-popup__link"
+                    <li class="flix-language-switcher__item">
+                      <a class="flix-language-switcher__link"
                          id="" lang="bs"
                          onclick="emitLanguageSwitcherClickEvent(&#34;bs&#34;)" href="//www.flixbus.ba/?noRedirect=true">
-                        <img class="flix-language-switcher__flag"
+                        <img class="flix-flag flix-language-switcher__flag"
                              src="https://cdn-cf.cms.flixbus.com/drupal-assets/flags/bs.min.svg"
                              alt="" />
                           Bosanski
@@ -992,11 +1006,11 @@
                   
               
                   
-                    <li class="flix-language-switcher-popup__item">
-                      <a class="flix-language-switcher-popup__link"
+                    <li class="flix-language-switcher__item">
+                      <a class="flix-language-switcher__link"
                          id="" lang="ca"
                          onclick="emitLanguageSwitcherClickEvent(&#34;ca&#34;)" href="//www.flixbus.cat/?noRedirect=true">
-                        <img class="flix-language-switcher__flag"
+                        <img class="flix-flag flix-language-switcher__flag"
                              src="https://cdn-cf.cms.flixbus.com/drupal-assets/flags/ca.min.svg"
                              alt="" />
                           Català
@@ -1005,11 +1019,11 @@
                   
               
                   
-                    <li class="flix-language-switcher-popup__item">
-                      <a class="flix-language-switcher-popup__link"
+                    <li class="flix-language-switcher__item">
+                      <a class="flix-language-switcher__link"
                          id="" lang="cs"
                          onclick="emitLanguageSwitcherClickEvent(&#34;cs&#34;)" href="//www.flixbus.cz/?noRedirect=true">
-                        <img class="flix-language-switcher__flag"
+                        <img class="flix-flag flix-language-switcher__flag"
                              src="https://cdn-cf.cms.flixbus.com/drupal-assets/flags/cs.min.svg"
                              alt="" />
                           Čeština
@@ -1018,11 +1032,11 @@
                   
               
                   
-                    <li class="flix-language-switcher-popup__item">
-                      <a class="flix-language-switcher-popup__link"
+                    <li class="flix-language-switcher__item">
+                      <a class="flix-language-switcher__link"
                          id="" lang="da"
                          onclick="emitLanguageSwitcherClickEvent(&#34;da&#34;)" href="//www.flixbus.dk/?noRedirect=true">
-                        <img class="flix-language-switcher__flag"
+                        <img class="flix-flag flix-language-switcher__flag"
                              src="https://cdn-cf.cms.flixbus.com/drupal-assets/flags/da.min.svg"
                              alt="" />
                           Dansk
@@ -1031,11 +1045,11 @@
                   
               
                   
-                    <li class="flix-language-switcher-popup__item">
-                      <a class="flix-language-switcher-popup__link"
+                    <li class="flix-language-switcher__item">
+                      <a class="flix-language-switcher__link"
                          id="" lang="de"
                          onclick="emitLanguageSwitcherClickEvent(&#34;de&#34;)" href="//www.flixbus.de/?noRedirect=true">
-                        <img class="flix-language-switcher__flag"
+                        <img class="flix-flag flix-language-switcher__flag"
                              src="https://cdn-cf.cms.flixbus.com/drupal-assets/flags/de.min.svg"
                              alt="" />
                           Deutsch
@@ -1044,11 +1058,11 @@
                   
               
                   
-                    <li class="flix-language-switcher-popup__item">
-                      <a class="flix-language-switcher-popup__link"
+                    <li class="flix-language-switcher__item">
+                      <a class="flix-language-switcher__link"
                          id="" lang="de-at"
                          onclick="emitLanguageSwitcherClickEvent(&#34;de-at&#34;)" href="//www.flixbus.at/?noRedirect=true">
-                        <img class="flix-language-switcher__flag"
+                        <img class="flix-flag flix-language-switcher__flag"
                              src="https://cdn-cf.cms.flixbus.com/drupal-assets/flags/de-at.min.svg"
                              alt="" />
                           Deutsch
@@ -1057,11 +1071,11 @@
                   
               
                   
-                    <li class="flix-language-switcher-popup__item">
-                      <a class="flix-language-switcher-popup__link"
+                    <li class="flix-language-switcher__item">
+                      <a class="flix-language-switcher__link"
                          id="" lang="de-ch"
                          onclick="emitLanguageSwitcherClickEvent(&#34;de-ch&#34;)" href="//www.flixbus.ch/?noRedirect=true">
-                        <img class="flix-language-switcher__flag"
+                        <img class="flix-flag flix-language-switcher__flag"
                              src="https://cdn-cf.cms.flixbus.com/drupal-assets/flags/de-ch.min.svg"
                              alt="" />
                           Deutsch
@@ -1070,11 +1084,11 @@
                   
               
                   
-                    <li class="flix-language-switcher-popup__item">
-                      <a class="flix-language-switcher-popup__link"
+                    <li class="flix-language-switcher__item">
+                      <a class="flix-language-switcher__link"
                          id="" lang="et"
                          onclick="emitLanguageSwitcherClickEvent(&#34;et&#34;)" href="//www.flixbus.ee/?noRedirect=true">
-                        <img class="flix-language-switcher__flag"
+                        <img class="flix-flag flix-language-switcher__flag"
                              src="https://cdn-cf.cms.flixbus.com/drupal-assets/flags/et.min.svg"
                              alt="" />
                           Eesti
@@ -1083,11 +1097,11 @@
                   
               
                   
-                    <li class="flix-language-switcher-popup__item">
-                      <a class="flix-language-switcher-popup__link"
+                    <li class="flix-language-switcher__item">
+                      <a class="flix-language-switcher__link"
                          id="" lang="el"
                          onclick="emitLanguageSwitcherClickEvent(&#34;el&#34;)" href="//www.flixbus.gr/?noRedirect=true">
-                        <img class="flix-language-switcher__flag"
+                        <img class="flix-flag flix-language-switcher__flag"
                              src="https://cdn-cf.cms.flixbus.com/drupal-assets/flags/el.min.svg"
                              alt="" />
                           Ελληνικά
@@ -1096,11 +1110,11 @@
                   
               
                   
-                    <li class="flix-language-switcher-popup__item">
-                      <a class="flix-language-switcher-popup__link"
+                    <li class="flix-language-switcher__item">
+                      <a class="flix-language-switcher__link"
                          id="" lang="en-us"
                          onclick="emitLanguageSwitcherClickEvent(&#34;en-us&#34;)" href="//www.flixbus.com/?noRedirect=true">
-                        <img class="flix-language-switcher__flag"
+                        <img class="flix-flag flix-language-switcher__flag"
                              src="https://cdn-cf.cms.flixbus.com/drupal-assets/flags/en-us.min.svg"
                              alt="" />
                           English
@@ -1109,11 +1123,11 @@
                   
               
                   
-                    <li class="flix-language-switcher-popup__item">
-                      <a class="flix-language-switcher-popup__link"
+                    <li class="flix-language-switcher__item">
+                      <a class="flix-language-switcher__link"
                          id="" lang="en-gb"
                          onclick="emitLanguageSwitcherClickEvent(&#34;en-gb&#34;)" href="//www.flixbus.co.uk/?noRedirect=true">
-                        <img class="flix-language-switcher__flag"
+                        <img class="flix-flag flix-language-switcher__flag"
                              src="https://cdn-cf.cms.flixbus.com/drupal-assets/flags/en-gb.min.svg"
                              alt="" />
                           English
@@ -1122,12 +1136,12 @@
                   
               
                   
-                    <li class="flix-language-switcher-popup__item">
-                      <a class="flix-language-switcher-popup__link"
+                    <li class="flix-language-switcher__item">
+                      <a class="flix-language-switcher__link"
                          id=""
                          onclick="emitLanguageSwitcherClickEvent(&#34;en-gl&#34;)" href="//global.flixbus.com/?noRedirect=true"
                          aria-current="true">
-                        <img class="flix-language-switcher__flag"
+                        <img class="flix-flag flix-language-switcher__flag"
                              src="https://cdn-cf.cms.flixbus.com/drupal-assets/flags/en-gl.min.svg"
                              alt="" />
                           English
@@ -1136,11 +1150,11 @@
                   
               
                   
-                    <li class="flix-language-switcher-popup__item">
-                      <a class="flix-language-switcher-popup__link"
+                    <li class="flix-language-switcher__item">
+                      <a class="flix-language-switcher__link"
                          id="" lang="en-ca"
                          onclick="emitLanguageSwitcherClickEvent(&#34;en-ca&#34;)" href="//www.flixbus.ca/?noRedirect=true">
-                        <img class="flix-language-switcher__flag"
+                        <img class="flix-flag flix-language-switcher__flag"
                              src="https://cdn-cf.cms.flixbus.com/drupal-assets/flags/en-ca.min.svg"
                              alt="" />
                           English
@@ -1149,11 +1163,11 @@
                   
               
                   
-                    <li class="flix-language-switcher-popup__item">
-                      <a class="flix-language-switcher-popup__link"
+                    <li class="flix-language-switcher__item">
+                      <a class="flix-language-switcher__link"
                          id="" lang="en-in"
                          onclick="emitLanguageSwitcherClickEvent(&#34;en-in&#34;)" href="//www.flixbus.in/?noRedirect=true">
-                        <img class="flix-language-switcher__flag"
+                        <img class="flix-flag flix-language-switcher__flag"
                              src="https://cdn-cf.cms.flixbus.com/drupal-assets/flags/en-in.min.svg"
                              alt="" />
                           English
@@ -1162,11 +1176,11 @@
                   
               
                   
-                    <li class="flix-language-switcher-popup__item">
-                      <a class="flix-language-switcher-popup__link"
+                    <li class="flix-language-switcher__item">
+                      <a class="flix-language-switcher__link"
                          id="" lang="en-ie"
                          onclick="emitLanguageSwitcherClickEvent(&#34;en-ie&#34;)" href="//www.flixbus.ie/?noRedirect=true">
-                        <img class="flix-language-switcher__flag"
+                        <img class="flix-flag flix-language-switcher__flag"
                              src="https://cdn-cf.cms.flixbus.com/drupal-assets/flags/en-ie.min.svg"
                              alt="" />
                           English
@@ -1175,11 +1189,11 @@
                   
               
                   
-                    <li class="flix-language-switcher-popup__item">
-                      <a class="flix-language-switcher-popup__link"
+                    <li class="flix-language-switcher__item">
+                      <a class="flix-language-switcher__link"
                          id="" lang="en-au"
                          onclick="emitLanguageSwitcherClickEvent(&#34;en-au&#34;)" href="//www.flixbus.com.au/?noRedirect=true">
-                        <img class="flix-language-switcher__flag"
+                        <img class="flix-flag flix-language-switcher__flag"
                              src="https://cdn-cf.cms.flixbus.com/drupal-assets/flags/en-au.min.svg"
                              alt="" />
                           English
@@ -1188,11 +1202,11 @@
                   
               
                   
-                    <li class="flix-language-switcher-popup__item">
-                      <a class="flix-language-switcher-popup__link"
+                    <li class="flix-language-switcher__item">
+                      <a class="flix-language-switcher__link"
                          id="" lang="es-es"
                          onclick="emitLanguageSwitcherClickEvent(&#34;es&#34;)" href="//www.flixbus.es/?noRedirect=true">
-                        <img class="flix-language-switcher__flag"
+                        <img class="flix-flag flix-language-switcher__flag"
                              src="https://cdn-cf.cms.flixbus.com/drupal-assets/flags/es.min.svg"
                              alt="" />
                           Español
@@ -1201,11 +1215,11 @@
                   
               
                   
-                    <li class="flix-language-switcher-popup__item">
-                      <a class="flix-language-switcher-popup__link"
+                    <li class="flix-language-switcher__item">
+                      <a class="flix-language-switcher__link"
                          id="" lang="es-us"
                          onclick="emitLanguageSwitcherClickEvent(&#34;es-us&#34;)" href="//es-us.flixbus.com/?noRedirect=true">
-                        <img class="flix-language-switcher__flag"
+                        <img class="flix-flag flix-language-switcher__flag"
                              src="https://cdn-cf.cms.flixbus.com/drupal-assets/flags/es-us.min.svg"
                              alt="" />
                           Español
@@ -1214,11 +1228,11 @@
                   
               
                   
-                    <li class="flix-language-switcher-popup__item">
-                      <a class="flix-language-switcher-popup__link"
+                    <li class="flix-language-switcher__item">
+                      <a class="flix-language-switcher__link"
                          id="" lang="es-cl"
                          onclick="emitLanguageSwitcherClickEvent(&#34;es-cl&#34;)" href="//www.flixbus.cl/?noRedirect=true">
-                        <img class="flix-language-switcher__flag"
+                        <img class="flix-flag flix-language-switcher__flag"
                              src="https://cdn-cf.cms.flixbus.com/drupal-assets/flags/es-cl.min.svg"
                              alt="" />
                           Español
@@ -1227,11 +1241,11 @@
                   
               
                   
-                    <li class="flix-language-switcher-popup__item">
-                      <a class="flix-language-switcher-popup__link"
+                    <li class="flix-language-switcher__item">
+                      <a class="flix-language-switcher__link"
                          id="" lang="es-mx"
                          onclick="emitLanguageSwitcherClickEvent(&#34;es-mx&#34;)" href="//www.flix.com.mx/?noRedirect=true">
-                        <img class="flix-language-switcher__flag"
+                        <img class="flix-flag flix-language-switcher__flag"
                              src="https://cdn-cf.cms.flixbus.com/drupal-assets/flags/es-mx.min.svg"
                              alt="" />
                           Español
@@ -1240,11 +1254,11 @@
                   
               
                   
-                    <li class="flix-language-switcher-popup__item">
-                      <a class="flix-language-switcher-popup__link"
+                    <li class="flix-language-switcher__item">
+                      <a class="flix-language-switcher__link"
                          id="" lang="fr"
                          onclick="emitLanguageSwitcherClickEvent(&#34;fr&#34;)" href="//www.flixbus.fr/?noRedirect=true">
-                        <img class="flix-language-switcher__flag"
+                        <img class="flix-flag flix-language-switcher__flag"
                              src="https://cdn-cf.cms.flixbus.com/drupal-assets/flags/fr.min.svg"
                              alt="" />
                           Français
@@ -1253,11 +1267,11 @@
                   
               
                   
-                    <li class="flix-language-switcher-popup__item">
-                      <a class="flix-language-switcher-popup__link"
+                    <li class="flix-language-switcher__item">
+                      <a class="flix-language-switcher__link"
                          id="" lang="fr-be"
                          onclick="emitLanguageSwitcherClickEvent(&#34;fr-be&#34;)" href="//fr.flixbus.be/?noRedirect=true">
-                        <img class="flix-language-switcher__flag"
+                        <img class="flix-flag flix-language-switcher__flag"
                              src="https://cdn-cf.cms.flixbus.com/drupal-assets/flags/fr-be.min.svg"
                              alt="" />
                           Français
@@ -1266,11 +1280,11 @@
                   
               
                   
-                    <li class="flix-language-switcher-popup__item">
-                      <a class="flix-language-switcher-popup__link"
+                    <li class="flix-language-switcher__item">
+                      <a class="flix-language-switcher__link"
                          id="" lang="fr-ch"
                          onclick="emitLanguageSwitcherClickEvent(&#34;fr-ch&#34;)" href="//fr.flixbus.ch/?noRedirect=true">
-                        <img class="flix-language-switcher__flag"
+                        <img class="flix-flag flix-language-switcher__flag"
                              src="https://cdn-cf.cms.flixbus.com/drupal-assets/flags/fr-ch.min.svg"
                              alt="" />
                           Français
@@ -1279,11 +1293,11 @@
                   
               
                   
-                    <li class="flix-language-switcher-popup__item">
-                      <a class="flix-language-switcher-popup__link"
+                    <li class="flix-language-switcher__item">
+                      <a class="flix-language-switcher__link"
                          id="" lang="fr-ca"
                          onclick="emitLanguageSwitcherClickEvent(&#34;fr-ca&#34;)" href="//fr.flixbus.ca/?noRedirect=true">
-                        <img class="flix-language-switcher__flag"
+                        <img class="flix-flag flix-language-switcher__flag"
                              src="https://cdn-cf.cms.flixbus.com/drupal-assets/flags/fr-ca.min.svg"
                              alt="" />
                           Français
@@ -1292,11 +1306,11 @@
                   
               
                   
-                    <li class="flix-language-switcher-popup__item">
-                      <a class="flix-language-switcher-popup__link"
+                    <li class="flix-language-switcher__item">
+                      <a class="flix-language-switcher__link"
                          id="" lang="hr"
                          onclick="emitLanguageSwitcherClickEvent(&#34;hr&#34;)" href="//www.flixbus.hr/?noRedirect=true">
-                        <img class="flix-language-switcher__flag"
+                        <img class="flix-flag flix-language-switcher__flag"
                              src="https://cdn-cf.cms.flixbus.com/drupal-assets/flags/hr.min.svg"
                              alt="" />
                           Hrvatski
@@ -1305,11 +1319,11 @@
                   
               
                   
-                    <li class="flix-language-switcher-popup__item">
-                      <a class="flix-language-switcher-popup__link"
+                    <li class="flix-language-switcher__item">
+                      <a class="flix-language-switcher__link"
                          id="" lang="it"
                          onclick="emitLanguageSwitcherClickEvent(&#34;it&#34;)" href="//www.flixbus.it/?noRedirect=true">
-                        <img class="flix-language-switcher__flag"
+                        <img class="flix-flag flix-language-switcher__flag"
                              src="https://cdn-cf.cms.flixbus.com/drupal-assets/flags/it.min.svg"
                              alt="" />
                           Italiano
@@ -1318,11 +1332,11 @@
                   
               
                   
-                    <li class="flix-language-switcher-popup__item">
-                      <a class="flix-language-switcher-popup__link"
+                    <li class="flix-language-switcher__item">
+                      <a class="flix-language-switcher__link"
                          id="" lang="it-ch"
                          onclick="emitLanguageSwitcherClickEvent(&#34;it-ch&#34;)" href="//it.flixbus.ch/?noRedirect=true">
-                        <img class="flix-language-switcher__flag"
+                        <img class="flix-flag flix-language-switcher__flag"
                              src="https://cdn-cf.cms.flixbus.com/drupal-assets/flags/it-ch.min.svg"
                              alt="" />
                           Italiano
@@ -1331,11 +1345,11 @@
                   
               
                   
-                    <li class="flix-language-switcher-popup__item">
-                      <a class="flix-language-switcher-popup__link"
+                    <li class="flix-language-switcher__item">
+                      <a class="flix-language-switcher__link"
                          id="" lang="lv"
                          onclick="emitLanguageSwitcherClickEvent(&#34;lv&#34;)" href="//www.flixbus.lv/?noRedirect=true">
-                        <img class="flix-language-switcher__flag"
+                        <img class="flix-flag flix-language-switcher__flag"
                              src="https://cdn-cf.cms.flixbus.com/drupal-assets/flags/lv.min.svg"
                              alt="" />
                           Latviešu
@@ -1344,11 +1358,11 @@
                   
               
                   
-                    <li class="flix-language-switcher-popup__item">
-                      <a class="flix-language-switcher-popup__link"
+                    <li class="flix-language-switcher__item">
+                      <a class="flix-language-switcher__link"
                          id="" lang="lt"
                          onclick="emitLanguageSwitcherClickEvent(&#34;lt&#34;)" href="//www.flixbus.lt/?noRedirect=true">
-                        <img class="flix-language-switcher__flag"
+                        <img class="flix-flag flix-language-switcher__flag"
                              src="https://cdn-cf.cms.flixbus.com/drupal-assets/flags/lt.min.svg"
                              alt="" />
                           Lietuvių
@@ -1357,11 +1371,11 @@
                   
               
                   
-                    <li class="flix-language-switcher-popup__item">
-                      <a class="flix-language-switcher-popup__link"
+                    <li class="flix-language-switcher__item">
+                      <a class="flix-language-switcher__link"
                          id="" lang="hu"
                          onclick="emitLanguageSwitcherClickEvent(&#34;hu&#34;)" href="//www.flixbus.hu/?noRedirect=true">
-                        <img class="flix-language-switcher__flag"
+                        <img class="flix-flag flix-language-switcher__flag"
                              src="https://cdn-cf.cms.flixbus.com/drupal-assets/flags/hu.min.svg"
                              alt="" />
                           Magyar
@@ -1370,11 +1384,11 @@
                   
               
                   
-                    <li class="flix-language-switcher-popup__item">
-                      <a class="flix-language-switcher-popup__link"
+                    <li class="flix-language-switcher__item">
+                      <a class="flix-language-switcher__link"
                          id="" lang="mk"
                          onclick="emitLanguageSwitcherClickEvent(&#34;mk&#34;)" href="//www.flixbus.mk/?noRedirect=true">
-                        <img class="flix-language-switcher__flag"
+                        <img class="flix-flag flix-language-switcher__flag"
                              src="https://cdn-cf.cms.flixbus.com/drupal-assets/flags/mk.min.svg"
                              alt="" />
                           Македонски
@@ -1383,11 +1397,11 @@
                   
               
                   
-                    <li class="flix-language-switcher-popup__item">
-                      <a class="flix-language-switcher-popup__link"
+                    <li class="flix-language-switcher__item">
+                      <a class="flix-language-switcher__link"
                          id="" lang="nl"
                          onclick="emitLanguageSwitcherClickEvent(&#34;nl&#34;)" href="//www.flixbus.nl/?noRedirect=true">
-                        <img class="flix-language-switcher__flag"
+                        <img class="flix-flag flix-language-switcher__flag"
                              src="https://cdn-cf.cms.flixbus.com/drupal-assets/flags/nl.min.svg"
                              alt="" />
                           Nederlands
@@ -1396,11 +1410,11 @@
                   
               
                   
-                    <li class="flix-language-switcher-popup__item">
-                      <a class="flix-language-switcher-popup__link"
+                    <li class="flix-language-switcher__item">
+                      <a class="flix-language-switcher__link"
                          id="" lang="nl-be"
                          onclick="emitLanguageSwitcherClickEvent(&#34;nl-be&#34;)" href="//www.flixbus.be/?noRedirect=true">
-                        <img class="flix-language-switcher__flag"
+                        <img class="flix-flag flix-language-switcher__flag"
                              src="https://cdn-cf.cms.flixbus.com/drupal-assets/flags/nl-be.min.svg"
                              alt="" />
                           Nederlands
@@ -1409,11 +1423,11 @@
                   
               
                   
-                    <li class="flix-language-switcher-popup__item">
-                      <a class="flix-language-switcher-popup__link"
+                    <li class="flix-language-switcher__item">
+                      <a class="flix-language-switcher__link"
                          id="" lang="nb"
                          onclick="emitLanguageSwitcherClickEvent(&#34;nb&#34;)" href="//www.flixbus.no/?noRedirect=true">
-                        <img class="flix-language-switcher__flag"
+                        <img class="flix-flag flix-language-switcher__flag"
                              src="https://cdn-cf.cms.flixbus.com/drupal-assets/flags/nb.min.svg"
                              alt="" />
                           Norsk (bokmål)
@@ -1422,11 +1436,11 @@
                   
               
                   
-                    <li class="flix-language-switcher-popup__item">
-                      <a class="flix-language-switcher-popup__link"
+                    <li class="flix-language-switcher__item">
+                      <a class="flix-language-switcher__link"
                          id="" lang="pl"
                          onclick="emitLanguageSwitcherClickEvent(&#34;pl&#34;)" href="//www.flixbus.pl/?noRedirect=true">
-                        <img class="flix-language-switcher__flag"
+                        <img class="flix-flag flix-language-switcher__flag"
                              src="https://cdn-cf.cms.flixbus.com/drupal-assets/flags/pl.min.svg"
                              alt="" />
                           Polski
@@ -1435,11 +1449,11 @@
                   
               
                   
-                    <li class="flix-language-switcher-popup__item">
-                      <a class="flix-language-switcher-popup__link"
+                    <li class="flix-language-switcher__item">
+                      <a class="flix-language-switcher__link"
                          id="" lang="pt-pt"
                          onclick="emitLanguageSwitcherClickEvent(&#34;pt-pt&#34;)" href="//www.flixbus.pt/?noRedirect=true">
-                        <img class="flix-language-switcher__flag"
+                        <img class="flix-flag flix-language-switcher__flag"
                              src="https://cdn-cf.cms.flixbus.com/drupal-assets/flags/pt-pt.min.svg"
                              alt="" />
                           Português
@@ -1448,11 +1462,11 @@
                   
               
                   
-                    <li class="flix-language-switcher-popup__item">
-                      <a class="flix-language-switcher-popup__link"
+                    <li class="flix-language-switcher__item">
+                      <a class="flix-language-switcher__link"
                          id="" lang="pt-br"
                          onclick="emitLanguageSwitcherClickEvent(&#34;pt-br&#34;)" href="//www.flixbus.com.br/?noRedirect=true">
-                        <img class="flix-language-switcher__flag"
+                        <img class="flix-flag flix-language-switcher__flag"
                              src="https://cdn-cf.cms.flixbus.com/drupal-assets/flags/pt-br.min.svg"
                              alt="" />
                           Português
@@ -1461,11 +1475,11 @@
                   
               
                   
-                    <li class="flix-language-switcher-popup__item">
-                      <a class="flix-language-switcher-popup__link"
+                    <li class="flix-language-switcher__item">
+                      <a class="flix-language-switcher__link"
                          id="" lang="ro"
                          onclick="emitLanguageSwitcherClickEvent(&#34;ro&#34;)" href="//www.flixbus.ro/?noRedirect=true">
-                        <img class="flix-language-switcher__flag"
+                        <img class="flix-flag flix-language-switcher__flag"
                              src="https://cdn-cf.cms.flixbus.com/drupal-assets/flags/ro.min.svg"
                              alt="" />
                           Română
@@ -1474,11 +1488,11 @@
                   
               
                   
-                    <li class="flix-language-switcher-popup__item">
-                      <a class="flix-language-switcher-popup__link"
+                    <li class="flix-language-switcher__item">
+                      <a class="flix-language-switcher__link"
                          id="" lang="sq"
                          onclick="emitLanguageSwitcherClickEvent(&#34;sq&#34;)" href="//www.flixbus.al/?noRedirect=true">
-                        <img class="flix-language-switcher__flag"
+                        <img class="flix-flag flix-language-switcher__flag"
                              src="https://cdn-cf.cms.flixbus.com/drupal-assets/flags/sq.min.svg"
                              alt="" />
                           Shqip
@@ -1487,11 +1501,11 @@
                   
               
                   
-                    <li class="flix-language-switcher-popup__item">
-                      <a class="flix-language-switcher-popup__link"
+                    <li class="flix-language-switcher__item">
+                      <a class="flix-language-switcher__link"
                          id="" lang="sk"
                          onclick="emitLanguageSwitcherClickEvent(&#34;sk&#34;)" href="//www.flixbus.sk/?noRedirect=true">
-                        <img class="flix-language-switcher__flag"
+                        <img class="flix-flag flix-language-switcher__flag"
                              src="https://cdn-cf.cms.flixbus.com/drupal-assets/flags/sk.min.svg"
                              alt="" />
                           Slovenčina
@@ -1500,11 +1514,11 @@
                   
               
                   
-                    <li class="flix-language-switcher-popup__item">
-                      <a class="flix-language-switcher-popup__link"
+                    <li class="flix-language-switcher__item">
+                      <a class="flix-language-switcher__link"
                          id="" lang="sl"
                          onclick="emitLanguageSwitcherClickEvent(&#34;sl&#34;)" href="//www.flixbus.si/?noRedirect=true">
-                        <img class="flix-language-switcher__flag"
+                        <img class="flix-flag flix-language-switcher__flag"
                              src="https://cdn-cf.cms.flixbus.com/drupal-assets/flags/sl.min.svg"
                              alt="" />
                           Slovenščina
@@ -1513,11 +1527,11 @@
                   
               
                   
-                    <li class="flix-language-switcher-popup__item">
-                      <a class="flix-language-switcher-popup__link"
+                    <li class="flix-language-switcher__item">
+                      <a class="flix-language-switcher__link"
                          id="" lang="sr"
                          onclick="emitLanguageSwitcherClickEvent(&#34;sr&#34;)" href="//www.flixbus.rs/?noRedirect=true">
-                        <img class="flix-language-switcher__flag"
+                        <img class="flix-flag flix-language-switcher__flag"
                              src="https://cdn-cf.cms.flixbus.com/drupal-assets/flags/sr.min.svg"
                              alt="" />
                           Srpski
@@ -1526,11 +1540,11 @@
                   
               
                   
-                    <li class="flix-language-switcher-popup__item">
-                      <a class="flix-language-switcher-popup__link"
+                    <li class="flix-language-switcher__item">
+                      <a class="flix-language-switcher__link"
                          id="" lang="fi"
                          onclick="emitLanguageSwitcherClickEvent(&#34;fi&#34;)" href="//www.flixbus.fi/?noRedirect=true">
-                        <img class="flix-language-switcher__flag"
+                        <img class="flix-flag flix-language-switcher__flag"
                              src="https://cdn-cf.cms.flixbus.com/drupal-assets/flags/fi.min.svg"
                              alt="" />
                           Suomi
@@ -1539,11 +1553,11 @@
                   
               
                   
-                    <li class="flix-language-switcher-popup__item">
-                      <a class="flix-language-switcher-popup__link"
+                    <li class="flix-language-switcher__item">
+                      <a class="flix-language-switcher__link"
                          id="" lang="sv"
                          onclick="emitLanguageSwitcherClickEvent(&#34;sv&#34;)" href="//www.flixbus.se/?noRedirect=true">
-                        <img class="flix-language-switcher__flag"
+                        <img class="flix-flag flix-language-switcher__flag"
                              src="https://cdn-cf.cms.flixbus.com/drupal-assets/flags/sv.min.svg"
                              alt="" />
                           Svenska
@@ -1552,11 +1566,11 @@
                   
               
                   
-                    <li class="flix-language-switcher-popup__item">
-                      <a class="flix-language-switcher-popup__link"
+                    <li class="flix-language-switcher__item">
+                      <a class="flix-language-switcher__link"
                          id="" lang="tr"
                          onclick="emitLanguageSwitcherClickEvent(&#34;tr&#34;)" href="//www.flixbus.com.tr/?noRedirect=true">
-                        <img class="flix-language-switcher__flag"
+                        <img class="flix-flag flix-language-switcher__flag"
                              src="https://cdn-cf.cms.flixbus.com/drupal-assets/flags/tr.min.svg"
                              alt="" />
                           Türkçe
@@ -1565,11 +1579,11 @@
                   
               
                   
-                    <li class="flix-language-switcher-popup__item">
-                      <a class="flix-language-switcher-popup__link"
+                    <li class="flix-language-switcher__item">
+                      <a class="flix-language-switcher__link"
                          id="" lang="uk"
                          onclick="emitLanguageSwitcherClickEvent(&#34;uk&#34;)" href="//www.flixbus.ua/?noRedirect=true">
-                        <img class="flix-language-switcher__flag"
+                        <img class="flix-flag flix-language-switcher__flag"
                              src="https://cdn-cf.cms.flixbus.com/drupal-assets/flags/uk.min.svg"
                              alt="" />
                           Українська
@@ -1578,11 +1592,11 @@
                   
               
                   
-                    <li class="flix-language-switcher-popup__item">
-                      <a class="flix-language-switcher-popup__link"
+                    <li class="flix-language-switcher__item">
+                      <a class="flix-language-switcher__link"
                          id="last-focusable-item" lang="zh-us"
                          onclick="emitLanguageSwitcherClickEvent(&#34;zh-us&#34;)" href="//zh-us.flixbus.com/?noRedirect=true">
-                        <img class="flix-language-switcher__flag"
+                        <img class="flix-flag flix-language-switcher__flag"
                              src="https://cdn-cf.cms.flixbus.com/drupal-assets/flags/zh-us.min.svg"
                              alt="" />
                           中文
@@ -1637,32 +1651,32 @@
       </h1>
       <div class="hero-search-mask-wrapper">
           
-<div id="search-mask-placeholder" class="sm-placeholder-container flix-grid sm-placeholder-container--with-checkbox" data-testid="search-mask-placeholder" aria-hidden="true">
-  <div class="flix-col-12 flix-col-6-sm sm-placeholder-padding-0">
-    <div class="flix-grid sm-placeholder-padding-0">
-      <div class="flix-col-6 sm-placeholder-padding-0">
+<div id="search-mask-placeholder" class="sm-placeholder-container flix-legacy-grid sm-placeholder-container--with-checkbox" data-testid="search-mask-placeholder" aria-hidden="true">
+  <div class="flix-legacy-col-12 flix-legacy-col-6-sm sm-placeholder-padding-0">
+    <div class="flix-legacy-grid sm-placeholder-padding-0">
+      <div class="flix-legacy-col-6 sm-placeholder-padding-0">
         <span class="flix-skeleton flix-skeleton--h-lg"></span>
       </div>
-      <div class="flix-col-6">
+      <div class="flix-legacy-col-6">
         <span class="flix-skeleton flix-skeleton--h-lg"></span>
       </div>
     </div>
   </div>
-  <div class="flix-col-12 flix-grid sm-placeholder-padding-0">
-    <div class="flix-col-12 flix-col-5-xl sm-placeholder-padding-0">
+  <div class="flix-legacy-col-12 flix-legacy-grid sm-placeholder-padding-0">
+    <div class="flix-legacy-col-12 flix-legacy-col-5-xl sm-placeholder-padding-0">
       <span class="flix-skeleton flix-skeleton--h-lg"></span>
     </div>
-    <div class="flix-grid flix-col-7-xl">
-      <div class="flix-col-12 flix-col-4-sm flix-col-6-xl">
+    <div class="flix-legacy-grid flix-legacy-col-7-xl">
+      <div class="flix-legacy-col-12 flix-legacy-col-4-sm flix-legacy-col-6-xl">
         <span class="flix-skeleton flix-skeleton--h-lg"></span>
       </div>
-      <div class="flix-col-12 flix-col-4-sm flix-col-3-xl">
+      <div class="flix-legacy-col-12 flix-legacy-col-4-sm flix-legacy-col-3-xl">
         <span class="flix-skeleton flix-skeleton--h-lg"></span>
       </div>
-      <div class="flix-col-12 flix-col-4-sm flix-col-3-xl">
+      <div class="flix-legacy-col-12 flix-legacy-col-4-sm flix-legacy-col-3-xl">
         <span class="flix-skeleton flix-skeleton--h-lg"></span>
       </div>
-      <div class="flix-col-12 flix-hidden-sm flix-hidden-md flix-hidden-lg flix-hidden-xl">
+      <div class="flix-legacy-col-12 flix-hidden-sm flix-hidden-md flix-hidden-lg flix-hidden-xl">
         <span class="flix-skeleton flix-skeleton--h-lg"></span>
       </div>
     </div>
@@ -1679,7 +1693,7 @@
 
 
 
-<div class="inline-promo-wrapper fxp_2082-1">
+<div class="inline-promo-wrapper ">
     <div id="inline-promo-placeholder" class="inline-promo-placeholder">
         <div class="inline-promo-placeholder-inner">
             <span class="flix-skeleton inline-promo-placeholder-icon"></span>
@@ -1688,13 +1702,6 @@
     </div>
     <div id="inline-promo-component"></div>
 </div>
-
-<script>
-  if (window.Aetna && window.Aetna["webc_fxp_2082"] ===  1 ) {
-    document.documentElement.classList.add("homepage-has-inline-promo");
-    document.documentElement.classList.add("homepage-has-promo-before-usps");
-  }
-</script>
 
 
 
@@ -1710,8 +1717,8 @@
 
 
 
-<div class="promo-communication-wrapper   ">
-<div id="promo-communication-placeholder-MainContentPromoArea" class="promo-placeholder-container promo-placeholder-container--MainContentPromoArea" data-testid="promo-communication-placeholder-MainContentPromoArea">
+<div class="card-promo-wrapper   ">
+<div id="card-promo-placeholder-MainContentPromoArea" class="promo-placeholder-container promo-placeholder-container--MainContentPromoArea" data-testid="card-promo-placeholder-MainContentPromoArea">
     <div class="promo-placeholder-card">
         <div class="promo-placeholder-card-inner">
             <div class="promo-placeholder-content">
@@ -1740,7 +1747,7 @@
         </div>
     </div>
 </div>
-<div id="promo-communication-component-MainContentPromoArea" data-testid="promo-communication-container-MainContentPromoArea"></div>
+<div id="card-promo-component-MainContentPromoArea" data-testid="card-promo-container-MainContentPromoArea"></div>
 </div>
 
 
@@ -1757,6 +1764,63 @@
 
 
     
+    <div class="fxp_2034-1">
+        
+<section id="featured-connections" class="featured-connections featured-connections--empty" aria-live="polite">
+  
+<div id="featured-connections-placeholder" class="featured-connections-placeholder" data-testid="featured-connections-placeholder" aria-hidden="true">
+  <div class="flix-page-container">
+    <div class="flix-skeleton featured-connections-placeholder__title"></div>
+
+    <div class="featured-connections-placeholder__cards">
+      <div class="featured-connections-placeholder__card">
+        <div class="flix-skeleton flix-skeleton--rect featured-connections-placeholder__image"></div>
+        <div class="flix-skeleton featured-connections-placeholder__city"></div>
+        <div class="flix-skeleton featured-connections-placeholder__price"></div>
+      </div>
+
+      <div class="featured-connections-placeholder__card">
+        <div class="flix-skeleton flix-skeleton--rect featured-connections-placeholder__image"></div>
+        <div class="flix-skeleton featured-connections-placeholder__city"></div>
+        <div class="flix-skeleton featured-connections-placeholder__price"></div>
+      </div>
+
+      <div class="featured-connections-placeholder__card">
+        <div class="flix-skeleton flix-skeleton--rect featured-connections-placeholder__image"></div>
+        <div class="flix-skeleton featured-connections-placeholder__city"></div>
+        <div class="flix-skeleton featured-connections-placeholder__price"></div>
+      </div>
+
+      <div class="featured-connections-placeholder__card">
+        <div class="flix-skeleton flix-skeleton--rect featured-connections-placeholder__image"></div>
+        <div class="flix-skeleton featured-connections-placeholder__city"></div>
+        <div class="flix-skeleton featured-connections-placeholder__price"></div>
+      </div>
+    </div>
+
+    <div class="featured-connections-placeholder__actions">
+      <div class="flix-skeleton featured-connections-placeholder__button"></div>
+    </div>
+
+    <hr class="flix-divider featured-connections-placeholder__divider" />
+  </div>
+</div>
+
+  <div class="flix-page-container">
+    <h2 id="featured-connections-title" class="flix-h1 featured-connections__title"></h2>
+    <div id="featured-connections-container" class="featured-connections__cards"></div>
+    <div class="featured-connections__actions">
+      <a id="featured-connections-more-trips" class="flix-btn flix-btn--md" href="#" hidden>
+        <span id="featured-connections-more-trips-label"></span>
+        <flix-icon class="flix-btn__icon" name="arrow-right-l" size="4" aria-hidden="true"></flix-icon>
+      </a>
+    </div>
+    <hr class="flix-divider featured-connections__divider" />
+  </div>
+</section>
+
+    </div>
+
     
 
 
@@ -1804,7 +1868,8 @@
         <source media="(max-width: 767px)" srcset="https://cdn-cf.cms.flixbus.com/drupal-assets/card-banner/card-banner-background-mobile.avif" type="image/avif" />
         <source media="(max-width: 1199px)" srcset="https://cdn-cf.cms.flixbus.com/drupal-assets/card-banner/card-banner-background-tablet.avif" type="image/avif" />
         <source media="(min-width: 1200px)" srcset="https://cdn-cf.cms.flixbus.com/drupal-assets/card-banner/card-banner-background-desktop.avif" type="image/avif" />
-        <img src="https://cdn-cf.cms.flixbus.com/drupal-assets/card-banner/card-banner-background-desktop.avif" alt="" class="card-banner__bg" />
+        
+        <img src="https://cdn-cf.cms.flixbus.com/drupal-assets/card-banner/card-banner-background-desktop.avif" alt="" fetchpriority="high" class="card-banner__bg" />
     </picture>
 </div>
 
@@ -1873,7 +1938,7 @@
                     
                     <p class="card-banner__scan-text" onclick="event.stopPropagation(); emitCardBannerScanTextClickEvent()">Scan to download the App</p>
                 </div>
-                <div class="card-banner__bubble" onclick="event.stopPropagation(); emitCardBannerBubbleClickEvent(); window.location.href='';">
+                <div class="card-banner__bubble" onclick="event.stopPropagation(); emitCardBannerBubbleClickEvent(); window.location.href='https:\/\/flixbus.go.link\/booking?adj_adgroup=en\u0026adj_campaign=homepage_card_banner\u0026adj_creative=_utm_medium%3Dwebsite%26utm_source%3Dwebsite%26utm_campaign%3Dhomepage_card_banner.en._%26utm_content%3Den-gl.flixbus\u0026adj_fallback=https%3A%2F%2Fglobal.flixbus.com%2Fservice%2Fbus-app%3Futm_campaign%3Dhomepage_card_banner.en._%26utm_content%3Den-gl.flixbus%26utm_medium%3Dwebsite%26utm_source%3Dwebsite\u0026adj_t=1p6hdidv_1pcn5eps';">
                     <span class="card-banner__bubble-text">Trusted by 500&#43; million passengers</span>
                 </div>
             </div>
@@ -1889,10 +1954,10 @@
   <section class="usp-section" data-vo-hidden="false">
     <div class="flix-page-container">
       <div id="carousel-slides-overview" class="carousel-overview-slides-container">
-        <div class="carousel-overview-slides usp-container flix-grid flix-grid--gutter-4">
+        <div class="carousel-overview-slides usp-container flix-legacy-grid flix-legacy-grid--gutter-4">
             
                 
-                  <div class="carousel-overview-slide flix-col-12 flix-col-6-sm flix-col-3-xl">
+                  <div class="carousel-overview-slide flix-legacy-col-12 flix-legacy-col-6-sm flix-legacy-col-3-xl">
                     <div class="usp-item">
                       <div class="flix-icon-frame flix-icon-frame--highlight usp-icon-container">
                         <flix-icon name="location" size="5" aria-hidden="true" />
@@ -1909,7 +1974,7 @@
                     </div>
                   </div>
                 
-                  <div class="carousel-overview-slide flix-col-12 flix-col-6-sm flix-col-3-xl">
+                  <div class="carousel-overview-slide flix-legacy-col-12 flix-legacy-col-6-sm flix-legacy-col-3-xl">
                     <div class="usp-item">
                       <div class="flix-icon-frame flix-icon-frame--highlight usp-icon-container">
                         <flix-icon name="bus" size="5" aria-hidden="true" />
@@ -1926,7 +1991,7 @@
                     </div>
                   </div>
                 
-                  <div class="carousel-overview-slide flix-col-12 flix-col-6-sm flix-col-3-xl">
+                  <div class="carousel-overview-slide flix-legacy-col-12 flix-legacy-col-6-sm flix-legacy-col-3-xl">
                     <div class="usp-item">
                       <div class="flix-icon-frame flix-icon-frame--highlight usp-icon-container">
                         <flix-icon name="desktop-phone" size="5" aria-hidden="true" />
@@ -1943,7 +2008,7 @@
                     </div>
                   </div>
                 
-                  <div class="carousel-overview-slide flix-col-12 flix-col-6-sm flix-col-3-xl">
+                  <div class="carousel-overview-slide flix-legacy-col-12 flix-legacy-col-6-sm flix-legacy-col-3-xl">
                     <div class="usp-item">
                       <div class="flix-icon-frame flix-icon-frame--highlight usp-icon-container">
                         <flix-icon name="group" size="5" aria-hidden="true" />
@@ -1994,7 +2059,8 @@
         <source media="(max-width: 767px)" srcset="https://cdn-cf.cms.flixbus.com/drupal-assets/card-banner/card-banner-background-mobile.avif" type="image/avif" />
         <source media="(max-width: 1199px)" srcset="https://cdn-cf.cms.flixbus.com/drupal-assets/card-banner/card-banner-background-tablet.avif" type="image/avif" />
         <source media="(min-width: 1200px)" srcset="https://cdn-cf.cms.flixbus.com/drupal-assets/card-banner/card-banner-background-desktop.avif" type="image/avif" />
-        <img src="https://cdn-cf.cms.flixbus.com/drupal-assets/card-banner/card-banner-background-desktop.avif" alt="" class="card-banner__bg" />
+        
+        <img src="https://cdn-cf.cms.flixbus.com/drupal-assets/card-banner/card-banner-background-desktop.avif" alt="" fetchpriority="high" class="card-banner__bg" />
     </picture>
 </div>
 
@@ -2063,7 +2129,7 @@
                     
                     <p class="card-banner__scan-text" onclick="event.stopPropagation(); emitCardBannerScanTextClickEvent()">Scan to download the App</p>
                 </div>
-                <div class="card-banner__bubble" onclick="event.stopPropagation(); emitCardBannerBubbleClickEvent(); window.location.href='';">
+                <div class="card-banner__bubble" onclick="event.stopPropagation(); emitCardBannerBubbleClickEvent(); window.location.href='https:\/\/flixbus.go.link\/booking?adj_adgroup=en\u0026adj_campaign=homepage_card_banner\u0026adj_creative=_utm_medium%3Dwebsite%26utm_source%3Dwebsite%26utm_campaign%3Dhomepage_card_banner.en._%26utm_content%3Den-gl.flixbus\u0026adj_fallback=https%3A%2F%2Fglobal.flixbus.com%2Fservice%2Fbus-app%3Futm_campaign%3Dhomepage_card_banner.en._%26utm_content%3Den-gl.flixbus%26utm_medium%3Dwebsite%26utm_source%3Dwebsite\u0026adj_t=1p6hdidv_1pcn5eps';">
                     <span class="card-banner__bubble-text">Trusted by 500&#43; million passengers</span>
                 </div>
             </div>
@@ -2179,7 +2245,8 @@
         <source media="(max-width: 767px)" srcset="https://cdn-cf.cms.flixbus.com/drupal-assets/card-banner/card-banner-background-mobile.avif" type="image/avif" />
         <source media="(max-width: 1199px)" srcset="https://cdn-cf.cms.flixbus.com/drupal-assets/card-banner/card-banner-background-tablet.avif" type="image/avif" />
         <source media="(min-width: 1200px)" srcset="https://cdn-cf.cms.flixbus.com/drupal-assets/card-banner/card-banner-background-desktop.avif" type="image/avif" />
-        <img src="https://cdn-cf.cms.flixbus.com/drupal-assets/card-banner/card-banner-background-desktop.avif" alt="" class="card-banner__bg" />
+        
+        <img src="https://cdn-cf.cms.flixbus.com/drupal-assets/card-banner/card-banner-background-desktop.avif" alt="" fetchpriority="high" class="card-banner__bg" />
     </picture>
 </div>
 
@@ -2248,7 +2315,7 @@
                     
                     <p class="card-banner__scan-text" onclick="event.stopPropagation(); emitCardBannerScanTextClickEvent()">Scan to download the App</p>
                 </div>
-                <div class="card-banner__bubble" onclick="event.stopPropagation(); emitCardBannerBubbleClickEvent(); window.location.href='';">
+                <div class="card-banner__bubble" onclick="event.stopPropagation(); emitCardBannerBubbleClickEvent(); window.location.href='https:\/\/flixbus.go.link\/booking?adj_adgroup=en\u0026adj_campaign=homepage_card_banner\u0026adj_creative=_utm_medium%3Dwebsite%26utm_source%3Dwebsite%26utm_campaign%3Dhomepage_card_banner.en._%26utm_content%3Den-gl.flixbus\u0026adj_fallback=https%3A%2F%2Fglobal.flixbus.com%2Fservice%2Fbus-app%3Futm_campaign%3Dhomepage_card_banner.en._%26utm_content%3Den-gl.flixbus%26utm_medium%3Dwebsite%26utm_source%3Dwebsite\u0026adj_t=1p6hdidv_1pcn5eps';">
                     <span class="card-banner__bubble-text">Trusted by 500&#43; million passengers</span>
                 </div>
             </div>
@@ -2345,7 +2412,7 @@
           
           
             <button type="button" class="flix-btn flix-btn--link"
-              onclick="handleContainerExpand(&#34;Continue reading&#34;, &#34;Collapse&#34;, 'rich-text')"
+              onclick="handleRichTextExpand(this, &#34;Continue reading&#34;, &#34;Collapse&#34;)"
             >            
               <span id="rich-text-button-text" class="flix-btn__text">Continue reading</span>
               <span id="rich-text-arrow-icons" class="arrow-down">
@@ -2392,85 +2459,85 @@
             <hr class="flix-divider popular-routes-divider">
             <div class="flix-nav-horizontal__panel flix-space-2-top popular-routes-content-container" id="cities-panel">
               <div class="flix-box">
-                 <ul class="popular-routes-content flix-grid">
+                 <ul class="popular-routes-content flix-legacy-grid">
                   
-                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
+                    <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
                       <a href="/bus/berlin" class="popular-routes-item">Berlin</a>
                     </li>
                   
-                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
+                    <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
                       <a href="/bus/munich" class="popular-routes-item">Munich</a>
                     </li>
                   
-                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
+                    <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
                       <a href="/bus/hamburg" class="popular-routes-item">Hamburg</a>
                     </li>
                   
-                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
+                    <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
                       <a href="/bus/frankfurt" class="popular-routes-item">Frankfurt</a>
                     </li>
                   
-                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
+                    <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
                       <a href="/bus/cologne" class="popular-routes-item">Cologne</a>
                     </li>
                   
-                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
+                    <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
                       <a href="/bus/stuttgart" class="popular-routes-item">Stuttgart</a>
                     </li>
                   
-                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
+                    <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
                       <a href="/bus/dusseldorf" class="popular-routes-item">Düsseldorf</a>
                     </li>
                   
-                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
+                    <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
                       <a href="/bus/dresden" class="popular-routes-item">Dresden</a>
                     </li>
                   
-                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
+                    <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
                       <a href="/bus/hanover" class="popular-routes-item">Hanover</a>
                     </li>
                   
-                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
+                    <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
                       <a href="/bus/leipzig" class="popular-routes-item">Leipzig</a>
                     </li>
                   
-                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
+                    <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
                       <a href="/bus/nuremberg" class="popular-routes-item">Nuremberg</a>
                     </li>
                   
-                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
+                    <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
                       <a href="/bus/dortmund" class="popular-routes-item">Dortmund</a>
                     </li>
                   
-                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
+                    <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
                       <a href="/bus/freiburg-ibr" class="popular-routes-item">Freiburg (i.Br.)</a>
                     </li>
                   
-                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
+                    <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
                       <a href="/bus/karlsruhe" class="popular-routes-item">Karlsruhe</a>
                     </li>
                   
-                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
+                    <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
                       <a href="/bus/frankfurt-airport-fra" class="popular-routes-item">Frankfurt Airport</a>
                     </li>
                   
-                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
+                    <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
                       <a href="/bus/bremen" class="popular-routes-item">Bremen</a>
                     </li>
                   
-                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
+                    <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
                       <a href="/bus/mannheim" class="popular-routes-item">Mannheim</a>
                     </li>
                   
-                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
+                    <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
                       <a href="/bus/heidelberg" class="popular-routes-item">Heidelberg</a>
                     </li>
                   
-                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
+                    <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
                       <a href="/bus/essen" class="popular-routes-item">Essen</a>
                     </li>
                   
-                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
+                    <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
                       <a href="/bus/berlin-airport" class="popular-routes-item">Berlin Airport</a>
                     </li>
                   
@@ -2479,85 +2546,85 @@
             </div>
             <div class="flix-nav-horizontal__panel flix-space-2-top popular-routes-content-container" id="connections-panel">
               <div class="flix-box">
-                <ul class="popular-routes-content flix-grid">
+                <ul class="popular-routes-content flix-legacy-grid">
                   
-                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
+                    <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
                       <a href="/bus-routes/bus-hamburg-berlin" class="popular-routes-item">Hamburg - Berlin</a>
                     </li>
                   
-                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
+                    <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
                       <a href="/bus-routes/bus-berlin-hamburg" class="popular-routes-item">Berlin - Hamburg</a>
                     </li>
                   
-                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
+                    <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
                       <a href="/bus-routes/bus-berlin-leipzig" class="popular-routes-item">Berlin - Leipzig</a>
                     </li>
                   
-                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
+                    <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
                       <a href="/bus-routes/bus-leipzig-berlin" class="popular-routes-item">Leipzig - Berlin</a>
                     </li>
                   
-                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
+                    <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
                       <a href="/bus-routes/bus-hanover-berlin" class="popular-routes-item">Hanover - Berlin</a>
                     </li>
                   
-                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
+                    <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
                       <a href="/bus-routes/bus-berlin-cologne" class="popular-routes-item">Berlin - Cologne</a>
                     </li>
                   
-                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
+                    <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
                       <a href="/bus-routes/bus-frankfurt-berlin" class="popular-routes-item">Frankfurt - Berlin</a>
                     </li>
                   
-                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
+                    <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
                       <a href="/bus-routes/bus-berlin-hanover" class="popular-routes-item">Berlin - Hanover</a>
                     </li>
                   
-                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
+                    <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
                       <a href="/bus-routes/bus-cologne-berlin" class="popular-routes-item">Cologne - Berlin</a>
                     </li>
                   
-                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
+                    <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
                       <a href="/bus-routes/bus-berlin-frankfurt" class="popular-routes-item">Berlin - Frankfurt</a>
                     </li>
                   
-                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
+                    <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
                       <a href="/bus-routes/bus-berlin-dresden" class="popular-routes-item">Berlin - Dresden</a>
                     </li>
                   
-                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
+                    <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
                       <a href="/bus-routes/bus-dresden-berlin" class="popular-routes-item">Dresden - Berlin</a>
                     </li>
                   
-                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
+                    <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
                       <a href="/bus-routes/bus-berlin-prague" class="popular-routes-item">Berlin - Prague</a>
                     </li>
                   
-                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
+                    <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
                       <a href="/bus-routes/bus-berlin-stuttgart" class="popular-routes-item">Berlin - Stuttgart</a>
                     </li>
                   
-                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
+                    <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
                       <a href="/bus-routes/bus-prague-berlin" class="popular-routes-item">Prague - Berlin</a>
                     </li>
                   
-                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
+                    <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
                       <a href="/bus-routes/bus-stuttgart-berlin" class="popular-routes-item">Stuttgart - Berlin</a>
                     </li>
                   
-                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
+                    <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
                       <a href="/bus-routes/bus-munich-zurich" class="popular-routes-item">Munich - Zurich</a>
                     </li>
                   
-                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
+                    <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
                       <a href="/bus-routes/bus-berlin-dusseldorf" class="popular-routes-item">Berlin - Düsseldorf</a>
                     </li>
                   
-                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
+                    <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
                       <a href="/bus-routes/bus-zurich-munich" class="popular-routes-item">Zurich - Munich</a>
                     </li>
                   
-                    <li class="flix-col-12 flix-col-6-sm  flix-col-3-md">
+                    <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
                       <a href="/bus-routes/bus-dortmund-berlin" class="popular-routes-item">Dortmund - Berlin</a>
                     </li>
                   
@@ -2584,6 +2651,52 @@
       </section>
     
 
+    
+      
+
+
+
+<div class="app-promo-rail fxp_2102-1">
+  <section class="app-promo" id="app-promo">
+    <h4 class="app-promo__title">Digital ticket &amp; Live tracking</h4>
+    <p class="app-promo__subtitle">Discover the FlixBus app</p>
+    <a class="app-promo__visual" id="app-promo-qr-link" href="https://flixbus.go.link/booking?adj_adgroup=en&amp;adj_campaign=homepage_floatingcard&amp;adj_creative=_utm_medium%3Dwebsite%26utm_source%3Dwebsite%26utm_campaign%3Dhomepage_floatingcard.en._%26utm_content%3Den-gl.flixbus&amp;adj_fallback=https%3A%2F%2Fglobal.flixbus.com%2Fservice%2Fbus-app%3Futm_campaign%3Dhomepage_floatingcard.en._%26utm_content%3Den-gl.flixbus%26utm_medium%3Dwebsite%26utm_source%3Dwebsite&amp;adj_t=1p6hdidv_1pcn5eps"
+       aria-label="Download the FlixBus app">
+      <img
+        class="app-promo__phone"
+        src=""
+        data-lazyload-src="https://cdn-cf.cms.flixbus.com/drupal-assets/app-promo/app-promo-phone.avif"
+        alt=""
+        aria-hidden="true"
+      />
+      <span class="app-promo__qr-code" role="img" aria-label="QR code — scan to download the app">
+        <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAJYAAACWAQMAAAAGz+OhAAAABlBMVEX///8AAABVwtN+AAACi0lEQVR42pTWve3FqBIF8IMIyOwGkGiDjJZwA/5owG6JjDaQaMDOCJDPE/f/VptsMEY3+gXoMsMcjP9aG7sizwCVeHss5C22CLskrMYdiQf5JESxLbRr6KoVRbua+uT+yVRzR+6K+mI9Phq8fuFIffuivliEnQJvdMWCYFWC3Db2Jdt/f/+vqcjGMvqhVdSnqfs/vZPY3LpKUI1M9UoA3C42lTGnPgUAPfoytw82s0/QF/vk9ZU1U4fYVpQt8/W8g359PTJ3sancZ9bX6KPxINk+2ISiMq9mETD5Ds9bbAvJ3KPBZOyvltzlljRbXw2P1lc45iq3yfDJ+vR2hX7RN/YoN1+PVmLoky9b0y8gt5luNxbGLtRHc7spcptQVoONmqko1tN/sIV8vTuNY+tzs0C9xTbnMqeiGqIZrZuThdg28jZuD44kkyY/2JKxNH2arjKiqbfpcpuzjYFkX1pHsMu441KLBqvXT/7Lg3HpotjmzCfX1ztmi9/GENuWsMLdnrepNzB5RLHFvwihZnNPsmq0TmoboZI70VWrzPVoNoptMm6HPj2PjJl9S/UWm8rjHK9xZ7CA/s2l1IC+ND4c46VaQdC32CZfVt9hxt+5UaIvENuW7BSwsIyNk97NB1OsV+Nt9MH65Pok7mKbTP+9FUUli1CZbfxgIwnW8IvPwIOA3MAr9yXxhbtG87mLbW5YjY2oF/uKgr93VWZbcmRXzbHpG3b7vfFCA7Casnqr0rjpt+lRbBs7TFHZLqnMrS+53mKLsNFUtq5GJJQ4MltqC+2In3GaMZQb6/7FtlSWVJ/MPdTXWHyyxj24I/Ul64uQWxz1thhfTGOzMStiG/UL9SB3uIscYSY24frfAL5kaGkBw4piAAAAAElFTkSuQmCC">
+      </span>
+    </a>
+    <button type="button" class="flix-btn flix-btn--primary flix-btn--square flix-btn--sm app-promo__close" id="app-promo-close"
+            aria-label="Close">
+      <flix-icon class="flix-btn__icon" name="close" size="4" aria-hidden="true"></flix-icon>
+    </button>
+  </section>
+  <button type="button" class="flix-btn flix-btn--primary app-promo-pill" id="app-promo-pill">
+    <flix-icon class="flix-btn__icon" name="phone" size="4" aria-hidden="true"></flix-icon>
+    Continue in app
+  </button>
+</div>
+
+<script>
+  (function () {
+    if (document.cookie.split(';').some(function (c) { return c.trim() === 'homepage_app_promo_dismissed=1'; })) {
+      var appPromoRail = document.querySelector('.app-promo-rail');
+      if (appPromoRail) {
+        appPromoRail.classList.add('app-promo-rail--collapsed');
+      }
+    }
+  })();
+</script>
+
+
+    
   </main>
   
   <footer class="footer-container" id="footer" role="contentinfo">
@@ -2594,9 +2707,9 @@
  
   <div class="flix-page-container">
     <div class="footer-sizer footer-sizer--first">
-      <div class="flix-grid">
+      <div class="flix-legacy-grid">
           
-            <div class="flix-col-12 flix-col-6-sm flix-col-3-xl">
+            <div class="flix-legacy-col-12 flix-legacy-col-6-sm flix-legacy-col-3-xl">
               <div class="flix-footer-nav">
                 <h3 class="flix-footer-nav__title">
                   <button class="footer-btn-nav" type="button" aria-expanded="false" style="cursor: auto;">Bus Travel</button>
@@ -2661,7 +2774,7 @@
               </div>
             </div>
           
-            <div class="flix-col-12 flix-col-6-sm flix-col-3-xl">
+            <div class="flix-legacy-col-12 flix-legacy-col-6-sm flix-legacy-col-3-xl">
               <div class="flix-footer-nav">
                 <h3 class="flix-footer-nav__title">
                   <button class="footer-btn-nav" type="button" aria-expanded="false" style="cursor: auto;">Discover</button>
@@ -2744,7 +2857,7 @@
               </div>
             </div>
           
-            <div class="flix-col-12 flix-col-6-sm flix-col-3-xl">
+            <div class="flix-legacy-col-12 flix-legacy-col-6-sm flix-legacy-col-3-xl">
               <div class="flix-footer-nav">
                 <h3 class="flix-footer-nav__title">
                   <button class="footer-btn-nav" type="button" aria-expanded="false" style="cursor: auto;">FlixBus</button>
@@ -2836,7 +2949,7 @@
               </div>
             </div>
           
-            <div class="flix-col-12 flix-col-6-sm flix-col-3-xl">
+            <div class="flix-legacy-col-12 flix-legacy-col-6-sm flix-legacy-col-3-xl">
               <div class="flix-footer-nav">
                 <h3 class="flix-footer-nav__title">
                   <button class="footer-btn-nav" type="button" aria-expanded="false" style="cursor: auto;">Customer Service</button>
@@ -2912,7 +3025,7 @@
 
     <div class="flix-page-container">
       <div class="footer-sizer">
-        <div class="flix-grid footer-social">
+        <div class="flix-legacy-grid footer-social">
         
           <div>
         
@@ -3027,8 +3140,8 @@
   <div class="flix-page-container">
     <hr class="flix-divider" />
     <div class=" footer-sizer">
-      <div class="flix-grid">
-        <div class="flix-col-12">
+      <div class="flix-legacy-grid">
+        <div class="flix-legacy-col-12">
           <div class="footer-legal-links">
             <div class="footer-legal-privacy">
                 
@@ -3124,7 +3237,7 @@
 <script defer async type="module" src="https://honeycomb-icons.hive.flixbus.com/9.0.0/flix-icons/flix-icons.esm.js"></script>
 <script defer async type="nomodule" src="https://honeycomb-icons.hive.flixbus.com/9.0.0/flix-icons/flix-icons.js"></script>
 
-<script src="https://cdn-cf.cms.flixbus.com/drupal-assets/flix-home-assets/main.1dc95c.js"></script>
+<script src="https://cdn-cf.cms.flixbus.com/drupal-assets/flix-home-assets/main.7e968d.js"></script>
 <script>
   injectSearchMask(
    "en",
@@ -3138,20 +3251,42 @@
 <script>
   injectReact("prod");
 
-  
+  var featuredConnectionsArgs = [
+    {"a11y_main_nav_close":"","a11y_main_nav_open":"","a11y_skip_to_main_content":"Skip to main content","app_banner_adjust_link_a":"https://app.adjust.com/tifdj2_54x6uoe?campaign=SmartAppBanner\u0026adgroup=com\u0026creative=V1\u0026deep_link=flixbus%3A%2F%2Fbooking%3Fwt_mc%3D.com.FlixBus.website.smartappbanner.v1.com.ad%26wt_cc1%3D%26utm_source%3Dsmartappbanner%26utm_medium%3Dwebsite%26utm_campaign%3Dv1.com.%26utm_content%3Dcom.FlixBus\u0026fallback=https://global.flixbus.com/service/bus-app","app_banner_adjust_link_b":"https://app.adjust.com/tifdj2_54x6uoe?campaign=SmartAppBanner\u0026adgroup=com\u0026creative=V2\u0026deep_link=flixbus%3A%2F%2Fbooking%3Fwt_mc%3D.com.FlixBus.website.smartappbanner.v2.com.ad%26wt_cc1%3D%26utm_source%3Dsmartappbanner%26utm_medium%3Dwebsite%26utm_campaign%3Dv2.com.%26utm_content%3Dcom.FlixBus\u0026fallback=https://global.flixbus.com/service/bus-app","app_banner_continue_using_mobile_site":"Continue using mobile website","app_banner_download":"Install","app_banner_headline":"FlixBus: Book Cheap Bus Tickets","app_banner_open_in_app":"Open in app","app_banner_ratings":"197,336 ratings","arrival_city_label":"to","arrival_city_placeholder":"Enter an arrival city","bus_keyword":"Bus","card_banner_always_in_the_know_text":"Always in-the-know","card_banner_book_trips_text":"Book trips","card_banner_bubble_text":"Trusted by 500+ million passengers","card_banner_download_label":"Scan to download the App","card_banner_subtitle":"Discover the FlixBus app","card_banner_title":"Digital ticket \u0026 Live tracking","card_banner_track_trip_text":"Track your trip","card_banner_your_tickets_text":"Your tickets","city_input_no_results":"No results found","click_here":"Click here","close":"Close","connection_map_teaser_description":"","connection_map_teaser_link_href":"https://global.flixbus.com/bus-routes","connection_map_teaser_link_text":"Explore the map","connection_map_teaser_title":"Discover all destinations","cookie_box_text":"By using our services, you agree to our use of cookies. \u003ca href=\"https://global.flixbus.com/privacy-policy\"\u003eClick here\u003c/a\u003e for more information.","count_visible_connection_plural":"%_a_% of %_b_% connections visible","count_visible_connection_singular":"%_a_% of %_b_% connection visible","count_visible_connections_subline":"Move the map to see more cities!","count_visible_destinations":"%_a_% of 3000+ destinations visible","d9_read_more":"Read more","departure_city_label":"from","departure_city_placeholder":"Enter a departure city","disclaimer_onboard_services":"Onboard services are subject to availability","distance_unit":"km","error_message_body":"Please refresh the page.","error_message_button":"Ok","error_message_title":"Oopsie, something went wrong","exmap_mobile_passenger":"Passenger","exmap_mobile_passengers":"Passengers","exploration_map_hide_prices":"Hide Prices","exploration_map_price_disclaimer":"Please note that these are average prices. Actual prices may differ depending on various factors, such as date, time, etc.","exploration_map_service_fee":"Service fee not included","exploration_map_show_prices":"Show Prices","exploration_map_under_price":"Under {{ price }}","featured_connection_cta_btn_text":"See all trips","featured_connection_title":"Discover from {city}","footer_az_index_byline":"All cities:","footer_social_apps_byline":"","footer_social_media_byline":"Flix on:","from_price":"from %_a_%","geo_location_overlay_text":"This website is in {{current_language}}. Would you like to switch to the {{suggested_language}} version?","homepage_breadcrumb":"Home","long_term_info_box_content":"","long_term_info_box_link":"","lp_redesign_app_banner_qr_code_title":"Scan to download the App","lp_redesign_app_banner_subtitle_one":"Get live updates with push notifications and track your trip in real time.","lp_redesign_app_banner_subtitle_two":"All of your travel details in one place.","lp_redesign_app_banner_title":"Get the app and travel with ease of mind","lp_redesign_app_banner_toast_subtitle":"arriving in 3 mins.","lp_redesign_app_banner_toast_title":"Get ready!","lp_redesign_bus_amenities_cta_btn_text":"More on our service","lp_redesign_bus_amenities_cta_href":"https://global.flixbus.com/service","lp_redesign_bus_amenities_cta_text":"First time travelling with us?","lp_redesign_bus_amenities_description":"Available options you can find for a more comfortable trip:","lp_redesign_bus_amenities_title":"Best service on board","lp_redesign_exploration_map_banner_cta_btn_text":"Explore our Map","lp_redesign_exploration_map_banner_description":"Discover our travel map with over %s destinations worldwide.","lp_redesign_exploration_map_banner_title":"Where to next?","lp_redesign_social_proof_main_string":"Top travel choice for {numberOfPeople} in 2024.","lp_redesign_social_proof_secondary_string":"90+ million people","lp_redesign_trip_overview_avg_distance_label":"Avg. distance","lp_redesign_trip_overview_avg_duration_label":"Avg. trip duration","lp_redesign_trip_overview_avg_number_trips_label":"Avg. trips a day","lp_redesign_trip_overview_cheapest_trip_label":"Cheapest trip","lp_redesign_trip_overview_reachable_cities_label":"Directly reachable cities","lp_redesign_trip_overview_see_map_btn":"See map","lp_redesign_trip_overview_see_prices_btn":"See prices","lp_redesign_trip_overview_see_trips_button":"See trips","lp_redesign_trip_overview_station_label":"Stations available in","lp_redesign_trip_overview_subtitle":"Fast, easy, and affordable options from %s to %s","lp_redesign_trip_overview_title":"What to expect of your trip","lp_redesign_trip_overview_usps_customer_care_label":"Customer care","lp_redesign_trip_overview_usps_customer_care_text":"Effortless support from booking to travel","lp_redesign_trip_overview_usps_easy_label":"Easy to buy","lp_redesign_trip_overview_usps_easy_text":"Get your tickets online, in our App, or in a Flixshop","lp_redesign_trip_overview_usps_safe_payment_label":"Safe Payment","lp_redesign_trip_overview_usps_safe_payment_text":"Use Paypal, Google Pay, Visa \u0026 International cards","lp_trip_overview_min_distance_label":"Min. distance","lp_trip_overview_min_duration_label":"Min. trip duration","lp_trip_overview_min_number_trips_label":"Min. trips a day","lpg_bus_stops_Maps":"","lpg_bus_stops_byline":"Please note: your ticket will contain the most up-to-date address information.","lpg_bus_stops_google_maps":"View this address on Google Maps","lpg_bus_stops_title":"Bus stations and stops in","lpg_ccna_intro_bold":"This connection is currently unavailable.","lpg_city_country_hub_choose_city":"Choose your city","lpg_city_country_hub_choose_country":"Choose your country","lpg_city_country_hub_title":"Discover all destinations in","lpg_city_guide_title":"Things to do in","lpg_city_hub_title":"Discover all the destinations you can travel to","lpg_city_page_station_redirect":"To view more info about this station, visit our page","lpg_city_popular_connections_city_tab_title":"Cities","lpg_city_popular_connections_connection_tab_title":"Connections","lpg_city_popular_connections_headline":"Explore more bus trips in %_a_%","lpg_cna_city_suggestion":"We found some cool spots close to your selected destination","lpg_cna_intro_bold":"This destination is currently unavailable.","lpg_cna_intro_text":"Check out some suggestions below.","lpg_connection_popular_connections_headline":"Discover more popular bus connections","lpg_discover_more_title":"Discover more destinations","lpg_faq_headline":"Frequently asked questions","lpg_nearby_stops_title":"Bus stops nearby","lpg_popular_connections":"Popular connections","lpg_popular_routes_title":"Popular bus trips","lpg_popular_routes_view_more":"Show more bus routes","lpg_price":"","lpg_quickinfo_connections_count_title":"Directly reachable cities","lpg_quickinfo_country_title":"Country","lpg_quickinfo_direct_connection_description":"--- true\n","lpg_quickinfo_direct_connection_title":"Direct connection","lpg_quickinfo_distance_title":"Distance","lpg_quickinfo_environmentally_friendly_description":"--- true\n","lpg_quickinfo_environmentally_friendly_title":"Environmentally-friendly travel?","lpg_quickinfo_online_payment_description":"--- true\n","lpg_quickinfo_online_payment_title":"Online payment","lpg_quickinfo_stops_count_title":"Number of bus stops","lpg_quickinfo_title":"Quick information","lpg_read_more_collapse":"Collapse","lpg_read_more_expand":"Continue reading","lpg_search_city":"Search city","lpg_search_results_book_button":"Book now","lpg_search_results_find_more":"Find all dates and times for this route","lpg_search_results_hours":"hrs","lpg_search_results_occupancy_high":"Almost full","lpg_search_results_occupancy_low":"Mostly empty","lpg_search_results_occupancy_medium":"Half full","lpg_search_results_title":"Rides","lpg_station_page_location_type":"Location Type","lpg_station_page_phone_number":"Phone","lpg_station_page_ticketing_hours":"Ticketing Hours","lpg_station_page_title":"Location and direction details to bus station","lpg_toc_bus_stops":"Bus stops","lpg_toc_city_guide":"City guide","lpg_toc_faq":"FAQ","lpg_toc_popular_routes":"Popular bus trips","lpg_toc_title":"On this page","one_way_label":"one way","privacy_policy_link":"https://global.flixbus.com/privacy-policy","recently_searched_title":"Your recent search","round_trip_label":"round trip","rt_search_results_day_after_tomorrow_label":"Day after tomorrow","rt_search_results_no_trips":"There are no trips on this date...","rt_search_results_today_label":"Today","rt_search_results_tomorrow_label":"Tomorrow","rt_show_all_search_results":"See all results","search_button":"Show Trips","train_keyword":"Train"},
+    "flixbus",
+    "https:\/\/shop.global.flixbus.com",
+    "40d91e53-8646-11e6-9066-549f350fcb0c",
+    "prod"
+  ];
+
+  window.handleFeaturedConnectionsContentCards =
+    window.processDataForFeaturedConnections.apply(null, featuredConnectionsArgs);
+
+  window.renderFeaturedConnectionsFromApiBound = function () {
+    return window.renderFeaturedConnectionsFromApi.apply(null, featuredConnectionsArgs);
+  };
+
+  if (window.resolveVariantConfig()) {
+    window.showFeaturedConnectionsLoading();
+    if (!(typeof window.getRecentCityId === 'function' && window.getRecentCityId())) {
+      window.renderFeaturedConnectionsFromApiBound();
+    }
+  }
 
   
 
   
+
   
-  if (window.Aetna && window.Aetna["webc_fxp_2082"] ===  1 ) {
+  
+  {
     injectReactComponent(
       "InlinePromo",
       "inline-promo-component",
       {
         project: "flixbus",
         containerId: "inline-promo-component",
-        card: {"title":"Bring your bike on your next trip.","cta":{"text":"View details","url":"https://global.flixbus.com/service/bike-travel"},"isStrongPromo":true,"illustrationName":"bike"}
+        card: {"endDate":"2026-09-10T01:00:00+01:00","title":"FlixBus is running today. Allow more time to get to the station. The national strike in the Netherlands may affect local transport.","illustrationName":"info"}
       },
       "inline-promo-placeholder",
       "prod"
@@ -3161,8 +3296,8 @@
 
   
   
-  const promoCommunicationCards = [{"image":{"url":"https://cdn-cf.cms.flixbus.com/drupal-assets/promos/Bike_web.webp","alt":"Bring your bike on your next trip"},"abTest":{"flag":"webc_fxp_2082","variant":2},"title":"Bring your bike on your next trip","description":"Turn any trip into a cycling adventure.","cta":{"text":"View details","url":"https://global.flixbus.com/service/bike-travel"},"isStrongPromo":true},{"image":{"url":"https://cdn-cf.cms.flixbus.com/drupal-assets/promos/spk-2-77ad0b4530ff.webp","alt":"Bus in front of Museum in Berlin"},"title":"Explore Museum Island Berlin","description":"Great art, epic stories - just a ride away","cta":{"text":"Discover now","url":"https://www.flixtrain.com/museum-island-flix"}}];
-  const visiblePromoCommunicationCards = promoCommunicationCards
+  const cardPromoCards = [{"image":{"url":"https://cdn-cf.cms.flixbus.com/drupal-assets/promos/Bike_web.webp","alt":"Bring your bike on your next trip"},"abTest":{"flag":"webc_fxp_2082","variant":2},"title":"Bring your bike on your next trip","description":"Turn any trip into a cycling adventure.","cta":{"text":"View details","url":"https://global.flixbus.com/service/bike-travel"},"isStrongPromo":true},{"image":{"url":"https://cdn-cf.cms.flixbus.com/drupal-assets/promos/spk-2-77ad0b4530ff.webp","alt":"Bus in front of Museum in Berlin"},"title":"Explore Museum Island Berlin","description":"Great art, epic stories - just a ride away","cta":{"text":"Discover now","url":"https://www.flixtrain.com/museum-island-flix"}}];
+  const visibleCardPromoCards = cardPromoCards
     .filter(function(card) {
       if (!card.abTest) {
         return true;
@@ -3180,28 +3315,28 @@
       return visibleCard;
     });
 
-  if (visiblePromoCommunicationCards.length > 0) {
-    const promoCommunicationProps = {
+  if (visibleCardPromoCards.length > 0) {
+    const cardPromoProps = {
       project: "flixbus",
-      containerId: "promo-communication-component-MainContentPromoArea",
+      containerId: "card-promo-component-MainContentPromoArea",
       promoData: {
         placement: "MainContentPromoArea",
-        cards: visiblePromoCommunicationCards
+        cards: visibleCardPromoCards
       }
     };
     
 
     injectReactComponent(
-      "PromoCommunication",
-      "promo-communication-component-MainContentPromoArea",
-      promoCommunicationProps,
-      "promo-communication-placeholder-MainContentPromoArea",
+      "CardPromo",
+      "card-promo-component-MainContentPromoArea",
+      cardPromoProps,
+      "card-promo-placeholder-MainContentPromoArea",
       "prod"
     );
   } else {
-    const promoCommunicationWrapper = document.querySelector(".promo-communication-wrapper");
-    if (promoCommunicationWrapper) {
-      promoCommunicationWrapper.remove();
+    const cardPromoWrapper = document.querySelector(".card-promo-wrapper");
+    if (cardPromoWrapper) {
+      cardPromoWrapper.remove();
     }
   }
   
@@ -3217,10 +3352,10 @@
   toggleEmergencyBox();
   handleShowExpandButton()
 </script>
-<script src="https://honeycomb.flixbus.com/dist/15.3.3/js/classToggler.js"></script>
-<script src="https://honeycomb.flixbus.com/dist/15.3.3/js/dropdown.js"></script>
-<script src="https://honeycomb.flixbus.com/dist/15.3.3/js/popup.js"></script>
-<script src="https://honeycomb.flixbus.com/dist/15.3.3/js/tabs.js"></script>
+<script src="https://honeycomb.flixbus.com/dist/17.4.0/js/classToggler.js"></script>
+<script src="https://honeycomb.flixbus.com/dist/17.4.0/js/dropdown.js"></script>
+<script src="https://honeycomb.flixbus.com/dist/17.4.0/js/popup.js"></script>
+<script src="https://honeycomb.flixbus.com/dist/17.4.0/js/tabs.js"></script>
 <script>
   document.addEventListener("DOMContentLoaded", function() {
     dropdown.init();
@@ -3265,7 +3400,7 @@
         site: 'datadoghq.eu',
         service: 'fxt.webc.cms.gohome',
         sessionSampleRate: 7,
-        version: "production",
+        version: "v1-98-74",
         trackSessionAcrossSubdomains: true,
         useSecureSessionCookie: true,
         useCrossSiteSessionCookie: true,
@@ -3293,7 +3428,7 @@
           baseUrl: 'sdk.fra-02.braze.eu',
           sdkUrl: 'https://js.appboycdn.com/web-sdk/6.4/braze.core.min.js'
         };
-        function initBraze() {
+        async function initBraze() {
           try {
             const braze = window.braze;
             if (!braze) {
@@ -3314,38 +3449,70 @@
 
             const recentCityId = window.getRecentCityId();
             const currentDomain = window.location.hostname;
+            const currencyWeb = 'EUR';
+
             const extraData = {};
 
             if (recentCityId) {
               extraData.web_last_started_search_departure_uuid = recentCityId;
-            }
 
-            if (currentDomain) {
-              extraData.last_visited_domain = currentDomain;
+              if (currentDomain) {
+                extraData.last_visited_domain = currentDomain;
+              }
+
+              if (currencyWeb) {
+                extraData.currency_web = currencyWeb;
+              }
             }
 
             if (typeof window.sendSnowplowUserToBraze === 'function') {
               window.sendSnowplowUserToBraze(extraData);
             } else {
-              window.addEventListener('snowplowUserSenderReady', function() {
-                window.sendSnowplowUserToBraze(extraData);
-              }, { once: true });
+              await new Promise(function(resolve) {
+                window.addEventListener('snowplowUserSenderReady', function() {
+                  window.sendSnowplowUserToBraze(extraData);
+                  resolve();
+                }, { once: true });
+              });
+            }
+
+            const brazeLanguage = 'en';
+            if (brazeLanguage) {
+              braze.getUser().setLanguage(brazeLanguage);
             }
 
             
             braze.openSession();
             braze.requestImmediateDataFlush();
 
-            
-            braze.subscribeToContentCardsUpdates(function(contentCards) {
-              console.debug('Braze content cards updated:', contentCards);
-              if (typeof window.emitBrazeContentCardsReadyEvent === 'function') {
-                window.emitBrazeContentCardsReadyEvent(contentCards);
-              }
-            });
+            if (recentCityId) {
+              braze.subscribeToContentCardsUpdates(function(contentCards) {
+                if (typeof window.emitBrazeContentCardsReadyEvent === 'function') {
+                  window.emitBrazeContentCardsReadyEvent(contentCards);
+                }
+              });
 
-            
-            braze.requestContentCardsRefresh();
+              braze.requestContentCardsRefresh(
+                function(refreshedCards) {
+                  var contentCards = refreshedCards && refreshedCards.cards
+                    ? refreshedCards
+                    : (typeof braze.getCachedContentCards === 'function'
+                        ? braze.getCachedContentCards()
+                        : null);
+
+                  Promise.resolve(
+                    window.handleFeaturedConnectionsContentCards(contentCards)
+                  ).then(function(renderedFromBraze) {
+                    if (!renderedFromBraze) {
+                      window.renderFeaturedConnectionsFromApiBound();
+                    }
+                  });
+                },
+                function() {
+                  window.renderFeaturedConnectionsFromApiBound();
+                }
+              );
+            }
 
           } catch (error) {
             console.error('[Braze] Initialization error:', error);
