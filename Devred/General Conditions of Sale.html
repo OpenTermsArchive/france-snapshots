@@ -585,7 +585,7 @@ Shopify.SignInWithShop.User.recognized = false;</script>
     window.addEventListener('load', () => {}, false);
   }
 })();</script>
-<script id="__st">var __st={"a":96206586243,"offset":7200,"reqid":"423ccd17-b8f4-4e19-886b-ff888ddbda40-1791160645","pageurl":"devred.com\/pages\/cgv?_gl=1*1invahr*_up*MQ..*_ga*MTA3MTM1MDA5LjE3NzQ0MzI1MTk.*_ga_F4RDJ76M6K*czE3NzQ0MzI1MTkkbzEkZzAkdDE3NzQ0MzI1MTkkajYwJGwwJGgw","s":"pages-705875542403","u":"f9a15ad27528","p":"page","rtyp":"page","rid":705875542403};</script>
+<script id="__st">var __st={"a":96206586243,"offset":7200,"reqid":"e99de687-a94f-484e-bf3d-4069e9de676a-1791203880","pageurl":"devred.com\/pages\/cgv?_gl=1*1invahr*_up*MQ..*_ga*MTA3MTM1MDA5LjE3NzQ0MzI1MTk.*_ga_F4RDJ76M6K*czE3NzQ0MzI1MTkkbzEkZzAkdDE3NzQ0MzI1MTkkajYwJGwwJGgw","s":"pages-705875542403","u":"2ec9b7ee4800","p":"page","rtyp":"page","rid":705875542403};</script>
 <script>window.ShopifyPaypalV4VisibilityTracking = true;</script>
 <script id="captcha-bootstrap">!function(){'use strict';const t='contact',e='account',n='new_comment',o=[[t,t],['blogs',n],['comments',n],[t,'customer']],c=[[e,'customer_login'],[e,'guest_login'],[e,'recover_customer_password'],[e,'create_customer']],r=t=>t.map((([t,e])=>`form[action*='/${t}']:not([data-nocaptcha='true']) input[name='form_type'][value='${e}']`)).join(','),a=t=>()=>t?[...document.querySelectorAll(t)].map((t=>t.form)):[];function s(){const t=[...o],e=r(t);return a(e)}const i='password',u='form_key',d=['recaptcha-v3-token','g-recaptcha-response','h-captcha-response',i],f=()=>{try{return window.sessionStorage}catch{return}},m='__shopify_v',_=t=>t.elements[u];function p(t,e,n=!1){try{const o=window.sessionStorage,c=JSON.parse(o.getItem(e)),{data:r}=function(t){const{data:e,action:n}=t;return t[m]||n?{data:e,action:n}:{data:t,action:n}}(c);for(const[e,n]of Object.entries(r))t.elements[e]&&(t.elements[e].value=n);n&&o.removeItem(e)}catch(o){console.error('form repopulation failed',{error:o})}}const l='form_type',E='cptcha';function T(t){t.dataset[E]=!0}const w=window,h=w.document,L='Shopify',v='ce_forms',y='captcha';let A=!1;((t,e)=>{const n=(g='f06e6c50-85a8-45c8-87d0-21a2b65856fe',I='https://cdn.shopify.com/shopifycloud/storefront-forms-hcaptcha/ce_storefront_forms_captcha_hcaptcha.v1.5.3.iife.js',D={infoText:'Protégé par hCaptcha',privacyText:'Confidentialité',termsText:'Conditions'},(t,e,n)=>{const o=w[L][v],c=o.bindForm;if(c)return c(t,g,e,D).then(n);var r;o.q.push([[t,g,e,D],n]),r=I,A||(h.body.append(Object.assign(h.createElement('script'),{id:'captcha-provider',async:!0,src:r})),A=!0)});var g,I,D;w[L]=w[L]||{},w[L][v]=w[L][v]||{},w[L][v].q=[],w[L][y]=w[L][y]||{},w[L][y].protect=function(t,e){n(t,void 0,e),T(t)},Object.freeze(w[L][y]),function(t,e,n,w,h,L){const[v,y,A,g]=function(t,e,n){const i=e?o:[],u=t?c:[],d=[...i,...u],f=r(d),m=r(i),_=r(d.filter((([t,e])=>n.includes(e))));return[a(f),a(m),a(_),s()]}(w,h,L),I=t=>{const e=t.target;return e instanceof HTMLFormElement?e:e&&e.form},D=t=>v().includes(t);t.addEventListener('submit',(t=>{const e=I(t);if(!e)return;const n=D(e)&&!e.dataset.hcaptchaBound&&!e.dataset.recaptchaBound,o=_(e),c=g().includes(e)&&(!o||!o.value);(n||c)&&t.preventDefault(),c&&!n&&(function(t){try{if(!f())return;!function(t){const e=f();if(!e)return;const n=_(t);if(!n)return;const o=n.value;o&&e.removeItem(o)}(t);const e=Array.from(Array(32),(()=>Math.random().toString(36)[2])).join('');!function(t,e){_(t)||t.append(Object.assign(document.createElement('input'),{type:'hidden',name:u})),t.elements[u].value=e}(t,e),function(t,e){const n=f();if(!n)return;const o=[...t.querySelectorAll(`input[type='${i}']`)].map((({name:t})=>t)),c=[...d,...o],r={};for(const[a,s]of new FormData(t).entries())c.includes(a)||(r[a]=s);n.setItem(e,JSON.stringify({[m]:1,action:t.action,data:r}))}(t,e)}catch(e){console.error('failed to persist form',e)}}(e),e.submit())}));const S=(t,e)=>{t&&!t.dataset[E]&&(n(t,e.some((e=>e===t))),T(t))};for(const o of['focusin','change'])t.addEventListener(o,(t=>{const e=I(t);D(e)&&S(e,y())}));const B=e.get('form_key'),M=e.get(l),P=B&&M;t.addEventListener('DOMContentLoaded',(()=>{const t=y();if(P)for(const e of t)e.elements[l].value===M&&p(e,B);[...new Set([...A(),...v().filter((t=>'true'===t.dataset.shopifyCaptcha))])].forEach((e=>S(e,t)))}))}(h,new URLSearchParams(w.location.search),n,t,e,['guest_login'])})(!0,!0)}();</script>
 <script integrity="sha256-JjoPp5ZfB1sSAs5SQaol1x1GgvveM+BgmRzyDexInEQ=" data-source-attribution="shopify.loadfeatures" defer="defer" src="//devred.com/cdn/shopifycloud/storefront/assets/storefront/load_feature-1bd60354.js" crossorigin="anonymous"></script>
@@ -657,310 +657,7 @@ Shopify.SignInWithShop.User.recognized = false;</script>
 
   	<script type="text/javascript">(function(){(function(e,i,o){var n=document.createElement("link");n.rel="preconnect";n.as="script";var t=document.createElement("link");t.rel="dns-prefetch";t.as="script";var r=document.createElement("script");r.id="spcloader";r.type="text/javascript";r["async"]=true;r.charset="utf-8";window.didomiConfig=window.didomiConfig||{};window.didomiConfig.sdkPath=window.didomiConfig.sdkPath||o||"https://sdk.privacy-center.org/";const d=window.didomiConfig.sdkPath;var a=d+e+"/loader.js?target_type=notice&target="+i;if(window.didomiConfig&&window.didomiConfig.user){var c=window.didomiConfig.user;var s=c.country;var f=c.region;if(s){a=a+"&country="+s;if(f){a=a+"&region="+f}}}n.href=d;t.href=d;r.src=a;var m=document.getElementsByTagName("script")[0];m.parentNode.insertBefore(n,m);m.parentNode.insertBefore(t,m);m.parentNode.insertBefore(r,m)})("d6df97e7-c23b-42a5-800e-4f14988dc6e2","yqADRDQe")})();</script>
 
-<link href="//devred.com/cdn/shop/t/57/assets/theme.css?v=143957053335943372931790672413" rel="stylesheet" type="text/css" media="all"><!-- BEGIN app block: shopify://apps/iadvize-ai-shopping-assistant/blocks/iadvize-tag/97672039-3647-476c-9ad9-4f6daaa2d3e4 --><!-- START IADVIZE LIVECHAT -->
-
-<script>
-
-function loadIAdvize() {
-    if (window.__idzLoaded) return;
-    window.__idzLoaded = true;
-
-    function fromShopifyToIAdvizePageType(shopifyPageType) {
-      if (!shopifyPageType) {
-        return 'OTHER_PAGE';
-      }
-
-      switch (shopifyPageType.toLowerCase()) {
-        case 'index':
-        case 'home':
-          return 'HOME_PAGE';
-        case 'collection':
-          return 'CATEGORY_PAGE';
-        case 'product':
-          return 'PRODUCT_DETAIL_PAGE';
-        case 'cart':
-          return 'CART_PAGE';
-        case 'checkout':
-          return 'CHECKOUT_PAGE';
-        case 'account':
-          return 'ACCOUNT_PAGE';
-        case 'search':
-          return 'SEARCH_PAGE';
-        case 'signup':
-          return 'SIGNUP_PAGE';
-        case 'page':
-          return 'CONTENT_PAGE';
-        case 'info':
-          return 'INFO_PAGE';
-        default:
-          return 'OTHER_PAGE';
-      }
-    }
-
-    window.iAdvizeInterface = window.iAdvizeInterface || [];
-    window.iAdvizeInterface.config = {
-        sid: 10664
-    };
-
-    // Implement Add-to-Cart callback for iAdvize
-    window.iAdvizeInterface.push(function(iAdvize) {
-      const iadvizePageType = fromShopifyToIAdvizePageType(ShopifyAnalytics.meta.page.pageType);
-      const productId =  null ;
-      const customData = {};
-
-      if (iadvizePageType === 'PRODUCT_DETAIL_PAGE') {
-        customData.page_type = 'product';
-      }
-
-      if (iadvizePageType) {
-        customData.iadvize_page_type = iadvizePageType;
-      }
-
-      if (productId) {
-        customData.product_id = productId;
-      }
-
-      if (Object.keys(customData).length > 0) {
-        iAdvize.set('customData', customData);
-      }
-
-      // Listen for navigation events and update variant
-      iAdvize.on('tag:eventsChange', function(events) {
-        try {
-          if (Array.isArray(events)) {
-            events.forEach(function(event) {
-              if (event.type === 'data-pipeline' && event.event === 'visitor.navigate') {
-                // Visitor navigated, update variant
-                setTimeout(function() {
-                  const form = document.querySelector('form[id*="product"], [data-product-form]');
-                  const variantInput = form?.querySelector('input[name="id"][type="hidden"]');
-                  const currentVariant = variantInput?.value;
-
-                  if (currentVariant) {
-                    const existingCustomData = iAdvize.get('customData') || {};
-                    iAdvize.set('customData', {
-                      ...existingCustomData,
-                      product_id: currentVariant,
-                      iadvize_page_type: 'PRODUCT_DETAIL_PAGE'
-                    });
-                  }
-                }, 100);
-              }
-            });
-          }
-        } catch (e) {
-          // Ignore errors
-        }
-      });
-
-      // register product id watcher, to react to variant changes
-      (function initVariantObserver(){
-        try {
-          if (window.__idzVariantObserverStarted) return; // avoid duplicates
-          window.__idzVariantObserverStarted = true;
-
-          let lastVariantId = null;
-          const getVariantId = function() {
-            try {
-              const variantParam = document.location.search.replace('?', '').split('&').map((param) => param.split('=')).find(([key, value]) => {
-                return (key === 'variant' && value)
-              });
-
-              return (variantParam && variantParam[1]) || null;
-            } catch (e) {
-              return null;
-            }
-          };
-
-          const onChange = function(newId) {
-            // Update iAdvize custom data with the new product/variant id
-            iAdvize.set('customData', { product_id: newId });
-          };
-
-          setInterval(function(){
-            const current = getVariantId();
-            if (current !== lastVariantId && current != null) {
-              lastVariantId = current;
-              onChange(current);
-            }
-          }, 250);
-
-          // Trigger immediately if value already present
-          const initial = getVariantId();
-          if (initial != null) {
-            lastVariantId = initial;
-            onChange(initial);
-          }
-
-        } catch (e) {
-          // fail-safe: do nothing if observer setup fails
-        }
-      })();
-
-
-      // Register the callback for Add-to-Cart events
-      iAdvize.labs().onAddToCart((itemId) => {
-        return new Promise((resolve, reject) => {
-          // From here, the loading state is automatically enabled
-
-          // Use Shopify's Ajax API to add the item to cart
-          fetch('/cart/add.js', {
-            method: 'POST',
-            headers: {
-              'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-              id: itemId,
-              quantity: 1
-            })
-          })
-          .then(response => {
-            if (response.ok) {
-              return response.json();
-            }
-            throw new Error('Network response was not ok');
-          })
-          .then(data => {
-            // Successfully added to cart
-            resolve(true);
-          })
-          .catch(error => {
-            console.error('Error adding product to cart:', error);
-            resolve(false);
-          });
-        });
-      });
-    });
-    const script = document.createElement("script");
-    
-      script.src = "//halc.iadvize.com/iadvize.js";
-    
-    (function() {
-      if (document.body) {
-        document.body.append(script);
-        return;
-      }
-      const deadline = Date.now() + 10000;
-      const intervalId = setInterval(function() {
-        if (document.body) {
-          clearInterval(intervalId);
-          document.body.append(script);
-        } else if (Date.now() >= deadline) {
-          clearInterval(intervalId);
-        }
-      }, 250);
-    })();
-  }
-
-  (function() {
-    const region = 'FR';
-    const consentMode = 'never';
-    const hasConsentApi = !!(window.Shopify && window.Shopify.loadFeatures);
-    const POLL_INTERVAL_MS = 250;
-    const POLL_MAX_MS = 10000;
-
-    function checkConsent() {
-      const cp = window.Shopify && window.Shopify.customerPrivacy;
-      return cp && cp.preferencesProcessingAllowed() && cp.analyticsProcessingAllowed();
-    }
-
-    let pollIntervalId = null;
-    function stopPolling() {
-      if (pollIntervalId !== null) {
-        clearInterval(pollIntervalId);
-        pollIntervalId = null;
-      }
-    }
-
-    function grantAndLoad() {
-      stopPolling();
-      document.removeEventListener('visitorConsentCollected', onConsentCollected);
-      loadIAdvize();
-    }
-
-    // Registered upfront — catches CMP events even if loadFeatures callback fires
-    // late or not at all (known Shopify issue on some shops).
-    function onConsentCollected(event) {
-      if (event.detail.analyticsAllowed && event.detail.preferencesAllowed) {
-        grantAndLoad();
-      }
-    }
-    document.addEventListener('visitorConsentCollected', onConsentCollected);
-
-    // 'never': embed stays inert. iAdvize is loaded outside Shopify (CMP / tag
-    // manager), which is the source of truth. Do nothing.
-    if (consentMode === 'never') {
-      stopPolling();
-      document.removeEventListener('visitorConsentCollected', onConsentCollected);
-      return;
-    }
-
-    // 'always': load immediately, never gate on Shopify consent.
-    if (consentMode === 'always') {
-      grantAndLoad();
-      return;
-    }
-
-    // 'auto' (legacy default): US loads immediately; fail-open when the consent
-    // API is unavailable. Other regions fall through to the consent-required path.
-    if (consentMode === 'auto' && (region === 'US' || !hasConsentApi)) {
-      grantAndLoad();
-      return;
-    }
-
-    // 'sync', or non-US 'auto': require Shopify consent. Load now if already
-    // granted, otherwise rely on the upfront listener + poll + loadFeatures
-    // fallback below. 'sync' is fail-closed: if consent is never granted (or the
-    // API is absent) the tag does not fire — clients whose CMP doesn't sync with
-    // Shopify should use 'always' or 'never' instead.
-    if (checkConsent()) {
-      grantAndLoad();
-      return;
-    }
-
-    // Without Shopify's consent API there is nothing to poll or load. We reach
-    // here only in 'sync' mode (non-US 'auto' with no API loaded immediately
-    // above), so stay fail-closed: the tag does not fire. The upfront listener
-    // remains registered in case the CMP populates consent later.
-    if (!hasConsentApi) {
-      return;
-    }
-
-    // Poll customerPrivacy for late population (some CMPs write async without
-    // firing visitorConsentCollected, and Shopify.loadFeatures callback may
-    // never fire on affected shops). Listener stay active past deadline.
-    const deadline = Date.now() + POLL_MAX_MS;
-    pollIntervalId = setInterval(function() {
-      if (checkConsent()) {
-        grantAndLoad();
-        return;
-      }
-      if (Date.now() >= deadline) {
-        stopPolling();
-      }
-    }, POLL_INTERVAL_MS);
-
-    window.Shopify.loadFeatures(
-      [{ name: 'consent-tracking-api', version: '0.1' }],
-      function(error) {
-        if (error) {
-          // Fail open for legacy 'auto' (preserve prior behavior); stay
-          // fail-closed for 'sync'.
-          if (consentMode === 'auto') {
-            grantAndLoad();
-          }
-        } else if (checkConsent()) {
-          grantAndLoad();
-        }
-      }
-    );
-  })();
-</script>
-
-<!-- END IADVIZE LIVECHAT -->
-
-
-<!-- END app block --><!-- BEGIN app block: shopify://apps/regios-discounts/blocks/regios_add_to_cart_embed/dc1514bb-4830-4102-bffa-e8b300bac5bd --><script>
+<link href="//devred.com/cdn/shop/t/57/assets/theme.css?v=143957053335943372931790672413" rel="stylesheet" type="text/css" media="all"><!-- BEGIN app block: shopify://apps/regios-discounts/blocks/regios_add_to_cart_embed/dc1514bb-4830-4102-bffa-e8b300bac5bd --><script>
   window.RegiosDOPP_AddToCart = window.RegiosDOPP_AddToCart || {
     reloadInUnsupportedThemes: true,
     maxRetries: null,
@@ -1760,7 +1457,310 @@ function loadIAdvize() {
 </script>
 
 
-<!-- END app block --><script src="https://cdn.shopify.com/extensions/01a0fc09-fc82-7b7d-a2d5-0cf4cae65dc9/regios-automatic-discounts-1516/assets/regios_add_to_cart_embed.js" type="text/javascript" defer="defer"></script>
+<!-- END app block --><!-- BEGIN app block: shopify://apps/iadvize-ai-shopping-assistant/blocks/iadvize-tag/97672039-3647-476c-9ad9-4f6daaa2d3e4 --><!-- START IADVIZE LIVECHAT -->
+
+<script>
+
+function loadIAdvize() {
+    if (window.__idzLoaded) return;
+    window.__idzLoaded = true;
+
+    function fromShopifyToIAdvizePageType(shopifyPageType) {
+      if (!shopifyPageType) {
+        return 'OTHER_PAGE';
+      }
+
+      switch (shopifyPageType.toLowerCase()) {
+        case 'index':
+        case 'home':
+          return 'HOME_PAGE';
+        case 'collection':
+          return 'CATEGORY_PAGE';
+        case 'product':
+          return 'PRODUCT_DETAIL_PAGE';
+        case 'cart':
+          return 'CART_PAGE';
+        case 'checkout':
+          return 'CHECKOUT_PAGE';
+        case 'account':
+          return 'ACCOUNT_PAGE';
+        case 'search':
+          return 'SEARCH_PAGE';
+        case 'signup':
+          return 'SIGNUP_PAGE';
+        case 'page':
+          return 'CONTENT_PAGE';
+        case 'info':
+          return 'INFO_PAGE';
+        default:
+          return 'OTHER_PAGE';
+      }
+    }
+
+    window.iAdvizeInterface = window.iAdvizeInterface || [];
+    window.iAdvizeInterface.config = {
+        sid: 10664
+    };
+
+    // Implement Add-to-Cart callback for iAdvize
+    window.iAdvizeInterface.push(function(iAdvize) {
+      const iadvizePageType = fromShopifyToIAdvizePageType(ShopifyAnalytics.meta.page.pageType);
+      const productId =  null ;
+      const customData = {};
+
+      if (iadvizePageType === 'PRODUCT_DETAIL_PAGE') {
+        customData.page_type = 'product';
+      }
+
+      if (iadvizePageType) {
+        customData.iadvize_page_type = iadvizePageType;
+      }
+
+      if (productId) {
+        customData.product_id = productId;
+      }
+
+      if (Object.keys(customData).length > 0) {
+        iAdvize.set('customData', customData);
+      }
+
+      // Listen for navigation events and update variant
+      iAdvize.on('tag:eventsChange', function(events) {
+        try {
+          if (Array.isArray(events)) {
+            events.forEach(function(event) {
+              if (event.type === 'data-pipeline' && event.event === 'visitor.navigate') {
+                // Visitor navigated, update variant
+                setTimeout(function() {
+                  const form = document.querySelector('form[id*="product"], [data-product-form]');
+                  const variantInput = form?.querySelector('input[name="id"][type="hidden"]');
+                  const currentVariant = variantInput?.value;
+
+                  if (currentVariant) {
+                    const existingCustomData = iAdvize.get('customData') || {};
+                    iAdvize.set('customData', {
+                      ...existingCustomData,
+                      product_id: currentVariant,
+                      iadvize_page_type: 'PRODUCT_DETAIL_PAGE'
+                    });
+                  }
+                }, 100);
+              }
+            });
+          }
+        } catch (e) {
+          // Ignore errors
+        }
+      });
+
+      // register product id watcher, to react to variant changes
+      (function initVariantObserver(){
+        try {
+          if (window.__idzVariantObserverStarted) return; // avoid duplicates
+          window.__idzVariantObserverStarted = true;
+
+          let lastVariantId = null;
+          const getVariantId = function() {
+            try {
+              const variantParam = document.location.search.replace('?', '').split('&').map((param) => param.split('=')).find(([key, value]) => {
+                return (key === 'variant' && value)
+              });
+
+              return (variantParam && variantParam[1]) || null;
+            } catch (e) {
+              return null;
+            }
+          };
+
+          const onChange = function(newId) {
+            // Update iAdvize custom data with the new product/variant id
+            iAdvize.set('customData', { product_id: newId });
+          };
+
+          setInterval(function(){
+            const current = getVariantId();
+            if (current !== lastVariantId && current != null) {
+              lastVariantId = current;
+              onChange(current);
+            }
+          }, 250);
+
+          // Trigger immediately if value already present
+          const initial = getVariantId();
+          if (initial != null) {
+            lastVariantId = initial;
+            onChange(initial);
+          }
+
+        } catch (e) {
+          // fail-safe: do nothing if observer setup fails
+        }
+      })();
+
+
+      // Register the callback for Add-to-Cart events
+      iAdvize.labs().onAddToCart((itemId) => {
+        return new Promise((resolve, reject) => {
+          // From here, the loading state is automatically enabled
+
+          // Use Shopify's Ajax API to add the item to cart
+          fetch('/cart/add.js', {
+            method: 'POST',
+            headers: {
+              'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+              id: itemId,
+              quantity: 1
+            })
+          })
+          .then(response => {
+            if (response.ok) {
+              return response.json();
+            }
+            throw new Error('Network response was not ok');
+          })
+          .then(data => {
+            // Successfully added to cart
+            resolve(true);
+          })
+          .catch(error => {
+            console.error('Error adding product to cart:', error);
+            resolve(false);
+          });
+        });
+      });
+    });
+    const script = document.createElement("script");
+    
+      script.src = "//halc.iadvize.com/iadvize.js";
+    
+    (function() {
+      if (document.body) {
+        document.body.append(script);
+        return;
+      }
+      const deadline = Date.now() + 10000;
+      const intervalId = setInterval(function() {
+        if (document.body) {
+          clearInterval(intervalId);
+          document.body.append(script);
+        } else if (Date.now() >= deadline) {
+          clearInterval(intervalId);
+        }
+      }, 250);
+    })();
+  }
+
+  (function() {
+    const region = 'FR';
+    const consentMode = 'never';
+    const hasConsentApi = !!(window.Shopify && window.Shopify.loadFeatures);
+    const POLL_INTERVAL_MS = 250;
+    const POLL_MAX_MS = 10000;
+
+    function checkConsent() {
+      const cp = window.Shopify && window.Shopify.customerPrivacy;
+      return cp && cp.preferencesProcessingAllowed() && cp.analyticsProcessingAllowed();
+    }
+
+    let pollIntervalId = null;
+    function stopPolling() {
+      if (pollIntervalId !== null) {
+        clearInterval(pollIntervalId);
+        pollIntervalId = null;
+      }
+    }
+
+    function grantAndLoad() {
+      stopPolling();
+      document.removeEventListener('visitorConsentCollected', onConsentCollected);
+      loadIAdvize();
+    }
+
+    // Registered upfront — catches CMP events even if loadFeatures callback fires
+    // late or not at all (known Shopify issue on some shops).
+    function onConsentCollected(event) {
+      if (event.detail.analyticsAllowed && event.detail.preferencesAllowed) {
+        grantAndLoad();
+      }
+    }
+    document.addEventListener('visitorConsentCollected', onConsentCollected);
+
+    // 'never': embed stays inert. iAdvize is loaded outside Shopify (CMP / tag
+    // manager), which is the source of truth. Do nothing.
+    if (consentMode === 'never') {
+      stopPolling();
+      document.removeEventListener('visitorConsentCollected', onConsentCollected);
+      return;
+    }
+
+    // 'always': load immediately, never gate on Shopify consent.
+    if (consentMode === 'always') {
+      grantAndLoad();
+      return;
+    }
+
+    // 'auto' (legacy default): US loads immediately; fail-open when the consent
+    // API is unavailable. Other regions fall through to the consent-required path.
+    if (consentMode === 'auto' && (region === 'US' || !hasConsentApi)) {
+      grantAndLoad();
+      return;
+    }
+
+    // 'sync', or non-US 'auto': require Shopify consent. Load now if already
+    // granted, otherwise rely on the upfront listener + poll + loadFeatures
+    // fallback below. 'sync' is fail-closed: if consent is never granted (or the
+    // API is absent) the tag does not fire — clients whose CMP doesn't sync with
+    // Shopify should use 'always' or 'never' instead.
+    if (checkConsent()) {
+      grantAndLoad();
+      return;
+    }
+
+    // Without Shopify's consent API there is nothing to poll or load. We reach
+    // here only in 'sync' mode (non-US 'auto' with no API loaded immediately
+    // above), so stay fail-closed: the tag does not fire. The upfront listener
+    // remains registered in case the CMP populates consent later.
+    if (!hasConsentApi) {
+      return;
+    }
+
+    // Poll customerPrivacy for late population (some CMPs write async without
+    // firing visitorConsentCollected, and Shopify.loadFeatures callback may
+    // never fire on affected shops). Listener stay active past deadline.
+    const deadline = Date.now() + POLL_MAX_MS;
+    pollIntervalId = setInterval(function() {
+      if (checkConsent()) {
+        grantAndLoad();
+        return;
+      }
+      if (Date.now() >= deadline) {
+        stopPolling();
+      }
+    }, POLL_INTERVAL_MS);
+
+    window.Shopify.loadFeatures(
+      [{ name: 'consent-tracking-api', version: '0.1' }],
+      function(error) {
+        if (error) {
+          // Fail open for legacy 'auto' (preserve prior behavior); stay
+          // fail-closed for 'sync'.
+          if (consentMode === 'auto') {
+            grantAndLoad();
+          }
+        } else if (checkConsent()) {
+          grantAndLoad();
+        }
+      }
+    );
+  })();
+</script>
+
+<!-- END IADVIZE LIVECHAT -->
+
+
+<!-- END app block --><script src="https://cdn.shopify.com/extensions/01a10b57-a0bf-7984-bd2c-4d77e79f15d3/regios-automatic-discounts-1517/assets/regios_add_to_cart_embed.js" type="text/javascript" defer="defer"></script>
 <script src="https://cdn.shopify.com/extensions/01a108ce-eac2-7cb9-b78a-2dcc580d835c/kleep-devred-75/assets/kleep-app.js" type="text/javascript" defer="defer"></script>
 <link href="https://cdn.shopify.com/extensions/01a108ce-eac2-7cb9-b78a-2dcc580d835c/kleep-devred-75/assets/kleep-app.css" rel="stylesheet" type="text/css" media="all">
 <link href="https://monorail-edge.shopifysvc.com" rel="dns-prefetch">
@@ -1768,11 +1768,11 @@ function loadIAdvize() {
 <script>
   window.__TREKKIE_SHIM_QUEUE = window.__TREKKIE_SHIM_QUEUE || [];
 </script>
-<script>(function(){var wpmLoader=function(){"use strict";var e=/Googlebot|Storebot-Google|bingbot|Baiduspider|YandexBot|DuckDuckBot|Slurp|facebookexternalhit|Twitterbot|LinkedInBot|Applebot|AdsBot-Google|Mediapartners-Google|APIs-Google|PetalBot|SemrushBot|AhrefsBot|MJ12bot|DotBot|Acunetix|PerplexityBot|Perplexity-User/i,t=/bytedance/i;function i(){try{var e=document.cookie;if(!e||"string"!=typeof e)return;for(var t=0,i=e.split(";");t<i.length;t++){var n=i[t],r=n.indexOf("=");if(-1!==r){var o=n.slice(0,r).trim();if(o){var a=void 0;try{a=decodeURIComponent(o)}catch(e){a=o}if("_shopify_s"===a){var d=n.slice(r+1).trim();try{return decodeURIComponent(d)}catch(e){return d}}}}}return}catch(e){return}}function n(e){try{"undefined"!=typeof console&&"function"==typeof console.warn&&console.warn(e)}catch(e){}}function r(e,t){return"string"==typeof e&&e.length>0&&e.length<=t?e:void 0}function o(e){var t;switch(null==(t=null==e?void 0:e.navigation)?void 0:t.type){case 0:return"navigate";case 1:return"reload";case 2:return"back_forward";default:return}}function a(){var e,t,i;try{var n=null==(i=null==(t=null==(e=self.ShopifyAnalytics)?void 0:e.lib)?void 0:t.trekkie)?void 0:i.state;return"awaiting-consent"===n||"initialized"===n?n:void 0}catch(e){return}}return function(d,s,u,l){var c=arguments.length>4&&void 0!==arguments[4]?arguments[4]:{};try{var p=c.trekkieShim;!0!==p&&"true"!==p||null!=window.__TREKKIE_SHIM_QUEUE||(window.__TREKKIE_SHIM_QUEUE=[])}catch(e){}var f,v,h,y,g=(v=(f={modern:/Edge?\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Firefox\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Chrom(ium|e)\/(9{2}|\d{3,})\.\d+(\.\d+|)|(Maci|X1{2}).+ Version\/(15\.\d+|(1[6-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(9{2}|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(15[._]\d+|(1[6-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Android.+Firefox\/(15\d|1[6-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|SamsungBrowser\/([2-9]\d|\d{3,})\.\d+/,legacy:/Edge?\/(1[6-9]|[2-9]\d|\d{3,})\.\d+(\.\d+|)|Firefox\/(5[4-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)|Chrom(ium|e)\/(5[1-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)([\d.]+$|.*Safari\/(?![\d.]+ Edge\/[\d.]+$))|(Maci|X1{2}).+ Version\/(10\.\d+|(1[1-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(3[89]|[4-9]\d|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(10[._]\d+|(1[1-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Mobile Safari.+OPR\/([89]\d|\d{3,})\.\d+\.\d+|Android.+Firefox\/(15\d|1[6-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+(UC? ?Browser|UCWEB|U3)[ /]?(15\.([5-9]|\d{2,})|(1[6-9]|[2-9]\d|\d{3,})\.\d+)\.\d+|SamsungBrowser\/(5\.\d+|([6-9]|\d{2,})\.\d+)|Android.+MQ{2}Browser\/(14(\.(9|\d{2,})|)|(1[5-9]|[2-9]\d|\d{3,})(\.\d+|))(\.\d+|)|K[Aa][Ii]OS\/(3\.\d+|([4-9]|\d{2,})\.\d+)(\.\d+|)/}).modern,h=f.legacy,(y=navigator.userAgent).match(e)?"bot":y.match(v)?"modern":y.match(h)?"legacy":y.match(t)?"bot":"unknown"),m=function(e){var t,i,n=r(e,128);try{var a=window.performance,d=null==(t=null==a?void 0:a.getEntriesByType)?void 0:t.call(a,"navigation")[0];if(!d)return{requestId:n,navigationType:o(a)};var s="type"in d?r(d.type,64):void 0,u="serverTiming"in d&&Array.isArray(d.serverTiming)?d.serverTiming:[];return{requestId:null!=n?n:r(null==(i=u.find(function(e){return"requestID"===e.name}))?void 0:i.description,128),navigationType:s}}catch(e){return{requestId:n}}}(c.requestId),w=function(e){var t=e.version,r=e.browserTarget,o=e.surface,a=e.shopId,d=e.monorailEndpoint,s=window.location.href;return{emit:function(e){var u=e.status,l=e.errorMsg,c=e.failureReason,p=e.useKeepaliveFallback,f=void 0!==p&&p,v=e.navigationType,h=e.pagehidePersisted,y=e.requestId,g=e.trekkieState;if(d){var m,w;try{var b=(new Date).getTime();m=JSON.stringify({metadata:{event_sent_at_ms:b},events:[{schema_id:"web_pixels_manager_load/3.3",payload:{version:t,bundle_target:r,page_url:s,status:u,surface:o,error_msg:l,failure_reason:c,navigation_type:v,pagehide_persisted:h,request_id:y,trekkie_state:g,shop_id:a,visit_token:i()},metadata:{event_created_at_ms:b}}]})}catch(e){return}try{if("function"==typeof window.navigator.sendBeacon&&-1===(w=window.navigator.userAgent).indexOf("iPhone; CPU iPhone OS 12_")&&-1===w.indexOf("iPad; CPU OS 12_")&&-1===w.indexOf("iPod touch; CPU iPhone OS 12_")&&window.navigator.sendBeacon.bind(window.navigator)(d,m))return}catch(e){}if(f)try{"function"==typeof window.fetch&&window.fetch(d,{method:"POST",headers:{"Content-Type":"text/plain"},body:m,keepalive:!0}).catch(function(){})}catch(e){}else try{var _=new XMLHttpRequest;_.open("POST",d,!0),_.setRequestHeader("Content-Type","text/plain"),_.send(m)}catch(e){n("[Web Pixels Manager] Got an unhandled error while logging to Monorail.")}}else n("[Web Pixels Manager] No Monorail endpoint provided, skipping logging.")}}}({version:u,browserTarget:g,surface:d.surface,shopId:d.shopId,monorailEndpoint:d.monorailEndpoint});if(Boolean(null==(_=null==(b=window.Shopify)?void 0:b.analytics)?void 0:_.replayQueue))w.emit({status:"setup-skipped",errorMsg:"replay queue already initialized."});else{var b,_;w.emit({status:"setup-started"}),window.Shopify=window.Shopify||{};var S=window.Shopify;S.analytics=S.analytics||{};var P=S.analytics;P.replayQueue=[],P.publish=function(e,t,i){return P.replayQueue.push([e,t,i]),!0};try{self.performance.mark("wpm:start")}catch(e){}var k,C="modern"===g?"modern":"legacy",E=(null!=l?l:{modern:"",legacy:""})[C],I=[(k={baseUrl:s,hashVersion:u,buildTarget:C}).baseUrl,"/wpm","/b",k.hashVersion,"modern"===k.buildTarget?"m":"l",".js"].join(""),O=!1,T=!1;try{c.browserTarget=g,function(){O=!0;try{window.addEventListener("pagehide",M)}catch(e){O=!1}}(),R(function(){try{R(x)}catch(e){D(e)}}),w.emit({status:"loading",requestId:m.requestId,navigationType:m.navigationType,trekkieState:a()})}catch(e){D(e)}}function U(){var e;if(q(),!function(){var e,t;return Boolean(null==(t=null==(e=window.Shopify)?void 0:e.analytics)?void 0:t.initialized)}()){var t,i,n;try{if("function"!=typeof(null==(e=window.webPixelsManager)?void 0:e.init))return void A();if(!(null!==(n=i=t=window.webPixelsManager.init(d))&&"function"!=typeof n&&Object(n)===n&&"publish"in i&&"function"==typeof i.publish&&"publishCustomEvent"in i&&"function"==typeof i.publishCustomEvent&&"visitor"in i&&"function"==typeof i.visitor))return void A()}catch(e){return void A(e)}var r=window.Shopify.analytics;r.replayQueue.forEach(function(e){var i=e[0],n=e[1],r=e[2];t.publishCustomEvent(i,n,r)}),r.replayQueue=[],r.publish=t.publishCustomEvent,r.visitor=t.visitor,r.initialized=!0}}function A(e){B("manager_api_unavailable",void 0===e?void 0:Q(e))}function x(){B("script_load_failed","".concat(I," has failed to load"))}function B(e,t){T||(T=!0,q(),w.emit({status:"failed",errorMsg:t,failureReason:e,requestId:m.requestId,navigationType:m.navigationType,trekkieState:a()}))}function M(e){O&&(q(),w.emit({status:"pagehide-while-loading",useKeepaliveFallback:!0,pagehidePersisted:e.persisted,requestId:m.requestId,navigationType:m.navigationType,trekkieState:a()}))}function q(){O=!1;try{window.removeEventListener("pagehide",M)}catch(e){}}function R(e){var t;!function(e){var t=e.src,i=e.async,n=void 0===i||i,r=e.onload,o=e.onerror,a=e.sri,d=e.scriptDataAttributes,s=void 0===d?{}:d,u=document.createElement("script"),l=document.querySelector("head"),c=document.querySelector("body");if(u.async=n,u.src=t,a&&(u.integrity=a,u.crossOrigin="anonymous"),s)for(var p in s)if(Object.prototype.hasOwnProperty.call(s,p))try{u.dataset[p]=String(s[p])}catch(e){}if(r&&u.addEventListener("load",r),o&&u.addEventListener("error",o),l)l.appendChild(u);else{if(!c)throw new Error("Did not find a head or body element to append the script");c.appendChild(u)}}({src:I,async:!0,onload:U,onerror:e,sri:(t=E,"string"==typeof t&&/^sha384-[A-Za-z0-9+/=]+$/.test(t)?E:""),scriptDataAttributes:c})}function D(e){B("script_append_failed",Q(e))}function Q(e){return e instanceof Error?e.message:"Unknown error"}}}();wpmLoader({shopId: 96206586243,storefrontBaseUrl: "https://devred.com",extensionsBaseUrl: "https://extensions.shopifycdn.com/cdn/shopifycloud/web-pixels-manager",monorailEndpoint: "https://devred.com/.well-known/shopify/monorail/unstable/produce_batch",surface: "storefront-renderer",enabledBetaFlags: ["4c64608a","16072cab","8450a54b","7ee89bf1"],webPixelsConfigList: [{"id":"4470538627","configuration":"{\"product_bundles_data\":\"[]\",\"shop\":\"yxdvsw-yw.myshopify.com\",\"collect_url\":\"https:\\\/\\\/collect.bogos.io\\\/collect\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"e375ae2aeef9215058b62ddff7136cb9","type":"APP","apiClientId":177733,"privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_address","read_customer_email","read_customer_name","read_customer_personal_data","read_customer_phone"],"dataSharingControls":["share_all_events"]},"dataSharingState":"optimized"},{"id":"4422369667","configuration":"{\"projectId\":\"10664\", \"platform\": \"ha\", \"transactionEndpoint\": \"https:\/\/api.iadvize.com\/engagement\/short-conversions?platform=ha\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"02fbb4bc7ea3748896c6dc59ec131b8a","type":"APP","apiClientId":86693281793,"privacyPurposes":[],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":[],"dataSharingControls":["share_all_events"]},"dataSharingState":"unrestricted"},{"id":"4018930051","configuration":"{\"cart_viewed\":\"true\",\"checkout_address_info_submitted\":\"true\",\"checkout_completed\":\"true\",\"checkout_contact_info_submitted\":\"true\",\"checkout_shipping_info_submitted\":\"true\",\"checkout_started\":\"true\",\"collection_viewed\":\"true\",\"page_viewed\":\"true\",\"payment_info_submitted\":\"true\",\"product_added_to_cart\":\"true\",\"product_removed_from_cart\":\"true\",\"product_viewed\":\"true\",\"search_submitted\":\"true\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"4b912d4db8d67578541bfae8b70a40a9","type":"APP","apiClientId":100317265921,"privacyPurposes":["ANALYTICS"],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":[],"dataSharingControls":["share_all_events"]},"dataSharingState":"unrestricted"},{"id":"3945595267","configuration":"{\"pixel_id\":\"1215368328582980\",\"pixel_type\":\"facebook_pixel\"}","eventPayloadVersion":"v1","runtimeContext":"OPEN","scriptVersion":"96420dbe9ea96c426a1b7f364f977719","type":"APP","apiClientId":2329312,"privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_address","read_customer_email","read_customer_name","read_customer_personal_data","read_customer_phone"],"dataSharingControls":["share_all_events"]},"dataSharingState":"optimized","enabledFlags":["9a3ed68a"]},{"id":"3332440451","configuration":"{\"name\":\"Kleep tracking\",\"store_uuid\":\"d02a901c-f012-4e1e-984e-9a0d0c283de9\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"d25099607320e80677a83c1fc4da6441","type":"APP","apiClientId":310534307841,"privacyPurposes":["ANALYTICS","MARKETING"],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_address","read_customer_email","read_customer_name","read_customer_phone","read_customer_personal_data"],"dataSharingControls":["share_all_events"]},"dataSharingState":"optimized"},{"id":"289079683","eventPayloadVersion":"1","runtimeContext":"LAX","scriptVersion":"2","type":"CUSTOM","privacyPurposes":[],"name":"Pixel Addingwell"},{"id":"301990275","eventPayloadVersion":"1","runtimeContext":"LAX","scriptVersion":"7","type":"CUSTOM","privacyPurposes":[],"name":"effinity"},{"id":"310804867","eventPayloadVersion":"1","runtimeContext":"LAX","scriptVersion":"1","type":"CUSTOM","privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"],"name":"Pixel Pinterest"},{"id":"310837635","eventPayloadVersion":"1","runtimeContext":"LAX","scriptVersion":"5","type":"CUSTOM","privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"],"name":"Pixel Tiktok"},{"id":"shopify-app-pixel","configuration":"{}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"0530","apiClientId":"shopify-pixel","type":"APP","privacyPurposes":["ANALYTICS","MARKETING"]},{"id":"shopify-custom-pixel","eventPayloadVersion":"v1","runtimeContext":"LAX","scriptVersion":"0530","apiClientId":"shopify-pixel","type":"CUSTOM","privacyPurposes":["ANALYTICS","MARKETING"]}],isMerchantRequest: false,initData: {"shop":{"name":"Devred 1902","paymentSettings":{"currencyCode":"EUR"},"myshopifyDomain":"yxdvsw-yw.myshopify.com","countryCode":"FR","storefrontUrl":"https:\/\/devred.com"},"customer":null,"cart":null,"checkout":null,"productVariants":[],"products":[],"purchasingCompany":null},},"https://devred.com/cdn","5982071ew7ea472e3p69b68784m2150dfea",{"modern":"","legacy":""},{"trekkieShim":true,"agentContext":true,"apiClientId":"580111","facebookCapiEnabled":"true","themeId":"210211438860","themePublished":"true","eventMetadataId":"5f4c1623-3ad1-42f2-af4b-584288505038","pageType":"page","resourceId":"705875542403","shopId":"96206586243","storefrontBaseUrl":"https:\/\/devred.com","extensionBaseUrl":"https:\/\/extensions.shopifycdn.com\/cdn\/shopifycloud\/web-pixels-manager","surface":"storefront-renderer","enabledBetaFlags":"[\"4c64608a\", \"16072cab\", \"8450a54b\", \"7ee89bf1\"]","isMerchantRequest":"false","hashVersion":"5982071ew7ea472e3p69b68784m2150dfea","publish":"custom","events":"[[\"page_viewed\",{}]]"});})();</script><script async="" src="https://devred.com/cdn/wpm/b5982071ew7ea472e3p69b68784m2150dfeam.js" data-trekkie-shim="true" data-agent-context="true" data-api-client-id="580111" data-facebook-capi-enabled="true" data-theme-id="210211438860" data-theme-published="true" data-event-metadata-id="5f4c1623-3ad1-42f2-af4b-584288505038" data-page-type="page" data-resource-id="705875542403" data-shop-id="96206586243" data-storefront-base-url="https://devred.com" data-extension-base-url="https://extensions.shopifycdn.com/cdn/shopifycloud/web-pixels-manager" data-surface="storefront-renderer" data-enabled-beta-flags="[&quot;4c64608a&quot;, &quot;16072cab&quot;, &quot;8450a54b&quot;, &quot;7ee89bf1&quot;]" data-is-merchant-request="false" data-hash-version="5982071ew7ea472e3p69b68784m2150dfea" data-publish="custom" data-events="[[&quot;page_viewed&quot;,{}]]" data-browser-target="modern"></script><script>
+<script>(function(){var wpmLoader=function(){"use strict";var e=/Googlebot|Storebot-Google|bingbot|Baiduspider|YandexBot|DuckDuckBot|Slurp|facebookexternalhit|Twitterbot|LinkedInBot|Applebot|AdsBot-Google|Mediapartners-Google|APIs-Google|PetalBot|SemrushBot|AhrefsBot|MJ12bot|DotBot|Acunetix|PerplexityBot|Perplexity-User/i,t=/bytedance/i;function i(){try{var e=document.cookie;if(!e||"string"!=typeof e)return;for(var t=0,i=e.split(";");t<i.length;t++){var n=i[t],r=n.indexOf("=");if(-1!==r){var o=n.slice(0,r).trim();if(o){var a=void 0;try{a=decodeURIComponent(o)}catch(e){a=o}if("_shopify_s"===a){var d=n.slice(r+1).trim();try{return decodeURIComponent(d)}catch(e){return d}}}}}return}catch(e){return}}function n(e){try{"undefined"!=typeof console&&"function"==typeof console.warn&&console.warn(e)}catch(e){}}function r(e,t){return"string"==typeof e&&e.length>0&&e.length<=t?e:void 0}function o(e){var t;switch(null==(t=null==e?void 0:e.navigation)?void 0:t.type){case 0:return"navigate";case 1:return"reload";case 2:return"back_forward";default:return}}function a(){var e,t,i;try{var n=null==(i=null==(t=null==(e=self.ShopifyAnalytics)?void 0:e.lib)?void 0:t.trekkie)?void 0:i.state;return"awaiting-consent"===n||"initialized"===n?n:void 0}catch(e){return}}return function(d,s,u,l){var c=arguments.length>4&&void 0!==arguments[4]?arguments[4]:{};try{var p=c.trekkieShim;!0!==p&&"true"!==p||null!=window.__TREKKIE_SHIM_QUEUE||(window.__TREKKIE_SHIM_QUEUE=[])}catch(e){}var f,v,h,y,g=(v=(f={modern:/Edge?\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Firefox\/(1{2}[4-9]|1[2-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Chrom(ium|e)\/(9{2}|\d{3,})\.\d+(\.\d+|)|(Maci|X1{2}).+ Version\/(15\.\d+|(1[6-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(9{2}|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(15[._]\d+|(1[6-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Android.+Firefox\/(15\d|1[6-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|SamsungBrowser\/([2-9]\d|\d{3,})\.\d+/,legacy:/Edge?\/(1[6-9]|[2-9]\d|\d{3,})\.\d+(\.\d+|)|Firefox\/(5[4-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)|Chrom(ium|e)\/(5[1-9]|[6-9]\d|\d{3,})\.\d+(\.\d+|)([\d.]+$|.*Safari\/(?![\d.]+ Edge\/[\d.]+$))|(Maci|X1{2}).+ Version\/(10\.\d+|(1[1-9]|[2-9]\d|\d{3,})\.\d+)([,.]\d+|)( \(\w+\)|)( Mobile\/\w+|) Safari\/|Chrome.+OPR\/(3[89]|[4-9]\d|\d{3,})\.\d+\.\d+|(CPU[ +]OS|iPhone[ +]OS|CPU[ +]iPhone|CPU IPhone OS|CPU iPad OS)[ +]+(10[._]\d+|(1[1-9]|[2-9]\d|\d{3,})[._]\d+)([._]\d+|)|Android:?[ /-](14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})(\.\d+|)(\.\d+|)|Mobile Safari.+OPR\/([89]\d|\d{3,})\.\d+\.\d+|Android.+Firefox\/(15\d|1[6-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+Chrom(ium|e)\/(14[89]|1[5-9]\d|[2-9]\d{2}|\d{4,})\.\d+(\.\d+|)|Android.+(UC? ?Browser|UCWEB|U3)[ /]?(15\.([5-9]|\d{2,})|(1[6-9]|[2-9]\d|\d{3,})\.\d+)\.\d+|SamsungBrowser\/(5\.\d+|([6-9]|\d{2,})\.\d+)|Android.+MQ{2}Browser\/(14(\.(9|\d{2,})|)|(1[5-9]|[2-9]\d|\d{3,})(\.\d+|))(\.\d+|)|K[Aa][Ii]OS\/(3\.\d+|([4-9]|\d{2,})\.\d+)(\.\d+|)/}).modern,h=f.legacy,(y=navigator.userAgent).match(e)?"bot":y.match(v)?"modern":y.match(h)?"legacy":y.match(t)?"bot":"unknown"),m=function(e){var t,i,n=r(e,128);try{var a=window.performance,d=null==(t=null==a?void 0:a.getEntriesByType)?void 0:t.call(a,"navigation")[0];if(!d)return{requestId:n,navigationType:o(a)};var s="type"in d?r(d.type,64):void 0,u="serverTiming"in d&&Array.isArray(d.serverTiming)?d.serverTiming:[];return{requestId:null!=n?n:r(null==(i=u.find(function(e){return"requestID"===e.name}))?void 0:i.description,128),navigationType:s}}catch(e){return{requestId:n}}}(c.requestId),w=function(e){var t=e.version,r=e.browserTarget,o=e.surface,a=e.shopId,d=e.monorailEndpoint,s=window.location.href;return{emit:function(e){var u=e.status,l=e.errorMsg,c=e.failureReason,p=e.useKeepaliveFallback,f=void 0!==p&&p,v=e.navigationType,h=e.pagehidePersisted,y=e.requestId,g=e.trekkieState;if(d){var m,w;try{var b=(new Date).getTime();m=JSON.stringify({metadata:{event_sent_at_ms:b},events:[{schema_id:"web_pixels_manager_load/3.3",payload:{version:t,bundle_target:r,page_url:s,status:u,surface:o,error_msg:l,failure_reason:c,navigation_type:v,pagehide_persisted:h,request_id:y,trekkie_state:g,shop_id:a,visit_token:i()},metadata:{event_created_at_ms:b}}]})}catch(e){return}try{if("function"==typeof window.navigator.sendBeacon&&-1===(w=window.navigator.userAgent).indexOf("iPhone; CPU iPhone OS 12_")&&-1===w.indexOf("iPad; CPU OS 12_")&&-1===w.indexOf("iPod touch; CPU iPhone OS 12_")&&window.navigator.sendBeacon.bind(window.navigator)(d,m))return}catch(e){}if(f)try{"function"==typeof window.fetch&&window.fetch(d,{method:"POST",headers:{"Content-Type":"text/plain"},body:m,keepalive:!0}).catch(function(){})}catch(e){}else try{var _=new XMLHttpRequest;_.open("POST",d,!0),_.setRequestHeader("Content-Type","text/plain"),_.send(m)}catch(e){n("[Web Pixels Manager] Got an unhandled error while logging to Monorail.")}}else n("[Web Pixels Manager] No Monorail endpoint provided, skipping logging.")}}}({version:u,browserTarget:g,surface:d.surface,shopId:d.shopId,monorailEndpoint:d.monorailEndpoint});if(Boolean(null==(_=null==(b=window.Shopify)?void 0:b.analytics)?void 0:_.replayQueue))w.emit({status:"setup-skipped",errorMsg:"replay queue already initialized."});else{var b,_;w.emit({status:"setup-started"}),window.Shopify=window.Shopify||{};var S=window.Shopify;S.analytics=S.analytics||{};var P=S.analytics;P.replayQueue=[],P.publish=function(e,t,i){return P.replayQueue.push([e,t,i]),!0};try{self.performance.mark("wpm:start")}catch(e){}var k,C="modern"===g?"modern":"legacy",E=(null!=l?l:{modern:"",legacy:""})[C],I=[(k={baseUrl:s,hashVersion:u,buildTarget:C}).baseUrl,"/wpm","/b",k.hashVersion,"modern"===k.buildTarget?"m":"l",".js"].join(""),O=!1,T=!1;try{c.browserTarget=g,function(){O=!0;try{window.addEventListener("pagehide",M)}catch(e){O=!1}}(),R(function(){try{R(x)}catch(e){D(e)}}),w.emit({status:"loading",requestId:m.requestId,navigationType:m.navigationType,trekkieState:a()})}catch(e){D(e)}}function U(){var e;if(q(),!function(){var e,t;return Boolean(null==(t=null==(e=window.Shopify)?void 0:e.analytics)?void 0:t.initialized)}()){var t,i,n;try{if("function"!=typeof(null==(e=window.webPixelsManager)?void 0:e.init))return void A();if(!(null!==(n=i=t=window.webPixelsManager.init(d))&&"function"!=typeof n&&Object(n)===n&&"publish"in i&&"function"==typeof i.publish&&"publishCustomEvent"in i&&"function"==typeof i.publishCustomEvent&&"visitor"in i&&"function"==typeof i.visitor))return void A()}catch(e){return void A(e)}var r=window.Shopify.analytics;r.replayQueue.forEach(function(e){var i=e[0],n=e[1],r=e[2];t.publishCustomEvent(i,n,r)}),r.replayQueue=[],r.publish=t.publishCustomEvent,r.visitor=t.visitor,r.initialized=!0}}function A(e){B("manager_api_unavailable",void 0===e?void 0:Q(e))}function x(){B("script_load_failed","".concat(I," has failed to load"))}function B(e,t){T||(T=!0,q(),w.emit({status:"failed",errorMsg:t,failureReason:e,requestId:m.requestId,navigationType:m.navigationType,trekkieState:a()}))}function M(e){O&&(q(),w.emit({status:"pagehide-while-loading",useKeepaliveFallback:!0,pagehidePersisted:e.persisted,requestId:m.requestId,navigationType:m.navigationType,trekkieState:a()}))}function q(){O=!1;try{window.removeEventListener("pagehide",M)}catch(e){}}function R(e){var t;!function(e){var t=e.src,i=e.async,n=void 0===i||i,r=e.onload,o=e.onerror,a=e.sri,d=e.scriptDataAttributes,s=void 0===d?{}:d,u=document.createElement("script"),l=document.querySelector("head"),c=document.querySelector("body");if(u.async=n,u.src=t,a&&(u.integrity=a,u.crossOrigin="anonymous"),s)for(var p in s)if(Object.prototype.hasOwnProperty.call(s,p))try{u.dataset[p]=String(s[p])}catch(e){}if(r&&u.addEventListener("load",r),o&&u.addEventListener("error",o),l)l.appendChild(u);else{if(!c)throw new Error("Did not find a head or body element to append the script");c.appendChild(u)}}({src:I,async:!0,onload:U,onerror:e,sri:(t=E,"string"==typeof t&&/^sha384-[A-Za-z0-9+/=]+$/.test(t)?E:""),scriptDataAttributes:c})}function D(e){B("script_append_failed",Q(e))}function Q(e){return e instanceof Error?e.message:"Unknown error"}}}();wpmLoader({shopId: 96206586243,storefrontBaseUrl: "https://devred.com",extensionsBaseUrl: "https://extensions.shopifycdn.com/cdn/shopifycloud/web-pixels-manager",monorailEndpoint: "https://devred.com/.well-known/shopify/monorail/unstable/produce_batch",surface: "storefront-renderer",enabledBetaFlags: ["4c64608a","16072cab","8450a54b","7ee89bf1"],webPixelsConfigList: [{"id":"4470538627","configuration":"{\"product_bundles_data\":\"[]\",\"shop\":\"yxdvsw-yw.myshopify.com\",\"collect_url\":\"https:\\\/\\\/collect.bogos.io\\\/collect\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"e375ae2aeef9215058b62ddff7136cb9","type":"APP","apiClientId":177733,"privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_address","read_customer_email","read_customer_name","read_customer_personal_data","read_customer_phone"],"dataSharingControls":["share_all_events"]},"dataSharingState":"optimized"},{"id":"4422369667","configuration":"{\"projectId\":\"10664\", \"platform\": \"ha\", \"transactionEndpoint\": \"https:\/\/api.iadvize.com\/engagement\/short-conversions?platform=ha\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"02fbb4bc7ea3748896c6dc59ec131b8a","type":"APP","apiClientId":86693281793,"privacyPurposes":[],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":[],"dataSharingControls":["share_all_events"]},"dataSharingState":"unrestricted"},{"id":"4018930051","configuration":"{\"cart_viewed\":\"true\",\"checkout_address_info_submitted\":\"true\",\"checkout_completed\":\"true\",\"checkout_contact_info_submitted\":\"true\",\"checkout_shipping_info_submitted\":\"true\",\"checkout_started\":\"true\",\"collection_viewed\":\"true\",\"page_viewed\":\"true\",\"payment_info_submitted\":\"true\",\"product_added_to_cart\":\"true\",\"product_removed_from_cart\":\"true\",\"product_viewed\":\"true\",\"search_submitted\":\"true\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"4b912d4db8d67578541bfae8b70a40a9","type":"APP","apiClientId":100317265921,"privacyPurposes":["ANALYTICS"],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":[],"dataSharingControls":["share_all_events"]},"dataSharingState":"unrestricted"},{"id":"3945595267","configuration":"{\"pixel_id\":\"1215368328582980\",\"pixel_type\":\"facebook_pixel\"}","eventPayloadVersion":"v1","runtimeContext":"OPEN","scriptVersion":"96420dbe9ea96c426a1b7f364f977719","type":"APP","apiClientId":2329312,"privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_address","read_customer_email","read_customer_name","read_customer_personal_data","read_customer_phone"],"dataSharingControls":["share_all_events"]},"dataSharingState":"optimized","enabledFlags":["9a3ed68a"]},{"id":"3332440451","configuration":"{\"name\":\"Kleep tracking\",\"store_uuid\":\"d02a901c-f012-4e1e-984e-9a0d0c283de9\"}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"d25099607320e80677a83c1fc4da6441","type":"APP","apiClientId":310534307841,"privacyPurposes":["ANALYTICS","MARKETING"],"dataSharingAdjustments":{"protectedCustomerApprovalScopes":["read_customer_address","read_customer_email","read_customer_name","read_customer_phone","read_customer_personal_data"],"dataSharingControls":["share_all_events"]},"dataSharingState":"optimized"},{"id":"289079683","eventPayloadVersion":"1","runtimeContext":"LAX","scriptVersion":"2","type":"CUSTOM","privacyPurposes":[],"name":"Pixel Addingwell"},{"id":"301990275","eventPayloadVersion":"1","runtimeContext":"LAX","scriptVersion":"7","type":"CUSTOM","privacyPurposes":[],"name":"effinity"},{"id":"310804867","eventPayloadVersion":"1","runtimeContext":"LAX","scriptVersion":"1","type":"CUSTOM","privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"],"name":"Pixel Pinterest"},{"id":"310837635","eventPayloadVersion":"1","runtimeContext":"LAX","scriptVersion":"5","type":"CUSTOM","privacyPurposes":["ANALYTICS","MARKETING","SALE_OF_DATA"],"name":"Pixel Tiktok"},{"id":"shopify-app-pixel","configuration":"{}","eventPayloadVersion":"v1","runtimeContext":"STRICT","scriptVersion":"0530","apiClientId":"shopify-pixel","type":"APP","privacyPurposes":["ANALYTICS","MARKETING"]},{"id":"shopify-custom-pixel","eventPayloadVersion":"v1","runtimeContext":"LAX","scriptVersion":"0530","apiClientId":"shopify-pixel","type":"CUSTOM","privacyPurposes":["ANALYTICS","MARKETING"]}],isMerchantRequest: false,initData: {"shop":{"name":"Devred 1902","paymentSettings":{"currencyCode":"EUR"},"myshopifyDomain":"yxdvsw-yw.myshopify.com","countryCode":"FR","storefrontUrl":"https:\/\/devred.com"},"customer":null,"cart":null,"checkout":null,"productVariants":[],"products":[],"purchasingCompany":null},},"https://devred.com/cdn","5982071ew7ea472e3p69b68784m2150dfea",{"modern":"","legacy":""},{"trekkieShim":true,"agentContext":true,"apiClientId":"580111","facebookCapiEnabled":"true","themeId":"210211438860","themePublished":"true","eventMetadataId":"43637743-6f3c-4c2c-a174-913285a0b286","pageType":"page","resourceId":"705875542403","shopId":"96206586243","storefrontBaseUrl":"https:\/\/devred.com","extensionBaseUrl":"https:\/\/extensions.shopifycdn.com\/cdn\/shopifycloud\/web-pixels-manager","surface":"storefront-renderer","enabledBetaFlags":"[\"4c64608a\", \"16072cab\", \"8450a54b\", \"7ee89bf1\"]","isMerchantRequest":"false","hashVersion":"5982071ew7ea472e3p69b68784m2150dfea","publish":"custom","events":"[[\"page_viewed\",{}]]"});})();</script><script async="" src="https://devred.com/cdn/wpm/b5982071ew7ea472e3p69b68784m2150dfeam.js" data-trekkie-shim="true" data-agent-context="true" data-api-client-id="580111" data-facebook-capi-enabled="true" data-theme-id="210211438860" data-theme-published="true" data-event-metadata-id="43637743-6f3c-4c2c-a174-913285a0b286" data-page-type="page" data-resource-id="705875542403" data-shop-id="96206586243" data-storefront-base-url="https://devred.com" data-extension-base-url="https://extensions.shopifycdn.com/cdn/shopifycloud/web-pixels-manager" data-surface="storefront-renderer" data-enabled-beta-flags="[&quot;4c64608a&quot;, &quot;16072cab&quot;, &quot;8450a54b&quot;, &quot;7ee89bf1&quot;]" data-is-merchant-request="false" data-hash-version="5982071ew7ea472e3p69b68784m2150dfea" data-publish="custom" data-events="[[&quot;page_viewed&quot;,{}]]" data-browser-target="modern"></script><script>
   window.ShopifyAnalytics = window.ShopifyAnalytics || {};
   window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
   window.ShopifyAnalytics.meta.currency = 'EUR';
-  var meta = {"page":{"pageType":"page","resourceType":"page","resourceId":705875542403,"requestId":"423ccd17-b8f4-4e19-886b-ff888ddbda40-1791160645"}};
+  var meta = {"page":{"pageType":"page","resourceType":"page","resourceId":705875542403,"requestId":"e99de687-a94f-484e-bf3d-4069e9de676a-1791203880"}};
   for (var attr in meta) {
     window.ShopifyAnalytics.meta[attr] = meta[attr];
   }
@@ -1931,7 +1931,7 @@ first.parentNode.insertBefore(script, first);
 
     };
     trekkie.load(
-      {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":96206586243,"isMerchantRequest":null,"themeId":210211438860,"themeCityHash":"12775189064075019453","contentLanguage":"fr","currency":"EUR","eventMetadataId":"5f4c1623-3ad1-42f2-af4b-584288505038"},"isServerSideCookieWritingEnabled":true,"monorailRegion":"shop_domain","enabledBetaFlags":["764d78cb","8450a54b","7ee89bf1","4c64608a"]},"Session Attribution":{},"S2S":{"facebookCapiEnabled":true,"source":"trekkie-storefront-renderer","apiClientId":580111}}
+      {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":96206586243,"isMerchantRequest":null,"themeId":210211438860,"themeCityHash":"12775189064075019453","contentLanguage":"fr","currency":"EUR","eventMetadataId":"43637743-6f3c-4c2c-a174-913285a0b286"},"isServerSideCookieWritingEnabled":true,"monorailRegion":"shop_domain","enabledBetaFlags":["764d78cb","8450a54b","7ee89bf1","4c64608a"]},"Session Attribution":{},"S2S":{"facebookCapiEnabled":true,"source":"trekkie-storefront-renderer","apiClientId":580111}}
     );
 
     var loaded = false;
@@ -1954,7 +1954,7 @@ first.parentNode.insertBefore(script, first);
       }
     });
 
-    window.ShopifyAnalytics.lib.page(null,{"pageType":"page","resourceType":"page","resourceId":705875542403,"requestId":"423ccd17-b8f4-4e19-886b-ff888ddbda40-1791160645","shopifyEmitted":true});
+    window.ShopifyAnalytics.lib.page(null,{"pageType":"page","resourceType":"page","resourceId":705875542403,"requestId":"e99de687-a94f-484e-bf3d-4069e9de676a-1791203880","shopifyEmitted":true});
 
     var eventsListenerScript = document.createElement('script');
     eventsListenerScript.async = true;
@@ -1962,7 +1962,7 @@ first.parentNode.insertBefore(script, first);
     document.getElementsByTagName('head')[0].appendChild(eventsListenerScript);
 })();</script>
 <script defer="" src="https://devred.com/cdn/shopifycloud/perf-kit/shopify-perf-kit-3.9.4.min.js" data-application="storefront-renderer" data-shop-id="96206586243" data-render-region="gcp-europe-west1" data-page-type="page" data-theme-instance-id="210211438860" data-theme-name="Stretch" data-theme-version="1.10.0" data-monorail-region="shop_domain" data-resource-timing-sampling-rate="10" data-shs="true" data-shs-beacon="true" data-shs-export-with-fetch="true" data-shs-logs-sample-rate="1" data-shs-beacon-endpoint="https://devred.com/api/collect"></script>
-<meta name="shopify-y" content="00000000-0000-0000-5000-000000000000" data-expiration="1822718245000"><meta name="shopify-s" content="00000000-0000-0000-5000-000000000000" data-expiration="1791162445000"><meta name="new-cookie-storage-activated" content="t">
+<meta name="shopify-y" content="00000000-0000-0000-5000-000000000000" data-expiration="1822761480000"><meta name="shopify-s" content="00000000-0000-0000-5000-000000000000" data-expiration="1791205680000"><meta name="new-cookie-storage-activated" content="t">
 <script src="https://cdn.shopify.com/extensions/01a108ce-eac2-7cb9-b78a-2dcc580d835c/kleep-devred-75/assets/kleep-retailer-d02a901c-f012-4e1e-984e-9a0d0c283de9.js"></script><script type="text/javascript" src="//client.get-potions.com/1192/recos-tag.js" async="1" id="recommendations-and-merchandising-abtasty"></script><style>.line-item__info-with-line-price .subheading.text-subdued {
   font-size: 0;
 }
@@ -1972,16 +1972,7 @@ first.parentNode.insertBefore(script, first);
   content: "Ce produit est en précommande";
   font-size: 12px;
   display: block;
-}</style><style id="abtasty_hide_modificationengine">.ab_hide_me{display:none!important}</style><style>.line-item__info-with-line-price .subheading.text-subdued {
-  font-size: 0;
-}
-.cart-drawer
-  .line-item__info-with-line-price
-  .subheading.text-subdued:not(.line-through)::after {
-  content: "Ce produit est en précommande";
-  font-size: 12px;
-  display: block;
-}</style><meta http-equiv="origin-trial" content="A1duO9QWZ/3h+eq5jQsvYqOTVq5h5q2AoGInpwNr4FT22/JUt3BxFERXHAo5iKhs6doOavi6G5hno0oBANPzSgIAAABxeyJvcmlnaW4iOiJodHRwczovL2Nkbi5zaG9waWZ5LmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJlcmVuZGVyVW50aWxTY3JpcHQiLCJleHBpcnkiOjE3ODg4MjU2MDAsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0="><meta http-equiv="origin-trial" content="AwnTE1hYg9Bsa5x0wEDsbG6tOdZ3j6ebKzXxbr/2TnTilsCRK9FwndlhAyFVnnBH1qQAqpOPJxVWiKGUqBnOmAYAAAB8eyJvcmlnaW4iOiJodHRwczovL2Nkbi5zaG9waWZ5LmNvbTo0NDMiLCJmZWF0dXJlIjoiTG9uZ0FuaW1hdGlvbkZyYW1lU3R5bGVEdXJhdGlvbiIsImV4cGlyeSI6MTc5MTI0NDgwMCwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A1cNj7yeFpBT/ETqZHRgUfM9tToLwOpBySTd4C9Eya3JtQo/BEQegM6MMV7BZESSyAjQJJXYgH/ovHY1UHmB8woAAABjeyJvcmlnaW4iOiJodHRwczovL2Nkbi5zaG9waWZ5LmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViTUNQIiwiZXhwaXJ5IjoxNzk0ODczNjAwLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A1XQljJxk3U4c44gueu4vlIeDofyyWFswfVKbUiNw4itZx4Yy8Uw3nIhtzBePIrv1bSXqzHGDfYymYF5W7TKKAoAAABzeyJvcmlnaW4iOiJodHRwczovL2Nkbi5zaG9waWZ5LmNvbTo0NDMiLCJmZWF0dXJlIjoiU3BlY3VsYXRpb25NZWFzdXJlbWVudCIsImV4cGlyeSI6MTc5MzY2NDAwMCwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="Ax9yX6wXQN8G5IFmAMuROwlLDFBpw1CUnFgsIGNYqJJ4H6td1fqjIYkL02d7HpmOAFMFSi3/1kym00LEfYqOdwYAAACOeyJvcmlnaW4iOiJodHRwczovL2Nkbi5zaG9waWZ5LmNvbTo0NDMiLCJmZWF0dXJlIjoiU3BlY3VsYXRpb25SdWxlc01vZGVyYXRlVmlld3BvcnRIZXVyaXN0aWNzQ29udHJvbCIsImV4cGlyeSI6MTc5NjY4ODAwMCwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><script type="speculationrules">{}</script><script type="text/javascript" async="" src="https://sdk.privacy-center.org/sdk/2af281429ae434027f53ac77f93097d5b4488b76/modern/sdk.2af281429ae434027f53ac77f93097d5b4488b76.js" charset="utf-8"></script><script type="module" defer="" src="https://devred.com/cdn/shopifycloud/consent-tracking-api/v0.1/consent-tracking-api.js"></script><script src="https://devred.com/web-pixels@5982071ew7ea472e3p69b68784m2150dfea/app/web-pixel-3945595267@96420dbe9ea96c426a1b7f364f977719~2/pixel.modern.js" async="" data-pixel-id="3945595267" data-pixel-type="APP"></script><script src="https://cdn.by.wonderpush.com/sdk/1.1/wonderpush-loader.min.js" async="" id="wonderpush-sdk" type="application/javascript"></script><script async="" data-src="https://connect.facebook.net/signals/config/1215368328582980?v=2.9.414&amp;r=stable&amp;domain=devred.com&amp;hme=a4c28c8787325ac3f8f9eac68364f47df2a8c4266e43177443e5d7f6289c9774&amp;ex_m=117%2C240%2C170%2C27%2C81%2C82%2C161%2C77%2C76%2C11%2C180%2C101%2C20%2C152%2C140%2C46%2C84%2C89%2C148%2C175%2C182%2C8%2C4%2C5%2C7%2C6%2C3%2C102%2C114%2C32%2C17%2C31%2C18%2C33%2C34%2C35%2C37%2C55%2C162%2C86%2C125%2C22%2C24%2C51%2C47%2C49%2C48%2C94%2C103%2C107%2C123%2C159%2C163%2C53%2C124%2C29%2C26%2C132%2C78%2C43%2C165%2C164%2C166%2C156%2C154%2C30%2C42%2C66%2C122%2C177%2C79%2C21%2C127%2C92%2C75%2C23%2C96%2C97%2C129%2C95%2C150%2C149%2C153%2C108%2C176%2C179%2C41%2C56%2C126%2C54%2C160%2C71%2C184%2C109%2C183%2C209%2C254%2C83%2C273%2C272%2C271%2C14%2C25%2C28%2C40%2C62%2C116%2C68%2C10%2C72%2C110%2C111%2C112%2C118%2C143%2C38%2C36%2C145%2C146%2C147%2C142%2C141%2C171%2C85%2C174%2C172%2C173%2C57%2C67%2C136%2C19%2C178%2C52%2C322%2C323%2C324%2C321%2C337%2C359%2C247%2C236%2C69%2C237%2C235%2C362%2C353%2C59%2C248%2C120%2C144%2C91%2C134%2C61%2C133%2C139%2C138%2C65%2C73%2C167%2C87%2C88%2C128%2C44%2C39%2C60%2C63%2C113%2C181%2C1%2C137%2C16%2C135%2C12%2C2%2C64%2C104%2C15%2C74%2C70%2C131%2C100%2C99%2C186%2C187%2C105%2C106%2C9%2C115%2C185%2C58%2C157%2C98%2C90%2C80%2C130%2C119%2C168%2C50%2C158%2C0%2C93%2C151%2C155%2C169%2C45%2C121%2C13%2C188"></script><link rel="dns-prefetch preconnect" href="https://cdn.shopify.com" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/polyfills.DsjDEvpF.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/app.DGSHpWaV.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/2c1ab0fe.GMbxnz74.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/6a2fc6d6.CB7WRe6i.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/4c290a1e.DMQ9xOwP.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/bb728e1c.CHt2JlPY.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/cf29e63b.BYllFEI4.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/cb38e5c2.Hmwo5zs2.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/413b21e2.DZZRDa_s.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/e477f96c.DJuIaq7S.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/2255f8fa.CDyfBNrW.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/b8733b27.05ur1szn.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/e39bc11c.D2a9UHbt.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/08a3b809.DDk5v8y8.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/bff2ff9b.Cy_si-5k.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/5fda1420.BLaDhoyL.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/164ad2e3.B4L1MRYB.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/9f047e05.DwjCPgK0.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/0a7dffce.BcNpdEJk.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/60a453ce.Cg9T1Gj2.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/21cc90a2.Ccyorzx_.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/ecbc70a8.B45CrSzR.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/f8706cb6.Dq4SNRnK.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/dffdfb34.5SAJ7sQR.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/31cc568e.CVMsqQ1x.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/0c0ad074.Dl7fvU-G.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/53bbdad9.oGVvLPt2.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/945a08d6.c61SBjtG.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/2fdb3dd3.DyNzUnPi.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/0e67bd3b.DUa61rto.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/74835653.DeaMa2xw.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/29034f35.DARWjbfB.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/ac5a19ff.BchXgW63.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/47b970b2.C6dKnXeF.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/0727407f.DihGPUji.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/064f6ac1.DPGuEQ9h.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/efa0389a.ZcaEqvMP.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/f1968089.lfvhhPdb.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/55098bf1.SNyaSeYe.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/cb5cf153.CBk88ZOK.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/e3e348f2.DAaElZ9-.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/ca5e9c49.DIuWAPOX.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/ed9f2238.BDG257lM.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/ccdf3592.y_I-TghG.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/a422df8c.B9fLTQ4u.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/79974aab.DPBsbYrf.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/7b0c98ea.B54fWMkZ.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/d22d2b80.CPLrR--0.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/f49d4216.C2ooXZfg.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/0e9ee714.BUAjwk_6.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/39921a74.BMGPgeDG.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/ec391382.CdHY2UiR.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/f3fe2775.Cg8b5yuM.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/598fef4e.Blg5kMTg.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/e77f7fe0.BZPIxVUE.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/cc6ff67d.D2x8Yxrg.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/87bfafec.4CtkSIvo.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/dfca5da5.BJQx_CCE.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/6720fa5f.B84Z8I3K.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/01973ac7.hFyCq2Rp.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/58314944.D85q6ENI.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/7a8217fd.C-KSXAi3.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/2b89a178.dq9bza6T.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/b684bff6.FsqZYmPf.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/910cd6e2.C--KAxpp.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/347b440c.-JodZrUc.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/d5d34b3b.D0jJQL_d.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/181d38d3.bNzFxA5T.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/d6447d9e.BtUd7XAf.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/f51e663e.Cb7U9v8A.js" crossorigin=""><style type="text/css">BODY.modal-open {
+}</style><style id="abtasty_hide_modificationengine">.ab_hide_me{display:none!important}</style><meta http-equiv="origin-trial" content="A1duO9QWZ/3h+eq5jQsvYqOTVq5h5q2AoGInpwNr4FT22/JUt3BxFERXHAo5iKhs6doOavi6G5hno0oBANPzSgIAAABxeyJvcmlnaW4iOiJodHRwczovL2Nkbi5zaG9waWZ5LmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJlcmVuZGVyVW50aWxTY3JpcHQiLCJleHBpcnkiOjE3ODg4MjU2MDAsImlzVGhpcmRQYXJ0eSI6dHJ1ZX0="><meta http-equiv="origin-trial" content="AwnTE1hYg9Bsa5x0wEDsbG6tOdZ3j6ebKzXxbr/2TnTilsCRK9FwndlhAyFVnnBH1qQAqpOPJxVWiKGUqBnOmAYAAAB8eyJvcmlnaW4iOiJodHRwczovL2Nkbi5zaG9waWZ5LmNvbTo0NDMiLCJmZWF0dXJlIjoiTG9uZ0FuaW1hdGlvbkZyYW1lU3R5bGVEdXJhdGlvbiIsImV4cGlyeSI6MTc5MTI0NDgwMCwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="A1cNj7yeFpBT/ETqZHRgUfM9tToLwOpBySTd4C9Eya3JtQo/BEQegM6MMV7BZESSyAjQJJXYgH/ovHY1UHmB8woAAABjeyJvcmlnaW4iOiJodHRwczovL2Nkbi5zaG9waWZ5LmNvbTo0NDMiLCJmZWF0dXJlIjoiV2ViTUNQIiwiZXhwaXJ5IjoxNzk0ODczNjAwLCJpc1RoaXJkUGFydHkiOnRydWV9"><meta http-equiv="origin-trial" content="A1XQljJxk3U4c44gueu4vlIeDofyyWFswfVKbUiNw4itZx4Yy8Uw3nIhtzBePIrv1bSXqzHGDfYymYF5W7TKKAoAAABzeyJvcmlnaW4iOiJodHRwczovL2Nkbi5zaG9waWZ5LmNvbTo0NDMiLCJmZWF0dXJlIjoiU3BlY3VsYXRpb25NZWFzdXJlbWVudCIsImV4cGlyeSI6MTc5MzY2NDAwMCwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><meta http-equiv="origin-trial" content="Ax9yX6wXQN8G5IFmAMuROwlLDFBpw1CUnFgsIGNYqJJ4H6td1fqjIYkL02d7HpmOAFMFSi3/1kym00LEfYqOdwYAAACOeyJvcmlnaW4iOiJodHRwczovL2Nkbi5zaG9waWZ5LmNvbTo0NDMiLCJmZWF0dXJlIjoiU3BlY3VsYXRpb25SdWxlc01vZGVyYXRlVmlld3BvcnRIZXVyaXN0aWNzQ29udHJvbCIsImV4cGlyeSI6MTc5NjY4ODAwMCwiaXNUaGlyZFBhcnR5Ijp0cnVlfQ=="><script type="speculationrules">{}</script><script type="text/javascript" async="" src="https://sdk.privacy-center.org/sdk/bfeeb8833f795063d4ab01a8e33ae25f3c5907df/modern/sdk.bfeeb8833f795063d4ab01a8e33ae25f3c5907df.js" charset="utf-8"></script><link rel="dns-prefetch preconnect" href="https://cdn.shopify.com" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/polyfills.BiBIAYYj.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/app.Bke-0Cv3.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/2c1ab0fe.XVnTovwp.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/6a2fc6d6.4emkQ3P_.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/f67abd2c.DYpmk7mw.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/2495faa4.BfsiRcE8.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/cf29e63b.Ys3W-wRm.js" crossorigin=""><script type="module" defer="" src="https://devred.com/cdn/shopifycloud/consent-tracking-api/v0.1/consent-tracking-api.js"></script><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/9dba8418.C8BcPjk_.js" crossorigin=""><script src="https://devred.com/web-pixels@5982071ew7ea472e3p69b68784m2150dfea/app/web-pixel-3945595267@96420dbe9ea96c426a1b7f364f977719~2/pixel.modern.js" async="" data-pixel-id="3945595267" data-pixel-type="APP"></script><script src="https://cdn.by.wonderpush.com/sdk/1.1/wonderpush-loader.min.js" async="" id="wonderpush-sdk" type="application/javascript"></script><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/cb38e5c2.DhFQnkXU.js" crossorigin=""><script async="" data-src="https://connect.facebook.net/signals/config/1215368328582980?v=2.9.414&amp;r=stable&amp;domain=devred.com&amp;hme=a4c28c8787325ac3f8f9eac68364f47df2a8c4266e43177443e5d7f6289c9774&amp;ex_m=117%2C240%2C170%2C27%2C81%2C82%2C161%2C77%2C76%2C11%2C180%2C101%2C20%2C152%2C140%2C46%2C84%2C89%2C148%2C175%2C182%2C8%2C4%2C5%2C7%2C6%2C3%2C102%2C114%2C32%2C17%2C31%2C18%2C33%2C34%2C35%2C37%2C55%2C162%2C86%2C125%2C22%2C24%2C51%2C47%2C49%2C48%2C94%2C103%2C107%2C123%2C159%2C163%2C53%2C124%2C29%2C26%2C132%2C78%2C43%2C165%2C164%2C166%2C156%2C154%2C30%2C42%2C66%2C122%2C177%2C79%2C21%2C127%2C92%2C75%2C23%2C96%2C97%2C129%2C95%2C150%2C149%2C153%2C108%2C176%2C179%2C41%2C56%2C126%2C54%2C160%2C71%2C184%2C109%2C183%2C209%2C254%2C83%2C273%2C272%2C271%2C14%2C25%2C28%2C40%2C62%2C116%2C68%2C10%2C72%2C110%2C111%2C112%2C118%2C143%2C38%2C36%2C145%2C146%2C147%2C142%2C141%2C171%2C85%2C174%2C172%2C173%2C57%2C67%2C136%2C19%2C178%2C52%2C322%2C323%2C324%2C321%2C337%2C359%2C247%2C236%2C69%2C237%2C235%2C362%2C353%2C59%2C248%2C120%2C144%2C91%2C134%2C61%2C133%2C139%2C138%2C65%2C73%2C167%2C87%2C88%2C128%2C44%2C39%2C60%2C63%2C113%2C181%2C1%2C137%2C16%2C135%2C12%2C2%2C64%2C104%2C15%2C74%2C70%2C131%2C100%2C99%2C186%2C187%2C105%2C106%2C9%2C115%2C185%2C58%2C157%2C98%2C90%2C80%2C130%2C119%2C168%2C50%2C158%2C0%2C93%2C151%2C155%2C169%2C45%2C121%2C13%2C188"></script><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/35f756f5.CXRoz69R.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/d25d1b95.BK5nRVN2.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/2255f8fa.D-KQ5JsT.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/6f2620f5.k6Q_3Ov6.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/b8733b27.DWzot3ty.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/e39bc11c.8KP_WUjj.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/08a3b809.D2TiFyOY.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/164ad2e3.hrg71Gqs.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/d0bb51ec.Bel_y502.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/60a453ce.Al5ISuVm.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/e12db40c.D-IRYT_x.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/ecbc70a8.Sq9OT34a.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/f8706cb6.CCuHlB1I.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/dffdfb34.DaTw_R4-.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/3ca8ef7e.CxOwQQjW.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/1f5e7811.C2FDfyfw.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/1d34c07e.h4dJAaCz.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/2fdb3dd3.2t-ogH1O.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/22345fd4.DGbyKJ7j.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/0e67bd3b.DpcbzdW8.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/74835653.CqvY5rnV.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/a9fa9fda.DndAb0hJ.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/ca3e798e.DB3SxkCu.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/47b970b2.B0ETP_eT.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/064f6ac1.CIMGQtoa.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/efa0389a.BZq4PXzm.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/4b1c22b7.D2BMozDL.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/17425706.3FohBTmU.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/55098bf1.B0Ycelf6.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/cb5cf153._TKKuh50.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/e3e348f2.OsWjRUHE.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/71ae3d5c.DAFuGUTz.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/78ab3dd0.ee4p6MaY.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/ed9f2238.Dt1fgOnT.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/6fb6f9d8.CR8dVXT7.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/1444e6bd.EEUHuG1U.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/0b8657b8.C9VzKoSX.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/a422df8c.5gfasMpQ.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/79974aab.Di299gsN.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/7b0c98ea.DNl6VXr2.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/d22d2b80.aQu_QseN.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/f49d4216.DnUYR-Hk.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/0e9ee714.D3-i9G06.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/39921a74.Do1iqQQq.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/ccdf3592.CUuo0Zrv.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/71b60e0a.DfPLdYsH.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/24773686.DHVsBc9s.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/ec391382.DcBj_H0N.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/f3fe2775.DhB4E-te.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/ac5a19ff.C1LksOgD.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/598fef4e.w_MKrvcK.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/e77f7fe0.DoOL59j8.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/cc6ff67d.BrToxuCX.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/bf513f9c.CtAeu42z.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/7a8217fd.Caa0VLP0.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/8599b02a.CZRACGSm.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/dfca5da5.DaUPQuNF.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/dae24aab.C7mdClmp.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/a25deb9a.DX96HOu0.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/01973ac7.Dzv797oi.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/58314944.DulCe-h4.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/945a08d6.CKST5h-A.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/7bc8057b.BnPFuxf4.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/f1968089.C2bDJU-A.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/2b89a178.BdhJmmWU.js" crossorigin=""><style type="text/css">BODY.modal-open {
   overflow: hidden;
 }
 
@@ -2197,7 +2188,7 @@ wp-modal-block > .wp-modal-content {
   cursor: pointer;
   font-size:20px;
 }
-</style><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/64de7b49.yFRdciMn.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/8e79be58.DbjZmhsu.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/90e26f5f.C0yU_UAv.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/f3e117aa.DNg1dGVr.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/a25deb9a.BE5O6zot.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/7aefefff.BlVjin5V.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/a535174a.DPVRr5eA.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/5fd968f2.BwKCnifP.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/73a9b0a0.gCS2W2-n.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/91319467.DpeMFOvW.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/86720dbb.DHZl5FAg.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/7114e006.DxMyqTAB.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/f692f62f.DHgy7Fzw.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/e0989459.DW399CzT.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/fc21c11a.Dku7sbdq.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/4ea44c06.Cj0Sc_bl.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/1ed8f5e3.DkmKdCgD.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/7ee73f43.QtnstTj2.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/c10167e6.DW7aL1mi.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/b9c0319a.CIGlacbX.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/3a819064.DvJdzPv7.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/d2e6a587.Dn0L4cvy.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/4b77f49a.C1s0kVMd.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/66338e00.BFkksh37.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/9c384ce8.CFjjgE6K.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/24fcbaf6.OQPWDlzZ.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/49758c58.DGQ9DXva.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/28ac86c0.52eUFLJ9.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/3e6029dd.B7hwoFu9.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/30074413.D6ocfG5D.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/9f57d2aa.FdiYumpp.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/8574876b.DlqSeZRL.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/33d2e4fc.99-2I_X4.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/27f09e31.DahwbqDd.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/137622f3.BPoTw3JS.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/54bf0ebb.SmHxAfrv.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/c610ba76.uN4RNIMY.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/2210eadb.DF0gIp_2.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/33682ee7.uUOypxz7.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/sandbox.DNKTFXG1.worker.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/sandbox-2025-07.BNlrLTFV.worker.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="https://extensions.shopifycdn.com/shopifycloud/checkout-web/assets/c1/polyfills-entry-modern.70q66_NX.worker.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/app.BuSMBobh.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/previous.Cyrg41An.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/helpers.CWAfD7H_.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/OnePage.B8fMdKm8.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/VatNumberValidationField.DFhaUJdw.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/StickyPayButton.pnFPnjHJ.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/hasViolationsIgnoringCodes.CQ_TUsw-.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/Section.CU18S7Ap.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/Rollup.DH9hPBhl.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/PaymentIcon.DUuFvlux.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/useShopPayProgressIntercepts.DIc3vsmn.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/Choice.CIaVEvsx.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/PaymentLine.B_vs66ws.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/BillingAddressForm.2HXntA0X.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/Switch.CxvbvO76.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/EmptyState.CZwDb_Yh.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/index.CiYh36Pk.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/useShopPayButtonClassName.Lp0gX49z.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/PhoneField.-WW1pYgW.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/Middot.kivijyjU.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/ShippingLines.DCj76NbH.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/EstimatedDeliveryContent.D-6PyHqX.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/TransitionHeight.CuRoM9zv.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/BelowTheFoldContent.FKWAC7pT.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/Captcha.CJQgLR0i.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/RememberMeSection.Bn_OeoXz.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/PayButtonSection.ClYw8kJs.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/PaymentOptionSelector.FapYWhnE.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/PaymentMethodProgressionHost.DAMvZY87.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/MobileOrderSummary.DZEwkLmi.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/PaymentButtons.DCbwzC5k.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/Popover.Bi1nHaU-.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/floating-layer.DfWUBaTh.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/ShippingMethodSelector.D038PkOR.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/SubscriptionPriceBreakdown.vTcdVGq4.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/MissingFields.BbxB_6wt.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/RedirectionNotice.B8v_QGNW.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/RuntimeExtension.DWkDBM73.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/AnnouncementRuntimeExtensions.54OByf3e.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/QRCode.XhNv4hkB.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/Pressable.D9SfDfsb.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/DateField.BkE3n11i.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/NumberField.C0qMELBD.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/Sheet.CVSBHI9d.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="image" href="https://cdn.shopify.com/s/files/1/0962/0658/6243/files/Group_430x_5c77c5d5-e58b-4b4b-ade4-03a15d78544a_x320.png?v=1775033780" crossorigin=""></head>
+</style><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/b684bff6.CBjxjafd.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/910cd6e2.zkestoDh.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/347b440c.B1Q_ELRi.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/9ce08e25.yvYyG5Hw.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/181d38d3.ClN40Nx_.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/792bb671.B3OvVnSg.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/d6447d9e.B1NgDA52.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/f51e663e.Bl-KttLW.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/21cc90a2.DHzOO82q.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/64de7b49.Cc4kocRg.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/8e79be58.44bHmOQB.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/90e26f5f.BiKQp8JJ.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/31cc568e.95lmLO5k.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/65f3d4da.Bb3QiqCm.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/ca5e9c49.CwU78fMC.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/f3e117aa.C6YjGO2G.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/7aefefff.CWNg1nOo.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/b3389d5c.BkpZshM_.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/73a9b0a0.DZ9Y4BR6.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/81e109b1.DOkM2TK2.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/86720dbb.IevNfB5Y.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/f692f62f.rsCL6xsk.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/9babe369.DIEG_YEx.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/e0989459.BtLMUvsr.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/cdfd59e6.B2F-5Hhr.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/fc21c11a.C6QyArma.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/e129c76e.D6yRAZT7.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/d4ea2faa.C62bzcKj.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/fe885b80.DpX5ei01.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/f78726c8.I0TzrQ_b.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/e477f96c.h1Qwi61E.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/1ed8f5e3.DNUS73wi.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/7ee73f43.DiwfQ4hU.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/0c0ad074.DA2s017X.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/87bfafec.CxwEzGHg.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/434e3b0a.B1BBnK_d.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/c10167e6.Ozvdd-Fq.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/b9c0319a.CnqmcDFb.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/17e57de1.xgvFRsfl.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/d2e6a587.BexYxUnC.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/4b77f49a.CdwqrEwZ.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/66338e00.Ctt47pmm.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/e77d135d.Dz0RetrO.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/24fcbaf6.Cf1AzaxS.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/49758c58.DZoWKKLS.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/28ac86c0.CPTjxiGk.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/3e6029dd.C_-dN-aq.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/30074413.CRikwJ54.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/9f57d2aa.D2OcdBXp.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/8574876b.DO_JQrVo.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/33d2e4fc.5rnmuNTH.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/27f09e31.Dozgg09p.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/137622f3.Ci9zYyw6.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/54bf0ebb.CtxtVex-.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/29034f35.B4fDNd4W.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/c610ba76.poyY9Q9h.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/413b21e2.7XjgADy1.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/2210eadb.DF0gIp_2.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/33682ee7.Dhdk5QZM.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/sandbox.CnmNbMYS.worker.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="/cdn/shopifycloud/checkout-web/assets/c1/sandbox-2025-07.BNlrLTFV.worker.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="script" href="https://extensions.shopifycdn.com/shopifycloud/checkout-web/assets/c1/polyfills-entry-modern.70q66_NX.worker.js" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/app.BuSMBobh.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/shipping.CwV2frA-.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/hydrate.D12j_P4G.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/OnePage.B8fMdKm8.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/VatNumberValidationField.DFhaUJdw.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/StickyPayButton.pnFPnjHJ.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/hasViolationsIgnoringCodes.CQ_TUsw-.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/Section.CU18S7Ap.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/PaymentLine.C6U8-oga.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/PaymentIcon.DUuFvlux.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/useShopPayProgressIntercepts.CiYh36Pk.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/Choice.CIaVEvsx.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/constants.DIc3vsmn.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/BillingAddressForm.2HXntA0X.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/ShopPayLogo.CfQmRGR8.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/Switch.CxvbvO76.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/EmptyState.CZwDb_Yh.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/PhoneField.-WW1pYgW.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/Middot.kivijyjU.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/ShippingLines.DCj76NbH.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/EstimatedDeliveryContent.D-6PyHqX.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/ExpressCheckoutButton.BnDF3H7t.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/TransitionHeight.CuRoM9zv.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/BelowTheFoldContent.FKWAC7pT.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/RememberMeSection.Bn_OeoXz.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/PayButtonSection.ClYw8kJs.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/PaymentOptionSelector.FapYWhnE.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/PaymentMethodProgressionHost.DAMvZY87.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/MobileOrderSummary.DZEwkLmi.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/hooks.DCbwzC5k.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/Popover.Bi1nHaU-.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/floating-layer.DfWUBaTh.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/useShopPayButtonClassName.BrcQzLuH.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/ShippingMethodSelector.D038PkOR.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/SubscriptionPriceBreakdown.vTcdVGq4.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/RedirectionNotice.DgiInWJ-.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/RuntimeExtension.DWkDBM73.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/AnnouncementRuntimeExtensions.54OByf3e.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/QRCode.XhNv4hkB.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/Pressable.D9SfDfsb.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/DateField.BkE3n11i.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/NumberField.C0qMELBD.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="style" href="/cdn/shopifycloud/checkout-web/assets/c1/assets/Sheet.CVSBHI9d.css" crossorigin=""><link rel="prefetch" fetchpriority="low" as="image" href="https://cdn.shopify.com/s/files/1/0962/0658/6243/files/Group_430x_5c77c5d5-e58b-4b4b-ade4-03a15d78544a_x320.png?v=1775033780" crossorigin=""></head>
 
   
 
@@ -2328,7 +2319,7 @@ wp-modal-block > .wp-modal-content {
 
   <div class="color-scheme color-scheme--scheme-7">
     <height-observer variable="announcement-bar"><announcement-bar id="carousel-sections--32887897424140__announcement-bar" allow-swipe="" cell-selector=".announcement-bar__message-list &gt; *" autoplay="5" class="announcement-bar"><div class="announcement-bar__message-list"><div class="is-selected prose prose-justify-center">
-                <p class="text-sm"><a href="https://account.devred.com/?consent_id=30d6fcba-1c2d-436e-aea1-70513be3b5db&amp;consent=a1m1p1" title="https://account.devred.com/">Connectez vous pour profiter de vos offres</a></p>
+                <p class="text-sm"><a href="https://account.devred.com/?consent_id=2bce75f2-b129-42fd-b55f-025a19f2476f&amp;consent=a1m1p1" title="https://account.devred.com/">Connectez vous pour profiter de vos offres</a></p>
               </div></div></announcement-bar>
     </height-observer>
   </div>
@@ -3273,7 +3264,7 @@ wp-modal-block > .wp-modal-content {
 </div><div class="footer__block footer__block--links footer__block--accordion-links"><div class="v-stack gap-4.5 sm-max:hidden"><p class="subheading">Aide &amp; contact</p><ul class="v-stack gap-2.5 unstyled-list" role="list"><li>
                             <a href="/pages/contact" class="link-reversed link-tap-area">Nous contacter</a>
                           </li><li>
-                            <a href="https://account.devred.com/profile?locale=fr&amp;region_country=FR&amp;buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ5eGR2c3cteXcubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkxNzY1NDQ1LCJuYmYiOjE3OTExNjA2NDV9.BP1PFmMAOElb_twKF6J3a4Tg9V8dKCecAmh2lD--a5s&amp;consent_id=30d6fcba-1c2d-436e-aea1-70513be3b5db&amp;consent=a1m1p1" class="link-reversed link-tap-area">Suivre mon colis</a>
+                            <a href="https://account.devred.com/profile?locale=fr&amp;region_country=FR&amp;buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ5eGR2c3cteXcubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkxODA4NjgwLCJuYmYiOjE3OTEyMDM4ODB9.pmK3rZl7zW9JPcWoKdNbdFTkCJaXkTu6mNzhmHGRk70&amp;consent_id=2bce75f2-b129-42fd-b55f-025a19f2476f&amp;consent=a1m1p1" class="link-reversed link-tap-area">Suivre mon colis</a>
                           </li><li>
                             <a href="https://devred.com/pages/cgv#delais-de-livraison" class="link-reversed link-tap-area">Livraison &amp; retours</a>
                           </li><li>
@@ -3296,7 +3287,7 @@ wp-modal-block > .wp-modal-content {
     <div class="accordion__content "><ul class="v-stack gap-2.5 unstyled-list" role="list"><li>
                             <a href="/pages/contact" class="link-reversed link-tap-area">Nous contacter</a>
                           </li><li>
-                            <a href="https://account.devred.com/profile?locale=fr&amp;region_country=FR&amp;buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ5eGR2c3cteXcubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkxNzY1NDQ1LCJuYmYiOjE3OTExNjA2NDV9.BP1PFmMAOElb_twKF6J3a4Tg9V8dKCecAmh2lD--a5s&amp;consent_id=30d6fcba-1c2d-436e-aea1-70513be3b5db&amp;consent=a1m1p1" class="link-reversed link-tap-area">Suivre mon colis</a>
+                            <a href="https://account.devred.com/profile?locale=fr&amp;region_country=FR&amp;buyer_flags=eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJ5eGR2c3cteXcubXlzaG9waWZ5LmNvbSIsImZsYWdzIjpbXSwiZXhwIjoxNzkxODA4NjgwLCJuYmYiOjE3OTEyMDM4ODB9.pmK3rZl7zW9JPcWoKdNbdFTkCJaXkTu6mNzhmHGRk70&amp;consent_id=2bce75f2-b129-42fd-b55f-025a19f2476f&amp;consent=a1m1p1" class="link-reversed link-tap-area">Suivre mon colis</a>
                           </li><li>
                             <a href="https://devred.com/pages/cgv#delais-de-livraison" class="link-reversed link-tap-area">Livraison &amp; retours</a>
                           </li><li>
@@ -3358,97 +3349,7 @@ wp-modal-block > .wp-modal-content {
     
     
   <style> .cart-drawer__footer-inner .v-stack.gap-3 .button-group button[name="checkout"] {display: block !important;}  /* si preorder existe et kleep reco aussi ALORS on masque le CTA kleep */buy-buttons:has(button[data-preorder-modified="true"]) #kleep-recommendation-button {display: none !important;}  /* dans le panier, réaffiche le cta commander */.v-stack:has(> .h-stack > button[data-preorder-modified="true"]) {display: block !important;} </style>
-<div id="shopify-block-AOU94K1p0RDB0RlNGR__2883025457459210873" class="shopify-block shopify-app-block"><script>
-  window.ooo = window.ooo || {};
-  window.ooo.wishlist = window.ooo.wishlist || {};
-  window.ooo.wishlist.accessToWishlist ='false';
-  window.ooo.wishlist.sharedWishlist = false;
-  window.ooo.wishlist.showShareWishlistButton = false;
-  window.ooo.wishlist.useVariants = false;
-  window.ooo.wishlist.translations = window.ooo.wishlist.translations || {};
-  window.ooo.wishlist.translations['shared_title'] = "Liste de souhaits partagée";
-  window.ooo.wishlist.translations['shared_title_with_name'] = "La liste de souhaits de {{ name }}";
-  window.ooo.wishlist.translations['add_to_wishlist'] = "Bouton ajouter à la wishlist";
-  window.ooo.wishlist.translations['remove_from_wishlist'] = "Bouton retirer de la wishlist";
-  window.ooo.wishlist.translations['each'] = "pièce";
-  window.ooo.wishlist.selectedTheme = "stretch";
-  window.ooo.wishlist.appSetupActive = true;
-  window.ooo.wishlist.isB2bUser =false;
-  window.ooo.wishlist.customerId = null;
-  window.ooo.wishlist.customerHmac = "9284340918cab6980f83bd704d670122ed944b15ccc4da42304db3f06e05b3fe";
-  window.ooo.wishlist.customerName = null;
-  window.ooo.wishlist.customerEmail = null;
-  window.ooo.wishlist.moneyFormat = "{{amount_with_comma_separator}} €";
-  window.ooo.wishlist.moneyWithCurrencyFormat = "{{amount_with_comma_separator}} € EUR";
-  window.ooo.wishlist.currencyCodeEnabled = false;
-  window.ooo.wishlist.appVersion = 1;
-  window.ooo.wishlist.lastUpdatedAt = null;
-  window.ooo.wishlist.wishlistCount = null;
-  window.ooo.wishlist.__checkoutAccess = () => { return false };
-  window.ooo.wishlist.__itemsLimit = () => { return true };
-  window.ooo.wishlist.__apiAccess = () => { return false };
-  window.ooo.wishlist.__marketsAccess = () => { return false };
-  window.ooo.wishlist.__int = () => { return { px: false, kla: false, modules: null } };window.ooo.wishlist.hmac = "150d042060cee01947fa4b2753368343791382a156b6597c27cb1451ff3320b5";
-  window.ooo.wishlist.hmacApi = "e3e8aa4718f5a74d989be496b6c14891cf3a2fbf87ec19607af3b19c442d286a";
-</script>
-<link rel="stylesheet" href="https://cdn.shopify.com/extensions/01a0fcc1-0c55-7889-b686-426130743326/wishlist-power-300/assets/wishlist-global-style.css"><!-- BEGIN app snippet: wishlist-css-tokens --><style>
-:root {
---stretch-button-background-color: 0 0 0;
---stretch-button-text-color: 255 255 255;
---theme-text-color: 0 0 0;
---theme-background-color: 255 255 255;--theme-border-color: 230 230 230;--ooo-wl-page-product-card-container-column-gap: var(--product-list-column-gap);
---ooo-wl-page-product-card-container-row-gap: var(--product-list-row-gap);--theme-swatches-width: 18px;
---theme-swatches-height: 18px;
---theme-swatches-radius: 50%;
---theme-swatches-selected-radius: 50%;
---theme-swatches-selected-offset: -5px;
---theme-swatches-selected-bottom: -5px;
---theme-swatches-outline-color: rgb(0,0,0);
---theme-swatches-outline-border-width: 2px;
---theme-swatches-outline-width: initial;
---theme-swatches-outline-height: initial;
---theme-swatches-selected-background-color: transparent;
-}
-</style><!-- END app snippet --><link rel="stylesheet" href="https://cdn.shopify.com/extensions/01a0fcc1-0c55-7889-b686-426130743326/wishlist-power-300/assets/wishlist-css-token-theme-stretch.css"><!-- BEGIN app snippet: popup-login -->
-<ooo-wl-login-popup id="ooo-wl-login-share">
-  
-</ooo-wl-login-popup>
-<!-- END app snippet --><!-- BEGIN app snippet: import-scripts -->
-<script type="module" src="https://cdn.shopify.com/extensions/01a0fcc1-0c55-7889-b686-426130743326/wishlist-power-300/assets/ooo-wishlist.min.js"></script>
-<script type="module" src="https://cdn.shopify.com/extensions/01a0fcc1-0c55-7889-b686-426130743326/wishlist-power-300/assets/ooo-wishlist-product-page.min.js"></script>
-<script type="module" src="https://cdn.shopify.com/extensions/01a0fcc1-0c55-7889-b686-426130743326/wishlist-power-300/assets/ooo-wishlist-product-card.min.js"></script><script type="module" src="https://cdn.shopify.com/extensions/01a0fcc1-0c55-7889-b686-426130743326/wishlist-power-300/assets/ooo-wishlist-page.min.js"></script><!-- END app snippet -->
-</div><div id="shopify-block-Ad3lHck9Ccldkb2R1R__12526071353035850722" class="shopify-block shopify-app-block">
-  <script defer="" src="https://backinstock.useamp.com/widget/219673_1788862968.js?category=bis&amp;v=6"></script>
-
-
-<script id="back-in-stock-helper-embedded">
-  var _BISConfig = _BISConfig || {};
-
-  
-
-  
-</script>
-
-<script id="preorders-helper-embedded">
-  
-</script>
-
-<script id="low-stock-helper-embedded">
-  
-</script>
-
-
-
-
-<script defer="" type="module" src="https://cdn.shopify.com/extensions/01a0ae82-28b0-715d-bb47-827eda8f44e3/back-in-stock-69/assets/wishlist.js"></script>
-
-
-<script defer="" type="module" src="https://cdn.shopify.com/extensions/01a0ae82-28b0-715d-bb47-827eda8f44e3/back-in-stock-69/assets/preorder-product-page-updater.js"></script>
-
-
-
-
-</div><div id="shopify-block-AUVRtMVlvYUF1RDdDZ__6027392645558237357" class="shopify-block shopify-app-block">
+<div id="shopify-block-AUVRtMVlvYUF1RDdDZ__6027392645558237357" class="shopify-block shopify-app-block">
 
 
 
@@ -3586,6 +3487,96 @@ wp-modal-block > .wp-modal-content {
 
 
 
+</div><div id="shopify-block-AOU94K1p0RDB0RlNGR__2883025457459210873" class="shopify-block shopify-app-block"><script>
+  window.ooo = window.ooo || {};
+  window.ooo.wishlist = window.ooo.wishlist || {};
+  window.ooo.wishlist.accessToWishlist ='false';
+  window.ooo.wishlist.sharedWishlist = false;
+  window.ooo.wishlist.showShareWishlistButton = false;
+  window.ooo.wishlist.useVariants = false;
+  window.ooo.wishlist.translations = window.ooo.wishlist.translations || {};
+  window.ooo.wishlist.translations['shared_title'] = "Liste de souhaits partagée";
+  window.ooo.wishlist.translations['shared_title_with_name'] = "La liste de souhaits de {{ name }}";
+  window.ooo.wishlist.translations['add_to_wishlist'] = "Bouton ajouter à la wishlist";
+  window.ooo.wishlist.translations['remove_from_wishlist'] = "Bouton retirer de la wishlist";
+  window.ooo.wishlist.translations['each'] = "pièce";
+  window.ooo.wishlist.selectedTheme = "stretch";
+  window.ooo.wishlist.appSetupActive = true;
+  window.ooo.wishlist.isB2bUser =false;
+  window.ooo.wishlist.customerId = null;
+  window.ooo.wishlist.customerHmac = "9284340918cab6980f83bd704d670122ed944b15ccc4da42304db3f06e05b3fe";
+  window.ooo.wishlist.customerName = null;
+  window.ooo.wishlist.customerEmail = null;
+  window.ooo.wishlist.moneyFormat = "{{amount_with_comma_separator}} €";
+  window.ooo.wishlist.moneyWithCurrencyFormat = "{{amount_with_comma_separator}} € EUR";
+  window.ooo.wishlist.currencyCodeEnabled = false;
+  window.ooo.wishlist.appVersion = 1;
+  window.ooo.wishlist.lastUpdatedAt = null;
+  window.ooo.wishlist.wishlistCount = null;
+  window.ooo.wishlist.__checkoutAccess = () => { return false };
+  window.ooo.wishlist.__itemsLimit = () => { return true };
+  window.ooo.wishlist.__apiAccess = () => { return false };
+  window.ooo.wishlist.__marketsAccess = () => { return false };
+  window.ooo.wishlist.__int = () => { return { px: false, kla: false, modules: null } };window.ooo.wishlist.hmac = "150d042060cee01947fa4b2753368343791382a156b6597c27cb1451ff3320b5";
+  window.ooo.wishlist.hmacApi = "e3e8aa4718f5a74d989be496b6c14891cf3a2fbf87ec19607af3b19c442d286a";
+</script>
+<link rel="stylesheet" href="https://cdn.shopify.com/extensions/01a0fcc1-0c55-7889-b686-426130743326/wishlist-power-300/assets/wishlist-global-style.css"><!-- BEGIN app snippet: wishlist-css-tokens --><style>
+:root {
+--stretch-button-background-color: 0 0 0;
+--stretch-button-text-color: 255 255 255;
+--theme-text-color: 0 0 0;
+--theme-background-color: 255 255 255;--theme-border-color: 230 230 230;--ooo-wl-page-product-card-container-column-gap: var(--product-list-column-gap);
+--ooo-wl-page-product-card-container-row-gap: var(--product-list-row-gap);--theme-swatches-width: 18px;
+--theme-swatches-height: 18px;
+--theme-swatches-radius: 50%;
+--theme-swatches-selected-radius: 50%;
+--theme-swatches-selected-offset: -5px;
+--theme-swatches-selected-bottom: -5px;
+--theme-swatches-outline-color: rgb(0,0,0);
+--theme-swatches-outline-border-width: 2px;
+--theme-swatches-outline-width: initial;
+--theme-swatches-outline-height: initial;
+--theme-swatches-selected-background-color: transparent;
+}
+</style><!-- END app snippet --><link rel="stylesheet" href="https://cdn.shopify.com/extensions/01a0fcc1-0c55-7889-b686-426130743326/wishlist-power-300/assets/wishlist-css-token-theme-stretch.css"><!-- BEGIN app snippet: popup-login -->
+<ooo-wl-login-popup id="ooo-wl-login-share">
+  
+</ooo-wl-login-popup>
+<!-- END app snippet --><!-- BEGIN app snippet: import-scripts -->
+<script type="module" src="https://cdn.shopify.com/extensions/01a0fcc1-0c55-7889-b686-426130743326/wishlist-power-300/assets/ooo-wishlist.min.js"></script>
+<script type="module" src="https://cdn.shopify.com/extensions/01a0fcc1-0c55-7889-b686-426130743326/wishlist-power-300/assets/ooo-wishlist-product-page.min.js"></script>
+<script type="module" src="https://cdn.shopify.com/extensions/01a0fcc1-0c55-7889-b686-426130743326/wishlist-power-300/assets/ooo-wishlist-product-card.min.js"></script><script type="module" src="https://cdn.shopify.com/extensions/01a0fcc1-0c55-7889-b686-426130743326/wishlist-power-300/assets/ooo-wishlist-page.min.js"></script><!-- END app snippet -->
+</div><div id="shopify-block-Ad3lHck9Ccldkb2R1R__12526071353035850722" class="shopify-block shopify-app-block">
+  <script defer="" src="https://backinstock.useamp.com/widget/219673_1788862968.js?category=bis&amp;v=6"></script>
+
+
+<script id="back-in-stock-helper-embedded">
+  var _BISConfig = _BISConfig || {};
+
+  
+
+  
+</script>
+
+<script id="preorders-helper-embedded">
+  
+</script>
+
+<script id="low-stock-helper-embedded">
+  
+</script>
+
+
+
+
+<script defer="" type="module" src="https://cdn.shopify.com/extensions/01a0ae82-28b0-715d-bb47-827eda8f44e3/back-in-stock-69/assets/wishlist.js"></script>
+
+
+<script defer="" type="module" src="https://cdn.shopify.com/extensions/01a0ae82-28b0-715d-bb47-827eda8f44e3/back-in-stock-69/assets/preorder-product-page-updater.js"></script>
+
+
+
+
 </div><script src="https://cdn.shopify.com/storefront/standard-actions.js" type="module" data-source-attribution="shopify.standard_actions"></script>
 
 	
@@ -3598,7 +3589,7 @@ wp-modal-block > .wp-modal-content {
 
     <script type="text/javascript" src="https://try.abtasty.com/3898ae322a8d4d389fa0c432be19d084.js"></script>
 
-  <style>
+  <div tabindex="-1" aria-hidden="true" id="web-pixels-manager-sandbox-container" data-shopify-privacy="exclude" style="height: 0px !important; width: 0px !important; position: fixed !important; visibility: hidden !important; overflow: hidden !important; z-index: -100 !important; margin: 0px !important; padding: 0px !important; border: 0px !important;"><iframe tabindex="-1" aria-hidden="true" name="web-pixel-sandbox-CUSTOM-289079683-LAX-5982071ew7ea472e3p69b68784m2150dfea" src="https://devred.com/web-pixels@5982071ew7ea472e3p69b68784m2150dfea/custom/web-pixel-289079683@2/sandbox/modern/pages/cgv?_gl=1*1invahr*_up*MQ..*_ga*MTA3MTM1MDA5LjE3NzQ0MzI1MTk.*_ga_F4RDJ76M6K*czE3NzQ0MzI1MTkkbzEkZzAkdDE3NzQ0MzI1MTkkajYwJGwwJGgw" id="web-pixel-sandbox-CUSTOM-289079683-LAX-5982071ew7ea472e3p69b68784m2150dfea" sandbox="allow-scripts allow-forms" style="height: 0px !important; width: 0px !important; visibility: hidden !important;"></iframe><iframe tabindex="-1" aria-hidden="true" name="web-pixel-sandbox-CUSTOM-301990275-LAX-5982071ew7ea472e3p69b68784m2150dfea" src="https://devred.com/web-pixels@5982071ew7ea472e3p69b68784m2150dfea/custom/web-pixel-301990275@7/sandbox/modern/pages/cgv?_gl=1*1invahr*_up*MQ..*_ga*MTA3MTM1MDA5LjE3NzQ0MzI1MTk.*_ga_F4RDJ76M6K*czE3NzQ0MzI1MTkkbzEkZzAkdDE3NzQ0MzI1MTkkajYwJGwwJGgw" id="web-pixel-sandbox-CUSTOM-301990275-LAX-5982071ew7ea472e3p69b68784m2150dfea" sandbox="allow-scripts allow-forms" style="height: 0px !important; width: 0px !important; visibility: hidden !important;"></iframe><iframe tabindex="-1" aria-hidden="true" name="web-pixel-sandbox-CUSTOM-310804867-LAX-5982071ew7ea472e3p69b68784m2150dfea" src="https://devred.com/web-pixels@5982071ew7ea472e3p69b68784m2150dfea/custom/web-pixel-310804867@1/sandbox/modern/pages/cgv?_gl=1*1invahr*_up*MQ..*_ga*MTA3MTM1MDA5LjE3NzQ0MzI1MTk.*_ga_F4RDJ76M6K*czE3NzQ0MzI1MTkkbzEkZzAkdDE3NzQ0MzI1MTkkajYwJGwwJGgw" id="web-pixel-sandbox-CUSTOM-310804867-LAX-5982071ew7ea472e3p69b68784m2150dfea" sandbox="allow-scripts allow-forms" style="height: 0px !important; width: 0px !important; visibility: hidden !important;"></iframe><iframe tabindex="-1" aria-hidden="true" name="web-pixel-sandbox-CUSTOM-310837635-LAX-5982071ew7ea472e3p69b68784m2150dfea" src="https://devred.com/web-pixels@5982071ew7ea472e3p69b68784m2150dfea/custom/web-pixel-310837635@5/sandbox/modern/pages/cgv?_gl=1*1invahr*_up*MQ..*_ga*MTA3MTM1MDA5LjE3NzQ0MzI1MTk.*_ga_F4RDJ76M6K*czE3NzQ0MzI1MTkkbzEkZzAkdDE3NzQ0MzI1MTkkajYwJGwwJGgw" id="web-pixel-sandbox-CUSTOM-310837635-LAX-5982071ew7ea472e3p69b68784m2150dfea" sandbox="allow-scripts allow-forms" style="height: 0px !important; width: 0px !important; visibility: hidden !important;"></iframe><iframe tabindex="-1" aria-hidden="true" name="web-pixel-sandbox-CUSTOM-shopify-custom-pixel-LAX-5982071ew7ea472e3p69b68784m2150dfea" src="https://devred.com/web-pixels@5982071ew7ea472e3p69b68784m2150dfea/custom/web-pixel-shopify-custom-pixel@0530/sandbox/modern/pages/cgv?_gl=1*1invahr*_up*MQ..*_ga*MTA3MTM1MDA5LjE3NzQ0MzI1MTk.*_ga_F4RDJ76M6K*czE3NzQ0MzI1MTkkbzEkZzAkdDE3NzQ0MzI1MTkkajYwJGwwJGgw" id="web-pixel-sandbox-CUSTOM-shopify-custom-pixel-LAX-5982071ew7ea472e3p69b68784m2150dfea" sandbox="allow-scripts allow-forms" style="height: 0px !important; width: 0px !important; visibility: hidden !important;"></iframe></div><style>
   .wishlist-toast {
     position: fixed;
     bottom: 4.5rem;
@@ -3667,10 +3658,10 @@ wp-modal-block > .wp-modal-content {
 
   
 
-<div tabindex="-1" aria-hidden="true" id="web-pixels-manager-sandbox-container" data-shopify-privacy="exclude" style="height: 0px !important; width: 0px !important; position: fixed !important; visibility: hidden !important; overflow: hidden !important; z-index: -100 !important; margin: 0px !important; padding: 0px !important; border: 0px !important;"><iframe tabindex="-1" aria-hidden="true" name="web-pixel-sandbox-CUSTOM-289079683-LAX-5982071ew7ea472e3p69b68784m2150dfea" src="https://devred.com/web-pixels@5982071ew7ea472e3p69b68784m2150dfea/custom/web-pixel-289079683@2/sandbox/modern/pages/cgv?_gl=1*1invahr*_up*MQ..*_ga*MTA3MTM1MDA5LjE3NzQ0MzI1MTk.*_ga_F4RDJ76M6K*czE3NzQ0MzI1MTkkbzEkZzAkdDE3NzQ0MzI1MTkkajYwJGwwJGgw" id="web-pixel-sandbox-CUSTOM-289079683-LAX-5982071ew7ea472e3p69b68784m2150dfea" sandbox="allow-scripts allow-forms" style="height: 0px !important; width: 0px !important; visibility: hidden !important;"></iframe><iframe tabindex="-1" aria-hidden="true" name="web-pixel-sandbox-CUSTOM-301990275-LAX-5982071ew7ea472e3p69b68784m2150dfea" src="https://devred.com/web-pixels@5982071ew7ea472e3p69b68784m2150dfea/custom/web-pixel-301990275@7/sandbox/modern/pages/cgv?_gl=1*1invahr*_up*MQ..*_ga*MTA3MTM1MDA5LjE3NzQ0MzI1MTk.*_ga_F4RDJ76M6K*czE3NzQ0MzI1MTkkbzEkZzAkdDE3NzQ0MzI1MTkkajYwJGwwJGgw" id="web-pixel-sandbox-CUSTOM-301990275-LAX-5982071ew7ea472e3p69b68784m2150dfea" sandbox="allow-scripts allow-forms" style="height: 0px !important; width: 0px !important; visibility: hidden !important;"></iframe><iframe tabindex="-1" aria-hidden="true" name="web-pixel-sandbox-CUSTOM-310804867-LAX-5982071ew7ea472e3p69b68784m2150dfea" src="https://devred.com/web-pixels@5982071ew7ea472e3p69b68784m2150dfea/custom/web-pixel-310804867@1/sandbox/modern/pages/cgv?_gl=1*1invahr*_up*MQ..*_ga*MTA3MTM1MDA5LjE3NzQ0MzI1MTk.*_ga_F4RDJ76M6K*czE3NzQ0MzI1MTkkbzEkZzAkdDE3NzQ0MzI1MTkkajYwJGwwJGgw" id="web-pixel-sandbox-CUSTOM-310804867-LAX-5982071ew7ea472e3p69b68784m2150dfea" sandbox="allow-scripts allow-forms" style="height: 0px !important; width: 0px !important; visibility: hidden !important;"></iframe><iframe tabindex="-1" aria-hidden="true" name="web-pixel-sandbox-CUSTOM-310837635-LAX-5982071ew7ea472e3p69b68784m2150dfea" src="https://devred.com/web-pixels@5982071ew7ea472e3p69b68784m2150dfea/custom/web-pixel-310837635@5/sandbox/modern/pages/cgv?_gl=1*1invahr*_up*MQ..*_ga*MTA3MTM1MDA5LjE3NzQ0MzI1MTk.*_ga_F4RDJ76M6K*czE3NzQ0MzI1MTkkbzEkZzAkdDE3NzQ0MzI1MTkkajYwJGwwJGgw" id="web-pixel-sandbox-CUSTOM-310837635-LAX-5982071ew7ea472e3p69b68784m2150dfea" sandbox="allow-scripts allow-forms" style="height: 0px !important; width: 0px !important; visibility: hidden !important;"></iframe><iframe tabindex="-1" aria-hidden="true" name="web-pixel-sandbox-CUSTOM-shopify-custom-pixel-LAX-5982071ew7ea472e3p69b68784m2150dfea" src="https://devred.com/web-pixels@5982071ew7ea472e3p69b68784m2150dfea/custom/web-pixel-shopify-custom-pixel@0530/sandbox/modern/pages/cgv?_gl=1*1invahr*_up*MQ..*_ga*MTA3MTM1MDA5LjE3NzQ0MzI1MTk.*_ga_F4RDJ76M6K*czE3NzQ0MzI1MTkkbzEkZzAkdDE3NzQ0MzI1MTkkajYwJGwwJGgw" id="web-pixel-sandbox-CUSTOM-shopify-custom-pixel-LAX-5982071ew7ea472e3p69b68784m2150dfea" sandbox="allow-scripts allow-forms" style="height: 0px !important; width: 0px !important; visibility: hidden !important;"></iframe></div><ooo-wl-tooltip hidden=""><span id="ooo-wl-tooltip"><span data-action="success-icon"><!-- BEGIN app snippet: wishlist-icon --><svg fill="none" aria-hidden="false" focusable="false" width="12" class="ooo-wl-button-icon ooo-wl-button-icon--tick" viewBox="0 0 12 12"><path stroke="currentColor" stroke-width="1.5" d="m1 5.941 3.53 3.53L11 3"></path></svg><!-- END app snippet --></span><span data-action="error-icon"><!-- BEGIN app snippet: wishlist-icon --><svg fill="none" aria-hidden="false" focusable="false" width="12" class="ooo-wl-button-icon ooo-wl-button-icon--warning" viewBox="0 0 13 14"><circle cx="6.5" cy="7" r="6.5" fill="var(--ooo-wl-page-product-card-form-tooltip-error-color)"></circle><path fill="currentColor" d="M6.75 8.47a.387.387 0 0 1-.3-.12.606.606 0 0 1-.12-.34l-.3-3.82c-.02-.247.033-.443.16-.59.127-.153.313-.23.56-.23.24 0 .42.077.54.23.127.147.18.343.16.59l-.3 3.82a.522.522 0 0 1-.12.34.344.344 0 0 1-.28.12Zm0 2.08a.744.744 0 0 1-.55-.21.751.751 0 0 1-.2-.54c0-.213.067-.387.2-.52.14-.14.323-.21.55-.21.233 0 .413.07.54.21.133.133.2.307.2.52 0 .22-.067.4-.2.54-.127.14-.307.21-.54.21Z"></path></svg><!-- END app snippet --></span><span data-action="message"></span></span></ooo-wl-tooltip>
+<ooo-wl-tooltip hidden=""><span id="ooo-wl-tooltip"><span data-action="success-icon"><!-- BEGIN app snippet: wishlist-icon --><svg fill="none" aria-hidden="false" focusable="false" width="12" class="ooo-wl-button-icon ooo-wl-button-icon--tick" viewBox="0 0 12 12"><path stroke="currentColor" stroke-width="1.5" d="m1 5.941 3.53 3.53L11 3"></path></svg><!-- END app snippet --></span><span data-action="error-icon"><!-- BEGIN app snippet: wishlist-icon --><svg fill="none" aria-hidden="false" focusable="false" width="12" class="ooo-wl-button-icon ooo-wl-button-icon--warning" viewBox="0 0 13 14"><circle cx="6.5" cy="7" r="6.5" fill="var(--ooo-wl-page-product-card-form-tooltip-error-color)"></circle><path fill="currentColor" d="M6.75 8.47a.387.387 0 0 1-.3-.12.606.606 0 0 1-.12-.34l-.3-3.82c-.02-.247.033-.443.16-.59.127-.153.313-.23.56-.23.24 0 .42.077.54.23.127.147.18.343.16.59l-.3 3.82a.522.522 0 0 1-.12.34.344.344 0 0 1-.28.12Zm0 2.08a.744.744 0 0 1-.55-.21.751.751 0 0 1-.2-.54c0-.213.067-.387.2-.52.14-.14.323-.21.55-.21.233 0 .413.07.54.21.133.133.2.307.2.52 0 .22-.067.4-.2.54-.127.14-.307.21-.54.21Z"></path></svg><!-- END app snippet --></span><span data-action="message"></span></span></ooo-wl-tooltip><script id="" text="" charset="" type="text/javascript" src="https://tag.lifmo.ai/devred.js"></script>
 <script type="text/javascript" id="" charset="">(function(a,b,d){if(!a.snaptr){var c=a.snaptr=function(){c.handleRequest?c.handleRequest.apply(c,arguments):c.queue.push(arguments)};c.queue=[];a="script";r=b.createElement(a);r.async=!0;r.src=d;b=b.getElementsByTagName(a)[0];b.parentNode.insertBefore(r,b)}})(window,document,"https://sc-static.net/scevent.min.js");snaptr("init","5e148bdf-8066-4231-bade-eab649b1614a",{user_hashed_email:"undefined",user_hashed_phone_number:"undefined"});</script>
-<script id="" text="" charset="" type="text/javascript" src="https://tag.lifmo.ai/devred.js"></script>
+<script type="text/javascript" id="" charset="">window.Shopify.loadFeatures([{name:"consent-tracking-api",version:"0.1"}],function(a){window.Shopify.customerPrivacy.setTrackingConsent({analytics:google_tag_manager["rm"]["244057128"](21)==="granted"?!0:!1,marketing:google_tag_manager["rm"]["244057128"](23)==="granted"?!0:!1,preferences:google_tag_manager["rm"]["244057128"](25)==="granted"?!0:!1},function(){console.log("Consent captured");console.log(google_tag_manager["rm"]["244057128"](27),google_tag_manager["rm"]["244057128"](29))})});</script>
+<script id="" text="" charset="" type="text/javascript" src="https://cdn.brevo.com/js/sdk-loader.js"></script><script id="" text="" charset="" type="text/javascript" src="https://partner.devred.com/ct/an660024726.js"></script><script id="" text="" charset="" type="text/javascript" src="https://partner.devred.com/ct/pt660024726.js"></script>
 <script type="text/javascript" id="" charset="">(function(a,b,d){if(!a.snaptr){var c=a.snaptr=function(){c.handleRequest?c.handleRequest.apply(c,arguments):c.queue.push(arguments)};c.queue=[];a="script";r=b.createElement(a);r.async=!0;r.src=d;b=b.getElementsByTagName(a)[0];b.parentNode.insertBefore(r,b)}})(window,document,"https://sc-static.net/scevent.min.js");snaptr("init","5e148bdf-8066-4231-bade-eab649b1614a",{user_hashed_email:"undefined",user_hashed_phone_number:"undefined"});</script>
-<script type="text/javascript" id="" charset="">window.Shopify.loadFeatures([{name:"consent-tracking-api",version:"0.1"}],function(a){window.Shopify.customerPrivacy.setTrackingConsent({analytics:google_tag_manager["rm"]["244057128"](25)==="granted"?!0:!1,marketing:google_tag_manager["rm"]["244057128"](27)==="granted"?!0:!1,preferences:google_tag_manager["rm"]["244057128"](29)==="granted"?!0:!1},function(){console.log("Consent captured");console.log(google_tag_manager["rm"]["244057128"](31),google_tag_manager["rm"]["244057128"](33))})});</script>
-<script id="" text="" charset="" type="text/javascript" src="https://cdn.brevo.com/js/sdk-loader.js"></script><script id="" text="" charset="" type="text/javascript" src="https://partner.devred.com/ct/an660024726.js"></script><script id="" text="" charset="" type="text/javascript" src="https://partner.devred.com/ct/pt660024726.js"></script><script type="text/javascript" id="" charset="">snaptr("track","PAGE_VIEW");</script>
-<script type="text/javascript" id="" charset="">window.Brevo=window.Brevo||[];Brevo.push(["init",{client_key:"nau2zhgmc1268rn9axpknkh4"}]);</script><iframe id="snap5458937" src="https://tr.snapchat.com/cm/i?pid=5e148bdf-8066-4231-bade-eab649b1614a&amp;u_scsid=a569f092-4af0-466b-81f7-869149fff516&amp;u_sclid=b83f4fc7-9e21-4038-859a-3736c25d5d34" aria-hidden="true" role="presentation" tab-index="-1" style="display: none !important; height: 1px !important; overflow: hidden !important; position: absolute !important; width: 1px !important;"></iframe><iframe allow="geolocation" src="https://www.devred.com/brevo-frame.html" style="display: none;"></iframe><script src="https://cdn.by.wonderpush.com/plugins/ecommerce/1.0.15/ecommerce.js" charset="utf-8"></script></body></html>
+<script type="text/javascript" id="" charset="">snaptr("track","PAGE_VIEW");</script>
+<script type="text/javascript" id="" charset="">window.Brevo=window.Brevo||[];Brevo.push(["init",{client_key:"nau2zhgmc1268rn9axpknkh4"}]);</script><iframe id="snap6496496" src="https://tr.snapchat.com/cm/i?pid=5e148bdf-8066-4231-bade-eab649b1614a&amp;u_scsid=9b2180ab-714d-406f-95f5-e5dae11c1453&amp;u_sclid=c0af28ff-6089-459d-aa28-1345e4b23a2b" aria-hidden="true" role="presentation" tab-index="-1" style="display: none !important; height: 1px !important; overflow: hidden !important; position: absolute !important; width: 1px !important;"></iframe><iframe allow="geolocation" src="https://www.devred.com/brevo-frame.html" style="display: none;"></iframe><script src="https://cdn.by.wonderpush.com/plugins/ecommerce/1.0.15/ecommerce.js" charset="utf-8"></script></body></html>
