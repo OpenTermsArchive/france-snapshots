@@ -11,16 +11,10 @@
 
 
 
-  
-    
-  
-    
-  
-
 
 
 <!DOCTYPE html>
-<html lang="en" class="flix-theme-flix homepage-has-inline-promo homepage-has-promo-before-usps">
+<html lang="en" class="flix-theme-flix homepage-has-promo-before-usps">
 <head>
 
     
@@ -360,11 +354,7 @@
   
   
   
-  
-  
-  
-  
-  <link rel="preload" as="image" href="https://cdn-cf.cms.flixbus.com/resize/drupal-assets/promos/spk-2-77ad0b4530ff.webp?width=600&format=webp" fetchpriority="high" />
+  <link rel="preload" as="image" href="https://cdn-cf.cms.flixbus.com/drupal-assets/card-banner/card-banner-background-mobile.avif" media="(max-width: 767px)" fetchpriority="high" />
   
 </head>
 <body class="flix-main-wrapper">
@@ -1675,6 +1665,21 @@
 
 
 
+<div class="hero-overlay-promo-wrapper " style="display: none;">
+    <div id="hero-overlay-promo-placeholder" class="hero-overlay-promo-placeholder">
+        <div class="hero-overlay-promo-placeholder-inner">
+            <div class="hero-overlay-promo-placeholder-content">
+                <span class="flix-skeleton hero-overlay-promo-placeholder-text hero-overlay-promo-placeholder-text--wide"></span>
+                <span class="flix-skeleton hero-overlay-promo-placeholder-text hero-overlay-promo-placeholder-text--medium"></span>
+                <span class="flix-skeleton hero-overlay-promo-placeholder-text hero-overlay-promo-placeholder-text--short"></span>
+            </div>
+        </div>
+    </div>
+    <div id="hero-overlay-promo-component"></div>
+</div>
+
+
+
     <div class="hero-content">
       <h1 class="flix-h1 flix-h1--section-header hero-heading" data-vo-hidden="false">
         
@@ -1730,7 +1735,7 @@
 
 
 
-<div class="inline-promo-wrapper ">
+<div class="inline-promo-wrapper " style="display: none;">
     <div id="inline-promo-placeholder" class="inline-promo-placeholder">
         <div class="inline-promo-placeholder-inner">
             <span class="flix-skeleton inline-promo-placeholder-icon"></span>
@@ -1743,11 +1748,6 @@
 
 
     
-
-
-
-
-
 
 
 
@@ -1787,18 +1787,6 @@
 </div>
 <div id="card-promo-component-MainContentPromoArea" data-testid="card-promo-container-MainContentPromoArea"></div>
 </div>
-
-
-
-<script>
-    if (window.Aetna && window.Aetna["webc_fxp_2082"] ===  2 ) {
-        document.documentElement.classList.add("homepage-has-promo-before-usps");
-    }
-</script>
-
-
-
-
 
 
 
@@ -2617,11 +2605,11 @@
                     </li>
                   
                     <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
-                      <a href="/bus-routes/bus-berlin-cologne" class="popular-routes-item">Berlin - Cologne</a>
+                      <a href="/bus-routes/bus-frankfurt-berlin" class="popular-routes-item">Frankfurt - Berlin</a>
                     </li>
                   
                     <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
-                      <a href="/bus-routes/bus-frankfurt-berlin" class="popular-routes-item">Frankfurt - Berlin</a>
+                      <a href="/bus-routes/bus-berlin-cologne" class="popular-routes-item">Berlin - Cologne</a>
                     </li>
                   
                     <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
@@ -2649,6 +2637,10 @@
                     </li>
                   
                     <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
+                      <a href="/bus-routes/bus-stuttgart-berlin" class="popular-routes-item">Stuttgart - Berlin</a>
+                    </li>
+                  
+                    <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
                       <a href="/bus-routes/bus-dusseldorf-berlin" class="popular-routes-item">Düsseldorf - Berlin</a>
                     </li>
                   
@@ -2661,15 +2653,11 @@
                     </li>
                   
                     <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
-                      <a href="/bus-routes/bus-stuttgart-berlin" class="popular-routes-item">Stuttgart - Berlin</a>
+                      <a href="/bus-routes/bus-munich-zurich" class="popular-routes-item">Munich - Zurich</a>
                     </li>
                   
                     <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
                       <a href="/bus-routes/bus-dresden-prague" class="popular-routes-item">Dresden - Prague</a>
-                    </li>
-                  
-                    <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
-                      <a href="/bus-routes/bus-zurich-munich" class="popular-routes-item">Zurich - Munich</a>
                     </li>
                   
                 </ul>
@@ -3319,72 +3307,17 @@
   }
 
   
-  
-
-  
-
-  
-  {
-    injectReactComponent(
-      "InlinePromo",
-      "inline-promo-component",
-      {
-        project: "flixbus",
-        containerId: "inline-promo-component",
-        card: {"endDate":"2026-09-10T01:00:00+01:00","title":"FlixBus is running today. Allow more time to get to the station. The national strike in the Netherlands may affect local transport.","illustrationName":"info"}
-      },
-      "inline-promo-placeholder",
-      "prod"
-    );
+  if (typeof window.processDataForPromo === 'function') {
+    var promoArgs = [
+      "flixbus",
+      "en-gl",
+      "prod",
+      true
+    ];
+    var promoHandlers = window.processDataForPromo.apply(null, promoArgs);
+    window.handlePromoContentCards = promoHandlers.handlePromoContentCards;
+    window.handlePromoBrazeError = promoHandlers.handlePromoBrazeError;
   }
-  
-
-  
-  const cardPromoCards = [{"image":{"url":"https://cdn-cf.cms.flixbus.com/drupal-assets/promos/Bike_web.webp","alt":"Bring your bike on your next trip"},"abTest":{"flag":"webc_fxp_2082","variant":2},"title":"Bring your bike on your next trip","description":"Turn any trip into a cycling adventure.","cta":{"text":"View details","url":"https://global.flixbus.com/service/bike-travel"},"isStrongPromo":true},{"image":{"url":"https://cdn-cf.cms.flixbus.com/drupal-assets/promos/spk-2-77ad0b4530ff.webp","alt":"Bus in front of Museum in Berlin"},"title":"Explore Museum Island Berlin","description":"Great art, epic stories - just a ride away","cta":{"text":"Discover now","url":"https://www.flixtrain.com/museum-island-flix"}}];
-  const visibleCardPromoCards = cardPromoCards
-    .filter(function(card) {
-      if (!card.abTest) {
-        return true;
-      }
-
-      return window.Aetna && window.Aetna[card.abTest.flag] === card.abTest.variant;
-    })
-    .map(function(card) {
-      if (!card.abTest) {
-        return card;
-      }
-
-      const visibleCard = Object.assign({}, card);
-      delete visibleCard.abTest;
-      return visibleCard;
-    });
-
-  if (visibleCardPromoCards.length > 0) {
-    const cardPromoProps = {
-      project: "flixbus",
-      containerId: "card-promo-component-MainContentPromoArea",
-      promoData: {
-        placement: "MainContentPromoArea",
-        cards: visibleCardPromoCards
-      }
-    };
-    
-
-    injectReactComponent(
-      "CardPromo",
-      "card-promo-component-MainContentPromoArea",
-      cardPromoProps,
-      "card-promo-placeholder-MainContentPromoArea",
-      "prod"
-    );
-  } else {
-    const cardPromoWrapper = document.querySelector(".card-promo-wrapper");
-    if (cardPromoWrapper) {
-      cardPromoWrapper.remove();
-    }
-  }
-  
-
   
 </script>
 <script>
@@ -3448,7 +3381,7 @@
         site: 'datadoghq.eu',
         service: 'fxt.webc.cms.gohome',
         sessionSampleRate: 7,
-        version: "v1-98-94",
+        version: "v1-98-95",
         trackSessionAcrossSubdomains: true,
         useSecureSessionCookie: true,
         useCrossSiteSessionCookie: true,
@@ -3502,6 +3435,11 @@
             const extraData = {};
 
             
+            const websiteLocale = 'en-gl';
+            if (websiteLocale) {
+              extraData.most_recent_website_locale = websiteLocale;
+            }
+            
 
             if (recentCityId) {
               extraData.web_last_started_search_departure_uuid = recentCityId;
@@ -3536,8 +3474,6 @@
             braze.requestImmediateDataFlush();
 
             
-            if (recentCityId) {
-            
             braze.subscribeToContentCardsUpdates(function(contentCards) {
               if (typeof window.emitBrazeContentCardsReadyEvent === 'function') {
                 window.emitBrazeContentCardsReadyEvent(contentCards);
@@ -3552,6 +3488,10 @@
                       ? braze.getCachedContentCards()
                       : null);
 
+                
+                if (typeof window.handlePromoContentCards === 'function') {
+                  window.handlePromoContentCards(contentCards);
+                }
                 
 
                 if (recentCityId) {
@@ -3569,10 +3509,12 @@
                   window.renderFeaturedConnectionsFromApiBound();
                 }
                 
+                if (typeof window.handlePromoBrazeError === 'function') {
+                  window.handlePromoBrazeError();
+                }
+                
               }
             );
-            
-            }
             
 
           } catch (error) {
