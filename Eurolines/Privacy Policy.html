@@ -1730,6 +1730,24 @@
   </div>
 
     <div class="search-mask-padding search-mask-padding--with-checkbox" aria-hidden="true"></div>
+    <script id="search-mask-checkbox-space">
+      
+      
+      
+      
+      (function () {
+        var hasCheckbox = Boolean(window.Aetna && window.Aetna.webc_fxp_2065 === 1);
+        [
+          ['sm-placeholder-container', document.getElementById('search-mask-placeholder')],
+          ['search-mask-padding', document.querySelector('.search-mask-padding')]
+        ].forEach(function (entry) {
+          var element = entry[1];
+          if (!element) return;
+          element.classList.toggle(entry[0] + '--with-checkbox', hasCheckbox);
+          element.classList.toggle(entry[0] + '--without-checkbox', !hasCheckbox);
+        });
+      })();
+    </script>
     
 
 
@@ -2560,11 +2578,11 @@
                     </li>
                   
                     <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
-                      <a href="/bus/frankfurt-airport-fra" class="popular-routes-item">Frankfurt Airport</a>
+                      <a href="/bus/mannheim" class="popular-routes-item">Mannheim</a>
                     </li>
                   
                     <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
-                      <a href="/bus/mannheim" class="popular-routes-item">Mannheim</a>
+                      <a href="/bus/frankfurt-airport-fra" class="popular-routes-item">Frankfurt Airport</a>
                     </li>
                   
                     <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
@@ -2609,11 +2627,11 @@
                     </li>
                   
                     <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
-                      <a href="/bus-routes/bus-dresden-berlin" class="popular-routes-item">Dresden - Berlin</a>
+                      <a href="/bus-routes/bus-berlin-cologne" class="popular-routes-item">Berlin - Cologne</a>
                     </li>
                   
                     <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
-                      <a href="/bus-routes/bus-berlin-cologne" class="popular-routes-item">Berlin - Cologne</a>
+                      <a href="/bus-routes/bus-dresden-berlin" class="popular-routes-item">Dresden - Berlin</a>
                     </li>
                   
                     <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
@@ -2641,11 +2659,11 @@
                     </li>
                   
                     <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
-                      <a href="/bus-routes/bus-dusseldorf-berlin" class="popular-routes-item">Düsseldorf - Berlin</a>
+                      <a href="/bus-routes/bus-stuttgart-berlin" class="popular-routes-item">Stuttgart - Berlin</a>
                     </li>
                   
                     <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
-                      <a href="/bus-routes/bus-stuttgart-berlin" class="popular-routes-item">Stuttgart - Berlin</a>
+                      <a href="/bus-routes/bus-dusseldorf-berlin" class="popular-routes-item">Düsseldorf - Berlin</a>
                     </li>
                   
                     <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
@@ -2657,7 +2675,7 @@
                     </li>
                   
                     <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
-                      <a href="/bus-routes/bus-munich-zurich" class="popular-routes-item">Munich - Zurich</a>
+                      <a href="/bus-routes/bus-berlin-stuttgart" class="popular-routes-item">Berlin - Stuttgart</a>
                     </li>
                   
                 </ul>
@@ -3270,7 +3288,7 @@
 <script defer async type="module" src="https://honeycomb-icons.hive.flixbus.com/12.0.0/flix-icons/flix-icons.esm.js"></script>
 <script defer async type="nomodule" src="https://honeycomb-icons.hive.flixbus.com/12.0.0/flix-icons/flix-icons.js"></script>
 
-<script src="https://cdn-cf.cms.flixbus.com/drupal-assets/flix-home-assets/main.84f249.js"></script>
+<script src="https://cdn-cf.cms.flixbus.com/drupal-assets/flix-home-assets/main.008f7d.js"></script>
 <script>
   injectSearchMask(
    "en",
@@ -3381,7 +3399,7 @@
         site: 'datadoghq.eu',
         service: 'fxt.webc.cms.gohome',
         sessionSampleRate: 7,
-        version: "production",
+        version: "v1-98-102",
         trackSessionAcrossSubdomains: true,
         useSecureSessionCookie: true,
         useCrossSiteSessionCookie: true,
@@ -3409,6 +3427,13 @@
           baseUrl: 'sdk.fra-02.braze.eu',
           sdkUrl: 'https://js.appboycdn.com/web-sdk/6.4/braze.core.min.js'
         };
+        const recentCityId = window.getRecentCityId();
+        const contentCardsRenderer = window.createBrazeContentCardsRenderer({
+          apiKey: BRAZE_CONFIG.apiKey,
+          recentCityId: recentCityId,
+          promosEnabled: true
+        });
+
         async function initBraze() {
           try {
             const braze = window.braze;
@@ -3428,7 +3453,6 @@
               throw new Error('Braze initialization failed');
             }
 
-            const recentCityId = window.getRecentCityId();
             const currentDomain = window.location.hostname;
             const currencyWeb = 'EUR';
 
@@ -3470,56 +3494,16 @@
             }
 
             
+            
+            contentCardsRenderer.subscribe(braze);
             braze.openSession();
             braze.requestImmediateDataFlush();
-
-            
-            braze.subscribeToContentCardsUpdates(function(contentCards) {
-              if (typeof window.emitBrazeContentCardsReadyEvent === 'function') {
-                window.emitBrazeContentCardsReadyEvent(contentCards);
-              }
-            });
-
-            braze.requestContentCardsRefresh(
-              function(refreshedCards) {
-                var contentCards = refreshedCards && refreshedCards.cards
-                  ? refreshedCards
-                  : (typeof braze.getCachedContentCards === 'function'
-                      ? braze.getCachedContentCards()
-                      : null);
-
-                
-                if (typeof window.handlePromoContentCards === 'function') {
-                  window.handlePromoContentCards(contentCards);
-                }
-                
-
-                if (recentCityId) {
-                  Promise.resolve(
-                    window.handleFeaturedConnectionsContentCards(contentCards)
-                  ).then(function(renderedFromBraze) {
-                    if (!renderedFromBraze) {
-                      window.renderFeaturedConnectionsFromApiBound();
-                    }
-                  });
-                }
-              },
-              function() {
-                if (recentCityId) {
-                  window.renderFeaturedConnectionsFromApiBound();
-                }
-                
-                if (typeof window.handlePromoBrazeError === 'function') {
-                  window.handlePromoBrazeError();
-                }
-                
-              }
-            );
-            
+            contentCardsRenderer.start(braze);
 
           } catch (error) {
             console.error('[Braze] Initialization error:', error);
             window.emitBrazeError(error.message);
+            contentCardsRenderer.fail();
           }
         }
 
@@ -3531,6 +3515,7 @@
           script.onerror = function() {
             console.error('Failed to load Braze SDK');
             window.emitBrazeError('Failed to load Braze SDK');
+            contentCardsRenderer.fail();
           };
           document.head.appendChild(script);
         }
