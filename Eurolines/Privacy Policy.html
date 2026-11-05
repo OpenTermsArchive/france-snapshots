@@ -49,7 +49,7 @@
     <noscript><link rel="stylesheet" href="https://honeycomb.flixbus.com/dist/17.4.1/css/honeycomb-fonts.css" crossorigin=""></noscript>
 
     <link rel="stylesheet" href="https://cdn-cf.cms.flixbus.com/drupal-assets/flix-home-assets/cms_honeycomb.87fdbc.css" />
-    <link rel="stylesheet" href="https://cdn-cf.cms.flixbus.com/drupal-assets/flix-home-assets/styles.1cac00.css" />
+    <link rel="stylesheet" href="https://cdn-cf.cms.flixbus.com/drupal-assets/flix-home-assets/styles.127cac.css" />
 
     <link
       rel="apple-touch-icon"
@@ -1643,9 +1643,28 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
   
 
-  <div class="hero-container hero-container--no-image-mobile" data-testid="hero">
+  
+  <script>
+    
+    if (window.Aetna && window.Aetna["webc_fxp_2155"] === 1) {
+      document.documentElement.classList.add("homepage-explore-map-visible");
+    }
+  </script>
+  
+
+  <div class="hero-container hero-container--no-image-mobile hero-container--explore-map-peek" data-testid="hero">
     <div id="default-hero-image-container"
       class="hero-image-container hero-image-container--hidden-mobile">
       
@@ -1681,6 +1700,7 @@
 
 
     <div class="hero-content">
+      <div class="hero-title-row">
       <h1 class="flix-h1 flix-h1--section-header hero-heading" data-vo-hidden="false">
         
         
@@ -1690,6 +1710,17 @@
         
         
       </h1>
+      
+        
+
+<a href="https://global.flixbus.com/bus-routes" class="flix-btn flix-btn--link explore-map-btn flix-btn--stacked explore-map-btn--hero"
+   data-explore-map-link data-explore-map-placement="hero_title" data-testid="explore-map-button-hero_title">
+  <svg class="flix-btn__icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M21.75 2.07a.4.4 0 0 0-.25.1l-5 3.39q-.26.15-.59.16a1 1 0 0 1-.45-.1L8.54 2.1A1 1 0 0 0 8.1 2q-.33 0-.59.16l-5 3.4c-.28.18-.5.6-.5.93v15.09q.01.34.25.35.12 0 .25-.1l5-3.39q.26-.16.59-.16.25 0 .45.1l6.93 3.52a1 1 0 0 0 .44.1q.33 0 .59-.16l5-3.4c.28-.18.5-.6.5-.93V2.42q-.01-.34-.25-.35M4 18.4V6.95l3-2.03v11.56q-.33.12-.62.3zm5-1.96V4.57l5.56 2.83q.21.08.44.15v11.86L9.44 16.6q-.21-.09-.44-.15m11 .6-3 2.04V7.52q.33-.12.62-.3L20 5.6z"/></svg>
+  <span>Map</span>
+</a>
+
+      
+      </div>
       <div class="hero-search-mask-wrapper">
           
 <div id="search-mask-placeholder" class="sm-placeholder-container flix-legacy-grid sm-placeholder-container--with-checkbox" data-testid="search-mask-placeholder" aria-hidden="true">
@@ -1725,6 +1756,41 @@
 </div>
 
         <div id="search-mask-component" style="border-radius: 5px" data-testid="search-mask-container"></div>
+        
+          
+
+<a href="https://global.flixbus.com/bus-routes" class="flix-btn flix-btn--link explore-map-btn flix-btn--sm explore-map-btn--search-mask"
+   data-explore-map-link data-explore-map-placement="search_mask" data-testid="explore-map-button-search_mask">
+  <svg class="flix-btn__icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M21.75 2.07a.4.4 0 0 0-.25.1l-5 3.39q-.26.15-.59.16a1 1 0 0 1-.45-.1L8.54 2.1A1 1 0 0 0 8.1 2q-.33 0-.59.16l-5 3.4c-.28.18-.5.6-.5.93v15.09q.01.34.25.35.12 0 .25-.1l5-3.39q.26-.16.59-.16.25 0 .45.1l6.93 3.52a1 1 0 0 0 .44.1q.33 0 .59-.16l5-3.4c.28-.18.5-.6.5-.93V2.42q-.01-.34-.25-.35M4 18.4V6.95l3-2.03v11.56q-.33.12-.62.3zm5-1.96V4.57l5.56 2.83q.21.08.44.15v11.86L9.44 16.6q-.21-.09-.44-.15m11 .6-3 2.04V7.52q.33-.12.62-.3L20 5.6z"/></svg>
+  <span>Explore map</span>
+</a>
+
+        
+        
+          
+
+<a href="https://global.flixbus.com/bus-routes" class="explore-map-peek"
+   data-explore-map-peek data-explore-map-link data-explore-map-placement="search_mask_peek"
+   data-testid="explore-map-peek"
+   data-language="en-gl" data-currency="EUR" data-vehicle-type="bus"
+   data-title-template="%_a_% destinations from %_b_%" data-title-fallback="Where to next?"
+   data-price-template="from %_a_% in the next 7 days" data-price-fallback="from %_a_%">
+  <span class="explore-map-peek__info">
+    <span class="explore-map-peek__live" aria-hidden="true"></span>
+    <span class="explore-map-peek__text">
+      <span class="explore-map-peek__title" data-explore-map-peek-title></span>
+      <span class="explore-map-peek__price" data-explore-map-peek-price></span>
+    </span>
+  </span>
+  <span class="explore-map-peek__map" data-explore-map-peek-map></span>
+  <span class="explore-map-peek__cta">
+    <span class="explore-map-peek__cta-label explore-map-peek__cta-label--long">Explore map</span>
+    <span class="explore-map-peek__cta-label explore-map-peek__cta-label--short">Map</span>
+    <svg class="explore-map-peek__cta-icon" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false"><path d="M13 5l7 7-7 7-1.4-1.4 4.6-4.6H4v-2h12.2l-4.6-4.6z"/></svg>
+  </span>
+</a>
+
+        
       </div>
     </div>
   </div>
@@ -2639,11 +2705,11 @@
                     </li>
                   
                     <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
-                      <a href="/bus-routes/bus-cologne-berlin" class="popular-routes-item">Cologne - Berlin</a>
+                      <a href="/bus-routes/bus-berlin-cologne" class="popular-routes-item">Berlin - Cologne</a>
                     </li>
                   
                     <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
-                      <a href="/bus-routes/bus-berlin-cologne" class="popular-routes-item">Berlin - Cologne</a>
+                      <a href="/bus-routes/bus-cologne-berlin" class="popular-routes-item">Cologne - Berlin</a>
                     </li>
                   
                     <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
@@ -2671,11 +2737,11 @@
                     </li>
                   
                     <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
-                      <a href="/bus-routes/bus-dresden-prague" class="popular-routes-item">Dresden - Prague</a>
+                      <a href="/bus-routes/bus-prague-dresden" class="popular-routes-item">Prague - Dresden</a>
                     </li>
                   
                     <li class="flix-legacy-col-12 flix-legacy-col-6-sm  flix-legacy-col-3-md">
-                      <a href="/bus-routes/bus-prague-dresden" class="popular-routes-item">Prague - Dresden</a>
+                      <a href="/bus-routes/bus-berlin-dusseldorf" class="popular-routes-item">Berlin - Düsseldorf</a>
                     </li>
                   
                 </ul>
@@ -3288,7 +3354,7 @@
 <script defer async type="module" src="https://honeycomb-icons.hive.flixbus.com/12.0.0/flix-icons/flix-icons.esm.js"></script>
 <script defer async type="nomodule" src="https://honeycomb-icons.hive.flixbus.com/12.0.0/flix-icons/flix-icons.js"></script>
 
-<script src="https://cdn-cf.cms.flixbus.com/drupal-assets/flix-home-assets/main.b2a037.js"></script>
+<script src="https://cdn-cf.cms.flixbus.com/drupal-assets/flix-home-assets/main.974c58.js"></script>
 <script>
   injectSearchMask(
    "en",
@@ -3399,7 +3465,7 @@
         site: 'datadoghq.eu',
         service: 'fxt.webc.cms.gohome',
         sessionSampleRate: 7,
-        version: "v1-98-105",
+        version: "v1-98-106",
         trackSessionAcrossSubdomains: true,
         useSecureSessionCookie: true,
         useCrossSiteSessionCookie: true,
