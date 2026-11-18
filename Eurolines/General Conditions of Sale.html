@@ -1802,7 +1802,7 @@
       
       
       (function () {
-        var hasCheckbox = Boolean(window.Aetna && window.Aetna.webc_fxp_2065 === 1);
+        var hasCheckbox = Boolean(window.Aetna && window.Aetna["webc_fxp_2065"] === 1);
         [
           ['sm-placeholder-container', document.getElementById('search-mask-placeholder')],
           ['search-mask-padding', document.querySelector('.search-mask-padding')]
@@ -3354,7 +3354,7 @@
 <script defer async type="module" src="https://honeycomb-icons.hive.flixbus.com/12.0.0/flix-icons/flix-icons.esm.js"></script>
 <script defer async type="nomodule" src="https://honeycomb-icons.hive.flixbus.com/12.0.0/flix-icons/flix-icons.js"></script>
 
-<script src="https://cdn-cf.cms.flixbus.com/drupal-assets/flix-home-assets/main.991f34.js"></script>
+<script src="https://cdn-cf.cms.flixbus.com/drupal-assets/flix-home-assets/main.34f666.js"></script>
 <script>
   injectSearchMask(
    "en",
@@ -3363,7 +3363,8 @@
    "https:\/\/shop.global.flixbus.com",
    "flixbus",
    "a18f138c-68fa-4b45-a42f-adb0378e10d3",
-   "https:\/\/www.booking.com\/searchresults.html?aid=8129824\u0026ss={arrival_city_name}\u0026checkin={checkin}\u0026checkout={checkout}\u0026group_adults={group_adults}\u0026group_children={group_children}")
+   "https:\/\/www.booking.com\/searchresults.html?aid=8129824\u0026ss={arrival_city_name}\u0026checkin={checkin}\u0026checkout={checkout}\u0026group_adults={group_adults}\u0026group_children={group_children}",
+   "webc_fxp_2065")
 </script>
 <script>
   injectReact("prod");
@@ -3465,7 +3466,7 @@
         site: 'datadoghq.eu',
         service: 'fxt.webc.cms.gohome',
         sessionSampleRate: 7,
-        version: "production",
+        version: "v1-98-111",
         trackSessionAcrossSubdomains: true,
         useSecureSessionCookie: true,
         useCrossSiteSessionCookie: true,
